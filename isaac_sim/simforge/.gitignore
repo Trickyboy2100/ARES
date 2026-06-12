@@ -1,0 +1,23 @@
+# Runtime artifacts — never commit
+logs/
+reports/
+runtime/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large binary caches
+*.npz
+*.npy
+*.tmp
+
+# Scene backups (keep only main.usd)
+scenes/*.bak.usd
+scenes/backup_*/
+
+# Isaac Sim kit logs
+*.log
+kit/

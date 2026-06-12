@@ -92,16 +92,6 @@ def parse_args():
                         help="Load cached joint path if available (default: always replan).")
     # legacy alias kept for compatibility; use --use-cache to enable cache
     parser.add_argument("--no-cache", action="store_true", help=argparse.SUPPRESS)
-    parser.add_argument("--auto-play", action="store_true",
-                        help="Auto-start simulation without waiting for manual Play press.")
-    parser.add_argument("--close-steps", type=int, default=60,
-                        help="Frames for slow gripper close after arm reaches pick position (default 60).")
-    parser.add_argument("--force-threshold-m", type=float, default=0.005,
-                        help="Stop closing gripper if tray displaces more than this (m) during close. 0=disabled.")
-    parser.add_argument("--loop", action="store_true",
-                        help="Auto-reset and repeat demo after each completion.")
-    parser.add_argument("--cam-pullback-m", type=float, default=0.0,
-                        help="Pull /World/Sensors/cam_overhead back along its look direction by this many metres.")
     return parser.parse_args()
 
 
@@ -344,7 +334,12 @@ def build_left_arm_path(stage, cache_usd, settled_center, ear_center, chest_targ
     seed_bank = [
         np.zeros(6),
         np.array([1.0,  0.5,  0.4, -1.1, -0.2, -0.4], dtype=float),
+        np.array([1.4,  0.6,  0.4, -1.1, -0.2, -0.4], dtype=float),
+        np.array([0.8,  0.8,  0.2, -1.2,  0.1, -0.2], dtype=float),
+        # seeds biased toward vertical-jaw / side-approach configuration
         np.array([0.9,  0.5,  0.8, -0.8,  1.4,  1.5], dtype=float),
+        np.array([1.1,  0.4,  0.7, -0.9,  1.5,  1.6], dtype=float),
+        np.array([0.7,  0.7,  0.6, -1.0,  1.3,  1.4], dtype=float),
     ]
 
     pre  = ear_center + np.array([0.0,  0.125, 0.0],    dtype=float)
@@ -390,13 +385,13 @@ def build_left_arm_path(stage, cache_usd, settled_center, ear_center, chest_targ
         link6_chain, lower, upper, base_world, link6_to_pad,
         path_to_pre[-1], pre, pick,
         TARGET_UP_WORLD, TARGET_FORWARD_WORLD,
-        [q_pre] + seed_bank, count=30,
+        [q_pre] + seed_bank, count=81,
     )
     path_lift, report_lift = constrained_pose_path(
         link6_chain, lower, upper, base_world, link6_to_pad,
         path_to_pick[-1], pick, lift,
         TARGET_UP_WORLD, TARGET_FORWARD_WORLD,
-        [path_to_pick[-1]] + seed_bank, count=30,
+        [path_to_pick[-1]] + seed_bank, count=81,
         axis_weight=_ORIENT_WEIGHT, forward_weight=_ORIENT_WEIGHT,
     )
 
@@ -419,7 +414,7 @@ def build_left_arm_path(stage, cache_usd, settled_center, ear_center, chest_targ
         link6_chain, lower, upper, base_world, link6_to_pad,
         path_lift[-1], lift, corrected_chest_pad,
         TARGET_FORWARD_WORLD, CHEST_FORWARD_WORLD,
-        [path_lift[-1]] + seed_bank, count=60,
+        [path_lift[-1]] + seed_bank, count=151,
         start_up_world=TARGET_UP_WORLD, end_up_world=CHEST_UP_WORLD,
         axis_weight=_ORIENT_WEIGHT, forward_weight=_ORIENT_WEIGHT,
     )
@@ -469,8 +464,20 @@ def main():
             "width": 1440,
             "height": 900,
             "renderer": "RaytracedLighting",
-        }
+        },
+        experience="/home/andyee/isaacsim/apps/isaacsim.exp.full.kit",
     )
+
+    import carb
+    import omni.kit.viewport.utility
+    _settings = carb.settings.get_settings()
+    _settings.set("/rtx/rendermode", "RaytracedLighting")
+    _vp = omni.kit.viewport.utility.get_active_viewport()
+    if _vp:
+        try:
+            _vp.set_hd_engine("rtx", "RaytracedLighting")
+        except Exception:
+            pass
 
     import omni.timeline
     import omni.usd
@@ -508,43 +515,11 @@ def main():
     timeline = omni.timeline.get_timeline_interface()
     timeline.set_current_time(0.0)
 
-    # Camera pullback (transient in-memory; does not modify the USD file on disk)
-    if args.cam_pullback_m != 0.0:
-        cam_path = "/World/Sensors/cam_overhead"
-        cam_prim = stage.GetPrimAtPath(cam_path)
-        if cam_prim and cam_prim.IsValid():
-            from pxr import Gf
-            cache_cam = UsdGeom.XformCache(Usd.TimeCode.Default())
-            cam_world = cache_cam.GetLocalToWorldTransform(cam_prim)
-            cam_local_z = np.array([cam_world[2][0], cam_world[2][1], cam_world[2][2]], dtype=float)
-            cam_local_z /= max(1e-9, float(np.linalg.norm(cam_local_z)))
-            # Camera looks along local -Z; pulling back = moving along +Z (away from scene)
-            pullback = cam_local_z * args.cam_pullback_m
-            cur_t = np.array(cam_world.ExtractTranslation(), dtype=float)
-            new_t = cur_t + pullback
-            xf_cam = UsdGeom.Xformable(cam_prim)
-            for op in xf_cam.GetOrderedXformOps():
-                if op.GetOpType() == UsdGeom.XformOp.TypeTranslate:
-                    op.Set(Gf.Vec3d(float(new_t[0]), float(new_t[1]), float(new_t[2])))
-                    break
-            print(f"[LEFT-ARM-PICK] Camera pulled back {args.cam_pullback_m:.2f}m → {np.round(new_t, 3)}", flush=True)
-        else:
-            print(f"[LEFT-ARM-PICK] Warning: camera prim {cam_path} not found; skipping pullback.", flush=True)
-
-    # Debug log directory (timestamped per run)
-    debug_log_dir = Path("logs/debug") / time.strftime("%Y%m%d_%H%M%S")
-    debug_log_dir.mkdir(parents=True, exist_ok=True)
-    debug_log_path = debug_log_dir / "waypoints.jsonl"
-
-    if args.auto_play:
-        timeline.play()
-        print("[LEFT-ARM-PICK] Auto-play enabled — simulation started.", flush=True)
-    else:
-        print("[LEFT-ARM-PICK] Scene ready. Press Play in the GUI to start.", flush=True)
-        while not timeline.is_playing():
-            app.update()
-            time.sleep(0.02)
-        print("[LEFT-ARM-PICK] Play detected — waiting for physics to settle...", flush=True)
+    print("[LEFT-ARM-PICK] Scene ready. Press Play in the GUI to start.", flush=True)
+    while not timeline.is_playing():
+        app.update()
+        time.sleep(0.02)
+    print("[LEFT-ARM-PICK] Play detected — waiting for physics to settle...", flush=True)
 
     for _ in range(int(args.settle_sec * args.fps)):
         app.update()
@@ -574,108 +549,58 @@ def main():
     if log_path.exists():
         log_path.unlink()
 
-    dt = 1.0 / args.fps
-    approach_end = info["phase_bounds"]["approach_and_close"]
-    lift_start = info["phase_bounds"]["lift"]
-    arm_path = info["path"]
-
-    def _log_debug(tag: str, step_i: int, q: np.ndarray, phase: str, closed: float):
-        tray_bbox = bbox_payload(stage, TRAY_PATH)
-        pad_T = pad_world(info, q)
-        row = {
-            "tag": tag,
-            "time_sec": round(step_i * dt, 4),
-            "phase": phase,
-            "joint_deg": np.round(np.degrees(q), 2).tolist(),
-            "pad_xyz": vec(pad_T[:3, 3]),
-            "tray_center_xyz": vec(bbox_center(tray_bbox)),
-            "closed_frac": round(float(closed), 4),
-        }
-        with open(debug_log_path, "a", encoding="utf-8") as _f:
-            _f.write(json.dumps(row, ensure_ascii=False) + "\n")
-        print(f"[DEBUG] {tag}: pad={vec(pad_T[:3,3])} tray={vec(bbox_center(tray_bbox))} closed={closed:.2f}", flush=True)
-
     samples = []
-
-    def _record_sample(step_i, q, phase, closed, joint_angle, touched):
-        tray_bbox = bbox_payload(stage, TRAY_PATH)
-        pad_T = pad_world(info, q)
-        row = {
-            "time_sec": round(step_i * dt, 4),
-            "sample_index": int(step_i),
-            "phase": phase,
-            "joint_position_rad": np.round(q, 6).tolist(),
-            "joint_position_deg": np.round(np.degrees(q), 3).tolist(),
-            "pad_midpoint_world_xyz": vec(pad_T[:3, 3]),
-            "gripper_closed_fraction": round(float(closed), 6),
-            "gripper_joint_angle_deg": round(float(np.degrees(joint_angle)), 6),
-            "gripper_visual_links_touched": int(touched),
-            "tray_bbox": tray_bbox,
-            "tray_bbox_center_xyz": vec(bbox_center(tray_bbox)),
-            "chest_tray_target_world_xyz": vec(chest_target),
-            "grasp_method": "kinematic_pad_contact",
-        }
-        samples.append(row)
-        with open(log_path, "a", encoding="utf-8") as _f:
-            _f.write(json.dumps(row, ensure_ascii=False) + "\n")
-
-    # ── Phase 1: move_to_pregrasp + approach (gripper stays OPEN throughout) ────
-    for i in range(approach_end + 1):
-        q = arm_path[i]
+    gripper_closed_logged = False
+    path = info["path"]
+    dt = 1.0 / args.fps
+    i = 0
+    while i < len(path):
+        q = path[i]
         set_robot_links(link_ops, info["chains"], q)
-        phase = "move_to_pregrasp" if i < info["phase_bounds"]["move_to_pregrasp"] else "approach"
-        joint_angle, touched = set_gripper(gripper_ops, 0.0)
-        if i in (0, info["phase_bounds"]["move_to_pregrasp"], approach_end):
-            _log_debug(phase, i, q, phase, 0.0)
-        if i % 5 == 0 or i == approach_end:
-            _record_sample(i, q, phase, 0.0, joint_angle, touched)
-        app.update()
-
-    # ── Phase 2: slow close — arm frozen at pick position, gripper closes ────────
-    q_at_pick = arm_path[approach_end]
-    tray_pos_before_close = xform_world_xyz(stage, TRAY_PATH).copy()
-    close_steps = max(1, args.close_steps)
-    closed = 0.0
-    force_stop_step = None
-    print(f"[LEFT-ARM-PICK] Slow-close phase: {close_steps} steps (force threshold={args.force_threshold_m:.4f}m).", flush=True)
-    for step in range(close_steps + 1):
-        alpha = step / close_steps
-        if args.force_threshold_m > 0.0 and force_stop_step is None:
-            tray_pos_now = xform_world_xyz(stage, TRAY_PATH)
-            delta = float(np.linalg.norm(tray_pos_now - tray_pos_before_close))
-            if delta > args.force_threshold_m:
-                force_stop_step = step
-                print(f"[LEFT-ARM-PICK] Force threshold hit at close step {step}/{close_steps}: "
-                      f"tray_delta={delta:.4f}m → holding gripper at {closed:.3f}", flush=True)
-        if force_stop_step is None:
-            closed = min(1.0, alpha)
-        joint_angle, touched = set_gripper(gripper_ops, closed)
-        if step % 10 == 0 or step == close_steps:
-            _record_sample(approach_end, q_at_pick, "slow_close", closed, joint_angle, touched)
-        app.update()
-    _log_debug("after_slow_close", approach_end, q_at_pick, "slow_close", closed)
-    print(f"[LEFT-ARM-PICK] Slow-close done: final closed={closed:.3f}; "
-          f"force_stop={'step ' + str(force_stop_step) if force_stop_step else 'none'}", flush=True)
-
-    # Brief hold after closing before lift
-    for _ in range(10):
-        app.update()
-
-    # ── Phase 3: lift + carry (gripper fully closed = 1.0) ──────────────────────
-    print(f"[LEFT-ARM-PICK] Starting lift — chest target={vec(info['targets']['corrected_chest_pad'])}", flush=True)
-    for i in range(approach_end + 1, len(arm_path)):
-        q = arm_path[i]
-        set_robot_links(link_ops, info["chains"], q)
-        if i < lift_start:
+        phase = "move_to_pregrasp"
+        closed = 0.0
+        if i >= info["phase_bounds"]["move_to_pregrasp"]:
+            phase = "approach_and_close"
+            span = max(1, info["phase_bounds"]["approach_and_close"] - info["phase_bounds"]["move_to_pregrasp"])
+            closed = smoothstep((i - info["phase_bounds"]["move_to_pregrasp"]) / span)
+        if i >= info["phase_bounds"]["approach_and_close"]:
             phase = "lift"
-        else:
+            closed = 1.0
+        if i >= info["phase_bounds"]["lift"]:
             phase = "carry_to_chest"
-        joint_angle, touched = set_gripper(gripper_ops, 1.0)
-        if i in (approach_end + 1, lift_start, len(arm_path) - 1):
-            _log_debug(phase, i, q, phase, 1.0)
-        if i % 5 == 0 or i == len(arm_path) - 1:
-            _record_sample(i, q, phase, 1.0, joint_angle, touched)
+            closed = 1.0
+        joint_angle, touched = set_gripper(gripper_ops, closed)
+        pad_T = pad_world(info, q)
+        if not gripper_closed_logged and i >= info["phase_bounds"]["approach_and_close"] + 8:
+            gripper_closed_logged = True
+            print(
+                f"[LEFT-ARM-PICK] Gripper closed — kinematic pad contact active (no FixedJoint); "
+                f"chest target={vec(info['targets']['corrected_chest_pad'])}",
+                flush=True,
+            )
         app.update()
+
+        if i % 5 == 0 or i == len(path) - 1:
+            tray_bbox = bbox_payload(stage, TRAY_PATH)
+            row = {
+                "time_sec": round(i * dt, 4),
+                "sample_index": int(i),
+                "phase": phase,
+                "joint_position_rad": np.round(q, 6).tolist(),
+                "joint_position_deg": np.round(np.degrees(q), 3).tolist(),
+                "pad_midpoint_world_xyz": vec(pad_T[:3, 3]),
+                "gripper_closed_fraction": round(float(closed), 6),
+                "gripper_joint_angle_deg": round(float(np.degrees(joint_angle)), 6),
+                "gripper_visual_links_touched": int(touched),
+                "tray_bbox": tray_bbox,
+                "tray_bbox_center_xyz": vec(bbox_center(tray_bbox)),
+                "chest_tray_target_world_xyz": vec(chest_target),
+                "grasp_method": "kinematic_pad_contact",
+            }
+            samples.append(row)
+            with open(log_path, "a", encoding="utf-8") as f:
+                f.write(json.dumps(row, ensure_ascii=False) + "\n")
+        i += 1
 
     final_bbox = bbox_payload(stage, TRAY_PATH)
     final_center = bbox_center(final_bbox)
@@ -686,13 +611,10 @@ def main():
         "scene": args.scene,
         "method": {
             "visible_motion": "left arm Link_1..Link_6 FK plus real gripper linkage open/close",
-            "physics_grasp": "left_pad/right_pad kinematic rigid bodies with box colliders"
+            "physics_grasp": "Path A: left_pad/right_pad kinematic rigid bodies with box colliders"
                              " physically contact tray ear — no FixedJoint lock",
             "jaw_orientation": "vertical (EG2 X ≈ world -Z); approach from world +Y",
             "cache": "enabled" if use_cache else "disabled (replanned each run)",
-            "close_steps": args.close_steps,
-            "force_threshold_m": args.force_threshold_m,
-            "force_stop_step": force_stop_step,
         },
         "tray_path": TRAY_PATH,
         "ear_frame": EAR_FRAME,
@@ -722,88 +644,12 @@ def main():
         "status": "pass" if lift_min > 0.02 and chest_error < 0.03 else "fail",
         "samples": samples,
         "log_path": str(log_path),
-        "debug_log_dir": str(debug_log_dir),
     }
     atomic_write_json(Path(args.report), report)
     print(json.dumps(report["final"], ensure_ascii=False, indent=2), flush=True)
     print(f"[LEFT-ARM-PICK] status={report['status']} report={args.report}", flush=True)
-    print(f"[LEFT-ARM-PICK] Debug waypoints → {debug_log_path}", flush=True)
 
-    if args.loop:
-        loop_count = 0
-        while app.is_running():
-            loop_count += 1
-            print(f"[LEFT-ARM-PICK] Loop {loop_count}: resetting in 3 s…", flush=True)
-            for _ in range(int(3 * args.fps)):
-                app.update()
-            # Reset arm FK and gripper to zero pose
-            set_robot_links(link_ops, info["chains"], np.zeros(6))
-            set_gripper(gripper_ops, 0.0)
-            # Stop and restart timeline so PhysX resets rigid bodies to authored positions
-            timeline.stop()
-            for _ in range(30):
-                app.update()
-            timeline.set_current_time(0.0)
-            timeline.play()
-            for _ in range(int(args.settle_sec * args.fps)):
-                app.update()
-            # Re-read settled tray/ear positions (may differ slightly each loop)
-            settled_bbox = bbox_payload(stage, TRAY_PATH)
-            settled_center = bbox_center(settled_bbox)
-            ear_center = xform_world_xyz(stage, EAR_FRAME)
-            if abs(float(ear_center[2] - settled_center[2])) > 0.20:
-                ear_center[2] = settled_center[2]
-            samples = []
-            if log_path.exists():
-                log_path.unlink()
-            tray_pos_before_close = xform_world_xyz(stage, TRAY_PATH).copy()
-            closed = 0.0
-            force_stop_step = None
-            # Phase 1 (approach, gripper open)
-            for i in range(approach_end + 1):
-                q = arm_path[i]
-                set_robot_links(link_ops, info["chains"], q)
-                phase = "move_to_pregrasp" if i < info["phase_bounds"]["move_to_pregrasp"] else "approach"
-                joint_angle, touched = set_gripper(gripper_ops, 0.0)
-                if i % 5 == 0 or i == approach_end:
-                    _record_sample(i, q, phase, 0.0, joint_angle, touched)
-                app.update()
-            # Phase 2 (slow close)
-            tray_pos_before_close = xform_world_xyz(stage, TRAY_PATH).copy()
-            for step in range(close_steps + 1):
-                alpha = step / close_steps
-                if args.force_threshold_m > 0.0 and force_stop_step is None:
-                    tray_pos_now = xform_world_xyz(stage, TRAY_PATH)
-                    delta = float(np.linalg.norm(tray_pos_now - tray_pos_before_close))
-                    if delta > args.force_threshold_m:
-                        force_stop_step = step
-                        print(f"[LEFT-ARM-PICK][loop{loop_count}] Force threshold hit at step {step}: "
-                              f"tray_delta={delta:.4f}m", flush=True)
-                if force_stop_step is None:
-                    closed = min(1.0, alpha)
-                joint_angle, touched = set_gripper(gripper_ops, closed)
-                if step % 10 == 0 or step == close_steps:
-                    _record_sample(approach_end, q_at_pick, "slow_close", closed, joint_angle, touched)
-                app.update()
-            for _ in range(10):
-                app.update()
-            # Phase 3 (lift + carry)
-            for i in range(approach_end + 1, len(arm_path)):
-                q = arm_path[i]
-                set_robot_links(link_ops, info["chains"], q)
-                phase = "lift" if i < lift_start else "carry_to_chest"
-                joint_angle, touched = set_gripper(gripper_ops, 1.0)
-                if i % 5 == 0 or i == len(arm_path) - 1:
-                    _record_sample(i, q, phase, 1.0, joint_angle, touched)
-                app.update()
-            final_bbox = bbox_payload(stage, TRAY_PATH)
-            final_center = bbox_center(final_bbox)
-            lift_min = final_bbox["min"][2] - settled_bbox["min"][2]
-            chest_error = vec3_len(final_center - chest_target)
-            status = "pass" if lift_min > 0.02 and chest_error < 0.03 else "fail"
-            print(f"[LEFT-ARM-PICK][loop{loop_count}] status={status} lift={lift_min:.3f}m "
-                  f"chest_err={chest_error:.3f}m", flush=True)
-    elif args.hold_open:
+    if args.hold_open:
         while app.is_running():
             app.update()
             time.sleep(0.01)

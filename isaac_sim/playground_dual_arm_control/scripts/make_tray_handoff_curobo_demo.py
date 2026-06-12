@@ -154,10 +154,10 @@ def solve_pad_ik(
             residual,
             seed,
             bounds=(lower, upper),
-            max_nfev=1200,
-            xtol=1e-6,
-            ftol=1e-6,
-            gtol=1e-6,
+            max_nfev=1600,
+            xtol=1e-10,
+            ftol=1e-10,
+            gtol=1e-10,
         )
         T_pad = pad_world_transform(chain, base_world, link6_to_pad, result.x)
         pos_err = float(np.linalg.norm(T_pad[:3, 3] - target_world_xyz))
@@ -218,10 +218,10 @@ def solve_pad_pose_ik(
             residual,
             seed,
             bounds=(lower, upper),
-            max_nfev=1500,
-            xtol=1e-6,
-            ftol=1e-6,
-            gtol=1e-6,
+            max_nfev=2200,
+            xtol=1e-10,
+            ftol=1e-10,
+            gtol=1e-10,
         )
         T_pad = pad_world_transform(chain, base_world, link6_to_pad, result.x)
         pos_err = float(np.linalg.norm(T_pad[:3, 3] - target_world_xyz))
