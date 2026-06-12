@@ -8,26 +8,52 @@ Structured simulation codebase for the JAKA MiniCobo dual-arm + Inspire EG2-4C2 
 
 ```
 simforge/
-├── config.py              ← centralised path configuration (read this first)
-├── core/                  ← shared Python modules
-│   ├── kinematics.py      ← URDF loading, FK, joint chain helpers
-│   ├── kinematics_probe.py← backward-compat alias of kinematics.py
-│   ├── planning.py        ← cuRobo IK solver, path planning
-│   ├── gripper.py         ← EG2-4C2 xform/drive control, FK, pad geometry
-│   ├── scene_utils.py     ← USD helpers (bbox, xform ops, friction, joints)
-│   └── ik_sanity.py       ← joint-limit extraction from URDF chain
-├── demos/
-│   ├── open_scene.py      ← open scene in GUI, no motion
-│   ├── dual_arm_draw.py   ← right arm circles, left arm squares (integration test)
-│   ├── ear_grasp_lift.py  ← left arm picks up tray by ears, lifts
-│   ├── pick_to_chest.py   ← left arm pick → carry to chest handoff position
-│   └── tray_handoff.py    ← full dual-arm tray handoff sequence
-├── tools/                 ← one-shot USD setup / conversion utilities
+├── config.py                   ← centralised path config (read this first)
+│
+├── core/                       ← shared modules, imported by all demos & tools
+│   ├── kinematics.py           ← URDF loading, FK, joint chain helpers
+│   ├── kinematics_probe.py     ← backward-compat alias of kinematics.py
+│   ├── planning.py             ← cuRobo IK solver, Cartesian path planning
+│   ├── gripper.py              ← EG2-4C2 xform/drive control, pad geometry
+│   ├── scene_utils.py          ← USD helpers (bbox, xform, friction, joints)
+│   └── ik_sanity.py            ← joint-limit extraction from URDF chain
+│
+├── demos/                      ← runnable scripts (isaac-sim.sh --exec)
+│   ├── dual_arm_draw.py        ← integration test: circle + square drawing
+│   ├── ear_grasp_lift.py       ← left arm ear-grasp + vertical lift
+│   ├── pick_to_chest.py        ← left arm pick → carry to chest
+│   ├── tray_handoff.py         ← full dual-arm tray handoff
+│   ├── open_scene.py           ← open scene for inspection, no motion
+│   ├── dual_arm_planning_api.py← cuRobo planning API wrapper (v1)
+│   ├── benchmark_dual_arm_planning_api.py
+│   ├── control_left_right_with_grippers.py
+│   ├── gui_dual_arm_kinematic_demo.py
+│   ├── gui_left_arm_joint_drive_demo.py
+│   ├── gui_loop_left_right_grippers.py
+│   ├── gui_stable_motion_logger.py
+│   ├── gui_visual_safe_loop.py
+│   ├── gui_camera_direction_check.py
+│   └── capture_gemini2_rgbd_validation.py
+│
+├── tools/                      ← one-shot USD setup / conversion utilities
+│   ├── configure_collision.py  ← tray ear collision proxies
+│   ├── install_cameras.py      ← Gemini2 wrist cameras
+│   ├── materialize.py          ← apply materials to geometry
+│   ├── fix_scene.py            ← repair scene for physics use
+│   ├── setup_physics_scene.py  ← configure tray-drop test
+│   ├── setup_lab_scene.py      ← initialise lab from blank USD
+│   ├── build_curobo_task_scene.py
+│   ├── diag_timing_left_arm_pick.py
+│   ├── make_dual_arm_kinematic_demo.py
+│   ├── replace_demo_tray_with_metal_tray.py
+│   └── validate_tray_drop_physics.py
+│
 ├── scenes/
-│   ├── main.usd           ← tracked scene snapshot (see note below)
-│   └── checkpoint.sh      ← copy active playground scene → main.usd + git commit
+│   ├── main.usd                ← tracked scene snapshot
+│   └── checkpoint.sh           ← snapshot + git commit helper
+│
 └── milestones/
-    └── INDEX.md           ← index of archived milestone results
+    └── INDEX.md                ← archived milestone results (read-only)
 ```
 
 ---
