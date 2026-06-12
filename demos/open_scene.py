@@ -7,7 +7,13 @@ import argparse
 import time
 
 
-DEFAULT_SCENE = "/home/andyee/isaacsim/playground/2026061100_main.usd"
+try:
+    import sys, pathlib
+    sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+    import config as _cfg
+    DEFAULT_SCENE = _cfg.SCENE_USD
+except Exception:
+    DEFAULT_SCENE = "/home/andyee/isaacsim/playground/2026061100_main.usd"
 
 
 def parse_args():

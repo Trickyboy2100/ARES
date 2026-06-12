@@ -47,7 +47,11 @@ CHEST_FORWARD_WORLD = np.array([-1.0, 0.0, 0.0], dtype=float)   # EG2 Z = world 
 _ORIENT_WEIGHT = 0.22
 
 PLAYGROUND_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_SCENE = "/home/andyee/isaacsim/playground/2026061100_main.usd"
+try:
+    import config as _cfg
+    DEFAULT_SCENE = _cfg.SCENE_USD
+except Exception:
+    DEFAULT_SCENE = "/home/andyee/isaacsim/playground/2026061100_main.usd"
 DEFAULT_TRAJECTORY = PLAYGROUND_ROOT / "runtime/tray_handoff_curobo_trajectory.json"
 DEFAULT_REPORT = PLAYGROUND_ROOT / "reports/left_arm_tray_pick_to_chest_validation.json"
 DEFAULT_LOG = PLAYGROUND_ROOT / "logs/left_arm_tray_pick_to_chest/motion_log.jsonl"

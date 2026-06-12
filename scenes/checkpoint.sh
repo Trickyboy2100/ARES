@@ -9,7 +9,8 @@
 
 set -euo pipefail
 
-SCENE_SRC="/home/andyee/isaacsim/playground/2026061100_main.usd"
+# Use SIMFORGE_SCENE env var if set, otherwise the original playground path
+SCENE_SRC="${SIMFORGE_SCENE:-${ISAACSIM_ROOT:-$HOME/isaacsim}/playground/2026061100_main.usd}"
 SCENE_DST="$(dirname "$0")/main.usd"
 REPO_ROOT="$(git -C "$(dirname "$0")" rev-parse --show-toplevel)"
 
