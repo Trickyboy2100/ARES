@@ -31,8 +31,11 @@ if _CORE_DIR not in sys.path:
     sys.path.insert(0, _CORE_DIR)
 
 # ── Scene and robot paths ──────────────────────────────────────────────────────
-
-DEFAULT_SCENE = str(Path(__file__).resolve().parents[1] / "scenes" / "main.usd")
+try:
+    import config as _cfg
+    DEFAULT_SCENE = _cfg.SCENE_USD
+except Exception:
+    DEFAULT_SCENE = "/home/andyee/isaacsim/playground/2026061100_main.usd"
 
 LEFT_ROOT  = "/World/robot/jaka_minicobo_left"
 RIGHT_ROOT = "/World/robot/jaka_minicobo_right"
@@ -65,11 +68,24 @@ UP_WORLD      = np.array([1.0,  0.0, 0.0], dtype=float)
 FORWARD_WORLD = np.array([0.0, -1.0, 0.0], dtype=float)
 ORIENT_WEIGHT = 0.20
 
-# ── Draw-ready seed joint configs ─────────────────────────────────────────────
-# Left arm: from ear-grasp demo seed bank (EE near [0.07, 0.39, 1.0])
-LEFT_SEED  = np.array([1.0,  0.5,  0.4, -1.1, -0.2, -0.4], dtype=float)
-# Right arm: mirrored configuration (joint1, joint5, joint6 negated)
-RIGHT_SEED = np.array([-1.0, 0.5,  0.4, -1.1,  0.2,  0.4], dtype=float)
+# ── IK seeds (multiple per arm for better coverage) ──────────────────────────
+# Same bank as ear-grasp demo — starting points only, NOT target configs
+LEFT_SEEDS = [
+    np.array([1.0,  0.5,  0.4, -1.1, -0.2, -0.4], dtype=float),
+    np.array([1.0,  0.1,  1.0, -1.5, -0.3, -0.4], dtype=float),
+    np.array([1.0,  0.2,  0.8, -1.4, -0.2, -0.5], dtype=float),
+    np.array([1.0,  0.5,  0.6, -1.3, -0.3, -0.6], dtype=float),
+]
+RIGHT_SEEDS = [
+    np.array([-1.0,  0.5,  0.4, -1.1,  0.2,  0.4], dtype=float),
+    np.array([-1.0,  0.1,  1.0, -1.5,  0.3,  0.4], dtype=float),
+    np.array([-1.0,  0.2,  0.8, -1.4,  0.2,  0.5], dtype=float),
+    np.array([-1.0,  0.5,  0.6, -1.3,  0.3,  0.6], dtype=float),
+]
+
+# Drawing target height — shapes are centred on the q=0 pad world positions,
+# lifted to at least DRAW_MIN_Z so they stay above the table surface.
+DRAW_MIN_Z = 1.05   # m — minimum centre height
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -116,17 +132,10 @@ def _setup_gripper_ops(stage, gripper_root: str, suffix: str) -> dict:
     return ops
 
 
-def _pad_xyz(base_world, link6_chain, link6_to_pad, q: np.ndarray) -> np.ndarray:
-    from kinematics import ARM_JOINTS, fk
-    q_map = dict(zip(ARM_JOINTS, q.tolist()))
-    return (base_world @ fk(link6_chain, q_map) @ link6_to_pad)[:3, 3]
-
-
 def _solve_ik(link6_chain, lower, upper, base_world, link6_to_pad,
-              target_xyz: np.ndarray, seed: np.ndarray, extra_seeds: list = None):
-    """Solve IK for target_xyz; return (q, pos_err_m). Falls back to seed on failure."""
+              target_xyz: np.ndarray, seeds: list):
+    """Solve IK for target_xyz; return (q, pos_err_m). Falls back to seeds[0] on failure."""
     from planning import solve_pad_pose_ik
-    seeds = [seed] + (extra_seeds or [])
     try:
         q_sol, pos_err, _up_err, _fwd_err, _ok, _msg = solve_pad_pose_ik(
             link6_chain, lower, upper, base_world, link6_to_pad,
@@ -135,27 +144,29 @@ def _solve_ik(link6_chain, lower, upper, base_world, link6_to_pad,
         return q_sol, float(pos_err)
     except Exception as e:
         print(f"[DRAW] IK warning: {e}", flush=True)
-        return seed.copy(), 999.0
+        return seeds[0].copy(), 999.0
 
 
 # ── Path pre-computation ──────────────────────────────────────────────────────
 
 def _compute_circle_path(link6_chain, lower, upper, base_world, link6_to_pad,
-                         center: np.ndarray, seed: np.ndarray) -> list:
+                         center: np.ndarray, init_seeds: list) -> list:
     """Compute CIRCLE_N joint configs tracing a circle around center (XZ plane)."""
     path = []
-    q_curr = seed.copy()
+    # Start IK from all init_seeds; once first solution found, use it as warm start
+    q_curr: np.ndarray | None = None
     thetas = np.linspace(0, 2 * math.pi, CIRCLE_N, endpoint=False)
     print(f"[DRAW] Computing circle: center={np.round(center,3)}, R={CIRCLE_RADIUS}m, N={CIRCLE_N}", flush=True)
     for k, theta in enumerate(thetas):
         target = center + CIRCLE_RADIUS * (math.cos(theta) * CIRCLE_AXIS1
                                            + math.sin(theta) * CIRCLE_AXIS2)
+        seeds = ([q_curr] + init_seeds) if q_curr is not None else init_seeds
         q_sol, err = _solve_ik(link6_chain, lower, upper, base_world, link6_to_pad,
-                                target, q_curr)
+                                target, seeds)
         if err < 0.05:
             q_curr = q_sol
         else:
-            q_sol = q_curr
+            q_sol = (q_curr if q_curr is not None else init_seeds[0]).copy()
             print(f"[DRAW] Circle IK failed at θ={math.degrees(theta):.0f}°, err={err:.4f} — reusing prev", flush=True)
         path.append(q_sol.copy())
         if (k + 1) % 8 == 0:
@@ -164,7 +175,7 @@ def _compute_circle_path(link6_chain, lower, upper, base_world, link6_to_pad,
 
 
 def _compute_square_path(link6_chain, lower, upper, base_world, link6_to_pad,
-                          center: np.ndarray, seed: np.ndarray) -> list:
+                          center: np.ndarray, init_seeds: list) -> list:
     """Compute joint-space path tracing a square around center (XZ plane)."""
     # 4 corners in order: TR → TL → BL → BR → back to TR
     corners_offsets = [
@@ -178,14 +189,15 @@ def _compute_square_path(link6_chain, lower, upper, base_world, link6_to_pad,
 
     # Solve IK for each corner
     corner_q = []
-    q_curr = seed.copy()
+    q_curr: np.ndarray | None = None
     for i, (offset, label) in enumerate(zip(corners_offsets, corner_labels)):
         target = center + offset
+        seeds = ([q_curr] + init_seeds) if q_curr is not None else init_seeds
         q_sol, err = _solve_ik(link6_chain, lower, upper, base_world, link6_to_pad,
-                                target, q_curr)
+                                target, seeds)
         if err >= 0.05:
             print(f"[DRAW] Square corner {label} IK err={err:.4f} — reusing prev", flush=True)
-            q_sol = q_curr
+            q_sol = (q_curr if q_curr is not None else init_seeds[0]).copy()
         else:
             q_curr = q_sol
         corner_q.append(q_sol.copy())
@@ -212,11 +224,21 @@ def main():
     app = omni.kit.app.get_app()
     ctx = omni.usd.get_context()
 
-    if not ctx.get_stage():
-        print(f"[DRAW] Opening scene: {DEFAULT_SCENE}", flush=True)
-        ctx.open_stage(DEFAULT_SCENE)
-        for _ in range(20):
-            app.update()
+    # Always open the scene — in --exec mode there is already an empty stage
+    # so `ctx.get_stage()` is truthy even before the real scene is loaded.
+    print(f"[DRAW] Opening scene: {DEFAULT_SCENE}", flush=True)
+    ctx.open_stage(DEFAULT_SCENE)
+
+    # Wait until the robot prim is present (up to ~300 frames ≈ 5 s)
+    for i in range(300):
+        app.update()
+        s = ctx.get_stage()
+        if s and s.GetPrimAtPath("/World/robot/jaka_minicobo_left").IsValid():
+            print(f"[DRAW] Scene loaded in {i+1} frames", flush=True)
+            break
+    else:
+        print("[DRAW] ERROR: scene did not load — robot prim missing!", flush=True)
+        return
 
     run(app, ctx.get_stage())
 
@@ -233,29 +255,36 @@ def run(app, stage):
     arm_joints = load_joints(Path(DEFAULT_ARM_URDF))
     chains = {n: chain_to_link(arm_joints, "Link_0", n) for n in LINK_NAMES}
     link6_chain = chains["Link_6"]
-    lower, upper = _ik_joint_limits(Path(DEFAULT_ARM_URDF))
+    lower, upper = _ik_joint_limits(link6_chain)  # takes chain, not path
 
     print("[DRAW] Reading arm world transforms…", flush=True)
     cache = UsdGeom.XformCache(Usd.TimeCode.Default())
-    left_base,  _, left_l6_to_pad  = selected_pad_midpoint(stage, cache, "left")
-    right_base, _, right_l6_to_pad = selected_pad_midpoint(stage, cache, "right")
+    left_base,  left_pad_world,  left_l6_to_pad  = selected_pad_midpoint(stage, cache, "left")
+    right_base, right_pad_world, right_l6_to_pad = selected_pad_midpoint(stage, cache, "right")
 
-    # Seed EE positions (where the shapes will be centred)
-    left_center  = _pad_xyz(left_base,  link6_chain, left_l6_to_pad,  LEFT_SEED)
-    right_center = _pad_xyz(right_base, link6_chain, right_l6_to_pad, RIGHT_SEED)
-    print(f"[DRAW] Left  arm seed EE:  {np.round(left_center, 3)}", flush=True)
-    print(f"[DRAW] Right arm seed EE:  {np.round(right_center, 3)}", flush=True)
+    # Drawing centres = actual pad positions at the scene's initial q=0,
+    # lifted to at least DRAW_MIN_Z so shapes are above the table.
+    def _centre(pad_world):
+        c = pad_world[:3, 3].copy()
+        if c[2] < DRAW_MIN_Z:
+            c[2] = DRAW_MIN_Z
+        return c
+
+    left_center  = _centre(left_pad_world)
+    right_center = _centre(right_pad_world)
+    print(f"[DRAW] Left  arm draw centre:  {np.round(left_center, 3)}", flush=True)
+    print(f"[DRAW] Right arm draw centre:  {np.round(right_center, 3)}", flush=True)
 
     # ── Pre-compute drawing paths (before Play) ────────────────────────────────
     print("[DRAW] Pre-computing paths via cuRobo IK (this takes ~10–30 s)…", flush=True)
 
     circle_path = _compute_circle_path(
         link6_chain, lower, upper, right_base, right_l6_to_pad,
-        right_center, RIGHT_SEED,
+        right_center, RIGHT_SEEDS,
     )
     square_path = _compute_square_path(
         link6_chain, lower, upper, left_base, left_l6_to_pad,
-        left_center, LEFT_SEED,
+        left_center, LEFT_SEEDS,
     )
     print(f"[DRAW] Paths ready — circle: {len(circle_path)} pts, "
           f"square: {len(square_path)} pts", flush=True)
@@ -264,9 +293,9 @@ def run(app, stage):
     left_ops  = _setup_arm_ops(stage, LEFT_ROOT,  "draw_fk")
     right_ops = _setup_arm_ops(stage, RIGHT_ROOT, "draw_fk")
 
-    # Snap arms to their seed positions (visible before Play)
-    _set_arm(left_ops,  chains, LEFT_SEED)
-    _set_arm(right_ops, chains, RIGHT_SEED)
+    # Snap arms to first seed position before Play
+    _set_arm(left_ops,  chains, LEFT_SEEDS[0])
+    _set_arm(right_ops, chains, RIGHT_SEEDS[0])
 
     # ── Setup gripper xform ops ────────────────────────────────────────────────
     left_gripper_root  = f"{LEFT_ROOT}/{GRIPPER_ROOT_SUFFIX}"

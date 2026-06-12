@@ -23,15 +23,17 @@ except ModuleNotFoundError:
     UsdGeom = None
 
 
-DEFAULT_SCENE = "/home/andyee/isaacsim/playground/2026060721_control_fixed.usd"
-DEFAULT_ARM_URDF = (
-    "/home/andyee/Developer/PG-JY/jaka_ros2/src/jaka_description/urdf/"
-    "jaka_minicobo.urdf"
-)
-DEFAULT_CUROBO_URDF = (
-    "/home/andyee/Developer/PG-JY/jinyu_ros_pkg/nodes/simulation/"
-    "jaka_minicobo_gripper.urdf"
-)
+try:
+    import sys as _sys
+    _sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    import config as _cfg
+    DEFAULT_SCENE      = _cfg.SCENE_USD
+    DEFAULT_ARM_URDF   = str(_cfg.ARM_URDF)
+    DEFAULT_CUROBO_URDF = str(_cfg.CUROBO_URDF)
+except Exception:
+    DEFAULT_SCENE       = ""
+    DEFAULT_ARM_URDF    = ""
+    DEFAULT_CUROBO_URDF = ""
 PLAYGROUND_ROOT = Path(__file__).resolve().parents[1]
 
 ARM_JOINTS = ["joint_1", "joint_2", "joint_3", "joint_4", "joint_5", "joint_6"]

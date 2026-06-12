@@ -67,7 +67,11 @@ if _CORE_DIR not in sys.path:
 # ── Constants ─────────────────────────────────────────────────────────────────
 
 PLAYGROUND_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_SCENE    = "/home/andyee/isaacsim/playground/2026061100_main.usd"
+try:
+    import config as _cfg
+    DEFAULT_SCENE = _cfg.SCENE_USD
+except Exception:
+    DEFAULT_SCENE = "/home/andyee/isaacsim/playground/2026061100_main.usd"
 DEFAULT_LOG      = PLAYGROUND_ROOT / "logs/left_arm_ear_grasp_lift/motion_log.jsonl"
 DEFAULT_REPORT   = PLAYGROUND_ROOT / "reports/left_arm_ear_grasp_lift.json"
 DEFAULT_CACHE    = PLAYGROUND_ROOT / "runtime/ear_grasp_lift_path_cache.npz"
