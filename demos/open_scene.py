@@ -1,56 +1,45 @@
 #!/usr/bin/env python3
-"""Open the task USD in Isaac Sim GUI without running any motion playback."""
+"""Open the task USD in Isaac Sim GUI without running any motion playback.
 
+Usage (--exec mode, recommended):
+  CUDALIB=~/isaacsim/exts/omni.isaac.ml_archive/pip_prebundle
+  LD_LIBRARY_PATH=$CUDALIB/nvidia/nvjitlink/lib:$LD_LIBRARY_PATH \\
+    ~/isaacsim/isaac-sim.sh --exec isaac_sim/simforge/demos/open_scene.py
+"""
 from __future__ import annotations
 
-import argparse
-import time
+import sys
+from pathlib import Path
 
-
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 try:
-    import sys, pathlib
-    sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
     import config as _cfg
     DEFAULT_SCENE = _cfg.SCENE_USD
 except Exception:
     DEFAULT_SCENE = "/home/andyee/isaacsim/playground/2026061100_main.usd"
 
 
-def parse_args():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--scene", default=DEFAULT_SCENE)
-    return parser.parse_args()
-
-
 def main():
-    args = parse_args()
-
-    from isaacsim import SimulationApp
-
-    app = SimulationApp(
-        {
-            "headless": False,
-            "width": 1440,
-            "height": 900,
-            "renderer": "RaytracedLighting",
-        }
-    )
-
+    import omni.kit.app
     import omni.usd
 
-    print(f"[STATIC-GUI] Opening scene: {args.scene}", flush=True)
-    omni.usd.get_context().open_stage(args.scene)
-    for _ in range(60):
-        app.update()
-        time.sleep(0.02)
+    app = omni.kit.app.get_app()
+    ctx = omni.usd.get_context()
 
-    print("[STATIC-GUI] GUI open. No robot motion script is running. Ctrl-C to quit.", flush=True)
-    try:
-        while app.is_running():
-            app.update()
-            time.sleep(0.01)
-    finally:
-        app.close()
+    print(f"[SCENE] Opening: {DEFAULT_SCENE}", flush=True)
+    ctx.open_stage(DEFAULT_SCENE)
+
+    for i in range(300):
+        app.update()
+        s = ctx.get_stage()
+        if s and s.GetPrimAtPath("/World").IsValid():
+            print(f"[SCENE] Loaded ({i+1} frames). GUI is open — close window to quit.", flush=True)
+            break
+
+    while app.is_running():
+        app.update()
+
+    print("[SCENE] Window closed.", flush=True)
 
 
 if __name__ == "__main__":

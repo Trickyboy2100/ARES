@@ -49,7 +49,8 @@ simforge/
 │   └── validate_tray_drop_physics.py
 │
 ├── scenes/
-│   ├── main.usd                ← tracked scene snapshot
+│   ├── 20260613_dual_jaka_eg2_tray_ear_grasp_dynamic.usd  ← main working scene
+│   ├── main.usd                ← legacy alias (same content)
 │   └── checkpoint.sh           ← snapshot + git commit helper
 │
 └── milestones/
@@ -101,38 +102,31 @@ python3 isaac_sim/simforge/config.py
 
 ## Running demos
 
-**Always launch via `isaac-sim.sh --exec`** (not `python.sh` — that triggers the Storm renderer and breaks physics).
+**Always launch via `isaac-sim.sh`** (not `python.sh` — that triggers the Storm renderer and breaks physics).
+
+Set the required library path once:
+```bash
+export CUDALIB=~/isaacsim/exts/omni.isaac.ml_archive/pip_prebundle
+export LD_LIBRARY_PATH=$CUDALIB/nvidia/nvjitlink/lib:$LD_LIBRARY_PATH
+```
 
 ```bash
-# Integration test — dual-arm drawing (circle + square)
-LD_PRELOAD=~/isaacsim/extscache/omni.isaac.lula-*/lib/libcusparse.so.12 \
-  ~/isaacsim/isaac-sim.sh --exec \
-  isaac_sim/simforge/demos/dual_arm_draw.py
+# Open scene in GUI (interactive, no script)
+~/isaacsim/isaac-sim.sh \
+  --/isaac/startup/stage_path="$(pwd)/isaac_sim/simforge/scenes/20260613_dual_jaka_eg2_tray_ear_grasp_dynamic.usd"
 
-# Left arm tray ear-grasp + lift
-LD_PRELOAD=~/isaacsim/extscache/omni.isaac.lula-*/lib/libcusparse.so.12 \
-  ~/isaacsim/isaac-sim.sh --exec \
-  isaac_sim/simforge/demos/ear_grasp_lift.py
-
-# Physics gripper force demo — dual arm, live force chart in Isaac Sim
-LD_PRELOAD=~/isaacsim/extscache/omni.isaac.lula-*/lib/libcusparse.so.12 \
-  ~/isaacsim/isaac-sim.sh --exec \
-  isaac_sim/simforge/demos/gripper_force_demo.py
+# Run a demo script (headless-style, auto-play)
+~/isaacsim/isaac-sim.sh --exec isaac_sim/simforge/demos/ear_grasp_lift.py
+~/isaacsim/isaac-sim.sh --exec isaac_sim/simforge/demos/gripper_force_demo.py
 
 # Open scene only (no motion)
-~/isaacsim/isaac-sim.sh --exec \
-  isaac_sim/simforge/demos/open_scene.py
+~/isaacsim/isaac-sim.sh --exec isaac_sim/simforge/demos/open_scene.py
 ```
 
-After the scene loads and IK pre-computation finishes, the console prints:
-```
-[DRAW] Ready — press Play to start the drawing loop.
-```
-Press **▶ Play** in the GUI to start the motion.
-
-> **LD_PRELOAD note**: The exact path to `libcusparse.so.12` may differ.  
-> Try: `find ~/isaacsim -name "libcusparse.so.12" 2>/dev/null | head -1`  
-> Or use: `LD_PRELOAD=/usr/local/cuda-12.1/targets/x86_64-linux/lib/libcusparse.so.12`
+> **Before every launch** — kill any running Isaac Sim first:
+> ```bash
+> pkill -f "isaacsim/kit/kit" 2>/dev/null; sleep 2
+> ```
 
 ---
 
