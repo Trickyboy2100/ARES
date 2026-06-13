@@ -78,6 +78,10 @@ LD_PRELOAD=$CUSPARSE ~/isaacsim/isaac-sim.sh --exec \
 LD_PRELOAD=$CUSPARSE ~/isaacsim/isaac-sim.sh --exec \
   isaac_sim/simforge/demos/ear_grasp_lift.py
 
+# 夹爪物理抓取力实时可视化（双臂 + omni.ui 力显示面板）
+LD_PRELOAD=$CUSPARSE ~/isaacsim/isaac-sim.sh --exec \
+  isaac_sim/simforge/demos/gripper_force_demo.py
+
 # 仅打开场景（不运动）
 ~/isaacsim/isaac-sim.sh --exec \
   isaac_sim/simforge/demos/open_scene.py

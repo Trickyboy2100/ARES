@@ -114,6 +114,11 @@ LD_PRELOAD=~/isaacsim/extscache/omni.isaac.lula-*/lib/libcusparse.so.12 \
   ~/isaacsim/isaac-sim.sh --exec \
   isaac_sim/simforge/demos/ear_grasp_lift.py
 
+# Physics gripper force demo — dual arm, live force chart in Isaac Sim
+LD_PRELOAD=~/isaacsim/extscache/omni.isaac.lula-*/lib/libcusparse.so.12 \
+  ~/isaacsim/isaac-sim.sh --exec \
+  isaac_sim/simforge/demos/gripper_force_demo.py
+
 # Open scene only (no motion)
 ~/isaacsim/isaac-sim.sh --exec \
   isaac_sim/simforge/demos/open_scene.py
