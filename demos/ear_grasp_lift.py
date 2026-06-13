@@ -94,7 +94,7 @@ GRIPPER_OPEN_ANGLE_RAD  = 0.1945   # → 50 mm gap
 GRIPPER_CLOSE_ANGLE_RAD = 0.0      # → 35.4 mm gap (minimum; both pads press ear)
 
 # Physics gripper drive constants
-GRIPPER_JOINT_SUFFIX  = "joints/left_gripper_joint"  # relative to gripper_root
+GRIPPER_JOINT_SUFFIX  = "joints/gripper_joint"  # relative to gripper_root
 CLOSE_PHYSICS_FRAMES  = 60   # frames to wait for physics close (~1 s at 60 fps)
 
 # Gripper IK orientation: vertical jaw, approach from +Y.

@@ -8,6 +8,7 @@
 # pick_to_chest.py              left arm pick tray → carry to chest target
 # tray_handoff.py               full dual-arm tray handoff sequence
 # open_scene.py                 open static scene for inspection
+# gripper_force_demo.py         physics gripper closing force + live omni.ui chart
 #
 # ── Migrated from v1 playground (historical reference) ───────────────────────
 # dual_arm_planning_api.py      cuRobo planning API wrapper (v1)

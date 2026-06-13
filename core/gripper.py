@@ -51,7 +51,7 @@ import numpy as np
 GRIPPER_OPEN_ANGLE_RAD  = 0.1945   # default open  → 50 mm gap
 GRIPPER_CLOSE_ANGLE_RAD = 0.0      # fully closed  → 35.4 mm gap
 
-GRIPPER_JOINT_SUFFIX = "joints/left_gripper_joint"  # relative to gripper_root
+GRIPPER_JOINT_SUFFIX = "joints/gripper_joint"  # base USD; left/right variant USDs rename it
 CLOSE_PHYSICS_FRAMES = 60   # frames to wait for physics close (~1 s at 60 fps)
 
 # Kinematic chain for each finger link: list of (translation, rotation_axis) joints.
@@ -172,12 +172,7 @@ def setup_gripper_xform_ops(stage, gripper_root: str, op_suffix: str = "gripper_
 # ── Physics drive control ─────────────────────────────────────────────────────
 
 def clear_gripper_xform_overrides(stage, gripper_root: str) -> int:
-    """Remove locally-authored xform overrides on all finger link prims.
-
-    After clearing, PhysX writes joint outputs directly to the prims,
-    enabling force-limited closing via the master joint drive (maxForce=10 N·m).
-    Returns the number of prims cleared.
-    """
+    """Remove session-layer xform overrides so PhysX can write joint outputs."""
     from pxr import UsdGeom
     cleared = 0
     for link_name in GRIPPER_LINK_JOINT_CHAINS:
@@ -187,12 +182,38 @@ def clear_gripper_xform_overrides(stage, gripper_root: str) -> int:
         order_attr = prim.GetAttribute(UsdGeom.Tokens.xformOpOrder)
         if order_attr and order_attr.IsAuthored():
             order_attr.Clear()
-        for suffix in ("gripper_fk", "ear_grasp_gripper_fk", "tray_demo_gripper_fk"):
+        for suffix in ("gripper_fk", "ear_grasp_gripper_fk", "tray_demo_gripper_fk",
+                       "force_demo_gripper_fk"):
             prop_name = f"xformOp:transform:{suffix}"
             if prim.HasAttribute(prop_name) and prim.GetAttribute(prop_name).IsAuthored():
                 prim.RemoveProperty(prop_name)
         cleared += 1
     return cleared
+
+
+def activate_gripper_joints(stage, gripper_root: str) -> int:
+    """Set active=True on all EG2 joint prims (scene USD defaults them to False for xform-FK).
+
+    Must be called before timeline.play().
+    """
+    joint_names = [
+        "root_joint",
+        "joints/gripper_joint",
+        "joints/left_pad_joint",
+        "joints/left_inner_joint",
+        "joints/right_inner_joint",
+        "joints/right_outer_joint",
+        "joints/right_pad_joint",
+    ]
+    activated = 0
+    for name in joint_names:
+        prim = stage.GetPrimAtPath(f"{gripper_root}/{name}")
+        if not prim or not prim.IsValid():
+            print(f"[GRIPPER-ACT] WARNING: {name} not found at {gripper_root}", flush=True)
+            continue
+        prim.SetActive(True)
+        activated += 1
+    return activated
 
 
 def set_gripper_drive_deg(stage, gripper_root: str, target_deg: float) -> bool:
