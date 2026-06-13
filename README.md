@@ -19,8 +19,16 @@ simforge/
 │   └── ik_sanity.py            ← joint-limit extraction from URDF chain
 │
 ├── demos/                      ← runnable scripts (isaac-sim.sh --exec)
+│   ├── tray_grasp_cycle/       ← ★ MAIN DEMO: ear-grasp loop + dual-arm GUI
+│   │   ├── demo.py             ← full pick-lift-lower-release-repeat cycle
+│   │   ├── launch.sh           ← one-command launcher (auto-kills old instance)
+│   │   ├── record.sh           ← launcher + full log capture + auto report
+│   │   └── README.md           ← contact model, GUI, design constraints
+│   ├── gripper_force_demo/     ← sphere grasp force visualisation (design template)
+│   │   ├── demo.py
+│   │   └── launch.sh
 │   ├── dual_arm_draw.py        ← integration test: circle + square drawing
-│   ├── ear_grasp_lift.py       ← left arm ear-grasp + vertical lift
+│   ├── ear_grasp_lift.py       ← single ear-grasp + lift (legacy reference)
 │   ├── pick_to_chest.py        ← left arm pick → carry to chest
 │   ├── tray_handoff.py         ← full dual-arm tray handoff
 │   ├── open_scene.py           ← open scene for inspection, no motion
@@ -49,9 +57,8 @@ simforge/
 │   └── validate_tray_drop_physics.py
 │
 ├── scenes/
-│   ├── 20260613_dual_jaka_eg2_tray_ear_grasp_dynamic.usd  ← main working scene
-│   ├── main.usd                ← legacy alias (same content)
-│   └── checkpoint.sh           ← snapshot + git commit helper
+│   ├── main.usd                ← tracked snapshot of 2026061100_main.usd
+│   └── checkpoint.sh           ← copy playground scene → scenes/main.usd + commit
 │
 └── milestones/
     └── INDEX.md                ← archived milestone results (read-only)
@@ -102,22 +109,23 @@ python3 isaac_sim/simforge/config.py
 
 ## Running demos
 
-**Always launch via `isaac-sim.sh`** (not `python.sh` — that triggers the Storm renderer and breaks physics).
+**Always launch via `isaac-sim.sh`** (not `python.sh` — that triggers the Storm renderer and breaks physics).  
+**`LD_PRELOAD` causes ld.so assertion failure** — use `LD_LIBRARY_PATH` only:
 
-Set the required library path once:
 ```bash
 export CUDALIB=~/isaacsim/exts/omni.isaac.ml_archive/pip_prebundle
 export LD_LIBRARY_PATH=$CUDALIB/nvidia/nvjitlink/lib:$LD_LIBRARY_PATH
 ```
 
 ```bash
-# Open scene in GUI (interactive, no script)
-~/isaacsim/isaac-sim.sh \
-  --/isaac/startup/stage_path="$(pwd)/isaac_sim/simforge/scenes/20260613_dual_jaka_eg2_tray_ear_grasp_dynamic.usd"
+# ★ Tray ear-grasp cycle — main demo (auto-kills old Isaac Sim, loops forever)
+bash isaac_sim/simforge/demos/tray_grasp_cycle/launch.sh
 
-# Run a demo script (headless-style, auto-play)
-~/isaacsim/isaac-sim.sh --exec isaac_sim/simforge/demos/ear_grasp_lift.py
-~/isaacsim/isaac-sim.sh --exec isaac_sim/simforge/demos/gripper_force_demo.py
+# ★ Same, with full log capture + auto-generated summary report
+bash isaac_sim/simforge/demos/tray_grasp_cycle/record.sh
+
+# Gripper force demo (sphere, omni.ui force panel, design template)
+bash isaac_sim/simforge/demos/gripper_force_demo/launch.sh
 
 # Open scene only (no motion)
 ~/isaacsim/isaac-sim.sh --exec isaac_sim/simforge/demos/open_scene.py
@@ -147,10 +155,13 @@ cd isaac_sim/simforge/scenes
 
 ## Key design constraints
 
-1. **No fake grasps** — `FixedJoint` is only created after `force_stop_step is not None` (physical contact confirmed).
-2. **Gripper orientation** — EG2 X-axis = world -Z direction; jaw closes in Z.
-3. **Milestones are read-only** — `milestones/INDEX.md` lists all archived runs.
-4. **One Isaac Sim window at a time** — kill any existing instance before launching.
+1. **Pure xform FK — no PhysX pads** — `tray_grasp_cycle` uses analytical Y-axis spring contact model; no PhysX collision boxes, no FixedJoint, no friction material.
+2. **Both arms FK every frame** — right arm must be held at q=0 via xform FK every frame or physics will drive it chaotically.
+3. **UI before `timeline.play()`** — omni.ui window must be created before physics starts or the first frame hangs.
+4. **Gripper orientation** — EG2 X-axis = world -Z (jaw closes vertically); approach from +Y.
+5. **Milestones are read-only** — `milestones/INDEX.md` lists all archived runs.
+6. **One Isaac Sim window at a time** — kill any existing instance before launching.
+7. **`LD_PRELOAD` crashes** — use `LD_LIBRARY_PATH` for nvjitlink only; never use `LD_PRELOAD`.
 
 ---
 
