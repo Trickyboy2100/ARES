@@ -23,11 +23,18 @@ def main():
     import omni.kit.app
     import omni.usd
 
+    # Accept an optional positional scene path passed after --exec <script>
+    scene = DEFAULT_SCENE
+    for arg in sys.argv[1:]:
+        if arg.endswith(".usd") or arg.endswith(".usda"):
+            scene = arg
+            break
+
     app = omni.kit.app.get_app()
     ctx = omni.usd.get_context()
 
-    print(f"[SCENE] Opening: {DEFAULT_SCENE}", flush=True)
-    ctx.open_stage(DEFAULT_SCENE)
+    print(f"[SCENE] Opening: {scene}", flush=True)
+    ctx.open_stage(scene)
 
     for i in range(300):
         app.update()
