@@ -34,6 +34,7 @@ ISAACSIM_SH = ISAACSIM_ROOT / "isaac-sim.sh"
 # SIMFORGE_SCENE is set.  Otherwise fall back to the original playground scene.
 _DEFAULT_SCENE_CANDIDATES = [
     os.environ.get("SIMFORGE_SCENE", ""),
+    str(_SIMFORGE / "demos" / "gripper_force_demo" / "scene.usd"),
     str(ISAACSIM_ROOT / "playground" / "2026061100_main.usd"),
 ]
 SCENE_USD = next(
