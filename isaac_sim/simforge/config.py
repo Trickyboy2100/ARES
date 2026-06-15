@@ -34,7 +34,7 @@ ISAACSIM_SH = ISAACSIM_ROOT / "isaac-sim.sh"
 # SIMFORGE_SCENE is set.  Otherwise fall back to the original playground scene.
 _DEFAULT_SCENE_CANDIDATES = [
     os.environ.get("SIMFORGE_SCENE", ""),
-    str(_SIMFORGE / "demos" / "gripper_force_demo" / "scene.usd"),
+    str(_SIMFORGE / "scenes" / "main.usd"),
     str(ISAACSIM_ROOT / "playground" / "2026061100_main.usd"),
 ]
 SCENE_USD = next(
@@ -51,7 +51,10 @@ _URDF_DIR_DEFAULT = str(
 URDF_DIR = Path(os.environ.get("SIMFORGE_URDF_DIR", _URDF_DIR_DEFAULT))
 
 ARM_URDF     = URDF_DIR / "jaka_minicobo.urdf"
-CUROBO_URDF  = URDF_DIR / "jaka_minicobo_gripper.urdf"
+_CUROBO_URDF_CANDIDATE = URDF_DIR / "jaka_minicobo_gripper.urdf"
+# Fall back to the sim URDF in jinyu_ros_pkg if jaka_ros2 tree is absent
+_CUROBO_URDF_SIM = _REPO_ROOT / "jinyu_ros_pkg" / "nodes" / "simulation" / "jaka_minicobo_gripper.urdf"
+CUROBO_URDF  = _CUROBO_URDF_CANDIDATE if _CUROBO_URDF_CANDIDATE.exists() else _CUROBO_URDF_SIM
 
 # ── cuRobo config ─────────────────────────────────────────────────────────────
 _CUROBO_CFG_DEFAULT = str(
