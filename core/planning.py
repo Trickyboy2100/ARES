@@ -198,23 +198,44 @@ def solve_pad_pose_ik(
     forward_weight: float = 0.07,
     reference_q: np.ndarray | None = None,
     continuity_weight: float = 0.0,
+    target_jaw_world: np.ndarray | None = None,
+    jaw_weight: float = 0.0,
 ) -> Tuple[np.ndarray, float, float, float, bool, str]:
+    """IK for pad pose.
+
+    pad frame axes (see gripper.py):
+      col 0 (X) = jaw direction  (which way the two fingers open/close)
+      col 1 (Y) = lateral axis
+      col 2 (Z) = approach / forward direction
+
+    target_jaw_world: if given, constrains pad X-axis (jaw direction).
+    jaw_weight:       weight for the jaw constraint (when > 0).
+    axis_weight:      weight for pad Y-axis ("up") constraint.
+    forward_weight:   weight for pad Z-axis (approach) constraint.
+    Setting jaw_weight > 0 with axis_weight=0, forward_weight=0 gives
+    vertical-jaw + free-yaw behaviour.
+    """
     target_up = np.asarray(target_up_world, dtype=float)
     target_up = target_up / max(1e-12, float(np.linalg.norm(target_up)))
     target_forward = np.asarray(target_forward_world, dtype=float)
     target_forward = target_forward / max(1e-12, float(np.linalg.norm(target_forward)))
+    target_jaw = (
+        np.asarray(target_jaw_world, dtype=float) / max(1e-12, float(np.linalg.norm(target_jaw_world)))
+        if target_jaw_world is not None else None
+    )
 
     def residual(q: np.ndarray) -> np.ndarray:
         T_pad = pad_world_transform(chain, base_world, link6_to_pad, q)
-        up = T_pad[:3, 1]
-        up = up / max(1e-12, float(np.linalg.norm(up)))
-        forward = T_pad[:3, 2]
-        forward = forward / max(1e-12, float(np.linalg.norm(forward)))
-        parts = [
-            T_pad[:3, 3] - target_world_xyz,
-            axis_weight * (up - target_up),
-            forward_weight * (forward - target_forward),
-        ]
+        parts = [T_pad[:3, 3] - target_world_xyz]
+        if axis_weight > 0.0:
+            up = T_pad[:3, 1] / max(1e-12, float(np.linalg.norm(T_pad[:3, 1])))
+            parts.append(axis_weight * (up - target_up))
+        if forward_weight > 0.0:
+            fwd = T_pad[:3, 2] / max(1e-12, float(np.linalg.norm(T_pad[:3, 2])))
+            parts.append(forward_weight * (fwd - target_forward))
+        if jaw_weight > 0.0 and target_jaw is not None:
+            jaw = T_pad[:3, 0] / max(1e-12, float(np.linalg.norm(T_pad[:3, 0])))
+            parts.append(jaw_weight * (jaw - target_jaw))
         if reference_q is not None and continuity_weight > 0.0:
             parts.append(continuity_weight * (q - reference_q))
         return np.concatenate(parts)
@@ -234,6 +255,10 @@ def solve_pad_pose_ik(
         pos_err = float(np.linalg.norm(T_pad[:3, 3] - target_world_xyz))
         up_err = axis_angle_error_deg(T_pad[:3, 1], target_up)
         forward_err = axis_angle_error_deg(T_pad[:3, 2], target_forward)
+        jaw_err = (
+            axis_angle_error_deg(T_pad[:3, 0], target_jaw)
+            if target_jaw is not None else 0.0
+        )
         continuity_score = (
             float(np.linalg.norm(result.x - reference_q)) if reference_q is not None else 0.0
         )
@@ -241,6 +266,7 @@ def solve_pad_pose_ik(
             pos_err
             + 0.001 * up_err
             + 0.001 * forward_err
+            + 0.001 * jaw_err
             + 0.02 * continuity_score
             + 1e-4 * float(np.linalg.norm(result.x))
         )
@@ -251,11 +277,13 @@ def solve_pad_pose_ik(
                 pos_err,
                 up_err,
                 forward_err,
+                jaw_err,
                 bool(result.success),
                 result.message,
             )
     assert best is not None
-    return best[1], best[2], best[3], best[4], best[5], best[6]
+    # Returns: q, pos_err, up_err, forward_err, jaw_err, ok, msg
+    return best[1], best[2], best[3], best[4], best[5], best[6], best[7]
 
 
 def curobo_tool_pose(curobo_chain, q_arm: np.ndarray) -> Tuple[np.ndarray, List[float]]:
@@ -451,7 +479,7 @@ def constrained_pose_path(
     report = []
     prev = np.array(q0, dtype=float)
     for idx, xyz in enumerate(interpolate_xyz(start_world_xyz, end_world_xyz, count)[1:], start=1):
-        q, pos_err, up_err, forward_err, success, message = solve_pad_pose_ik(
+        q, pos_err, up_err, forward_err, _jaw_err, success, message = solve_pad_pose_ik(
             chain,
             lower,
             upper,
@@ -510,7 +538,7 @@ def constrained_pose_ramp_path(
         alpha = smoothstep(idx / max(1, count - 1))
         target_forward = interpolate_axis(start_forward_world, end_forward_world, alpha)
         target_up      = interpolate_axis(_start_up, _end_up, alpha)
-        q, pos_err, up_err, forward_err, success, message = solve_pad_pose_ik(
+        q, pos_err, up_err, forward_err, _jaw_err, success, message = solve_pad_pose_ik(
             chain,
             lower,
             upper,
@@ -887,7 +915,7 @@ def main() -> int:
     tray_final_forward_pose[:3, 3] = tray_forward_ready_world
     T_right_forward_ready_pad_goal = tray_final_forward_pose @ np.linalg.inv(T_right_pad_to_tray)
     pad_targets["right_forward_ready"] = T_right_forward_ready_pad_goal[:3, 3]
-    q, err, up_err, forward_err, success, message = solve_pad_pose_ik(
+    q, err, up_err, forward_err, _jaw_err, success, message = solve_pad_pose_ik(
         arm_chain,
         lower,
         upper,
@@ -938,7 +966,7 @@ def main() -> int:
     tray_forward_extend_pose[:3, 3] = tray_forward_extend_world
     T_right_forward_extend_pad_goal = tray_forward_extend_pose @ np.linalg.inv(T_right_pad_to_tray)
     pad_targets["right_forward_extend"] = T_right_forward_extend_pad_goal[:3, 3]
-    q, err, up_err, forward_err, success, message = solve_pad_pose_ik(
+    q, err, up_err, forward_err, _jaw_err, success, message = solve_pad_pose_ik(
         arm_chain,
         lower,
         upper,

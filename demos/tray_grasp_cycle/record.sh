@@ -60,18 +60,17 @@ END_TS=$(date +%s)
 ELAPSED=$((END_TS - START_TS))
 
 # ── parse log ──────────────────────────────────────────────────────────────
-CYCLES_DONE=$(grep -c "→ PAUSE" "$LOG_FILE" 2>/dev/null || echo 0)
+CYCLES_DONE=$(grep -c "\[TGC\] → PAUSE" "$LOG_FILE" 2>/dev/null || echo 0)
 FORCE_STOPS=$(grep -c "FORCE STOP" "$LOG_FILE" 2>/dev/null || echo 0)
-MAX_LIFT=$(grep "LIFT\|HOLD\|LOWER" "$LOG_FILE" | grep -oP "lift=\K[0-9.]+" | sort -n | tail -1)
-MAX_FORCE=$(grep -oP "F=\K[0-9.]+" "$LOG_FILE" | sort -n | tail -1)
-GRASP_POS=$(grep "tray_grasp_point world pos" "$LOG_FILE" | head -1 | grep -oP "\[.*\]" || echo "unknown")
-IK_PRE_ERR=$(grep "IK pre" "$LOG_FILE" | head -1 | grep -oP "pos=\K[0-9.]+mm" || echo "?")
-STAGE_READY=$(grep "Stage ready" "$LOG_FILE" | head -1 | grep -oP "\(\K[0-9]+ frames" || echo "?")
-SETTLE_T=$(grep "settle 100" "$LOG_FILE" | head -1 | awk '{print $1}' || echo "?")
+HANDOFFS=$(grep -c "L FixedJoint removed → tray held by R" "$LOG_FILE" 2>/dev/null || echo 0)
+MAX_FORCE=$(grep -oP "L FORCE STOP F=\K[0-9.]+" "$LOG_FILE" | sort -n | tail -1)
+GRASP_POS=$(grep "Tray settled:" "$LOG_FILE" | head -1 | grep -oP "\[\K[^\]]*" || echo "unknown")
+IK_PRE_ERR=$(grep "IK L_pre" "$LOG_FILE" | head -1 | grep -oP "pos_err=\K[0-9.]+mm" || echo "?")
+RESET_COUNT=$(grep -c "Reset done → tray free" "$LOG_FILE" 2>/dev/null || echo 0)
 
 # ── generate summary ───────────────────────────────────────────────────────
 cat > "$SUMMARY" << EOF
-# Tray Grasp Cycle — Run Summary
+# Tray Grasp Cycle v3 — Run Summary
 
 | Field | Value |
 |-------|-------|
@@ -79,21 +78,21 @@ cat > "$SUMMARY" << EOF
 | Label | $LABEL |
 | Elapsed | ${ELAPSED}s |
 | Cycles completed | $CYCLES_DONE |
+| Successful handoffs | ${HANDOFFS:-0} |
 | Force-stop events | $FORCE_STOPS |
-| Max lift height | ${MAX_LIFT:-?} cm |
-| Max friction force | ${MAX_FORCE:-?} N |
-| Grasp prim pos | $GRASP_POS |
-| IK pre pos_err | $IK_PRE_ERR |
-| Stage ready | $STAGE_READY |
+| Scene resets | ${RESET_COUNT:-0} |
+| Max L-arm force | ${MAX_FORCE:-?} N |
+| Tray settled pos | $GRASP_POS |
+| IK L_pre pos_err | ${IK_PRE_ERR:-?} |
 
-## Phase Transitions (cycle 1)
+## Phase Transitions (first 30)
 \`\`\`
-$(grep "→ " "$LOG_FILE" | head -20 || echo "(none)")
+$(grep "\[TGC\] → " "$LOG_FILE" | head -30 || echo "(none)")
 \`\`\`
 
 ## IK Solutions
 \`\`\`
-$(grep "IK " "$LOG_FILE" | grep -v "IK done\|IK:" | head -10 || echo "(none)")
+$(grep "\[TGC\] IK " "$LOG_FILE" | grep -v "planning\|done" | head -15 || echo "(none)")
 \`\`\`
 
 ## Force Stop Events
@@ -101,14 +100,14 @@ $(grep "IK " "$LOG_FILE" | grep -v "IK done\|IK:" | head -10 || echo "(none)")
 $(grep "FORCE STOP" "$LOG_FILE" | head -10 || echo "(none)")
 \`\`\`
 
-## Tray Structure
+## Handoff Events
 \`\`\`
-$(grep "Tray children\|Tray translate\|tray_grasp_point" "$LOG_FILE" | head -10 || echo "(none)")
+$(grep "FixedJoint removed\|Reset carrier\|Reset done\|cuRobo" "$LOG_FILE" | head -15 || echo "(none)")
 \`\`\`
 
-## Per-Cycle Peak Force (N) & Lift (cm)
+## Errors / Warnings
 \`\`\`
-$(grep "HOLD\|LIFT" "$LOG_FILE" | grep "cy=[0-9]" | awk '{print}' | head -30 || echo "(none)")
+$(grep -iE "ERROR|WARNING|warn|exception|traceback" "$LOG_FILE" | grep "\[TGC\]" | head -15 || echo "(none)")
 \`\`\`
 
 ## Log
@@ -119,7 +118,7 @@ echo ""
 echo "============================================================"
 echo "  Run complete."
 echo "  Cycles:     $CYCLES_DONE"
-echo "  Max lift:   ${MAX_LIFT:-?} cm"
+echo "  Handoffs:   ${HANDOFFS:-0}"
 echo "  Max force:  ${MAX_FORCE:-?} N"
 echo "  Summary:    $SUMMARY"
 echo "============================================================"
