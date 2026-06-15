@@ -41,11 +41,9 @@ try:
     DEFAULT_SCENE    = _cfg.SCENE_USD
     DEFAULT_ARM_URDF = str(_cfg.ARM_URDF)
 except Exception:
-    DEFAULT_SCENE    = str(Path.home() / "isaacsim/playground/2026061100_main.usd")
-    DEFAULT_ARM_URDF = str(
-        Path.home()
-        / "Developer/PG-JY/jaka_ros2/src/jaka_description/urdf/jaka_minicobo.urdf"
-    )
+    _SF = Path(__file__).resolve().parents[3]   # simforge/
+    DEFAULT_SCENE    = str(_SF / "scenes" / "main.usd")
+    DEFAULT_ARM_URDF = str(_SF / "robot" / "jaka_minicobo.urdf")
 
 from kinematics import (
     GRIPPER_ROOT_SUFFIX, ARM_JOINTS, chain_to_link, load_joints, fk, get_world_pose,
