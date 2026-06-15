@@ -4,7 +4,7 @@
 
 ## 最新 Demo：双臂完整交接循环（tray_grasp_cycle）
 
-> **新同事请先阅读 [SETUP.md](SETUP.md) — 包含从零到运行 demo 的完整步骤（英文）。**
+> **新伙伴请先阅读 [SETUP.md](SETUP.md) — 包含从零到运行 demo 的完整步骤（英文）。**
 
 > **一键启动：**
 > ```bash
