@@ -1,199 +1,335 @@
-# SimForge — Dual-Arm Robot Simulation Lab
+# SimForge — JAKA MiniCobo 双臂仿真平台
 
-Structured simulation codebase for the JAKA MiniCobo dual-arm + Inspire EG2-4C2 gripper system running in **Isaac Sim 5.1.0**.
+基于 **NVIDIA Isaac Sim 5.1.0** 的 JAKA MiniCobo 双臂机器人 + Inspire EG2-4C2 夹爪仿真框架。  
+当前最新 Demo：**tray_grasp_cycle** — 左臂从托盘耳部夹取、举升、交接右臂、放入烘箱的完整循环。
 
 ---
 
-## Directory layout
+## 硬件 / 系统要求
+
+| 项目 | 要求 |
+|------|------|
+| OS | Ubuntu 22.04 LTS |
+| GPU | NVIDIA RTX 3090 / 4090 或同级（显存 ≥ 20 GB） |
+| 驱动 | NVIDIA Driver ≥ 525.85，支持 CUDA 12.x |
+| RAM | ≥ 32 GB |
+| 磁盘 | Isaac Sim 安装约 30 GB；本 repo 约 60 MB |
+
+---
+
+## 一、驱动与 CUDA 安装
+
+```bash
+# 查看当前驱动
+nvidia-smi
+
+# 若驱动版本 < 525，安装最新驱动（以 535 为例）
+sudo apt-get update
+sudo apt-get install -y nvidia-driver-535
+sudo reboot
+
+# 安装 CUDA Toolkit 12（仅需 nvcc 工具，Isaac Sim 自带 runtime）
+sudo apt-get install -y cuda-toolkit-12-3
+```
+
+> **注意**：Isaac Sim 5.1.0 自带 CUDA runtime，不需要单独安装 cuDNN 或 TensorRT。
+
+---
+
+## 二、Isaac Sim 安装
+
+### 方法 A：Omniverse Launcher（推荐）
+
+1. 前往 [https://developer.nvidia.com/isaac/sim](https://developer.nvidia.com/isaac/sim) 下载 Omniverse Launcher
+2. 在 Launcher 中搜索 **Isaac Sim 5.1.0** 并安装
+3. 默认安装到 `~/isaacsim/`
+
+### 方法 B：命令行静默安装
+
+```bash
+# 下载 Isaac Sim package（替换为实际下载链接）
+# 解压到 ~/isaacsim/
+tar -xzf isaac-sim-5.1.0-linux-x86_64.tar.gz -C ~/
+mv isaac-sim-5.1.0 ~/isaacsim
+```
+
+验证安装：
+
+```bash
+ls ~/isaacsim/isaac-sim.sh   # 应存在
+~/isaacsim/isaac-sim.sh --help 2>&1 | head -3
+```
+
+---
+
+## 三、Python 依赖安装
+
+SimForge 使用两个 Python 环境：
+
+| 环境 | 用途 |
+|------|------|
+| Isaac Sim 内置 Python 3.11 (`~/isaacsim/kit/python/bin/python3`) | 主仿真脚本（demo.py） |
+| 系统 / Conda Python 3.13 | cuRobo 路径规划子进程 |
+
+### 3.1 安装 cuRobo（路径规划）
+
+```bash
+# 推荐使用 Miniconda
+conda create -n curobo python=3.13 -y
+conda activate curobo
+
+# 安装 cuRobo（需要 CUDA 12）
+pip install torch --index-url https://download.pytorch.org/whl/cu121
+pip install curobo
+
+# 验证
+python -c "import curobo; print('cuRobo OK')"
+```
+
+### 3.2 安装 Isaac Sim 侧依赖
+
+```bash
+# 使用 Isaac Sim 自带 Python
+~/isaacsim/kit/python/bin/python3 -m pip install scipy numpy
+```
+
+---
+
+## 四、Clone 仓库
+
+```bash
+git clone git@github.com:Trickyboy2100/ARES.git ~/simforge
+cd ~/simforge
+```
+
+克隆后目录结构：
 
 ```
 simforge/
-├── config.py                   ← centralised path config (read this first)
-│
-├── core/                       ← shared modules, imported by all demos & tools
-│   ├── kinematics.py           ← URDF loading, FK, joint chain helpers
-│   ├── kinematics_probe.py     ← backward-compat alias of kinematics.py
-│   ├── planning.py             ← cuRobo IK solver, Cartesian path planning
-│   ├── gripper.py              ← EG2-4C2 xform/drive control, pad geometry
-│   ├── scene_utils.py          ← USD helpers (bbox, xform, friction, joints)
-│   └── ik_sanity.py            ← joint-limit extraction from URDF chain
-│
-├── demos/                      ← runnable scripts (isaac-sim.sh --exec)
-│   ├── tray_grasp_cycle/       ← ★ MAIN DEMO: ear-grasp loop + dual-arm GUI
-│   │   ├── demo.py             ← full pick-lift-lower-release-repeat cycle
-│   │   ├── launch.sh           ← one-command launcher (auto-kills old instance)
-│   │   ├── record.sh           ← launcher + full log capture + auto report
-│   │   └── README.md           ← contact model, GUI, design constraints
-│   ├── gripper_force_demo/     ← sphere grasp force visualisation (design template)
-│   │   ├── demo.py
-│   │   └── launch.sh
-│   ├── dual_arm_draw.py        ← integration test: circle + square drawing
-│   ├── ear_grasp_lift.py       ← single ear-grasp + lift (legacy reference)
-│   ├── pick_to_chest.py        ← left arm pick → carry to chest
-│   ├── tray_handoff.py         ← full dual-arm tray handoff
-│   ├── open_scene.py           ← open scene for inspection, no motion
-│   ├── dual_arm_planning_api.py← cuRobo planning API wrapper (v1)
-│   ├── benchmark_dual_arm_planning_api.py
-│   ├── control_left_right_with_grippers.py
-│   ├── gui_dual_arm_kinematic_demo.py
-│   ├── gui_left_arm_joint_drive_demo.py
-│   ├── gui_loop_left_right_grippers.py
-│   ├── gui_stable_motion_logger.py
-│   ├── gui_visual_safe_loop.py
-│   ├── gui_camera_direction_check.py
-│   └── capture_gemini2_rgbd_validation.py
-│
-├── tools/                      ← one-shot USD setup / conversion utilities
-│   ├── configure_collision.py  ← tray ear collision proxies
-│   ├── install_cameras.py      ← Gemini2 wrist cameras
-│   ├── materialize.py          ← apply materials to geometry
-│   ├── fix_scene.py            ← repair scene for physics use
-│   ├── setup_physics_scene.py  ← configure tray-drop test
-│   ├── setup_lab_scene.py      ← initialise lab from blank USD
-│   ├── build_curobo_task_scene.py
-│   ├── diag_timing_left_arm_pick.py
-│   ├── make_dual_arm_kinematic_demo.py
-│   ├── replace_demo_tray_with_metal_tray.py
-│   └── validate_tray_drop_physics.py
-│
+├── config.py                   ← 路径配置（通常只需设 ISAACSIM_ROOT）
+├── robot/                      ← 机器人文件（URDF、Mesh、cuRobo 配置）
+│   ├── jaka_minicobo.urdf      ← 关节链 URDF（仿真 IK 用）
+│   ├── jaka_minicobo_gripper.urdf  ← 带夹爪 URDF（cuRobo 用）
+│   ├── jaka_minicobo_curobo.yml   ← cuRobo 碰撞 / 运动学配置
+│   ├── jaka_minicobo_meshes/  ← 手臂 STL mesh
+│   └── eg2_4c2_meshes/        ← 夹爪 STL mesh
 ├── scenes/
-│   ├── main.usd                ← tracked snapshot of 2026061100_main.usd
-│   └── checkpoint.sh           ← copy playground scene → scenes/main.usd + commit
-│
+│   └── main.usd               ← 主场景文件（双臂 + 托盘 + 烘箱）
+├── core/                       ← 共享模块
+│   ├── kinematics.py
+│   ├── planning.py             ← IK 求解器（支持 jaw+forward 双约束）
+│   ├── gripper.py              ← EG2-4C2 夹爪控制
+│   └── scene_utils.py
+├── demos/
+│   └── tray_grasp_cycle/       ← ★ 当前主 Demo
+│       ├── demo.py
+│       ├── launch.sh           ← 一键启动
+│       └── record.sh           ← 启动 + 全日志录制
 └── milestones/
-    └── INDEX.md                ← archived milestone results (read-only)
+    └── INDEX.md                ← 各版本验证指标记录
 ```
 
 ---
 
-## Prerequisites
+## 五、环境配置
 
-| Requirement | Version / notes |
-|-------------|----------------|
-| **Isaac Sim** | 5.1.0-rc.19 (tested), installed at `~/isaacsim` |
-| **CUDA** | 12.1 (for `LD_PRELOAD` workaround below) |
-| **Python packages** | `numpy`, `scipy` — available inside Isaac Sim's Python |
-| **cuRobo** | installed into Isaac Sim's Python env |
-| **JAKA minicobo URDF** | `jaka_ros2/src/jaka_description/urdf/jaka_minicobo.urdf` |
-| **cuRobo YAML** | `jinyu_ros_pkg/nodes/simulation/jaka_minicobo_curobo.yml` |
-| **Scene USD** | `2026061100_main.usd` in the Isaac Sim playground directory |
+### 5.1 设置环境变量
 
----
-
-## Setup — configure paths
-
-All external paths are set in `simforge/config.py`.  
-Override any of them with environment variables (e.g. in `~/.bashrc`):
+在 `~/.bashrc` 或 `~/.zshrc` 中添加：
 
 ```bash
-# Where Isaac Sim is installed (default: ~/isaacsim)
+# Isaac Sim 安装路径（如不在 ~/isaacsim/ 则需要修改）
 export ISAACSIM_ROOT=~/isaacsim
 
-# The main scene USD file
-export SIMFORGE_SCENE=~/isaacsim/playground/2026061100_main.usd
-
-# Directory containing jaka_minicobo.urdf and jaka_minicobo_gripper.urdf
-export SIMFORGE_URDF_DIR=~/Developer/PG-JY/jaka_ros2/src/jaka_description/urdf
-
-# cuRobo YAML config for the arm
-export SIMFORGE_CUROBO_CFG=~/Developer/PG-JY/jinyu_ros_pkg/nodes/simulation/jaka_minicobo_curobo.yml
+# cuRobo 子进程使用的 Python（Conda 环境 or 系统 Python 3.13）
+# 如果使用 Conda：
+export CUROBO_PYTHON=~/miniconda3/envs/curobo/bin/python3
+# 如果使用系统 Python：
+# export CUROBO_PYTHON=/usr/bin/python3
 ```
 
-Check everything is wired up:
+执行 `source ~/.bashrc` 生效。
 
-```bash
-python3 isaac_sim/simforge/config.py
-```
-
----
-
-## Running demos
-
-**Always launch via `isaac-sim.sh`** (not `python.sh` — that triggers the Storm renderer and breaks physics).  
-**`LD_PRELOAD` causes ld.so assertion failure** — use `LD_LIBRARY_PATH` only:
-
-```bash
-export CUDALIB=~/isaacsim/exts/omni.isaac.ml_archive/pip_prebundle
-export LD_LIBRARY_PATH=$CUDALIB/nvidia/nvjitlink/lib:$LD_LIBRARY_PATH
-```
-
-```bash
-# ★ Tray ear-grasp cycle — main demo (auto-kills old Isaac Sim, loops forever)
-bash isaac_sim/simforge/demos/tray_grasp_cycle/launch.sh
-
-# ★ Same, with full log capture + auto-generated summary report
-bash isaac_sim/simforge/demos/tray_grasp_cycle/record.sh
-
-# Gripper force demo (sphere, omni.ui force panel, design template)
-bash isaac_sim/simforge/demos/gripper_force_demo/launch.sh
-
-# Open scene only (no motion)
-~/isaacsim/isaac-sim.sh --exec isaac_sim/simforge/demos/open_scene.py
-```
-
-> **Before every launch** — kill any running Isaac Sim first:
+> **其他路径变量**（若使用默认布局则无需设置）：
 > ```bash
-> pkill -f "isaacsim/kit/kit" 2>/dev/null; sleep 2
+> export SIMFORGE_SCENE=<自定义场景路径>        # 默认用 scenes/main.usd
+> export SIMFORGE_URDF_DIR=<URDF 目录>          # 默认用 robot/
+> export SIMFORGE_CUROBO_CFG=<cuRobo yml 路径>  # 默认用 robot/jaka_minicobo_curobo.yml
 > ```
 
----
-
-## Scene USD notes
-
-`simforge/scenes/main.usd` is a tracked snapshot for reference.  
-**It has broken relative USD references** when run from the simforge directory, because the original scene uses paths relative to `~/isaacsim/playground/`.
-
-Use the original scene file for running demos (set via `SIMFORGE_SCENE`).  
-Use `scenes/checkpoint.sh` to update the snapshot after scene changes:
+### 5.2 验证配置
 
 ```bash
-cd isaac_sim/simforge/scenes
-./checkpoint.sh "feat(scene): description of change"
+cd ~/simforge
+~/isaacsim/kit/python/bin/python3 config.py
+```
+
+预期输出：
+
+```
+SimForge config — all paths OK:
+  ISAACSIM_ROOT : /home/<user>/isaacsim
+  SCENE_USD     : /home/<user>/simforge/scenes/main.usd
+  ARM_URDF      : /home/<user>/simforge/robot/jaka_minicobo.urdf
+  CUROBO_URDF   : /home/<user>/simforge/robot/jaka_minicobo_gripper.urdf
+  CUROBO_CFG    : /home/<user>/simforge/robot/jaka_minicobo_curobo.yml
 ```
 
 ---
 
-## Key design constraints
+## 六、启动 Demo（tray_grasp_cycle）
 
-1. **Pure xform FK — no PhysX pads** — `tray_grasp_cycle` uses analytical Y-axis spring contact model; no PhysX collision boxes, no FixedJoint, no friction material.
-2. **Both arms FK every frame** — right arm must be held at q=0 via xform FK every frame or physics will drive it chaotically.
-3. **UI before `timeline.play()`** — omni.ui window must be created before physics starts or the first frame hangs.
-4. **Gripper orientation** — EG2 X-axis = world -Z (jaw closes vertically); approach from +Y.
-5. **Milestones are read-only** — `milestones/INDEX.md` lists all archived runs.
-6. **One Isaac Sim window at a time** — kill any existing instance before launching.
-7. **`LD_PRELOAD` crashes** — use `LD_LIBRARY_PATH` for nvjitlink only; never use `LD_PRELOAD`.
+### 6.1 一键启动
+
+```bash
+cd ~/simforge
+bash demos/tray_grasp_cycle/launch.sh
+```
+
+`launch.sh` 会自动：
+1. Kill 任何已运行的 Isaac Sim 实例
+2. 设置必要的 `LD_LIBRARY_PATH`
+3. 调用 `isaac-sim.sh --exec demos/tray_grasp_cycle/demo.py`
+
+> **首次启动慢**：Isaac Sim 第一次运行需要编译 shader 缓存，约需 3–5 分钟。后续启动约 30–60 秒。
+
+### 6.2 启动 + 录制日志
+
+```bash
+bash demos/tray_grasp_cycle/record.sh
+```
+
+日志保存到 `logs/tray_grasp_cycle/YYYYMMDD_HHMMSS.log`，自动生成报告到 `reports/`。
+
+### 6.3 启动参数
+
+`launch.sh` 可接受额外参数传给 Isaac Sim：
+
+```bash
+# 无头模式（无 GUI，服务器上运行）
+bash demos/tray_grasp_cycle/launch.sh --no-window
+
+# 指定不同场景
+SIMFORGE_SCENE=~/my_custom_scene.usd bash demos/tray_grasp_cycle/launch.sh
+```
 
 ---
 
-## Module quick-reference
+## 七、Demo 运行说明
 
-### `core/kinematics.py`
-```python
-from kinematics import load_joints, chain_to_link, fk, ARM_JOINTS, DEFAULT_ARM_URDF, GRIPPER_ROOT_SUFFIX
-arm_joints  = load_joints(Path(DEFAULT_ARM_URDF))
-link6_chain = chain_to_link(arm_joints, "Link_0", "Link_6")
-T_world_link6 = base_world @ fk(link6_chain, {"joint_1": 0.5, ...})
+启动后 Isaac Sim GUI 会打开，右侧出现 **Tray Grasp Cycle** 监控面板（实时力/位移曲线）。
+
+### 阶段流程
+
+```
+PAUSE（初始化）
+  ↓ 自动触发
+TO_PRE_L         左臂运动到托盘前方预位（Y+125mm）
+  ↓
+APPROACH_L       左臂沿世界Y轴线性逼近托盘耳部（80步，pos=0mm，fw=0°全程）
+  ↓ 力传感器F ≥ 3N
+CLOSE_GRIP_L     建立 FixedJoint 夹持，托盘切换为 Dynamic Body
+  ↓
+LIFT_L           举升托盘（+300mm Z）
+  ↓
+CARRY_L          左臂携托盘移动到交接位
+  ↓
+HANDOFF          右臂接收，建立 FixedJoint，左臂松手
+  ↓
+CARRY_DRYER      右臂送入烘箱
+  ↓
+RESET_SCENE      托盘自由落体后在原位置闪现新托盘
+  ↓ 重复循环
 ```
 
-### `core/gripper.py`
-```python
-from gripper import gripper_link_transform, setup_gripper_xform_ops, pad_separation_m
-T_link = gripper_link_transform("left_outer_link", joint_angle_rad)
-gap_m  = pad_separation_m(0.1945)   # → 0.05 m
+### GUI 监控面板
+
+- **L Force / R Force**：左右夹爪接触力（N）
+- **Pad Y**：夹爪末端 Y 轴位置（m）
+- **Approach Chart**：逼近阶段力–位移实时曲线
+
+---
+
+## 八、停止
+
+**方法 1：关闭 Isaac Sim 窗口**（GUI 模式）
+
+**方法 2：终端强制终止**
+
+```bash
+pkill -f "isaacsim/kit/kit"
+# 若进程未退出：
+ps aux | grep "isaacsim/kit/kit" | grep -v grep | awk '{print $2}' | xargs kill -9
 ```
 
-### `core/planning.py`
-```python
-from planning import selected_pad_midpoint, solve_pad_pose_ik
-base_world, pad_world, link6_to_pad = selected_pad_midpoint(stage, cache, "left")
-q, pos_err, up_err, fwd_err, ok, msg = solve_pad_pose_ik(
-    link6_chain, lower, upper, base_world, link6_to_pad,
-    target_xyz, up_world, forward_world, seeds)
+**方法 3：Ctrl+C**（在 `record.sh` 终端中）
+
+> **重要**：启动新 Demo 前务必先终止旧进程，Isaac Sim 同时只能运行一个实例。
+
+---
+
+## 九、常见问题
+
+### 9.1 启动时报 `sem.carbonite-sharedmemory` 卡死
+
+```bash
+rm -f /dev/shm/sem.carbonite-sharedmemory
+# 然后重新启动
 ```
 
-### `core/scene_utils.py`
-```python
-from scene_utils import gf_matrix_from_column_transform, create_grasp_lock
-op.Set(gf_matrix_from_column_transform(T_4x4))   # set USD xform from numpy matrix
-joint_path = create_grasp_lock(stage, tray_path, carrier_path, joint_path)
+### 9.2 启动时 `ld.so Assertion` 崩溃
+
+原因：使用了错误的启动命令（直接调 `kit/kit` 而非 `isaac-sim.sh`）。  
+解决：务必通过 `launch.sh` 或 `isaac-sim.sh` 启动，会自动设置必要的 `LD_LIBRARY_PATH`。
+
+### 9.3 IK 求解报 workspace 错误
+
+检查托盘位置是否在机械臂工作空间内：
+- 托盘耳部 Y 坐标应在 `0.387–0.520m`（相对机器人基座）
+- 检查 `scenes/main.usd` 中 `/World/Tray` 的初始位置
+
+### 9.4 cuRobo 子进程超时
+
+```bash
+# 验证 cuRobo Python 路径
+python3 -c "import curobo; print('OK')"
+# 若 Conda 环境未激活，检查 _curobo_worker.py 顶部的 Python 路径
+head -5 demos/tray_grasp_cycle/_curobo_worker.py
 ```
+
+### 9.5 首次运行 cuRobo 很慢
+
+cuRobo 首次运行会编译 CUDA kernel（约 2–5 分钟），后续运行有缓存，约 10–30 秒。
+
+---
+
+## 十、场景快照 / Checkpoint
+
+更新 `scenes/main.usd` 以保存当前 Isaac Sim 场景状态：
+
+```bash
+cd ~/simforge
+bash scenes/checkpoint.sh "描述本次改动的消息"
+```
+
+脚本会把 `~/isaacsim/playground/2026061100_main.usd` 拷贝到 `scenes/main.usd` 并 git commit。
+
+---
+
+## 十一、代码结构说明
+
+| 文件 | 作用 |
+|------|------|
+| `config.py` | 路径解析入口，所有 demo 都 import 它 |
+| `core/kinematics.py` | URDF 解析、FK、关节链工具 |
+| `core/planning.py` | `solve_pad_pose_ik`：支持 jaw+forward 双轴约束的 IK 求解器 |
+| `core/gripper.py` | EG2-4C2 夹爪 xform 驱动、pad 分离距离计算 |
+| `core/scene_utils.py` | USD prim 操作工具（坐标变换、FixedJoint 创建等） |
+| `demos/tray_grasp_cycle/demo.py` | 主循环状态机（~1300行） |
+| `demos/tray_grasp_cycle/_curobo_worker.py` | cuRobo 子进程（Python 3.13/Warp 1.13.0） |
+
+---
+
+## 十二、里程碑记录
+
+见 `milestones/INDEX.md`。

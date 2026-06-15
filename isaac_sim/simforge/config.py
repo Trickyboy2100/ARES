@@ -1,91 +1,81 @@
 """simforge/config.py — centralised path configuration.
 
-Every external dependency (Isaac Sim install, URDF files, scene USD, cuRobo
-config) is resolved here, with an environment-variable override for each one.
-Colleagues only need to set the relevant env vars for their machine layout.
+All robot URDF files, meshes, and cuRobo configs ship with this repo under
+robot/.  Isaac Sim installation is the only external dependency.
 
-Quick setup (add to ~/.bashrc or a project .env):
+Quick setup (only ISAACSIM_ROOT is usually needed):
 
-    export ISAACSIM_ROOT=~/isaacsim          # Isaac Sim installation root
-    export SIMFORGE_SCENE=~/scenes/main.usd  # main USD scene
-    export SIMFORGE_URDF_DIR=~/robot_urdf/   # dir containing jaka_minicobo.urdf
+    export ISAACSIM_ROOT=~/isaacsim     # Isaac Sim installation root
+                                        # default: ~/isaacsim
+
+Override any individual path if your layout differs:
+
+    export SIMFORGE_SCENE=~/my_scene.usd
+    export SIMFORGE_URDF_DIR=~/robot_urdf/
     export SIMFORGE_CUROBO_CFG=~/robot/jaka_minicobo_curobo.yml
 
-All paths fall back to the original developer's layout when the env vars are
-absent, so existing scripts keep working without any changes.
+Run  python config.py  to verify all paths resolve correctly.
 """
 
 import os
 from pathlib import Path
 
-# ── Repo root (two levels up from this file: simforge/config.py) ──────────────
-_REPO_ROOT   = Path(__file__).resolve().parents[2]   # PG-JY/
-_SIMFORGE    = Path(__file__).resolve().parent        # PG-JY/isaac_sim/simforge/
+# ── Repo root: this file lives at <repo_root>/config.py ──────────────────────
+_SIMFORGE = Path(__file__).resolve().parent   # repo root (simforge/)
+_ROBOT    = _SIMFORGE / "robot"               # bundled URDF / mesh assets
 
 # ── Isaac Sim installation ────────────────────────────────────────────────────
-ISAACSIM_ROOT = Path(os.environ.get(
-    "ISAACSIM_ROOT",
-    str(Path.home() / "isaacsim"),
-))
-ISAACSIM_SH = ISAACSIM_ROOT / "isaac-sim.sh"
+ISAACSIM_ROOT = Path(os.environ.get("ISAACSIM_ROOT", str(Path.home() / "isaacsim")))
+ISAACSIM_SH   = ISAACSIM_ROOT / "isaac-sim.sh"
 
 # ── Main scene USD ────────────────────────────────────────────────────────────
-# Use the scene that ships with this repo (simforge/scenes/main.usd) when
-# SIMFORGE_SCENE is set.  Otherwise fall back to the original playground scene.
-_DEFAULT_SCENE_CANDIDATES = [
+_SCENE_CANDIDATES = [
     os.environ.get("SIMFORGE_SCENE", ""),
     str(_SIMFORGE / "scenes" / "main.usd"),
     str(ISAACSIM_ROOT / "playground" / "2026061100_main.usd"),
 ]
 SCENE_USD = next(
-    (p for p in _DEFAULT_SCENE_CANDIDATES if p and Path(p).exists()),
-    str(ISAACSIM_ROOT / "playground" / "2026061100_main.usd"),
+    (p for p in _SCENE_CANDIDATES if p and Path(p).exists()),
+    str(_SIMFORGE / "scenes" / "main.usd"),
 )
 
 # ── Robot URDF files ──────────────────────────────────────────────────────────
-# Expected layout:  <SIMFORGE_URDF_DIR>/jaka_minicobo.urdf
-#                                      /jaka_minicobo_gripper.urdf
-_URDF_DIR_DEFAULT = str(
-    _REPO_ROOT / "jaka_ros2" / "src" / "jaka_description" / "urdf"
-)
-URDF_DIR = Path(os.environ.get("SIMFORGE_URDF_DIR", _URDF_DIR_DEFAULT))
-
-ARM_URDF     = URDF_DIR / "jaka_minicobo.urdf"
-_CUROBO_URDF_CANDIDATE = URDF_DIR / "jaka_minicobo_gripper.urdf"
-# Fall back to the sim URDF in jinyu_ros_pkg if jaka_ros2 tree is absent
-_CUROBO_URDF_SIM = _REPO_ROOT / "jinyu_ros_pkg" / "nodes" / "simulation" / "jaka_minicobo_gripper.urdf"
-CUROBO_URDF  = _CUROBO_URDF_CANDIDATE if _CUROBO_URDF_CANDIDATE.exists() else _CUROBO_URDF_SIM
+# Bundled under robot/ — override with SIMFORGE_URDF_DIR if needed.
+URDF_DIR    = Path(os.environ.get("SIMFORGE_URDF_DIR", str(_ROBOT)))
+ARM_URDF    = URDF_DIR / "jaka_minicobo.urdf"
+CUROBO_URDF = URDF_DIR / "jaka_minicobo_gripper.urdf"
+SIM_URDF    = CUROBO_URDF   # alias kept for backward compat
 
 # ── cuRobo config ─────────────────────────────────────────────────────────────
-_CUROBO_CFG_DEFAULT = str(
-    _REPO_ROOT / "jinyu_ros_pkg" / "nodes" / "simulation"
-    / "jaka_minicobo_curobo.yml"
-)
-CUROBO_CFG = Path(os.environ.get("SIMFORGE_CUROBO_CFG", _CUROBO_CFG_DEFAULT))
-
-# ── cuRobo simulation URDF (contains gripper) ─────────────────────────────────
-_SIM_URDF_DEFAULT = str(
-    _REPO_ROOT / "jinyu_ros_pkg" / "nodes" / "simulation"
-    / "jaka_minicobo_gripper.urdf"
-)
-SIM_URDF = Path(os.environ.get("SIMFORGE_SIM_URDF", _SIM_URDF_DEFAULT))
+CUROBO_CFG = Path(os.environ.get(
+    "SIMFORGE_CUROBO_CFG",
+    str(_ROBOT / "jaka_minicobo_curobo.yml"),
+))
 
 
 def check() -> list[str]:
     """Return a list of missing/broken path descriptions (empty = all OK)."""
     issues = []
     if not ISAACSIM_SH.exists():
-        issues.append(f"Isaac Sim launcher not found: {ISAACSIM_SH}\n"
-                      f"  → set ISAACSIM_ROOT to your Isaac Sim install dir")
+        issues.append(
+            f"Isaac Sim launcher not found: {ISAACSIM_SH}\n"
+            f"  → set ISAACSIM_ROOT to your Isaac Sim installation directory"
+        )
     if not Path(SCENE_USD).exists():
-        issues.append(f"Scene USD not found: {SCENE_USD}\n"
-                      f"  → set SIMFORGE_SCENE to the scene .usd path")
+        issues.append(
+            f"Scene USD not found: {SCENE_USD}\n"
+            f"  → override with  export SIMFORGE_SCENE=<path>"
+        )
     if not ARM_URDF.exists():
-        issues.append(f"URDF not found: {ARM_URDF}\n"
-                      f"  → set SIMFORGE_URDF_DIR to the directory with jaka_minicobo.urdf")
+        issues.append(
+            f"Arm URDF not found: {ARM_URDF}\n"
+            f"  → override with  export SIMFORGE_URDF_DIR=<dir>"
+        )
     if not CUROBO_CFG.exists():
-        issues.append(f"cuRobo config not found: {CUROBO_CFG}\n"
-                      f"  → set SIMFORGE_CUROBO_CFG to the .yml path")
+        issues.append(
+            f"cuRobo config not found: {CUROBO_CFG}\n"
+            f"  → override with  export SIMFORGE_CUROBO_CFG=<path>"
+        )
     return issues
 
 
@@ -102,11 +92,11 @@ def assert_ready():
 if __name__ == "__main__":
     issues = check()
     if issues:
-        print("Missing dependencies:")
+        print("SimForge config — MISSING:")
         for i in issues:
             print(f"  • {i}")
     else:
-        print("All paths OK.")
+        print("SimForge config — all paths OK:")
         print(f"  ISAACSIM_ROOT : {ISAACSIM_ROOT}")
         print(f"  SCENE_USD     : {SCENE_USD}")
         print(f"  ARM_URDF      : {ARM_URDF}")
