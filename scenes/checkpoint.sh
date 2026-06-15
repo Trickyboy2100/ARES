@@ -1,27 +1,41 @@
 #!/usr/bin/env bash
-# checkpoint.sh — copy the current playground scene into scenes/ and git commit
+# checkpoint.sh — copy the current playground scene into scenes/ and git commit.
+# After copying, rewrites all external USD paths to ../assets/ so the scene
+# is self-contained for colleagues who clone the repo.
 #
-# Usage:
-#   ./checkpoint.sh "Scene description / commit message"
-#
-# After running, the scene at SCENE_SRC is copied to scenes/main.usd.
-# You should then `git commit` (or this script will offer to).
+# Usage (from repo root):
+#   bash scenes/checkpoint.sh "Scene description / commit message"
 
 set -euo pipefail
 
-# Use SIMFORGE_SCENE env var if set, otherwise the original playground path
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+REPO_ROOT="$(git -C "$SCRIPT_DIR" rev-parse --show-toplevel)"
+
 SCENE_SRC="${SIMFORGE_SCENE:-${ISAACSIM_ROOT:-$HOME/isaacsim}/playground/2026061100_main.usd}"
-SCENE_DST="$(dirname "$0")/main.usd"
-REPO_ROOT="$(git -C "$(dirname "$0")" rev-parse --show-toplevel)"
+SCENE_DST="$SCRIPT_DIR/main.usd"
 
 msg="${1:-chore(scene): checkpoint $(date +%Y%m%d_%H%M%S)}"
 
-echo "Copying scene from: $SCENE_SRC"
-echo "             to:    $SCENE_DST"
+if [[ ! -f "$SCENE_SRC" ]]; then
+    echo "ERROR: source scene not found: $SCENE_SRC"
+    echo "  Set SIMFORGE_SCENE or ISAACSIM_ROOT to override."
+    exit 1
+fi
+
+echo "Copying scene: $SCENE_SRC → $SCENE_DST"
 cp "$SCENE_SRC" "$SCENE_DST"
 
-echo "Staging scene file…"
-git -C "$REPO_ROOT" add "$SCENE_DST"
+echo "Rewriting USD asset paths to ../assets/ ..."
+USD_LIB=$(ls -d ~/isaacsim/extscache/omni.usd.libs-*/ 2>/dev/null | head -1)
+if [[ -z "$USD_LIB" ]]; then
+    echo "WARNING: omni.usd.libs not found — skipping path rewrite (scene may have broken references)"
+else
+    LD_LIBRARY_PATH="$USD_LIB/bin:${LD_LIBRARY_PATH:-}" \
+        ~/isaacsim/kit/python/bin/python3 "$SCRIPT_DIR/rewrite_paths.py"
+fi
+
+echo "Staging changes..."
+git -C "$REPO_ROOT" add "$SCENE_DST" "$SCRIPT_DIR/rewrite_paths.py"
 
 echo "Committing: $msg"
 git -C "$REPO_ROOT" commit -m "$msg"

@@ -113,8 +113,15 @@ simforge/
 │   ├── jaka_minicobo_curobo.yml   ← cuRobo 碰撞 / 运动学配置
 │   ├── jaka_minicobo_meshes/  ← 手臂 STL mesh
 │   └── eg2_4c2_meshes/        ← 夹爪 STL mesh
+├── assets/                     ← 场景依赖资产（场景自包含，无外部路径依赖）
+│   ├── cad/                   ← 台架、夹持法兰、力传感器等 CAD 模型
+│   ├── jaka_minicobo/         ← JAKA MiniCobo USD + 材质/物理配置
+│   ├── Inspire_EG2_4C2/       ← EG2-4C2 夹爪 USD + 材质/物理配置
+│   ├── playground_config/     ← 场景环境光、物理参数 USD（原 playground 配置）
+│   └── textures/              ← 地板纹理、ArUco 标记等贴图
 ├── scenes/
-│   └── main.usd               ← 主场景文件（双臂 + 托盘 + 烘箱）
+│   ├── main.usd               ← 主场景文件（双臂 + 托盘 + 烘箱；路径全部指向 ../assets/）
+│   └── rewrite_paths.py       ← 维护工具：场景另存后重写外部路径
 ├── core/                       ← 共享模块
 │   ├── kinematics.py
 │   ├── planning.py             ← IK 求解器（支持 jaw+forward 双约束）
