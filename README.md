@@ -4,10 +4,11 @@
 
 ## 最新 Demo：双臂完整交接循环（tray_grasp_cycle）
 
+> **新同事请先阅读 [SETUP.md](SETUP.md) — 包含从零到运行 demo 的完整步骤（英文）。**
+
 > **一键启动：**
 > ```bash
-> cd ~/simforge
-> bash demos/tray_grasp_cycle/launch.sh
+> bash ~/simforge/demos/tray_grasp_cycle/launch.sh
 > ```
 
 当前最新版本实现了 **左臂夹取 → 举升 → 交接右臂 → 送入烘箱** 的完整端到端循环，主要特性：
