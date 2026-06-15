@@ -23,27 +23,22 @@ from pathlib import Path
 import numpy as np
 
 # ── sys.path ──────────────────────────────────────────────────────────────────
-_DEMO_DIR  = Path(__file__).resolve().parent
-_SIMFORGE  = _DEMO_DIR.parents[1]
+_DEMO_DIR  = Path(__file__).resolve().parent           # demos/tray_grasp_cycle/
+_SIMFORGE  = _DEMO_DIR.parents[1]                      # simforge/ (repo root)
 _CORE      = _SIMFORGE / "core"
 for _p in (str(_SIMFORGE), str(_CORE)):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-# cuRobo v0.2 lives in the miniconda env (pure-Python, no .so — loadable in Isaac Sim python)
-_CUROBO_SITE = "/home/andyee/miniconda3/lib/python3.13/site-packages"
-if _CUROBO_SITE not in sys.path:
-    sys.path.insert(0, _CUROBO_SITE)
-
-# ── Scene / URDF paths ────────────────────────────────────────────────────────
-try:
-    import config as _cfg
-    DEFAULT_SCENE    = _cfg.SCENE_USD
-    DEFAULT_ARM_URDF = str(_cfg.ARM_URDF)
-except Exception:
-    _SF = Path(__file__).resolve().parents[3]   # simforge/
-    DEFAULT_SCENE    = str(_SF / "scenes" / "main.usd")
-    DEFAULT_ARM_URDF = str(_SF / "robot" / "jaka_minicobo.urdf")
+# ── Scene / URDF paths — computed directly from __file__, env vars override ──
+# Do NOT use `import config` here: Isaac Sim may have another `config` module
+# on sys.path that shadows simforge/config.py.
+import os as _os
+DEFAULT_SCENE    = _os.environ.get("SIMFORGE_SCENE") or str(_SIMFORGE / "scenes" / "main.usd")
+DEFAULT_ARM_URDF = str(
+    Path(_os.environ.get("SIMFORGE_URDF_DIR") or str(_SIMFORGE / "robot"))
+    / "jaka_minicobo.urdf"
+)
 
 from kinematics import (
     GRIPPER_ROOT_SUFFIX, ARM_JOINTS, chain_to_link, load_joints, fk, get_world_pose,
@@ -453,8 +448,8 @@ def _linear_y_path(ik_fn, q_start: np.ndarray,
 # ─────────────────────────────────────────────────────────────────────────────
 
 _plan_cache: dict = {}
-_WORKER_PY  = str(Path(__file__).parent / "_curobo_worker.py")
-_MINICONDA_PY = "/home/andyee/miniconda3/bin/python3"
+_WORKER_PY    = str(Path(__file__).parent / "_curobo_worker.py")
+_MINICONDA_PY = _os.environ.get("CUROBO_PYTHON", "/home/andyee/miniconda3/bin/python3")
 
 
 def _q_key(q: np.ndarray):
