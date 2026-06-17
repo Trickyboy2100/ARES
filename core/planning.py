@@ -64,7 +64,10 @@ RIGHT_FORWARD_READY_FORWARD_TOLERANCE_DEG = 5.0
 OBSTACLE_SPECS = [
     ("table", "/World/Table", np.array([0.04, 0.04, 0.03], dtype=float)),
     ("loading_equip", "/World/LoadingEquip", np.array([0.04, 0.04, 0.03], dtype=float)),
-    ("dryer", "/World/Dryer", np.array([0.05, 0.05, 0.05], dtype=float)),
+]
+
+MESH_OBSTACLE_SPECS = [
+    ("dryer", "/World/Dryer"),
 ]
 
 
@@ -322,8 +325,6 @@ def bbox_world(stage, bbox_cache, path: str):
 
 
 def build_curobo_obstacles(stage, cache, base_world_by_side):
-    from curobo._src.geom.types import Cuboid
-
     if Usd is None or UsdGeom is None:
         raise RuntimeError("pxr is required to build cuRobo obstacles from a USD stage")
 
@@ -334,6 +335,18 @@ def build_curobo_obstacles(stage, cache, base_world_by_side):
     )
     obstacles = {side: [] for side in base_world_by_side}
     report = {}
+
+    def add_cuboid_for_world_box(name: str, center_world: np.ndarray, dims_world: np.ndarray):
+        dims_world = np.maximum(dims_world, 0.01)
+        for side, base_world in base_world_by_side.items():
+            T_base_obstacle = np.linalg.inv(base_world) @ pose_from_xyz(center_world)
+            quat = matrix_to_quat_wxyz(T_base_obstacle[:3, :3])
+            obstacles[side].append({
+                "name": f"{side}_{name}",
+                "dims": np.round(dims_world, 6).tolist(),
+                "pose": np.round(np.r_[T_base_obstacle[:3, 3], quat], 9).tolist(),
+            })
+
     for name, path, inflate in OBSTACLE_SPECS:
         bbox = bbox_world(stage, bbox_cache, path)
         if bbox is None:
@@ -352,25 +365,98 @@ def build_curobo_obstacles(stage, cache, base_world_by_side):
             T_base_obstacle = np.linalg.inv(base_world) @ pose_from_xyz(center_world)
             quat = matrix_to_quat_wxyz(T_base_obstacle[:3, :3])
             dims = np.maximum(dims_world + inflate, 0.01)
-            obstacles[side].append(
-                Cuboid(
-                    name=f"{side}_{name}",
-                    dims=np.round(dims, 6).tolist(),
-                    pose=np.round(np.r_[T_base_obstacle[:3, 3], quat], 9).tolist(),
-                )
-            )
+            obstacles[side].append({
+                "name": f"{side}_{name}",
+                "dims": np.round(dims, 6).tolist(),
+                "pose": np.round(np.r_[T_base_obstacle[:3, 3], quat], 9).tolist(),
+            })
+
+    for name, root_path in MESH_OBSTACLE_SPECS:
+        root = stage.GetPrimAtPath(root_path)
+        if not root or not root.IsValid():
+            report[name] = {"path": root_path, "status": "missing"}
+            continue
+        mesh_count = 0
+        tri_count = 0
+        vertex_count = 0
+        for prim in Usd.PrimRange(root):
+            if not prim.IsActive() or not prim.IsA(UsdGeom.Mesh):
+                continue
+            mesh = UsdGeom.Mesh(prim)
+            points = mesh.GetPointsAttr().Get() or []
+            counts = mesh.GetFaceVertexCountsAttr().Get() or []
+            indices = mesh.GetFaceVertexIndicesAttr().Get() or []
+            if not points or not counts or not indices:
+                continue
+
+            local_to_world = cache.GetLocalToWorldTransform(prim)
+            world_points = []
+            for p in points:
+                wp = local_to_world.Transform(p)
+                world_points.append([float(wp[0]), float(wp[1]), float(wp[2])])
+
+            triangles = []
+            cursor = 0
+            for count in counts:
+                face = [int(i) for i in indices[cursor:cursor + int(count)]]
+                cursor += int(count)
+                if len(face) < 3:
+                    continue
+                for i in range(1, len(face) - 1):
+                    triangles.extend([face[0], face[i], face[i + 1]])
+
+            if not triangles:
+                continue
+            mesh_count += 1
+            tri_count += len(triangles) // 3
+            vertex_count += len(world_points)
+
+            for side, base_world in base_world_by_side.items():
+                T_world_base = np.linalg.inv(base_world)
+                base_vertices = []
+                for wp in world_points:
+                    bp = T_world_base @ np.array([wp[0], wp[1], wp[2], 1.0], dtype=float)
+                    base_vertices.append(np.round(bp[:3], 6).tolist())
+                obstacles[side].append({
+                    "kind": "mesh",
+                    "name": f"{side}_{name}_{mesh_count}",
+                    "pose": [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0],
+                    "vertices": base_vertices,
+                    "faces": triangles,
+                })
+        report[name] = {
+            "path": root_path,
+            "status": "ok" if mesh_count else "no_meshes",
+            "mesh_count": mesh_count,
+            "vertex_count": vertex_count,
+            "triangle_count": tri_count,
+            "type": "mesh",
+        }
     return obstacles, report
 
 
 def init_curobo_planner(obstacles=None):
+    from curobo._src.geom.types import Cuboid
+    from curobo._src.geom.types import Mesh
     from curobo.motion_planner import MotionPlanner, MotionPlannerCfg
     from curobo.scene import Scene
 
-    obstacles = obstacles or []
+    cuboids = []
+    meshes = []
+    for obstacle in obstacles or []:
+        if isinstance(obstacle, dict):
+            kind = obstacle.get("kind", "cuboid")
+            payload = {k: v for k, v in obstacle.items() if k != "kind"}
+            if kind == "mesh":
+                meshes.append(Mesh(**payload))
+            else:
+                cuboids.append(Cuboid(**payload))
+        else:
+            cuboids.append(obstacle)
     cfg = MotionPlannerCfg.create(
         robot=CUROBO_CFG,
-        scene_model=Scene(cuboid=obstacles),
-        collision_cache={"cuboid": max(8, len(obstacles))},
+        scene_model=Scene(cuboid=cuboids, mesh=meshes),
+        collision_cache={"cuboid": max(8, len(cuboids)), "mesh": max(1, len(meshes))},
         optimizer_collision_activation_distance=0.02,
     )
     planner = MotionPlanner(cfg)

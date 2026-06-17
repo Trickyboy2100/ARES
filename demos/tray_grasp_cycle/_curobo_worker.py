@@ -58,6 +58,19 @@ from kinematics_probe import (                     # noqa: E402
 from planning import init_curobo_planner, make_goal  # noqa: E402
 
 
+def _obstacle_key(obstacles):
+    return json.dumps(obstacles or [], sort_keys=True, separators=(",", ":"))
+
+
+def _planner_for(obstacles, cache):
+    key = _obstacle_key(obstacles)
+    planner = cache.get(key)
+    if planner is None:
+        planner = init_curobo_planner(obstacles or [])
+        cache[key] = planner
+    return planner
+
+
 def curobo_tool_pose(chain, q_arm: np.ndarray):
     qmap = dict(zip(CUROBO_JOINTS, q_arm.tolist()))
     qmap["4C2_Joint1"] = 0.0
@@ -69,7 +82,7 @@ def main():
     batch = json.load(sys.stdin)
     jobs = batch["jobs"]
 
-    planner = init_curobo_planner()
+    planner_cache = {}
     chain = chain_to_link(load_joints(Path(DEFAULT_CUROBO_URDF)), "base_link", "4C2_Link5")
 
     results = []
@@ -78,6 +91,8 @@ def main():
         q_start = np.array(job["q_start"], dtype=float)
         q_goal  = np.array(job["q_goal"],  dtype=float)
         max_attempts = job.get("max_attempts", 8)
+        obstacles = job.get("obstacles") or []
+        planner = _planner_for(obstacles, planner_cache)
 
         path = None
         try:

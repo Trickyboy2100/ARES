@@ -74,6 +74,11 @@ RIGHT_GR   = f"{RIGHT_ROOT}/{GRIPPER_ROOT_SUFFIX}"
 LINK_NAMES = ["Link_1", "Link_2", "Link_3", "Link_4", "Link_5", "Link_6"]
 ROBOT_PARENT_PATH = "/World/robot"
 
+# Initial/home joint angles for each arm, in degrees: joint_1..joint_6.
+# Edit these two arrays when left/right arms need different start poses.
+HOME_JOINT_DEG_L = [90.0, -30.0, 90.0, 0.0, 0.0, -90.0]
+HOME_JOINT_DEG_R = [90.0, -30.0, -90.0, 0.0, 0.0, 0.0]
+
 TRAY_PATH       = "/World/Tray"
 GRASP_PRIM_L    = "/World/Tray/tray_grasp_point"       # left ear
 GRASP_PRIM_R    = "/World/Tray/tray_grasp_init_point"  # right ear
@@ -157,6 +162,7 @@ HANDOFF_EAR_HALF   = 0.0775 # m — half the ear separation (~155mm total)
 # Dryer delivery: arm delivers tray pointing in dryer direction; capped to reachable distance
 DRYER_REACH_LIMIT  = 0.55   # m max pad displacement from arm base
 DRYER_HOLD_OFFSET  = 0.10   # m extra clearance away from dryer front
+DRYER_PLACEMENT_TARGET = np.array([-0.82, 0.40, 1.45], dtype=float)
 
 # ── Timing ────────────────────────────────────────────────────────────────────
 SETTLE_FRAMES         = 120
@@ -368,6 +374,25 @@ def _set_gripper_xform(gr_ops, angle_rad: float):
         op.Set(gf_matrix_from_column_transform(gripper_link_transform(name, angle_rad)))
 
 
+def home_joint_positions_rad():
+    return np.radians(HOME_JOINT_DEG_L), np.radians(HOME_JOINT_DEG_R)
+
+
+def apply_home_pose(stage):
+    arm_jts = load_joints(Path(DEFAULT_ARM_URDF))
+    chains = {n: chain_to_link(arm_jts, "Link_0", n) for n in LINK_NAMES}
+    q_home_L, q_home_R = home_joint_positions_rad()
+    l_ops = _setup_arm_ops(stage, LEFT_ROOT, "tgc_arm")
+    r_ops = _setup_arm_ops(stage, RIGHT_ROOT, "tgc_arm")
+    l_gr_ops = setup_gripper_xform_ops(stage, LEFT_GR, "tgc_gr")
+    r_gr_ops = setup_gripper_xform_ops(stage, RIGHT_GR, "tgc_gr")
+    _set_arm_q(l_ops, chains, q_home_L)
+    _set_arm_q(r_ops, chains, q_home_R)
+    _set_gripper_xform(l_gr_ops, HOME_OPEN_RAD)
+    _set_gripper_xform(r_gr_ops, HOME_OPEN_RAD)
+    return q_home_L, q_home_R
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # IK helpers
 # ─────────────────────────────────────────────────────────────────────────────
@@ -468,13 +493,14 @@ def _cu_batch(jobs: list) -> dict:
         {"label": j["label"],
          "q_start": [float(x) for x in j["q_start"]],
          "q_goal":  [float(x) for x in j["q_goal"]],
+         "obstacles": j.get("obstacles", []),
          "max_attempts": j.get("max_attempts", 8)}
         for j in jobs
     ]})
     try:
         proc = subprocess.run(
             [_MINICONDA_PY, _WORKER_PY],
-            input=payload, capture_output=True, text=True, timeout=120,
+            input=payload, capture_output=True, text=True, timeout=300,
         )
         if proc.returncode != 0:
             print(f"[TGC] cuRobo worker exited {proc.returncode}:\n{proc.stderr[-600:]}", flush=True)
@@ -724,7 +750,7 @@ def _run(app, stage):
     chains    = {n: chain_to_link(arm_jts, "Link_0", n) for n in LINK_NAMES}
     arm_chain = chains["Link_6"]
     lower, upper = joint_limits(arm_chain)
-    q_zero = np.zeros(6)
+    q_home_L, q_home_R = home_joint_positions_rad()
     print("[TGC] URDF loaded.", flush=True)
 
     # ── Apply robot shift before setting up ops ───────────────────────────────
@@ -736,8 +762,8 @@ def _run(app, stage):
     l_gr_ops = setup_gripper_xform_ops(stage, LEFT_GR,  "tgc_gr")
     r_gr_ops = setup_gripper_xform_ops(stage, RIGHT_GR, "tgc_gr")
 
-    _set_arm_q(l_ops, chains, q_zero)
-    _set_arm_q(r_ops, chains, q_zero)
+    _set_arm_q(l_ops, chains, q_home_L)
+    _set_arm_q(r_ops, chains, q_home_R)
     _set_gripper_xform(l_gr_ops, HOME_OPEN_RAD)
     _set_gripper_xform(r_gr_ops, HOME_OPEN_RAD)
     app.update()
@@ -761,8 +787,23 @@ def _run(app, stage):
     print(f"[TGC]  R pad @handoff: {np.round(handoff_pad_R, 3)}", flush=True)
 
     dryer_pos    = _get_dryer_world_pos(stage)
-    dryer_target = _compute_dryer_approach(r_base_world, dryer_pos)
-    print(f"[TGC] Dryer approach target: {np.round(dryer_target, 3)}", flush=True)
+    dryer_target = DRYER_PLACEMENT_TARGET.copy()
+    print(f"[TGC] Dryer pos: {np.round(dryer_pos, 3) if dryer_pos is not None else None}", flush=True)
+    print(f"[TGC] Dryer placement target: {np.round(dryer_target, 3)}", flush=True)
+
+    curobo_obstacles, obstacle_report = build_curobo_obstacles(
+        stage, cache, {"left": l_base_world, "right": r_base_world}
+    )
+    curobo_obstacles_no_dryer = {
+        side: [obs for obs in obs_list if not str(obs.get("name", "")).startswith(f"{side}_dryer")]
+        for side, obs_list in curobo_obstacles.items()
+    }
+    for name, info in obstacle_report.items():
+        print(
+            f"[TGC] obstacle {name}: {info.get('status', 'ok')} "
+            f"center={info.get('center_world_xyz')} dims={info.get('dims_world_xyz')}",
+            flush=True,
+        )
 
     # ── IK seed banks ────────────────────────────────────────────────────────
     l_seeds = [
@@ -811,15 +852,15 @@ def _run(app, stage):
     # ── SETTLE ────────────────────────────────────────────────────────────────
     frame = 0
     for frame in range(SETTLE_FRAMES):
-        _set_arm_q(l_ops, chains, q_zero)
-        _set_arm_q(r_ops, chains, q_zero)
+        _set_arm_q(l_ops, chains, q_home_L)
+        _set_arm_q(r_ops, chains, q_home_R)
         _set_gripper_xform(l_gr_ops, HOME_OPEN_RAD)
         _set_gripper_xform(r_gr_ops, HOME_OPEN_RAD)
         ui_mon.push(phase="SETTLE", cycle=0,
                     l_gr_deg=math.degrees(HOME_OPEN_RAD),
                     r_gr_deg=math.degrees(HOME_OPEN_RAD),
-                    l_pad_xyz=_pad_L(q_zero)[:3, 3],
-                    r_pad_xyz=_pad_R(q_zero)[:3, 3])
+                    l_pad_xyz=_pad_L(q_home_L)[:3, 3],
+                    r_pad_xyz=_pad_R(q_home_R)[:3, 3])
         app.update()
         if frame % 30 == 0:
             print(f"[TGC] settle {frame}/{SETTLE_FRAMES}", flush=True)
@@ -911,13 +952,13 @@ def _run(app, stage):
     ui_mon.push(phase="PLAN", cycle=0)
     app.update()
     _fixed_jobs = [
-        {"label": "home→preL",      "q_start": q_zero,           "q_goal": q_pre_L},
-        {"label": "retractL",       "q_start": q_handoff_L,      "q_goal": q_zero},
-        {"label": "home→preR",      "q_start": q_zero,           "q_goal": q_pre_handoff_R},
-        {"label": "pre→nearR",      "q_start": q_pre_handoff_R,  "q_goal": q_near_handoff_R},
-        {"label": "approachR",      "q_start": q_near_handoff_R, "q_goal": q_handoff_R},
-        {"label": "handoff→dryer",  "q_start": q_handoff_R,      "q_goal": q_dryer_R},
-        {"label": "dryer→homeR",    "q_start": q_dryer_R,        "q_goal": q_zero},
+        {"label": "home→preL",      "q_start": q_home_L,         "q_goal": q_pre_L,           "obstacles": curobo_obstacles_no_dryer["left"]},
+        {"label": "retractL",       "q_start": q_handoff_L,      "q_goal": q_home_L,          "obstacles": curobo_obstacles_no_dryer["left"]},
+        {"label": "home→preR",      "q_start": q_home_R,         "q_goal": q_pre_handoff_R,  "obstacles": curobo_obstacles_no_dryer["right"]},
+        {"label": "pre→nearR",      "q_start": q_pre_handoff_R,  "q_goal": q_near_handoff_R, "obstacles": curobo_obstacles_no_dryer["right"]},
+        {"label": "approachR",      "q_start": q_near_handoff_R, "q_goal": q_handoff_R,      "obstacles": curobo_obstacles_no_dryer["right"]},
+        {"label": "handoff→dryer",  "q_start": q_handoff_R,      "q_goal": q_dryer_R,        "obstacles": curobo_obstacles["right"]},
+        {"label": "dryer→homeR",    "q_start": q_dryer_R,        "q_goal": q_home_R,         "obstacles": curobo_obstacles["right"]},
     ]
     _fixed_results = _cu_batch(_fixed_jobs)
 
@@ -934,12 +975,12 @@ def _run(app, stage):
     path_home_to_pre_L    = _get_path("home→preL",     q_pre_L)
     # path_approach_L already built as Y-linear Cartesian path above
     path_carry_L          = np.array([q_handoff_L])   # placeholder; rebuilt on contact
-    path_retract_L        = _get_path("retractL",      q_zero)
+    path_retract_L        = _get_path("retractL",      q_home_L)
     path_home_to_pre_R    = _get_path("home→preR",     q_pre_handoff_R)
     path_pre_to_near_R    = _get_path("pre→nearR",     q_near_handoff_R)
     path_approach_R       = _get_path("approachR",     q_handoff_R)
     path_handoff_to_dryer = _get_path("handoff→dryer", q_dryer_R)
-    path_dryer_home_R     = _get_path("dryer→homeR",   q_zero)
+    path_dryer_home_R     = _get_path("dryer→homeR",   q_home_R)
     print("[TGC] Fixed path planning done.", flush=True)
     app.update()
 
@@ -957,8 +998,8 @@ def _run(app, stage):
     grip_close = np.linspace(APPROACH_OPEN_RAD, 0.0,           CLOSE_PHYSICS_FRAMES)
     grip_open  = np.linspace(0.0,               HOME_OPEN_RAD, CLOSE_PHYSICS_FRAMES // 2)
 
-    q_L       = q_zero.copy()
-    q_R       = q_zero.copy()
+    q_L       = q_home_L.copy()
+    q_R       = q_home_R.copy()
     gr_angle_L = HOME_OPEN_RAD
     gr_angle_R = HOME_OPEN_RAD
     path_idx  = 0
@@ -997,8 +1038,8 @@ def _run(app, stage):
                                          orient_weight=ORIENT_WEIGHT_GRASP)
                     print(f"[TGC] Lift IK target={np.round(lift_target, 3)}", flush=True)
                     _lc = _cu_batch([
-                        {"label": "liftL",  "q_start": q_contact_L, "q_goal": q_lift_end_L},
-                        {"label": "carryL", "q_start": q_lift_end_L, "q_goal": q_handoff_L},
+                        {"label": "liftL",  "q_start": q_contact_L, "q_goal": q_lift_end_L, "obstacles": curobo_obstacles_no_dryer["left"]},
+                        {"label": "carryL", "q_start": q_lift_end_L, "q_goal": q_handoff_L,  "obstacles": curobo_obstacles_no_dryer["left"]},
                     ])
                     _p = _lc.get("liftL");  path_lift_L  = _p if (_p is not None and len(_p) > 0) else np.array([q_lift_end_L])
                     _p = _lc.get("carryL"); path_carry_L = _p if (_p is not None and len(_p) > 0) else np.array([q_handoff_L])
@@ -1034,8 +1075,8 @@ def _run(app, stage):
                         q_lift_end_L = _ik_L("L_lift_nc", lift_target, ref=q_contact_L,
                                              orient_weight=ORIENT_WEIGHT_GRASP)
                         _lc_nc = _cu_batch([
-                            {"label": "liftL_nc",  "q_start": q_contact_L, "q_goal": q_lift_end_L},
-                            {"label": "carryL_nc", "q_start": q_lift_end_L, "q_goal": q_handoff_L},
+                            {"label": "liftL_nc",  "q_start": q_contact_L, "q_goal": q_lift_end_L, "obstacles": curobo_obstacles_no_dryer["left"]},
+                            {"label": "carryL_nc", "q_start": q_lift_end_L, "q_goal": q_handoff_L,  "obstacles": curobo_obstacles_no_dryer["left"]},
                         ])
                         _p = _lc_nc.get("liftL_nc");  path_lift_L  = _p if (_p is not None and len(_p) > 0) else np.array([q_lift_end_L])
                         _p = _lc_nc.get("carryL_nc"); path_carry_L = _p if (_p is not None and len(_p) > 0) else np.array([q_handoff_L])
@@ -1109,7 +1150,7 @@ def _run(app, stage):
             if path_idx < len(path_retract_L):
                 q_L = path_retract_L[path_idx]; path_idx += 1
             else:
-                q_L = q_zero.copy()
+                q_L = q_home_L.copy()
                 _enter("CARRY_DRYER")
 
         elif phase == "CARRY_DRYER":
@@ -1140,7 +1181,7 @@ def _run(app, stage):
             if path_idx < len(path_dryer_home_R):
                 q_R = path_dryer_home_R[path_idx]; path_idx += 1
             else:
-                q_R = q_zero.copy()
+                q_R = q_home_R.copy()
                 _enter("RESET_SCENE")
 
         elif phase == "RESET_SCENE":
@@ -1172,8 +1213,8 @@ def _run(app, stage):
             else:
                 # Start next cycle — re-read ear positions and re-plan
                 cycle          += 1
-                q_L             = q_zero.copy()
-                q_R             = q_zero.copy()
+                q_L             = q_home_L.copy()
+                q_R             = q_home_R.copy()
                 gr_angle_L      = HOME_OPEN_RAD
                 gr_angle_R      = HOME_OPEN_RAD
                 contact_est_L   = False
@@ -1202,7 +1243,7 @@ def _run(app, stage):
                         orient_weight=ORIENT_WEIGHT_STRONG,
                     )
                     _restart = _cu_batch([
-                        {"label": "home→preL_c", "q_start": q_zero, "q_goal": q_pre_L},
+                        {"label": "home→preL_c", "q_start": q_home_L, "q_goal": q_pre_L, "obstacles": curobo_obstacles_no_dryer["left"]},
                     ])
                     _p = _restart.get("home→preL_c")
                     path_home_to_pre_L = _p if (_p is not None and len(_p) > 0) else np.array([q_pre_L])
