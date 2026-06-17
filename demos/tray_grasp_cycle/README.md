@@ -8,10 +8,14 @@ Left-arm picks the tray ear tab, lifts +30 cm, lowers, releases, retracts, and r
 
 ```bash
 # From repo root (auto-kills any existing Isaac Sim):
-bash isaac_sim/simforge/demos/tray_grasp_cycle/launch.sh
+bash demos/tray_grasp_cycle/launch.sh
+
+# If cuRobo is not installed as a package, point at the source checkout:
+export CUROBO_ROOT=/media/mingming-l/SG/curobo
+export CUROBO_PYTHON=/path/to/python-with-curobo-deps
 
 # With full log capture and auto-generated report:
-bash isaac_sim/simforge/demos/tray_grasp_cycle/record.sh
+bash demos/tray_grasp_cycle/record.sh
 ```
 
 ---

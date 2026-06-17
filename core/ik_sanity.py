@@ -11,7 +11,13 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 import numpy as np
-from pxr import Usd, UsdGeom
+try:
+    from pxr import Usd, UsdGeom
+except ModuleNotFoundError:
+    # joint_limits and other pure IK helpers are used by cuRobo subprocesses
+    # outside Isaac Sim's Python environment.
+    Usd = None
+    UsdGeom = None
 from scipy.optimize import least_squares
 
 from kinematics_probe import (
@@ -118,6 +124,9 @@ def main() -> int:
     parser.add_argument("--position-tolerance", type=float, default=1e-3)
     parser.add_argument("--out", default=str(PLAYGROUND_ROOT / "reports/ik_sanity.json"))
     args = parser.parse_args()
+
+    if Usd is None or UsdGeom is None:
+        raise RuntimeError("pxr is required to open USD scenes; run this entry point with Isaac Sim Python")
 
     stage = Usd.Stage.Open(str(Path(args.scene)))
     if stage is None:

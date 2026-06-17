@@ -5,7 +5,7 @@
 #   bash record.sh [--cycles N] [--label "tag"]
 #
 # Output:
-#   isaac_sim/simforge/logs/tray_grasp_cycle/<TIMESTAMP>/
+#   logs/tray_grasp_cycle/<TIMESTAMP>/
 #       run.log        — full Isaac Sim stdout + stderr
 #       summary.md     — auto-generated run report
 #
@@ -15,8 +15,8 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_ROOT="$(cd "$SCRIPT_DIR/../../../../" && pwd)"
-LOGS_BASE="$REPO_ROOT/isaac_sim/simforge/logs/tray_grasp_cycle"
+SIMFORGE_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+LOGS_BASE="$SIMFORGE_ROOT/logs/tray_grasp_cycle"
 
 LABEL="run"
 while [[ $# -gt 0 ]]; do
@@ -43,17 +43,12 @@ echo "[record] Killing any existing Isaac Sim…"
 pkill -f "isaacsim/kit/kit" 2>/dev/null || true
 sleep 2
 
-# ── env ────────────────────────────────────────────────────────────────────
-CUDALIB=~/isaacsim/exts/omni.isaac.ml_archive/pip_prebundle
-export LD_LIBRARY_PATH=$CUDALIB/nvidia/nvjitlink/lib:${LD_LIBRARY_PATH:-}
-
 # ── launch ─────────────────────────────────────────────────────────────────
 echo "[record] Starting demo at $(date)…"
 START_TS=$(date +%s)
 
-cd "$REPO_ROOT"
-~/isaacsim/isaac-sim.sh --exec \
-    "isaac_sim/simforge/demos/tray_grasp_cycle/demo.py" \
+cd "$SIMFORGE_ROOT"
+"$SCRIPT_DIR/launch.sh" \
     2>&1 | tee "$LOG_FILE"
 
 END_TS=$(date +%s)

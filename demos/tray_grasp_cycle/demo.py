@@ -449,7 +449,10 @@ def _linear_y_path(ik_fn, q_start: np.ndarray,
 
 _plan_cache: dict = {}
 _WORKER_PY    = str(Path(__file__).parent / "_curobo_worker.py")
-_MINICONDA_PY = _os.environ.get("CUROBO_PYTHON", "/home/andyee/miniconda3/bin/python3")
+_MINICONDA_PY = _os.environ.get(
+    "CUROBO_PYTHON",
+    str(Path.home() / "miniconda3" / "envs" / "curobo" / "bin" / "python3"),
+)
 
 
 def _q_key(q: np.ndarray):

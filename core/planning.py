@@ -12,7 +12,14 @@ from typing import Dict, List, Tuple
 
 import numpy as np
 import torch
-from pxr import Usd, UsdGeom
+try:
+    from pxr import Usd, UsdGeom
+except ModuleNotFoundError:
+    # cuRobo planning workers run outside Isaac Sim's Python environment.
+    # Keep pure planning helpers importable there; USD-dependent functions
+    # validate pxr availability when called.
+    Usd = None
+    UsdGeom = None
 from scipy.optimize import least_squares
 
 from ik_sanity import joint_limits
@@ -316,6 +323,9 @@ def bbox_world(stage, bbox_cache, path: str):
 
 def build_curobo_obstacles(stage, cache, base_world_by_side):
     from curobo._src.geom.types import Cuboid
+
+    if Usd is None or UsdGeom is None:
+        raise RuntimeError("pxr is required to build cuRobo obstacles from a USD stage")
 
     bbox_cache = UsdGeom.BBoxCache(
         Usd.TimeCode.Default(),
@@ -692,6 +702,9 @@ def main() -> int:
     parser.add_argument("--position-tolerance", type=float, default=1e-3)
     parser.add_argument("--axis-tolerance-deg", type=float, default=2.0)
     args = parser.parse_args()
+
+    if Usd is None or UsdGeom is None:
+        raise RuntimeError("pxr is required to open USD scenes; run this entry point with Isaac Sim Python")
 
     stage = Usd.Stage.Open(args.scene)
     if stage is None:

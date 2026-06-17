@@ -23,6 +23,12 @@ _ROBOT_DIR = _SIMFORGE / "robot"
 sys.path.insert(0, str(_SIMFORGE))
 sys.path.insert(0, str(_SIMFORGE / "core"))
 
+_CUROBO_ROOT = os.environ.get("CUROBO_ROOT")
+if _CUROBO_ROOT and Path(_CUROBO_ROOT, "curobo").is_dir():
+    # Keep this local to the subprocess so Isaac Sim's Python path is not
+    # polluted by the external cuRobo checkout.
+    sys.path.append(_CUROBO_ROOT)
+
 # ── patch jaka_minicobo_curobo.yml to use bundled robot/ assets ───────────────
 # The YAML ships with absolute paths from the developer's machine.  We rewrite
 # asset_root_path and urdf_path to the bundled robot/ directory before cuRobo
