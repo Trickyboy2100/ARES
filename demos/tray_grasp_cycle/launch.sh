@@ -9,6 +9,7 @@
 #   ROS_ROOT        ROS 2 install root for Isaac ROS bridge libs (default: /opt/ros/jazzy)
 #   SIMFORGE_SCENE  Override scene USD path
 #   SIMFORGE_URDF_DIR  Override robot URDF directory
+#   TGC_LOG_FILE    Override log output path (default: logs/tray_grasp_cycle/<timestamp>.log)
 
 set -euo pipefail
 
@@ -90,6 +91,16 @@ sleep 2
 CUDALIB="$ISAACSIM_ROOT/exts/omni.isaac.ml_archive/pip_prebundle"
 export LD_LIBRARY_PATH="$CUDALIB/nvidia/nvjitlink/lib:${LD_LIBRARY_PATH:-}"
 unset PYTHONPATH
+
+LOG_DIR="$SIMFORGE_ROOT/logs/tray_grasp_cycle"
+mkdir -p "$LOG_DIR"
+if [[ -z "${TGC_LOG_FILE:-}" ]]; then
+    TGC_LOG_FILE="$LOG_DIR/$(date +%Y%m%d_%H%M%S).log"
+fi
+export TGC_LOG_FILE
+echo "[launch] Logging to $TGC_LOG_FILE"
+
+exec > >(tee -a "$TGC_LOG_FILE") 2>&1
 
 exec "$ISAACSIM_ROOT/isaac-sim.sh" \
     --exec "$SIMFORGE_ROOT/demos/tray_grasp_cycle/demo.py" \

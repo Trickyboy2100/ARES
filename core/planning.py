@@ -347,6 +347,24 @@ def build_curobo_obstacles(stage, cache, base_world_by_side):
                 "pose": np.round(np.r_[T_base_obstacle[:3, 3], quat], 9).tolist(),
             })
 
+    def add_dryer_shell_fallback(name: str, mn: np.ndarray, mx: np.ndarray):
+        # Axis-aligned open-front shell. The tray approaches with pad Z = world -Y,
+        # so the +Y side is kept open and the interior is not filled by a solid bbox.
+        dims = np.maximum(mx - mn, 0.01)
+        cx = (mn[0] + mx[0]) * 0.5
+        cy = (mn[1] + mx[1]) * 0.5
+        cz = (mn[2] + mx[2]) * 0.5
+        thickness = 0.06
+        parts = [
+            ("back", np.array([cx, mn[1] + thickness * 0.5, cz]), np.array([dims[0], thickness, dims[2]])),
+            ("left", np.array([mn[0] + thickness * 0.5, cy, cz]), np.array([thickness, dims[1], dims[2]])),
+            ("right", np.array([mx[0] - thickness * 0.5, cy, cz]), np.array([thickness, dims[1], dims[2]])),
+            ("bottom", np.array([cx, cy, mn[2] + thickness * 0.5]), np.array([dims[0], dims[1], thickness])),
+            ("top", np.array([cx, cy, mx[2] - thickness * 0.5]), np.array([dims[0], dims[1], thickness])),
+        ]
+        for part_name, center, part_dims in parts:
+            add_cuboid_for_world_box(f"{name}_{part_name}", center, part_dims)
+
     for name, path, inflate in OBSTACLE_SPECS:
         bbox = bbox_world(stage, bbox_cache, path)
         if bbox is None:
@@ -376,6 +394,7 @@ def build_curobo_obstacles(stage, cache, base_world_by_side):
         if not root or not root.IsValid():
             report[name] = {"path": root_path, "status": "missing"}
             continue
+        bbox = bbox_world(stage, bbox_cache, root_path)
         mesh_count = 0
         tri_count = 0
         vertex_count = 0
@@ -424,14 +443,39 @@ def build_curobo_obstacles(stage, cache, base_world_by_side):
                     "vertices": base_vertices,
                     "faces": triangles,
                 })
-        report[name] = {
-            "path": root_path,
-            "status": "ok" if mesh_count else "no_meshes",
-            "mesh_count": mesh_count,
-            "vertex_count": vertex_count,
-            "triangle_count": tri_count,
-            "type": "mesh",
-        }
+        if mesh_count:
+            report[name] = {
+                "path": root_path,
+                "status": "ok",
+                "mesh_count": mesh_count,
+                "vertex_count": vertex_count,
+                "triangle_count": tri_count,
+                "type": "mesh",
+            }
+        elif bbox is not None:
+            center_world, dims_world, mn, mx = bbox
+            add_dryer_shell_fallback(name, mn, mx)
+            report[name] = {
+                "path": root_path,
+                "status": "shell_fallback",
+                "center_world_xyz": np.round(center_world, 9).tolist(),
+                "dims_world_xyz": np.round(dims_world, 9).tolist(),
+                "bbox_min_world_xyz": np.round(mn, 9).tolist(),
+                "bbox_max_world_xyz": np.round(mx, 9).tolist(),
+                "mesh_count": 0,
+                "vertex_count": 0,
+                "triangle_count": 0,
+                "type": "cuboid_fallback",
+            }
+        else:
+            report[name] = {
+                "path": root_path,
+                "status": "no_meshes",
+                "mesh_count": 0,
+                "vertex_count": 0,
+                "triangle_count": 0,
+                "type": "mesh",
+            }
     return obstacles, report
 
 

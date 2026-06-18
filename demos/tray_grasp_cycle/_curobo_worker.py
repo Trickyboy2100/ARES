@@ -82,6 +82,18 @@ def main():
     batch = json.load(sys.stdin)
     jobs = batch["jobs"]
 
+    try:
+        import yaml
+        cfg = yaml.safe_load(Path(_PATCHED_CFG).read_text())
+        spheres = cfg.get("kinematics", {}).get("collision_spheres", {})
+        gripper_spheres = sum(len(spheres.get(name, []) or []) for name in (
+            "4C2_baselink", "4C2_Link1", "4C2_Link2", "4C2_Link3",
+            "4C2_Link4", "4C2_Link5", "4C2_Link6",
+        ))
+        print(f"[worker] gripper collision spheres: {gripper_spheres}", file=sys.stderr, flush=True)
+    except Exception as e:
+        print(f"[worker] gripper collision sphere check failed: {e}", file=sys.stderr, flush=True)
+
     planner_cache = {}
     chain = chain_to_link(load_joints(Path(DEFAULT_CUROBO_URDF)), "base_link", "4C2_Link5")
 
@@ -92,6 +104,13 @@ def main():
         q_goal  = np.array(job["q_goal"],  dtype=float)
         max_attempts = job.get("max_attempts", 8)
         obstacles = job.get("obstacles") or []
+        cuboid_count = sum(1 for obs in obstacles if obs.get("kind", "cuboid") != "mesh")
+        mesh_count = sum(1 for obs in obstacles if obs.get("kind", "cuboid") == "mesh")
+        print(
+            f"[worker] {label}: obstacles cuboid={cuboid_count} mesh={mesh_count}",
+            file=sys.stderr,
+            flush=True,
+        )
         planner = _planner_for(obstacles, planner_cache)
 
         path = None
@@ -108,7 +127,15 @@ def main():
             if result is not None:
                 raw = result.get_interpolated_plan().position.cpu().numpy()[0, 0, :, :]
                 path = raw[:, :6].tolist()
-                print(f"[worker] {label}: {len(path)} steps", file=sys.stderr, flush=True)
+                first_err = float(np.linalg.norm(raw[0, :6] - q_start))
+                last_err = float(np.linalg.norm(raw[-1, :6] - q_goal))
+                max_step = float(np.max(np.linalg.norm(np.diff(raw[:, :6], axis=0), axis=1))) if raw.shape[0] > 1 else 0.0
+                print(
+                    f"[worker] {label}: {len(path)} steps "
+                    f"first_err={first_err:.3f} last_err={last_err:.3f} max_step={max_step:.3f}",
+                    file=sys.stderr,
+                    flush=True,
+                )
             else:
                 print(f"[worker] {label}: planner returned None", file=sys.stderr, flush=True)
         except Exception as e:

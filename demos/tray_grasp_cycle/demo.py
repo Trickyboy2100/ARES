@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
-"""tray_grasp_cycle v3 — full left→right arm handoff demo.
+"""tray_grasp_cycle v3 — left→right arm handoff demo.
 
 State machine per cycle:
-  TO_PRE_L  → APPROACH_L (Y-linear) → CLOSE_GRIP_L →
-  LIFT_L    → CARRY_L   →
-  R_TO_NEAR → R_APPROACH → CLOSE_GRIP_R →
-  RELEASE_L → RETRACT_L → HOME_L →
-  CARRY_DRYER → HOLD_DRYER → RELEASE_R → HOME_R →
-  RESET_SCENE → PAUSE → [repeat]
+  L_TO_PICK → CLOSE_GRIP_L → L_TO_HANDOFF →
+  R_TO_HANDOFF → CLOSE_GRIP_R → RELEASE_L →
+  R_TO_DRYER → RELEASE_R → R_HOME → RESET_SCENE → PAUSE → [repeat]
 
 Motion planning:
-  All segments:  cuRobo (max_attempts=8, orientation-aware, cached).
-                 On cuRobo failure: single-frame jump to goal (no interpolation).
-  Lift IK:       solve_pad_pose_ik at contact+LIFT_Z, then cuRobo from contact→lift_end.
+  Fixed arm motions are planned once with cuRobo and replayed.  On planner
+  failure or discontinuous joint wrap, the segment falls back to smooth
+  joint-space interpolation so playback never jumps in one frame.
 """
 from __future__ import annotations
 
@@ -57,7 +54,9 @@ from planning import (
     pad_world_transform,
     build_curobo_obstacles,
     curobo_tool_pose,
+    pose_from_xyz,
 )
+from kinematics_probe import matrix_to_quat_wxyz
 from ik_sanity import joint_limits
 from scene_utils import (
     gf_matrix_from_column_transform,
@@ -126,19 +125,17 @@ TARGET_FORWARD_WORLD_L_HANDOFF = np.array([-1.0,  0.0,  0.0])   # pad Z = world 
 TARGET_JAW_WORLD_L_HANDOFF     = np.array([ 0.0,  0.0, -1.0])   # jaw vertical
 TARGET_UP_WORLD_R_HANDOFF      = np.array([ 1.0,  0.0,  0.0])
 TARGET_FORWARD_WORLD_R_HANDOFF = np.array([ 1.0,  0.0,  0.0])   # pad Z = world +X
-TARGET_JAW_WORLD_R_HANDOFF     = np.array([ 0.0,  0.0, -1.0])
+TARGET_JAW_WORLD_R_HANDOFF     = np.array([ 0.0,  0.0,  1.0])   # pad X = world +Z
 
-# ── Approach geometry — left arm (matching original verified constants) ────────
-PRE_Y_OFFSET    =  0.125
+# ── Dryer placement orientation: right gripper points into dryer along -Y ────
+TARGET_UP_WORLD_R_DRYER      = np.array([ 1.0,  0.0,  0.0])
+TARGET_FORWARD_WORLD_R_DRYER = np.array([ 0.0, -1.0,  0.0])   # pad Z = world -Y
+TARGET_JAW_WORLD_R_DRYER     = np.array([ 0.0,  0.0,  1.0])   # pad X = world +Z
+
+# ── Pick geometry — left arm ─────────────────────────────────────────────────
 PICK_Y_OFFSET   = -0.008
 GRASP_Z_OFFSET  = -0.007
-APPROACH_STEPS  =  80     # IK waypoints for the Y-linear approach path
 LIFT_Z         =  0.300
-
-# ── Approach geometry — right arm at HANDOFF (approaches from -X side) ───────
-# Right arm comes from the -X direction and approaches the right ear (at -X of handoff center)
-R_HANDOFF_PRE_X_OFFSET  = -0.125  # pre: 125mm in -X from ear
-R_HANDOFF_NEAR_X_OFFSET = -0.040  # near: 40mm in -X from ear
 
 # ── Analytical contact model ───────────────────────────────────────────────────
 PAD_FACE_DEPTH_M  = 0.028
@@ -167,13 +164,10 @@ DRYER_PLACEMENT_TARGET = np.array([-0.82, 0.40, 1.45], dtype=float)
 # ── Timing ────────────────────────────────────────────────────────────────────
 SETTLE_FRAMES         = 120
 MOTION_FRAMES         = 90
-FINE_FRAMES           = 120
 CLOSE_PHYSICS_FRAMES  = 80
-HOLD_FRAMES           = 60
 PAUSE_FRAMES          = 90
-CARRY_FRAMES          = 90
-DRYER_HOLD_FRAMES     = 90
 RESET_FRAMES          = 90
+MAX_CYCLES            = 0   # 0 = repeat playback indefinitely after planning once
 
 APPROACH_OPEN_RAD = 0.50          # gripper opening during approach (not max)
 HOME_OPEN_RAD     = 0.6241        # full open → 85.4 mm gap (return-to-zero position)
@@ -374,6 +368,39 @@ def _set_gripper_xform(gr_ops, angle_rad: float):
         op.Set(gf_matrix_from_column_transform(gripper_link_transform(name, angle_rad)))
 
 
+def _link_bbox_obstacles(stage, bbox_cache, root: str, name_prefix: str,
+                         base_world: np.ndarray, inflate_xyz=(0.04, 0.04, 0.04)):
+    """Convert visible robot link bboxes to cuRobo cuboid obstacles.
+
+    Used for the non-planned arm. cuRobo handles self-collision for the active
+    arm from its robot config, but it does not know the other Isaac arm exists.
+    """
+    obstacles = []
+    inflate = np.asarray(inflate_xyz, dtype=float)
+    inv_base = np.linalg.inv(base_world)
+    for link in LINK_NAMES:
+        prim = stage.GetPrimAtPath(f"{root}/{link}")
+        if not prim or not prim.IsValid():
+            continue
+        box = bbox_cache.ComputeWorldBound(prim).ComputeAlignedBox()
+        mn = np.array(box.GetMin(), dtype=float)
+        mx = np.array(box.GetMax(), dtype=float)
+        if not np.all(np.isfinite(mn)) or not np.all(np.isfinite(mx)):
+            continue
+        dims = mx - mn
+        if float(np.max(dims)) <= 1e-5:
+            continue
+        center_world = (mn + mx) * 0.5
+        T_base_obstacle = inv_base @ pose_from_xyz(center_world)
+        quat = matrix_to_quat_wxyz(T_base_obstacle[:3, :3])
+        obstacles.append({
+            "name": f"{name_prefix}_{link}",
+            "dims": np.round(np.maximum(dims + inflate, 0.01), 6).tolist(),
+            "pose": np.round(np.r_[T_base_obstacle[:3, 3], quat], 9).tolist(),
+        })
+    return obstacles
+
+
 def home_joint_positions_rad():
     return np.radians(HOME_JOINT_DEG_L), np.radians(HOME_JOINT_DEG_R)
 
@@ -484,7 +511,41 @@ def _q_key(q: np.ndarray):
     return tuple(round(float(x), 3) for x in q)
 
 
-def _cu_batch(jobs: list) -> dict:
+def _unwrap_to_reference(q: np.ndarray, ref: np.ndarray) -> np.ndarray:
+    q = np.asarray(q, dtype=float).copy()
+    ref = np.asarray(ref, dtype=float)
+    return ref + ((q - ref + math.pi) % (2.0 * math.pi) - math.pi)
+
+
+def _unwrap_path_near_start(path: np.ndarray, q_start: np.ndarray) -> np.ndarray:
+    if len(path) == 0:
+        return path
+    out = np.asarray(path, dtype=float).copy()
+    prev = np.asarray(q_start, dtype=float)
+    for i in range(len(out)):
+        out[i] = _unwrap_to_reference(out[i], prev)
+        prev = out[i]
+    return out
+
+
+def _continuous_path(label: str, path, q_start: np.ndarray, q_goal: np.ndarray) -> np.ndarray:
+    p = None if path is None else np.asarray(path, dtype=float)
+    if p is None or len(p) == 0:
+        return np.empty((0, len(q_goal)), dtype=float)
+    p = _unwrap_path_near_start(p, q_start)
+    q_goal_cont = _unwrap_to_reference(q_goal, p[-1])
+    if np.linalg.norm(p[0] - q_start) > 1e-4:
+        p = np.vstack([q_start, p])
+    if np.linalg.norm(p[-1] - q_goal_cont) > 1e-4:
+        p = np.vstack([p, q_goal_cont])
+    max_step = float(np.max(np.linalg.norm(np.diff(p, axis=0), axis=1))) if len(p) > 1 else 0.0
+    if max_step > 0.35:
+        print(f"[TGC] ⚠ {label}: large joint step {math.degrees(max_step):.1f}°", flush=True)
+        return np.empty((0, len(q_goal)), dtype=float)
+    return p
+
+
+def _cu_batch(jobs: list, timeout_sec: int = 300) -> dict:
     """Run a list of {q_start, q_goal, label, max_attempts} jobs via subprocess.
     Returns {label: np.ndarray path}.
     """
@@ -500,7 +561,7 @@ def _cu_batch(jobs: list) -> dict:
     try:
         proc = subprocess.run(
             [_MINICONDA_PY, _WORKER_PY],
-            input=payload, capture_output=True, text=True, timeout=300,
+            input=payload, capture_output=True, text=True, timeout=timeout_sec,
         )
         if proc.returncode != 0:
             print(f"[TGC] cuRobo worker exited {proc.returncode}:\n{proc.stderr[-600:]}", flush=True)
@@ -522,7 +583,7 @@ def _cu_batch(jobs: list) -> dict:
 def _cu_plan(planner, q_start: np.ndarray, q_goal: np.ndarray,
              steps: int, label: str = "") -> np.ndarray:
     """Plan q_start→q_goal via cuRobo subprocess (max_attempts=8).
-    Caches by (q_start, q_goal). On failure: single-frame jump (no interpolation).
+    Caches by (q_start, q_goal). On failure: joint-space fallback.
     planner arg kept for API compatibility but unused (subprocess owns the planner).
     """
     key = (_q_key(q_start), _q_key(q_goal))
@@ -533,9 +594,13 @@ def _cu_plan(planner, q_start: np.ndarray, q_goal: np.ndarray,
     path = results.get(label)
 
     if path is None or len(path) == 0:
-        print(f"[TGC] ⚠ {label}: cuRobo unavailable — single-step jump", flush=True)
-        path = np.array([q_goal])
+        print(f"[TGC] ⚠ {label}: cuRobo unavailable — joint-space fallback", flush=True)
+        path = fallback_path(q_start, _unwrap_to_reference(q_goal, q_start), count=steps)
     else:
+        path = _continuous_path(label, path, q_start, q_goal)
+        if len(path) == 0:
+            print(f"[TGC] ⚠ {label}: discontinuous cuRobo path — joint-space fallback", flush=True)
+            path = fallback_path(q_start, _unwrap_to_reference(q_goal, q_start), count=steps)
         print(f"[TGC] cuRobo {label}: {len(path)} steps", flush=True)
 
     _plan_cache[key] = path
@@ -578,21 +643,16 @@ class HandoffMonitorUI:
     PHASE_COLORS = {
         "SETTLE":       0xFF888888,
         "PLAN":         0xFFFFAA00,
-        "TO_PRE_L":     0xFF00AAFF,
-        "APPROACH_L":   0xFF44DDFF,
+        "L_TO_PICK":    0xFF00AAFF,
         "CLOSE_GRIP_L": 0xFFFFFF44,
-        "LIFT_L":       0xFF44FF44,
-        "CARRY_L":      0xFF22BB44,
-        "R_TO_NEAR":    0xFFFF8844,
-        "R_APPROACH":   0xFFFFAA66,
+        "L_TO_HANDOFF": 0xFF22BB44,
+        "R_TO_HANDOFF": 0xFFFF8844,
         "CLOSE_GRIP_R": 0xFFFFDD44,
         "RELEASE_L":    0xFFFF6666,
-        "RETRACT_L":    0xFF0088FF,
-        "HOME_L":       0xFF006688,
-        "CARRY_DRYER":  0xFFCC44FF,
-        "HOLD_DRYER":   0xFF8844CC,
+        "R_TO_DRYER":   0xFFCC44FF,
         "RELEASE_R":    0xFFFF9966,
-        "HOME_R":       0xFF884400,
+        "R_HOME":       0xFF884400,
+        "L_HOME_FOR_REPEAT": 0xFF006688,
         "RESET_SCENE":  0xFF444488,
         "PAUSE":        0xFF444444,
     }
@@ -838,6 +898,9 @@ def _run(app, stage):
     _ik_R_ho = _make_ik_fn(arm_chain, lower, upper, r_base_world, r_link6_to_pad,
                             TARGET_UP_WORLD_R_HANDOFF, TARGET_FORWARD_WORLD_R_HANDOFF, r_seeds,
                             jaw_world=TARGET_JAW_WORLD_R_HANDOFF, constrain_forward=True)
+    _ik_R_dryer = _make_ik_fn(arm_chain, lower, upper, r_base_world, r_link6_to_pad,
+                              TARGET_UP_WORLD_R_DRYER, TARGET_FORWARD_WORLD_R_DRYER, r_seeds,
+                              jaw_world=TARGET_JAW_WORLD_R_DRYER, constrain_forward=True)
 
     # ── Create UI BEFORE physics ──────────────────────────────────────────────
     ui_mon = HandoffMonitorUI()
@@ -903,88 +966,104 @@ def _run(app, stage):
     # Pad X aligned with tray centre (midpoint of both ears in world X).
     tray_center_x = (float(ear_xyz_L[0]) + float(ear_xyz_R[0])) / 2.0
     gz_L      = float(ear_xyz_L[2]) + GRASP_Z_OFFSET
-    pre_xyz_L  = np.array([tray_center_x, ear_xyz_L[1] + PRE_Y_OFFSET,  gz_L])
     pick_xyz_L = np.array([tray_center_x, ear_xyz_L[1] + PICK_Y_OFFSET, gz_L])
-    print(
-        f"[TGC] Tray centre X={tray_center_x:.4f}  "
-        f"pre_Y={pre_xyz_L[1]:.4f}  pick_Y={pick_xyz_L[1]:.4f}",
-        flush=True,
-    )
+    print(f"[TGC] Tray centre X={tray_center_x:.4f}  pick_Y={pick_xyz_L[1]:.4f}", flush=True)
+    print(f"[TGC] target left_pick_grasp: {np.round(pick_xyz_L, 4)}", flush=True)
+    print(f"[TGC] target handoff_left_pad: {np.round(handoff_pad_L, 4)}", flush=True)
+    print(f"[TGC] target handoff_right_pad: {np.round(handoff_pad_R, 4)}", flush=True)
+    print(f"[TGC] target dryer_placement_target: {np.round(dryer_target, 4)}", flush=True)
 
     print("[TGC] IK planning (left arm)…", flush=True)
-    q_pre_L  = _ik_L("L_pre",  pre_xyz_L,  orient_weight=ORIENT_WEIGHT_STRONG)
-    app.update()
-
-    # Linear-Y approach path: merge previous TO_NEAR_L + APPROACH_L into one
-    # straight line in world Y (X = tray_center_x, Z = gz_L constant).
-    print("[TGC] Building Y-linear approach path…", flush=True)
-    path_approach_L = _linear_y_path(
-        _ik_L, q_pre_L, pre_xyz_L, pick_xyz_L, APPROACH_STEPS,
-        orient_weight=ORIENT_WEIGHT_STRONG,
-    )
-    q_pick_L = path_approach_L[-1]
-    print(
-        f"[TGC] Approach path: {len(path_approach_L)} steps  "
-        f"end_pad_Y={_pad_L(q_pick_L)[1,3]:.4f}",
-        flush=True,
-    )
+    q_pick_L = _ik_L("left_pick_grasp", pick_xyz_L, orient_weight=ORIENT_WEIGHT_STRONG)
     app.update()
     # L handoff: gripper points toward right arm (-X direction)
     q_handoff_L = _ik_L_ho("L_handoff", handoff_pad_L,
                             ref=q_pick_L, orient_weight=ORIENT_WEIGHT_GRASP)
     print("[TGC] IK planning (right arm)…", flush=True)
     app.update()
-    # R arm approaches the right ear at handoff from the -X side (gripper points +X toward L arm).
-    # Approach offsets in X instead of Y.
-    near_handoff_xyz_R = handoff_pad_R + np.array([R_HANDOFF_NEAR_X_OFFSET, 0.0, 0.0])
-    pre_handoff_xyz_R  = handoff_pad_R + np.array([R_HANDOFF_PRE_X_OFFSET,  0.0, 0.0])
-    q_handoff_R      = _ik_R_ho("R_handoff",      handoff_pad_R,      orient_weight=ORIENT_WEIGHT_GRASP)
-    q_near_handoff_R = _ik_R_ho("R_near_handoff", near_handoff_xyz_R, ref=q_handoff_R, orient_weight=ORIENT_WEIGHT_GRASP)
-    q_pre_handoff_R  = _ik_R_ho("R_pre_handoff",  pre_handoff_xyz_R,  ref=q_near_handoff_R)
-    q_dryer_R        = _ik_R("R_dryer",           dryer_target,       orient_weight=ORIENT_WEIGHT_FREE)
+    q_handoff_R      = _ik_R_ho("handoff_right_pad", handoff_pad_R, orient_weight=ORIENT_WEIGHT_GRASP)
+    q_dryer_R        = _ik_R_dryer("dryer_placement_target", dryer_target, orient_weight=ORIENT_WEIGHT_GRASP)
     contact_y_R      = float(handoff_pad_R[1]) + PAD_FACE_DEPTH_M
     print("[TGC] IK done.", flush=True)
     app.update()
+
+    # cuRobo plans one arm at a time. Add the other arm as static USD bbox
+    # obstacles in the pose it has during each segment.
+    robot_bbox_cache = UsdGeom.BBoxCache(
+        Usd.TimeCode.Default(),
+        [UsdGeom.Tokens.default_, UsdGeom.Tokens.render],
+        useExtentsHint=True,
+    )
+    other_arm_for_left = _link_bbox_obstacles(
+        stage, robot_bbox_cache, RIGHT_ROOT, "right_arm_home", l_base_world
+    )
+    _set_arm_q(l_ops, chains, q_handoff_L)
+    app.update()
+    robot_bbox_cache.Clear()
+    other_arm_for_right = _link_bbox_obstacles(
+        stage, robot_bbox_cache, LEFT_ROOT, "left_arm_handoff", r_base_world
+    )
+    _set_arm_q(l_ops, chains, q_home_L)
+    app.update()
+    print(
+        f"[TGC] obstacle other_arm: left_jobs={len(other_arm_for_left)} "
+        f"right_jobs={len(other_arm_for_right)}",
+        flush=True,
+    )
 
     # ── Precompute all fixed paths via cuRobo subprocess ─────────────────────
     # cuRobo runs in miniconda python3 to avoid Isaac Sim's Warp 1.8.2 conflict.
     print("[TGC] Planning fixed paths with cuRobo (subprocess)…", flush=True)
     ui_mon.push(phase="PLAN", cycle=0)
     app.update()
-    _fixed_jobs = [
-        {"label": "home→preL",      "q_start": q_home_L,         "q_goal": q_pre_L,           "obstacles": curobo_obstacles_no_dryer["left"]},
-        {"label": "retractL",       "q_start": q_handoff_L,      "q_goal": q_home_L,          "obstacles": curobo_obstacles_no_dryer["left"]},
-        {"label": "home→preR",      "q_start": q_home_R,         "q_goal": q_pre_handoff_R,  "obstacles": curobo_obstacles_no_dryer["right"]},
-        {"label": "pre→nearR",      "q_start": q_pre_handoff_R,  "q_goal": q_near_handoff_R, "obstacles": curobo_obstacles_no_dryer["right"]},
-        {"label": "approachR",      "q_start": q_near_handoff_R, "q_goal": q_handoff_R,      "obstacles": curobo_obstacles_no_dryer["right"]},
-        {"label": "handoff→dryer",  "q_start": q_handoff_R,      "q_goal": q_dryer_R,        "obstacles": curobo_obstacles["right"]},
-        {"label": "dryer→homeR",    "q_start": q_dryer_R,        "q_goal": q_home_R,         "obstacles": curobo_obstacles["right"]},
+    _fixed_jobs_regular = [
+        {"label": "home→left_pick_grasp", "q_start": q_home_L,  "q_goal": q_pick_L,    "obstacles": curobo_obstacles_no_dryer["left"] + other_arm_for_left, "max_attempts": 24},
+        {"label": "left_pick→handoff_left_pad", "q_start": q_pick_L, "q_goal": q_handoff_L, "obstacles": curobo_obstacles_no_dryer["left"] + other_arm_for_left, "max_attempts": 24},
+        {"label": "home→handoff_right_pad", "q_start": q_home_R, "q_goal": q_handoff_R, "obstacles": curobo_obstacles_no_dryer["right"] + other_arm_for_right, "max_attempts": 24},
     ]
-    _fixed_results = _cu_batch(_fixed_jobs)
+    _fixed_jobs_dryer = [
+        {"label": "handoff→dryer",  "q_start": q_handoff_R,      "q_goal": q_dryer_R,        "obstacles": curobo_obstacles["right"] + other_arm_for_right, "max_attempts": 32},
+    ]
+    _fixed_results = {}
+    _fixed_results.update(_cu_batch(_fixed_jobs_regular, timeout_sec=180))
+    _fixed_results.update(_cu_batch(_fixed_jobs_dryer, timeout_sec=300))
 
-    def _get_path(label: str, q_goal: np.ndarray) -> np.ndarray:
+    def _get_path(label: str, q_start: np.ndarray, q_goal: np.ndarray,
+                  fallback_steps: int = MOTION_FRAMES, allow_fallback: bool = True) -> np.ndarray:
         p = _fixed_results.get(label)
         if p is None or len(p) == 0:
-            print(f"[TGC] ⚠ {label}: cuRobo failed — single-step jump", flush=True)
-            return np.array([q_goal])
+            if not allow_fallback:
+                raise RuntimeError(f"{label}: cuRobo failed; refusing collision-blind fallback")
+            print(f"[TGC] ⚠ {label}: cuRobo failed — joint-space fallback", flush=True)
+            return fallback_path(q_start, _unwrap_to_reference(q_goal, q_start), count=fallback_steps)
+        p = _continuous_path(label, p, q_start, q_goal)
+        if len(p) == 0:
+            if not allow_fallback:
+                raise RuntimeError(f"{label}: discontinuous cuRobo path; refusing collision-blind fallback")
+            print(f"[TGC] ⚠ {label}: discontinuous cuRobo path — joint-space fallback", flush=True)
+            return fallback_path(q_start, _unwrap_to_reference(q_goal, q_start), count=fallback_steps)
         key = (_q_key(p[0]), _q_key(q_goal))
         _plan_cache[key] = p
         print(f"[TGC] cuRobo {label}: {len(p)} steps", flush=True)
         return p
 
-    path_home_to_pre_L    = _get_path("home→preL",     q_pre_L)
-    # path_approach_L already built as Y-linear Cartesian path above
-    path_carry_L          = np.array([q_handoff_L])   # placeholder; rebuilt on contact
-    path_retract_L        = _get_path("retractL",      q_home_L)
-    path_home_to_pre_R    = _get_path("home→preR",     q_pre_handoff_R)
-    path_pre_to_near_R    = _get_path("pre→nearR",     q_near_handoff_R)
-    path_approach_R       = _get_path("approachR",     q_handoff_R)
-    path_handoff_to_dryer = _get_path("handoff→dryer", q_dryer_R)
-    path_dryer_home_R     = _get_path("dryer→homeR",   q_home_R)
+    path_home_to_pick_L       = _get_path("home→left_pick_grasp", q_home_L, q_pick_L)
+    path_pick_to_handoff_L    = _get_path("left_pick→handoff_left_pad", q_pick_L, q_handoff_L, fallback_steps=120)
+    path_home_to_handoff_R    = _get_path("home→handoff_right_pad", q_home_R, q_handoff_R, fallback_steps=120)
+    path_handoff_to_dryer     = _get_path("handoff→dryer", q_handoff_R, q_dryer_R, fallback_steps=120, allow_fallback=False)
+    retreat_to_handoff_R = path_handoff_to_dryer[::-1].copy()
+    handoff_to_home_R = path_home_to_handoff_R[::-1].copy()
+    path_dryer_home_R = np.vstack([retreat_to_handoff_R, handoff_to_home_R[1:]])
+    print(f"[TGC] cuRobo dryer→homeR: reverse retreat path {len(path_dryer_home_R)} steps", flush=True)
     print("[TGC] Fixed path planning done.", flush=True)
     app.update()
 
     # ── Grasp state ───────────────────────────────────────────────────────────
+    path_handoff_home_L = fallback_path(
+        q_handoff_L,
+        _unwrap_to_reference(q_home_L, q_handoff_L),
+        count=MOTION_FRAMES,
+    )
     joint_L_active   = False
     joint_R_active   = False
     pad_z0           = None
@@ -992,8 +1071,6 @@ def _run(app, stage):
     q_contact_R      = None
     contact_est_L    = False
     contact_est_R    = False
-    q_lift_end_L     = q_pick_L.copy()         # placeholder; set on contact
-    path_lift_L      = np.array([q_pick_L])    # placeholder; rebuilt on contact
 
     grip_close = np.linspace(APPROACH_OPEN_RAD, 0.0,           CLOSE_PHYSICS_FRAMES)
     grip_open  = np.linspace(0.0,               HOME_OPEN_RAD, CLOSE_PHYSICS_FRAMES // 2)
@@ -1004,7 +1081,7 @@ def _run(app, stage):
     gr_angle_R = HOME_OPEN_RAD
     path_idx  = 0
     cycle     = 1
-    phase     = "TO_PRE_L"
+    phase     = "L_TO_PICK"
 
     def _enter(new_phase):
         nonlocal phase, path_idx
@@ -1012,181 +1089,125 @@ def _run(app, stage):
         path_idx = 0
         print(f"[TGC] → {new_phase}  (cycle {cycle}  fr {frame})", flush=True)
 
-    _enter("TO_PRE_L")
+    _enter("L_TO_PICK")
 
     while app.is_running():
 
         # ── State machine ─────────────────────────────────────────────────────
 
-        if phase == "TO_PRE_L":
-            if path_idx < len(path_home_to_pre_L):
-                q_L = path_home_to_pre_L[path_idx]; path_idx += 1
+        if phase == "L_TO_PICK":
+            gr_angle_L = APPROACH_OPEN_RAD
+            if path_idx < len(path_home_to_pick_L):
+                q_L = path_home_to_pick_L[path_idx]
+                path_idx += 1
             else:
-                _enter("APPROACH_L")
-
-        elif phase == "APPROACH_L":
-            if path_idx < len(path_approach_L):
-                next_q  = path_approach_L[path_idx]
-                test_pw = _pad_L(next_q)
-                _, _, test_f = _solve_ear_contact(float(test_pw[1, 3]), contact_y_L)
-                if test_f >= GRIP_FORCE_STOP_N and path_idx > 0:
-                    q_contact_L = q_L.copy()
-                    cur_pad     = _pad_L(q_contact_L)[:3, 3]
-                    # Solve lift-end IK → plan lift + carry with cuRobo
-                    lift_target  = cur_pad.copy(); lift_target[2] += LIFT_Z
-                    q_lift_end_L = _ik_L("L_lift", lift_target, ref=q_contact_L,
-                                         orient_weight=ORIENT_WEIGHT_GRASP)
-                    print(f"[TGC] Lift IK target={np.round(lift_target, 3)}", flush=True)
-                    _lc = _cu_batch([
-                        {"label": "liftL",  "q_start": q_contact_L, "q_goal": q_lift_end_L, "obstacles": curobo_obstacles_no_dryer["left"]},
-                        {"label": "carryL", "q_start": q_lift_end_L, "q_goal": q_handoff_L,  "obstacles": curobo_obstacles_no_dryer["left"]},
-                    ])
-                    _p = _lc.get("liftL");  path_lift_L  = _p if (_p is not None and len(_p) > 0) else np.array([q_lift_end_L])
-                    _p = _lc.get("carryL"); path_carry_L = _p if (_p is not None and len(_p) > 0) else np.array([q_handoff_L])
-
-                    pad_z0        = float(cur_pad[2])
-                    contact_est_L = True
-                    _set_tray_kinematic(stage, True)  # pin tray while pad closes
-                    print(
-                        f"[TGC] L FORCE STOP F={test_f:.2f}N idx={path_idx}"
-                        f" pad={np.round(cur_pad, 4)}",
-                        flush=True,
-                    )
-                    _enter("CLOSE_GRIP_L")
-                else:
-                    q_L = next_q
-                    path_idx += 1
-            else:
-                if not contact_est_L:
-                    print("[TGC] APPROACH_L exhausted without contact", flush=True)
+                q_L = path_home_to_pick_L[-1].copy() if len(path_home_to_pick_L) else q_pick_L.copy()
+                q_contact_L = q_L.copy()
+                pad_z0 = float(_pad_L(q_contact_L)[2, 3])
+                contact_est_L = True
+                _set_tray_kinematic(stage, True)
                 _enter("CLOSE_GRIP_L")
 
         elif phase == "CLOSE_GRIP_L":
             if path_idx < len(grip_close):
-                gr_angle_L = float(grip_close[path_idx]); path_idx += 1
+                gr_angle_L = float(grip_close[path_idx])
+                path_idx += 1
             else:
                 gr_angle_L = 0.0
                 if not joint_L_active:
-                    # No-contact fallback: compute paths and pin tray
                     if q_contact_L is None:
                         q_contact_L = q_L.copy()
-                        cur_pad     = _pad_L(q_contact_L)[:3, 3]
-                        lift_target  = cur_pad.copy(); lift_target[2] += LIFT_Z
-                        q_lift_end_L = _ik_L("L_lift_nc", lift_target, ref=q_contact_L,
-                                             orient_weight=ORIENT_WEIGHT_GRASP)
-                        _lc_nc = _cu_batch([
-                            {"label": "liftL_nc",  "q_start": q_contact_L, "q_goal": q_lift_end_L, "obstacles": curobo_obstacles_no_dryer["left"]},
-                            {"label": "carryL_nc", "q_start": q_lift_end_L, "q_goal": q_handoff_L,  "obstacles": curobo_obstacles_no_dryer["left"]},
-                        ])
-                        _p = _lc_nc.get("liftL_nc");  path_lift_L  = _p if (_p is not None and len(_p) > 0) else np.array([q_lift_end_L])
-                        _p = _lc_nc.get("carryL_nc"); path_carry_L = _p if (_p is not None and len(_p) > 0) else np.array([q_handoff_L])
-                        pad_z0         = float(cur_pad[2])
+                        pad_z0 = float(_pad_L(q_contact_L)[2, 3])
+                        contact_est_L = True
                         _set_tray_kinematic(stage, True)
-                        print("[TGC] L grasp (no-contact fallback)", flush=True)
-                    # Create FixedJoint while tray is kinematic → zero impulse at activation
                     _create_grasp_joint(stage, RIGHT_PAD_L_PATH, JOINT_PATH_L)
                     _set_tray_kinematic(stage, False)
                     joint_L_active = True
-                _enter("LIFT_L")
+                _enter("L_TO_HANDOFF")
 
-        elif phase == "LIFT_L":
-            if path_idx < len(path_lift_L):
-                q_L = path_lift_L[path_idx]; path_idx += 1
+        elif phase == "L_TO_HANDOFF":
+            if path_idx < len(path_pick_to_handoff_L):
+                q_L = path_pick_to_handoff_L[path_idx]
+                path_idx += 1
             else:
-                _enter("CARRY_L")
+                q_L = path_pick_to_handoff_L[-1].copy() if len(path_pick_to_handoff_L) else q_handoff_L.copy()
+                _enter("R_TO_HANDOFF")
 
-        elif phase == "CARRY_L":
-            if path_idx < len(path_carry_L):
-                q_L = path_carry_L[path_idx]; path_idx += 1
+        elif phase == "R_TO_HANDOFF":
+            gr_angle_R = HOME_OPEN_RAD
+            if path_idx < len(path_home_to_handoff_R):
+                q_R = path_home_to_handoff_R[path_idx]
+                path_idx += 1
             else:
-                # Both arms at handoff position — right arm moves to its side
-                _enter("R_TO_NEAR")
-
-        elif phase == "R_TO_NEAR":
-            gr_angle_R = HOME_OPEN_RAD  # keep fully open during transit
-            total_R = len(path_home_to_pre_R) + len(path_pre_to_near_R)
-            if path_idx < len(path_home_to_pre_R):
-                q_R = path_home_to_pre_R[path_idx]; path_idx += 1
-            elif path_idx < total_R:
-                q_R = path_pre_to_near_R[path_idx - len(path_home_to_pre_R)]; path_idx += 1
-            else:
-                _enter("R_APPROACH")
-
-        elif phase == "R_APPROACH":
-            gr_angle_R = HOME_OPEN_RAD  # keep fully open until closed by CLOSE_GRIP_R
-            # No force detection: handoff position is known/fixed, just execute path.
-            if path_idx < len(path_approach_R):
-                q_R = path_approach_R[path_idx]; path_idx += 1
-            else:
+                q_R = path_home_to_handoff_R[-1].copy() if len(path_home_to_handoff_R) else q_handoff_R.copy()
                 _enter("CLOSE_GRIP_R")
 
         elif phase == "CLOSE_GRIP_R":
             if path_idx < len(grip_close):
-                gr_angle_R = float(grip_close[path_idx]); path_idx += 1
+                gr_angle_R = float(grip_close[path_idx])
+                path_idx += 1
             else:
                 gr_angle_R = 0.0
                 if not joint_R_active:
-                    # Create FixedJoint (tray still held by joint_L → safe)
                     _create_grasp_joint(stage, RIGHT_PAD_R_PATH, JOINT_PATH_R)
                     joint_R_active = True
                     contact_est_R  = True
-                    print("[TGC] R force grasp → FixedJoint_R created", flush=True)
+                    print("[TGC] R grasp → FixedJoint_R created", flush=True)
                 _enter("RELEASE_L")
 
         elif phase == "RELEASE_L":
             if path_idx < len(grip_open):
-                gr_angle_L = float(grip_open[path_idx]); path_idx += 1
+                gr_angle_L = float(grip_open[path_idx])
+                path_idx += 1
             else:
                 gr_angle_L     = APPROACH_OPEN_RAD
                 joint_L_active = False
                 pad_z0         = None
                 contact_est_L  = False
                 q_contact_L    = None
-                _remove_prims(stage, JOINT_PATH_L)  # release L FixedJoint → R holds tray
+                _remove_prims(stage, JOINT_PATH_L)
                 print("[TGC] L released → tray held by R FixedJoint", flush=True)
-                _enter("RETRACT_L")
+                _enter("R_TO_DRYER")
 
-        elif phase == "RETRACT_L":
-            if path_idx < len(path_retract_L):
-                q_L = path_retract_L[path_idx]; path_idx += 1
-            else:
-                q_L = q_home_L.copy()
-                _enter("CARRY_DRYER")
-
-        elif phase == "CARRY_DRYER":
+        elif phase == "R_TO_DRYER":
             if path_idx < len(path_handoff_to_dryer):
-                q_R = path_handoff_to_dryer[path_idx]; path_idx += 1
-            else:
-                _enter("HOLD_DRYER")
-
-        elif phase == "HOLD_DRYER":
-            if path_idx < DRYER_HOLD_FRAMES:
+                q_R = path_handoff_to_dryer[path_idx]
                 path_idx += 1
             else:
+                q_R = path_handoff_to_dryer[-1].copy() if len(path_handoff_to_dryer) else q_dryer_R.copy()
                 _enter("RELEASE_R")
 
         elif phase == "RELEASE_R":
             if path_idx < len(grip_open):
-                gr_angle_R = float(grip_open[path_idx]); path_idx += 1
+                gr_angle_R = float(grip_open[path_idx])
+                path_idx += 1
             else:
                 gr_angle_R     = APPROACH_OPEN_RAD
                 joint_R_active = False
                 contact_est_R  = False
                 q_contact_R    = None
-                _remove_prims(stage, JOINT_PATH_R)  # release R FixedJoint → tray free
+                _remove_prims(stage, JOINT_PATH_R)
                 print("[TGC] R released → tray free (dynamic)", flush=True)
-                _enter("HOME_R")
+                _enter("R_HOME")
 
-        elif phase == "HOME_R":
+        elif phase == "R_HOME":
             if path_idx < len(path_dryer_home_R):
-                q_R = path_dryer_home_R[path_idx]; path_idx += 1
+                q_R = path_dryer_home_R[path_idx]
+                path_idx += 1
             else:
-                q_R = q_home_R.copy()
+                q_R = path_dryer_home_R[-1].copy() if len(path_dryer_home_R) else q_home_R.copy()
+                _enter("L_HOME_FOR_REPEAT")
+
+        elif phase == "L_HOME_FOR_REPEAT":
+            if path_idx < len(path_handoff_home_L):
+                q_L = path_handoff_home_L[path_idx]
+                path_idx += 1
+            else:
+                q_L = path_handoff_home_L[-1].copy() if len(path_handoff_home_L) else q_home_L.copy()
                 _enter("RESET_SCENE")
 
         elif phase == "RESET_SCENE":
             if path_idx == 0:
-                # Clean up joints; tray is already dynamic (released by R arm) — let it fall
                 joint_L_active = False
                 joint_R_active = False
                 _remove_prims(stage, JOINT_PATH_L, JOINT_PATH_R)
@@ -1196,10 +1217,8 @@ def _run(app, stage):
                 )
                 path_idx = 1
             elif path_idx < RESET_FRAMES:
-                # Tray falls under physics — just wait
                 path_idx += 1
             else:
-                # Flash: instant teleport to original pose (kinematic→set→dynamic)
                 _set_tray_kinematic(stage, True)
                 _set_tray_world_transform(stage, tray_T_ref)
                 app.update()
@@ -1211,7 +1230,10 @@ def _run(app, stage):
             if path_idx < PAUSE_FRAMES:
                 path_idx += 1
             else:
-                # Start next cycle — re-read ear positions and re-plan
+                if MAX_CYCLES > 0 and cycle >= MAX_CYCLES:
+                    print(f"[TGC] Completed {cycle} cycle(s); stopping.", flush=True)
+                    timeline.stop()
+                    break
                 cycle          += 1
                 q_L             = q_home_L.copy()
                 q_R             = q_home_R.copy()
@@ -1223,32 +1245,8 @@ def _run(app, stage):
                 joint_R_active  = False
                 q_contact_L     = None
                 q_contact_R     = None
-                _plan_cache.clear()
-
-                cache.Clear()
-                gp_T = get_world_pose(stage, cache, GRASP_PRIM_L)
-                gp_R = get_world_pose(stage, cache, GRASP_PRIM_R)
-                if gp_T is not None and np.linalg.norm(gp_T[:3, 3]) > 0.05:
-                    ear_xyz_L = gp_T[:3, 3].copy()
-                    if gp_R is not None and np.linalg.norm(gp_R[:3, 3]) > 0.05:
-                        ear_xyz_R = gp_R[:3, 3].copy()
-                    contact_y_L   = float(ear_xyz_L[1]) + PAD_FACE_DEPTH_M
-                    tray_center_x = (float(ear_xyz_L[0]) + float(ear_xyz_R[0])) / 2.0
-                    gz_L          = float(ear_xyz_L[2]) + GRASP_Z_OFFSET
-                    pre_xyz_L  = np.array([tray_center_x, ear_xyz_L[1] + PRE_Y_OFFSET,  gz_L])
-                    pick_xyz_L = np.array([tray_center_x, ear_xyz_L[1] + PICK_Y_OFFSET, gz_L])
-                    q_pre_L = _ik_L("L_pre", pre_xyz_L, orient_weight=ORIENT_WEIGHT_STRONG)
-                    path_approach_L = _linear_y_path(
-                        _ik_L, q_pre_L, pre_xyz_L, pick_xyz_L, APPROACH_STEPS,
-                        orient_weight=ORIENT_WEIGHT_STRONG,
-                    )
-                    _restart = _cu_batch([
-                        {"label": "home→preL_c", "q_start": q_home_L, "q_goal": q_pre_L, "obstacles": curobo_obstacles_no_dryer["left"]},
-                    ])
-                    _p = _restart.get("home→preL_c")
-                    path_home_to_pre_L = _p if (_p is not None and len(_p) > 0) else np.array([q_pre_L])
-                    print(f"[TGC] Cycle {cycle}: ear Y={ear_xyz_L[1]:.4f}  ctrX={tray_center_x:.4f}", flush=True)
-                _enter("TO_PRE_L")
+                print(f"[TGC] Cycle {cycle}: replaying planned animation", flush=True)
+                _enter("L_TO_PICK")
 
         # ── Apply FK both arms ────────────────────────────────────────────────
         _set_arm_q(l_ops, chains, q_L)

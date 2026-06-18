@@ -166,13 +166,88 @@ kinematics:
       - -0.008244752883911133
       - 0.03419329971075058
       radius: 0.0020000000949949026
-    4C2_baselink: []
-    4C2_Link1: []
-    4C2_Link2: []
-    4C2_Link3: []
-    4C2_Link4: []
-    4C2_Link5: []
-    4C2_Link6: []
+    4C2_baselink:
+    - center:
+      - 0.0
+      - 0.0
+      - 0.025
+      radius: 0.018
+    - center:
+      - 0.0
+      - 0.0
+      - 0.055
+      radius: 0.022
+    - center:
+      - 0.0
+      - 0.0
+      - 0.085
+      radius: 0.018
+    4C2_Link1:
+    - center:
+      - 0.011
+      - 0.009
+      - 0.008
+      radius: 0.014
+    - center:
+      - 0.011
+      - 0.009
+      - 0.028
+      radius: 0.014
+    4C2_Link2:
+    - center:
+      - 0.011
+      - 0.009
+      - 0.008
+      radius: 0.014
+    - center:
+      - 0.011
+      - 0.009
+      - 0.028
+      radius: 0.014
+    4C2_Link3:
+    - center:
+      - -0.011
+      - 0.009
+      - 0.008
+      radius: 0.014
+    - center:
+      - -0.011
+      - 0.009
+      - 0.028
+      radius: 0.014
+    4C2_Link4:
+    - center:
+      - -0.011
+      - 0.009
+      - 0.008
+      radius: 0.014
+    - center:
+      - -0.011
+      - 0.009
+      - 0.028
+      radius: 0.014
+    4C2_Link5:
+    - center:
+      - 0.007
+      - 0.006
+      - 0.006
+      radius: 0.012
+    - center:
+      - 0.007
+      - 0.006
+      - 0.022
+      radius: 0.012
+    4C2_Link6:
+    - center:
+      - -0.007
+      - 0.006
+      - 0.006
+      radius: 0.012
+    - center:
+      - -0.007
+      - 0.006
+      - 0.022
+      radius: 0.012
   cspace:
     acceleration_scale:
     - 1.0
@@ -306,26 +381,68 @@ kinematics:
     - link4
     - link5
     - 4C2_baselink
+    - 4C2_Link1
+    - 4C2_Link2
+    - 4C2_Link3
+    - 4C2_Link4
+    - 4C2_Link5
+    - 4C2_Link6
     4C2_baselink:
     - link6
     - 4C2_Link1
     - 4C2_Link2
     - 4C2_Link3
     - 4C2_Link4
-    4C2_Link1:
-    - 4C2_baselink
     - 4C2_Link5
+    - 4C2_Link6
+    4C2_Link1:
+    - link6
+    - 4C2_baselink
+    - 4C2_Link2
+    - 4C2_Link3
+    - 4C2_Link4
+    - 4C2_Link5
+    - 4C2_Link6
     4C2_Link2:
+    - link6
     - 4C2_baselink
+    - 4C2_Link1
+    - 4C2_Link3
+    - 4C2_Link4
+    - 4C2_Link5
+    - 4C2_Link6
     4C2_Link3:
+    - link6
     - 4C2_baselink
+    - 4C2_Link1
+    - 4C2_Link2
+    - 4C2_Link4
+    - 4C2_Link5
+    - 4C2_Link6
     4C2_Link4:
+    - link6
     - 4C2_baselink
+    - 4C2_Link1
+    - 4C2_Link2
+    - 4C2_Link3
+    - 4C2_Link5
     - 4C2_Link6
     4C2_Link5:
+    - link6
+    - 4C2_baselink
     - 4C2_Link1
-    4C2_Link6:
+    - 4C2_Link2
+    - 4C2_Link3
     - 4C2_Link4
+    - 4C2_Link6
+    4C2_Link6:
+    - link6
+    - 4C2_baselink
+    - 4C2_Link1
+    - 4C2_Link2
+    - 4C2_Link3
+    - 4C2_Link4
+    - 4C2_Link5
   tool_frames:
   - 4C2_Link5
   urdf_path: /home/andyee/Developer/PG-JY/jinyu_ros_pkg/nodes/simulation/jaka_minicobo_gripper.urdf
