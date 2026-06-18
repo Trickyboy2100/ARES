@@ -26,12 +26,12 @@ from planning import selected_pad_midpoint
 from demos.tray_grasp_cycle.demo import (
     GRASP_PRIM_L,
     GRASP_PRIM_R,
-    GRASP_Z_OFFSET,
     DRYER_PLACEMENT_TARGET,
     HANDOFF_EAR_HALF,
+    HANDOFF_RIGHT_PAD_WORLD_OFFSET,
     LEFT_GR,
+    LEFT_PICK_WORLD_OFFSET,
     PAD_FACE_DEPTH_M,
-    PICK_Y_OFFSET,
     TRAY_GRASP_INIT_L,
     _compute_handoff_center,
     _get_dryer_world_pos,
@@ -108,13 +108,12 @@ def add_target_markers(stage):
         ear_xyz_R[0] -= 2.0 * HANDOFF_EAR_HALF
 
     tray_center_x = (float(ear_xyz_L[0]) + float(ear_xyz_R[0])) / 2.0
-    gz_L = float(ear_xyz_L[2]) + GRASP_Z_OFFSET
-    pick_xyz_L = np.array([tray_center_x, ear_xyz_L[1] + PICK_Y_OFFSET, gz_L])
-    contact_xyz_L = np.array([tray_center_x, ear_xyz_L[1] + PAD_FACE_DEPTH_M, gz_L])
+    pick_xyz_L = ear_xyz_L.copy() + LEFT_PICK_WORLD_OFFSET
+    contact_xyz_L = np.array([tray_center_x, ear_xyz_L[1] + PAD_FACE_DEPTH_M, ear_xyz_L[2]])
 
     handoff_center = _compute_handoff_center(l_base_world, r_base_world)
     handoff_pad_L = handoff_center + np.array([HANDOFF_EAR_HALF, 0.0, 0.0])
-    handoff_pad_R = handoff_center + np.array([-HANDOFF_EAR_HALF, 0.0, 0.0])
+    handoff_pad_R = handoff_center + np.array([-HANDOFF_EAR_HALF, 0.0, 0.0]) + HANDOFF_RIGHT_PAD_WORLD_OFFSET
 
     dryer_pos = _get_dryer_world_pos(stage)
     dryer_target = DRYER_PLACEMENT_TARGET.copy()

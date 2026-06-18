@@ -3,7 +3,7 @@
 
 State machine per cycle:
   L_TO_PICK → CLOSE_GRIP_L → L_TO_HANDOFF →
-  R_TO_HANDOFF → CLOSE_GRIP_R → RELEASE_L →
+  R_TO_HANDOFF → CLOSE_GRIP_R → R_SETTLE_GRASP → RELEASE_L →
   R_TO_DRYER → RELEASE_R → R_HOME → RESET_SCENE → PAUSE → [repeat]
 
 Motion planning:
@@ -155,6 +155,8 @@ ORIENT_WEIGHT_STRONG = 0.30   # approach path: enforce jaw+forward simultaneousl
 HANDOFF_Z_ABS      = 1.20   # absolute world Z (120cm from floor)
 HANDOFF_Y_OFFSET   = -0.30  # m offset from arm base center Y (toward work area)
 HANDOFF_EAR_HALF   = 0.0775 # m — half the ear separation (~155mm total)
+LEFT_PICK_WORLD_OFFSET = np.array([0.010, 0.0, 0.0], dtype=float)
+HANDOFF_RIGHT_PAD_WORLD_OFFSET = np.array([-0.020, 0.0, 0.0], dtype=float)
 
 # Dryer delivery: arm delivers tray pointing in dryer direction; capped to reachable distance
 DRYER_REACH_LIMIT  = 0.55   # m max pad displacement from arm base
@@ -165,6 +167,7 @@ DRYER_PLACEMENT_TARGET = np.array([-0.82, 0.40, 1.45], dtype=float)
 SETTLE_FRAMES         = 120
 MOTION_FRAMES         = 90
 CLOSE_PHYSICS_FRAMES  = 80
+HANDOFF_SETTLE_FRAMES = 8
 PAUSE_FRAMES          = 90
 RESET_FRAMES          = 90
 MAX_CYCLES            = 0   # 0 = repeat playback indefinitely after planning once
@@ -302,27 +305,60 @@ def _remove_prims(stage, *paths):
             stage.RemovePrim(p)
 
 
-def _create_grasp_joint(stage, pad_path: str, joint_path: str):
-    """FixedJoint from kinematic pad → dynamic tray, locking current relative 6-DOF pose.
+def _ensure_grasp_carrier(stage, carrier_root: str, T_carrier: np.ndarray) -> str:
+    """Create a hidden kinematic carrier at the gripper pad-midpoint pose."""
+    from pxr import UsdGeom, UsdPhysics
 
-    Call ONLY while the tray is kinematic so the initial constraint is exactly
-    satisfied and PhysX applies zero impulse when tray goes dynamic.
+    if stage.GetPrimAtPath(carrier_root):
+        stage.RemovePrim(carrier_root)
+    UsdGeom.Xform.Define(stage, carrier_root)
+    cube = UsdGeom.Cube.Define(stage, f"{carrier_root}/Carrier")
+    cube.CreateSizeAttr(0.01)
+    cube.CreateVisibilityAttr().Set(UsdGeom.Tokens.invisible)
+    xf = UsdGeom.Xformable(cube.GetPrim())
+    xf.ClearXformOpOrder()
+    op = xf.AddTransformOp(UsdGeom.XformOp.PrecisionDouble)
+    op.Set(gf_matrix_from_column_transform(T_carrier))
+    rb = UsdPhysics.RigidBodyAPI.Apply(cube.GetPrim())
+    rb.CreateRigidBodyEnabledAttr().Set(True)
+    rb.CreateKinematicEnabledAttr().Set(True)
+    UsdPhysics.MassAPI.Apply(cube.GetPrim()).CreateMassAttr().Set(0.05)
+    return f"{carrier_root}/Carrier"
+
+
+def _set_grasp_carrier(stage, carrier_root: str, T_carrier: np.ndarray):
+    from pxr import UsdGeom
+
+    prim = stage.GetPrimAtPath(f"{carrier_root}/Carrier")
+    if not prim or not prim.IsValid():
+        return
+    xf = UsdGeom.Xformable(prim)
+    ops = xf.GetOrderedXformOps()
+    op = ops[0] if ops else xf.AddTransformOp(UsdGeom.XformOp.PrecisionDouble)
+    op.Set(gf_matrix_from_column_transform(T_carrier))
+
+
+def _create_grasp_joint(stage, carrier_root: str, T_carrier: np.ndarray, joint_path: str):
+    """FixedJoint from kinematic gripper carrier → dynamic tray.
+
+    If the tray is temporarily kinematic for a pose snap, it must be restored
+    to dynamic before the next physics update. PhysX rejects joints between two
+    kinematic/static bodies.
     """
     from pxr import Gf, Sdf, UsdGeom, UsdPhysics, Usd
     from scipy.spatial.transform import Rotation
 
-    cache = UsdGeom.XformCache(Usd.TimeCode.Default())
-    T_pad  = get_world_pose(stage, cache, pad_path)
+    carrier_path = _ensure_grasp_carrier(stage, carrier_root, T_carrier)
     T_tray = _get_tray_world_T(stage)
 
-    # Express pad's world pose in tray's local frame
-    T_local1 = np.linalg.inv(T_tray) @ T_pad
+    # Express carrier's world pose in tray's local frame.
+    T_local1 = np.linalg.inv(T_tray) @ T_carrier
     pos1 = T_local1[:3, 3]
     q1   = Rotation.from_matrix(T_local1[:3, :3]).as_quat()  # [x,y,z,w]
 
     _remove_prims(stage, joint_path)  # clear any stale prim
     joint = UsdPhysics.FixedJoint.Define(stage, joint_path)
-    joint.CreateBody0Rel().SetTargets([Sdf.Path(pad_path)])
+    joint.CreateBody0Rel().SetTargets([Sdf.Path(carrier_path)])
     joint.CreateBody1Rel().SetTargets([Sdf.Path(TRAY_PATH)])
     joint.CreateLocalPos0Attr().Set(Gf.Vec3f(0.0, 0.0, 0.0))
     joint.CreateLocalRot0Attr().Set(Gf.Quatf(1.0, 0.0, 0.0, 0.0))
@@ -335,7 +371,7 @@ def _create_grasp_joint(stage, pad_path: str, joint_path: str):
 
     print(
         f"[TGC] FixedJoint {joint_path}:"
-        f" pad={np.round(T_pad[:3,3],3)} tray={np.round(T_tray[:3,3],3)}"
+        f" carrier={np.round(T_carrier[:3,3],3)} tray={np.round(T_tray[:3,3],3)}"
         f" local1_pos={np.round(pos1,4)}",
         flush=True,
     )
@@ -648,6 +684,7 @@ class HandoffMonitorUI:
         "L_TO_HANDOFF": 0xFF22BB44,
         "R_TO_HANDOFF": 0xFFFF8844,
         "CLOSE_GRIP_R": 0xFFFFDD44,
+        "R_SETTLE_GRASP": 0xFFFFCC66,
         "RELEASE_L":    0xFFFF6666,
         "R_TO_DRYER":   0xFFCC44FF,
         "RELEASE_R":    0xFFFF9966,
@@ -841,7 +878,7 @@ def _run(app, stage):
     # ── Handoff / dryer geometry ──────────────────────────────────────────────
     handoff_center = _compute_handoff_center(l_base_world, r_base_world)
     handoff_pad_L  = handoff_center + np.array([ HANDOFF_EAR_HALF, 0, 0])
-    handoff_pad_R  = handoff_center + np.array([-HANDOFF_EAR_HALF, 0, 0])
+    handoff_pad_R  = handoff_center + np.array([-HANDOFF_EAR_HALF, 0, 0]) + HANDOFF_RIGHT_PAD_WORLD_OFFSET
     print(f"[TGC] Handoff center: {np.round(handoff_center, 3)}", flush=True)
     print(f"[TGC]  L pad @handoff: {np.round(handoff_pad_L, 3)}", flush=True)
     print(f"[TGC]  R pad @handoff: {np.round(handoff_pad_R, 3)}", flush=True)
@@ -963,11 +1000,16 @@ def _run(app, stage):
     contact_y_L = float(ear_xyz_L[1]) + PAD_FACE_DEPTH_M
     # contact_y_R is set during IK planning (based on handoff position, not initial tray)
 
-    # Pad X aligned with tray centre (midpoint of both ears in world X).
+    # Pick is defined directly from the tray's left grasp marker. Do not use
+    # the Tray prim origin or the midpoint of both ears; those frames are not
+    # reliable for the actual left-arm contact point.
     tray_center_x = (float(ear_xyz_L[0]) + float(ear_xyz_R[0])) / 2.0
-    gz_L      = float(ear_xyz_L[2]) + GRASP_Z_OFFSET
-    pick_xyz_L = np.array([tray_center_x, ear_xyz_L[1] + PICK_Y_OFFSET, gz_L])
-    print(f"[TGC] Tray centre X={tray_center_x:.4f}  pick_Y={pick_xyz_L[1]:.4f}", flush=True)
+    pick_xyz_L = ear_xyz_L.copy() + LEFT_PICK_WORLD_OFFSET
+    print(
+        f"[TGC] Tray centre X={tray_center_x:.4f}  left_grasp_X={ear_xyz_L[0]:.4f}  "
+        f"pick={np.round(pick_xyz_L, 4)}",
+        flush=True,
+    )
     print(f"[TGC] target left_pick_grasp: {np.round(pick_xyz_L, 4)}", flush=True)
     print(f"[TGC] target handoff_left_pad: {np.round(handoff_pad_L, 4)}", flush=True)
     print(f"[TGC] target handoff_right_pad: {np.round(handoff_pad_R, 4)}", flush=True)
@@ -982,6 +1024,7 @@ def _run(app, stage):
     print("[TGC] IK planning (right arm)…", flush=True)
     app.update()
     q_handoff_R      = _ik_R_ho("handoff_right_pad", handoff_pad_R, orient_weight=ORIENT_WEIGHT_GRASP)
+
     q_dryer_R        = _ik_R_dryer("dryer_placement_target", dryer_target, orient_weight=ORIENT_WEIGHT_GRASP)
     contact_y_R      = float(handoff_pad_R[1]) + PAD_FACE_DEPTH_M
     print("[TGC] IK done.", flush=True)
@@ -1120,7 +1163,7 @@ def _run(app, stage):
                         pad_z0 = float(_pad_L(q_contact_L)[2, 3])
                         contact_est_L = True
                         _set_tray_kinematic(stage, True)
-                    _create_grasp_joint(stage, RIGHT_PAD_L_PATH, JOINT_PATH_L)
+                    _create_grasp_joint(stage, CARRIER_ROOT_L, _pad_L(q_L), JOINT_PATH_L)
                     _set_tray_kinematic(stage, False)
                     joint_L_active = True
                 _enter("L_TO_HANDOFF")
@@ -1149,24 +1192,36 @@ def _run(app, stage):
             else:
                 gr_angle_R = 0.0
                 if not joint_R_active:
-                    _create_grasp_joint(stage, RIGHT_PAD_R_PATH, JOINT_PATH_R)
+                    # Keep the tray dynamic here. PhysX rejects a FixedJoint
+                    # between two kinematic/static bodies; the left lock still
+                    # holds the tray while the right lock is added.
+                    _create_grasp_joint(stage, CARRIER_ROOT_R, _pad_R(q_R), JOINT_PATH_R)
                     joint_R_active = True
                     contact_est_R  = True
                     print("[TGC] R grasp → FixedJoint_R created", flush=True)
+                _enter("R_SETTLE_GRASP")
+
+        elif phase == "R_SETTLE_GRASP":
+            gr_angle_R = 0.0
+            q_R = q_handoff_R.copy()
+            if path_idx < HANDOFF_SETTLE_FRAMES:
+                path_idx += 1
+            else:
                 _enter("RELEASE_L")
 
         elif phase == "RELEASE_L":
+            if path_idx == 0 and joint_L_active:
+                joint_L_active = False
+                pad_z0         = None
+                contact_est_L  = False
+                q_contact_L    = None
+                _remove_prims(stage, JOINT_PATH_L, CARRIER_ROOT_L)
+                print("[TGC] L released → tray held by R FixedJoint", flush=True)
             if path_idx < len(grip_open):
                 gr_angle_L = float(grip_open[path_idx])
                 path_idx += 1
             else:
                 gr_angle_L     = APPROACH_OPEN_RAD
-                joint_L_active = False
-                pad_z0         = None
-                contact_est_L  = False
-                q_contact_L    = None
-                _remove_prims(stage, JOINT_PATH_L)
-                print("[TGC] L released → tray held by R FixedJoint", flush=True)
                 _enter("R_TO_DRYER")
 
         elif phase == "R_TO_DRYER":
@@ -1175,19 +1230,27 @@ def _run(app, stage):
                 path_idx += 1
             else:
                 q_R = path_handoff_to_dryer[-1].copy() if len(path_handoff_to_dryer) else q_dryer_R.copy()
+                pad_at_place = _pad_R(q_R)[:3, 3]
+                err_mm = float(np.linalg.norm(pad_at_place - dryer_target) * 1000.0)
+                print(
+                    f"[TGC] Right pad placement: pad={np.round(pad_at_place, 4)} "
+                    f"target={np.round(dryer_target, 4)} err={err_mm:.1f}mm",
+                    flush=True,
+                )
                 _enter("RELEASE_R")
 
         elif phase == "RELEASE_R":
+            if path_idx == 0 and joint_R_active:
+                joint_R_active = False
+                contact_est_R  = False
+                q_contact_R    = None
+                _remove_prims(stage, JOINT_PATH_R, CARRIER_ROOT_R)
+                print("[TGC] R released → tray free (dynamic)", flush=True)
             if path_idx < len(grip_open):
                 gr_angle_R = float(grip_open[path_idx])
                 path_idx += 1
             else:
                 gr_angle_R     = APPROACH_OPEN_RAD
-                joint_R_active = False
-                contact_est_R  = False
-                q_contact_R    = None
-                _remove_prims(stage, JOINT_PATH_R)
-                print("[TGC] R released → tray free (dynamic)", flush=True)
                 _enter("R_HOME")
 
         elif phase == "R_HOME":
@@ -1210,20 +1273,19 @@ def _run(app, stage):
             if path_idx == 0:
                 joint_L_active = False
                 joint_R_active = False
-                _remove_prims(stage, JOINT_PATH_L, JOINT_PATH_R)
+                _set_tray_kinematic(stage, True)
+                _remove_prims(stage, JOINT_PATH_L, CARRIER_ROOT_L, JOINT_PATH_R, CARRIER_ROOT_R)
+                _set_tray_world_transform(stage, tray_T_ref)
+                app.update()
                 print(
-                    f"[TGC] Reset: tray free-fall from {np.round(_get_tray_translate(stage), 3)}",
+                    f"[TGC] Reset: tray restored and held at {np.round(tray_xyz_ref, 3)}",
                     flush=True,
                 )
                 path_idx = 1
             elif path_idx < RESET_FRAMES:
                 path_idx += 1
             else:
-                _set_tray_kinematic(stage, True)
-                _set_tray_world_transform(stage, tray_T_ref)
-                app.update()
-                _set_tray_kinematic(stage, False)
-                print("[TGC] Flash: new tray at origin", flush=True)
+                print("[TGC] Reset settle done", flush=True)
                 _enter("PAUSE")
 
         elif phase == "PAUSE":
@@ -1239,6 +1301,8 @@ def _run(app, stage):
                 q_R             = q_home_R.copy()
                 gr_angle_L      = HOME_OPEN_RAD
                 gr_angle_R      = HOME_OPEN_RAD
+                _set_tray_world_transform(stage, tray_T_ref)
+                _set_tray_kinematic(stage, False)
                 contact_est_L   = False
                 contact_est_R   = False
                 joint_L_active  = False
@@ -1253,6 +1317,11 @@ def _run(app, stage):
         _set_arm_q(r_ops, chains, q_R)
         _set_gripper_xform(l_gr_ops, gr_angle_L)
         _set_gripper_xform(r_gr_ops, gr_angle_R)
+
+        if joint_L_active:
+            _set_grasp_carrier(stage, CARRIER_ROOT_L, _pad_L(q_L))
+        if joint_R_active:
+            _set_grasp_carrier(stage, CARRIER_ROOT_R, _pad_R(q_R))
 
         # ── Analytical contact forces ─────────────────────────────────────────
         pad_world_L = _pad_L(q_L)
