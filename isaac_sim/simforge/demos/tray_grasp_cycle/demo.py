@@ -23,27 +23,22 @@ from pathlib import Path
 import numpy as np
 
 # ── sys.path ──────────────────────────────────────────────────────────────────
-_DEMO_DIR  = Path(__file__).resolve().parent
-_SIMFORGE  = _DEMO_DIR.parents[1]
+_DEMO_DIR  = Path(__file__).resolve().parent           # demos/tray_grasp_cycle/
+_SIMFORGE  = _DEMO_DIR.parents[1]                      # simforge/ (repo root)
 _CORE      = _SIMFORGE / "core"
 for _p in (str(_SIMFORGE), str(_CORE)):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-# cuRobo v0.2 lives in the miniconda env (pure-Python, no .so — loadable in Isaac Sim python)
-_CUROBO_SITE = "/home/andyee/miniconda3/lib/python3.13/site-packages"
-if _CUROBO_SITE not in sys.path:
-    sys.path.insert(0, _CUROBO_SITE)
-
-# ── Scene / URDF paths ────────────────────────────────────────────────────────
-try:
-    import config as _cfg
-    DEFAULT_SCENE    = _cfg.SCENE_USD
-    DEFAULT_ARM_URDF = str(_cfg.ARM_URDF)
-except Exception:
-    _SF = Path(__file__).resolve().parents[3]   # simforge/
-    DEFAULT_SCENE    = str(_SF / "scenes" / "main.usd")
-    DEFAULT_ARM_URDF = str(_SF / "robot" / "jaka_minicobo.urdf")
+# ── Scene / URDF paths — computed directly from __file__, env vars override ──
+# Do NOT use `import config` here: Isaac Sim may have another `config` module
+# on sys.path that shadows simforge/config.py.
+import os as _os
+DEFAULT_SCENE    = _os.environ.get("SIMFORGE_SCENE") or str(_SIMFORGE / "scenes" / "main.usd")
+DEFAULT_ARM_URDF = str(
+    Path(_os.environ.get("SIMFORGE_URDF_DIR") or str(_SIMFORGE / "robot"))
+    / "jaka_minicobo.urdf"
+)
 
 from kinematics import (
     GRIPPER_ROOT_SUFFIX, ARM_JOINTS, chain_to_link, load_joints, fk, get_world_pose,
@@ -157,7 +152,14 @@ ORIENT_WEIGHT_STRONG = 0.30   # approach path: enforce jaw+forward simultaneousl
 # 120cm above floor (world Z=1.20) and 30cm in front of robot center axis (-Y from base)
 HANDOFF_Z_ABS      = 1.20   # absolute world Z (120cm from floor)
 HANDOFF_Y_OFFSET   = -0.30  # m offset from arm base center Y (toward work area)
-HANDOFF_EAR_HALF   = 0.0775 # m — half the ear separation (~155mm total)
+HANDOFF_EAR_HALF   = 0.0775 # L arm pad offset from handoff center (+X) — original behavior
+# Tray rotates ~90° about Z during transport: 18cm Y (at rest) becomes world X at handoff.
+# From log: tray mesh center X at handoff = L_pad_X - 0.101 (L pad is 10.1cm in +X from tray center).
+# R arm targets tray -X face: handoff_pad_L[X] - TRAY_L_PAD_TO_MESH_CENTER_X - TRAY_HALF_X_HANDOFF
+TRAY_HALF_X_HANDOFF         = 0.090  # half of 18cm (tray Y at rest = tray X at handoff)
+TRAY_L_PAD_TO_MESH_CENTER_X = 0.101  # observed: L pad is 10.1cm in +X from tray mesh center at handoff
+# Legacy alias kept for bbox-verification log
+TRAY_HALF_X = TRAY_HALF_X_HANDOFF
 
 # Dryer delivery: arm delivers tray pointing in dryer direction; capped to reachable distance
 DRYER_REACH_LIMIT  = 0.55   # m max pad displacement from arm base
@@ -453,8 +455,8 @@ def _linear_y_path(ik_fn, q_start: np.ndarray,
 # ─────────────────────────────────────────────────────────────────────────────
 
 _plan_cache: dict = {}
-_WORKER_PY  = str(Path(__file__).parent / "_curobo_worker.py")
-_MINICONDA_PY = "/home/andyee/miniconda3/bin/python3"
+_WORKER_PY    = str(Path(__file__).parent / "_curobo_worker.py")
+_MINICONDA_PY = _os.environ.get("CUROBO_PYTHON", "/home/andyee/miniconda3/bin/python3")
 
 
 def _q_key(q: np.ndarray):
@@ -756,11 +758,22 @@ def _run(app, stage):
 
     # ── Handoff / dryer geometry ──────────────────────────────────────────────
     handoff_center = _compute_handoff_center(l_base_world, r_base_world)
-    handoff_pad_L  = handoff_center + np.array([ HANDOFF_EAR_HALF, 0, 0])
-    handoff_pad_R  = handoff_center + np.array([-HANDOFF_EAR_HALF, 0, 0])
+    # L arm: carries tray to handoff_pad_L (original behavior, unchanged).
+    # Tray rotates ~90° about Z in transit → 18cm (Y at rest) becomes world X at handoff.
+    # Observed from log: tray mesh center X = L_pad_X - TRAY_L_PAD_TO_MESH_CENTER_X (= -0.101).
+    # R arm targets tray -X face: tray_center_X - TRAY_HALF_X_HANDOFF (tray left surface).
+    handoff_pad_L  = handoff_center + np.array([HANDOFF_EAR_HALF, 0.0, 0.0])
+    _tray_center_x_ho = handoff_pad_L[0] - TRAY_L_PAD_TO_MESH_CENTER_X
+    handoff_pad_R  = np.array([_tray_center_x_ho - TRAY_HALF_X_HANDOFF,
+                               handoff_pad_L[1],
+                               handoff_pad_L[2]])
     print(f"[TGC] Handoff center: {np.round(handoff_center, 3)}", flush=True)
     print(f"[TGC]  L pad @handoff: {np.round(handoff_pad_L, 3)}", flush=True)
-    print(f"[TGC]  R pad @handoff: {np.round(handoff_pad_R, 3)}", flush=True)
+    print(f"[TGC]  Tray center X (predicted): {_tray_center_x_ho:.3f}  "
+          f"(L_pad_X - {TRAY_L_PAD_TO_MESH_CENTER_X})", flush=True)
+    print(f"[TGC]  R pad @handoff (tray -X face): {np.round(handoff_pad_R, 3)}", flush=True)
+    print(f"[TGC]  L pad → tray center → R pad: {handoff_pad_L[0]:.3f} → "
+          f"{_tray_center_x_ho:.3f} → {handoff_pad_R[0]:.3f}", flush=True)
 
     dryer_pos    = _get_dryer_world_pos(stage)
     dryer_target = _compute_dryer_approach(r_base_world, dryer_pos)
@@ -832,6 +845,27 @@ def _run(app, stage):
     tray_T_ref   = _get_tray_world_T(stage).copy()
     print(f"[TGC] Tray settled: {np.round(tray_xyz_ref, 4)}", flush=True)
 
+    # ── Log tray bounding box so we can verify TRAY_HALF_X ───────────────────
+    try:
+        from pxr import UsdGeom, Usd as _Usd
+        _bbox_cache = UsdGeom.BBoxCache(
+            _Usd.TimeCode.Default(), includedPurposes=[UsdGeom.Tokens.default_])
+        _tray_prim = stage.GetPrimAtPath(TRAY_PATH)
+        _bbox = _bbox_cache.ComputeWorldBound(_tray_prim)
+        _box  = _bbox.GetBox()
+        _bmin = np.array(_box.GetMin())
+        _bmax = np.array(_box.GetMax())
+        _dim  = _bmax - _bmin
+        print(f"[TGC] TRAY BBOX  min={np.round(_bmin,3)}  max={np.round(_bmax,3)}", flush=True)
+        print(f"[TGC] TRAY DIM   X={_dim[0]:.3f}m  Y={_dim[1]:.3f}m  Z={_dim[2]:.3f}m  "
+              f"(half_X={_dim[0]/2:.3f}, half_Y={_dim[1]/2:.3f})", flush=True)
+        # At handoff the tray rotates ~90° → Y at rest becomes X at handoff.
+        # TRAY_HALF_X_HANDOFF (=0.090) = half of Y_dim (18cm), not X_dim (10cm).
+        print(f"[TGC] At rest  half_X={_dim[0]/2:.3f}m  half_Y={_dim[1]/2:.3f}m  "
+              f"TRAY_HALF_X_HANDOFF={TRAY_HALF_X_HANDOFF:.3f} (should ≈ half_Y)", flush=True)
+    except Exception as _e:
+        print(f"[TGC] Tray bbox error: {_e}", flush=True)
+
     # ── PLAN ──────────────────────────────────────────────────────────────────
     ui_mon.push(phase="PLAN", cycle=0)
     app.update()
@@ -853,9 +887,8 @@ def _run(app, stage):
     if gp_R is not None and np.linalg.norm(gp_R[:3, 3]) > 0.05:
         ear_xyz_R = gp_R[:3, 3].copy()
     if ear_xyz_R is None:
-        # Estimate: left ear + X offset toward right arm
+        # Both ears are at the same position on this tray
         ear_xyz_R = ear_xyz_L.copy()
-        ear_xyz_R[0] -= 2.0 * HANDOFF_EAR_HALF   # right ear is at -X relative to left ear
     print(f"[TGC] Right ear: {np.round(ear_xyz_R, 4)}", flush=True)
 
     contact_y_L = float(ear_xyz_L[1]) + PAD_FACE_DEPTH_M
@@ -1087,6 +1120,42 @@ def _run(app, stage):
             else:
                 gr_angle_R = 0.0
                 if not joint_R_active:
+                    # Log geometry at grasp moment before creating joint
+                    from pxr import UsdGeom as _UG, Usd as _U2
+                    _gc = _UG.XformCache(_U2.TimeCode.Default())
+                    _rpad_T = get_world_pose(stage, _gc, RIGHT_PAD_R_PATH)
+                    _tray_T = _get_tray_world_T(stage)
+                    _rpad_pos = _rpad_T[:3, 3] if _rpad_T is not None else np.zeros(3)
+                    _tray_pos = _tray_T[:3, 3]
+                    _offset   = _tray_pos - _rpad_pos
+                    print(f"[TGC-GEO] cy={cycle} R pad  : {np.round(_rpad_pos, 4)}", flush=True)
+                    print(f"[TGC-GEO] cy={cycle} Tray   : {np.round(_tray_pos, 4)}", flush=True)
+                    print(f"[TGC-GEO] cy={cycle} Offset (tray-Rpad): "
+                          f"X={_offset[0]:.4f}  Y={_offset[1]:.4f}  Z={_offset[2]:.4f}  "
+                          f"dist={np.linalg.norm(_offset):.4f}m", flush=True)
+                    print(f"[TGC-GEO] cy={cycle} handoff_pad_R={np.round(handoff_pad_R,4)}"
+                          f"  handoff_pad_L={np.round(handoff_pad_L,4)}", flush=True)
+                    # Live tray world AABB at handoff moment
+                    try:
+                        from pxr import UsdGeom as _UG2, Usd as _U3
+                        _bbox_c = _UG2.BBoxCache(
+                            _U3.TimeCode.Default(),
+                            includedPurposes=[_UG2.Tokens.default_])
+                        _tp = stage.GetPrimAtPath(TRAY_PATH)
+                        _b  = _bbox_c.ComputeWorldBound(_tp).GetBox()
+                        _bmin = np.array(_b.GetMin())
+                        _bmax = np.array(_b.GetMax())
+                        _ctr  = (_bmin + _bmax) / 2
+                        _dim  = _bmax - _bmin
+                        print(f"[TGC-BBOX] cy={cycle} tray AABB min={np.round(_bmin,3)}  "
+                              f"max={np.round(_bmax,3)}", flush=True)
+                        print(f"[TGC-BBOX] cy={cycle} center={np.round(_ctr,3)}  "
+                              f"dim X={_dim[0]:.3f}  Y={_dim[1]:.3f}  Z={_dim[2]:.3f}", flush=True)
+                        print(f"[TGC-BBOX] cy={cycle} R_pad_X={_rpad_pos[0]:.4f}  "
+                              f"tray_Xmin={_bmin[0]:.4f}  tray_Xcenter={_ctr[0]:.4f}  "
+                              f"err={_rpad_pos[0]-_bmin[0]:.4f}m (+=inside)", flush=True)
+                    except Exception as _be:
+                        print(f"[TGC-BBOX] bbox error: {_be}", flush=True)
                     # Create FixedJoint (tray still held by joint_L → safe)
                     _create_grasp_joint(stage, RIGHT_PAD_R_PATH, JOINT_PATH_R)
                     joint_R_active = True
@@ -1104,7 +1173,9 @@ def _run(app, stage):
                 contact_est_L  = False
                 q_contact_L    = None
                 _remove_prims(stage, JOINT_PATH_L)  # release L FixedJoint → R holds tray
-                print("[TGC] L released → tray held by R FixedJoint", flush=True)
+                _tray_after = _get_tray_translate(stage)
+                print(f"[TGC] L released → tray held by R FixedJoint  "
+                      f"tray_pos={np.round(_tray_after, 4)}", flush=True)
                 _enter("RETRACT_L")
 
         elif phase == "RETRACT_L":
