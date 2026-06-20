@@ -32,16 +32,12 @@ from kinematics_probe import (
 )
 
 
-PLAYGROUND_ROOT = Path(__file__).resolve().parents[1]
-try:
-    import sys as _sys
-    _sys.path.insert(0, str(PLAYGROUND_ROOT))
-    import config as _cfg
-    DEFAULT_SCENE = _cfg.SCENE_USD
-    CUROBO_CFG    = str(_cfg.CUROBO_CFG)
-except Exception:
-    DEFAULT_SCENE = ""
-    CUROBO_CFG    = ""
+import os as _os
+PLAYGROUND_ROOT = Path(__file__).resolve().parents[1]   # simforge/
+_ROBOT_DIR      = PLAYGROUND_ROOT / "robot"
+
+DEFAULT_SCENE = _os.environ.get("SIMFORGE_SCENE") or str(PLAYGROUND_ROOT / "scenes" / "main.usd")
+CUROBO_CFG    = _os.environ.get("SIMFORGE_CUROBO_CFG") or str(_ROBOT_DIR / "jaka_minicobo_curobo.yml")
 
 TRAY_START_WORLD = np.array([0.35, 0.35, 1.015], dtype=float)
 TRAY_LIFT_WORLD = np.array([0.35, 0.35, 1.08], dtype=float)

@@ -1,7 +1,31 @@
 # SimForge — JAKA MiniCobo 双臂仿真平台
 
-基于 **NVIDIA Isaac Sim 5.1.0** 的 JAKA MiniCobo 双臂机器人 + Inspire EG2-4C2 夹爪仿真框架。  
-当前最新 Demo：**tray_grasp_cycle** — 左臂从托盘耳部夹取、举升、交接右臂、放入烘箱的完整循环。
+基于 **NVIDIA Isaac Sim 5.1.0** 的 JAKA MiniCobo 双臂机器人 + Inspire EG2-4C2 夹爪仿真框架。
+
+## 最新 Demo：双臂完整交接循环（tray_grasp_cycle）
+
+> **新同事请先阅读 [SETUP.md](SETUP.md) — 包含从零到运行 demo 的完整步骤（英文）。**
+
+> **一键启动：**
+> ```bash
+> bash ~/simforge/demos/tray_grasp_cycle/launch.sh
+> ```
+
+当前最新版本实现了 **左臂夹取 → 举升 → 交接右臂 → 送入烘箱** 的完整端到端循环，主要特性：
+
+| 特性 | 说明 |
+|------|------|
+| 夹取方式 | FixedJoint 刚性夹持（力传感器触发，F ≥ 3 N 锁定） |
+| 末端姿态 | 80 步 Y 轴线性逼近，全程 jaw=0°、forward=0°（`ORIENT_WEIGHT_STRONG=0.30`） |
+| 运动规划 | cuRobo（位姿感知，带缓存）；失败自动降级为单帧跳转 |
+| 双臂交接 | 左臂携盘到交接点 → 右臂 FixedJoint 锁定 → 左臂释放 → 右臂送烘箱 |
+| 场景重置 | 托盘释放后原位置闪现新托盘，循环不停机 |
+| 场景资产 | 完全自包含（`assets/` 目录，无外部路径依赖，clone 即可运行） |
+
+验证指标（2026-06-15）：
+- IK 精度：pos_err = **0.0 mm**，jaw_err = **0.0°**，fw_err = **0.0°**（全 80 步）
+- 夹取力：**F = 3.28 N**（pad Y = 0.4207 m）
+- 场景：`scenes/main.usd`（全依赖本地 `assets/`）
 
 ---
 
@@ -113,8 +137,15 @@ simforge/
 │   ├── jaka_minicobo_curobo.yml   ← cuRobo 碰撞 / 运动学配置
 │   ├── jaka_minicobo_meshes/  ← 手臂 STL mesh
 │   └── eg2_4c2_meshes/        ← 夹爪 STL mesh
+├── assets/                     ← 场景依赖资产（场景自包含，无外部路径依赖）
+│   ├── cad/                   ← 台架、夹持法兰、力传感器等 CAD 模型
+│   ├── jaka_minicobo/         ← JAKA MiniCobo USD + 材质/物理配置
+│   ├── Inspire_EG2_4C2/       ← EG2-4C2 夹爪 USD + 材质/物理配置
+│   ├── playground_config/     ← 场景环境光、物理参数 USD（原 playground 配置）
+│   └── textures/              ← 地板纹理、ArUco 标记等贴图
 ├── scenes/
-│   └── main.usd               ← 主场景文件（双臂 + 托盘 + 烘箱）
+│   ├── main.usd               ← 主场景文件（双臂 + 托盘 + 烘箱；路径全部指向 ../assets/）
+│   └── rewrite_paths.py       ← 维护工具：场景另存后重写外部路径
 ├── core/                       ← 共享模块
 │   ├── kinematics.py
 │   ├── planning.py             ← IK 求解器（支持 jaw+forward 双约束）

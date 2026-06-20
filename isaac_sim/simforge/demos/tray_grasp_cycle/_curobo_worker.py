@@ -11,22 +11,45 @@ Runs with miniconda python3 (which has warp 1.13 + curobo + torch),
 completely outside Isaac Sim's Python environment.
 """
 from __future__ import annotations
-import json, sys
+import json, sys, os, tempfile
 from pathlib import Path
 
 import numpy as np
 import torch
 
-# Add repo core to path
-_SIMFORGE = Path(__file__).resolve().parents[2]  # …/isaac_sim/simforge
+# ── repo paths ────────────────────────────────────────────────────────────────
+_SIMFORGE  = Path(__file__).resolve().parents[2]   # simforge/ (repo root)
+_ROBOT_DIR = _SIMFORGE / "robot"
 sys.path.insert(0, str(_SIMFORGE))
 sys.path.insert(0, str(_SIMFORGE / "core"))
 
-from kinematics_probe import (
+# ── patch jaka_minicobo_curobo.yml to use bundled robot/ assets ───────────────
+# The YAML ships with absolute paths from the developer's machine.  We rewrite
+# asset_root_path and urdf_path to the bundled robot/ directory before cuRobo
+# reads the file, so the planner works on any clone without manual edits.
+def _make_patched_cfg() -> str:
+    src = _ROBOT_DIR / "jaka_minicobo_curobo.yml"
+    text = src.read_text()
+    robot_str = str(_ROBOT_DIR)
+    urdf_str  = str(_ROBOT_DIR / "jaka_minicobo_gripper.urdf")
+    import re
+    text = re.sub(r"asset_root_path:.*", f"asset_root_path: {robot_str}", text)
+    text = re.sub(r"urdf_path:.*",       f"urdf_path: {urdf_str}",        text)
+    tmp = tempfile.NamedTemporaryFile(mode="w", suffix=".yml", delete=False)
+    tmp.write(text)
+    tmp.close()
+    return tmp.name
+
+_PATCHED_CFG = _make_patched_cfg()
+
+import planning as _planning_mod                   # noqa: E402
+_planning_mod.CUROBO_CFG = _PATCHED_CFG            # override before first call
+
+from kinematics_probe import (                     # noqa: E402
     CUROBO_JOINTS, DEFAULT_CUROBO_URDF,
     chain_to_link, load_joints, matrix_to_quat_wxyz, fk,
 )
-from planning import init_curobo_planner, make_goal
+from planning import init_curobo_planner, make_goal  # noqa: E402
 
 
 def curobo_tool_pose(chain, q_arm: np.ndarray):

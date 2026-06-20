@@ -23,18 +23,14 @@ except ModuleNotFoundError:
     UsdGeom = None
 
 
-try:
-    import sys as _sys
-    _sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-    import config as _cfg
-    DEFAULT_SCENE      = _cfg.SCENE_USD
-    DEFAULT_ARM_URDF   = str(_cfg.ARM_URDF)
-    DEFAULT_CUROBO_URDF = str(_cfg.CUROBO_URDF)
-except Exception:
-    DEFAULT_SCENE       = ""
-    DEFAULT_ARM_URDF    = ""
-    DEFAULT_CUROBO_URDF = ""
-PLAYGROUND_ROOT = Path(__file__).resolve().parents[1]
+import os as _os
+_SIMFORGE_ROOT   = Path(__file__).resolve().parents[1]   # simforge/
+_ROBOT_DIR       = _SIMFORGE_ROOT / "robot"
+PLAYGROUND_ROOT  = _SIMFORGE_ROOT
+
+DEFAULT_SCENE       = _os.environ.get("SIMFORGE_SCENE")       or str(_SIMFORGE_ROOT / "scenes" / "main.usd")
+DEFAULT_ARM_URDF    = str(Path(_os.environ.get("SIMFORGE_URDF_DIR") or str(_ROBOT_DIR)) / "jaka_minicobo.urdf")
+DEFAULT_CUROBO_URDF = str(Path(_os.environ.get("SIMFORGE_URDF_DIR") or str(_ROBOT_DIR)) / "jaka_minicobo_gripper.urdf")
 
 ARM_JOINTS = ["joint_1", "joint_2", "joint_3", "joint_4", "joint_5", "joint_6"]
 CUROBO_JOINTS = ["joint1", "joint2", "joint3", "joint4", "joint5", "joint6"]
