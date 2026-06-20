@@ -813,6 +813,20 @@ def _run(app, stage):
                             TARGET_UP_WORLD_R_HANDOFF, TARGET_FORWARD_WORLD_R_HANDOFF, r_seeds,
                             jaw_world=TARGET_JAW_WORLD_R_HANDOFF, constrain_forward=True)
 
+    # ── R arm grasp carrier (kinematic rigid body — proper FixedJoint body0) ─────
+    # The R gripper's right_pad may not have PhysicsRigidBodyAPI, so we can't
+    # use it directly as FixedJoint body0 (PhysX would silently ignore the joint).
+    # Instead we use a tiny dedicated kinematic body (carrier) that is teleported
+    # each frame to match the R arm pad position, then locked to the tray via
+    # create_grasp_lock().  L arm works with direct pad (right_pad IS a rigid body),
+    # so we don't change L arm's approach.
+    carrier_R_prim, carrier_R_op = ensure_hidden_carrier(stage, CARRIER_ROOT_R)
+    from pxr import UsdPhysics as _UPhys
+    _r_pad_prim = stage.GetPrimAtPath(RIGHT_PAD_R_PATH)
+    _r_pad_has_rb = _r_pad_prim.IsValid() and _r_pad_prim.HasAPI(_UPhys.RigidBodyAPI)
+    print(f"[TGC] R pad prim: {'valid, RigidBodyAPI=' + str(_r_pad_has_rb) if _r_pad_prim.IsValid() else 'NOT FOUND'}", flush=True)
+    print(f"[TGC] R carrier created: {CARRIER_ROOT_R}/Carrier  (carrier-based grasp)", flush=True)
+
     # ── Create UI BEFORE physics ──────────────────────────────────────────────
     ui_mon = HandoffMonitorUI()
     print("[TGC] UI created.", flush=True)
@@ -1156,11 +1170,20 @@ def _run(app, stage):
                               f"err={_rpad_pos[0]-_bmin[0]:.4f}m (+=inside)", flush=True)
                     except Exception as _be:
                         print(f"[TGC-BBOX] bbox error: {_be}", flush=True)
-                    # Create FixedJoint (tray still held by joint_L → safe)
-                    _create_grasp_joint(stage, RIGHT_PAD_R_PATH, JOINT_PATH_R)
+                    # Carrier-based grasp: carrier is a kinematic rigid body that
+                    # has been tracking R arm's pad position every frame.
+                    # Freeze tray kinematically so joint activates with zero impulse,
+                    # then lock carrier→tray, then release tray as dynamic.
+                    _r_carrier_pos = _pad_R(q_R)[:3, 3]
+                    set_carrier(carrier_R_op, _r_carrier_pos)
+                    print(f"[TGC] R carrier pos: {np.round(_r_carrier_pos, 4)}", flush=True)
+                    _set_tray_kinematic(stage, True)
+                    create_grasp_lock(stage, TRAY_PATH,
+                                      f"{CARRIER_ROOT_R}/Carrier", JOINT_PATH_R)
+                    _set_tray_kinematic(stage, False)
                     joint_R_active = True
                     contact_est_R  = True
-                    print("[TGC] R force grasp → FixedJoint_R created", flush=True)
+                    print("[TGC] R carrier grasp → FixedJoint_R (carrier) created", flush=True)
                 _enter("RELEASE_L")
 
         elif phase == "RELEASE_L":
@@ -1295,6 +1318,11 @@ def _run(app, stage):
         drive_y_R   = float(pad_world_R[1, 3])
         _, press_L, fric_L = _solve_ear_contact(drive_y_L, contact_y_L)
         _, press_R, fric_R = _solve_ear_contact(drive_y_R, contact_y_R)
+
+        # ── R arm carrier: teleport to pad position every frame ──────────────
+        # This makes the carrier track the R arm so that when create_grasp_lock()
+        # fires, the carrier is already at the exact pad world position.
+        set_carrier(carrier_R_op, pad_world_R[:3, 3])
 
         # ── Tray tracking: FixedJoint does the work; just measure lift ───────
         lift_m = 0.0
