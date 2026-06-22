@@ -55,3 +55,32 @@ env -u CONDA_PREFIX -u CONDA_DEFAULT_ENV -u CONDA_PROMPT_MODIFIER -u CONDA_SHLVL
   /home/andyee/isaacsim/python.sh scripts/gui_left_arm_tray_pick_to_chest_demo.py \
   --close-steps 90 --force-threshold-m 0.003 --hold-open
 ```
+
+---
+
+## 2026-06-23 — tray_grasp_cycle: Persistent Worker + Path Smoothing + Parallel Arms
+
+### Persistent cuRobo Worker
+- Worker (`_curobo_worker.py`) now runs in loop mode: reads JSON batches from stdin, writes results to stdout
+- Eliminates ~2s startup/warmup overhead per planning call
+- Client (`_cu_batch`) communicates via `subprocess.Popen` pipes
+
+### Path Smoothing
+- 5-point quadratic Savitzky-Golay filter (`_smooth_path`) applied to all cuRobo paths
+- Reduces high-frequency velocity jitter inherent in cuRobo's `get_interpolated_plan()`
+- No endpoint pinning — cuRobo may choose different elbow config than IK solution
+
+### Parallel Right Arm
+- Right arm starts moving to handoff during left arm's TO_PRE_L (not after CARRY_L)
+- Single cuRobo plan `q_zero → q_handoff_R` replaces old pre→near→approach 3-segment chain
+- R_TO_NEAR and R_APPROACH phases skip instantly (1 frame each)
+
+### Carrier Orientation Fix
+- `ensure_hidden_carrier`: `AddTranslateOp` → `AddTransformOp` (full 6-DOF)
+- `set_carrier` now accepts full 4×4 matrix (position + orientation)
+- `create_grasp_lock` rotation constraint: `localRot1 = tray⁻¹ @ carrier` (was `tray⁻¹`, assumed carrier at identity)
+
+### Known Issues
+- ~5 state-transition jumps remain (cuRobo plans independently per segment)
+- Retract/home paths snap to q_zero at end
+- Isaac Sim occasionally OOM-killed (memory pressure from persistent worker + simulation)

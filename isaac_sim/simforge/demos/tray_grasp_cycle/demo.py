@@ -457,18 +457,58 @@ def _linear_y_path(ik_fn, q_start: np.ndarray,
 _plan_cache: dict = {}
 _WORKER_PY    = str(Path(__file__).parent / "_curobo_worker.py")
 _MINICONDA_PY = _os.environ.get("CUROBO_PYTHON", "/home/andyee/miniconda3/bin/python3")
+_cu_proc: object = None          # persistent cuRobo subprocess
+
+
+def _cu_start_worker():
+    """Launch persistent cuRobo worker subprocess."""
+    global _cu_proc
+    import subprocess
+    _cu_proc = subprocess.Popen(
+        [_MINICONDA_PY, _WORKER_PY],
+        stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE, text=True,
+    )
+    print("[TGC] cuRobo worker started (persistent)", flush=True)
+
+
+def _cu_stop_worker():
+    """Shut down persistent cuRobo worker."""
+    global _cu_proc
+    if _cu_proc is not None:
+        _cu_proc.stdin.close()
+        _cu_proc.wait(timeout=5)
+        _cu_proc = None
+        print("[TGC] cuRobo worker stopped", flush=True)
 
 
 def _q_key(q: np.ndarray):
     return tuple(round(float(x), 3) for x in q)
 
 
-def _cu_batch(jobs: list) -> dict:
-    """Run a list of {q_start, q_goal, label, max_attempts} jobs via subprocess.
-    Returns {label: np.ndarray path}.  Forces path[-1] == q_goal for seamless handoff.
+def _smooth_path(path: np.ndarray) -> np.ndarray:
+    """Light Savitzky-Golay filter (pure numpy) to remove cuRobo's high-frequency
+    jitter while preserving path shape and endpoints.
+
+    Uses 5-point quadratic kernel: [-3,12,17,12,-3]/35.
     """
-    import subprocess, json as _json
-    _goal_map = {j["label"]: np.array(j["q_goal"]) for j in jobs}
+    if len(path) < 7:
+        return path
+    kernel = np.array([-3, 12, 17, 12, -3], dtype=float) / 35.0
+    out = path.copy()
+    for j in range(path.shape[1]):
+        conv = np.convolve(path[:, j], kernel, mode='same')
+        conv[0] = (path[0, j] * 2 + path[1, j]) / 3.0
+        conv[1] = (path[0, j] + path[1, j] + path[2, j]) / 3.0
+        conv[-2] = (path[-3, j] + path[-2, j] + path[-1, j]) / 3.0
+        conv[-1] = (path[-2, j] * 2 + path[-1, j]) / 3.0
+        out[:, j] = conv
+    return out
+
+
+def _cu_batch(jobs: list) -> dict:
+    """Send batch to persistent cuRobo worker, return {label: np.ndarray path}.  SG-smooth only."""
+    import json as _json
     payload = _json.dumps({"jobs": [
         {"label": j["label"],
          "q_start": [float(x) for x in j["q_start"]],
@@ -477,28 +517,20 @@ def _cu_batch(jobs: list) -> dict:
         for j in jobs
     ]})
     try:
-        proc = subprocess.run(
-            [_MINICONDA_PY, _WORKER_PY],
-            input=payload, capture_output=True, text=True, timeout=120,
-        )
-        if proc.returncode != 0:
-            print(f"[TGC] cuRobo worker exited {proc.returncode}:\n{proc.stderr[-600:]}", flush=True)
+        _cu_proc.stdin.write(payload + "\n")
+        _cu_proc.stdin.flush()
+        line = _cu_proc.stdout.readline()
+        if not line:
+            print("[TGC] cuRobo worker closed unexpectedly", flush=True)
             return {}
-        if proc.stderr:
-            print(proc.stderr, flush=True, end="")
-        data = _json.loads(proc.stdout)
+        data = _json.loads(line)
         out = {}
         for r in data["results"]:
             lbl = r["label"]
             raw = r.get("path")
             if raw is not None and len(raw) > 1:
                 p = np.array(raw)
-                qg = _goal_map.get(lbl)
-                if qg is not None:
-                    err = np.max(np.abs(p[-1] - qg))
-                    if err > 0.001:
-                        print(f"[TGC] cuRobo {lbl}: pin endpoint err={err:.4f}rad", flush=True)
-                        p[-1] = qg
+                p = _smooth_path(p)
                 out[lbl] = p
             else:
                 out[lbl] = np.array(raw) if raw is not None else None
@@ -966,16 +998,13 @@ def _run(app, stage):
     app.update()
 
     # ── Precompute all fixed paths via cuRobo subprocess ─────────────────────
-    # cuRobo runs in miniconda python3 to avoid Isaac Sim's Warp 1.8.2 conflict.
+    _cu_start_worker()
     print("[TGC] Planning fixed paths with cuRobo (subprocess)…", flush=True)
     ui_mon.push(phase="PLAN", cycle=0)
     app.update()
     _fixed_jobs = [
         {"label": "home→preL",      "q_start": q_zero,           "q_goal": q_pre_L},
         {"label": "retractL",       "q_start": q_handoff_L,      "q_goal": q_zero},
-        {"label": "home→preR",      "q_start": q_zero,           "q_goal": q_pre_handoff_R},
-        {"label": "pre→nearR",      "q_start": q_pre_handoff_R,  "q_goal": q_near_handoff_R},
-        {"label": "approachR",      "q_start": q_near_handoff_R, "q_goal": q_handoff_R},
         {"label": "handoff→dryer",  "q_start": q_handoff_R,      "q_goal": q_dryer_R},
         {"label": "dryer→homeR",    "q_start": q_dryer_R,        "q_goal": q_zero},
     ]
@@ -995,13 +1024,25 @@ def _run(app, stage):
     # path_approach_L already built as Y-linear Cartesian path above
     path_carry_L          = np.array([q_handoff_L])   # placeholder; rebuilt on contact
     path_retract_L        = _get_path("retractL",      q_zero)
-    path_home_to_pre_R    = _get_path("home→preR",     q_pre_handoff_R)
-    path_pre_to_near_R    = _get_path("pre→nearR",     q_near_handoff_R)
-    path_approach_R       = _get_path("approachR",     q_handoff_R)
+
+    # ── Right arm: single cuRobo plan from home to handoff ───────────────────
+    path_home_to_handoff_R = _cu_batch([
+        {"label": "home→handoffR", "q_start": q_zero, "q_goal": q_handoff_R},
+    ]).get("home→handoffR", np.array([q_handoff_R]))
+    if len(path_home_to_handoff_R) == 0:
+        path_home_to_handoff_R = np.array([q_handoff_R])
+    print(f"[TGC] cuRobo home→handoffR: {len(path_home_to_handoff_R)} steps", flush=True)
+
     path_handoff_to_dryer = _get_path("handoff→dryer", q_dryer_R)
     path_dryer_home_R     = _get_path("dryer→homeR",   q_zero)
     print("[TGC] Fixed path planning done.", flush=True)
     app.update()
+
+    # ── Right arm parallel path (starts with left arm TO_PRE_L) ──────────────
+    _path_r_all = path_home_to_handoff_R
+    _r_step = 0
+    _r_done = False
+    print(f"[TGC] Right arm parallel path: {len(_path_r_all)} steps", flush=True)
 
     # ── Grasp state ───────────────────────────────────────────────────────────
     joint_L_active   = False
@@ -1024,18 +1065,34 @@ def _run(app, stage):
     path_idx  = 0
     cycle     = 1
     phase     = "TO_PRE_L"
+    _phase_start_frame = 0
 
     def _enter(new_phase):
-        nonlocal phase, path_idx
+        nonlocal phase, path_idx, _phase_start_frame
+        if phase != "SETTLE":
+            _dur = frame - _phase_start_frame
+            print(f"[TGC] → {new_phase}  (cycle {cycle}  fr {frame}  "
+                  f"prev={phase} {_dur}fr)", flush=True)
+        else:
+            print(f"[TGC] → {new_phase}  (cycle {cycle}  fr {frame})", flush=True)
         phase    = new_phase
         path_idx = 0
-        print(f"[TGC] → {new_phase}  (cycle {cycle}  fr {frame})", flush=True)
+        _phase_start_frame = frame
 
     _enter("TO_PRE_L")
     _prev_q_L = q_zero.copy()
     _prev_q_R = q_zero.copy()
 
     while app.is_running():
+
+        # ── Right arm parallel advance (TO_PRE_L → CARRY_L) ──────────────────
+        _early_phases = {"TO_PRE_L", "APPROACH_L", "CLOSE_GRIP_L", "LIFT_L", "CARRY_L"}
+        if phase in _early_phases and not _r_done:
+            if _r_step < len(_path_r_all):
+                q_R = _path_r_all[_r_step]; _r_step += 1
+            else:
+                _r_done = True
+                gr_angle_R = HOME_OPEN_RAD
 
         # ── State machine ─────────────────────────────────────────────────────
 
@@ -1124,22 +1181,13 @@ def _run(app, stage):
                 _enter("R_TO_NEAR")
 
         elif phase == "R_TO_NEAR":
-            gr_angle_R = HOME_OPEN_RAD  # keep fully open during transit
-            total_R = len(path_home_to_pre_R) + len(path_pre_to_near_R)
-            if path_idx < len(path_home_to_pre_R):
-                q_R = path_home_to_pre_R[path_idx]; path_idx += 1
-            elif path_idx < total_R:
-                q_R = path_pre_to_near_R[path_idx - len(path_home_to_pre_R)]; path_idx += 1
-            else:
-                _enter("R_APPROACH")
+            # Right arm already moved via parallel path; skip to R_APPROACH
+            gr_angle_R = HOME_OPEN_RAD
+            _enter("R_APPROACH")
 
         elif phase == "R_APPROACH":
-            gr_angle_R = HOME_OPEN_RAD  # keep fully open until closed by CLOSE_GRIP_R
-            # No force detection: handoff position is known/fixed, just execute path.
-            if path_idx < len(path_approach_R):
-                q_R = path_approach_R[path_idx]; path_idx += 1
-            else:
-                _enter("CLOSE_GRIP_R")
+            gr_angle_R = HOME_OPEN_RAD
+            _enter("CLOSE_GRIP_R")
 
         elif phase == "CLOSE_GRIP_R":
             if path_idx < len(grip_close):
@@ -1292,6 +1340,8 @@ def _run(app, stage):
                 q_contact_L     = None
                 q_contact_R     = None
                 _plan_cache.clear()
+                _r_step = 0
+                _r_done = False
 
                 cache.Clear()
                 gp_T = get_world_pose(stage, cache, GRASP_PRIM_L)
@@ -1345,6 +1395,13 @@ def _run(app, stage):
         _, press_L, fric_L = _solve_ear_contact(drive_y_L, contact_y_L)
         _, press_R, fric_R = _solve_ear_contact(drive_y_R, contact_y_R)
 
+        # ── Joint angle trace (every 5 frames) ───────────────────────────────
+        if frame % 5 == 0:
+            _jl = " ".join(f"{v:+7.3f}" for v in q_L)
+            _jr = " ".join(f"{v:+7.3f}" for v in q_R)
+            print(f"[TGC-JOINT] fr={frame:5d} {phase:14s} "
+                  f"L=[{_jl}]  R=[{_jr}]", flush=True)
+
         # R arm carrier: teleport to pad pose (position + orientation) every frame
         # This makes the carrier track the R arm so that when create_grasp_lock()
         # fires, the carrier is already at the exact pad world pose.
@@ -1388,6 +1445,7 @@ def _run(app, stage):
         app.update()
         frame += 1
 
+    _cu_stop_worker()
     print("[TGC] Stopped.", flush=True)
 
 
