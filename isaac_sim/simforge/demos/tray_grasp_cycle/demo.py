@@ -465,9 +465,10 @@ def _q_key(q: np.ndarray):
 
 def _cu_batch(jobs: list) -> dict:
     """Run a list of {q_start, q_goal, label, max_attempts} jobs via subprocess.
-    Returns {label: np.ndarray path}.
+    Returns {label: np.ndarray path}.  Forces path[-1] == q_goal for seamless handoff.
     """
     import subprocess, json as _json
+    _goal_map = {j["label"]: np.array(j["q_goal"]) for j in jobs}
     payload = _json.dumps({"jobs": [
         {"label": j["label"],
          "q_start": [float(x) for x in j["q_start"]],
@@ -490,7 +491,17 @@ def _cu_batch(jobs: list) -> dict:
         for r in data["results"]:
             lbl = r["label"]
             raw = r.get("path")
-            out[lbl] = np.array(raw) if raw is not None else None
+            if raw is not None and len(raw) > 1:
+                p = np.array(raw)
+                qg = _goal_map.get(lbl)
+                if qg is not None:
+                    err = np.max(np.abs(p[-1] - qg))
+                    if err > 0.001:
+                        print(f"[TGC] cuRobo {lbl}: pin endpoint err={err:.4f}rad", flush=True)
+                        p[-1] = qg
+                out[lbl] = p
+            else:
+                out[lbl] = np.array(raw) if raw is not None else None
         return out
     except Exception as _e:
         print(f"[TGC] cuRobo batch error: {_e}", flush=True)
@@ -975,7 +986,7 @@ def _run(app, stage):
         if p is None or len(p) == 0:
             print(f"[TGC] ⚠ {label}: cuRobo failed — single-step jump", flush=True)
             return np.array([q_goal])
-        key = (_q_key(p[0]), _q_key(q_goal))
+        key = (_q_key(p[0]), _q_key(p[-1]))
         _plan_cache[key] = p
         print(f"[TGC] cuRobo {label}: {len(p)} steps", flush=True)
         return p
@@ -1021,6 +1032,8 @@ def _run(app, stage):
         print(f"[TGC] → {new_phase}  (cycle {cycle}  fr {frame})", flush=True)
 
     _enter("TO_PRE_L")
+    _prev_q_L = q_zero.copy()
+    _prev_q_R = q_zero.copy()
 
     while app.is_running():
 
@@ -1171,12 +1184,12 @@ def _run(app, stage):
                     except Exception as _be:
                         print(f"[TGC-BBOX] bbox error: {_be}", flush=True)
                     # Carrier-based grasp: carrier is a kinematic rigid body that
-                    # has been tracking R arm's pad position every frame.
+                    # has been tracking R arm's pad pose (position + orientation) every frame.
                     # Freeze tray kinematically so joint activates with zero impulse,
                     # then lock carrier→tray, then release tray as dynamic.
-                    _r_carrier_pos = _pad_R(q_R)[:3, 3]
-                    set_carrier(carrier_R_op, _r_carrier_pos)
-                    print(f"[TGC] R carrier pos: {np.round(_r_carrier_pos, 4)}", flush=True)
+                    _r_carrier_T = _pad_R(q_R)
+                    set_carrier(carrier_R_op, _r_carrier_T)
+                    print(f"[TGC] R carrier pos: {np.round(_r_carrier_T[:3, 3], 4)}", flush=True)
                     _set_tray_kinematic(stage, True)
                     create_grasp_lock(stage, TRAY_PATH,
                                       f"{CARRIER_ROOT_R}/Carrier", JOINT_PATH_R)
@@ -1305,6 +1318,19 @@ def _run(app, stage):
                     print(f"[TGC] Cycle {cycle}: ear Y={ear_xyz_L[1]:.4f}  ctrX={tray_center_x:.4f}", flush=True)
                 _enter("TO_PRE_L")
 
+        # ── Joint jump detection ──────────────────────────────────────────────
+        _delta_L = np.max(np.abs(q_L - _prev_q_L))
+        _delta_R = np.max(np.abs(q_R - _prev_q_R))
+        _JD_THRESH = 0.015  # rad (~0.86°) — log if any joint jumps more than this
+        if _delta_L > _JD_THRESH:
+            print(f"[TGC-JUMP] L fr={frame} {phase} Δmax={_delta_L:.4f}rad "
+                  f"prev={np.round(_prev_q_L, 3)} cur={np.round(q_L, 3)}", flush=True)
+        if _delta_R > _JD_THRESH:
+            print(f"[TGC-JUMP] R fr={frame} {phase} Δmax={_delta_R:.4f}rad "
+                  f"prev={np.round(_prev_q_R, 3)} cur={np.round(q_R, 3)}", flush=True)
+        _prev_q_L = q_L.copy()
+        _prev_q_R = q_R.copy()
+
         # ── Apply FK both arms ────────────────────────────────────────────────
         _set_arm_q(l_ops, chains, q_L)
         _set_arm_q(r_ops, chains, q_R)
@@ -1319,10 +1345,10 @@ def _run(app, stage):
         _, press_L, fric_L = _solve_ear_contact(drive_y_L, contact_y_L)
         _, press_R, fric_R = _solve_ear_contact(drive_y_R, contact_y_R)
 
-        # ── R arm carrier: teleport to pad position every frame ──────────────
+        # R arm carrier: teleport to pad pose (position + orientation) every frame
         # This makes the carrier track the R arm so that when create_grasp_lock()
-        # fires, the carrier is already at the exact pad world position.
-        set_carrier(carrier_R_op, pad_world_R[:3, 3])
+        # fires, the carrier is already at the exact pad world pose.
+        set_carrier(carrier_R_op, pad_world_R)
 
         # ── Tray tracking: FixedJoint does the work; just measure lift ───────
         lift_m = 0.0

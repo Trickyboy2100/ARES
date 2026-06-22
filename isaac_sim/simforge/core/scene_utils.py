@@ -101,8 +101,8 @@ def apply_friction_to_collision_prims(
 def ensure_hidden_carrier(stage, probe_root: str) -> tuple:
     """Create (or recreate) a hidden kinematic Cube at probe_root/Carrier.
 
-    Returns (carrier_prim, translate_op).  The caller moves the carrier by
-    calling carrier_op.Set(Gf.Vec3d(x, y, z)) each simulation frame.
+    Returns (carrier_prim, transform_op).  The caller moves the carrier by
+    calling carrier_op.Set(Gf.Matrix4d(...)) each simulation frame.
 
     The carrier acts as the physics anchor for the grasp FixedJoint.
     """
@@ -117,7 +117,7 @@ def ensure_hidden_carrier(stage, probe_root: str) -> tuple:
     cube.CreateVisibilityAttr().Set(UsdGeom.Tokens.invisible)
     xf = UsdGeom.Xformable(prim)
     xf.ClearXformOpOrder()
-    op = xf.AddTranslateOp(UsdGeom.XformOp.PrecisionDouble)
+    op = xf.AddTransformOp(UsdGeom.XformOp.PrecisionDouble)
     rb = apply_once(UsdPhysics.RigidBodyAPI, prim)
     rb.CreateRigidBodyEnabledAttr().Set(True)
     rb.CreateKinematicEnabledAttr().Set(True)
@@ -125,10 +125,11 @@ def ensure_hidden_carrier(stage, probe_root: str) -> tuple:
     return prim, op
 
 
-def set_carrier(op, xyz: np.ndarray):
-    """Move the kinematic carrier to a world position each frame."""
+def set_carrier(op, matrix_4x4: np.ndarray):
+    """Move the kinematic carrier to a world pose (position + orientation) each frame."""
     from pxr import Gf
-    op.Set(Gf.Vec3d(float(xyz[0]), float(xyz[1]), float(xyz[2])))
+    m = Gf.Matrix4d(*matrix_4x4.T.ravel())
+    op.Set(m)
 
 
 # ── Grasp lock (FixedJoint) ───────────────────────────────────────────────────
@@ -159,12 +160,17 @@ def create_grasp_lock(stage, tray_path: str, carrier_path: str, joint_path: str)
     joint.CreateBody1Rel().SetTargets([Sdf.Path(tray_path)])
     joint.CreateLocalPos0Attr().Set(Gf.Vec3f(*[float(v) for v in local0]))
     joint.CreateLocalPos1Attr().Set(Gf.Vec3f(*[float(v) for v in local1]))
-    tray_rot_inv = tray_w.ExtractRotationQuat().GetInverse().GetNormalized()
-    tri = tray_rot_inv.GetImaginary()
+    # Relative rotation that preserves tray orientation when carrier moves
+    traq = tray_w.ExtractRotationQuat()
+    carq = carrier_w.ExtractRotationQuat()
+    rel  = traq.GetInverse() * carq  # tray⁻¹ @ carrier → carrier=identity ⇒ rel=tray⁻¹
+    rel  = rel.GetNormalized()
     joint.CreateLocalRot0Attr().Set(Gf.Quatf(1.0, 0.0, 0.0, 0.0))
     joint.CreateLocalRot1Attr().Set(
-        Gf.Quatf(float(tray_rot_inv.GetReal()),
-                 float(tri[0]), float(tri[1]), float(tri[2]))
+        Gf.Quatf(float(rel.GetReal()),
+                 float(rel.GetImaginary()[0]),
+                 float(rel.GetImaginary()[1]),
+                 float(rel.GetImaginary()[2]))
     )
     joint.CreateJointEnabledAttr().Set(True)
     joint.CreateCollisionEnabledAttr().Set(False)
