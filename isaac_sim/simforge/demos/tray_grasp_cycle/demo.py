@@ -248,6 +248,23 @@ def _teleport_tray(stage, xyz: np.ndarray):
     )
 
 
+def _ensure_ground_collision(stage):
+    """Create a dedicated collision box at Z=0 so dynamic objects don't fall through."""
+    from pxr import UsdGeom, UsdPhysics, Gf
+    _path = "/World/_GroundCollision"
+    if stage.GetPrimAtPath(_path):
+        stage.RemovePrim(_path)
+    cube = UsdGeom.Cube.Define(stage, _path)
+    prim = cube.GetPrim()
+    cube.CreateSizeAttr(1.0)
+    cube.AddScaleOp().Set(Gf.Vec3f(20.0, 20.0, 0.04))
+    cube.AddTranslateOp().Set(Gf.Vec3d(0, 0, -0.02))
+    cube.CreateVisibilityAttr().Set(UsdGeom.Tokens.invisible)
+    UsdPhysics.CollisionAPI.Apply(prim)
+    UsdPhysics.RigidBodyAPI.Apply(prim)
+    print("[TGC] Ground collision box: /World/_GroundCollision (20×20m, Z=-2cm)", flush=True)
+
+
 def _set_tray_kinematic(stage, kinematic: bool):
     """Toggle tray between kinematic (for teleport) and dynamic (for physics)."""
     from pxr import UsdPhysics, Gf
@@ -594,150 +611,132 @@ def _compute_dryer_approach(r_base_world: np.ndarray, dryer_pos: np.ndarray | No
 # ─────────────────────────────────────────────────────────────────────────────
 
 class HandoffMonitorUI:
-    """Dual-arm monitor for the full handoff cycle."""
+    """Generic dual-arm monitor — joints, velocity, pad, gripper, forces, charts."""
 
-    PHASE_COLORS = {
-        "SETTLE":       0xFF888888,
-        "PLAN":         0xFFFFAA00,
-        "TO_PRE_L":     0xFF00AAFF,
-        "APPROACH_L":   0xFF44DDFF,
-        "CLOSE_GRIP_L": 0xFFFFFF44,
-        "LIFT_L":       0xFF44FF44,
-        "CARRY_L":      0xFF22BB44,
-        "R_TO_NEAR":    0xFFFF8844,
-        "R_APPROACH":   0xFFFFAA66,
-        "CLOSE_GRIP_R": 0xFFFFDD44,
-        "RELEASE_L":    0xFFFF6666,
-        "RETRACT_L":    0xFF0088FF,
-        "HOME_L":       0xFF006688,
-        "CARRY_DRYER":  0xFFCC44FF,
-        "HOLD_DRYER":   0xFF8844CC,
-        "RELEASE_R":    0xFFFF9966,
-        "HOME_R":       0xFF884400,
-        "RESET_SCENE":  0xFF444488,
-        "PAUSE":        0xFF444444,
-    }
+    JCOLORS = [0xFFE6194B, 0xFF3CB44B, 0xFFFFE119, 0xFF4363D8, 0xFFF58231, 0xFF911EB4]
 
     def __init__(self):
         import omni.ui as ui
-        self._ui   = ui
+        self._ui = ui
         self._tick = 0
-        self._hist_fL = [0.0] * HIST_LEN
-        self._hist_fR = [0.0] * HIST_LEN
+        self._prev_lq = np.zeros(6)
+        self._prev_rq = np.zeros(6)
+        self._hist_fl = [0.0] * HIST_LEN
+        self._hist_fr = [0.0] * HIST_LEN
+        self._hist_lz = [0.0] * HIST_LEN
+        self._hist_rz = [0.0] * HIST_LEN
         self._s = dict(
-            phase="SETTLE", cycle=0,
-            l_gr_deg=math.degrees(APPROACH_OPEN_RAD),
-            r_gr_deg=math.degrees(APPROACH_OPEN_RAD),
-            l_friction=0.0, r_friction=0.0,
-            l_press_mm=0.0, r_press_mm=0.0,
-            lift_m=0.0,
-            l_pad_xyz=np.zeros(3),
-            r_pad_xyz=np.zeros(3),
+            l_q=np.zeros(6), r_q=np.zeros(6),
+            l_dq=np.zeros(6), r_dq=np.zeros(6),
+            l_pad=np.zeros(3), r_pad=np.zeros(3),
+            l_rpy=np.zeros(3), r_rpy=np.zeros(3),
+            l_gr=math.degrees(APPROACH_OPEN_RAD), r_gr=math.degrees(APPROACH_OPEN_RAD),
+            l_force=0.0, r_force=0.0,
             l_contact=False, r_contact=False,
-            tray_xyz=np.zeros(3), tray_ref=np.zeros(3),
         )
+        # Try to position at bottom-right
+        try:
+            import omni.kit.mainwindow
+            mw = omni.kit.mainwindow.get_main_window()
+            if mw:
+                sz = mw.width, mw.height
+            else:
+                sz = (1920, 1080)
+        except Exception:
+            sz = (1920, 1080)
         self._win = ui.Window(
-            "Handoff Monitor", width=620, height=680,
+            "Jaka Minicobo — Monitor",
+            width=720, height=820,
+            position_x=sz[0] - 740, position_y=sz[1] - 840,
             flags=ui.WINDOW_FLAGS_NO_SCROLLBAR | ui.WINDOW_FLAGS_NO_RESIZE,
         )
         self._rebuild()
 
     def push(self, **kwargs):
+        lq = kwargs.get("l_q", self._prev_lq)
+        rq = kwargs.get("r_q", self._prev_rq)
+        kwargs["l_dq"] = lq - self._prev_lq
+        kwargs["r_dq"] = rq - self._prev_rq
+        self._prev_lq = lq.copy()
+        self._prev_rq = rq.copy()
         self._s.update(kwargs)
-        self._hist_fL = (self._hist_fL + [float(self._s.get("l_friction", 0))])[-HIST_LEN:]
-        self._hist_fR = (self._hist_fR + [float(self._s.get("r_friction", 0))])[-HIST_LEN:]
+        self._hist_fl = (self._hist_fl + [float(self._s.get("l_force", 0))])[-HIST_LEN:]
+        self._hist_fr = (self._hist_fr + [float(self._s.get("r_force", 0))])[-HIST_LEN:]
+        lp = self._s.get("l_pad", np.zeros(3))
+        rp = self._s.get("r_pad", np.zeros(3))
+        self._hist_lz = (self._hist_lz + [float(lp[2])])[-HIST_LEN:]
+        self._hist_rz = (self._hist_rz + [float(rp[2])])[-HIST_LEN:]
         self._tick += 1
         if self._tick % UI_EVERY == 0:
             self._rebuild()
 
-    def _bar(self, val, max_val, color=0xFF44FF88, h=7):
+    def _joint_row(self, joints, dq, label):
         ui = self._ui
-        pct = min(100.0, max(0.0, val / max(1e-9, max_val)) * 100.0)
-        with ui.ZStack(height=h):
-            ui.Rectangle(style={"background_color": 0xFF1A1A1A, "border_radius": 2})
-            if pct > 0:
-                with ui.HStack():
-                    ui.Rectangle(width=ui.Percent(pct),
-                                 style={"background_color": color, "border_radius": 2})
-                    ui.Spacer()
+        with ui.HStack(height=34):
+            ui.Label(label, width=18, style={"font_size": 11, "color": 0xFF999999})
+            for j in range(6):
+                q = joints[j]
+                pct = min(100, abs(q) / math.pi * 100)
+                with ui.VStack(width=ui.Percent(100/6 - 1)):
+                    with ui.ZStack(height=14):
+                        ui.Rectangle(style={"background_color": 0xFF151520, "border_radius": 2})
+                        with ui.HStack():
+                            ui.Rectangle(width=ui.Percent(pct),
+                                         style={"background_color": self.JCOLORS[j], "border_radius": 2})
+                            ui.Spacer()
+                    v = dq[j] * 60
+                    vcol = 0xFF66FF66 if abs(v) < 1.0 else (0xFFFFDD44 if abs(v) < 2.0 else 0xFFFF6644)
+                    ui.Label(f"{math.degrees(q):+.0f}°", style={"font_size": 8, "color": self.JCOLORS[j]}, height=14)
 
-    def _arm_row(self, label, color, pad_xyz, gr_deg, friction, press_mm, contact):
+    def _arm_col(self, side, color, joints, dq, pad, rpy, gr_deg, force, contact):
         ui = self._ui
-        gap_mm = pad_separation_m(math.radians(gr_deg)) * 1000
-        px, py, pz = float(pad_xyz[0]), float(pad_xyz[1]), float(pad_xyz[2])
-        with ui.HStack(height=16):
-            ui.Label(f"{label}  pad [{px:+.3f} {py:+.3f} {pz:+.3f}]",
-                     style={"font_size": 10, "color": color})
-            ui.Spacer()
-            if contact:
-                ui.Label(f"F={friction:.2f}N  p={press_mm:.1f}mm",
-                         style={"font_size": 9, "color": 0xFFFFDD44})
-            else:
-                ui.Label(f"gr={gr_deg:.1f}°  gap={gap_mm:.1f}mm",
-                         style={"font_size": 9, "color": 0xFF888888})
-        if friction > 0.05:
-            self._bar(friction, FORCE_MAX_N,
-                      color=0xFFFF6644 if friction > GRIP_FORCE_STOP_N else 0xFF44AAFF)
+        gap = pad_separation_m(math.radians(gr_deg)) * 1000
+        with ui.VStack(spacing=3):
+            with ui.HStack(height=22):
+                ui.Label(f"{side} ARM", style={"font_size": 15, "color": color, "font_weight": 700})
+                ui.Spacer()
+                tag = "⚡ CONTACT" if contact else "○ idle"
+                ui.Label(tag, style={"font_size": 10, "color": 0xFFFF6644 if contact else 0xFF555566})
+            self._joint_row(joints, dq, side)
+            ui.Label(f"Pad  [{pad[0]:+.3f} {pad[1]:+.3f} {pad[2]:+.3f}]    "
+                     f"RPY [{math.degrees(rpy[0]):+.0f}° {math.degrees(rpy[1]):+.0f}° {math.degrees(rpy[2]):+.0f}°]",
+                     style={"font_size": 11, "color": 0xFFAAAACC})
+            ui.Label(f"Grip {gr_deg:.1f}°  gap {gap:.1f}mm"
+                     f"{'   F=' + f'{force:.2f}N' if force > 0.05 else ''}",
+                     style={"font_size": 11, "color": 0xFFFFDD44 if force > 0.1 else 0xFF777799})
 
     def _rebuild(self):
         ui = self._ui
-        s  = self._s
-        phase_col = self.PHASE_COLORS.get(s["phase"], 0xFFAAAAAA)
-        tray_delta = np.linalg.norm(s["tray_xyz"] - s["tray_ref"]) * 1000
-
+        s = self._s
         self._win.frame.clear()
         with self._win.frame:
-            with ui.VStack(spacing=2):
-                # Header
-                with ui.HStack(height=26):
-                    ui.Label("DUAL-ARM HANDOFF", style={"font_size": 14, "color": 0xFFFFFFFF})
-                    ui.Spacer()
-                    ui.Label(f"● {s['phase']}  #{s['cycle']}",
-                             style={"font_size": 13, "color": phase_col})
-                ui.Separator(height=2)
-
-                # Tray row
-                with ui.HStack(height=16):
-                    tx, ty, tz = float(s["tray_xyz"][0]), float(s["tray_xyz"][1]), float(s["tray_xyz"][2])
-                    ui.Label(f"TRAY [{tx:.3f} {ty:.3f} {tz:.3f}]",
-                             style={"font_size": 10, "color": 0xFFCCCCCC})
-                    ui.Spacer()
-                    col = 0xFF44FF44 if tray_delta < 8 else (0xFFFFDD44 if tray_delta < 40 else 0xFFFF4444)
-                    ui.Label(f"Δ={tray_delta:.1f}mm", style={"font_size": 9, "color": col})
-                ui.Separator(height=2)
-
-                # Arms
-                self._arm_row("L", 0xFF88DDFF,
-                              s["l_pad_xyz"], s["l_gr_deg"],
-                              s["l_friction"], s["l_press_mm"], s["l_contact"])
-                self._arm_row("R", 0xFFFFAA44,
-                              s["r_pad_xyz"], s["r_gr_deg"],
-                              s["r_friction"], s["r_press_mm"], s["r_contact"])
-                ui.Separator(height=2)
-
-                # Lift bar
-                with ui.HStack(height=16):
-                    ui.Label(f"Lift  {s['lift_m']*100:.1f} / {LIFT_Z*100:.0f} cm",
-                             style={"font_size": 12})
-                self._bar(s["lift_m"], LIFT_MAX_M, color=0xFF44FF88)
-                ui.Separator(height=2)
-
-                # Force history
-                ui.Label("Left friction (N) history",
-                         style={"font_size": 9, "color": 0xFF666666}, height=12)
-                ui.Plot(ui.Type.LINE, 0.0, FORCE_MAX_N, *self._hist_fL, height=55,
-                        style={"color": 0xFF22AAFF, "background_color": 0xFF050510})
-                ui.Label("Right friction (N) history",
-                         style={"font_size": 9, "color": 0xFF666666}, height=12)
-                ui.Plot(ui.Type.LINE, 0.0, FORCE_MAX_N, *self._hist_fR, height=55,
-                        style={"color": 0xFFFF8844, "background_color": 0xFF100505})
-                ui.Separator(height=2)
-
-                ui.Label(
-                    f"K_arm={K_ARM_Y:.0f}  K_ear={K_EAR_Y:.0f}  μ={MU_STATIC}  "
-                    f"stop@{GRIP_FORCE_STOP_N}N  depth={PAD_FACE_DEPTH_M*1000:.0f}mm",
-                    style={"font_size": 8, "color": 0xFF444444}, height=13,
-                )
+            with ui.VStack(spacing=4):
+                ui.Spacer(height=4)
+                with ui.HStack(spacing=8):
+                    with ui.VStack(width=ui.Percent(50)):
+                        self._arm_col("LEFT",  0xFF4499FF,
+                                      s["l_q"], s["l_dq"], s["l_pad"], s["l_rpy"],
+                                      s["l_gr"], s["l_force"], s["l_contact"])
+                    with ui.VStack(width=ui.Percent(50)):
+                        self._arm_col("RIGHT", 0xFFFF9944,
+                                      s["r_q"], s["r_dq"], s["r_pad"], s["r_rpy"],
+                                      s["r_gr"], s["r_force"], s["r_contact"])
+                ui.Separator(height=4)
+                # Force chart
+                ui.Label("Contact Force (N) — Blue L / Orange R",
+                         style={"font_size": 9, "color": 0xFF555566}, height=14)
+                ui.Plot(ui.Type.LINE, 0, FORCE_MAX_N * 1.1, *self._hist_fl, height=55,
+                        style={"color": 0xFF2288FF, "background_color": 0xFF060510})
+                ui.Plot(ui.Type.LINE, 0, FORCE_MAX_N * 1.1, *self._hist_fr, height=55,
+                        style={"color": 0xFFFF8844, "background_color": 0xFF100506})
+                # Pad Z chart (lift height)
+                ui.Label("Pad Height Z (m) — Blue L / Orange R",
+                         style={"font_size": 9, "color": 0xFF555566}, height=14)
+                ui.Plot(ui.Type.LINE, 0.5, 2.3, *self._hist_lz, height=55,
+                        style={"color": 0xFF2288FF, "background_color": 0xFF060510})
+                ui.Plot(ui.Type.LINE, 0.5, 2.3, *self._hist_rz, height=55,
+                        style={"color": 0xFFFF8844, "background_color": 0xFF100506})
+                ui.Spacer(height=4)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -776,6 +775,9 @@ def _run(app, stage):
 
     # ── Apply robot shift before setting up ops ───────────────────────────────
     _apply_robot_shift(stage, ROBOT_SHIFT_X)
+
+    # ── Ensure ground collision ───────────────────────────────────────────────
+    _ensure_ground_collision(stage)
 
     # ── Arm xform ops (both arms, both grippers) ─────────────────────────────
     l_ops    = _setup_arm_ops(stage, LEFT_ROOT,  "tgc_arm")
@@ -1289,7 +1291,13 @@ def _run(app, stage):
                 joint_R_active = False
                 contact_est_R  = False
                 q_contact_R    = None
-                _remove_prims(stage, JOINT_PATH_R)  # release R FixedJoint → tray free
+                _remove_prims(stage, JOINT_PATH_R)  # release R FixedJoint
+                # Ensure tray falls immediately under physics
+                _set_tray_kinematic(stage, False)
+                from pxr import UsdPhysics, Gf
+                _tp = stage.GetPrimAtPath(TRAY_PATH)
+                _tp.GetAttribute("physics:velocity").Set(Gf.Vec3f(0, 0, 0))
+                _tp.GetAttribute("physics:angularVelocity").Set(Gf.Vec3f(0, 0, 0))
                 print("[TGC] R released → tray free (dynamic)", flush=True)
                 _enter("HOME_R")
 
@@ -1425,21 +1433,18 @@ def _run(app, stage):
                 flush=True,
             )
 
+        # ── Pad RPY for UI ──────────────────────────────────────────────────
+        _l_rpy = _rotation_to_euler_deg(pad_world_L[:3, :3]); _l_rpy_rad = np.radians(_l_rpy)
+        _r_rpy = _rotation_to_euler_deg(pad_world_R[:3, :3]); _r_rpy_rad = np.radians(_r_rpy)
+
         ui_mon.push(
-            phase=phase, cycle=cycle,
-            l_gr_deg=math.degrees(gr_angle_L),
-            r_gr_deg=math.degrees(gr_angle_R),
-            l_friction=fric_L if contact_est_L else 0.0,
-            r_friction=fric_R if contact_est_R else 0.0,
-            l_press_mm=press_L if contact_est_L else 0.0,
-            r_press_mm=press_R if contact_est_R else 0.0,
-            lift_m=lift_m,
-            l_pad_xyz=pad_world_L[:3, 3],
-            r_pad_xyz=pad_world_R[:3, 3],
-            l_contact=contact_est_L,
-            r_contact=contact_est_R,
-            tray_xyz=tray_xyz_cur,
-            tray_ref=tray_xyz_ref,
+            l_q=q_L.copy(), r_q=q_R.copy(),
+            l_pad=pad_world_L[:3, 3], r_pad=pad_world_R[:3, 3],
+            l_rpy=_l_rpy_rad, r_rpy=_r_rpy_rad,
+            l_gr=math.degrees(gr_angle_L), r_gr=math.degrees(gr_angle_R),
+            l_force=fric_L if contact_est_L else 0.0,
+            r_force=fric_R if contact_est_R else 0.0,
+            l_contact=contact_est_L, r_contact=contact_est_R,
         )
 
         app.update()
