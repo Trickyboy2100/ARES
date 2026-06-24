@@ -526,10 +526,10 @@ def _smooth_path(path: np.ndarray) -> np.ndarray:
 
 
 def _cu_batch(jobs: list) -> dict:
-    """Send batch to persistent cuRobo worker, return {label: np.ndarray path}.
-    Applies SG-smooth then pins path[-1] == q_goal to guarantee joint continuity."""
+    """Send batch to persistent cuRobo worker, return {label: np.ndarray path}.  SG-smooth only.
+    NOTE: path[-1] is cuRobo's natural endpoint — use it as q_start for the next segment,
+    NOT the original q_goal (they may differ by several rad for the same Cartesian pose)."""
     import json as _json
-    _q_goals = {j["label"]: np.array(j["q_goal"]) for j in jobs}
     payload = _json.dumps({"jobs": [
         {"label": j["label"],
          "q_start": [float(x) for x in j["q_start"]],
@@ -552,13 +552,7 @@ def _cu_batch(jobs: list) -> dict:
             if raw is not None and len(raw) > 1:
                 p = np.array(raw)
                 p = _smooth_path(p)
-                # Pin endpoint: force path[-1] == q_goal so next segment starts
-                # from exact joint config where this segment ends.
-                p[-1] = _q_goals[lbl]
                 out[lbl] = p
-                _gap = np.max(np.abs(np.array(raw)[-1] - _q_goals[lbl]))
-                if _gap > 0.01:
-                    print(f"[TGC] cuRobo {lbl}: endpoint pinned  raw_gap={_gap:.4f}rad", flush=True)
             else:
                 out[lbl] = np.array(raw) if raw is not None else None
         return out
@@ -568,15 +562,14 @@ def _cu_batch(jobs: list) -> dict:
 
 
 # ── Async (non-blocking) cuRobo interface ────────────────────────────────────
-_cu_pending:  dict = {}   # label → True, marks in-flight jobs
-_cu_goal_map: dict = {}   # label → q_goal array for endpoint pinning
+_cu_pending: dict = {}   # label → True, marks in-flight jobs
 
 
 def _cu_send_async(jobs: list):
     """Send planning jobs without waiting for response.  Call _cu_try_collect()
-    each frame to retrieve results.  q_goal is stored for endpoint pinning."""
+    each frame to retrieve results."""
     import json as _json
-    global _cu_pending, _cu_goal_map
+    global _cu_pending
     payload = _json.dumps({"jobs": [
         {"label": j["label"],
          "q_start": [float(x) for x in j["q_start"]],
@@ -589,7 +582,6 @@ def _cu_send_async(jobs: list):
         _cu_proc.stdin.flush()
         for j in jobs:
             _cu_pending[j["label"]] = True
-            _cu_goal_map[j["label"]] = np.array(j["q_goal"])  # store for pin
         print(f"[TGC] cuRobo async: {len(jobs)} jobs sent", flush=True)
     except Exception as _e:
         print(f"[TGC] cuRobo async error: {_e}", flush=True)
@@ -598,7 +590,7 @@ def _cu_send_async(jobs: list):
 def _cu_try_collect() -> dict | None:
     """Non-blocking check for worker response.  Returns parsed results dict or None."""
     import json as _json, select
-    global _cu_pending, _cu_goal_map
+    global _cu_pending
     if not _cu_pending:
         return None
     # Check if stdout has data ready
@@ -619,17 +611,9 @@ def _cu_try_collect() -> dict | None:
             if raw is not None and len(raw) > 1:
                 p = np.array(raw)
                 p = _smooth_path(p)
-                # Pin endpoint: force path[-1] == q_goal for joint continuity.
-                if lbl in _cu_goal_map:
-                    q_g = _cu_goal_map.pop(lbl)
-                    _gap = np.max(np.abs(p[-1] - q_g))
-                    p[-1] = q_g
-                    if _gap > 0.01:
-                        print(f"[TGC] async {lbl}: endpoint pinned  gap={_gap:.4f}rad", flush=True)
                 out[lbl] = p
             else:
                 out[lbl] = np.array(raw) if raw is not None else None
-                _cu_goal_map.pop(lbl, None)
             _cu_pending.pop(lbl, None)
         return out
     except Exception as _e:
@@ -1086,31 +1070,30 @@ def _run(app, stage):
     ui_mon.push(phase="PLAN", cycle=0)
     app.update()
     # ── Sequential planning: each path's actual endpoint → next path's start ──
-    _fixed_jobs = [
-        {"label": "home→preL",      "q_start": q_zero,           "q_goal": q_pre_L},
-        {"label": "retractL",       "q_start": q_handoff_L,      "q_goal": q_zero},
-    ]
-    _fixed_results = _cu_batch(_fixed_jobs)
+    _fixed_results = _cu_batch([
+        {"label": "home→preL", "q_start": q_zero, "q_goal": q_pre_L},
+    ])
 
     path_home_to_pre_L = _fixed_results.get("home→preL")
     if path_home_to_pre_L is None or len(path_home_to_pre_L) == 0:
         path_home_to_pre_L = np.array([q_pre_L])
     print(f"[TGC] cuRobo home→preL: {len(path_home_to_pre_L)} steps", flush=True)
 
-    # Pin approach_L[0] to home→preL actual end for seamless handoff
-    _gap_pre_approach = np.max(np.abs(path_home_to_pre_L[-1] - path_approach_L[0]))
-    if _gap_pre_approach > 0.001:
-        print(f"[TGC] Pin approach_L start: gap={_gap_pre_approach:.4f}rad", flush=True)
-        path_approach_L[0] = path_home_to_pre_L[-1]
-        path_approach_L = _smooth_path(path_approach_L)
-        path_approach_L[0] = path_home_to_pre_L[-1]  # re-pin after smooth
-        q_pick_L = path_approach_L[-1]  # update pick IK
+    # Rebuild approach path seeded from cuRobo endpoint so IK branch is consistent.
+    # Pinning path[0] then smoothing creates oscillations when the gap is large (3+ rad).
+    # Instead, re-run _linear_y_path from path_home_to_pre_L[-1] so the IK seeds from
+    # the correct branch the whole way through.
+    path_approach_L = _linear_y_path(
+        _ik_L, path_home_to_pre_L[-1], pre_xyz_L, pick_xyz_L, APPROACH_STEPS,
+        orient_weight=ORIENT_WEIGHT_STRONG,
+    )
+    q_pick_L = path_approach_L[-1]
+    print(f"[TGC] Approach rebuilt from cuRobo endpoint: end_pad_Y={_pad_L(q_pick_L)[1,3]:.4f}  "
+          f"start={np.round(path_approach_L[0],3)}", flush=True)
 
-    path_carry_L     = np.array([q_handoff_L])   # placeholder; rebuilt on contact
-    path_retract_L   = _fixed_results.get("retractL")
-    if path_retract_L is None or len(path_retract_L) == 0:
-        path_retract_L = np.array([q_zero])
-    print(f"[TGC] cuRobo retractL: {len(path_retract_L)} steps", flush=True)
+    path_carry_L   = np.array([q_handoff_L])   # placeholder; rebuilt on contact
+    path_retract_L = np.linspace(q_handoff_L, q_zero, 120)  # placeholder; rebuilt at RELEASE_L
+    print(f"[TGC] retractL placeholder: 120 linspace steps", flush=True)
 
     # ── Right arm: sequential planning ───────────────────────────────────────
     path_home_to_handoff_R = _cu_batch([
@@ -1130,15 +1113,9 @@ def _run(app, stage):
     print(f"[TGC] cuRobo handoff→dryer: {len(path_handoff_to_dryer)} steps  "
           f"(start={np.round(path_home_to_handoff_R[-1],2)})", flush=True)
 
-    # dryer→homeR starts from actual end of handoff→dryer
-    path_dryer_home_R = _cu_batch([
-        {"label": "dryer→homeR", "q_start": path_handoff_to_dryer[-1].tolist(),
-         "q_goal": q_zero.tolist()},
-    ]).get("dryer→homeR", np.array([q_zero]))
-    if len(path_dryer_home_R) == 0:
-        path_dryer_home_R = np.array([q_zero])
-    print(f"[TGC] cuRobo dryer→homeR: {len(path_dryer_home_R)} steps  "
-          f"(start={np.round(path_handoff_to_dryer[-1],2)})", flush=True)
+    # dryer→homeR: built at runtime with linspace from actual q_R at RELEASE_R
+    path_dryer_home_R = np.linspace(path_handoff_to_dryer[-1], q_zero, 120)  # placeholder
+    print(f"[TGC] dryer→homeR placeholder: 120 linspace steps", flush=True)
 
     print("[TGC] Sequential path planning done.", flush=True)
     app.update()
@@ -1209,30 +1186,35 @@ def _run(app, stage):
                     contact_est_L = True
                     _set_tray_kinematic(stage, True)
                     print(f"[TGC] L FORCE STOP (async done) pad={np.round(_cp, 4)}", flush=True)
-                    # Re-plan retractL from carry's actual pinned endpoint.
+                    # carryL was sent with q_lift_end_L as start; re-plan from actual
+                    # path_lift_L[-1] so the carry starts from the true lift endpoint.
+                    # Also chain retractL from carry's natural endpoint (same batch).
                     _cu_send_async([
-                        {"label": "retractL_rt",
-                         "q_start": path_carry_L[-1].tolist(), "q_goal": q_zero.tolist()},
+                        {"label": "carryL_rt",
+                         "q_start": path_lift_L[-1].tolist(), "q_goal": q_handoff_L.tolist()},
                     ])
                     _enter("CLOSE_GRIP_L")
                 elif _act[0] == "cycle_restart":
                     _p = _async_result.get("home→preL_c")
                     path_home_to_pre_L = _p if (_p is not None and len(_p) > 0) else np.array([q_pre_L])
-                    _gap = np.max(np.abs(path_home_to_pre_L[-1] - path_approach_L[0]))
-                    if _gap > 0.001:
-                        path_approach_L[0] = path_home_to_pre_L[-1]
-                        path_approach_L = _smooth_path(path_approach_L)
-                        path_approach_L[0] = path_home_to_pre_L[-1]
-                    print(f"[TGC] Cycle {cycle}: re-plan done  approach_gap={_gap:.4f}rad", flush=True)
+                    # Rebuild approach path from cuRobo endpoint (same IK branch → no jump).
+                    path_approach_L = _linear_y_path(
+                        _ik_L, path_home_to_pre_L[-1], pre_xyz_L, pick_xyz_L, APPROACH_STEPS,
+                        orient_weight=ORIENT_WEIGHT_STRONG,
+                    )
+                    q_pick_L = path_approach_L[-1]
+                    print(f"[TGC] Cycle {cycle}: re-plan done  "
+                          f"approach_start={np.round(path_approach_L[0],3)}", flush=True)
                     _enter("TO_PRE_L")
 
             # ── Background path updates (no state transition, just update paths) ─
-            if "retractL_rt" in _async_result:
-                _p = _async_result["retractL_rt"]
+            if "carryL_rt" in _async_result:
+                _p = _async_result["carryL_rt"]
                 if _p is not None and len(_p) > 0:
-                    path_retract_L = _p
-                    print(f"[TGC] retractL_rt updated: {len(path_retract_L)} steps  "
-                          f"start={np.round(path_retract_L[0],3)}", flush=True)
+                    path_carry_L = _p
+                    print(f"[TGC] carryL_rt updated: {len(path_carry_L)} steps  "
+                          f"start={np.round(path_carry_L[0],3)}", flush=True)
+                # retractL is now built as joint-space linspace at RELEASE_L — no async needed.
 
             if "handoff→dryer_rt" in _async_result:
                 _p = _async_result["handoff→dryer_rt"]
@@ -1240,18 +1222,7 @@ def _run(app, stage):
                     path_handoff_to_dryer = _p
                     print(f"[TGC] handoff→dryer_rt updated: {len(path_handoff_to_dryer)} steps  "
                           f"start={np.round(path_handoff_to_dryer[0],3)}", flush=True)
-                    # Chain: dryer→homeR starts from pinned end of handoff→dryer
-                    _cu_send_async([
-                        {"label": "dryer→homeR_rt",
-                         "q_start": path_handoff_to_dryer[-1].tolist(), "q_goal": q_zero.tolist()},
-                    ])
-
-            if "dryer→homeR_rt" in _async_result:
-                _p = _async_result["dryer→homeR_rt"]
-                if _p is not None and len(_p) > 0:
-                    path_dryer_home_R = _p
-                    print(f"[TGC] dryer→homeR_rt updated: {len(path_dryer_home_R)} steps  "
-                          f"start={np.round(path_dryer_home_R[0],3)}", flush=True)
+                # dryer→homeR is now built as joint-space linspace at RELEASE_R — no async needed.
 
         # ── Right arm parallel advance (TO_PRE_L → CARRY_L) ──────────────────
         _early_phases = {"TO_PRE_L", "APPROACH_L", "CLOSE_GRIP_L", "LIFT_L", "CARRY_L", "WAIT_PLAN"}
@@ -1435,13 +1406,16 @@ def _run(app, stage):
                 _tray_after = _get_tray_translate(stage)
                 print(f"[TGC] L released → tray held by R FixedJoint  "
                       f"tray_pos={np.round(_tray_after, 4)}", flush=True)
+                # Build retract path in joint space from current q_L to home —
+                # guarantees continuity (no IK-branch flip) and exact zero landing.
+                path_retract_L = np.linspace(q_L.copy(), q_zero, 120)
+                print(f"[TGC] retractL linspace: start={np.round(q_L, 3)}", flush=True)
                 _enter("RETRACT_L")
 
         elif phase == "RETRACT_L":
             if path_idx < len(path_retract_L):
                 q_L = path_retract_L[path_idx]; path_idx += 1
             else:
-                q_L = q_zero.copy()
                 _enter("CARRY_DRYER")
 
         elif phase == "CARRY_DRYER":
@@ -1472,13 +1446,15 @@ def _run(app, stage):
                 _tp.GetAttribute("physics:velocity").Set(Gf.Vec3f(0, 0, 0))
                 _tp.GetAttribute("physics:angularVelocity").Set(Gf.Vec3f(0, 0, 0))
                 print("[TGC] R released → tray free (dynamic)", flush=True)
+                # Build homeR path in joint space from current q_R — no IK-branch flip.
+                path_dryer_home_R = np.linspace(q_R.copy(), q_zero, 120)
+                print(f"[TGC] dryer→homeR linspace: start={np.round(q_R, 3)}", flush=True)
                 _enter("HOME_R")
 
         elif phase == "HOME_R":
             if path_idx < len(path_dryer_home_R):
                 q_R = path_dryer_home_R[path_idx]; path_idx += 1
             else:
-                q_R = q_zero.copy()
                 _enter("RESET_SCENE")
 
         elif phase == "RESET_SCENE":
