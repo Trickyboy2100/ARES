@@ -94,7 +94,8 @@ RIGHT_PAD_L_PATH = f"{LEFT_GR}/right_pad"
 RIGHT_PAD_R_PATH = f"{RIGHT_GR}/right_pad"
 
 # ── Robot shift (toward right arm = -X in world coords) ───────────────────────
-ROBOT_SHIFT_X = -0.15   # m — move entire robot 15cm in right-arm direction
+ROBOT_SHIFT_X = -0.25   # m — move entire robot 25cm in -X (was -0.15, added -0.10)
+ROBOT_SHIFT_Y = -0.10   # m — move entire robot 10cm in -Y
 
 # ── EG2 gripper axis convention (see gripper.py) ─────────────────────────────
 # pad local X (col 0) = JAW direction  — fingers open/close along this axis
@@ -217,8 +218,8 @@ def _solve_ear_contact(drive_y: float, contact_y: float):
 # Scene helpers
 # ─────────────────────────────────────────────────────────────────────────────
 
-def _apply_robot_shift(stage, shift_x: float):
-    """Shift /World/robot translate by shift_x (in meters)."""
+def _apply_robot_shift(stage, shift_x: float, shift_y: float = 0.0):
+    """Shift /World/robot translate by (shift_x, shift_y) in meters."""
     from pxr import Gf, UsdGeom
     prim = stage.GetPrimAtPath(ROBOT_PARENT_PATH)
     if not prim or not prim.IsValid():
@@ -229,8 +230,9 @@ def _apply_robot_shift(stage, shift_x: float):
         name = op.GetName()
         if "translate" in name and "unitsResolve" not in name and "world" not in name.lower():
             v = op.Get()
-            op.Set(Gf.Vec3d(float(v[0]) + shift_x, float(v[1]), float(v[2])))
-            print(f"[TGC] Robot shifted {shift_x:+.3f}m X → {float(v[0])+shift_x:.3f}", flush=True)
+            op.Set(Gf.Vec3d(float(v[0]) + shift_x, float(v[1]) + shift_y, float(v[2])))
+            print(f"[TGC] Robot shifted X{shift_x:+.3f} Y{shift_y:+.3f} → "
+                  f"({float(v[0])+shift_x:.3f}, {float(v[1])+shift_y:.3f})", flush=True)
             return
     print("[TGC] WARNING: no suitable translate op on robot parent — shift skipped", flush=True)
 
@@ -524,8 +526,10 @@ def _smooth_path(path: np.ndarray) -> np.ndarray:
 
 
 def _cu_batch(jobs: list) -> dict:
-    """Send batch to persistent cuRobo worker, return {label: np.ndarray path}.  SG-smooth only."""
+    """Send batch to persistent cuRobo worker, return {label: np.ndarray path}.
+    Applies SG-smooth then pins path[-1] == q_goal to guarantee joint continuity."""
     import json as _json
+    _q_goals = {j["label"]: np.array(j["q_goal"]) for j in jobs}
     payload = _json.dumps({"jobs": [
         {"label": j["label"],
          "q_start": [float(x) for x in j["q_start"]],
@@ -548,12 +552,89 @@ def _cu_batch(jobs: list) -> dict:
             if raw is not None and len(raw) > 1:
                 p = np.array(raw)
                 p = _smooth_path(p)
+                # Pin endpoint: force path[-1] == q_goal so next segment starts
+                # from exact joint config where this segment ends.
+                p[-1] = _q_goals[lbl]
                 out[lbl] = p
+                _gap = np.max(np.abs(np.array(raw)[-1] - _q_goals[lbl]))
+                if _gap > 0.01:
+                    print(f"[TGC] cuRobo {lbl}: endpoint pinned  raw_gap={_gap:.4f}rad", flush=True)
             else:
                 out[lbl] = np.array(raw) if raw is not None else None
         return out
     except Exception as _e:
         print(f"[TGC] cuRobo batch error: {_e}", flush=True)
+        return {}
+
+
+# ── Async (non-blocking) cuRobo interface ────────────────────────────────────
+_cu_pending:  dict = {}   # label → True, marks in-flight jobs
+_cu_goal_map: dict = {}   # label → q_goal array for endpoint pinning
+
+
+def _cu_send_async(jobs: list):
+    """Send planning jobs without waiting for response.  Call _cu_try_collect()
+    each frame to retrieve results.  q_goal is stored for endpoint pinning."""
+    import json as _json
+    global _cu_pending, _cu_goal_map
+    payload = _json.dumps({"jobs": [
+        {"label": j["label"],
+         "q_start": [float(x) for x in j["q_start"]],
+         "q_goal":  [float(x) for x in j["q_goal"]],
+         "max_attempts": j.get("max_attempts", 8)}
+        for j in jobs
+    ]})
+    try:
+        _cu_proc.stdin.write(payload + "\n")
+        _cu_proc.stdin.flush()
+        for j in jobs:
+            _cu_pending[j["label"]] = True
+            _cu_goal_map[j["label"]] = np.array(j["q_goal"])  # store for pin
+        print(f"[TGC] cuRobo async: {len(jobs)} jobs sent", flush=True)
+    except Exception as _e:
+        print(f"[TGC] cuRobo async error: {_e}", flush=True)
+
+
+def _cu_try_collect() -> dict | None:
+    """Non-blocking check for worker response.  Returns parsed results dict or None."""
+    import json as _json, select
+    global _cu_pending, _cu_goal_map
+    if not _cu_pending:
+        return None
+    # Check if stdout has data ready
+    try:
+        ready, _, _ = select.select([_cu_proc.stdout], [], [], 0)
+        if not ready:
+            return None
+        line = _cu_proc.stdout.readline()
+        if not line:
+            print("[TGC] cuRobo worker closed unexpectedly", flush=True)
+            _cu_pending.clear()
+            return {}
+        data = _json.loads(line)
+        out = {}
+        for r in data["results"]:
+            lbl = r["label"]
+            raw = r.get("path")
+            if raw is not None and len(raw) > 1:
+                p = np.array(raw)
+                p = _smooth_path(p)
+                # Pin endpoint: force path[-1] == q_goal for joint continuity.
+                if lbl in _cu_goal_map:
+                    q_g = _cu_goal_map.pop(lbl)
+                    _gap = np.max(np.abs(p[-1] - q_g))
+                    p[-1] = q_g
+                    if _gap > 0.01:
+                        print(f"[TGC] async {lbl}: endpoint pinned  gap={_gap:.4f}rad", flush=True)
+                out[lbl] = p
+            else:
+                out[lbl] = np.array(raw) if raw is not None else None
+                _cu_goal_map.pop(lbl, None)
+            _cu_pending.pop(lbl, None)
+        return out
+    except Exception as _e:
+        print(f"[TGC] cuRobo collect error: {_e}", flush=True)
+        _cu_pending.clear()
         return {}
 
 
@@ -774,7 +855,7 @@ def _run(app, stage):
     print("[TGC] URDF loaded.", flush=True)
 
     # ── Apply robot shift before setting up ops ───────────────────────────────
-    _apply_robot_shift(stage, ROBOT_SHIFT_X)
+    _apply_robot_shift(stage, ROBOT_SHIFT_X, ROBOT_SHIFT_Y)
 
     # ── Ensure ground collision ───────────────────────────────────────────────
     _ensure_ground_collision(stage)
@@ -1004,40 +1085,62 @@ def _run(app, stage):
     print("[TGC] Planning fixed paths with cuRobo (subprocess)…", flush=True)
     ui_mon.push(phase="PLAN", cycle=0)
     app.update()
+    # ── Sequential planning: each path's actual endpoint → next path's start ──
     _fixed_jobs = [
         {"label": "home→preL",      "q_start": q_zero,           "q_goal": q_pre_L},
         {"label": "retractL",       "q_start": q_handoff_L,      "q_goal": q_zero},
-        {"label": "handoff→dryer",  "q_start": q_handoff_R,      "q_goal": q_dryer_R},
-        {"label": "dryer→homeR",    "q_start": q_dryer_R,        "q_goal": q_zero},
     ]
     _fixed_results = _cu_batch(_fixed_jobs)
 
-    def _get_path(label: str, q_goal: np.ndarray) -> np.ndarray:
-        p = _fixed_results.get(label)
-        if p is None or len(p) == 0:
-            print(f"[TGC] ⚠ {label}: cuRobo failed — single-step jump", flush=True)
-            return np.array([q_goal])
-        key = (_q_key(p[0]), _q_key(p[-1]))
-        _plan_cache[key] = p
-        print(f"[TGC] cuRobo {label}: {len(p)} steps", flush=True)
-        return p
+    path_home_to_pre_L = _fixed_results.get("home→preL")
+    if path_home_to_pre_L is None or len(path_home_to_pre_L) == 0:
+        path_home_to_pre_L = np.array([q_pre_L])
+    print(f"[TGC] cuRobo home→preL: {len(path_home_to_pre_L)} steps", flush=True)
 
-    path_home_to_pre_L    = _get_path("home→preL",     q_pre_L)
-    # path_approach_L already built as Y-linear Cartesian path above
-    path_carry_L          = np.array([q_handoff_L])   # placeholder; rebuilt on contact
-    path_retract_L        = _get_path("retractL",      q_zero)
+    # Pin approach_L[0] to home→preL actual end for seamless handoff
+    _gap_pre_approach = np.max(np.abs(path_home_to_pre_L[-1] - path_approach_L[0]))
+    if _gap_pre_approach > 0.001:
+        print(f"[TGC] Pin approach_L start: gap={_gap_pre_approach:.4f}rad", flush=True)
+        path_approach_L[0] = path_home_to_pre_L[-1]
+        path_approach_L = _smooth_path(path_approach_L)
+        path_approach_L[0] = path_home_to_pre_L[-1]  # re-pin after smooth
+        q_pick_L = path_approach_L[-1]  # update pick IK
 
-    # ── Right arm: single cuRobo plan from home to handoff ───────────────────
+    path_carry_L     = np.array([q_handoff_L])   # placeholder; rebuilt on contact
+    path_retract_L   = _fixed_results.get("retractL")
+    if path_retract_L is None or len(path_retract_L) == 0:
+        path_retract_L = np.array([q_zero])
+    print(f"[TGC] cuRobo retractL: {len(path_retract_L)} steps", flush=True)
+
+    # ── Right arm: sequential planning ───────────────────────────────────────
     path_home_to_handoff_R = _cu_batch([
-        {"label": "home→handoffR", "q_start": q_zero, "q_goal": q_handoff_R},
+        {"label": "home→handoffR", "q_start": q_zero.tolist(), "q_goal": q_handoff_R.tolist()},
     ]).get("home→handoffR", np.array([q_handoff_R]))
     if len(path_home_to_handoff_R) == 0:
         path_home_to_handoff_R = np.array([q_handoff_R])
     print(f"[TGC] cuRobo home→handoffR: {len(path_home_to_handoff_R)} steps", flush=True)
 
-    path_handoff_to_dryer = _get_path("handoff→dryer", q_dryer_R)
-    path_dryer_home_R     = _get_path("dryer→homeR",   q_zero)
-    print("[TGC] Fixed path planning done.", flush=True)
+    # handoff→dryer starts from actual end of home→handoffR
+    path_handoff_to_dryer = _cu_batch([
+        {"label": "handoff→dryer", "q_start": path_home_to_handoff_R[-1].tolist(),
+         "q_goal": q_dryer_R.tolist()},
+    ]).get("handoff→dryer", np.array([q_dryer_R]))
+    if len(path_handoff_to_dryer) == 0:
+        path_handoff_to_dryer = np.array([q_dryer_R])
+    print(f"[TGC] cuRobo handoff→dryer: {len(path_handoff_to_dryer)} steps  "
+          f"(start={np.round(path_home_to_handoff_R[-1],2)})", flush=True)
+
+    # dryer→homeR starts from actual end of handoff→dryer
+    path_dryer_home_R = _cu_batch([
+        {"label": "dryer→homeR", "q_start": path_handoff_to_dryer[-1].tolist(),
+         "q_goal": q_zero.tolist()},
+    ]).get("dryer→homeR", np.array([q_zero]))
+    if len(path_dryer_home_R) == 0:
+        path_dryer_home_R = np.array([q_zero])
+    print(f"[TGC] cuRobo dryer→homeR: {len(path_dryer_home_R)} steps  "
+          f"(start={np.round(path_handoff_to_dryer[-1],2)})", flush=True)
+
+    print("[TGC] Sequential path planning done.", flush=True)
     app.update()
 
     # ── Right arm parallel path (starts with left arm TO_PRE_L) ──────────────
@@ -1085,10 +1188,73 @@ def _run(app, stage):
     _prev_q_L = q_zero.copy()
     _prev_q_R = q_zero.copy()
 
+    # ── Async planning state ─────────────────────────────────────────────────
+    _pending_action = None  # ("lift_carry", q_contact, cur_pad) or ("cycle_restart",)
+
     while app.is_running():
 
+        # ── Async cuRobo poll (non-blocking) ─────────────────────────────────
+        _async_result = _cu_try_collect()
+        if _async_result is not None:
+            # ── Blocking actions (trigger state transitions) ──────────────────
+            if _pending_action is not None:
+                _act = _pending_action
+                _pending_action = None
+                if _act[0] == "lift_carry":
+                    _, _qc, _cp = _act
+                    _p = _async_result.get("liftL"); path_lift_L = _p if (_p is not None and len(_p) > 0) else np.array([q_lift_end_L])
+                    _p = _async_result.get("carryL"); path_carry_L = _p if (_p is not None and len(_p) > 0) else np.array([q_handoff_L])
+                    q_contact_L   = _qc
+                    pad_z0        = float(_cp[2])
+                    contact_est_L = True
+                    _set_tray_kinematic(stage, True)
+                    print(f"[TGC] L FORCE STOP (async done) pad={np.round(_cp, 4)}", flush=True)
+                    # Re-plan retractL from carry's actual pinned endpoint.
+                    _cu_send_async([
+                        {"label": "retractL_rt",
+                         "q_start": path_carry_L[-1].tolist(), "q_goal": q_zero.tolist()},
+                    ])
+                    _enter("CLOSE_GRIP_L")
+                elif _act[0] == "cycle_restart":
+                    _p = _async_result.get("home→preL_c")
+                    path_home_to_pre_L = _p if (_p is not None and len(_p) > 0) else np.array([q_pre_L])
+                    _gap = np.max(np.abs(path_home_to_pre_L[-1] - path_approach_L[0]))
+                    if _gap > 0.001:
+                        path_approach_L[0] = path_home_to_pre_L[-1]
+                        path_approach_L = _smooth_path(path_approach_L)
+                        path_approach_L[0] = path_home_to_pre_L[-1]
+                    print(f"[TGC] Cycle {cycle}: re-plan done  approach_gap={_gap:.4f}rad", flush=True)
+                    _enter("TO_PRE_L")
+
+            # ── Background path updates (no state transition, just update paths) ─
+            if "retractL_rt" in _async_result:
+                _p = _async_result["retractL_rt"]
+                if _p is not None and len(_p) > 0:
+                    path_retract_L = _p
+                    print(f"[TGC] retractL_rt updated: {len(path_retract_L)} steps  "
+                          f"start={np.round(path_retract_L[0],3)}", flush=True)
+
+            if "handoff→dryer_rt" in _async_result:
+                _p = _async_result["handoff→dryer_rt"]
+                if _p is not None and len(_p) > 0:
+                    path_handoff_to_dryer = _p
+                    print(f"[TGC] handoff→dryer_rt updated: {len(path_handoff_to_dryer)} steps  "
+                          f"start={np.round(path_handoff_to_dryer[0],3)}", flush=True)
+                    # Chain: dryer→homeR starts from pinned end of handoff→dryer
+                    _cu_send_async([
+                        {"label": "dryer→homeR_rt",
+                         "q_start": path_handoff_to_dryer[-1].tolist(), "q_goal": q_zero.tolist()},
+                    ])
+
+            if "dryer→homeR_rt" in _async_result:
+                _p = _async_result["dryer→homeR_rt"]
+                if _p is not None and len(_p) > 0:
+                    path_dryer_home_R = _p
+                    print(f"[TGC] dryer→homeR_rt updated: {len(path_dryer_home_R)} steps  "
+                          f"start={np.round(path_dryer_home_R[0],3)}", flush=True)
+
         # ── Right arm parallel advance (TO_PRE_L → CARRY_L) ──────────────────
-        _early_phases = {"TO_PRE_L", "APPROACH_L", "CLOSE_GRIP_L", "LIFT_L", "CARRY_L"}
+        _early_phases = {"TO_PRE_L", "APPROACH_L", "CLOSE_GRIP_L", "LIFT_L", "CARRY_L", "WAIT_PLAN"}
         if phase in _early_phases and not _r_done:
             if _r_step < len(_path_r_all):
                 q_R = _path_r_all[_r_step]; _r_step += 1
@@ -1112,27 +1278,18 @@ def _run(app, stage):
                 if test_f >= GRIP_FORCE_STOP_N and path_idx > 0:
                     q_contact_L = q_L.copy()
                     cur_pad     = _pad_L(q_contact_L)[:3, 3]
-                    # Solve lift-end IK → plan lift + carry with cuRobo
                     lift_target  = cur_pad.copy(); lift_target[2] += LIFT_Z
                     q_lift_end_L = _ik_L("L_lift", lift_target, ref=q_contact_L,
                                          orient_weight=ORIENT_WEIGHT_GRASP)
-                    print(f"[TGC] Lift IK target={np.round(lift_target, 3)}", flush=True)
-                    _lc = _cu_batch([
-                        {"label": "liftL",  "q_start": q_contact_L, "q_goal": q_lift_end_L},
-                        {"label": "carryL", "q_start": q_lift_end_L, "q_goal": q_handoff_L},
+                    print(f"[TGC] Lift IK target={np.round(lift_target, 3)}  "
+                          f"F={test_f:.2f}N  pad={np.round(cur_pad,4)}", flush=True)
+                    # Async planning — don't block rendering
+                    _cu_send_async([
+                        {"label": "liftL",  "q_start": q_contact_L.tolist(), "q_goal": q_lift_end_L.tolist()},
+                        {"label": "carryL", "q_start": q_lift_end_L.tolist(), "q_goal": q_handoff_L.tolist()},
                     ])
-                    _p = _lc.get("liftL");  path_lift_L  = _p if (_p is not None and len(_p) > 0) else np.array([q_lift_end_L])
-                    _p = _lc.get("carryL"); path_carry_L = _p if (_p is not None and len(_p) > 0) else np.array([q_handoff_L])
-
-                    pad_z0        = float(cur_pad[2])
-                    contact_est_L = True
-                    _set_tray_kinematic(stage, True)  # pin tray while pad closes
-                    print(
-                        f"[TGC] L FORCE STOP F={test_f:.2f}N idx={path_idx}"
-                        f" pad={np.round(cur_pad, 4)}",
-                        flush=True,
-                    )
-                    _enter("CLOSE_GRIP_L")
+                    _pending_action = ("lift_carry", q_contact_L.copy(), cur_pad)
+                    _enter("WAIT_PLAN")
                 else:
                     q_L = next_q
                     path_idx += 1
@@ -1140,6 +1297,10 @@ def _run(app, stage):
                 if not contact_est_L:
                     print("[TGC] APPROACH_L exhausted without contact", flush=True)
                 _enter("CLOSE_GRIP_L")
+
+        elif phase == "WAIT_PLAN":
+            # Async cuRobo planning in progress — arm holds position, rendering continues
+            pass  # _cu_try_collect() at top of loop will handle completion
 
         elif phase == "CLOSE_GRIP_L":
             if path_idx < len(grip_close):
@@ -1178,8 +1339,13 @@ def _run(app, stage):
         elif phase == "CARRY_L":
             if path_idx < len(path_carry_L):
                 q_L = path_carry_L[path_idx]; path_idx += 1
+            elif not _r_done:
+                # L arm holds at handoff; R arm parallel advance still running.
+                # _early_phases includes CARRY_L so R arm keeps stepping each frame.
+                if frame % 60 == 0:
+                    print(f"[TGC] CARRY_L: holding, R arm step {_r_step}/{len(_path_r_all)}", flush=True)
             else:
-                # Both arms at handoff position — right arm moves to its side
+                # Both arms at target: L at handoff, R at handoff_R (parallel done).
                 _enter("R_TO_NEAR")
 
         elif phase == "R_TO_NEAR":
@@ -1247,6 +1413,13 @@ def _run(app, stage):
                     joint_R_active = True
                     contact_est_R  = True
                     print("[TGC] R carrier grasp → FixedJoint_R (carrier) created", flush=True)
+                    # Re-plan dryer path from actual q_R (not theoretical q_handoff_R).
+                    # Runs async during RELEASE_L + RETRACT_L so it's ready for CARRY_DRYER.
+                    print(f"[TGC] Async re-plan handoff→dryer from actual q_R={np.round(q_R,3)}", flush=True)
+                    _cu_send_async([
+                        {"label": "handoff→dryer_rt",
+                         "q_start": q_R.tolist(), "q_goal": q_dryer_R.tolist()},
+                    ])
                 _enter("RELEASE_L")
 
         elif phase == "RELEASE_L":
@@ -1368,13 +1541,13 @@ def _run(app, stage):
                         _ik_L, q_pre_L, pre_xyz_L, pick_xyz_L, APPROACH_STEPS,
                         orient_weight=ORIENT_WEIGHT_STRONG,
                     )
-                    _restart = _cu_batch([
-                        {"label": "home→preL_c", "q_start": q_zero, "q_goal": q_pre_L},
+                    # Async re-plan — don't block rendering between cycles
+                    _cu_send_async([
+                        {"label": "home→preL_c", "q_start": q_zero.tolist(), "q_goal": q_pre_L.tolist()},
                     ])
-                    _p = _restart.get("home→preL_c")
-                    path_home_to_pre_L = _p if (_p is not None and len(_p) > 0) else np.array([q_pre_L])
-                    print(f"[TGC] Cycle {cycle}: ear Y={ear_xyz_L[1]:.4f}  ctrX={tray_center_x:.4f}", flush=True)
-                _enter("TO_PRE_L")
+                    _pending_action = ("cycle_restart",)
+                    print(f"[TGC] Cycle {cycle}: ear Y={ear_xyz_L[1]:.4f}  ctrX={tray_center_x:.4f} (async)", flush=True)
+                _enter("WAIT_PLAN")
 
         # ── Joint jump detection ──────────────────────────────────────────────
         _delta_L = np.max(np.abs(q_L - _prev_q_L))
