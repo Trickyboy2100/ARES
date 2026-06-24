@@ -1069,27 +1069,14 @@ def _run(app, stage):
     print("[TGC] Planning fixed paths with cuRobo (subprocess)…", flush=True)
     ui_mon.push(phase="PLAN", cycle=0)
     app.update()
-    # ── Sequential planning: each path's actual endpoint → next path's start ──
-    _fixed_results = _cu_batch([
-        {"label": "home→preL", "q_start": q_zero, "q_goal": q_pre_L},
-    ])
-
-    path_home_to_pre_L = _fixed_results.get("home→preL")
-    if path_home_to_pre_L is None or len(path_home_to_pre_L) == 0:
-        path_home_to_pre_L = np.array([q_pre_L])
-    print(f"[TGC] cuRobo home→preL: {len(path_home_to_pre_L)} steps", flush=True)
-
-    # Rebuild approach path seeded from cuRobo endpoint so IK branch is consistent.
-    # Pinning path[0] then smoothing creates oscillations when the gap is large (3+ rad).
-    # Instead, re-run _linear_y_path from path_home_to_pre_L[-1] so the IK seeds from
-    # the correct branch the whole way through.
-    path_approach_L = _linear_y_path(
-        _ik_L, path_home_to_pre_L[-1], pre_xyz_L, pick_xyz_L, APPROACH_STEPS,
-        orient_weight=ORIENT_WEIGHT_STRONG,
-    )
-    q_pick_L = path_approach_L[-1]
-    print(f"[TGC] Approach rebuilt from cuRobo endpoint: end_pad_Y={_pad_L(q_pick_L)[1,3]:.4f}  "
-          f"start={np.round(path_approach_L[0],3)}", flush=True)
+    # home→preL as joint-space linspace — ends exactly at q_pre_L (same IK branch as
+    # approach_L), so there is zero inter-segment jump at TO_PRE_L→APPROACH_L.
+    # cuRobo plans to the Cartesian FK of q_pre_L but lands in branch B; that branch
+    # causes the FixedJoint grasp to fail.  Linspace stays in branch A throughout.
+    path_home_to_pre_L = np.linspace(q_zero, q_pre_L, 120)
+    print(f"[TGC] home→preL joint-space linspace: {len(path_home_to_pre_L)} steps → q_pre_L",
+          flush=True)
+    # approach_L and q_pick_L already built from q_pre_L above.
 
     path_carry_L   = np.array([q_handoff_L])   # placeholder; rebuilt on contact
     path_retract_L = np.linspace(q_handoff_L, q_zero, 120)  # placeholder; rebuilt at RELEASE_L
@@ -1194,18 +1181,7 @@ def _run(app, stage):
                          "q_start": path_lift_L[-1].tolist(), "q_goal": q_handoff_L.tolist()},
                     ])
                     _enter("CLOSE_GRIP_L")
-                elif _act[0] == "cycle_restart":
-                    _p = _async_result.get("home→preL_c")
-                    path_home_to_pre_L = _p if (_p is not None and len(_p) > 0) else np.array([q_pre_L])
-                    # Rebuild approach path from cuRobo endpoint (same IK branch → no jump).
-                    path_approach_L = _linear_y_path(
-                        _ik_L, path_home_to_pre_L[-1], pre_xyz_L, pick_xyz_L, APPROACH_STEPS,
-                        orient_weight=ORIENT_WEIGHT_STRONG,
-                    )
-                    q_pick_L = path_approach_L[-1]
-                    print(f"[TGC] Cycle {cycle}: re-plan done  "
-                          f"approach_start={np.round(path_approach_L[0],3)}", flush=True)
-                    _enter("TO_PRE_L")
+                # cycle_restart no longer uses WAIT_PLAN (linspace computed in PAUSE exit)
 
             # ── Background path updates (no state transition, just update paths) ─
             if "carryL_rt" in _async_result:
@@ -1517,13 +1493,12 @@ def _run(app, stage):
                         _ik_L, q_pre_L, pre_xyz_L, pick_xyz_L, APPROACH_STEPS,
                         orient_weight=ORIENT_WEIGHT_STRONG,
                     )
-                    # Async re-plan — don't block rendering between cycles
-                    _cu_send_async([
-                        {"label": "home→preL_c", "q_start": q_zero.tolist(), "q_goal": q_pre_L.tolist()},
-                    ])
-                    _pending_action = ("cycle_restart",)
-                    print(f"[TGC] Cycle {cycle}: ear Y={ear_xyz_L[1]:.4f}  ctrX={tray_center_x:.4f} (async)", flush=True)
-                _enter("WAIT_PLAN")
+                    # Joint-space linspace: ends at q_pre_L (branch A) → no inter-segment
+                    # jump and FixedJoint grasp works correctly in branch A.
+                    path_home_to_pre_L = np.linspace(q_zero, q_pre_L, 120)
+                    print(f"[TGC] Cycle {cycle}: ear Y={ear_xyz_L[1]:.4f}  ctrX={tray_center_x:.4f}  "
+                          f"home→preL linspace 120 steps", flush=True)
+                _enter("TO_PRE_L")
 
         # ── Joint jump detection ──────────────────────────────────────────────
         _delta_L = np.max(np.abs(q_L - _prev_q_L))
