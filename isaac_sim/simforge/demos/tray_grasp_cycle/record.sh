@@ -44,8 +44,8 @@ pkill -f "isaacsim/kit/kit" 2>/dev/null || true
 sleep 2
 
 # ── env ────────────────────────────────────────────────────────────────────
-CUDALIB=~/isaacsim/exts/omni.isaac.ml_archive/pip_prebundle
-export LD_LIBRARY_PATH=$CUDALIB/nvidia/nvjitlink/lib:${LD_LIBRARY_PATH:-}
+ISAAC_NVLIBS=$(find ~/isaacsim/exts/omni.isaac.ml_archive/pip_prebundle/nvidia -type d -name "lib" | tr '\n' ':')
+export LD_LIBRARY_PATH="${ISAAC_NVLIBS}${LD_LIBRARY_PATH:-}"
 
 # ── launch ─────────────────────────────────────────────────────────────────
 echo "[record] Starting demo at $(date)…"

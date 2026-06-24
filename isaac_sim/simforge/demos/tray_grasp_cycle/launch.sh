@@ -17,8 +17,8 @@ ISAACSIM_ROOT="${ISAACSIM_ROOT:-$HOME/isaacsim}"
 pkill -f "isaacsim/kit/kit" 2>/dev/null || true
 sleep 2
 
-CUDALIB="$ISAACSIM_ROOT/exts/omni.isaac.ml_archive/pip_prebundle"
-export LD_LIBRARY_PATH="$CUDALIB/nvidia/nvjitlink/lib:${LD_LIBRARY_PATH:-}"
+ISAAC_NVLIBS=$(find "$ISAACSIM_ROOT/exts/omni.isaac.ml_archive/pip_prebundle/nvidia" -type d -name "lib" | tr '\n' ':')
+export LD_LIBRARY_PATH="${ISAAC_NVLIBS}${LD_LIBRARY_PATH:-}"
 
 exec "$ISAACSIM_ROOT/isaac-sim.sh" \
     --exec "$SIMFORGE_ROOT/demos/tray_grasp_cycle/demo.py" \

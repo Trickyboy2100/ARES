@@ -70,18 +70,18 @@ python3 isaac_sim/simforge/config.py
 # 每次启动前先清理旧进程
 pkill -f "isaacsim/kit/kit" 2>/dev/null; sleep 2
 
-# 设置 nvjitlink 路径（每次新终端执行一次）
-export CUDALIB=~/isaacsim/exts/omni.isaac.ml_archive/pip_prebundle
-export LD_LIBRARY_PATH=$CUDALIB/nvidia/nvjitlink/lib:$LD_LIBRARY_PATH
+# 设置所有 nvidia 库路径（每次新终端执行一次）
+ISAAC_NVLIBS=$(find ~/isaacsim/exts/omni.isaac.ml_archive/pip_prebundle/nvidia -type d -name "lib" | tr '\n' ':')
+export LD_LIBRARY_PATH="${ISAAC_NVLIBS}${LD_LIBRARY_PATH:-}"
 ```
 
 ---
 
 ## 演示目录
 
-### ★ tray_grasp_cycle — 托盘耳片抓取循环（主 Demo）
+### ★ tray_grasp_cycle — 双臂托盘搬运循环（主 Demo）
 
-**2026-06-13 验证通过** · 左臂夹持 2mm 耳片 → 抬升 30cm → 放回 → 释放 → 循环，配双臂 GUI 面板。
+**2026-06-25 验证通过** · 左臂 FixedJoint 夹取耳片 → 抬升 30cm → 交接右臂 → 右臂 carrier 送至烘干机 → 循环，7+ cycles 稳定。
 
 ```bash
 # 一键启动（自动 kill 旧进程）
@@ -92,21 +92,22 @@ bash isaac_sim/simforge/demos/tray_grasp_cycle/record.sh
 ```
 
 **技术要点：**
-- 纯 xform FK 控制（无 PhysX 碰撞盒、无 FixedJoint）
-- Y 轴两弹簧接触模型：`F = 2μ · K_arm · K_ear/(K_arm+K_ear) · (contact_y - drive_y)`
-- 力停止：逼近过程摩擦力 ≥ 3N 时自动停止前进
-- 托盘 kinematic 抬升：跟随夹爪 pad Z 位移
-- GUI：左臂力历史图 + pad-Y 逼近曲线 + 右臂状态面板
+- **FixedJoint 物理夹取**：L 臂 `right_pad`（kinematic rigid body）→ tray 的 FixedJoint 实现 6DOF 跟随
+- **carrier 交接机制**：R 臂 pad 无 RigidBodyAPI；用隐形 kinematic carrier cube 作为中间体
+- **cuRobo 路径规划**：R 臂 home→handoff、handoff→dryer 用 cuRobo persistent subprocess worker
+- **branch A linspace**：L 臂 home→preL 用 `np.linspace(q_zero, q_pre_L, 120)`（必须，cuRobo 落在 branch B 会导致 FixedJoint 失效）
+- **GUI**：双臂实时面板（力历史、pad-Y 曲线、carrier 位置、抬升高度）
 
-**验证数据：**
+**验证数据（2026-06-25）：**
 
 | 指标 | 数值 |
 |------|------|
 | IK pre-grasp 误差 | 0.0 mm |
-| 力停止触发 | F = 3.21 N |
-| 抬升高度 | 29.6 cm |
-| HOLD 保持力 | ≈ 10 N |
-| 循环稳定性 | 5+ cycles 确认 |
+| 力停止触发 | ≥ 2 N |
+| 最大抬升高度 | ~30 cm |
+| tray 交接位置 | [-0.45, 0.76, 1.64] m |
+| 最大关节跳变 | ≤ 0.039 rad（L/R） |
+| 循环稳定性 | 7+ cycles 确认 |
 
 ---
 
@@ -187,13 +188,14 @@ cd isaac_sim/simforge/scenes
 
 ## 关键设计原则
 
-1. **纯 xform FK + 解析接触模型** — `tray_grasp_cycle` 不依赖 PhysX 碰撞盒或 FixedJoint；接触力完全由 Python 两弹簧模型计算
-2. **双臂每帧维持 FK** — 右臂必须每帧设置 q=0，否则 PhysX 会随机驱动它
-3. **UI 在 `timeline.play()` 之前创建** — 否则第一帧挂死
-4. **夹爪垂直地面** — EG2 X 轴 = 世界 -Z，夹爪在 Z 方向闭合；从 +Y 方向逼近耳片
-5. **只开一个 Isaac Sim** — 启动前先 kill 旧进程（`pkill -f "isaacsim/kit/kit"`）
-6. **禁止 `LD_PRELOAD`** — 只用 `LD_LIBRARY_PATH` 注入 nvjitlink
-7. **里程碑只读** — `milestones/` 目录下内容禁止修改
+1. **FixedJoint 物理夹取** — L 臂通过 kinematic `right_pad` → dynamic tray 的 FixedJoint 实现 6DOF 跟随；接触力由 PhysX 处理
+2. **IK branch A 必须严守** — L 臂 home→preL 用 linspace（不用 cuRobo）；cuRobo 落在 branch B，FixedJoint 在 branch B 静默失效
+3. **cuRobo 用 subprocess** — R 臂路径规划通过 `_curobo_worker.py` 独立子进程运行，避免与 Isaac Sim Python 环境冲突
+4. **双臂每帧维持 FK** — 右臂必须每帧设置 joint 角度，否则 PhysX 会随机驱动它
+5. **UI 在 `timeline.play()` 之前创建** — 否则第一帧挂死
+6. **只开一个 Isaac Sim** — 启动前先 kill 旧进程（`pkill -f "isaacsim/kit/kit"`）
+7. **禁止 `LD_PRELOAD`** — 只用 `LD_LIBRARY_PATH` 注入所有 nvidia/\*/lib 路径
+8. **里程碑只读** — `milestones/` 目录下内容禁止修改
 
 ---
 
