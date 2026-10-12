@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE_NEGATIVE_WITHIN_SCENE_SENSITIVITY_RESULT",
+  "canonical_run": "/home/andyee/robot-research/ARES-Skilllab/runs/p1_p2_cpu_smoke_20261013_v4",
+  "preserved_engineering_runs": [
+    "/home/andyee/robot-research/ARES-Skilllab/runs/p1_p2_cpu_smoke_20261013_v1",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/p1_p2_cpu_smoke_20261013_v2",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/p1_p2_cpu_smoke_20261013_v3"
+  ],
+  "canonical_file_sha256": {
+    "scenarios.jsonl": "bf3139818dbc4b7e369c747712c0f56661780d009dfd7a3bb178a9f616510071",
+    "candidates.jsonl": "966c18c611bb4a4d4970145d7a2fd9d34f3561c3ee82d8ccf6f14f3f5ed742b6",
+    "transitions.jsonl": "e4a10c53f83fbaea2777f4254333a0098149e00855f6ecd0011df08766a31a3f",
+    "outcomes.jsonl": "4e152fb1854ee5cc2fa4a5e98c9cf04572a7a1cba7b45d2c9897f78295abd9ea",
+    "summary.json": "24f1268949703fb82a4ad2f985d4f7d24948d35d171a6c682fec9584cb8cc836",
+    "baseline_comparison.csv": "51b660bff7a1263f5e404d34e072820970e53416f162f9c83acc5f63de45fe99",
+    "candidate_sensitivity.svg": "1248b6efb5311d972fc84a61b8925ed3e8a94750efca6fae4f0a80ca72fba5f0"
+  },
+  "source_sha256": {
+    "ares_urdf": "65789fd396bc33251338141bbc6b6400be48a32e67b94a1541cba7c2aeae8228",
+    "ares_r_transfer_chain": "ace780bee903b1df9f1ef01f2ced7c2f6915c645c727da8c2b88adae8605614e",
+    "ares_r_skill_runtime": "85face072f4694567fb1eee9d6b75a15b91b31f5903bd60c0f8691edcf2b60f5",
+    "ares_r_robot_world": "47c6b36d4e3e28eb4d651a5cef1bb4e09740d24e7d218ae08cf4f5636e5eac45",
+    "ares_r_site_limits": "8aaafcb02220897e8fc972a37c58b817f3f2d12daf4f72298f7ef2e92e78ed80"
+  },
+  "no_robot_motion": true,
+  "curobo_tested": false,
+  "physics_tested": false
+}
