@@ -11,6 +11,8 @@ Create a real model-aligned simulation/planning substrate on the existing Ubuntu
 
 Qwen, VLA, KG, WebUI/Task Studio and real robot execution are explicitly out of scope.
 
+Read `SITE_20261012_REFERENCE.md`: October on-site HEAD was `a9ec30ee...`, with an Epic cabinet **object=4** and 70 mm preland goal; older September `object=3` is the groove task. Include these as distinct task families. Never confuse the two or use archived snapshots as current scenes.
+
 ## 0. Repositories and preservation
 
 Read:
