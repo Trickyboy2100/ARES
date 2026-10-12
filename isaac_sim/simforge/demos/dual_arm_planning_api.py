@@ -7,6 +7,9 @@ objects, then receive timestamped joint trajectories suitable for a JAKA SDK
 adapter or the Isaac Sim FK playback tools.
 """
 
+from __future__ import annotations
+
+
 
 # ── SimForge path injection ───────────────────────────────────────────────────
 import sys as _sys
@@ -18,7 +21,6 @@ for _p in (_HERE, _SIMFORGE, _CORE):
     if _p not in _sys.path:
         _sys.path.insert(0, _p)
 # ─────────────────────────────────────────────────────────────────────────────
-from __future__ import annotations
 
 import argparse
 import json
