@@ -13,6 +13,8 @@
 - The previous non-research \`~/Developer/PG-JY/jinyu_ros_pkg/nodes/simulation\` tree, installed MuJoCo and Isaac 4.5 Docker are **inspect-only**. Do not change or delete them.
 - Preserve any locally installed cuRobo/Isaac/PyTorch. In particular, do not blindly follow old SimForge SETUP advice to install Python 3.13 or Omniverse Launcher.
 
+Read **`SITE_20261012_REFERENCE.md`** before generating any synthetic industrial scene: October field logs describe a **cabinet object=4 / 70 mm preland target**, which is distinct from the earlier groove object=3 task. Neither September git state nor archived scene is a live controller snapshot.
+
 ## Step 1 — create an isolated research workspace
 
 Run in an ordinary **Ubuntu terminal on the RTX 3080 host** (not on the .32 robot controller):
