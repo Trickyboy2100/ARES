@@ -1,5 +1,9 @@
 # Isaac 5.1 / multi-GPU CASH progress, 2026-10-13
 
+Update: the user selected server 190. See `SERVER190_AND_CASH_SUMMARY.md`
+for its actual audit, source synchronization and a committed geometry preview.
+The pending-connection statements below describe the previous stage.
+
 This round continues `codex/ares-skill-handoff-p2-1-20261013@2d4a97b`, preserving the P1/P2 and P2.1 negative results. The user explicitly selects Isaac Sim 5.1. ARES-R remains unchanged.
 
 ## Executed work

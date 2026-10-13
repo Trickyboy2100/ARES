@@ -1,0 +1,14 @@
+{
+  "ssh_host": "172.25.24.190",
+  "ssh_user": "andyee",
+  "ssh_port": 22,
+  "hostname": "bjut1109",
+  "lab_root": "/home/andyee/robot-research/ARES-Skilllab",
+  "isaac_version": "5.1.0",
+  "driver_observed": "560.35.05",
+  "isaac_compatibility": "NOT_TESTED",
+  "gpu_policy": "one initial worker on an available GPU; expand only after measurement",
+  "exclusive_gpu_reservation": false,
+  "host_maintenance_authorized": false,
+  "robot_execution_allowed": false
+}
