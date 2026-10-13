@@ -1,0 +1,17 @@
+{
+  "revision": "cash-smdp-v0-20261013",
+  "stages": ["GRASP_BRANCH", "CENTER_TERMINAL", "PREPLACE_PLAN"],
+  "candidate_contract": "fixed candidate set; failed cells retained; no outcome-adaptive replenishment",
+  "reward_contract": {
+    "terminal_success": 1.0,
+    "execution_cost_coefficient": -0.001,
+    "accepted_evidence": ["CUROBO_ISAAC_EXECUTED", "REAL_ROBOT_EXECUTED"],
+    "cpu_endpoint_proxy_is_reward": false,
+    "hand_score_is_reward": false
+  },
+  "model": {"state_dim": 32, "action_dim": 16, "hidden": 96, "effect_dim": 8},
+  "optimizer": {"name": "Adam", "learning_rate": 0.0003},
+  "ppo": {"clip": 0.2, "value_coef": 0.5, "effect_coef": 0.1, "entropy_coef": 0.01},
+  "fair_comparison": ["ARES_R_BEAM", "SUPERVISED_RANKER", "MASKABLE_PPO", "CASH"],
+  "training_status": "BLOCKED_PENDING_EXECUTED_GPU_OUTCOMES"
+}

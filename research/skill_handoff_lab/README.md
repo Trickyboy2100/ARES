@@ -75,7 +75,21 @@ If asset parity fails, investigate **which file/version** differs. Do not edit o
 
 **Not checked yet:** USD world→BODY alignment, real live tool/TCP full SE(3), site camera position in USD, actual contact dynamics, current October controller soft limits and current robot worktree.
 
-## Step 4 — task for Codex (not yet implemented)
+## Step 4 — P1/P2 and P2.1 status
+
+The initial CPU smoke and the bounded P2.1 mechanism audit are implemented.
+Read, in order:
+
+- `reports/P1_P2_CPU_SMOKE.md`
+- `reports/P2_1_ROOT_CAUSE.md`
+- `reports/P2_1_SCIENCE_DECISION.md`
+- `reports/CASH_METHOD_V0.md`
+- `reports/TRAINING_ENV_REPORT.md`
+
+P2.1 does not yet establish within-scene sensitivity among legal terminal
+states; cuRobo/Isaac execution remains blocked by the documented NVIDIA driver
+mismatch. The following list remains the experimental target rather than a
+claim of completion.
 
 Read \`WORK_ORDER_CODEX_3080.md\` in this folder. Codex should first deliver:
 

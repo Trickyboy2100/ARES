@@ -1,0 +1,105 @@
+{
+  "revision": "skill-handoff-mechanism-v2-20261013",
+  "scenarios": 10,
+  "candidates": 120,
+  "legal_candidates": 52,
+  "geometric_start_members": 16,
+  "cpu_proxy_clear": 0,
+  "per_scene": {
+    "groove-4101-p21": {
+      "population": "FROZEN_V4_GEOMETRY_REPLAY",
+      "candidates": 12,
+      "legal": 8,
+      "start_members": 0,
+      "proxy_clear": 0,
+      "endpoint_sensitive": false,
+      "proxy_sensitive": false
+    },
+    "groove-4102-p21": {
+      "population": "FROZEN_V4_GEOMETRY_REPLAY",
+      "candidates": 12,
+      "legal": 6,
+      "start_members": 0,
+      "proxy_clear": 0,
+      "endpoint_sensitive": false,
+      "proxy_sensitive": false
+    },
+    "groove-4103-p21": {
+      "population": "FROZEN_V4_GEOMETRY_REPLAY",
+      "candidates": 12,
+      "legal": 6,
+      "start_members": 0,
+      "proxy_clear": 0,
+      "endpoint_sensitive": false,
+      "proxy_sensitive": false
+    },
+    "cabinet-4201-p21": {
+      "population": "FROZEN_V4_GEOMETRY_REPLAY",
+      "candidates": 12,
+      "legal": 4,
+      "start_members": 4,
+      "proxy_clear": 0,
+      "endpoint_sensitive": true,
+      "proxy_sensitive": false
+    },
+    "cabinet-4202-p21": {
+      "population": "FROZEN_V4_GEOMETRY_REPLAY",
+      "candidates": 12,
+      "legal": 4,
+      "start_members": 4,
+      "proxy_clear": 0,
+      "endpoint_sensitive": true,
+      "proxy_sensitive": false
+    },
+    "cabinet-4203-p21": {
+      "population": "FROZEN_V4_GEOMETRY_REPLAY",
+      "candidates": 12,
+      "legal": 4,
+      "start_members": 4,
+      "proxy_clear": 0,
+      "endpoint_sensitive": true,
+      "proxy_sensitive": false
+    },
+    "mechanism-5101": {
+      "population": "PREDECLARED_SYNTHETIC_APERTURE_MECHANISM",
+      "candidates": 12,
+      "legal": 6,
+      "start_members": 0,
+      "proxy_clear": 0,
+      "endpoint_sensitive": false,
+      "proxy_sensitive": false
+    },
+    "mechanism-5102": {
+      "population": "PREDECLARED_SYNTHETIC_APERTURE_MECHANISM",
+      "candidates": 12,
+      "legal": 10,
+      "start_members": 0,
+      "proxy_clear": 0,
+      "endpoint_sensitive": false,
+      "proxy_sensitive": false
+    },
+    "mechanism-5201": {
+      "population": "PREDECLARED_SYNTHETIC_APERTURE_MECHANISM",
+      "candidates": 12,
+      "legal": 2,
+      "start_members": 2,
+      "proxy_clear": 0,
+      "endpoint_sensitive": true,
+      "proxy_sensitive": false
+    },
+    "mechanism-5202": {
+      "population": "PREDECLARED_SYNTHETIC_APERTURE_MECHANISM",
+      "candidates": 12,
+      "legal": 2,
+      "start_members": 2,
+      "proxy_clear": 0,
+      "endpoint_sensitive": true,
+      "proxy_sensitive": false
+    }
+  },
+  "v4_exact_recheck": {
+    "rows": 24,
+    "old_successor_feasible": 12,
+    "v2_geometric_start_set_member": 12
+  }
+}
