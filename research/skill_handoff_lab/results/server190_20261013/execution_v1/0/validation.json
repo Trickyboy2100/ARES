@@ -1,0 +1,38 @@
+{
+  "status": "SOFTWARE_ERROR",
+  "failure_class": "SOFTWARE_ERROR",
+  "error": "ModuleNotFoundError(\"No module named 'warp'\")",
+  "label": null,
+  "planning_only": true,
+  "execution_allowed": false,
+  "wall_s": 1.53772178478539,
+  "independent_validation": {
+    "collision": null,
+    "attached_object": null,
+    "orientation": null,
+    "soft_limits": null,
+    "self_collision": null,
+    "scene_binding": null
+  },
+  "request_sha256": "4e44872f32fab7a76396d6d05273e99a4a9e78b75f956027b684026b6e66d14f",
+  "source_artifacts": [
+    {
+      "role": "request",
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/server190_oracle_20261013/execution_v1/0/request.json",
+      "sha256": "4e44872f32fab7a76396d6d05273e99a4a9e78b75f956027b684026b6e66d14f"
+    },
+    {
+      "role": "log",
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/server190_oracle_20261013/execution_v1/0/worker.log",
+      "sha256": "7d883b4c6baa08bbc04bef0117bc4c2a0c466ef8aab217b620b8d85c7bda4890"
+    }
+  ],
+  "missing_qualification": [
+    "collision",
+    "attached_object",
+    "orientation",
+    "soft_limits",
+    "self_collision",
+    "scene_binding"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "host": "bjut1109",
+  "torch": "2.7.1+cu128",
+  "torch_cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "samples": [
+    {
+      "wall_s": 0.41461887024343014,
+      "sum": 268435024.0,
+      "finite": true
+    },
+    {
+      "wall_s": 0.0008952664211392403,
+      "sum": 268435024.0,
+      "finite": true
+    },
+    {
+      "wall_s": 0.0001639295369386673,
+      "sum": 268435024.0,
+      "finite": true
+    }
+  ],
+  "status": "PASS",
+  "evidence": "REAL_CUDA_MATRIX_MULTIPLICATION_NOT_CUROBO",
+  "nvidia_smi": "index, name, driver_version, memory.used [MiB], memory.total [MiB]\n0, NVIDIA GeForce RTX 4090, 560.35.05, 510 MiB, 24564 MiB\n1, NVIDIA GeForce RTX 4090, 560.35.05, 2 MiB, 24564 MiB\n2, NVIDIA GeForce RTX 4090, 560.35.05, 2 MiB, 24564 MiB\n3, NVIDIA GeForce RTX 4090, 560.35.05, 2 MiB, 24564 MiB\n",
+  "script_sha256": "8339652ae83d3e270f97866b96886fe5118e186b87be457a13e3458726a8f7d5"
+}

@@ -1,0 +1,37 @@
+{
+  "evidence": "INDEPENDENT_DIAGNOSTIC_VALIDATION_NOT_HANDOFF",
+  "world": {
+    "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+    "gripper_component_revision": null,
+    "input_trajectory_samples": 41,
+    "validation_knots": 9,
+    "maximum_knot_joint_step_rad": 0.002524733543395996,
+    "dense_samples": 33,
+    "subdivisions": 4,
+    "min_clearance_m": 0.10339746658181993,
+    "limiting_object_id": "body_chassis_lower",
+    "limiting_robot_component_id": "base_link",
+    "central_tcp_margin_m": 0.4746732808987854,
+    "central_exclusion_enabled": true,
+    "collision_free": true,
+    "self_collision_independently_checked": false
+  },
+  "soft_limits": true,
+  "self_collision_obb_free": true,
+  "self_collision_codes": [],
+  "self_collision_exclusions": "unchanged ARES fixed YAML adjacency policy",
+  "orientation_drift_from_start_deg": 0.9999965264146758,
+  "diagnostic_drift_limit_deg": 3.0,
+  "endpoint_joint_errors_rad": [
+    2.105608505331702e-07,
+    2.105608505331702e-07
+  ],
+  "dense_samples": 161,
+  "diagnostic_scope_pass": true,
+  "held_object": false,
+  "physical_success": false,
+  "usable_for_handoff_training": false,
+  "request_sha256": "123e6fd17681f00e5dd4dbb5c3f519dfdc7513d34be1cccbb00c520a6efee6fa",
+  "result_sha256": "b5eaecc77267b735fb98224a4d9dd7ea692bed968636d0337e23a79da0fdb3a3",
+  "validator_sha256": "f43b990195eb4753dddb90867109536703a4c3e834de8c20512625e6855c1c99"
+}

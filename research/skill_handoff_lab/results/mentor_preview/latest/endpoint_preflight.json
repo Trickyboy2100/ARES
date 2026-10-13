@@ -1,0 +1,74 @@
+[
+  {
+    "candidate_id": "cabinet-4201-p21:NORMAL:y2:b0",
+    "source_request_sha256": "93bbdf2536ef1f136e0ef30872efa890400fb1f512440e1e12c97f067dbfec28",
+    "start": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": -0.04137106559824559,
+      "limiting_object_id": "body/chassis",
+      "limiting_robot_component_id": "link4",
+      "central_tcp_margin_m": 0.005005462326455712,
+      "central_exclusion_enabled": true,
+      "collision_free": false,
+      "self_collision_independently_checked": false
+    },
+    "goal": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": -0.03238285525960945,
+      "limiting_object_id": "body/chassis",
+      "limiting_robot_component_id": "link1",
+      "central_tcp_margin_m": 0.12170662067054516,
+      "central_exclusion_enabled": true,
+      "collision_free": false,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "candidate_id": "cabinet-4201-p21:NORMAL:y2:b1",
+    "source_request_sha256": "3c47777c7cf2bc5fead7137ccded8892eaabe5b3edc7511e4070c3b0178cbabb",
+    "start": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": -0.04085219278262735,
+      "limiting_object_id": "body/chassis",
+      "limiting_robot_component_id": "link4",
+      "central_tcp_margin_m": 0.005005462326458737,
+      "central_exclusion_enabled": true,
+      "collision_free": false,
+      "self_collision_independently_checked": false
+    },
+    "goal": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": -0.032509698591173045,
+      "limiting_object_id": "body/chassis",
+      "limiting_robot_component_id": "link2",
+      "central_tcp_margin_m": 0.12170662074302846,
+      "central_exclusion_enabled": true,
+      "collision_free": false,
+      "self_collision_independently_checked": false
+    }
+  }
+]

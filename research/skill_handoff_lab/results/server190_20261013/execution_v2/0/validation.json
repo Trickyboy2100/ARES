@@ -1,0 +1,39 @@
+{
+  "status": "SOFTWARE_ERROR",
+  "failure_class": "SOFTWARE_ERROR",
+  "error": "ModuleNotFoundError(\"No module named 'lxml'\")",
+  "label": null,
+  "planning_only": true,
+  "execution_allowed": false,
+  "wall_s": 2.0143910413607955,
+  "independent_validation": {
+    "collision": null,
+    "attached_object": null,
+    "orientation": null,
+    "soft_limits": null,
+    "self_collision": null,
+    "scene_binding": null
+  },
+  "request_sha256": "7b122ef8311d7d0b82d7f61cf37e0ef670a9d39adddc1cdb18f0644b20be0780",
+  "source_artifacts": [
+    {
+      "role": "request",
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/server190_oracle_20261013/execution_v2/0/request.json",
+      "sha256": "7b122ef8311d7d0b82d7f61cf37e0ef670a9d39adddc1cdb18f0644b20be0780"
+    },
+    {
+      "role": "log",
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/server190_oracle_20261013/execution_v2/0/worker.log",
+      "sha256": "b378e486518ae880b02ce570de7fbb258c8e479bb427bdc6e16a639b8db80284"
+    }
+  ],
+  "independent_dense_validation": {},
+  "missing_qualification": [
+    "collision",
+    "attached_object",
+    "orientation",
+    "soft_limits",
+    "self_collision",
+    "scene_binding"
+  ]
+}

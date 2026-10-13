@@ -36,6 +36,6 @@ def build_jobs(scene,candidate,transition):
         for name,start,goal,mode in rows]
 
 def qualification_status():
-    return {"oracle_revision":ORACLE_REVISION,"adapter":"READY_FOR_REQUEST_EXPORT",
-            "gpu_execution":"BLOCKED_NVML_DRIVER_LIBRARY_MISMATCH",
+    return {"oracle_revision":ORACLE_REVISION,"adapter":"PERSISTENT_EXECUTOR_AVAILABLE",
+            "gpu_execution":"SERVER190_REAL_CUDA_PASSED_PLANNER_QUALIFICATION_PENDING",
             "curobo_validated_this_round":False,"execution_allowed":False}

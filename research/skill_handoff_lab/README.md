@@ -112,3 +112,10 @@ Read \`WORK_ORDER_CODEX_3080.md\` in this folder. Codex should first deliver:
 - an unchanged source snapshot remains valid after AMR movement.
 
 **No robot motion, no remote hardware controls, no production branch updates.**
+# 190 实际规划冲刺更新（2026-10-13）
+
+最新实际结果见 `results/mentor_preview/latest/MENTOR_BRIEF.md`，原始证据见
+`results/server190_20261013/`。相比上次提交470686b：190已完成真实CUDA、
+cuRobo规划调用与一条41点诊断轨迹，独立有限范围验证通过；Cabinet两候选
+共同模型碰撞失败，附着物和底盘代理问题已定位。正式Isaac5.1与真实学习
+仍未完成。诊断成功不能作为handoff标签，旧负结果未覆盖。
