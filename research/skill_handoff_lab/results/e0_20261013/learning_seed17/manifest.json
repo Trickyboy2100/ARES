@@ -1,0 +1,37 @@
+{
+  "scope": "ONE_STEP_PLANNING_COST_ONLY_CONDITIONAL_ON_ALL_OPTIONS_QUALIFIED",
+  "seed": 17,
+  "steps": 2048,
+  "effect_coef": 0.1,
+  "effect_targets": [
+    "model_path_valid",
+    "TCP_length_m",
+    "joint_length_rad",
+    "clearance_m",
+    "joint_margin_rad",
+    "orientation_error_over_3deg"
+  ],
+  "physical_simulation": false,
+  "full_chassis_safety_qualified": false,
+  "dataset_sha256": "ea58d087dd7a713a1c877fc3409c6a6423ff8b2f242789ca1a462b95028d1133",
+  "train_groups": [
+    "E0-goal-0",
+    "E0-goal-3",
+    "E0-goal-4"
+  ],
+  "validation_groups": [
+    "E0-goal-1"
+  ],
+  "test_groups": [
+    "E0-goal-5",
+    "E0-goal-2"
+  ],
+  "ppo_steps": 2048,
+  "ppo_wall_s": 0.8679986670613289,
+  "cash_wall_s": 0.6193443671800196,
+  "cash_steps_per_s": 3306.7225739452397,
+  "ranker_labels": 6,
+  "oracle_calls_to_collect": 12,
+  "online_oracle_calls_during_training": 0,
+  "caveat": "tiny all-feasible E0 cost benchmark; no HSR improvement or industrial generalization claim"
+}

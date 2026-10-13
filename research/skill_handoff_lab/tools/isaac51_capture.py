@@ -2,10 +2,10 @@
 import argparse,hashlib,json
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument("--scene",type=Path,required=True)
-p.add_argument("--output",type=Path,required=True);a=p.parse_args()
+p.add_argument("--output",type=Path,required=True);p.add_argument('--gpu',type=int,default=0);a=p.parse_args()
 from isaacsim import SimulationApp
-app=SimulationApp({"headless":True,"renderer":"RayTracedLighting","active_gpu":0,
-    "physics_gpu":0,"multi_gpu":False,"width":1280,"height":960})
+app=SimulationApp({"headless":True,"renderer":"RayTracedLighting","active_gpu":a.gpu,
+    "physics_gpu":a.gpu,"multi_gpu":False,"width":1280,"height":960})
 try:
     import omni.usd
     import omni.replicator.core as rep
@@ -24,6 +24,7 @@ try:
     Image.fromarray(image).save(a.output/"isaac51_scene.png")
     (a.output/"capture_manifest.json").write_text(json.dumps({
         "evidence_level":"ISAAC_5_1_STATIC_RENDER","physics_task_completed":False,
+        "physical_gpu":a.gpu,"BODY_calibration":"original USD installation coordinates not qualified",
         "scene_sha256":hashlib.sha256(a.scene.read_bytes()).hexdigest(),
         "camera_position":[2.6,-2.5,2.5],"camera_look_at":[-.15,.8,1.0],
         "resolution":[1280,960]},indent=2)+"\n")

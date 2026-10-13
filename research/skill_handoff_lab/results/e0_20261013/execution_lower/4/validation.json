@@ -1,0 +1,56 @@
+{
+  "status": "PLANNER_PATH_REQUIRES_QUALIFICATION",
+  "failure_class": null,
+  "error": null,
+  "label": null,
+  "planning_only": true,
+  "execution_allowed": false,
+  "wall_s": 58.685528948903084,
+  "independent_validation": {
+    "collision": true,
+    "attached_object": true,
+    "orientation": true,
+    "soft_limits": true,
+    "self_collision": null,
+    "scene_binding": true
+  },
+  "executor_sha256": "8113aa7f3861e1d02a2a7c0eb7435b9abe413ca3238800ceda315f08bb054c39",
+  "ares_r_worker_sha256": "3fe91cdaddeaff8772bdd7457b6c618f6b1008469562e5bff1b55d84e49a3b80",
+  "request_sha256": "2a8beb8c8b67bddf9a93b79803b20fda06f7fd75339a4c971ce596dd22c4c93c",
+  "source_artifacts": [
+    {
+      "role": "request",
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/e0_20261013/execution_lower/4/request.json",
+      "sha256": "2a8beb8c8b67bddf9a93b79803b20fda06f7fd75339a4c971ce596dd22c4c93c"
+    },
+    {
+      "role": "log",
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/e0_20261013/execution_lower/4/worker.log",
+      "sha256": "e157e5da49dcdfd0234c21e12beb9c927ed90e63ea1813250885c6285fc4e567"
+    },
+    {
+      "role": "result",
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/e0_20261013/execution_lower/4/result.json",
+      "sha256": "c86412705a46b486f5fc14fcb088a8241097d706efa45ecb1e56e8e89757123a"
+    }
+  ],
+  "independent_dense_validation": {
+    "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+    "gripper_component_revision": null,
+    "input_trajectory_samples": 501,
+    "validation_knots": 424,
+    "maximum_knot_joint_step_rad": 0.012096822261810303,
+    "dense_samples": 847,
+    "subdivisions": 2,
+    "min_clearance_m": 0.10618928972555426,
+    "limiting_object_id": "body/chassis_historical_lower",
+    "limiting_robot_component_id": "base_link",
+    "central_tcp_margin_m": 0.17818631847919839,
+    "central_exclusion_enabled": true,
+    "collision_free": true,
+    "self_collision_independently_checked": false
+  },
+  "missing_qualification": [
+    "self_collision"
+  ]
+}

@@ -1,0 +1,153 @@
+Loading user config located at: '/home/andyee/.local/share/ov/data/Kit/Isaac-Sim_Compatibility_Checker/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/andyee/.nvidia-omniverse/logs/Kit/Isaac-Sim_Compatibility_Checker/5.1/kit_20261013_164735.log
+2026-10-13T08:47:35Z [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+[0.094s] [ext: omni.kit.async_engine-0.0.3] startup
+[0.139s] [ext: omni.client.lib-1.1.0] startup
+[0.157s] [ext: omni.stats-1.0.1] startup
+[0.158s] [ext: omni.client-1.3.0] startup
+[0.165s] [ext: omni.gpu_foundation.shadercache.vulkan-1.0.0] startup
+[0.171s] [ext: omni.assets.plugins-0.0.0] startup
+[0.173s] [ext: omni.gpu_foundation-0.0.0] startup
+[0.186s] [ext: carb.windowing.plugins-1.0.0] startup
+2026-10-13T08:47:35Z [104ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:47:35Z [104ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+[0.188s] [ext: omni.kit.renderer.init-0.0.0] startup
+2026-10-13T08:47:35Z [150ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-10-13T08:47:35Z [484ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:47:35Z [484ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 560.35.05     | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 67aee2f0.. |
+|     |                                  |        |     |            | 2         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA GeForce RTX 4090          | Yes: 0 |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 1be16c79.. |
+|     |                                  |        |     |            | 3         |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 32729722.. |
+|     |                                  |        |     |            | 82        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 54b75149.. |
+|     |                                  |        |     |            | 83        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-124-generic
+| Processor: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+| Cores: 36 | Logical Cores: 72
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 193274 | Free Memory: 186938
+| Total Page/Swap (MB): 16383 | Free Page/Swap: 15994
+|---------------------------------------------------------------------------------------------|
+2026-10-13T08:47:37Z [1,912ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+2026-10-13T08:47:37Z [1,912ms] [Warning] [gpu.foundation.plugin] Detected IOMMU is enabled. Running CUDA peer-to-peer bandwidth and latency validation.
+Unidirectional P2P=Enabled Bandwidth (P2P Writes) Matrix (GB/s)
+   D\D     0      1      2      3 
+     0 932.28   8.72   9.04   8.94 
+     1   8.68 945.25   9.01   8.98 
+     2   8.94   8.91 944.68  10.01 
+     3   8.94   8.93  10.02 946.34 
+P2P=Enabled Latency (P2P Writes) Matrix (us)
+   GPU     0      1      2      3 
+     0   1.37  11.57  11.19  11.11 
+     1  10.73   1.37  10.94  11.34 
+     2  10.36  10.41   1.38  10.32 
+     3  10.77  10.60  10.25   1.41 
+
+   CPU     0      1      2      3 
+     0   3.00   7.86   7.33   7.29 
+     1   8.36   3.28   7.75   7.36 
+     2   6.97   7.15   2.50   6.60 
+     3   6.93   6.94   6.57   2.46 
+2026-10-13T08:47:38Z [3,066ms] [Warning] [gpu.foundation.plugin] CUDA peer-to-peer observed bandwidth: 8.7 GB/s.
+2026-10-13T08:47:38Z [3,066ms] [Warning] [gpu.foundation.plugin] CUDA peer-to-peer observed latency: 11.6 us.
+2026-10-13T08:47:38Z [3,066ms] [Warning] [gpu.foundation.plugin] Please verify if observed bandwidth and latency are expected.
+[4.145s] [ext: omni.kit.pipapi-0.0.0] startup
+[4.147s] [ext: omni.kit.pip_archive-0.0.0] startup
+[4.148s] [ext: omni.kit.telemetry-0.5.2] startup
+[4.204s] [ext: omni.kit.loop-default-0.2.2] startup
+[4.206s] [ext: omni.appwindow-1.1.10] startup
+2026-10-13T08:47:39Z [4,125ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:47:39Z [4,125ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+[4.210s] [ext: omni.kit.renderer.core-1.1.0] startup
+2026-10-13T08:47:39Z [4,155ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:47:39Z [4,155ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T08:47:39Z [4,165ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:47:39Z [4,165ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+[4.250s] [ext: omni.kit.renderer.capture-0.0.0] startup
+[4.253s] [ext: omni.kit.renderer.imgui-2.0.5] startup
+2026-10-13T08:47:39Z [4,176ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:47:39Z [4,176ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T08:47:39Z [4,178ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:47:39Z [4,178ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T08:47:39Z [4,179ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:47:39Z [4,179ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+[4.385s] [ext: omni.ui-2.27.1] startup
+[4.398s] [ext: omni.kit.mainwindow-1.0.3] startup
+[4.400s] [ext: carb.audio-0.1.0] startup
+[4.404s] [ext: omni.uiaudio-1.0.0] startup
+[4.405s] [ext: omni.kit.uiapp-0.0.0] startup
+[4.405s] [ext: isaacsim.app.compatibility_check-1.1.1] startup
+[4.418s] 
+[4.418s] =============================================
+[4.418s] 
+[4.418s] NVIDIA GPU(s)
+[5.176s]   |-- Driver version [supported]
+[5.176s]   |     |-- installed: 560.35.05
+[5.176s]   |     |-- minimum: 535.161
+[5.232s]   |-- GPU 0 [supported]
+[5.232s]   |     |-- name: NVIDIA GeForce RTX 4090
+[5.270s]   |-- GPU 1 [supported]
+[5.270s]   |     |-- name: NVIDIA GeForce RTX 4090
+[5.310s]   |-- GPU 2 [supported]
+[5.310s]   |     |-- name: NVIDIA GeForce RTX 4090
+[5.343s]   |-- GPU 3 [supported]
+[5.343s]   |     |-- name: NVIDIA GeForce RTX 4090
+[5.391s]   |-- GPU 0: VRAM [good]
+[5.391s]   |     |-- total: 25.76 GB
+[5.391s]   |     |-- minimum: 10 GB
+[5.415s]   |-- GPU 1: VRAM [good]
+[5.415s]   |     |-- total: 25.76 GB
+[5.415s]   |     |-- minimum: 10 GB
+[5.435s]   |-- GPU 2: VRAM [good]
+[5.436s]   |     |-- total: 25.76 GB
+[5.436s]   |     |-- minimum: 10 GB
+[5.461s]   |-- GPU 3: VRAM [good]
+[5.461s]   |     |-- total: 25.76 GB
+[5.461s]   |     |-- minimum: 10 GB
+[5.461s] 
+[5.461s] CPU, RAM and Storage
+[5.461s]   |-- CPU processor [supported]
+[5.461s]   |     |-- name: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+[5.461s]   |-- CPU cores [excellent]
+[5.461s]   |     |-- total: 72
+[5.461s]   |     |-- minimum: 4
+[5.466s]   |-- CPU power governor [ideal]
+[5.466s]   |     |-- governor(s): Schedutil
+[5.466s]   |-- RAM [excellent]
+[5.466s]   |     |-- total: 202.66 GB
+[5.466s]   |     |-- minimum: 32 GB
+[5.470s]   |-- Storage [excellent]
+[5.470s]   |     |-- total available: 1720.93 GB
+[5.470s]   |     |-- minimum: 50 GB
+[5.470s] 
+[5.470s] Others
+[5.470s]   |-- Operating system [supported]
+[5.470s]   |     |-- name and version: Ubuntu 22.04.5 LTS
+[5.470s]   |-- Display [no display was detected, visit the following link for information on the different livestreaming methods to view headless application instances: docs.omniverse.nvidia.com/isaacsim/latest/installation/manual_livestream_clients.html]
+[5.470s] 
+[5.470s] =============================================
+[5.470s] 
+[5.470s] System checking result: PASSED
+[5.470s] 
+[5.470s] =============================================
+[5.470s] 
+[5.485s] [ext: isaacsim.exp.compatibility_check-5.1.0] startup
+[5.505s] app ready

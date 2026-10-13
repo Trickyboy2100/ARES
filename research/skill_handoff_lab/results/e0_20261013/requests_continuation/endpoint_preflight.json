@@ -1,0 +1,914 @@
+[
+  {
+    "pair": 0,
+    "yaw": 0.0,
+    "roll": 0,
+    "endpoint": 1,
+    "ik": 0,
+    "q": [
+      1.400937483776888,
+      0.15445088372175267,
+      1.8562629100509678,
+      -2.388482197745116,
+      1.7473788983773766,
+      -2.6367948349587076
+    ],
+    "fk": [
+      [
+        -3.8757833333397486e-15,
+        1.4366049831318268e-14,
+        0.9999999999999996,
+        0.4799999999999983
+      ],
+      [
+        -0.9999999999999998,
+        3.5546314057241787e-16,
+        -3.651898420330268e-15,
+        -0.3999999999999996
+      ],
+      [
+        -4.78896153085048e-16,
+        -0.9999999999999996,
+        1.435956788771357e-14,
+        1.3999999999999988
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.32999999999999957,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 0,
+    "yaw": 0.0,
+    "roll": 0,
+    "endpoint": 1,
+    "ik": 1,
+    "q": [
+      -1.6867995782509138,
+      -0.15445832556162947,
+      -1.8562554197571235,
+      -5.514046831586287,
+      1.7809960658934354,
+      -2.6727500093495156
+    ],
+    "fk": [
+      [
+        5.215418087058084e-15,
+        2.8087656843194517e-14,
+        0.9999999999999996,
+        0.47999999999999093
+      ],
+      [
+        -0.9999999999999998,
+        -3.1858699794800808e-16,
+        5.406427079333583e-15,
+        -0.3999999999999922
+      ],
+      [
+        2.8663087561056407e-16,
+        -0.9999999999999993,
+        2.8052805506356023e-14,
+        1.3999999999999932
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.3299999999999922,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 0,
+    "yaw": 0.0,
+    "roll": 1,
+    "endpoint": 1,
+    "ik": 0,
+    "q": [
+      -4.8724131395229175,
+      -0.060536552059992296,
+      2.0361216080944162,
+      0.824410739010879,
+      -1.765127519069148,
+      3.6280602827817368
+    ],
+    "fk": [
+      [
+        -6.777256132251856e-14,
+        -2.521794528118631e-13,
+        0.9999999999999998,
+        0.4800000000000211
+      ],
+      [
+        0.9999999999999998,
+        -2.1670726343963923e-15,
+        6.800318166667802e-14,
+        -0.4000000000000007
+      ],
+      [
+        2.1571683082771714e-15,
+        0.9999999999999998,
+        2.522149886793129e-13,
+        1.3999999999999964
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.3300000000000007,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 0,
+    "yaw": 0.0,
+    "roll": 1,
+    "endpoint": 1,
+    "ik": 1,
+    "q": [
+      -4.872411489762711,
+      1.979434423953467,
+      -2.0361149152705846,
+      -1.4006952377110975,
+      0.819605947016569,
+      -1.5367122870371364
+    ],
+    "fk": [
+      [
+        -6.00288490527534e-13,
+        -9.675629266706733e-14,
+        0.9999999999999999,
+        0.4800000000000766
+      ],
+      [
+        1.0,
+        5.0893305044079606e-14,
+        6.003840871377133e-13,
+        -0.400000000000079
+      ],
+      [
+        -5.082240884399984e-14,
+        1.0,
+        9.671973599478953e-14,
+        1.4000000000000004
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.330000000000079,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 1,
+    "yaw": -0.7853981633974483,
+    "roll": 0,
+    "endpoint": 1,
+    "ik": 0,
+    "q": [
+      -5.27044155531609,
+      1.8382536512738723,
+      -1.2733695738350186,
+      3.068938310969452,
+      0.5533277956292505,
+      3.842542367481238
+    ],
+    "fk": [
+      [
+        -0.7071067811865471,
+        4.0020629047335794e-16,
+        0.7071067811865474,
+        0.4999999999999997
+      ],
+      [
+        -0.7071067811865475,
+        -4.416619557815906e-17,
+        -0.7071067811865472,
+        -0.48
+      ],
+      [
+        -4.9061043683622435e-16,
+        -0.9999999999999994,
+        3.92457265151718e-16,
+        1.45
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.41,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 1,
+    "yaw": -0.7853981633974483,
+    "roll": 0,
+    "endpoint": 1,
+    "ik": 1,
+    "q": [
+      -2.090788290962844,
+      -1.8382608801606874,
+      1.2733769928009437,
+      -3.2134320269863443,
+      -0.5518561734852829,
+      0.6622185110074823
+    ],
+    "fk": [
+      [
+        -0.7071067811865471,
+        -4.2890800639311644e-16,
+        0.7071067811865476,
+        0.49999999999999994
+      ],
+      [
+        -0.7071067811865477,
+        5.907425966293523e-16,
+        -0.7071067811865472,
+        -0.4799999999999999
+      ],
+      [
+        -6.173447174932561e-17,
+        -0.9999999999999998,
+        -6.995512703314903e-16,
+        1.45
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4099999999999999,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 1,
+    "yaw": -0.7853981633974483,
+    "roll": 1,
+    "endpoint": 1,
+    "ik": 0,
+    "q": [
+      -5.311199967303745,
+      1.9289512137473541,
+      -1.554509393527549,
+      3.2440212801078507,
+      0.3874535526390062,
+      0.58500791200277
+    ],
+    "fk": [
+      [
+        0.7071067811865474,
+        -3.9017006618288274e-17,
+        0.7071067811865476,
+        0.5
+      ],
+      [
+        0.7071067811865475,
+        -5.328943682814299e-17,
+        -0.7071067811865475,
+        -0.48000000000000015
+      ],
+      [
+        2.771464439156805e-16,
+        0.9999999999999996,
+        -7.698457759070887e-17,
+        1.45
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.41000000000000014,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 1,
+    "yaw": -0.7853981633974483,
+    "roll": 1,
+    "endpoint": 1,
+    "ik": 1,
+    "q": [
+      0.9719853398758408,
+      1.9289512137474976,
+      -1.5545093935279382,
+      3.244021280107845,
+      0.3874535526386384,
+      -5.6981773951768195
+    ],
+    "fk": [
+      [
+        0.7071067811865209,
+        -8.835715359726635e-14,
+        0.7071067811865736,
+        0.49999999999997435
+      ],
+      [
+        0.7071067811865736,
+        8.163405313559817e-14,
+        -0.707106781186521,
+        -0.48000000000000864
+      ],
+      [
+        4.791106050089429e-15,
+        0.9999999999999996,
+        1.20000561193538e-13,
+        1.4499999999999802
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4100000000000086,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 1,
+    "yaw": 0.0,
+    "roll": 0,
+    "endpoint": 0,
+    "ik": 0,
+    "q": [
+      1.8417671557848139,
+      1.9321916303914566,
+      -1.5110560288852228,
+      0.9937819955267935,
+      -0.9295215457155724,
+      -1.0013790849039717
+    ],
+    "fk": [
+      [
+        5.151093455763611e-14,
+        -3.503465359569529e-14,
+        0.9999999999999997,
+        0.40000000000000546
+      ],
+      [
+        -0.9999999999999999,
+        6.011807666922429e-15,
+        5.1724429899194504e-14,
+        -0.48000000000000836
+      ],
+      [
+        -5.990341821452605e-15,
+        -0.9999999999999996,
+        -3.4974136944612525e-14,
+        1.4500000000000026
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.41000000000000836,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 1,
+    "yaw": 0.0,
+    "roll": 0,
+    "endpoint": 0,
+    "ik": 1,
+    "q": [
+      1.84176715578475,
+      1.932191630391762,
+      -1.5110560288856298,
+      -5.289403311652658,
+      -0.9295215457153251,
+      5.2818062222754945
+    ],
+    "fk": [
+      [
+        -9.050237021409918e-14,
+        6.066842576403666e-14,
+        0.9999999999999998,
+        0.3999999999999906
+      ],
+      [
+        -1.0,
+        -9.900180460949425e-15,
+        -9.033560407284064e-14,
+        -0.4799999999999866
+      ],
+      [
+        9.867294242266774e-15,
+        -0.9999999999999997,
+        6.067026133607043e-14,
+        1.4499999999999904
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4099999999999866,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 1,
+    "yaw": 0.0,
+    "roll": 0,
+    "endpoint": 1,
+    "ik": 0,
+    "q": [
+      1.5881001413647753,
+      0.29267199806569466,
+      1.337557803907995,
+      3.901775663284439,
+      1.5947926734296218,
+      3.2516927375829088
+    ],
+    "fk": [
+      [
+        2.4954333360938584e-15,
+        -6.339359003989584e-15,
+        0.9999999999999998,
+        0.499999999999996
+      ],
+      [
+        -0.9999999999999999,
+        8.866028257332644e-16,
+        2.380078160891234e-15,
+        -0.4799999999999999
+      ],
+      [
+        -9.261893174441107e-16,
+        -0.9999999999999997,
+        -6.350158125092752e-15,
+        1.4499999999999984
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4099999999999999,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 1,
+    "yaw": 0.0,
+    "roll": 0,
+    "endpoint": 1,
+    "ik": 1,
+    "q": [
+      -1.5091729559291807,
+      -0.2926794680399331,
+      -1.337550295537878,
+      0.7615572781221943,
+      1.6253068722793478,
+      -3.0635625272291933
+    ],
+    "fk": [
+      [
+        2.0702235391690645e-15,
+        2.598872496191302e-14,
+        0.9999999999999999,
+        0.4999999999999931
+      ],
+      [
+        -0.9999999999999999,
+        5.79029124384631e-16,
+        1.9952726672608727e-15,
+        -0.47999999999999576
+      ],
+      [
+        -6.655911794791499e-16,
+        -0.9999999999999999,
+        2.5979763024827862e-14,
+        1.4499999999999962
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.40999999999999576,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 1,
+    "yaw": 0.0,
+    "roll": 1,
+    "endpoint": 0,
+    "ik": 0,
+    "q": [
+      1.921247951618091,
+      1.9484901952149405,
+      -1.70243792419464,
+      -2.1489994941268145,
+      0.9272997104383534,
+      -1.1745754985623247
+    ],
+    "fk": [
+      [
+        5.815490248948269e-16,
+        -2.227797107956555e-16,
+        0.9999999999999998,
+        0.3999999999999999
+      ],
+      [
+        0.9999999999999998,
+        7.736353922408404e-17,
+        -6.08596899334433e-16,
+        -0.47999999999999965
+      ],
+      [
+        -1.0468919473088343e-16,
+        0.9999999999999998,
+        1.4836107537711484e-16,
+        1.4499999999999997
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.40999999999999964,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 1,
+    "yaw": 0.0,
+    "roll": 1,
+    "endpoint": 0,
+    "ik": 1,
+    "q": [
+      -4.3619373555589025,
+      1.9484901952074203,
+      -1.7024379241870022,
+      -2.1489994941286445,
+      0.9272997104432554,
+      5.1086098086161575
+    ],
+    "fk": [
+      [
+        -4.233896456887004e-12,
+        9.429985311463113e-13,
+        0.9999999999999997,
+        0.40000000000045866
+      ],
+      [
+        0.9999999999999997,
+        3.8913452584842853e-13,
+        4.234081156422457e-12,
+        -0.4800000000005711
+      ],
+      [
+        -3.890890333460288e-13,
+        0.9999999999999996,
+        -9.430448543159069e-13,
+        1.4500000000001052
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4100000000005711,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 1,
+    "yaw": 0.0,
+    "roll": 1,
+    "endpoint": 1,
+    "ik": 0,
+    "q": [
+      1.6297119618798943,
+      0.09539917214000986,
+      1.5306219547274598,
+      0.8126217660580801,
+      -1.6825287719873994,
+      -3.0603790272688225
+    ],
+    "fk": [
+      [
+        8.541811076546005e-17,
+        -2.7589454326737474e-15,
+        0.9999999999999998,
+        0.5000000000000002
+      ],
+      [
+        0.9999999999999997,
+        1.177492688335226e-16,
+        3.9667644062493145e-17,
+        -0.48000000000000004
+      ],
+      [
+        -1.2072158631661748e-16,
+        1.0,
+        2.769146758095588e-15,
+        1.4500000000000006
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.41000000000000003,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "pair": 1,
+    "yaw": 0.0,
+    "roll": 1,
+    "endpoint": 1,
+    "ik": 1,
+    "q": [
+      4.823428662787884,
+      -0.09540672820105049,
+      -1.5306103454577986,
+      0.8108002481868136,
+      1.7202920132924684,
+      0.045088213701171755
+    ],
+    "fk": [
+      [
+        -7.41764490244062e-17,
+        -4.545710612929859e-15,
+        0.9999999999999997,
+        0.5000000000000007
+      ],
+      [
+        0.9999999999999997,
+        -4.5238480101229e-16,
+        2.1645507294539636e-16,
+        -0.4799999999999999
+      ],
+      [
+        4.1108511257473223e-16,
+        0.9999999999999998,
+        4.616852006601386e-15,
+        1.4500000000000002
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4099999999999999,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  }
+]

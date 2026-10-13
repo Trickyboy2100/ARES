@@ -1,0 +1,45 @@
+{
+  "status": "PLANNER_NO_VALIDATED_PATH",
+  "failure_class": "PLANNER_NO_SOLUTION_OR_POSTVALIDATION_REJECTION",
+  "error": null,
+  "label": null,
+  "planning_only": true,
+  "execution_allowed": false,
+  "wall_s": 4.950133257545531,
+  "independent_validation": {
+    "collision": null,
+    "attached_object": null,
+    "orientation": null,
+    "soft_limits": null,
+    "self_collision": null,
+    "scene_binding": true
+  },
+  "executor_sha256": "8113aa7f3861e1d02a2a7c0eb7435b9abe413ca3238800ceda315f08bb054c39",
+  "ares_r_worker_sha256": "3fe91cdaddeaff8772bdd7457b6c618f6b1008469562e5bff1b55d84e49a3b80",
+  "request_sha256": "a85fe7ae7738673e5286f97770108848d4d76f9ab39375ef1fe14bf175418de0",
+  "source_artifacts": [
+    {
+      "role": "request",
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/e0_20261013/execution_lower/2/request.json",
+      "sha256": "a85fe7ae7738673e5286f97770108848d4d76f9ab39375ef1fe14bf175418de0"
+    },
+    {
+      "role": "log",
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/e0_20261013/execution_lower/2/worker.log",
+      "sha256": "490c2a189e382bea05cb12f1873d8ebfca2e0565e863b6354507ffabaafe8ca5"
+    },
+    {
+      "role": "result",
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/e0_20261013/execution_lower/2/result.json",
+      "sha256": "6f3e4048cbbf8c2ca7d7901bc1b4341719e2edbb2680fb33486a1a71eaec2956"
+    }
+  ],
+  "independent_dense_validation": {},
+  "missing_qualification": [
+    "collision",
+    "attached_object",
+    "orientation",
+    "soft_limits",
+    "self_collision"
+  ]
+}

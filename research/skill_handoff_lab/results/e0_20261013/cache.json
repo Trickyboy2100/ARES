@@ -1,0 +1,1117 @@
+{
+  "fixture": false,
+  "scope": "ONE_STEP_PLANNING_COST_ONLY_CONDITIONAL_ON_ALL_OPTIONS_QUALIFIED",
+  "physical_simulation": false,
+  "full_chassis_safety_qualified": false,
+  "reward": "1 - measured joint trajectory length (rad)",
+  "cost_units": "joint path rad, not seconds or physical execution cost",
+  "dimensions": {
+    "state_dim": 9,
+    "action_dim": 14,
+    "max_actions": 2,
+    "cost_weight": 1.0
+  },
+  "episodes": [
+    {
+      "scene_group": "E0-goal-0",
+      "split": "train",
+      "initial_node": "root",
+      "observations": {
+        "root": {
+          "episode_id": "E0-goal-0",
+          "stage": "PREPLACE_PLAN",
+          "robot_state": [],
+          "remaining_goal": [
+            0.46,
+            -0.5,
+            1.45
+          ],
+          "successor_constraints": [
+            0.09950000047683716,
+            0.17949999868869781,
+            0.029999999329447746,
+            0.84,
+            0.06,
+            0.016666666666666666
+          ],
+          "actions": [
+            {
+              "action_id": "E0-goal-0-roll-0",
+              "stage": "PREPLACE_PLAN",
+              "features": [
+                1.8417671557848139,
+                1.9321916303914566,
+                -1.5110560288852228,
+                0.9937819955267935,
+                -0.9295215457155724,
+                -1.0013790849039717,
+                1.742854662000378,
+                1.6904635352658919,
+                -1.3656748050986314,
+                1.140181153872959,
+                -0.8514407582418503,
+                -1.0873969651450632,
+                0.0,
+                0.35253404415393713
+              ],
+              "legal": true
+            },
+            {
+              "action_id": "E0-goal-0-roll-1",
+              "stage": "PREPLACE_PLAN",
+              "features": [
+                1.921247951618091,
+                1.9484901952149405,
+                -1.70243792419464,
+                -2.1489994941268145,
+                0.9272997104383534,
+                -1.1745754985623247,
+                1.8093556020111619,
+                1.6910601364169948,
+                -1.5524065142496515,
+                -1.970761226960339,
+                0.8579558135620087,
+                -1.2832295974533265,
+                1.0,
+                0.38688851904091803
+              ],
+              "legal": true
+            }
+          ],
+          "scene_revision": "sha256:5fedbb14904d5590bb5c154b5749fb689fd9704a6312e636e13641aa337762e5",
+          "history_digest": "079e71f0acf2ab82f3c80480ce89d207104edaee16a0a32fcdc731ca69da8ec9"
+        }
+      },
+      "transitions": [
+        {
+          "node": "root",
+          "next_node": null,
+          "episode_id": "E0-goal-0",
+          "stage": "PREPLACE_PLAN",
+          "action_id": "E0-goal-0-roll-0",
+          "downstream_success": true,
+          "execution_cost": 0.3526269028832024,
+          "evidence_level": "CUROBO_INDEPENDENTLY_VALIDATED",
+          "planner_success": true,
+          "executed": false,
+          "failure_codes": [],
+          "metadata": {
+            "independent_validation": {
+              "collision": true,
+              "self_collision": true,
+              "attached_object": true,
+              "soft_limits": true,
+              "orientation": true,
+              "scene_binding": true
+            },
+            "source_artifacts": [
+              {
+                "role": "request",
+                "path": "execution_variations/0/request.json",
+                "sha256": "80b1876a937ec470d603ba6370bd06d1fe06ddea1bc9725e9e4aa2d33c697cbd"
+              },
+              {
+                "role": "result",
+                "path": "execution_variations/0/result.json",
+                "sha256": "7b220ab67913979f9795c1864ab9cea6981de759b5042fd868768291c7769788"
+              },
+              {
+                "role": "validation",
+                "path": "execution_variations/0/cache_validation.json",
+                "sha256": "345f2e5e01713e331f75f477f342d42e6cd77d329fbbfbd87bd749a9a721d655"
+              },
+              {
+                "role": "independent_validation",
+                "path": "execution_variations/0/e0_independent_validation.json",
+                "sha256": "99a04675ea1384a8c9875904c8312fa52cc29c5a7da0a3ae4d5c7ad045bfd33e"
+              }
+            ],
+            "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+            "full_chassis_safety_qualified": false,
+            "successor_effect_target": [
+              1.0,
+              0.06336402887826745,
+              0.3526269028832024,
+              0.10618928972555426,
+              0.09946983544731891,
+              0.00886536808345485
+            ]
+          }
+        },
+        {
+          "node": "root",
+          "next_node": null,
+          "episode_id": "E0-goal-0",
+          "stage": "PREPLACE_PLAN",
+          "action_id": "E0-goal-0-roll-1",
+          "downstream_success": true,
+          "execution_cost": 0.3870207098099119,
+          "evidence_level": "CUROBO_INDEPENDENTLY_VALIDATED",
+          "planner_success": true,
+          "executed": false,
+          "failure_codes": [],
+          "metadata": {
+            "independent_validation": {
+              "collision": true,
+              "self_collision": true,
+              "attached_object": true,
+              "soft_limits": true,
+              "orientation": true,
+              "scene_binding": true
+            },
+            "source_artifacts": [
+              {
+                "role": "request",
+                "path": "execution_variations/1/request.json",
+                "sha256": "66083ff08dc2bf70e8ba26752e2e5be46aaa77da409b28a4b5868a76f2eca361"
+              },
+              {
+                "role": "result",
+                "path": "execution_variations/1/result.json",
+                "sha256": "8f969b8c94bac0fa6578e66ec8291c2f4c895f40afbd35d7c08dd149e52133ce"
+              },
+              {
+                "role": "validation",
+                "path": "execution_variations/1/cache_validation.json",
+                "sha256": "f8b5d8a78100eb53362892e599fe6014804568ef82d44b2a10cae0433d9546d6"
+              },
+              {
+                "role": "independent_validation",
+                "path": "execution_variations/1/e0_independent_validation.json",
+                "sha256": "570a7f2b8242a54e624ce97c8cdb51d5dec60784637eb97c4b5c9e4c1d53338a"
+              }
+            ],
+            "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+            "full_chassis_safety_qualified": false,
+            "successor_effect_target": [
+              1.0,
+              0.06339746440650107,
+              0.3870207098099119,
+              0.10618928972555426,
+              0.083171302961357,
+              0.0101965196208479
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "scene_group": "E0-goal-5",
+      "split": "test",
+      "initial_node": "root",
+      "observations": {
+        "root": {
+          "episode_id": "E0-goal-5",
+          "stage": "PREPLACE_PLAN",
+          "robot_state": [],
+          "remaining_goal": [
+            0.5,
+            -0.46,
+            1.45
+          ],
+          "successor_constraints": [
+            0.09950000047683716,
+            0.17949999868869781,
+            0.029999999329447746,
+            0.84,
+            0.06,
+            0.016666666666666666
+          ],
+          "actions": [
+            {
+              "action_id": "E0-goal-5-roll-0",
+              "stage": "PREPLACE_PLAN",
+              "features": [
+                1.8417671557848139,
+                1.9321916303914566,
+                -1.5110560288852228,
+                0.9937819955267935,
+                -0.9295215457155724,
+                -1.0013790849039717,
+                1.5358363066037524,
+                1.698126718331108,
+                -1.3980198570139977,
+                1.3396817286293805,
+                -0.7833759609205999,
+                -1.0909378543530523,
+                0.0,
+                0.5569409072697967
+              ],
+              "legal": true
+            },
+            {
+              "action_id": "E0-goal-5-roll-1",
+              "stage": "PREPLACE_PLAN",
+              "features": [
+                1.921247951618091,
+                1.9484901952149405,
+                -1.70243792419464,
+                -2.1489994941268145,
+                0.9272997104383534,
+                -1.1745754985623247,
+                1.5681875644096992,
+                1.6956898324381082,
+                -1.5955173922942125,
+                -1.7049464366797753,
+                0.8202207183125491,
+                -1.3225888634010623,
+                1.0,
+                0.6561620570646665
+              ],
+              "legal": true
+            }
+          ],
+          "scene_revision": "sha256:bec952c6fb5609282eb67970d6f99669470420e1b7c756a8b4aa73ab39efea7b",
+          "history_digest": "c5d9ddd3e0b2eedfdedc4bf428b3d2ccfadd71b36f46c498541e5a972ac63f67"
+        }
+      },
+      "transitions": [
+        {
+          "node": "root",
+          "next_node": null,
+          "episode_id": "E0-goal-5",
+          "stage": "PREPLACE_PLAN",
+          "action_id": "E0-goal-5-roll-0",
+          "downstream_success": true,
+          "execution_cost": 0.5575809775098624,
+          "evidence_level": "CUROBO_INDEPENDENTLY_VALIDATED",
+          "planner_success": true,
+          "executed": false,
+          "failure_codes": [],
+          "metadata": {
+            "independent_validation": {
+              "collision": true,
+              "self_collision": true,
+              "attached_object": true,
+              "soft_limits": true,
+              "orientation": true,
+              "scene_binding": true
+            },
+            "source_artifacts": [
+              {
+                "role": "request",
+                "path": "execution_variations/10/request.json",
+                "sha256": "6c53ab9fe0ad5dc6e36e9534bb58c4ae7b0dfd82722d513a6cc9e7b08c06d46d"
+              },
+              {
+                "role": "result",
+                "path": "execution_variations/10/result.json",
+                "sha256": "28f603eaf610119bff99c2316799e72df40c5e969e3df58ce56121ef48f47377"
+              },
+              {
+                "role": "validation",
+                "path": "execution_variations/10/cache_validation.json",
+                "sha256": "b52a482377ce854a9deae782783cb8425c8afc0a1daabf9221287b513aa8563d"
+              },
+              {
+                "role": "independent_validation",
+                "path": "execution_variations/10/e0_independent_validation.json",
+                "sha256": "944659e52e995243d9f16f09d2a555f8f01acbe25e0f2cff03cfbdd4dfa0a6b1"
+              }
+            ],
+            "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+            "full_chassis_safety_qualified": false,
+            "successor_effect_target": [
+              1.0,
+              0.10235021634201633,
+              0.5575809775098624,
+              0.10618928972555426,
+              0.09946983544731891,
+              0.019517329727969174
+            ]
+          }
+        },
+        {
+          "node": "root",
+          "next_node": null,
+          "episode_id": "E0-goal-5",
+          "stage": "PREPLACE_PLAN",
+          "action_id": "E0-goal-5-roll-1",
+          "downstream_success": true,
+          "execution_cost": 0.6571650291135681,
+          "evidence_level": "CUROBO_INDEPENDENTLY_VALIDATED",
+          "planner_success": true,
+          "executed": false,
+          "failure_codes": [],
+          "metadata": {
+            "independent_validation": {
+              "collision": true,
+              "self_collision": true,
+              "attached_object": true,
+              "soft_limits": true,
+              "orientation": true,
+              "scene_binding": true
+            },
+            "source_artifacts": [
+              {
+                "role": "request",
+                "path": "execution_variations/11/request.json",
+                "sha256": "50074f7bf23718650d2711301d899c7eca27a51d996ea106ef6f7b2da896c55b"
+              },
+              {
+                "role": "result",
+                "path": "execution_variations/11/result.json",
+                "sha256": "21021a73a1a65da730836ef3b680bf30303a407418c93e442417c9b857587cd1"
+              },
+              {
+                "role": "validation",
+                "path": "execution_variations/11/cache_validation.json",
+                "sha256": "5ad28121d6e1505f70e606924f30ad9c824e0f794e9db20170547ec6058b28f4"
+              },
+              {
+                "role": "independent_validation",
+                "path": "execution_variations/11/e0_independent_validation.json",
+                "sha256": "fa54807324899aa350dd1356560d30f557662eb8d8de1df0b7d01cc12abfd811"
+              }
+            ],
+            "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+            "full_chassis_safety_qualified": false,
+            "successor_effect_target": [
+              1.0,
+              0.10252855176456241,
+              0.6571650291135681,
+              0.10618928972555426,
+              0.083171302961357,
+              0.02080082577323762
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "scene_group": "E0-goal-1",
+      "split": "validation",
+      "initial_node": "root",
+      "observations": {
+        "root": {
+          "episode_id": "E0-goal-1",
+          "stage": "PREPLACE_PLAN",
+          "robot_state": [],
+          "remaining_goal": [
+            0.48,
+            -0.5,
+            1.45
+          ],
+          "successor_constraints": [
+            0.09950000047683716,
+            0.17949999868869781,
+            0.029999999329447746,
+            0.84,
+            0.06,
+            0.016666666666666666
+          ],
+          "actions": [
+            {
+              "action_id": "E0-goal-1-roll-0",
+              "stage": "PREPLACE_PLAN",
+              "features": [
+                1.8417671557848139,
+                1.9321916303914566,
+                -1.5110560288852228,
+                0.9937819955267935,
+                -0.9295215457155724,
+                -1.0013790849039717,
+                1.6918790833014992,
+                1.6283559001957526,
+                -1.3211911742923756,
+                1.1976042396681565,
+                -0.8299715041025109,
+                -1.1008429749622184,
+                0.0,
+                0.46062786676816
+              ],
+              "legal": true
+            },
+            {
+              "action_id": "E0-goal-1-roll-1",
+              "stage": "PREPLACE_PLAN",
+              "features": [
+                1.921247951618091,
+                1.9484901952149405,
+                -1.70243792419464,
+                -2.1489994941268145,
+                0.9272997104383534,
+                -1.1745754985623247,
+                1.7507127072088307,
+                1.626202391014747,
+                -1.5090331429237098,
+                -1.8973129433252096,
+                0.8433329642784607,
+                -1.306398985678177,
+                1.0,
+                0.508066013241229
+              ],
+              "legal": true
+            }
+          ],
+          "scene_revision": "sha256:1bb20e1a71c07c819da13da113e27c2aed48032c36b963a3e30be93b090f726e",
+          "history_digest": "adb4f0550f5a1e5b803d06b341ea00ef05620dd1c5d382b771c3fd7746b214dd"
+        }
+      },
+      "transitions": [
+        {
+          "node": "root",
+          "next_node": null,
+          "episode_id": "E0-goal-1",
+          "stage": "PREPLACE_PLAN",
+          "action_id": "E0-goal-1-roll-0",
+          "downstream_success": true,
+          "execution_cost": 0.4608345887897201,
+          "evidence_level": "CUROBO_INDEPENDENTLY_VALIDATED",
+          "planner_success": true,
+          "executed": false,
+          "failure_codes": [],
+          "metadata": {
+            "independent_validation": {
+              "collision": true,
+              "self_collision": true,
+              "attached_object": true,
+              "soft_limits": true,
+              "orientation": true,
+              "scene_binding": true
+            },
+            "source_artifacts": [
+              {
+                "role": "request",
+                "path": "execution_variations/2/request.json",
+                "sha256": "b837795907d71f47e4f795372144b5c27c67de33ebbc5844fa8ea53a738a4088"
+              },
+              {
+                "role": "result",
+                "path": "execution_variations/2/result.json",
+                "sha256": "d5ca6b0d4b38ffde7a8d60320340360787d2f4dc3faf14ce7d2ccedf86c4496e"
+              },
+              {
+                "role": "validation",
+                "path": "execution_variations/2/cache_validation.json",
+                "sha256": "e4287f6508812d9c4dc183b5ed7a5272581190458c94ba31fb9dec90973410d3"
+              },
+              {
+                "role": "independent_validation",
+                "path": "execution_variations/2/e0_independent_validation.json",
+                "sha256": "91b2da0df532665f3bbe5ea4c0f4b75d8684c41c7033b2901a1eb801ae2773ac"
+              }
+            ],
+            "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+            "full_chassis_safety_qualified": false,
+            "successor_effect_target": [
+              1.0,
+              0.08271908676175524,
+              0.4608345887897201,
+              0.10618928972555426,
+              0.09946983544731891,
+              0.011917353814118847
+            ]
+          }
+        },
+        {
+          "node": "root",
+          "next_node": null,
+          "episode_id": "E0-goal-1",
+          "stage": "PREPLACE_PLAN",
+          "action_id": "E0-goal-1-roll-1",
+          "downstream_success": true,
+          "execution_cost": 0.508366353885542,
+          "evidence_level": "CUROBO_INDEPENDENTLY_VALIDATED",
+          "planner_success": true,
+          "executed": false,
+          "failure_codes": [],
+          "metadata": {
+            "independent_validation": {
+              "collision": true,
+              "self_collision": true,
+              "attached_object": true,
+              "soft_limits": true,
+              "orientation": true,
+              "scene_binding": true
+            },
+            "source_artifacts": [
+              {
+                "role": "request",
+                "path": "execution_variations/3/request.json",
+                "sha256": "8b506fb51c37e06ebd0b8b6b3dacdea318f7aca13aaf681cc568297d4025d6b6"
+              },
+              {
+                "role": "result",
+                "path": "execution_variations/3/result.json",
+                "sha256": "626017ec69294b7ca14a845f146996085fc31157d7377283421143d34f9bc94f"
+              },
+              {
+                "role": "validation",
+                "path": "execution_variations/3/cache_validation.json",
+                "sha256": "e2db98c1220e7913dc5af1d234316aeeec9d029eb4d4c47b9fa65e2e50ce86bf"
+              },
+              {
+                "role": "independent_validation",
+                "path": "execution_variations/3/e0_independent_validation.json",
+                "sha256": "7d0f9ddfd58a03e19c4cfd99ed6235773056d79578d1844dcc66666f00d8c95d"
+              }
+            ],
+            "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+            "full_chassis_safety_qualified": false,
+            "successor_effect_target": [
+              1.0,
+              0.08279601995401961,
+              0.508366353885542,
+              0.10618928972555426,
+              0.083171302961357,
+              0.014010161193557448
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "scene_group": "E0-goal-2",
+      "split": "test",
+      "initial_node": "root",
+      "observations": {
+        "root": {
+          "episode_id": "E0-goal-2",
+          "stage": "PREPLACE_PLAN",
+          "robot_state": [],
+          "remaining_goal": [
+            0.5,
+            -0.5,
+            1.45
+          ],
+          "successor_constraints": [
+            0.09950000047683716,
+            0.17949999868869781,
+            0.029999999329447746,
+            0.84,
+            0.06,
+            0.016666666666666666
+          ],
+          "actions": [
+            {
+              "action_id": "E0-goal-2-roll-0",
+              "stage": "PREPLACE_PLAN",
+              "features": [
+                1.8417671557848139,
+                1.9321916303914566,
+                -1.5110560288852228,
+                0.9937819955267935,
+                -0.9295215457155724,
+                -1.0013790849039717,
+                1.6402052702653735,
+                1.5639472161315793,
+                -1.2667270214796285,
+                1.2507805200074344,
+                -0.8121313794758604,
+                -1.1064812746325643,
+                0.0,
+                0.5716668340811053
+              ],
+              "legal": true
+            },
+            {
+              "action_id": "E0-goal-2-roll-1",
+              "stage": "PREPLACE_PLAN",
+              "features": [
+                1.921247951618091,
+                1.9484901952149405,
+                -1.70243792419464,
+                -2.1489994941268145,
+                0.9272997104383534,
+                -1.1745754985623247,
+                1.6907011585867717,
+                1.560301513373867,
+                -1.456439399030998,
+                -1.8279195060635633,
+                0.8331679713400569,
+                -1.3209726123194203,
+                1.0,
+                0.6306685411735695
+              ],
+              "legal": true
+            }
+          ],
+          "scene_revision": "sha256:fee7d48b5fe8699734e5e64ef4ad5f46254870aab1d3de1005d81f572bba0d15",
+          "history_digest": "ce2330f6711d57efc2eee692c143493925c56a514c667207df0791412a507fa8"
+        }
+      },
+      "transitions": [
+        {
+          "node": "root",
+          "next_node": null,
+          "episode_id": "E0-goal-2",
+          "stage": "PREPLACE_PLAN",
+          "action_id": "E0-goal-2-roll-0",
+          "downstream_success": true,
+          "execution_cost": 0.5719982250142412,
+          "evidence_level": "CUROBO_INDEPENDENTLY_VALIDATED",
+          "planner_success": true,
+          "executed": false,
+          "failure_codes": [],
+          "metadata": {
+            "independent_validation": {
+              "collision": true,
+              "self_collision": true,
+              "attached_object": true,
+              "soft_limits": true,
+              "orientation": true,
+              "scene_binding": true
+            },
+            "source_artifacts": [
+              {
+                "role": "request",
+                "path": "execution_variations/4/request.json",
+                "sha256": "5aca7c20b1179fadd479985d3b56656c8eda5fa2cb23dfa042d0ec38f2bd3e8d"
+              },
+              {
+                "role": "result",
+                "path": "execution_variations/4/result.json",
+                "sha256": "060aae3d1c48a56acdd2129d257164bf3fed6f81f5ed0b2262de0e4c9472ca06"
+              },
+              {
+                "role": "validation",
+                "path": "execution_variations/4/cache_validation.json",
+                "sha256": "4581d5213d5c4e1a8f5a8c479eb818a1c5d4d8d417f900226c1d3eeec56171d6"
+              },
+              {
+                "role": "independent_validation",
+                "path": "execution_variations/4/e0_independent_validation.json",
+                "sha256": "99ce8bb1518e942a39555e4c3869ed5ffb5f5c6ab2e68e183bc60b8faaf36c98"
+              }
+            ],
+            "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+            "full_chassis_safety_qualified": false,
+            "successor_effect_target": [
+              1.0,
+              0.10247442305689314,
+              0.5719982250142412,
+              0.10618928972555426,
+              0.09946983544731891,
+              0.013893609756797183
+            ]
+          }
+        },
+        {
+          "node": "root",
+          "next_node": null,
+          "episode_id": "E0-goal-2",
+          "stage": "PREPLACE_PLAN",
+          "action_id": "E0-goal-2-roll-1",
+          "downstream_success": true,
+          "execution_cost": 0.6311634543660027,
+          "evidence_level": "CUROBO_INDEPENDENTLY_VALIDATED",
+          "planner_success": true,
+          "executed": false,
+          "failure_codes": [],
+          "metadata": {
+            "independent_validation": {
+              "collision": true,
+              "self_collision": true,
+              "attached_object": true,
+              "soft_limits": true,
+              "orientation": true,
+              "scene_binding": true
+            },
+            "source_artifacts": [
+              {
+                "role": "request",
+                "path": "execution_variations/5/request.json",
+                "sha256": "234314b704a98ec3d4fa93ac3d1209e943d2879317a98c887d261f9de19a5f6a"
+              },
+              {
+                "role": "result",
+                "path": "execution_variations/5/result.json",
+                "sha256": "f96939ae9705e2bd86a885280eacc1ef06fbe3b99d7e15ae266df37870b2bd31"
+              },
+              {
+                "role": "validation",
+                "path": "execution_variations/5/cache_validation.json",
+                "sha256": "2cf6443b53831c227e2cdba780257da2cb3392334ac56dd17fb403554c347fae"
+              },
+              {
+                "role": "independent_validation",
+                "path": "execution_variations/5/e0_independent_validation.json",
+                "sha256": "c575f1224848f5d213714e572ea093ff92e109e887dcac0f518539267b6ad3d5"
+              }
+            ],
+            "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+            "full_chassis_safety_qualified": false,
+            "successor_effect_target": [
+              1.0,
+              0.10262336618512703,
+              0.6311634543660027,
+              0.10618928972555426,
+              0.083171302961357,
+              0.01652386529876194
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "scene_group": "E0-goal-3",
+      "split": "train",
+      "initial_node": "root",
+      "observations": {
+        "root": {
+          "episode_id": "E0-goal-3",
+          "stage": "PREPLACE_PLAN",
+          "robot_state": [],
+          "remaining_goal": [
+            0.46,
+            -0.46,
+            1.45
+          ],
+          "successor_constraints": [
+            0.09950000047683716,
+            0.17949999868869781,
+            0.029999999329447746,
+            0.84,
+            0.06,
+            0.016666666666666666
+          ],
+          "actions": [
+            {
+              "action_id": "E0-goal-3-roll-0",
+              "stage": "PREPLACE_PLAN",
+              "features": [
+                1.8417671557848139,
+                1.9321916303914566,
+                -1.5110560288852228,
+                0.9937819955267935,
+                -0.9295215457155724,
+                -1.0013790849039717,
+                1.6402051561421351,
+                1.8255872368910726,
+                -1.4945234891570547,
+                1.2208151871183959,
+                -0.8232601594419656,
+                -1.062670294450846,
+                0.0,
+                0.3447567634553094
+              ],
+              "legal": true
+            },
+            {
+              "action_id": "E0-goal-3-roll-1",
+              "stage": "PREPLACE_PLAN",
+              "features": [
+                1.921247951618091,
+                1.9484901952149405,
+                -1.70243792419464,
+                -2.1489994941268145,
+                0.9272997104383534,
+                -1.1745754985623247,
+                1.690701121236308,
+                1.8285289131649354,
+                -1.6915270690791615,
+                -1.8566774650654534,
+                0.8420570683153389,
+                -1.2780052496671257,
+                1.0,
+                0.4136155063265679
+              ],
+              "legal": true
+            }
+          ],
+          "scene_revision": "sha256:14a301c0ec16757f805bbfb9507326726d8ea5f5106d99daa1c513a96fdec23d",
+          "history_digest": "811401f0de5fe7ebe50f69468906f621e720ce436763b4d3b2da170e3b2d12f8"
+        }
+      },
+      "transitions": [
+        {
+          "node": "root",
+          "next_node": null,
+          "episode_id": "E0-goal-3",
+          "stage": "PREPLACE_PLAN",
+          "action_id": "E0-goal-3-roll-0",
+          "downstream_success": true,
+          "execution_cost": 0.34499001479937386,
+          "evidence_level": "CUROBO_INDEPENDENTLY_VALIDATED",
+          "planner_success": true,
+          "executed": false,
+          "failure_codes": [],
+          "metadata": {
+            "independent_validation": {
+              "collision": true,
+              "self_collision": true,
+              "attached_object": true,
+              "soft_limits": true,
+              "orientation": true,
+              "scene_binding": true
+            },
+            "source_artifacts": [
+              {
+                "role": "request",
+                "path": "execution_variations/6/request.json",
+                "sha256": "1b3a5b81dc63e073dbb57cf43c5ab37a328ac1656bdd38719f9c17b92c9a4c71"
+              },
+              {
+                "role": "result",
+                "path": "execution_variations/6/result.json",
+                "sha256": "8cd0e93ea99153bb9af7925f9011c77183fa23986844d61ff250b0081297b875"
+              },
+              {
+                "role": "validation",
+                "path": "execution_variations/6/cache_validation.json",
+                "sha256": "593a0a2236536df2b1ed3971a6c3d33379c4072b04e041eeab60188b8c16bca7"
+              },
+              {
+                "role": "independent_validation",
+                "path": "execution_variations/6/e0_independent_validation.json",
+                "sha256": "d9856321dd45a90f39174fa18f273b5900ebb04679953111da77362fc2b0edf4"
+              }
+            ],
+            "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+            "full_chassis_safety_qualified": false,
+            "successor_effect_target": [
+              1.0,
+              0.0633298929749365,
+              0.34499001479937386,
+              0.10618928972555426,
+              0.09946983544731891,
+              0.014059200978986592
+            ]
+          }
+        },
+        {
+          "node": "root",
+          "next_node": null,
+          "episode_id": "E0-goal-3",
+          "stage": "PREPLACE_PLAN",
+          "action_id": "E0-goal-3-roll-1",
+          "downstream_success": true,
+          "execution_cost": 0.41400112730835237,
+          "evidence_level": "CUROBO_INDEPENDENTLY_VALIDATED",
+          "planner_success": true,
+          "executed": false,
+          "failure_codes": [],
+          "metadata": {
+            "independent_validation": {
+              "collision": true,
+              "self_collision": true,
+              "attached_object": true,
+              "soft_limits": true,
+              "orientation": true,
+              "scene_binding": true
+            },
+            "source_artifacts": [
+              {
+                "role": "request",
+                "path": "execution_variations/7/request.json",
+                "sha256": "70a076e78b8e924e7a47a4df11d662ea49b8689e0d107d9b2702621d1487e418"
+              },
+              {
+                "role": "result",
+                "path": "execution_variations/7/result.json",
+                "sha256": "6e5130ba745070dff18a5383514dcb691a580178b5160972c109184a3f06ca7d"
+              },
+              {
+                "role": "validation",
+                "path": "execution_variations/7/cache_validation.json",
+                "sha256": "5c5a4fcf8a125bdf3bf45f770fb8f06e30e9ee0ba9f08c9929f7a6bc7113bef9"
+              },
+              {
+                "role": "independent_validation",
+                "path": "execution_variations/7/e0_independent_validation.json",
+                "sha256": "2ed386a826517842bcc69f2974e7ada948c40cfabae47baf946802073946b7a4"
+              }
+            ],
+            "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+            "full_chassis_safety_qualified": false,
+            "successor_effect_target": [
+              1.0,
+              0.06336801274839177,
+              0.41400112730835237,
+              0.10618928972555426,
+              0.083171302961357,
+              0.015404878040130828
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "scene_group": "E0-goal-4",
+      "split": "train",
+      "initial_node": "root",
+      "observations": {
+        "root": {
+          "episode_id": "E0-goal-4",
+          "stage": "PREPLACE_PLAN",
+          "robot_state": [],
+          "remaining_goal": [
+            0.48,
+            -0.46,
+            1.45
+          ],
+          "successor_constraints": [
+            0.09950000047683716,
+            0.17949999868869781,
+            0.029999999329447746,
+            0.84,
+            0.06,
+            0.016666666666666666
+          ],
+          "actions": [
+            {
+              "action_id": "E0-goal-4-roll-0",
+              "stage": "PREPLACE_PLAN",
+              "features": [
+                1.8417671557848139,
+                1.9321916303914566,
+                -1.5110560288852228,
+                0.9937819955267935,
+                -0.9295215457155724,
+                -1.0013790849039717,
+                1.5880979541494031,
+                1.7627737623012187,
+                -1.4509756554583486,
+                1.2826915500104372,
+                -0.8015886968534319,
+                -1.0807491209562023,
+                0.0,
+                0.45032796523262214
+              ],
+              "legal": true
+            },
+            {
+              "action_id": "E0-goal-4-roll-1",
+              "stage": "PREPLACE_PLAN",
+              "features": [
+                1.921247951618091,
+                1.9484901952149405,
+                -1.70243792419464,
+                -2.1489994941268145,
+                0.9272997104383534,
+                -1.1745754985623247,
+                1.6297142062384593,
+                1.7623536439088654,
+                -1.6479754133503974,
+                -1.7780220388832197,
+                0.8291238710962204,
+                -1.3050568573882293,
+                1.0,
+                0.5356239896095528
+              ],
+              "legal": true
+            }
+          ],
+          "scene_revision": "sha256:b26aa96522171de43611a70f66da1be67b73e3c7139a734b694a5f10ff5bcfc3",
+          "history_digest": "50e459a9cbd00f8117d5905e8ccde562a0fff75e19e91ae75810efb7d88e4e32"
+        }
+      },
+      "transitions": [
+        {
+          "node": "root",
+          "next_node": null,
+          "episode_id": "E0-goal-4",
+          "stage": "PREPLACE_PLAN",
+          "action_id": "E0-goal-4-roll-0",
+          "downstream_success": true,
+          "execution_cost": 0.4507666175869698,
+          "evidence_level": "CUROBO_INDEPENDENTLY_VALIDATED",
+          "planner_success": true,
+          "executed": false,
+          "failure_codes": [],
+          "metadata": {
+            "independent_validation": {
+              "collision": true,
+              "self_collision": true,
+              "attached_object": true,
+              "soft_limits": true,
+              "orientation": true,
+              "scene_binding": true
+            },
+            "source_artifacts": [
+              {
+                "role": "request",
+                "path": "execution_variations/8/request.json",
+                "sha256": "24458168db390d0428ef19b5306aa1807324e3775f159d43c8b51cf24245630f"
+              },
+              {
+                "role": "result",
+                "path": "execution_variations/8/result.json",
+                "sha256": "3ff418c33cdd7e279e7163c1758ce2f573a43e8c12f2e36446c0a7d91bda1ca2"
+              },
+              {
+                "role": "validation",
+                "path": "execution_variations/8/cache_validation.json",
+                "sha256": "3542a9692bc73e477b75c4759457fc40a31f2d6a29247da2569f6ad7e08c8a11"
+              },
+              {
+                "role": "independent_validation",
+                "path": "execution_variations/8/e0_independent_validation.json",
+                "sha256": "c531c14039809d8a3940e78c925b90e7947a9985b483bf59a9f9919e118ce24a"
+              }
+            ],
+            "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+            "full_chassis_safety_qualified": false,
+            "successor_effect_target": [
+              1.0,
+              0.0826488313835946,
+              0.4507666175869698,
+              0.10618928972555426,
+              0.09946983544731891,
+              0.01726902812612319
+            ]
+          }
+        },
+        {
+          "node": "root",
+          "next_node": null,
+          "episode_id": "E0-goal-4",
+          "stage": "PREPLACE_PLAN",
+          "action_id": "E0-goal-4-roll-1",
+          "downstream_success": true,
+          "execution_cost": 0.5363212324423295,
+          "evidence_level": "CUROBO_INDEPENDENTLY_VALIDATED",
+          "planner_success": true,
+          "executed": false,
+          "failure_codes": [],
+          "metadata": {
+            "independent_validation": {
+              "collision": true,
+              "self_collision": true,
+              "attached_object": true,
+              "soft_limits": true,
+              "orientation": true,
+              "scene_binding": true
+            },
+            "source_artifacts": [
+              {
+                "role": "request",
+                "path": "execution_variations/9/request.json",
+                "sha256": "7873e6f8b90fead572e212e1954e6eff3e051e1f6ce4bed2edb2c240b1ac7c9e"
+              },
+              {
+                "role": "result",
+                "path": "execution_variations/9/result.json",
+                "sha256": "de59bce7adec49b76cb33edb0a7441b3fb5ddd3dbfb8895ac8a169237e3cd5ff"
+              },
+              {
+                "role": "validation",
+                "path": "execution_variations/9/cache_validation.json",
+                "sha256": "74d8c2801f51536740195c57ee9ccb96fa56b5958c7fa6a8e412805423ef8c21"
+              },
+              {
+                "role": "independent_validation",
+                "path": "execution_variations/9/e0_independent_validation.json",
+                "sha256": "221f0364b92e096d4096be66a8d5bb735296aec4feed14817ab9b2f01322416e"
+              }
+            ],
+            "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+            "full_chassis_safety_qualified": false,
+            "successor_effect_target": [
+              1.0,
+              0.08273886115149334,
+              0.5363212324423295,
+              0.10618928972555426,
+              0.083171302961357,
+              0.018762917362273496
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "excluded_groups": [],
+  "candidate_id_used_as_feature": false,
+  "observation_stage": "PREPLACE only, successor goal is observed; no PICK or future-observation claim"
+}

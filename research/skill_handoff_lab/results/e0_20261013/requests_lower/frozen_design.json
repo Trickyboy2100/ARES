@@ -1,0 +1,57 @@
+{
+  "design": {
+    "seed": 6200,
+    "ik_attempts_per_pose": 12,
+    "tcp_pairs_m": [
+      [
+        [
+          0.38,
+          -0.4,
+          1.4
+        ],
+        [
+          0.48,
+          -0.4,
+          1.4
+        ]
+      ],
+      [
+        [
+          0.4,
+          -0.48,
+          1.45
+        ],
+        [
+          0.5,
+          -0.48,
+          1.45
+        ]
+      ]
+    ],
+    "yaw_rad": [
+      -0.7853981633974483,
+      0.0
+    ],
+    "roll_branches": [
+      0,
+      1
+    ],
+    "max_ik_per_endpoint": 2,
+    "gpu_jobs_max": 8,
+    "collision_cell_m": 0.02,
+    "chassis_policy": "historical_lower"
+  },
+  "tray": {
+    "usd": "/home/andyee/isaacsim/playground/scene_final.usd",
+    "usd_sha256": "b96c905318e628a347066b5d1943cbac18c1dd3f03c91882bf71cfc82d5d9723",
+    "prim": "/World/Tray",
+    "observed_world_aabb_m": [
+      0.09950000047683716,
+      0.17949999868869781,
+      0.029999999329447746
+    ],
+    "geometry_scope": "research cuboid enclosing this existing USD tray; not measured physical tray CAD",
+    "grasp_scope": "already held with fixed attachment; no contact-grasp claim",
+    "offset_scope": "frozen research edge-grasp assumption, not live calibrated grasp"
+  }
+}

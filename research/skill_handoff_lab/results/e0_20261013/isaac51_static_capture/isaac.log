@@ -1,0 +1,536 @@
+Starting kit application with the following args:  ['/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py', '/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/apps/isaacsim.exp.base.python.kit', '--/app/tokens/exe-path=/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit', '--/persistent/app/viewport/displayOptions=3094', '--/rtx/materialDb/syncLoads=True', '--/rtx/hydra/materialSyncLoads=True', '--/omni.kit.plugin/syncUsdLoads=True', '--/app/renderer/resolution/width=1280', '--/app/renderer/resolution/height=960', '--/app/window/width=1440', '--/app/window/height=900', '--/renderer/multiGpu/enabled=False', '--/app/fastShutdown=True', '--/app/installSignalHandlers=0', '--ext-folder', '/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts', '--ext-folder', '/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/apps', '--/renderer/activeGpu=1', '--/physics/cudaDevice=1', '--/plugins/carb.tasking.plugin/threadCount=32', '--/plugins/omni.tbb.globalcontrol/maxThreadCount=32', '--portable', '--no-window', '--/app/window/hideUi=1']
+Passing the following args to the base kit application:  ['--scene', '/home/andyee/robot-research/ARES-Skilllab/snapshots/ARES-190-oracle-20261013/isaac_sim/simforge/scenes/main.usd', '--output', '/home/andyee/robot-research/ARES-Skilllab/runs/e0_20261013/isaac51_static_capture', '--gpu', '1']
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.metrics.core-90082eb983ff05a3.zip' -> '/tmp/tmpkk5t8fld/omni.metrics.core-0.0.3+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpkk5t8fld/omni.metrics.core-0.0.3+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.metrics.core-90082eb983ff05a3
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.metrics.core-0.0.3+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.metrics.core-90082eb983ff05a3
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.blobkey-6c7dfdd8f0868aa1.zip' -> '/tmp/tmprmwxjy2a/omni.blobkey-1.1.2+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmprmwxjy2a/omni.blobkey-1.1.2+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.blobkey-6c7dfdd8f0868aa1
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.blobkey-1.1.2+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.blobkey-6c7dfdd8f0868aa1
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.stats-1.0.1+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.stats-5af6570b6dbaed29
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.datastore-e168a0ff3b6bde54.zip' -> '/tmp/tmprnelzyps/omni.datastore-0.0.0+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmprnelzyps/omni.datastore-0.0.0+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.datastore-e168a0ff3b6bde54
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.datastore-0.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.datastore-e168a0ff3b6bde54
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.client-1.3.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.client-34f5f1bc258c8a82
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.ujitso.default-62d98e0ed9aee09a.zip' -> '/tmp/tmpucfq0p8w/omni.ujitso.default-1.0.0+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpucfq0p8w/omni.ujitso.default-1.0.0+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.ujitso.default-62d98e0ed9aee09a
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.ujitso.default-1.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.ujitso.default-62d98e0ed9aee09a
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.gpu_foundation.shadercache.vulkan-1.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.gpu_foundation.shadercache.vulkan-3328f727d2d7d0a1
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.hsscclient-4cd210517896d7e0.zip' -> '/tmp/tmp3zg7h8ks/omni.hsscclient-1.1.2+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp3zg7h8ks/omni.hsscclient-1.1.2+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.hsscclient-4cd210517896d7e0
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.hsscclient-1.1.2+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.hsscclient-4cd210517896d7e0
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.assets.plugins-0.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.assets.plugins-98526488c3190807
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.gpu_foundation-0.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.gpu_foundation-ac4242ceb78ce854
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/carb.windowing.plugins-1.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/carb.windowing.plugins-65f196fe3765be80
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.renderer.init-0.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.renderer.init-6ab527fa42a2e7b7
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.pipapi-0.0.0+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.pipapi-16ea48c1ed676d23
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.pip_archive-0.0.0+69cbf6ad.lx64.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.pip_archive-d38fa9ecd1fb6df4
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.pip.compute-1.6.3%2B107.3.3.lx64.cp311.zip' -> '/tmp/tmpit_74s7j/omni.pip.compute-1.6.3+107.3.3.lx64.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpit_74s7j/omni.pip.compute-1.6.3+107.3.3.lx64.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.pip.compute-1.6.3+107.3.3.lx64.cp311
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.pip.compute-1.6.3+107.3.3.lx64.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.pip.compute-1.6.3+107.3.3.lx64.cp311
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.materialx.libs-6c547c3dd5ef2807.zip' -> '/tmp/tmp5a28qu1l/omni.materialx.libs-1.0.7+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp5a28qu1l/omni.materialx.libs-1.0.7+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.materialx.libs-6c547c3dd5ef2807
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.materialx.libs-1.0.7+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.materialx.libs-6c547c3dd5ef2807
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.test-4abfd5fd30660d23.zip' -> '/tmp/tmpbsd1eokq/omni.kit.test-2.0.1+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpbsd1eokq/omni.kit.test-2.0.1+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.test-4abfd5fd30660d23
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.test-2.0.1+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.test-4abfd5fd30660d23
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.telemetry-0.5.2+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.telemetry-8994df2c5ad3f85e
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.pip.cloud-1.4.3%2B107.3.3.lx64.cp311.zip' -> '/tmp/tmp5n2wqo10/omni.pip.cloud-1.4.3+107.3.3.lx64.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp5n2wqo10/omni.pip.cloud-1.4.3+107.3.3.lx64.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.pip.cloud-1.4.3+107.3.3.lx64.cp311
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.pip.cloud-1.4.3+107.3.3.lx64.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.pip.cloud-1.4.3+107.3.3.lx64.cp311
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.isaac.core_archive-3.0.0%2B107.3.3.lx64.cp311.zip' -> '/tmp/tmpzj1a57tf/omni.isaac.core_archive-3.0.0+107.3.3.lx64.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpzj1a57tf/omni.isaac.core_archive-3.0.0+107.3.3.lx64.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.isaac.core_archive-3.0.0+107.3.3.lx64.cp311
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.isaac.core_archive-3.0.0+107.3.3.lx64.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.isaac.core_archive-3.0.0+107.3.3.lx64.cp311
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd.config-9b65b713faedc757.zip' -> '/tmp/tmpqbju0zci/omni.usd.config-1.0.6+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpqbju0zci/omni.usd.config-1.0.6+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.config-9b65b713faedc757
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.config-1.0.6+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.config-9b65b713faedc757
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.gpucompute.plugins-3b816532b7e266ec.zip' -> '/tmp/tmpsgkw12dx/omni.gpucompute.plugins-0.0.0+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpsgkw12dx/omni.gpucompute.plugins-0.0.0+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.gpucompute.plugins-3b816532b7e266ec
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.gpucompute.plugins-0.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.gpucompute.plugins-3b816532b7e266ec
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd.libs-4fde11c8f289f1f4.zip' -> '/tmp/tmpbjw8je6p/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpbjw8je6p/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.libs-4fde11c8f289f1f4
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.libs-4fde11c8f289f1f4
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.mdl-b7c799d9b016a301.zip' -> '/tmp/tmpxazkk66g/omni.mdl-56.0.3+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpxazkk66g/omni.mdl-56.0.3+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.mdl-b7c799d9b016a301
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.mdl-56.0.3+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.mdl-b7c799d9b016a301
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.iray.libs-9dc5f3cf4446ab48.zip' -> '/tmp/tmptnckyyna/omni.iray.libs-0.0.0+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmptnckyyna/omni.iray.libs-0.0.0+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.iray.libs-9dc5f3cf4446ab48
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.iray.libs-0.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.iray.libs-9dc5f3cf4446ab48
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.mdl.neuraylib-4fafc63d6e2817ab.zip' -> '/tmp/tmp96kbdaf1/omni.mdl.neuraylib-0.2.12+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp96kbdaf1/omni.mdl.neuraylib-0.2.12+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.mdl.neuraylib-4fafc63d6e2817ab[Info] [carb] Logging to file: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim Python/5.1/kit_20261013_164830.log
+[0.043s] Failed to solve some dependencies locally, syncing with extension registry...
+[0.044s] [ext: omni.kit.async_engine-0.0.3] startup
+[0.048s] [ext: omni.client.lib-1.1.0] startup
+[0.074s] [ext: omni.kit.registry.nucleus-0.0.0] startup
+[2.797s] Pulling extension: `omni.metrics.core-0.0.3` from the registry.
+[5.077s] Extension: `omni.metrics.core-0.0.3` was installed.
+[5.078s] Pulling extension: `omni.blobkey-1.1.2` from the registry.
+[5.928s] Extension: `omni.blobkey-1.1.2` was installed.
+[5.928s] Pulling extension: `omni.stats-1.0.1` from the registry.
+[5.936s] Extension: `omni.stats-1.0.1` was installed.
+[5.936s] Pulling extension: `omni.datastore-0.0.0` from the registry.
+[7.590s] Extension: `omni.datastore-0.0.0` was installed.
+[7.590s] Pulling extension: `omni.client-1.3.0` from the registry.
+[7.594s] Extension: `omni.client-1.3.0` was installed.
+[7.594s] Pulling extension: `omni.ujitso.default-1.0.0` from the registry.
+[7.832s] Extension: `omni.ujitso.default-1.0.0` was installed.
+[7.832s] Pulling extension: `omni.gpu_foundation.shadercache.vulkan-1.0.0` from the registry.
+[7.836s] Extension: `omni.gpu_foundation.shadercache.vulkan-1.0.0` was installed.
+[7.836s] Pulling extension: `omni.hsscclient-1.1.2` from the registry.
+[8.031s] Extension: `omni.hsscclient-1.1.2` was installed.
+[8.031s] Pulling extension: `omni.assets.plugins-0.0.0` from the registry.
+[8.036s] Extension: `omni.assets.plugins-0.0.0` was installed.
+[8.036s] Pulling extension: `omni.gpu_foundation-0.0.0` from the registry.
+[8.043s] Extension: `omni.gpu_foundation-0.0.0` was installed.
+[8.043s] Pulling extension: `carb.windowing.plugins-1.0.0` from the registry.
+[8.049s] Extension: `carb.windowing.plugins-1.0.0` was installed.
+[8.049s] Pulling extension: `omni.kit.renderer.init-0.0.0` from the registry.
+[8.056s] Extension: `omni.kit.renderer.init-0.0.0` was installed.
+[8.056s] Pulling extension: `omni.kit.pipapi-0.0.0` from the registry.
+[8.062s] Extension: `omni.kit.pipapi-0.0.0` was installed.
+[8.062s] Pulling extension: `omni.kit.pip_archive-0.0.0` from the registry.
+[8.069s] Extension: `omni.kit.pip_archive-0.0.0` was installed.
+[8.069s] Pulling extension: `omni.pip.compute-1.6.3` from the registry.
+[18.965s] Extension: `omni.pip.compute-1.6.3` was installed.
+[18.965s] Pulling extension: `omni.materialx.libs-1.0.7` from the registry.
+[20.311s] Extension: `omni.materialx.libs-1.0.7` was installed.
+[20.311s] Pulling extension: `omni.kit.test-2.0.1` from the registry.
+[20.990s] Extension: `omni.kit.test-2.0.1` was installed.
+[20.990s] Pulling extension: `omni.kit.telemetry-0.5.2` from the registry.
+[20.994s] Extension: `omni.kit.telemetry-0.5.2` was installed.
+[20.994s] Pulling extension: `omni.pip.cloud-1.4.3` from the registry.
+[25.044s] Extension: `omni.pip.cloud-1.4.3` was installed.
+[25.044s] Pulling extension: `omni.isaac.core_archive-3.0.0` from the registry.
+[34.433s] Extension: `omni.isaac.core_archive-3.0.0` was installed.
+[34.433s] Pulling extension: `omni.usd.config-1.0.6` from the registry.
+[35.073s] Extension: `omni.usd.config-1.0.6` was installed.
+[35.073s] Pulling extension: `omni.gpucompute.plugins-0.0.0` from the registry.
+[35.743s] Extension: `omni.gpucompute.plugins-0.0.0` was installed.
+[35.743s] Pulling extension: `omni.usd.libs-1.0.1` from the registry.
+[40.472s] Extension: `omni.usd.libs-1.0.1` was installed.
+[40.472s] Pulling extension: `omni.mdl-56.0.3` from the registry.
+[40.791s] Extension: `omni.mdl-56.0.3` was installed.
+[40.791s] Pulling extension: `omni.iray.libs-0.0.0` from the registry.
+[58.680s] Extension: `omni.iray.libs-0.0.0` was installed.
+[58.680s] Pulling extension: `omni.mdl.neuraylib-0.2.12` from the registry.
+[59.143s] Extension: `omni.mdl.neuraylib-0.2.12` was installed.
+[59.144s] Pulling extension: `omni.kit.usd.mdl-1.1.5` from the registry.
+[85.670s] Extension: `omni.kit.usd.mdl-1.1.5` was installed.
+[85.670s] Pu
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.mdl.neuraylib-0.2.12+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.mdl.neuraylib-4fafc63d6e2817ab
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.kit.usd.mdl-c5413828e5409d2b.zip' -> '/tmp/tmpox0c265n/omni.kit.usd.mdl-1.1.5+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpox0c265n/omni.kit.usd.mdl-1.1.5+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.usd.mdl-c5413828e5409d2b
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.usd.mdl-1.1.5+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.usd.mdl-c5413828e5409d2b
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.appwindow-1.1.10+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.appwindow-89c325032a4ae798
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.renderer.core-1.1.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.renderer.core-26243e93583e5553
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.renderer.capture-0.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.renderer.capture-9b799fa2da09fcc6
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.renderer.imgui-2.0.5+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.renderer.imgui-4ce7c9064d80b205
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.ui-2.27.1+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.ui-b03687c86320efaf
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.mainwindow-1.0.3+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.mainwindow-12147fbdbe307d5e
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/carb.audio-0.1.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/carb.audio-411a172db5418d06
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.uiaudio-1.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.uiaudio-468ffc1597d1d81a
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.uiapp-0.0.0+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.uiapp-9c47f1d908b37db2
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.usd.schema.metrics.assembler-107.3.1%2B107.3.0.lx64.r.cp311.u353.zip' -> '/tmp/tmpy_0_w8hz/omni.usd.schema.metrics.assembler-107.3.1+107.3.0.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpy_0_w8hz/omni.usd.schema.metrics.assembler-107.3.1+107.3.0.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.metrics.assembler-107.3.1+107.3.0.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.schema.metrics.assembler-107.3.1+107.3.0.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.metrics.assembler-107.3.1+107.3.0.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd.schema.audio-e6f3b0dc8dc66d41.zip' -> '/tmp/tmpery66ehx/omni.usd.schema.audio-0.0.0+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpery66ehx/omni.usd.schema.audio-0.0.0+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.audio-e6f3b0dc8dc66d41
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.schema.audio-0.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.audio-e6f3b0dc8dc66d41
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd.schema.omnigraph-d63845fac45bce1e.zip' -> '/tmp/tmpxvgmlq5r/omni.usd.schema.omnigraph-1.0.0+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpxvgmlq5r/omni.usd.schema.omnigraph-1.0.0+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.omnigraph-d63845fac45bce1e
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.schema.omnigraph-1.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.omnigraph-d63845fac45bce1e
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd.schema.omniscripting-bcabae79a344bf3e.zip' -> '/tmp/tmp4fl1jetg/omni.usd.schema.omniscripting-1.0.0+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp4fl1jetg/omni.usd.schema.omniscripting-1.0.0+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.omniscripting-bcabae79a344bf3e
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.schema.omniscripting-1.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.omniscripting-bcabae79a344bf3e
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/isaacsim.robot.schema-3.6.0%2B107.3.3.lx64.r.cp311.zip' -> '/tmp/tmpjsfeoavp/isaacsim.robot.schema-3.6.0+107.3.3.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpjsfeoavp/isaacsim.robot.schema-3.6.0+107.3.3.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/isaacsim.robot.schema-3.6.0+107.3.3.lx64.r.cp311
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/isaacsim.robot.schema-3.6.0+107.3.3.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/isaacsim.robot.schema-3.6.0+107.3.3.lx64.r.cp311
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd.schema.semantics-4a1697e658a0c43f.zip' -> '/tmp/tmp863scl5g/omni.usd.schema.semantics-0.0.0+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp863scl5g/omni.usd.schema.semantics-0.0.0+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.semantics-4a1697e658a0c43f
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.schema.semantics-0.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.semantics-4a1697e658a0c43f
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.anim.graph.schema-107.3.3%2B107.3.3.lx64.r.cp311.u353.zip' -> '/tmp/tmpwm5de3ck/omni.anim.graph.schema-107.3.3+107.3.3.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpwm5de3ck/omni.anim.graph.schema-107.3.3+107.3.3.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.anim.graph.schema-107.3.3+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.anim.graph.schema-107.3.3+107.3.3.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.anim.graph.schema-107.3.3+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd.schema.anim-c0e372046bb88285.zip' -> '/tmp/tmpb47wp7uv/omni.usd.schema.anim-0.0.0+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpb47wp7uv/omni.usd.schema.anim-0.0.0+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.anim-c0e372046bb88285
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.schema.anim-0.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.anim-c0e372046bb88285
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd.schema.geospatial-7ce0e0d58be4261f.zip' -> '/tmp/tmp6b7ye05m/omni.usd.schema.geospatial-0.0.0+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp6b7ye05m/omni.usd.schema.geospatial-0.0.0+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.geospatial-7ce0e0d58be4261f
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.schema.geospatial-0.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.geospatial-7ce0e0d58be4261f
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.window.popup_dialog-e624148537dde1a9.zip' -> '/tmp/tmpvjg23pfd/omni.kit.window.popup_dialog-2.0.24+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpvjg23pfd/omni.kit.window.popup_dialog-2.0.24+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.window.popup_dialog-e624148537dde1a9
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.window.popup_dialog-2.0.24+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.window.popup_dialog-e624148537dde1a9
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.activity.core-ea02ae1a3bda7fb3.zip' -> '/tmp/tmp9j8vw1e8/omni.activity.core-1.0.3+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp9j8vw1e8/omni.activity.core-1.0.3+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.activity.core-ea02ae1a3bda7fb3
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.activity.core-1.0.3+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.activity.core-ea02ae1a3bda7fb3
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.widget.nucleus_connector-56d91e8bfc40d4b9.zip' -> '/tmp/tmpvvz6t8vg/omni.kit.widget.nucleus_connector-2.0.1+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpvvz6t8vg/omni.kit.widget.nucleus_connector-2.0.1+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.nucleus_connector-56d91e8bfc40d4b9
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.widget.nucleus_connector-2.0.1+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.nucleus_connector-56d91e8bfc40d4b9
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd_resolver-b59c25e3edfbe8e9.zip' -> '/tmp/tmpm688nqnv/omni.usd_resolver-1.0.0+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpm688nqnv/omni.usd_resolver-1.0.0+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd_resolver-b59c25e3edfbe8e9
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd_resolver-1.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd_resolver-b59c25e3edfbe8e9
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.usd_undo-31d48c272d0be272.zip' -> '/tmp/tmpb5sz65r0/omni.kit.usd_undo-0.1.8+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpb5sz65r0/omni.kit.usd_undo-0.1.8+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.usd_undo-31d48c272d0be272
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.usd_undo-0.1.8+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.usd_undo-31d48c272d0be272
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.graph.exec-7dcfdfe01bfee612.zip' -> '/tmp/tmpf92ahkf_/omni.graph.exec-0.9.6+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpf92ahkf_/omni.graph.exec-0.9.6+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph.exec-7dcfdfe01bfee612
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.graph.exec-0.9.6+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph.exec-7dcfdfe01bfee612
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd.core-9ce8448d1db810d8.zip' -> '/tmp/tmpeznthys4/omni.usd.core-1.5.3+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpeznthys4/omni.usd.core-1.5.3+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.core-9ce8448d1db810d8lling extension: `omni.appwindow-1.1.10` from the registry.
+[85.673s] Extension: `omni.appwindow-1.1.10` was installed.
+[85.673s] Pulling extension: `omni.kit.renderer.core-1.1.0` from the registry.
+[85.677s] Extension: `omni.kit.renderer.core-1.1.0` was installed.
+[85.677s] Pulling extension: `omni.kit.renderer.capture-0.0.0` from the registry.
+[85.681s] Extension: `omni.kit.renderer.capture-0.0.0` was installed.
+[85.681s] Pulling extension: `omni.kit.renderer.imgui-2.0.5` from the registry.
+[85.685s] Extension: `omni.kit.renderer.imgui-2.0.5` was installed.
+[85.685s] Pulling extension: `omni.ui-2.27.1` from the registry.
+[85.689s] Extension: `omni.ui-2.27.1` was installed.
+[85.689s] Pulling extension: `omni.kit.mainwindow-1.0.3` from the registry.
+[85.693s] Extension: `omni.kit.mainwindow-1.0.3` was installed.
+[85.693s] Pulling extension: `carb.audio-0.1.0` from the registry.
+[85.697s] Extension: `carb.audio-0.1.0` was installed.
+[85.697s] Pulling extension: `omni.uiaudio-1.0.0` from the registry.
+[85.702s] Extension: `omni.uiaudio-1.0.0` was installed.
+[85.702s] Pulling extension: `omni.kit.uiapp-0.0.0` from the registry.
+[85.707s] Extension: `omni.kit.uiapp-0.0.0` was installed.
+[85.707s] Pulling extension: `omni.usd.schema.metrics.assembler-107.3.1` from the registry.
+[85.846s] Extension: `omni.usd.schema.metrics.assembler-107.3.1` was installed.
+[85.846s] Pulling extension: `omni.usd.schema.audio-0.0.0` from the registry.
+[85.990s] Extension: `omni.usd.schema.audio-0.0.0` was installed.
+[85.990s] Pulling extension: `omni.usd.schema.omnigraph-1.0.0` from the registry.
+[86.647s] Extension: `omni.usd.schema.omnigraph-1.0.0` was installed.
+[86.647s] Pulling extension: `omni.usd.schema.omniscripting-1.0.0` from the registry.
+[87.303s] Extension: `omni.usd.schema.omniscripting-1.0.0` was installed.
+[87.303s] Pulling extension: `isaacsim.robot.schema-3.6.0` from the registry.
+[87.549s] Extension: `isaacsim.robot.schema-3.6.0` was installed.
+[87.549s] Pulling extension: `omni.usd.schema.semantics-0.0.0` from the registry.
+[87.693s] Extension: `omni.usd.schema.semantics-0.0.0` was installed.
+[87.693s] Pulling extension: `omni.anim.graph.schema-107.3.3` from the registry.
+[87.984s] Extension: `omni.anim.graph.schema-107.3.3` was installed.
+[87.984s] Pulling extension: `omni.usd.schema.anim-0.0.0` from the registry.
+[88.293s] Extension: `omni.usd.schema.anim-0.0.0` was installed.
+[88.293s] Pulling extension: `omni.usd.schema.geospatial-0.0.0` from the registry.
+[88.440s] Extension: `omni.usd.schema.geospatial-0.0.0` was installed.
+[88.440s] Pulling extension: `omni.kit.window.popup_dialog-2.0.24` from the registry.
+[89.117s] Extension: `omni.kit.window.popup_dialog-2.0.24` was installed.
+[89.117s] Pulling extension: `omni.activity.core-1.0.3` from the registry.
+[89.794s] Extension: `omni.activity.core-1.0.3` was installed.
+[89.794s] Pulling extension: `omni.kit.widget.nucleus_connector-2.0.1` from the registry.
+[90.454s] Extension: `omni.kit.widget.nucleus_connector-2.0.1` was installed.
+[90.455s] Pulling extension: `omni.usd_resolver-1.0.0` from the registry.
+[90.717s] Extension: `omni.usd_resolver-1.0.0` was installed.
+[90.718s] Pulling extension: `omni.kit.usd_undo-0.1.8` from the registry.
+[91.393s] Extension: `omni.kit.usd_undo-0.1.8` was installed.
+[91.393s] Pulling extension: `omni.graph.exec-0.9.6` from the registry.
+[91.738s] Extension: `omni.graph.exec-0.9.6` was installed.
+[91.738s] Pulling extension: `omni.usd.core-1.5.3` from the registry.
+[91.977s] Extension: `omni.usd.core-1.5.3` was installed.
+[91.977s] Pulling extension: `omni.kit.actions.core-1.0.0` from the registry.
+[92.179s] Extension: `omni.kit.actions.core-1.0.0` was installed.
+[92.179s] Pulling extension: `omni.resourcemonitor-107.0.1` from the registry.
+[92.350s] Extension: `omni.resourcemonitor-107.0.1` was installed.
+[92.350s] Pulling extension: `omni.kit.exec.core-0.13.4` from the registry.
+[92.569s] Extension: `omni.kit.exec.core-0.13.4` was installed.
+[92.569s] Pulling extension: `usdrt.scenegraph-7.6.1` from the registry.
+[95.182s] Extension: `u
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.core-1.5.3+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.core-9ce8448d1db810d8
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.actions.core-f92065ee89fab450.zip' -> '/tmp/tmppads7m6y/omni.kit.actions.core-1.0.0+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmppads7m6y/omni.kit.actions.core-1.0.0+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.actions.core-f92065ee89fab450
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.actions.core-1.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.actions.core-f92065ee89fab450
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.resourcemonitor-4988a50d1f54ec7c.zip' -> '/tmp/tmptf2eo9fw/omni.resourcemonitor-107.0.1+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmptf2eo9fw/omni.resourcemonitor-107.0.1+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.resourcemonitor-4988a50d1f54ec7c
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.resourcemonitor-107.0.1+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.resourcemonitor-4988a50d1f54ec7c
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.exec.core-77c4affb1d7b6d3e.zip' -> '/tmp/tmpzucne6jo/omni.kit.exec.core-0.13.4+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpzucne6jo/omni.kit.exec.core-0.13.4+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.exec.core-77c4affb1d7b6d3e
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.exec.core-0.13.4+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.exec.core-77c4affb1d7b6d3e
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/usdrt.scenegraph-d07fb477fd5bec7c.zip' -> '/tmp/tmpscr9am77/usdrt.scenegraph-7.6.1+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpscr9am77/usdrt.scenegraph-7.6.1+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/usdrt.scenegraph-d07fb477fd5bec7c
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/usdrt.scenegraph-7.6.1+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/usdrt.scenegraph-d07fb477fd5bec7c
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.timeline-77079a3c62b3b4cd.zip' -> '/tmp/tmpdfozmw6l/omni.timeline-1.0.14+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpdfozmw6l/omni.timeline-1.0.14+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.timeline-77079a3c62b3b4cd
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.timeline-1.0.14+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.timeline-77079a3c62b3b4cd
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.commands-766314c1c0b845f8.zip' -> '/tmp/tmpanf4rj74/omni.kit.commands-1.4.10+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpanf4rj74/omni.kit.commands-1.4.10+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.commands-766314c1c0b845f8
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.commands-1.4.10+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.commands-766314c1c0b845f8
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.audiodeviceenum-4ca06ac73e03c0a3.zip' -> '/tmp/tmpoh70corr/omni.kit.audiodeviceenum-1.0.2+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpoh70corr/omni.kit.audiodeviceenum-1.0.2+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.audiodeviceenum-4ca06ac73e03c0a3
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.audiodeviceenum-1.0.2+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.audiodeviceenum-4ca06ac73e03c0a3
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.hydra.usdrt_delegate-72f509e11fb774f1.zip' -> '/tmp/tmp5ozj84d1/omni.hydra.usdrt_delegate-7.5.1+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp5ozj84d1/omni.hydra.usdrt_delegate-7.5.1+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.hydra.usdrt_delegate-72f509e11fb774f1
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.hydra.usdrt_delegate-7.5.1+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.hydra.usdrt_delegate-72f509e11fb774f1
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.hydra.scene_delegate-056e7617a2b48e72.zip' -> '/tmp/tmpmgfe03x4/omni.hydra.scene_delegate-0.3.4+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpmgfe03x4/omni.hydra.scene_delegate-0.3.4+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.hydra.scene_delegate-056e7617a2b48e72
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.hydra.scene_delegate-0.3.4+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.hydra.scene_delegate-056e7617a2b48e72
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd-887896958e1fcf2f.zip' -> '/tmp/tmp34opb3ce/omni.usd-1.13.10+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp34opb3ce/omni.usd-1.13.10+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd-887896958e1fcf2f
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd-1.13.10+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd-887896958e1fcf2f
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.kit.asset_converter-5.0.17%2B107.3.1.lx64.r.cp311.u353.zip' -> '/tmp/tmprcrewzfq/omni.kit.asset_converter-5.0.17+107.3.1.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmprcrewzfq/omni.kit.asset_converter-5.0.17+107.3.1.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.asset_converter-5.0.17+107.3.1.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.asset_converter-5.0.17+107.3.1.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.asset_converter-5.0.17+107.3.1.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd.schema.omni_sensors-5f9a566b52ef2898.zip' -> '/tmp/tmpj26yaftc/omni.usd.schema.omni_sensors-0.0.0+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpj26yaftc/omni.usd.schema.omni_sensors-0.0.0+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.omni_sensors-5f9a566b52ef2898
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.schema.omni_sensors-0.0.0+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.omni_sensors-5f9a566b52ef2898
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.usd.schema.flow-107.1.1%2B107.1.0.u353.zip' -> '/tmp/tmpbcje7vzd/omni.usd.schema.flow-107.1.1+107.1.0.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpbcje7vzd/omni.usd.schema.flow-107.1.1+107.1.0.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.flow-107.1.1+107.1.0.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.schema.flow-107.1.1+107.1.0.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.flow-107.1.1+107.1.0.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd.schema.omni_lens_distortion-85345bc35ad900bc.zip' -> '/tmp/tmp8h4iozk8/omni.usd.schema.omni_lens_distortion-0.0.0+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp8h4iozk8/omni.usd.schema.omni_lens_distortion-0.0.0+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.omni_lens_distortion-85345bc35ad900bc
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.schema.omni_lens_distortion-0.0.0+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.omni_lens_distortion-85345bc35ad900bc
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.anim.navigation.schema-107.3.3%2B107.3.3.lx64.r.cp311.u353.zip' -> '/tmp/tmpgoks7bbm/omni.anim.navigation.schema-107.3.3+107.3.3.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpgoks7bbm/omni.anim.navigation.schema-107.3.3+107.3.3.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.anim.navigation.schema-107.3.3+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.anim.navigation.schema-107.3.3+107.3.3.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.anim.navigation.schema-107.3.3+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.usd.schema.physx-107.3.26%2B107.3.3.lx64.r.cp311.u353.zip' -> '/tmp/tmpfu_pk8qi/omni.usd.schema.physx-107.3.26+107.3.3.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpfu_pk8qi/omni.usd.schema.physx-107.3.26+107.3.3.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.physx-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.schema.physx-107.3.26+107.3.3.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.physx-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.usd.schema.render_settings.rtx-323539e2c27907cc.zip' -> '/tmp/tmpf_xj5ofh/omni.usd.schema.render_settings.rtx-0.0.0+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpf_xj5ofh/omni.usd.schema.render_settings.rtx-0.0.0+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.render_settings.rtx-323539e2c27907cc
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usd.schema.render_settings.rtx-0.0.0+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.usd.schema.render_settings.rtx-323539e2c27907cc
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.inspect-3b398ae6cc75c1b7.zip' -> '/tmp/tmpixp0lakm/omni.inspect-1.0.2+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpixp0lakm/omni.inspect-1.0.2+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.inspect-3b398ae6cc75c1b7
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.inspect-1.0.2+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.inspect-3b398ae6cc75c1b7
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.notification_manager-7f81d77652b84628.zip' -> '/tmp/tmp0wws3la3/omni.kit.notification_manager-1.0.10+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp0wws3la3/omni.kit.notification_manager-1.0.10+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.notification_manager-7f81d77652b84628
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.notification_manager-1.0.10+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.notification_manager-7f81d77652b84628
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.graph.core-13ee74d054bf61bf.zip' -> '/tmp/tmpfjlu67cc/omni.graph.core-2.184.5+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpfjlu67cc/omni.graph.core-2.184.5+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph.core-13ee74d054bf61bf
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.graph.core-2.184.5+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph.core-13ee74d054bf61bf
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.convexdecomposition-107.3.26%2B107.3.3.lx64.r.cp311.u353.zip' -> '/tmp/tmpwlw0ulb2/omni.convexdecomposition-107.3.26+107.3.3.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpwlw0ulb2/omni.convexdecomposition-107.3.26+107.3.3.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.convexdecomposition-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.convexdecomposition-107.3.26+107.3.3.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.convexdecomposition-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.physx.foundation-107.3.26%2B107.3.3.lx64.r.cp311.u353.zip' -> '/tmp/tmp9rx4vo0t/omni.physx.foundation-107.3.26+107.3.3.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp9rx4vo0t/omni.physx.foundation-107.3.26+107.3.3.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.physx.foundation-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.physx.foundation-107.3.26+107.3.3.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.physx.foundation-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.kvdb-107.3.26%2B107.3.3.lx64.r.cp311.u353.zip' -> '/tmp/tmp61z_okmt/omni.kvdb-107.3.26+107.3.3.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp61z_okmt/omni.kvdb-107.3.26+107.3.3.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kvdb-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kvdb-107.3.26+107.3.3.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kvdb-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.graph.tools-cc9ff0f4402f1365.zip' -> '/tmp/tmpsj85lqr8/omni.graph.tools-1.79.2+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpsj85lqr8/omni.graph.tools-1.79.2+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph.tools-cc9ff0f4402f1365
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.graph.tools-1.79.2+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph.tools-cc9ff0f4402f1365
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.graph.image.core-e505635a386f6306.zip' -> '/tmp/tmpexbh6lzy/omni.graph.image.core-0.6.1+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpexbh6lzy/omni.graph.image.core-0.6.1+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph.image.core-e505635a386f6306
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.graph.image.core-0.6.1+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph.image.core-e505635a386f6306
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.usdphysics-107.3.26%2B107.3.3.lx64.r.cp311.u353.zip' -> '/tmp/tmp8zlhp2m8/omni.usdphysics-107.3.26+107.3.3.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp8zlhp2m8/omni.usdphysics-107.3.26+107.3.3.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.usdphysics-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.usdphysics-107.3.26+107.3.3.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.usdphysics-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.localcache-107.3.26%2B107.3.3.lx64.r.cp311.u353.zip' -> '/tmp/tmpazi048dq/omni.localcache-107.3.26+107.3.3.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpazi048dq/omni.localcache-107.3.26+107.3.3.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.localcache-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.localcache-107.3.26+107.3.3.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.localcache-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.graph-419147208e336a7d.zip' -> '/tmp/tmp2nwux0l7/omni.graph-1.141.2+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp2nwux0l7/omni.graph-1.141.2+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph-419147208e336a7d
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.graph-1.141.2+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph-419147208e336a7d
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.graph.image.nodes-bc251a874f321cfb.zip' -> '/tmp/tmp7dmo0k_1/omni.graph.image.nodes-1.3.1+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp7dmo0k_1/omni.graph.image.nodes-1.3.1+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph.image.nodes-bc251a874f321cfb
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.graph.image.nodes-1.3.1+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph.image.nodes-bc251a874f321cfb
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.physx.cooking-107.3.26%2B107.3.3.lx64.r.cp311.u353.zip' -> '/tmp/tmpx8z4c0jz/omni.physx.cooking-107.3.26+107.3.3.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpx8z4c0jz/omni.physx.cooking-107.3.26+107.3.3.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.physx.cooking-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.physx.cooking-107.3.26+107.3.3.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.physx.cooking-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.graph.action_core-99620ccb042073db.zip' -> '/tmp/tmpjxq3jje0/omni.graph.action_core-1.1.7+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpjxq3jje0/omni.graph.action_core-1.1.7+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph.action_core-99620ccb042073db
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.graph.action_core-1.1.7+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.graph.action_core-99620ccb042073dbsdrt.scenegraph-7.6.1` was installed.
+[95.182s] Pulling extension: `omni.timeline-1.0.14` from the registry.
+[95.836s] Extension: `omni.timeline-1.0.14` was installed.
+[95.837s] Pulling extension: `omni.kit.commands-1.4.10` from the registry.
+[96.011s] Extension: `omni.kit.commands-1.4.10` was installed.
+[96.011s] Pulling extension: `omni.kit.audiodeviceenum-1.0.2` from the registry.
+[96.662s] Extension: `omni.kit.audiodeviceenum-1.0.2` was installed.
+[96.662s] Pulling extension: `omni.hydra.usdrt_delegate-7.5.1` from the registry.
+[97.148s] Extension: `omni.hydra.usdrt_delegate-7.5.1` was installed.
+[97.148s] Pulling extension: `omni.hydra.scene_delegate-0.3.4` from the registry.
+[97.359s] Extension: `omni.hydra.scene_delegate-0.3.4` was installed.
+[97.359s] Pulling extension: `omni.usd-1.13.10` from the registry.
+[97.630s] Extension: `omni.usd-1.13.10` was installed.
+[97.630s] Pulling extension: `omni.kit.asset_converter-5.0.17` from the registry.
+[98.988s] Extension: `omni.kit.asset_converter-5.0.17` was installed.
+[98.988s] Pulling extension: `omni.usd.schema.omni_sensors-0.0.0` from the registry.
+[99.119s] Extension: `omni.usd.schema.omni_sensors-0.0.0` was installed.
+[99.119s] Pulling extension: `omni.usd.schema.flow-107.1.1` from the registry.
+[99.573s] Extension: `omni.usd.schema.flow-107.1.1` was installed.
+[99.573s] Pulling extension: `omni.usd.schema.omni_lens_distortion-0.0.0` from the registry.
+[100.238s] Extension: `omni.usd.schema.omni_lens_distortion-0.0.0` was installed.
+[100.238s] Pulling extension: `omni.anim.navigation.schema-107.3.3` from the registry.
+[100.502s] Extension: `omni.anim.navigation.schema-107.3.3` was installed.
+[100.502s] Pulling extension: `omni.usd.schema.physx-107.3.26` from the registry.
+[101.427s] Extension: `omni.usd.schema.physx-107.3.26` was installed.
+[101.428s] Pulling extension: `omni.usd.schema.render_settings.rtx-0.0.0` from the registry.
+[102.068s] Extension: `omni.usd.schema.render_settings.rtx-0.0.0` was installed.
+[102.068s] Pulling extension: `omni.inspect-1.0.2` from the registry.
+[102.231s] Extension: `omni.inspect-1.0.2` was installed.
+[102.231s] Pulling extension: `omni.kit.notification_manager-1.0.10` from the registry.
+[102.385s] Extension: `omni.kit.notification_manager-1.0.10` was installed.
+[102.385s] Pulling extension: `omni.graph.core-2.184.5` from the registry.
+[103.217s] Extension: `omni.graph.core-2.184.5` was installed.
+[103.217s] Pulling extension: `omni.convexdecomposition-107.3.26` from the registry.
+[104.054s] Extension: `omni.convexdecomposition-107.3.26` was installed.
+[104.054s] Pulling extension: `omni.physx.foundation-107.3.26` from the registry.
+[116.298s] Extension: `omni.physx.foundation-107.3.26` was installed.
+[116.298s] Pulling extension: `omni.kvdb-107.3.26` from the registry.
+[116.824s] Extension: `omni.kvdb-107.3.26` was installed.
+[116.824s] Pulling extension: `omni.graph.tools-1.79.2` from the registry.
+[117.582s] Extension: `omni.graph.tools-1.79.2` was installed.
+[117.582s] Pulling extension: `omni.graph.image.core-0.6.1` from the registry.
+[117.731s] Extension: `omni.graph.image.core-0.6.1` was installed.
+[117.731s] Pulling extension: `omni.usdphysics-107.3.26` from the registry.
+[118.643s] Extension: `omni.usdphysics-107.3.26` was installed.
+[118.643s] Pulling extension: `omni.localcache-107.3.26` from the registry.
+[118.962s] Extension: `omni.localcache-107.3.26` was installed.
+[118.962s] Pulling extension: `omni.graph-1.141.2` from the registry.
+[119.792s] Extension: `omni.graph-1.141.2` was installed.
+[119.792s] Pulling extension: `omni.graph.image.nodes-1.3.1` from the registry.
+[119.992s] Extension: `omni.graph.image.nodes-1.3.1` was installed.
+[119.992s] Pulling extension: `omni.physx.cooking-107.3.26` from the registry.
+[122.827s] Extension: `omni.physx.cooking-107.3.26` was installed.
+[122.827s] Pulling extension: `omni.graph.action_core-1.1.7` from the registry.
+[123.491s] Extension: `omni.graph.action_core-1.1.7` was installed.
+[123.491s] Pulling extension: `omni.kit.menu.core-1.1.2` from the registry.
+[124.155s] Extens
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.menu.core-0e30f798233eb781.zip' -> '/tmp/tmplzbi5vpj/omni.kit.menu.core-1.1.2+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmplzbi5vpj/omni.kit.menu.core-1.1.2+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.menu.core-0e30f798233eb781
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.menu.core-1.1.2+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.menu.core-0e30f798233eb781
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.physx-107.3.26%2B107.3.3.lx64.r.cp311.u353.zip' -> '/tmp/tmp9xy9c8p2/omni.physx-107.3.26+107.3.3.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp9xy9c8p2/omni.physx-107.3.26+107.3.3.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.physx-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.physx-107.3.26+107.3.3.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.physx-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.physics.tensors-107.3.26%2B107.3.3.lx64.r.cp311.u353.zip' -> '/tmp/tmphwhygu3o/omni.physics.tensors-107.3.26+107.3.3.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmphwhygu3o/omni.physics.tensors-107.3.26+107.3.3.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.physics.tensors-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.physics.tensors-107.3.26+107.3.3.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.physics.tensors-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.widget.context_menu-52930221ba1c79e3.zip' -> '/tmp/tmp8a_0dugk/omni.kit.widget.context_menu-1.2.5+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp8a_0dugk/omni.kit.widget.context_menu-1.2.5+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.context_menu-52930221ba1c79e3
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.widget.context_menu-1.2.5+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.context_menu-52930221ba1c79e3
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.usd.layers-e879211b52340874.zip' -> '/tmp/tmpy2mtdwvh/omni.kit.usd.layers-2.2.11+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpy2mtdwvh/omni.kit.usd.layers-2.2.11+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.usd.layers-e879211b52340874
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.usd.layers-2.2.11+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.usd.layers-e879211b52340874
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.physx.tensors-107.3.26%2B107.3.3.lx64.r.cp311.u353.zip' -> '/tmp/tmplujnsb81/omni.physx.tensors-107.3.26+107.3.3.lx64.r.cp311.u353.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmplujnsb81/omni.physx.tensors-107.3.26+107.3.3.lx64.r.cp311.u353.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.physx.tensors-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.physx.tensors-107.3.26+107.3.3.lx64.r.cp311.u353 -> /home/andyee/.local/share/ov/data/exts/v2/omni.physx.tensors-107.3.26+107.3.3.lx64.r.cp311.u353
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.clipboard-11e5c298b077498b.zip' -> '/tmp/tmpmy6b0xl_/omni.kit.clipboard-1.0.5+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpmy6b0xl_/omni.kit.clipboard-1.0.5+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.clipboard-11e5c298b077498b
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.clipboard-1.0.5+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.clipboard-11e5c298b077498b
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.context_menu-86df2428a0a4665b.zip' -> '/tmp/tmp_agnt89u/omni.kit.context_menu-1.8.6+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp_agnt89u/omni.kit.context_menu-1.8.6+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.context_menu-86df2428a0a4665b
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.context_menu-1.8.6+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.context_menu-86df2428a0a4665b
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.widget.options_menu-588fa889ca209184.zip' -> '/tmp/tmpklg54g4q/omni.kit.widget.options_menu-1.1.6+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpklg54g4q/omni.kit.widget.options_menu-1.1.6+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.options_menu-588fa889ca209184
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.widget.options_menu-1.1.6+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.options_menu-588fa889ca209184
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.helper.file_utils-54342d5f5aa91592.zip' -> '/tmp/tmpeyksnsle/omni.kit.helper.file_utils-0.1.9+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpeyksnsle/omni.kit.helper.file_utils-0.1.9+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.helper.file_utils-54342d5f5aa91592
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.helper.file_utils-0.1.9+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.helper.file_utils-54342d5f5aa91592
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.widget.path_field-6128234538219a65.zip' -> '/tmp/tmpfyf0poyt/omni.kit.widget.path_field-2.0.11+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpfyf0poyt/omni.kit.widget.path_field-2.0.11+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.path_field-6128234538219a65
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.widget.path_field-2.0.11+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.path_field-6128234538219a65
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.ui.scene-4f30a050c644ca14.zip' -> '/tmp/tmp2ryhn6bm/omni.ui.scene-1.11.5+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp2ryhn6bm/omni.ui.scene-1.11.5+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.ui.scene-4f30a050c644ca14
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.ui.scene-1.11.5+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.ui.scene-4f30a050c644ca14
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.widget.options_button-e8a8493f0e321983.zip' -> '/tmp/tmp43reuxc0/omni.kit.widget.options_button-1.0.3+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp43reuxc0/omni.kit.widget.options_button-1.0.3+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.options_button-e8a8493f0e321983
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.widget.options_button-1.0.3+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.options_button-e8a8493f0e321983
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.widget.filebrowser-4e8b40e183271fb2.zip' -> '/tmp/tmpm6qp4s6u/omni.kit.widget.filebrowser-2.12.3+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpm6qp4s6u/omni.kit.widget.filebrowser-2.12.3+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.filebrowser-4e8b40e183271fb2
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.widget.filebrowser-2.12.3+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.filebrowser-4e8b40e183271fb2
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.widget.browser_bar-3ac2a3c7d6adde20.zip' -> '/tmp/tmpwt6bwsyf/omni.kit.widget.browser_bar-2.0.10+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpwt6bwsyf/omni.kit.widget.browser_bar-2.0.10+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.browser_bar-3ac2a3c7d6adde20
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.widget.browser_bar-2.0.10+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.browser_bar-3ac2a3c7d6adde20
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.hydra.rtx.shadercache.vulkan-8165efec29eb09c1.zip' -> '/tmp/tmp4fbjfzqp/omni.hydra.rtx.shadercache.vulkan-1.0.0+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp4fbjfzqp/omni.hydra.rtx.shadercache.vulkan-1.0.0+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.hydra.rtx.shadercache.vulkan-8165efec29eb09c1
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.hydra.rtx.shadercache.vulkan-1.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.hydra.rtx.shadercache.vulkan-8165efec29eb09c1
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.window.filepicker-3e809b772acd4892.zip' -> '/tmp/tmpklse80rr/omni.kit.window.filepicker-2.13.4+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpklse80rr/omni.kit.window.filepicker-2.13.4+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.window.filepicker-3e809b772acd4892
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.window.filepicker-2.13.4+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.window.filepicker-3e809b772acd4892
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.property.adapter.core-c545171f879fee26.zip' -> '/tmp/tmp7572mqt0/omni.kit.property.adapter.core-1.0.2+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp7572mqt0/omni.kit.property.adapter.core-1.0.2+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.property.adapter.core-c545171f879fee26
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.property.adapter.core-1.0.2+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.property.adapter.core-c545171f879fee26
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.window.file_exporter-4d46e4724ae9e9c5.zip' -> '/tmp/tmplacaobcf/omni.kit.window.file_exporter-1.0.33+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmplacaobcf/omni.kit.window.file_exporter-1.0.33+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.window.file_exporter-4d46e4724ae9e9c5
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.window.file_exporter-1.0.33+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.window.file_exporter-4d46e4724ae9e9c5
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.widget.searchfield-bd708620003f11b3.zip' -> '/tmp/tmpa_ripllw/omni.kit.widget.searchfield-1.1.8+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpa_ripllw/omni.kit.widget.searchfield-1.1.8+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.searchfield-bd708620003f11b3
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.widget.searchfield-1.1.8+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.searchfield-bd708620003f11b3
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.widget.filter-9f9fd50ecb63d64b.zip' -> '/tmp/tmppigtcps3/omni.kit.widget.filter-1.1.4+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmppigtcps3/omni.kit.widget.filter-1.1.4+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.filter-9f9fd50ecb63d64b
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.widget.filter-1.1.4+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.filter-9f9fd50ecb63d64b
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.hotkeys.core-cb1a93d6136317ad.zip' -> '/tmp/tmpbg25xl_f/omni.kit.hotkeys.core-1.3.10+69cbf6ad.zip'...ion: `omni.kit.menu.core-1.1.2` was installed.
+[124.155s] Pulling extension: `omni.physx-107.3.26` from the registry.
+[144.083s] Extension: `omni.physx-107.3.26` was installed.
+[144.083s] Pulling extension: `omni.physics.tensors-107.3.26` from the registry.
+[144.934s] Extension: `omni.physics.tensors-107.3.26` was installed.
+[144.934s] Pulling extension: `omni.kit.widget.context_menu-1.2.5` from the registry.
+[145.585s] Extension: `omni.kit.widget.context_menu-1.2.5` was installed.
+[145.585s] Pulling extension: `omni.kit.usd.layers-2.2.11` from the registry.
+[146.014s] Extension: `omni.kit.usd.layers-2.2.11` was installed.
+[146.014s] Pulling extension: `omni.physx.tensors-107.3.26` from the registry.
+[150.274s] Extension: `omni.physx.tensors-107.3.26` was installed.
+[150.274s] Pulling extension: `omni.kit.clipboard-1.0.5` from the registry.
+[150.418s] Extension: `omni.kit.clipboard-1.0.5` was installed.
+[150.418s] Pulling extension: `omni.kit.context_menu-1.8.6` from the registry.
+[150.599s] Extension: `omni.kit.context_menu-1.8.6` was installed.
+[150.599s] Pulling extension: `omni.kit.widget.options_menu-1.1.6` from the registry.
+[151.274s] Extension: `omni.kit.widget.options_menu-1.1.6` was installed.
+[151.274s] Pulling extension: `omni.kit.helper.file_utils-0.1.9` from the registry.
+[151.666s] Extension: `omni.kit.helper.file_utils-0.1.9` was installed.
+[151.666s] Pulling extension: `omni.kit.widget.path_field-2.0.11` from the registry.
+[151.838s] Extension: `omni.kit.widget.path_field-2.0.11` was installed.
+[151.838s] Pulling extension: `omni.ui.scene-1.11.5` from the registry.
+[152.197s] Extension: `omni.ui.scene-1.11.5` was installed.
+[152.198s] Pulling extension: `omni.kit.widget.options_button-1.0.3` from the registry.
+[152.347s] Extension: `omni.kit.widget.options_button-1.0.3` was installed.
+[152.347s] Pulling extension: `omni.kit.widget.filebrowser-2.12.3` from the registry.
+[152.588s] Extension: `omni.kit.widget.filebrowser-2.12.3` was installed.
+[152.589s] Pulling extension: `omni.kit.widget.browser_bar-2.0.10` from the registry.
+[152.770s] Extension: `omni.kit.widget.browser_bar-2.0.10` was installed.
+[152.770s] Pulling extension: `omni.hydra.rtx.shadercache.vulkan-1.0.0` from the registry.
+[190.385s] Extension: `omni.hydra.rtx.shadercache.vulkan-1.0.0` was installed.
+[190.385s] Pulling extension: `omni.kit.window.filepicker-2.13.4` from the registry.
+[190.714s] Extension: `omni.kit.window.filepicker-2.13.4` was installed.
+[190.714s] Pulling extension: `omni.kit.property.adapter.core-1.0.2` from the registry.
+[191.089s] Extension: `omni.kit.property.adapter.core-1.0.2` was installed.
+[191.090s] Pulling extension: `omni.kit.window.file_exporter-1.0.33` from the registry.
+[191.240s] Extension: `omni.kit.window.file_exporter-1.0.33` was installed.
+[191.240s] Pulling extension: `omni.kit.widget.searchfield-1.1.8` from the registry.
+[191.387s] Extension: `omni.kit.widget.searchfield-1.1.8` was installed.
+[191.387s] Pulling extension: `omni.kit.widget.filter-1.1.4` from the registry.
+[191.536s] Extension: `omni.kit.widget.filter-1.1.4` was installed.
+[191.536s] Pulling extension: `omni.kit.hotkeys.core-1.3.10` from the registry.
+[192.190s] Extension: `omni.kit.hotkeys.core-1.3.10` was installed.
+[192.190s] Pulling extension: `omni.kit.property.adapter.fabric-1.0.3` from the registry.
+[192.847s] Extension: `omni.kit.property.adapter.fabric-1.0.3` was installed.
+[192.848s] Pulling extension: `omni.kit.widget.stage-3.1.4` from the registry.
+[193.193s] Extension: `omni.kit.widget.stage-3.1.4` was installed.
+[193.193s] Pulling extension: `omni.index.libs-380600.8087.0` from the registry.
+[204.772s] Extension: `omni.index.libs-380600.8087.0` was installed.
+[204.772s] Pulling extension: `omni.volume-0.5.2` from the registry.
+[207.021s] Extension: `omni.volume-0.5.2` was installed.
+[207.021s] Pulling extension: `omni.ujitso.client-0.0.0` from the registry.
+[207.147s] Extension: `omni.ujitso.client-0.0.0` was installed.
+[207.147s] Pulling extension: `omni.index-1.0.1` from the registry.
+[207.328s] Extension: `omni.index-1
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpbg25xl_f/omni.kit.hotkeys.core-1.3.10+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.hotkeys.core-cb1a93d6136317ad
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.hotkeys.core-1.3.10+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.hotkeys.core-cb1a93d6136317ad
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.property.adapter.fabric-b3b9506a8f535f97.zip' -> '/tmp/tmpie2i09h1/omni.kit.property.adapter.fabric-1.0.3+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpie2i09h1/omni.kit.property.adapter.fabric-1.0.3+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.property.adapter.fabric-b3b9506a8f535f97
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.property.adapter.fabric-1.0.3+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.property.adapter.fabric-b3b9506a8f535f97
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.widget.stage-61131e4900bab69e.zip' -> '/tmp/tmpouuunjtk/omni.kit.widget.stage-3.1.4+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpouuunjtk/omni.kit.widget.stage-3.1.4+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.stage-61131e4900bab69e
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.widget.stage-3.1.4+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.widget.stage-61131e4900bab69e
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.index.libs-de80df18a3de194a.zip' -> '/tmp/tmpk5suxq0g/omni.index.libs-380600.8087.0+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpk5suxq0g/omni.index.libs-380600.8087.0+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.index.libs-de80df18a3de194a
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.index.libs-380600.8087.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.index.libs-de80df18a3de194a
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.volume-b6555e15f0aa0e71.zip' -> '/tmp/tmpi9d4nax2/omni.volume-0.5.2+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpi9d4nax2/omni.volume-0.5.2+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.volume-b6555e15f0aa0e71
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.volume-0.5.2+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.volume-b6555e15f0aa0e71
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.ujitso.client-7ce0b76304173247.zip' -> '/tmp/tmpxqcy_2jr/omni.ujitso.client-0.0.0+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpxqcy_2jr/omni.ujitso.client-0.0.0+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.ujitso.client-7ce0b76304173247
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.ujitso.client-0.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.ujitso.client-7ce0b76304173247
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.index-85ad084a6057c82c.zip' -> '/tmp/tmpdm3bcgco/omni.index-1.0.1+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpdm3bcgco/omni.index-1.0.1+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.index-85ad084a6057c82c
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.index-1.0.1+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.index-85ad084a6057c82c
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.property.adapter.usd-003bcc73b23e28b6.zip' -> '/tmp/tmp03c10j0m/omni.kit.property.adapter.usd-1.0.2+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp03c10j0m/omni.kit.property.adapter.usd-1.0.2+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.property.adapter.usd-003bcc73b23e28b6
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.property.adapter.usd-1.0.2+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.property.adapter.usd-003bcc73b23e28b6
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.hydra.rtx-a92aa88e9f54b05f.zip' -> '/tmp/tmp3a3zt7wz/omni.hydra.rtx-1.0.0+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmp3a3zt7wz/omni.hydra.rtx-1.0.0+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.hydra.rtx-a92aa88e9f54b05f
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.hydra.rtx-1.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.hydra.rtx-a92aa88e9f54b05f
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.menu.utils-593474f8190443f8.zip' -> '/tmp/tmpl57ajw98/omni.kit.menu.utils-2.0.5+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpl57ajw98/omni.kit.menu.utils-2.0.5+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.menu.utils-593474f8190443f8
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.menu.utils-2.0.5+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.menu.utils-593474f8190443f8
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.viewport.scene_camera_model-eee83dbce5099538.zip' -> '/tmp/tmpff1xig7g/omni.kit.viewport.scene_camera_model-1.0.6+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 125920332236608] unpacking: /tmp/tmpff1xig7g/omni.kit.viewport.scene_camera_model-1.0.6+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.viewport.scene_camera_model-eee83dbce5099538
+[omni.kit.registry.nucleus] [tid: 125920332236608] creating a link: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim Python/5.1/exts/3/omni.kit.viewport.scene_camera_model-1.0.6+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.viewport.scene_camera_model-eee83dbce5099538
+[omni.kit.registry.nucleus] [tid: 125920332236608] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.kit.hydra_texture-b18dc0beebde28e9.zip' -> '/tmp/tmp6j3qkoci/omni.kit.hydra_texture-1.4.6+69cbf6ad.lx64.r.cp311.zip'...

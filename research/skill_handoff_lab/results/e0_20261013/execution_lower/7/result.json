@@ -1,0 +1,126 @@
+{
+  "schema_version": 3,
+  "planner": "cuRobo",
+  "mode": "CLEAR",
+  "planning_only": true,
+  "execution_allowed": false,
+  "expected_result": "SUCCESS",
+  "observed_result": "FAILURE",
+  "expectation_met": false,
+  "scene_snapshot_id": "E0-p1-y1-r1",
+  "scene_digest": "9f4dd4baef54e68be70699eaa48109e4d4f0d0006a5d7080c25a77cf7de7b07f",
+  "planning_context_digest": "1ae6243ea333a8b96d219d21a24dcc2c5c1b29e86097374ef8596bef328e8a8e",
+  "calibration_revision": "PINNED_URDF_WITH_2026-09-21_READONLY_FK_CORRECTION_AND_TOOL2_NOT_CURRENT_LIVE_TCP",
+  "geometry_revision": "d1760745784791feb5058526c5656804742c83be52ec717c2f5eac6a2fcec698",
+  "inactive_arm_revision": "acc50f39c17596f215410e5ce0f2fa0cc5815c6bfa74e9351ea36a6b6935fcc9",
+  "active_collision_revision": "sha256:f67fff814bc8bf7bb7a4dae7ac4e646a21d8b4e42520cec9b74d85fb372f03c6",
+  "active_collision_sphere_count": 1969,
+  "planner_gripper_component_revision": null,
+  "execution_tool_envelope_revision": null,
+  "attached_object_collision_revision": "sha256:d52554c0fcee7a5bcf71cf6a848ebcc9f5896fa0c787152114dc6ab5f0e94c5c",
+  "active_collision_sphere_cell_m": 0.02,
+  "world_cuboid_ids": [
+    "left/base_link",
+    "left/link1",
+    "left/link2",
+    "left/link3",
+    "left/link4",
+    "left/link5",
+    "left/link6",
+    "left/gripper",
+    "body/chassis_historical_lower",
+    "E0/table"
+  ],
+  "start_rad": [
+    -4.3619373555589025,
+    1.9484901952074203,
+    -1.7024379241870022,
+    -2.1489994941286445,
+    0.9272997104432554,
+    5.1086098086161575
+  ],
+  "goal_rad": [
+    4.823428662787884,
+    -0.09540672820105049,
+    -1.5306103454577986,
+    0.8108002481868136,
+    1.7202920132924684,
+    0.045088213701171755
+  ],
+  "selected_goal_candidate_index": null,
+  "selected_goal_candidate_metadata": null,
+  "runtime_motion_goal": null,
+  "goal_position_error_m": null,
+  "trajectory_points_rad": [],
+  "tcp_path_body_m": [],
+  "path_metrics": {
+    "path_length_m": 0.0,
+    "endpoint_distance_m": 0.0,
+    "length_ratio": null,
+    "max_straight_line_deviation_m": null
+  },
+  "clearance_m": {
+    "start": 0.10618929040100003,
+    "goal": 0.10618929040100003,
+    "joint_linear_baseline": -0.044868740993658576,
+    "planned_path": null
+  },
+  "path_clearance_by_object_m": {},
+  "planner_clearance_trace_m": [],
+  "path_limiting_object_id": null,
+  "central_tcp_margin_m": null,
+  "central_exclusion_enabled": true,
+  "dense_post_validation_samples": null,
+  "orientation_validation": null,
+  "smoothness": null,
+  "independent_dense_validation": null,
+  "endpoint_clearance_by_object_m": {
+    "start": {
+      "left/base_link": 0.3103805148919833,
+      "left/link1": 0.33662124944055044,
+      "left/link2": 0.4260673808100082,
+      "left/link3": 0.633375935877297,
+      "left/link4": 0.6762608711789312,
+      "left/link5": 0.7056997970930415,
+      "left/link6": 0.7802471374860108,
+      "left/gripper": 0.7905889018117506,
+      "body/chassis_historical_lower": 0.10618929040100003,
+      "E0/table": 0.2601564731409964
+    },
+    "goal": {
+      "left/base_link": 0.3103805148919833,
+      "left/link1": 0.33662124944055044,
+      "left/link2": 0.4260673808100082,
+      "left/link3": 0.633375935877297,
+      "left/link4": 0.680736572463842,
+      "left/link5": 0.7121469992965861,
+      "left/link6": 0.7911822189976626,
+      "left/gripper": 0.803991740090409,
+      "body/chassis_historical_lower": 0.10618929040100003,
+      "E0/table": 0.2734149471150824
+    }
+  },
+  "timing_s": {
+    "cuda_import": 1.7609447240829468e-05,
+    "curobo_world_and_planner_init": 2.779066562652588e-06,
+    "persistent_runtime_reused": true,
+    "one_time_warmup_s": 0.0,
+    "world_update_samples": [
+      0.008342845365405083
+    ],
+    "planning_samples": [
+      8.914157660678029
+    ],
+    "planning_errors": [],
+    "independent_dense_validation": 0.0,
+    "planning_reported_total": 3.7187359619140627,
+    "planning_reported_solve": 3.4032302246093753,
+    "postprocess_and_validation": 5.5584125220775604e-05,
+    "request_wall_before_serialization": 9.189769813790917,
+    "serialization": 0.0001837071031332016,
+    "request_to_result_wall": 9.189954371191561
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "curobo_version": "v0.8.0-no-tag",
+  "source_commit": "8e734f3ced1df898990bcd92de40abce475907db"
+}

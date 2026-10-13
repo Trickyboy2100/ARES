@@ -15,9 +15,11 @@ class HandoffBackend(Protocol):
 
 class SkillHandoffEnv:
     metadata={"render_modes":[]}
-    def __init__(self,backend:HandoffBackend,strict_execution:bool=True,allow_planning:bool=False):
+    def __init__(self,backend:HandoffBackend,strict_execution:bool=True,allow_planning:bool=False,cost_weight:float=.001):
         self.backend=backend; self.strict_execution=strict_execution
         self.allow_planning=allow_planning
+        if not np.isfinite(cost_weight) or cost_weight<0: raise ValueError('invalid cost weight')
+        self.cost_weight=float(cost_weight)
         self.current=None; self.total_cost=0.; self.decisions=[]; self.failures=[]
     @staticmethod
     def encode(observation:HandoffObservation):
@@ -50,7 +52,7 @@ class SkillHandoffEnv:
         self.failures.extend(transition.failure_codes)
         terminal=transition.downstream_success is not None
         reward=(float(bool(transition.downstream_success)) if terminal else 0.)
-        reward-=.001*float(transition.execution_cost)
+        reward-=self.cost_weight*float(transition.execution_cost)
         if terminal:
             obs={"state":np.zeros(0,dtype=np.float32),"action_features":np.zeros((0,0),dtype=np.float32),
                  "action_mask":np.zeros(0,dtype=bool),"stage":"TERMINAL","action_ids":()}

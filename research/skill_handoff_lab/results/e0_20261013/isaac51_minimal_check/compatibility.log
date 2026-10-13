@@ -1,0 +1,329 @@
+[Warning] PYTHONPATH: path doesn't exist (/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts/isaacsim.simulation_app)
+[Warning] PYTHONPATH: path doesn't exist (/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/extsDeprecated/omni.isaac.kit)
+[Warning] Unable to expose 'isaacsim.simulation_app' API: Extension not found
+syncing registry: 'https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/107/shared/v2' Downloading 495 files...
+syncing registry: 'https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/107.3/69cbf6ad/v2' Downloading 287 files...
+[omni.kit.registry.nucleus] [tid: 124290265147200] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.stats-5af6570b6dbaed29.zip' -> '/tmp/tmpsjac1x91/omni.stats-1.0.1+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 124290265147200] unpacking: /tmp/tmpsjac1x91/omni.stats-1.0.1+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.stats-5af6570b6dbaed29
+[omni.kit.registry.nucleus] [tid: 124290265147200] creating a link: /home/andyee/.local/share/ov/data/Kit/Isaac-Sim_Compatibility_Checker/5.1/exts/3/omni.stats-1.0.1+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.stats-5af6570b6dbaed29
+[omni.kit.registry.nucleus]: pruning global extensions cache: /home/andyee/.local/share/ov/data/exts/v2
+[omni.kit.registry.nucleus]: global extensions cache pruned: 0 links removed, 0 extensions removed
+[omni.kit.registry.nucleus] [tid: 124290265147200] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.client-34f5f1bc258c8a82.zip' -> '/tmp/tmp40ipjd14/omni.client-1.3.0+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 124290265147200] unpacking: /tmp/tmp40ipjd14/omni.client-1.3.0+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.client-34f5f1bc258c8a82
+[omni.kit.registry.nucleus] [tid: 124290265147200] creating a link: /home/andyee/.local/share/ov/data/Kit/Isaac-Sim_Compatibility_Checker/5.1/exts/3/omni.client-1.3.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.client-34f5f1bc258c8a82
+[omni.kit.registry.nucleus] [tid: 124290265147200] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.gpu_foundation.shadercache.vulkan-3328f727d2d7d0a1.zip' -> '/tmp/tmp7cnr9xsv/omni.gpu_foundation.shadercache.vulkan-1.0.0+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 124290265147200] unpacking: /tmp/tmp7cnr9xsv/omni.gpu_foundation.shadercache.vulkan-1.0.0+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.gpu_foundation.shadercache.vulkan-3328f727d2d7d0a1
+[omni.kit.registry.nucleus] [tid: 124290265147200] creating a link: /home/andyee/.local/share/ov/data/Kit/Isaac-Sim_Compatibility_Checker/5.1/exts/3/omni.gpu_foundation.shadercache.vulkan-1.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.gpu_foundation.shadercache.vulkan-3328f727d2d7d0a1
+[omni.kit.registry.nucleus] [tid: 124290265147200] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.assets.plugins-98526488c3190807.zip' -> '/tmp/tmpcn0l6ql4/omni.assets.plugins-0.0.0+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 124290265147200] unpacking: /tmp/tmpcn0l6ql4/omni.assets.plugins-0.0.0+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.assets.plugins-98526488c3190807
+[omni.kit.registry.nucleus] [tid: 124290265147200] creating a link: /home/andyee/.local/share/ov/data/Kit/Isaac-Sim_Compatibility_Checker/5.1/exts/3/omni.assets.plugins-0.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.assets.plugins-98526488c3190807
+[omni.kit.registry.nucleus] [tid: 124290265147200] downloading: 'https://d4i3qtqj3r0z5.cloudfront.net/omni.gpu_foundation-ac4242ceb78ce854.zip' -> '/tmp/tmpqvtmffo_/omni.gpu_foundation-0.0.0+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 124290265147200] unpacking: /tmp/tmpqvtmffo_/omni.gpu_foundation-0.0.0+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.gpu_foundation-ac4242ceb78ce854
+[omni.kit.registry.nucleus] [tid: 124290265147200] creating a link: /home/andyee/.local/share/ov/data/Kit/Isaac-Sim_Compatibility_Checker/5.1/exts/3/omni.gpu_foundation-0.0.0+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.gpu_foundation-ac4242ceb78ce854
+[omni.kit.registry.nucleus] [tid: 124290265147200] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/carb.windowing.plugins-65f196fe3765be80.zip' -> '/tmp/tmpr3f34_03/carb.windowing.plugins-1.0.0+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 124290265147200] unpacking: /tmp/tmpr3f34_03/carb.windowing.plugins-1.0.0+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/carb.windowing.plugins-65f196fe3765be80
+[omni.kit.registry.nucleus] [tid: 124290265147200] creating a link: /home/andyee/.local/share/ov/data/Kit/Isaac-Sim_Compatibility_Checker/5.1/exts/3/carb.windowing.plugins-1.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/carb.windowing.plugins-65f196fe3765be80
+[omni.kit.registry.nucleus] [tid: 124290265147200] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.renderer.init-6ab527fa42a2e7b7.zip' -> '/tmp/tmptyf96_n2/omni.kit.renderer.init-0.0.0+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 124290265147200] unpacking: /tmp/tmptyf96_n2/omni.kit.renderer.init-0.0.0+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.renderer.init-6ab527fa42a2e7b7
+[omni.kit.registry.nucleus] [tid: 124290265147200] creating a link: /home/andyee/.local/share/ov/data/Kit/Isaac-Sim_Compatibility_Checker/5.1/exts/3/omni.kit.renderer.init-0.0.0+69cbf6ad.lx64.r -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.renderer.init-6ab527fa42a2e7b7
+[omni.kit.registry.nucleus] [tid: 124290265147200] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.pipapi-16ea48c1ed676d23.zip' -> '/tmp/tmp1mkw6qn3/omni.kit.pipapi-0.0.0+69cbf6ad.zip'...
+[omni.kit.registry.nucleus] [tid: 124290265147200] unpacking: /tmp/tmp1mkw6qn3/omni.kit.pipapi-0.0.0+69cbf6ad.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.pipapi-16ea48c1ed676d23
+[omni.kit.registry.nucleus] [tid: 124290265147200] creating a link: /home/andyee/.local/share/ov/data/Kit/Isaac-Sim_Compatibility_Checker/5.1/exts/3/omni.kit.pipapi-0.0.0+69cbf6ad -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.pipapi-16ea48c1ed676d23
+[omni.kit.registry.nucleus] [tid: 124290265147200] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.pip_archive-d38fa9ecd1fb6df4.zip' -> '/tmp/tmpftiooj20/omni.kit.pip_archive-0.0.0+69cbf6ad.lx64.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 124290265147200] unpacking: /tmp/tmpftiooj20/omni.kit.pip_archive-0.0.0+69cbf6ad.lx64.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.pip_archive-d38fa9ecd1fb6df4
+[omni.kit.registry.nucleus] [tid: 124290265147200] creating a link: /home/andyee/.local/share/ov/data/Kit/Isaac-Sim_Compatibility_Checker/5.1/exts/3/omni.kit.pip_archive-0.0.0+69cbf6ad.lx64.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.pip_archive-d38fa9ecd1fb6df4
+[omni.kit.registry.nucleus] [tid: 124290265147200] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.telemetry-8994df2c5ad3f85e.zip' -> '/tmp/tmpnvq45djw/omni.kit.telemetry-0.5.2+69cbf6ad.lx64.r.cp311.zip'...
+[omni.kit.registry.nucleus] [tid: 124290265147200] unpacking: /tmp/tmpnvq45djw/omni.kit.telemetry-0.5.2+69cbf6ad.lx64.r.cp311.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.telemetry-8994df2c5ad3f85e
+[omni.kit.registry.nucleus] [tid: 124290265147200] creating a link: /home/andyee/.local/share/ov/data/Kit/Isaac-Sim_Compatibility_Checker/5.1/exts/3/omni.kit.telemetry-0.5.2+69cbf6ad.lx64.r.cp311 -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.telemetry-8994df2c5ad3f85e
+[omni.kit.registry.nucleus] [tid: 124290265147200] downloading: 'http://d4i3qtqj3r0z5.cloudfront.net/omni.kit.loop-default-8527d65f8e6ff569.zip' -> '/tmp/tmpewyu_aty/omni.kit.loop-default-0.2.2+69cbf6ad.lx64.r.zip'...
+[omni.kit.registry.nucleus] [tid: 124290265147200] unpacking: /tmp/tmpewyu_aty/omni.kit.loop-default-0.2.2+69cbf6ad.lx64.r.zip -> /home/andyee/.local/share/ov/data/exts/v2/omni.kit.loop-default-8527d65f8e6ff569[Info] [carb] Logging to file: /home/andyee/.nvidia-omniverse/logs/Kit/Isaac-Sim_Compatibility_Checker/5.1/kit_20261013_163308.log
+2026-10-13T08:33:08Z [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+[0.099s] Failed to solve some dependencies locally, syncing with extension registry...
+[0.101s] [ext: omni.kit.async_engine-0.0.3] startup
+[0.108s] [ext: omni.client.lib-1.1.0] startup
+[0.139s] [ext: omni.kit.registry.nucleus-0.0.0] startup
+[13.552s] Pulling extension: `omni.stats-1.0.1` from the registry.
+[14.703s] Extension: `omni.stats-1.0.1` was installed.
+[14.703s] Pulling extension: `omni.client-1.3.0` from the registry.
+[15.005s] Extension: `omni.client-1.3.0` was installed.
+[15.005s] Pulling extension: `omni.gpu_foundation.shadercache.vulkan-1.0.0` from the registry.
+[15.169s] Extension: `omni.gpu_foundation.shadercache.vulkan-1.0.0` was installed.
+[15.169s] Pulling extension: `omni.assets.plugins-0.0.0` from the registry.
+[15.639s] Extension: `omni.assets.plugins-0.0.0` was installed.
+[15.639s] Pulling extension: `omni.gpu_foundation-0.0.0` from the registry.
+[21.533s] Extension: `omni.gpu_foundation-0.0.0` was installed.
+[21.533s] Pulling extension: `carb.windowing.plugins-1.0.0` from the registry.
+[21.686s] Extension: `carb.windowing.plugins-1.0.0` was installed.
+[21.686s] Pulling extension: `omni.kit.renderer.init-0.0.0` from the registry.
+[21.828s] Extension: `omni.kit.renderer.init-0.0.0` was installed.
+[21.828s] Pulling extension: `omni.kit.pipapi-0.0.0` from the registry.
+[21.969s] Extension: `omni.kit.pipapi-0.0.0` was installed.
+[21.969s] Pulling extension: `omni.kit.pip_archive-0.0.0` from the registry.
+[27.312s] Extension: `omni.kit.pip_archive-0.0.0` was installed.
+[27.312s] Pulling extension: `omni.kit.telemetry-0.5.2` from the registry.
+[28.770s] Extension: `omni.kit.telemetry-0.5.2` was installed.
+[28.770s] Pulling extension: `omni.kit.loop-default-0.2.2` from the registry.
+[28.908s] Extension: `omni.kit.loop-default-0.2.2` was installed.
+[28.908s] Pulling extension: `omni.appwindow-1.1.10` from the registry.
+[29.078s] Extension: `omni.appwindow-1.1.10` was installed.
+[29.078s] Pulling extension: `omni.kit.renderer.core-1.1.0` from the registry.
+[29.305s] Extension: `omni.kit.renderer.core-1.1.0` was installed.
+[29.305s] Pulling extension: `omni.kit.renderer.capture-0.0.0` from the registry.
+[29.504s] Extension: `omni.kit.renderer.capture-0.0.0` was installed.
+[29.504s] Pulling extension: `omni.kit.renderer.imgui-2.0.5` from the registry.
+[30.397s] Extension: `omni.kit.renderer.imgui-2.0.5` was installed.
+[30.397s] Pulling extension: `omni.ui-2.27.1` from the registry.
+[30.832s] Extension: `omni.ui-2.27.1` was installed.
+[30.832s] Pulling extension: `omni.kit.mainwindow-1.0.3` from the registry.
+[30.980s] Extension: `omni.kit.mainwindow-1.0.3` was installed.
+[30.980s] Pulling extension: `carb.audio-0.1.0` from the registry.
+[31.280s] Extension: `carb.audio-0.1.0` was installed.
+[31.280s] Pulling extension: `omni.uiaudio-1.0.0` from the registry.
+[31.438s] Extension: `omni.uiaudio-1.0.0` was installed.
+[31.438s] Pulling extension: `omni.kit.uiapp-0.0.0` from the registry.
+[31.584s] Extension: `omni.kit.uiapp-0.0.0` was installed.
+[31.591s] [ext: omni.stats-1.0.1] startup
+[31.678s] [ext: omni.client-1.3.0] startup
+[31.681s] [ext: omni.gpu_foundation.shadercache.vulkan-1.0.0] startup
+[31.688s] [ext: omni.assets.plugins-0.0.0] startup
+[31.691s] [ext: omni.gpu_foundation-0.0.0] startup
+[31.709s] [ext: carb.windowing.plugins-1.0.0] startup
+2026-10-13T08:33:39Z [31,620ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:33:39Z [31,620ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+[31.712s] [ext: omni.kit.renderer.init-0.0.0] startup
+2026-10-13T08:33:39Z [31,674ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-10-13T08:33:39Z [31,682ms] [Warning] [carb.cudainterop.plugin] CUDA_VISIBLE_DEVICES environment variable is set.
+2026-10-13T08:33:39Z [31,682ms] [Warning] [carb.cudainterop.plugin] Note CUDA device enumeration and Omniverse device enumeration are different.
+2026-10-13T08:33:39Z [31,682ms] [Warning] [carb.cudainterop.plugin] Setting CUDA_VISIBLE_DEVICES can lead to undesired behavior or crashes.
+2026-10-13T08:33:40Z [32,059ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:33:40Z [32,059ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T08:33:40Z [32,381ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,381ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,382ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,382ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,387ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,387ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,388ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,388ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,390ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,390ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,391ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,392ms] [Error] [gpu.foundation.plugin] Multiple Installable Client Drivers (ICDs) are found for the same GPU on the system. This causes the same GPU to be reported multiple times by more than one driver and leads to instability or crash. 
+It requires multi-gpu mode to be disabled and the correct device with the correct driver to be set via activeGpu setting.
+For NVIDIA drivers, please follow troubleshooting docs to uninstall and completely purge Linux-distribution-provided driver packages, and then reinstall your driver cleanly via .run package. Otherwise, updating Ubuntu software may reinstall a secondary ICD or override the existing NVIDIA driver.
+
+To verify the proper NVIDIA driver installation, only one of the following icd.d folders should contain nvidia_icd.json file:
+/etc/vulkan/icd.d: Location of ICDs installed from non-Linux-distribution-provided packages
+/usr/share/vulkan/icd.d : Location of ICDs installed from Linux-distribution-provided packages
+2026-10-13T08:33:40Z [32,393ms] [Warning] [gpu.foundation.plugin] activeGpu 1 is not compatible with current foundation settings.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 560.35.05     | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 67aee2f0.. |
+|     |                                  |        |     |            | 2         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 67aee2f0.. |
+|     |                                  |        |     |            | 2         |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 1be16c79.. |
+|     |                                  |        |     |            | 3         |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 1be16c79.. |
+|     |                                  |        |     |            | 3         |            |
+|---------------------------------------------------------------------------------------------|
+| 4   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 32729722.. |
+|     |                                  |        |     |            | 82        |            |
+|---------------------------------------------------------------------------------------------|
+| 5   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 32729722.. |
+|     |                                  |        |     |            | 82        |            |
+|---------------------------------------------------------------------------------------------|
+| 6   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 54b75149.. |
+|     |                                  |        |     |            | 83        |            |
+|---------------------------------------------------------------------------------------------|
+| 7   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 54b75149.. |
+|     |                                  |        |     |            | 83        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-124-generic
+| Processor: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+| Cores: 36 | Logical Cores: 72
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 193274 | Free Memory: 187096
+| Total Page/Swap (MB): 16383 | Free Page/Swap: 15994
+|---------------------------------------------------------------------------------------------|
+2026-10-13T08:33:40Z [32,393ms] [Error] [gpu.foundation.plugin] No device could be created. Some known system issues:
+- The driver is not installed properly and requires a clean re-install.
+- Your GPUs do not support RayTracing: DXR or Vulkan ray_tracing, or hardware is excluded due to performance.
+- The driver cannot enumerate any GPU: driver, display, TCC mode or a docker issue. For Vulkan, test it with Vulkaninfo tool from Vulkan SDK, instead of nvidia-smi.
+- For Ubuntu, it requires server-xorg-core 1.20.7+ and a display to work without --no-window.
+- For Linux dockers, the setup is not complete. Install the latest driver, xServer and NVIDIA container runtime.
+
+2026-10-13T08:33:40Z [32,578ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,578ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,580ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,580ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,584ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,584ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,585ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,585ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,587ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,587ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,588ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA GeForce RTX 4090
+2026-10-13T08:33:40Z [32,588ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-10-13T08:33:40Z [32,589ms] [Error] [gpu.foundation.plugin] Multiple Installable Client Drivers (ICDs) are found for the same GPU on the system. This causes the same GPU to be reported multiple times by more than one driver and leads to instability or crash. 
+It requires multi-gpu mode to be disabled and the correct device with the correct driver to be set via activeGpu setting.
+For NVIDIA drivers, please follow troubleshooting docs to uninstall and completely purge Linux-distribution-provided driver packages, and then reinstall your driver cleanly via .run package. Otherwise, updating Ubuntu software may reinstall a secondary ICD or override the existing NVIDIA driver.
+
+To verify the proper NVIDIA driver installation, only one of the following icd.d folders should contain nvidia_icd.json file:
+/etc/vulkan/icd.d: Location of ICDs installed from non-Linux-distribution-provided packages
+/usr/share/vulkan/icd.d : Location of ICDs installed from Linux-distribution-provided packages
+2026-10-13T08:33:40Z [32,590ms] [Warning] [gpu.foundation.plugin] activeGpu 1 is not compatible with current foundation settings.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 560.35.05     | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 67aee2f0.. |
+|     |                                  |        |     |            | 2         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 67aee2f0.. |
+|     |                                  |        |     |            | 2         |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 1be16c79.. |
+|     |                                  |        |     |            | 3         |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 1be16c79.. |
+|     |                                  |        |     |            | 3         |            |
+|---------------------------------------------------------------------------------------------|
+| 4   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 32729722.. |
+|     |                                  |        |     |            | 82        |            |
+|---------------------------------------------------------------------------------------------|
+| 5   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 32729722.. |
+|     |                                  |        |     |            | 82        |            |
+|---------------------------------------------------------------------------------------------|
+| 6   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 54b75149.. |
+|     |                                  |        |     |            | 83        |            |
+|---------------------------------------------------------------------------------------------|
+| 7   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 54b75149.. |
+|     |                                  |        |     |            | 83        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-124-generic
+| Processor: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+| Cores: 36 | Logical Cores: 72
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 193274 | Free Memory: 187012
+| Total Page/Swap (MB): 16383 | Free Page/Swap: 15994
+|---------------------------------------------------------------------------------------------|
+2026-10-13T08:33:41Z [32,915ms] [Error] [gpu.foundation.plugin] No device could be created. Some known system issues:
+- The driver is not installed properly and requires a clean re-install.
+- Your GPUs do not support RayTracing: DXR or Vulkan ray_tracing, or hardware is excluded due to performance.
+- The driver cannot enumerate any GPU: driver, display, TCC mode or a docker issue. For Vulkan, test it with Vulkaninfo tool from Vulkan SDK, instead of nvidia-smi.
+- For Ubuntu, it requires server-xorg-core 1.20.7+ and a display to work without --no-window.
+- For Linux dockers, the setup is not complete. Install the latest driver, xServer and NVIDIA container runtime.
+
+2026-10-13T08:33:41Z [32,929ms] [Error] [omni.gpu_foundation_factory.plugin] Failed to create any GPU devices, including an attempt with compatibility mode.
+
+(zenity:476977): Gtk-WARNING **: 16:33:41.237: cannot open display: 
+[33.178s] [ext: omni.kit.pipapi-0.0.0] startup
+[33.183s] [ext: omni.kit.pip_archive-0.0.0] startup
+[33.184s] [ext: omni.kit.telemetry-0.5.2] startup
+[33.226s] [ext: omni.kit.loop-default-0.2.2] startup
+[33.227s] [ext: omni.appwindow-1.1.10] startup
+2026-10-13T08:33:41Z [33,137ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:33:41Z [33,137ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+[33.231s] [ext: omni.kit.renderer.core-1.1.0] startup
+2026-10-13T08:33:41Z [33,142ms] [Error] [omni.kit.renderer.plugin] GPU Foundation is not initialized!
+2026-10-13T08:33:41Z [33,147ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:33:41Z [33,147ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+[33.241s] [ext: omni.kit.renderer.capture-0.0.0] startup
+[33.245s] [ext: omni.kit.renderer.imgui-2.0.5] startup
+2026-10-13T08:33:41Z [33,161ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T08:33:41Z [33,161ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T08:33:41Z [33,161ms] [Error] [omni.kit.imgui_renderer.plugin] _prepareDefaultWindow: invalid device attached to the default window!
+[33.256s] [ext: omni.ui-2.27.1] startup
+[33.278s] [ext: omni.kit.mainwindow-1.0.3] startup
+[33.281s] [ext: carb.audio-0.1.0] startup
+[33.285s] [ext: omni.uiaudio-1.0.0] startup
+[33.286s] [ext: omni.kit.uiapp-0.0.0] startup
+[33.286s] [ext: isaacsim.app.compatibility_check-1.1.1] startup
+2026-10-13T08:33:41Z [33,205ms] [Error] [omni.ext._impl.custom_importer] Failed to import python module isaacsim.app.compatibility_check. Error: No module named 'setuptools'. Traceback:
+Traceback (most recent call last):
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts/isaacsim.app.compatibility_check-1.1.1+107.3.2.lx64.r.cp311/isaacsim/app/compatibility_check/impl/compatibility_checker.py", line 29, in <module>
+    from packaging.version import parse as parse_version
+ModuleNotFoundError: No module named 'packaging'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/python-managed/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts/isaacsim.app.compatibility_check-1.1.1+107.3.2.lx64.r.cp311/isaacsim/app/compatibility_check/__init__.py", line 16, in <module>
+    from .impl import *
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts/isaacsim.app.compatibility_check-1.1.1+107.3.2.lx64.r.cp311/isaacsim/app/compatibility_check/impl/__init__.py", line 16, in <module>
+    from .extension import *
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts/isaacsim.app.compatibility_check-1.1.1+107.3.2.lx64.r.cp311/isaacsim/app/compatibility_check/impl/extension.py", line 22, in <module>
+    from . import compatibility_checker
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts/isaacsim.app.compatibility_check-1.1.1+107.3.2.lx64.r.cp311/isaacsim/app/compatibility_check/impl/compatibility_checker.py", line 31, in <module>
+    import setuptools  # noqa: F401
+    ^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'setuptools'
+
+2026-10-13T08:33:41Z [33,205ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'isaacsim.app.compatibility_check' in '/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts/isaacsim.app.compatibility_check-1.1.1+107.3.2.lx64.r.cp311' failed to load.
+
+At:
+  /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+  /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/kit_app.py(119): startup
+  /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/__init__.py(210): main
+  /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/bin/isaacsim(10): <module>
+
+2026-10-13T08:33:41Z [33,205ms] [Error] [omni.ext.plugin] [ext: isaacsim.app.compatibility_check-1.1.1] Failed to startup python extension.
+[33.320s] [ext: isaacsim.exp.compatibility_check-5.1.0] startup
+[33.338s] app ready

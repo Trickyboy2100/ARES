@@ -1,0 +1,326 @@
+[
+  {
+    "group": 0,
+    "split": "train",
+    "roll": 0,
+    "target_body_m": [
+      0.46,
+      -0.5,
+      1.45
+    ],
+    "ik_found": true,
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4300000000021143,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "group": 0,
+    "split": "train",
+    "roll": 1,
+    "target_body_m": [
+      0.46,
+      -0.5,
+      1.45
+    ],
+    "ik_found": true,
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4300000000004645,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "group": 1,
+    "split": "validation",
+    "roll": 0,
+    "target_body_m": [
+      0.48,
+      -0.5,
+      1.45
+    ],
+    "ik_found": true,
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4300000000000002,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "group": 1,
+    "split": "validation",
+    "roll": 1,
+    "target_body_m": [
+      0.48,
+      -0.5,
+      1.45
+    ],
+    "ik_found": true,
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4300000000925474,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "group": 2,
+    "split": "test",
+    "roll": 0,
+    "target_body_m": [
+      0.5,
+      -0.5,
+      1.45
+    ],
+    "ik_found": true,
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4299999999999644,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "group": 2,
+    "split": "test",
+    "roll": 1,
+    "target_body_m": [
+      0.5,
+      -0.5,
+      1.45
+    ],
+    "ik_found": true,
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.42999999999999744,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "group": 3,
+    "split": "train",
+    "roll": 0,
+    "target_body_m": [
+      0.46,
+      -0.46,
+      1.45
+    ],
+    "ik_found": true,
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.3899999999809521,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "group": 3,
+    "split": "train",
+    "roll": 1,
+    "target_body_m": [
+      0.46,
+      -0.46,
+      1.45
+    ],
+    "ik_found": true,
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.38999999999524076,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "group": 4,
+    "split": "train",
+    "roll": 0,
+    "target_body_m": [
+      0.48,
+      -0.46,
+      1.45
+    ],
+    "ik_found": true,
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.390000000000026,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "group": 4,
+    "split": "train",
+    "roll": 1,
+    "target_body_m": [
+      0.48,
+      -0.46,
+      1.45
+    ],
+    "ik_found": true,
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.390000000000002,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "group": 5,
+    "split": "test",
+    "roll": 0,
+    "target_body_m": [
+      0.5,
+      -0.46,
+      1.45
+    ],
+    "ik_found": true,
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.39000000002276874,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  },
+  {
+    "group": 5,
+    "split": "test",
+    "roll": 1,
+    "target_body_m": [
+      0.5,
+      -0.46,
+      1.45
+    ],
+    "ik_found": true,
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 2,
+      "validation_knots": 2,
+      "maximum_knot_joint_step_rad": 0.0,
+      "dense_samples": 3,
+      "subdivisions": 2,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.39000000000345025,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    }
+  }
+]

@@ -1,0 +1,818 @@
+[
+  {
+    "candidate_id": "E0-goal-0-roll-0",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "80b1876a937ec470d603ba6370bd06d1fe06ddea1bc9725e9e4aa2d33c697cbd",
+    "result_sha256": "7b220ab67913979f9795c1864ab9cea6981de759b5042fd868768291c7769788",
+    "validator_sha256": "fa2dcf0be09d330ec12252422b1b5d9071ee4c32d0bbbd6e928e7c66f1952863",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 61,
+      "validation_knots": 48,
+      "maximum_knot_joint_step_rad": 0.006933927536010742,
+      "dense_samples": 189,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.40999996848925907,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.026596104250364547,
+      "max_forward_tilt_deg": 0.008499963786829856,
+      "max_finger_axis_tilt_deg": 0.007853622069470687,
+      "tolerance_deg": 3.0,
+      "dense_samples": 241,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      1.5588345392281155e-07,
+      1.716025272990862e-07
+    ],
+    "dense_samples": 241,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 0.06336402887826745,
+    "joint_path_rad": 0.3526269028832024,
+    "minimum_joint_margin_rad": 0.09946983544731891,
+    "held_center_path_m": 0.06336510327710902
+  },
+  {
+    "candidate_id": "E0-goal-0-roll-1",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "66083ff08dc2bf70e8ba26752e2e5be46aaa77da409b28a4b5868a76f2eca361",
+    "result_sha256": "8f969b8c94bac0fa6578e66ec8291c2f4c895f40afbd35d7c08dd149e52133ce",
+    "validator_sha256": "fa2dcf0be09d330ec12252422b1b5d9071ee4c32d0bbbd6e928e7c66f1952863",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 81,
+      "validation_knots": 62,
+      "maximum_knot_joint_step_rad": 0.005534768104553223,
+      "dense_samples": 245,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4099999837308729,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.0305895588625437,
+      "max_forward_tilt_deg": 0.011931032703390734,
+      "max_finger_axis_tilt_deg": 0.008169768223658664,
+      "tolerance_deg": 3.0,
+      "dense_samples": 321,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      7.26696789410397e-08,
+      1.682247288137262e-07
+    ],
+    "dense_samples": 321,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 0.06339746440650107,
+    "joint_path_rad": 0.3870207098099119,
+    "minimum_joint_margin_rad": 0.083171302961357,
+    "held_center_path_m": 0.06339915828488174
+  },
+  {
+    "candidate_id": "E0-goal-5-roll-0",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "6c53ab9fe0ad5dc6e36e9534bb58c4ae7b0dfd82722d513a6cc9e7b08c06d46d",
+    "result_sha256": "28f603eaf610119bff99c2316799e72df40c5e969e3df58ce56121ef48f47377",
+    "validator_sha256": "fa2dcf0be09d330ec12252422b1b5d9071ee4c32d0bbbd6e928e7c66f1952863",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 81,
+      "validation_knots": 64,
+      "maximum_knot_joint_step_rad": 0.007442116737365723,
+      "dense_samples": 253,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.39000003735795385,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.05855198918390753,
+      "max_forward_tilt_deg": 0.017042031175113787,
+      "max_finger_axis_tilt_deg": 0.01677577510436125,
+      "tolerance_deg": 3.0,
+      "dense_samples": 321,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      1.5588345392281155e-07,
+      1.7205399549524714e-07
+    ],
+    "dense_samples": 321,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 0.10235021634201633,
+    "joint_path_rad": 0.5575809775098624,
+    "minimum_joint_margin_rad": 0.09946983544731891,
+    "held_center_path_m": 0.10235209492528548
+  },
+  {
+    "candidate_id": "E0-goal-5-roll-1",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "50074f7bf23718650d2711301d899c7eca27a51d996ea106ef6f7b2da896c55b",
+    "result_sha256": "21021a73a1a65da730836ef3b680bf30303a407418c93e442417c9b857587cd1",
+    "validator_sha256": "fa2dcf0be09d330ec12252422b1b5d9071ee4c32d0bbbd6e928e7c66f1952863",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 101,
+      "validation_knots": 80,
+      "maximum_knot_joint_step_rad": 0.007623434066772461,
+      "dense_samples": 317,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.3900000131044515,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.062402477319712865,
+      "max_forward_tilt_deg": 0.021633743616572974,
+      "max_finger_axis_tilt_deg": 0.015402850301635787,
+      "tolerance_deg": 3.0,
+      "dense_samples": 401,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      7.26696789410397e-08,
+      8.126456063628495e-08
+    ],
+    "dense_samples": 401,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 0.10252855176456241,
+    "joint_path_rad": 0.6571650291135681,
+    "minimum_joint_margin_rad": 0.083171302961357,
+    "held_center_path_m": 0.10253252926456301
+  },
+  {
+    "candidate_id": "E0-goal-1-roll-0",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "b837795907d71f47e4f795372144b5c27c67de33ebbc5844fa8ea53a738a4088",
+    "result_sha256": "d5ca6b0d4b38ffde7a8d60320340360787d2f4dc3faf14ce7d2ccedf86c4496e",
+    "validator_sha256": "fa2dcf0be09d330ec12252422b1b5d9071ee4c32d0bbbd6e928e7c66f1952863",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 81,
+      "validation_knots": 64,
+      "maximum_knot_joint_step_rad": 0.0065233707427978516,
+      "dense_samples": 253,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.40999996848925907,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.03575206144235654,
+      "max_forward_tilt_deg": 0.011038040691855353,
+      "max_finger_axis_tilt_deg": 0.010290116046859612,
+      "tolerance_deg": 3.0,
+      "dense_samples": 321,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      1.5588345392281155e-07,
+      7.972368099018468e-08
+    ],
+    "dense_samples": 321,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 0.08271908676175524,
+    "joint_path_rad": 0.4608345887897201,
+    "minimum_joint_margin_rad": 0.09946983544731891,
+    "held_center_path_m": 0.08272078128339942
+  },
+  {
+    "candidate_id": "E0-goal-1-roll-1",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "8b506fb51c37e06ebd0b8b6b3dacdea318f7aca13aaf681cc568297d4025d6b6",
+    "result_sha256": "626017ec69294b7ca14a845f146996085fc31157d7377283421143d34f9bc94f",
+    "validator_sha256": "fa2dcf0be09d330ec12252422b1b5d9071ee4c32d0bbbd6e928e7c66f1952863",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 81,
+      "validation_knots": 64,
+      "maximum_knot_joint_step_rad": 0.006913542747497559,
+      "dense_samples": 253,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4099999837308729,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.042030483580672344,
+      "max_forward_tilt_deg": 0.015749798845732795,
+      "max_finger_axis_tilt_deg": 0.01081490512031789,
+      "tolerance_deg": 3.0,
+      "dense_samples": 321,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      7.26696789410397e-08,
+      1.7465574742026035e-07
+    ],
+    "dense_samples": 321,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 0.08279601995401961,
+    "joint_path_rad": 0.508366353885542,
+    "minimum_joint_margin_rad": 0.083171302961357,
+    "held_center_path_m": 0.08279895697376108
+  },
+  {
+    "candidate_id": "E0-goal-2-roll-0",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "5aca7c20b1179fadd479985d3b56656c8eda5fa2cb23dfa042d0ec38f2bd3e8d",
+    "result_sha256": "060aae3d1c48a56acdd2129d257164bf3fed6f81f5ed0b2262de0e4c9472ca06",
+    "validator_sha256": "fa2dcf0be09d330ec12252422b1b5d9071ee4c32d0bbbd6e928e7c66f1952863",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 81,
+      "validation_knots": 64,
+      "maximum_knot_joint_step_rad": 0.00789189338684082,
+      "dense_samples": 253,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.40999996848925907,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.04168082927039155,
+      "max_forward_tilt_deg": 0.012567690793367964,
+      "max_finger_axis_tilt_deg": 0.011909317240864482,
+      "tolerance_deg": 3.0,
+      "dense_samples": 321,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      1.5588345392281155e-07,
+      1.038528567587349e-07
+    ],
+    "dense_samples": 321,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 0.10247442305689314,
+    "joint_path_rad": 0.5719982250142412,
+    "minimum_joint_margin_rad": 0.09946983544731891,
+    "held_center_path_m": 0.10247679218747097
+  },
+  {
+    "candidate_id": "E0-goal-2-roll-1",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "234314b704a98ec3d4fa93ac3d1209e943d2879317a98c887d261f9de19a5f6a",
+    "result_sha256": "f96939ae9705e2bd86a885280eacc1ef06fbe3b99d7e15ae266df37870b2bd31",
+    "validator_sha256": "fa2dcf0be09d330ec12252422b1b5d9071ee4c32d0bbbd6e928e7c66f1952863",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 81,
+      "validation_knots": 64,
+      "maximum_knot_joint_step_rad": 0.008310437202453613,
+      "dense_samples": 253,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.4099999837308729,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.049571595896285826,
+      "max_forward_tilt_deg": 0.0176294134931113,
+      "max_finger_axis_tilt_deg": 0.011784177053984882,
+      "tolerance_deg": 3.0,
+      "dense_samples": 321,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      7.26696789410397e-08,
+      1.4811752713228543e-07
+    ],
+    "dense_samples": 321,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 0.10262336618512703,
+    "joint_path_rad": 0.6311634543660027,
+    "minimum_joint_margin_rad": 0.083171302961357,
+    "held_center_path_m": 0.10262741044818406
+  },
+  {
+    "candidate_id": "E0-goal-3-roll-0",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "1b3a5b81dc63e073dbb57cf43c5ab37a328ac1656bdd38719f9c17b92c9a4c71",
+    "result_sha256": "8cd0e93ea99153bb9af7925f9011c77183fa23986844d61ff250b0081297b875",
+    "validator_sha256": "fa2dcf0be09d330ec12252422b1b5d9071ee4c32d0bbbd6e928e7c66f1952863",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 61,
+      "validation_knots": 48,
+      "maximum_knot_joint_step_rad": 0.006527423858642578,
+      "dense_samples": 189,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.38999998853080753,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.042177602936959775,
+      "max_forward_tilt_deg": 0.012832748703713152,
+      "max_finger_axis_tilt_deg": 0.013078533276368732,
+      "tolerance_deg": 3.0,
+      "dense_samples": 241,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      1.5588345392281155e-07,
+      5.562392213498413e-08
+    ],
+    "dense_samples": 241,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 0.0633298929749365,
+    "joint_path_rad": 0.34499001479937386,
+    "minimum_joint_margin_rad": 0.09946983544731891,
+    "held_center_path_m": 0.06333065410599492
+  },
+  {
+    "candidate_id": "E0-goal-3-roll-1",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "70a076e78b8e924e7a47a4df11d662ea49b8689e0d107d9b2702621d1487e418",
+    "result_sha256": "6e5130ba745070dff18a5383514dcb691a580178b5160972c109184a3f06ca7d",
+    "validator_sha256": "fa2dcf0be09d330ec12252422b1b5d9071ee4c32d0bbbd6e928e7c66f1952863",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 81,
+      "validation_knots": 64,
+      "maximum_knot_joint_step_rad": 0.0062885284423828125,
+      "dense_samples": 253,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.3900000132426945,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.046214634120392485,
+      "max_forward_tilt_deg": 0.016578447013160875,
+      "max_finger_axis_tilt_deg": 0.011838803181312,
+      "tolerance_deg": 3.0,
+      "dense_samples": 321,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      7.26696789410397e-08,
+      1.2502528878854946e-07
+    ],
+    "dense_samples": 321,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 0.06336801274839177,
+    "joint_path_rad": 0.41400112730835237,
+    "minimum_joint_margin_rad": 0.083171302961357,
+    "held_center_path_m": 0.0633699192384076
+  },
+  {
+    "candidate_id": "E0-goal-4-roll-0",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "24458168db390d0428ef19b5306aa1807324e3775f159d43c8b51cf24245630f",
+    "result_sha256": "3ff418c33cdd7e279e7163c1758ce2f573a43e8c12f2e36446c0a7d91bda1ca2",
+    "validator_sha256": "fa2dcf0be09d330ec12252422b1b5d9071ee4c32d0bbbd6e928e7c66f1952863",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 81,
+      "validation_knots": 63,
+      "maximum_knot_joint_step_rad": 0.006221294403076172,
+      "dense_samples": 249,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.3899999982727969,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.05180708437836957,
+      "max_forward_tilt_deg": 0.01521165357712057,
+      "max_finger_axis_tilt_deg": 0.015102627159564884,
+      "tolerance_deg": 3.0,
+      "dense_samples": 321,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      1.5588345392281155e-07,
+      9.50144152245258e-08
+    ],
+    "dense_samples": 321,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 0.0826488313835946,
+    "joint_path_rad": 0.4507666175869698,
+    "minimum_joint_margin_rad": 0.09946983544731891,
+    "held_center_path_m": 0.08264996162946897
+  },
+  {
+    "candidate_id": "E0-goal-4-roll-1",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "7873e6f8b90fead572e212e1954e6eff3e051e1f6ce4bed2edb2c240b1ac7c9e",
+    "result_sha256": "de59bce7adec49b76cb33edb0a7441b3fb5ddd3dbfb8895ac8a169237e3cd5ff",
+    "validator_sha256": "fa2dcf0be09d330ec12252422b1b5d9071ee4c32d0bbbd6e928e7c66f1952863",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 81,
+      "validation_knots": 64,
+      "maximum_knot_joint_step_rad": 0.007968783378601074,
+      "dense_samples": 253,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.39000002992734806,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.05628875208682049,
+      "max_forward_tilt_deg": 0.019705649429743628,
+      "max_finger_axis_tilt_deg": 0.014196588468260402,
+      "tolerance_deg": 3.0,
+      "dense_samples": 321,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      7.26696789410397e-08,
+      1.6353540543967426e-07
+    ],
+    "dense_samples": 321,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 0.08273886115149334,
+    "joint_path_rad": 0.5363212324423295,
+    "minimum_joint_margin_rad": 0.083171302961357,
+    "held_center_path_m": 0.08274191338079995
+  }
+]

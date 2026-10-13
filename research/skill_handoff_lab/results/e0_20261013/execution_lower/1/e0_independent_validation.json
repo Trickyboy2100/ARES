@@ -1,0 +1,68 @@
+{
+  "candidate_id": "E0-p1-y1-r0-ik0-1",
+  "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+  "physical_success": false,
+  "full_chassis_safety_qualified": false,
+  "planning_result": "FAILURE",
+  "request_sha256": "44818b5dd61a9f97039e483b40118e1eac0a72b00b6bfe79b90b90833ca0f599",
+  "result_sha256": "103115f1d0a3119804b69f097195a836a52e73b9843935420f63fa3ceb63567b",
+  "validator_sha256": "0a3fba19f4d2efb6f1c9d7f5f59d429092aa9661ed62c7dd10e983dffd280c41",
+  "world": {
+    "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+    "gripper_component_revision": null,
+    "input_trajectory_samples": 1681,
+    "validation_knots": 1080,
+    "maximum_knot_joint_step_rad": 0.012464284896850586,
+    "dense_samples": 4317,
+    "subdivisions": 4,
+    "min_clearance_m": 0.10564438661088654,
+    "limiting_object_id": "E0/table",
+    "limiting_robot_component_id": "link2",
+    "central_tcp_margin_m": 0.10414874126666365,
+    "central_exclusion_enabled": true,
+    "collision_free": true,
+    "self_collision_independently_checked": false
+  },
+  "self_collision_codes": [],
+  "held_arm_collision_codes": [],
+  "soft_limits": true,
+  "orientation": {
+    "passed": false,
+    "max_orientation_error_deg": 179.7425268690048,
+    "max_forward_tilt_deg": 37.833037439221016,
+    "max_finger_axis_tilt_deg": 81.72409470242825,
+    "tolerance_deg": 3.0,
+    "dense_samples": 6721,
+    "target_R_body_tcp": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    ],
+    "tcp_forward_axis": "+Z",
+    "finger_closing_axis": "X"
+  },
+  "scene_binding": true,
+  "endpoint_errors_rad": [
+    1.5588345392281155e-07,
+    3.427964414548512e-07
+  ],
+  "dense_samples": 6721,
+  "model_validated_path": false,
+  "learning_outcome": "INDEPENDENT_VALIDATION_REJECTED",
+  "tcp_path_m": 1.5391971303811889,
+  "joint_path_rad": 7.544350345555975,
+  "minimum_joint_margin_rad": 0.09946971623802936,
+  "held_center_path_m": 1.6491545775264662
+}

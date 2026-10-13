@@ -7,9 +7,9 @@ from .contracts import STAGES
 
 class GymSkillHandoffEnv(gym.Env):
     metadata={"render_modes":[]}
-    def __init__(self,backend,state_dim,action_dim,max_actions,allow_planning=True):
+    def __init__(self,backend,state_dim,action_dim,max_actions,allow_planning=True,cost_weight=.001):
         super().__init__()
-        self.core=SkillHandoffEnv(backend,allow_planning=allow_planning)
+        self.core=SkillHandoffEnv(backend,allow_planning=allow_planning,cost_weight=cost_weight)
         self.state_dim=state_dim; self.action_dim=action_dim; self.max_actions=max_actions
         self.action_space=spaces.Discrete(max_actions)
         self.observation_space=spaces.Dict({

@@ -1,0 +1,378 @@
+[
+  {
+    "candidate_id": "E0-p1-y1-r0-ik0-0",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "FAILURE",
+    "request_sha256": "72d2bf7bda7e0dc334283c8e177409e30d3aac0a42d3b541426d165e30b379b1",
+    "result_sha256": "bd45afcac5fd8aeff5f6f09a8e5d7b8f781272eaab2b9aa73c3187b4a6371a86",
+    "validator_sha256": "0a3fba19f4d2efb6f1c9d7f5f59d429092aa9661ed62c7dd10e983dffd280c41",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 1821,
+      "validation_knots": 1302,
+      "maximum_knot_joint_step_rad": 0.012440741062164307,
+      "dense_samples": 5205,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.34185216472774743,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": false,
+      "max_orientation_error_deg": 179.86652095917654,
+      "max_forward_tilt_deg": 25.803361901194993,
+      "max_finger_axis_tilt_deg": 72.5521206162306,
+      "tolerance_deg": 3.0,
+      "dense_samples": 7281,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      1.5588345392281155e-07,
+      1.7366014093411763e-07
+    ],
+    "dense_samples": 7281,
+    "model_validated_path": false,
+    "learning_outcome": "INDEPENDENT_VALIDATION_REJECTED",
+    "tcp_path_m": 1.7365231280296518,
+    "joint_path_rad": 8.678572655673161,
+    "minimum_joint_margin_rad": 0.09946971623802936,
+    "held_center_path_m": 1.8731686991250922
+  },
+  {
+    "candidate_id": "E0-p1-y1-r0-ik0-1",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "FAILURE",
+    "request_sha256": "44818b5dd61a9f97039e483b40118e1eac0a72b00b6bfe79b90b90833ca0f599",
+    "result_sha256": "103115f1d0a3119804b69f097195a836a52e73b9843935420f63fa3ceb63567b",
+    "validator_sha256": "0a3fba19f4d2efb6f1c9d7f5f59d429092aa9661ed62c7dd10e983dffd280c41",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 1681,
+      "validation_knots": 1080,
+      "maximum_knot_joint_step_rad": 0.012464284896850586,
+      "dense_samples": 4317,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10564438661088654,
+      "limiting_object_id": "E0/table",
+      "limiting_robot_component_id": "link2",
+      "central_tcp_margin_m": 0.10414874126666365,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": false,
+      "max_orientation_error_deg": 179.7425268690048,
+      "max_forward_tilt_deg": 37.833037439221016,
+      "max_finger_axis_tilt_deg": 81.72409470242825,
+      "tolerance_deg": 3.0,
+      "dense_samples": 6721,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      1.5588345392281155e-07,
+      3.427964414548512e-07
+    ],
+    "dense_samples": 6721,
+    "model_validated_path": false,
+    "learning_outcome": "INDEPENDENT_VALIDATION_REJECTED",
+    "tcp_path_m": 1.5391971303811889,
+    "joint_path_rad": 7.544350345555975,
+    "minimum_joint_margin_rad": 0.09946971623802936,
+    "held_center_path_m": 1.6491545775264662
+  },
+  {
+    "candidate_id": "E0-p1-y1-r0-ik1-0",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "FAILURE",
+    "request_sha256": "a85fe7ae7738673e5286f97770108848d4d76f9ab39375ef1fe14bf175418de0",
+    "result_sha256": "6f3e4048cbbf8c2ca7d7901bc1b4341719e2edbb2680fb33486a1a71eaec2956",
+    "validator_sha256": "0a3fba19f4d2efb6f1c9d7f5f59d429092aa9661ed62c7dd10e983dffd280c41",
+    "model_validated_path": false,
+    "learning_outcome": "UNKNOWN_NO_RETURNED_PATH"
+  },
+  {
+    "candidate_id": "E0-p1-y1-r0-ik1-1",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "FAILURE",
+    "request_sha256": "9b463375af51dac1bf3d6e45ec4adc783a135bbb8a3e97ea0fe92449db7d5286",
+    "result_sha256": "2906889a86bea7d9900a2500123f9cdb185888bfbce737decb8d4425c114baf6",
+    "validator_sha256": "0a3fba19f4d2efb6f1c9d7f5f59d429092aa9661ed62c7dd10e983dffd280c41",
+    "model_validated_path": false,
+    "learning_outcome": "UNKNOWN_NO_RETURNED_PATH"
+  },
+  {
+    "candidate_id": "E0-p1-y1-r1-ik0-0",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "2a8beb8c8b67bddf9a93b79803b20fda06f7fd75339a4c971ce596dd22c4c93c",
+    "result_sha256": "c86412705a46b486f5fc14fcb088a8241097d706efa45ecb1e56e8e89757123a",
+    "validator_sha256": "0a3fba19f4d2efb6f1c9d7f5f59d429092aa9661ed62c7dd10e983dffd280c41",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 501,
+      "validation_knots": 424,
+      "maximum_knot_joint_step_rad": 0.012096822261810303,
+      "dense_samples": 1693,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.17818631847919839,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 1.367151622209564,
+      "max_forward_tilt_deg": 1.263769265616012,
+      "max_finger_axis_tilt_deg": 0.4967754666488787,
+      "tolerance_deg": 3.0,
+      "dense_samples": 2001,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      7.26696789410397e-08,
+      1.6994447626927922e-07
+    ],
+    "dense_samples": 2001,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 1.10085223790059,
+    "joint_path_rad": 7.3303517614279015,
+    "minimum_joint_margin_rad": 0.083171302961357,
+    "held_center_path_m": 1.0987367535186014
+  },
+  {
+    "candidate_id": "E0-p1-y1-r1-ik0-1",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "FAILURE",
+    "request_sha256": "7b5c92eb99ad2ee233cccdbbbf346f37ccec808999024a548d6e8a5ff4275487",
+    "result_sha256": "778ffff18b453551ff1e089cac7ac4bb738da104938db5a34010a40acfe3cd3f",
+    "validator_sha256": "0a3fba19f4d2efb6f1c9d7f5f59d429092aa9661ed62c7dd10e983dffd280c41",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 1621,
+      "validation_knots": 1060,
+      "maximum_knot_joint_step_rad": 0.012557625770568848,
+      "dense_samples": 4237,
+      "subdivisions": 4,
+      "min_clearance_m": 0.10618928972555426,
+      "limiting_object_id": "body/chassis_historical_lower",
+      "limiting_robot_component_id": "base_link",
+      "central_tcp_margin_m": 0.25958713754485346,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": false,
+      "max_orientation_error_deg": 179.91395529487724,
+      "max_forward_tilt_deg": 25.86347740652284,
+      "max_finger_axis_tilt_deg": 86.02706240988594,
+      "tolerance_deg": 3.0,
+      "dense_samples": 6481,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      7.26696789410397e-08,
+      4.44878131666826e-07
+    ],
+    "dense_samples": 6481,
+    "model_validated_path": false,
+    "learning_outcome": "INDEPENDENT_VALIDATION_REJECTED",
+    "tcp_path_m": 1.521455864779432,
+    "joint_path_rad": 7.687665049838484,
+    "minimum_joint_margin_rad": 0.08317118375206745,
+    "held_center_path_m": 1.5945017859901067
+  },
+  {
+    "candidate_id": "E0-p1-y1-r1-ik1-0",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "SUCCESS",
+    "request_sha256": "4f93a0742f2a5f6a886b8dd9b7b2383fbbe581f0321c52733c23d2ef3bc24535",
+    "result_sha256": "35d6e54f5c33d9802ab172808189a29c5193ee7a65fd2b72945c6bc5a90f5ed2",
+    "validator_sha256": "0a3fba19f4d2efb6f1c9d7f5f59d429092aa9661ed62c7dd10e983dffd280c41",
+    "world": {
+      "validator": "independent_cpu_urdf_sphere_cuboid_v1",
+      "gripper_component_revision": null,
+      "input_trajectory_samples": 961,
+      "validation_knots": 813,
+      "maximum_knot_joint_step_rad": 0.012500345706939697,
+      "dense_samples": 3249,
+      "subdivisions": 4,
+      "min_clearance_m": 0.009368583593475477,
+      "limiting_object_id": "E0/table",
+      "limiting_robot_component_id": "gripper_union",
+      "central_tcp_margin_m": 0.14017936285611993,
+      "central_exclusion_enabled": true,
+      "collision_free": true,
+      "self_collision_independently_checked": false
+    },
+    "self_collision_codes": [],
+    "held_arm_collision_codes": [],
+    "soft_limits": true,
+    "orientation": {
+      "passed": true,
+      "max_orientation_error_deg": 0.509285930605192,
+      "max_forward_tilt_deg": 0.44879207611514044,
+      "max_finger_axis_tilt_deg": 0.30745979643812865,
+      "tolerance_deg": 3.0,
+      "dense_samples": 3841,
+      "target_R_body_tcp": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "tcp_forward_axis": "+Z",
+      "finger_closing_axis": "X"
+    },
+    "scene_binding": true,
+    "endpoint_errors_rad": [
+      3.4458208464371864e-07,
+      1.6994447626927922e-07
+    ],
+    "dense_samples": 3841,
+    "model_validated_path": true,
+    "learning_outcome": "MODEL_QUALIFIED_PATH",
+    "tcp_path_m": 1.636370739550467,
+    "joint_path_rad": 12.259524947941264,
+    "minimum_joint_margin_rad": 0.083171302961357,
+    "held_center_path_m": 1.6360171392596692
+  },
+  {
+    "candidate_id": "E0-p1-y1-r1-ik1-1",
+    "model_scope": "E0_RESEARCH_HELD_CUBOID_HISTORICAL_LOWER_CHASSIS",
+    "physical_success": false,
+    "full_chassis_safety_qualified": false,
+    "planning_result": "FAILURE",
+    "request_sha256": "8d597e8c3a2622439d018b56c2483514ba12af5447d49602e0093f1b086b7d65",
+    "result_sha256": "74784a60760956a0997ec9ff3620e684c586df4496f5f4336d0914ddaddad413",
+    "validator_sha256": "0a3fba19f4d2efb6f1c9d7f5f59d429092aa9661ed62c7dd10e983dffd280c41",
+    "model_validated_path": false,
+    "learning_outcome": "UNKNOWN_NO_RETURNED_PATH"
+  }
+]

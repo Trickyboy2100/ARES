@@ -1,0 +1,816 @@
+{
+  "planning_only": true,
+  "execution_allowed": false,
+  "mode": "CLEAR",
+  "active_arm": "right",
+  "T_body_model": [
+    [
+      -0.7071067811913201,
+      9.97821287717777e-12,
+      0.707106781181775,
+      0.000614916695917517
+    ],
+    [
+      -0.7071067811722344,
+      -5.194707066967819e-06,
+      -0.7071067811817794,
+      -0.2006160387503574
+    ],
+    [
+      3.673205537638494e-06,
+      -0.9999999999865075,
+      3.67321964902384e-06,
+      1.1999971833838727
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_link6_tcp": [
+    [
+      -0.08078132195228908,
+      0.9961861689215942,
+      0.032977187159575067,
+      0.027945999145507813
+    ],
+    [
+      -0.9964025600794283,
+      -0.08156080468509744,
+      0.02301680703922258,
+      -0.0023650000095367433
+    ],
+    [
+      0.02561867074619673,
+      -0.030999225610269892,
+      0.9991910386511488,
+      0.0814020004272461
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "geometry_revision": "d1760745784791feb5058526c5656804742c83be52ec717c2f5eac6a2fcec698",
+  "inactive_arm_revision": "acc50f39c17596f215410e5ce0f2fa0cc5815c6bfa74e9351ea36a6b6935fcc9",
+  "collision_model": {
+    "schema_version": 1,
+    "asset_revision": "Trickyboy2100/ARES@b978cbd669b5a3f6bc0bd19defcbe5256692f145",
+    "asset_root": "/home/yikun/ares-r-curobo-assets/pinned-ares-b978cbd669b5a3f6bc0bd19defcbe5256692f145/robot",
+    "urdf": "jaka_minicobo_gripper.urdf",
+    "asset_sha256": {
+      "jaka_minicobo_meshes/Link0.STL": "34a78118cc76671fb56f0f8293e33d4dd92a4058c68b0b396fe58613d98fd3bc",
+      "jaka_minicobo_meshes/Link1.STL": "7619887ad563d09243fd2a9e06fe733ea24fe5d0ef53fd4bcfe6c0d87bab492c",
+      "jaka_minicobo_meshes/Link2.STL": "6be58a3fc8e16f808fb6efec3d96f8e1dae3988304bdcf98845fc16d3abee1e6",
+      "jaka_minicobo_meshes/Link3.STL": "8da30ba4b43ee0d8cd3cd0d2e983dc5aa9a9c91ae10346b80daac47f4859aaae",
+      "jaka_minicobo_meshes/Link4.STL": "6a6c57757a9f0eaac566ad577b66952ccf1566d9c04f5cd8eb432677f5815dd1",
+      "jaka_minicobo_meshes/Link5.STL": "a3756e21c9f1e1cd7ef0816529fd477382f7e57a1c7a3bafbf65123265ba389a",
+      "jaka_minicobo_meshes/Link6.STL": "c2c75367fb5a06028f8693258615d18eac9be89f5d1d5550be91ad982e20c12c",
+      "eg2_4c2_meshes/4C2_baselink.STL": "7043a98a1c6bc26c43329427b7e20231fd8da27a20a1e939a6f206f869c93a61",
+      "eg2_4c2_meshes/4C2_Link1.STL": "d626d57cad00ce45637fc770c24659c10e1697c68869229fa3427802bc83fa56",
+      "eg2_4c2_meshes/4C2_Link2.STL": "a908071c33672578474038897eb8268a8ca534858a6b2e9fd682e22e40cbd6d4",
+      "eg2_4c2_meshes/4C2_Link3.STL": "7fc3d839c23b4f845d4edf5d5704d81b4052b01805e70b3b11676c16a05a65ef",
+      "eg2_4c2_meshes/4C2_Link4.STL": "e9248937221d905666ffd4cd5e8df97c9e1e96e5fcc10d438a427c1c06974c41",
+      "eg2_4c2_meshes/4C2_Link5.STL": "dc32d21cceffdd18eba238a6be09c89649eef3efc9e18ab4ba0b0ccdfdce6fb5",
+      "eg2_4c2_meshes/4C2_Link6.STL": "f41c4aab68f158b8574766f0a111473e162259deff0cea2958c43664dea3bc1e",
+      "jaka_minicobo_gripper.urdf": "65789fd396bc33251338141bbc6b6400be48a32e67b94a1541cba7c2aeae8228",
+      "jaka_minicobo_curobo.yml": "aae115675df2d4cf1c1fdeb5f507f80b94442fab9f4c53a8e1cb9e45e0964457"
+    },
+    "arm_link_boxes": {
+      "base_link": {
+        "center_m": [
+          -8.653104305267334e-05,
+          0.0,
+          0.015499999746680258
+        ],
+        "half_extents_m": [
+          0.061894647777080536,
+          0.061929550021886826,
+          0.015499999746680261
+        ],
+        "mesh": "jaka_minicobo_meshes/Link0.STL"
+      },
+      "link1": {
+        "center_m": [
+          0.0,
+          0.008003035560250282,
+          -0.05499999411404133
+        ],
+        "half_extents_m": [
+          0.049000103026628494,
+          0.057003339752554893,
+          0.10400000028312206
+        ],
+        "mesh": "jaka_minicobo_meshes/Link1.STL"
+      },
+      "link2": {
+        "center_m": [
+          0.10124978609383106,
+          0.0,
+          -0.0005030874162912369
+        ],
+        "half_extents_m": [
+          0.15025037340819836,
+          0.0490206778049469,
+          0.06250309012830257
+        ],
+        "mesh": "jaka_minicobo_meshes/Link2.STL"
+      },
+      "link3": {
+        "center_m": [
+          -2.2388994693756104e-06,
+          0.04439913481473923,
+          0.011250745505094528
+        ],
+        "half_extents_m": [
+          0.041495636105537415,
+          0.08590099960565567,
+          0.048750799149274826
+        ],
+        "mesh": "jaka_minicobo_meshes/Link3.STL"
+      },
+      "link4": {
+        "center_m": [
+          0.0,
+          0.008751077577471733,
+          -0.02284560538828373
+        ],
+        "half_extents_m": [
+          0.03750007599592209,
+          0.04625107906758785,
+          0.06035425327718258
+        ],
+        "mesh": "jaka_minicobo_meshes/Link4.STL"
+      },
+      "link5": {
+        "center_m": [
+          0.0,
+          0.04289992153644562,
+          0.008750887587666512
+        ],
+        "half_extents_m": [
+          0.03749919310212135,
+          0.08040007948875427,
+          0.04625134728848934
+        ],
+        "mesh": "jaka_minicobo_meshes/Link5.STL"
+      },
+      "link6": {
+        "center_m": [
+          -0.0007258746773004532,
+          1.097843050956726e-05,
+          -0.019500000000000017
+        ],
+        "half_extents_m": [
+          0.03822404704988003,
+          0.037481702864170074,
+          0.019500000804662687
+        ],
+        "mesh": "jaka_minicobo_meshes/Link6.STL"
+      }
+    },
+    "gripper_max_envelope_link6": {
+      "center_m": [
+        -3.2679692667236804e-09,
+        0.0,
+        0.07451511727580698
+      ],
+      "half_extents_m": [
+        0.05454381173172154,
+        0.012751013040542603,
+        0.07451511982065775
+      ],
+      "opening_samples_rad": [
+        0.0,
+        0.41,
+        0.82
+      ],
+      "source": "union of all pinned EG2-4C2 meshes over full opening range"
+    },
+    "gripper_envelopes_link6_by_max_opening_percent": {
+      "40": {
+        "center_m": [
+          -3.725290298461914e-09,
+          0.0,
+          0.07418877133800975
+        ],
+        "half_extents_m": [
+          0.04500000178813934,
+          0.012751013040542603,
+          0.07418877388286052
+        ],
+        "opening_range_rad": [
+          0.0,
+          0.328
+        ],
+        "source": "union of pinned EG2-4C2 meshes sampled over 0..40 percent opening"
+      },
+      "50": {
+        "center_m": [
+          -3.725290298461914e-09,
+          0.0,
+          0.07451511727580698
+        ],
+        "half_extents_m": [
+          0.04500000178813934,
+          0.012751013040542603,
+          0.07451511982065775
+        ],
+        "opening_range_rad": [
+          0.0,
+          0.41
+        ],
+        "source": "union of pinned EG2-4C2 meshes sampled over 0..50 percent opening"
+      }
+    },
+    "mesh_audit": {
+      "arm": {
+        "base_link": {
+          "vertices": 14002,
+          "bounds_min_m": [
+            -0.06198117882013321,
+            -0.061929550021886826,
+            -4.519466299215671e-18
+          ],
+          "bounds_max_m": [
+            0.06180811673402786,
+            0.061929550021886826,
+            0.03099999949336052
+          ]
+        },
+        "link1": {
+          "vertices": 16601,
+          "bounds_min_m": [
+            -0.049000103026628494,
+            -0.04900030419230461,
+            -0.1589999943971634
+          ],
+          "bounds_max_m": [
+            0.049000103026628494,
+            0.06500637531280518,
+            0.049000006169080734
+          ]
+        },
+        "link2": {
+          "vertices": 25520,
+          "bounds_min_m": [
+            -0.049000587314367294,
+            -0.0490206778049469,
+            -0.06300617754459381
+          ],
+          "bounds_max_m": [
+            0.2515001595020294,
+            0.0490206778049469,
+            0.06200000271201134
+          ]
+        },
+        "link3": {
+          "vertices": 19009,
+          "bounds_min_m": [
+            -0.04149787500500679,
+            -0.04150186479091644,
+            -0.0375000536441803
+          ],
+          "bounds_max_m": [
+            0.04149339720606804,
+            0.1303001344203949,
+            0.060001544654369354
+          ]
+        },
+        "link4": {
+          "vertices": 35930,
+          "bounds_min_m": [
+            -0.03750007599592209,
+            -0.03750000149011612,
+            -0.08319985866546631
+          ],
+          "bounds_max_m": [
+            0.03750007599592209,
+            0.055002156645059586,
+            0.03750864788889885
+          ]
+        },
+        "link5": {
+          "vertices": 21299,
+          "bounds_min_m": [
+            -0.03749919310212135,
+            -0.037500157952308655,
+            -0.03750045970082283
+          ],
+          "bounds_max_m": [
+            0.03749919310212135,
+            0.12330000102519989,
+            0.05500223487615585
+          ]
+        },
+        "link6": {
+          "vertices": 18750,
+          "bounds_min_m": [
+            -0.03894992172718048,
+            -0.03747072443366051,
+            -0.039000000804662704
+          ],
+          "bounds_max_m": [
+            0.037498172372579575,
+            0.03749268129467964,
+            8.046626698288151e-10
+          ]
+        }
+      },
+      "gripper": {
+        "4C2_baselink": {
+          "vertices": 41051,
+          "bounds_min_m": [
+            -0.04500000551342964,
+            -0.012751013040542603,
+            -2.5448507745551296e-09
+          ],
+          "bounds_max_m": [
+            0.044999998062849045,
+            0.012751013040542603,
+            0.09700000286102295
+          ]
+        },
+        "4C2_Link1": {
+          "vertices": 1117,
+          "bounds_min_m": [
+            -0.0037433088291436434,
+            -7.0361423354370345e-09,
+            -0.003747554263100028
+          ],
+          "bounds_max_m": [
+            0.026014139875769615,
+            0.017999999225139618,
+            0.03933842480182648
+          ]
+        },
+        "4C2_Link2": {
+          "vertices": 1110,
+          "bounds_min_m": [
+            -0.0037433053366839886,
+            -2.983026492486829e-09,
+            -0.0037475551944226027
+          ],
+          "bounds_max_m": [
+            0.026014143601059914,
+            0.018000002950429916,
+            0.03933842107653618
+          ]
+        },
+        "4C2_Link3": {
+          "vertices": 1129,
+          "bounds_min_m": [
+            -0.02601414918899536,
+            -2.983026492486829e-09,
+            -0.0037475572898983955
+          ],
+          "bounds_max_m": [
+            0.003743313020095229,
+            0.018000002950429916,
+            0.03933841735124588
+          ]
+        },
+        "4C2_Link4": {
+          "vertices": 1139,
+          "bounds_min_m": [
+            -0.02601413056254387,
+            -7.036028204510103e-09,
+            -0.0037475519347935915
+          ],
+          "bounds_max_m": [
+            0.003743302309885621,
+            0.017999999225139618,
+            0.03933842480182648
+          ]
+        },
+        "4C2_Link5": {
+          "vertices": 2170,
+          "bounds_min_m": [
+            -0.0034829711075872183,
+            -0.0029999969992786646,
+            -0.004999998491257429
+          ],
+          "bounds_max_m": [
+            0.017700012773275375,
+            0.015000002458691597,
+            0.02850000187754631
+          ]
+        },
+        "4C2_Link6": {
+          "vertices": 2163,
+          "bounds_min_m": [
+            -0.01770000532269478,
+            -0.0029999969992786646,
+            -0.004999998491257429
+          ],
+          "bounds_max_m": [
+            0.0034829643554985523,
+            0.015000002458691597,
+            0.02850000187754631
+          ]
+        }
+      }
+    },
+    "fixed_body_boxes": [
+      {
+        "geometry_id": "body/chassis",
+        "owner": "chassis",
+        "kind": "chassis_conservative_proxy",
+        "center_body_m": [
+          -0.16,
+          0.0,
+          0.575
+        ],
+        "dims_m": [
+          0.56,
+          0.7,
+          1.15
+        ],
+        "filter_owned": true,
+        "source": "CONSERVATIVE_PROXY pending measured AGV CAD"
+      },
+      {
+        "geometry_id": "body/central_exclusion",
+        "owner": "safety",
+        "kind": "central_exclusion",
+        "center_body_m": [
+          0.45,
+          0.0,
+          1.2
+        ],
+        "dims_m": [
+          1.8,
+          0.14,
+          2.4
+        ],
+        "filter_owned": false,
+        "source": "hard BODY |Y|<=0.070 m safety constraint; not physical self-filter"
+      }
+    ],
+    "classifications": {
+      "arm_kinematics": "VALIDATED_AFTER_SITE_CHECK",
+      "arm_mesh_boxes": "VALIDATED_AFTER_SITE_CHECK",
+      "legacy_curobo_spheres": "MISSING_BLOCKER",
+      "gripper_mesh_mount": "VALIDATED_AFTER_SITE_CHECK",
+      "gripper_opening": "CONSERVATIVE_PROXY",
+      "tool_tcp": "VALIDATED_AFTER_SITE_CHECK",
+      "body_base_transforms": "VALIDATED_AFTER_SITE_CHECK",
+      "chassis": "CONSERVATIVE_PROXY"
+    },
+    "geometry_revision": "sha256:d492d344dd88d411f2d6480799d4fa4767dac850167b80d2387eb4405d115dc6"
+  },
+  "robot_yaml": "/home/andyee/robot-research/ARES-Skilllab/runs/e0_20261013/requests_variations/robot.yml",
+  "robot_yaml_urdf": "/home/andyee/robot-research/ARES-Skilllab/runs/e0_20261013/requests_variations/robot.urdf",
+  "expected_commit": "8e734f3ced1df898990bcd92de40abce475907db",
+  "planning_parameters": {
+    "num_ik_seeds": 4,
+    "num_trajopt_seeds": 4,
+    "max_attempts": 2,
+    "enable_graph_attempt": 1,
+    "interpolation_dt": 0.008,
+    "interpolation_buffer_size": 5000,
+    "use_cuda_graph": false,
+    "self_collision_check": true,
+    "validation_subsamples": 4,
+    "validation_batch_size": 128,
+    "random_seed": 123,
+    "optimizer_collision_activation_distance": 0.01,
+    "demo_candidate_tcp_m": [
+      0.16,
+      0.14,
+      0.18
+    ],
+    "tool_proxy_spheres": 12,
+    "active_sphere_cell_m": 0.02
+  },
+  "benchmark_runs": 1,
+  "site_soft_limits": {
+    "lower_rad": [
+      -6.133185307179586,
+      -2.031661564992912,
+      -2.1189280275926285,
+      -6.133185307179586,
+      -1.9443951023931954,
+      -6.133185307179586
+    ],
+    "upper_rad": [
+      6.133185307179586,
+      2.031661564992912,
+      2.1189280275926285,
+      6.133185307179586,
+      1.9443951023931954,
+      6.133185307179586
+    ]
+  },
+  "collision_fidelity": {
+    "active_arm_cell_m": 0.02
+  },
+  "coverage_limitations": [
+    "chassis policy historical_lower; not measured CAD; upper-body safety unqualified",
+    "research held cuboid, no contact grasp or physics"
+  ],
+  "experiment_role": "E0_HELD_TRANSPORT_PLANNING_ONLY",
+  "compiled_scene": {
+    "planning_scope": "P3_PRODUCTION_PLANNING_ONLY",
+    "execution_allowed": false,
+    "scene_snapshot_id": "E0-goal-2",
+    "digest": "2d6c6b904d477bbf4f6a40658e67205fd5564e1bc217cf1d38b58a585fe04913",
+    "cuboids": {
+      "left/base_link": {
+        "dims": [
+          0.12378929555416107,
+          0.12385910004377365,
+          0.030999999493360523
+        ],
+        "pose": [
+          -0.2989094181560388,
+          -7.716396655421676e-06,
+          -0.28362739176487206,
+          8.976866393618546e-13,
+          0.7071067811913189,
+          -9.387190824932818e-12,
+          -0.7071067811817762
+        ]
+      },
+      "left/link1": {
+        "dims": [
+          0.09800020605325699,
+          0.11400667950510979,
+          0.20800000056624413
+        ],
+        "pose": [
+          -0.4154094242954195,
+          -0.007991188331415877,
+          -0.2831546786560116,
+          0.02472107121274663,
+          0.7066745139343897,
+          -0.024721071221564576,
+          -0.7066745139251497
+        ]
+      },
+      "left/link2": {
+        "dims": [
+          0.3005007468163967,
+          0.0980413556098938,
+          0.12500618025660515
+        ],
+        "pose": [
+          -0.5710875541906154,
+          0.0047249440648375884,
+          -0.2948157091076482,
+          0.036233228958103915,
+          -0.03886030866292199,
+          0.7303637521781391,
+          0.6809888538252018
+        ]
+      },
+      "left/link3": {
+        "dims": [
+          0.08299127221107483,
+          0.17180199921131134,
+          0.09750159829854965
+        ],
+        "pose": [
+          -0.7097258939040485,
+          0.017898234531001034,
+          -0.2749645535065848,
+          0.25212658662692433,
+          -0.27040695130121045,
+          0.6795744365211897,
+          0.6336330564536136
+        ]
+      },
+      "left/link4": {
+        "dims": [
+          0.07500015199184418,
+          0.0925021581351757,
+          0.12070850655436516
+        ],
+        "pose": [
+          -0.8054086267728899,
+          0.006252802876998809,
+          -0.16720514397976158,
+          -0.217755961267503,
+          -0.35318047721035195,
+          0.11331097256810492,
+          0.9027771127723632
+        ]
+      },
+      "left/link5": {
+        "dims": [
+          0.0749983862042427,
+          0.16080015897750854,
+          0.09250269457697868
+        ],
+        "pose": [
+          -0.8517156859220228,
+          0.027875269054974394,
+          -0.12252157382894871,
+          0.0553435621048641,
+          -0.3509669350210655,
+          0.7456710057091893,
+          0.563679032695124
+        ]
+      },
+      "left/link6": {
+        "dims": [
+          0.07644809409976006,
+          0.07496340572834015,
+          0.039000001609325374
+        ],
+        "pose": [
+          -0.9051628378640552,
+          0.031551616527312865,
+          -0.04125837407294315,
+          0.06307720427480872,
+          -0.3120463229487246,
+          0.041606288533182025,
+          0.9470571658509047
+        ]
+      },
+      "left/gripper": {
+        "dims": [
+          0.10908762346344308,
+          0.025502026081085205,
+          0.1490302396413155
+        ],
+        "pose": [
+          -0.9608142757732533,
+          0.04274040189100714,
+          0.03368892625826553,
+          0.06307720427480872,
+          -0.3120463229487246,
+          0.041606288533182025,
+          0.9470571658509047
+        ]
+      },
+      "body/chassis_historical_lower": {
+        "dims": [
+          0.56,
+          0.7,
+          1.0
+        ],
+        "pose": [
+          -0.028287635889657423,
+          0.6999961412312711,
+          -0.25543142941224173,
+          -0.27059734723443885,
+          0.2705987529055231,
+          -0.6532797856325813,
+          0.6532831792412146
+        ]
+      },
+      "E0/table": {
+        "dims": [
+          0.8,
+          0.65,
+          0.06
+        ],
+        "pose": [
+          -0.2121341501186792,
+          0.3599986347026346,
+          0.6072400925242065,
+          0.27059734723443885,
+          0.2705987529055233,
+          -0.653279785632581,
+          0.6532831792412147
+        ]
+      }
+    },
+    "planning_context_digest": "1ae6243ea333a8b96d219d21a24dcc2c5c1b29e86097374ef8596bef328e8a8e",
+    "calibration_revision": "PINNED_URDF_WITH_2026-09-21_READONLY_FK_CORRECTION_AND_TOOL2_NOT_CURRENT_LIVE_TCP"
+  },
+  "scene_snapshot_id": "E0-goal-2",
+  "scene_digest": "2d6c6b904d477bbf4f6a40658e67205fd5564e1bc217cf1d38b58a585fe04913",
+  "candidate_id": "E0-goal-2-roll-1",
+  "start_rad": [
+    1.921247951618091,
+    1.9484901952149405,
+    -1.70243792419464,
+    -2.1489994941268145,
+    0.9272997104383534,
+    -1.1745754985623247
+  ],
+  "goal_rad": [
+    1.6907011585867717,
+    1.560301513373867,
+    -1.456439399030998,
+    -1.8279195060635633,
+    0.8331679713400569,
+    -1.3209726123194203
+  ],
+  "attached_object_collision": {
+    "schema_version": 1,
+    "object_id": "usd_tray_envelope",
+    "attached_to": "right",
+    "source_revision": "fea0494ba10eadb587a7aada02bde2731ff064963876bc3f27d66ba35922e714",
+    "source_observation_id": "fea0494ba10eadb587a7aada02bde2731ff064963876bc3f27d66ba35922e714",
+    "T_link6_object": [
+      [
+        0.032977187159575067,
+        -0.08078132195228908,
+        0.9961861689215942,
+        0.02975150015035692
+      ],
+      [
+        0.02301680703922258,
+        -0.9964025600794283,
+        -0.08156080468509744,
+        -0.0011048298186516724
+      ],
+      [
+        0.9991910386511488,
+        0.02561867074619673,
+        -0.030999225610269892,
+        0.1361077100316222
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "link6_aabb": {
+      "center_m": [
+        0.02975150015035692,
+        -0.0011048298186516758,
+        0.1361077100316222
+      ],
+      "dims_m": [
+        0.06542617657079791,
+        0.20120693737377254,
+        0.12184097989523257
+      ],
+      "half_extents_m": [
+        0.032713088285398956,
+        0.10060346868688627,
+        0.060920489947616285
+      ]
+    },
+    "inflation_m": 0.008,
+    "geometry_policy": "TCP_LOCAL_CUBOID_TO_CONSERVATIVE_LINK6_AABB_V1",
+    "revision": "sha256:d52554c0fcee7a5bcf71cf6a848ebcc9f5896fa0c787152114dc6ab5f0e94c5c"
+  },
+  "motion_constraints": {
+    "central_exclusion": true,
+    "attached_object_revision": "sha256:d52554c0fcee7a5bcf71cf6a848ebcc9f5896fa0c787152114dc6ab5f0e94c5c"
+  },
+  "orientation_lock": {
+    "policy": "FIXED_ROTATION_V1",
+    "criteria_rpy": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "max_error_deg": 3.0,
+    "target_R_body_tcp": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  "tray_provenance": {
+    "usd": "/home/andyee/isaacsim/playground/scene_final.usd",
+    "usd_sha256": "b96c905318e628a347066b5d1943cbac18c1dd3f03c91882bf71cfc82d5d9723",
+    "prim": "/World/Tray",
+    "observed_world_aabb_m": [
+      0.09950000047683716,
+      0.17949999868869781,
+      0.029999999329447746
+    ],
+    "geometry_scope": "research cuboid enclosing this existing USD tray; not measured physical tray CAD",
+    "grasp_scope": "already held with fixed attachment; no contact-grasp claim",
+    "offset_scope": "frozen research edge-grasp assumption, not live calibrated grasp"
+  },
+  "candidate_features": {
+    "pair": 1,
+    "yaw_rad": 0.0,
+    "roll_branch": 1,
+    "start_ik": 0,
+    "goal_ik": 0,
+    "goal_body_m": [
+      0.5,
+      -0.5,
+      1.45
+    ]
+  },
+  "scene_group": "E0-goal-2",
+  "split": "test"
+}

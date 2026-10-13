@@ -1,0 +1,144 @@
+{
+  "evidence": "REAL_CUROBO_UNDER_DECLARED_RESEARCH_MODEL_AND_ACTUAL_CACHE_TRAINING",
+  "Isaac_physical_environments": 0,
+  "Isaac_training_video": "NOT_TESTED",
+  "full_chassis_qualified": false,
+  "source_run": "/home/andyee/robot-research/ARES-Skilllab/runs/e0_20261013",
+  "source_cache_sha256": "ea58d087dd7a713a1c877fc3409c6a6423ff8b2f242789ca1a462b95028d1133",
+  "files": {
+    "03_PRELIMINARY_RESULTS/fig03_candidate_comparison.png": "f5a6c4dee89426635d24b8d4f5e38ab5b3b1850d1a587a309c57803aede65906",
+    "03_PRELIMINARY_RESULTS/fig01_isaac_scene.png": "9ce6d2269119c8ed1dd5a3b185fbb6acf68525cea22d8f4a41d9920ea429db4e",
+    "03_PRELIMINARY_RESULTS/fig04_real_learning.png": "dcc58aec0c817dbd5f734aacbafb54df5e4a21010cf900a95b8464b60a345291",
+    "03_PRELIMINARY_RESULTS/fig02_held_trajectories.png": "4453a6b8dac576571b0cf30fefc2bb58d1a28fb395cecc3a70f5255ee3584795",
+    "03_PRELIMINARY_RESULTS/fig05_ranker_ppo_logs.png": "101198c980b9d969d93de2044365b219c20fcd81aea2dd5720020e886901ba77",
+    "03_PRELIMINARY_RESULTS/fig01_static_usd_preview_NOT_ISAAC.png": "3b2d935824e2fb425d7861042f8c4e5e5160257e4d9e31e602374deb7f4fa154",
+    "01_METHOD/CASH_METHOD_V0.png": "e3c4bebefdce781684f9b7a698c879ca2b0ac723d7e74c5a58c481a6185c3001",
+    "03_PRELIMINARY_RESULTS/held_path_FK_REPLAY_NOT_PHYSICS.gif": "3b0e692f0efe1cafdbc3314954418b0e8d3401c1fbfe804ff09bf282fc634bc2"
+  },
+  "learning_manifests": {
+    "17": {
+      "scope": "ONE_STEP_PLANNING_COST_ONLY_CONDITIONAL_ON_ALL_OPTIONS_QUALIFIED",
+      "seed": 17,
+      "steps": 2048,
+      "effect_coef": 0.1,
+      "effect_targets": [
+        "model_path_valid",
+        "TCP_length_m",
+        "joint_length_rad",
+        "clearance_m",
+        "joint_margin_rad",
+        "orientation_error_over_3deg"
+      ],
+      "physical_simulation": false,
+      "full_chassis_safety_qualified": false,
+      "dataset_sha256": "ea58d087dd7a713a1c877fc3409c6a6423ff8b2f242789ca1a462b95028d1133",
+      "train_groups": [
+        "E0-goal-0",
+        "E0-goal-3",
+        "E0-goal-4"
+      ],
+      "validation_groups": [
+        "E0-goal-1"
+      ],
+      "test_groups": [
+        "E0-goal-5",
+        "E0-goal-2"
+      ],
+      "ppo_steps": 2048,
+      "ppo_wall_s": 0.8314728122204542,
+      "cash_wall_s": 0.5952388499863446,
+      "cash_steps_per_s": 3440.635637352944,
+      "ranker_labels": 6,
+      "oracle_calls_to_collect": 12,
+      "online_oracle_calls_during_training": 0,
+      "source_sha256": {
+        "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/tools/train_e0_cost.py": "94305697aeada31d4d6b1826f7a3e77c207dccc2090bc7f625962775851f7cc9",
+        "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/cash/model.py": "3720d1ce4502d8ef8be5e0f5a2f8c9dcc6a2bbcf6c236ceb5935860e47e4b45d",
+        "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/cash/trainer.py": "71c96616ae3a105fe65f82559cbb27af4dcc74799afee47efde776eb160507b5"
+      },
+      "runtime": {
+        "torch": "2.11.0+cu128",
+        "numpy": "2.4.4",
+        "device": "CPU",
+        "threads": 2
+      },
+      "causal_scope": "Offline candidate evaluation bandit: no verified preparation edge between different held start states",
+      "caveat": "tiny all-feasible E0 cost benchmark; no HSR improvement or industrial generalization claim"
+    },
+    "23": {
+      "scope": "ONE_STEP_PLANNING_COST_ONLY_CONDITIONAL_ON_ALL_OPTIONS_QUALIFIED",
+      "seed": 23,
+      "steps": 2048,
+      "effect_coef": 0.1,
+      "effect_targets": [
+        "model_path_valid",
+        "TCP_length_m",
+        "joint_length_rad",
+        "clearance_m",
+        "joint_margin_rad",
+        "orientation_error_over_3deg"
+      ],
+      "physical_simulation": false,
+      "full_chassis_safety_qualified": false,
+      "dataset_sha256": "ea58d087dd7a713a1c877fc3409c6a6423ff8b2f242789ca1a462b95028d1133",
+      "train_groups": [
+        "E0-goal-0",
+        "E0-goal-3",
+        "E0-goal-4"
+      ],
+      "validation_groups": [
+        "E0-goal-1"
+      ],
+      "test_groups": [
+        "E0-goal-5",
+        "E0-goal-2"
+      ],
+      "ppo_steps": 2048,
+      "ppo_wall_s": 0.8853472978807986,
+      "cash_wall_s": 0.6213617976754904,
+      "cash_steps_per_s": 3295.9863442869387,
+      "ranker_labels": 6,
+      "oracle_calls_to_collect": 12,
+      "online_oracle_calls_during_training": 0,
+      "source_sha256": {
+        "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/tools/train_e0_cost.py": "94305697aeada31d4d6b1826f7a3e77c207dccc2090bc7f625962775851f7cc9",
+        "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/cash/model.py": "3720d1ce4502d8ef8be5e0f5a2f8c9dcc6a2bbcf6c236ceb5935860e47e4b45d",
+        "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/cash/trainer.py": "71c96616ae3a105fe65f82559cbb27af4dcc74799afee47efde776eb160507b5"
+      },
+      "runtime": {
+        "torch": "2.11.0+cu128",
+        "numpy": "2.4.4",
+        "device": "CPU",
+        "threads": 2
+      },
+      "causal_scope": "Offline candidate evaluation bandit: no verified preparation edge between different held start states",
+      "caveat": "tiny all-feasible E0 cost benchmark; no HSR improvement or industrial generalization claim"
+    }
+  },
+  "isaac_static_capture": {
+    "evidence_level": "ISAAC_5_1_STATIC_RENDER",
+    "physics_task_completed": false,
+    "physical_gpu": 1,
+    "BODY_calibration": "original USD installation coordinates not qualified",
+    "scene_sha256": "0d0451c2cdc72f11cd2ec15be0900571771c5ac14618f518090be52d580bb9a2",
+    "camera_position": [
+      2.6,
+      -2.5,
+      2.5
+    ],
+    "camera_look_at": [
+      -0.15,
+      0.8,
+      1.0
+    ],
+    "resolution": [
+      1280,
+      960
+    ]
+  },
+  "isaac_static_limitations": [
+    "Original USD BODY mapping unqualified",
+    "PhysX dynamic Tray/Mesh triangle geometry fell back to convex hull",
+    "No task execution, contact grasp, vectorized physics or Isaac policy training validated"
+  ]
+}

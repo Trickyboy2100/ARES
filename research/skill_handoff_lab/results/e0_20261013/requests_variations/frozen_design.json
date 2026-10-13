@@ -1,0 +1,51 @@
+{
+  "goals_body_m": [
+    [
+      0.46,
+      -0.5,
+      1.45
+    ],
+    [
+      0.48,
+      -0.5,
+      1.45
+    ],
+    [
+      0.5,
+      -0.5,
+      1.45
+    ],
+    [
+      0.46,
+      -0.46,
+      1.45
+    ],
+    [
+      0.48,
+      -0.46,
+      1.45
+    ],
+    [
+      0.5,
+      -0.46,
+      1.45
+    ]
+  ],
+  "splits": [
+    "train",
+    "validation",
+    "test",
+    "train",
+    "train",
+    "test"
+  ],
+  "seed": 6200,
+  "ik_attempts": 1,
+  "branches": [
+    0,
+    1
+  ],
+  "gpu_max_requests": 12,
+  "scope": "E0 wide held transport cost variation, not industrial aperture benchmark",
+  "held_model": "historical lower chassis and USD cuboid, physical safety unqualified"
+}

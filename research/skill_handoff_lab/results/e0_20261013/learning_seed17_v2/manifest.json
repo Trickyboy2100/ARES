@@ -1,0 +1,49 @@
+{
+  "scope": "ONE_STEP_PLANNING_COST_ONLY_CONDITIONAL_ON_ALL_OPTIONS_QUALIFIED",
+  "seed": 17,
+  "steps": 2048,
+  "effect_coef": 0.1,
+  "effect_targets": [
+    "model_path_valid",
+    "TCP_length_m",
+    "joint_length_rad",
+    "clearance_m",
+    "joint_margin_rad",
+    "orientation_error_over_3deg"
+  ],
+  "physical_simulation": false,
+  "full_chassis_safety_qualified": false,
+  "dataset_sha256": "ea58d087dd7a713a1c877fc3409c6a6423ff8b2f242789ca1a462b95028d1133",
+  "train_groups": [
+    "E0-goal-0",
+    "E0-goal-3",
+    "E0-goal-4"
+  ],
+  "validation_groups": [
+    "E0-goal-1"
+  ],
+  "test_groups": [
+    "E0-goal-5",
+    "E0-goal-2"
+  ],
+  "ppo_steps": 2048,
+  "ppo_wall_s": 0.8314728122204542,
+  "cash_wall_s": 0.5952388499863446,
+  "cash_steps_per_s": 3440.635637352944,
+  "ranker_labels": 6,
+  "oracle_calls_to_collect": 12,
+  "online_oracle_calls_during_training": 0,
+  "source_sha256": {
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/tools/train_e0_cost.py": "94305697aeada31d4d6b1826f7a3e77c207dccc2090bc7f625962775851f7cc9",
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/cash/model.py": "3720d1ce4502d8ef8be5e0f5a2f8c9dcc6a2bbcf6c236ceb5935860e47e4b45d",
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/cash/trainer.py": "71c96616ae3a105fe65f82559cbb27af4dcc74799afee47efde776eb160507b5"
+  },
+  "runtime": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.4",
+    "device": "CPU",
+    "threads": 2
+  },
+  "causal_scope": "Offline candidate evaluation bandit: no verified preparation edge between different held start states",
+  "caveat": "tiny all-feasible E0 cost benchmark; no HSR improvement or industrial generalization claim"
+}

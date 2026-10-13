@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/andyee/robot-research/ARES-Skilllab/envs/isaac-installer/bin/uv",
+    "pip",
+    "install",
+    "--python",
+    "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/bin/python",
+    "--index",
+    "https://pypi.nvidia.com",
+    "--default-index",
+    "https://pypi.org/simple",
+    "isaacsim[compatibility-check]==5.1.0",
+    "packaging",
+    "setuptools"
+  ],
+  "pid": 477879,
+  "returncode": 0,
+  "timeout": false,
+  "wall_s": 4.276477888226509
+}
