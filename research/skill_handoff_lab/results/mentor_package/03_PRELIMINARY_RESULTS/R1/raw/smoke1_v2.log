@@ -1,0 +1,137 @@
+Loading user config located at: '/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261014_015040.log
+2026-10-13T17:50:56Z [15,425ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T17:50:56Z [15,426ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T17:50:56Z [15,477ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-10-13T17:50:56Z [15,835ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T17:50:56Z [15,835ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 560.35.05     | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 67aee2f0.. |
+|     |                                  |        |     |            | 2         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA GeForce RTX 4090          | Yes: 0 |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 1be16c79.. |
+|     |                                  |        |     |            | 3         |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 32729722.. |
+|     |                                  |        |     |            | 82        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 54b75149.. |
+|     |                                  |        |     |            | 83        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-124-generic
+| Processor: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+| Cores: 36 | Logical Cores: 72
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 193274 | Free Memory: 186868
+| Total Page/Swap (MB): 16383 | Free Page/Swap: 15994
+|---------------------------------------------------------------------------------------------|
+2026-10-13T17:50:58Z [17,315ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+2026-10-13T17:50:58Z [17,315ms] [Warning] [gpu.foundation.plugin] Detected IOMMU is enabled. Running CUDA peer-to-peer bandwidth and latency validation.
+Unidirectional P2P=Enabled Bandwidth (P2P Writes) Matrix (GB/s)
+   D\D     0      1    /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/exts/3/omni.kit.pipapi-0.0.0+69cbf6ad/omni/kit/pipapi/pipapi.py:269: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  2      3 
+     0 931.22   8.62   8.87   8.89 
+     1   8.63 945.82   8.88   8.97 
+     2   8.87   8.79 946.04  10.01 
+     3   8.89   8.87   9.93 946.97 
+P2P=Enabled Latency (P2P Writes) Matrix (us)
+   GPU     0      1      2      3 
+     0   1.36  11.29  11.61  11.91 
+     1  10.96   1.37  11.30  11.31 
+     2  11.00  11.44   1.38  11.05 
+     3  10.98  10.47  18.64   1.41 
+
+   CPU     0      1      2      3 
+     0   3.06   8.08   7.69   8.17 
+     1   8.95   2.96   7.90   7.72 
+     2   7.47   7.39   2.57   7.83 
+     3   7.41   7.30   6.87   2.80 
+2026-10-13T17:50:59Z [18,480ms] [Warning] [gpu.foundation.plugin] CUDA peer-to-peer observed bandwidth: 8.6 GB/s.
+2026-10-13T17:50:59Z [18,480ms] [Warning] [gpu.foundation.plugin] CUDA peer-to-peer observed latency: 18.6 us.
+2026-10-13T17:50:59Z [18,480ms] [Warning] [gpu.foundation.plugin] Please verify if observed bandwidth and latency are expected.
+2026-10-13T17:51:01Z [20,128ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T17:51:01Z [20,128ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T17:51:01Z [20,158ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T17:51:01Z [20,158ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T17:51:01Z [20,168ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T17:51:01Z [20,168ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T17:51:01Z [20,188ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T17:51:01Z [20,188ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T17:51:01Z [20,189ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T17:51:01Z [20,189ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T17:51:01Z [20,190ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T17:51:01Z [20,190ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T17:51:01Z [20,702ms] [Warning] [omni.log] Source: omni.hydra was already registered.
+2026-10-13T17:51:02Z [21,223ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-10-13T17:51:02Z [21,299ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-10-13T17:51:07Z [26,573ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+2026-10-13T17:51:07Z [26,833ms] [Warning] [omni.graph.core.plugin] Found duplicate of category 'Replicator' - was 'Annotators', adding 'Fabric Reader'
+2026-10-13T17:51:07Z [26,833ms] [Warning] [omni.graph.core.plugin] Category 'Replicator' not accepted on node type 'omni.replicator.core.FabricReader' in extension 'omni.replicator.core'
+2026-10-13T17:51:07Z [26,835ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+2026-10-13T17:51:09Z [28,806ms] [Warning] [omni.kit.pipapi.pipapi] 'hidapi' failed to install.
+2026-10-13T17:51:11Z [30,747ms] [Error] [omni.ext._impl.custom_importer] Failed to import python module isaaclab_tasks. Error: No module named 'h5py'. Traceback:
+Traceback (most recent call last):
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/python-managed/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab_tasks/isaaclab_tasks/__init__.py", line 33, in <module>
+    from .utils import import_packages
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab_tasks/isaaclab_tasks/utils/__init__.py", line 9, in <module>
+    from .parse_cfg import get_checkpoint_path, load_cfg_from_registry, parse_env_cfg
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab_tasks/isaaclab_tasks/utils/parse_cfg.py", line 16, in <module>
+    from isaaclab.envs import DirectRLEnvCfg, ManagerBasedRLEnvCfg
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/envs/__init__.py", line 45, in <module>
+    from . import mdp, ui
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/envs/mdp/__init__.py", line 18, in <module>
+    from .actions import *  # noqa: F401, F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/envs/mdp/actions/__init__.py", line 8, in <module>
+    from .actions_cfg import *
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/envs/mdp/actions/actions_cfg.py", line 9, in <module>
+    from isaaclab.managers.action_manager import ActionTerm, ActionTermCfg
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/managers/__init__.py", line 31, in <module>
+    from .recorder_manager import DatasetExportMode, RecorderManager, RecorderManagerBaseCfg, RecorderTerm
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/managers/recorder_manager.py", line 17, in <module>
+    from isaaclab.utils.datasets import EpisodeData, HDF5DatasetFileHandler
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/utils/datasets/__init__.py", line 17, in <module>
+    from .hdf5_dataset_file_handler import HDF5DatasetFileHandler
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/utils/datasets/hdf5_dataset_file_handler.py", line 11, in <module>
+    import h5py
+ModuleNotFoundError: No module named 'h5py'
+
+2026-10-13T17:51:11Z [30,747ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'isaaclab_tasks' in '/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab_tasks' failed to load.
+
+At:
+  /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+  /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py(534): _start_app
+  /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py(270): __init__
+  /home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/app/app_launcher.py(811): _create_app
+  /home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/app/app_launcher.py(127): __init__
+  /home/andyee/robot-research/ARES-Skilllab/runs/isaac_lab_smoke_v2.py(14): <module>
+
+2026-10-13T17:51:11Z [30,747ms] [Error] [omni.ext.plugin] [ext: isaaclab_tasks-0.11.6] Failed to startup python extension.
+2026-10-13T17:51:16Z [35,288ms] [Warning] [omni.fabric.plugin] Warning: attribute viewportHandle not found for bucket id 7
+

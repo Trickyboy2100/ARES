@@ -1,0 +1,182 @@
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/apps/isaaclab.python.headless.rendering.kit
+Loading user config located at: '/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261014_020451.log
+2026-10-13T18:04:51Z [358ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:04:51Z [358ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:04:51Z [402ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-10-13T18:04:51Z [743ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:04:51Z [743ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 560.35.05     | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 67aee2f0.. |
+|     |                                  |        |     |            | 2         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA GeForce RTX 4090          | Yes: 0 |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 1be16c79.. |
+|     |                                  |        |     |            | 3         |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 32729722.. |
+|     |                                  |        |     |            | 82        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 54b75149.. |
+|     |                                  |        |     |            | 83        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-124-generic
+| Processor: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+| Cores: 36 | Logical Cores: 72
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 193274 | Free Memory: 186907
+| Total Page/Swap (MB): 16383 | Free Page/Swap: 15994
+|---------------------------------------------------------------------------------------------|
+2026-10-13T18:04:53Z [2,178ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+2026-10-13T18:04:53Z [2,178ms] [Warning] [gpu.foundation.plugin] Detected IOMMU is enabled. Running CUDA peer-to-peer bandwidth and latency validation.
+Unidirectional P2P=Enabled Bandwidth (P2P Writes) Matrix (GB/s)
+   D\D     0      1      2      3 
+     0 932.84  10.00   8.85   8.80 
+     1   9.93 943.54   8.91   8.77 
+     2   8.84   9.17 946.97   8.55 
+     3   8.93   8.86   8.58 945.97 
+P2P=Enabled Latency (P2P Writes) Matrix (us)
+   GPU     0      1      2      3 
+     0   1.36  13.75  10.75  10.65 
+     1  12.24   1.37  10.41  11.27 
+     2  11.74  11.00   1.37  11.41 
+     3  11.11  11.54  10.60   1.52 
+
+   CPU     0      1      2      3 
+     0   2.55   6.80   7.13   7.58 
+     1   8.11   2.83   7.00   7.51 
+     2   7.70   7.85   2.86   8.56 
+     3   7.22   7.41   8.13   3.07 
+2026-10-13T18:04:54Z [3,342ms] [Warning] [gpu.foundation.plugin] CUDA peer-to-peer observed bandwidth: 8.6 GB/s.
+2026-10-13T18:04:54Z [3,342ms] [Warning] [gpu.foundation.plugin] CUDA peer-to-peer observed latency: 13.7 us.
+2026-10-13T18:04:54Z [3,342ms] [Warning] [gpu.foundation.plugin] Please verify if observed bandwidth and latency are expected.
+2026-10-13T18:04:56Z [5,051ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:04:56Z [5,051ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:04:56Z [5,092ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:04:56Z [5,092ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:04:56Z [5,102ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:04:56Z [5,102ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:04:56Z [5,122ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:04:56Z [5,122ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:04:56Z [5,124ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:04:56Z [5,124ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:04:56Z [5,125ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:04:56Z [5,125ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:04:56Z [5,397ms] [Warning] [omni.log] Source: omni.hydra was already registered.
+2026-10-13T18:04:57Z [6,144ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-10-13T18:04:57Z [6,160ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-10-13T18:05:02Z [11,319ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+2026-10-13T18:05:02Z [11,512ms] [Warning] [omni.graph.core.plugin] Found duplicate of category 'Replicator' - was 'Annotators', adding 'Fabric Reader'
+2026-10-13T18:05:02Z [11,512ms] [Warning] [omni.graph.core.plugin] Category 'Replicator' not accepted on node type 'omni.replicator.core.FabricReader' in extension 'omni.replicator.core'
+2026-10-13T18:05:02Z [11,514ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+2026-10-13T18:05:12Z [20,845ms] [Warning] [omni.fabric.plugin] Warning: attribute viewportHandle not found for bucket id 7
+
+R1_APP_LAUNCHED
+R1_BUILD_ENV
+Setting seed: 31
+[INFO]: Base environment:
+	Environment device    : cuda:1
+	Environment seed      : 31
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+2026-10-13T18:05:16Z [24,787ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_5/Link6.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_13/Link6.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_6/visuals>.  Ignoring. (getting targets for relationship </__Prototype_5/Link6.material:binding> on stage @anon:0x5ddef493ef00:World0.usd@ <0x5ddef3652000>)
+
+2026-10-13T18:05:16Z [24,787ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_2/Link5.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_11/Link5.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_5/visuals>.  Ignoring. (getting targets for relationship </__Prototype_2/Link5.material:binding> on stage @anon:0x5ddef493ef00:World0.usd@ <0x5ddef3652000>)
+
+2026-10-13T18:05:16Z [24,788ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_11/Link2.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_12/Link2.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_2/visuals>.  Ignoring. (getting targets for relationship </__Prototype_11/Link2.material:binding> on stage @anon:0x5ddef493ef00:World0.usd@ <0x5ddef3652000>)
+
+2026-10-13T18:05:16Z [24,788ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_12/Link0.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_2/Link0.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_0/visuals>.  Ignoring. (getting targets for relationship </__Prototype_12/Link0.material:binding> on stage @anon:0x5ddef493ef00:World0.usd@ <0x5ddef3652000>)
+
+2026-10-13T18:05:16Z [24,789ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_13/Link1.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_9/Link1.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_1/visuals>.  Ignoring. (getting targets for relationship </__Prototype_13/Link1.material:binding> on stage @anon:0x5ddef493ef00:World0.usd@ <0x5ddef3652000>)
+
+2026-10-13T18:05:16Z [24,789ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_3/Link4.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_4/Link4.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_4/visuals>.  Ignoring. (getting targets for relationship </__Prototype_3/Link4.material:binding> on stage @anon:0x5ddef493ef00:World0.usd@ <0x5ddef3652000>)
+
+2026-10-13T18:05:16Z [24,790ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_8/Link3.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_5/Link3.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_3/visuals>.  Ignoring. (getting targets for relationship </__Prototype_8/Link3.material:binding> on stage @anon:0x5ddef493ef00:World0.usd@ <0x5ddef3652000>)
+
+[INFO]: Time taken for scene creation : 2.158812 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 16
+	Environment spacing   : 2.5
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/Ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+2026-10-13T18:05:17Z [26,087ms] [Warning] [omni.fabric.plugin] getAttributeCount called on non-existent path /World/envs/env_9/Robot/Link_6/visuals/Link6/node_STL_BINARY_
+2026-10-13T18:05:17Z [26,087ms] [Warning] [omni.fabric.plugin] getTypes called on non-existent path /World/envs/env_9/Robot/Link_6/visuals/Link6/node_STL_BINARY_
+[INFO]: Time taken for simulation start : 2.698587 seconds
+[INFO]: Completed setting up the environment...
+Setting seed: 31
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [1,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [2,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [3,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [4,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [5,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [6,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [7,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [8,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [9,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [10,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [11,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [12,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [13,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [14,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+/pytorch/aten/src/ATen/native/cuda/IndexKernel.cu:93: operator(): block: [0,0,0], thread: [15,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+Traceback (most recent call last):
+  File "/home/andyee/robot-research/ARES-Skilllab/runs/isaac_lab_smoke_camera.py", line 115, in <module>
+    env=Env(Config());observations,_=env.reset(seed=a.seed)
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 296, in reset
+    self._reset_idx(indices)
+  File "/home/andyee/robot-research/ARES-Skilllab/runs/isaac_lab_smoke_camera.py", line 102, in _reset_idx
+    super()._reset_idx(env_ids)
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 592, in _reset_idx
+    self.scene.reset(env_ids)
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/scene/interactive_scene.py", line 461, in reset
+    sensor.reset(env_ids)
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/sensors/camera/camera.py", line 367, in reset
+    super().reset(env_ids)
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/sensors/sensor_base.py", line 179, in reset
+    self._timestamp_last_update[env_ids] = 0.0
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2026-10-13T18:05:19Z [27,865ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuArticulationView.cpp: 217
+2026-10-13T18:05:19Z [27,865ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuArticulationView.cpp: 218
+2026-10-13T18:05:19Z [27,865ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuArticulationView.cpp: 219
+2026-10-13T18:05:19Z [27,865ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuArticulationView.cpp: 220
+2026-10-13T18:05:19Z [27,865ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuArticulationView.cpp: 221
+2026-10-13T18:05:19Z [27,865ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuArticulationView.cpp: 222
+2026-10-13T18:05:19Z [27,865ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuArticulationView.cpp: 223
+2026-10-13T18:05:19Z [27,865ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuArticulationView.cpp: 224
+2026-10-13T18:05:19Z [27,865ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuArticulationView.cpp: 225
+2026-10-13T18:05:19Z [27,865ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuRigidBodyView.cpp: 192
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuRigidBodyView.cpp: 193
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuRigidBodyView.cpp: 194
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuRigidBodyView.cpp: 195
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuRigidBodyView.cpp: 196
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuRigidBodyView.cpp: 197
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuRigidBodyView.cpp: 198
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuRigidBodyView.cpp: 199
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuRigidBodyView.cpp: 200
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuRigidBodyView.cpp: 201
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuRigidContactView.cpp: 167
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.tensors.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/GpuRigidContactView.cpp: 168
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.fabric.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.fabric/plugins/DirectGpuHelper.cpp: 687
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.fabric.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.fabric/plugins/DirectGpuHelper.cpp: 749
+2026-10-13T18:05:19Z [27,866ms] [Error] [omni.physx.fabric.plugin] CUDA error: device-side assert triggered: ../../../extensions/runtime/source/omni.physx.fabric/plugins/DirectGpuHelper.cpp: 894
+python: ../../../source/sharedlibs/cubric/lib/cubric_device.cu:58: bool cubricDeviceBufferMemcpyHtoD(cubricDeviceBuffer_st*, void*, size_t): Assertion `(cuerr) == (CUDA_SUCCESS)' failed.

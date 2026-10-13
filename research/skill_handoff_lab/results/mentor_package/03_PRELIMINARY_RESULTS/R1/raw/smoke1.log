@@ -1,0 +1,28 @@
+[Info] [carb] Logging to file: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261014_014945.log
+2026-10-13T17:49:46Z [880ms] [Error] [omni.kit.registry.nucleus.index_v2.index_sync] Syncing registry index failed for url: 'https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/107/shared/v2'. Exception: Failed to connect to the registry: 'https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/107/shared/v2'
+2026-10-13T17:49:46Z [1,549ms] [Error] [omni.kit.registry.nucleus.index_v2.index_sync] Syncing registry index failed for url: 'https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/107.3/69cbf6ad/v2'. Exception: Failed to connect to the registry: 'https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/107.3/69cbf6ad/v2'
+2026-10-13T17:49:48Z [3,262ms] [Error] [omni.kit.registry.nucleus.index_v2.index_sync] Syncing registry index failed for url: 'https://dw290v42wisod.cloudfront.net/exts/kit/community/v2'. Exception: Failed to connect to the registry: 'https://dw290v42wisod.cloudfront.net/exts/kit/community/v2'
+2026-10-13T17:49:48Z [3,263ms] [Error] [omni.ext.plugin] Failed to resolve extension dependencies. Failure hints:
+	[isaaclab.python.headless.rendering-2.3.0] dependency: 'omni.kit.material.library' = { version='^' } can't be satisfied. Available versions:
+	 (none found)
+ Synced registries:
+	 - kit/default         : found 0 packages (couldn't connect or empty)
+	 - kit/sdk             : found 0 packages (couldn't connect or empty)
+	 - kit/community       : found 0 packages (couldn't connect or empty)
+
+2026-10-13T17:49:48Z [3,263ms] [Error] [omni.kit.app.plugin] Exiting app because of dependency solver failure...
+Traceback (most recent call last):
+  File "/home/andyee/robot-research/ARES-Skilllab/runs/isaac_lab_smoke.py", line 14, in <module>
+    launcher=AppLauncher(headless=True,device=f'cuda:{a.gpu}',enable_cameras=True,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/app/app_launcher.py", line 127, in __init__
+    self._create_app()
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/app/app_launcher.py", line 811, in _create_app
+    self._app = SimulationApp(self._sim_app_config, experience=self._sim_experience_file)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py", line 285, in __init__
+    from .utils import create_new_stage, open_stage
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/exts/isaacsim.simulation_app/isaacsim/simulation_app/utils.py", line 23, in <module>
+    from omni.kit.usd import layers
+ModuleNotFoundError: No module named 'omni.kit.usd'
+2026-10-13T17:49:48Z [3,269ms] [Warning] [carb] Recursive unloadAllPlugins() detected!

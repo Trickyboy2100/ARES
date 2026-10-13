@@ -81,5 +81,9 @@ def main():
             artifacts.append({'path':str(f.relative_to(a.runs)),'bytes':f.stat().st_size,'sha256':hashlib.sha256(f.read_bytes()).hexdigest()})
     (out/'R1_DATA_MANIFEST.json').write_text(json.dumps({'base_commit':'f93cd24','artifacts':artifacts,
         'scope':'real isolated-arm PhysX PPO smoke and same-start planning; not formal RL advantage'},indent=2))
+    bundle=[{'path':str(f.relative_to(out)),'bytes':f.stat().st_size,'sha256':hashlib.sha256(f.read_bytes()).hexdigest()}
+        for f in sorted(out.rglob('*')) if f.is_file() and f.name!='BUNDLE_MANIFEST.json']
+    (out/'BUNDLE_MANIFEST.json').write_text(json.dumps({'base_commit':'f93cd24','artifacts':bundle,
+        'source_run_manifest':'R1_DATA_MANIFEST.json describes the larger preserved local run; this manifest describes packaged files'},indent=2))
     print(json.dumps(metrics,indent=2))
 if __name__=='__main__':main()

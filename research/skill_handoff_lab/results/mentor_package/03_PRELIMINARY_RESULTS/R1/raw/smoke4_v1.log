@@ -1,0 +1,120 @@
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/apps/isaaclab.python.headless.rendering.kit
+Loading user config located at: '/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261014_020239.log
+2026-10-13T18:02:39Z [351ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:02:39Z [351ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:02:39Z [395ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-10-13T18:02:40Z [740ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:02:40Z [740ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 560.35.05     | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 67aee2f0.. |
+|     |                                  |        |     |            | 2         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA GeForce RTX 4090          | Yes: 0 |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 1be16c79.. |
+|     |                                  |        |     |            | 3         |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 32729722.. |
+|     |                                  |        |     |            | 82        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | NVIDIA GeForce RTX 4090          |        |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | 54b75149.. |
+|     |                                  |        |     |            | 83        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-124-generic
+| Processor: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+| Cores: 36 | Logical Cores: 72
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 193274 | Free Memory: 186753
+| Total Page/Swap (MB): 16383 | Free Page/Swap: 15994
+|---------------------------------------------------------------------------------------------|
+2026-10-13T18:02:41Z [2,196ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+2026-10-13T18:02:41Z [2,196ms] [Warning] [gpu.foundation.plugin] Detected IOMMU is enabled. Running CUDA peer-to-peer bandwidth and latency validation.
+Unidirectional P2P=Enabled Bandwidth (P2P Writes) Matrix (GB/s)
+   D\D     0      1      2      3 
+     0 932.84   8.88   9.31   9.19 
+     1   8.87 946.40   9.31   9.26 
+     2   9.15   9.05 946.97  10.03 
+     3   9.15   9.05  10.01 945.27 
+P2P=Enabled Latency (P2P Writes) Matrix (us)
+   GPU     0      1      2      3 
+     0   1.36  11.99  11.60  12.34 
+     1  11.44   1.38  11.25  11.29 
+     2  10.94  10.61   1.37  18.12 
+     3  11.03  10.46  10.57   1.41 
+
+   CPU     0      1      2      3 
+     0   3.43   9.70   9.06   8.33 
+     1  10.45   4.00   8.04   7.79 
+     2   8.07   7.88   3.23   7.39 
+     3   7.96   7.91   7.90   2.81 
+2026-10-13T18:02:42Z [3,332ms] [Warning] [gpu.foundation.plugin] CUDA peer-to-peer observed bandwidth: 8.9 GB/s.
+2026-10-13T18:02:42Z [3,332ms] [Warning] [gpu.foundation.plugin] CUDA peer-to-peer observed latency: 18.1 us.
+2026-10-13T18:02:42Z [3,332ms] [Warning] [gpu.foundation.plugin] Please verify if observed bandwidth and latency are expected.
+2026-10-13T18:02:44Z [5,053ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:02:44Z [5,053ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:02:44Z [5,091ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:02:44Z [5,091ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:02:44Z [5,101ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:02:44Z [5,101ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:02:44Z [5,121ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:02:44Z [5,121ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:02:44Z [5,123ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:02:44Z [5,123ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:02:44Z [5,124ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T18:02:44Z [5,124ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T18:02:44Z [5,402ms] [Warning] [omni.log] Source: omni.hydra was already registered.
+2026-10-13T18:02:45Z [6,085ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-10-13T18:02:45Z [6,096ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-10-13T18:02:50Z [11,188ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+2026-10-13T18:02:51Z [11,507ms] [Warning] [omni.graph.core.plugin] Found duplicate of category 'Replicator' - was 'Annotators', adding 'Fabric Reader'
+2026-10-13T18:02:51Z [11,507ms] [Warning] [omni.graph.core.plugin] Category 'Replicator' not accepted on node type 'omni.replicator.core.FabricReader' in extension 'omni.replicator.core'
+2026-10-13T18:02:51Z [11,510ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+2026-10-13T18:03:00Z [20,728ms] [Warning] [omni.fabric.plugin] Warning: attribute viewportHandle not found for bucket id 7
+
+R1_APP_LAUNCHED
+R1_BUILD_ENV
+Setting seed: 31
+[INFO]: Base environment:
+	Environment device    : cuda:1
+	Environment seed      : 31
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+2026-10-13T18:03:04Z [24,911ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_7/Link6.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_13/Link6.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_6/visuals>.  Ignoring. (getting targets for relationship </__Prototype_7/Link6.material:binding> on stage @anon:0x59073c4a4940:World0.usd@ <0x59073b21add0>)
+
+2026-10-13T18:03:04Z [24,912ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_11/Link5.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_11/Link5.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_5/visuals>.  Ignoring. (getting targets for relationship </__Prototype_11/Link5.material:binding> on stage @anon:0x59073c4a4940:World0.usd@ <0x59073b21add0>)
+
+2026-10-13T18:03:04Z [24,912ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_1/Link1.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_9/Link1.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_1/visuals>.  Ignoring. (getting targets for relationship </__Prototype_1/Link1.material:binding> on stage @anon:0x59073c4a4940:World0.usd@ <0x59073b21add0>)
+
+2026-10-13T18:03:04Z [24,913ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_10/Link3.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_5/Link3.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_3/visuals>.  Ignoring. (getting targets for relationship </__Prototype_10/Link3.material:binding> on stage @anon:0x59073c4a4940:World0.usd@ <0x59073b21add0>)
+
+2026-10-13T18:03:04Z [24,914ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_15/Link2.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_12/Link2.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_2/visuals>.  Ignoring. (getting targets for relationship </__Prototype_15/Link2.material:binding> on stage @anon:0x59073c4a4940:World0.usd@ <0x59073b21add0>)
+
+2026-10-13T18:03:04Z [24,914ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_12/Link0.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_2/Link0.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_0/visuals>.  Ignoring. (getting targets for relationship </__Prototype_12/Link0.material:binding> on stage @anon:0x59073c4a4940:World0.usd@ <0x59073b21add0>)
+
+2026-10-13T18:03:04Z [24,915ms] [Warning] [omni.usd] Warning (secondary thread): in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </__Prototype_8/Link4.material:binding>: The relationship target </jaka_minicobo/Looks/material_100100100> from </Flattened_Prototype_4/Link4.material:binding> in layer @/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4/jaka_held.usda@ refers to a path outside the scope of the reference from </Robot/Link_4/visuals>.  Ignoring. (getting targets for relationship </__Prototype_8/Link4.material:binding> on stage @anon:0x59073c4a4940:World0.usd@ <0x59073b21add0>)
+
+[INFO]: Time taken for scene creation : 2.239121 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 2.5
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/Ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.967845 seconds
+[INFO]: Completed setting up the environment...
+Setting seed: 31
+R1_ENV_READY
+Setting seed: 31
