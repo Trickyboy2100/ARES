@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/home/andyee/robot-research/ARES-Skilllab/runs/isaac_lab_smoke_camera.py", line 115, in <module>
+    env=Env(Config());observations,_=env.reset(seed=a.seed)
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 296, in reset
+    self._reset_idx(indices)
+  File "/home/andyee/robot-research/ARES-Skilllab/runs/isaac_lab_smoke_camera.py", line 102, in _reset_idx
+    super()._reset_idx(env_ids)
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 592, in _reset_idx
+    self.scene.reset(env_ids)
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/scene/interactive_scene.py", line 461, in reset
+    sensor.reset(env_ids)
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/sensors/camera/camera.py", line 367, in reset
+    super().reset(env_ids)
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/sensors/sensor_base.py", line 179, in reset
+    self._timestamp_last_update[env_ids] = 0.0
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

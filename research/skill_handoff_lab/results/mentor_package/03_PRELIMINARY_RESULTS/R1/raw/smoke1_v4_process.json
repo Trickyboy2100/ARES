@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/bin/python",
+    "-u",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/isaac_lab_smoke_v3.py",
+    "--asset",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4",
+    "--output",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/smoke1_v4",
+    "--num-envs",
+    "1",
+    "--steps",
+    "256",
+    "--gpu",
+    "1"
+  ],
+  "pid": 593757,
+  "returncode": 0,
+  "timeout": false,
+  "wall_s": 22.924655586481094
+}

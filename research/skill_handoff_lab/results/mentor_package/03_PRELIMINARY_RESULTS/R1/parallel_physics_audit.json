@@ -1,0 +1,41 @@
+[
+  {
+    "experiment": "smoke1_v6",
+    "num_envs": 1,
+    "physics_steps": 512,
+    "env_physics_steps": 512,
+    "adam_updates": 32,
+    "raw_reported_updates": 32,
+    "policy_changed": true,
+    "reset_events": 6,
+    "unique_origins": 1,
+    "unique_targets_first_record": 1,
+    "max_contact_force_N": 0.0
+  },
+  {
+    "experiment": "smoke4_v1",
+    "num_envs": 4,
+    "physics_steps": 512,
+    "env_physics_steps": 2048,
+    "adam_updates": 128,
+    "raw_reported_updates": 32,
+    "policy_changed": true,
+    "reset_events": 24,
+    "unique_origins": 4,
+    "unique_targets_first_record": 4,
+    "max_contact_force_N": 0.0
+  },
+  {
+    "experiment": "smoke16_camera_v2",
+    "num_envs": 16,
+    "physics_steps": 512,
+    "env_physics_steps": 8192,
+    "adam_updates": 512,
+    "raw_reported_updates": 512,
+    "policy_changed": true,
+    "reset_events": 96,
+    "unique_origins": 16,
+    "unique_targets_first_record": 16,
+    "max_contact_force_N": 0.0
+  }
+]

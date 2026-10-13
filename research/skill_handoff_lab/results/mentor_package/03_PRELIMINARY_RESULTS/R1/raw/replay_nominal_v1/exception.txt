@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/andyee/robot-research/ARES-Skilllab/runs/isaac_lab_replay_final.py", line 132, in <module>
+    env.robot.set_joint_position_target(torch.tensor(q,device=env.device).repeat(a.num_envs,1),joint_ids=env.ids)
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/IsaacLab-v2.3.0/source/isaaclab/isaaclab/assets/articulation/articulation.py", line 1079, in set_joint_position_target
+    self._data.joint_pos_target[env_ids, joint_ids] = target
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Index put requires the source and destination dtypes match, got Float for the destination and Double for the source.

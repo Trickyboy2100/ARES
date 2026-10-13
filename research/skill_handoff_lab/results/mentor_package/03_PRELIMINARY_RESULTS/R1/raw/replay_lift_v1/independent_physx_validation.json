@@ -1,0 +1,32 @@
+{
+  "evidence": "MEASURED_ISOLATED_ARM_PHYSX_TRAJECTORY",
+  "complete_industrial_task_safe": false,
+  "raw_knots": 142,
+  "physics_steps": 928,
+  "max_link6_fk_position_error_m": 5.154875078481588e-07,
+  "max_link6_fk_rotation_error_deg": 7.090273997874799e-05,
+  "endpoint_tcp_error_m": 3.826330242515015e-08,
+  "final_joint_error_rad": 0.0,
+  "max_tcp_orientation_error_deg": 0.6009949662508658,
+  "minimum_soft_limit_margin_rad": 0.10063117234612262,
+  "max_recorded_contact_force_N": 0.0,
+  "continuous_contacts_checked": false,
+  "sampled_scope_pass": true,
+  "tolerances": {
+    "endpoint_m": 0.002,
+    "orientation_deg": 3,
+    "fk_position_m": 0.0001,
+    "fk_rotation_deg": 0.1
+  },
+  "sha256": {
+    "runs/r1_20261014/mechanism_a_execution/0/request.json": "e49729d06e183d75a1c6db72ec227ec131a49925a9e05bcd1d293a5ad75ec3be",
+    "runs/r1_20261014/replay_lift_v1/replay.json": "35fdd7933d46484ab1b47081c8b76a66a280c1b99b353cfff15f234c58fa4ca8",
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/tools/validate_physx_replay.py": "afe0ee7809852a64c7aa8be2107261ddd000aa1e3ca915652a19f5621daab896"
+  },
+  "limitations": [
+    "no full chassis/left arm/cabinet collision scene",
+    "convex hull and welded tray proxy",
+    "contacts sampled at raw knots, not every physics step",
+    "not contact grasp or complete placement"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/bin/python",
+    "-u",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/isaac_lab_replay_v2.py",
+    "--asset",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4",
+    "--output",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/replay_nominal_v2",
+    "--num-envs",
+    "1",
+    "--steps",
+    "256",
+    "--gpu",
+    "1",
+    "--replay",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/mechanism_a_execution/0/result.json"
+  ],
+  "pid": 603917,
+  "returncode": 0,
+  "timeout": false,
+  "wall_s": 34.703200538642704,
+  "valid_manifest_exists": true,
+  "program_sha256": "3b8f25e4eb77b9410c3d327c34d6bf8c533e097c794db3a0aa1576620bb4cdd7"
+}
