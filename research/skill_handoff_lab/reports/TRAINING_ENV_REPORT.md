@@ -1,5 +1,10 @@
 # Training environment report
 
+> 2026-10-13 update: see `MULTIGPU_CASH_PROGRESS.md`. Gymnasium/SB3-contrib are
+> now installed in a separate CASH environment, the real Gymnasium adapter and
+> cache training entry points are implemented, and a 16-step MaskablePPO software
+> fixture test passes. The historical report below describes the earlier round.
+
 ## Implemented
 
 - Revisioned multi-stage handoff contracts.
@@ -40,4 +45,3 @@ is not recommended as an experiment-side workaround.
 After recovery: run one cuRobo-only request, one no-fallback Isaac planned
 segment, then one three-stage random CASH episode. Only then start the bounded
 oracle batch and learning comparison.
-

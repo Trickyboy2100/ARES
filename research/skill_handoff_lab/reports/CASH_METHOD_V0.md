@@ -51,4 +51,12 @@ budgets, and executed outcomes. It must show value beyond exhaustive search or
 the supervised ranker. A learning curve cannot be produced honestly until the
 GPU stack supplies repeatable executed transitions; a synthetic or CPU-proxy
 curve would answer a different question.
+# Current implementation update (2026-10-13)
+
+See `MULTIGPU_CASH_PROGRESS.md` for the latest runtime changes. `gym_env.py`
+provides the actual Gymnasium interface; `cache_backend.py` accepts explicitly
+qualified planning evidence in addition to executed outcomes. `train_ranker.py`
+and `train_cash.py` provide real-data entry points. The latter currently trains
+standard MaskablePPO; it does not yet integrate the CASH successor-effect head.
+No formal research training or baseline improvement is reported.
 

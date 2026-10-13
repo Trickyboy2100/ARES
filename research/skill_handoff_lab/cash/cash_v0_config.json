@@ -5,7 +5,8 @@
   "reward_contract": {
     "terminal_success": 1.0,
     "execution_cost_coefficient": -0.001,
-    "accepted_evidence": ["CUROBO_ISAAC_EXECUTED", "REAL_ROBOT_EXECUTED"],
+    "accepted_evidence": ["CUROBO_INDEPENDENTLY_VALIDATED", "CUROBO_ISAAC_EXECUTED", "REAL_ROBOT_EXECUTED"],
+    "planning_requires_hashed_request_result_validation": true,
     "cpu_endpoint_proxy_is_reward": false,
     "hand_score_is_reward": false
   },
@@ -13,5 +14,5 @@
   "optimizer": {"name": "Adam", "learning_rate": 0.0003},
   "ppo": {"clip": 0.2, "value_coef": 0.5, "effect_coef": 0.1, "entropy_coef": 0.01},
   "fair_comparison": ["ARES_R_BEAM", "SUPERVISED_RANKER", "MASKABLE_PPO", "CASH"],
-  "training_status": "BLOCKED_PENDING_EXECUTED_GPU_OUTCOMES"
+  "training_status": "READY_FOR_QUALIFIED_PLANNING_CACHE_PENDING_SERVER_DATA"
 }

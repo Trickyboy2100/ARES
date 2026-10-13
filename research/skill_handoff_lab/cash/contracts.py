@@ -1,7 +1,7 @@
 """Revisioned contracts for CASH; no simulator or robot side effects."""
 from __future__ import annotations
 from dataclasses import dataclass,asdict
-import hashlib,json
+import hashlib,json,math
 from typing import Mapping
 
 def digest(value):
@@ -11,6 +11,29 @@ def digest(value):
 CASH_REVISION="cash-smdp-v0-20261013"
 STAGES=("GRASP_BRANCH","CENTER_TERMINAL","PREPLACE_PLAN")
 EXECUTION_EVIDENCE=("CUROBO_ISAAC_EXECUTED","REAL_ROBOT_EXECUTED")
+PLANNING_EVIDENCE="CUROBO_INDEPENDENTLY_VALIDATED"
+
+def validate_transition_evidence(value, allow_planning=False):
+    if not math.isfinite(value.execution_cost) or value.execution_cost<0:
+        raise ValueError("transition cost must be finite and nonnegative")
+    if value.evidence_level in EXECUTION_EVIDENCE and value.executed:
+        return
+    if allow_planning and value.evidence_level == PLANNING_EVIDENCE:
+        required=("collision", "self_collision", "attached_object", "soft_limits", "orientation", "scene_binding")
+        checks=value.metadata.get("independent_validation", {})
+        if value.downstream_success is False and not value.planner_success:
+            if value.metadata.get("failure_class") != "VERIFIED_GEOMETRIC_INFEASIBILITY":
+                raise ValueError("solver failure/timeout/OOM cannot be a negative task label")
+        elif not all(type(checks.get(key)) is bool for key in required):
+            raise ValueError("planning reward requires completed independent trajectory validators")
+        if value.downstream_success is True and not all(checks.get(key) is True for key in required):
+            raise ValueError("successful reward requires every independent validator to pass")
+        if not value.metadata.get("source_artifacts"):
+            raise ValueError("planning reward requires hashed request/result artifacts")
+        if value.downstream_success is True and not value.planner_success:
+            raise ValueError("successful planning reward requires planner success")
+        return
+    raise RuntimeError("CASH reward requires qualified execution or validated planning evidence")
 
 @dataclass(frozen=True)
 class HandoffAction:
@@ -42,3 +65,8 @@ def validate_observation(value:HandoffObservation)->None:
     if not value.scene_revision.startswith("sha256:"): raise ValueError("scene revision required")
     ids=[x.action_id for x in value.actions]
     if len(ids)!=len(set(ids)): raise ValueError("duplicate action ids")
+    if any(a.stage!=value.stage for a in value.actions): raise ValueError("action stage mismatch")
+    numeric=value.robot_state+value.remaining_goal+value.successor_constraints
+    if not all(math.isfinite(x) for x in numeric): raise ValueError("nonfinite observation")
+    if any(not all(math.isfinite(x) for x in a.features) for a in value.actions):
+        raise ValueError("nonfinite action features")

@@ -7,7 +7,7 @@ from __future__ import annotations
 from typing import Protocol
 import numpy as np
 from .contracts import (EXECUTION_EVIDENCE,EpisodeResult,ExecutedTransition,
-                        HandoffObservation,validate_observation)
+                        HandoffObservation,validate_observation,validate_transition_evidence)
 
 class HandoffBackend(Protocol):
     def reset(self,seed:int)->HandoffObservation: ...
@@ -15,8 +15,9 @@ class HandoffBackend(Protocol):
 
 class SkillHandoffEnv:
     metadata={"render_modes":[]}
-    def __init__(self,backend:HandoffBackend,strict_execution:bool=True):
+    def __init__(self,backend:HandoffBackend,strict_execution:bool=True,allow_planning:bool=False):
         self.backend=backend; self.strict_execution=strict_execution
+        self.allow_planning=allow_planning
         self.current=None; self.total_cost=0.; self.decisions=[]; self.failures=[]
     @staticmethod
     def encode(observation:HandoffObservation):
@@ -40,11 +41,11 @@ class SkillHandoffEnv:
         selected=self.current.actions[action]
         if not selected.legal: raise ValueError("masked/illegal action selected")
         transition=self.backend.execute(self.current,selected.action_id)
-        if transition.action_id!=selected.action_id or transition.stage!=self.current.stage:
+        if (transition.episode_id!=self.current.episode_id or
+                transition.action_id!=selected.action_id or transition.stage!=self.current.stage):
             raise ValueError("backend transition lineage mismatch")
-        if self.strict_execution and (not transition.executed or
-                                      transition.evidence_level not in EXECUTION_EVIDENCE):
-            raise RuntimeError("strict CASH reward requires executed cuRobo/Isaac or real evidence")
+        if self.strict_execution:
+            validate_transition_evidence(transition,self.allow_planning)
         self.decisions.append(selected.action_id); self.total_cost+=float(transition.execution_cost)
         self.failures.extend(transition.failure_codes)
         terminal=transition.downstream_success is not None
@@ -58,5 +59,7 @@ class SkillHandoffEnv:
             self.current=None
             return obs,reward,True,False,info
         if transition.next_observation is None: raise ValueError("nonterminal transition lacks observation")
+        if transition.next_observation.episode_id!=self.current.episode_id:
+            raise ValueError("next observation episode mismatch")
         self.current=transition.next_observation; validate_observation(self.current)
         return self.encode(self.current),reward,False,False,{"transition":transition}
