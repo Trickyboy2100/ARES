@@ -1,0 +1,27 @@
+test_digest_stable (test_bench_contracts.ContractTests.test_digest_stable) ... ok
+test_revision_enforced (test_bench_contracts.ContractTests.test_revision_enforced) ... ok
+test_mask_exposed (test_cash_contracts.CashTests.test_mask_exposed) ... ok
+test_masked_actor_critic_updates (test_cash_contracts.CashTests.test_masked_actor_critic_updates) ... ok
+test_maskable_ppo_cpu_integration_fixture_only (test_cash_gym.CashGymTests.test_maskable_ppo_cpu_integration_fixture_only) ... ok
+test_three_stage_api_and_terminal_shape (test_cash_gym.CashGymTests.test_three_stage_api_and_terminal_shape) ... /home/andyee/robot-research/ARES-Skilllab/envs/cash/lib/python3.13/site-packages/gymnasium/utils/env_checker.py:372: UserWarning: [33mWARN: A Box observation space minimum value is -infinity. This is probably too low.[0m
+  logger.warn(
+/home/andyee/robot-research/ARES-Skilllab/envs/cash/lib/python3.13/site-packages/gymnasium/utils/env_checker.py:376: UserWarning: [33mWARN: A Box observation space maximum value is infinity. This is probably too high.[0m
+  logger.warn(
+ok
+test_timeout_not_negative_label (test_cash_gym.CashGymTests.test_timeout_not_negative_label) ... ok
+test_unchecked_collision_not_positive_label (test_cash_gym.CashGymTests.test_unchecked_collision_not_positive_label) ... ok
+test_actor_and_effect_are_equivariant (test_cash_permutation.PermutationTests.test_actor_and_effect_are_equivariant) ... ok
+test_failure_classes (test_oracle_executor.ExecutorTests.test_failure_classes) ... ok
+test_forbid_execution (test_oracle_executor.ExecutorTests.test_forbid_execution) ... ok
+test_success_without_validation_is_unknown (test_oracle_executor.ExecutorTests.test_success_without_validation_is_unknown) ... ok
+test_oracle_is_execution_blocked_without_gpu (test_p2_1_contracts.P21Tests.test_oracle_is_execution_blocked_without_gpu) ... ok
+test_scene_revision_rejects_stale_geometry (test_p2_1_contracts.P21Tests.test_scene_revision_rejects_stale_geometry) ... ok
+test_missing_mesh_blocks (test_static_align.OfflineAlignmentContractTest.test_missing_mesh_blocks) ... ok
+test_reads_six_joint_axes_and_limits (test_static_align.OfflineAlignmentContractTest.test_reads_six_joint_axes_and_limits) ... ok
+test_reports_bad_assets_instead_of_auto_repair (test_static_align.OfflineAlignmentContractTest.test_reports_bad_assets_instead_of_auto_repair) ... ok
+test_soft_limit_intersection (test_static_align.OfflineAlignmentContractTest.test_soft_limit_intersection) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.529s
+
+OK

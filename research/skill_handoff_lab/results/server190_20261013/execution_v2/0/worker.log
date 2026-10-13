@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/andyee/robot-research/ARES-Skilllab/snapshots/bootstrap-3ec7bd9-9de17d2/ARES/research/skill_handoff_lab/bench/oracle_executor.py", line 41, in execute
+    self.worker.main()
+  File "/home/andyee/robot-research/ARES-Skilllab/snapshots/bootstrap-3ec7bd9-9de17d2/ARES-R/src/ares_r/motion/production_scene_worker.py", line 66, in main
+    from curobo.motion_planner import MotionPlanner,MotionPlannerCfg
+  File "/home/andyee/robot-research/ARES-Skilllab/snapshots/ares-curobo-pinned-8e734f3/curobo/motion_planner.py", line 18, in <module>
+    from curobo._src.motion.motion_planner import MotionPlanner
+  File "/home/andyee/robot-research/ARES-Skilllab/snapshots/ares-curobo-pinned-8e734f3/curobo/_src/motion/motion_planner.py", line 11, in <module>
+    from curobo._src.collision.attachment_manager import AttachmentManager
+  File "/home/andyee/robot-research/ARES-Skilllab/snapshots/ares-curobo-pinned-8e734f3/curobo/_src/collision/attachment_manager.py", line 16, in <module>
+    from curobo._src.robot.kinematics.kinematics import Kinematics
+  File "/home/andyee/robot-research/ARES-Skilllab/snapshots/ares-curobo-pinned-8e734f3/curobo/_src/robot/kinematics/kinematics.py", line 24, in <module>
+    from curobo._src.robot.kinematics.kinematics_cfg import KinematicsCfg
+  File "/home/andyee/robot-research/ARES-Skilllab/snapshots/ares-curobo-pinned-8e734f3/curobo/_src/robot/kinematics/kinematics_cfg.py", line 8, in <module>
+    from curobo._src.robot.loader.kinematics_loader import KinematicsLoader
+  File "/home/andyee/robot-research/ARES-Skilllab/snapshots/ares-curobo-pinned-8e734f3/curobo/_src/robot/loader/kinematics_loader.py", line 24, in <module>
+    from curobo._src.robot.parser.parser_urdf import UrdfRobotParser
+  File "/home/andyee/robot-research/ARES-Skilllab/snapshots/ares-curobo-pinned-8e734f3/curobo/_src/robot/parser/parser_urdf.py", line 14, in <module>
+    import yourdfpy
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/oracle-deps/yourdfpy/__init__.py", line 18, in <module>
+    from .urdf import (
+  File "/home/andyee/robot-research/ARES-Skilllab/envs/oracle-deps/yourdfpy/urdf.py", line 13, in <module>
+    from lxml import etree
+ModuleNotFoundError: No module named 'lxml'
