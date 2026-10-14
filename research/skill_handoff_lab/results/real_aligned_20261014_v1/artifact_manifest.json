@@ -1,0 +1,212 @@
+{
+  "requested_base_commit": "3c20dcd",
+  "audit_execution_base_commit": "f5e9eb0",
+  "ares_r_read_only_commit": "9de17d2",
+  "evidence": "HISTORICAL/CAD/SCAN_PROXY/OFFLINE_REPLAY/STATIC_RENDER; OCTOBER_UNVERIFIED",
+  "october_raw_archive_available": false,
+  "new_physics_training_steps": 0,
+  "additional_model_and_code_sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/isaac_sim/simforge/assets/jaka_minicobo/jaka_minicobo.usd",
+      "bytes": 1462,
+      "sha256": "c453c56dfaeb603dbcb183c9304305385ab7033cfddd4d798354dce8ad3cdbc1"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/isaac_sim/simforge/assets/jaka_minicobo/configuration/jaka_minicobo_base.usd",
+      "bytes": 3995204,
+      "sha256": "c79fccbb789c4c83a3182bd0d054dd7e1ed1ce573f231223fb4b2c0e250c8dec"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/isaac_sim/simforge/assets/jaka_minicobo/configuration/jaka_minicobo_sensor.usd",
+      "bytes": 653,
+      "sha256": "abafad37dc5c4347ead1ce99b886e96fa6dc7ae914ca4cc12809d72bb2c5a8bf"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/isaac_sim/simforge/assets/jaka_minicobo/configuration/jaka_minicobo_physics.usd",
+      "bytes": 5547,
+      "sha256": "c95c78bdb610db97f3c35502ee7d852a85c38788ca7128da86b08596c2b9d992"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/isaac_sim/simforge/assets/jaka_minicobo/configuration/jaka_minicobo_robot.usd",
+      "bytes": 1711,
+      "sha256": "5d23d1227e3eef3d311b748d58f9b66d64c0990318d0e89ea1e3c03fe8ce0171"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/tools/build_site_reference.py",
+      "bytes": 6550,
+      "sha256": "5d0df518cd74b5e8a4d00594bb69f0536498b9ea4da62161c5a0c097cf20cd31"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/tools/capture_site_reference.py",
+      "bytes": 2089,
+      "sha256": "50ae65b4104970c50675191ddfcc6d5e0466c692977fbe04faa709dba866719a"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/tools/real_to_sim_audit.py",
+      "bytes": 10374,
+      "sha256": "29bc94359a7360641ddcf26f9761220303b01239d81313c4deb434ee893ca0b7"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/tools/plot_real_alignment.py",
+      "bytes": 5410,
+      "sha256": "fe8e4b1a8cc50beec400c2c5cad4cfc25d2501c1e7303c3c279f4bc1e3d41108"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/asset_mesh_colliders_v5/jaka_held.usda",
+      "bytes": 61394771,
+      "sha256": "1857a1c59c7693845c1f73d62fc94d61859e7668df07f2d87b52b14d1ebdb760"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "AUDIT_BRIEF.md",
+      "bytes": 4483,
+      "sha256": "fbd363cc92017e0b24c8c7aba45b684dea3453ba10526730bc453d2c104f26a1"
+    },
+    {
+      "path": "BOUNDED_IK_HYPOTHESIS.json",
+      "bytes": 2338,
+      "sha256": "5ff1ea9e45ba6d8adef86b815b95940d5fbe68073d876b73f2aea00fe822cf78"
+    },
+    {
+      "path": "FIELD_REFERENCE.json",
+      "bytes": 23136,
+      "sha256": "03893785fa921a487972380f5ac51eb223158cc22e74b61a5fdcf1fbfc3b5b50"
+    },
+    {
+      "path": "FIELD_SCENE_GEOMETRY.md",
+      "bytes": 2594,
+      "sha256": "b40ff3eb87dadf9b8594845fc8fdce0e99cb7fab00f4089a1c44a04baa5247c0"
+    },
+    {
+      "path": "FRAME_ALIGNMENT.json",
+      "bytes": 48693,
+      "sha256": "cac76e93275e1dc9548d80fddc02a5ae07b253e4dfaf6b243813e809fb206910"
+    },
+    {
+      "path": "GEOMETRY_SOURCES.png",
+      "bytes": 275000,
+      "sha256": "b0ec56a09cf516bc683e765fa005980b8b237f9ffaac3891c186397a27750a75"
+    },
+    {
+      "path": "OCTOBER_PLANNING_FAILURE_ANALYSIS.md",
+      "bytes": 2961,
+      "sha256": "02c9f6865284f406986e8e2ab013f9993c2931ce4839a896d06e21d8fec1ad1e"
+    },
+    {
+      "path": "REAL_SCENE_OVERLAY.png",
+      "bytes": 462048,
+      "sha256": "0b5100dc141042e31e0896e19a232e7ab61ecb6ee44e56a4d2fe78c3cffcfcd2"
+    },
+    {
+      "path": "REAL_TO_SIM_AUDIT.md",
+      "bytes": 4270,
+      "sha256": "44e79c6cad30ff0a5d172ec5d160859f7d6ca9ed6cab801610683268539fe7a8"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "bytes": 2018,
+      "sha256": "5abf4bfbcaa897ee737207c95fe16941e1335c9b12cdf98904a4dad6f7e882f3"
+    },
+    {
+      "path": "RL_METHOD_REVIEW.md",
+      "bytes": 4912,
+      "sha256": "7915f2d47a4346283341f782abe98f5fcd01798cfd369c66c49c5e355f51df45"
+    },
+    {
+      "path": "SIM_RECONSTRUCTION_PLAN.md",
+      "bytes": 3597,
+      "sha256": "2878c93590ca63cf91a19b2a3210eed50281b518d3332ab25608ff6a78a471be"
+    },
+    {
+      "path": "SITE_REFERENCE_STATIC.usda.gz",
+      "bytes": 15979293,
+      "sha256": "0d45e95fca54a75e8b51e7f4cb692d71123af57d7d445953833e7a637176f827"
+    },
+    {
+      "path": "STATIC_RENDER_STATUS.md",
+      "bytes": 1330,
+      "sha256": "fc8dcd6a5d4e52f97f270cc27d778c888e97aaafe18cc902746a054a855d15d2"
+    },
+    {
+      "path": "STATIC_SCENE_MANIFEST.json",
+      "bytes": 654,
+      "sha256": "65aa0da86ceba8e5e115565277dfba1aff63c682a950b03481711e6404e1fe6d"
+    },
+    {
+      "path": "TASK_COMPARISON.png",
+      "bytes": 462048,
+      "sha256": "0b5100dc141042e31e0896e19a232e7ab61ecb6ee44e56a4d2fe78c3cffcfcd2"
+    },
+    {
+      "path": "TRAY_AND_GRIPPER_GEOMETRY.md",
+      "bytes": 2809,
+      "sha256": "9ca4ff90debf76005983e3db9515d8dbde2bac7177f4fe0f87831a60dfdde2d4"
+    },
+    {
+      "path": "TRAY_COMPONENTS.json",
+      "bytes": 1815,
+      "sha256": "ec9ae3160db5c6ebcacb14a85ba83593eaa932dd4493f0301645822228f24415"
+    },
+    {
+      "path": "TRAY_GEOMETRY.json",
+      "bytes": 8728,
+      "sha256": "7f9c257968807280cbd0ad9ea5b0cc8f64bad45f719d0febe03a612ef6ba5e4d"
+    },
+    {
+      "path": "isaac51_static/SITE_REFERENCE_ISAAC51_STATIC.png",
+      "bytes": 163352,
+      "sha256": "3d3f158dfe15815243abcc862bb2e523f346915e7beb09a7bf908552004071c4"
+    },
+    {
+      "path": "isaac51_static/capture_manifest.json",
+      "bytes": 575,
+      "sha256": "d4b544d6635ee21c1ec42ac5fc38733631f30f514008445ceb607b9669c14195"
+    },
+    {
+      "path": "isaac51_static/isaac.log",
+      "bytes": 43085,
+      "sha256": "cbc5dff3c9f34b4b3c10ead1cadd421891ff3f38a4015ded535654991efd5e52"
+    },
+    {
+      "path": "isaac51_static/process_manifest.json",
+      "bytes": 603,
+      "sha256": "1b0f105b7f87cbd3867ed961ff9db52f3b01a3aeae5dc60929a932f897d32ffe"
+    },
+    {
+      "path": "isaac51_static_v2/SITE_REFERENCE_ISAAC51_STATIC.png",
+      "bytes": 231401,
+      "sha256": "a0e17b5feaefb697f4f544a94f8a26fe204c2dfd32a839ce90e59c3bdf04b0ce"
+    },
+    {
+      "path": "isaac51_static_v2/capture_manifest.json",
+      "bytes": 600,
+      "sha256": "695e09aed5fb3f03b2af1a6c43c4515a8a4dd0f01924fb5cd06e0845587088f1"
+    },
+    {
+      "path": "isaac51_static_v2/isaac.log",
+      "bytes": 43085,
+      "sha256": "2eef78a419e46cfd6bacf76565663ce28b01fc02f364295c4306bc84f9a30df8"
+    },
+    {
+      "path": "isaac51_static_v2/process_manifest.json",
+      "bytes": 606,
+      "sha256": "7132c41bd641618cea09dd64559f3e5ba4fdde2154e10c1c506a107ee9d2399c"
+    },
+    {
+      "path": "offline_tests.log",
+      "bytes": 538,
+      "sha256": "865791a36260bb69a8f0a03dbd82b6f194278672dc8b3834e8ba51caa4c0aa84"
+    },
+    {
+      "path": "old_tray_geometry.npz",
+      "bytes": 22645,
+      "sha256": "ab1a13891bc9a70dda6853b365bd0c7e6696c9a79a986977df1340290d3144d7"
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 3107,
+      "sha256": "a43eb23d8b0411b6215625881ea98d39a61a8a52dae3ca6356854df76115d100"
+    }
+  ]
+}

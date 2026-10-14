@@ -1,0 +1,2011 @@
+{
+  "evidence": "HISTORICAL + REPLAY_VERIFIED_OFFLINE_MODEL; NOT_OCTOBER_LIVE",
+  "requested_ares_base_commit": "3c20dcd",
+  "actual_ares_head": "f5e9eb04bc8ef43c406988f9a482a8b13e579a3c",
+  "ares_r_head": "9de17d2abe2775fbcbcdecc04db21c2b9caf1aca",
+  "matrix_convention": "column vectors, p_parent=T_parent_child @ p_child",
+  "BODY_axes": {
+    "name": "body",
+    "axes": "+X north/vehicle-forward, +Y west/vehicle-left, +Z up",
+    "origin": "ground projection of body center between arm bases"
+  },
+  "research_T_world_body": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "research_world_body_status": "CHOSEN_RESEARCH_COORDINATES_NOT_MEASURED",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "arms": {
+    "left": {
+      "site_T_body_controller_base": [
+        [
+          -0.7071067811865475,
+          -0.7071067811865476,
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          -0.7071067811865475,
+          0.0,
+          0.2
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_controller_model": [
+        [
+          0.999999999993254,
+          3.6732051039731564e-06,
+          5.377642775528102e-17,
+          7.934123022854296e-07
+        ],
+        [
+          1.3492536948822575e-11,
+          -3.673217543641999e-06,
+          -0.999999999993254,
+          -0.0005659125488679528
+        ],
+        [
+          -3.673205103962477e-06,
+          0.9999999999865075,
+          -3.673217543666285e-06,
+          2.8166161141623958e-06
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_body_model_base": [
+        [
+          -0.707106781191318,
+          8.796174194814942e-12,
+          0.7071067811817774,
+          0.0003995995736438701
+        ],
+        [
+          0.7071067811722367,
+          5.194705271591107e-06,
+          0.7071067811817773,
+          0.20040072162808234
+        ],
+        [
+          -3.673205103962477e-06,
+          0.9999999999865075,
+          -3.673217543666285e-06,
+          1.200002816616114
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_T_usd_world_link0": [
+        [
+          2.220446049250313e-16,
+          0.7071067811865479,
+          0.707106781186547,
+          0.05000000000000002
+        ],
+        [
+          -4.440892098500626e-16,
+          0.7071067811865471,
+          -0.7071067811865479,
+          1.1999999999999997
+        ],
+        [
+          -1.0,
+          -1.6653345369377348e-16,
+          4.440892098500626e-16,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_candidate_T_world_body": [
+        [
+          0.5000000000028461,
+          0.5000036732079504,
+          0.7071041838199734,
+          -0.8989279089393948
+        ],
+        [
+          -0.49999999999040684,
+          -0.49999632678530354,
+          0.7071093785340404,
+          0.45186617858946454
+        ],
+        [
+          0.7071067811913182,
+          -0.7071067811722362,
+          3.67320510378184e-06,
+          1.3414177417902713
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_original_world_to_research_body_subtree": [
+        [
+          0.5000000000028465,
+          -0.49999999999040723,
+          0.7071067811913183,
+          -0.27312853786759195
+        ],
+        [
+          0.5000036732079507,
+          -0.49999632678530376,
+          -0.7071067811722364,
+          1.623924267516733
+        ],
+        [
+          0.7071041838199733,
+          0.7071093785340403,
+          3.673205103805466e-06,
+          0.3161119453381426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "controller_tool": {
+        "tool_id": 3,
+        "pose_mm_rad": [
+          1.9490000009536743,
+          -33.965999603271484,
+          80.19999694824219,
+          -0.018378316557447098,
+          0.009477137538723587,
+          3.103527026864855
+        ]
+      },
+      "T_link6_tcp_historical": [
+        [
+          -0.9992307163088948,
+          -0.03787597249761908,
+          -0.010167905004109367,
+          0.0019490000009536744
+        ],
+        [
+          0.0380547255650639,
+          -0.999113465301215,
+          -0.018003369572544208,
+          -0.033965999603271485
+        ],
+        [
+          -0.009476995672715116,
+          -0.01837645670845013,
+          0.999786223345702,
+          0.08019999694824219
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "joint_order_urdf": [
+        "joint1",
+        "joint2",
+        "joint3",
+        "joint4",
+        "joint5",
+        "joint6"
+      ],
+      "joint_order_usd": [
+        "joint_1",
+        "joint_2",
+        "joint_3",
+        "joint_4",
+        "joint_5",
+        "joint_6"
+      ],
+      "source_sdk_checks": 14,
+      "historical_sdk_max_position_error_mm": 1.2939277289365203,
+      "october_q_current": null,
+      "october_tcp": null,
+      "october_gripper_opening": null
+    },
+    "right": {
+      "site_T_body_controller_base": [
+        [
+          0.7071067811865476,
+          -0.7071067811865475,
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865475,
+          0.7071067811865476,
+          0.0,
+          -0.2
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_controller_model": [
+        [
+          -0.9999999999932538,
+          -3.673205537668635e-06,
+          -3.1086244689504383e-15,
+          -7.934123033050133e-07
+        ],
+        [
+          1.3495586592693343e-11,
+          -3.673219648992615e-06,
+          -0.9999999999932537,
+          -0.0008704169433995101
+        ],
+        [
+          3.673205537638494e-06,
+          -0.9999999999865075,
+          3.67321964902384e-06,
+          -2.8166161272439455e-06
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_body_model_base": [
+        [
+          -0.7071067811913201,
+          9.97821287717777e-12,
+          0.707106781181775,
+          0.000614916695917517
+        ],
+        [
+          -0.7071067811722344,
+          -5.194707066967819e-06,
+          -0.7071067811817794,
+          -0.2006160387503574
+        ],
+        [
+          3.673205537638494e-06,
+          -0.9999999999865075,
+          3.67321964902384e-06,
+          1.1999971833838727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_T_usd_world_link0": [
+        [
+          -2.220446049250313e-16,
+          0.7071067811865474,
+          -0.7071067811865478,
+          -0.35
+        ],
+        [
+          1.1102230246251565e-16,
+          -0.7071067811865479,
+          -0.7071067811865474,
+          1.1999999999999997
+        ],
+        [
+          -1.0,
+          -2.220446049250313e-16,
+          0.0,
+          1.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_candidate_T_world_body": [
+        [
+          -0.4999999999895696,
+          0.49999632678403544,
+          -0.7071093785355292,
+          0.5991440034040505
+        ],
+        [
+          -0.5000000000036809,
+          0.5000036732092216,
+          0.7071041838184846,
+          0.4520931856866893
+        ],
+        [
+          0.7071067811913202,
+          0.7071067811722342,
+          -3.673205537421799e-06,
+          1.3414265574830373
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_original_world_to_research_body_subtree": [
+        [
+          -0.4999999999895697,
+          -0.5000000000036808,
+          0.7071067811913201,
+          -0.422913220725599
+        ],
+        [
+          0.4999963267840354,
+          0.5000036732092215,
+          0.7071067811722344,
+          -1.474149869633692
+        ],
+        [
+          -0.7071093785355291,
+          0.7071041838184843,
+          -3.67320553740298e-06,
+          0.10398828816090155
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "controller_tool": {
+        "tool_id": 2,
+        "pose_mm_rad": [
+          27.945999145507812,
+          -2.365000009536743,
+          81.4020004272461,
+          3.1105782784830573,
+          -3.115971179690468,
+          1.4899002786807043
+        ]
+      },
+      "T_link6_tcp_historical": [
+        [
+          -0.08078132195228908,
+          0.9961861689215942,
+          0.032977187159575067,
+          0.027945999145507813
+        ],
+        [
+          -0.9964025600794283,
+          -0.08156080468509744,
+          0.02301680703922258,
+          -0.0023650000095367433
+        ],
+        [
+          0.02561867074619673,
+          -0.030999225610269892,
+          0.9991910386511488,
+          0.0814020004272461
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "joint_order_urdf": [
+        "joint1",
+        "joint2",
+        "joint3",
+        "joint4",
+        "joint5",
+        "joint6"
+      ],
+      "joint_order_usd": [
+        "joint_1",
+        "joint_2",
+        "joint_3",
+        "joint_4",
+        "joint_5",
+        "joint_6"
+      ],
+      "source_sdk_checks": 14,
+      "historical_sdk_max_position_error_mm": 1.0337584449817088,
+      "october_q_current": null,
+      "october_tcp": null,
+      "october_gripper_opening": null
+    }
+  },
+  "samples": [
+    {
+      "side": "left",
+      "sample_id": 0,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375129204316e-09,
+          "rotation_error_rad": 7.961001703653718e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425832418547e-08,
+          "rotation_error_rad": 7.12143358716575e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 4.051003421639816e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 7.121433586106815e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.472091226289772e-08,
+          "rotation_error_rad": 4.0510034231819664e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 1,
+      "q_rad": [
+        -1.1804145187440451,
+        0.9931632047524044,
+        0.38682220904140885,
+        1.3897915461961434,
+        -0.8275480393660366,
+        2.6286094941008993
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 4.936285472950427e-17
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.437512879700152e-09,
+          "rotation_error_rad": 7.9610017053585e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.9038456306588877e-08,
+          "rotation_error_rad": 7.121433591457413e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5702473320143867e-08,
+          "rotation_error_rad": 5.2658333316330904e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5702473320143867e-08,
+          "rotation_error_rad": 7.872158598058921e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 2.5973631130485508e-08,
+          "rotation_error_rad": 3.1040695825304393e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 2,
+      "q_rad": [
+        -0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 7.66063214084346e-23
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.437512873634217e-09,
+          "rotation_error_rad": 7.961001703603317e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425729800428e-08,
+          "rotation_error_rad": 7.121433585834785e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036417290785e-08,
+          "rotation_error_rad": 4.051003425071077e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036417290785e-08,
+          "rotation_error_rad": 7.12143358768531e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.4720912340836246e-08,
+          "rotation_error_rad": 4.0510034233247967e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 3,
+      "q_rad": [
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 7.660632140770261e-23
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.437512894256111e-09,
+          "rotation_error_rad": 7.961001705827172e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425703922652e-08,
+          "rotation_error_rad": 7.121433588105334e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036432622776e-08,
+          "rotation_error_rad": 4.051003425450951e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036432622776e-08,
+          "rotation_error_rad": 7.121433588281574e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.472091243250462e-08,
+          "rotation_error_rad": 4.051003423893721e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 4,
+      "q_rad": [
+        0.0,
+        -0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375129204316e-09,
+          "rotation_error_rad": 7.961001704187046e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.1909080975978275e-08,
+          "rotation_error_rad": 7.121433585431931e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.077361066191987e-08,
+          "rotation_error_rad": 5.213568478001128e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.077361066191987e-08,
+          "rotation_error_rad": 7.121433586160683e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 2.8172061188542465e-08,
+          "rotation_error_rad": 5.213568478385253e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 5,
+      "q_rad": [
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375129204316e-09,
+          "rotation_error_rad": 7.961001705339107e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.6893971134053015e-08,
+          "rotation_error_rad": 7.121433585830909e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.9029095782858464e-08,
+          "rotation_error_rad": 3.039727801200791e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.9029095782858464e-08,
+          "rotation_error_rad": 7.121433586304152e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.915272792788666e-08,
+          "rotation_error_rad": 3.039727802309502e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 6,
+      "q_rad": [
+        0.0,
+        0.0,
+        -0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375129204316e-09,
+          "rotation_error_rad": 7.961001703653718e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425832418547e-08,
+          "rotation_error_rad": 7.121433585431931e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.3573020557341514e-08,
+          "rotation_error_rad": 5.213568478001128e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.3573020557341514e-08,
+          "rotation_error_rad": 7.121433586160685e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.076689403697785e-08,
+          "rotation_error_rad": 5.213568477786112e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 7,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375129204316e-09,
+          "rotation_error_rad": 7.961001703653718e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425832418547e-08,
+          "rotation_error_rad": 7.121433585830904e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.7066141378141535e-08,
+          "rotation_error_rad": 3.039727801200793e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.7066141378141535e-08,
+          "rotation_error_rad": 7.121433586304148e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.7393295239263396e-08,
+          "rotation_error_rad": 3.0397278012609535e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 8,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        -0.25,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375129204316e-09,
+          "rotation_error_rad": 7.961001703653718e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425832418547e-08,
+          "rotation_error_rad": 7.12143358716575e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 4.051003423622859e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 6.904847344978325e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.4738157199687015e-08,
+          "rotation_error_rad": 4.051003423831171e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 9,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375129204316e-09,
+          "rotation_error_rad": 7.961001703653718e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425832418547e-08,
+          "rotation_error_rad": 7.12143358716575e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 4.051003422333475e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 7.286080104307586e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.4330597804216714e-08,
+          "rotation_error_rad": 4.05100342130709e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 10,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.25,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375129204316e-09,
+          "rotation_error_rad": 7.961001703653718e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425832418547e-08,
+          "rotation_error_rad": 7.12143358716575e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 4.051003421639816e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 7.121433585853777e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.297920946939988e-08,
+          "rotation_error_rad": 5.2135684773668733e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 11,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375129204316e-09,
+          "rotation_error_rad": 7.961001703653718e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425832418547e-08,
+          "rotation_error_rad": 7.12143358716575e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 4.051003421639816e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 7.121433585856628e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.589651167687047e-08,
+          "rotation_error_rad": 3.039727800212438e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 12,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.25
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375129204316e-09,
+          "rotation_error_rad": 7.961001703653718e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425832418547e-08,
+          "rotation_error_rad": 7.12143358716575e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 4.051003421639816e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 7.121433586106815e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.472091226289772e-08,
+          "rotation_error_rad": 4.05100342190441e-08
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sample_id": 13,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301655462953e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375129204316e-09,
+          "rotation_error_rad": 7.961001703653718e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425832418547e-08,
+          "rotation_error_rad": 7.12143358716575e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 4.051003421639816e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036482338263e-08,
+          "rotation_error_rad": 7.121433586106815e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.472091226289772e-08,
+          "rotation_error_rad": 4.051003423014851e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 0,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375128793808496e-09,
+          "rotation_error_rad": 7.961001703651242e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425644457421e-08,
+          "rotation_error_rad": 7.121433586289281e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 4.051003422413205e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 7.121433585669017e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.4720912489000216e-08,
+          "rotation_error_rad": 4.051003421642122e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 1,
+      "q_rad": [
+        -0.617386660948092,
+        1.004038176788656,
+        -0.3023390229998477,
+        -3.966230181895204,
+        0.17111155626674845,
+        -0.43479502699342576
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 6.192632195647442e-17
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.437512924020055e-09,
+          "rotation_error_rad": 7.961001709298775e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.902658150591287e-08,
+          "rotation_error_rad": 7.121433578449487e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 3.024109801800211e-08,
+          "rotation_error_rad": 2.5853332500134422e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 3.024109801800211e-08,
+          "rotation_error_rad": 4.9434624768929937e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 2.6777758282142697e-08,
+          "rotation_error_rad": 2.989414721813784e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 2,
+      "q_rad": [
+        -0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 7.660648668882072e-23
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.437512912806562e-09,
+          "rotation_error_rad": 7.961001703555382e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425673503849e-08,
+          "rotation_error_rad": 7.121433588040206e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.566203640245742e-08,
+          "rotation_error_rad": 4.0510034221985155e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.566203640245742e-08,
+          "rotation_error_rad": 7.1214335868937e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.472091255452458e-08,
+          "rotation_error_rad": 4.051003421590468e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 3,
+      "q_rad": [
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 7.660648668909309e-23
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.437512894256111e-09,
+          "rotation_error_rad": 7.961001709132546e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425691580185e-08,
+          "rotation_error_rad": 7.121433587255159e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.566203643396523e-08,
+          "rotation_error_rad": 4.051003424900083e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.566203643396523e-08,
+          "rotation_error_rad": 7.121433585286647e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.472091244660956e-08,
+          "rotation_error_rad": 4.051003423204781e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 4,
+      "q_rad": [
+        0.0,
+        -0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375128793808496e-09,
+          "rotation_error_rad": 7.961001698406868e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.1909080948835685e-08,
+          "rotation_error_rad": 7.121433586309972e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.0773610886146705e-08,
+          "rotation_error_rad": 5.2135684774043784e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.0773610886146705e-08,
+          "rotation_error_rad": 7.121433586591231e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 2.8172061188542465e-08,
+          "rotation_error_rad": 5.2135684789989947e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 5,
+      "q_rad": [
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375128793808496e-09,
+          "rotation_error_rad": 7.961001702734202e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.6893970897638976e-08,
+          "rotation_error_rad": 7.121433585831706e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.9029095756532786e-08,
+          "rotation_error_rad": 3.039727801202952e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.9029095756532786e-08,
+          "rotation_error_rad": 7.121433587182218e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.915272792788666e-08,
+          "rotation_error_rad": 3.039727798467895e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 6,
+      "q_rad": [
+        0.0,
+        0.0,
+        -0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375128793808496e-09,
+          "rotation_error_rad": 7.961001703651242e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425644457421e-08,
+          "rotation_error_rad": 7.121433586309972e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.3573020557341514e-08,
+          "rotation_error_rad": 5.213568476805237e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.3573020557341514e-08,
+          "rotation_error_rad": 7.121433586152607e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.076689405088223e-08,
+          "rotation_error_rad": 5.2135684778007236e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 7,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375128793808496e-09,
+          "rotation_error_rad": 7.961001703651242e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425644457421e-08,
+          "rotation_error_rad": 7.121433585831722e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.7066141178250898e-08,
+          "rotation_error_rad": 3.039727801202966e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.7066141178250898e-08,
+          "rotation_error_rad": 7.121433586427746e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.7393295010504195e-08,
+          "rotation_error_rad": 3.039727798467884e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 8,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        -0.25,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375128793808496e-09,
+          "rotation_error_rad": 7.961001703651242e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425644457421e-08,
+          "rotation_error_rad": 7.121433586289281e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 4.051003424966802e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 6.904847344339483e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.4738157199687015e-08,
+          "rotation_error_rad": 4.051003422518103e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 9,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375128793808496e-09,
+          "rotation_error_rad": 7.961001703651242e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425644457421e-08,
+          "rotation_error_rad": 7.121433586289281e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 4.0510034199076434e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 7.286080103693708e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.4330597798436906e-08,
+          "rotation_error_rad": 4.0510034219655695e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 10,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.25,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375128793808496e-09,
+          "rotation_error_rad": 7.961001703651242e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425644457421e-08,
+          "rotation_error_rad": 7.121433586289281e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 4.051003422413205e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 7.121433585845691e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.297920968981098e-08,
+          "rotation_error_rad": 5.213568477381467e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 11,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375128793808496e-09,
+          "rotation_error_rad": 7.961001703651242e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425644457421e-08,
+          "rotation_error_rad": 7.121433586289281e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 4.051003422413205e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 7.121433586734643e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.589651167687047e-08,
+          "rotation_error_rad": 3.039727800235528e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 12,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.25
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375128793808496e-09,
+          "rotation_error_rad": 7.961001703651242e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425644457421e-08,
+          "rotation_error_rad": 7.121433586289281e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 4.051003422413205e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 7.121433585669017e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.4720912489000216e-08,
+          "rotation_error_rad": 4.051003420954925e-08
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "sample_id": 13,
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25
+      ],
+      "evidence": "REPLAY_VERIFIED_USD_JOINT_FRAMES_VS_URDF_NO_PHYSX",
+      "errors": [
+        {
+          "link": 0,
+          "position_error_m": 0.0,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 1,
+          "position_error_m": 6.437301616210642e-09,
+          "rotation_error_rad": 0.0
+        },
+        {
+          "link": 2,
+          "position_error_m": 6.4375128793808496e-09,
+          "rotation_error_rad": 7.961001703651242e-08
+        },
+        {
+          "link": 3,
+          "position_error_m": 1.4723425644457421e-08,
+          "rotation_error_rad": 7.121433586289281e-08
+        },
+        {
+          "link": 4,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 4.051003422413205e-08
+        },
+        {
+          "link": 5,
+          "position_error_m": 2.5662036260317087e-08,
+          "rotation_error_rad": 7.121433585669017e-08
+        },
+        {
+          "link": 6,
+          "position_error_m": 3.4720912489000216e-08,
+          "rotation_error_rad": 4.0510034248079904e-08
+        }
+      ]
+    }
+  ],
+  "single_global_transform_consistent": false,
+  "global_candidate_disagreement": {
+    "translation_m": 1.4980719295688996,
+    "rotation_deg": 119.99999999963754
+  },
+  "usd_urdf_max_position_error_m": 3.915272792788666e-08,
+  "usd_urdf_max_rotation_error_rad": 7.961001709298775e-08,
+  "site_historical_limits": {
+    "robot_model": "JAKA Mini2",
+    "model_verification": "JAKA Mini family limits shared by MiniCobo and Mini2; controller site soft limits remain authoritative",
+    "values_source": "JAKA official Mini family product table, checked 2026-09-04",
+    "joint_names": [
+      "joint1",
+      "joint2",
+      "joint3",
+      "joint4",
+      "joint5",
+      "joint6"
+    ],
+    "lower_rad": [
+      -6.283185307179586,
+      -2.181661564992912,
+      -2.2689280275926285,
+      -6.283185307179586,
+      -2.0943951023931953,
+      -6.283185307179586
+    ],
+    "upper_rad": [
+      6.283185307179586,
+      2.181661564992912,
+      2.2689280275926285,
+      6.283185307179586,
+      2.0943951023931953,
+      6.283185307179586
+    ],
+    "max_velocity_rad_s": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "max_acceleration_rad_s2": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "soft_limit_margin_rad": 0.15,
+    "max_start_error_rad": 0.03,
+    "commissioning_confirmed": true
+  },
+  "chassis_historical_proxies": [
+    {
+      "geometry_id": "body/chassis",
+      "owner": "chassis",
+      "kind": "chassis_conservative_proxy",
+      "center_body_m": [
+        -0.16,
+        0.0,
+        0.575
+      ],
+      "dims_m": [
+        0.56,
+        0.7,
+        1.15
+      ],
+      "filter_owned": true,
+      "source": "CONSERVATIVE_PROXY pending measured AGV CAD"
+    },
+    {
+      "geometry_id": "body/central_exclusion",
+      "owner": "safety",
+      "kind": "central_exclusion",
+      "center_body_m": [
+        0.45,
+        0.0,
+        1.2
+      ],
+      "dims_m": [
+        1.8,
+        0.14,
+        2.4
+      ],
+      "filter_owned": false,
+      "source": "hard BODY |Y|<=0.070 m safety constraint; not physical self-filter"
+    }
+  ],
+  "camera": {
+    "system_epic_pointcloud": {
+      "T_body_camera": [
+        [
+          0.039395599982,
+          -0.761534683713,
+          0.646925739328,
+          0.091844968437
+        ],
+        [
+          -0.997659344787,
+          0.00623619603,
+          0.068095092463,
+          -0.083593394675
+        ],
+        [
+          -0.055891130429,
+          -0.648094156247,
+          -0.759506514901,
+          1.5649768
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_body_camera_revision": "sha256:ccb214ea13b7020528d98d7a532908427c25d61c3ce1d40bd0a833e61a7a4e6c",
+      "T_body_camera_validation": {
+        "state": "COMMISSIONED",
+        "validation_revision": "sha256:23e44f93cb0b498792e8069628448f53813eed0b38a4951fb1b5e034764b7e11",
+        "report": "worklog/evidence/2026-09-20-body-camera-dual-arm-crosscheck/report.json",
+        "selected_semantic": "T_armbase_camera",
+        "source_arm": "right",
+        "crosscheck_arm": "left",
+        "fusion": "none"
+      }
+    },
+    "pipeline_top_level_state": "UNCOMMISSIONED",
+    "pipeline_T_body_camera": null,
+    "authority": "September system value crosschecked by dated report; October use requires actual run revisions"
+  }
+}

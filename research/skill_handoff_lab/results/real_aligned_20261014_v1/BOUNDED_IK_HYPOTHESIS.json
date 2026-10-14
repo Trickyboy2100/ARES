@@ -1,0 +1,85 @@
+{
+  "evidence": "HISTORICAL_MODEL_IK_HYPOTHESIS_ONLY_NOT_OCTOBER_TRAJECTORY",
+  "current_october_tool_verified": false,
+  "collision_validated": false,
+  "path_generated": false,
+  "wall_s": 0.4609267986379564,
+  "cases": [
+    {
+      "name": "reported_preland",
+      "reported_xyz_m": [
+        0.604866,
+        -0.184327,
+        1.222342
+      ],
+      "assumed_yaw_rad": 0.044793,
+      "legal_endpoint_ik_count": 2,
+      "solutions": [
+        {
+          "q_rad": [
+            3.324581274994225,
+            -0.4874413523349065,
+            -1.7149048701112484,
+            -3.039415659686396,
+            -1.403101104693534,
+            -4.774983465490225
+          ],
+          "position_error_m": 7.15466655220699e-14,
+          "orientation_error_deg": 6.336049686521216e-11,
+          "min_soft_margin_rad": 0.4040231574813802
+        },
+        {
+          "q_rad": [
+            -6.133185307005817,
+            0.4879389556664129,
+            1.7124650520762983,
+            -3.054845014157312,
+            1.398876600577844,
+            4.675198101597076
+          ],
+          "position_error_m": 0.0011480793340633351,
+          "orientation_error_deg": 0.4821068604649167,
+          "min_soft_margin_rad": 1.737685551006507e-10
+        }
+      ]
+    },
+    {
+      "name": "reported_target",
+      "reported_xyz_m": [
+        0.604866,
+        -0.184327,
+        1.152342
+      ],
+      "assumed_yaw_rad": 0.044793,
+      "legal_endpoint_ik_count": 2,
+      "solutions": [
+        {
+          "q_rad": [
+            -3.220963660359077,
+            -0.47939612664027287,
+            -1.7275810571141754,
+            -3.2309175546475313,
+            -1.4063550635517736,
+            -4.560819508967271
+          ],
+          "position_error_m": 1.0448048107080504e-15,
+          "orientation_error_deg": 2.614771937818615e-13,
+          "min_soft_margin_rad": 0.3913469704784531
+        },
+        {
+          "q_rad": [
+            3.0622216468201353,
+            -0.479396126626745,
+            -1.7275810571362,
+            -3.2309175546480193,
+            -1.4063550635580158,
+            -4.560819508966899
+          ],
+          "position_error_m": 3.239241716451611e-12,
+          "orientation_error_deg": 1.3793487299607472e-10,
+          "min_soft_margin_rad": 0.3913469704564285
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,778 @@
+{
+  "evidence": "HISTORICAL_SCAN_PROXY_ONLY_NOT_OCTOBER_RECONSTRUCTION",
+  "source": "repos/ARES-R/worklog/evidence/2026-09-21-p3-production-demo/clear_final/scene/snapshot.json",
+  "snapshot": {
+    "schema_version": 1,
+    "snapshot_id": "SCENE_ddbb97537dff49848f66ab080afec427",
+    "created_wall_unix_ns": 1789960064422986544,
+    "created_monotonic_ns": 4499358860104,
+    "runtime_id": "p3-clear-1789960064420411711",
+    "environment": {
+      "environment_revision_id": "ENV_eed942c33f5b46249be775f887f0a188",
+      "observation": {
+        "observation_id": "OBS_P3_CLEAR_1789960064420556311",
+        "captured_wall_unix_ns": 1789960064420412825,
+        "captured_monotonic_ns": 4499356345169,
+        "runtime_id": "p3-clear-1789960064420411711",
+        "calibration": {
+          "revisions": [
+            [
+              "T_body_camera",
+              "sha256:ccb214ea13b7020528d98d7a532908427c25d61c3ce1d40bd0a833e61a7a4e6c"
+            ],
+            [
+              "T_body_camera_validation",
+              "sha256:23e44f93cb0b498792e8069628448f53813eed0b38a4951fb1b5e034764b7e11"
+            ],
+            [
+              "residual_cleanup",
+              "radius_4_20mm"
+            ],
+            [
+              "robot_geometry",
+              "sha256:725a06f6b14173e8419923e6b49d977c0d790461c3dcb869cf992cb820805210"
+            ],
+            [
+              "robot_joint_snapshot",
+              "sha256:0ac193b43a32c25f6b8f270bb35308d4c5e98390106e5159e97e37273f20d858"
+            ]
+          ]
+        },
+        "pointcloud": {
+          "pointcloud_id": "20260921_110739_f802188b",
+          "sha256": "134e712910fac7ea1ed34c007cb7a255aaaec20920c14ae835f0db5c4f077918",
+          "coordinate_frame": "body"
+        },
+        "obstacles": [
+          {
+            "object_id": "body_chassis_lower",
+            "role": "FIXED",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                -0.16000000000000003,
+                0.0,
+                0.5
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.56,
+              0.7,
+              1.0
+            ],
+            "inflation_m": 0.0,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "inactive_left_base_link",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.011420941190163417,
+                0.21129968986995135,
+                1.2000027599990895
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.10945256018471994,
+              0.10945320359278835,
+              0.12385966861531683
+            ],
+            "inflation_m": 0.01,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "inactive_left_gripper",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.32104045021229266,
+                0.44831325005935213,
+                1.7542056595055826
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.06413656381771637,
+              0.17012438978321798,
+              0.18368450852320706
+            ],
+            "inflation_m": 0.01,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "inactive_left_link1",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.08850445965719428,
+                0.29897207592081854,
+                1.2030477919240017
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.2479981890642246,
+              0.24799794364881655,
+              0.13401183567173502
+            ],
+            "inflation_m": 0.01,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "inactive_left_link2",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.19814107667831216,
+                0.34530433240271513,
+                1.276351350839436
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.30918263517038913,
+              0.20251125643845846,
+              0.32988329562548735
+            ],
+            "inflation_m": 0.01,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "inactive_left_link3",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.29001492769179527,
+                0.34931512584407215,
+                1.3964442136124255
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.18557036948972905,
+              0.1479608402735988,
+              0.20765190496788222
+            ],
+            "inflation_m": 0.01,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "inactive_left_link4",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.3331520867630054,
+                0.332651922132485,
+                1.532907243969554
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.15705418679171157,
+              0.13093467760279354,
+              0.1576028009736241
+            ],
+            "inflation_m": 0.01,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "inactive_left_link5",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.3502892231105985,
+                0.36122943679455766,
+                1.5866165384052282
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.13728342159995832,
+              0.18144697241363472,
+              0.19441662062345877
+            ],
+            "inflation_m": 0.01,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "inactive_left_link6",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.33207691927802196,
+                0.4033924640276776,
+                1.6723540338707166
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.09271866214873081,
+              0.1007164325456742,
+              0.07224743065009509
+            ],
+            "inflation_m": 0.01,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "inactive_left_tcp",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.28770445509066406,
+                0.441575154908428,
+                1.7599602318328391
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.030958185994098497,
+              0.03742060807457226,
+              0.032873356935472664
+            ],
+            "inflation_m": 0.01,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "known_support_table",
+            "role": "FIXED",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.935311496257782,
+                0.022760123014450073,
+                0.7260464239120483
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.7777029275894165,
+              1.3005189299583435,
+              0.04
+            ],
+            "inflation_m": 0.0,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_000",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.5744934611850314,
+                -0.15517884285913575,
+                0.8789112932152219
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.014979349242316364,
+              0.0061092484328481855,
+              0.01592235432730782
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_001",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.7034054595506054,
+                0.03230147063732147,
+                0.9273263062979724
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.20863725775959852,
+              0.5858075320720673,
+              0.2744753054670386
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_002",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.6397257943948109,
+                -0.276443408926328,
+                0.8154107332229614
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.016881803671518925,
+              0.017088387409845973,
+              0.04936635494232178
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_003",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.400755466049553,
+                -0.19660006203348673,
+                1.1344612269174486
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.04246653247083354,
+              0.02668074956015934,
+              0.04660777818588979
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_004",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.6353417101294495,
+                -0.21311695606280595,
+                0.7929963884931622
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.001871692579846096,
+              0.05020727178989312,
+              0.0039821032321814
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_005",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.5773980390766393,
+                -0.12205607041824554,
+                0.8811295395312102
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.01754652028498438,
+              0.006308009821003754,
+              0.01833100422568945
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_006",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.6724480450153351,
+                0.4060069718643239,
+                0.8191585168242455
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.00878502726554875,
+              0.02889971905633021,
+              0.009092375636100769
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_007",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.7514203780371209,
+                0.367864657247412,
+                0.9378882024599158
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.26211106647615845,
+              0.10341888428598212,
+              0.12483334023019532
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_008",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.770832970738411,
+                0.33525260544071595,
+                0.823009803891182
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.16348400712013245,
+              0.03796408685545127,
+              0.032558053731918335
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_009",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.5023643213013808,
+                -0.23669126505653065,
+                1.110937918225924
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.1085323418180148,
+              0.07054269562164941,
+              0.10415117939313245
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_010",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                1.1521683235963187,
+                0.4411309286952019,
+                0.8055138811469078
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.23796878258387255,
+              0.09344352781772614,
+              0.03077201545238495
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_011",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                0.6990132182836533,
+                0.26764708012342453,
+                0.9929843544960022
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.013601809740066528,
+              0.013212695717811584,
+              0.0223996639251709
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          },
+          {
+            "object_id": "residual_012",
+            "role": "OBSTACLE",
+            "geometry_type": "cuboid",
+            "pose": {
+              "frame_id": "body",
+              "xyz_m": [
+                1.2887896448373795,
+                -0.5724871680140495,
+                0.7050919312806356
+              ],
+              "quaternion_wxyz": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "dimensions_m": [
+              0.018884927034378052,
+              0.04318152368068695,
+              0.008225465104693463
+            ],
+            "inflation_m": 0.015,
+            "source_observation_id": "OBS_P3_CLEAR_1789960064420556311",
+            "confidence": 1.0
+          }
+        ],
+        "detection_ids": []
+      },
+      "obstacle_digest": "7bffa67576d205f6cc21055c4fd7bd29ad4cc14da6c1e59a91427c3170003daf",
+      "scene_digest": "7e0feb66d9d44c96e757ec5e4a43f0637afd9c0eec8d19b2a424e537322c427b"
+    },
+    "robot_state": {
+      "captured_wall_unix_ns": 1789960064420412825,
+      "captured_monotonic_ns": 4499356345169,
+      "runtime_id": "p3-clear-1789960064420411711",
+      "left_joints_rad": [
+        -1.1804145187440451,
+        0.9931632047524044,
+        0.38682220904140885,
+        1.3897915461961434,
+        -0.8275480393660366,
+        2.6286094941008993
+      ],
+      "right_joints_rad": [
+        -0.617386660948092,
+        1.004038176788656,
+        -0.3023390229998477,
+        -3.966230181895204,
+        0.17111155626674845,
+        -0.43479502699342576
+      ],
+      "left_tcp": null,
+      "right_tcp": null,
+      "left_gripper_position": null,
+      "right_gripper_position": null,
+      "base_pose": null,
+      "base_station": null,
+      "source_revisions": [
+        [
+          "geometry_scene",
+          "sha256:5263cd72387c26dbc0135275292ccbc13444feb8db2bdfaa2bcb59cc321f56e3"
+        ]
+      ]
+    },
+    "left_attached_object": null,
+    "right_attached_object": null,
+    "constraints": [
+      {
+        "constraint_id": "central_body_exclusion",
+        "kind": "body_y_forbidden",
+        "parameters": [
+          [
+            "half_width_m",
+            0.07
+          ]
+        ]
+      }
+    ],
+    "robot_model_revision": "sha256:725a06f6b14173e8419923e6b49d977c0d790461c3dcb869cf992cb820805210",
+    "tool_revision": "sha256:d4a6cb38d7b5cee611f9780653ebd029f1684388baf5fafa313d438d1beda7c8",
+    "robot_state_digest": "abd12f8ef77fa7bf96b527851c4f89ee8f76addc16a6e5fbcdda61b14cdfba53",
+    "attachment_digest": "4e2f7ddcb67931e62aeedc4275cf78f4d31f5c8f2afd689af4742aacc60545c2",
+    "planning_context_digest": "3ed602d39da17e87dd1208fc680a87dd22eb7a3f92daa28d8a1d62ceb0b2d2b6"
+  },
+  "source_sha256": "8ff06f34cad320c0c36e6f834345c50d12cff1f6da0969c5fdf036e11031c1c6",
+  "raw_cloud_present": false,
+  "raw_cloud_sha256_reported": "134e712910fac7ea1ed34c007cb7a255aaaec20920c14ae835f0db5c4f077918",
+  "known_free_space_verified": false,
+  "cabinet_cavity_reconstructed": false,
+  "solid_occupancy_from_residual_aabb_allowed": false,
+  "october_target_reported_body_m": [
+    0.604866,
+    -0.184327,
+    1.152342
+  ],
+  "october_preland_reported_body_m": [
+    0.604866,
+    -0.184327,
+    1.222342
+  ],
+  "october_yaw_reported_rad": 0.044793,
+  "october_parameters_evidence": "UNVERIFIED_SECONDARY_USER_AND_SITE_20261012_REFERENCE",
+  "october_space_object_camera": [
+    2,
+    4,
+    1
+  ],
+  "october_original_archive_present": false
+}
