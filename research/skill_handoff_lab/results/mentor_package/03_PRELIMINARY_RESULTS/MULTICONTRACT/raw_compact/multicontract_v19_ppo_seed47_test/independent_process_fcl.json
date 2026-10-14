@@ -1,0 +1,918 @@
+{
+  "geometry": "actual USD convex hulls including fixed gripper and welded tray",
+  "collision_pieces": 15,
+  "pose_source": "OBSERVED_PHYSX_BODY_POSES",
+  "sample_dt_s": 0.008333333333333333,
+  "dense_raw_planner_path_sha256": null,
+  "checked_states": 28814,
+  "wall_source": "scene_specs.json",
+  "cases": [
+    {
+      "case_id": 0,
+      "samples": 527,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.1550097511175509e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.005683401388685845,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 1,
+      "samples": 457,
+      "collision_samples": 60,
+      "max_penetration_m": 1.5077792810367411e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 60
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 9.7755111319439e-07,
+      "max_workspace_excess_m": 0.013292470854050734,
+      "max_pose_error_rad": 0.039500224090676266,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 2,
+      "samples": 475,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 9.363952476672424e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.0071182303014944,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 3,
+      "samples": 465,
+      "collision_samples": 30,
+      "max_penetration_m": 1.5429912810029438e-06,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 30
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 9.594134916224148e-07,
+      "max_workspace_excess_m": 0.012341897082050274,
+      "max_pose_error_rad": 0.02734405501280365,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 4,
+      "samples": 473,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.1653816353240732e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.0065749803253951624,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 5,
+      "samples": 387,
+      "collision_samples": 58,
+      "max_penetration_m": 1.4450307691132681e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 58
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 5.917350631379528e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.05016091879736916,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 6,
+      "samples": 477,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 5.892281354939185e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.007957838999133462,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 7,
+      "samples": 369,
+      "collision_samples": 53,
+      "max_penetration_m": 1.203343982071675e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 53
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.033604808056252e-07,
+      "max_workspace_excess_m": 0.002184247869908399,
+      "max_pose_error_rad": 0.03779927680224742,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 8,
+      "samples": 431,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.0651435069546214e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.007049249454295572,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 9,
+      "samples": 381,
+      "collision_samples": 63,
+      "max_penetration_m": 1.5051237593248881e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 63
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.682362867415457e-07,
+      "max_workspace_excess_m": 0.0033977554908965063,
+      "max_pose_error_rad": 0.050804675573300054,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 10,
+      "samples": 507,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 5.136507159556236e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.007261634717989973,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 11,
+      "samples": 429,
+      "collision_samples": 67,
+      "max_penetration_m": 1.5227526387043215e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 67
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.704487850169851e-07,
+      "max_workspace_excess_m": 0.005743524441188232,
+      "max_pose_error_rad": 0.04488126889946854,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 12,
+      "samples": 485,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.2660817245572202e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.008238311588653647,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 13,
+      "samples": 461,
+      "collision_samples": 69,
+      "max_penetration_m": 1.5826675391122732e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 69
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.675872839262376e-07,
+      "max_workspace_excess_m": 0.0128782003460832,
+      "max_pose_error_rad": 0.04794634158232098,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 14,
+      "samples": 425,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 7.072504564242243e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.005522012224014855,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 15,
+      "samples": 415,
+      "collision_samples": 69,
+      "max_penetration_m": 1.6988203760714092e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 69
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 7.008359087210845e-07,
+      "max_workspace_excess_m": 0.008524519958524615,
+      "max_pose_error_rad": 0.05312632287817578,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 23,
+      "samples": 409,
+      "collision_samples": 56,
+      "max_penetration_m": 1.238732160185826e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 56
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.737320148663589e-07,
+      "max_workspace_excess_m": 0.0025820921953136067,
+      "max_pose_error_rad": 0.03735256743065481,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 25,
+      "samples": 479,
+      "collision_samples": 67,
+      "max_penetration_m": 1.4039526196868247e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 67
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 5.68397206423806e-07,
+      "max_workspace_excess_m": 0.012409083930897732,
+      "max_pose_error_rad": 0.03774592358901746,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 21,
+      "samples": 469,
+      "collision_samples": 66,
+      "max_penetration_m": 1.5135443268568772e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 66
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.955519247650325e-07,
+      "max_workspace_excess_m": 0.012908344944584448,
+      "max_pose_error_rad": 0.03950230849864599,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 31,
+      "samples": 379,
+      "collision_samples": 59,
+      "max_penetration_m": 1.418261060449947e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 59
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 7.805608617943213e-07,
+      "max_workspace_excess_m": 0.004814001223803356,
+      "max_pose_error_rad": 0.05065302506596943,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 30,
+      "samples": 429,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 7.051746226204497e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.005692524232688892,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 27,
+      "samples": 381,
+      "collision_samples": 61,
+      "max_penetration_m": 1.4118407702531016e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 61
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.091541069440519e-07,
+      "max_workspace_excess_m": 0.010275105771847714,
+      "max_pose_error_rad": 0.048276522189629,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 24,
+      "samples": 437,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.1247404204930292e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.003991429677314129,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 17,
+      "samples": 403,
+      "collision_samples": 58,
+      "max_penetration_m": 1.5515737258924063e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 58
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 8.411619972010587e-07,
+      "max_workspace_excess_m": 0.003959010794590365,
+      "max_pose_error_rad": 0.04799906729577104,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 29,
+      "samples": 469,
+      "collision_samples": 71,
+      "max_penetration_m": 1.6878911624259276e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 71
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.492752915619341e-07,
+      "max_workspace_excess_m": 0.012688028833656991,
+      "max_pose_error_rad": 0.04722787242308759,
+      "pose_violating_samples": 2,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 19,
+      "samples": 405,
+      "collision_samples": 63,
+      "max_penetration_m": 1.4974787972088765e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 63
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 8.855788455963731e-07,
+      "max_workspace_excess_m": 0.009899743597991555,
+      "max_pose_error_rad": 0.043540333211206615,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 20,
+      "samples": 509,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.2368124870923542e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.007248122994812595,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 18,
+      "samples": 455,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 8.12264276816284e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.0029920806312611218,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 22,
+      "samples": 485,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.856118513169177e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.004226184838187106,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 28,
+      "samples": 493,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.444690511356067e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.007133931025552582,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 26,
+      "samples": 541,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 5.975017385291969e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.004150542106973763,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 16,
+      "samples": 477,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.0613939743113512e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.003088590054825823,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 39,
+      "samples": 379,
+      "collision_samples": 62,
+      "max_penetration_m": 1.48859307147087e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 62
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.224350363494336e-07,
+      "max_workspace_excess_m": 0.0076237269413317425,
+      "max_pose_error_rad": 0.053956081795821086,
+      "pose_violating_samples": 2,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 47,
+      "samples": 493,
+      "collision_samples": 40,
+      "max_penetration_m": 2.2191705631762196e-06,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 40
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 7.4409247734074e-07,
+      "max_workspace_excess_m": 0.014122132832568371,
+      "max_pose_error_rad": 0.028754215751955407,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 43,
+      "samples": 493,
+      "collision_samples": 50,
+      "max_penetration_m": 6.690534329209978e-06,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 50
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 7.822493838474788e-07,
+      "max_workspace_excess_m": 0.013400238065696402,
+      "max_pose_error_rad": 0.02879052398723063,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 46,
+      "samples": 447,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 7.36249431578962e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.006343986157383463,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 37,
+      "samples": 407,
+      "collision_samples": 56,
+      "max_penetration_m": 1.3218438224365974e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 56
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.014544717873945e-07,
+      "max_workspace_excess_m": 0.008966547939843302,
+      "max_pose_error_rad": 0.03799263066025752,
+      "pose_violating_samples": 2,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 33,
+      "samples": 437,
+      "collision_samples": 16,
+      "max_penetration_m": 9.239329567618919e-07,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 16
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 9.709243532087204e-07,
+      "max_workspace_excess_m": 0.013250840525406142,
+      "max_pose_error_rad": 0.027563361758954567,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 41,
+      "samples": 357,
+      "collision_samples": 54,
+      "max_penetration_m": 1.2558089353749887e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 54
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 5.556229874594159e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.04236331837495404,
+      "pose_violating_samples": 2,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 40,
+      "samples": 529,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.2223805610164208e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.005872211158891534,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 35,
+      "samples": 449,
+      "collision_samples": 59,
+      "max_penetration_m": 1.3361996819424805e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 59
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.0744882429150441e-06,
+      "max_workspace_excess_m": 0.012780208393140827,
+      "max_pose_error_rad": 0.03548821582791918,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 34,
+      "samples": 449,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 8.068551739111506e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.004188793391004928,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 45,
+      "samples": 495,
+      "collision_samples": 53,
+      "max_penetration_m": 9.252831973657871e-06,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 53
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.989560781160878e-07,
+      "max_workspace_excess_m": 0.013081711796427177,
+      "max_pose_error_rad": 0.027691601200368315,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 38,
+      "samples": 483,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.112087091184162e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.0051377177962971575,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 44,
+      "samples": 541,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.1122251563510946e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.007814551529110557,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 36,
+      "samples": 427,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.1950201627282716e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.005753601578767331,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 32,
+      "samples": 429,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.319813850667219e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.007401820051975882,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 42,
+      "samples": 511,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 5.642614529604357e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.008342002741636004,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 55,
+      "samples": 373,
+      "collision_samples": 59,
+      "max_penetration_m": 1.4237453336887253e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 59
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 5.886720271994929e-07,
+      "max_workspace_excess_m": 0.0001182271696544071,
+      "max_pose_error_rad": 0.051860870985865,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 57,
+      "samples": 421,
+      "collision_samples": 61,
+      "max_penetration_m": 1.3510228193919431e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 61
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.30102747167912e-07,
+      "max_workspace_excess_m": 0.0026261867742971776,
+      "max_pose_error_rad": 0.03968313636674225,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 53,
+      "samples": 459,
+      "collision_samples": 35,
+      "max_penetration_m": 1.4048854333517358e-06,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 35
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.017101955296701e-07,
+      "max_workspace_excess_m": 0.012742243742839783,
+      "max_pose_error_rad": 0.02656573712674015,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 63,
+      "samples": 365,
+      "collision_samples": 54,
+      "max_penetration_m": 1.2657803564953087e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 54
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 7.22087876908592e-07,
+      "max_workspace_excess_m": 0.0065713237631028,
+      "max_pose_error_rad": 0.03880681589625026,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 49,
+      "samples": 361,
+      "collision_samples": 46,
+      "max_penetration_m": 1.2317174140195e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 46
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 9.422188521534355e-07,
+      "max_workspace_excess_m": 0.006149056252031621,
+      "max_pose_error_rad": 0.03972382843401104,
+      "pose_violating_samples": 2,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 62,
+      "samples": 491,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 9.133377731264015e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.006753760579178714,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 59,
+      "samples": 433,
+      "collision_samples": 27,
+      "max_penetration_m": 1.5620418005794542e-06,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 27
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.936559413403688e-07,
+      "max_workspace_excess_m": 0.011801195298116275,
+      "max_pose_error_rad": 0.024262346914144958,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 51,
+      "samples": 381,
+      "collision_samples": 54,
+      "max_penetration_m": 1.167766527723995e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 54
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 9.189447882328738e-07,
+      "max_workspace_excess_m": 0.008490473983722564,
+      "max_pose_error_rad": 0.03695705129966961,
+      "pose_violating_samples": 1,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 50,
+      "samples": 515,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.0077112849742905e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.0034189815593304654,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 56,
+      "samples": 511,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.0838254408290651e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.005198606399046359,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 52,
+      "samples": 437,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.0981035398436871e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.009345561651897788,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 61,
+      "samples": 463,
+      "collision_samples": 72,
+      "max_penetration_m": 1.6941942507880206e-05,
+      "pairs": {
+        "/Robot/Link_6/WeldedTray::right": 72
+      },
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 7.25388024581759e-07,
+      "max_workspace_excess_m": 0.012279854174513181,
+      "max_pose_error_rad": 0.049877505083331046,
+      "pose_violating_samples": 2,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 48,
+      "samples": 433,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.0796379570798652e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.009826231795376152,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 54,
+      "samples": 527,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.405463424912052e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.0052781791689447835,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 60,
+      "samples": 439,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 1.1741307249128376e-06,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.004293549308965889,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    },
+    {
+      "case_id": 58,
+      "samples": 495,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.361111418437818e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.005580253964228606,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    }
+  ],
+  "wall_s": 41.637847611214966,
+  "penetration_warning_threshold_m": 0.001,
+  "nonadjacent_right_arm_self_checked": true,
+  "source_sha256": "f09da6312d3a933d2055fe593bc8ca80d1fafddd8bf16e5c08701394d7857adf",
+  "asset_sha256": "1857a1c59c7693845c1f73d62fc94d61859e7668df07f2d87b52b14d1ebdb760",
+  "limitations": [
+    "sampled process, not swept continuous collision",
+    "USD convex hull approximation, not original concave CAD",
+    "no calibrated contact-force/guide-contact certification",
+    "welded attachment and fixed fingers only"
+  ]
+}

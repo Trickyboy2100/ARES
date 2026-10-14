@@ -1,0 +1,366 @@
+[
+  {
+    "experiment": "multicontract_v19_contract_blind_seed31_test",
+    "split": "test",
+    "method": "contract_blind",
+    "seed": 31,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6661458333333332,
+    "mean_success_s": 1.6661458333333332,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.8510416666666667
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4812500000000002
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_contract_blind_seed47_test",
+    "split": "test",
+    "method": "contract_blind",
+    "seed": 47,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6807291666666666,
+    "mean_success_s": 1.6807291666666666,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.8510416666666667
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.5104166666666665
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_contract_blind_seed59_test",
+    "split": "test",
+    "method": "contract_blind",
+    "seed": 59,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6666666666666665,
+    "mean_success_s": 1.6666666666666665,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.8510416666666667
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4822916666666668
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_contract_seed31_test",
+    "split": "test",
+    "method": "contract",
+    "seed": 31,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.66640625,
+    "mean_success_s": 1.66640625,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.8510416666666667
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4817708333333335
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_contract_seed47_test",
+    "split": "test",
+    "method": "contract",
+    "seed": 47,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6669270833333334,
+    "mean_success_s": 1.6669270833333334,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.8510416666666667
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4828125
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_contract_seed59_test",
+    "split": "test",
+    "method": "contract",
+    "seed": 59,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6666666666666665,
+    "mean_success_s": 1.6666666666666665,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.8510416666666667
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4822916666666668
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_ppo_seed31_test",
+    "split": "test",
+    "method": "ppo",
+    "seed": 31,
+    "successes": 0,
+    "n": 64,
+    "success_fraction": 0.0,
+    "mean_episode_s": 4.009895833333333,
+    "mean_success_s": null,
+    "timeouts": 64,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 0,
+        "mean_episode_s": 3.9734374999999997
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 0,
+        "mean_episode_s": 4.046354166666667
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_ppo_seed47_test",
+    "split": "test",
+    "method": "ppo",
+    "seed": 47,
+    "successes": 0,
+    "n": 64,
+    "success_fraction": 0.0,
+    "mean_episode_s": 3.7434895833333335,
+    "mean_success_s": null,
+    "timeouts": 40,
+    "failed": 24,
+    "max_peak_net_force_N": 71.26871490478516,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 0,
+        "mean_episode_s": 3.9734374999999997
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 0,
+        "mean_episode_s": 3.5135416666666663
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_ppo_seed59_test",
+    "split": "test",
+    "method": "ppo",
+    "seed": 59,
+    "successes": 0,
+    "n": 64,
+    "success_fraction": 0.0,
+    "mean_episode_s": 3.8989583333333337,
+    "mean_success_s": null,
+    "timeouts": 53,
+    "failed": 11,
+    "max_peak_net_force_N": 92.59440612792969,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 0,
+        "mean_episode_s": 3.9734374999999997
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 0,
+        "mean_episode_s": 3.8244791666666664
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_residual_seed31_test",
+    "split": "test",
+    "method": "residual",
+    "seed": 31,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6666666666666665,
+    "mean_success_s": 1.6666666666666665,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.8510416666666667
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4822916666666668
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_residual_seed47_test",
+    "split": "test",
+    "method": "residual",
+    "seed": 47,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6661458333333332,
+    "mean_success_s": 1.6661458333333332,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.8510416666666667
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4812500000000002
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_residual_seed59_test",
+    "split": "test",
+    "method": "residual",
+    "seed": 59,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6682291666666667,
+    "mean_success_s": 1.6682291666666667,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.8510416666666667
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4854166666666666
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v20_nominal_test",
+    "split": "test",
+    "method": "nominal",
+    "seed": 31,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6666666666666665,
+    "mean_success_s": 1.6666666666666665,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "X_T1_228_mask": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.8510416666666667
+      },
+      "X_T2_292": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4822916666666668
+      }
+    },
+    "source_sha256": "c36ae3797dc8379fcec19140f78dba480e45721073cc9795bebc9f504568207a",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  }
+]

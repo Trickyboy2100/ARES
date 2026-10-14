@@ -1,0 +1,279 @@
+{
+  "revision": "multicontract_v5_yaw_aligned_directional_pretraining",
+  "geometry_scope": "parameterized research; source tray and fixed EG2 geometry, not measured cabinet CAD",
+  "reward_revision": "journal_reward_v2_frozen_before_training",
+  "training_seeds": [
+    31,
+    47,
+    59
+  ],
+  "pilot_interactions_per_seed_method": 16384,
+  "train": [
+    {
+      "id": "T1_w260",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.26,
+      "height": 0.18,
+      "depth": 0.16,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    },
+    {
+      "id": "T1_w220",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.22,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.008
+    },
+    {
+      "id": "T2_rack_y",
+      "family": "T2",
+      "yaw_deg": -45,
+      "width": 0.24,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        0
+      ],
+      "goal_yz_jitter": 0.004,
+      "tool_yaw_deg": -45,
+      "center_body_m": [
+        0.4830342712474619,
+        -0.5082842712474619,
+        1.45
+      ],
+      "start_q": [
+        1.1034055635154378,
+        1.9879928387631511,
+        -1.4488962726467776,
+        -0.07367851067331747,
+        -0.5241327694112203,
+        0.6122034351106943
+      ]
+    },
+    {
+      "id": "T2_rack_xyz",
+      "family": "T2",
+      "yaw_deg": -45,
+      "width": 0.26,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006,
+      "tool_yaw_deg": -45,
+      "center_body_m": [
+        0.4830342712474619,
+        -0.5082842712474619,
+        1.45
+      ],
+      "start_q": [
+        1.1034055635154378,
+        1.9879928387631511,
+        -1.4488962726467776,
+        -0.07367851067331747,
+        -0.5241327694112203,
+        0.6122034351106943
+      ]
+    }
+  ],
+  "validation": [
+    {
+      "id": "V_T1_236",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.236,
+      "height": 0.19,
+      "depth": 0.18,
+      "mouth_offset": 0.045,
+      "travel": 0.105,
+      "success_depth": 0.054,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    },
+    {
+      "id": "V_T2_285",
+      "family": "T2",
+      "yaw_deg": -45,
+      "width": 0.25,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        0
+      ],
+      "goal_yz_jitter": 0.004,
+      "tool_yaw_deg": -45,
+      "center_body_m": [
+        0.4830342712474619,
+        -0.5082842712474619,
+        1.45
+      ],
+      "start_q": [
+        1.1034055635154378,
+        1.9879928387631511,
+        -1.4488962726467776,
+        -0.07367851067331747,
+        -0.5241327694112203,
+        0.6122034351106943
+      ]
+    }
+  ],
+  "test": [
+    {
+      "id": "X_T1_228_mask",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.228,
+      "height": 0.185,
+      "depth": 0.175,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        0,
+        1
+      ],
+      "goal_yz_jitter": 0.004
+    },
+    {
+      "id": "X_T2_292",
+      "family": "T2",
+      "yaw_deg": -45,
+      "width": 0.23,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        0
+      ],
+      "goal_yz_jitter": 0.005,
+      "tool_yaw_deg": -45,
+      "center_body_m": [
+        0.4830342712474619,
+        -0.5082842712474619,
+        1.45
+      ],
+      "start_q": [
+        1.1034055635154378,
+        1.9879928387631511,
+        -1.4488962726467776,
+        -0.07367851067331747,
+        -0.5241327694112203,
+        0.6122034351106943
+      ]
+    }
+  ],
+  "contract_episode_randomization": {
+    "step_m": [
+      0.0008,
+      0.0012
+    ],
+    "pose_tolerance_deg": [
+      2.0,
+      3.0
+    ],
+    "horizon_s": [
+      3.5,
+      4.5
+    ],
+    "alignment_m": [
+      0.006,
+      0.008
+    ],
+    "workspace_margin_m": [
+      0.018,
+      0.03
+    ]
+  },
+  "test_policy": "Do not tune on test; pilot uses train or validation only, final test after settings/checkpoints frozen",
+  "not_implemented_yet": [
+    "object CAD/size and friction/payload randomized assets",
+    "measured real-aligned cabinet",
+    "five-seed definitive study"
+  ],
+  "parent_sha256": "671f04d8937c278b1f1284bf6ae2f40c00868c15a2b82c443e47bbcbaf6a9e93",
+  "revision_reason": "90deg lateral entry with yaw=0 makes the forearm enter the rack. T2 uses genuinely yaw-aligned -45deg Preplace and -45deg slot/rack geometry; no installation transform or real joint limits changed.",
+  "horizon_feasibility_rule": "max(sampled horizon, travel/allowed_step * (1/60) + 0.6 s); nominal uses full allowed step",
+  "preplace_evidence": {
+    "seed": 31,
+    "attempts": 4,
+    "start_q": [
+      1.1034055635154378,
+      1.9879928387631511,
+      -1.4488962726467776,
+      -0.07367851067331747,
+      -0.5241327694112203,
+      0.6122034351106943
+    ],
+    "fk_tcp": [
+      [
+        -0.7071067811641611,
+        2.6264441075068585e-11,
+        0.7071067812089333,
+        0.45846231059433473
+      ],
+      [
+        -0.7071067812089337,
+        -3.25912921093799e-11,
+        -0.7071067811641611,
+        -0.4837123105950663
+      ],
+      [
+        4.473659833000827e-12,
+        -0.9999999999999997,
+        4.1617170031156826e-11,
+        1.44999999999244
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "scope": "legal IK/soft limits, not yet real cuRobo transition proof"
+  }
+}

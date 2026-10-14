@@ -1,0 +1,13 @@
+{
+  "revision": "journal_reward_v2_frozen_before_training",
+  "success_bonus": 20.0,
+  "failure_or_timeout_penalty": -10.0,
+  "time_cost_per_second": 1.0,
+  "distance_progress_gain_per_meter": 20.0,
+  "contact_cost_per_newton_second": 0.01,
+  "action_squared_cost_per_step": 0.0001,
+  "first_step_progress": 0.0,
+  "stationary_nonterminal_reward": "strictly negative time cost; no positive per-step proximity/depth bonus",
+  "old_results": "immutable under original reward; never rescore as new training",
+  "task_success": "independent geometry/pose/limits/contact/hold predicate, not reward threshold"
+}

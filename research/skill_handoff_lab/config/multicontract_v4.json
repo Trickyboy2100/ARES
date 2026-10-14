@@ -1,0 +1,184 @@
+{
+  "revision": "multicontract_v4_USD_wrist_envelope_pretraining",
+  "geometry_scope": "parameterized research; source tray and fixed EG2 geometry, not measured cabinet CAD",
+  "reward_revision": "journal_reward_v2_frozen_before_training",
+  "training_seeds": [
+    31,
+    47,
+    59
+  ],
+  "pilot_interactions_per_seed_method": 16384,
+  "train": [
+    {
+      "id": "T1_w260",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.26,
+      "height": 0.18,
+      "depth": 0.16,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    },
+    {
+      "id": "T1_w220",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.22,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.008
+    },
+    {
+      "id": "T2_rack_y",
+      "family": "T2",
+      "yaw_deg": -90,
+      "width": 0.74,
+      "height": 0.2,
+      "depth": 0.24,
+      "mouth_offset": 0.05,
+      "travel": 0.16,
+      "success_depth": 0.095,
+      "mask": [
+        0,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.004
+    },
+    {
+      "id": "T2_rack_xyz",
+      "family": "T2",
+      "yaw_deg": -90,
+      "width": 0.76,
+      "height": 0.21,
+      "depth": 0.25,
+      "mouth_offset": 0.05,
+      "travel": 0.155,
+      "success_depth": 0.095,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    }
+  ],
+  "validation": [
+    {
+      "id": "V_T1_236",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.236,
+      "height": 0.19,
+      "depth": 0.18,
+      "mouth_offset": 0.045,
+      "travel": 0.105,
+      "success_depth": 0.054,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    },
+    {
+      "id": "V_T2_285",
+      "family": "T2",
+      "yaw_deg": -90,
+      "width": 0.73,
+      "height": 0.195,
+      "depth": 0.23,
+      "mouth_offset": 0.045,
+      "travel": 0.15,
+      "success_depth": 0.095,
+      "mask": [
+        0,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.004
+    }
+  ],
+  "test": [
+    {
+      "id": "X_T1_228_mask",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.228,
+      "height": 0.185,
+      "depth": 0.175,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        0,
+        1
+      ],
+      "goal_yz_jitter": 0.004
+    },
+    {
+      "id": "X_T2_292",
+      "family": "T2",
+      "yaw_deg": -90,
+      "width": 0.75,
+      "height": 0.205,
+      "depth": 0.245,
+      "mouth_offset": 0.05,
+      "travel": 0.16,
+      "success_depth": 0.095,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.005
+    }
+  ],
+  "contract_episode_randomization": {
+    "step_m": [
+      0.0008,
+      0.0012
+    ],
+    "pose_tolerance_deg": [
+      2.0,
+      3.0
+    ],
+    "horizon_s": [
+      3.5,
+      4.5
+    ],
+    "alignment_m": [
+      0.006,
+      0.008
+    ],
+    "workspace_margin_m": [
+      0.018,
+      0.03
+    ]
+  },
+  "test_policy": "Do not tune on test; pilot uses train or validation only, final test after settings/checkpoints frozen",
+  "not_implemented_yet": [
+    "object CAD/size and friction/payload randomized assets",
+    "measured real-aligned cabinet",
+    "five-seed definitive study"
+  ],
+  "parent_sha256": "62572ff83326bdd23843274fcfe9a876d5d84b80d6829e8c20b8fd86da0b7e85",
+  "revision_reason": "Actual USD wrist hull at held T2 terminal extends to BODY X=0.120958m, tray center X=0.45475m; minimum rack width including 20mm side clearance is 0.707584m. Earlier 0.50/0.58m bays cause verified wrist contacts. Preserve failures and use >=0.73m research shelf bays.",
+  "horizon_feasibility_rule": "max(sampled horizon, travel/allowed_step * (1/60) + 0.6 s); nominal uses full allowed step"
+}

@@ -1,0 +1,366 @@
+[
+  {
+    "experiment": "multicontract_v19_contract_blind_seed31_val",
+    "split": "validation",
+    "method": "contract_blind",
+    "seed": 31,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6299479166666666,
+    "mean_success_s": 1.6299479166666666,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.7885416666666667
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4713541666666665
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_contract_blind_seed47_val",
+    "split": "validation",
+    "method": "contract_blind",
+    "seed": 47,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6427083333333332,
+    "mean_success_s": 1.6427083333333332,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.7885416666666667
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.496875
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_contract_blind_seed59_val",
+    "split": "validation",
+    "method": "contract_blind",
+    "seed": 59,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6299479166666666,
+    "mean_success_s": 1.6299479166666666,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.7885416666666667
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4713541666666665
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_contract_seed31_val",
+    "split": "validation",
+    "method": "contract",
+    "seed": 31,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6299479166666666,
+    "mean_success_s": 1.6299479166666666,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.7885416666666667
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4713541666666665
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_contract_seed47_val",
+    "split": "validation",
+    "method": "contract",
+    "seed": 47,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6302083333333335,
+    "mean_success_s": 1.6302083333333335,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.7885416666666667
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4718749999999998
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_contract_seed59_val",
+    "split": "validation",
+    "method": "contract",
+    "seed": 59,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6299479166666666,
+    "mean_success_s": 1.6299479166666666,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.7885416666666667
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4713541666666665
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_ppo_seed31_val",
+    "split": "validation",
+    "method": "ppo",
+    "seed": 31,
+    "successes": 0,
+    "n": 64,
+    "success_fraction": 0.0,
+    "mean_episode_s": 3.880729166666667,
+    "mean_success_s": null,
+    "timeouts": 61,
+    "failed": 3,
+    "max_peak_net_force_N": 68.16699981689453,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 0,
+        "mean_episode_s": 3.817708333333333
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 0,
+        "mean_episode_s": 3.94375
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_ppo_seed47_val",
+    "split": "validation",
+    "method": "ppo",
+    "seed": 47,
+    "successes": 0,
+    "n": 64,
+    "success_fraction": 0.0,
+    "mean_episode_s": 3.9653645833333333,
+    "mean_success_s": null,
+    "timeouts": 64,
+    "failed": 0,
+    "max_peak_net_force_N": 31.51004409790039,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 0,
+        "mean_episode_s": 3.9869791666666665
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 0,
+        "mean_episode_s": 3.94375
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_ppo_seed59_val",
+    "split": "validation",
+    "method": "ppo",
+    "seed": 59,
+    "successes": 0,
+    "n": 64,
+    "success_fraction": 0.0,
+    "mean_episode_s": 3.9653645833333333,
+    "mean_success_s": null,
+    "timeouts": 64,
+    "failed": 0,
+    "max_peak_net_force_N": 59.65692138671875,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 0,
+        "mean_episode_s": 3.9869791666666665
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 0,
+        "mean_episode_s": 3.94375
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_residual_seed31_val",
+    "split": "validation",
+    "method": "residual",
+    "seed": 31,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6299479166666666,
+    "mean_success_s": 1.6299479166666666,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.7885416666666667
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4713541666666665
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_residual_seed47_val",
+    "split": "validation",
+    "method": "residual",
+    "seed": 47,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6299479166666666,
+    "mean_success_s": 1.6299479166666666,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.7885416666666667
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4713541666666665
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v19_residual_seed59_val",
+    "split": "validation",
+    "method": "residual",
+    "seed": 59,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6315104166666665,
+    "mean_success_s": 1.6315104166666665,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.7885416666666667
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4744791666666668
+      }
+    },
+    "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  },
+  {
+    "experiment": "multicontract_v20_nominal_validation",
+    "split": "validation",
+    "method": "nominal",
+    "seed": 31,
+    "successes": 64,
+    "n": 64,
+    "success_fraction": 1.0,
+    "mean_episode_s": 1.6299479166666666,
+    "mean_success_s": 1.6299479166666666,
+    "timeouts": 0,
+    "failed": 0,
+    "max_peak_net_force_N": 0.0,
+    "groups": {
+      "V_T1_236": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.7885416666666667
+      },
+      "V_T2_285": {
+        "n": 32,
+        "successes": 32,
+        "mean_episode_s": 1.4713541666666665
+      }
+    },
+    "source_sha256": "c36ae3797dc8379fcec19140f78dba480e45721073cc9795bebc9f504568207a",
+    "suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "family": "residual",
+    "mode": "learned",
+    "comparison": "same case and within-episode control-step occurrence vs zero residual",
+    "paired_physical_states": 8443,
+    "mean_joint_vector_deviation_rad": 0.0020792432496895526,
+    "max_joint_vector_deviation_rad": 0.013128966134296208,
+    "per_joint_rms_deviation_rad": [
+      0.0006733831861621417,
+      0.0011416068672268525,
+      0.0013798439655893543,
+      0.0007060866606768429,
+      0.0003192458848838159,
+      0.000922352309595309
+    ]
+  },
+  {
+    "family": "residual",
+    "mode": "random",
+    "comparison": "same case and within-episode control-step occurrence vs zero residual",
+    "paired_physical_states": 8468,
+    "mean_joint_vector_deviation_rad": 0.0337708314868682,
+    "max_joint_vector_deviation_rad": 0.07852193204330013,
+    "per_joint_rms_deviation_rad": [
+      0.017809920828906457,
+      0.022670963231112666,
+      0.014182922939029024,
+      0.020210748025179498,
+      0.007224116685305244,
+      0.005875326735968063
+    ]
+  },
+  {
+    "family": "contract",
+    "mode": "learned",
+    "comparison": "same case and within-episode control-step occurrence vs zero residual",
+    "paired_physical_states": 8465,
+    "mean_joint_vector_deviation_rad": 0.001272867890736524,
+    "max_joint_vector_deviation_rad": 0.008254085489704062,
+    "per_joint_rms_deviation_rad": [
+      0.0002959277172693386,
+      0.0006453084307733482,
+      0.0010214395295969915,
+      0.0004638730686946018,
+      0.0002046021315317436,
+      0.00046105909036512125
+    ]
+  },
+  {
+    "family": "contract",
+    "mode": "random",
+    "comparison": "same case and within-episode control-step occurrence vs zero residual",
+    "paired_physical_states": 8468,
+    "mean_joint_vector_deviation_rad": 0.0337708314868682,
+    "max_joint_vector_deviation_rad": 0.07852193204330013,
+    "per_joint_rms_deviation_rad": [
+      0.017809920828906457,
+      0.022670963231112666,
+      0.014182922939029024,
+      0.020210748025179498,
+      0.007224116685305244,
+      0.005875326735968063
+    ]
+  }
+]

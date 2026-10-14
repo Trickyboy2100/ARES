@@ -1,0 +1,3103 @@
+{
+  "base_commit": "3c20dcd",
+  "host": "190",
+  "schema": 1,
+  "completed_experiments": [
+    "multicontract_v19_ppo_seed31",
+    "multicontract_v19_ppo_seed31_val",
+    "multicontract_v19_ppo_seed31_test",
+    "multicontract_v19_ppo_seed47",
+    "multicontract_v19_ppo_seed47_val",
+    "multicontract_v19_ppo_seed47_test",
+    "multicontract_v19_ppo_seed59",
+    "multicontract_v19_ppo_seed59_val",
+    "multicontract_v19_ppo_seed59_test",
+    "multicontract_v19_residual_seed31",
+    "multicontract_v19_residual_seed31_val",
+    "multicontract_v19_residual_seed31_test",
+    "multicontract_v19_residual_seed47",
+    "multicontract_v19_residual_seed47_val",
+    "multicontract_v19_residual_seed47_test",
+    "multicontract_v19_residual_seed59",
+    "multicontract_v19_residual_seed59_val",
+    "multicontract_v19_residual_seed59_test",
+    "multicontract_v19_contract_blind_seed31",
+    "multicontract_v19_contract_blind_seed31_val",
+    "multicontract_v19_contract_blind_seed31_test",
+    "multicontract_v19_contract_blind_seed47",
+    "multicontract_v19_contract_blind_seed47_val",
+    "multicontract_v19_contract_blind_seed47_test",
+    "multicontract_v19_contract_blind_seed59",
+    "multicontract_v19_contract_blind_seed59_val",
+    "multicontract_v19_contract_blind_seed59_test",
+    "multicontract_v19_contract_seed31",
+    "multicontract_v19_contract_seed31_val",
+    "multicontract_v19_contract_seed31_test",
+    "multicontract_v19_contract_seed47",
+    "multicontract_v19_contract_seed47_val",
+    "multicontract_v19_contract_seed47_test",
+    "multicontract_v19_contract_seed59",
+    "multicontract_v19_contract_seed59_val",
+    "multicontract_v19_contract_seed59_test",
+    "multicontract_v20_nominal_validation",
+    "multicontract_v20_nominal_test",
+    "multicontract_v20_fullchain"
+  ],
+  "files": [
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/industrial_episodes.json",
+      "size": 79176,
+      "sha256": "511625894b6da6f0a793f097615f95bb741f4ac563e3b6dd1615dc33985511b6"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/physical_scene.png",
+      "size": 802256,
+      "sha256": "8be38837b8f959ec2627a0c052174c04a2cbfa77d2730d6a658fc91dab9d840a"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/manifest.json",
+      "size": 19737,
+      "sha256": "3ec19ba8733514c7dde9a26dee78f2a508b44647c89d9f2610f7d7201477a4e0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/actual_scene_bounds.json",
+      "size": 43727,
+      "sha256": "7b025889e4291909498e16a072793c8d0163a9e7723b4075f977fdd20065eef1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/frozen_evaluation.json",
+      "size": 40334,
+      "sha256": "8c3dd05311c4ef641383842e270972c89b7961beaf7acbfb2a56869f938d48b3"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/controller_jacobian_audit.json",
+      "size": 1361,
+      "sha256": "700267f8a2a64ada435bcf21348dc24a3c2a52bb98535bb39f27337bb4630635"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/frozen_cases.json",
+      "size": 22659,
+      "sha256": "401bfcf6889e03d2acaea56e9d780388fca05711401311b6092395d8f2c286cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/process_states.json.gz",
+      "size": 6820636,
+      "sha256": "087143024ddbf0b69931833ad50a3278f3f72ac534e2dca824dc636e7a325648"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/physics_manifest.json",
+      "size": 19737,
+      "sha256": "3ec19ba8733514c7dde9a26dee78f2a508b44647c89d9f2610f7d7201477a4e0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/scene_specs.json",
+      "size": 29050,
+      "sha256": "1cd3e86c6398ae0a511c2741835f5aa3cb297ad309f2014a401e6df1154d39ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/ppo_physics.zip",
+      "size": 176437,
+      "sha256": "7c63adb9ef8219a377bd7a920ac317bc12dbed10c4f5131d34f2c26773f37732"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/online_ppo_physics.gif",
+      "size": 3403180,
+      "sha256": "0f35c4f327f9be9ab36771230dc927c2ed8fe10e2be76558efec4caf83aed8e2"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/video_frame_records.json",
+      "size": 49060,
+      "sha256": "fa19593d1d4ffe8943abaff96489a4ee0f4bb6e86120401705c8e3efc321ceab"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31/ppo/progress.csv",
+      "size": 2898,
+      "sha256": "b48626183e961071afb075ef8ac4271dd498aea72a699dc03d6ee011b3dbb35f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_process.json",
+      "size": 997,
+      "sha256": "d8a1011aca4aac949625d555498bcecd278d5850b8340f69314735ca8db3195c"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31.log",
+      "size": 103595,
+      "sha256": "6dea5d376bef846b9a567d6c5938f0011e6d6d5461fcad314c1a85272c4ed150"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/action_audit.json",
+      "size": 22329868,
+      "sha256": "2c7d05737f7161857087546dc4833d41fb791efda06517e2797fc8b058f424ba"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/manifest.json",
+      "size": 19748,
+      "sha256": "a7f1cef962bfb033a0135b4299609fefa2263a886a652a186097a885a1b6e212"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/frozen_evaluation.json",
+      "size": 80200,
+      "sha256": "0623c47a5f1dc562d22bacf2f6d914aa98e9b9cbaaf51d4aa1353a512798708f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "bfe9d3a330cae2ed4244e8fd481fbb7cb7c33eadd714a15c4492af11ad5a1a7f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/process_states.json.gz",
+      "size": 12724074,
+      "sha256": "c527508b5d49916f93a2193c9a8ca7edfa4d2308dfdad0c926f6f4d888d05192"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/physics_manifest.json",
+      "size": 19748,
+      "sha256": "a7f1cef962bfb033a0135b4299609fefa2263a886a652a186097a885a1b6e212"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/ppo_physics.zip",
+      "size": 176429,
+      "sha256": "cb3118535d81c4b7c61e6342fd22fe028e971f05243ca785ba76780ca32f6082"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val_process.json",
+      "size": 1177,
+      "sha256": "960c48a5a664d84dbba3a6857935e3b22a9bc4bb09922850624a686834bb3122"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_val.log",
+      "size": 88518,
+      "sha256": "fadebcd6fcb25a05fe0552d2495841cd3555bd0178e6f531dd23cf8a131bacbb"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test/manifest.json",
+      "size": 19786,
+      "sha256": "65b9e2c69ab6e8fa279fcbaa96e2c9fafd88a0d9c4247c30307de9760b3a177b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test/frozen_evaluation.json",
+      "size": 80289,
+      "sha256": "450f9b2a2b9402ad42df6ec005de7b58b659842c27362aabe7a9b0bc080f682c"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test/controller_jacobian_audit.json",
+      "size": 1362,
+      "sha256": "f839d4ca8d7fd3e7eef93c1b2cc2ff1b839b839133f0301ce7dc0262a40bc568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test/process_states.json.gz",
+      "size": 12913025,
+      "sha256": "b6f80bd76445a3516bfeef08d8471e6612ce4474e32feed23ba98407265ee799"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test/physics_manifest.json",
+      "size": 19786,
+      "sha256": "65b9e2c69ab6e8fa279fcbaa96e2c9fafd88a0d9c4247c30307de9760b3a177b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test/ppo_physics.zip",
+      "size": 176429,
+      "sha256": "476edf57b46fc73fa367e4834b38043e3f7c07032c4700802135f923df114c50"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test_process.json",
+      "size": 1150,
+      "sha256": "8d675fce27c00014345a7a27cd85afe3fc9d1f2b35a6d18e6b1696d9bb439fae"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed31_test.log",
+      "size": 88575,
+      "sha256": "ee95755efd7ef5a2ae42095796c9e6668a6228086ef6a2657eda4ba82ed13195"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/industrial_episodes.json",
+      "size": 76940,
+      "sha256": "055f6f5d548e08fe1938bfb288adc88ed341716134ad2fea8abb6116cad1f7be"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/physical_scene.png",
+      "size": 805034,
+      "sha256": "4085a220f2c0ebc6075587c85d99f7c4ec62bb69494ee2c5078acbc4db1fac95"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/manifest.json",
+      "size": 19731,
+      "sha256": "df976f9648527c6edf8857b803c5c6c9aae52de95a6344bc150187de0db38ff9"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/actual_scene_bounds.json",
+      "size": 43727,
+      "sha256": "7b025889e4291909498e16a072793c8d0163a9e7723b4075f977fdd20065eef1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/frozen_evaluation.json",
+      "size": 40460,
+      "sha256": "9ddb8b08911aac564e05d5505fb9d1a2aa147cda7854aadbef9680ad8c19da7a"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/controller_jacobian_audit.json",
+      "size": 1366,
+      "sha256": "3659de94acf60ba2cb8fe021c50f7342a97dcf7130f3836be86e5382f014ee1d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/frozen_cases.json",
+      "size": 22659,
+      "sha256": "401bfcf6889e03d2acaea56e9d780388fca05711401311b6092395d8f2c286cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/process_states.json.gz",
+      "size": 6839854,
+      "sha256": "208cc0485400bfeb113898d807c5cc0f85acaac597e264b8f1374b56ae574ea5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/physics_manifest.json",
+      "size": 19731,
+      "sha256": "df976f9648527c6edf8857b803c5c6c9aae52de95a6344bc150187de0db38ff9"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/scene_specs.json",
+      "size": 29050,
+      "sha256": "1cd3e86c6398ae0a511c2741835f5aa3cb297ad309f2014a401e6df1154d39ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/ppo_physics.zip",
+      "size": 176437,
+      "sha256": "19d35da6b24ffa318663be7106d52cc6fdb389aa5a64582b0a7554f7b21bc689"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/online_ppo_physics.gif",
+      "size": 3406687,
+      "sha256": "2aa4860d03b22b9fac7c606b3db87f17a847ddeec0fa0d969b6ab5dc8f6f9ac1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/video_frame_records.json",
+      "size": 49099,
+      "sha256": "61fa3a7b3a038e24ab64ccc8828dee5913a3abf68b47e7c8f0a8f34866186464"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47/ppo/progress.csv",
+      "size": 2884,
+      "sha256": "e5a6aad95769970600c28a5b84da52e5e13f5787ba08be111b5fce2f1b35e377"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_process.json",
+      "size": 996,
+      "sha256": "6bea5534f86d178c7b290fe29cb6cf249ee19744b0cde0cec746a1aabf630bb1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47.log",
+      "size": 103759,
+      "sha256": "80a7db8d81750dacb74a75e9b779cd7133990ef61a25fda750046a6c7a0f8797"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/action_audit.json",
+      "size": 22578160,
+      "sha256": "16278ba894ec554bedda46832725fceefe3b65c564e0429f0542f591515fd4f8"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/manifest.json",
+      "size": 19748,
+      "sha256": "cf84eacf930ee38a589cf0c00686573dab9525bab5329223a7d5cc8f502e7673"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/frozen_evaluation.json",
+      "size": 80100,
+      "sha256": "745d73eedb303433db99fd5ebc2c70c181ea4c25ba6a0112c4be10d38011ba79"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "bfe9d3a330cae2ed4244e8fd481fbb7cb7c33eadd714a15c4492af11ad5a1a7f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/process_states.json.gz",
+      "size": 12783317,
+      "sha256": "ff0d15bee6e6c6dd5dbabcc528e99842a26553f346a851a6718bf35737677eac"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/physics_manifest.json",
+      "size": 19748,
+      "sha256": "cf84eacf930ee38a589cf0c00686573dab9525bab5329223a7d5cc8f502e7673"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/ppo_physics.zip",
+      "size": 176429,
+      "sha256": "50296836e4aa3f75a326661b3a7cb0c3771078f59a3441027206e1f11c3d449b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val_process.json",
+      "size": 1177,
+      "sha256": "b0d281f9850ca6c00c366a9725c7182c4efe2a5b8cd33be47ad91357d78379a3"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_val.log",
+      "size": 88410,
+      "sha256": "d44d7a6290029a4f8e19b5b2e1bc886dbb116c1479f4efb5c43324562425fe71"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test/manifest.json",
+      "size": 19778,
+      "sha256": "7afd7eddcd2519ffdaae6561a62312518fd0e24b61c9f2a511ef26d098be27cd"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test/frozen_evaluation.json",
+      "size": 81084,
+      "sha256": "381f005ab3a15ad2e2218cf750dc8db191b63aba2c0c091a3a2d114cfd277202"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test/controller_jacobian_audit.json",
+      "size": 1362,
+      "sha256": "f839d4ca8d7fd3e7eef93c1b2cc2ff1b839b839133f0301ce7dc0262a40bc568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test/process_states.json.gz",
+      "size": 13029445,
+      "sha256": "d7b06805938484ee002fe349c5f96ba540530d8e7e52c06df73b24f2554ec3a9"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test/physics_manifest.json",
+      "size": 19778,
+      "sha256": "7afd7eddcd2519ffdaae6561a62312518fd0e24b61c9f2a511ef26d098be27cd"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test/ppo_physics.zip",
+      "size": 176429,
+      "sha256": "2c47abc2cb97d9f4797d4987dd0007af13313e35d7e1d7663d489179fbec23d7"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test_process.json",
+      "size": 1150,
+      "sha256": "07fc55d52e088fcb8ce0158e95e21fd8857d6f075c2d57be1f1220a1e3439b68"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed47_test.log",
+      "size": 88367,
+      "sha256": "87d53eadbd44600f5c801f169068db3a6a837593dc81d66e69776ca7d694eae5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/industrial_episodes.json",
+      "size": 88409,
+      "sha256": "fb4d99e0c8e4aded626837d5151fe2a0326d253cef2fd444efad653a2fc6b685"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/physical_scene.png",
+      "size": 804042,
+      "sha256": "e17e111b3f3e575940ab68a041ae5de2852d24f7e252004b60c4d24ef2d20789"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/manifest.json",
+      "size": 19735,
+      "sha256": "6036d621f0ca9b659c32b2c86e35f3b209d930a1368202062f26cd889a3e7303"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/actual_scene_bounds.json",
+      "size": 43727,
+      "sha256": "7b025889e4291909498e16a072793c8d0163a9e7723b4075f977fdd20065eef1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/frozen_evaluation.json",
+      "size": 40241,
+      "sha256": "90f532bfe1c535d6db996b239cd2c467740275ace2abd001a822b44a8d615220"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "a85b80a4b6110ffff8c84698b1d863f3c042b1a4216dbdb557141ccc2fb4fd65"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/frozen_cases.json",
+      "size": 22659,
+      "sha256": "401bfcf6889e03d2acaea56e9d780388fca05711401311b6092395d8f2c286cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/process_states.json.gz",
+      "size": 6878923,
+      "sha256": "da8b9513a924a416d70652be427e23296b4494902231a2dfdf4173abb9f09114"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/physics_manifest.json",
+      "size": 19735,
+      "sha256": "6036d621f0ca9b659c32b2c86e35f3b209d930a1368202062f26cd889a3e7303"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/scene_specs.json",
+      "size": 29050,
+      "sha256": "1cd3e86c6398ae0a511c2741835f5aa3cb297ad309f2014a401e6df1154d39ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/ppo_physics.zip",
+      "size": 176437,
+      "sha256": "cb588d85fbce4ec417a99ef4de70aaf6e22c5b8d248ed98b5e9d9ecf88934197"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/online_ppo_physics.gif",
+      "size": 3404876,
+      "sha256": "306f2e7859353caa8e6c4b3a9c9ea4168a93046709ba7d956fbe27fc64281510"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/video_frame_records.json",
+      "size": 49071,
+      "sha256": "ac0f091a6632454ee5ed13fa60dbf7a6201c571d9589e6fd8cacb0b249b43110"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59/ppo/progress.csv",
+      "size": 2892,
+      "sha256": "a8a6faa476e68bd0baf3582b3221df0242206445de070fa1f1368021bea195df"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_process.json",
+      "size": 996,
+      "sha256": "94cf1b3f8b0118f19cd6a5313c9565d2ac116be9937880580617eaf2ed289712"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59.log",
+      "size": 103650,
+      "sha256": "cc5dc866d99c0d3eb7ede6162aec3b0b705b2a213ef470dabc0662c165298ecb"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/action_audit.json",
+      "size": 22357596,
+      "sha256": "2c91ce8dc8bc132e9783124a6bbf3bc1c2ea6767772b8022c4b29816e3a83dda"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/manifest.json",
+      "size": 19751,
+      "sha256": "421363e2e82484f4f515f6db1fea0515f076f65e44850a665fb9e83c9f8b739e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/frozen_evaluation.json",
+      "size": 80168,
+      "sha256": "003c6ed0bcaa37be76fe8ce8c4ca572142eb8fb898c38596920cd3ca28f7078c"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "bfe9d3a330cae2ed4244e8fd481fbb7cb7c33eadd714a15c4492af11ad5a1a7f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/process_states.json.gz",
+      "size": 12882767,
+      "sha256": "df0e0ebd46d3290a4eaa9c40d69549863ecb84666a1fe4119a805217a2f7e344"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/physics_manifest.json",
+      "size": 19751,
+      "sha256": "421363e2e82484f4f515f6db1fea0515f076f65e44850a665fb9e83c9f8b739e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/ppo_physics.zip",
+      "size": 176429,
+      "sha256": "36dc881946f050b04fc03b4f795f7cea14d7231839a56b74f597482c58ee840d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val_process.json",
+      "size": 1177,
+      "sha256": "b3646c61ec7714461f7314681463bb94fc6dfcc28e981b843afc3802593b0dc7"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_val.log",
+      "size": 88443,
+      "sha256": "6a778b3998a10aa563e54c856feb651f2d0e658e09a75da3fc35b9de7023dede"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test/manifest.json",
+      "size": 19785,
+      "sha256": "49e2bc6b996aaf1d91fdbd771ca55f405959fd035d3d65730ed6b499bfb1b1de"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test/frozen_evaluation.json",
+      "size": 80726,
+      "sha256": "30979a96b56a0e4bf7db114a0263403c4442b8d258d4be1585977d2c3f79ea61"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test/controller_jacobian_audit.json",
+      "size": 1362,
+      "sha256": "f839d4ca8d7fd3e7eef93c1b2cc2ff1b839b839133f0301ce7dc0262a40bc568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test/process_states.json.gz",
+      "size": 13118479,
+      "sha256": "0ceeeef7d44a8d70be3a3dec6c9cf2f154582d841018e0db4939b31afc2fabaa"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test/physics_manifest.json",
+      "size": 19785,
+      "sha256": "49e2bc6b996aaf1d91fdbd771ca55f405959fd035d3d65730ed6b499bfb1b1de"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test/ppo_physics.zip",
+      "size": 176429,
+      "sha256": "3058e1dccbc1263ee6e16cdce414be85e44d97c099855f9ecfdbe033b02a0859"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test_process.json",
+      "size": 1149,
+      "sha256": "b0a95ca877c37731208277f6c7a1e951823c761870e5752a4ec8727085b6f545"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_ppo_seed59_test.log",
+      "size": 88424,
+      "sha256": "4b06ac91ccb944b63ed70def01cacfb2346b361b0d3866f7cc5a217181795c97"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/industrial_episodes.json",
+      "size": 160978,
+      "sha256": "a71488b283a6d374154b0085dacfdf0306111710e0b5c591f1cdbeed57082e12"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/physical_scene.png",
+      "size": 800741,
+      "sha256": "6c203f7eb75f9646d1ce82a1af56ef695b0f4ce05e78ded78218fa21bf1f2882"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/manifest.json",
+      "size": 19751,
+      "sha256": "464e271ff87c87bf354fe269aa0ac3da4e9650b18fc6b62d295f3d5cb00408e5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/actual_scene_bounds.json",
+      "size": 43727,
+      "sha256": "7b025889e4291909498e16a072793c8d0163a9e7723b4075f977fdd20065eef1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/frozen_evaluation.json",
+      "size": 40140,
+      "sha256": "37e6421cb95bcbf64c7b04c995bdaee58baa8cbdf490b3a9bda522c9549af842"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/controller_jacobian_audit.json",
+      "size": 1361,
+      "sha256": "700267f8a2a64ada435bcf21348dc24a3c2a52bb98535bb39f27337bb4630635"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/frozen_cases.json",
+      "size": 22659,
+      "sha256": "401bfcf6889e03d2acaea56e9d780388fca05711401311b6092395d8f2c286cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/process_states.json.gz",
+      "size": 3115149,
+      "sha256": "97984b408295da15e44ec2d696348738a9f12701e6b5ebc45c40d3544fa37025"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/physics_manifest.json",
+      "size": 19751,
+      "sha256": "464e271ff87c87bf354fe269aa0ac3da4e9650b18fc6b62d295f3d5cb00408e5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/scene_specs.json",
+      "size": 29050,
+      "sha256": "1cd3e86c6398ae0a511c2741835f5aa3cb297ad309f2014a401e6df1154d39ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/ppo_physics.zip",
+      "size": 176437,
+      "sha256": "ed59ce7f7c9a1f8408715cb052823d8adb671d6ba1bc32f84cd3d85338175916"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/online_ppo_physics.gif",
+      "size": 3409338,
+      "sha256": "a7bb456cb1c61e4cb9694704e2d15ff167afb4aadbc29dadd7b148a1aa83d2ff"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/video_frame_records.json",
+      "size": 49137,
+      "sha256": "f8b0d35c265e2083b91d4d689a4d5ce30898a0a1614f41bf2c0102b205909528"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31/ppo/progress.csv",
+      "size": 2846,
+      "sha256": "fa5bac91b63910260073922a66923f7d51a298e6bddb0a897fafcbe01eb90d19"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_process.json",
+      "size": 1005,
+      "sha256": "b60a1bace2ae5c8dc1904db5ba464c5c50f2d7ed0d78b79e2f7a47bbffebd0b7"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31.log",
+      "size": 103647,
+      "sha256": "bfaacfdefc6223787dfc52857a2ee00eff3bd9dc2fd6d8272fabaccb3f39a794"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/action_audit.json",
+      "size": 10166280,
+      "sha256": "a1bda734b9cf32c5386a06214aae7105f791b4e7b62eefc252d5e3846a29271c"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/manifest.json",
+      "size": 19744,
+      "sha256": "4c13478a5997199cab38c132fb6e6c5c92aa1ff06a83b5481b9985619f488120"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/frozen_evaluation.json",
+      "size": 80000,
+      "sha256": "a2da82896d1dbc7f06f94e7c094c58151c6fdd8631931485c194820799edcf19"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "bfe9d3a330cae2ed4244e8fd481fbb7cb7c33eadd714a15c4492af11ad5a1a7f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/process_states.json.gz",
+      "size": 5773066,
+      "sha256": "bcc1625bf8074df32e22bf07de5249d1cf19eb99bab92a9c5fb0086ec9f3a6ad"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/physics_manifest.json",
+      "size": 19744,
+      "sha256": "4c13478a5997199cab38c132fb6e6c5c92aa1ff06a83b5481b9985619f488120"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/ppo_physics.zip",
+      "size": 176429,
+      "sha256": "a28ef42588d42f7d76d520f9f92371ae5f42c5b01267d9e6eb5cb8d4819131d5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val_process.json",
+      "size": 1192,
+      "sha256": "38b8f05e89c3a45e4747c91120507ef6ed7073e42b4b6bae8be65d548fa9dd95"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_val.log",
+      "size": 88424,
+      "sha256": "6444e82c7ed4f7fbdfd812b487ce1eb23d89fb830c74d266fe0527894f4623fd"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test/manifest.json",
+      "size": 19786,
+      "sha256": "6a294a68bad1f1f4d97c36f586236d211ed5dbd20aa480adad70b508162f5538"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test/frozen_evaluation.json",
+      "size": 80175,
+      "sha256": "70e42eed7d30a490933c16ae5f7f5dae11a3a67db607a9b17f335d04f8628b79"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test/controller_jacobian_audit.json",
+      "size": 1362,
+      "sha256": "f839d4ca8d7fd3e7eef93c1b2cc2ff1b839b839133f0301ce7dc0262a40bc568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test/process_states.json.gz",
+      "size": 5888161,
+      "sha256": "c7f1a5893fd9506639d9c380b7364def92f3ed2a853bf5e836a5d1f4ef1f3b2d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test/physics_manifest.json",
+      "size": 19786,
+      "sha256": "6a294a68bad1f1f4d97c36f586236d211ed5dbd20aa480adad70b508162f5538"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test/ppo_physics.zip",
+      "size": 176429,
+      "sha256": "411493201dd253ff3df55db60b5a3ab37e9f0b1725b74daf4e9f17bd1090dc86"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test_process.json",
+      "size": 1165,
+      "sha256": "41a3d293884d49bac930b401c2b426242ba5360fc88ef36c713aafbc58f595d6"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed31_test.log",
+      "size": 88404,
+      "sha256": "dd8da34ff885f0d7582e6a20151ed76d0bd7b47e8ccd804ef379c7d70fdb7122"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/industrial_episodes.json",
+      "size": 163170,
+      "sha256": "7df47e8056aafa4698c97ff9c7867267f5eb2356a52769b16c718d6771861772"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/physical_scene.png",
+      "size": 801272,
+      "sha256": "426dd23a306c077f6bea50d2bcccf84be0fae3d8d4d1085671953c0b2a0a61c3"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/manifest.json",
+      "size": 19745,
+      "sha256": "8d1d5a5bd6d45a3520a032b032bc5b37582aade74d9ae613765dd4281e275dee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/actual_scene_bounds.json",
+      "size": 43727,
+      "sha256": "7b025889e4291909498e16a072793c8d0163a9e7723b4075f977fdd20065eef1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/frozen_evaluation.json",
+      "size": 40131,
+      "sha256": "b6be3720d082bf591f588936a1b78c9773ee51024b66d0978c1a049943df87d5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/controller_jacobian_audit.json",
+      "size": 1366,
+      "sha256": "3659de94acf60ba2cb8fe021c50f7342a97dcf7130f3836be86e5382f014ee1d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/frozen_cases.json",
+      "size": 22659,
+      "sha256": "401bfcf6889e03d2acaea56e9d780388fca05711401311b6092395d8f2c286cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/process_states.json.gz",
+      "size": 3109853,
+      "sha256": "3237c2fb208adbc7e52974de912c266c11380baf454061b2589cd4131b99593e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/physics_manifest.json",
+      "size": 19745,
+      "sha256": "8d1d5a5bd6d45a3520a032b032bc5b37582aade74d9ae613765dd4281e275dee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/scene_specs.json",
+      "size": 29050,
+      "sha256": "1cd3e86c6398ae0a511c2741835f5aa3cb297ad309f2014a401e6df1154d39ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/ppo_physics.zip",
+      "size": 176437,
+      "sha256": "3da1268a57b70f27bc95b585b79a40523095478d123f2a0ece6df916ddb2b130"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/online_ppo_physics.gif",
+      "size": 3408940,
+      "sha256": "a9c41228ab6bc53c4df1f0eeebd6540586923df86200c404472911a73f67d9b1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/video_frame_records.json",
+      "size": 49114,
+      "sha256": "450c41c139d9a64fb88c5c6bf3f0947a1abdabdfe09c6f9ac98991a9f7274213"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47/ppo/progress.csv",
+      "size": 2840,
+      "sha256": "06e0876ce6aa9cac92a0b262a103a64b3e94e59eb1a9fdc686849550aa6bbd27"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_process.json",
+      "size": 1007,
+      "sha256": "eeebdd8c2ac97e48450fc916aa0b80f1d75f31abe9a5a359eee0e38f4094aa3a"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47.log",
+      "size": 103773,
+      "sha256": "267f80beace085eaaba00868f81ef2cbcf56e4569fbef8ff181fee187f005996"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/action_audit.json",
+      "size": 10186849,
+      "sha256": "da1ab8fadaec4915bde778f66688421e3fe6287a9082054a8381735588a36a54"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/manifest.json",
+      "size": 19748,
+      "sha256": "a7c28b87db1b696e538de7d7f178e8baefed0c990b7e283d0366362445a04dad"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/frozen_evaluation.json",
+      "size": 80000,
+      "sha256": "be12215658c00fecb2769f5d4c558d358e6a214cb6c4978655913cf2a080dc99"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "bfe9d3a330cae2ed4244e8fd481fbb7cb7c33eadd714a15c4492af11ad5a1a7f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/process_states.json.gz",
+      "size": 5769112,
+      "sha256": "deed7d0ffa84d78fb9c883772e4353a130ef10c0fa2771ee5f889805750b58ef"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/physics_manifest.json",
+      "size": 19748,
+      "sha256": "a7c28b87db1b696e538de7d7f178e8baefed0c990b7e283d0366362445a04dad"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/ppo_physics.zip",
+      "size": 176429,
+      "sha256": "72f5262a7be6c6c24e72db7963e8cce210dee6a197a7dcebdac94da5057a28f7"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val_process.json",
+      "size": 1193,
+      "sha256": "114ae0867ffe8513639b967a302f00a5f4f5214bd92e1907653e66594f2e666f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_val.log",
+      "size": 88424,
+      "sha256": "1465a20ee4b464adcab0851053d1623ae39fb52f7c5f8658fe9868fbe2a7710d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test/manifest.json",
+      "size": 19790,
+      "sha256": "bfdfa443ea118a171a846991e0d66fd031bde3775d61bc45d55d618514b0576b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test/frozen_evaluation.json",
+      "size": 80189,
+      "sha256": "ee0c925a6279d293a89840b74c59229e811d0cabc20c095ed5adfffc180b2031"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test/controller_jacobian_audit.json",
+      "size": 1362,
+      "sha256": "f839d4ca8d7fd3e7eef93c1b2cc2ff1b839b839133f0301ce7dc0262a40bc568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test/process_states.json.gz",
+      "size": 5889804,
+      "sha256": "7872682b76ad0a7c808d77bdec995ba398703ebc823c580c3b90eff070a6094d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test/physics_manifest.json",
+      "size": 19790,
+      "sha256": "bfdfa443ea118a171a846991e0d66fd031bde3775d61bc45d55d618514b0576b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test/ppo_physics.zip",
+      "size": 176429,
+      "sha256": "56257de2151fd3decc4cfdca3d743cbcdaa980f7042e46a8e15dbde8ff309e95"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test_process.json",
+      "size": 1165,
+      "sha256": "464074f1fe5bbef9f137fd9619ce87b31f30cf05c27634f01ee1624f27a6b655"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed47_test.log",
+      "size": 88367,
+      "sha256": "9d909aa47cb1c9dc1bbe9dce21faf90e7c6de9061180038a494aa53e2bd25384"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/industrial_episodes.json",
+      "size": 158617,
+      "sha256": "2a11f6fbb54dc5659425d793f8121bc20f0821b40275015a3f0987a2e3772a9c"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/physical_scene.png",
+      "size": 801518,
+      "sha256": "ae999f461108a31e7b5a60eb6c5367e6f98a74b5abcb34188b4c74e5676e2bad"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/manifest.json",
+      "size": 19747,
+      "sha256": "5aa86cffaf891e1d89a79ef3347fc1c521797120bbaf64886cd08bf26341b0d4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/actual_scene_bounds.json",
+      "size": 43727,
+      "sha256": "7b025889e4291909498e16a072793c8d0163a9e7723b4075f977fdd20065eef1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/frozen_evaluation.json",
+      "size": 40115,
+      "sha256": "07b119684b6ea364f286223daab4f6e9359c8005283127606ac968d9c587d291"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "a85b80a4b6110ffff8c84698b1d863f3c042b1a4216dbdb557141ccc2fb4fd65"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/frozen_cases.json",
+      "size": 22659,
+      "sha256": "401bfcf6889e03d2acaea56e9d780388fca05711401311b6092395d8f2c286cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/process_states.json.gz",
+      "size": 3130104,
+      "sha256": "8549d6bc4d9365361d7bb9fb8e12016afbf785a2412906dcc6d01b4c1477bf4d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/physics_manifest.json",
+      "size": 19747,
+      "sha256": "5aa86cffaf891e1d89a79ef3347fc1c521797120bbaf64886cd08bf26341b0d4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/scene_specs.json",
+      "size": 29050,
+      "sha256": "1cd3e86c6398ae0a511c2741835f5aa3cb297ad309f2014a401e6df1154d39ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/ppo_physics.zip",
+      "size": 176437,
+      "sha256": "3020b0feb2b0e0a1c07e2b756f5231c6bb4b93afc16e77e0ee2c73b30b2f77ce"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/online_ppo_physics.gif",
+      "size": 3408585,
+      "sha256": "ad23907332f090099e91ec4211e9250ab06196ade8536f45f35ff8636a1db1c9"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/video_frame_records.json",
+      "size": 49144,
+      "sha256": "cd4b3e6686028c78b4550d411ca3c157b5844349bfe18b07de40e425cd888d38"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59/ppo/progress.csv",
+      "size": 2843,
+      "sha256": "b0189626d9410f263f11ed49de11cbea0f8b3ca9a4ebcac22e84a0964e2212b4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_process.json",
+      "size": 1006,
+      "sha256": "de9f70a967da98a522f07db15415ed304f49c29dcd1bf9da01242a74e175e822"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59.log",
+      "size": 103566,
+      "sha256": "2cf450b33dd3c7a1fae7a94e386229c586d04e89449d97e69161b907ca41fe8b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/action_audit.json",
+      "size": 10184121,
+      "sha256": "143f1f208f727c3fb22558f933024d0fd0360ed3da02e9057c5c7600f2d723f1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/manifest.json",
+      "size": 19747,
+      "sha256": "ddf2e16589c1f22e3090f6c7f71aea9fd20eb939316afbc5c3b3eb773ae3c684"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/frozen_evaluation.json",
+      "size": 79969,
+      "sha256": "01f8e7193293921ebc96e00d7159017baa9a13600c0f2ad6a2cfd7da6f7d60a8"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "bfe9d3a330cae2ed4244e8fd481fbb7cb7c33eadd714a15c4492af11ad5a1a7f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/process_states.json.gz",
+      "size": 5818910,
+      "sha256": "1ed664ac0073f05ce30f223b463a5b2e96a4f9560821ea9aec297b1b2d43e386"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/physics_manifest.json",
+      "size": 19747,
+      "sha256": "ddf2e16589c1f22e3090f6c7f71aea9fd20eb939316afbc5c3b3eb773ae3c684"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/ppo_physics.zip",
+      "size": 176429,
+      "sha256": "ceb965a3a55c4184d0422df1d56b8b1ceb54db7f79048a539eac0a851345d465"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val_process.json",
+      "size": 1193,
+      "sha256": "9990ea30bb926cd0bb79fb1fef590ab32787a9b62a7e138a4b20a7b95ecd62fb"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_val.log",
+      "size": 88537,
+      "sha256": "07c6ef523034582bba1f6ccb2ea26076b74adad13e9ba0cfc1510668963b3fe0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test/manifest.json",
+      "size": 19786,
+      "sha256": "9a9e8f6149caeda7fe7fcdc01cac5e477525c525283b7d311c5b7e25a0c61720"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test/frozen_evaluation.json",
+      "size": 80187,
+      "sha256": "6d9a6b811c42efbb4e7d7f2b9c29e9fdd017ad0b9eb1a5ffe2d3b9eb90a25979"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test/controller_jacobian_audit.json",
+      "size": 1362,
+      "sha256": "f839d4ca8d7fd3e7eef93c1b2cc2ff1b839b839133f0301ce7dc0262a40bc568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test/process_states.json.gz",
+      "size": 5934883,
+      "sha256": "aced9b51ff78595e422a439ce00bd4ab0d3e79f295a9e5f531fcce3507f73221"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test/physics_manifest.json",
+      "size": 19786,
+      "sha256": "9a9e8f6149caeda7fe7fcdc01cac5e477525c525283b7d311c5b7e25a0c61720"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test/ppo_physics.zip",
+      "size": 176429,
+      "sha256": "f74bff20aed0c7bdeed115125a9bee9102696a93ccef3ea259146cef2ba4133f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test_process.json",
+      "size": 1166,
+      "sha256": "0196982626816abf9fa875e8116fda6cdd14fba841f77dd9c092a2f51cf94e27"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_residual_seed59_test.log",
+      "size": 88405,
+      "sha256": "874d6b61322fec1ff0c578c4addbd2e630a9e7fd409e819c97692f8e88faa291"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/industrial_episodes.json",
+      "size": 160899,
+      "sha256": "b5d0e84b29e621e75161d84716ba01fa7fdbc91da9f1369387201fca03e0642f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/physical_scene.png",
+      "size": 801856,
+      "sha256": "66e6ec2023fdacbff58e175f708b36329857f37638fd5ff39c9acba39b92549c"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/manifest.json",
+      "size": 19757,
+      "sha256": "a05029ac3c9e683a447a76119fe3548a2b0491db65be7c2b2f3c456aae0fed9e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/actual_scene_bounds.json",
+      "size": 43727,
+      "sha256": "7b025889e4291909498e16a072793c8d0163a9e7723b4075f977fdd20065eef1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/frozen_evaluation.json",
+      "size": 40115,
+      "sha256": "edd7342aca4c2ad5faeaaa3612cb8f1d85ab2c269cef3b562f8eda7f95565994"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/controller_jacobian_audit.json",
+      "size": 1361,
+      "sha256": "700267f8a2a64ada435bcf21348dc24a3c2a52bb98535bb39f27337bb4630635"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/frozen_cases.json",
+      "size": 22659,
+      "sha256": "401bfcf6889e03d2acaea56e9d780388fca05711401311b6092395d8f2c286cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/process_states.json.gz",
+      "size": 3107632,
+      "sha256": "55c35d3676b09e40fa497401594be923c85607a1c8613bff4c32645ef3f0ae4d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/physics_manifest.json",
+      "size": 19757,
+      "sha256": "a05029ac3c9e683a447a76119fe3548a2b0491db65be7c2b2f3c456aae0fed9e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/scene_specs.json",
+      "size": 29050,
+      "sha256": "1cd3e86c6398ae0a511c2741835f5aa3cb297ad309f2014a401e6df1154d39ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/ppo_physics.zip",
+      "size": 202560,
+      "sha256": "c1ec4aec55e079f682fcefd73f04f4ce17d88e12470d1c71f929cc97b46e32b3"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/online_ppo_physics.gif",
+      "size": 3408923,
+      "sha256": "b6fc85cdfba6767950b25c234b2f952b3b23944aa56148b49c87f2ddf7e4c3d7"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/video_frame_records.json",
+      "size": 49153,
+      "sha256": "5f8999114562084b3a662d3785118aaaf69fb71e79f77a25f242887b48661343"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31/ppo/progress.csv",
+      "size": 2845,
+      "sha256": "b7bf47641fa69450050b18c55c0d075888d12451f04be4594fe8d262e448ed10"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_process.json",
+      "size": 1019,
+      "sha256": "80ba9211b9628dffe727f7f8f451c252d57944530f3f15e123f5b3a9d8a65382"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31.log",
+      "size": 103747,
+      "sha256": "f65b9c3a6f5259d34e09432cb2708190f89d51843b62def33e5027e5adb70d62"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/action_audit.json",
+      "size": 10715823,
+      "sha256": "fecad1b3680ea8b3d2a55e3bd5f46c2cbf25858b5ccb7ccbaef646a0b9f20ef4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/manifest.json",
+      "size": 19754,
+      "sha256": "7d157994673b023f066fbbc86f32b58244ba4e5e39d109ebe0f8395e2a0a1331"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/frozen_evaluation.json",
+      "size": 80004,
+      "sha256": "dcfe8bdebb4fed0f3f78a8a057169651a8d42f9ed7dcc556697358d92c6161db"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "bfe9d3a330cae2ed4244e8fd481fbb7cb7c33eadd714a15c4492af11ad5a1a7f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/process_states.json.gz",
+      "size": 5776933,
+      "sha256": "091a21b9793ddf698dd1e89e24b886c909b35c570b06f560cc60384480509306"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/physics_manifest.json",
+      "size": 19754,
+      "sha256": "7d157994673b023f066fbbc86f32b58244ba4e5e39d109ebe0f8395e2a0a1331"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/ppo_physics.zip",
+      "size": 202552,
+      "sha256": "0adec834373aa0f5da3a84872613786cd9376b5ceb2e15758dc301e2301c735a"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val_process.json",
+      "size": 1210,
+      "sha256": "2f82ecde294a7d509f88675bc47aede0bb2124d79c597fb5421ade8b706ac070"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_val.log",
+      "size": 88443,
+      "sha256": "1376eb980666e60d36c22ce1e6d37ce0c7bc9c5e14d372ebc3dd21ee90403f81"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test/manifest.json",
+      "size": 19797,
+      "sha256": "23aa609e38ebffafc10ccbc430949c0623257249cc2e71de2cd32cbb96e599b5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test/frozen_evaluation.json",
+      "size": 80177,
+      "sha256": "dccb3d9e0a8f6533702dff6e1a54399c951da1db147d2d1afb29b82dc8f35079"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test/controller_jacobian_audit.json",
+      "size": 1362,
+      "sha256": "f839d4ca8d7fd3e7eef93c1b2cc2ff1b839b839133f0301ce7dc0262a40bc568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test/process_states.json.gz",
+      "size": 5892008,
+      "sha256": "b0cca9e2889d047a26993852769d2dd0d1612fb1bd48b4d27145ad8eb9dd2c70"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test/physics_manifest.json",
+      "size": 19797,
+      "sha256": "23aa609e38ebffafc10ccbc430949c0623257249cc2e71de2cd32cbb96e599b5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test/ppo_physics.zip",
+      "size": 202552,
+      "sha256": "59c94ab8c677b75d5e8dc851ff19af1feda9b1d0c3ef6010a6dcf89c49ac0740"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test_process.json",
+      "size": 1183,
+      "sha256": "de1cdac9ede317436ba52f02b654348998194658e25b89dd99d5457bf6ea6e83"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed31_test.log",
+      "size": 88499,
+      "sha256": "2ddc802f60dc9269dedabd75168ebee605cb3f9af66fc7e9668a9a930e779568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/industrial_episodes.json",
+      "size": 157400,
+      "sha256": "d0b65635e3bda062eeb38c087dce95afb94812fb5ea4f917df47e6d4dcfb273b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/physical_scene.png",
+      "size": 804216,
+      "sha256": "ce6d4f889c51722abae87a7568c1ed89d373e7c3914728df97155e1af85555a6"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/manifest.json",
+      "size": 19750,
+      "sha256": "0ba501d6c97584e922946a397e4030be47472fcb76cb48277533a91987699eb4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/actual_scene_bounds.json",
+      "size": 43727,
+      "sha256": "7b025889e4291909498e16a072793c8d0163a9e7723b4075f977fdd20065eef1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/frozen_evaluation.json",
+      "size": 40119,
+      "sha256": "4dc2db88f5f6611ad789f30e096516431176263893437980dae4e045ccc1aaba"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/controller_jacobian_audit.json",
+      "size": 1366,
+      "sha256": "3659de94acf60ba2cb8fe021c50f7342a97dcf7130f3836be86e5382f014ee1d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/frozen_cases.json",
+      "size": 22659,
+      "sha256": "401bfcf6889e03d2acaea56e9d780388fca05711401311b6092395d8f2c286cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/process_states.json.gz",
+      "size": 3162130,
+      "sha256": "3247f639bb642e5480574f31d08ec53686bc7997be25a0b8f2ebcf2be50f0453"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/physics_manifest.json",
+      "size": 19750,
+      "sha256": "0ba501d6c97584e922946a397e4030be47472fcb76cb48277533a91987699eb4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/scene_specs.json",
+      "size": 29050,
+      "sha256": "1cd3e86c6398ae0a511c2741835f5aa3cb297ad309f2014a401e6df1154d39ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/ppo_physics.zip",
+      "size": 202560,
+      "sha256": "6b3300a0438a18946ba92240e5f0e2b4cd35bb793ac09e7e051b5908f8fc7a1f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/online_ppo_physics.gif",
+      "size": 3409717,
+      "sha256": "159d7ca5adb87fdf6d6f8bbd06d052a79fc330094518a6693f0a0bc3e001e694"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/video_frame_records.json",
+      "size": 49123,
+      "sha256": "ffdff3ba0dd7fb9eb528f2beef71ea0552f0303a24b95a5fe3ce7f038dc01fd5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47/ppo/progress.csv",
+      "size": 2829,
+      "sha256": "e36ccd6e5cb04a811a5c4c7eab8ca52e6af7f72b5de9ddfd1aa818bd3f589c23"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_process.json",
+      "size": 1018,
+      "sha256": "2d492e2a3999105d8d20606995d9e061f37a6eebfad6175d63545eb3c8914404"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47.log",
+      "size": 103607,
+      "sha256": "ddc27ebd4fde00b1a166c9f37f2d63f91f078ee4953296ec3218a3086e5884ce"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/action_audit.json",
+      "size": 10705810,
+      "sha256": "9800cff004aaa57d10ded30de21847885b815de42c56753d512a19ec2d6d2c40"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/manifest.json",
+      "size": 19750,
+      "sha256": "da62e4a1885a5e98450b34e968fb44ecee1155182280f40eb38cd061d95d725e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/frozen_evaluation.json",
+      "size": 80004,
+      "sha256": "08382150698181e3dc50822b74ae078751e8d6c34774fa0d483a818bb2e8dd3b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "bfe9d3a330cae2ed4244e8fd481fbb7cb7c33eadd714a15c4492af11ad5a1a7f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/process_states.json.gz",
+      "size": 5877091,
+      "sha256": "e451ae61e246b339ad4d3b7758ed21fca26c9ef93df199cd045e781f1b6d4783"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/physics_manifest.json",
+      "size": 19750,
+      "sha256": "da62e4a1885a5e98450b34e968fb44ecee1155182280f40eb38cd061d95d725e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/ppo_physics.zip",
+      "size": 202552,
+      "sha256": "efe2faa2d9b30a9a9421084344c354d209c47bc5a1f75cd454721933513a0a79"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val_process.json",
+      "size": 1210,
+      "sha256": "7ae3ac9f7be5b1e81dd534af2eeffce269b75e03c9f5357559a7d2817327a5a8"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_val.log",
+      "size": 88405,
+      "sha256": "2d4caeb6fc34dbe4f2147f8df8d49dbfd19bd303f317916bfc34ca8f60b00a42"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test/manifest.json",
+      "size": 19792,
+      "sha256": "771dcc003b026c18e1b35a0e8770794731e3ac39381c7341d89fcfb9a759c6c8"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test/frozen_evaluation.json",
+      "size": 80159,
+      "sha256": "533eefe06df82117d6e3e3eb17f66151c97e7f7840fd00a3887d4791ce7cbcad"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test/controller_jacobian_audit.json",
+      "size": 1362,
+      "sha256": "f839d4ca8d7fd3e7eef93c1b2cc2ff1b839b839133f0301ce7dc0262a40bc568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test/process_states.json.gz",
+      "size": 5991791,
+      "sha256": "b4b0d19b29f75de8fcba54477195aa06b00d8f8c3dc187f3c6b056cb8f1de091"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test/physics_manifest.json",
+      "size": 19792,
+      "sha256": "771dcc003b026c18e1b35a0e8770794731e3ac39381c7341d89fcfb9a759c6c8"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test/ppo_physics.zip",
+      "size": 202552,
+      "sha256": "77bddecd8eb09a93f6d64ba13500e376fb4b3e10b2b921b6419fdbee8b94e445"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test_process.json",
+      "size": 1183,
+      "sha256": "78c8c65dfb0846456d724409933422fd34c91a18f0086b7dcb9af949cbd9a7cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed47_test.log",
+      "size": 88386,
+      "sha256": "e1233b767da851c56511d3a3fccb1f5f6eb23100372f32388421f819f4034f09"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/industrial_episodes.json",
+      "size": 162014,
+      "sha256": "2f7bc4494b650f8b0a3009eb7b1cde002585d5942aa68814e9546e38c407f54f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/physical_scene.png",
+      "size": 801371,
+      "sha256": "2487f6d56298e9add51c8794d8ce3b8cd14baff62e709b5081d3fd899b4db6ca"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/manifest.json",
+      "size": 19755,
+      "sha256": "9f4526ead2dac91cadf38696bf4e2e1852ffa4973a83bcfd0788b0fc66c215e4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/actual_scene_bounds.json",
+      "size": 43727,
+      "sha256": "7b025889e4291909498e16a072793c8d0163a9e7723b4075f977fdd20065eef1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/frozen_evaluation.json",
+      "size": 40128,
+      "sha256": "ce8bd7dab04fdb008abdf5e28baa0e5099d314128b844ee0542b6b7eb1242eb4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "a85b80a4b6110ffff8c84698b1d863f3c042b1a4216dbdb557141ccc2fb4fd65"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/frozen_cases.json",
+      "size": 22659,
+      "sha256": "401bfcf6889e03d2acaea56e9d780388fca05711401311b6092395d8f2c286cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/process_states.json.gz",
+      "size": 3112652,
+      "sha256": "1bc2a32afba78bf39ead826f3802a0c35b6e238b803ab7a013e9ec822e025d11"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/physics_manifest.json",
+      "size": 19755,
+      "sha256": "9f4526ead2dac91cadf38696bf4e2e1852ffa4973a83bcfd0788b0fc66c215e4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/scene_specs.json",
+      "size": 29050,
+      "sha256": "1cd3e86c6398ae0a511c2741835f5aa3cb297ad309f2014a401e6df1154d39ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/ppo_physics.zip",
+      "size": 202560,
+      "sha256": "6aed72effbf5063719c7460a3308d2984bc53b408e9537cc1d572deef80f05c9"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/online_ppo_physics.gif",
+      "size": 3406106,
+      "sha256": "541c650f3f34d5db8dd28378c5098d51b1d676f00bd73f0faf487f4037b39ea0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/video_frame_records.json",
+      "size": 49120,
+      "sha256": "d06aa13e2a32196ce3a8106e42329de917278909806bee9d8ab76b6524bd6dcf"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59/ppo/progress.csv",
+      "size": 2866,
+      "sha256": "73c3934fc4ff054f316008921496d1226dce2ba507c846b2a85c01ef3a960586"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_process.json",
+      "size": 1018,
+      "sha256": "e92993590c894389ce314a130c048fcda367be3b93309946fd538071ac1f6b61"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59.log",
+      "size": 103806,
+      "sha256": "d6516a711a5deca8d3d31f4348a0bbf60ff9409edfd8446a6a0c775570f32373"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/action_audit.json",
+      "size": 10699462,
+      "sha256": "97665a638f4655074b2d14748ab0d229c43392f00b7eb79e046ed4bd65628539"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/manifest.json",
+      "size": 19749,
+      "sha256": "e5318fcf8117f5eb9cd4c9128429606bcb696341ea3cb9d903e649fc5acd387a"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/frozen_evaluation.json",
+      "size": 80008,
+      "sha256": "84ba7d15ae7fd6cd823ee97484414fc6609e169fd191e244a98c8af4cb0c36c1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "bfe9d3a330cae2ed4244e8fd481fbb7cb7c33eadd714a15c4492af11ad5a1a7f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/process_states.json.gz",
+      "size": 5766086,
+      "sha256": "a17484ad7836bd4cf19684ba55a54b9213307a6b23fdf783b806f5d53e7331b1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/physics_manifest.json",
+      "size": 19749,
+      "sha256": "e5318fcf8117f5eb9cd4c9128429606bcb696341ea3cb9d903e649fc5acd387a"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/ppo_physics.zip",
+      "size": 202552,
+      "sha256": "342a1b32e96d1ec3bc1b2311bcf20205450b6bc7c67bd172fca1c94c1c368bc3"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val_process.json",
+      "size": 1210,
+      "sha256": "e865d4ecf86ed5be0b39695ef57a907edc7c2ac87c529a04f4e105ae9d47ef16"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_val.log",
+      "size": 88537,
+      "sha256": "8f6b1ac8d38aa623dca64e3f925469137c6097ce6d915474fed4bf459009b26e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test/manifest.json",
+      "size": 19795,
+      "sha256": "b2a43971a2ac501edaed289781b78d56aae4ad8ec490f1cba618b779a7a0baf4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test/frozen_evaluation.json",
+      "size": 80172,
+      "sha256": "cb15ec5d5015b4f22e857dd3369ac7b1139819f5f9ac5d2dad861978ca8865d3"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test/controller_jacobian_audit.json",
+      "size": 1362,
+      "sha256": "f839d4ca8d7fd3e7eef93c1b2cc2ff1b839b839133f0301ce7dc0262a40bc568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test/process_states.json.gz",
+      "size": 5888042,
+      "sha256": "8dba6ca0bab6d30fb9b2ee8b364048081ff724bc5c297f535140f610e7872d14"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test/physics_manifest.json",
+      "size": 19795,
+      "sha256": "b2a43971a2ac501edaed289781b78d56aae4ad8ec490f1cba618b779a7a0baf4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test/ppo_physics.zip",
+      "size": 202552,
+      "sha256": "80b538ef9a8cceb3287d840fe3d3d9d57bad0c1a44cc304ccde5bcc2f7c66313"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test_process.json",
+      "size": 1184,
+      "sha256": "f324ff3ed0d7a434a68bd1072675ad7c622138dcb6b2ecb3c5710e46d73de648"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_blind_seed59_test.log",
+      "size": 88424,
+      "sha256": "38e6b9558f7202931cd1156ddbcdb42d8d313e17dfaaed3087a80c3d340c6674"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/industrial_episodes.json",
+      "size": 164429,
+      "sha256": "6d5b9e5ca70daed0e455828f4be1f194d41347a74189a32193fc0b544e2e288e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/physical_scene.png",
+      "size": 801755,
+      "sha256": "b0e13826909906170a38332f24b45af6b6b75b49b2c3f441b900fec3b030d096"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/manifest.json",
+      "size": 19749,
+      "sha256": "f366ce61a34877a8441a40ed5643204a6077b5744abbaa87c9b08034f7074680"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/actual_scene_bounds.json",
+      "size": 43727,
+      "sha256": "7b025889e4291909498e16a072793c8d0163a9e7723b4075f977fdd20065eef1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/frozen_evaluation.json",
+      "size": 40115,
+      "sha256": "4f52767b6fafa8c28526639c4413988b4e7f5274fd5398e1ccaacf269cffe9ae"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/controller_jacobian_audit.json",
+      "size": 1361,
+      "sha256": "700267f8a2a64ada435bcf21348dc24a3c2a52bb98535bb39f27337bb4630635"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/frozen_cases.json",
+      "size": 22659,
+      "sha256": "401bfcf6889e03d2acaea56e9d780388fca05711401311b6092395d8f2c286cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/process_states.json.gz",
+      "size": 3106166,
+      "sha256": "7921bc6d9e93fa473b72db46a532ee4ff75cd63d61e3e29965e873607c5cec1b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/physics_manifest.json",
+      "size": 19749,
+      "sha256": "f366ce61a34877a8441a40ed5643204a6077b5744abbaa87c9b08034f7074680"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/scene_specs.json",
+      "size": 29050,
+      "sha256": "1cd3e86c6398ae0a511c2741835f5aa3cb297ad309f2014a401e6df1154d39ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/ppo_physics.zip",
+      "size": 202560,
+      "sha256": "16e8bd3665fa332d5c8b85124c548949e6fcdf3fc26c190ff350332f565f457e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/online_ppo_physics.gif",
+      "size": 3409270,
+      "sha256": "93f99a019c9881f42d4d139809627d5f6397eb55c6650d2fb12024d7462a1b6e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/video_frame_records.json",
+      "size": 49162,
+      "sha256": "a8b2d5dc74ede5d9891238f5225ec4bb88f8435925a7134295a69e7cabcb1b43"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31/ppo/progress.csv",
+      "size": 2876,
+      "sha256": "721a680af7e35b5e8d9c2c33b8f5589464d22b546648b023f9060f8422fc54f8"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_process.json",
+      "size": 1006,
+      "sha256": "ce5e6c455893e8e1942c74cd1268f77fad871abd9fe705c78e79f5e77623d01b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31.log",
+      "size": 103796,
+      "sha256": "9ad7378bdee879e72a9684024615531ec04bcf65a157a2ac929132809c18555e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/action_audit.json",
+      "size": 11964600,
+      "sha256": "fc65891f8570b87dfc7ba0694557170b56aa1406f3ba69ea30ca2541f31e3387"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/manifest.json",
+      "size": 19746,
+      "sha256": "24b3e48cb9cd0267a295d18ddf5942e5e38cfda64870a73ef55cc559b7e36f8b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/frozen_evaluation.json",
+      "size": 79985,
+      "sha256": "950102af18d50faa3257eb15200d110cc42aceb75e83e17f8d050449e1f6bbf8"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "bfe9d3a330cae2ed4244e8fd481fbb7cb7c33eadd714a15c4492af11ad5a1a7f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/process_states.json.gz",
+      "size": 5768547,
+      "sha256": "1b0cd07891bbf13792d8f9f9aa540c7c14c26013e917ae1be2092cded2155631"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/physics_manifest.json",
+      "size": 19746,
+      "sha256": "24b3e48cb9cd0267a295d18ddf5942e5e38cfda64870a73ef55cc559b7e36f8b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/ppo_physics.zip",
+      "size": 202552,
+      "sha256": "ea5ef3821bd83a7563dbeefb9c55e0466c89f6a8cc1fcdd962929fbff376018a"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val_process.json",
+      "size": 1193,
+      "sha256": "dbd4e0d98bd022958286e08f8e911b8221007dad2759a0a3f1b5931588cd59b2"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_val.log",
+      "size": 88555,
+      "sha256": "21b1ce0a0b40b05b67e3ed66eeefff272d8406c56e010103dedb0e046d431728"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test/manifest.json",
+      "size": 19790,
+      "sha256": "d16074630497409c7e17e2ffeffe515802f3633ba71c46c00318c19c0f5223f5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test/frozen_evaluation.json",
+      "size": 80199,
+      "sha256": "614c116d33e18a27c38033468a7f7b22022b7832618dc135a0c2eb78732ffb03"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test/controller_jacobian_audit.json",
+      "size": 1362,
+      "sha256": "f839d4ca8d7fd3e7eef93c1b2cc2ff1b839b839133f0301ce7dc0262a40bc568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test/process_states.json.gz",
+      "size": 5890486,
+      "sha256": "22409bb45590b990e27d028dbd5a89545e8942c045c34ef2037d3b8fa1cf15dd"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test/physics_manifest.json",
+      "size": 19790,
+      "sha256": "d16074630497409c7e17e2ffeffe515802f3633ba71c46c00318c19c0f5223f5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test/ppo_physics.zip",
+      "size": 202552,
+      "sha256": "83ec0499fb1d72f613657c2701e4752da191e72c40c29497adb220624e507ff3"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test_process.json",
+      "size": 1165,
+      "sha256": "24bce977835c61bb1dbdd34ea56b2df986532f042d65bf3b95cb9fda0b688a13"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed31_test.log",
+      "size": 88443,
+      "sha256": "eedd97d5074e186ea4c992182bb5a07f37f93431301cdda33277e391a69deeb4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/industrial_episodes.json",
+      "size": 158630,
+      "sha256": "7c870e5e01ca76897537f08fc6b2316c366904767abdd905ccf7acf8945fd461"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/physical_scene.png",
+      "size": 800478,
+      "sha256": "7d8048e79c007c23c0f90903cf7f0e5b9966484a6e13aa57d492ea5e4013d314"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/manifest.json",
+      "size": 19748,
+      "sha256": "b4dbc18a4d7101e36d95dabff39612078cdb19ee9dcd4e582b6c8c0cb237a3f0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/actual_scene_bounds.json",
+      "size": 43727,
+      "sha256": "7b025889e4291909498e16a072793c8d0163a9e7723b4075f977fdd20065eef1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/frozen_evaluation.json",
+      "size": 40120,
+      "sha256": "b9ff31a1f0f811b03f3a79441211fa150f9333be18b6ad93e5af339f7f4aa4e7"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/controller_jacobian_audit.json",
+      "size": 1366,
+      "sha256": "3659de94acf60ba2cb8fe021c50f7342a97dcf7130f3836be86e5382f014ee1d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/frozen_cases.json",
+      "size": 22659,
+      "sha256": "401bfcf6889e03d2acaea56e9d780388fca05711401311b6092395d8f2c286cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/process_states.json.gz",
+      "size": 3109559,
+      "sha256": "776f79c06e28c852eab2939eca50ddf13a2fbe11eaad3e8599a3a62ee93a64d3"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/physics_manifest.json",
+      "size": 19748,
+      "sha256": "b4dbc18a4d7101e36d95dabff39612078cdb19ee9dcd4e582b6c8c0cb237a3f0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/scene_specs.json",
+      "size": 29050,
+      "sha256": "1cd3e86c6398ae0a511c2741835f5aa3cb297ad309f2014a401e6df1154d39ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/ppo_physics.zip",
+      "size": 202560,
+      "sha256": "093786bbf33d013a76b49a34aad5d5db0ab7248d486cf0fbeaa53436cd663276"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/online_ppo_physics.gif",
+      "size": 3407480,
+      "sha256": "5c2295ced67089c9e6748a44da7b54973f7dced599f07a66ed7cab41de7f97db"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/video_frame_records.json",
+      "size": 49175,
+      "sha256": "d9212f22e15350d0a024a37d08674c4b55187a58cf7ae89129a87c9b7f8ff555"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47/ppo/progress.csv",
+      "size": 2859,
+      "sha256": "0d7362bc92aef70a267d6e3d52ab58551d5f172de8f2407e318f610b96baec73"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_process.json",
+      "size": 1005,
+      "sha256": "cbcde96dde639b424593af318e7328dba0dde11bae9cbd3b2f2f309e5fb6ab83"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47.log",
+      "size": 103776,
+      "sha256": "0da3c122b591eb4399e68ad5be9e9951bba940b3a011f6c1ff7157dac4897afc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/action_audit.json",
+      "size": 11939985,
+      "sha256": "9b49af275c8930a6dd0afb8b3c0491b9ea8eafff586adc2bcbbd23094b0800b1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/manifest.json",
+      "size": 19751,
+      "sha256": "6f54ca0e2ca94fc93056749db4aa8003fd5427a9e4da378f0d379b8321f68669"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/frozen_evaluation.json",
+      "size": 79982,
+      "sha256": "bab0ccd83ee1f15370d3d13a2afe8933959766346fe23e56eef588b9b8a55ac2"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "bfe9d3a330cae2ed4244e8fd481fbb7cb7c33eadd714a15c4492af11ad5a1a7f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/process_states.json.gz",
+      "size": 5770568,
+      "sha256": "ad8c81d49a960aacfc816ee23c72b01561410c26cf761de60aee22eab653eb17"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/physics_manifest.json",
+      "size": 19751,
+      "sha256": "6f54ca0e2ca94fc93056749db4aa8003fd5427a9e4da378f0d379b8321f68669"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/ppo_physics.zip",
+      "size": 202552,
+      "sha256": "bbef94a1a12d54c0e67dd6f94be94cbf033c90138e60e4c82b80a289291ab7db"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val_process.json",
+      "size": 1192,
+      "sha256": "34d8598c8c7c07648fade728dc16104f258ead1d2d194cfeef78b4fb42213e4c"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_val.log",
+      "size": 88537,
+      "sha256": "79dd22d8135235310bec0b5d4b80617607818a1c5fe1a8c34d6171b6b400832b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test/manifest.json",
+      "size": 19784,
+      "sha256": "72684580ee244f9c209c27e79a031c350d2fdf3f88ee5768b63d5dfc4911ea64"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test/frozen_evaluation.json",
+      "size": 80155,
+      "sha256": "0ef8b79ad8a20d8e970e620fb33e3cc0a3238b0230d59ffd680c0387541651c4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test/controller_jacobian_audit.json",
+      "size": 1362,
+      "sha256": "f839d4ca8d7fd3e7eef93c1b2cc2ff1b839b839133f0301ce7dc0262a40bc568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test/process_states.json.gz",
+      "size": 5892831,
+      "sha256": "350a4c95ec46eecbb64dfeab73dcbf86d6ac9321765a04ce49c8a87ee848e55b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test/physics_manifest.json",
+      "size": 19784,
+      "sha256": "72684580ee244f9c209c27e79a031c350d2fdf3f88ee5768b63d5dfc4911ea64"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test/ppo_physics.zip",
+      "size": 202552,
+      "sha256": "4f970aa9f7e3ca1ae73709d45b1712e05e0b042e35c33a59d37ffbf60f617a64"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test_process.json",
+      "size": 1165,
+      "sha256": "9cec74ad0db342495f29bc01aa8f7e1df64df000873b1eb8c5859f59fd0ef6a0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed47_test.log",
+      "size": 88556,
+      "sha256": "65928f4bb5bdde20a747e0c4b7a9da7cc48d24ea03373cab8a85f7fe99b4136c"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/industrial_episodes.json",
+      "size": 170116,
+      "sha256": "adc320924a37159149fd462c5c7505093ffb2704fdfa73d19a8647b752915d6c"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/physical_scene.png",
+      "size": 800391,
+      "sha256": "3b78fb94fa7051121a5621d134e8807b41f0c92260e7364316cef1d4b2e75e5a"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/manifest.json",
+      "size": 19748,
+      "sha256": "f7f74077595ba2cc66d0dd9d2670ac866b42a21fe28cc4d9fecde4f628191147"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/actual_scene_bounds.json",
+      "size": 43727,
+      "sha256": "7b025889e4291909498e16a072793c8d0163a9e7723b4075f977fdd20065eef1"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/frozen_evaluation.json",
+      "size": 40144,
+      "sha256": "07b5938f8d9ac32fbef834c4e17423d8a7424083b65604a5b3a2462f40065e28"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "a85b80a4b6110ffff8c84698b1d863f3c042b1a4216dbdb557141ccc2fb4fd65"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/frozen_cases.json",
+      "size": 22659,
+      "sha256": "401bfcf6889e03d2acaea56e9d780388fca05711401311b6092395d8f2c286cc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/process_states.json.gz",
+      "size": 3103107,
+      "sha256": "077a72549564f569f9a355694ae358381f20ca9a7f5f7b093c6d1cbdae83bdf7"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/physics_manifest.json",
+      "size": 19748,
+      "sha256": "f7f74077595ba2cc66d0dd9d2670ac866b42a21fe28cc4d9fecde4f628191147"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/scene_specs.json",
+      "size": 29050,
+      "sha256": "1cd3e86c6398ae0a511c2741835f5aa3cb297ad309f2014a401e6df1154d39ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/ppo_physics.zip",
+      "size": 202560,
+      "sha256": "f8d631f480d5d338d27528e01993cac7a68d7ffac754aba8a9414b49a1f58939"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/online_ppo_physics.gif",
+      "size": 3405059,
+      "sha256": "4458bafd556eac5c7b56fdc8ea385e31f62fc763f7d83f809ec8e7a2a57cc1ec"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/video_frame_records.json",
+      "size": 49150,
+      "sha256": "8927d571f68d86230cd5630bcc5d539f6c4e0d5c61760e028d4ef1441f6ab9a4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59/ppo/progress.csv",
+      "size": 2850,
+      "sha256": "fb87609124e555bbab878f0e3943d16e7b41888ed4505fc207ede2169dd135fc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_process.json",
+      "size": 1007,
+      "sha256": "6863874919a627cc2d10bade3670fbde195a0a906a7dfc7dd1292dbf2e553478"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59.log",
+      "size": 103606,
+      "sha256": "735d0ab53d76bc9e76c14f11be8a737ef011bd74a364b3c3f1618fb7d34e54f2"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/action_audit.json",
+      "size": 11904136,
+      "sha256": "d036d5989dcf03d1889c9bf5a03d7f4766a0a72f7271fd206f53d52243a7bdd0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/manifest.json",
+      "size": 19748,
+      "sha256": "d5f638c4b936b78e4f4180d263cd7fa397c92fff9e375764c12f54a73ca4b671"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/frozen_evaluation.json",
+      "size": 79996,
+      "sha256": "986bfc440399e3799a48e8bfcb3eec1e945bf62d01b0837bdfd2662abe5b6f6a"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/controller_jacobian_audit.json",
+      "size": 1358,
+      "sha256": "bfe9d3a330cae2ed4244e8fd481fbb7cb7c33eadd714a15c4492af11ad5a1a7f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/process_states.json.gz",
+      "size": 5769414,
+      "sha256": "bfb56a7b04d05c8e8951563932aedd122df56d52365d68e3de62d672fd8dc08f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/physics_manifest.json",
+      "size": 19748,
+      "sha256": "d5f638c4b936b78e4f4180d263cd7fa397c92fff9e375764c12f54a73ca4b671"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/ppo_physics.zip",
+      "size": 202552,
+      "sha256": "2cf95fbf4f7d69fa176dba3604bc8e188903ab911db7d7a14f8a8fe9093e8a8a"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val_process.json",
+      "size": 1193,
+      "sha256": "2cd7b150932397b7a325182c5013980f5194e587f6478bebbdc94aad54179404"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_val.log",
+      "size": 88537,
+      "sha256": "86a60a0f55e011f0ccb40797723439cc780a8bed17b4b52f2f39bb9fc6190ee2"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test/manifest.json",
+      "size": 19783,
+      "sha256": "f2ef1c3ca28ca0fa9c572beb8352d60a108b873dffb0a4ef467df32c9abe1b45"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test/frozen_evaluation.json",
+      "size": 80194,
+      "sha256": "e5953673e73e89cd59e924b4a4796a475d45b82a1a52ef2acabda9d918773119"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test/controller_jacobian_audit.json",
+      "size": 1362,
+      "sha256": "f839d4ca8d7fd3e7eef93c1b2cc2ff1b839b839133f0301ce7dc0262a40bc568"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test/process_states.json.gz",
+      "size": 5891166,
+      "sha256": "de3490f8c3184bcaad4152765582ee5fbc7afbc91f7cd0fdd7c90e35a56174ac"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test/physics_manifest.json",
+      "size": 19783,
+      "sha256": "f2ef1c3ca28ca0fa9c572beb8352d60a108b873dffb0a4ef467df32c9abe1b45"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test/ppo_physics.zip",
+      "size": 202552,
+      "sha256": "af8e38de7f63866aec9349a5aa4adf76f27465e6f8d7b0079e86a1d30cff4ecb"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test_process.json",
+      "size": 1165,
+      "sha256": "d21544e498bdd33c9deaab5e66de1797ac5ad33f25aa6d94058936c7503642e7"
+    },
+    {
+      "path": "r1_20261014/multicontract_v19_contract_seed59_test.log",
+      "size": 88537,
+      "sha256": "1fc327a01b6475ce251024b6e5a4eb391cc315d3d3e39709f4716dd9df84af11"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation/action_audit.json",
+      "size": 8088823,
+      "sha256": "fea6e9c4f573c604551dfb85fb7c3fc4b335e8ae731eb4111fd878e6153800b5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation/manifest.json",
+      "size": 19748,
+      "sha256": "fc5f91ad6ecb862c7ac4b86404e7243f62a5928572d4724e831e742728e49211"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation/actual_scene_bounds.json",
+      "size": 43812,
+      "sha256": "8d14fd399cb7eb7c02a2efa4cb017ede71a3c4c38381b8a3ddfd3b4ddf480273"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation/frozen_evaluation.json",
+      "size": 79987,
+      "sha256": "1cddc99a2d0e4d9a0a1406d8272148d63247d8cffacfa32a75c43c24a4e008e8"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation/controller_jacobian_audit.json",
+      "size": 1361,
+      "sha256": "700267f8a2a64ada435bcf21348dc24a3c2a52bb98535bb39f27337bb4630635"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation/frozen_cases.json",
+      "size": 45107,
+      "sha256": "9cc5e1075df9065a42a370ca0ed460a264a5d783e7f613b9cd4199b3b1fddb9d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation/process_states.json.gz",
+      "size": 5769788,
+      "sha256": "33400123864ac7e2ca3b95a9de7d48386b4a63f510deb970ce2fa16423717020"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation/physics_manifest.json",
+      "size": 19748,
+      "sha256": "fc5f91ad6ecb862c7ac4b86404e7243f62a5928572d4724e831e742728e49211"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation/scene_specs.json",
+      "size": 29082,
+      "sha256": "ec5f5b71da2f477bc4ec8b3c888f388af93fb2aee33fa834897a73368791a688"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation_process.json",
+      "size": 1052,
+      "sha256": "44a7c94ed9e026d6b1e2cd4e17955d205f0f2fef4ac100c295e488f5d5344e9f"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_validation.log",
+      "size": 88539,
+      "sha256": "222117d0a344ef90c71baf70cb992375d99879b5377608284e0afed4d300ec11"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test/action_audit.json",
+      "size": 8273422,
+      "sha256": "c8b098674d87e9d2fc45639ca53d9b1bc9608efb5428dbdb38bcd2b785d2230d"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test/manifest.json",
+      "size": 19788,
+      "sha256": "e4701ecc2aca8b3f3f521c2dfc5c08b4d4b2183f309cb728f6c4ab0d7d450cd5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test/actual_scene_bounds.json",
+      "size": 44346,
+      "sha256": "825d7dffd170f750a89e08e89c235b30ccd8fb7491549b311b2c22997c030d20"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test/frozen_evaluation.json",
+      "size": 80165,
+      "sha256": "871e01bf070ada33c466657e6ded326ca344eba950dc4a83d6033e72d67640ed"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test/controller_jacobian_audit.json",
+      "size": 1361,
+      "sha256": "700267f8a2a64ada435bcf21348dc24a3c2a52bb98535bb39f27337bb4630635"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test/frozen_cases.json",
+      "size": 44801,
+      "sha256": "c066df3e372a75e3a43169dbc35a1adeefbcefd7a915a303ee3b0678cb0d8cee"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test/process_states.json.gz",
+      "size": 5890217,
+      "sha256": "c9ae07053e76565122254920e0dc45dc8ef40f8319d83d48d1a25105e38d6200"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test/physics_manifest.json",
+      "size": 19788,
+      "sha256": "e4701ecc2aca8b3f3f521c2dfc5c08b4d4b2183f309cb728f6c4ab0d7d450cd5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test/scene_specs.json",
+      "size": 29634,
+      "sha256": "312b00e34151db53764fd0f8572614d1905de1612e98ef427758d8e2981093b0"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test_process.json",
+      "size": 1041,
+      "sha256": "e81402c3dbc6af9c3b64b61d16a760940af52db29d8cc07b2b0fbda29d19a793"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_nominal_test.log",
+      "size": 88520,
+      "sha256": "fd5782bcfbc1235c69ba88d80b79f048200748067a1e10959856616d2825aad5"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/industrial_episodes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/action_audit.json",
+      "size": 31488,
+      "sha256": "b3ee4dd047cc1596ac94cb9960e04e80b634bf5ecbb08b5945f2fff88c72e87c"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/physical_scene.png",
+      "size": 468111,
+      "sha256": "b1a39a576e05421ce65c91abfeb0cb215751dc0bf214ce93c0557beaf3944985"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/physics_interactions.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/manifest.json",
+      "size": 9143,
+      "sha256": "d43ddf9f57d36f723135267df8bead8a1e0ebc2934d00ecff752f09d7c5310c3"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/actual_scene_bounds.json",
+      "size": 2562,
+      "sha256": "f5c8c81e997ed84d3bbcb501b1efeca65d3328eb2085ab85b5bfec9976a33c98"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/frozen_evaluation.json",
+      "size": 1386,
+      "sha256": "a3889dca5f8aaafdfaea4561286abce2541f97ddb98d5dc14900cd69b243c560"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/frozen_cases.json",
+      "size": 700,
+      "sha256": "6e401fffdee667ef0ac2860e1aedf314877a116b739a15e142d4f81f187a92a2"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/process_states.json.gz",
+      "size": 152325,
+      "sha256": "6718a57d9c9214291476e5accdd932fd8859569bf017564f4aff215cd47fb31b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/policy_evaluation.gif",
+      "size": 2090634,
+      "sha256": "c0592db9b615d49abe3ece215f856d11372b97696b0df7d0abd840cfe5d54bf4"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/physics_manifest.json",
+      "size": 9143,
+      "sha256": "d43ddf9f57d36f723135267df8bead8a1e0ebc2934d00ecff752f09d7c5310c3"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/scene_specs.json",
+      "size": 1654,
+      "sha256": "180498b75630bcbeda46daa2a2b5f528f55b689ba458ac52e67974c7bda086d3"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/ppo_physics.zip",
+      "size": 196131,
+      "sha256": "f783eb1dbe08c225cd7913b459e03e382aa0269eb494d00426a59009edab510b"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/preplace_execution.json",
+      "size": 37857,
+      "sha256": "945bc9ab998f968b3552a103f90fc533f0096f8b59b666d8cba375a3a16f4371"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/video_frame_records.json",
+      "size": 3815,
+      "sha256": "9b9c9e2cc03b5391bd151fad3f8d64856eb1e2ea581c20230438ec39b02aacdc"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain/ppo/progress.csv",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain_process.json",
+      "size": 1281,
+      "sha256": "9db88a0b2ac49189f8dee2e34f3ed4d2dfdb32e893017cd618932f28dce5aa6e"
+    },
+    {
+      "path": "r1_20261014/multicontract_v20_fullchain.log",
+      "size": 22475,
+      "sha256": "1f5338607b01bbae935b52e2035d2e7527bfaa0be8d3e62a7bbe5309265f54b4"
+    },
+    {
+      "path": "multitask_v19.py",
+      "size": 44336,
+      "sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c"
+    },
+    {
+      "path": "fullchain_v20.py",
+      "size": 49731,
+      "sha256": "c36ae3797dc8379fcec19140f78dba480e45721073cc9795bebc9f504568207a"
+    },
+    {
+      "path": "run_multitask_v17.py",
+      "size": 3680,
+      "sha256": "462a9581b43d17c3a698426eb7fbe3fb7bb9a7505cf85c9e72824a7c22eb6c1a"
+    },
+    {
+      "path": "run_fullchain_v20.py",
+      "size": 3798,
+      "sha256": "bfc6b894a760d5a40cafbbdf10a88f5f7cc11412b178db979c2b44ff4544511a"
+    },
+    {
+      "path": "batch_multicontract_v19.py",
+      "size": 1942,
+      "sha256": "55902b3f5afe9a4f93b3390b20ec4a0f00dff32d3e8c4c9234edd8a082ff1eb2"
+    },
+    {
+      "path": "final_frozen_test_v19.py",
+      "size": 2172,
+      "sha256": "1116a9d4a43e3fed805127778e88917f5a16921bc22b255e347ac0bd4eab8abd"
+    },
+    {
+      "path": "extra_physics_checks_v20.py",
+      "size": 1942,
+      "sha256": "48c11ad37dbce4acb0bde718149ba324a414e022d1ff1cbfc0ef5b12439573f6"
+    },
+    {
+      "path": "multicontract_v5.json",
+      "size": 6054,
+      "sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98"
+    },
+    {
+      "path": "multicontract_v19_gpu0_queue.json",
+      "size": 14310,
+      "sha256": "a4720946ccde28211d123ba96204b081d14ebf83fd3b130c8bd24c6fa08a2755"
+    },
+    {
+      "path": "multicontract_v19_gpu1_queue.json",
+      "size": 14547,
+      "sha256": "edafcff4871e98dcfba1fd502a200bc578e59186b6e70e3dd8d36edb2c5ef6e0"
+    },
+    {
+      "path": "multicontract_v19_gpu0_test_queue.json",
+      "size": 7172,
+      "sha256": "971ff2882ba27c09a09018c4af85e27b10be282e5e3f288e364e040be7c5f2a9"
+    },
+    {
+      "path": "multicontract_v19_gpu1_test_queue.json",
+      "size": 7308,
+      "sha256": "00594c42eaf1c4e36edec1161e48e3bfa36bde60b84111a4ac9b0180198fc30b"
+    },
+    {
+      "path": "multicontract_v20_extra_queue.json",
+      "size": 3271,
+      "sha256": "e1304dc180f51da019781bbe7f5c5517faaf087440cea284aabe48a330cf176b"
+    }
+  ]
+}

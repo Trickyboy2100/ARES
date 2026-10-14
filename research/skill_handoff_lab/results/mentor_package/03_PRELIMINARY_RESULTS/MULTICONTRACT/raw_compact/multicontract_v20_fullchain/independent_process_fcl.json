@@ -1,0 +1,35 @@
+{
+  "geometry": "actual USD convex hulls including fixed gripper and welded tray",
+  "collision_pieces": 15,
+  "pose_source": "OBSERVED_PHYSX_BODY_POSES",
+  "sample_dt_s": 0.008333333333333333,
+  "dense_raw_planner_path_sha256": null,
+  "checked_states": 476,
+  "wall_source": "scene_specs.json",
+  "cases": [
+    {
+      "case_id": 0,
+      "samples": 476,
+      "collision_samples": 0,
+      "max_penetration_m": 0.0,
+      "pairs": {},
+      "soft_limit_violating_samples": 0,
+      "max_link_fk_position_error_m": 6.042830418631279e-07,
+      "max_workspace_excess_m": 0.0,
+      "max_pose_error_rad": 0.013825475209826122,
+      "pose_violating_samples": 0,
+      "self_collision_samples": 0
+    }
+  ],
+  "wall_s": 0.6813060510903597,
+  "penetration_warning_threshold_m": 0.001,
+  "nonadjacent_right_arm_self_checked": true,
+  "source_sha256": "f09da6312d3a933d2055fe593bc8ca80d1fafddd8bf16e5c08701394d7857adf",
+  "asset_sha256": "1857a1c59c7693845c1f73d62fc94d61859e7668df07f2d87b52b14d1ebdb760",
+  "limitations": [
+    "sampled process, not swept continuous collision",
+    "USD convex hull approximation, not original concave CAD",
+    "no calibrated contact-force/guide-contact certification",
+    "welded attachment and fixed fingers only"
+  ]
+}

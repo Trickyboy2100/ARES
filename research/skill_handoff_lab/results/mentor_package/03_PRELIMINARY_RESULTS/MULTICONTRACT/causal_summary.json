@@ -1,0 +1,114 @@
+[
+  {
+    "experiment": "causal_contract_learned_v17",
+    "successes": 64,
+    "n": 64,
+    "mean_episode_s": 2.2065104166666667,
+    "mean_abs_effect_mm": [
+      0.032538645850054476,
+      0.11396942558215607,
+      0.053472346970661964
+    ],
+    "mean_abs_requested_residual_mm": [
+      0.2832592928625506,
+      0.11561765706090127,
+      0.05494649614189327
+    ]
+  },
+  {
+    "experiment": "causal_contract_random_v17",
+    "successes": 64,
+    "n": 64,
+    "mean_episode_s": 2.3674479166666664,
+    "mean_abs_effect_mm": [
+      0.13985616794897465,
+      0.2455150964903527,
+      0.2499506668377437
+    ],
+    "mean_abs_requested_residual_mm": [
+      0.25246172544790324,
+      0.24824074800889662,
+      0.25331588158883306
+    ]
+  },
+  {
+    "experiment": "causal_contract_zero_v17",
+    "successes": 64,
+    "n": 64,
+    "mean_episode_s": 2.2065104166666667,
+    "mean_abs_effect_mm": [
+      1.0814021221906599e-05,
+      2.7068152698011343e-07,
+      1.158560405677025e-06
+    ],
+    "mean_abs_requested_residual_mm": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "experiment": "causal_nominal_v10",
+    "successes": 64,
+    "n": 64,
+    "mean_episode_s": 2.2065104166666667,
+    "mean_abs_effect_mm": [
+      1.0817854093726385e-05,
+      2.8927884572608903e-07,
+      1.2360264504836365e-06
+    ],
+    "mean_abs_requested_residual_mm": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "experiment": "causal_residual_learned_v10",
+    "successes": 64,
+    "n": 64,
+    "mean_episode_s": 2.1986979166666667,
+    "mean_abs_effect_mm": [
+      0.00730040282414174,
+      0.2931095896066701,
+      0.14508705054241647
+    ],
+    "mean_abs_requested_residual_mm": [
+      0.20812902380342807,
+      0.2947814381564563,
+      0.14854826156717965
+    ]
+  },
+  {
+    "experiment": "causal_residual_random_v10",
+    "successes": 64,
+    "n": 64,
+    "mean_episode_s": 2.3674479166666664,
+    "mean_abs_effect_mm": [
+      0.13985616794897465,
+      0.2455150964903527,
+      0.2499506668377437
+    ],
+    "mean_abs_requested_residual_mm": [
+      0.25246172544790324,
+      0.24824074800889662,
+      0.25331588158883306
+    ]
+  },
+  {
+    "experiment": "causal_residual_zero_v10",
+    "successes": 64,
+    "n": 64,
+    "mean_episode_s": 2.2065104166666667,
+    "mean_abs_effect_mm": [
+      1.0814021221906599e-05,
+      2.7068152698011343e-07,
+      1.158560405677025e-06
+    ],
+    "mean_abs_requested_residual_mm": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+]

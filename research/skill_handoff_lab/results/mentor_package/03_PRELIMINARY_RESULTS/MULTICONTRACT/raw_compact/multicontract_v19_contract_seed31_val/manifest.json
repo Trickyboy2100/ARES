@@ -1,0 +1,842 @@
+{
+  "scope": "ISOLATED_HELD_JAKA_PARAMETRIC_T1_CABINET",
+  "num_envs": 16,
+  "seed": 31,
+  "physics_dt": 0.008333333333333333,
+  "physics_steps": 0,
+  "env_physics_steps": 0,
+  "episodes": 32,
+  "gradient_updates": 0,
+  "policy_parameters_changed": false,
+  "real_physics": true,
+  "industrial_task_qualified": false,
+  "episode_counter_semantics": "reset events including initialization; not successful tasks",
+  "replay_result_sha256": null,
+  "deterministic_hold_correction": false,
+  "industrial_research_task": true,
+  "controller": "contract",
+  "policy_controls_robot": true,
+  "contract_conditioning": true,
+  "actor_contract_dim": 15,
+  "contract_input_blinded": false,
+  "residual_mode": "learned",
+  "reward_revision": "v2",
+  "task_suite_sha256": "197ed381fb21d9314a4c3e9add7281440bb6e04721d05f2206bbc33bb6500a98",
+  "task_split": "validation",
+  "task_groups": [
+    {
+      "id": "V_T1_236",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.236,
+      "height": 0.19,
+      "depth": 0.18,
+      "mouth_offset": 0.045,
+      "travel": 0.105,
+      "success_depth": 0.054,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    },
+    {
+      "id": "V_T2_285",
+      "family": "T2",
+      "yaw_deg": -45,
+      "width": 0.25,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        0
+      ],
+      "goal_yz_jitter": 0.004,
+      "tool_yaw_deg": -45,
+      "center_body_m": [
+        0.4830342712474619,
+        -0.5082842712474619,
+        1.45
+      ],
+      "start_q": [
+        1.1034055635154378,
+        1.9879928387631511,
+        -1.4488962726467776,
+        -0.07367851067331747,
+        -0.5241327694112203,
+        0.6122034351106943
+      ]
+    },
+    {
+      "id": "V_T1_236",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.236,
+      "height": 0.19,
+      "depth": 0.18,
+      "mouth_offset": 0.045,
+      "travel": 0.105,
+      "success_depth": 0.054,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    },
+    {
+      "id": "V_T2_285",
+      "family": "T2",
+      "yaw_deg": -45,
+      "width": 0.25,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        0
+      ],
+      "goal_yz_jitter": 0.004,
+      "tool_yaw_deg": -45,
+      "center_body_m": [
+        0.4830342712474619,
+        -0.5082842712474619,
+        1.45
+      ],
+      "start_q": [
+        1.1034055635154378,
+        1.9879928387631511,
+        -1.4488962726467776,
+        -0.07367851067331747,
+        -0.5241327694112203,
+        0.6122034351106943
+      ]
+    },
+    {
+      "id": "V_T1_236",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.236,
+      "height": 0.19,
+      "depth": 0.18,
+      "mouth_offset": 0.045,
+      "travel": 0.105,
+      "success_depth": 0.054,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    },
+    {
+      "id": "V_T2_285",
+      "family": "T2",
+      "yaw_deg": -45,
+      "width": 0.25,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        0
+      ],
+      "goal_yz_jitter": 0.004,
+      "tool_yaw_deg": -45,
+      "center_body_m": [
+        0.4830342712474619,
+        -0.5082842712474619,
+        1.45
+      ],
+      "start_q": [
+        1.1034055635154378,
+        1.9879928387631511,
+        -1.4488962726467776,
+        -0.07367851067331747,
+        -0.5241327694112203,
+        0.6122034351106943
+      ]
+    },
+    {
+      "id": "V_T1_236",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.236,
+      "height": 0.19,
+      "depth": 0.18,
+      "mouth_offset": 0.045,
+      "travel": 0.105,
+      "success_depth": 0.054,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    },
+    {
+      "id": "V_T2_285",
+      "family": "T2",
+      "yaw_deg": -45,
+      "width": 0.25,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        0
+      ],
+      "goal_yz_jitter": 0.004,
+      "tool_yaw_deg": -45,
+      "center_body_m": [
+        0.4830342712474619,
+        -0.5082842712474619,
+        1.45
+      ],
+      "start_q": [
+        1.1034055635154378,
+        1.9879928387631511,
+        -1.4488962726467776,
+        -0.07367851067331747,
+        -0.5241327694112203,
+        0.6122034351106943
+      ]
+    },
+    {
+      "id": "V_T1_236",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.236,
+      "height": 0.19,
+      "depth": 0.18,
+      "mouth_offset": 0.045,
+      "travel": 0.105,
+      "success_depth": 0.054,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    },
+    {
+      "id": "V_T2_285",
+      "family": "T2",
+      "yaw_deg": -45,
+      "width": 0.25,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        0
+      ],
+      "goal_yz_jitter": 0.004,
+      "tool_yaw_deg": -45,
+      "center_body_m": [
+        0.4830342712474619,
+        -0.5082842712474619,
+        1.45
+      ],
+      "start_q": [
+        1.1034055635154378,
+        1.9879928387631511,
+        -1.4488962726467776,
+        -0.07367851067331747,
+        -0.5241327694112203,
+        0.6122034351106943
+      ]
+    },
+    {
+      "id": "V_T1_236",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.236,
+      "height": 0.19,
+      "depth": 0.18,
+      "mouth_offset": 0.045,
+      "travel": 0.105,
+      "success_depth": 0.054,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    },
+    {
+      "id": "V_T2_285",
+      "family": "T2",
+      "yaw_deg": -45,
+      "width": 0.25,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        0
+      ],
+      "goal_yz_jitter": 0.004,
+      "tool_yaw_deg": -45,
+      "center_body_m": [
+        0.4830342712474619,
+        -0.5082842712474619,
+        1.45
+      ],
+      "start_q": [
+        1.1034055635154378,
+        1.9879928387631511,
+        -1.4488962726467776,
+        -0.07367851067331747,
+        -0.5241327694112203,
+        0.6122034351106943
+      ]
+    },
+    {
+      "id": "V_T1_236",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.236,
+      "height": 0.19,
+      "depth": 0.18,
+      "mouth_offset": 0.045,
+      "travel": 0.105,
+      "success_depth": 0.054,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    },
+    {
+      "id": "V_T2_285",
+      "family": "T2",
+      "yaw_deg": -45,
+      "width": 0.25,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        0
+      ],
+      "goal_yz_jitter": 0.004,
+      "tool_yaw_deg": -45,
+      "center_body_m": [
+        0.4830342712474619,
+        -0.5082842712474619,
+        1.45
+      ],
+      "start_q": [
+        1.1034055635154378,
+        1.9879928387631511,
+        -1.4488962726467776,
+        -0.07367851067331747,
+        -0.5241327694112203,
+        0.6122034351106943
+      ]
+    },
+    {
+      "id": "V_T1_236",
+      "family": "T1",
+      "yaw_deg": 0,
+      "width": 0.236,
+      "height": 0.19,
+      "depth": 0.18,
+      "mouth_offset": 0.045,
+      "travel": 0.105,
+      "success_depth": 0.054,
+      "mask": [
+        1,
+        1,
+        1
+      ],
+      "goal_yz_jitter": 0.006
+    },
+    {
+      "id": "V_T2_285",
+      "family": "T2",
+      "yaw_deg": -45,
+      "width": 0.25,
+      "height": 0.2,
+      "depth": 0.17,
+      "mouth_offset": 0.05,
+      "travel": 0.11,
+      "success_depth": 0.055,
+      "mask": [
+        1,
+        1,
+        0
+      ],
+      "goal_yz_jitter": 0.004,
+      "tool_yaw_deg": -45,
+      "center_body_m": [
+        0.4830342712474619,
+        -0.5082842712474619,
+        1.45
+      ],
+      "start_q": [
+        1.1034055635154378,
+        1.9879928387631511,
+        -1.4488962726467776,
+        -0.07367851067331747,
+        -0.5241327694112203,
+        0.6122034351106943
+      ]
+    }
+  ],
+  "geometry_replication": false,
+  "training_physics_steps": 0,
+  "evaluation_physics_steps": 910,
+  "industrial_geometry": {
+    "source": "PARAMETERIZED_RESEARCH_NOT_MEASURED_CABINET",
+    "opening_width_m": 0.26,
+    "opening_height_m": 0.18,
+    "cabinet_depth_m": 0.16,
+    "wall_thickness_m": 0.03,
+    "entry_direction_body": [
+      1,
+      0,
+      0
+    ],
+    "initial_held_center_body_m": [
+      0.45475,
+      -0.48,
+      1.45
+    ],
+    "mouth_offset_m": 0.05,
+    "success_depth_m": 0.055,
+    "alignment_tolerance_m": 0.007,
+    "orientation_tolerance_rad": 0.0523599,
+    "success_hold_control_steps": 6,
+    "goal_yz_randomization_m": [
+      -0.006,
+      0.006
+    ],
+    "reset_joint_noise_rad": [
+      -0.004,
+      0.004
+    ],
+    "training_seed": 31,
+    "evaluation_seed": 1731
+  },
+  "q_final": [
+    [
+      1.8414942026138306,
+      1.9288742542266846,
+      -1.5113519430160522,
+      0.994621753692627,
+      -0.9275559186935425,
+      -1.0049563646316528
+    ],
+    [
+      1.1045645475387573,
+      2.0003821849823,
+      -1.4551368951797485,
+      -0.07295741140842438,
+      -0.5299465656280518,
+      0.6104946136474609
+    ],
+    [
+      1.7421609163284302,
+      1.8398056030273438,
+      -1.5104213953018188,
+      1.1370195150375366,
+      -0.8531752824783325,
+      -1.0816494226455688
+    ],
+    [
+      1.103121042251587,
+      2.022970676422119,
+      -1.4720337390899658,
+      -0.07201121747493744,
+      -0.5365169644355774,
+      0.6112081408500671
+    ],
+    [
+      1.7330067157745361,
+      1.7734051942825317,
+      -1.4289345741271973,
+      1.1326320171356201,
+      -0.8567982912063599,
+      -1.0618094205856323
+    ],
+    [
+      1.103110671043396,
+      2.0152411460876465,
+      -1.4649449586868286,
+      -0.07233769446611404,
+      -0.5329135656356812,
+      0.6109013557434082
+    ],
+    [
+      1.8438845872879028,
+      1.9315749406814575,
+      -1.5127918720245361,
+      0.9968224167823792,
+      -0.9324354529380798,
+      -0.9983324408531189
+    ],
+    [
+      1.1035451889038086,
+      1.9420799016952515,
+      -1.424328088760376,
+      -0.0763963982462883,
+      -0.5034164190292358,
+      0.615067720413208
+    ],
+    [
+      1.7385375499725342,
+      1.8485915660858154,
+      -1.5014586448669434,
+      1.126020073890686,
+      -0.859620213508606,
+      -1.0596694946289062
+    ],
+    [
+      1.103511929512024,
+      2.0188677310943604,
+      -1.4699136018753052,
+      -0.07280697673559189,
+      -0.530207097530365,
+      0.6128775477409363
+    ],
+    [
+      1.7017208337783813,
+      1.7511494159698486,
+      -1.4020617008209229,
+      1.1545796394348145,
+      -0.849027156829834,
+      -1.050427794456482
+    ],
+    [
+      1.1018214225769043,
+      1.5982390642166138,
+      -1.1552938222885132,
+      -0.08881545811891556,
+      -0.4287125766277313,
+      0.6309208273887634
+    ],
+    [
+      1.7743674516677856,
+      1.8648704290390015,
+      -1.51454758644104,
+      1.094555377960205,
+      -0.8720424175262451,
+      -1.0630332231521606
+    ],
+    [
+      1.099793791770935,
+      1.990280032157898,
+      -1.4466750621795654,
+      -0.07358860224485397,
+      -0.5279591083526611,
+      0.61483234167099
+    ],
+    [
+      1.8315891027450562,
+      1.9289590120315552,
+      -1.507783055305481,
+      0.999282717704773,
+      -0.9266877770423889,
+      -0.9980052709579468
+    ],
+    [
+      1.1033607721328735,
+      1.9462181329727173,
+      -1.4266237020492554,
+      -0.07616447657346725,
+      -0.5051656365394592,
+      0.6150449514389038
+    ]
+  ],
+  "origins": [
+    [
+      3.75,
+      -3.75,
+      0.0
+    ],
+    [
+      3.75,
+      -1.25,
+      0.0
+    ],
+    [
+      3.75,
+      1.25,
+      0.0
+    ],
+    [
+      3.75,
+      3.75,
+      0.0
+    ],
+    [
+      1.25,
+      -3.75,
+      0.0
+    ],
+    [
+      1.25,
+      -1.25,
+      0.0
+    ],
+    [
+      1.25,
+      1.25,
+      0.0
+    ],
+    [
+      1.25,
+      3.75,
+      0.0
+    ],
+    [
+      -1.25,
+      -3.75,
+      0.0
+    ],
+    [
+      -1.25,
+      -1.25,
+      0.0
+    ],
+    [
+      -1.25,
+      1.25,
+      0.0
+    ],
+    [
+      -1.25,
+      3.75,
+      0.0
+    ],
+    [
+      -3.75,
+      -3.75,
+      0.0
+    ],
+    [
+      -3.75,
+      -1.25,
+      0.0
+    ],
+    [
+      -3.75,
+      1.25,
+      0.0
+    ],
+    [
+      -3.75,
+      3.75,
+      0.0
+    ]
+  ],
+  "body_names": [
+    "world",
+    "Link_0",
+    "Link_1",
+    "Link_2",
+    "Link_3",
+    "Link_4",
+    "Link_5",
+    "Link_6"
+  ],
+  "source_sha256": "04c87b75af09ef247e9537124ffa69b358d727ff3c051466bb61f45f0e598b1c",
+  "asset": {
+    "scope": "ISOLATED_JAKA_FIXED_FINGER_WELDED_TRAY_PHYSICS_SMOKE",
+    "whole_chassis_safe": false,
+    "contact_grasp_tested": false,
+    "collision_approximation": "convexHull of every source STL; tray USD AABB",
+    "payload_mass_kg": 0.3,
+    "payload_inertia": "merged approximate link6 inertia, not measured payload dynamics",
+    "body_bases": {
+      "left": [
+        [
+          -0.707106781191318,
+          8.796174194814942e-12,
+          0.7071067811817774,
+          0.0003995995736438701
+        ],
+        [
+          0.7071067811722367,
+          5.194705271591107e-06,
+          0.7071067811817773,
+          0.20040072162808234
+        ],
+        [
+          -3.673205103962477e-06,
+          0.9999999999865075,
+          -3.673217543666285e-06,
+          1.200002816616114
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "right": [
+        [
+          -0.7071067811913201,
+          9.97821287717777e-12,
+          0.707106781181775,
+          0.000614916695917517
+        ],
+        [
+          -0.7071067811722344,
+          -5.194707066967819e-06,
+          -0.7071067811817794,
+          -0.2006160387503574
+        ],
+        [
+          3.673205537638494e-06,
+          -0.9999999999865075,
+          3.67321964902384e-06,
+          1.1999971833838727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "tool": [
+      [
+        -0.08078132195228908,
+        0.9961861689215942,
+        0.032977187159575067,
+        0.027945999145507813
+      ],
+      [
+        -0.9964025600794283,
+        -0.08156080468509744,
+        0.02301680703922258,
+        -0.0023650000095367433
+      ],
+      [
+        0.02561867074619673,
+        -0.030999225610269892,
+        0.9991910386511488,
+        0.0814020004272461
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "joint_lower": [
+      -6.133185307179586,
+      -2.031661564992912,
+      -2.1189280275926285,
+      -6.133185307179586,
+      -1.9443951023931954,
+      -6.133185307179586
+    ],
+    "joint_upper": [
+      6.133185307179586,
+      2.031661564992912,
+      2.1189280275926285,
+      6.133185307179586,
+      1.9443951023931954,
+      6.133185307179586
+    ],
+    "start_q": [
+      1.8417671557848139,
+      1.9321916303914566,
+      -1.5110560288852228,
+      0.9937819955267935,
+      -0.9295215457155724,
+      -1.0013790849039717
+    ],
+    "goal_q": [
+      1.5880979942710847,
+      1.6321074130049809,
+      -1.3375497764299358,
+      1.2988095180107888,
+      -0.7968232102176671,
+      -1.1038642650722432
+    ],
+    "zero_frame_max_abs_error": {
+      "base_link": 0.0,
+      "link1": 6.437301636186277e-09,
+      "link2": 7.946840374639663e-08,
+      "link3": 1.3434864864413775e-07,
+      "link4": 3.673218595782305e-06,
+      "link5": 3.0293606100772377e-07,
+      "link6": 3.673218595782305e-06
+    },
+    "source_sha256": {
+      "repos/ARES/isaac_sim/simforge/assets/jaka_minicobo/jaka_minicobo.usd": "c453c56dfaeb603dbcb183c9304305385ab7033cfddd4d798354dce8ad3cdbc1",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_gripper.urdf": "65789fd396bc33251338141bbc6b6400be48a32e67b94a1541cba7c2aeae8228",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link0.STL": "34a78118cc76671fb56f0f8293e33d4dd92a4058c68b0b396fe58613d98fd3bc",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link1.STL": "7619887ad563d09243fd2a9e06fe733ea24fe5d0ef53fd4bcfe6c0d87bab492c",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link2.STL": "6be58a3fc8e16f808fb6efec3d96f8e1dae3988304bdcf98845fc16d3abee1e6",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link3.STL": "8da30ba4b43ee0d8cd3cd0d2e983dc5aa9a9c91ae10346b80daac47f4859aaae",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link4.STL": "6a6c57757a9f0eaac566ad577b66952ccf1566d9c04f5cd8eb432677f5815dd1",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link5.STL": "a3756e21c9f1e1cd7ef0816529fd477382f7e57a1c7a3bafbf65123265ba389a",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link6.STL": "c2c75367fb5a06028f8693258615d18eac9be89f5d1d5550be91ad982e20c12c",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_baselink.STL": "7043a98a1c6bc26c43329427b7e20231fd8da27a20a1e939a6f206f869c93a61",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_Link1.STL": "d626d57cad00ce45637fc770c24659c10e1697c68869229fa3427802bc83fa56",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_Link2.STL": "a908071c33672578474038897eb8268a8ca534858a6b2e9fd682e22e40cbd6d4",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_Link3.STL": "7fc3d839c23b4f845d4edf5d5704d81b4052b01805e70b3b11676c16a05a65ef",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_Link4.STL": "e9248937221d905666ffd4cd5e8df97c9e1e96e5fcc10d438a427c1c06974c41",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_Link5.STL": "dc32d21cceffdd18eba238a6be09c89649eef3efc9e18ab4ba0b0ccdfdce6fb5",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_Link6.STL": "f41c4aab68f158b8574766f0a111473e162259deff0cea2958c43664dea3bc1e"
+    },
+    "scene_sha256": "1857a1c59c7693845c1f73d62fc94d61859e7668df07f2d87b52b14d1ebdb760",
+    "planner_request_sha256": "f1fee84a529112ac7ac8329ce462b78cdd8d5cc439dd69c3c1b1fc21462e5731",
+    "planner_result_sha256": "ad90848ae755957ec1b0b905eb3af0a468bfbd2bf1ce85ffc1c5ee7f529908f1",
+    "parent_scene_sha256": "35f08d1a3ab4a2fa41ba9882e4f2e63c0c7a456309ba300549badbb0c8a043da",
+    "collision_schema_repair": {
+      "actual_mesh_colliders": [
+        "/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+        "/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+        "/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+        "/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+        "/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+        "/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+        "/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh"
+      ],
+      "vertices_and_joint_limits_changed": false,
+      "original_unchanged": true,
+      "source_sha256": "8c720d065e12ec1bfb8ea961a47720fe7dc34d064f7b2e8b41728178c8c408d4"
+    }
+  },
+  "isaac_lab_git": "3c6e67bb5c7ada942a6d1884ab69338f57596f77",
+  "isaac_sim": "5.1.0",
+  "limitations": [
+    "isolated arm, not dual-arm/full-chassis",
+    "fixed fingers and welded tray research geometry",
+    "single wide research cabinet, not cross-task/contract generalization or superiority"
+  ]
+}
