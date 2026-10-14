@@ -1,0 +1,226 @@
+{
+  "scope": "ISOLATED_JAKA_FIXED_FINGER_WELDED_TRAY_PHYSICS_SMOKE",
+  "num_envs": 1,
+  "seed": 31,
+  "physics_dt": 0.008333333333333333,
+  "physics_steps": 1024,
+  "env_physics_steps": 1024,
+  "episodes": 3,
+  "gradient_updates": 0,
+  "policy_parameters_changed": false,
+  "real_physics": true,
+  "industrial_task_qualified": false,
+  "episode_counter_semantics": "reset events including initialization; not successful tasks",
+  "replay_result_sha256": null,
+  "deterministic_hold_correction": false,
+  "industrial_research_task": true,
+  "controller": "nominal",
+  "policy_controls_robot": false,
+  "industrial_geometry": {
+    "source": "PARAMETERIZED_RESEARCH_NOT_MEASURED_CABINET",
+    "opening_width_m": 0.26,
+    "opening_height_m": 0.18,
+    "cabinet_depth_m": 0.16,
+    "wall_thickness_m": 0.03,
+    "entry_direction_body": [
+      1,
+      0,
+      0
+    ],
+    "initial_held_center_body_m": [
+      0.45475,
+      -0.48,
+      1.45
+    ],
+    "mouth_offset_m": 0.05,
+    "success_depth_m": 0.055,
+    "alignment_tolerance_m": 0.007,
+    "orientation_tolerance_rad": 0.0523599,
+    "success_hold_control_steps": 6,
+    "goal_yz_randomization_m": [
+      -0.006,
+      0.006
+    ],
+    "reset_joint_noise_rad": [
+      -0.004,
+      0.004
+    ],
+    "training_seed": 31,
+    "evaluation_seed": 1731
+  },
+  "q_final": [
+    [
+      1.8420132398605347,
+      1.9313921928405762,
+      -1.5111078023910522,
+      0.9931454062461853,
+      -0.927361011505127,
+      -0.9981674551963806
+    ]
+  ],
+  "origins": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "source_sha256": "aea9dfe269c9279901e0131d6d40a1615c459cdde9f92bbe9d9b5fddbb4ccdba",
+  "asset": {
+    "scope": "ISOLATED_JAKA_FIXED_FINGER_WELDED_TRAY_PHYSICS_SMOKE",
+    "whole_chassis_safe": false,
+    "contact_grasp_tested": false,
+    "collision_approximation": "convexHull of every source STL; tray USD AABB",
+    "payload_mass_kg": 0.3,
+    "payload_inertia": "merged approximate link6 inertia, not measured payload dynamics",
+    "body_bases": {
+      "left": [
+        [
+          -0.707106781191318,
+          8.796174194814942e-12,
+          0.7071067811817774,
+          0.0003995995736438701
+        ],
+        [
+          0.7071067811722367,
+          5.194705271591107e-06,
+          0.7071067811817773,
+          0.20040072162808234
+        ],
+        [
+          -3.673205103962477e-06,
+          0.9999999999865075,
+          -3.673217543666285e-06,
+          1.200002816616114
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "right": [
+        [
+          -0.7071067811913201,
+          9.97821287717777e-12,
+          0.707106781181775,
+          0.000614916695917517
+        ],
+        [
+          -0.7071067811722344,
+          -5.194707066967819e-06,
+          -0.7071067811817794,
+          -0.2006160387503574
+        ],
+        [
+          3.673205537638494e-06,
+          -0.9999999999865075,
+          3.67321964902384e-06,
+          1.1999971833838727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "tool": [
+      [
+        -0.08078132195228908,
+        0.9961861689215942,
+        0.032977187159575067,
+        0.027945999145507813
+      ],
+      [
+        -0.9964025600794283,
+        -0.08156080468509744,
+        0.02301680703922258,
+        -0.0023650000095367433
+      ],
+      [
+        0.02561867074619673,
+        -0.030999225610269892,
+        0.9991910386511488,
+        0.0814020004272461
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "joint_lower": [
+      -6.133185307179586,
+      -2.031661564992912,
+      -2.1189280275926285,
+      -6.133185307179586,
+      -1.9443951023931954,
+      -6.133185307179586
+    ],
+    "joint_upper": [
+      6.133185307179586,
+      2.031661564992912,
+      2.1189280275926285,
+      6.133185307179586,
+      1.9443951023931954,
+      6.133185307179586
+    ],
+    "start_q": [
+      1.8417671557848139,
+      1.9321916303914566,
+      -1.5110560288852228,
+      0.9937819955267935,
+      -0.9295215457155724,
+      -1.0013790849039717
+    ],
+    "goal_q": [
+      1.5880979942710847,
+      1.6321074130049809,
+      -1.3375497764299358,
+      1.2988095180107888,
+      -0.7968232102176671,
+      -1.1038642650722432
+    ],
+    "zero_frame_max_abs_error": {
+      "base_link": 0.0,
+      "link1": 6.437301636186277e-09,
+      "link2": 7.946840374639663e-08,
+      "link3": 1.3434864864413775e-07,
+      "link4": 3.673218595782305e-06,
+      "link5": 3.0293606100772377e-07,
+      "link6": 3.673218595782305e-06
+    },
+    "source_sha256": {
+      "repos/ARES/isaac_sim/simforge/assets/jaka_minicobo/jaka_minicobo.usd": "c453c56dfaeb603dbcb183c9304305385ab7033cfddd4d798354dce8ad3cdbc1",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_gripper.urdf": "65789fd396bc33251338141bbc6b6400be48a32e67b94a1541cba7c2aeae8228",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link0.STL": "34a78118cc76671fb56f0f8293e33d4dd92a4058c68b0b396fe58613d98fd3bc",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link1.STL": "7619887ad563d09243fd2a9e06fe733ea24fe5d0ef53fd4bcfe6c0d87bab492c",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link2.STL": "6be58a3fc8e16f808fb6efec3d96f8e1dae3988304bdcf98845fc16d3abee1e6",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link3.STL": "8da30ba4b43ee0d8cd3cd0d2e983dc5aa9a9c91ae10346b80daac47f4859aaae",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link4.STL": "6a6c57757a9f0eaac566ad577b66952ccf1566d9c04f5cd8eb432677f5815dd1",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link5.STL": "a3756e21c9f1e1cd7ef0816529fd477382f7e57a1c7a3bafbf65123265ba389a",
+      "repos/ARES/isaac_sim/simforge/robot/jaka_minicobo_meshes/Link6.STL": "c2c75367fb5a06028f8693258615d18eac9be89f5d1d5550be91ad982e20c12c",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_baselink.STL": "7043a98a1c6bc26c43329427b7e20231fd8da27a20a1e939a6f206f869c93a61",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_Link1.STL": "d626d57cad00ce45637fc770c24659c10e1697c68869229fa3427802bc83fa56",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_Link2.STL": "a908071c33672578474038897eb8268a8ca534858a6b2e9fd682e22e40cbd6d4",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_Link3.STL": "7fc3d839c23b4f845d4edf5d5704d81b4052b01805e70b3b11676c16a05a65ef",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_Link4.STL": "e9248937221d905666ffd4cd5e8df97c9e1e96e5fcc10d438a427c1c06974c41",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_Link5.STL": "dc32d21cceffdd18eba238a6be09c89649eef3efc9e18ab4ba0b0ccdfdce6fb5",
+      "repos/ARES/isaac_sim/simforge/robot/eg2_4c2_meshes/4C2_Link6.STL": "f41c4aab68f158b8574766f0a111473e162259deff0cea2958c43664dea3bc1e"
+    },
+    "scene_sha256": "35f08d1a3ab4a2fa41ba9882e4f2e63c0c7a456309ba300549badbb0c8a043da",
+    "planner_request_sha256": "f1fee84a529112ac7ac8329ce462b78cdd8d5cc439dd69c3c1b1fc21462e5731",
+    "planner_result_sha256": "ad90848ae755957ec1b0b905eb3af0a468bfbd2bf1ce85ffc1c5ee7f529908f1"
+  },
+  "isaac_lab_git": "3c6e67bb5c7ada942a6d1884ab69338f57596f77",
+  "isaac_sim": "5.1.0",
+  "limitations": [
+    "isolated arm, not dual-arm/full-chassis",
+    "fixed fingers and welded tray research geometry",
+    "smoke joint tracking, not mechanism A/B or scientific method superiority"
+  ]
+}

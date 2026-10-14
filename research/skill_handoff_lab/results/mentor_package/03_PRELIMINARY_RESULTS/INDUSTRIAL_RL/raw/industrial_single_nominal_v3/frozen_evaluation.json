@@ -1,0 +1,115 @@
+{
+  "seed": 1731,
+  "requested_episodes": 4,
+  "episodes": [
+    {
+      "env": 0,
+      "control_step": 521,
+      "success": false,
+      "failed": true,
+      "timeout": false,
+      "depth_m": -0.07100427150726318,
+      "alignment_m": 0.0046096001751720905,
+      "orientation_error_rad": 0.05678671970963478,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": -3.2413816452026367,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5847499966621399,
+        -0.48197099566459656,
+        1.4504605531692505
+      ],
+      "terminal_q": [
+        1.8487074375152588,
+        1.9391061067581177,
+        -1.5306977033615112,
+        0.9886147975921631,
+        -0.9017873406410217,
+        -0.9602914452552795
+      ],
+      "episode_control_steps": 9
+    },
+    {
+      "env": 0,
+      "control_step": 532,
+      "success": false,
+      "failed": true,
+      "timeout": false,
+      "depth_m": -0.07550984621047974,
+      "alignment_m": 0.006718243006616831,
+      "orientation_error_rad": 0.053400736302137375,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": -4.694714069366455,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5847499966621399,
+        -0.47634437680244446,
+        1.4466389417648315
+      ],
+      "terminal_q": [
+        1.855743169784546,
+        1.9649090766906738,
+        -1.5569121837615967,
+        0.980050265789032,
+        -0.9084101915359497,
+        -0.9627881646156311
+      ],
+      "episode_control_steps": 11
+    },
+    {
+      "env": 0,
+      "control_step": 546,
+      "success": false,
+      "failed": true,
+      "timeout": false,
+      "depth_m": -0.07000720500946045,
+      "alignment_m": 0.01598067209124565,
+      "orientation_error_rad": 0.05574207380414009,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": -8.774175643920898,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5847499966621399,
+        -0.48526695370674133,
+        1.44499671459198
+      ],
+      "terminal_q": [
+        1.8277816772460938,
+        1.9293339252471924,
+        -1.4901282787322998,
+        0.9547504186630249,
+        -0.9790776371955872,
+        -0.9443697929382324
+      ],
+      "episode_control_steps": 14
+    },
+    {
+      "env": 0,
+      "control_step": 562,
+      "success": false,
+      "failed": true,
+      "timeout": false,
+      "depth_m": -0.07106736302375793,
+      "alignment_m": 0.013463364914059639,
+      "orientation_error_rad": 0.05317162722349167,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": -8.311192512512207,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5847499966621399,
+        -0.4810711741447449,
+        1.4474443197250366
+      ],
+      "terminal_q": [
+        1.8230894804000854,
+        1.9378935098648071,
+        -1.488602638244629,
+        0.9526915550231934,
+        -0.9786441922187805,
+        -0.928901195526123
+      ],
+      "episode_control_steps": 16
+    }
+  ],
+  "scope": "same geometry distribution, not held-out task/generalization"
+}

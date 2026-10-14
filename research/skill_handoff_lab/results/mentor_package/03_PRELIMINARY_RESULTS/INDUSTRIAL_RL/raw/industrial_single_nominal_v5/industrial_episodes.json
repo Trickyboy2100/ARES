@@ -1,0 +1,56 @@
+[
+  {
+    "env": 0,
+    "control_step": 239,
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "depth_m": 0.06087386608123779,
+    "alignment_m": 0.03904527798295021,
+    "orientation_error_rad": 0.01049061305820942,
+    "contact_force_N": 0.0,
+    "return_before_terminal_reward": -69.44158935546875,
+    "peak_net_contact_force_N": 0.0,
+    "goal_body_m": [
+      0.5647500157356262,
+      -0.48070889711380005,
+      1.454429268836975
+    ],
+    "terminal_q": [
+      1.562269687652588,
+      1.6234263181686401,
+      -1.4866011142730713,
+      1.4683524370193481,
+      -0.7640565037727356,
+      -1.3083552122116089
+    ],
+    "episode_control_steps": 239
+  },
+  {
+    "env": 0,
+    "control_step": 478,
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "depth_m": 0.06087386608123779,
+    "alignment_m": 0.03904527798295021,
+    "orientation_error_rad": 0.01049061305820942,
+    "contact_force_N": 0.0,
+    "return_before_terminal_reward": -69.44158935546875,
+    "peak_net_contact_force_N": 0.0,
+    "goal_body_m": [
+      0.5647500157356262,
+      -0.48070889711380005,
+      1.454429268836975
+    ],
+    "terminal_q": [
+      1.562269687652588,
+      1.6234263181686401,
+      -1.4866011142730713,
+      1.4683524370193481,
+      -0.7640565037727356,
+      -1.3083552122116089
+    ],
+    "episode_control_steps": 239
+  }
+]

@@ -1,0 +1,455 @@
+{
+  "seed": 1731,
+  "requested_episodes": 16,
+  "episodes": [
+    {
+      "env": 0,
+      "control_step": 397,
+      "success": true,
+      "case_id": 0,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.06108880043029785,
+      "alignment_m": 0.004967140033841133,
+      "orientation_error_rad": 0.011039180681109428,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 78.78156280517578,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.47608160972595215,
+        1.4449039697647095
+      ],
+      "terminal_q": [
+        1.5505905151367188,
+        1.6141746044158936,
+        -1.3579002618789673,
+        1.3575383424758911,
+        -0.7807262539863586,
+        -1.1379337310791016
+      ],
+      "episode_control_steps": 141
+    },
+    {
+      "env": 1,
+      "control_step": 388,
+      "success": true,
+      "case_id": 1,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.06117963790893555,
+      "alignment_m": 0.005073771346360445,
+      "orientation_error_rad": 0.011431935243308544,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 78.9739990234375,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.48471254110336304,
+        1.4533195495605469
+      ],
+      "terminal_q": [
+        1.5737674236297607,
+        1.5732184648513794,
+        -1.2762094736099243,
+        1.2974262237548828,
+        -0.7970197796821594,
+        -1.0838828086853027
+      ],
+      "episode_control_steps": 132
+    },
+    {
+      "env": 2,
+      "control_step": 388,
+      "success": true,
+      "case_id": 2,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.061156630516052246,
+      "alignment_m": 0.0050226496532559395,
+      "orientation_error_rad": 0.011311957612633705,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 81.78319549560547,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.48166418075561523,
+        1.4528076648712158
+      ],
+      "terminal_q": [
+        1.565820336341858,
+        1.5843664407730103,
+        -1.2898330688476562,
+        1.3067731857299805,
+        -0.7940312623977661,
+        -1.0865085124969482
+      ],
+      "episode_control_steps": 132
+    },
+    {
+      "env": 3,
+      "control_step": 388,
+      "success": true,
+      "case_id": 3,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.06112706661224365,
+      "alignment_m": 0.005008433945477009,
+      "orientation_error_rad": 0.011275846511125565,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 82.5845947265625,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.4825461506843567,
+        1.4494132995605469
+      ],
+      "terminal_q": [
+        1.56809401512146,
+        1.5863256454467773,
+        -1.3085240125656128,
+        1.320766806602478,
+        -0.7903947234153748,
+        -1.109518051147461
+      ],
+      "episode_control_steps": 132
+    },
+    {
+      "env": 0,
+      "control_step": 528,
+      "success": true,
+      "case_id": 4,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.06113564968109131,
+      "alignment_m": 0.005071293096989393,
+      "orientation_error_rad": 0.011389108374714851,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 80.58221435546875,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.4766836166381836,
+        1.453566074371338
+      ],
+      "terminal_q": [
+        1.552913784980774,
+        1.6000592708587646,
+        -1.3015968799591064,
+        1.31416654586792,
+        -0.7913353443145752,
+        -1.0796990394592285
+      ],
+      "episode_control_steps": 131
+    },
+    {
+      "env": 1,
+      "control_step": 520,
+      "success": true,
+      "case_id": 5,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.06117892265319824,
+      "alignment_m": 0.005047706421464682,
+      "orientation_error_rad": 0.011371181346476078,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 78.89041137695312,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.48212990164756775,
+        1.4547064304351807
+      ],
+      "terminal_q": [
+        1.5670591592788696,
+        1.5798826217651367,
+        -1.275994896888733,
+        1.2968145608901978,
+        -0.7969024777412415,
+        -1.073943018913269
+      ],
+      "episode_control_steps": 132
+    },
+    {
+      "env": 2,
+      "control_step": 520,
+      "success": true,
+      "case_id": 6,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.061134517192840576,
+      "alignment_m": 0.004977475386112928,
+      "orientation_error_rad": 0.01120523177087307,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 82.70486450195312,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.47897571325302124,
+        1.45211660861969
+      ],
+      "terminal_q": [
+        1.5587776899337769,
+        1.5944970846176147,
+        -1.3031542301177979,
+        1.3160533905029297,
+        -0.7911601662635803,
+        -1.0902374982833862
+      ],
+      "episode_control_steps": 132
+    },
+    {
+      "env": 3,
+      "control_step": 519,
+      "success": true,
+      "case_id": 7,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.06111520528793335,
+      "alignment_m": 0.005067937541753054,
+      "orientation_error_rad": 0.01137799397110939,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 80.96263885498047,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.4780471622943878,
+        1.4508781433105469
+      ],
+      "terminal_q": [
+        1.5563243627548218,
+        1.599454641342163,
+        -1.3143593072891235,
+        1.3240084648132324,
+        -0.7889696955680847,
+        -1.0982824563980103
+      ],
+      "episode_control_steps": 131
+    },
+    {
+      "env": 0,
+      "control_step": 660,
+      "success": true,
+      "case_id": 8,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.06116771697998047,
+      "alignment_m": 0.004999570548534393,
+      "orientation_error_rad": 0.011259698309004307,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 80.30778503417969,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.4783366918563843,
+        1.4557024240493774
+      ],
+      "terminal_q": [
+        1.5572768449783325,
+        1.5911751985549927,
+        -1.2821097373962402,
+        1.3004670143127441,
+        -0.7953482270240784,
+        -1.065987229347229
+      ],
+      "episode_control_steps": 132
+    },
+    {
+      "env": 1,
+      "control_step": 652,
+      "success": true,
+      "case_id": 9,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.061164021492004395,
+      "alignment_m": 0.0050008404068648815,
+      "orientation_error_rad": 0.011262738145887852,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 81.16541290283203,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.478806734085083,
+        1.4550763368606567
+      ],
+      "terminal_q": [
+        1.5584636926651,
+        1.5905681848526,
+        -1.2846400737762451,
+        1.302406907081604,
+        -0.7948675751686096,
+        -1.07035493850708
+      ],
+      "episode_control_steps": 132
+    },
+    {
+      "env": 2,
+      "control_step": 652,
+      "success": true,
+      "case_id": 10,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.061187922954559326,
+      "alignment_m": 0.005063584074378014,
+      "orientation_error_rad": 0.01140818651765585,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 79.03350067138672,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.48280829191207886,
+        1.4551444053649902
+      ],
+      "terminal_q": [
+        1.5688185691833496,
+        1.5768908262252808,
+        -1.2708536386489868,
+        1.2932461500167847,
+        -0.7980225682258606,
+        -1.0712077617645264
+      ],
+      "episode_control_steps": 132
+    },
+    {
+      "env": 3,
+      "control_step": 650,
+      "success": true,
+      "case_id": 11,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.06108123064041138,
+      "alignment_m": 0.005060965195298195,
+      "orientation_error_rad": 0.011354348622262478,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 80.74700927734375,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.4794478118419647,
+        1.4467917680740356
+      ],
+      "terminal_q": [
+        1.5598492622375488,
+        1.600439429283142,
+        -1.3354848623275757,
+        1.340398907661438,
+        -0.785147488117218,
+        -1.1262675523757935
+      ],
+      "episode_control_steps": 131
+    },
+    {
+      "env": 0,
+      "control_step": 792,
+      "success": true,
+      "case_id": 12,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.061113595962524414,
+      "alignment_m": 0.0050070760771632195,
+      "orientation_error_rad": 0.011269239708781242,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 82.4308090209961,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.4832302927970886,
+        1.4476515054702759
+      ],
+      "terminal_q": [
+        1.5698977708816528,
+        1.5864567756652832,
+        -1.3173192739486694,
+        1.3274998664855957,
+        -0.7887586355209351,
+        -1.121529221534729
+      ],
+      "episode_control_steps": 132
+    },
+    {
+      "env": 1,
+      "control_step": 784,
+      "success": true,
+      "case_id": 13,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.061125874519348145,
+      "alignment_m": 0.005030124448239803,
+      "orientation_error_rad": 0.011325117200613022,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 82.13298034667969,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.484801322221756,
+        1.4479546546936035
+      ],
+      "terminal_q": [
+        1.574070692062378,
+        1.5806975364685059,
+        -1.3101052045822144,
+        1.3223464488983154,
+        -0.7902411818504333,
+        -1.1198540925979614
+      ],
+      "episode_control_steps": 132
+    },
+    {
+      "env": 2,
+      "control_step": 796,
+      "success": true,
+      "case_id": 14,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.06109201908111572,
+      "alignment_m": 0.0049582370556890965,
+      "orientation_error_rad": 0.01101224310696125,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 80.51994323730469,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.4760190546512604,
+        1.444929599761963
+      ],
+      "terminal_q": [
+        1.5504109859466553,
+        1.6143453121185303,
+        -1.3579249382019043,
+        1.357584834098816,
+        -0.7807023525238037,
+        -1.1377536058425903
+      ],
+      "episode_control_steps": 144
+    },
+    {
+      "env": 3,
+      "control_step": 782,
+      "success": true,
+      "case_id": 15,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.06114679574966431,
+      "alignment_m": 0.005025539547204971,
+      "orientation_error_rad": 0.011318006552755833,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 82.47948455810547,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.48279109597206116,
+        1.4512057304382324
+      ],
+      "terminal_q": [
+        1.5687508583068848,
+        1.582913875579834,
+        -1.2963135242462158,
+        1.311745524406433,
+        -0.7928102016448975,
+        -1.0975606441497803
+      ],
+      "episode_control_steps": 132
+    }
+  ],
+  "scope": "same geometry distribution, not held-out task/generalization"
+}

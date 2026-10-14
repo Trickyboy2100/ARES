@@ -1,0 +1,82 @@
+[
+  {
+    "method": "nominal",
+    "status": "PASS_RUN",
+    "test_cases": 64,
+    "successes": 64,
+    "success_rate": 1.0,
+    "wilson_95_interval": [
+      0.9433739770288436,
+      1.0
+    ],
+    "mean_time_s": 2.2065104166666667,
+    "mean_depth_m": 0.0611279234290123,
+    "failed": 0,
+    "timeout": 0,
+    "training_interactions": 0,
+    "seed": 31,
+    "test_seed": 1731,
+    "scene_scope": "single parameterized wide cabinet, isolated held arm",
+    "runtime_source_sha256": "e5eccc892aaafc0fe3b60bd0d8fad359778079b06c0f998aff16225442df4d25"
+  },
+  {
+    "method": "PPO",
+    "status": "PASS_RUN",
+    "test_cases": 64,
+    "successes": 51,
+    "success_rate": 0.796875,
+    "wilson_95_interval": [
+      0.6828613244878341,
+      0.8772669743730419
+    ],
+    "mean_time_s": 2.5492187499999996,
+    "mean_depth_m": 0.05622277781367302,
+    "failed": 0,
+    "timeout": 13,
+    "training_interactions": 65536,
+    "seed": 31,
+    "test_seed": 1731,
+    "scene_scope": "single parameterized wide cabinet, isolated held arm",
+    "runtime_source_sha256": "e5eccc892aaafc0fe3b60bd0d8fad359778079b06c0f998aff16225442df4d25"
+  },
+  {
+    "method": "residual PPO",
+    "status": "PASS_RUN",
+    "test_cases": 64,
+    "successes": 64,
+    "success_rate": 1.0,
+    "wilson_95_interval": [
+      0.9433739770288436,
+      1.0
+    ],
+    "mean_time_s": 2.1986979166666667,
+    "mean_depth_m": 0.061155625618994236,
+    "failed": 0,
+    "timeout": 0,
+    "training_interactions": 65536,
+    "seed": 31,
+    "test_seed": 1731,
+    "scene_scope": "single parameterized wide cabinet, isolated held arm",
+    "runtime_source_sha256": "e5eccc892aaafc0fe3b60bd0d8fad359778079b06c0f998aff16225442df4d25"
+  },
+  {
+    "method": "contract PPO",
+    "status": "PASS_RUN",
+    "test_cases": 64,
+    "successes": 64,
+    "success_rate": 1.0,
+    "wilson_95_interval": [
+      0.9433739770288436,
+      1.0
+    ],
+    "mean_time_s": 2.2065104166666667,
+    "mean_depth_m": 0.06132097449153662,
+    "failed": 0,
+    "timeout": 0,
+    "training_interactions": 65536,
+    "seed": 31,
+    "test_seed": 1731,
+    "scene_scope": "single parameterized wide cabinet, isolated held arm",
+    "runtime_source_sha256": "522c87ebe4f46535582894da3ed49ae665e8a771a8efd9e5e58ba53c65055b30"
+  }
+]

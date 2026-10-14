@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/bin/python",
+    "-u",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_contract_v8.py",
+    "--asset",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4",
+    "--output",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/industrial_contract16_seed31_v8",
+    "--num-envs",
+    "16",
+    "--steps",
+    "65536",
+    "--gpu",
+    "1",
+    "--industrial",
+    "--controller",
+    "contract",
+    "--eval-episodes",
+    "64"
+  ],
+  "pid": 685926,
+  "returncode": 0,
+  "timeout": false,
+  "wall_s": 200.18824553117156,
+  "valid_manifest_exists": true,
+  "program_sha256": "522c87ebe4f46535582894da3ed49ae665e8a771a8efd9e5e58ba53c65055b30"
+}

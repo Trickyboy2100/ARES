@@ -5,7 +5,9 @@ p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.a
 p.add_argument('--asset',type=Path,required=True);p.add_argument('--name',required=True)
 p.add_argument('--num-envs',type=int,default=1);p.add_argument('--steps',type=int,default=256)
 p.add_argument('--replay',type=Path);p.add_argument('--timeout',type=int,default=360)
-p.add_argument('--skip-capture',action='store_true');p.add_argument('--hold-correction',action='store_true');a=p.parse_args()
+p.add_argument('--skip-capture',action='store_true');p.add_argument('--hold-correction',action='store_true')
+p.add_argument('--industrial',action='store_true');p.add_argument('--controller',default='ppo');p.add_argument('--eval-episodes',type=int,default=0)
+p.add_argument('--load-policy',type=Path);p.add_argument('--eval-case-file',type=Path);p.add_argument('--eval-case-ids',default='');a=p.parse_args()
 out=a.root/'runs/r1_20261014';out.mkdir(exist_ok=True,parents=True)
 if (out/(a.name+'.log')).exists():raise FileExistsError('never overwrite a previous experiment')
 env=os.environ.copy()
@@ -16,6 +18,10 @@ argv=[str(a.root/'envs/isaac51-check/bin/python'),'-u',str(a.script),'--asset',s
 if a.replay:argv+=['--replay',str(a.replay)]
 if a.skip_capture:argv+=['--skip-capture']
 if a.hold_correction:argv+=['--hold-correction']
+if a.industrial:argv+=['--industrial','--controller',a.controller]
+if a.eval_episodes:argv+=['--eval-episodes',str(a.eval_episodes)]
+if a.load_policy:argv+=['--load-policy',str(a.load_policy)]
+if a.eval_case_file:argv+=['--eval-case-file',str(a.eval_case_file),'--eval-case-ids',a.eval_case_ids]
 started=time.monotonic();timed_out=False
 with (out/(a.name+'.log')).open('w') as log:
     child=subprocess.Popen(argv,env=env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)

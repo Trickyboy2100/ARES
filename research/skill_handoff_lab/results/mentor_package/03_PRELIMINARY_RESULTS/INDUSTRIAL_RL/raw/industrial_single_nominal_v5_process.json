@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "/home/andyee/robot-research/ARES-Skilllab/envs/isaac51-check/bin/python",
+    "-u",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_v5.py",
+    "--asset",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/asset_v4",
+    "--output",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/industrial_single_nominal_v5",
+    "--num-envs",
+    "1",
+    "--steps",
+    "512",
+    "--gpu",
+    "1",
+    "--industrial",
+    "--controller",
+    "nominal",
+    "--eval-episodes",
+    "4"
+  ],
+  "pid": 678021,
+  "returncode": 0,
+  "timeout": false,
+  "wall_s": 74.14479835890234,
+  "valid_manifest_exists": true,
+  "program_sha256": "aea9dfe269c9279901e0131d6d40a1615c459cdde9f92bbe9d9b5fddbb4ccdba"
+}

@@ -1,0 +1,63 @@
+{
+  "seed": 1731,
+  "requested_episodes": 2,
+  "episodes": [
+    {
+      "env": 0,
+      "control_step": 371,
+      "success": false,
+      "case_id": 0,
+      "failed": false,
+      "timeout": true,
+      "depth_m": 0.057868778705596924,
+      "alignment_m": 0.027946453541517258,
+      "orientation_error_rad": 0.02117854543030262,
+      "contact_force_N": 12.743806838989258,
+      "return_before_terminal_reward": 142.92088317871094,
+      "peak_net_contact_force_N": 14.930429458618164,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.47608160972595215,
+        1.4449039697647095
+      ],
+      "terminal_q": [
+        1.6046712398529053,
+        1.5133800506591797,
+        -1.1091017723083496,
+        1.1654577255249023,
+        -0.8503308892250061,
+        -0.9537452459335327
+      ],
+      "episode_control_steps": 239
+    },
+    {
+      "env": 0,
+      "control_step": 132,
+      "success": true,
+      "case_id": 1,
+      "failed": false,
+      "timeout": false,
+      "depth_m": 0.05580216646194458,
+      "alignment_m": 0.0012468500062823296,
+      "orientation_error_rad": 0.020982522517442703,
+      "contact_force_N": 0.0,
+      "return_before_terminal_reward": 71.78626251220703,
+      "peak_net_contact_force_N": 0.0,
+      "goal_body_m": [
+        0.5647500157356262,
+        -0.48471254110336304,
+        1.4533195495605469
+      ],
+      "terminal_q": [
+        1.5823742151260376,
+        1.5862836837768555,
+        -1.2554675340652466,
+        1.249629259109497,
+        -0.812874972820282,
+        -1.02777099609375
+      ],
+      "episode_control_steps": 132
+    }
+  ],
+  "scope": "same geometry distribution, not held-out task/generalization"
+}
