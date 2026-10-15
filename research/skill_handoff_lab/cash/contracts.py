@@ -12,11 +12,25 @@ CASH_REVISION="cash-smdp-v0-20261013"
 STAGES=("GRASP_BRANCH","CENTER_TERMINAL","PREPLACE_PLAN")
 EXECUTION_EVIDENCE=("CUROBO_ISAAC_EXECUTED","REAL_ROBOT_EXECUTED")
 PLANNING_EVIDENCE="CUROBO_INDEPENDENTLY_VALIDATED"
+PLANNING_ATTEMPT_EVIDENCE="CUROBO_BUDGETED_ATTEMPT"
 
 def validate_transition_evidence(value, allow_planning=False):
     if not math.isfinite(value.execution_cost) or value.execution_cost<0:
         raise ValueError("transition cost must be finite and nonnegative")
     if value.evidence_level in EXECUTION_EVIDENCE and value.executed:
+        return
+    if allow_planning and value.evidence_level==PLANNING_ATTEMPT_EVIDENCE:
+        if value.executed or value.downstream_success is True:
+            raise ValueError('an unsuccessful/unknown planning attempt cannot certify motion or success')
+        meta=value.metadata
+        if meta.get('budget_before',0)-meta.get('budget_after',0)!=1:
+            raise ValueError('attempt must consume one recorded planner invocation')
+        if meta.get('attempt_status') not in ('PLANNER_FAILURE','QUALIFICATION_REJECT','TIMEOUT','SOFTWARE_ERROR','UNKNOWN'):
+            raise ValueError('explicit attempt classification required')
+        if meta.get('state_unchanged') is not True or not meta.get('source_artifacts'):
+            raise ValueError('failed attempt must preserve actual state and hashed lineage')
+        if value.downstream_success is False and meta.get('terminal_reason')!='BUDGET_EXHAUSTED':
+            raise ValueError('budget failure must not claim geometric infeasibility')
         return
     if allow_planning and value.evidence_level == PLANNING_EVIDENCE:
         required=("collision", "self_collision", "attached_object", "soft_limits", "orientation", "scene_binding")

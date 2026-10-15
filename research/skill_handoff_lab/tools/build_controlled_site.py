@@ -27,13 +27,16 @@ def main(a):
     os.umask(0o077)
     a.output.mkdir(mode=0o700, exist_ok=False)
     request = read(a.request / 'planner_request.json'); result = read(a.request / 'planning.json')
-    audit = read(a.analysis / 'FIELD_BINDINGS_AND_REPLAY.json')
-    replay = next(r for r in audit['independent_replays'] if r['request_sha256'] == sha(a.request/'planner_request.json'))
-    assert replay['world']['collision_free'] and replay['orientation']['passed']
-    assert replay['reference_native']['status'] == 'PASS_REFERENCE_OFFLINE_PACKAGING'
+    if a.qualification:
+        assert read(a.qualification)['qualified'], 'independent full proxy contract required'
+    else:
+        audit = read(a.analysis / 'FIELD_BINDINGS_AND_REPLAY.json')
+        replay = next(r for r in audit['independent_replays'] if r['request_sha256'] == sha(a.request/'planner_request.json'))
+        assert replay['world']['collision_free'] and replay['orientation']['passed']
+        assert replay['reference_native']['status'] == 'PASS_REFERENCE_OFFLINE_PACKAGING'
     assert request['attached_object_collision'] is not None, 'this replay specifically tests attached-object proxy transport'
     source = a.root / 'real_aligned_sources'; sid = request['scene_snapshot_id']
-    scene = source / 'scenes' / sid; snapshot = read(scene / 'scene/snapshot.json')
+    scene = source / 'scenes' / (a.source_scene_id or sid); snapshot = read(scene / 'scene/snapshot.json')
     cfg = source / 'config_snapshot/site_config_20261014'
     limits = read(cfg/'jaka_mini2_motion.site.json')
     content, native = package_native_preview(result['trajectory_points_rad'], request['planning_parameters']['interpolation_dt'],
@@ -44,6 +47,17 @@ def main(a):
                         upper_rad=np.array(limits['upper_rad'])-limits['soft_limit_margin_rad'])
     parent = Usd.Stage.Open(str(a.asset/'jaka_held.usda')); flat = parent.Flatten()
     robot = Usd.Stage.CreateNew(str(a.output/'right_robot.usda')); robot.GetRootLayer().TransferContent(flat)
+    # The inherited pilot asset baked a historical 0.15-rad SOFT margin into
+    # PhysX HARD stops. Restore the source model's declared hardware bounds;
+    # execution is separately rejected at the frozen reference soft bounds.
+    # This changes no robot/production limit or collision shape.
+    limit_corrections=[]
+    for i in range(6):
+        joint=UsdPhysics.RevoluteJoint(robot.GetPrimAtPath(f'/Robot/joints/joint_{i+1}'))
+        before=[joint.GetLowerLimitAttr().Get(),joint.GetUpperLimitAttr().Get()]
+        after=[float(np.degrees(limits['lower_rad'][i])),float(np.degrees(limits['upper_rad'][i]))]
+        joint.GetLowerLimitAttr().Set(after[0]);joint.GetUpperLimitAttr().Set(after[1])
+        limit_corrections.append({'joint':i+1,'inherited_physics_stop_deg':before,'source_hardware_stop_deg':after})
     robot.RemovePrim('/Robot/Link_6/WeldedTray')  # Replace synthetic E0 OBJECT only, not robot collisions.
     attached = request['attached_object_collision']; box = attached['link6_aabb']
     cube = UsdGeom.Cube.Define(robot, '/Robot/Link_6/FieldAttachedProxy');cube.CreateSizeAttr(1.)
@@ -81,6 +95,11 @@ def main(a):
         cube.CreateDisplayColorAttr([(.46,.50,.52)]);UsdPhysics.CollisionAPI.Apply(cube.GetPrim())
     # Measured points are visual surfaces only, never collision-filled AABBs.
     cloud = np.load(source/'body_cloud_artifacts'/snapshot['environment']['observation']['pointcloud']['pointcloud_id']/'body_cloud.npz')['points_body_m']
+    if a.source_scene_id:
+        original=read(scene/'scene/compiled_scene.json')['cuboids']
+        key=next(k for k in original if k.startswith('observed_'))
+        shift=body[:3,:3]@(np.array(request['compiled_scene']['cuboids'][key]['pose'][:3])-original[key]['pose'][:3])
+        cloud=np.load(scene/'scene/clean_residual.npz')['points_body_m']+shift
     sampled = cloud[::max(1,len(cloud)//18000)]
     points=UsdGeom.Points.Define(site,'/Site/MeasuredSurfaces');points.CreatePointsAttr(sampled.tolist())
     points.CreateWidthsAttr([.003]);points.CreateDisplayColorAttr([(.10,.63,.61)])
@@ -96,8 +115,11 @@ def main(a):
               'original_robot_mesh_colliders':'retained from v5, not full CAD/PhysX certification',
               'tray':'Link6 conservative field envelope, NOT identified metal tray CAD',
               'mass':'inherited research link mass/inertia, not measured field payload',
+              'physics_hard_stop_corrections':limit_corrections,
+              'soft_limits':'unchanged reference lower+margin/upper-margin; independently checked throughout',
               'left_collision':'archived inactive-arm cuboids; left mesh visual only',
               'target_scope':'Center->Transit, NOT successful Preland or placement',
+              'derived_station_scene':bool(a.source_scene_id),
               'scan_surfaces':'visual only; exact compiled planner boxes used as CONSERVATIVE physics proxies'}
     (a.output/'SITE_ASSET_MANIFEST.json').write_text(json.dumps(manifest,indent=2))
 
@@ -105,4 +127,5 @@ def main(a):
 if __name__=='__main__':
     p=argparse.ArgumentParser()
     for name in ['root','analysis','request','asset','urdf','output']:p.add_argument('--'+name,type=Path,required=True)
+    p.add_argument('--qualification',type=Path);p.add_argument('--source-scene-id')
     main(p.parse_args())

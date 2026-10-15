@@ -57,8 +57,13 @@ class SkillHandoffEnv:
             obs={"state":np.zeros(0,dtype=np.float32),"action_features":np.zeros((0,0),dtype=np.float32),
                  "action_mask":np.zeros(0,dtype=bool),"stage":"TERMINAL","action_ids":()}
             info={"result":EpisodeResult(self.current.episode_id,bool(transition.downstream_success),
-                self.total_cost,tuple(self.decisions),transition.evidence_level,tuple(self.failures))}
+                self.total_cost,tuple(self.decisions),transition.evidence_level,tuple(self.failures)),
+                "transition":transition}
             self.current=None
+            # Remaining planning budget is part of the task state. Exhausting
+            # it is an MDP terminal (not geometric impossibility), not an
+            # external time-limit truncation. SB3 would otherwise bootstrap a
+            # value from the zero-packed terminal observation.
             return obs,reward,True,False,info
         if transition.next_observation is None: raise ValueError("nonterminal transition lacks observation")
         if transition.next_observation.episode_id!=self.current.episode_id:
