@@ -1,0 +1,29 @@
+{
+  "version": "v6",
+  "split": "test_id",
+  "scope": "Synthetic research geometry/dynamics, not measured site data",
+  "case_seed": 4901,
+  "primary_metric": "independently verified complete-task success with 0.5s stable hold",
+  "groups": [
+    {
+      "id": "id0",
+      "gap": 0.054,
+      "goal_x": 0.113,
+      "slot_y": -0.024,
+      "mass": 0.058,
+      "mu": 0.31,
+      "direction": 0.02,
+      "initial_yaw": 0.025
+    },
+    {
+      "id": "id1",
+      "gap": 0.053,
+      "goal_x": 0.109,
+      "slot_y": -0.027,
+      "mass": 0.062,
+      "mu": 0.36,
+      "direction": -0.02,
+      "initial_yaw": -0.025
+    }
+  ]
+}

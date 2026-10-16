@@ -1,0 +1,89 @@
+{
+  "version": "v6",
+  "split": "train",
+  "scope": "Synthetic research geometry/dynamics, not measured site data",
+  "case_seed": 6901,
+  "primary_metric": "independently verified complete-task success with 0.5s stable hold",
+  "groups": [
+    {
+      "id": "tr0",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025,
+      "mass": 0.05,
+      "mu": 0.3,
+      "direction": 0,
+      "initial_yaw": 0
+    },
+    {
+      "id": "tr1",
+      "gap": 0.054,
+      "goal_x": 0.115,
+      "slot_y": -0.025,
+      "mass": 0.07,
+      "mu": 0.35,
+      "direction": 0.05,
+      "initial_yaw": 0.035
+    },
+    {
+      "id": "tr2",
+      "gap": 0.052,
+      "goal_x": 0.105,
+      "slot_y": -0.02,
+      "mass": 0.04,
+      "mu": 0.25,
+      "direction": -0.05,
+      "initial_yaw": -0.035
+    },
+    {
+      "id": "tr3",
+      "gap": 0.056,
+      "goal_x": 0.11,
+      "slot_y": -0.03,
+      "mass": 0.08,
+      "mu": 0.4,
+      "direction": 0.08,
+      "initial_yaw": 0.05
+    },
+    {
+      "id": "tr4",
+      "gap": 0.054,
+      "goal_x": 0.115,
+      "slot_y": -0.02,
+      "mass": 0.06,
+      "mu": 0.32,
+      "direction": -0.08,
+      "initial_yaw": -0.05
+    },
+    {
+      "id": "tr5",
+      "gap": 0.056,
+      "goal_x": 0.105,
+      "slot_y": -0.03,
+      "mass": 0.05,
+      "mu": 0.28,
+      "direction": 0,
+      "initial_yaw": 0.035
+    },
+    {
+      "id": "tr6",
+      "gap": 0.052,
+      "goal_x": 0.12,
+      "slot_y": -0.02,
+      "mass": 0.06,
+      "mu": 0.35,
+      "direction": 0.04,
+      "initial_yaw": 0
+    },
+    {
+      "id": "tr7",
+      "gap": 0.054,
+      "goal_x": 0.11,
+      "slot_y": -0.025,
+      "mass": 0.04,
+      "mu": 0.4,
+      "direction": -0.04,
+      "initial_yaw": 0
+    }
+  ]
+}

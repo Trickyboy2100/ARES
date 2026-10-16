@@ -1,0 +1,107 @@
+{
+  "version": "v6b_deep_narrow_paddle",
+  "split": "train",
+  "scope": "Synthetic research geometry/dynamics, not measured site data",
+  "case_seed": 6901,
+  "primary_metric": "independently verified complete-task success with 0.5s stable hold",
+  "groups": [
+    {
+      "id": "deep_tr0",
+      "gap": 0.052,
+      "goal_x": 0.14,
+      "slot_y": -0.025,
+      "mass": 0.05,
+      "mu": 0.3,
+      "direction": 0,
+      "initial_yaw": 0,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "deep_tr1",
+      "gap": 0.054,
+      "goal_x": 0.145,
+      "slot_y": -0.025,
+      "mass": 0.07,
+      "mu": 0.35,
+      "direction": 0.05,
+      "initial_yaw": 0.035,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "deep_tr2",
+      "gap": 0.052,
+      "goal_x": 0.135,
+      "slot_y": -0.02,
+      "mass": 0.04,
+      "mu": 0.25,
+      "direction": -0.05,
+      "initial_yaw": -0.035,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "deep_tr3",
+      "gap": 0.056,
+      "goal_x": 0.14,
+      "slot_y": -0.03,
+      "mass": 0.08,
+      "mu": 0.4,
+      "direction": 0.08,
+      "initial_yaw": 0.05,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "deep_tr4",
+      "gap": 0.054,
+      "goal_x": 0.145,
+      "slot_y": -0.02,
+      "mass": 0.06,
+      "mu": 0.32,
+      "direction": -0.08,
+      "initial_yaw": -0.05,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "deep_tr5",
+      "gap": 0.056,
+      "goal_x": 0.135,
+      "slot_y": -0.03,
+      "mass": 0.05,
+      "mu": 0.28,
+      "direction": 0,
+      "initial_yaw": 0.035,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "deep_tr6",
+      "gap": 0.052,
+      "goal_x": 0.15,
+      "slot_y": -0.02,
+      "mass": 0.06,
+      "mu": 0.35,
+      "direction": 0.04,
+      "initial_yaw": 0,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "deep_tr7",
+      "gap": 0.054,
+      "goal_x": 0.14,
+      "slot_y": -0.025,
+      "mass": 0.04,
+      "mu": 0.4,
+      "direction": -0.04,
+      "initial_yaw": 0,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    }
+  ],
+  "episode_seconds": 12,
+  "paddle_width": 0.03
+}

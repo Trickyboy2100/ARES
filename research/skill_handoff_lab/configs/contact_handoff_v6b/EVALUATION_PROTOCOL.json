@@ -1,0 +1,16 @@
+{
+  "version": "v6b",
+  "primary": "full two-stage task independently verified with exact post-step state and 30 consecutive stable control samples",
+  "main_models": ["ppo", "residual", "recover"],
+  "training_seeds": [31,41,51],
+  "checkpoint": "fixed final 65536 updates-completed checkpoint; no test-based model selection",
+  "splits": ["test_id", "test_geometry", "test_dynamics"],
+  "episodes_per_split_per_model": 32,
+  "num_envs": 16,
+  "comparators": ["damped feedback", "one-seed corrected bootstrap-mixture ablation"],
+  "secondary": ["completion time, all and matched-success cases separately", "terminal pose and velocities", "peak contact proxy", "penetration audit", "failure class", "planning/physics/training costs"],
+  "validation_mid_checkpoint": "32768 updates-completed checkpoint for residual/recover, 32 cases; no best-checkpoint selection",
+  "unit_of_training_uncertainty": "independent training seed, not repeated cases pooled as independent trials",
+  "field_data": "separate, unused",
+  "hybrid_pilot": "Development only unless its predeclared validation promotion criterion passes; do not inspect final tests to select it"
+}

@@ -1,0 +1,15 @@
+{
+  "stage": "bounded development pilot, not final method performance",
+  "hypothesis": "Dropping the score of Cartesian parameters not executed under HOLD reduces irrelevant actor-gradient noise",
+  "arms": ["hybrid_joint", "hybrid_conditional"],
+  "seed": 31,
+  "interactions_each": 32768,
+  "gate_prior_logit": 1.0,
+  "action_cost": "executed",
+  "shared": ["56 observations", "3 outputs and same network", "same gate samples/prior", "same PhysX task/assets", "same GAE and optimizer", "same reward and validation cases"],
+  "validation_seed": 3801,
+  "validation_cases": 64,
+  "promotion_rule": "Only expand if conditional independently verified success is >=55/64 AND at least 4/64 above joint; otherwise retain negative pilot and stop expansion",
+  "novelty_limit": "Hybrid parameterized PPO and inactive-parameter reasoning have prior work. This pilot alone cannot establish novelty or a journal contribution.",
+  "reference": "https://www.ijcai.org/proceedings/2019/0316.pdf"
+}

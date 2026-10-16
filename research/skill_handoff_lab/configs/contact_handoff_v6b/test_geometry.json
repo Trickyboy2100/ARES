@@ -1,0 +1,35 @@
+{
+  "version": "v6b_deep_narrow_paddle",
+  "split": "test_geometry",
+  "scope": "Synthetic research geometry/dynamics, not measured site data",
+  "case_seed": 5901,
+  "primary_metric": "independently verified complete-task success with 0.5s stable hold",
+  "groups": [
+    {
+      "id": "deep_geo0",
+      "gap": 0.05,
+      "goal_x": 0.148,
+      "slot_y": -0.028,
+      "mass": 0.05,
+      "mu": 0.3,
+      "direction": 0.12,
+      "initial_yaw": 0.06,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "deep_geo1",
+      "gap": 0.058,
+      "goal_x": 0.137,
+      "slot_y": -0.022,
+      "mass": 0.05,
+      "mu": 0.3,
+      "direction": -0.12,
+      "initial_yaw": -0.06,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    }
+  ],
+  "episode_seconds": 12,
+  "paddle_width": 0.03
+}
