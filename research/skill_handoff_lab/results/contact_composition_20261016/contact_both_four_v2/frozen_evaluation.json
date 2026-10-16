@@ -1,0 +1,338 @@
+[
+  {
+    "evaluation": true,
+    "case_id": 1,
+    "env": 1,
+    "family": "slot",
+    "success": false,
+    "failed": true,
+    "timeout": false,
+    "phase": 1,
+    "return": -6.806656837463379,
+    "steps": 380,
+    "distance_m": 0.034717950969934464,
+    "workpiece_position_m": [
+      0.5320702791213989,
+      -0.5167205333709717,
+      1.4498391151428223
+    ],
+    "peak_force_N": 46.659950256347656,
+    "pose_error_rad": 0.06147896870970726,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 0,
+    "env": 0,
+    "family": "push",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -11.717668533325195,
+    "steps": 479,
+    "distance_m": 0.0878068208694458,
+    "workpiece_position_m": [
+      0.5828028917312622,
+      -0.39803266525268555,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.1746767908334732,
+    "pose_error_rad": 8.65924812387675e-05,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 2,
+    "env": 2,
+    "family": "push",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -11.673635482788086,
+    "steps": 479,
+    "distance_m": 0.08268709480762482,
+    "workpiece_position_m": [
+      0.5866441130638123,
+      -0.4079982042312622,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.35114479064941406,
+    "pose_error_rad": 8.145926403813064e-05,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 3,
+    "env": 3,
+    "family": "slot",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -7.757324695587158,
+    "steps": 479,
+    "distance_m": 0.02809077501296997,
+    "workpiece_position_m": [
+      0.5127747654914856,
+      -0.48261845111846924,
+      1.4449996948242188
+    ],
+    "peak_force_N": 0.2098413109779358,
+    "pose_error_rad": 2.564542455729679e-06,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 4,
+    "env": 1,
+    "family": "slot",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -7.698289394378662,
+    "steps": 479,
+    "distance_m": 0.02815503627061844,
+    "workpiece_position_m": [
+      0.5126820802688599,
+      -0.48260819911956787,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.20306243002414703,
+    "pose_error_rad": 6.980939701861644e-07,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 5,
+    "env": 0,
+    "family": "push",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 1,
+    "return": -3.2571170330047607,
+    "steps": 479,
+    "distance_m": 0.03504195809364319,
+    "workpiece_position_m": [
+      0.5426214933395386,
+      -0.48217105865478516,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.2538009583950043,
+    "pose_error_rad": 4.3299968410792644e-07,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 6,
+    "env": 2,
+    "family": "push",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -7.650975704193115,
+    "steps": 479,
+    "distance_m": 0.032475486397743225,
+    "workpiece_position_m": [
+      0.509390652179718,
+      -0.49330127239227295,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.17009501159191132,
+    "pose_error_rad": 1.4128975180938141e-06,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 7,
+    "env": 3,
+    "family": "slot",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -9.525883674621582,
+    "steps": 479,
+    "distance_m": 0.06642717123031616,
+    "workpiece_position_m": [
+      0.556046187877655,
+      -0.44399935007095337,
+      1.445003867149353
+    ],
+    "peak_force_N": 76.79341125488281,
+    "pose_error_rad": 0.008441680110991001,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 8,
+    "env": 1,
+    "family": "slot",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -7.8464741706848145,
+    "steps": 479,
+    "distance_m": 0.0313626229763031,
+    "workpiece_position_m": [
+      0.5117754936218262,
+      -0.4792991876602173,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.13703051209449768,
+    "pose_error_rad": 8.594647624704521e-07,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 9,
+    "env": 0,
+    "family": "push",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -10.39354133605957,
+    "steps": 479,
+    "distance_m": 0.06460583209991455,
+    "workpiece_position_m": [
+      0.5795115232467651,
+      -0.4267967939376831,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.17768855392932892,
+    "pose_error_rad": 9.302072430728003e-05,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 10,
+    "env": 2,
+    "family": "push",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -7.884924411773682,
+    "steps": 479,
+    "distance_m": 0.031184347346425056,
+    "workpiece_position_m": [
+      0.510740339756012,
+      -0.492720365524292,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.1514195203781128,
+    "pose_error_rad": 2.1011798878589616e-07,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 11,
+    "env": 3,
+    "family": "slot",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -7.79136848449707,
+    "steps": 479,
+    "distance_m": 0.03309931606054306,
+    "workpiece_position_m": [
+      0.5102214217185974,
+      -0.47827547788619995,
+      1.4449998140335083
+    ],
+    "peak_force_N": 0.17811471223831177,
+    "pose_error_rad": 2.2512256236950634e-06,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 12,
+    "env": 1,
+    "family": "slot",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -6.450766563415527,
+    "steps": 479,
+    "distance_m": 0.020388346165418625,
+    "workpiece_position_m": [
+      0.5198104381561279,
+      -0.4871985912322998,
+      1.4449999332427979
+    ],
+    "peak_force_N": 65.0409927368164,
+    "pose_error_rad": 1.1231340977246873e-06,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 13,
+    "env": 0,
+    "family": "push",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -7.673859119415283,
+    "steps": 479,
+    "distance_m": 0.03328259661793709,
+    "workpiece_position_m": [
+      0.5088692903518677,
+      -0.49391770362854004,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.14000153541564941,
+    "pose_error_rad": 8.594647624704521e-07,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 14,
+    "env": 2,
+    "family": "push",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -7.865718364715576,
+    "steps": 479,
+    "distance_m": 0.026727791875600815,
+    "workpiece_position_m": [
+      0.5132532119750977,
+      -0.48902928829193115,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.1789073497056961,
+    "pose_error_rad": 5.267671667752438e-07,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 15,
+    "env": 3,
+    "family": "slot",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -7.515923500061035,
+    "steps": 479,
+    "distance_m": 0.03849206864833832,
+    "workpiece_position_m": [
+      0.5265598297119141,
+      -0.543359637260437,
+      1.4449999332427979
+    ],
+    "peak_force_N": 47.37962341308594,
+    "pose_error_rad": 9.151629637926817e-05,
+    "soft_limit_invalid": false
+  }
+]

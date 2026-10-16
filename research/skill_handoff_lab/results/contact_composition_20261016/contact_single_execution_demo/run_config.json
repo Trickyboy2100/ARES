@@ -1,0 +1,21 @@
+{
+  "asset": "runs/contact_composition_display_asset_20261016",
+  "output": "runs/contact_single_execution_demo",
+  "num_envs": 1,
+  "gpu": 1,
+  "steps": 0,
+  "seed": 31,
+  "family": "slot",
+  "controller": "ppo",
+  "credit_mode": "standard",
+  "credit_mix": 0.5,
+  "gamma": 0.99,
+  "rollout_steps": 128,
+  "scenario_file": null,
+  "eval_seed": 1731,
+  "action_intervention": "none",
+  "eval_episodes": 4,
+  "load_policy": "runs/contact_v5_boundary_seed31/policy.zip",
+  "skip_capture": false,
+  "episode_seconds": 8.0
+}

@@ -36,7 +36,6 @@ def main(root):
     (root/'RESULTS.json').write_text(json.dumps({'rows':rows,'limitations':['development cases used during debugging; not final test',
         'heldout uses only two parameter groups, not industrial/general contract transfer',
         'sampled contact audit is not full robot mesh swept-collision validation']},indent=2))
-    (root/'ARTIFACT_MANIFEST.json').write_text(json.dumps(files,indent=2))
     fig,axes=plt.subplots(1,2,figsize=(12,4),layout='constrained')
     for ax,role in zip(axes,['development','heldout']):
         series=[('nominal',['contact_v5_nominal_eval'] if role=='development' else ['heldout_nominal']),
@@ -98,6 +97,38 @@ def main(root):
     ax.text(.2,4.65,'Implemented prototype, not yet a validated novel skill-chaining method',fontsize=13)
     ax.text(.2,.1,'Isaac 5.1 / Lab 2.3 | 16 cloned physics environments | No field data or public-benchmark result claim',fontsize=9)
     fig.savefig(root/'fig_implemented_method.png',dpi=160);plt.close(fig)
+    fig,axes=plt.subplots(1,2,figsize=(10,4),layout='constrained')
+    for ax,role in zip(axes,['development','heldout']):
+        prefixes=['contact_v5_standard_seed','contact_v5_boundary_seed']
+        if role=='heldout':prefixes=['heldout_'+s for s in prefixes]
+        for seed,color in zip([31,41,51],['#377eb8','#e68613','#54a24b']):
+            values=[]
+            for prefix in prefixes:
+                matches=[r for r in rows if r['run']==prefix+str(seed) and r['independent_successes'] is not None]
+                values.append(100*matches[0]['independent_successes']/matches[0]['episodes'] if matches else np.nan)
+            ax.plot([0,1],values,'o-',color=color,label=f'seed {seed}')
+        nominal=next((r for r in rows if r['run']==('heldout_nominal' if role=='heldout' else 'contact_v5_nominal_eval')),None)
+        if nominal and nominal['independent_successes'] is not None:
+            ax.axhline(100*nominal['independent_successes']/nominal['episodes'],color='gray',linestyle='--',label='contact feedback')
+        ax.set(xticks=[0,1],xticklabels=['standard PPO','boundary MC prototype'],ylim=(-2,102),
+               ylabel='Independently confirmed success (%)',title=role)
+        ax.grid(alpha=.2);ax.legend(fontsize=8)
+    fig.suptitle('Same paired training seeds; substantial variation, not a demonstrated stable advantage')
+    fig.savefig(root/'fig_verified_seed_comparison.png',dpi=160);plt.close(fig)
+    fig,ax=plt.subplots(figsize=(7,4),layout='constrained')
+    names=['contact_v5_boundary_seed31','causal_seed31_phase0_feedback','causal_seed31_phase1_feedback','causal_seed31_zero']
+    for i,name in enumerate(names):
+        r=next((r for r in rows if r['run']==name),None)
+        if r:
+            ax.bar(i,r['successes'],color='#377eb8',alpha=.5)
+            ax.text(i,r['successes']+1,f"{r['successes']}/64",ha='center')
+            if r['independent_successes'] is not None:ax.scatter(i,r['independent_successes'],c='black',marker='x',zorder=3)
+    ax.set(xticks=range(4),xticklabels=['trained actions','phase 0 feedback','phase 1 feedback','all actions zero'],
+           ylim=(0,68),ylabel='Success / same 64 development cases',title='Actual action interventions, predeclared seed31; x = independent confirmation')
+    ax.tick_params(axis='x',rotation=15);fig.savefig(root/'fig_action_interventions.png',dpi=160);plt.close(fig)
+    files=[{'path':str(p.relative_to(root)),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}
+           for p in sorted(root.rglob('*')) if p.is_file() and p.name!='ARTIFACT_MANIFEST.json']
+    (root/'ARTIFACT_MANIFEST.json').write_text(json.dumps(files,indent=2))
     print(json.dumps([{'run':r['run'],'success':f"{r['successes']}/{r['episodes']}",'independent':r['independent_successes']} for r in rows],indent=2))
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);main(p.parse_args().root)

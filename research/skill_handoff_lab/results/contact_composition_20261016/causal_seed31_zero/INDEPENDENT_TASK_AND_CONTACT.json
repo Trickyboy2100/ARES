@@ -1,0 +1,1236 @@
+{
+  "evidence": "ACTUAL_PHYSX_SAMPLED_CONTACT_AND_TASK_AUDIT",
+  "physics_dt_s": 0.008333333333333333,
+  "raw_successes": 0,
+  "independent_successes": 0,
+  "cases": [
+    {
+      "case_id": 0,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.824935006610472e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.030189156532287598,
+      "independent_speed_m_s": 0.0001159374660346657,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 1,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.298798165163048e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.03364431858062744,
+      "independent_speed_m_s": 9.149319521384314e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 2,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.533450796528563e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.032279133796691895,
+      "independent_speed_m_s": 9.080576273845509e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 3,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1316588491968443e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.027811169624328613,
+      "independent_speed_m_s": 8.984747546492144e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 4,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.823801490995534e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.022587895393371582,
+      "independent_speed_m_s": 9.05423512449488e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 5,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.296796219023667e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.032509446144104004,
+      "independent_speed_m_s": 0.00011575343523873016,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 6,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.5315818703201537e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.02111208438873291,
+      "independent_speed_m_s": 0.0001198963145725429,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 7,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1295499873046536e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.018671631813049316,
+      "independent_speed_m_s": 9.05423512449488e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 8,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.823801490995534e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.027302086353302002,
+      "independent_speed_m_s": 8.872532634995878e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 9,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.296796219023667e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.02679997682571411,
+      "independent_speed_m_s": 9.05341948964633e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 10,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.5315818703201537e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.015345990657806396,
+      "independent_speed_m_s": 0.00012170294940005988,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 11,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1295499873046536e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.019317209720611572,
+      "independent_speed_m_s": 8.872532634995878e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 12,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.824935006610472e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.026743292808532715,
+      "independent_speed_m_s": 8.983338193502277e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 13,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.298798165163048e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.028902649879455566,
+      "independent_speed_m_s": 0.00012368030729703605,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 14,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.533450796528563e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.021213412284851074,
+      "independent_speed_m_s": 9.070569649338722e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 15,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1316588491968443e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.016353726387023926,
+      "independent_speed_m_s": 0.00011593701492529362,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 16,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.824935006610472e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.03335678577423096,
+      "independent_speed_m_s": 9.043978934641927e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 17,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.298798165163048e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.020757317543029785,
+      "independent_speed_m_s": 9.149319521384314e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 18,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.533450796528563e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.018786072731018066,
+      "independent_speed_m_s": 9.080576273845509e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 19,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1316588491968443e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.02156221866607666,
+      "independent_speed_m_s": 9.000153659144416e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 20,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.823801490995534e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.023786544799804688,
+      "independent_speed_m_s": 0.00011589123459998518,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 21,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.296796219023667e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.020833492279052734,
+      "independent_speed_m_s": 0.00012325213174335659,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 22,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.5315818703201537e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.030768871307373047,
+      "independent_speed_m_s": 9.06931163626723e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 23,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1295499873046536e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.019781112670898438,
+      "independent_speed_m_s": 0.00011589123459998518,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 24,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.823801490995534e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.03076791763305664,
+      "independent_speed_m_s": 0.00011955774971283972,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 25,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.296796219023667e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.01857239007949829,
+      "independent_speed_m_s": 9.05341948964633e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 26,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.5315818703201537e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.034004151821136475,
+      "independent_speed_m_s": 0.00012170294940005988,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 27,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1295499873046536e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.03412562608718872,
+      "independent_speed_m_s": 8.872532634995878e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 28,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.824935006610472e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.025187373161315918,
+      "independent_speed_m_s": 8.983338193502277e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 29,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.298798165163048e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.02973473072052002,
+      "independent_speed_m_s": 0.00012368030729703605,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 30,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.533450796528563e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.033760666847229004,
+      "independent_speed_m_s": 9.070569649338722e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 31,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1316588491968443e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.02323734760284424,
+      "independent_speed_m_s": 0.00011593701492529362,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 32,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.824935006610472e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.02196943759918213,
+      "independent_speed_m_s": 8.996825636131689e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 33,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.298798165163048e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.0280534029006958,
+      "independent_speed_m_s": 9.038293501362205e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 34,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.533450796528563e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.01861870288848877,
+      "independent_speed_m_s": 9.079255687538534e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 35,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1316588491968443e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.03149616718292236,
+      "independent_speed_m_s": 8.984747546492144e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 36,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.823801490995534e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.02456521987915039,
+      "independent_speed_m_s": 0.00011589123459998518,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 37,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.296796219023667e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.033614516258239746,
+      "independent_speed_m_s": 0.00011575343523873016,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 38,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.5315818703201537e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.03246581554412842,
+      "independent_speed_m_s": 0.0001198963145725429,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 39,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1295499873046536e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.024678707122802734,
+      "independent_speed_m_s": 0.00011589123459998518,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 40,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.823801490995534e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.019322097301483154,
+      "independent_speed_m_s": 8.872532634995878e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 41,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.296796219023667e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.0320206880569458,
+      "independent_speed_m_s": 8.838321809889749e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 42,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.5315818703201537e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.02633291482925415,
+      "independent_speed_m_s": 8.925276779336855e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 43,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1295499873046536e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.02601534128189087,
+      "independent_speed_m_s": 8.872532634995878e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 44,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.824935006610472e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.025368571281433105,
+      "independent_speed_m_s": 8.983338193502277e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 45,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.298798165163048e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.033766865730285645,
+      "independent_speed_m_s": 0.00011915426148334518,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 46,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.533450796528563e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.021350502967834473,
+      "independent_speed_m_s": 9.115408465731889e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 47,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1316588491968443e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.029996514320373535,
+      "independent_speed_m_s": 0.00011589250789256766,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 48,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.824935006610472e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.016213536262512207,
+      "independent_speed_m_s": 8.996798715088516e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 49,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.298798165163048e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.018491387367248535,
+      "independent_speed_m_s": 9.149319521384314e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 50,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.533450796528563e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.02885258197784424,
+      "independent_speed_m_s": 9.079255687538534e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 51,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1316588491968443e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.02497875690460205,
+      "independent_speed_m_s": 9.000153659144416e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 52,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.823801490995534e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.019178271293640137,
+      "independent_speed_m_s": 9.05423512449488e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 53,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.296796219023667e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.02863311767578125,
+      "independent_speed_m_s": 9.075603156816214e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 54,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.5315818703201537e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.027415990829467773,
+      "independent_speed_m_s": 9.06931163626723e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 55,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1295499873046536e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.027827143669128418,
+      "independent_speed_m_s": 9.05423512449488e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 56,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.823801490995534e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.020495474338531494,
+      "independent_speed_m_s": 8.872532634995878e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 57,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.296796219023667e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.020897209644317627,
+      "independent_speed_m_s": 9.05341948964633e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 58,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.5315818703201537e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.017826199531555176,
+      "independent_speed_m_s": 8.941752457758412e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 59,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1295499873046536e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.0287894606590271,
+      "independent_speed_m_s": 8.872532634995878e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 60,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 5.824935006610472e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.03245675563812256,
+      "independent_speed_m_s": 8.983338193502277e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 61,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.298798165163048e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.03128468990325928,
+      "independent_speed_m_s": 0.00012368030729703605,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 62,
+      "family": "push",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.533450796528563e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.019683003425598145,
+      "independent_speed_m_s": 9.115408465731889e-05,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    },
+    {
+      "case_id": 63,
+      "family": "slot",
+      "samples": 958,
+      "max_unintended_penetration_m": 0.0,
+      "max_paddle_workpiece_penetration_m": 0.0,
+      "max_cube_table_penetration_m": 8.910504615782314e-06,
+      "max_cube_rail_penetration_m": 0.0,
+      "min_soft_margin_rad": 0.09946995465660846,
+      "max_observed_fk_paddle_error_m": 3.1316588491968443e-07,
+      "visited_phases": [
+        0
+      ],
+      "raw_task_success": false,
+      "independent_goal_distance_m": 0.021117806434631348,
+      "independent_speed_m_s": 0.00011589250789256766,
+      "geometry_pass": true,
+      "independent_task_pass": false
+    }
+  ],
+  "trace_sha256": "3eed10bef418ad1aaff5b01ae7df71959f270287cf06e9eec6b77c258a93a104",
+  "thresholds_m": {
+    "unintended": 0.001,
+    "cube_table": 0.001,
+    "cube_rail": 0.001,
+    "intentional_paddle_cube": 0.002
+  },
+  "limitations": [
+    "sampled OBB contacts, not swept CCD",
+    "arm/gripper mesh vs table and full self-collision not independently rechecked here",
+    "not a field execution or calibrated force/safety certificate"
+  ]
+}

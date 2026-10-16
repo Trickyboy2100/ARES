@@ -1,0 +1,13 @@
+{
+  "frozen_before_inspecting_v5_method_results": true,
+  "date": "2026-10-16",
+  "evaluation_case_seed": 2703,
+  "used_for_training_or_tuning": false,
+  "groups": [
+    {"id": "G1_unseen_target_and_tighter_rail", "gap": 0.050, "goal_x": 0.115, "slot_y": -0.030},
+    {"id": "G2_unseen_target_and_wider_rail", "gap": 0.058, "goal_x": 0.105, "slot_y": -0.020}
+  ],
+  "scope": "ARES self-built parametric tasks, not public benchmark or field reference",
+  "protocol": "16 environments, first 8 G1, last 8 G2; push/slot alternate; 64 fixed cases; all pretrained method checkpoints evaluated, no best-seed selection",
+  "claim_boundary": "Small heldout parameter groups, not unseen industrial workstations or contract-conditioned generalization"
+}

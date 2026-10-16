@@ -1,0 +1,18 @@
+{
+  "asset": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_composition_asset_20261016",
+  "output": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_v5_fixed_push_eval",
+  "num_envs": 16,
+  "gpu": 0,
+  "steps": 0,
+  "seed": 31,
+  "family": "both",
+  "controller": "fixed_push",
+  "credit_mode": "standard",
+  "credit_mix": 0.5,
+  "gamma": 1.0,
+  "rollout_steps": 512,
+  "eval_episodes": 64,
+  "load_policy": null,
+  "skip_capture": true,
+  "episode_seconds": 8.0
+}

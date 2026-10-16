@@ -1,0 +1,303 @@
+{
+  "date": "2026-10-16",
+  "upstream_executed": false,
+  "projects": [
+    {
+      "project": "STAP",
+      "upstream": "https://github.com/agiachris/STAP",
+      "commit": "0fe0dcbd5ede5ce4ee3d952642f70b5550a0813c",
+      "source_files": [
+        {
+          "path": "README.md",
+          "bytes": 8842,
+          "sha256": "ef5fdc9d33e0c980e8dc2e61146abd4e2354bd649e2948f9d13ecc530640ae21",
+          "url": "https://github.com/agiachris/STAP/blob/0fe0dcbd5ede5ce4ee3d952642f70b5550a0813c/README.md"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1116,
+          "sha256": "bef386a2d439f8f488ce384223fd492e1f84c2992de2d65fd27e222b94c29fa0",
+          "url": "https://github.com/agiachris/STAP/blob/0fe0dcbd5ede5ce4ee3d952642f70b5550a0813c/LICENSE"
+        },
+        {
+          "path": "stap/planners/cem.py",
+          "bytes": 11119,
+          "sha256": "a370154330b757c8f49ced290799525d90e85720b75a8ededfa571c72796485f",
+          "url": "https://github.com/agiachris/STAP/blob/0fe0dcbd5ede5ce4ee3d952642f70b5550a0813c/stap/planners/cem.py"
+        },
+        {
+          "path": "stap/planners/utils.py",
+          "bytes": 18560,
+          "sha256": "26b24a298e5c633e616ce2346daee441ec80fc062a89e5052ba54f9e2999b105",
+          "url": "https://github.com/agiachris/STAP/blob/0fe0dcbd5ede5ce4ee3d952642f70b5550a0813c/stap/planners/utils.py"
+        },
+        {
+          "path": "stap/agents/sac.py",
+          "bytes": 16652,
+          "sha256": "ca9c1ec2563d07179569f2be42f310e8dc1d6c923abdd87372d833f5b831759b",
+          "url": "https://github.com/agiachris/STAP/blob/0fe0dcbd5ede5ce4ee3d952642f70b5550a0813c/stap/agents/sac.py"
+        }
+      ]
+    },
+    {
+      "project": "SeqDex",
+      "upstream": "https://github.com/sequential-dexterity/SeqDex",
+      "commit": "df0af952a7f36276deb5c91436d31959a96fac69",
+      "source_files": [
+        {
+          "path": "README.md",
+          "bytes": 5920,
+          "sha256": "1238b859049ea582901465df460c522e6f9ee91d56e2826f0739ef83814e4a69",
+          "url": "https://github.com/sequential-dexterity/SeqDex/blob/df0af952a7f36276deb5c91436d31959a96fac69/README.md"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "url": "https://github.com/sequential-dexterity/SeqDex/blob/df0af952a7f36276deb5c91436d31959a96fac69/LICENSE"
+        },
+        {
+          "path": "dexteroushandenvs/policy_sequencing/transition_value_trainer.py",
+          "bytes": 13285,
+          "sha256": "72e6dbe0016e964dea9dee8b59b6b3183298fd054e327304e959a5bab122562e",
+          "url": "https://github.com/sequential-dexterity/SeqDex/blob/df0af952a7f36276deb5c91436d31959a96fac69/dexteroushandenvs/policy_sequencing/transition_value_trainer.py"
+        },
+        {
+          "path": "dexteroushandenvs/scripts/bi_optimization.py",
+          "bytes": 5829,
+          "sha256": "f24938a28282f7764cff34192ebb0652f458f8711a938a17aa3dead57c701c72",
+          "url": "https://github.com/sequential-dexterity/SeqDex/blob/df0af952a7f36276deb5c91436d31959a96fac69/dexteroushandenvs/scripts/bi_optimization.py"
+        }
+      ]
+    },
+    {
+      "project": "ViSkill",
+      "upstream": "https://github.com/med-air/ViSkill",
+      "commit": "99b8edd2a2c51ad85ef023bf8ddcf9a433bc76f5",
+      "source_files": [
+        {
+          "path": "README.md",
+          "bytes": 5339,
+          "sha256": "9e910d38dbbd0eecc21e05502379d3fd6be20d0e5b9e9eac1aaa4c80686f6a5b",
+          "url": "https://github.com/med-air/ViSkill/blob/99b8edd2a2c51ad85ef023bf8ddcf9a433bc76f5/README.md"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1069,
+          "sha256": "d13e290d78fc2704efd5b110e673a2a165935341e5063ad3df451557d38601c3",
+          "url": "https://github.com/med-air/ViSkill/blob/99b8edd2a2c51ad85ef023bf8ddcf9a433bc76f5/LICENSE"
+        },
+        {
+          "path": "viskill/agents/sc_sac.py",
+          "bytes": 8605,
+          "sha256": "056e8020072cdbc2d13ff3757090473dba8fc8b48aa5e02b01e54606dc4d31d0",
+          "url": "https://github.com/med-air/ViSkill/blob/99b8edd2a2c51ad85ef023bf8ddcf9a433bc76f5/viskill/agents/sc_sac.py"
+        },
+        {
+          "path": "viskill/agents/sc_ddpg.py",
+          "bytes": 7756,
+          "sha256": "22d5937e9b5ce2b1734c8af910cb76677550a1df85246d14af3f704f892ef9ff",
+          "url": "https://github.com/med-air/ViSkill/blob/99b8edd2a2c51ad85ef023bf8ddcf9a433bc76f5/viskill/agents/sc_ddpg.py"
+        }
+      ]
+    },
+    {
+      "project": "raps",
+      "upstream": "https://github.com/mihdalal/raps",
+      "commit": "1c56b0fe367cc32d3ee548f407ac3a9af9e3ce2e",
+      "source_files": [
+        {
+          "path": "README.md",
+          "bytes": 5270,
+          "sha256": "b6aec7efa221d0746b8352d6b0dd43e3fad5a3a26ebab1fa11d554d1ab2935d3",
+          "url": "https://github.com/mihdalal/raps/blob/1c56b0fe367cc32d3ee548f407ac3a9af9e3ce2e/README.md"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1070,
+          "sha256": "4d36958473809eb44b974899207ab9d27ce3a7802dbfe68140759990570e2f0b",
+          "url": "https://github.com/mihdalal/raps/blob/1c56b0fe367cc32d3ee548f407ac3a9af9e3ce2e/LICENSE"
+        },
+        {
+          "path": "rlkit/rlkit/envs/primitives_wrappers.py",
+          "bytes": 40245,
+          "sha256": "61f829466a84b5f56152d47396a5f2261116e40e8efb004248ff67985170e07e",
+          "url": "https://github.com/mihdalal/raps/blob/1c56b0fe367cc32d3ee548f407ac3a9af9e3ce2e/rlkit/rlkit/envs/primitives_wrappers.py"
+        }
+      ]
+    },
+    {
+      "project": "recovery-chaining",
+      "upstream": "https://github.com/shivamvats/recovery-chaining",
+      "commit": "4894acc3768678de4dee6358df14c461a411162e",
+      "source_files": [
+        {
+          "path": "README.md",
+          "bytes": 1749,
+          "sha256": "421af3c6ff2216b752b7a8e0bce60d05a737090e47aa082ef7d27bd2058ff96c",
+          "url": "https://github.com/shivamvats/recovery-chaining/blob/4894acc3768678de4dee6358df14c461a411162e/README.md"
+        },
+        {
+          "path": "belief_srs/skills/skill_chain.py",
+          "bytes": 1108,
+          "sha256": "63c3e54c6271ee361c4df09f2bef263769b6590bab64c331ac05656187b46e55",
+          "url": "https://github.com/shivamvats/recovery-chaining/blob/4894acc3768678de4dee6358df14c461a411162e/belief_srs/skills/skill_chain.py"
+        },
+        {
+          "path": "belief_srs/skills/recovery_skill.py",
+          "bytes": 15613,
+          "sha256": "9f58b3161fd52f44d19c66bedf766b2fe1caafecaa72a6ed4b8844e2e91f5f4b",
+          "url": "https://github.com/shivamvats/recovery-chaining/blob/4894acc3768678de4dee6358df14c461a411162e/belief_srs/skills/recovery_skill.py"
+        },
+        {
+          "path": "belief_srs/envs/subtask_wrapper.py",
+          "bytes": 3280,
+          "sha256": "cfcd48e86dbabbfa891e54086074de4f407ffa135e2ba4bc0a22ee6bc28f6a53",
+          "url": "https://github.com/shivamvats/recovery-chaining/blob/4894acc3768678de4dee6358df14c461a411162e/belief_srs/envs/subtask_wrapper.py"
+        },
+        {
+          "path": "belief_srs/skills/skill_chaining.py",
+          "bytes": 526,
+          "sha256": "aea9578aeb194d115d49ea1ae8db6b357d1aa876af7a35390698b0faf9877abd",
+          "url": "https://github.com/shivamvats/recovery-chaining/blob/4894acc3768678de4dee6358df14c461a411162e/belief_srs/skills/skill_chaining.py"
+        }
+      ]
+    },
+    {
+      "project": "skimo",
+      "upstream": "https://github.com/clvrai/skimo",
+      "commit": "6c31f8cc805bc17d63b6992d4f8fe239c2df8bcc",
+      "source_files": [
+        {
+          "path": "README.md",
+          "bytes": 5694,
+          "sha256": "dbabcbadbb7351a3083260cc76d010e3a209a41e95716e68b0766244d06a9556",
+          "url": "https://github.com/clvrai/skimo/blob/6c31f8cc805bc17d63b6992d4f8fe239c2df8bcc/README.md"
+        },
+        {
+          "path": "skimo_agent.py",
+          "bytes": 38274,
+          "sha256": "fce74abfa8db1865a5f7053292cc93e568765a38398f1bd7a054afd3d5127d08",
+          "url": "https://github.com/clvrai/skimo/blob/6c31f8cc805bc17d63b6992d4f8fe239c2df8bcc/skimo_agent.py"
+        },
+        {
+          "path": "skimo_rollout.py",
+          "bytes": 7957,
+          "sha256": "2873c1b528c5803376603553ada7203e0d231bf73b1aff6f7304d8eedd0731ca",
+          "url": "https://github.com/clvrai/skimo/blob/6c31f8cc805bc17d63b6992d4f8fe239c2df8bcc/skimo_rollout.py"
+        },
+        {
+          "path": "pretrained_models.md",
+          "bytes": 1315,
+          "sha256": "625d1bd0e517ce6dd52bb3ef7cf8c40a30c9f078f54fb155b6db6d363a03bc60",
+          "url": "https://github.com/clvrai/skimo/blob/6c31f8cc805bc17d63b6992d4f8fe239c2df8bcc/pretrained_models.md"
+        }
+      ]
+    },
+    {
+      "project": "skill-composition-benchmark",
+      "upstream": "https://github.com/han20192019/skill-composition-benchmark",
+      "commit": "66a3c810552648e8f420d094ed03664341c43671",
+      "source_files": [
+        {
+          "path": "README.md",
+          "bytes": 2108,
+          "sha256": "9bf371fbbd7310bbf971a562d4df20007205d65e00f2a97a72e402ab41cdaf3d",
+          "url": "https://github.com/han20192019/skill-composition-benchmark/blob/66a3c810552648e8f420d094ed03664341c43671/README.md"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "url": "https://github.com/han20192019/skill-composition-benchmark/blob/66a3c810552648e8f420d094ed03664341c43671/LICENSE"
+        },
+        {
+          "path": "mani_skill/envs/tasks/tabletop_skill_compose/cube_out_and_in_compose.py",
+          "bytes": 16339,
+          "sha256": "97a476f61460ce33dfd7c8d506a7fc332db64288c983ea3f826a64c1d9fbbd9a",
+          "url": "https://github.com/han20192019/skill-composition-benchmark/blob/66a3c810552648e8f420d094ed03664341c43671/mani_skill/envs/tasks/tabletop_skill_compose/cube_out_and_in_compose.py"
+        },
+        {
+          "path": "mani_skill/envs/tasks/tabletop_skill_compose/tools_usage_compose.py",
+          "bytes": 15584,
+          "sha256": "5a480b4d328362799296694a274e0b44c5d23c33beb6c3119d3f0003e5ea15da",
+          "url": "https://github.com/han20192019/skill-composition-benchmark/blob/66a3c810552648e8f420d094ed03664341c43671/mani_skill/envs/tasks/tabletop_skill_compose/tools_usage_compose.py"
+        },
+        {
+          "path": "mani_skill/envs/tasks/tabletop_skill_compose/obstacle_avoidance_compose_1.py",
+          "bytes": 15767,
+          "sha256": "15ceae6f588a14d94bef0786496876ec5924f2735c36e9bc6891b756f29edbff",
+          "url": "https://github.com/han20192019/skill-composition-benchmark/blob/66a3c810552648e8f420d094ed03664341c43671/mani_skill/envs/tasks/tabletop_skill_compose/obstacle_avoidance_compose_1.py"
+        },
+        {
+          "path": "mani_skill/examples/motionplanning/panda/solutions/cube_out_and_in_compose.py",
+          "bytes": 4630,
+          "sha256": "3ab8ddee78fdb52e84760256e93317550f57901386ba093e175345ee9aabc117",
+          "url": "https://github.com/han20192019/skill-composition-benchmark/blob/66a3c810552648e8f420d094ed03664341c43671/mani_skill/examples/motionplanning/panda/solutions/cube_out_and_in_compose.py"
+        }
+      ]
+    },
+    {
+      "project": "ManiSkill",
+      "upstream": "https://github.com/mani-skill/ManiSkill",
+      "commit": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+      "source_files": [
+        {
+          "path": "README.md",
+          "bytes": 7010,
+          "sha256": "304da9c2fdf69bf8944e1293a5c1bf146c434b2e6acd7604a46b3cfbfdfac10f",
+          "url": "https://github.com/mani-skill/ManiSkill/blob/62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3/README.md"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "url": "https://github.com/mani-skill/ManiSkill/blob/62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3/LICENSE"
+        },
+        {
+          "path": "mani_skill/envs/tasks/tabletop/push_cube.py",
+          "bytes": 12862,
+          "sha256": "9af1d9fd3f84544ce2f38a49d944e30a96a9a12f82befbe478daab9c3c019f66",
+          "url": "https://github.com/mani-skill/ManiSkill/blob/62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3/mani_skill/envs/tasks/tabletop/push_cube.py"
+        },
+        {
+          "path": "examples/baselines/ppo/ppo.py",
+          "bytes": 22982,
+          "sha256": "3fa4818861d428480244aae889bc679b2c8e89b59d6289014003c266a84dbab0",
+          "url": "https://github.com/mani-skill/ManiSkill/blob/62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3/examples/baselines/ppo/ppo.py"
+        }
+      ]
+    },
+    {
+      "project": "robocasa",
+      "upstream": "https://github.com/robocasa/robocasa",
+      "commit": "a9e152e2eea16d342dac40e4577fb4c68b932854",
+      "source_files": [
+        {
+          "path": "README.md",
+          "bytes": 7283,
+          "sha256": "ceb34d3c7cc735447e0c26754aea91d3a1977ebb48a82c3c73db8ce43bc64374",
+          "url": "https://github.com/robocasa/robocasa/blob/a9e152e2eea16d342dac40e4577fb4c68b932854/README.md"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1418,
+          "sha256": "5da18670b3f00c59847b1ded9c28dee59940d963b1e03b528b0108d9c5a09885",
+          "url": "https://github.com/robocasa/robocasa/blob/a9e152e2eea16d342dac40e4577fb4c68b932854/LICENSE"
+        },
+        {
+          "path": "robocasa/utils/subtask_labeling/base.py",
+          "bytes": 8940,
+          "sha256": "66a8d5575a07ed516119df6fa690fa96246a5fe67d54d11ff03811965320102c",
+          "url": "https://github.com/robocasa/robocasa/blob/a9e152e2eea16d342dac40e4577fb4c68b932854/robocasa/utils/subtask_labeling/base.py"
+        },
+        {
+          "path": "robocasa/environments/kitchen/kitchen.py",
+          "bytes": 67844,
+          "sha256": "35b1395ce65d51b993296aff1881fd5371542aec4c4e8ffc38c3f775327b5c56",
+          "url": "https://github.com/robocasa/robocasa/blob/a9e152e2eea16d342dac40e4577fb4c68b932854/robocasa/environments/kitchen/kitchen.py"
+        }
+      ]
+    }
+  ]
+}

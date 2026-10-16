@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-16",
+  "executed_base_git_commit": "4ea14617f8b48a6bbd58a19506d616b78292950b",
+  "initial_implementation_commit": "04c3759",
+  "source_authority": "Each run's captured task_source.py and manifest task_source_sha256; experiments ran while new source was uncommitted. Do not substitute a later Git SHA for the executed snapshot.",
+  "third_party_authority": "REFERENCE_SOURCE_INDEX.json contains official repository commits and key-file SHA256 values.",
+  "field_data_used_for_new_training": false,
+  "scope": "ARES self-built free-workpiece contact tasks using existing JAKA research assets, not field tray CAD and not an official benchmark reproduction",
+  "formal_v5": {"seeds": [31,41,51], "interactions_each":32768, "models":7, "total_training_interactions":229376},
+  "split": {"development_case_seed":1731,"heldout_case_seed":2703,"heldout_geometry":"FROZEN_HELDOUT_SCENARIOS.json","test_not_used_for_tuning":true},
+  "gpu_jobs": "All completed and exited; four GPUs idle on final check. No driver/reboot/real robot actions.",
+  "render_variant": "DISPLAY_ASSET_INVARIANCE.json confirms identical nonappearance USD attributes. Single-env execution demo is not an additional training or benchmark result.",
+  "safety_scope": "Sampled object/tool/table/rail OBB contact plus model FK/soft limits, not full robot mesh continuous collision or field safety certification"
+}

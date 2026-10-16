@@ -1,0 +1,20 @@
+{
+  "asset": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_composition_asset_20261016",
+  "output": "/home/andyee/robot-research/ARES-Skilllab/runs/heldout_contact_v5_boundary_seed51",
+  "num_envs": 16,
+  "gpu": 1,
+  "steps": 0,
+  "seed": 31,
+  "family": "both",
+  "controller": "ppo",
+  "credit_mode": "standard",
+  "credit_mix": 0.5,
+  "gamma": 0.99,
+  "rollout_steps": 128,
+  "scenario_file": "/home/andyee/robot-research/ARES-Skilllab/runs/FROZEN_HELDOUT_SCENARIOS.json",
+  "eval_seed": 2703,
+  "eval_episodes": 64,
+  "load_policy": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_v5_boundary_seed51/policy.zip",
+  "skip_capture": true,
+  "episode_seconds": 8.0
+}

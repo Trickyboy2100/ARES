@@ -1,0 +1,94 @@
+[
+  {
+    "evaluation": true,
+    "case_id": 0,
+    "env": 0,
+    "family": "slot",
+    "success": true,
+    "failed": false,
+    "timeout": false,
+    "phase": 1,
+    "return": 12.190702438354492,
+    "steps": 250,
+    "distance_m": 0.006701192352920771,
+    "workpiece_position_m": [
+      0.5588493347167969,
+      -0.5018238425254822,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.16603334248065948,
+    "pose_error_rad": 0.00012904268805868924,
+    "soft_limit_invalid": false,
+    "env_interactions": 250,
+    "scene_group": "development"
+  },
+  {
+    "evaluation": true,
+    "case_id": 1,
+    "env": 0,
+    "family": "slot",
+    "success": true,
+    "failed": false,
+    "timeout": false,
+    "phase": 1,
+    "return": 10.930366516113281,
+    "steps": 338,
+    "distance_m": 0.007260435726493597,
+    "workpiece_position_m": [
+      0.5582601428031921,
+      -0.5082550644874573,
+      1.4450126886367798
+    ],
+    "peak_force_N": 57.95891571044922,
+    "pose_error_rad": 0.020385971292853355,
+    "soft_limit_invalid": false,
+    "env_interactions": 588,
+    "scene_group": "development"
+  },
+  {
+    "evaluation": true,
+    "case_id": 2,
+    "env": 0,
+    "family": "slot",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 1,
+    "return": -1.5428247451782227,
+    "steps": 479,
+    "distance_m": 0.008621654473245144,
+    "workpiece_position_m": [
+      0.5570833683013916,
+      -0.508944034576416,
+      1.4450035095214844
+    ],
+    "peak_force_N": 57.982479095458984,
+    "pose_error_rad": 0.020932182669639587,
+    "soft_limit_invalid": false,
+    "env_interactions": 1067,
+    "scene_group": "development"
+  },
+  {
+    "evaluation": true,
+    "case_id": 3,
+    "env": 0,
+    "family": "slot",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 1,
+    "return": -1.4664822816848755,
+    "steps": 479,
+    "distance_m": 0.004180319607257843,
+    "workpiece_position_m": [
+      0.5627137422561646,
+      -0.5086508393287659,
+      1.4456597566604614
+    ],
+    "peak_force_N": 57.4184684753418,
+    "pose_error_rad": 0.013289478607475758,
+    "soft_limit_invalid": false,
+    "env_interactions": 1546,
+    "scene_group": "development"
+  }
+]

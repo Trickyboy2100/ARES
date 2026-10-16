@@ -1,0 +1,153 @@
+{
+  "scope": "ARES SELF-BUILT CONTACT COMPOSITION; NOT public benchmark or field-aligned task",
+  "isaac_sim": "5.1",
+  "isaac_lab": "2.3.0",
+  "controller": "ppo",
+  "seed": 31,
+  "num_envs": 16,
+  "families": [
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot"
+  ],
+  "physics_steps": 3832,
+  "training_physics_steps": 0,
+  "env_physics_steps": 61312,
+  "online_training_interactions": 0,
+  "optimizer_updates": 0,
+  "parameters_changed": false,
+  "credit_mode": "standard",
+  "credit_mix": 0.5,
+  "gamma": 0.99,
+  "rollout_steps": 128,
+  "action_intervention": "phase1_feedback",
+  "scene_specs": [
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    },
+    {
+      "id": "development",
+      "gap": 0.052,
+      "goal_x": 0.11,
+      "slot_y": -0.025
+    }
+  ],
+  "evaluation_case_seed": 1731,
+  "evaluation_role": "DEVELOPMENT_VALIDATION_ALREADY_USED_IN_TASK_DEBUGGING",
+  "loaded_policy_sha256": "13d3ba202583a7c07cb90ee23ff35e7b1154c9ab3e62a5391a7681fa4f14a43f",
+  "training_episodes": 0,
+  "test_episodes": 64,
+  "test_successes": 22,
+  "wall_s": 53.59914217796177,
+  "reset_state_writes": 101,
+  "state_writes_during_actions": 0,
+  "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+  "task_source_sha256": "7d8342f67f67319f7f548a290c1ef27df50421161419f93a48c07d5cefb3c7e6",
+  "credit_source_sha256": "81d1ac38cb99e680f7701378db0980389b7ac5b5807f2dc6bac992df79e1b7a5",
+  "limitations": [
+    "state-based actor assumes observed object pose/velocity",
+    "fixed research paddle; no contact grasp",
+    "no field scene or measured tray CAD",
+    "prototype group split not a formal generalization claim"
+  ]
+}

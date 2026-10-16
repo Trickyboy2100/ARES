@@ -1,0 +1,1032 @@
+{
+  "rows": [
+    {
+      "run": "causal_seed31_phase0_feedback",
+      "role": "development",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 25,
+      "independent_successes": 24,
+      "success_time_s": 5.207333333333333,
+      "timeout_count": 39,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 17,
+          "n": 32
+        },
+        "slot": {
+          "successes": 8,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 7664,
+      "credit_rollouts_with_effect": 1,
+      "credit_rollouts_total": 4,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "7d8342f67f67319f7f548a290c1ef27df50421161419f93a48c07d5cefb3c7e6",
+      "actor_clamped_rms": 0.1852174997329712,
+      "actual_object_max_displacement_m": 0.09012909233570099
+    },
+    {
+      "run": "causal_seed31_phase1_feedback",
+      "role": "development",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 22,
+      "independent_successes": 22,
+      "success_time_s": 4.5636363636363635,
+      "timeout_count": 42,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 11,
+          "n": 32
+        },
+        "slot": {
+          "successes": 11,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 7664,
+      "credit_rollouts_with_effect": 1,
+      "credit_rollouts_total": 4,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "7d8342f67f67319f7f548a290c1ef27df50421161419f93a48c07d5cefb3c7e6",
+      "actor_clamped_rms": 0.15824466943740845,
+      "actual_object_max_displacement_m": 0.097285196185112
+    },
+    {
+      "run": "causal_seed31_zero",
+      "role": "development",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 0,
+      "independent_successes": 0,
+      "success_time_s": null,
+      "timeout_count": 64,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 32
+        },
+        "slot": {
+          "successes": 0,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 7664,
+      "credit_rollouts_with_effect": 1,
+      "credit_rollouts_total": 4,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "7d8342f67f67319f7f548a290c1ef27df50421161419f93a48c07d5cefb3c7e6",
+      "actor_clamped_rms": 0.21703097224235535,
+      "actual_object_max_displacement_m": 0.02658747509121895
+    },
+    {
+      "run": "contact_both_four_v2",
+      "role": "development",
+      "seed": 31,
+      "controller": "nominal",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 16,
+      "successes": 0,
+      "independent_successes": null,
+      "success_time_s": null,
+      "timeout_count": 15,
+      "physical_failure_count": 1,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 8
+        },
+        "slot": {
+          "successes": 0,
+          "n": 8
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "be5c4bd61315435b0ce673bfb78d970a24e71e1fc571cabac81f35f2aba1893b",
+      "actor_clamped_rms": null,
+      "actual_object_max_displacement_m": 0.10853119448313577
+    },
+    {
+      "run": "contact_both_four_v3",
+      "role": "development",
+      "seed": 31,
+      "controller": "nominal",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 16,
+      "successes": 0,
+      "independent_successes": null,
+      "success_time_s": null,
+      "timeout_count": 16,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 8
+        },
+        "slot": {
+          "successes": 0,
+          "n": 8
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "84c5a3981c0b30c6caee1e468dd7defc10ec9b00f3b657b305295f9ba64a0667",
+      "actor_clamped_rms": null,
+      "actual_object_max_displacement_m": 0.10235093958243878
+    },
+    {
+      "run": "contact_both_four_v4",
+      "role": "development",
+      "seed": 31,
+      "controller": "nominal",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 16,
+      "successes": 3,
+      "independent_successes": null,
+      "success_time_s": 5.522222222222223,
+      "timeout_count": 13,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 2,
+          "n": 8
+        },
+        "slot": {
+          "successes": 1,
+          "n": 8
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "7b3a6d37cdc8fef352480e4ee0d506e51f827cfa85eb3697f7f6c30c4c647cc0",
+      "actor_clamped_rms": 0.0,
+      "actual_object_max_displacement_m": 0.09720628708600998
+    },
+    {
+      "run": "contact_goal_feedback_eval",
+      "role": "development",
+      "seed": 31,
+      "controller": "goal_feedback",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 11,
+      "independent_successes": 11,
+      "success_time_s": 4.045454545454546,
+      "timeout_count": 50,
+      "physical_failure_count": 3,
+      "success_by_family": {
+        "push": {
+          "successes": 4,
+          "n": 32
+        },
+        "slot": {
+          "successes": 7,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "7d8342f67f67319f7f548a290c1ef27df50421161419f93a48c07d5cefb3c7e6",
+      "actor_clamped_rms": 0.0,
+      "actual_object_max_displacement_m": 0.13846129179000854
+    },
+    {
+      "run": "contact_ppo16_v4_seed31",
+      "role": "development",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 16384,
+      "episodes": 64,
+      "successes": 40,
+      "independent_successes": 40,
+      "success_time_s": 2.67875,
+      "timeout_count": 22,
+      "physical_failure_count": 2,
+      "success_by_family": {
+        "push": {
+          "successes": 32,
+          "n": 32
+        },
+        "slot": {
+          "successes": 8,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "7b3a6d37cdc8fef352480e4ee0d506e51f827cfa85eb3697f7f6c30c4c647cc0",
+      "actor_clamped_rms": 0.2719237804412842,
+      "actual_object_max_displacement_m": 0.07896752655506134
+    },
+    {
+      "run": "contact_push_single_v1",
+      "role": "development",
+      "seed": 31,
+      "controller": "nominal",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 4,
+      "successes": 0,
+      "independent_successes": null,
+      "success_time_s": null,
+      "timeout_count": 4,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 4
+        },
+        "slot": {
+          "successes": 0,
+          "n": 0
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "ebc7d512ed54ff2741c5f0da77dac84095e94151e020cc8aa3f31647d22eb8de",
+      "actor_clamped_rms": null,
+      "actual_object_max_displacement_m": 0.03203799696708937
+    },
+    {
+      "run": "contact_residual65536_v4_seed31",
+      "role": "development",
+      "seed": 31,
+      "controller": "residual",
+      "credit_mode": "standard",
+      "interactions": 65536,
+      "episodes": 64,
+      "successes": 15,
+      "independent_successes": null,
+      "success_time_s": 6.026666666666667,
+      "timeout_count": 49,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 9,
+          "n": 32
+        },
+        "slot": {
+          "successes": 6,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "7b3a6d37cdc8fef352480e4ee0d506e51f827cfa85eb3697f7f6c30c4c647cc0",
+      "actor_clamped_rms": 0.1834571212530136,
+      "actual_object_max_displacement_m": 0.09759751707315445
+    },
+    {
+      "run": "contact_single_execution_demo",
+      "role": "development",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 4,
+      "successes": 2,
+      "independent_successes": 2,
+      "success_time_s": 4.9,
+      "timeout_count": 2,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 0
+        },
+        "slot": {
+          "successes": 2,
+          "n": 4
+        }
+      },
+      "credit_mixed_samples": 7664,
+      "credit_rollouts_with_effect": 1,
+      "credit_rollouts_total": 4,
+      "asset_sha256": "cf075b59782a5edad2828e989ac011d3227c9780069b53cb70986d893193c48c",
+      "task_source_sha256": "7d8342f67f67319f7f548a290c1ef27df50421161419f93a48c07d5cefb3c7e6",
+      "actor_clamped_rms": 0.16569820046424866,
+      "actual_object_max_displacement_m": 0.06445169448852539
+    },
+    {
+      "run": "contact_standard65536_v4_seed31",
+      "role": "development",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 65536,
+      "episodes": 64,
+      "successes": 16,
+      "independent_successes": null,
+      "success_time_s": 2.8062500000000004,
+      "timeout_count": 48,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 32
+        },
+        "slot": {
+          "successes": 16,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "7b3a6d37cdc8fef352480e4ee0d506e51f827cfa85eb3697f7f6c30c4c647cc0",
+      "actor_clamped_rms": 0.27952179312705994,
+      "actual_object_max_displacement_m": 0.09281843900680542
+    },
+    {
+      "run": "contact_v5_all_mc_seed31",
+      "role": "development",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "all",
+      "interactions": 32768,
+      "episodes": 64,
+      "successes": 57,
+      "independent_successes": 57,
+      "success_time_s": 4.561695906432749,
+      "timeout_count": 7,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 32,
+          "n": 32
+        },
+        "slot": {
+          "successes": 25,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 7664,
+      "credit_rollouts_with_effect": 1,
+      "credit_rollouts_total": 4,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "76b9af3c1eb6a571876b2aa27fa0086fdf86282ab5005d5a72377b0353cd9650",
+      "actor_clamped_rms": 0.17601598799228668,
+      "actual_object_max_displacement_m": 0.06456582993268967
+    },
+    {
+      "run": "contact_v5_boundary_seed31",
+      "role": "development",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "boundary",
+      "interactions": 32768,
+      "episodes": 64,
+      "successes": 57,
+      "independent_successes": 57,
+      "success_time_s": 4.561695906432749,
+      "timeout_count": 7,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 32,
+          "n": 32
+        },
+        "slot": {
+          "successes": 25,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 7664,
+      "credit_rollouts_with_effect": 1,
+      "credit_rollouts_total": 4,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "76b9af3c1eb6a571876b2aa27fa0086fdf86282ab5005d5a72377b0353cd9650",
+      "actor_clamped_rms": 0.17601598799228668,
+      "actual_object_max_displacement_m": 0.06456582993268967
+    },
+    {
+      "run": "contact_v5_boundary_seed41",
+      "role": "development",
+      "seed": 41,
+      "controller": "ppo",
+      "credit_mode": "boundary",
+      "interactions": 32768,
+      "episodes": 64,
+      "successes": 10,
+      "independent_successes": 9,
+      "success_time_s": 3.3383333333333334,
+      "timeout_count": 47,
+      "physical_failure_count": 7,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 32
+        },
+        "slot": {
+          "successes": 10,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 7066,
+      "credit_rollouts_with_effect": 1,
+      "credit_rollouts_total": 4,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "76b9af3c1eb6a571876b2aa27fa0086fdf86282ab5005d5a72377b0353cd9650",
+      "actor_clamped_rms": 0.20703361928462982,
+      "actual_object_max_displacement_m": 0.1145719662308693
+    },
+    {
+      "run": "contact_v5_boundary_seed51",
+      "role": "development",
+      "seed": 51,
+      "controller": "ppo",
+      "credit_mode": "boundary",
+      "interactions": 32768,
+      "episodes": 64,
+      "successes": 40,
+      "independent_successes": 28,
+      "success_time_s": 3.5983333333333336,
+      "timeout_count": 22,
+      "physical_failure_count": 2,
+      "success_by_family": {
+        "push": {
+          "successes": 15,
+          "n": 32
+        },
+        "slot": {
+          "successes": 25,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 7386,
+      "credit_rollouts_with_effect": 2,
+      "credit_rollouts_total": 4,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "76b9af3c1eb6a571876b2aa27fa0086fdf86282ab5005d5a72377b0353cd9650",
+      "actor_clamped_rms": 0.25707417726516724,
+      "actual_object_max_displacement_m": 0.16994714736938477
+    },
+    {
+      "run": "contact_v5_fixed_push_eval",
+      "role": "development",
+      "seed": 31,
+      "controller": "fixed_push",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 2,
+      "independent_successes": 0,
+      "success_time_s": 4.725,
+      "timeout_count": 62,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 32
+        },
+        "slot": {
+          "successes": 2,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "76b9af3c1eb6a571876b2aa27fa0086fdf86282ab5005d5a72377b0353cd9650",
+      "actor_clamped_rms": 0.0,
+      "actual_object_max_displacement_m": 0.16311068832874298
+    },
+    {
+      "run": "contact_v5_nominal_eval",
+      "role": "development",
+      "seed": 31,
+      "controller": "nominal",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 11,
+      "independent_successes": 11,
+      "success_time_s": 6.259090909090909,
+      "timeout_count": 53,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 5,
+          "n": 32
+        },
+        "slot": {
+          "successes": 6,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "76b9af3c1eb6a571876b2aa27fa0086fdf86282ab5005d5a72377b0353cd9650",
+      "actor_clamped_rms": 0.0,
+      "actual_object_max_displacement_m": 0.09874478727579117
+    },
+    {
+      "run": "contact_v5_random_eval",
+      "role": "development",
+      "seed": 31,
+      "controller": "random",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 0,
+      "independent_successes": 0,
+      "success_time_s": null,
+      "timeout_count": 64,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 32
+        },
+        "slot": {
+          "successes": 0,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "76b9af3c1eb6a571876b2aa27fa0086fdf86282ab5005d5a72377b0353cd9650",
+      "actor_clamped_rms": 0.0,
+      "actual_object_max_displacement_m": 0.02658747509121895
+    },
+    {
+      "run": "contact_v5_standard_seed31",
+      "role": "development",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 32768,
+      "episodes": 64,
+      "successes": 8,
+      "independent_successes": 8,
+      "success_time_s": 3.8791666666666664,
+      "timeout_count": 37,
+      "physical_failure_count": 19,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 32
+        },
+        "slot": {
+          "successes": 8,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "76b9af3c1eb6a571876b2aa27fa0086fdf86282ab5005d5a72377b0353cd9650",
+      "actor_clamped_rms": 0.22798515856266022,
+      "actual_object_max_displacement_m": 0.1253315806388855
+    },
+    {
+      "run": "contact_v5_standard_seed41",
+      "role": "development",
+      "seed": 41,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 32768,
+      "episodes": 64,
+      "successes": 39,
+      "independent_successes": 39,
+      "success_time_s": 3.5021367521367517,
+      "timeout_count": 25,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 32,
+          "n": 32
+        },
+        "slot": {
+          "successes": 7,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "76b9af3c1eb6a571876b2aa27fa0086fdf86282ab5005d5a72377b0353cd9650",
+      "actor_clamped_rms": 0.22243086993694305,
+      "actual_object_max_displacement_m": 0.06391461938619614
+    },
+    {
+      "run": "contact_v5_standard_seed51",
+      "role": "development",
+      "seed": 51,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 32768,
+      "episodes": 64,
+      "successes": 5,
+      "independent_successes": 5,
+      "success_time_s": 3.7333333333333334,
+      "timeout_count": 58,
+      "physical_failure_count": 1,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 32
+        },
+        "slot": {
+          "successes": 5,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "76b9af3c1eb6a571876b2aa27fa0086fdf86282ab5005d5a72377b0353cd9650",
+      "actor_clamped_rms": 0.2556711435317993,
+      "actual_object_max_displacement_m": 0.13864180445671082
+    },
+    {
+      "run": "heldout_contact_v5_all_mc_seed31",
+      "role": "heldout",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 51,
+      "independent_successes": 51,
+      "success_time_s": 4.252614379084967,
+      "timeout_count": 13,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 32,
+          "n": 32
+        },
+        "slot": {
+          "successes": 19,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 7664,
+      "credit_rollouts_with_effect": 1,
+      "credit_rollouts_total": 4,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "1326d45e7dee294bea97c7855f4537893e67db83a9e72d3299be58200aea48dc",
+      "actor_clamped_rms": 0.17673933506011963,
+      "actual_object_max_displacement_m": 0.07163610309362411
+    },
+    {
+      "run": "heldout_contact_v5_boundary_seed31",
+      "role": "heldout",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 51,
+      "independent_successes": 51,
+      "success_time_s": 4.252614379084967,
+      "timeout_count": 13,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 32,
+          "n": 32
+        },
+        "slot": {
+          "successes": 19,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 7664,
+      "credit_rollouts_with_effect": 1,
+      "credit_rollouts_total": 4,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "1326d45e7dee294bea97c7855f4537893e67db83a9e72d3299be58200aea48dc",
+      "actor_clamped_rms": 0.17673933506011963,
+      "actual_object_max_displacement_m": 0.07163610309362411
+    },
+    {
+      "run": "heldout_contact_v5_boundary_seed41",
+      "role": "heldout",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 8,
+      "independent_successes": 8,
+      "success_time_s": 3.333333333333333,
+      "timeout_count": 53,
+      "physical_failure_count": 3,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 32
+        },
+        "slot": {
+          "successes": 8,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 7066,
+      "credit_rollouts_with_effect": 1,
+      "credit_rollouts_total": 4,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "1326d45e7dee294bea97c7855f4537893e67db83a9e72d3299be58200aea48dc",
+      "actor_clamped_rms": 0.20441535115242004,
+      "actual_object_max_displacement_m": 0.11661777645349503
+    },
+    {
+      "run": "heldout_contact_v5_boundary_seed51",
+      "role": "heldout",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 21,
+      "independent_successes": 18,
+      "success_time_s": 3.3738095238095234,
+      "timeout_count": 28,
+      "physical_failure_count": 15,
+      "success_by_family": {
+        "push": {
+          "successes": 17,
+          "n": 32
+        },
+        "slot": {
+          "successes": 4,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 7386,
+      "credit_rollouts_with_effect": 2,
+      "credit_rollouts_total": 4,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "1326d45e7dee294bea97c7855f4537893e67db83a9e72d3299be58200aea48dc",
+      "actor_clamped_rms": 0.2553669512271881,
+      "actual_object_max_displacement_m": 0.17223909497261047
+    },
+    {
+      "run": "heldout_contact_v5_standard_seed31",
+      "role": "heldout",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 6,
+      "independent_successes": 6,
+      "success_time_s": 3.5583333333333336,
+      "timeout_count": 48,
+      "physical_failure_count": 10,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 32
+        },
+        "slot": {
+          "successes": 6,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "1326d45e7dee294bea97c7855f4537893e67db83a9e72d3299be58200aea48dc",
+      "actor_clamped_rms": 0.22517971694469452,
+      "actual_object_max_displacement_m": 0.13086265325546265
+    },
+    {
+      "run": "heldout_contact_v5_standard_seed41",
+      "role": "heldout",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 41,
+      "independent_successes": 30,
+      "success_time_s": 3.510569105691057,
+      "timeout_count": 23,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 30,
+          "n": 32
+        },
+        "slot": {
+          "successes": 11,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "1326d45e7dee294bea97c7855f4537893e67db83a9e72d3299be58200aea48dc",
+      "actor_clamped_rms": 0.23418399691581726,
+      "actual_object_max_displacement_m": 0.16237063705921173
+    },
+    {
+      "run": "heldout_contact_v5_standard_seed51",
+      "role": "heldout",
+      "seed": 31,
+      "controller": "ppo",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 5,
+      "independent_successes": 5,
+      "success_time_s": 3.406666666666667,
+      "timeout_count": 59,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 32
+        },
+        "slot": {
+          "successes": 5,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "1326d45e7dee294bea97c7855f4537893e67db83a9e72d3299be58200aea48dc",
+      "actor_clamped_rms": 0.25776728987693787,
+      "actual_object_max_displacement_m": 0.14386485517024994
+    },
+    {
+      "run": "heldout_fixed_push",
+      "role": "heldout",
+      "seed": 31,
+      "controller": "fixed_push",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 1,
+      "independent_successes": 1,
+      "success_time_s": 3.8,
+      "timeout_count": 63,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 32
+        },
+        "slot": {
+          "successes": 1,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "1326d45e7dee294bea97c7855f4537893e67db83a9e72d3299be58200aea48dc",
+      "actor_clamped_rms": 0.0,
+      "actual_object_max_displacement_m": 0.16604268550872803
+    },
+    {
+      "run": "heldout_goal_feedback",
+      "role": "heldout",
+      "seed": 31,
+      "controller": "goal_feedback",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 14,
+      "independent_successes": 13,
+      "success_time_s": 3.741666666666667,
+      "timeout_count": 50,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 9,
+          "n": 32
+        },
+        "slot": {
+          "successes": 5,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "1326d45e7dee294bea97c7855f4537893e67db83a9e72d3299be58200aea48dc",
+      "actor_clamped_rms": 0.0,
+      "actual_object_max_displacement_m": 0.14316223561763763
+    },
+    {
+      "run": "heldout_nominal",
+      "role": "heldout",
+      "seed": 31,
+      "controller": "nominal",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 20,
+      "independent_successes": 20,
+      "success_time_s": 6.096666666666667,
+      "timeout_count": 44,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 10,
+          "n": 32
+        },
+        "slot": {
+          "successes": 10,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "1326d45e7dee294bea97c7855f4537893e67db83a9e72d3299be58200aea48dc",
+      "actor_clamped_rms": 0.0,
+      "actual_object_max_displacement_m": 0.10856642574071884
+    },
+    {
+      "run": "heldout_random",
+      "role": "heldout",
+      "seed": 31,
+      "controller": "random",
+      "credit_mode": "standard",
+      "interactions": 0,
+      "episodes": 64,
+      "successes": 0,
+      "independent_successes": 0,
+      "success_time_s": null,
+      "timeout_count": 64,
+      "physical_failure_count": 0,
+      "success_by_family": {
+        "push": {
+          "successes": 0,
+          "n": 32
+        },
+        "slot": {
+          "successes": 0,
+          "n": 32
+        }
+      },
+      "credit_mixed_samples": 0,
+      "credit_rollouts_with_effect": 0,
+      "credit_rollouts_total": 0,
+      "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+      "task_source_sha256": "1326d45e7dee294bea97c7855f4537893e67db83a9e72d3299be58200aea48dc",
+      "actor_clamped_rms": 0.0,
+      "actual_object_max_displacement_m": 0.026181543245911598
+    }
+  ],
+  "limitations": [
+    "development cases used during debugging; not final test",
+    "heldout uses only two parameter groups, not industrial/general contract transfer",
+    "sampled contact audit is not full robot mesh swept-collision validation"
+  ]
+}

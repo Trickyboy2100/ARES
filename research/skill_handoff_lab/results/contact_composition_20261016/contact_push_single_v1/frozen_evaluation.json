@@ -1,0 +1,86 @@
+[
+  {
+    "evaluation": true,
+    "case_id": 0,
+    "env": 0,
+    "family": "push",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 1,
+    "return": -3.179293394088745,
+    "steps": 479,
+    "distance_m": 0.03282853960990906,
+    "workpiece_position_m": [
+      0.5339626669883728,
+      -0.4663952589035034,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.2567315399646759,
+    "pose_error_rad": 0.0019356627017259598,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 1,
+    "env": 0,
+    "family": "push",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 1,
+    "return": -3.013770580291748,
+    "steps": 479,
+    "distance_m": 0.03319975361227989,
+    "workpiece_position_m": [
+      0.5368058681488037,
+      -0.47292616963386536,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.2574615776538849,
+    "pose_error_rad": 0.01127457246184349,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 2,
+    "env": 0,
+    "family": "push",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 1,
+    "return": -3.6836752891540527,
+    "steps": 479,
+    "distance_m": 0.042196255177259445,
+    "workpiece_position_m": [
+      0.5260515809059143,
+      -0.47182124853134155,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.2547457814216614,
+    "pose_error_rad": 0.0028539591003209352,
+    "soft_limit_invalid": false
+  },
+  {
+    "evaluation": true,
+    "case_id": 3,
+    "env": 0,
+    "family": "push",
+    "success": false,
+    "failed": false,
+    "timeout": true,
+    "phase": 0,
+    "return": -7.321620941162109,
+    "steps": 479,
+    "distance_m": 0.015253858640789986,
+    "workpiece_position_m": [
+      0.5336796045303345,
+      -0.48273900151252747,
+      1.4449999332427979
+    ],
+    "peak_force_N": 0.21581298112869263,
+    "pose_error_rad": 0.0006537190056405962,
+    "soft_limit_invalid": false
+  }
+]

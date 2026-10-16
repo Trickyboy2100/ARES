@@ -1,0 +1,21 @@
+{
+  "asset": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_composition_asset_20261016",
+  "output": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_goal_feedback_eval",
+  "num_envs": 16,
+  "gpu": 1,
+  "steps": 0,
+  "seed": 31,
+  "family": "both",
+  "controller": "goal_feedback",
+  "credit_mode": "standard",
+  "credit_mix": 0.5,
+  "gamma": 0.99,
+  "rollout_steps": 128,
+  "scenario_file": null,
+  "eval_seed": 1731,
+  "action_intervention": "none",
+  "eval_episodes": 64,
+  "load_policy": null,
+  "skip_capture": true,
+  "episode_seconds": 8.0
+}

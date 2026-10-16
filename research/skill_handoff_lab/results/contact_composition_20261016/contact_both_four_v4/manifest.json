@@ -1,0 +1,34 @@
+{
+  "scope": "ARES SELF-BUILT CONTACT COMPOSITION; NOT public benchmark or field-aligned task",
+  "isaac_sim": "5.1",
+  "isaac_lab": "2.3.0",
+  "controller": "nominal",
+  "seed": 31,
+  "num_envs": 4,
+  "families": [
+    "push",
+    "slot",
+    "push",
+    "slot"
+  ],
+  "physics_steps": 3832,
+  "training_physics_steps": 0,
+  "env_physics_steps": 15328,
+  "online_training_interactions": 0,
+  "optimizer_updates": 0,
+  "parameters_changed": false,
+  "training_episodes": 0,
+  "test_episodes": 16,
+  "test_successes": 3,
+  "wall_s": 55.754375291988254,
+  "reset_state_writes": 28,
+  "state_writes_during_actions": 0,
+  "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+  "task_source_sha256": "7b3a6d37cdc8fef352480e4ee0d506e51f827cfa85eb3697f7f6c30c4c647cc0",
+  "limitations": [
+    "state-based actor assumes observed object pose/velocity",
+    "fixed research paddle; no contact grasp",
+    "no field scene or measured tray CAD",
+    "prototype group split not a formal generalization claim"
+  ]
+}

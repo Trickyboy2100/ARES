@@ -1,0 +1,152 @@
+{
+  "scope": "ARES SELF-BUILT CONTACT COMPOSITION; NOT public benchmark or field-aligned task",
+  "isaac_sim": "5.1",
+  "isaac_lab": "2.3.0",
+  "controller": "ppo",
+  "seed": 31,
+  "num_envs": 16,
+  "families": [
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot"
+  ],
+  "physics_steps": 3832,
+  "training_physics_steps": 0,
+  "env_physics_steps": 61312,
+  "online_training_interactions": 0,
+  "optimizer_updates": 0,
+  "parameters_changed": false,
+  "credit_mode": "standard",
+  "credit_mix": 0.5,
+  "gamma": 0.99,
+  "rollout_steps": 128,
+  "scene_specs": [
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    }
+  ],
+  "evaluation_case_seed": 2703,
+  "evaluation_role": "FROZEN_HELDOUT_GEOMETRY",
+  "loaded_policy_sha256": "ad222d0c33ddb2be4a772f4e9020843ffcbf530397514592f0fd9b07132e4429",
+  "training_episodes": 0,
+  "test_episodes": 64,
+  "test_successes": 6,
+  "wall_s": 52.22461894340813,
+  "reset_state_writes": 102,
+  "state_writes_during_actions": 0,
+  "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+  "task_source_sha256": "1326d45e7dee294bea97c7855f4537893e67db83a9e72d3299be58200aea48dc",
+  "credit_source_sha256": "81d1ac38cb99e680f7701378db0980389b7ac5b5807f2dc6bac992df79e1b7a5",
+  "limitations": [
+    "state-based actor assumes observed object pose/velocity",
+    "fixed research paddle; no contact grasp",
+    "no field scene or measured tray CAD",
+    "prototype group split not a formal generalization claim"
+  ]
+}
