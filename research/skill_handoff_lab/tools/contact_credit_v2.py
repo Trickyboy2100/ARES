@@ -1,6 +1,7 @@
 """On-policy GAE / bootstrapped lambda=1 mixture; NOT a novel MC algorithm.
 
-Every current-rollout sample is used once. No stale policy episode cache.
+Every current-rollout sample enters one PPO update with the declared minibatch
+epochs; it is never reused by a later policy update. No stale episode cache.
 At a rollout boundary, lambda=1 targets bootstrap the *current* value; actual
 finite-horizon terminations do not bootstrap. Both critic and actor use the
 same mixed target. This is explicitly not a full-episode Monte Carlo return.

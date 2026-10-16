@@ -22,11 +22,16 @@ p.add_argument('--feedback-kd',type=float,default=2.);p.add_argument('--blind-ne
 p.add_argument('--blind-rotation',action='store_true')
 p.add_argument('--force-switch-signal',type=float,default=None)
 p.add_argument('--rule-recovery',action='store_true',help='same-policy causal comparator: hold near the goal, resume otherwise')
-p.add_argument('--policy-mode',choices=['gaussian','hybrid_joint','hybrid_conditional'],default='gaussian')
+p.add_argument('--policy-mode',choices=['gaussian','active_gaussian','hybrid_joint','hybrid_conditional'],default='gaussian')
 p.add_argument('--action-cost',choices=['raw','executed'],default='raw')
 p.add_argument('--withdraw-rule',action='store_true',help='validation-only bounded contact release/recontact probe')
+p.add_argument('--log-contact-history',action='store_true')
 p.add_argument('--checkpoint-every',type=int,default=32768)
-a=p.parse_args();a.output.mkdir(parents=True,exist_ok=False)
+a=p.parse_args()
+if a.policy_mode=='active_gaussian' and a.switch_mode!='fixed':p.error('2D Gaussian baseline requires fixed phase switching')
+if a.policy_mode.startswith('hybrid') and a.switch_mode!='recover':p.error('this hybrid policy implements phase1 recovery gating, not learned phase0 switching')
+if a.withdraw_rule and a.steps:p.error('withdraw rule is a bounded validation probe, not an RL training label generator')
+a.output.mkdir(parents=True,exist_ok=False)
 from isaaclab.app import AppLauncher
 launcher=AppLauncher(headless=True,device=f'cuda:{a.gpu}',enable_cameras=not a.skip_capture,
     kit_args=f'--/renderer/activeGpu={a.gpu} --/renderer/multiGpu/enabled=false')

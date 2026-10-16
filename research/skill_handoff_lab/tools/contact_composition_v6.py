@@ -36,11 +36,12 @@ def run(a):
     family=[('slot' if i%2 else 'push') if a.family=='both' else a.family for i in range(a.num_envs)]
     scenario=json.loads(a.scenario_file.read_text()) if a.scenario_file else {'groups':[{'id':'development','gap':.052,'goal_x':.110,'slot_y':-.025}]}
     specs=[scenario['groups'][min(len(scenario['groups'])-1,i*len(scenario['groups'])//a.num_envs)] for i in range(a.num_envs)]
+    action_dim=2 if a.policy_mode=='active_gaussian' else 3
 
     simulation_config=sim.SimulationCfg(dt=1/120,render_interval=8,device=f'cuda:{a.gpu}')
     @configclass
     class Cfg(DirectRLEnvCfg):
-        decimation=2;episode_length_s=a.episode_seconds;action_space=3;observation_space=56;state_space=0
+        decimation=2;episode_length_s=a.episode_seconds;action_space=action_dim;observation_space=56;state_space=0
         sim=simulation_config
         scene=InteractiveSceneCfg(num_envs=a.num_envs,env_spacing=2.5,replicate_physics=False,clone_in_fabric=False)
         seed=a.seed
@@ -74,6 +75,7 @@ def run(a):
             self.handoffs=[None]*self.num_envs;self.contacts=[]
             self.min_final=torch.full((self.num_envs,),float('inf'),device=self.device)
             self.withdraw_left=torch.zeros_like(self.phase);self.withdraw_attempts=torch.zeros_like(self.phase);self.cooldown=torch.zeros_like(self.phase)
+            self.start_object_xy=torch.zeros((self.num_envs,2),device=self.device);self.object_displacement=torch.zeros(self.num_envs,device=self.device)
             self.geometry=torch.tensor([[s.get(k,d) for k,d in [('gap',.052),('goal_x',.110),('slot_y',-.025),('mass',.05),('mu',.3)]]+
                 [np.cos(s.get('direction',0.)),np.sin(s.get('direction',0.))] for s in specs],device=self.device,dtype=torch.float32)
             for i,f in enumerate(family):
@@ -152,6 +154,7 @@ def run(a):
                 'joint_velocity_command':self.vcommand[i].cpu().tolist(),'goal':goal[i].cpu().tolist(),
                 'robot_contact_force':self.contact.data.net_forces_w[i].cpu().tolist()}
         def _pre_physics_step(self,actions):
+            if actions.shape[1]==2:actions=torch.cat((actions,torch.ones_like(actions[:,:1])),-1)
             self.raw_actions=actions.clone();self.actions=actions[:,:2].clamp(-1,1)
             self.switch_signal=actions[:,2];paddle,obj,vel,goal=self.state()
             if a.force_switch_signal is not None:self.switch_signal=torch.full_like(self.switch_signal,a.force_switch_signal)
@@ -247,6 +250,7 @@ def run(a):
             paddle,obj,vel,goal=self.state();q=self.robot.data.joint_pos[:,self.ids]
             dist=(goal[:,:2]-obj[:,:2]).norm(dim=-1)
             self.min_final=torch.minimum(self.min_final,(self.goals[:,1,:2]-obj[:,:2]).norm(dim=-1))
+            self.object_displacement=torch.maximum(self.object_displacement,(obj[:,:2]-self.start_object_xy).norm(dim=-1))
             advance=(self.phase==0)&(dist<.009)&(vel.norm(dim=-1)<.12)
             self.dwell=torch.where(advance,self.dwell+1,torch.zeros_like(self.dwell))
             if a.switch_dwell:advance=advance&(self.dwell>=a.switch_dwell)
@@ -262,6 +266,10 @@ def run(a):
                 stable=stable&(vel.norm(dim=-1)<.01)&(self.cube.data.root_ang_vel_w.norm(dim=-1)<.2)&(yaw_error<np.radians(8))&(upright>np.cos(np.radians(5)))
             self.hold=torch.where(stable&(self.phase==1),self.hold+1,torch.zeros_like(self.hold));self.success=self.hold>=(8 if a.task_version=='v5_replay' else 30)
             force=self.contact.data.net_forces_w.norm(dim=-1).amax(-1);self.max_force=torch.maximum(self.max_force,force)
+            if a.log_contact_history and self.evaluation:
+                self.contacts.append(torch.cat((torch.full((self.num_envs,1),self.physics_steps,device=self.device),
+                    self.cases[:,None],self.phase[:,None],force[:,None],self.contact.data.net_forces_w.sum(dim=1),
+                    vel,self.cube.data.root_ang_vel_w,obj),dim=-1).cpu().numpy())
             tilt=axis_angle_from_quat(quat_mul(self.orientation,quat_conjugate(self.robot.data.body_link_quat_w[:,self.link]))).norm(dim=-1)
             invalid=(q<self.low-.001).any(-1)|(q>self.high+.001).any(-1)|(~torch.isfinite(q)).any(-1)
             failed=invalid|(obj[:,2]<self.center[2]-.08)|(tilt>np.radians(3.5))|(force>80.)
@@ -284,6 +292,7 @@ def run(a):
                 self.records[-1].update(post_step_state=self.physical_snapshot(i),handoff_state=self.handoffs[i],
                     stable_hold_steps=int(self.hold[i]),minimum_final_distance_m=float(self.min_final[i]),
                     withdraw_attempts=int(self.withdraw_attempts[i]),
+                    maximum_object_xy_displacement_m=float(self.object_displacement[i]),
                     failure_reason='constraint' if failed[i] else ('success' if self.success[i] else 'timeout'))
             self.terminal_obs=self._get_observations()['policy'].clone()
             return done,torch.zeros_like(done)
@@ -324,6 +333,7 @@ def run(a):
             for k,i in enumerate(ids.tolist()):
                 self.handoffs[i]=None
             self.cube.write_root_pose_to_sim(obj[:,:7],env_ids=ids);self.cube.write_root_velocity_to_sim(obj[:,7:],env_ids=ids)
+            self.start_object_xy[ids]=obj[:,:2]-self.scene.env_origins[ids,:2];self.object_displacement[ids]=0
             self.command[ids]=self.center;self.qcommand[ids]=self.home;self.vcommand[ids]=0
             self.phase[ids]=0;self.hold[ids]=0;self.returns[ids]=0;self.max_force[ids]=0
             self.dwell[ids]=0
@@ -347,7 +357,7 @@ def run(a):
         eye=middle+torch.tensor([span,-span,span],device=env.device)
         env.camera.set_world_poses_from_view(eye[None,:],(middle+torch.tensor([.4,-.4,1.2],device=env.device))[None,:])
     class Adapter(VecEnv):
-        def __init__(self):super().__init__(env.num_envs,gym.spaces.Box(-np.inf,np.inf,(56,),np.float32),gym.spaces.Box(-1,1,(3,),np.float32))
+        def __init__(self):super().__init__(env.num_envs,gym.spaces.Box(-np.inf,np.inf,(56,),np.float32),gym.spaces.Box(-1,1,(action_dim,),np.float32))
         def reset(self):return env.reset(seed=a.eval_seed if env.evaluation else a.seed)[0]['policy'].cpu().numpy()
         def step_async(self,actions):self.actions=actions
         def step_wait(self):
@@ -367,7 +377,7 @@ def run(a):
             if self.num_timesteps%a.checkpoint_every==0:
                 self.save(a.output/'checkpoints'/f'policy_{self.num_timesteps}_after_update.zip')
     actor_class='MlpPolicy';policy_kwargs={'net_arch':[64,64],'log_std_init':a.initial_log_std}
-    if a.policy_mode!='gaussian':
+    if a.policy_mode.startswith('hybrid'):
         from contact_hybrid_policy import ContractGatePolicy
         actor_class=ContractGatePolicy;policy_kwargs.update(gate_conditional=a.policy_mode=='hybrid_conditional',gate_prior=1.)
         (a.output/'hybrid_policy_source.py').write_bytes(Path(__file__).with_name('contact_hybrid_policy.py').read_bytes())
@@ -397,7 +407,7 @@ def run(a):
             return True
     if a.controller in ['nominal','goal_feedback','damped','legacy','paired','random','fixed_push']:
         o=vec.reset()
-        for _ in range(a.steps//a.num_envs):o,_,_,_=vec.step(np.zeros((a.num_envs,3),np.float32))
+        for _ in range(a.steps//a.num_envs):o,_,_,_=vec.step(np.zeros((a.num_envs,action_dim),np.float32))
     elif a.steps:
         policy.learn(total_timesteps=a.steps,callback=Callback());policy.save(a.output/'policy.zip')
     train_steps=env.physics_steps;train_records=list(env.records);env.records=[];env.evaluation=True
@@ -410,8 +420,8 @@ def run(a):
             with torch.no_grad():
                 tensor=actor.policy.obs_to_tensor(o[:,:33] if a.controller in ['legacy','paired'] else o)[0]
                 raw=actor.policy.get_distribution(tensor).get_actions(deterministic=not a.stochastic_eval).cpu().numpy()
-            if raw.shape[1]==2:raw=np.column_stack((raw,np.ones(env.num_envs)))
-        else:raw=np.zeros((env.num_envs,3),np.float32)
+            if raw.shape[1]==2 and action_dim==3:raw=np.column_stack((raw,np.ones(env.num_envs)))
+        else:raw=np.zeros((env.num_envs,action_dim),np.float32)
         actions=np.clip(raw,-1,1)
         o,_,_,_=vec.step(actions);iterations+=1
         action_log.append({'mode':'evaluation','physics_step':env.physics_steps,'raw':raw.tolist(),
@@ -439,7 +449,7 @@ def run(a):
         'policy_mode':a.policy_mode,'action_cost':a.action_cost,
         'withdraw_rule':a.withdraw_rule,
         'reference_lead_limit_m':None if a.task_version=='v5_replay' else .006,
-        'stochastic_evaluation':a.stochastic_eval,'blind_next':a.blind_next,'blind_rotation':a.blind_rotation,'observation_dim':56,'action_dim':3,
+        'stochastic_evaluation':a.stochastic_eval,'blind_next':a.blind_next,'blind_rotation':a.blind_rotation,'observation_dim':56,'action_dim':action_dim,
         'actor_log_std':policy.policy.log_std.detach().cpu().tolist(),
         'legacy_log_std':legacy.policy.log_std.detach().cpu().tolist() if legacy else None,
         'success_contract':{'position_m':.008,'linear_speed_m_s':.025 if a.task_version=='v5_replay' else .01,
@@ -456,11 +466,13 @@ def run(a):
     (a.output/'credit_audits.json').write_text(json.dumps(getattr(policy,'credit_audits',[]),indent=2))
     (a.output/'frozen_evaluation.json').write_text(json.dumps(env.records,indent=2))
     (a.output/'action_log.json').write_text(json.dumps(action_log))
+    if env.contacts:np.savez_compressed(a.output/'post_step_contact_history.npz',states=np.array(env.contacts),
+        columns=['physics_tick','case_id','phase','max_robot_net_contact_N','sum_fx','sum_fy','sum_fz','vx','vy','vz','wx','wy','wz','obj_x','obj_y','obj_z'],sample_dt_s=env.step_dt)
     np.savez_compressed(a.output/'actual_physics_trace.npz',states=np.array(env.trace),sample_dt_s=env.physics_dt,
         goals_body_m=env.goals.cpu().numpy(),columns=np.array([*[f'q{i}' for i in range(6)],'obj_x','obj_y','obj_z',
         'paddle_x','paddle_y','paddle_z','vx','vy','vz','stage','obj_qw','obj_qx','obj_qy','obj_qz','case_id',
             'cmd_x','cmd_y','cmd_z','goal_x','goal_y','goal_z','action_x','action_y','applied_dx','applied_dy',
-            'wx','wy','wz',*[f'qd{i}' for i in range(6)],'physics_tick','switch_signal','raw_x','raw_y','raw_switch']))
+            'wx','wy','wz',*[f'qd{i}' for i in range(6)],'physics_tick','switch_signal','submitted_x','submitted_y','submitted_switch']))
     if frames:
         from PIL import Image
         Image.fromarray(frames[-1]).save(a.output/'physical_scene.png')

@@ -24,7 +24,7 @@
 
 `log π_exec = log Bernoulli(b) + b log Normal(δ)`（阶段1）。
 
-PPO对该完整有效动作似然构造单一clipped ratio；联合似然消融在阶段1始终加上XY项。两者同网络、相同Bernoulli先验logit=1、相同GAE/优化器/数据预算与任务。无效XY在保持分支中的梯度被解析边缘化，新增机制确实进入Actor loss而非只拟合辅助头。人工fixture验证保持时XY梯度为0、有效动作ratio不受无效参数变化影响，以及实际SB3优化和模型序列化；人工数据不进入真实训练。
+PPO对该完整有效动作似然构造单一clipped ratio；联合似然消融在阶段1始终加上XY项。两者同网络、相同Bernoulli先验logit=1、相同GAE/优化器/数据预算与任务。无效XY的似然score被解析边缘化，新增机制确实进入Actor loss而非只拟合辅助头；共享Actor躯干仍会接收gate梯度，不能说整个连续Actor在保持时完全不更新。人工fixture验证保持时关于XY分布输出的似然梯度为0、实际SB3优化及模型序列化；人工数据不进入真实训练。
 
 该思路不宣称首次提出混合动作或无效参数处理。[H-PPO（IJCAI2019）](https://www.ijcai.org/proceedings/2019/0316.pdf)已有参数化离散/连续actor及各自clipped目标；这里是与物理合同绑定的有效动作联合似然实现。与STAP/ViSkill/SeqDex的下一技能价值或终态训练也不同：当前没有学习后缀价值模型，不可借用其名称声称已有价值传播贡献。新颖性仍需更完整的相关方法对照和真实任务证据。
 

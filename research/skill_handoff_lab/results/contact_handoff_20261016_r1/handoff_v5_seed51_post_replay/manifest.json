@@ -1,0 +1,179 @@
+{
+  "scope": "ARES SELF-BUILT CONTACT COMPOSITION; NOT public benchmark or field-aligned task",
+  "isaac_sim": "5.1",
+  "isaac_lab": "2.3.0",
+  "controller": "legacy",
+  "seed": 31,
+  "num_envs": 16,
+  "families": [
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot",
+    "push",
+    "slot"
+  ],
+  "physics_steps": 3832,
+  "training_physics_steps": 0,
+  "env_physics_steps": 61312,
+  "online_training_interactions": 0,
+  "optimizer_updates": 0,
+  "parameters_changed": false,
+  "credit_mode": "standard",
+  "credit_mix": 0.5,
+  "gamma": 0.99,
+  "rollout_steps": 128,
+  "action_intervention": "none",
+  "scene_specs": [
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G1_unseen_target_and_tighter_rail",
+      "gap": 0.05,
+      "goal_x": 0.115,
+      "slot_y": -0.03
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    },
+    {
+      "id": "G2_unseen_target_and_wider_rail",
+      "gap": 0.058,
+      "goal_x": 0.105,
+      "slot_y": -0.02
+    }
+  ],
+  "evaluation_case_seed": 2703,
+  "evaluation_role": "development",
+  "loaded_policy_sha256": null,
+  "training_episodes": 0,
+  "test_episodes": 64,
+  "test_successes": 21,
+  "wall_s": 63.52353869751096,
+  "reset_state_writes": 132,
+  "state_writes_during_actions": 0,
+  "asset_sha256": "bbf26a8fcacd388a6387bb62a8b50472f7009b5360a8381276370d05dc5819b9",
+  "task_source_sha256": "25ef656a26b99d3d688dad0b91a3b584a21a584fd0c4c14cc17a078892837415",
+  "credit_source_sha256": "db73374f5a950bf3dddb3e2bc05150f18629006eb1ff6e5cea46415694d1a2f6",
+  "task_version": "v5_replay",
+  "switch_mode": "fixed",
+  "switch_dwell": 0,
+  "reference_lead_limit_m": null,
+  "stochastic_evaluation": false,
+  "blind_next": false,
+  "blind_rotation": false,
+  "observation_dim": 56,
+  "action_dim": 3,
+  "actor_log_std": [
+    -1.5,
+    -1.5,
+    -1.5
+  ],
+  "legacy_log_std": [
+    -0.03386266529560089,
+    -0.0027038506232202053
+  ],
+  "success_contract": {
+    "position_m": 0.008,
+    "linear_speed_m_s": 0.025,
+    "angular_speed_rad_s": null,
+    "yaw_error_rad": null,
+    "hold_control_steps": 8,
+    "upright_rad": null
+  },
+  "limitations": [
+    "state-based actor assumes observed object pose/velocity",
+    "fixed research paddle; no contact grasp",
+    "no field scene or measured tray CAD",
+    "prototype group split not a formal generalization claim"
+  ]
+}
