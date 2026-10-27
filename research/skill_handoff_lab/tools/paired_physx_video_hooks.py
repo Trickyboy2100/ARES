@@ -55,6 +55,9 @@ def _wide_training_pose(env):
     import torch
     target=env.scene.env_origins.mean(0)+env.center+torch.tensor([-.1,0.,-.15],device=env.device)
     eye=target+torch.tensor([5.2,-6.5,19.5],device=env.device)
+    if os.environ.get('ARES_COMPACT_TRAINING_CAMERA') == '1':
+        target=env.scene.env_origins.mean(0)+env.center+torch.tensor([-.16,.05,-.12],device=env.device)
+        eye=target+torch.tensor([0.,-2.3,7.4],device=env.device)
     env.camera.set_world_poses_from_view(eye[None],target[None])
 
 def _contact_sheet(env,index):

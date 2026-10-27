@@ -1,0 +1,70 @@
+{
+  "base_source_sha256": "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+  "recorded_source_sha256": "0b4003120eaf913b74b3de8a8d40bc93b21deee4234f5ea74a846ef1e4ad2143",
+  "base_run_config_sha256": "a3d48d20fa8a3d37613da4565ef457011bc9e1a1d1de38e7ef8c8cf338cc1a89",
+  "patches": [
+    {
+      "before": "prim_path='/World/Preview',height=720,width=960",
+      "after": "prim_path='/World/Preview',height=1080,width=1920"
+    },
+    {
+      "before": "        def _get_observations(self):",
+      "after": "        def _get_observations(self):\n            paired_video.initial(self)"
+    },
+    {
+      "before": "    class Adapter(VecEnv):",
+      "after": "    import paired_physx_video_hooks as paired_video\n    paired_video.configure(env,a.output,[],'/home/andyee/robot-research/ARES-Skilllab/envs/video_encoder_runtime/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2','COMPACT_LAYOUT_ONLINE_TRAINING_RERUN',matrix=False,training_matrix=True)\n    class Adapter(VecEnv):"
+    },
+    {
+      "before": "            self.terminal_obs=self._get_observations()['policy'].clone()",
+      "after": "            paired_video.post_step(self,done)\n            self.terminal_obs=self._get_observations()['policy'].clone()"
+    },
+    {
+      "before": "torch.manual_seed(a.eval_seed);o=vec.reset();iterations=0",
+      "after": "torch.manual_seed(a.eval_seed);o=vec.reset();iterations=0\n    paired_video.initial(env)"
+    },
+    {
+      "before": "print(json.dumps(result,default=json_default),flush=True);env.close()",
+      "after": "paired_video.finalize(env,a.output)\n    print(json.dumps(result,default=json_default),flush=True);env.close()"
+    },
+    {
+      "before": "env_spacing=2.5",
+      "after": "env_spacing=0.85"
+    },
+    {
+      "before": "        def _apply_action(self):",
+      "after": "        def _apply_action(self):\n            paired_video.training_physics_sample(self)"
+    },
+    {
+      "before": "    if a.controller in ['nominal','goal_feedback','damped','legacy','paired','random','fixed_push']:",
+      "after": "    paired_video.bind_optimizer(policy,env)\n    if a.controller in ['nominal','goal_feedback','damped','legacy','paired','random','fixed_push']:"
+    },
+    {
+      "before": "policy.learn(total_timesteps=a.steps,callback=Callback());policy.save",
+      "after": "policy.learn(total_timesteps=a.steps,callback=Callback());paired_video.unbind_optimizer(policy,env);policy.save"
+    }
+  ],
+  "legacy_capture_disabled": true,
+  "physical_policy_method_AST_identity": {
+    "_pre_physics_step": "c4a43b50d020e524515f5df1756eef22696aebbc097faeefc4485537a6bab1c5",
+    "_reset_idx": "a5b5996c88adca3c019b34cfc2b52e0bb646b31b2ea500c4f4241014a9995bdf",
+    "state": "3cfb800ed96dbb4e00312c55ea1f4f013313453dc8b6074eb9b34b6bba515df3",
+    "physical_snapshot": "9743f97b4fccf6d61fa33291ae443e83860fd61a3b8ac24f5830a396775aaea2",
+    "_get_rewards": "688e4d6119afe09f23bfd2dc1cfb1d358f246b07417fb956d9fd87accf629f69"
+  },
+  "termination_AST_identical_after_removing_record_only_call": true,
+  "observation_AST_identical_after_removing_record_only_initial_capture": true,
+  "helper_snapshots_sha256": {
+    "contact_credit_v2.py": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+    "contact_masked_policy_v8.py": "b02414eec00fdb7d80dfd4159e3a326a5228d55bcdffac883a6603fa1cae1d87",
+    "contact_composition_v8.py": "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+    "run_v8_jobs.py": "aa5f1efd96e229390f8888666665265c3a61e432ac399bdfdda4e7ce5303cffa",
+    "contact_task_frame_v7.py": "130c5ad9c2ab5a24c33b11541be9505eeeb31f85e4b72ace8c50d3baaff53995",
+    "audit_contact_actor_gradient_v8.py": "9ae7c3b674c8cfeb582cd5ddf3f79e1b5c20b28893fe44901f33ff48a0656201",
+    "run_contact_v8.py": "6c4c58f9ce160326c7eeeeff2932f58dcb3ebf943e27d3ef62b7ec28ee693823",
+    "recontact_waypoint_v8.py": "d95b98387af8f5d25a94d108db1f48a608dbc32f1cf8569d7c7690e36c1d9b42",
+    "recontact_minkowski_v8.py": "68aa3b44b92369065a73c3ff523138e4cdaa7add08658c0ab11a5c3207ce13d3",
+    "contact_geometry_v8.py": "4ada0d06fe47e0258f7976304781c4a6162a62ff8dfd468832608a1f4fee200d"
+  },
+  "scope": "appearance and recording only; exact policy/control/reward/reset/terminal retained"
+}

@@ -1,0 +1,43 @@
+{
+  "evidence": "ACTUAL_ON_POLICY_ROLLOUT_SAME_WEIGHT_GRADIENT_DIAGNOSTIC",
+  "sample_selection": "first samples in time-major env-minor rollout order; no success selection",
+  "samples": 512,
+  "online_interactions_at_audit": 4096,
+  "configured_policy_class": "ExecutionActivePolicy",
+  "active_counts_per_action_dimension": [
+    512.0,
+    512.0,
+    0.0,
+    16.0,
+    0.0
+  ],
+  "all_inactive_samples": 0,
+  "stored_old_log_probability_max_error": 0.0,
+  "full_latent_gradient_l2": 1.1265615224838257,
+  "active_gradient_l2": 0.9981496334075928,
+  "gradient_difference_l2": 0.4051826596260071,
+  "gradient_cosine": 0.9343321919441223,
+  "gradient_parameter_names": [
+    "log_std",
+    "mlp_extractor.policy_net.0.weight",
+    "mlp_extractor.policy_net.0.bias",
+    "mlp_extractor.policy_net.2.weight",
+    "mlp_extractor.policy_net.2.bias",
+    "action_net.weight",
+    "action_net.bias"
+  ],
+  "torch_cpu_rng_unchanged": true,
+  "additional_environment_interactions": 0,
+  "optimizer_steps_performed_by_audit": 0,
+  "limitations": [
+    "Single pre-update score-gradient diagnostic, not a performance comparison",
+    "PPO clipping away from ratio=1 may alter estimator behavior",
+    "Active dimensions retain the usual latent Gaussian treatment of action clipping",
+    "The sample advantage is normalized only for this diagnostic; training remains unchanged"
+  ],
+  "sha256": {
+    "first_real_rollout_gradient_samples.npz": "97970458f781978c9eaf6d193c4b076b7981f25c15c518b0b6f49c83b0f48650",
+    "policy_before_first_update.zip": "111b98c0c8cd753642a32d18146eb968cfd4927b33afe77315ec4b8426b6458e",
+    "first_rollout_gradient_source.py": "9ae7c3b674c8cfeb582cd5ddf3f79e1b5c20b28893fe44901f33ff48a0656201"
+  }
+}

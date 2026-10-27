@@ -1,8 +1,10 @@
-"""Appearance-only source injection into an exact preserved task; cold process.
+"""Recording/layout injection into an exact preserved task; cold process.
 
 Requires a completed source run config and optional exact model/config override.
 Only camera size, pre-reset recording hooks and disabled legacy GIF capture are
-changed. No simulator stepping, action, reward, reset, or success code is changed.
+changed by default. Optional array spacing changes the global layout while
+retaining collision filtering. Action/reward/reset/success methods are checked
+for AST identity. A fresh rerun does not promise identical physics trajectories.
 """
 import argparse,ast,hashlib,importlib.util,json,os,sys,traceback
 from pathlib import Path
@@ -13,17 +15,23 @@ p.add_argument('--output',type=Path,required=True);p.add_argument('--gpu',type=i
 p.add_argument('--ffmpeg',type=Path,required=True);p.add_argument('--label',required=True);p.add_argument('--helper-dir',type=Path)
 p.add_argument('--controller');p.add_argument('--load-policy',type=Path);p.add_argument('--scene',type=Path);p.add_argument('--engine-kind',default='v6')
 p.add_argument('--matrix-overview',action='store_true')
+p.add_argument('--env-spacing',type=float,default=2.5,help='Visual rerun array spacing only; collision filtering retained')
+p.add_argument('--compact-camera',action='store_true')
 p.add_argument('--training-matrix',action='store_true');p.add_argument('--online-training-steps',type=int,default=0);p.add_argument('--eval-episodes',type=int)
 a=p.parse_args();out=a.output.resolve();out.mkdir(parents=True,exist_ok=False)
 if a.training_matrix:assert a.online_training_steps==12288 and not a.cases,'Separate approved training rerun must be exactly12288 interactions, no near-case sampling'
 else:assert a.online_training_steps==0 and a.cases
 base=a.source.read_text();source=base
+assert .85 <= a.env_spacing <= 2.5
+if a.compact_camera:os.environ['ARES_COMPACT_TRAINING_CAMERA']='1'
 changes=[("prim_path='/World/Preview',height=720,width=960","prim_path='/World/Preview',height=1080,width=1920"),
          ('        def _get_observations(self):','        def _get_observations(self):\n            paired_video.initial(self)'),
          ('    class Adapter(VecEnv):',f"    import paired_physx_video_hooks as paired_video\n    paired_video.configure(env,a.output,{a.cases!r},{str(a.ffmpeg)!r},{a.label!r},matrix={a.matrix_overview!r},training_matrix={a.training_matrix!r})\n    class Adapter(VecEnv):"),
          ("            self.terminal_obs=self._get_observations()['policy'].clone()","            paired_video.post_step(self,done)\n            self.terminal_obs=self._get_observations()['policy'].clone()"),
          ('torch.manual_seed(a.eval_seed);o=vec.reset();iterations=0','torch.manual_seed(a.eval_seed);o=vec.reset();iterations=0\n    paired_video.initial(env)'),
          ('print(json.dumps(result,default=json_default),flush=True);env.close()','paired_video.finalize(env,a.output)\n    print(json.dumps(result,default=json_default),flush=True);env.close()')]
+if a.env_spacing != 2.5:
+    changes.append(('env_spacing=2.5',f'env_spacing={a.env_spacing}'))
 if a.training_matrix:
     changes.extend([('        def _apply_action(self):','        def _apply_action(self):\n            paired_video.training_physics_sample(self)'),
         ("    if a.controller in ['nominal','goal_feedback','damped','legacy','paired','random','fixed_push']:","    paired_video.bind_optimizer(policy,env)\n    if a.controller in ['nominal','goal_feedback','damped','legacy','paired','random','fixed_push']:"),
@@ -92,7 +100,7 @@ args=argparse.Namespace(**cfg)
     'legacy_capture_disabled':True,'physical_policy_method_AST_identity':proof,'termination_AST_identical_after_removing_record_only_call':True,
     'observation_AST_identical_after_removing_record_only_initial_capture':True,
     'helper_snapshots_sha256':{p.name:sha(p) for p in out.glob('*.py') if p.name not in ['recorded_task.py','base_task_source.py']},
-    'scope':'appearance and recording only; exact policy/control/reward/reset/terminal retained'},indent=2))
+    'scope':'recording and optional global array layout; policy/control/reward/reset/terminal retained'},indent=2))
 from isaaclab.app import AppLauncher
 launcher=AppLauncher(headless=True,device=f'cuda:{a.gpu}',enable_cameras=True,kit_args=f'--/renderer/activeGpu={a.gpu} --/renderer/multiGpu/enabled=false')
 try:

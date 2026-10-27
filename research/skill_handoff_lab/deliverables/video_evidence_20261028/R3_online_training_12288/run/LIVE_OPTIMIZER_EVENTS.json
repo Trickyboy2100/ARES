@@ -1,0 +1,35 @@
+{
+  "events": [
+    {
+      "optimizer_update_index": 1,
+      "physics_tick": 512,
+      "online_interactions": 4096,
+      "parameter_sha256_before": "501aa5f825965d23e482283aea2b088cd443712d65e7b538539232a52a8a85a1",
+      "parameter_sha256_after": "077124d017b33a62c739927bc93aaa44704c428974421a9bb8ef27d654608daa",
+      "parameters_changed": true,
+      "ppo_epoch_counter_after": 6,
+      "original_train_called_exactly_once": true
+    },
+    {
+      "optimizer_update_index": 2,
+      "physics_tick": 1024,
+      "online_interactions": 8192,
+      "parameter_sha256_before": "077124d017b33a62c739927bc93aaa44704c428974421a9bb8ef27d654608daa",
+      "parameter_sha256_after": "5e1c34e9a31b96ed4e0f6972da9c5af7833b4000e6c63955f2e1acce7ced1c39",
+      "parameters_changed": true,
+      "ppo_epoch_counter_after": 12,
+      "original_train_called_exactly_once": true
+    },
+    {
+      "optimizer_update_index": 3,
+      "physics_tick": 1536,
+      "online_interactions": 12288,
+      "parameter_sha256_before": "5e1c34e9a31b96ed4e0f6972da9c5af7833b4000e6c63955f2e1acce7ced1c39",
+      "parameter_sha256_after": "22b9c869b0e17f920880f5c6f22f53ff6a4519a09cdcb7b020e9f03017c323fb",
+      "parameters_changed": true,
+      "ppo_epoch_counter_after": 18,
+      "original_train_called_exactly_once": true
+    }
+  ],
+  "initial_parameter_sha256": "501aa5f825965d23e482283aea2b088cd443712d65e7b538539232a52a8a85a1"
+}

@@ -1,0 +1,9 @@
+* -text
+*.npz binary
+*.zip binary
+*.gz binary
+*.mp4 binary
+*.png binary
+# Preserve the exact bytes of archived CSV/URDF instead of normalizing them.
+*.csv whitespace=cr-at-eol
+*.urdf -whitespace

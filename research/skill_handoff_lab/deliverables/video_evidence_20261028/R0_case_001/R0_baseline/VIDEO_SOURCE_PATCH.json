@@ -1,0 +1,29 @@
+{
+  "base_source_sha256": "be51360935524d73de3ae830d17c29d368bc4e38e3e93567b0eaaba114775e20",
+  "recorded_source_sha256": "dbfa57fd8d53f3f9c53005de647181df4b31029ebc800ac5efd0f1c79f4eef32",
+  "base_run_config_sha256": "4b38f9838176c991f8c5abae0e5ea8591527740f43ca02a00f3ebfdbfe09ecd8",
+  "patches": [
+    {
+      "before": "prim_path='/World/Preview',height=720,width=960",
+      "after": "prim_path='/World/Preview',height=1080,width=1920"
+    },
+    {
+      "before": "    class Adapter(VecEnv):",
+      "after": "    import paired_physx_video_hooks as paired_video\n    paired_video.configure(env,a.output,[0, 1, 3, 9],'/home/andyee/robot-research/ARES-Skilllab/envs/video_encoder_runtime/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2','Historical_tuned_damped_feedback')\n    class Adapter(VecEnv):"
+    },
+    {
+      "before": "            self.terminal_obs=self._get_observations()['policy'].clone()",
+      "after": "            paired_video.post_step(self,done)\n            self.terminal_obs=self._get_observations()['policy'].clone()"
+    },
+    {
+      "before": "torch.manual_seed(a.eval_seed);o=vec.reset();iterations=0",
+      "after": "torch.manual_seed(a.eval_seed);o=vec.reset();iterations=0\n    paired_video.initial(env)"
+    },
+    {
+      "before": "print(json.dumps(result,default=json_default),flush=True);env.close()",
+      "after": "paired_video.finalize(env,a.output)\n    print(json.dumps(result,default=json_default),flush=True);env.close()"
+    }
+  ],
+  "legacy_capture_disabled": true,
+  "scope": "appearance and recording only; exact policy/control/reward/reset/terminal retained"
+}

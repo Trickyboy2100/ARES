@@ -1,0 +1,32 @@
+{
+  "scope": "SYNTHETIC ACTUAL CLOSED-LOOP PHYSX; NO STATE PLAYBACK",
+  "policy_label": "COMPACT_LAYOUT_ONLINE_TRAINING_RERUN",
+  "cases": {},
+  "camera_size": [
+    1920,
+    1080
+  ],
+  "camera_pose": "Task-centered fixed oblique, per-env origin only",
+  "render_does_not_step_physics": true,
+  "camera_changes_are_appearance_only": true,
+  "hook_sha256": "ba664f276322ba837e517483233cc8260e6c09d1aa2d2c2a49481244889fb9a0",
+  "state_writes_during_actions": 0,
+  "physics_trace_sha256": "85c84ceca3c180a6742fcd7b3ecb93ed8a9dd77aeb76aa923d5946165f21a2db",
+  "action_log_sha256": "197ff6de63e41a6cc8dbae69c59f73dcb6b8d942f8553309bb71aee00ff371a0",
+  "task_source_sha256": "0b4003120eaf913b74b3de8a8d40bc93b21deee4234f5ea74a846ef1e4ad2143",
+  "raw_source_camera": "Isaac Lab 2.3 Camera RGB actual post-step before reset",
+  "training_120hz_sidecar_sha256": "9e671c0529e5fa04daf6dfa91886cd025134d294fb9eb1bdaa471d4919c89268",
+  "matrix_overview": {
+    "enabled": true,
+    "is_training": true,
+    "frames": 82,
+    "mp4": "video_raw/matrix_live_training.mp4",
+    "mp4_sha256": "7b197c43f083d47c9f05e49f8cb7729370d041e260714ad1c273bc805ff41025",
+    "scope": "One actual vectorized application; nominal 6Hz plus optimizer events, exact timestamps authoritative; no extra physics stepping"
+  },
+  "limitations": [
+    "No real robot/field/real tray/grasp claim",
+    "No equality claim for hidden PhysX solver/cache state",
+    "Contact is simulated net-force proxy, not calibrated force"
+  ]
+}

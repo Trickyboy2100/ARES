@@ -1,0 +1,22 @@
+{
+  "observed_on": "2026-10-28",
+  "runtime": "190 personal research environment; no host changes",
+  "python": "3.11.17",
+  "isaac_sim": "5.1.0.0",
+  "isaac_lab_source_directory": "IsaacLab-v2.3.0/source/isaaclab",
+  "isaac_lab_python_distribution_version": "0.47.2",
+  "note": "Isaac Lab source release and Python distribution version are different version strings.",
+  "packages": {
+    "torch": "2.7.0",
+    "numpy": "1.26.0",
+    "scipy": "1.15.3",
+    "gymnasium": "1.2.0",
+    "stable_baselines3": "2.7.0",
+    "pillow": "11.3.0",
+    "matplotlib": "3.10.3"
+  },
+  "media_tools": "FFmpeg with libx264; DejaVu Sans fonts at /usr/share/fonts/truetype/dejavu",
+  "audit_additional_dependency": "python-fcl; copied read-only ARES-R FK helper; included URDF",
+  "physical_clocks": {"physics_hz": 120, "control_hz": 60},
+  "reproducibility": "Original bytes/hashes are archived. Fresh PhysX and CUDA execution is not promised bitwise identical. FFmpeg builds may produce different encoded hashes."
+}

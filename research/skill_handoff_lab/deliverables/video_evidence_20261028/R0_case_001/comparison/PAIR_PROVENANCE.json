@@ -1,0 +1,116 @@
+{
+  "iteration": "R0",
+  "case_id": 1,
+  "scope": "ACTUAL_PHYSX_TWO_POLICY_INDEPENDENT_COLD_START",
+  "left_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R0_baseline",
+  "right_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R0_residual41",
+  "left_label": "Feedback (historical)",
+  "right_label": "Residual PPO (historical seed41)",
+  "left_independent_pass": false,
+  "right_independent_pass": true,
+  "left_raw_success": false,
+  "right_raw_success": true,
+  "left_terminal_time_s": 11.983333333333333,
+  "right_terminal_time_s": 8.766666666666666,
+  "initial_component_maximum_differences": {
+    "q": 0.0,
+    "qd": 0.0,
+    "object_position": 0.0,
+    "object_quaternion_wxyz": 0.0,
+    "object_linear_velocity": 0.0,
+    "object_angular_velocity": 0.0,
+    "paddle_position": 0.0
+  },
+  "hidden_solver_state_equal_claimed": false,
+  "source_capture_provenance_sha256": [
+    "d977a964bb25a9936ba84aa48a435586cba5422ca16c3f98e372a8acf3c4928d",
+    "560020b112e74b44006b3e4aee873194ebcb41346685f5745afb10a50dad1922"
+  ],
+  "physics_trace_sha256": [
+    "35e54b42a6f2ed45a84a3f2ff295c44e6bba3cfdbc3a082d29ff513903ecb7cc",
+    "c4377c1b47ffc07c9b1936eaead9e8c0881ad3cb25b456f61db2ea1aa0151da9"
+  ],
+  "action_trace_sha256": [
+    "3f5141439a627aac95a0a40a09d27bd205f3a1f4b7d0f15e24150d69097c0844",
+    "882d21aba4f9633673a336a3d866d9fa1ec4928c3ebf25bc653b80890c61e251"
+  ],
+  "base_source_sha256": [
+    "be51360935524d73de3ae830d17c29d368bc4e38e3e93567b0eaaba114775e20",
+    "be51360935524d73de3ae830d17c29d368bc4e38e3e93567b0eaaba114775e20"
+  ],
+  "asset_sha256": "30d2c7250f2e09fdf7da889a536165e5a89bfe5e6ecd4f63bbb45f9b6495fde0",
+  "checkpoint_sha256": [
+    null,
+    "b0597000fa35ad72f0f0dfecb518d2191388a5bcc7cd7d21bdfb5d4f762a5198"
+  ],
+  "independent_audit_sha256": [
+    "69b2787fba44fc19aabeb2c631d12636f5d2f0cfc681a551c0d91b105108bc2c",
+    "951d8ce279174c216075e0fcfa3ad037e89c0303504f8598e575295f9491b7ff"
+  ],
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "intro_hold_s": 1.5,
+  "output_duration_s": 15.483333333333333,
+  "selection_protocol": "Predeclared category and first matching ID; all-case paired table retained; no best checkpoint selection",
+  "state_writes_during_actions": 0,
+  "render_extra_physics_steps": 0,
+  "script_sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+  "files": {
+    "preview.gif": {
+      "sha256": "ff6f6c8e2928e2adf23fcca9e5d7f7f3648e8ef7326fe3063df259e8fc4f1388",
+      "bytes": 993953
+    },
+    "case_001_trajectories.pdf": {
+      "sha256": "d0301e53880d5b3dd54dc5e610f03d72396877f767224143c7f15c561a211947",
+      "bytes": 70294
+    },
+    "case_001_trajectories.svg": {
+      "sha256": "25f4deacb91ddffd21bec857297818909b70d19525c1c646702066011bbb12f7",
+      "bytes": 267285
+    },
+    "filmstrip.png": {
+      "sha256": "e044c25f7a934ddcb2f73aecadf5f93db887739b5a0aa8ecaff48e04bebdb23e",
+      "bytes": 528314
+    },
+    "filmstrip.pdf": {
+      "sha256": "5fe77a671fadb817c0232013e55dfdf7b31c4143d534a2fc78e3659a5c7825ba",
+      "bytes": 616028
+    },
+    "video_physics_timeline.csv": {
+      "sha256": "9e9e50929bc261ecef836cd171762d5a1aae96157e2724c95a4f1ac1f0deca33",
+      "bytes": 18664
+    },
+    "paired_actual_physx.mp4": {
+      "sha256": "78f40ae24cde3e19cb9d595b05a67f4df097d5d3b3332267fe4a7ba4c454d553",
+      "bytes": 1779975
+    },
+    "composition_source.py": {
+      "sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+      "bytes": 21972
+    },
+    "case_001_trajectories.png": {
+      "sha256": "815ae784a4f68668d8cb71f71ca94a721d09bc54ca360238797d360076be6416",
+      "bytes": 309934
+    },
+    "case_001_states.csv": {
+      "sha256": "bbdf762679c002fc232d655bf108acf0ea55c18944e3197a8c20a4dfa0b5e43e",
+      "bytes": 168451
+    }
+  },
+  "filmstrip_layout_refresh": {
+    "case_id": 1,
+    "old_hashes": {
+      "png": "2893a162c37923c720977f62d73d32a6b1ac3e8373de454dabcbbe9f544f5554",
+      "pdf": "71a387996ce4da8023d877afa6534debcc6826831e18665ac3269afd5fd1d4b0"
+    },
+    "new_hashes": {
+      "png": "e044c25f7a934ddcb2f73aecadf5f93db887739b5a0aa8ecaff48e04bebdb23e",
+      "pdf": "5fe77a671fadb817c0232013e55dfdf7b31c4143d534a2fc78e3659a5c7825ba"
+    },
+    "scope": "caption/layout only; exact source frames; MP4/GIF/trace unchanged",
+    "script_sha256": "73ae69c211aab103d07d4b3d125bc6f2f4fb92b11a3f40d4071af5410d0ddca2"
+  }
+}
