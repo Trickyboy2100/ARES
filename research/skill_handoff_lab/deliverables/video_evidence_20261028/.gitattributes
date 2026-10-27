@@ -7,3 +7,4 @@
 # Preserve the exact bytes of archived CSV/URDF instead of normalizing them.
 *.csv whitespace=cr-at-eol
 *.urdf -whitespace
+*.svg -diff -whitespace
