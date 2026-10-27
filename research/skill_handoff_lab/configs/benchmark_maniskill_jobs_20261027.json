@@ -1,0 +1,7 @@
+[
+  {"name":"ms_pick1_planner", "args":["--task","PickCube-v1","--num-envs","1","--episodes","4","--controller","official_planner","--upstream-sha","62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3"]},
+  {"name":"ms_stack4_random", "args":["--task","StackCube-v1","--num-envs","4","--episodes","1","--controller","random","--upstream-sha","62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3"]},
+  {"name":"ms_stack1_planner", "args":["--task","StackCube-v1","--num-envs","1","--episodes","4","--controller","official_planner","--upstream-sha","62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3"]},
+  {"name":"ms_peg4_random", "args":["--task","PegInsertionSide-v1","--num-envs","4","--episodes","1","--controller","random","--upstream-sha","62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3"]},
+  {"name":"ms_peg1_planner", "args":["--task","PegInsertionSide-v1","--num-envs","1","--episodes","4","--controller","official_planner","--upstream-sha","62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3"]}
+]

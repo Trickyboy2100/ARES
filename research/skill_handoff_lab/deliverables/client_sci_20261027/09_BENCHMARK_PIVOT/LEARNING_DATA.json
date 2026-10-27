@@ -1,0 +1,844 @@
+[
+  {
+    "run": "ms_pick_ppo_seed31_256k",
+    "points": [
+      {
+        "step": 0,
+        "metric": "reward",
+        "value": 0.05940312147140503
+      },
+      {
+        "step": 0,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 32000,
+        "metric": "reward",
+        "value": 0.14295631647109985
+      },
+      {
+        "step": 32000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 64000,
+        "metric": "reward",
+        "value": 0.18419452011585236
+      },
+      {
+        "step": 64000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 96000,
+        "metric": "reward",
+        "value": 0.27894145250320435
+      },
+      {
+        "step": 96000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 128000,
+        "metric": "reward",
+        "value": 0.15637296438217163
+      },
+      {
+        "step": 128000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 160000,
+        "metric": "reward",
+        "value": 0.23369070887565613
+      },
+      {
+        "step": 160000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 192000,
+        "metric": "reward",
+        "value": 0.16794626414775848
+      },
+      {
+        "step": 192000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 224000,
+        "metric": "reward",
+        "value": 0.2592117190361023
+      },
+      {
+        "step": 224000,
+        "metric": "success_at_end",
+        "value": 0.0
+      }
+    ],
+    "checkpoint_complete": true
+  },
+  {
+    "run": "ms_stack_cartesian_seed31_256k",
+    "points": [
+      {
+        "step": 0,
+        "metric": "reward",
+        "value": 0.06052170321345329
+      },
+      {
+        "step": 0,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 32000,
+        "metric": "reward",
+        "value": 0.3341437578201294
+      },
+      {
+        "step": 32000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 64000,
+        "metric": "reward",
+        "value": 0.3324396014213562
+      },
+      {
+        "step": 64000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 96000,
+        "metric": "reward",
+        "value": 0.2814937233924866
+      },
+      {
+        "step": 96000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 128000,
+        "metric": "reward",
+        "value": 0.2753707766532898
+      },
+      {
+        "step": 128000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 160000,
+        "metric": "reward",
+        "value": 0.33047476410865784
+      },
+      {
+        "step": 160000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 192000,
+        "metric": "reward",
+        "value": 0.36823487281799316
+      },
+      {
+        "step": 192000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 224000,
+        "metric": "reward",
+        "value": 0.33346521854400635
+      },
+      {
+        "step": 224000,
+        "metric": "success_at_end",
+        "value": 0.0
+      }
+    ],
+    "checkpoint_complete": true
+  },
+  {
+    "run": "ms_stack_ppo_seed31_1024k",
+    "points": [
+      {
+        "step": 0,
+        "metric": "reward",
+        "value": 0.0614657960832119
+      },
+      {
+        "step": 0,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 32000,
+        "metric": "reward",
+        "value": 0.17811065912246704
+      },
+      {
+        "step": 32000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 64000,
+        "metric": "reward",
+        "value": 0.17658695578575134
+      },
+      {
+        "step": 64000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 96000,
+        "metric": "reward",
+        "value": 0.21175916492938995
+      },
+      {
+        "step": 96000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 128000,
+        "metric": "reward",
+        "value": 0.22840967774391174
+      },
+      {
+        "step": 128000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 160000,
+        "metric": "reward",
+        "value": 0.23182269930839539
+      },
+      {
+        "step": 160000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 192000,
+        "metric": "reward",
+        "value": 0.2084631323814392
+      },
+      {
+        "step": 192000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 224000,
+        "metric": "reward",
+        "value": 0.18956249952316284
+      },
+      {
+        "step": 224000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 256000,
+        "metric": "reward",
+        "value": 0.18812695145606995
+      },
+      {
+        "step": 256000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 288000,
+        "metric": "reward",
+        "value": 0.19713519513607025
+      },
+      {
+        "step": 288000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 320000,
+        "metric": "reward",
+        "value": 0.2067597210407257
+      },
+      {
+        "step": 320000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 352000,
+        "metric": "reward",
+        "value": 0.3074844777584076
+      },
+      {
+        "step": 352000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 384000,
+        "metric": "reward",
+        "value": 0.38709986209869385
+      },
+      {
+        "step": 384000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 416000,
+        "metric": "reward",
+        "value": 0.47946804761886597
+      },
+      {
+        "step": 416000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 448000,
+        "metric": "reward",
+        "value": 0.3794320821762085
+      },
+      {
+        "step": 448000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 480000,
+        "metric": "reward",
+        "value": 0.4541480839252472
+      },
+      {
+        "step": 480000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 512000,
+        "metric": "reward",
+        "value": 0.39191514253616333
+      },
+      {
+        "step": 512000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 544000,
+        "metric": "reward",
+        "value": 0.4608478546142578
+      },
+      {
+        "step": 544000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 576000,
+        "metric": "reward",
+        "value": 0.4016949236392975
+      },
+      {
+        "step": 576000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 608000,
+        "metric": "reward",
+        "value": 0.436686247587204
+      },
+      {
+        "step": 608000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 640000,
+        "metric": "reward",
+        "value": 0.39921650290489197
+      },
+      {
+        "step": 640000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 672000,
+        "metric": "reward",
+        "value": 0.3969268202781677
+      },
+      {
+        "step": 672000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 704000,
+        "metric": "reward",
+        "value": 0.4455929398536682
+      },
+      {
+        "step": 704000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 736000,
+        "metric": "reward",
+        "value": 0.4429359436035156
+      },
+      {
+        "step": 736000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 768000,
+        "metric": "reward",
+        "value": 0.4739944040775299
+      },
+      {
+        "step": 768000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 800000,
+        "metric": "reward",
+        "value": 0.4831819236278534
+      },
+      {
+        "step": 800000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 832000,
+        "metric": "reward",
+        "value": 0.37466171383857727
+      },
+      {
+        "step": 832000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 864000,
+        "metric": "reward",
+        "value": 0.44826358556747437
+      },
+      {
+        "step": 864000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 896000,
+        "metric": "reward",
+        "value": 0.47216343879699707
+      },
+      {
+        "step": 896000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 928000,
+        "metric": "reward",
+        "value": 0.4789716899394989
+      },
+      {
+        "step": 928000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 960000,
+        "metric": "reward",
+        "value": 0.3907240629196167
+      },
+      {
+        "step": 960000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 992000,
+        "metric": "reward",
+        "value": 0.4823087453842163
+      },
+      {
+        "step": 992000,
+        "metric": "success_at_end",
+        "value": 0.0
+      }
+    ],
+    "checkpoint_complete": true
+  },
+  {
+    "run": "ms_stack_ppo_seed31_256k",
+    "points": [
+      {
+        "step": 0,
+        "metric": "reward",
+        "value": 0.0614657960832119
+      },
+      {
+        "step": 0,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 32000,
+        "metric": "reward",
+        "value": 0.17811065912246704
+      },
+      {
+        "step": 32000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 64000,
+        "metric": "reward",
+        "value": 0.17658695578575134
+      },
+      {
+        "step": 64000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 96000,
+        "metric": "reward",
+        "value": 0.21175916492938995
+      },
+      {
+        "step": 96000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 128000,
+        "metric": "reward",
+        "value": 0.22840967774391174
+      },
+      {
+        "step": 128000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 160000,
+        "metric": "reward",
+        "value": 0.23182269930839539
+      },
+      {
+        "step": 160000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 192000,
+        "metric": "reward",
+        "value": 0.2084631323814392
+      },
+      {
+        "step": 192000,
+        "metric": "success_at_end",
+        "value": 0.0
+      },
+      {
+        "step": 224000,
+        "metric": "reward",
+        "value": 0.18956249952316284
+      },
+      {
+        "step": 224000,
+        "metric": "success_at_end",
+        "value": 0.0
+      }
+    ],
+    "checkpoint_complete": true
+  },
+  {
+    "run": "ms_stack_residual_seed31_256k",
+    "points": [
+      {
+        "step": 0,
+        "metric": "reward",
+        "value": 0.47255051136016846
+      },
+      {
+        "step": 0,
+        "metric": "success_at_end",
+        "value": 0.75
+      },
+      {
+        "step": 32000,
+        "metric": "reward",
+        "value": 0.5346016883850098
+      },
+      {
+        "step": 32000,
+        "metric": "success_at_end",
+        "value": 0.75
+      },
+      {
+        "step": 64000,
+        "metric": "reward",
+        "value": 0.5496854782104492
+      },
+      {
+        "step": 64000,
+        "metric": "success_at_end",
+        "value": 1.0
+      },
+      {
+        "step": 96000,
+        "metric": "reward",
+        "value": 0.5683292150497437
+      },
+      {
+        "step": 96000,
+        "metric": "success_at_end",
+        "value": 0.75
+      },
+      {
+        "step": 128000,
+        "metric": "reward",
+        "value": 0.5986446142196655
+      },
+      {
+        "step": 128000,
+        "metric": "success_at_end",
+        "value": 1.0
+      },
+      {
+        "step": 160000,
+        "metric": "reward",
+        "value": 0.600479245185852
+      },
+      {
+        "step": 160000,
+        "metric": "success_at_end",
+        "value": 1.0
+      },
+      {
+        "step": 192000,
+        "metric": "reward",
+        "value": 0.6259418725967407
+      },
+      {
+        "step": 192000,
+        "metric": "success_at_end",
+        "value": 1.0
+      },
+      {
+        "step": 224000,
+        "metric": "reward",
+        "value": 0.5718939304351807
+      },
+      {
+        "step": 224000,
+        "metric": "success_at_end",
+        "value": 1.0
+      }
+    ],
+    "checkpoint_complete": true
+  },
+  {
+    "run": "ms_stack_residual_seed37_256k",
+    "points": [
+      {
+        "step": 0,
+        "metric": "reward",
+        "value": 0.5357567071914673
+      },
+      {
+        "step": 0,
+        "metric": "success_at_end",
+        "value": 0.75
+      },
+      {
+        "step": 32000,
+        "metric": "reward",
+        "value": 0.5887243747711182
+      },
+      {
+        "step": 32000,
+        "metric": "success_at_end",
+        "value": 1.0
+      },
+      {
+        "step": 64000,
+        "metric": "reward",
+        "value": 0.5985362529754639
+      },
+      {
+        "step": 64000,
+        "metric": "success_at_end",
+        "value": 1.0
+      },
+      {
+        "step": 96000,
+        "metric": "reward",
+        "value": 0.5568265914916992
+      },
+      {
+        "step": 96000,
+        "metric": "success_at_end",
+        "value": 1.0
+      },
+      {
+        "step": 128000,
+        "metric": "reward",
+        "value": 0.5702536702156067
+      },
+      {
+        "step": 128000,
+        "metric": "success_at_end",
+        "value": 1.0
+      },
+      {
+        "step": 160000,
+        "metric": "reward",
+        "value": 0.5913013219833374
+      },
+      {
+        "step": 160000,
+        "metric": "success_at_end",
+        "value": 1.0
+      },
+      {
+        "step": 192000,
+        "metric": "reward",
+        "value": 0.6350098848342896
+      },
+      {
+        "step": 192000,
+        "metric": "success_at_end",
+        "value": 1.0
+      },
+      {
+        "step": 224000,
+        "metric": "reward",
+        "value": 0.6352354288101196
+      },
+      {
+        "step": 224000,
+        "metric": "success_at_end",
+        "value": 1.0
+      }
+    ],
+    "checkpoint_complete": true
+  },
+  {
+    "run": "ms_stack_residual_seed43_256k",
+    "points": [
+      {
+        "step": 0,
+        "metric": "reward",
+        "value": 0.4973682761192322
+      },
+      {
+        "step": 0,
+        "metric": "success_at_end",
+        "value": 0.75
+      },
+      {
+        "step": 32000,
+        "metric": "reward",
+        "value": 0.5167825818061829
+      },
+      {
+        "step": 32000,
+        "metric": "success_at_end",
+        "value": 0.75
+      },
+      {
+        "step": 64000,
+        "metric": "reward",
+        "value": 0.5506472587585449
+      },
+      {
+        "step": 64000,
+        "metric": "success_at_end",
+        "value": 1.0
+      },
+      {
+        "step": 96000,
+        "metric": "reward",
+        "value": 0.554562509059906
+      },
+      {
+        "step": 96000,
+        "metric": "success_at_end",
+        "value": 0.75
+      },
+      {
+        "step": 128000,
+        "metric": "reward",
+        "value": 0.5843967795372009
+      },
+      {
+        "step": 128000,
+        "metric": "success_at_end",
+        "value": 0.75
+      },
+      {
+        "step": 160000,
+        "metric": "reward",
+        "value": 0.5562480688095093
+      },
+      {
+        "step": 160000,
+        "metric": "success_at_end",
+        "value": 1.0
+      },
+      {
+        "step": 192000,
+        "metric": "reward",
+        "value": 0.5419114232063293
+      },
+      {
+        "step": 192000,
+        "metric": "success_at_end",
+        "value": 0.75
+      },
+      {
+        "step": 224000,
+        "metric": "reward",
+        "value": 0.6327818632125854
+      },
+      {
+        "step": 224000,
+        "metric": "success_at_end",
+        "value": 1.0
+      }
+    ],
+    "checkpoint_complete": true
+  }
+]

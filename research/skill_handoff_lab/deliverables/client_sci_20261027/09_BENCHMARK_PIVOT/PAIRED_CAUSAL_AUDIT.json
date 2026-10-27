@@ -1,0 +1,38 @@
+[
+  {
+    "run": "ms_stack_residual_256k_eval64",
+    "fixed_feedback_failures": 5,
+    "introduced_failures": 2,
+    "both_success": 56,
+    "both_failure": 1,
+    "exact_initial_state_match_all_cases": true,
+    "mean_normalized_xyz_action_change": 0.1481063974710369
+  },
+  {
+    "run": "ms_stack_residual_zero_eval64",
+    "fixed_feedback_failures": 0,
+    "introduced_failures": 0,
+    "both_success": 58,
+    "both_failure": 6,
+    "exact_initial_state_match_all_cases": true,
+    "mean_normalized_xyz_action_change": 0.0
+  },
+  {
+    "run": "ms_stack_residual_seed37_eval64",
+    "fixed_feedback_failures": 5,
+    "introduced_failures": 1,
+    "both_success": 57,
+    "both_failure": 1,
+    "exact_initial_state_match_all_cases": true,
+    "mean_normalized_xyz_action_change": 0.1554885671349197
+  },
+  {
+    "run": "ms_stack_residual_seed43_eval64",
+    "fixed_feedback_failures": 5,
+    "introduced_failures": 3,
+    "both_success": 55,
+    "both_failure": 1,
+    "exact_initial_state_match_all_cases": true,
+    "mean_normalized_xyz_action_change": 0.14448335755004532
+  }
+]

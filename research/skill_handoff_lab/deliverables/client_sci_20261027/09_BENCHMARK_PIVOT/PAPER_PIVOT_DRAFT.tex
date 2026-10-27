@@ -1,0 +1,140 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=20mm]{geometry}
+\usepackage{amsmath,booktabs,hyperref}
+\title{Execution-Aware Skill Adaptation for Manipulation:\\Benchmark Pivot and Preliminary Baselines}
+\author{ARES Research Working Draft}
+\date{27 October 2026 -- Not submission-ready}
+\begin{document}
+\maketitle
+\begin{abstract}
+We investigate robot manipulation through reusable feedback skills and learned
+corrections. This report establishes an executable public-benchmark track and a
+separate JAKA application track, rather than claiming a new algorithm before its
+mechanism has been validated. Native ManiSkill stacking experiments demonstrate
+that a structured feedback controller is already strong: it completes 58 of 64
+development-validation cases. An ordinary residual PPO pilot completes 61 cases;
+forcing the residual to zero recovers the exact feedback outcomes. The learned
+controller fixes five failures and introduces two. This is preliminary evidence
+of physical action influence, not evidence of statistical superiority or novelty.
+\end{abstract}
+
+\section{Problem and scope}
+The intended problem is how reusable manipulation skills should adjust legal
+parameters or recover after observing actual execution outcomes. A local skill
+may grasp, transport, place or release an object, but reaching an intermediate
+target does not ensure stable completion. We retain ordinary motion planning and
+feedback control as strong components. Reinforcement learning is evaluated by
+physical task success and execution cost, not merely prediction loss.
+
+The public track preserves the default robot, dynamics, reward and success
+predicate of ManiSkill tasks. It runs in SAPIEN and is not labelled an Isaac Lab
+experiment. The application track uses JAKA and EG2 assets in Isaac Sim 5.1 and
+Isaac Lab 2.3.0. Replacing Panda with JAKA produces an adapted task, not an
+official benchmark score. Neither track demonstrates real-robot deployment.
+
+\section{Relation to prior work}
+STAP studies skill values and planning; RAPS uses parameterized action primitives;
+ViSkill and Sequential Dexterity study downstream feasibility and chaining;
+RecoveryChaining combines nominal skills with learned recovery. Residual RL is
+also established. Consequently, parameterization, skill switching, downstream
+value and residual addition are not claimed as novel here. The proposed research
+increment remains a hypothesis: exploit current execution outcomes to select
+legal skill parameters or bounded recovery actions under a shared budget, with
+independent causal ablations. A future manuscript must document the exact
+difference from these methods and cite their original papers after the method
+is fixed; this document is not a completed literature review.
+
+\section{Implemented baseline}
+Let $s_t$ contain the native simulated robot and object state. A feedback
+controller has phase $z_t$ and produces $u_0(s_t,z_t)$. Both matched PPO variants
+observe $o_t=[s_t,\operatorname{onehot}(z_t),u_0(s_t,z_t)]$. The direct baseline
+executes $u_t=\operatorname{clip}(\pi_\theta(o_t),-1,1)$; the residual baseline
+executes
+\[
+ u_t=\operatorname{clip}\bigl(u_0(s_t,z_t)+0.15\pi_\theta(o_t),-1,1\bigr).
+\]
+The native Cartesian delta-position and gripper controller converts this command
+to physical actuation. No object pose is overwritten during an episode. Phase
+updates use current geometry and elapsed dwell, not future success labels. PPO,
+GAE and the upstream network are standard. No new auxiliary head is claimed.
+
+The native state is privileged relative to an unimplemented vision system; it
+is explicitly a state-based simulation experiment. Controller phase and nominal
+command are observable internal controller states. The actor does not receive
+future suffix execution outcomes. The environment reward and 50-step StackCube
+horizon remain unchanged.
+
+\section{Experimental protocol}
+ManiSkill is pinned to commit
+\texttt{62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3}. Training uses 64 parallel
+environments, 50-step rollout windows, eight minibatches and the upstream PPO
+implementation. Matched Cartesian and residual pilots use 256,000 online
+interactions each. A separate upstream joint-delta PPO reference uses 1,024,000
+interactions. Different action interfaces prevent treating that reference as a
+fair mechanism ablation.
+
+Development validation uses 16 batches of four environments with batch seeds
+$27101+4k$, $k=0,\ldots,15$. Every policy is evaluated on these same cases with
+deterministic actions. These are development cases, not a sealed final test.
+Per-step action, clipping, phase, state, reward and native task predicates are
+retained, together with checkpoint and source hashes. Success is the native final
+predicate; success-ever is reported separately in raw artifacts.
+
+\section{Preliminary results}
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Controller & Training interactions & Final success \\
+\midrule
+Structured Cartesian feedback & 0 & 58/64 \\
+Direct Cartesian PPO, seed 31 & 256,000 & 0/64 \\
+Ordinary residual PPO, seed 31 & 256,000 & 61/64 \\
+Ordinary residual PPO, seed 37 & 256,000 & 62/64 \\
+Ordinary residual PPO, seed 43 & 256,000 & 60/64 \\
+Same residual checkpoint, forced zero & same checkpoint & 58/64 \\
+Upstream joint-delta PPO, seed 31 & 1,024,000 & 0/64 \\
+\bottomrule
+\end{tabular}
+\end{center}
+The residual changes executed Cartesian commands and physical outcomes. It
+recovers five feedback failures, loses two feedback successes, shares 56
+successes and one failure. The exact paired binomial/McNemar test on the seven
+discordant cases has two-sided $p=0.453125$. Thus these cases do not establish
+statistical superiority. The mean norm of the normalized executed-minus-nominal
+XYZ command is approximately 0.148; it is exactly zero in the zero-residual
+ablation. Fixed seeds 37 and 43 complete 62 and 60 cases respectively. The
+three-seed mean is 95.3125\%, with sample standard deviation 1.5625 percentage
+points, versus feedback 90.625\%. These repeat the same 64 development cases;
+they are not 192 independent scenes. Seven final checkpoints and 2,560,000
+training interactions were completed across all pilots, excluding separately
+logged evaluation/scout steps. No final checkpoint was selected by its score.
+
+\section{Task diagnostics and application boundary}
+A GPU planner-observation defect made the native scripted Stack planner use a
+stale CPU-component OBB instead of the current actor pose. Correcting only this
+observation adapter changed four paired diagnostic cases from failure to success.
+However, they required 88--103 steps, beyond the native 50-step budget. They are
+not official within-budget successes. Corrected PegInsertionSide planning also
+completed four cases, predominantly beyond its 100-step horizon. These results
+identify solvability and budget issues, not algorithmic novelty.
+
+Isaac Lab Lift, Stack and Drawer were physically run with one and four
+environments. Lift and Drawer configurations lack a uniform success termination;
+measured height and drawer displacement must not be presented as an invented
+official success rate. JAKA/EG2 drove for 720 physical steps, but independent
+joint-limit and mimic checks failed. It remains an engineering smoke, not grasp
+or transfer success. Historical P1/P2 and field evidence remain separate.
+
+\section{Next discriminating study and limitations}
+The immediate study compares ordinary residual control with execution-result-
+conditioned legal parameter decisions, keeping observation, action constraints,
+training budget and physical conditions matched. Necessary ablations remove
+execution-result conditioning and force learned corrections to zero. Extra
+recovery/suffix interactions count toward the budget. A second contact family
+and frozen geometry/dynamics splits are required before claiming generalization.
+More independent training seeds and stronger feedback tuning are required before
+claiming a repeatable advantage. Current results support baseline viability,
+not a publishable new method. Asset licensing and JAKA contact qualification
+also remain open; restricted field data and simulation assets are not included
+in this public package.
+\end{document}

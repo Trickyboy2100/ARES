@@ -1,0 +1,85 @@
+{
+  "physics_run_complete": true,
+  "grasp_tested": false,
+  "qualification": "FAIL",
+  "checks": [
+    {
+      "joint": "joint1",
+      "max_limit_excess_rad": 0.0,
+      "peak_finite_difference_velocity_rad_s": 0.0004815305001102388,
+      "urdf_velocity_limit": 1.57
+    },
+    {
+      "joint": "joint2",
+      "max_limit_excess_rad": 0.0,
+      "peak_finite_difference_velocity_rad_s": 0.0009200727217830718,
+      "urdf_velocity_limit": 1.57
+    },
+    {
+      "joint": "joint3",
+      "max_limit_excess_rad": 0.0,
+      "peak_finite_difference_velocity_rad_s": 0.04885469004511833,
+      "urdf_velocity_limit": 1.57
+    },
+    {
+      "joint": "joint4",
+      "max_limit_excess_rad": 0.0,
+      "peak_finite_difference_velocity_rad_s": 0.009533400647342205,
+      "urdf_velocity_limit": 1.57
+    },
+    {
+      "joint": "joint5",
+      "max_limit_excess_rad": 0.0,
+      "peak_finite_difference_velocity_rad_s": 0.24146109819412231,
+      "urdf_velocity_limit": 1.57
+    },
+    {
+      "joint": "joint6",
+      "max_limit_excess_rad": 0.0,
+      "peak_finite_difference_velocity_rad_s": 0.010205511003732681,
+      "urdf_velocity_limit": 1.57
+    },
+    {
+      "joint": "eg2_4C2_Joint1",
+      "max_limit_excess_rad": 0.0,
+      "peak_finite_difference_velocity_rad_s": 3.3577494621276855,
+      "urdf_velocity_limit": 1.0
+    },
+    {
+      "joint": "eg2_4C2_Joint2",
+      "max_limit_excess_rad": 0.07805770635604858,
+      "peak_finite_difference_velocity_rad_s": 1.1749576330184937,
+      "urdf_velocity_limit": 1.0,
+      "max_mimic_error_rad": 0.1384037584066391
+    },
+    {
+      "joint": "eg2_4C2_Joint3",
+      "max_limit_excess_rad": 0.19966548681259155,
+      "peak_finite_difference_velocity_rad_s": 2.5277905464172363,
+      "urdf_velocity_limit": 1.0,
+      "max_mimic_error_rad": 0.957141637802124
+    },
+    {
+      "joint": "eg2_4C2_Joint4",
+      "max_limit_excess_rad": 0.09472453594207764,
+      "peak_finite_difference_velocity_rad_s": 2.7431862354278564,
+      "urdf_velocity_limit": 1.0,
+      "max_mimic_error_rad": 0.8522007465362549
+    },
+    {
+      "joint": "eg2_4C2_Joint5",
+      "max_limit_excess_rad": 0.0,
+      "peak_finite_difference_velocity_rad_s": 1.0000133514404297,
+      "urdf_velocity_limit": 1.0,
+      "max_mimic_error_rad": 0.142777681350708
+    },
+    {
+      "joint": "eg2_4C2_Joint6",
+      "max_limit_excess_rad": 0.0031121373176574707,
+      "peak_finite_difference_velocity_rad_s": 2.2109055519104004,
+      "urdf_velocity_limit": 1.0,
+      "max_mimic_error_rad": 0.7605882883071899
+    }
+  ],
+  "note": "drive smoke only; no complete collision/contact or industrial safety validation"
+}

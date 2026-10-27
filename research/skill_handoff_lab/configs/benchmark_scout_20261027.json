@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "ares_start_commit": "13211fee5cc9448e59902b2f8673707bfd959aed",
+  "maniskill_commit": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+  "isaac_sim": "5.1.0",
+  "isaac_lab": "2.3.0",
+  "resource_policy": "initially one Isaac worker GPU0, one ManiSkill worker GPU1; no four-GPU reservation",
+  "tasks": {
+    "maniskill": ["PickCube-v1", "StackCube-v1", "PegInsertionSide-v1"],
+    "isaac": ["Isaac-Lift-Cube-Franka-IK-Abs-v0", "Isaac-Stack-Cube-Franka-v0", "Isaac-Open-Drawer-Franka-v0"]
+  },
+  "scout_seeds": [27031, 27032, 27033, 27034],
+  "scout_parallel_envs": [1, 4],
+  "scout_controllers": ["random", "zero", "official_planner_or_feedback"],
+  "strict_official_horizon": true,
+  "initial_online_ppo_budget": 256000,
+  "training_seed": 31,
+  "scope": "SCOUT_AND_PILOT_NOT_FINAL_BENCHMARK_RESULT",
+  "selection": "compare runnable physical tasks, legal parameter authority, native success, strong baseline and costs; do not select by best random seed",
+  "jaka_track": "separate adapted tasks; preserve ARES-R production and current robot assets",
+  "licensing": "no upstream assets redistributed; ManiSkill CC-BY-NC asset notice requires commercial-use clarification before client asset delivery"
+}

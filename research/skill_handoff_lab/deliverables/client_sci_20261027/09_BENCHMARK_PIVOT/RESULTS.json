@@ -1,0 +1,211 @@
+[
+  {
+    "run": "ms_peg1_gpu_pose_diagnostic",
+    "task": "PegInsertionSide-v1",
+    "controller": "planner_gpu_pose",
+    "n": 4,
+    "native_success_ever": 1,
+    "final_success": 4,
+    "scope": "OUT_OF_HORIZON_PLANNER_DIAGNOSTIC_NOT_OFFICIAL_SCORE",
+    "source_manifest_sha256": "396bf9d2fb438b047cfbce05eb14252412761850042634d9158b646f3ef8bdbc",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_peg1_planner",
+    "task": "PegInsertionSide-v1",
+    "controller": "official_planner",
+    "n": 4,
+    "native_success_ever": 0,
+    "final_success": 0,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "54a57d69c07cd294486a9ba4623222e0bdb070a378d2673e0340955072fcbfeb",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_peg4_random",
+    "task": "PegInsertionSide-v1",
+    "controller": "random",
+    "n": 4,
+    "native_success_ever": 0,
+    "final_success": 0,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "c80112bad0169e9f38c7543795cafc07164d4afae3741a37f1fca75ab122cfa2",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_pick1_planner",
+    "task": "PickCube-v1",
+    "controller": "official_planner",
+    "n": 4,
+    "native_success_ever": 0,
+    "final_success": 0,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "f9a206ea17d9df30e009f6400a21332d13b783dd1274e5cd04d30898eb59d883",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_pick4_random",
+    "task": "PickCube-v1",
+    "controller": "random",
+    "n": 4,
+    "native_success_ever": 0,
+    "final_success": 0,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "1f436705f21c78e76c6b77fcfe837617698db3b28566a6297aeb8a937da33af5",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_pick_ppo_256k_eval16",
+    "task": "PickCube-v1",
+    "controller": "ppo",
+    "n": 16,
+    "native_success_ever": 0,
+    "final_success": 0,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "c6de2ecb79ef277d70b9a439a05d9703c60c4c4fb2760d674ae575a2b21b98f2",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_stack1_gpu_pose_diagnostic",
+    "task": "StackCube-v1",
+    "controller": "planner_gpu_pose",
+    "n": 0,
+    "native_success_ever": 0,
+    "final_success": 0,
+    "scope": "OUT_OF_HORIZON_PLANNER_DIAGNOSTIC_NOT_OFFICIAL_SCORE",
+    "source_manifest_sha256": "74326c0e0cfe4c6866ff5d3e22eeaf80dccc0e13dc64e0d3329b22055bcdaa5d",
+    "invalid_episodes": 4
+  },
+  {
+    "run": "ms_stack1_gpu_pose_diagnostic_v2",
+    "task": "StackCube-v1",
+    "controller": "planner_gpu_pose",
+    "n": 4,
+    "native_success_ever": 0,
+    "final_success": 4,
+    "scope": "OUT_OF_HORIZON_PLANNER_DIAGNOSTIC_NOT_OFFICIAL_SCORE",
+    "source_manifest_sha256": "9f4053d18af80a2bca95da9af71e0d92b6895ec7697b6b79d760b8061c5fdfbe",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_stack1_planner",
+    "task": "StackCube-v1",
+    "controller": "official_planner",
+    "n": 4,
+    "native_success_ever": 0,
+    "final_success": 0,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "99d61335cca1856f9ababd60b5f00f8c83842cf4cf0a6d83ecd98dd6556912ae",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_stack1_planner_diagnostic",
+    "task": "StackCube-v1",
+    "controller": "official_planner",
+    "n": 4,
+    "native_success_ever": 0,
+    "final_success": 0,
+    "scope": "OUT_OF_HORIZON_PLANNER_DIAGNOSTIC_NOT_OFFICIAL_SCORE",
+    "source_manifest_sha256": "c728b0b681f67668a0e4a1c38da6dc6d87af6b602f56353517bb373d57a748ed",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_stack4_feedback_v2",
+    "task": "StackCube-v1",
+    "controller": "stack_feedback",
+    "n": 4,
+    "native_success_ever": 4,
+    "final_success": 4,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "c1e7e1b309657b5d8b43ded354f187116eb9147ff559ddd46715252982501692",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_stack4_random",
+    "task": "StackCube-v1",
+    "controller": "random",
+    "n": 4,
+    "native_success_ever": 0,
+    "final_success": 0,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "5acdacb93d30947b4bcfaf4dec33bfd281ae9f6b160ec5a9ca33d53c588c9e42",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_stack_cartesian_256k_eval64",
+    "task": "StackCube-v1",
+    "controller": "cartesian_ppo",
+    "n": 64,
+    "native_success_ever": 0,
+    "final_success": 0,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "cd932d49882594928c1e47ddfb194182c6f6d43d6ebf1ee8c320b1eef3cd32ff",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_stack_feedback_validation64",
+    "task": "StackCube-v1",
+    "controller": "stack_feedback",
+    "n": 64,
+    "native_success_ever": 58,
+    "final_success": 58,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "f3ac0b87c5d8778cd45b1ccb00f68debf2c4497ee20d98c95d2977aa3745aaba",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_stack_ppo_1024k_eval64",
+    "task": "StackCube-v1",
+    "controller": "ppo",
+    "n": 64,
+    "native_success_ever": 0,
+    "final_success": 0,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "3e0249f4816e81d4160dc7b357c8e6669499823504622ebc97a2d67a2845d4de",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_stack_residual_256k_eval64",
+    "task": "StackCube-v1",
+    "controller": "residual_ppo",
+    "n": 64,
+    "native_success_ever": 63,
+    "final_success": 61,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "54b9222665f8f47526341c330d57286be28546e33ffa436fb7e4d6c71b97a3a1",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_stack_residual_seed37_eval64",
+    "task": "StackCube-v1",
+    "controller": "residual_ppo",
+    "n": 64,
+    "native_success_ever": 62,
+    "final_success": 62,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "5ec20a5299b631ef8a24ac73a7f4777c21b9bb6c0e327732ebeed4fed637d7da",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_stack_residual_seed43_eval64",
+    "task": "StackCube-v1",
+    "controller": "residual_ppo",
+    "n": 64,
+    "native_success_ever": 63,
+    "final_success": 60,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "1e89e5b8dc8cdf023ef1676a6c8ee7e2c35f233552100a3ef8ed1fcdef205b1d",
+    "invalid_episodes": 0
+  },
+  {
+    "run": "ms_stack_residual_zero_eval64",
+    "task": "StackCube-v1",
+    "controller": "residual_ppo",
+    "n": 64,
+    "native_success_ever": 58,
+    "final_success": 58,
+    "scope": "NATIVE_HORIZON",
+    "source_manifest_sha256": "457590139e765ff4d8ef7cd56740f76e0a64750e25fd255ec806c8cc326cd01d",
+    "invalid_episodes": 0
+  }
+]

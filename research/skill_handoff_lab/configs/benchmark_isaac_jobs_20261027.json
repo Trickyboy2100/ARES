@@ -1,0 +1,7 @@
+[
+  {"name":"isaac_lift4", "args":["--task","Isaac-Lift-Cube-Franka-IK-Abs-v0","--controller","lift_feedback","--steps","300","--num-envs","4","--gpu","0"]},
+  {"name":"isaac_stack1", "args":["--task","Isaac-Stack-Cube-Franka-v0","--controller","zero","--steps","120","--num-envs","1","--gpu","0"]},
+  {"name":"isaac_stack4", "args":["--task","Isaac-Stack-Cube-Franka-v0","--controller","random","--steps","120","--num-envs","4","--gpu","0"]},
+  {"name":"isaac_drawer1", "args":["--task","Isaac-Open-Drawer-Franka-v0","--controller","zero","--steps","120","--num-envs","1","--gpu","0"]},
+  {"name":"isaac_drawer4", "args":["--task","Isaac-Open-Drawer-Franka-v0","--controller","random","--steps","120","--num-envs","4","--gpu","0"]}
+]
