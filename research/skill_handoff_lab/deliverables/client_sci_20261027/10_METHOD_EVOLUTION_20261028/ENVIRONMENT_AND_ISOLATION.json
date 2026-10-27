@@ -1,0 +1,29 @@
+{
+  "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "torch": "2.7.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "visible_gpus": 1,
+  "numpy": "1.26.4",
+  "gymnasium": "1.4.0",
+  "sapien": "3.0.3",
+  "effective_mani_skill_source": "/home/andyee/robot-research/ARES-Skilllab/external/benchmark_scout_20261027/ManiSkill/mani_skill/__init__.py",
+  "upstream_commit": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+  "task_source_sha256": {
+    "stack_cube.py": "3aaf7ad185e689c82a78a593cf46ec37e873733080a92ef62158fc7a72236052",
+    "peg_insertion_side.py": "39320ca02f6373da02a15c2160644cf198bfbc6dcc524373819a1109a75e502d",
+    "stack_pyramid.py": "186605bb746ca19c4a717516b2530bbf70e9a2f897c7e3a2df89ce3b9ec4457e"
+  },
+  "network_routes": [],
+  "serial_devices": [],
+  "ARES_R_mount_writable": false,
+  "readonly_repo_roots": [
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES",
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES-R",
+    "/home/andyee/robot-research/ARES-Skilllab/worktrees/rasc-presentation-evidence-20261028"
+  ],
+  "CUDA_VISIBLE_DEVICES": "0",
+  "concurrency": "Some independent physical runs shared GPU0; wall time is not an algorithm speed comparison",
+  "result": "PASS"
+}

@@ -1,0 +1,36 @@
+{
+  "before": {
+    "repos/ARES": {
+      "head": "6af76af6f8f1f85cde612a1fb1cb2a573c93cc60\n",
+      "status": "## codex/ares-sci-autonomous-research-visual-20261027\n",
+      "worktrees": "worktree /home/andyee/robot-research/ARES-Skilllab/repos/ARES\nHEAD 6af76af6f8f1f85cde612a1fb1cb2a573c93cc60\nbranch refs/heads/codex/ares-sci-autonomous-research-visual-20261027\n\n"
+    },
+    "repos/ARES-R": {
+      "head": "2619cb4bb6156d9146820d2f1e28df6fa81a0c2a\n",
+      "status": "## codex/roundtrip-demo-rc1-20261018\n",
+      "worktrees": "worktree /home/andyee/robot-research/ARES-Skilllab/repos/ARES-R\nHEAD 2619cb4bb6156d9146820d2f1e28df6fa81a0c2a\nbranch refs/heads/codex/roundtrip-demo-rc1-20261018\n\nworktree /home/andyee/robot-research/ARES-Skilllab/worktrees/rasc-presentation-evidence-20261028\nHEAD 181f5052b28188d575c26ea983a73e98db5de3bc\nbranch refs/heads/codex/rasc-presentation-evidence-20261028\n\n"
+    },
+    "worktrees/rasc-presentation-evidence-20261028": {
+      "head": "181f5052b28188d575c26ea983a73e98db5de3bc\n",
+      "status": "## codex/rasc-presentation-evidence-20261028\n",
+      "worktrees": "worktree /home/andyee/robot-research/ARES-Skilllab/repos/ARES-R\nHEAD 2619cb4bb6156d9146820d2f1e28df6fa81a0c2a\nbranch refs/heads/codex/roundtrip-demo-rc1-20261018\n\nworktree /home/andyee/robot-research/ARES-Skilllab/worktrees/rasc-presentation-evidence-20261028\nHEAD 181f5052b28188d575c26ea983a73e98db5de3bc\nbranch refs/heads/codex/rasc-presentation-evidence-20261028\n\n"
+    }
+  },
+  "after": {
+    "repos/ARES": {
+      "head": "6af76af6f8f1f85cde612a1fb1cb2a573c93cc60",
+      "status": "CLEAN",
+      "unchanged_from_preservation": true
+    },
+    "repos/ARES-R": {
+      "head": "2619cb4bb6156d9146820d2f1e28df6fa81a0c2a",
+      "status": "CLEAN",
+      "unchanged_from_preservation": true
+    },
+    "worktrees/rasc-presentation-evidence-20261028": {
+      "head": "181f5052b28188d575c26ea983a73e98db5de3bc",
+      "status": "CLEAN",
+      "unchanged_from_preservation": true
+    }
+  }
+}

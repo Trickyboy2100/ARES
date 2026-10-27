@@ -1,0 +1,31 @@
+task,parameter,unit,bound,active_phases,cases,rescues,regressions,native_budget,source,qualification
+StackCube-v1,x_minus,m,0.015,5/6 for height; 4+ for XY,64,1,28,50,stack_authority_pilot; same initial hash for all seven branches,Geometry/state baseline; not an RL gain
+StackCube-v1,x_plus,m,0.015,5/6 for height; 4+ for XY,64,2,7,50,stack_authority_pilot; same initial hash for all seven branches,Geometry/state baseline; not an RL gain
+StackCube-v1,y_minus,m,0.015,5/6 for height; 4+ for XY,64,2,16,50,stack_authority_pilot; same initial hash for all seven branches,Geometry/state baseline; not an RL gain
+StackCube-v1,y_plus,m,0.015,5/6 for height; 4+ for XY,64,2,16,50,stack_authority_pilot; same initial hash for all seven branches,Geometry/state baseline; not an RL gain
+StackCube-v1,height_minus,m,0.012,5/6 for height; 4+ for XY,64,2,0,50,stack_authority_pilot; same initial hash for all seven branches,Geometry/state baseline; not an RL gain
+StackCube-v1,height_plus,m,0.012,5/6 for height; 4+ for XY,64,2,1,50,stack_authority_pilot; same initial hash for all seven branches,Geometry/state baseline; not an RL gain
+PegInsertionSide-v1,official,native controller,,see raw source/controller contract,8,,,100,peg_authority_pilot,Native completion 0/8; no learner increment claim
+PegInsertionSide-v1,budget_tuned,native controller,,see raw source/controller contract,8,,,100,peg_authority_pilot,Native completion 0/8; no learner increment claim
+PegInsertionSide-v1,observed_final,native controller,,see raw source/controller contract,8,,,100,peg_authority_pilot,Native completion 0/8; no learner increment claim
+PegInsertionSide-v1,y_minus,native controller,,see raw source/controller contract,8,,,100,peg_authority_pilot,Native completion 0/8; no learner increment claim
+PegInsertionSide-v1,y_plus,native controller,,see raw source/controller contract,8,,,100,peg_authority_pilot,Native completion 0/8; no learner increment claim
+PegInsertionSide-v1,tracked_stride2,native controller,,see raw source/controller contract,8,,,100,peg_tracking_r2,Native completion 1/8; no learner increment claim
+PegInsertionSide-v1,tracked_feedback2,native controller,,see raw source/controller contract,8,,,100,peg_tracking_r2,Native completion 1/8; no learner increment claim
+PegInsertionSide-v1,tracked_feedback3,native controller,,see raw source/controller contract,8,,,100,peg_tracking_r2,Native completion 1/8; no learner increment claim
+PegInsertionSide-v1,tracked_nominal,native controller,,see raw source/controller contract,8,,,100,peg_feedback_r3,Native completion 1/8; no learner increment claim
+PegInsertionSide-v1,reactive,native controller,,see raw source/controller contract,8,,,100,peg_feedback_r3,Native completion 1/8; no learner increment claim
+PegInsertionSide-v1,align_then_advance,native controller,,see raw source/controller contract,8,,,100,peg_feedback_r3,Native completion 1/8; no learner increment claim
+StackPyramid-v1,fixed_gap45,native controller,,see raw source/controller contract,16,,,250,pyramid_authority_r1,Native completion 0/16; no learner increment claim
+StackPyramid-v1,geometry,native controller,,see raw source/controller contract,16,,,250,pyramid_authority_r1,Native completion 0/16; no learner increment claim
+StackPyramid-v1,gap_minus,native controller,,see raw source/controller contract,16,,,250,pyramid_authority_r1,Native completion 0/16; no learner increment claim
+StackPyramid-v1,gap_plus,native controller,,see raw source/controller contract,16,,,250,pyramid_authority_r1,Native completion 0/16; no learner increment claim
+StackPyramid-v1,top_lower,native controller,,see raw source/controller contract,16,,,250,pyramid_authority_r1,Native completion 0/16; no learner increment claim
+StackPyramid-v1,native_planner,native controller,,see raw source/controller contract,4,,,250,pyramid_native_planner,Native completion 4/4; no learner increment claim
+StackPyramid-v1,tracked_planner2,native controller,,see raw source/controller contract,4,,,250,pyramid_native_planner,Native completion 4/4; no learner increment claim
+StackPyramid-v1,tracked_nominal,native controller,,see raw source/controller contract,16,,,250,pyramid_paired_parameters,Native completion 12/16; no learner increment claim
+StackPyramid-v1,first_dx_minus,native controller,,see raw source/controller contract,16,,,250,pyramid_paired_parameters,Native completion 12/16; no learner increment claim
+StackPyramid-v1,first_dx_plus,native controller,,see raw source/controller contract,16,,,250,pyramid_paired_parameters,Native completion 7/16; no learner increment claim
+StackPyramid-v1,released_nominal,native controller,,see raw source/controller contract,16,,,250,pyramid_release_control,Native completion 11/16; no learner increment claim
+StackPyramid-v1,released_dx_minus,native controller,,see raw source/controller contract,16,,,250,pyramid_release_control,Native completion 9/16; no learner increment claim
+StackPyramid-v1,released_dx_plus,native controller,,see raw source/controller contract,16,,,250,pyramid_release_control,Native completion 9/16; no learner increment claim

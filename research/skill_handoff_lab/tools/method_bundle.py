@@ -10,7 +10,7 @@ def main():
     for f in sorted(a.runs.rglob('*')):
         if f.is_file() and 'cache' not in f.relative_to(a.runs).parts:entries.append((f,Path('runs/method_evolution_20261028')/f.relative_to(a.runs)))
     for f in sorted(a.output.rglob('*')):
-        if f.is_file() and f.suffix not in ['.aux','.log','.out'] and f.name not in ['RESEARCH_BUNDLE.json','RELEASE_SHA256.json']:entries.append((f,Path('public_evidence')/f.relative_to(a.output)))
+        if f.is_file() and f.suffix not in ['.aux','.log','.out'] and f.name not in ['RESEARCH_BUNDLE.json','BUNDLE_VERIFICATION.json','RELEASE_SHA256.json']:entries.append((f,Path('public_evidence')/f.relative_to(a.output)))
     for f in sorted((a.root/'research/skill_handoff_lab/tools').glob('method_*')):
         if f.is_file():entries.append((f,Path('source/research/skill_handoff_lab/tools')/f.name))
     manifest=[dict(path=str(relative),sha256=sha(f),bytes=f.stat().st_size) for f,relative in entries]

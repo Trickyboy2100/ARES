@@ -1,32 +1,3 @@
-\documentclass[10pt,a4paper,twocolumn]{article}
-\usepackage[margin=18mm,columnsep=6mm]{geometry}
-\usepackage{amsmath,amssymb,graphicx,booktabs,array,url,microtype}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage[font=small,labelfont=bf]{caption}
-\usepackage[colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue]{hyperref}
-\hypersetup{pdftitle={Task-Conditioned Residual Skills for Reliable Multi-Stage Contact Manipulation},pdfauthor={ARES Research Working Group},pdfsubject={Evidence-driven research manuscript; synthetic PhysX tasks},pdflang={en-US}}
-\setlength{\parindent}{1em}
-\setlength{\parskip}{2pt}
-\newcommand{\status}[1]{\textsf{\small #1}}
-\newcommand{\safefigure}[3]{\IfFileExists{figures/#1}{\begin{figure}[t]\centering\includegraphics[width=\columnwidth]{figures/#1}\caption{#2}\label{#3}\end{figure}}{}}
-\newcommand{\safewidefigure}[3]{\IfFileExists{figures/#1}{\begin{figure*}[t]\centering\includegraphics[width=0.94\textwidth]{figures/#1}\caption{#2}\label{#3}\end{figure*}}{}}
-\title{Task-Conditioned Residual Skills for Reliable Multi-Stage Contact Manipulation\\\large An Evidence-Driven Research Manuscript}
-\author{ARES Research Working Group\\\small Working manuscript, 27 October 2026; not submitted or peer reviewed}
-\date{}
-\begin{document}
-\maketitle
-\input{sections/abstract}
-\input{sections/introduction}
-\input{sections/related}
-\input{sections/problem}
-\input{sections/method}
-\input{sections/experiments}
-\input{sections/results}
-\input{sections/closed_loop}
-\input{sections/limitations}
-\clearpage
-{\fontsize{8.5}{10}\selectfont
-\bibliographystyle{plain}
-\bibliography{references}}
-\end{document}
+% Current evidence-driven manuscript; historical sections remain in Git/history.
+% Build from this directory with pdflatex -no-shell-escape main.tex (twice).
+\input{../10_METHOD_EVOLUTION_20261028/PAPER_METHOD_EVOLUTION.tex}

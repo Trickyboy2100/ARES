@@ -1,0 +1,10 @@
+{
+  "archive": "/home/andyee/robot-research/ARES-Skilllab/artifacts/method_evolution_20261028/research_bundle.tar.gz",
+  "sha256": "44cfa07ce1203fec66652a16974d779d33f57a255b44890c41298801cceb77e8",
+  "bytes": 163208210,
+  "files": 841,
+  "scope": "Only this newly executed public ManiSkill/SAPIEN study: real model weights, exact training source, native trajectories, failures, scalar logs, public figures and videos. No ARES-R/site data.",
+  "extract": "tar -xzf research_bundle.tar.gz -C NEW_EMPTY_DIRECTORY",
+  "contents": "BUNDLE_CONTENTS.json verifies every archived file; original provenance absolute paths are retained, loaders accept relative run paths.",
+  "unique_checkpoints_deleted": 0
+}

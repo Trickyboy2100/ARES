@@ -1,0 +1,46 @@
+{
+  "decision": "Do not expand saturated StackCube or R3 likelihood",
+  "observed_validation64": {
+    "nominal": 60,
+    "fixed_height": 62,
+    "residual_ppo": [
+      63,
+      62,
+      64
+    ],
+    "parameter_ppo": [
+      62,
+      63,
+      60
+    ],
+    "paired_abstain": 60,
+    "no_abstain": 62
+  },
+  "next_task": "StackPyramid-v1",
+  "native_horizon": 250,
+  "native_reward": "sparse",
+  "task_source_sha256": "186605bb746ca19c4a717516b2530bbf70e9a2f897c7e3a2df89ce3b9ec4457e",
+  "scout_seeds": [
+    120000,
+    120001,
+    120002,
+    120003,
+    120004,
+    120005,
+    120006,
+    120007,
+    120008,
+    120009,
+    120010,
+    120011,
+    120012,
+    120013,
+    120014,
+    120015
+  ],
+  "scout_conditions": "DESIGN_TRAIN_ONLY",
+  "hypothesis": "First base placement controls the physical support geometry for the next cube; verify intervention effects before any RL extension",
+  "sealed_test_used": false,
+  "budget": "Initial 16 conditions x5 variants x250=20000 physical interactions",
+  "no_independent_method_increment_claim": true
+}

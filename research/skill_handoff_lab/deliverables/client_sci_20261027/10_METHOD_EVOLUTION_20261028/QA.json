@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "native_caps_and_terminal_outcomes": "PASS",
+    "all_recorded_physical_interactions_reconciled": "PASS",
+    "cold_reset_initial_hashes": "PASS",
+    "sealed_test_not_executed": "PASS",
+    "real_actor_weight_updates": "PASS",
+    "model_and_raw_source_hashes": "PASS",
+    "train_only_selector_fitting": "PASS",
+    "unchanged_native_task_sources": "PASS",
+    "new_consumed_parameter_telemetry": "PASS",
+    "recorded_physical_trajectories": 518,
+    "actual_interactions": 903584,
+    "independent_method_increment": "NOT_ESTABLISHED"
+  },
+  "scope": "CPU reconciliation of actual native runs, not a replacement GPU test; video/PDF visual review is documented separately in REVIEW.md"
+}

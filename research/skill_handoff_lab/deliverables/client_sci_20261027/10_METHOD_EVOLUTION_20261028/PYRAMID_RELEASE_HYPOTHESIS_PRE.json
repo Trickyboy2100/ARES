@@ -1,0 +1,33 @@
+{
+  "frozen_before_run": true,
+  "hypothesis": "Official source delays opening A until after reaching C; test early release as a strong simple controller explanation before crediting learning.",
+  "task": "StackPyramid-v1",
+  "native_horizon": 250,
+  "case_seeds": [
+    122000,
+    122001,
+    122002,
+    122003,
+    122004,
+    122005,
+    122006,
+    122007,
+    122008,
+    122009,
+    122010,
+    122011,
+    122012,
+    122013,
+    122014,
+    122015
+  ],
+  "cases_are": "Previously observed DESIGN cases, not an independent method test",
+  "variants": [
+    "released_nominal",
+    "released_dx_minus",
+    "released_dx_plus"
+  ],
+  "single_change": "Add native planner.open_gripper after first goal command; no physics/reset/reward/success edits.",
+  "cost_cap": 12000,
+  "no_RL_or_test_claim": true
+}

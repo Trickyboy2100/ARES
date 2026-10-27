@@ -61,7 +61,9 @@ def figures(args):
         for r in load(runs/folder/'RESULTS.json')['rows']:
             original=ref[r['policy'],r['seeds'][0]];assert r['initial_sha256']==original['initial_sha256'] and r['success']==original['success']
         for file in (runs/folder).glob('*.mp4'):
-            target=media/file.name;shutil.copyfile(file,target);video_receipts.append(dict(path='media/'+target.name,source=str(file),source_sha256=sha(file),sha256=sha(target),kind='ACTUAL_PHYSICS_RERUN_NOT_NEW_STATISTICAL_SAMPLE',reproduces_primary_evaluation=True))
+            target=media/file.name;shutil.copyfile(file,target)
+            case=int(file.stem.rsplit('_case',1)[1]);label=file.stem.rsplit('_case',1)[0];episode=next(r for r in load(runs/folder/'RESULTS.json')['rows'] if r['policy']==label and case in r['seeds']);env_index=episode['seeds'].index(case)
+            video_receipts.append(dict(path='media/'+target.name,source=str(file),source_sha256=sha(file),sha256=sha(target),kind='ACTUAL_PHYSICS_RERUN_NOT_NEW_STATISTICAL_SAMPLE',reproduces_primary_evaluation=True,task='StackCube-v1',case=case,env_index=env_index,reset_group_seeds=episode['seeds'],initial_sha256=episode['initial_sha256'],trajectory_sha256=episode['trajectory_sha256'],checkpoint_sha256=episode['checkpoint_sha256'],native_terminal_success=episode['success'][env_index]))
     def frame(file,index):
         content=subprocess.check_output(['ffmpeg','-v','error','-i',str(file),'-vf',f'select=eq(n\\,{index})','-frames:v','1','-f','image2pipe','-vcodec','png','-'])
         import io
@@ -127,7 +129,8 @@ def figures(args):
         # hstack repeats the final frame of a shorter program; the header discloses this.
         filt="[0:v]setpts=PTS-STARTPTS[l];[1:v]setpts=PTS-STARTPTS[r];[l][r]hstack=inputs=2:shortest=0,pad=iw:ih+36:0:36:white,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Same initial state - native 20Hz timing - shorter stream holds final frame':fontsize=18:fontcolor=black:x=8:y=8[v]"
         subprocess.run(['ffmpeg','-v','error','-y','-i',str(media/left),'-i',str(media/right),'-filter_complex',filt,'-map','[v]','-an','-c:v','libx264','-crf','20',str(target)],check=True)
-        video_receipts.append(dict(path='media/'+target.name,source=[left,right],sha256=sha(target),kind='SYNCHRONIZED_SAME_CASE_ACTUAL_EPISODES',timing='20Hz native control; shorter completed program final frame held, not extra physics'))
+        pair=[next(r for r in video_receipts if r['path']=='media/'+file) for file in [left,right]];assert pair[0]['initial_sha256']==pair[1]['initial_sha256'] and pair[0]['case']==pair[1]['case']
+        video_receipts.append(dict(path='media/'+target.name,source=[left,right],sha256=sha(target),kind='SYNCHRONIZED_SAME_CASE_ACTUAL_EPISODES',timing='20Hz native control; shorter completed program final frame held, not extra physics',case=pair[0]['case'],task=pair[0]['task'],initial_sha256=pair[0]['initial_sha256'],terminal_success_left_right=[r['native_terminal_success'] for r in pair]))
     for case,folder,name in [(122007,'pyramid_video_rescue','rescue'),(122005,'pyramid_video_regression','regression')]:
         files=[media/f'{folder}_000_{policy}.mp4' for policy in ['tracked_nominal','first_dx_minus']]
         canvas=Image.new('RGB',(2048,1160),'white');draw=ImageDraw.Draw(canvas);draw.text((18,9),f'ACTUAL SAPIEN / PhysX | Pyramid {case} | {name} | nominal above, -12mm below | last panel = terminal',font=font,fill='#203b51')
@@ -195,7 +198,7 @@ def pdf(args):
     for paragraph in [
         '代码与协议：独立分支codex/ares-sci-method-evolution-20261028；pinned ManiSkill 62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3。所有训练/验证scene seed池和SHA在BENCHMARK_PROTOCOL.json；封存测试没有执行。',
         '模型：6组最终PPO、初始权重、4种选择器、真实轨迹保存在非Git运行目录。MODEL_INDEX.json列出SHA与loader；ACTOR_UPDATE_AUDIT.json证明Actor真实更新且已参与新物理评价。公开仓库仅含允许的模拟素材、源码、标量数据、哈希和复现脚本。',
-        '公平性：本轮模型输入为显式state-based条件；差分与绝对模型使用相同容量、相同真实后缀。配对采集3条分支成本都单独计入；CEM以同等成本在训练条件选固定参数，不使用测试案例oracle。部分独立任务共用GPU0，壁钟时间不用于算法效率优劣判断。',
+        '公平性：本轮模型输入为显式state-based条件；差分与绝对模型使用相同容量、相同真实后缀。参数PPO逐步控制XYZ，M1仅一次高度选择；同频边界RL尚未补齐，不作严格同权限PPO消融声明。配对采集3条分支成本都单独计入；CEM以同等成本在训练条件选固定参数，不使用测试案例oracle。部分独立任务共用GPU0，壁钟时间不用于算法效率优劣判断。',
         '科学边界：新参数接口不是新PPO损失；M1为一次边界的contextual bandit，不是长程SMDP。ensemble标准差是经验不确定性，不是在线安全保证。只保留可反证机制，不因失败而放宽物理、horizon、reward或成功谓词。',
         '补充实测：官方程序第一层移动后延迟到下一次接近才松爪。同16设计案例加入第一层及时松爪，11/16（1救回、2退化），两个偏置变体9/16、9/16；简单控制解释同样未改善。原始handoff漂移和动作保留，未把这组设计复用当独立测试。',
         '下一轮只做：基于Pyramid已有双向可控证据，将第一层实际执行后果与下一技能状态绑定，比较同权限规则、普通参数PPO、绝对价值、配对差分与搜索。先确认有独立收益，再扩5种子与完全封存测试；Peg先完成可靠抓持/姿态/入口跟踪基线，JAKA暂不进入成功迁移主表。']:

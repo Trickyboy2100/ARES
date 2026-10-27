@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "archive_sha256": "44cfa07ce1203fec66652a16974d779d33f57a255b44890c41298801cceb77e8",
+  "files_hashed": 841,
+  "fresh_directory_extract": true,
+  "relocated_CPU_model_and_trajectory_loader": "PASS",
+  "checks": {
+    "native_caps_and_terminal_outcomes": "PASS",
+    "all_recorded_physical_interactions_reconciled": "PASS",
+    "cold_reset_initial_hashes": "PASS",
+    "sealed_test_not_executed": "PASS",
+    "real_actor_weight_updates": "PASS",
+    "model_and_raw_source_hashes": "PASS",
+    "train_only_selector_fitting": "PASS",
+    "unchanged_native_task_sources": "PASS",
+    "new_consumed_parameter_telemetry": "PASS",
+    "recorded_physical_trajectories": 518,
+    "actual_interactions": 903584,
+    "independent_method_increment": "NOT_ESTABLISHED"
+  },
+  "scope": "Relocation/weight/data verification; no additional GPU trajectory or training claimed."
+}

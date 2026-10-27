@@ -1,0 +1,114 @@
+{
+  "models": [
+    {
+      "relative_path": "training/runs/residual_31_102400/final_ckpt.pt",
+      "mode": "residual",
+      "seed": 31,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/method_evolution_20261028/training/runs/residual_31_102400/final_ckpt.pt",
+      "sha256": "b570942e1e129b742474f3582038826093d028952dc6e950d3090bfa60b8de1f",
+      "bytes": 1195445,
+      "initial_checkpoint_sha256": "a0abf48585134d9eced4ef400af9dabc8d5feb93b7cd1adb2c6f48e6c6278f00",
+      "actor_delta_l2": 3.4395344257354736,
+      "online_interactions": 102400,
+      "evaluation_interactions": 1600,
+      "load_check": "PASS: torch weights_only plus actually executed policy in paired native evaluation"
+    },
+    {
+      "relative_path": "training/runs/parameter_31_102400/final_ckpt.pt",
+      "mode": "parameter",
+      "seed": 31,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/method_evolution_20261028/training/runs/parameter_31_102400/final_ckpt.pt",
+      "sha256": "12a58b78646e5bff385da937ba4782477f8cb676325ab8dea524653e7a95a047",
+      "bytes": 1194421,
+      "initial_checkpoint_sha256": "1198dd9567e9524d97941ead0e9725ccb76718613578e328793bc4d1bebfce00",
+      "actor_delta_l2": 3.5720512866973877,
+      "online_interactions": 102400,
+      "evaluation_interactions": 1600,
+      "load_check": "PASS: torch weights_only plus actually executed policy in paired native evaluation"
+    },
+    {
+      "relative_path": "training/runs/residual_37_102400/final_ckpt.pt",
+      "mode": "residual",
+      "seed": 37,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/method_evolution_20261028/training/runs/residual_37_102400/final_ckpt.pt",
+      "sha256": "acb0c9b520f3a5dd22efd64a749baf48338fbcb6dd8c4bde58b5e176f72bb79d",
+      "bytes": 1195445,
+      "initial_checkpoint_sha256": "13b1e155f33c92acca78b378edb83c684721e3bf794d9663dae757d096287bb3",
+      "actor_delta_l2": 3.2954370975494385,
+      "online_interactions": 102400,
+      "evaluation_interactions": 1600,
+      "load_check": "PASS: torch weights_only plus actually executed policy in paired native evaluation"
+    },
+    {
+      "relative_path": "training/runs/parameter_37_102400/final_ckpt.pt",
+      "mode": "parameter",
+      "seed": 37,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/method_evolution_20261028/training/runs/parameter_37_102400/final_ckpt.pt",
+      "sha256": "82cd8cc11127ed4b542edcda87ab51e75810be0b41282a01ee4350dde6b32b5e",
+      "bytes": 1194421,
+      "initial_checkpoint_sha256": "f27d8f0c21d1e28847131b86779e354442c6cb3e9e8f94a157f62d39856d1873",
+      "actor_delta_l2": 3.2969043254852295,
+      "online_interactions": 102400,
+      "evaluation_interactions": 1600,
+      "load_check": "PASS: torch weights_only plus actually executed policy in paired native evaluation"
+    },
+    {
+      "relative_path": "training/runs/residual_43_102400/final_ckpt.pt",
+      "mode": "residual",
+      "seed": 43,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/method_evolution_20261028/training/runs/residual_43_102400/final_ckpt.pt",
+      "sha256": "6f4b7bf7f633bd0c61917a8dc0be2005ffea238e1dbcb2100fe5d426f4ac9e89",
+      "bytes": 1195445,
+      "initial_checkpoint_sha256": "a928a2b10cde4762dd3b26341fe1357c81901936a361454cc1a1959a0a16917d",
+      "actor_delta_l2": 3.3565797805786133,
+      "online_interactions": 102400,
+      "evaluation_interactions": 1600,
+      "load_check": "PASS: torch weights_only plus actually executed policy in paired native evaluation"
+    },
+    {
+      "relative_path": "training/runs/parameter_43_102400/final_ckpt.pt",
+      "mode": "parameter",
+      "seed": 43,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/method_evolution_20261028/training/runs/parameter_43_102400/final_ckpt.pt",
+      "sha256": "28658a924a67afaa07902d11aaa66f3f66b4c524369d74c87a59f077cefddede",
+      "bytes": 1194421,
+      "initial_checkpoint_sha256": "60f75491e7bc6cb0db82ef4ea98438ea0f1b7a25efc29f4b9da650b1313b6ff5",
+      "actor_delta_l2": 3.3591251373291016,
+      "online_interactions": 102400,
+      "evaluation_interactions": 1600,
+      "load_check": "PASS: torch weights_only plus actually executed policy in paired native evaluation"
+    }
+  ],
+  "selector_models": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/method_evolution_20261028/selectors_r1/no_effect.pt",
+      "relative_path": "selectors_r1/no_effect.pt",
+      "sha256": "a2428bf00ae5754e8c98ca9af5fb0d228f2c7264103f8f8bfb8031e94530413e",
+      "bytes": 140881
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/method_evolution_20261028/selectors_r1/no_next_contract.pt",
+      "relative_path": "selectors_r1/no_next_contract.pt",
+      "sha256": "65b09a0c67eb2deddf5b6346db31aec17a58f5d84764573415bdaab5ea9da01e",
+      "bytes": 141133
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/method_evolution_20261028/selectors_r1/no_pairing.pt",
+      "relative_path": "selectors_r1/no_pairing.pt",
+      "sha256": "de71450c31ba0206f188a88384b38e4279e94c0439c991f4311f18e13f60e050",
+      "bytes": 140917
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/method_evolution_20261028/selectors_r1/paired.pt",
+      "relative_path": "selectors_r1/paired.pt",
+      "sha256": "1aabf945cfa8b5db81d13bf9e221d644677c0f54300d44bcdbe62a0175444881",
+      "bytes": 139173
+    }
+  ],
+  "source_freeze": {
+    "method_train.py": "927ecf28f9d39d6f28bd7152ead0d1b43edc8481f6eed2c53c951082ce8f9923",
+    "method_stack_physics.py": "722c6c8c3910b95b560966f7988852d1d648a2e8f93d5af729d9e0059586c7f5"
+  },
+  "raw_models_public_git": false,
+  "loader": "method_outcome_selector.py eval --models [training/runs] --selector [selectors_r1] --upstream [pinned PPO]"
+}
