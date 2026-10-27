@@ -1,0 +1,26 @@
+[
+  {
+    "round": "r1",
+    "name": "probe4_steer_zero",
+    "gpu": 1,
+    "num_envs": 4,
+    "eval_episodes": 8,
+    "controller": "damped",
+    "extra": [
+      "--contact-steering",
+      "0"
+    ]
+  },
+  {
+    "round": "r1",
+    "name": "probe4_steer_neg",
+    "gpu": 1,
+    "num_envs": 4,
+    "eval_episodes": 8,
+    "controller": "damped",
+    "extra": [
+      "--contact-steering",
+      "-.03"
+    ]
+  }
+]

@@ -1,0 +1,189 @@
+{
+  "input_path": "metrics/COMPLETED_RUNS_INDEX.json",
+  "input_sha256": "d5b70129f7780dd45b61d3aa371fa2cc756ab5a17fc530ed85aa7e2fe936fc50",
+  "rows": [
+    {
+      "round": "R1",
+      "method": "Feedback",
+      "seed": "--",
+      "state_action": "64/3",
+      "training_interactions": 0,
+      "success": "25/32",
+      "source_run": "r1/feedback32_zero_steering",
+      "manifest_sha256": "b5e24c160ff5192a84e52218529a053f0b90dea18151e625710bf96ebe9a7cf0",
+      "checkpoint_sha256": null
+    },
+    {
+      "round": "R1",
+      "method": "Parameter PPO",
+      "seed": 31,
+      "state_action": "64/3",
+      "training_interactions": 32768,
+      "success": "25/32",
+      "source_run": "r1/param_ppo_seed31_development",
+      "manifest_sha256": "9a18ee4883169364e6442c828462c662cb3b8bc985c2aa7b90e8d56ee7b830af",
+      "checkpoint_sha256": "76840add6f0fa0a599bbcc786171576174a12814ec757c648115cb8db5387ea9"
+    },
+    {
+      "round": "R1",
+      "method": "Effect-history PPO",
+      "seed": 31,
+      "state_action": "64/3",
+      "training_interactions": 32768,
+      "success": "25/32",
+      "source_run": "r1/effect_param_ppo_seed31_development",
+      "manifest_sha256": "d62c4af4492824a427383d142029ee4abb8d791f37535ccd29bd6009d26b81f0",
+      "checkpoint_sha256": "a82cf269e28fe5b09806e7736552f79290a2b9fbd76da540182b3994a5ba16c1"
+    },
+    {
+      "round": "R2",
+      "method": "Feedback",
+      "seed": "--",
+      "state_action": "66/4",
+      "training_interactions": 0,
+      "success": "25/32",
+      "source_run": "r2/feedback32_yaw_zero",
+      "manifest_sha256": "34c09265bbd56109b937cdb18de9f399c241fdf6d36323d1e9bfea8ca27a64f2",
+      "checkpoint_sha256": null
+    },
+    {
+      "round": "R2",
+      "method": "Yaw parameter PPO",
+      "seed": 31,
+      "state_action": "66/4",
+      "training_interactions": 32768,
+      "success": "24/32",
+      "source_run": "r2/yaw_param_ppo_seed31_development",
+      "manifest_sha256": "8e21513cc68693e922b8bba0d04982bb03b116ba16ddd3f646dde218a2775818",
+      "checkpoint_sha256": "2aa1411185755250b1bc61c786d3d7882fdff6b3a5ad69fd1b524492accbcd4a"
+    },
+    {
+      "round": "R2",
+      "method": "Yaw + history PPO",
+      "seed": 31,
+      "state_action": "66/4",
+      "training_interactions": 32768,
+      "success": "24/32",
+      "source_run": "r2/yaw_effect_param_ppo_seed31_development",
+      "manifest_sha256": "4244a2d6213a02cc86353dc435f76d53c4d5937b2842008eac29e5f7498bd84b",
+      "checkpoint_sha256": "35a9572161165e773b34abb25e7309036d7c979e21efd15d46012409a0928064"
+    },
+    {
+      "round": "R3",
+      "method": "Feedback / nominal",
+      "seed": "--",
+      "state_action": "66/4",
+      "training_interactions": 0,
+      "success": "26/32",
+      "source_run": "r3/feedback32_old_best_no_recontact",
+      "manifest_sha256": "78e64dc381a202061397e9ccf64844095fc98c519f03f2c032c68d642c5b9ca2",
+      "checkpoint_sha256": null
+    },
+    {
+      "round": "R3",
+      "method": "Re-contact feedback",
+      "seed": "--",
+      "state_action": "87/5",
+      "training_interactions": 0,
+      "success": "26/32",
+      "source_run": "r3/feedback32_recontact",
+      "manifest_sha256": "0f81af7dc875e76ad78763c8924f4e476f90a547f0e1f107e9e6a4d84f25653a",
+      "checkpoint_sha256": null
+    },
+    {
+      "round": "R3",
+      "method": "Event / ordinary PPO",
+      "seed": 31,
+      "state_action": "87/5",
+      "training_interactions": 32768,
+      "success": "22/32",
+      "source_run": "r3/event_ordinary_seed31_development",
+      "manifest_sha256": "7abcb29642f538229ad6ab68ba2a378ea0da0cb46b0d609861534a49be74f1fe",
+      "checkpoint_sha256": "ed02a2668f31ce90f0f5d0989aa62cad40f9f568eb3227e6413319c3a3a7875f"
+    },
+    {
+      "round": "R3",
+      "method": "Event / ordinary PPO",
+      "seed": 41,
+      "state_action": "87/5",
+      "training_interactions": 32768,
+      "success": "25/32",
+      "source_run": "r3/event_ordinary_seed41_development",
+      "manifest_sha256": "cc58ccdea7edd208b4c50aef5bad5d9df23ca3cc92009ef2fc84485590a43666",
+      "checkpoint_sha256": "d67c05d9cebe83f4aeaab8680bea49b855a68f811945fcb38d526b8a7064f053"
+    },
+    {
+      "round": "R3",
+      "method": "Event / ordinary PPO",
+      "seed": 51,
+      "state_action": "87/5",
+      "training_interactions": 32768,
+      "success": "20/32",
+      "source_run": "r3/event_ordinary_seed51_development",
+      "manifest_sha256": "97b79adfbe83904656de2d5fbcea19f85d9808b7878378a063517e31c2e238a4",
+      "checkpoint_sha256": "e117741f18b4429c5ff08195edfa0a85296e42245d1b702f841830de9d7614b1"
+    },
+    {
+      "round": "R3",
+      "method": "Event / active PPO",
+      "seed": 31,
+      "state_action": "87/5",
+      "training_interactions": 32768,
+      "success": "24/32",
+      "source_run": "r3/event_qualified_seed31_development",
+      "manifest_sha256": "fd5890cb9e8c2343db28bebd4f77d4f1e1c201c4bb472eafb0c9226350e3bd8d",
+      "checkpoint_sha256": "16778155ebc92288663557c14161a2f8f5acf178b3bfaf50717329a691cc4118"
+    },
+    {
+      "round": "R3",
+      "method": "Event / active PPO",
+      "seed": 41,
+      "state_action": "87/5",
+      "training_interactions": 32768,
+      "success": "24/32",
+      "source_run": "r3/event_qualified_seed41_development",
+      "manifest_sha256": "77d0cfc22e39da0769c3d08f87968d667ccd9e839ff3568f01588b2932c1dc3c",
+      "checkpoint_sha256": "34d1abad2dcca45c943f3880c623a811b45fe8fe9e00a36e1399e52f98df2c23"
+    },
+    {
+      "round": "R3",
+      "method": "Event / active PPO",
+      "seed": 51,
+      "state_action": "87/5",
+      "training_interactions": 32768,
+      "success": "18/32",
+      "source_run": "r3/event_qualified_seed51_development",
+      "manifest_sha256": "cc8a8655cc2dcc32c136d6546514fe7f4f205a0bbcbe9cadad36901c45d7b1ef",
+      "checkpoint_sha256": "377c84326fe1fe3c77b9a0ed7882ccc5f3044ba0a2ea04bc0379469dd363a6c4"
+    },
+    {
+      "round": "R3",
+      "method": "Fixed / ordinary PPO",
+      "seed": 31,
+      "state_action": "87/5",
+      "training_interactions": 32768,
+      "success": "25/32",
+      "source_run": "r3/fixed_ordinary_seed31_development",
+      "manifest_sha256": "a6f1d3a60d35d5cdefdc8eb293791bc945fe882c2aa5d2a540161b3b23f72efe",
+      "checkpoint_sha256": "8655dcf85059898d11b82cabb60aaaee67e4a9190798d4eb9f776d1ee3f88fca"
+    },
+    {
+      "round": "R3",
+      "method": "Fixed / active PPO",
+      "seed": 31,
+      "state_action": "87/5",
+      "training_interactions": 32768,
+      "success": "25/32",
+      "source_run": "r3/fixed_qualified_seed31_development",
+      "manifest_sha256": "6ef47d6cd9e56c14d93cf7d6337e2a504feb8236c9abc824052fa57b95a5466c",
+      "checkpoint_sha256": "b39c857cbb983a5b444c41fa927474f575ce5e196adb871f2cb7167688d6f018"
+    }
+  ],
+  "table_sha256": "668e58936a398d8a2ecc1e24f42a32fa3c577b5f1524dfe1e86a508fd36373a8",
+  "limitations": [
+    "Single training seed per new method; not a multi-seed result",
+    "Rows across rounds use distinct physical task versions and duration contracts",
+    "Development scenes are not sealed final tests",
+    "Feedback zero training does not mean zero physical evaluation cost"
+  ]
+}

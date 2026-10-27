@@ -1,0 +1,57 @@
+[
+  {
+    "round": "r3",
+    "engine_subdir": "engine_training",
+    "name": "transfer_push_feedback32",
+    "gpu": 0,
+    "family": "push",
+    "controller": "damped",
+    "scenario": "transfer_push.json",
+    "eval_seed": 102951,
+    "eval_episodes": 32,
+    "extra": [
+      "--episode-seconds",
+      "24",
+      "--contact-steering",
+      "0",
+      "--exact-footprint",
+      "--guarded-alignment",
+      "--yaw-enabled",
+      "--yaw-reference",
+      "zero",
+      "--action-cost",
+      "executed",
+      "--feedback-kp",
+      "2"
+    ]
+  },
+  {
+    "round": "r3",
+    "engine_subdir": "engine_training",
+    "name": "transfer_push_ordinary_seed31",
+    "gpu": 0,
+    "family": "push",
+    "scenario": "transfer_push.json",
+    "eval_seed": 102951,
+    "eval_episodes": 32,
+    "load_policy": "r3/event_ordinary_seed31/policy.zip",
+    "extra": [
+      "--episode-seconds",
+      "24",
+      "--contact-steering",
+      "0",
+      "--exact-footprint",
+      "--guarded-alignment",
+      "--yaw-enabled",
+      "--yaw-reference",
+      "zero",
+      "--action-cost",
+      "executed",
+      "--feedback-kp",
+      "2",
+      "--recontact-enabled",
+      "--exact-recontact",
+      "--event-refresh"
+    ]
+  }
+]

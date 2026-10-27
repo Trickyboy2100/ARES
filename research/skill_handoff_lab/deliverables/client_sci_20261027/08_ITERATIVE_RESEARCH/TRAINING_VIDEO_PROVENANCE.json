@@ -1,0 +1,87 @@
+{
+  "scope": "EXTRA_REAL_ONLINE_TRAINING_VISUAL_RERUN_NOT_FORMAL_METHOD_PERFORMANCE",
+  "run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/r3/visual_training_qualified_seed31_12288_retry1",
+  "online_interactions": 12288,
+  "rollout_updates": 3,
+  "ppo_optimizer_minibatch_updates": 288,
+  "initial_parameter_sha256": "501aa5f825965d23e482283aea2b088cd443712d65e7b538539232a52a8a85a1",
+  "final_parameter_sha256": "0f46d91829f3bf3b1eef65d187f262f97e0a0105cfe55c7d024d29cd2b247cb7",
+  "source_120hz_training_shape": [
+    1536,
+    16,
+    44
+  ],
+  "source_120hz_sampling": "PRE_PHYSICS_INTEGRATION_AFTER_REFERENCE_UPDATE; no interpolation",
+  "training_physics_ticks": 1536,
+  "num_envs": 16,
+  "same_tick_montage_is_not_single_camera": true,
+  "montage_physics_tick": 1536,
+  "extra_physics_steps_for_camera": 0,
+  "state_writes_during_actions": 0,
+  "formal_performance_data": false,
+  "camera_parameter_hash_chain_verified": true,
+  "optimizer_preserves_physical_state_verified": true,
+  "appearance_identity_verified": true,
+  "script_sha256": "6989329f3cd19e7e9f54bde128900e71e76318732f6d1232de2a114284a854be",
+  "inputs": {
+    "manifest.json": "d37380a3d3177f921ccf526cbbd77dedcf6d8d3e0c699a1c81a84e1ddf5b9c12",
+    "run_config.json": "a3d48d20fa8a3d37613da4565ef457011bc9e1a1d1de38e7ef8c8cf338cc1a89",
+    "LIVE_OPTIMIZER_EVENTS.json": "06856de5e8f69d0c14710eeec814eee071d5b0a674a509d8784e631c6a84b86e",
+    "LIVE_TRAINING_MONTAGES.json": "556069fdaba0ebbcdf98fe2eaef5830cb25cd2d68615a11968a8ebb42afb0957",
+    "MATRIX_LIVE_TRAINING_FRAMES.json": "e3c83668255a957880746113e4548c55f1804cfab3fcff509a1011bd6cdcf8f4",
+    "TRAINING_120HZ_STATE.npz": "2b05b6611b1edb6371d3f628b0a3d0c155a384f158b4e9b46797876d896c9b3d",
+    "VIDEO_CAPTURE_PROVENANCE.json": "b429e6bd9dfac04965ea15e06974670a7f2675f88653a663984f3e5a8a28da1d",
+    "VIDEO_SOURCE_PATCH.json": "422641ac28c95c61c2d641b69ffbf86ffd7bc8b848bfed8eeec1e4f05037647f",
+    "policy.zip": "bc69d16fba6591801b5de6be8465b180dc110230d788b7750eed7f22662ff942",
+    "matrix_live_training.mp4": "52606902c41f96b0a5beea3615b132b146dad79d08075b4b1d4dad65c58c2606"
+  },
+  "outputs": {
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons_final/R3_online_training_12288/actual_online_training_16env.mp4": {
+      "sha256": "95599ce57a6b468441ebe789638e4bc60088216027f694359bdeba362e8791f1",
+      "bytes": 922067
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/deliverables/client_sci_20261027/08_ITERATIVE_RESEARCH/figures/R3_actual_online_training_16env.gif": {
+      "sha256": "ce9dc2d94a8199606b0bd88f371fe12057f82c72c086d9dbe8d862c872d2d9c0",
+      "bytes": 1306255
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/deliverables/client_sci_20261027/08_ITERATIVE_RESEARCH/figures/R3_online_training_16env_montage.png": {
+      "sha256": "42143ae3a979840bcd38e3ea3bc4858f2238ae2389a693d48000421f58702951",
+      "bytes": 512203
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/deliverables/client_sci_20261027/08_ITERATIVE_RESEARCH/figures/R3_online_training_wide.png": {
+      "sha256": "d14a033a5b28e30b63f9bb19b1c686453cb062be276f0874491515fed4e71445",
+      "bytes": 73824
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/deliverables/client_sci_20261027/08_ITERATIVE_RESEARCH/figures/R3_optimizer_before_after.png": {
+      "sha256": "93a106b50bc7345c9bac24767865d9d93a470d7b6afc645a0cfafafd3a6ad497",
+      "bytes": 120544
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/deliverables/client_sci_20261027/08_ITERATIVE_RESEARCH/figures/R3_online_training_16env_montage.pdf": {
+      "sha256": "a5b8f3d33c6293996810dd6d782f60ff0d0a9f6bb9d1ac6980114eeb62a6572d",
+      "bytes": 108826
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/deliverables/client_sci_20261027/08_ITERATIVE_RESEARCH/figures/R3_optimizer_before_after.pdf": {
+      "sha256": "848002c4ad11503c9d5039ab14e1a70d7814dcd343e2c070844c798fd5b57ecf",
+      "bytes": 41663
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/deliverables/client_sci_20261027/08_ITERATIVE_RESEARCH/tables/ACTUAL_TRAINING_CAMERA_ENV_STATES.csv": {
+      "sha256": "9b1736ec589061a61c7280e4b73659b93bf09235bec603e2d654ef1bc3bc0f61",
+      "bytes": 232700
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/deliverables/client_sci_20261027/08_ITERATIVE_RESEARCH/tables/ACTUAL_OPTIMIZER_UPDATES.csv": {
+      "sha256": "77909390477bae1a82b2ccad058d311d12917e9a3c70607fdb7abe75ee6ab9be",
+      "bytes": 649
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/repos/ARES/research/skill_handoff_lab/deliverables/client_sci_20261027/08_ITERATIVE_RESEARCH/tables/ACTUAL_TRAINING_120HZ_SAMPLED.csv": {
+      "sha256": "585f4b54622ec0f50cdb6e5bbd20eceda245cb15ecf5afff5f11f95d3c6ba1cb",
+      "bytes": 1674881
+    }
+  },
+  "limitations": [
+    "Self-built synthetic P2, not real robot or field transfer",
+    "Montage is16actual same-tick camera views in ONE physics app, not a single wide camera",
+    "Camera footage is an independent retraining rerun, not the formal model training recording",
+    "4posttraining episodes are train-check only, never added to method comparison",
+    "Initial failed4096-interaction recording attempt is retained and budgeted separately"
+  ]
+}

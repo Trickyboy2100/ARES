@@ -1,0 +1,159 @@
+{
+  "status": "PASS",
+  "models": [
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r1/effect_param_ppo_seed31",
+      "checkpoint_sha256": "a82cf269e28fe5b09806e7736552f79290a2b9fbd76da540182b3994a5ba16c1",
+      "source_sha256": "59abf32c98be69ce46e8ba0a7ece85cebaa01a67232f3bfdd74adb381656df9e",
+      "online_interactions": 32768,
+      "observation_dim": 64,
+      "action_dim": 3,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 16903
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r1/param_ppo_seed31",
+      "checkpoint_sha256": "76840add6f0fa0a599bbcc786171576174a12814ec757c648115cb8db5387ea9",
+      "source_sha256": "59abf32c98be69ce46e8ba0a7ece85cebaa01a67232f3bfdd74adb381656df9e",
+      "online_interactions": 32768,
+      "observation_dim": 64,
+      "action_dim": 3,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 16903
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r2/yaw_effect_param_ppo_seed31",
+      "checkpoint_sha256": "35a9572161165e773b34abb25e7309036d7c979e21efd15d46012409a0928064",
+      "source_sha256": "5874402200ed8fba3e922a47f9a61d5c92448c6be9471c9e2b629c3abf732b2a",
+      "online_interactions": 32768,
+      "observation_dim": 66,
+      "action_dim": 4,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 17225
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r2/yaw_param_ppo_seed31",
+      "checkpoint_sha256": "2aa1411185755250b1bc61c786d3d7882fdff6b3a5ad69fd1b524492accbcd4a",
+      "source_sha256": "5874402200ed8fba3e922a47f9a61d5c92448c6be9471c9e2b629c3abf732b2a",
+      "online_interactions": 32768,
+      "observation_dim": 66,
+      "action_dim": 4,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 17225
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r3/event_ordinary_seed31",
+      "checkpoint_sha256": "ed02a2668f31ce90f0f5d0989aa62cad40f9f568eb3227e6413319c3a3a7875f",
+      "source_sha256": "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+      "online_interactions": 32768,
+      "observation_dim": 87,
+      "action_dim": 5,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 19979
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r3/event_ordinary_seed41",
+      "checkpoint_sha256": "d67c05d9cebe83f4aeaab8680bea49b855a68f811945fcb38d526b8a7064f053",
+      "source_sha256": "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+      "online_interactions": 32768,
+      "observation_dim": 87,
+      "action_dim": 5,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 19979
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r3/event_ordinary_seed51",
+      "checkpoint_sha256": "e117741f18b4429c5ff08195edfa0a85296e42245d1b702f841830de9d7614b1",
+      "source_sha256": "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+      "online_interactions": 32768,
+      "observation_dim": 87,
+      "action_dim": 5,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 19979
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r3/event_qualified_seed31",
+      "checkpoint_sha256": "16778155ebc92288663557c14161a2f8f5acf178b3bfaf50717329a691cc4118",
+      "source_sha256": "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+      "online_interactions": 32768,
+      "observation_dim": 87,
+      "action_dim": 5,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 19979
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r3/event_qualified_seed41",
+      "checkpoint_sha256": "34d1abad2dcca45c943f3880c623a811b45fe8fe9e00a36e1399e52f98df2c23",
+      "source_sha256": "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+      "online_interactions": 32768,
+      "observation_dim": 87,
+      "action_dim": 5,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 19979
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r3/event_qualified_seed51",
+      "checkpoint_sha256": "377c84326fe1fe3c77b9a0ed7882ccc5f3044ba0a2ea04bc0379469dd363a6c4",
+      "source_sha256": "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+      "online_interactions": 32768,
+      "observation_dim": 87,
+      "action_dim": 5,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 19979
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r3/fixed_ordinary_seed31",
+      "checkpoint_sha256": "8655dcf85059898d11b82cabb60aaaee67e4a9190798d4eb9f776d1ee3f88fca",
+      "source_sha256": "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+      "online_interactions": 32768,
+      "observation_dim": 87,
+      "action_dim": 5,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 19979
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r3/fixed_qualified_seed31",
+      "checkpoint_sha256": "b39c857cbb983a5b444c41fa927474f575ce5e196adb871f2cb7167688d6f018",
+      "source_sha256": "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+      "online_interactions": 32768,
+      "observation_dim": 87,
+      "action_dim": 5,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 19979
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r3/smoke4_qualified_optimizer",
+      "checkpoint_sha256": "ec538ab1db73d0bb360381a0ddae9f370d75264e3569aa7b965133963606a3d1",
+      "source_sha256": "3a766ebb966cd9e3f66404f11f8498429e89589a95ffeb69bf6339dfe7724fbc",
+      "online_interactions": 4096,
+      "observation_dim": 84,
+      "action_dim": 5,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 19595
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r3/smoke4_real_gradient_audit",
+      "checkpoint_sha256": "c17d61062bbe5a652e51d1a588b2ea0314b3cf57607baf05ac90d39e4999fb4e",
+      "source_sha256": "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+      "online_interactions": 1024,
+      "observation_dim": 87,
+      "action_dim": 5,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 19979
+    },
+    {
+      "run": "runs/client_sci_closed_loop_20261027/r3/visual_training_qualified_seed31_12288_retry1",
+      "checkpoint_sha256": "bc69d16fba6591801b5de6be8465b180dc110230d788b7750eed7f22662ff942",
+      "source_sha256": "b2d02f1954f804040fa0a5947bb24c79298c4a8b788b341021cf831d37bce5fc",
+      "online_interactions": 12288,
+      "observation_dim": 87,
+      "action_dim": 5,
+      "cpu_load_and_inference": "PASS",
+      "parameters": 19979
+    }
+  ],
+  "limitations": [
+    "CPU inference/source consistency checks are not a physics-performance test.",
+    "Diagnostic and visualization training checkpoints are not formal method replicates."
+  ]
+}

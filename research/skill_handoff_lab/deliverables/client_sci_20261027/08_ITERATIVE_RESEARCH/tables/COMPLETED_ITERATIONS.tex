@@ -1,0 +1,22 @@
+\begin{tabular}{llrrrr}
+\toprule
+Round & Method & Seed & Obs./act. & Train interactions & Independent success \\
+\midrule
+R1 & Feedback & -- & 64/3 & 0 & 25/32 \\
+R1 & Parameter PPO & 31 & 64/3 & 32768 & 25/32 \\
+R1 & Effect-history PPO & 31 & 64/3 & 32768 & 25/32 \\
+R2 & Feedback & -- & 66/4 & 0 & 25/32 \\
+R2 & Yaw parameter PPO & 31 & 66/4 & 32768 & 24/32 \\
+R2 & Yaw + history PPO & 31 & 66/4 & 32768 & 24/32 \\
+R3 & Feedback / nominal & -- & 66/4 & 0 & 26/32 \\
+R3 & Re-contact feedback & -- & 87/5 & 0 & 26/32 \\
+R3 & Event / ordinary PPO & 31 & 87/5 & 32768 & 22/32 \\
+R3 & Event / ordinary PPO & 41 & 87/5 & 32768 & 25/32 \\
+R3 & Event / ordinary PPO & 51 & 87/5 & 32768 & 20/32 \\
+R3 & Event / active PPO & 31 & 87/5 & 32768 & 24/32 \\
+R3 & Event / active PPO & 41 & 87/5 & 32768 & 24/32 \\
+R3 & Event / active PPO & 51 & 87/5 & 32768 & 18/32 \\
+R3 & Fixed / ordinary PPO & 31 & 87/5 & 32768 & 25/32 \\
+R3 & Fixed / active PPO & 31 & 87/5 & 32768 & 25/32 \\
+\bottomrule
+\end{tabular}

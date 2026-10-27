@@ -1,0 +1,56 @@
+[
+  {
+    "round": "r3",
+    "engine_subdir": "engine_preserved_nominal",
+    "name": "probe4_preserved_kp1",
+    "gpu": 0,
+    "num_envs": 4,
+    "controller": "damped",
+    "eval_episodes": 8,
+    "extra": [
+      "--episode-seconds",
+      "24",
+      "--contact-steering",
+      "0",
+      "--exact-footprint",
+      "--guarded-alignment",
+      "--yaw-enabled",
+      "--yaw-reference",
+      "zero",
+      "--action-cost",
+      "executed",
+      "--recontact-enabled",
+      "--exact-recontact",
+      "--event-refresh",
+      "--feedback-kp",
+      "1"
+    ]
+  },
+  {
+    "round": "r3",
+    "engine_subdir": "engine_preserved_nominal",
+    "name": "probe4_preserved_kp2",
+    "gpu": 0,
+    "num_envs": 4,
+    "controller": "damped",
+    "eval_episodes": 8,
+    "extra": [
+      "--episode-seconds",
+      "24",
+      "--contact-steering",
+      "0",
+      "--exact-footprint",
+      "--guarded-alignment",
+      "--yaw-enabled",
+      "--yaw-reference",
+      "zero",
+      "--action-cost",
+      "executed",
+      "--recontact-enabled",
+      "--exact-recontact",
+      "--event-refresh",
+      "--feedback-kp",
+      "2"
+    ]
+  }
+]

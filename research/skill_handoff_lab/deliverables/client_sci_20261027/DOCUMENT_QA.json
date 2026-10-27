@@ -1,27 +1,35 @@
 {
   "status": "PASS",
+  "version": "Incremental closed-loop continuation; prior v7 immutable copy indexed separately",
   "scope": "Compiled output, text and exact generated-input copies; visual review recorded separately",
   "documents": [
     {
       "path": "01_CLIENT_PROPOSAL_CN.pdf",
-      "pages": 9,
-      "bytes": 2791708,
-      "sha256": "9a0b6f3f5b6402f642e1d5363880c2121db686f944e252de850aa808cc4cc3b8",
-      "text_characters": 7234
+      "pages": 10,
+      "bytes": 2799279,
+      "sha256": "961e9d38e3063adc64d40e20fcab933fb3ac4c7fb31eb3460c9172ae9d1d7224",
+      "text_characters": 8822
     },
     {
       "path": "07_MENTOR_BRIEF_CN.pdf",
       "pages": 2,
-      "bytes": 98156,
-      "sha256": "2786210a4621b6b6983e410812a3010cf02c72036a1c2a75a82ef2240955881a",
-      "text_characters": 1818
+      "bytes": 97443,
+      "sha256": "5d16b6cfe7151e3b834d273fe924acfca565824a22f3b5467ac1a0dfa223de3f",
+      "text_characters": 2175
     },
     {
       "path": "02_PAPER_SEED/main.pdf",
-      "pages": 10,
-      "bytes": 1184519,
-      "sha256": "014326e36d738feac80715603c67a430f870b0c279cb1e9ab61a915a8f10dc7e",
-      "text_characters": 40611
+      "pages": 18,
+      "bytes": 3946290,
+      "sha256": "2746b23ffaf19b2bcd4de05da0de93585f1cd5d5002bc6ab5d068cef4fcc79f0",
+      "text_characters": 63958
+    },
+    {
+      "path": "08_ITERATIVE_RESEARCH/MENTOR_VISUAL_BRIEF_CN.pdf",
+      "pages": 4,
+      "bytes": 3865157,
+      "sha256": "b88bd2e17c1fcf81f94deed6beff6b4f579568d9101d6a6634a7cdc228b67665",
+      "text_characters": 3153
     }
   ],
   "source_copies": [
@@ -71,6 +79,131 @@
       "sha256": "9c3a48e7dc379418a8cc98bb2b533259462380cf260cc574dc340cc499d1cc85"
     },
     {
+      "source": "08_ITERATIVE_RESEARCH/figures/FigR_development_cases.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/FigR_development_cases.pdf",
+      "sha256": "d37ea4124ad3ff5838758e74b9e1278e387d8afa1ef3efa437529b814e37a33b"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/FigR_method.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/FigR_method.pdf",
+      "sha256": "b8348bc66a972afdd2fdde3884f84d4469a6cfb67eff68a0ab5487c638c88f2b"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/FigR_online_learning.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/FigR_online_learning.pdf",
+      "sha256": "2b9c7b76ed871cd3a72a367e5b1a2fb88eed663ba4d049475dd376d45251b4ba"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R0_case000_case_000_trajectories.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R0_case000_case_000_trajectories.pdf",
+      "sha256": "b70db72aca92fd4e3cc61d4811ef535e285d63e88fb8df60cdaea58e9c51d5da"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R0_case000_filmstrip.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R0_case000_filmstrip.pdf",
+      "sha256": "3ca77e83e116ec1c1e14f8efedab8b0dc01d67431355a78b363e24f67e74aaa8"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R0_case001_case_001_trajectories.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R0_case001_case_001_trajectories.pdf",
+      "sha256": "d0301e53880d5b3dd54dc5e610f03d72396877f767224143c7f15c561a211947"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R0_case001_filmstrip.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R0_case001_filmstrip.pdf",
+      "sha256": "5fe77a671fadb817c0232013e55dfdf7b31c4143d534a2fc78e3659a5c7825ba"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R0_case003_case_003_trajectories.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R0_case003_case_003_trajectories.pdf",
+      "sha256": "9f9f680f3b6ab319c53d70944a6e527c8b5b529e3749a9758dbde141c051efac"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R0_case003_filmstrip.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R0_case003_filmstrip.pdf",
+      "sha256": "47112bf556ff3e659e07f304be5fda457c92831e57e1b73b8d0913271e00a0d2"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R0_case009_case_009_trajectories.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R0_case009_case_009_trajectories.pdf",
+      "sha256": "d2a5cb759aef77729a95ccc8f8578c913b7992824a7c035b712ac0a853006e1f"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R0_case009_filmstrip.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R0_case009_filmstrip.pdf",
+      "sha256": "2eeab47ed70cd30b5fd5080a5b624153870063d2ad21bb3ead2eb0fcde627966"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R1_case000_case_000_tool_contract.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R1_case000_case_000_tool_contract.pdf",
+      "sha256": "3fa0c17a89cca5b92e891045cf184ddb5aa20c7bfe705ecd6e79a7e68b4ca9e8"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R1_case000_case_000_trajectories.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R1_case000_case_000_trajectories.pdf",
+      "sha256": "640aac147632a3a3fde116c7e02eacea191603184a577e96fab901a2c1ee17fc"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R1_case000_filmstrip.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R1_case000_filmstrip.pdf",
+      "sha256": "0c04ec24d5e99e5cbb5fe8a3b22945606fb5af8cf7c79a61caf798b1bb63a384"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R1_case008_case_008_tool_contract.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R1_case008_case_008_tool_contract.pdf",
+      "sha256": "efa3ad521b2b8d48e71ca34916370e902692048c68244f2d887b0c5fa9cdd5fb"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R1_case008_case_008_trajectories.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R1_case008_case_008_trajectories.pdf",
+      "sha256": "d2475d74625d07eaed6cbf5c8ce330df883fde9c4e590d107198e7505dff14bc"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R1_case008_filmstrip.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R1_case008_filmstrip.pdf",
+      "sha256": "4923854a3906eb947eedb78f8cf2b17c82b29df7b7d7992533f4c1a941fa6a40"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R2_case005_case_005_tool_contract.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R2_case005_case_005_tool_contract.pdf",
+      "sha256": "dac3c9975ae8ec9ddc6d2db69babe976915d57fb2502e8d20f1a4197d40efd1b"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R2_case005_case_005_trajectories.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R2_case005_case_005_trajectories.pdf",
+      "sha256": "d056f947f451de252ae2b969871fc0b5285433cb57846b4e4ae1a8d69d60c01e"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R2_case005_filmstrip.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R2_case005_filmstrip.pdf",
+      "sha256": "74b28adb4282c121bbad00459bb2a21419ccaaefe17dde554a911a418dd0d057"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R3_case005_case_005_tool_contract.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R3_case005_case_005_tool_contract.pdf",
+      "sha256": "9bd6ef1115bd8972923466b5c0f0e039fc3610b90441f69c64d8e0170a2e9b45"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R3_case005_case_005_trajectories.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R3_case005_case_005_trajectories.pdf",
+      "sha256": "c82c87a141b041984639c6a11787b382cad8148e0c713b40cbcfa1f06d54b776"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R3_case005_filmstrip.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R3_case005_filmstrip.pdf",
+      "sha256": "df1a65724899663caca7047772485c147328617b402666c4fda986b5d4d6c385"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R3_online_training_16env_montage.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R3_online_training_16env_montage.pdf",
+      "sha256": "a5b8f3d33c6293996810dd6d782f60ff0d0a9f6bb9d1ac6980114eeb62a6572d"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/figures/R3_optimizer_before_after.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/R3_optimizer_before_after.pdf",
+      "sha256": "848002c4ad11503c9d5039ab14e1a70d7814dcd343e2c070844c798fd5b57ecf"
+    },
+    {
       "source": "04_TABLES/Tab1_environment.tex",
       "paper_copy": "02_PAPER_SEED/tables/environment.tex",
       "sha256": "7debaf54f733f738d130b52be3b4e24aacbf3c12e872326d9d6fd9ad8dd0f0ae"
@@ -89,12 +222,18 @@
       "source": "04_TABLES/Tab4_ablation_budget.tex",
       "paper_copy": "02_PAPER_SEED/tables/ablation_budget.tex",
       "sha256": "5addf66a6f20cf5951476c902217f20c7578cd45254a544cd83c1ce06f088d3c"
+    },
+    {
+      "source": "08_ITERATIVE_RESEARCH/tables/COMPLETED_ITERATIONS.tex",
+      "paper_copy": "02_PAPER_SEED/tables/closed_loop_iterations.tex",
+      "sha256": "668e58936a398d8a2ecc1e24f42a32fa3c577b5f1524dfe1e86a508fd36373a8"
     }
   ],
   "latex_warnings": 0,
   "latex_overfull_boxes": 0,
   "required_sections": [
     "abstract.tex",
+    "closed_loop.tex",
     "experiments.tex",
     "introduction.tex",
     "limitations.tex",

@@ -1,0 +1,19 @@
+[
+  {
+    "round": "r2",
+    "name": "probe4_yaw_zero",
+    "gpu": 1,
+    "num_envs": 4,
+    "eval_episodes": 8,
+    "controller": "damped",
+    "extra": [
+      "--contact-steering",
+      "0",
+      "--exact-footprint",
+      "--guarded-alignment",
+      "--yaw-enabled",
+      "--yaw-reference",
+      "zero"
+    ]
+  }
+]

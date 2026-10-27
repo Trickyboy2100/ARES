@@ -1,0 +1,298 @@
+{
+  "status": "PASS",
+  "scope": "Artifact/source/recorded initial-state verification, not a replacement for independent physical audit",
+  "comparisons": [
+    {
+      "iteration": "R0",
+      "case_id": 0,
+      "media": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "nb_frames": "465"
+      },
+      "all_output_hashes_match": true,
+      "cold_start_components_match": true,
+      "qualified": [
+        false,
+        true
+      ]
+    },
+    {
+      "iteration": "R0",
+      "case_id": 1,
+      "media": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "nb_frames": "465"
+      },
+      "all_output_hashes_match": true,
+      "cold_start_components_match": true,
+      "qualified": [
+        false,
+        true
+      ]
+    },
+    {
+      "iteration": "R0",
+      "case_id": 3,
+      "media": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "nb_frames": "465"
+      },
+      "all_output_hashes_match": true,
+      "cold_start_components_match": true,
+      "qualified": [
+        false,
+        false
+      ]
+    },
+    {
+      "iteration": "R0",
+      "case_id": 9,
+      "media": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "nb_frames": "450"
+      },
+      "all_output_hashes_match": true,
+      "cold_start_components_match": true,
+      "qualified": [
+        true,
+        true
+      ]
+    },
+    {
+      "iteration": "R1",
+      "case_id": 0,
+      "media": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "nb_frames": "450"
+      },
+      "all_output_hashes_match": true,
+      "cold_start_components_match": true,
+      "qualified": [
+        true,
+        true
+      ]
+    },
+    {
+      "iteration": "R1",
+      "case_id": 8,
+      "media": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "nb_frames": "465"
+      },
+      "all_output_hashes_match": true,
+      "cold_start_components_match": true,
+      "qualified": [
+        false,
+        false
+      ]
+    },
+    {
+      "iteration": "R2",
+      "case_id": 5,
+      "media": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "nb_frames": "465"
+      },
+      "all_output_hashes_match": true,
+      "cold_start_components_match": true,
+      "qualified": [
+        false,
+        false
+      ]
+    }
+  ],
+  "runs": {
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R0_baseline": {
+      "trace_sha256": "35e54b42a6f2ed45a84a3f2ff295c44e6bba3cfdbc3a082d29ff513903ecb7cc",
+      "appearance_equal": true,
+      "physical_method_AST_identical": true,
+      "recorded_cases": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "source_camera_clock_audit": {
+        "0": {
+          "source_frame_count": 361,
+          "last_physical_time_s": 11.983333333333333,
+          "max_encoded_frame_clock_minus_physical_time_s": 0.016666666666667496,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        },
+        "1": {
+          "source_frame_count": 361,
+          "last_physical_time_s": 11.983333333333333,
+          "max_encoded_frame_clock_minus_physical_time_s": 0.016666666666667496,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        },
+        "3": {
+          "source_frame_count": 361,
+          "last_physical_time_s": 11.983333333333333,
+          "max_encoded_frame_clock_minus_physical_time_s": 0.016666666666667496,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        },
+        "9": {
+          "source_frame_count": 259,
+          "last_physical_time_s": 8.583333333333334,
+          "max_encoded_frame_clock_minus_physical_time_s": 0.01666666666666572,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        }
+      }
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R0_residual41": {
+      "trace_sha256": "c4377c1b47ffc07c9b1936eaead9e8c0881ad3cb25b456f61db2ea1aa0151da9",
+      "appearance_equal": true,
+      "physical_method_AST_identical": true,
+      "recorded_cases": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "source_camera_clock_audit": {
+        "0": {
+          "source_frame_count": 306,
+          "last_physical_time_s": 10.15,
+          "max_encoded_frame_clock_minus_physical_time_s": 0.01666666666666572,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        },
+        "1": {
+          "source_frame_count": 264,
+          "last_physical_time_s": 8.766666666666666,
+          "max_encoded_frame_clock_minus_physical_time_s": 1.7763568394002505e-15,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        },
+        "3": {
+          "source_frame_count": 361,
+          "last_physical_time_s": 11.983333333333333,
+          "max_encoded_frame_clock_minus_physical_time_s": 0.016666666666667496,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        },
+        "9": {
+          "source_frame_count": 242,
+          "last_physical_time_s": 8.016666666666666,
+          "max_encoded_frame_clock_minus_physical_time_s": 0.016666666666667496,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        }
+      }
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R1_param_success": {
+      "trace_sha256": "04a04846e43888fdac0e9e639dbffd63b065d95e2eb01eeb03875eb45ec7f5f0",
+      "appearance_equal": true,
+      "physical_method_AST_identical": true,
+      "recorded_cases": [
+        0
+      ],
+      "source_camera_clock_audit": {
+        "0": {
+          "source_frame_count": 278,
+          "last_physical_time_s": 9.233333333333333,
+          "max_encoded_frame_clock_minus_physical_time_s": 1.7763568394002505e-15,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        }
+      }
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R1_effect_success": {
+      "trace_sha256": "3e986f5a6a57d8ab2847639fc9b772108394924edf4905747f7a4c38bc385a4a",
+      "appearance_equal": true,
+      "physical_method_AST_identical": true,
+      "recorded_cases": [
+        0
+      ],
+      "source_camera_clock_audit": {
+        "0": {
+          "source_frame_count": 283,
+          "last_physical_time_s": 9.366666666666667,
+          "max_encoded_frame_clock_minus_physical_time_s": 0.03333333333333499,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        }
+      }
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R1_param": {
+      "trace_sha256": "04a04846e43888fdac0e9e639dbffd63b065d95e2eb01eeb03875eb45ec7f5f0",
+      "appearance_equal": true,
+      "physical_method_AST_identical": true,
+      "recorded_cases": [
+        8
+      ],
+      "source_camera_clock_audit": {
+        "8": {
+          "source_frame_count": 362,
+          "last_physical_time_s": 11.983333333333333,
+          "max_encoded_frame_clock_minus_physical_time_s": 0.05000000000000071,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        }
+      }
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R1_effect": {
+      "trace_sha256": "3e986f5a6a57d8ab2847639fc9b772108394924edf4905747f7a4c38bc385a4a",
+      "appearance_equal": true,
+      "physical_method_AST_identical": true,
+      "recorded_cases": [
+        8
+      ],
+      "source_camera_clock_audit": {
+        "8": {
+          "source_frame_count": 362,
+          "last_physical_time_s": 11.983333333333333,
+          "max_encoded_frame_clock_minus_physical_time_s": 0.05000000000000071,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        }
+      }
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R2_param": {
+      "trace_sha256": "61d7302380ad15a19304803ad484c695b5bd1ce79dad2751afd73da69a53ff40",
+      "appearance_equal": true,
+      "physical_method_AST_identical": true,
+      "recorded_cases": [
+        5
+      ],
+      "source_camera_clock_audit": {
+        "5": {
+          "source_frame_count": 361,
+          "last_physical_time_s": 11.983333333333333,
+          "max_encoded_frame_clock_minus_physical_time_s": 0.016666666666667496,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        }
+      }
+    },
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R2_effect": {
+      "trace_sha256": "65b1b72ef7255349ca31f0b1207e80c326f210622cd009c702f2000f53877576",
+      "appearance_equal": true,
+      "physical_method_AST_identical": true,
+      "recorded_cases": [
+        5
+      ],
+      "source_camera_clock_audit": {
+        "5": {
+          "source_frame_count": 362,
+          "last_physical_time_s": 11.983333333333333,
+          "max_encoded_frame_clock_minus_physical_time_s": 0.05000000000000071,
+          "authoritative_clock": "elapsed_physics_s per captured frame; extra event frames are explicitly resampled into paired video"
+        }
+      }
+    }
+  },
+  "verifier_sha256": "84a279f7c391298c921cd557a6a584b284d08acc91f669f85b9a83491a52e7c4"
+}

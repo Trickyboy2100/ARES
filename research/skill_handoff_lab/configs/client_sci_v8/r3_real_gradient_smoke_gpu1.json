@@ -1,0 +1,30 @@
+[
+  {
+    "round": "r3",
+    "engine_subdir": "engine_training",
+    "name": "smoke4_real_gradient_audit",
+    "gpu": 1,
+    "num_envs": 4,
+    "steps": 1024,
+    "eval_episodes": 2,
+    "scenario": "train.json",
+    "extra": [
+      "--episode-seconds",
+      "24",
+      "--contact-steering",
+      "0",
+      "--exact-footprint",
+      "--guarded-alignment",
+      "--yaw-enabled",
+      "--yaw-reference",
+      "zero",
+      "--action-cost",
+      "executed",
+      "--recontact-enabled",
+      "--exact-recontact",
+      "--event-refresh",
+      "--policy-mode",
+      "qualified_gaussian"
+    ]
+  }
+]

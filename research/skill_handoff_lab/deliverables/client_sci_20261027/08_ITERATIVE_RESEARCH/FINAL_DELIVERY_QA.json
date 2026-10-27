@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "completed_runs_checked": 66,
+  "model_files_checked": 15,
+  "pdf_files_checked": 4,
+  "known_online_interactions_including_failed_recording": 414720,
+  "incomplete_recordings_retained": 1,
+  "evidence_check_hashes": {
+    "VIDEO_QA.json": "de85b1ba106fe3b2c333b1b1722f79c5fdfe755f7c193ec71c6b6ef38510c232",
+    "TRAINING_VIDEO_QA.json": "2157517752473e615d27a099a6ff0d8afc7b382fef3cdffbeb53f1db48abc504",
+    "metrics/MODEL_LOAD_QA.json": "102e19f58ba5d2254361f841a15c3d24d2fd7f9ca61074a09d68b39eb97f6281"
+  },
+  "limitations": [
+    "Artifact integrity does not establish scientific superiority.",
+    "Physical limitations remain those stated in per-run sampled validation.",
+    "Unknown failed-run physics costs remain explicitly unknown."
+  ]
+}

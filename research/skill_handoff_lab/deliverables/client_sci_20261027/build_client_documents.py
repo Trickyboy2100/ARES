@@ -98,7 +98,7 @@ def document(path, story, title):
     doc.build(story)
 
 def figure(filename, caption, maxheight=235):
-    path = ROOT/'03_FIGURES'/filename
+    path = ROOT/filename if filename.startswith('08_ITERATIVE_RESEARCH/') else ROOT/'03_FIGURES'/filename
     if not path.exists():
         return []
     ir = ImageReader(str(path))
@@ -141,7 +141,7 @@ def build_proposal():
     story=[]
     figures={
         0:('Fig1_system_layers.png','图1｜系统分层与本文边界。实线已实现，拟实现模块不作为成果。来源：03_FIGURES/provenance。',225),
-        2:('Fig2_method_graph.png','图2｜从名义动作到合法参数与物理结果；拟机制必须实际进入Actor，不能止于预测头。',245),
+        2:('Fig2_method_graph.png','图2｜HISTORICAL v7，64D/3D原型，不是本轮R2/R3接口。拟机制必须实际进入Actor，不能止于预测头；本轮以08源码/manifest为准。',245),
         3:('Fig3_physx_scene_board.png','图3｜旧v6b策略实时PhysX重评，非新B3训练或固定轨迹播放。3号案例后续成功、1号后续超时，所示均非终帧；16环境总评55/64独立通过。外观未改物理属性。SYNTHETIC自由方块，非现场料盘或接触抓取。',240),
         4:('Fig5_historical_frozen_tests.png','图5｜历史冻结测试重建。每split32同案例，三seed；P1/P2单列，训练seed SD不作置信区间。',245),
         5:('FigS1_actual_contact_state_diagnostic.png','物理机制诊断｜不同案例的失败/成功实测轨迹，不是同初态因果实验。旋转、偏离和速度问题须通过新配对干预验证。',240),
@@ -150,7 +150,8 @@ def build_proposal():
     }
     for i,(heading,blocks) in enumerate(sections):
         if i: story.append(PageBreak())
-        story.append(para(f'RESEARCH PROPOSAL  /  {i+1:02d}', 'tag'))
+        scope = 'RESEARCH SCOPE' if i==0 else ('UPDATED RESEARCH ABSTRACT' if i==1 else ('HISTORICAL v6/v7' if i<9 else 'NEW CLOSED-LOOP RESEARCH'))
+        story.append(para(f'{scope}  /  {i+1:02d}', 'tag'))
         story.append(para(heading,'h1'))
         for j,b in enumerate(blocks):
             if i==0 and j==0:
@@ -166,6 +167,21 @@ def build_proposal():
                 ['PROTOTYPE','任务局部残差与结果反馈pilot，以run记录为准','单seed即显著、已证实新算法'],
                 ['PROPOSED / NOT TESTED','后续条件消融、5种子及新封测试','跨机器人/视觉部署/工业安全'],
             ],[90,212,217]))
+        if i==9:
+            actual=json.loads((ROOT/'08_ITERATIVE_RESEARCH/metrics/R3_PAIRED_SEED_SUMMARY.json').read_text())
+            ordinary='/'.join(str(r['ordinary_pass']) for r in actual['rows'])
+            active='/'.join(str(r['qualified_pass']) for r in actual['rows'])
+            frozen=json.loads((ROOT/'08_ITERATIVE_RESEARCH/metrics/r3_fixed_likelihood_ablation/PAIRED_SUMMARY.json').read_text())['outcomes']
+            fixed_left=frozen['common_success']+frozen['regression']
+            fixed_right=frozen['common_success']+frozen['rescue']
+            story.extend(table([
+                ['独立P2开发验收','成功/32（31/41/51）','研究判断'],
+                ['事件/普通PPO',ordinary,'同执行器、同预算'],
+                ['事件/执行维PPO',active,'差值+2/−1/−2，无稳定主指标增益'],
+                ['固定保持/31号',f'{fixed_left} / {fixed_right}','普通/候选同成功集合；候选快0.208s仅单seed'],
+                ['共享强反馈','26','候选成功集合为其子集，不隐藏强基线'],
+            ],[132,144,243]))
+            story.append(para('表｜由R3_PAIRED_SEED_SUMMARY与fixed-likelihood配对JSON生成。完整逐案例矩阵、学习曲线与物理视频另见08目录；此表不是最终测试。','caption'))
     document(ROOT/'01_CLIENT_PROPOSAL_CN.pdf',story,'ARES 甲方SCI接触技能强化学习研究方案')
 
 def build_brief():
@@ -195,6 +211,8 @@ def main():
     outputs=['01_CLIENT_PROPOSAL_CN.pdf','07_MENTOR_BRIEF_CN.pdf']
     if (ROOT/'02_PAPER_SEED/main.pdf').is_file():
         outputs.append('02_PAPER_SEED/main.pdf')
+    if (ROOT/'08_ITERATIVE_RESEARCH/MENTOR_VISUAL_BRIEF_CN.pdf').is_file():
+        outputs.append('08_ITERATIVE_RESEARCH/MENTOR_VISUAL_BRIEF_CN.pdf')
     manifest=[]
     from pypdf import PdfReader
     for name in outputs:

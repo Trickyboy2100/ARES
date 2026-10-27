@@ -1,0 +1,4 @@
+[
+ {"round":"r3","engine_subdir":"engine_formal","name":"smoke1_exact_recontact","gpu":1,"num_envs":1,"controller":"damped","eval_episodes":2,"extra":["--episode-seconds","24","--contact-steering","0","--exact-footprint","--guarded-alignment","--yaw-enabled","--yaw-reference","zero","--action-cost","executed","--recontact-enabled","--exact-recontact","--event-refresh"]},
+ {"round":"r3","engine_subdir":"engine_formal","name":"probe4_exact_recontact","gpu":1,"num_envs":4,"controller":"damped","eval_episodes":8,"extra":["--episode-seconds","24","--contact-steering","0","--exact-footprint","--guarded-alignment","--yaw-enabled","--yaw-reference","zero","--action-cost","executed","--recontact-enabled","--exact-recontact","--event-refresh"]}
+]

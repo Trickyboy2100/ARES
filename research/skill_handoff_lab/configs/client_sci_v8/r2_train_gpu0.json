@@ -1,0 +1,42 @@
+[
+  {
+    "round": "r2",
+    "engine_subdir": "engine_train",
+    "name": "yaw_effect_param_ppo_seed31",
+    "gpu": 0,
+    "steps": 32768,
+    "eval_episodes": 8,
+    "scenario": "train.json",
+    "extra": [
+      "--contact-steering",
+      "0",
+      "--exact-footprint",
+      "--guarded-alignment",
+      "--yaw-enabled",
+      "--yaw-reference",
+      "zero",
+      "--action-cost",
+      "executed"
+    ]
+  },
+  {
+    "round": "r2",
+    "engine_subdir": "engine_train",
+    "name": "yaw_effect_param_ppo_seed31_development",
+    "gpu": 0,
+    "steps": 0,
+    "eval_episodes": 32,
+    "load_policy": "r2/yaw_effect_param_ppo_seed31/policy.zip",
+    "extra": [
+      "--contact-steering",
+      "0",
+      "--exact-footprint",
+      "--guarded-alignment",
+      "--yaw-enabled",
+      "--yaw-reference",
+      "zero",
+      "--action-cost",
+      "executed"
+    ]
+  }
+]

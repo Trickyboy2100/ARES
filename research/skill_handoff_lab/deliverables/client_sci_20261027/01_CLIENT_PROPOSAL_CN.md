@@ -1,10 +1,12 @@
 # 面向甲方 SCI 的接触技能强化学习研究方案
 
-2026-10-27｜图文研究初稿｜历史结果 EXACT，新方法 PROTOTYPE/PROPOSED
+2026-10-27｜增量图文研究稿｜第2页摘要/第10页更新本轮；第3–9页保留v6/v7历史。所有方法结论以实际独立验收为准。
 
 ## 01 合同关联与研究边界
 
 合同主题为《多模态具身感知与基于强化学习的仿人机械臂控制策略研究》。本篇拟覆盖其中强化学习控制部分：在既有机械臂名义控制与技能接口之上，学习受约束的接触动作参数，提高多阶段任务稳定完成与未见几何适应。单JAKA研究并不等于已完成多模态闭环或完整仿人双臂合同。合同要求采用RL，不要求证明传统控制不可替代；也不把现场某次IK失败等同于论文科学问题。
+
+阅读导航：第3–9页是保留的v6/v7证据，不是本轮新方法结果；第2页摘要及第10页同步本轮R0–R3。真实成对录像和新训练曲线见08_ITERATIVE_RESEARCH/index.html及MENTOR_VISUAL_BRIEF_CN.pdf；跨机器携带视频包后使用OPEN_ME.html。原9页PDF/MD/LaTeX整包已保全于非Git历史目录。
 
 首选中文工作题目：《面向多阶段接触操作的任务条件化残差技能强化学习》。首选英文工作题目：Task-Conditioned Residual Skills for Reliable Multi-Stage Contact Manipulation。更宽的备选题目：《面向多阶段机械臂操作的任务条件化执行结果感知参数化技能强化学习方法》；英文为 Task-Conditioned Outcome-Aware Parameterized Skill Reinforcement Learning for Multi-Stage Robotic Manipulation。备选题目只有在后续结果机制取得独立证据后采用。
 
@@ -12,9 +14,9 @@
 
 ## 02 中英文研究摘要
 
-中文摘要：多阶段接触操作中，局部位置到达不能保证后续稳定完成，工件姿态、速度和工具接触会持续影响执行。本研究在名义控制之上学习合法残差参数，检验任务坐标和已发生的执行效果。Isaac Sim 5.1 / Isaac Lab 2.3.0已支持16环境在线训练。历史几何测试普通残差三种子13、18、23/32，反馈8/32，但P2仅6、6、7/16，对照5/16。新P2开发pilot独立验收显示任务坐标与结果历史版本均30/32（各三种子），修正反馈也是30/32；未形成方法增量。结果支持真实训练与工程可用性，不支持宣称新算法优越；后续需检验有实际接触控制权的参数及独立机制。
+中文摘要：多阶段接触操作中，局部到位不能保证后续稳定完成。本研究在名义控制之上学习合法接触参数，使用16环境Isaac Sim5.1/Lab2.3.0在线PhysX。历史残差具有几何适应初证，但P2增量小。新R1/R2两轮效果历史未改善成功；R3以相同87D/5D执行器、控制和预算比较普通与有效执行likelihood。真实同样本梯度审计确认机制进入Actor，但三种子独立P2结果为22/25/20与24/24/18（各32例），强反馈26/32，差值+2/−1/−2不支持稳定增益。固定刷新单种子两者均25/32，后者共同成功快0.208s，属真实局部成本信号而非已验证算法优势。完整正负证据、影片与预算保留；尚不足投稿，不宣称现场/实机或跨任务新方法泛化。
 
-English abstract: Multi-stage contact manipulation requires control of persistent object motion, orientation and tool contact, not merely intermediate position attainment. We investigate legal task-relative residual parameters on top of nominal control using a 16-environment JAKA testbed in Isaac Sim 5.1 and Isaac Lab 2.3.0. Historical unseen-geometry success is 13, 18 and 23 out of 32 for ordinary residual PPO versus 8 for damped feedback, while P2-only success remains 6, 6 and 7 out of 16 versus 5. A new matched-budget P2 development pilot obtains 30/32 for both task-frame residual and effect-history policies across all three seeds; corrected feedback also obtains 30/32. Actual conditioning interventions change trajectories but not successful-case sets. These findings establish executable training and a useful engineering baseline, not a validated new algorithmic advantage. Further work must demonstrate actionable contact parameters and independent mechanism benefits.
+English abstract: We investigate legal residual contact parameters using a 16-environment JAKA testbed in Isaac Sim 5.1 and Isaac Lab 2.3.0. After retaining earlier positive residual-control and negative history-conditioning evidence, three physical iterations test contact-target authority, rotated geometry with tool yaw, and a stateful re-contact interface. An execution-active Gaussian objective changes actor gradients on identical real rollout samples. Yet three-seed P2 completion is 22/25/20 for ordinary PPO versus 24/24/18 for the candidate, out of the same 32 development cases; strong feedback achieves 26. The paired differences do not support stable improvement. Fixed-refresh policies both complete 25 cases, with a 0.208-second single-seed common-success cost reduction for the candidate. This is a limited secondary signal, not a validated novel method. Physical traces, failure videos, source hashes and budgets are retained; sealed final tests and real-robot deployment are not claimed.
 
 ## 03 问题、系统与已有工作区别
 
@@ -64,7 +66,7 @@ G1：合法动作确实通过关节改变物体，独立后缀验收；G2：修�
 
 长期保留接口：Skill Contract/Option、执行结果审计、物理接触策略、技能恢复与未来VLA目标输入。这些是扩展基础，不计入当前已完成贡献。真实10月资料独立受控，公开包不含现场点云、生产配置、机器人读数或派生现场图。
 
-## 09 本轮真实P2实验与交付决策
+## 09 前轮v7真实P2实验与交付决策
 
 本轮新增196,608次在线交互：9个主模型×16,384=147,456，加单独no-next训练16,384，共163,840正式交互；另保留32,768次观测索引修正前的软件诊断，不混正式结果。共12个新训练模型，均有checkpoint、源码、配置、动作及状态记录。历史901,120次另外列账，不重复充作本轮新增。
 
@@ -73,3 +75,13 @@ G1：合法动作确实通过关节改变物体，独立后缀验收；G2：修�
 同一B3模型移除全部8维历史、仅移除实测响应或部分后续合同，均保持30/32相同成功集合。去历史的应用参考增量RMS差约20.6μm，工件轨迹RMS差约54.2μm：信息进入行为，但未证明完成收益。±4mm命令使交接位置平均改变约1.3-1.5mm，结果为30/29，零偏移30；无救回，正偏移还损失1例。B3共同成功用时略短于B2，但不稳定优于反馈，去历史也未变慢。残余失败位于阶段1、目标外约29-38mm，接触代理45-59N；现有限次撤回各尝试3次未救回，不等于证明不可恢复。
 
 明确决策：不继续堆历史通道、刷饱和场景或把微小动作变化写成新算法。下一轮先用真实配对试验确认再接触/作用点参数的物理控制权，再在非饱和、物理有依据的接触条件中比较修正反馈和残差；只有获得可重复独立收益，才扩大统计。作为工程与可信实验交付，本轮保留全部正负证据。清理160个完全相同冗余副本，实际释放196.88MiB（0.1923GiB），删除独有内容和原路径均为0。
+
+## 10 本轮真实闭环研究与可视化证据
+
+R0重执行历史32几何案例：反馈8、普通残差seed41为18；拆开P1为3→12/16、P2为5→6/16。P2 case001真实救援已录制，同时保留共同失败/成功录像，不把混合任务总体改善归给P2或新算法。完整入口08_ITERATIVE_RESEARCH/index.html，短册MENTOR_VISUAL_BRIEF_CN.pdf；影片、原状态和模型非Git保留。
+
+R1：相同64D容量、3D动作、合法phase1接触偏置±8mm，两模型各32,768在线交互；普通参数PPO/效果历史PPO独立验收均25/32、同7失败，历史共同成功慢0.0373s。R2共享旋转足迹/SAT几何及有限工具yaw（66D/4D），各32,768交互；强反馈25/32，两RL均24/32、同8失败，历史慢0.3083s。时间按实际episode控制步/60计算，跨轮几何/接口变化不作单变量因果消融。
+
+R3已实现87D/5D持久参数与真实撤回—绕行—再接触，两目标同24s合同。三种子独立普通PPO为22/25/20，执行维目标24/24/18；均值69.79%±7.86pp与68.75%±10.83pp（seed样本SD），强反馈26/32。差值+2/−1/−2、相对反馈零救回，不支持稳定增益。固定保持31两者均25，候选共同成功快0.208s，仅单种子次指标；事件刷新未证有效。首512同样本/同权重梯度差.405706证明Actor机制接入，不是物理优势或学会恢复。
+
+实际新增414,720交互＝12正式模型393,216＋smoke5,120＋真实训练录像12,288＋失败录制4,096。15完成checkpoint已加载验证；展示模型不替换正式比较。正式训练60Hz完整pre-action、120Hz验收trace仅evaluation；独立展示另有120Hz状态sidecar。无导轨迁移反馈/普通32/32、候选29，未证泛化。原有保持/边缘化不称首次；命令不等于位移，工程/时限不算算法收益。最终测试未读；不刷同失效假设，先验证有用接触权限和固定保持成本信号。

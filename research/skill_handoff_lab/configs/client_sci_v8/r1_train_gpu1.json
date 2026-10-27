@@ -1,0 +1,39 @@
+[
+  {
+    "round": "r1",
+    "name": "effect_param_ppo_seed31",
+    "gpu": 1,
+    "steps": 32768,
+    "eval_episodes": 8,
+    "scenario": "train.json",
+    "extra": [
+      "--contact-steering",
+      "0"
+    ]
+  },
+  {
+    "round": "r1",
+    "name": "effect_param_ppo_seed31_development",
+    "gpu": 1,
+    "steps": 0,
+    "eval_episodes": 32,
+    "scenario": "development.json",
+    "load_policy": "r1/effect_param_ppo_seed31/policy.zip",
+    "extra": [
+      "--contact-steering",
+      "0"
+    ]
+  },
+  {
+    "round": "r1",
+    "name": "feedback32_gpu1",
+    "gpu": 1,
+    "steps": 0,
+    "eval_episodes": 32,
+    "controller": "damped",
+    "extra": [
+      "--contact-steering",
+      "0"
+    ]
+  }
+]

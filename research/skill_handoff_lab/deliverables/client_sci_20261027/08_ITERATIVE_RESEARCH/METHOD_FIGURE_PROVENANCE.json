@@ -1,0 +1,19 @@
+{
+  "run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/r3/event_qualified_seed31",
+  "observation_dim": 87,
+  "action_dim": 5,
+  "policy_mode": "qualified_gaussian",
+  "nominal_controller_not_learned_high_level_switch": true,
+  "source_script_sha256": "e52c7e22fa79b03af334e8d339219c41baa1ccf27c8f58327b18f6e1efdd48b6",
+  "inputs": {
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/r3/event_qualified_seed31/manifest.json": "31f59864db98b8a0f518ed8d43e788fc2624291bb1c18612b9b3ba659396568c",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/r3/event_qualified_seed31/run_config.json": "5f99aabd43ba566fd3ff9e95dac5cd742a8a1c742ccf76ee46946d8c37c50c8c",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/r3/event_qualified_seed31/task_source.py": "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/r3/event_qualified_seed31/contact_masked_policy_v8.py": "b02414eec00fdb7d80dfd4159e3a326a5228d55bcdffac883a6603fa1cae1d87"
+  },
+  "outputs": {
+    "FigR_method.pdf": "b8348bc66a972afdd2fdde3884f84d4469a6cfb67eff68a0ab5487c638c88f2b",
+    "FigR_method.svg": "1c931f041dc9ced160a54e5529f544b57f318c2e58d33d98143a91458fd1895e",
+    "FigR_method.png": "3c7cfc77f2d45022c548d7d224a1b5323eeca7077decb0ea9f23f275f11d2bc6"
+  }
+}

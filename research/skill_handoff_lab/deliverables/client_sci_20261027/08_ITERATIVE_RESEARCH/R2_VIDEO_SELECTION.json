@@ -1,0 +1,243 @@
+{
+  "rule": "minimum case ID in first available P2 rescue/common-failure/common-success category",
+  "checkpoint_selection": "supplied independently; not selected by this script",
+  "first_category_case": {
+    "P1_rescue": null,
+    "P2_rescue": null,
+    "P2_common_failure": 5,
+    "P2_common_success": 0,
+    "P2_regression": null
+  },
+  "default_new_round_case": 5,
+  "all_cases": [
+    {
+      "case_id": 0,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 1,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 2,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 3,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 4,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 5,
+      "family": "P2",
+      "left_pass": false,
+      "right_pass": false,
+      "category": "P2_common_failure"
+    },
+    {
+      "case_id": 6,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 7,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 8,
+      "family": "P2",
+      "left_pass": false,
+      "right_pass": false,
+      "category": "P2_common_failure"
+    },
+    {
+      "case_id": 9,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 10,
+      "family": "P2",
+      "left_pass": false,
+      "right_pass": false,
+      "category": "P2_common_failure"
+    },
+    {
+      "case_id": 11,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 12,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 13,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 14,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 15,
+      "family": "P2",
+      "left_pass": false,
+      "right_pass": false,
+      "category": "P2_common_failure"
+    },
+    {
+      "case_id": 16,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 17,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 18,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 19,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 20,
+      "family": "P2",
+      "left_pass": false,
+      "right_pass": false,
+      "category": "P2_common_failure"
+    },
+    {
+      "case_id": 21,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 22,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 23,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 24,
+      "family": "P2",
+      "left_pass": false,
+      "right_pass": false,
+      "category": "P2_common_failure"
+    },
+    {
+      "case_id": 25,
+      "family": "P2",
+      "left_pass": false,
+      "right_pass": false,
+      "category": "P2_common_failure"
+    },
+    {
+      "case_id": 26,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 27,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 28,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 29,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 30,
+      "family": "P2",
+      "left_pass": true,
+      "right_pass": true,
+      "category": "P2_common_success"
+    },
+    {
+      "case_id": 31,
+      "family": "P2",
+      "left_pass": false,
+      "right_pass": false,
+      "category": "P2_common_failure"
+    }
+  ],
+  "left_audit_sha256": "58f1fc7a3723bb5904ed9d03b27dd22645734c4431c3c97dfc366d534a65dc68",
+  "right_audit_sha256": "72554849d5663eed1496b1d2d5f609b3ef8876fb805285fb1c1398f394f83b8f",
+  "left_frozen_sha256": "27ce629b76d7a1238278c8c095096afc5524fe24eb4fa328d8fad202e8ea37fc",
+  "right_frozen_sha256": "56fc392870e82738a4bffb10c8d641d4375b7c5cc178a07128215e3b8d3b895c",
+  "selector_sha256": "7664f60465b3047d071767e286bdd2008fac78f6b6524e34a859c5ef2b98bcf2"
+}

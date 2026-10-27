@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "scope": "Actual extra12288-interaction online training rerun, not formal performance",
+  "all_input_output_hashes_match": true,
+  "physical_method_AST_identity_after_record_only_removal": true,
+  "CPU_checkpoint_load": true,
+  "saved_checkpoint_sorted_tensor_hash": "0f46d91829f3bf3b1eef65d187f262f97e0a0105cfe55c7d024d29cd2b247cb7",
+  "equals_last_optimizer_after_hash": true,
+  "real_rollout_updates": 3,
+  "optimizer_keeps_physics_state_unchanged": true,
+  "training_state_shape": [
+    1536,
+    16,
+    44
+  ],
+  "training_sampling_hz": 120,
+  "media": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "12/1",
+    "nb_frames": "190"
+  },
+  "verifier_sha256": "de807de0d76bd371fbd138f52a2021cdfef8482367808168aeba0231fbe4b317",
+  "limitations": [
+    "Not a replacement for full arm mesh/self-collision physical validation",
+    "Training sidecar is prephysics-after-reference; evaluation trace separate",
+    "Camera montage is same-tick16views in one application, not one camera"
+  ]
+}

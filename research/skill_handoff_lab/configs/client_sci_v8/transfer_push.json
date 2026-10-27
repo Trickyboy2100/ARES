@@ -1,0 +1,56 @@
+{
+  "split": "exploratory_transfer_not_final_test",
+  "scope": "P2 trained seed31 policy zero-shot on ARES self-built free push; no rail physical family, not field/standard benchmark",
+  "case_seed": 102951,
+  "selection": "seed31 preassigned, not selected by performance",
+  "groups": [
+    {
+      "id": "v8_transfer_push_0",
+      "gap": 0.053,
+      "goal_x": 0.142,
+      "slot_y": -0.021,
+      "mass": 0.052,
+      "mu": 0.29,
+      "direction": -0.07,
+      "initial_yaw": -0.08,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v8_transfer_push_1",
+      "gap": 0.057,
+      "goal_x": 0.148,
+      "slot_y": -0.025,
+      "mass": 0.065,
+      "mu": 0.33,
+      "direction": 0.07,
+      "initial_yaw": 0.08,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v8_transfer_push_2",
+      "gap": 0.053,
+      "goal_x": 0.142,
+      "slot_y": -0.021,
+      "mass": 0.08,
+      "mu": 0.37,
+      "direction": -0.13,
+      "initial_yaw": -0.08,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v8_transfer_push_3",
+      "gap": 0.057,
+      "goal_x": 0.148,
+      "slot_y": -0.025,
+      "mass": 0.04,
+      "mu": 0.25,
+      "direction": 0.13,
+      "initial_yaw": 0.08,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    }
+  ]
+}

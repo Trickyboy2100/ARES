@@ -1,0 +1,42 @@
+[
+  {
+    "round": "r1",
+    "name": "probe4_steer_pos",
+    "gpu": 0,
+    "num_envs": 4,
+    "eval_episodes": 8,
+    "controller": "damped",
+    "extra": [
+      "--contact-steering",
+      ".03"
+    ]
+  },
+  {
+    "round": "r1",
+    "name": "probe4_contact_minus",
+    "gpu": 0,
+    "num_envs": 4,
+    "eval_episodes": 8,
+    "controller": "damped",
+    "extra": [
+      "--fixed-contact",
+      "-.008",
+      "--contact-steering",
+      "0"
+    ]
+  },
+  {
+    "round": "r1",
+    "name": "probe4_contact_plus",
+    "gpu": 0,
+    "num_envs": 4,
+    "eval_episodes": 8,
+    "controller": "damped",
+    "extra": [
+      "--fixed-contact",
+      ".008",
+      "--contact-steering",
+      "0"
+    ]
+  }
+]

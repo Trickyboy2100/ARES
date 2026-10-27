@@ -1,0 +1,104 @@
+{
+  "version": "v8_contact_authority",
+  "split": "train",
+  "case_seed": 102831,
+  "scope": "SYNTHETIC P2; new development cases; no field data or sealed finaltests",
+  "groups": [
+    {
+      "id": "v8_train_0",
+      "gap": 0.054,
+      "goal_x": 0.138,
+      "slot_y": -0.022,
+      "mass": 0.045,
+      "mu": 0.27,
+      "direction": -0.1,
+      "initial_yaw": -0.06,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v8_train_1",
+      "gap": 0.056,
+      "goal_x": 0.14400000000000002,
+      "slot_y": -0.027999999999999997,
+      "mass": 0.06,
+      "mu": 0.31,
+      "direction": -0.06,
+      "initial_yaw": 0.06,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v8_train_2",
+      "gap": 0.054,
+      "goal_x": 0.138,
+      "slot_y": -0.022,
+      "mass": 0.075,
+      "mu": 0.35000000000000003,
+      "direction": 0,
+      "initial_yaw": -0.06,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v8_train_3",
+      "gap": 0.056,
+      "goal_x": 0.14400000000000002,
+      "slot_y": -0.027999999999999997,
+      "mass": 0.045,
+      "mu": 0.27,
+      "direction": 0.06,
+      "initial_yaw": 0.06,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v8_train_4",
+      "gap": 0.054,
+      "goal_x": 0.138,
+      "slot_y": -0.022,
+      "mass": 0.06,
+      "mu": 0.31,
+      "direction": 0.1,
+      "initial_yaw": -0.06,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v8_train_5",
+      "gap": 0.056,
+      "goal_x": 0.14400000000000002,
+      "slot_y": -0.027999999999999997,
+      "mass": 0.075,
+      "mu": 0.35000000000000003,
+      "direction": -0.08,
+      "initial_yaw": 0.06,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v8_train_6",
+      "gap": 0.054,
+      "goal_x": 0.138,
+      "slot_y": -0.022,
+      "mass": 0.045,
+      "mu": 0.27,
+      "direction": 0.04,
+      "initial_yaw": -0.06,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v8_train_7",
+      "gap": 0.056,
+      "goal_x": 0.14400000000000002,
+      "slot_y": -0.027999999999999997,
+      "mass": 0.06,
+      "mu": 0.31,
+      "direction": 0.08,
+      "initial_yaw": 0.06,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    }
+  ]
+}

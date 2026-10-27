@@ -17,9 +17,9 @@ Paired complete physical replays compare waiting 0, 12 and 30 control steps in a
 
 Learned hold/proceed is not consistently better than ordinary residual PPO. Forcing its seed31 policy to resume preserves both the 54/64 validation count and successful-case set. A separate active-likelihood hybrid pilot changes the actual actor surrogate, but yields only 56 versus 57/64; it fails the predeclared four-case improvement threshold. These outcomes are retained as negative evidence rather than described as successful innovations.
 
-\subsection{New development pilot}
+\subsection{Preserved v7 development pilot}
 \begin{table*}[t]\centering\small
-\caption{New P2 development pilot from actual run records. Reported successes are independently accepted. Interactions denotes the underlying policy's training budget: inference interventions do not incur that training budget again. Nonlearning probes have zero training, not zero physical evaluation cost. These cases are not a final test and must not be pooled with historical tests.}\label{tab:pilot}
+\caption{Preserved v7 P2 development pilot from actual run records, not the subsequent R1--R3 task versions. Reported successes are independently accepted. Interactions denotes the underlying policy's training budget: inference interventions do not incur that training budget again. Nonlearning probes have zero training, not zero physical evaluation cost.}\label{tab:pilot}
 \input{tables/new_pilot}
 \end{table*}
 \begin{table*}[t]\centering\small
@@ -36,8 +36,8 @@ The $-4/+4$ mm contact-target probes change mean handoff object position by appr
 
 Common-success mean times for B2 versus B3 are 9.3022 versus 9.1333 s, 9.4650 versus 9.2161 s, and 9.3711 versus 9.3217 s for the three seeds. The nominal controller takes 9.2461 s and the same B3 checkpoint without history takes 9.1294 s. The small B3--B2 timing difference therefore does not establish an effect-history mechanism or consistent superiority to strong feedback, and it cannot replace the preregistered primary-success criterion.
 
-\safewidefigure{Fig6_new_pilot.pdf}{Actual new P2 development evaluation and same-checkpoint conditioning interventions. B3 does not improve over B2. Mask interventions are evaluations of one trained model, not additional training seeds. Independent physical outcomes, not expected gains, populate this figure.}{fig:newpilot}
-\safewidefigure{FigS2_new_pilot_online_learning.pdf}{Actual new online training episode curves under the fixed pilot budget. Exploratory episode reward/success is distinct from final deterministic independent validation. All extra diagnostic and ablation interaction budgets are retained.}{fig:newlearning}
+\safewidefigure{Fig6_new_pilot.pdf}{Preserved v7 P2 development evaluation and same-checkpoint conditioning interventions. B3 does not improve over B2. Mask interventions are evaluations of one trained model, not additional training seeds. This is not an R1--R3 result.}{fig:newpilot}
+\safewidefigure{FigS2_new_pilot_online_learning.pdf}{Preserved v7 online episode curves under its fixed pilot budget. Exploratory episode reward/success is distinct from independent validation. Later R1--R3 interaction budgets are not included here.}{fig:newlearning}
 
 \subsection{Training correctness}
 The old episode-only credit prototype modified just 23.39\% of seed31 samples; its boundary and all-stage modes coincided because eligible episodes ended in stage0. Corrected current-rollout bootstrapping has complete coverage but is not a stage-specific innovation. Exact post-step logging removes a terminal velocity timing ambiguity without relaxing thresholds. Final deterministic versus stochastic replay of an old model yields 51 versus 28/64, illustrating why early exploratory training episodes cannot be compared directly with a final mean policy. Direct PPO remains unreliable even after removing an unused action dimension; its zero final result is not evidence that all reasonable direct RL methods fail.

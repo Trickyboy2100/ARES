@@ -1,0 +1,48 @@
+{
+  "evidence": "PAIRED_INDEPENDENTLY_AUDITED_PHYSX_DEVELOPMENT_EVALUATION",
+  "cases": 32,
+  "outcomes": {
+    "common_success": 29,
+    "common_failure": 0,
+    "rescue": 0,
+    "regression": 3
+  },
+  "all_case_mean_duration_difference_right_minus_left_s": 3.9,
+  "common_success_mean_duration_difference_right_minus_left_s": 2.5879310344827586,
+  "max_initial_recorded_component_difference": 0.0,
+  "same_task_source": true,
+  "same_action_dim": true,
+  "same_observation_dim": true,
+  "same_tool_contract": true,
+  "episode_seconds": 24.0,
+  "provenance": {
+    "left": {
+      "run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/r3/transfer_push_ordinary_seed31",
+      "hashes": {
+        "manifest.json": "bc6949cd56f5ed9823cb391fdf515e7364ada98f3754f87952caf11ad9de26be",
+        "INDEPENDENT_CLOSED_LOOP.json": "7b4cfba838f601e2a50b8336747cc2cbf9d86514856a4fbaeb124755a88cb28d",
+        "actual_physics_trace.npz": "e631fee525fac2301f9b3461ecbb75723d2a804c55df6ef1a24d263b4ced79c8",
+        "frozen_evaluation.json": "e0d9e003b07bf2ec62bccd4957bf4f10cdc361a5e94d6802f1df2e5324b33cd3",
+        "run_config.json": "e8fd4e88931ecd35f6ce697edd4e81365bc4476367e83b4d35042cdd1fd73e14"
+      }
+    },
+    "right": {
+      "run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/r3/transfer_push_qualified_seed31",
+      "hashes": {
+        "manifest.json": "dcf7436f8009ce04ac2a0537293da925cbfd3a429f68635c6c206b3090ce4b82",
+        "INDEPENDENT_CLOSED_LOOP.json": "595cac9399b28efd0e8bd3bcb68a986d42779e64c2a6c28f5fb1e3e93a49fdab",
+        "actual_physics_trace.npz": "5f946e6b2bfc5770b445da8c14b8fff1a0782be6e5665973fd3470b14927b282",
+        "frozen_evaluation.json": "f29206a2899fce4f451c9175bc157d6558ff72064572d105c68beb8fee772f84",
+        "run_config.json": "15e52242da2d92f82258cbec1d33c47b6c49a322b9a8c6e430f63ad48f6112c2"
+      }
+    }
+  },
+  "analyzer_sha256": "cec89cdff0a1f72aaabef2706b33f37f7f801dfa64db049569d0b7cb21a9319e",
+  "limitations": [
+    "One training seed is not evidence of cross-seed improvement",
+    "First recorded physical states exclude hidden PhysX contact solver state",
+    "A mixed-unit maximum initial difference is a diagnostic, not a tolerance certificate",
+    "Development cases were used for mechanism selection; not an untouched final test",
+    "Common-success time excludes failures and must not replace the complete success table"
+  ]
+}

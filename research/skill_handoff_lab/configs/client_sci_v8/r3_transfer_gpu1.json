@@ -1,0 +1,33 @@
+[
+  {
+    "round": "r3",
+    "engine_subdir": "engine_training",
+    "name": "transfer_push_qualified_seed31",
+    "gpu": 1,
+    "family": "push",
+    "scenario": "transfer_push.json",
+    "eval_seed": 102951,
+    "eval_episodes": 32,
+    "load_policy": "r3/event_qualified_seed31/policy.zip",
+    "extra": [
+      "--episode-seconds",
+      "24",
+      "--contact-steering",
+      "0",
+      "--exact-footprint",
+      "--guarded-alignment",
+      "--yaw-enabled",
+      "--yaw-reference",
+      "zero",
+      "--action-cost",
+      "executed",
+      "--feedback-kp",
+      "2",
+      "--recontact-enabled",
+      "--exact-recontact",
+      "--event-refresh",
+      "--policy-mode",
+      "qualified_gaussian"
+    ]
+  }
+]

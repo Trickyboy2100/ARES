@@ -1,0 +1,36 @@
+[
+  {
+    "round": "r2",
+    "name": "probe4_yaw_slot",
+    "gpu": 0,
+    "num_envs": 4,
+    "eval_episodes": 8,
+    "controller": "damped",
+    "extra": [
+      "--contact-steering",
+      "0",
+      "--exact-footprint",
+      "--guarded-alignment",
+      "--yaw-enabled",
+      "--yaw-reference",
+      "slot"
+    ]
+  },
+  {
+    "round": "r2",
+    "name": "probe4_yaw_midface",
+    "gpu": 0,
+    "num_envs": 4,
+    "eval_episodes": 8,
+    "controller": "damped",
+    "extra": [
+      "--contact-steering",
+      "0",
+      "--exact-footprint",
+      "--guarded-alignment",
+      "--yaw-enabled",
+      "--yaw-reference",
+      "midface"
+    ]
+  }
+]

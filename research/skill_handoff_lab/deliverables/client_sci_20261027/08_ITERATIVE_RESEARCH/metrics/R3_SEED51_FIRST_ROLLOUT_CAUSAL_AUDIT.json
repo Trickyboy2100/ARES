@@ -1,0 +1,99 @@
+{
+  "evidence": "ACTUAL_PHYSX_ROLLOUT_AND_PRE_UPDATE_WEIGHTS",
+  "left": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/r3/event_ordinary_seed51",
+  "right": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/r3/event_qualified_seed51",
+  "first_sample_count": 512,
+  "arrays": {
+    "observations": {
+      "exact_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "actions": {
+      "exact_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "advantages": {
+      "exact_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "old_log_probs": {
+      "exact_equal": false,
+      "max_absolute_difference": 7.605776786804199
+    },
+    "active_mask": {
+      "exact_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "full_latent_gradient": {
+      "exact_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "active_gradient": {
+      "exact_equal": true,
+      "max_absolute_difference": 0.0
+    }
+  },
+  "pre_update_policy_state_dict_exact_equal": true,
+  "training_action_usage": {
+    "left": {
+      "online_action_samples": 32768,
+      "active_samples_per_dimension": [
+        32078.0,
+        32078.0,
+        734.0,
+        1189.0,
+        6.0
+      ],
+      "all_dimensions_inactive_samples": 690,
+      "recontact_mode_counts": {
+        "-1": 32078,
+        "0": 131,
+        "1": 506,
+        "2": 53
+      },
+      "clipped_samples_per_dimension": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "right": {
+      "online_action_samples": 32768,
+      "active_samples_per_dimension": [
+        32623.0,
+        32623.0,
+        757.0,
+        1234.0,
+        0.0
+      ],
+      "all_dimensions_inactive_samples": 145,
+      "recontact_mode_counts": {
+        "-1": 32623,
+        "0": 77,
+        "1": 68
+      },
+      "clipped_samples_per_dimension": [
+        1,
+        0,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  "sha256": {
+    "runs/client_sci_closed_loop_20261027/r3/event_ordinary_seed51/first_real_rollout_gradient_samples.npz": "b594079257172b8ab1f0e18a68cb73c74f7780c69ed7e3c1a525542ced3fd380",
+    "runs/client_sci_closed_loop_20261027/r3/event_ordinary_seed51/policy_before_first_update.zip": "4d8d674ad0594f0eb3d1726a2c11e6676aa93dcca68982e86eac4450edf8d13c",
+    "runs/client_sci_closed_loop_20261027/r3/event_ordinary_seed51/action_log.json": "1750f3566de1c02d1e3a8f5db67a6b00d1ca97c8e08c3a0e7b98392c1754a9d7",
+    "runs/client_sci_closed_loop_20261027/r3/event_qualified_seed51/first_real_rollout_gradient_samples.npz": "39927a704aa1b9eebd921d32fa11f90424f1863f960c2204530b70ed30d2b7ff",
+    "runs/client_sci_closed_loop_20261027/r3/event_qualified_seed51/policy_before_first_update.zip": "50da6cbbd5820b40532b2a8443c80b53702c392f8e857710f7d7b419eb1c81c8",
+    "runs/client_sci_closed_loop_20261027/r3/event_qualified_seed51/action_log.json": "eddf531c1cc2c1a39174664bfe319eb46b5fb90569999e03a632da9a6672570e"
+  },
+  "limitations": [
+    "Only saved first 512 rollout samples are compared, not the entire first rollout.",
+    "Different old log probabilities are expected for full versus marginalized distributions.",
+    "Gradient isolation and action usage do not establish performance or novelty."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "evidence": "INDEPENDENTLY_AUDITED_PHYSX_DEVELOPMENT_CASES",
+  "rows": [
+    {
+      "seed": 31,
+      "cases": 32,
+      "ordinary_pass": 22,
+      "qualified_pass": 24,
+      "difference_cases": 2
+    },
+    {
+      "seed": 41,
+      "cases": 32,
+      "ordinary_pass": 25,
+      "qualified_pass": 24,
+      "difference_cases": -1
+    },
+    {
+      "seed": 51,
+      "cases": 32,
+      "ordinary_pass": 20,
+      "qualified_pass": 18,
+      "difference_cases": -2
+    }
+  ],
+  "statistics": {
+    "ordinary": {
+      "mean_success_rate": 0.6979166666666666,
+      "sample_std_across_training_seeds": 0.07864410870073697,
+      "minimum": 0.625,
+      "maximum": 0.78125,
+      "independent_training_seeds": 3
+    },
+    "qualified": {
+      "mean_success_rate": 0.6875,
+      "sample_std_across_training_seeds": 0.10825317547305482,
+      "minimum": 0.5625,
+      "maximum": 0.75,
+      "independent_training_seeds": 3
+    }
+  },
+  "mean_paired_case_difference": -0.3333333333333333,
+  "limitations": [
+    "Same 32 development cases repeated across three independently trained policies.",
+    "Not 96 independent scenes; not sealed final-test performance.",
+    "Three seeds are insufficient for a strong claim of robustness.",
+    "Full and ordinary methods share physics, observation, execution interface and training budget."
+  ]
+}

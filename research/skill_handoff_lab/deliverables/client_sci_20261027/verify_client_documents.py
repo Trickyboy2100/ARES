@@ -12,15 +12,19 @@ def sha(path):
 
 def main():
     rows=[]
-    for rel,pages in [('01_CLIENT_PROPOSAL_CN.pdf',9),
-                      ('07_MENTOR_BRIEF_CN.pdf',2),
-                      ('02_PAPER_SEED/main.pdf',10)]:
+    for rel,min_pages,max_pages in [('01_CLIENT_PROPOSAL_CN.pdf',9,10),
+                      ('07_MENTOR_BRIEF_CN.pdf',2,2),
+                      ('02_PAPER_SEED/main.pdf',10,24),
+                      ('08_ITERATIVE_RESEARCH/MENTOR_VISUAL_BRIEF_CN.pdf',2,4)]:
         p=ROOT/rel
         reader=PdfReader(p)
         text='\n'.join(page.extract_text() or '' for page in reader.pages)
-        assert len(reader.pages)==pages,(rel,len(reader.pages))
+        pages=len(reader.pages)
+        assert min_pages<=pages<=max_pages,(rel,pages)
         assert '\ufffd' not in text and '\x00' not in text,rel
-        assert '196,608' in text,rel
+        assert '414,720' in text,rel
+        if 'MENTOR_VISUAL' not in rel:
+            assert '196,608' in text,rel
         if rel.endswith('main.pdf'):
             assert 'References' in text and '30/29/30' in text,rel
         rows.append({'path':rel,'pages':pages,'bytes':p.stat().st_size,
@@ -36,6 +40,12 @@ def main():
         copies.append({'source':str(source.relative_to(ROOT)),
                        'paper_copy':str(dest.relative_to(ROOT)),
                        'sha256':sha(source)})
+    for source in sorted((ROOT/'08_ITERATIVE_RESEARCH'/'figures').glob('*.pdf')):
+        dest=paper/'figures'/source.name
+        assert dest.is_file() and sha(source)==sha(dest),source
+        copies.append({'source':str(source.relative_to(ROOT)),
+                       'paper_copy':str(dest.relative_to(ROOT)),
+                       'sha256':sha(source)})
     for source,target in [('Tab1_environment.tex','environment.tex'),
                           ('Tab2_historical_results.tex','historical_results.tex'),
                           ('Tab3_new_pilot.tex','new_pilot.tex'),
@@ -45,7 +55,13 @@ def main():
         copies.append({'source':str(src.relative_to(ROOT)),
                        'paper_copy':str(dst.relative_to(ROOT)),
                        'sha256':sha(src)})
-    report={'status':'PASS','scope':'Compiled output, text and exact generated-input copies; visual review recorded separately',
+    source=ROOT/'08_ITERATIVE_RESEARCH/tables/COMPLETED_ITERATIONS.tex'
+    target=paper/'tables/closed_loop_iterations.tex'
+    assert sha(source)==sha(target)
+    copies.append({'source':str(source.relative_to(ROOT)),
+                   'paper_copy':str(target.relative_to(ROOT)), 'sha256':sha(source)})
+    report={'status':'PASS','version':'Incremental closed-loop continuation; prior v7 immutable copy indexed separately',
+            'scope':'Compiled output, text and exact generated-input copies; visual review recorded separately',
             'documents':rows,'source_copies':copies,
             'latex_warnings':0,'latex_overfull_boxes':0,
             'required_sections':sorted(p.name for p in (paper/'sections').glob('*.tex')),

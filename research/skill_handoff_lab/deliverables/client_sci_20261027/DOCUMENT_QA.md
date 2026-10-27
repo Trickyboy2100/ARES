@@ -1,26 +1,29 @@
-# 文档构建与视觉验收
+# 当前文档编译、渲染与证据核验
 
-2026-10-27。最终中文方案9页、英文两栏稿10页、导师简报2页；21页均渲染为PNG并通过版面目检。最后一次可读性修复仅把英文Fig4历史曲线、Fig7本轮曲线改为跨双栏，未重绘源图、未改物理或数值；中文两份PDF字节/哈希保持不变。英文10页重新渲染，特别放大检查第7/10页曲线轴、图例及图注。检查包括页眉/页脚、标题层级、中文/英文/希腊符号、表格边界、公式、图注、截图来源说明及跨页段落；无可见重叠、裁切、黑方块或缺字。英文参考文献采用8.5pt，正文10pt，所有宽幅方法/结果/学习图跨双栏以保证打印可读性。
+版本：2026-10-27 closed-loop continuation；不是旧v7校验记录。旧整包、原PDF/MD/LaTeX及SHA在非Git历史目录保全，见08/references/V7_DOCUMENT_PRESERVATION.json。
 
-中文采用可编辑Markdown + `build_client_documents.py`（ReportLab）；Droid CJK和DejaVu字形按字符显式选择，构建时先检查所有MD字符是否有支持的字形，防止中文字体缺失Latin/Greek而静默留白。实际内容字体均嵌入PDF。英文使用系统pdfTeX/BibTeX编译完整多文件项目，不是LaTeX截图或仅有模板。无需系统安装、驱动升级或外部大型依赖。
+## 实际输出
 
-执行顺序：
+- 中文方案10页：第2页更新摘要，第10页为本轮三次研究/独立结果/机器生成简表；第3–9页明确标HISTORICAL v6/v7，避免将旧正结果冒充新方法。
+- 英文两栏LaTeX/PDF18页：题目/摘要、Related Work、问题、实际方法、实验、三轮真实结果、局限及参考文献齐全。当前11项参考，References集中末页，不穿插在末尾物理图之间。
+- 导师简报2页；新增可视化短册4页。短册前三页为真实同案例filmstrip，第四页含R3单seed真实救援、完整三seed负结果及独立真实在线训练16相机同tick拼版。
 
-```bash
-bash 02_PAPER_SEED/build.sh
-python build_client_documents.py
-python verify_client_documents.py
-/usr/bin/pdftoppm -scale-to 950 -png 01_CLIENT_PROPOSAL_CN.pdf /tmp/ares_client_pdf_qa/release_proposal
-/usr/bin/pdftoppm -scale-to 950 -png 02_PAPER_SEED/main.pdf /tmp/ares_client_pdf_qa/release_paper
-/usr/bin/pdftoppm -scale-to 950 -png 07_MENTOR_BRIEF_CN.pdf /tmp/ares_client_pdf_qa/release_brief
-```
+四份当前PDF精确大小、SHA与页数见DOCUMENT_BUILD_MANIFEST.json和DOCUMENT_QA.json，不复用旧PUBLIC_FILE_HASHES。39项论文图/表副本按字节SHA验证。新正式TeX表来自已完成run索引，按checkpoint SHA绑定真实训练预算，排除相机重复/训练8case与未验收行。
 
-仅重编英文时使用 `python build_client_documents.py --manifest-only` 刷新3份输出哈希，不重新生成已验收的中文PDF。最终英文可读性修复的渲染目录为`/tmp/ares_client_pdf_qa/readability_paper-*.png`。
+## 实际编译和渲染
 
-本机Python为已存在的Codex bundled runtime；英文编译为系统TeX Live 2022/dev/Debian。bundled Poppler因GLIBC要求不兼容，使用已存在的`/usr/bin/pdftoppm`回退，未安装系统软件。PNG目检中间文件位于上述明确`/tmp`目录，不作为实验原始证据。
+使用系统pdfTeX/BibTeX（TeX Live 2022/dev/Debian），英文最终编译无undefined reference、LaTeX Warning、Overfull box。中文由ReportLab和已嵌入的CJK/DejaVu字体生成；不安装系统级依赖。bundled Poppler存在GLIBC要求差异，改用已有/usr/bin/pdftoppm，未修改主机环境。
 
-自动检查结果为PASS：3份PDF字节/页数/文本；无replacement/null字符；196,608本轮预算被保留；英文8节与10条引用齐全；最终日志无Warning、undefined或Overfull；13份论文内图/表与当前权威生成输入逐字节SHA一致。JSON记录精确PDF及输入哈希，避免用后续重绘图替换已编译稿而不更新来源。
+实际渲染和查看全部34页，QA PNG保存在非Git runs/client_sci_document_qa_20261027/final/。英文全18页以逐页图/六页contactsheet检查，修改后重新查看13–18页；中文10页以contactsheet及第2/10页原尺寸检查；导师2页及短册4页均查看。未见文字裁切、乱码方框、图片覆盖正文、页脚碰撞或多余空白页。
 
-结果口径核对：历史v6单列P1/P2，不称P2已解决；新P2 B0=30，B1=30/29/30，B2/B3=30/30/30（各32例）。同模型输入干预不是独立训练seed；成本表中的推理行引用基础checkpoint的训练预算，不重复计训练，物理评估并非零开销。新G3不通过、最终测试未启封、三种子和短pilot局限明确。B1/B2并非已证明信息完全等价或全状态等变。截图为历史v6b策略LIVE重评，55/64独立通过，展示帧非终态；不是B3训练、固定回放、实机或现场料盘。
+修正过的打印问题：新FigR_method从过宽4列改为7in紧凑2×2源，正文9.3pt，入稿约8.8pt；新学习/逐案例图改为7.2in打印源，宽图跨两栏。中文第10页不缩小多行案例图，改为直接读取R3/fixed配对JSON的可读简表。完整矩阵仍作为独立矢量图及英文整页图交付。原03历史图保留，不改其科学数据。
 
-`DOCUMENT_BUILD_MANIFEST.json`与`DOCUMENT_QA.json`为当前可核验输出。文稿是甲方可读的研究初稿，不是已验证新算法或可投稿保证。
+## 内容一致性与诚实边界
+
+所有PDF均包含实际总交互414,720：正式393,216、诊断5,120、成功训练录制12,288、失败录制4,096。失败运行0优化/已知工作和未知总physics成本分别记录，不猜测。不能把66完成run、1174评价次数或三seed重复32案例当独立训练/场景样本。
+
+R3主指标22/25/20对24/24/18、强反馈26，未支持稳定增益；固定保持同25成功、共同成功快0.208s的单seed次指标保留，不反向改主指标。首512真实同样本梯度差.405706只证明机制接入，不混入较大的诊断smoke梯度，不等同学会恢复。87D/5D是正式接口，旧84D仅smoke；entropy coefficient为0。
+
+正式训练保存60Hz完整pre-action/action记录与episode post-step状态；普通run的120Hz全过程是evaluation验收。独立展示训练另有120Hz/44字段sidecar，不虚称87D全量120Hz训练日志。16相机montage与真正单相机wide视角明确区分；在线训练展示真实三次rollout/288次优化，不是评价影片改标题。旧v7 live评价仍单列历史。
+
+本包不读取/公开现场点云、配置或派生现场图。几何/任务验收不是完整CCD、自碰撞或实机安全认证；现阶段不宣称SCI可投稿或已验证新算法优势。

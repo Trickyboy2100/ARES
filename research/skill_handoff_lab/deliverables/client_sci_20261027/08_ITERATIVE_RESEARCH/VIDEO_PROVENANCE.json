@@ -1,0 +1,976 @@
+{
+  "comparisons": [
+    {
+      "iteration": "R0",
+      "case_id": 0,
+      "scope": "ACTUAL_PHYSX_TWO_POLICY_INDEPENDENT_COLD_START",
+      "left_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R0_baseline",
+      "right_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R0_residual41",
+      "left_label": "Feedback (historical)",
+      "right_label": "Residual PPO (historical seed41)",
+      "left_independent_pass": false,
+      "right_independent_pass": true,
+      "left_raw_success": false,
+      "right_raw_success": true,
+      "left_terminal_time_s": 11.983333333333333,
+      "right_terminal_time_s": 10.15,
+      "initial_component_maximum_differences": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "object_quaternion_wxyz": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0,
+        "paddle_position": 0.0
+      },
+      "hidden_solver_state_equal_claimed": false,
+      "source_capture_provenance_sha256": [
+        "d977a964bb25a9936ba84aa48a435586cba5422ca16c3f98e372a8acf3c4928d",
+        "560020b112e74b44006b3e4aee873194ebcb41346685f5745afb10a50dad1922"
+      ],
+      "physics_trace_sha256": [
+        "35e54b42a6f2ed45a84a3f2ff295c44e6bba3cfdbc3a082d29ff513903ecb7cc",
+        "c4377c1b47ffc07c9b1936eaead9e8c0881ad3cb25b456f61db2ea1aa0151da9"
+      ],
+      "action_trace_sha256": [
+        "3f5141439a627aac95a0a40a09d27bd205f3a1f4b7d0f15e24150d69097c0844",
+        "882d21aba4f9633673a336a3d866d9fa1ec4928c3ebf25bc653b80890c61e251"
+      ],
+      "base_source_sha256": [
+        "be51360935524d73de3ae830d17c29d368bc4e38e3e93567b0eaaba114775e20",
+        "be51360935524d73de3ae830d17c29d368bc4e38e3e93567b0eaaba114775e20"
+      ],
+      "asset_sha256": "30d2c7250f2e09fdf7da889a536165e5a89bfe5e6ecd4f63bbb45f9b6495fde0",
+      "checkpoint_sha256": [
+        null,
+        "b0597000fa35ad72f0f0dfecb518d2191388a5bcc7cd7d21bdfb5d4f762a5198"
+      ],
+      "independent_audit_sha256": [
+        "69b2787fba44fc19aabeb2c631d12636f5d2f0cfc681a551c0d91b105108bc2c",
+        "951d8ce279174c216075e0fcfa3ad037e89c0303504f8598e575295f9491b7ff"
+      ],
+      "fps": 30,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "intro_hold_s": 1.5,
+      "output_duration_s": 15.483333333333333,
+      "selection_protocol": "Predeclared category and first matching ID; all-case paired table retained; no best checkpoint selection",
+      "state_writes_during_actions": 0,
+      "render_extra_physics_steps": 0,
+      "script_sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+      "files": {
+        "preview.gif": {
+          "sha256": "fef3546efbc964e3bde4aaabb7bffc669fe9c7b7173617903cfce4b7d9ccba2e",
+          "bytes": 1011176
+        },
+        "case_000_trajectories.svg": {
+          "sha256": "e5defa9694464e8f45f02cc8c3a7508798ac279b0ab7fc0069c8da74206a59d1",
+          "bytes": 329945
+        },
+        "case_000_trajectories.pdf": {
+          "sha256": "b70db72aca92fd4e3cc61d4811ef535e285d63e88fb8df60cdaea58e9c51d5da",
+          "bytes": 93403
+        },
+        "filmstrip.png": {
+          "sha256": "8b8e2bbc360815071fe0eb06f642de04e1180b225ecd6ccef305661df1518003",
+          "bytes": 499336
+        },
+        "filmstrip.pdf": {
+          "sha256": "3ca77e83e116ec1c1e14f8efedab8b0dc01d67431355a78b363e24f67e74aaa8",
+          "bytes": 558285
+        },
+        "video_physics_timeline.csv": {
+          "sha256": "03d9d7757ac86f35f88d1f278ef99302cad6afe246c317ac20b3220c1a335ec2",
+          "bytes": 18664
+        },
+        "paired_actual_physx.mp4": {
+          "sha256": "9540281f7699632b3a7dacf44e53239cdd530379ebf9d0090e0addeb1e7f00bb",
+          "bytes": 1844137
+        },
+        "case_000_states.csv": {
+          "sha256": "06e25f034138f5d125e5e04da5d82162618a2382b26cadd7995d63cb3e2edfca",
+          "bytes": 180987
+        },
+        "case_000_trajectories.png": {
+          "sha256": "5faa368350d3151a483199cb34040fa56731eb07179c857db9b7815f6faa33e8",
+          "bytes": 326862
+        },
+        "composition_source.py": {
+          "sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+          "bytes": 21972
+        }
+      },
+      "mp4_local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons_final/R0_case_000/paired_actual_physx.mp4",
+      "public_preview": "R0_case000_preview.gif",
+      "display_only_rebuild_of_mp4": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons/R0_case_000/paired_actual_physx.mp4",
+      "filmstrip_layout_refresh": {
+        "case_id": 0,
+        "old_hashes": {
+          "png": "49ee97ccdd8c2929af4c1814df6c26c60fc668335a0554d28d058ad745a68c3c",
+          "pdf": "874fe1274c524576360e6c7b6df64e7becea8432550754705430d90ade3e99ce"
+        },
+        "new_hashes": {
+          "png": "8b8e2bbc360815071fe0eb06f642de04e1180b225ecd6ccef305661df1518003",
+          "pdf": "3ca77e83e116ec1c1e14f8efedab8b0dc01d67431355a78b363e24f67e74aaa8"
+        },
+        "scope": "caption/layout only; exact source frames; MP4/GIF/trace unchanged",
+        "script_sha256": "73ae69c211aab103d07d4b3d125bc6f2f4fb92b11a3f40d4071af5410d0ddca2"
+      }
+    },
+    {
+      "iteration": "R0",
+      "case_id": 1,
+      "scope": "ACTUAL_PHYSX_TWO_POLICY_INDEPENDENT_COLD_START",
+      "left_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R0_baseline",
+      "right_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R0_residual41",
+      "left_label": "Feedback (historical)",
+      "right_label": "Residual PPO (historical seed41)",
+      "left_independent_pass": false,
+      "right_independent_pass": true,
+      "left_raw_success": false,
+      "right_raw_success": true,
+      "left_terminal_time_s": 11.983333333333333,
+      "right_terminal_time_s": 8.766666666666666,
+      "initial_component_maximum_differences": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "object_quaternion_wxyz": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0,
+        "paddle_position": 0.0
+      },
+      "hidden_solver_state_equal_claimed": false,
+      "source_capture_provenance_sha256": [
+        "d977a964bb25a9936ba84aa48a435586cba5422ca16c3f98e372a8acf3c4928d",
+        "560020b112e74b44006b3e4aee873194ebcb41346685f5745afb10a50dad1922"
+      ],
+      "physics_trace_sha256": [
+        "35e54b42a6f2ed45a84a3f2ff295c44e6bba3cfdbc3a082d29ff513903ecb7cc",
+        "c4377c1b47ffc07c9b1936eaead9e8c0881ad3cb25b456f61db2ea1aa0151da9"
+      ],
+      "action_trace_sha256": [
+        "3f5141439a627aac95a0a40a09d27bd205f3a1f4b7d0f15e24150d69097c0844",
+        "882d21aba4f9633673a336a3d866d9fa1ec4928c3ebf25bc653b80890c61e251"
+      ],
+      "base_source_sha256": [
+        "be51360935524d73de3ae830d17c29d368bc4e38e3e93567b0eaaba114775e20",
+        "be51360935524d73de3ae830d17c29d368bc4e38e3e93567b0eaaba114775e20"
+      ],
+      "asset_sha256": "30d2c7250f2e09fdf7da889a536165e5a89bfe5e6ecd4f63bbb45f9b6495fde0",
+      "checkpoint_sha256": [
+        null,
+        "b0597000fa35ad72f0f0dfecb518d2191388a5bcc7cd7d21bdfb5d4f762a5198"
+      ],
+      "independent_audit_sha256": [
+        "69b2787fba44fc19aabeb2c631d12636f5d2f0cfc681a551c0d91b105108bc2c",
+        "951d8ce279174c216075e0fcfa3ad037e89c0303504f8598e575295f9491b7ff"
+      ],
+      "fps": 30,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "intro_hold_s": 1.5,
+      "output_duration_s": 15.483333333333333,
+      "selection_protocol": "Predeclared category and first matching ID; all-case paired table retained; no best checkpoint selection",
+      "state_writes_during_actions": 0,
+      "render_extra_physics_steps": 0,
+      "script_sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+      "files": {
+        "preview.gif": {
+          "sha256": "ff6f6c8e2928e2adf23fcca9e5d7f7f3648e8ef7326fe3063df259e8fc4f1388",
+          "bytes": 993953
+        },
+        "case_001_trajectories.pdf": {
+          "sha256": "d0301e53880d5b3dd54dc5e610f03d72396877f767224143c7f15c561a211947",
+          "bytes": 70294
+        },
+        "case_001_trajectories.svg": {
+          "sha256": "25f4deacb91ddffd21bec857297818909b70d19525c1c646702066011bbb12f7",
+          "bytes": 267285
+        },
+        "filmstrip.png": {
+          "sha256": "e044c25f7a934ddcb2f73aecadf5f93db887739b5a0aa8ecaff48e04bebdb23e",
+          "bytes": 528314
+        },
+        "filmstrip.pdf": {
+          "sha256": "5fe77a671fadb817c0232013e55dfdf7b31c4143d534a2fc78e3659a5c7825ba",
+          "bytes": 616028
+        },
+        "video_physics_timeline.csv": {
+          "sha256": "9e9e50929bc261ecef836cd171762d5a1aae96157e2724c95a4f1ac1f0deca33",
+          "bytes": 18664
+        },
+        "paired_actual_physx.mp4": {
+          "sha256": "78f40ae24cde3e19cb9d595b05a67f4df097d5d3b3332267fe4a7ba4c454d553",
+          "bytes": 1779975
+        },
+        "composition_source.py": {
+          "sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+          "bytes": 21972
+        },
+        "case_001_trajectories.png": {
+          "sha256": "815ae784a4f68668d8cb71f71ca94a721d09bc54ca360238797d360076be6416",
+          "bytes": 309934
+        },
+        "case_001_states.csv": {
+          "sha256": "bbdf762679c002fc232d655bf108acf0ea55c18944e3197a8c20a4dfa0b5e43e",
+          "bytes": 168451
+        }
+      },
+      "mp4_local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons_final/R0_case_001/paired_actual_physx.mp4",
+      "public_preview": "R0_case001_preview.gif",
+      "display_only_rebuild_of_mp4": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons/R0_case_001/paired_actual_physx.mp4",
+      "filmstrip_layout_refresh": {
+        "case_id": 1,
+        "old_hashes": {
+          "png": "2893a162c37923c720977f62d73d32a6b1ac3e8373de454dabcbbe9f544f5554",
+          "pdf": "71a387996ce4da8023d877afa6534debcc6826831e18665ac3269afd5fd1d4b0"
+        },
+        "new_hashes": {
+          "png": "e044c25f7a934ddcb2f73aecadf5f93db887739b5a0aa8ecaff48e04bebdb23e",
+          "pdf": "5fe77a671fadb817c0232013e55dfdf7b31c4143d534a2fc78e3659a5c7825ba"
+        },
+        "scope": "caption/layout only; exact source frames; MP4/GIF/trace unchanged",
+        "script_sha256": "73ae69c211aab103d07d4b3d125bc6f2f4fb92b11a3f40d4071af5410d0ddca2"
+      }
+    },
+    {
+      "iteration": "R0",
+      "case_id": 3,
+      "scope": "ACTUAL_PHYSX_TWO_POLICY_INDEPENDENT_COLD_START",
+      "left_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R0_baseline",
+      "right_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R0_residual41",
+      "left_label": "Feedback (historical)",
+      "right_label": "Residual PPO (historical seed41)",
+      "left_independent_pass": false,
+      "right_independent_pass": false,
+      "left_raw_success": false,
+      "right_raw_success": false,
+      "left_terminal_time_s": 11.983333333333333,
+      "right_terminal_time_s": 11.983333333333333,
+      "initial_component_maximum_differences": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "object_quaternion_wxyz": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0,
+        "paddle_position": 0.0
+      },
+      "hidden_solver_state_equal_claimed": false,
+      "source_capture_provenance_sha256": [
+        "d977a964bb25a9936ba84aa48a435586cba5422ca16c3f98e372a8acf3c4928d",
+        "560020b112e74b44006b3e4aee873194ebcb41346685f5745afb10a50dad1922"
+      ],
+      "physics_trace_sha256": [
+        "35e54b42a6f2ed45a84a3f2ff295c44e6bba3cfdbc3a082d29ff513903ecb7cc",
+        "c4377c1b47ffc07c9b1936eaead9e8c0881ad3cb25b456f61db2ea1aa0151da9"
+      ],
+      "action_trace_sha256": [
+        "3f5141439a627aac95a0a40a09d27bd205f3a1f4b7d0f15e24150d69097c0844",
+        "882d21aba4f9633673a336a3d866d9fa1ec4928c3ebf25bc653b80890c61e251"
+      ],
+      "base_source_sha256": [
+        "be51360935524d73de3ae830d17c29d368bc4e38e3e93567b0eaaba114775e20",
+        "be51360935524d73de3ae830d17c29d368bc4e38e3e93567b0eaaba114775e20"
+      ],
+      "asset_sha256": "30d2c7250f2e09fdf7da889a536165e5a89bfe5e6ecd4f63bbb45f9b6495fde0",
+      "checkpoint_sha256": [
+        null,
+        "b0597000fa35ad72f0f0dfecb518d2191388a5bcc7cd7d21bdfb5d4f762a5198"
+      ],
+      "independent_audit_sha256": [
+        "69b2787fba44fc19aabeb2c631d12636f5d2f0cfc681a551c0d91b105108bc2c",
+        "951d8ce279174c216075e0fcfa3ad037e89c0303504f8598e575295f9491b7ff"
+      ],
+      "fps": 30,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "intro_hold_s": 1.5,
+      "output_duration_s": 15.483333333333333,
+      "selection_protocol": "Predeclared category and first matching ID; all-case paired table retained; no best checkpoint selection",
+      "state_writes_during_actions": 0,
+      "render_extra_physics_steps": 0,
+      "script_sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+      "files": {
+        "preview.gif": {
+          "sha256": "0cdbef586fd4bba4ea54ae48705368f4f578abb0c1339befafb4f7253c60b227",
+          "bytes": 1065462
+        },
+        "filmstrip.png": {
+          "sha256": "7930ef2faf4d42ed1bbcf4b79118c3831c26db0e45088a950c34aa9dfeba277f",
+          "bytes": 576718
+        },
+        "case_003_trajectories.svg": {
+          "sha256": "d372ccd169d6be697de3c38cccb3f3baa2e1311c43736fdf4edad4e7398f5fab",
+          "bytes": 288040
+        },
+        "filmstrip.pdf": {
+          "sha256": "47112bf556ff3e659e07f304be5fda457c92831e57e1b73b8d0913271e00a0d2",
+          "bytes": 631144
+        },
+        "case_003_states.csv": {
+          "sha256": "fbabe4fecba147365afcc635918276408b0039df3c92a5b0923e0f0905ad3f91",
+          "bytes": 193694
+        },
+        "video_physics_timeline.csv": {
+          "sha256": "43b21b667eb74c0ce1a236ebbe0719f8253552e8b5c900c880150a0fc92429f4",
+          "bytes": 18664
+        },
+        "paired_actual_physx.mp4": {
+          "sha256": "ab387d2035b25321e354540dc57085a57f2ea8afeb7a0bed0e1b43d1016abbcf",
+          "bytes": 1910832
+        },
+        "composition_source.py": {
+          "sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+          "bytes": 21972
+        },
+        "case_003_trajectories.pdf": {
+          "sha256": "9f9f680f3b6ab319c53d70944a6e527c8b5b529e3749a9758dbde141c051efac",
+          "bytes": 79080
+        },
+        "case_003_trajectories.png": {
+          "sha256": "e44140873c112efdbcb658770c8003a4245026bae90707a94c76923bef2b921e",
+          "bytes": 368692
+        }
+      },
+      "mp4_local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons_final/R0_case_003/paired_actual_physx.mp4",
+      "public_preview": "R0_case003_preview.gif",
+      "display_only_rebuild_of_mp4": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons/R0_case_003/paired_actual_physx.mp4",
+      "filmstrip_layout_refresh": {
+        "case_id": 3,
+        "old_hashes": {
+          "png": "f36cdb437b946bbdb6e2360df7e829990eece0fb97a0d5a026965eaa9fcac14a",
+          "pdf": "ecd7fc6f5df27c7fe9e5c973a2449a8d75d53a416c02eb92ab5ff8b41f82458b"
+        },
+        "new_hashes": {
+          "png": "7930ef2faf4d42ed1bbcf4b79118c3831c26db0e45088a950c34aa9dfeba277f",
+          "pdf": "47112bf556ff3e659e07f304be5fda457c92831e57e1b73b8d0913271e00a0d2"
+        },
+        "scope": "caption/layout only; exact source frames; MP4/GIF/trace unchanged",
+        "script_sha256": "73ae69c211aab103d07d4b3d125bc6f2f4fb92b11a3f40d4071af5410d0ddca2"
+      }
+    },
+    {
+      "iteration": "R0",
+      "case_id": 9,
+      "scope": "ACTUAL_PHYSX_TWO_POLICY_INDEPENDENT_COLD_START",
+      "left_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R0_baseline",
+      "right_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R0_residual41",
+      "left_label": "Feedback (historical)",
+      "right_label": "Residual PPO (historical seed41)",
+      "left_independent_pass": true,
+      "right_independent_pass": true,
+      "left_raw_success": true,
+      "right_raw_success": true,
+      "left_terminal_time_s": 8.583333333333334,
+      "right_terminal_time_s": 8.016666666666666,
+      "initial_component_maximum_differences": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "object_quaternion_wxyz": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0,
+        "paddle_position": 0.0
+      },
+      "hidden_solver_state_equal_claimed": false,
+      "source_capture_provenance_sha256": [
+        "d977a964bb25a9936ba84aa48a435586cba5422ca16c3f98e372a8acf3c4928d",
+        "560020b112e74b44006b3e4aee873194ebcb41346685f5745afb10a50dad1922"
+      ],
+      "physics_trace_sha256": [
+        "35e54b42a6f2ed45a84a3f2ff295c44e6bba3cfdbc3a082d29ff513903ecb7cc",
+        "c4377c1b47ffc07c9b1936eaead9e8c0881ad3cb25b456f61db2ea1aa0151da9"
+      ],
+      "action_trace_sha256": [
+        "3f5141439a627aac95a0a40a09d27bd205f3a1f4b7d0f15e24150d69097c0844",
+        "882d21aba4f9633673a336a3d866d9fa1ec4928c3ebf25bc653b80890c61e251"
+      ],
+      "base_source_sha256": [
+        "be51360935524d73de3ae830d17c29d368bc4e38e3e93567b0eaaba114775e20",
+        "be51360935524d73de3ae830d17c29d368bc4e38e3e93567b0eaaba114775e20"
+      ],
+      "asset_sha256": "30d2c7250f2e09fdf7da889a536165e5a89bfe5e6ecd4f63bbb45f9b6495fde0",
+      "checkpoint_sha256": [
+        null,
+        "b0597000fa35ad72f0f0dfecb518d2191388a5bcc7cd7d21bdfb5d4f762a5198"
+      ],
+      "independent_audit_sha256": [
+        "69b2787fba44fc19aabeb2c631d12636f5d2f0cfc681a551c0d91b105108bc2c",
+        "951d8ce279174c216075e0fcfa3ad037e89c0303504f8598e575295f9491b7ff"
+      ],
+      "fps": 30,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "intro_hold_s": 1.5,
+      "output_duration_s": 15.0,
+      "selection_protocol": "Predeclared category and first matching ID; all-case paired table retained; no best checkpoint selection",
+      "state_writes_during_actions": 0,
+      "render_extra_physics_steps": 0,
+      "script_sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+      "files": {
+        "preview.gif": {
+          "sha256": "0fbeb160eb3d887ef24d3d54fb40d08cccfd5488bdc0596772bd9a71602cb7e0",
+          "bytes": 927815
+        },
+        "case_009_trajectories.pdf": {
+          "sha256": "d2a5cb759aef77729a95ccc8f8578c913b7992824a7c035b712ac0a853006e1f",
+          "bytes": 75588
+        },
+        "filmstrip.png": {
+          "sha256": "ce0a87d776157304f7c0ef9a2fb66bd4fbf87bb99ed7b924dafd9f403e354e19",
+          "bytes": 595066
+        },
+        "case_009_states.csv": {
+          "sha256": "a4f98800a87ab582122462589a1b09b48f38bb57457c432adefcc62ad0123b3d",
+          "bytes": 135170
+        },
+        "filmstrip.pdf": {
+          "sha256": "2eeab47ed70cd30b5fd5080a5b624153870063d2ad21bb3ead2eb0fcde627966",
+          "bytes": 649624
+        },
+        "video_physics_timeline.csv": {
+          "sha256": "01ec7eca72e345743faedb5b12a4c64e45776dd8d2bcc598de688bd4c1a3281c",
+          "bytes": 18340
+        },
+        "case_009_trajectories.png": {
+          "sha256": "3b7d6b86a35a6df05586142745c9d5392d1cdf3972b1b67017102daa0291e3bb",
+          "bytes": 333511
+        },
+        "paired_actual_physx.mp4": {
+          "sha256": "94a2db97ad918e88901f7df76a5815cebfdb00548b1786bbb0eed686d0a24b4a",
+          "bytes": 1659494
+        },
+        "case_009_trajectories.svg": {
+          "sha256": "2f2cc3e8ba35eb8bfab0ca65f75ef403c283f3d237bea450fc546af1cf9466c4",
+          "bytes": 280009
+        },
+        "composition_source.py": {
+          "sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+          "bytes": 21972
+        }
+      },
+      "mp4_local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons_final/R0_case_009/paired_actual_physx.mp4",
+      "public_preview": "R0_case009_preview.gif",
+      "display_only_rebuild_of_mp4": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons/R0_case_009/paired_actual_physx.mp4",
+      "filmstrip_layout_refresh": {
+        "case_id": 9,
+        "old_hashes": {
+          "png": "2e5c7af8da9e8967e3ce5a69893af1de7ed23a01afa5adf4ae165b6eb90d13b6",
+          "pdf": "9c0f6a9df648203b63e6dc73c31e9367e4095b0e68f9c0ae9a02f470cfa16235"
+        },
+        "new_hashes": {
+          "png": "ce0a87d776157304f7c0ef9a2fb66bd4fbf87bb99ed7b924dafd9f403e354e19",
+          "pdf": "2eeab47ed70cd30b5fd5080a5b624153870063d2ad21bb3ead2eb0fcde627966"
+        },
+        "scope": "caption/layout only; exact source frames; MP4/GIF/trace unchanged",
+        "script_sha256": "73ae69c211aab103d07d4b3d125bc6f2f4fb92b11a3f40d4071af5410d0ddca2"
+      }
+    },
+    {
+      "iteration": "R1",
+      "case_id": 0,
+      "scope": "ACTUAL_PHYSX_TWO_POLICY_INDEPENDENT_COLD_START",
+      "left_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R1_param_success",
+      "right_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R1_effect_success",
+      "left_label": "Parameter PPO",
+      "right_label": "Effect-history PPO",
+      "left_independent_pass": true,
+      "right_independent_pass": true,
+      "left_raw_success": true,
+      "right_raw_success": true,
+      "left_terminal_time_s": 9.233333333333333,
+      "right_terminal_time_s": 9.366666666666667,
+      "initial_component_maximum_differences": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "object_quaternion_wxyz": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0,
+        "paddle_position": 0.0
+      },
+      "hidden_solver_state_equal_claimed": false,
+      "source_capture_provenance_sha256": [
+        "7e242883d3e49eada0ae47c46233bffb975487791fbcf8a402f2ebbe5499d91f",
+        "c0a92ab4188ddd2a41abddd0982b9d958b669c3a2622508429d8e2155eda2bcd"
+      ],
+      "physics_trace_sha256": [
+        "04a04846e43888fdac0e9e639dbffd63b065d95e2eb01eeb03875eb45ec7f5f0",
+        "3e986f5a6a57d8ab2847639fc9b772108394924edf4905747f7a4c38bc385a4a"
+      ],
+      "action_trace_sha256": [
+        "ab3a95c8acd1429a5d41bf53e536db9e0d42c5032db67cc23149667dbe18d852",
+        "12eef9e48ef3fb194e8dcc8ce1a6968e0eb91e9977d58508ab26f9aa0139bd88"
+      ],
+      "base_source_sha256": [
+        "59abf32c98be69ce46e8ba0a7ece85cebaa01a67232f3bfdd74adb381656df9e",
+        "59abf32c98be69ce46e8ba0a7ece85cebaa01a67232f3bfdd74adb381656df9e"
+      ],
+      "asset_sha256": "30d2c7250f2e09fdf7da889a536165e5a89bfe5e6ecd4f63bbb45f9b6495fde0",
+      "checkpoint_sha256": [
+        "76840add6f0fa0a599bbcc786171576174a12814ec757c648115cb8db5387ea9",
+        "a82cf269e28fe5b09806e7736552f79290a2b9fbd76da540182b3994a5ba16c1"
+      ],
+      "independent_audit_sha256": [
+        "1860d3992e313d44f40592b5e0c9050ce63eb6314a7378cf44fa5be50e8774ce",
+        "508ca6ecd64937ae18ceb638c25f889f5c2c46519c7416b18d46218647e6aafa"
+      ],
+      "fps": 30,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "intro_hold_s": 1.5,
+      "output_duration_s": 15.0,
+      "selection_protocol": "Predeclared category and first matching ID; all-case paired table retained; no best checkpoint selection",
+      "state_writes_during_actions": 0,
+      "render_extra_physics_steps": 0,
+      "script_sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+      "files": {
+        "preview.gif": {
+          "sha256": "752882a468a0c4a171194716b821b669a3c74bd34caf3e3b0af6e590511078b4",
+          "bytes": 709422
+        },
+        "case_000_tool_contract.svg": {
+          "sha256": "66729a0a75b31c6e7d5532414a297aa6a9f99f62f65b7bf209f223f06c2510bd",
+          "bytes": 125290
+        },
+        "case_000_tool_contract.pdf": {
+          "sha256": "3fa0c17a89cca5b92e891045cf184ddb5aa20c7bfe705ecd6e79a7e68b4ca9e8",
+          "bytes": 45667
+        },
+        "case_000_trajectories.svg": {
+          "sha256": "85a51fb9de64da57ecd78bfe7b50b30e4a1d92e6f3bf1067b09e4b1fd2728901",
+          "bytes": 282039
+        },
+        "case_000_trajectories.pdf": {
+          "sha256": "640aac147632a3a3fde116c7e02eacea191603184a577e96fab901a2c1ee17fc",
+          "bytes": 78309
+        },
+        "filmstrip.png": {
+          "sha256": "34f3ab0cba653fec658ef6f328f85505f040bc70ee7fd42768091521e3dd24c6",
+          "bytes": 583302
+        },
+        "filmstrip.pdf": {
+          "sha256": "0c04ec24d5e99e5cbb5fe8a3b22945606fb5af8cf7c79a61caf798b1bb63a384",
+          "bytes": 643568
+        },
+        "video_physics_timeline.csv": {
+          "sha256": "e733f43d509a3708604468b566d09c6574b29ff570919dc3eddd48fe5744ab27",
+          "bytes": 18228
+        },
+        "case_000_tool_contract.csv": {
+          "sha256": "0e317235027984dd607443bdae2a91f1234c9b743e6d1b0dea2e1ba00d65dee2",
+          "bytes": 80646
+        },
+        "paired_actual_physx.mp4": {
+          "sha256": "a77e67c63930e2fc4faa0ba122240866d8c558eef1a3a5980560174ab75c9027",
+          "bytes": 944935
+        },
+        "case_000_states.csv": {
+          "sha256": "20e973a536a41434b57ac8ebcd2582d686608a4739a72ce9b140c1f8330701ba",
+          "bytes": 145420
+        },
+        "case_000_trajectories.png": {
+          "sha256": "f142a2652c62ee781e6910d7d6cb24554a062a5ab9e52ecaf9a52b90509ed8e2",
+          "bytes": 309857
+        },
+        "composition_source.py": {
+          "sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+          "bytes": 21972
+        },
+        "case_000_tool_contract.png": {
+          "sha256": "b08061cc09ade56296344c72b73863a9b36b00ad8a4541e6811378036a8215a5",
+          "bytes": 135397
+        }
+      },
+      "mp4_local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons_final/R1_case_000/paired_actual_physx.mp4",
+      "public_preview": "R1_case000_preview.gif"
+    },
+    {
+      "iteration": "R1",
+      "case_id": 8,
+      "scope": "ACTUAL_PHYSX_TWO_POLICY_INDEPENDENT_COLD_START",
+      "left_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R1_param",
+      "right_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R1_effect",
+      "left_label": "Parameter PPO",
+      "right_label": "Effect-history PPO",
+      "left_independent_pass": false,
+      "right_independent_pass": false,
+      "left_raw_success": false,
+      "right_raw_success": false,
+      "left_terminal_time_s": 11.983333333333333,
+      "right_terminal_time_s": 11.983333333333333,
+      "initial_component_maximum_differences": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "object_quaternion_wxyz": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0,
+        "paddle_position": 0.0
+      },
+      "hidden_solver_state_equal_claimed": false,
+      "source_capture_provenance_sha256": [
+        "8c4d8216bea3828cfd55155e9b05fd23cfc58fd98e6f4844e435a80ba7a0153a",
+        "b35701d8af8c777acc6381754c3ae6ee8ebad632bf2eef21dc13be0e8eb92ccb"
+      ],
+      "physics_trace_sha256": [
+        "04a04846e43888fdac0e9e639dbffd63b065d95e2eb01eeb03875eb45ec7f5f0",
+        "3e986f5a6a57d8ab2847639fc9b772108394924edf4905747f7a4c38bc385a4a"
+      ],
+      "action_trace_sha256": [
+        "ab3a95c8acd1429a5d41bf53e536db9e0d42c5032db67cc23149667dbe18d852",
+        "12eef9e48ef3fb194e8dcc8ce1a6968e0eb91e9977d58508ab26f9aa0139bd88"
+      ],
+      "base_source_sha256": [
+        "59abf32c98be69ce46e8ba0a7ece85cebaa01a67232f3bfdd74adb381656df9e",
+        "59abf32c98be69ce46e8ba0a7ece85cebaa01a67232f3bfdd74adb381656df9e"
+      ],
+      "asset_sha256": "30d2c7250f2e09fdf7da889a536165e5a89bfe5e6ecd4f63bbb45f9b6495fde0",
+      "checkpoint_sha256": [
+        "76840add6f0fa0a599bbcc786171576174a12814ec757c648115cb8db5387ea9",
+        "a82cf269e28fe5b09806e7736552f79290a2b9fbd76da540182b3994a5ba16c1"
+      ],
+      "independent_audit_sha256": [
+        "1860d3992e313d44f40592b5e0c9050ce63eb6314a7378cf44fa5be50e8774ce",
+        "508ca6ecd64937ae18ceb638c25f889f5c2c46519c7416b18d46218647e6aafa"
+      ],
+      "fps": 30,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "intro_hold_s": 1.5,
+      "output_duration_s": 15.483333333333333,
+      "selection_protocol": "Predeclared category and first matching ID; all-case paired table retained; no best checkpoint selection",
+      "state_writes_during_actions": 0,
+      "render_extra_physics_steps": 0,
+      "script_sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+      "files": {
+        "preview.gif": {
+          "sha256": "97ff5a6fa88f94b12566415f272e5a00163d2db9bb9db9cbbb42ac556db26bdc",
+          "bytes": 698196
+        },
+        "case_008_tool_contract.png": {
+          "sha256": "5d82ba5a973ec48a71a3e6a2d264858bd2e37668da57aad661b3ad11edd10e4e",
+          "bytes": 132355
+        },
+        "case_008_trajectories.pdf": {
+          "sha256": "d2475d74625d07eaed6cbf5c8ce330df883fde9c4e590d107198e7505dff14bc",
+          "bytes": 87024
+        },
+        "case_008_tool_contract.pdf": {
+          "sha256": "efa3ad521b2b8d48e71ca34916370e902692048c68244f2d887b0c5fa9cdd5fb",
+          "bytes": 47259
+        },
+        "case_008_tool_contract.svg": {
+          "sha256": "8e819c91bbceec7bdc915dab3715f86e3f65d7e9f5b69c647cf92426ea224009",
+          "bytes": 128574
+        },
+        "filmstrip.png": {
+          "sha256": "e4b234977379b16a5720d29269e62ef9a13dc071e84f01f17cffe60c69def18d",
+          "bytes": 576616
+        },
+        "filmstrip.pdf": {
+          "sha256": "4923854a3906eb947eedb78f8cf2b17c82b29df7b7d7992533f4c1a941fa6a40",
+          "bytes": 633126
+        },
+        "case_008_states.csv": {
+          "sha256": "6941f26ceef5f54e71bd5b4d96e802f25bd34e69b5e1dd1775fbb84f1f70c8ba",
+          "bytes": 187193
+        },
+        "video_physics_timeline.csv": {
+          "sha256": "11661f12a1634cd23ea5dca184c143d40d6b86cb84011e9dc419cafa056d8f99",
+          "bytes": 18664
+        },
+        "paired_actual_physx.mp4": {
+          "sha256": "be3b5e3a6ec089f0121e9b20e74face2d9c4a434f7251ad9742967cf35937be0",
+          "bytes": 1021573
+        },
+        "case_008_trajectories.svg": {
+          "sha256": "da0f7dd41d4cbded3af24ad7591697afd974e0f8efaf3d7323a827328df8854e",
+          "bytes": 310313
+        },
+        "composition_source.py": {
+          "sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+          "bytes": 21972
+        },
+        "case_008_tool_contract.csv": {
+          "sha256": "ad746af268f706769101bf2114ac0248ac865513a97595cd16c18a3633cc5985",
+          "bytes": 104858
+        },
+        "case_008_trajectories.png": {
+          "sha256": "8e45b17bfad5a8ee121e3914b9df72c56915ea79c51a897c24e84fe69d23d3d8",
+          "bytes": 319590
+        }
+      },
+      "mp4_local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons_final/R1_case_008/paired_actual_physx.mp4",
+      "public_preview": "R1_case008_preview.gif",
+      "display_only_rebuild_of_mp4": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons/R1_case_008/paired_actual_physx.mp4"
+    },
+    {
+      "iteration": "R2",
+      "case_id": 5,
+      "scope": "ACTUAL_PHYSX_TWO_POLICY_INDEPENDENT_COLD_START",
+      "left_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R2_param",
+      "right_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R2_effect",
+      "left_label": "Yaw parameter PPO",
+      "right_label": "Yaw effect PPO",
+      "left_independent_pass": false,
+      "right_independent_pass": false,
+      "left_raw_success": false,
+      "right_raw_success": false,
+      "left_terminal_time_s": 11.983333333333333,
+      "right_terminal_time_s": 11.983333333333333,
+      "initial_component_maximum_differences": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "object_quaternion_wxyz": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0,
+        "paddle_position": 0.0
+      },
+      "hidden_solver_state_equal_claimed": false,
+      "source_capture_provenance_sha256": [
+        "7f3ba87e67a888ddde33a676a6440686bf820ff7eb219c76919b4b47c87d5f3e",
+        "90a65c2a804b2aecce907e99dfc843d5beef4ae6c424b7def9bd439194e179b3"
+      ],
+      "physics_trace_sha256": [
+        "61d7302380ad15a19304803ad484c695b5bd1ce79dad2751afd73da69a53ff40",
+        "65b1b72ef7255349ca31f0b1207e80c326f210622cd009c702f2000f53877576"
+      ],
+      "action_trace_sha256": [
+        "b217f5d78f4ee706d50d28bf18972c3f2655a92ff0e188511a3a143d4feda391",
+        "30a86d7611e1ea0ee08fbfaea76e710c8f57abfd7371fda83652a33df2a61bdb"
+      ],
+      "base_source_sha256": [
+        "5874402200ed8fba3e922a47f9a61d5c92448c6be9471c9e2b629c3abf732b2a",
+        "5874402200ed8fba3e922a47f9a61d5c92448c6be9471c9e2b629c3abf732b2a"
+      ],
+      "asset_sha256": "30d2c7250f2e09fdf7da889a536165e5a89bfe5e6ecd4f63bbb45f9b6495fde0",
+      "checkpoint_sha256": [
+        "2aa1411185755250b1bc61c786d3d7882fdff6b3a5ad69fd1b524492accbcd4a",
+        "35a9572161165e773b34abb25e7309036d7c979e21efd15d46012409a0928064"
+      ],
+      "independent_audit_sha256": [
+        "58f1fc7a3723bb5904ed9d03b27dd22645734c4431c3c97dfc366d534a65dc68",
+        "72554849d5663eed1496b1d2d5f609b3ef8876fb805285fb1c1398f394f83b8f"
+      ],
+      "fps": 30,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "intro_hold_s": 1.5,
+      "output_duration_s": 15.483333333333333,
+      "selection_protocol": "Predeclared category and first matching ID; all-case paired table retained; no best checkpoint selection",
+      "state_writes_during_actions": 0,
+      "render_extra_physics_steps": 0,
+      "script_sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+      "files": {
+        "case_005_tool_contract.svg": {
+          "sha256": "dd513c0a6b5ff56277ff3be26e238f7dd77f29fa71969b11469102cd8202fd0d",
+          "bytes": 161325
+        },
+        "case_005_trajectories.pdf": {
+          "sha256": "d056f947f451de252ae2b969871fc0b5285433cb57846b4e4ae1a8d69d60c01e",
+          "bytes": 71343
+        },
+        "preview.gif": {
+          "sha256": "c0b6d9e6f57300a30787bd5cc8a027fc9031a4000c725395077d76a94696fc56",
+          "bytes": 677191
+        },
+        "case_005_trajectories.svg": {
+          "sha256": "ae291f946f7cea66af318a6834275ca97871c6fc572da6f29410681911434889",
+          "bytes": 267132
+        },
+        "case_005_states.csv": {
+          "sha256": "403cc80118f4ecd93e7adc6460e2473400e666cd4b162edbc0dfd0911fb34c7c",
+          "bytes": 187951
+        },
+        "filmstrip.png": {
+          "sha256": "281b27704ddb12c52ca2857b6c3c27e3cef890fc324f4e56fcb80740f048c3c1",
+          "bytes": 570371
+        },
+        "filmstrip.pdf": {
+          "sha256": "74b28adb4282c121bbad00459bb2a21419ccaaefe17dde554a911a418dd0d057",
+          "bytes": 630300
+        },
+        "case_005_tool_contract.pdf": {
+          "sha256": "dac3c9975ae8ec9ddc6d2db69babe976915d57fb2502e8d20f1a4197d40efd1b",
+          "bytes": 55865
+        },
+        "video_physics_timeline.csv": {
+          "sha256": "454862402bee14d8bc3bc1174f7e986898779c7c85b85715445196150a62db8e",
+          "bytes": 18664
+        },
+        "paired_actual_physx.mp4": {
+          "sha256": "046f02d7a067cb387b65a4ce8a3fabb36b944d18c09fd1582b8f6644288df893",
+          "bytes": 967846
+        },
+        "composition_source.py": {
+          "sha256": "29173543daf0c66e51d3f2054f211fa5e4f7c63ad93690fb462ae3d4638973e4",
+          "bytes": 21972
+        },
+        "case_005_tool_contract.csv": {
+          "sha256": "75186d2270b3268689361a9e5d6773f2ee71520963754cdd08650efdb6726469",
+          "bytes": 115472
+        },
+        "case_005_tool_contract.png": {
+          "sha256": "d44d57550b60344bf9c174723d64884c2f44ecafe9ff3c8aef96600ef34ec6aa",
+          "bytes": 150869
+        },
+        "case_005_trajectories.png": {
+          "sha256": "0ed0b55d8e724aed3bf5469b1fa1d371528c883bdc8adce30bcea3a5186a8cb3",
+          "bytes": 313874
+        }
+      },
+      "mp4_local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons_final/R2_case_005/paired_actual_physx.mp4",
+      "public_preview": "R2_case005_preview.gif"
+    },
+    {
+      "iteration": "R3",
+      "case_id": 5,
+      "scope": "ACTUAL_PHYSX_TWO_POLICY_INDEPENDENT_COLD_START",
+      "left_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R3_ordinary",
+      "right_run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/R3_qualified",
+      "left_label": "Ordinary PPO",
+      "right_label": "Exec-active PPO",
+      "left_independent_pass": false,
+      "right_independent_pass": true,
+      "left_raw_success": false,
+      "right_raw_success": true,
+      "left_terminal_time_s": 23.983333333333334,
+      "right_terminal_time_s": 8.3,
+      "initial_component_maximum_differences": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "object_quaternion_wxyz": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0,
+        "paddle_position": 0.0,
+        "controller_reset_object_xy": 0.0,
+        "controller_peak_displacement_m": 0.0,
+        "controller_held_parameters": 0.0,
+        "controller_execution_mask": 0.0,
+        "controller_recontact_state": 0.0,
+        "previous_effect_history": 0.0,
+        "previous_contact_response_memory": 0.0
+      },
+      "hidden_solver_state_equal_claimed": false,
+      "source_capture_provenance_sha256": [
+        "95ec75c25d1ceb914e82dc1643e391a0417b245bd8754f64b82145bf972dcfc4",
+        "c8d498d548bef819b46a904df175eecd2a3439737e81cd5d2e1bd3237621bccf"
+      ],
+      "physics_trace_sha256": [
+        "fdc96f48ccb21474f682b0c02d03b9c656e26d67f01946eb6a9cd6dc00eb54a2",
+        "6dc5b1b57fe29902fed352b35017b102cdc54eab39ce37f76213c35ea4f5799b"
+      ],
+      "action_trace_sha256": [
+        "ee4cec728baf635967d16667b8a6c65e7593777e23413e576111d7e063534fb0",
+        "569ed85e47843aba6218153ef64c7f6882bbcac71666f27e25b5f8b1698abda8"
+      ],
+      "base_source_sha256": [
+        "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414",
+        "e31be3c1bc94be7935b19a750057739c97c9339c34fb8ee661109d6eaef9a414"
+      ],
+      "asset_sha256": "30d2c7250f2e09fdf7da889a536165e5a89bfe5e6ecd4f63bbb45f9b6495fde0",
+      "checkpoint_sha256": [
+        "ed02a2668f31ce90f0f5d0989aa62cad40f9f568eb3227e6413319c3a3a7875f",
+        "16778155ebc92288663557c14161a2f8f5acf178b3bfaf50717329a691cc4118"
+      ],
+      "training_seed": [
+        31,
+        31
+      ],
+      "independent_audit_sha256": [
+        "a69d66419ff405c9c06b20b5ee3bb8cb944a33654cd02e4870675a24d8beaaa4",
+        "af207b1587c901d379d0a912a4e3b479cfea08f66732460078d9c7ada08daf30"
+      ],
+      "fps": 30,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "intro_hold_s": 1.5,
+      "output_duration_s": 27.483333333333334,
+      "selection_protocol": "Predeclared category and first matching ID; all-case paired table retained; no best checkpoint selection",
+      "state_writes_during_actions": 0,
+      "render_extra_physics_steps": 0,
+      "script_sha256": "343a2cf62824af0354858cfbeba04dc94f3ce21d46ebc73abf981c859400b785",
+      "files": {
+        "case_005_tool_contract.svg": {
+          "sha256": "6cba898134295030ed8f903c5ca49f74096ac646f19165f335d371e4c68919b8",
+          "bytes": 142135
+        },
+        "case_005_trajectories.pdf": {
+          "sha256": "c82c87a141b041984639c6a11787b382cad8148e0c713b40cbcfa1f06d54b776",
+          "bytes": 74817
+        },
+        "preview.gif": {
+          "sha256": "d272b17d3c34687b55e6c276601cf450d6adc6e9c4d195f46ec93d6030195cdf",
+          "bytes": 1285377
+        },
+        "case_005_trajectories.svg": {
+          "sha256": "4a35425615df6a8da8f3e5307002dce47cc96f28d36b67ee633f52821ed77f04",
+          "bytes": 267023
+        },
+        "case_005_states.csv": {
+          "sha256": "65565b9b4b2d9517942f8665aa85947dab8767b56ec3e7293a8280e0cf350515",
+          "bytes": 252152
+        },
+        "filmstrip.png": {
+          "sha256": "b3098dee34549decc4b84bdf57c90a582ca86b81e9a3bb3a6c57d11c184f6399",
+          "bytes": 526586
+        },
+        "filmstrip.pdf": {
+          "sha256": "df1a65724899663caca7047772485c147328617b402666c4fda986b5d4d6c385",
+          "bytes": 620657
+        },
+        "case_005_tool_contract.pdf": {
+          "sha256": "9bd6ef1115bd8972923466b5c0f0e039fc3610b90441f69c64d8e0170a2e9b45",
+          "bytes": 51646
+        },
+        "video_physics_timeline.csv": {
+          "sha256": "e9c7b7ac37fa4ed427da7723ffe14db98f4d832b6a1ec26eaf70ddc3d2fc3738",
+          "bytes": 33748
+        },
+        "paired_actual_physx.mp4": {
+          "sha256": "8e99fec6a719dfcae085f50a063f2b6c49ce9923d8784b6df01f94f3c85dbbc2",
+          "bytes": 1952188
+        },
+        "composition_source.py": {
+          "sha256": "343a2cf62824af0354858cfbeba04dc94f3ce21d46ebc73abf981c859400b785",
+          "bytes": 23196
+        },
+        "case_005_tool_contract.csv": {
+          "sha256": "8c11f2ab6eee2655bc5f24a63f0354240a9c13948ec179f9842f3c68460f9692",
+          "bytes": 150338
+        },
+        "case_005_tool_contract.png": {
+          "sha256": "cee72b7fd8e302c3e71d96164f922775228704090f93ed96c0dc765c6d0686e3",
+          "bytes": 116464
+        },
+        "case_005_trajectories.png": {
+          "sha256": "795107703b56d9f6d79815ee43f5357ee1f567654935baed729e9ce892643992",
+          "bytes": 288952
+        }
+      },
+      "mp4_local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_closed_loop_20261027/paired_videos/comparisons_final/R3_case_005/paired_actual_physx.mp4",
+      "public_preview": "R3_case005_preview.gif"
+    }
+  ]
+}
