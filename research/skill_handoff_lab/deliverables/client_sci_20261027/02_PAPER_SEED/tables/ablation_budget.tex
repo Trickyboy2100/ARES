@@ -1,0 +1,17 @@
+\begin{tabular}{lllllr}
+\toprule
+Variant & Frame & Result/command history & Next goal & Seeds & Train budget \\
+\midrule
+B0 & Task & Zero / none & Observed & 31 & 0 \\
+Feedback + backoff & Task & Zero / none & Observed & 31 & 0 \\
+B1 & Body & Zero / none & Observed & 31,41,51 & 16384 \\
+B2 & Task & Zero / none & Observed & 31,41,51 & 16384 \\
+B3 & Task & Observed & Observed & 31,41,51 & 16384 \\
+B3 no measured effect (eval) & Task & Command memory only & Observed & 31 & Same checkpoint \\
+B3 no next goal (train) & Task & Observed & Hidden during training & 31 & 16384 \\
+B3 no next goal (eval) & Task & Observed & Suppressed at eval & 31 & Same checkpoint \\
+B3 no history (eval) & Task & Suppressed at eval & Observed & 31 & Same checkpoint \\
+Fixed contact +4 mm & Task & Zero / none & Observed & 31 & 0 \\
+Fixed contact -4 mm & Task & Zero / none & Observed & 31 & 0 \\
+\bottomrule
+\end{tabular}

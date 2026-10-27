@@ -1,0 +1,6 @@
+# Evidence hashes are byte-level. Never normalize generated CSV/PDF assets.
+* -text
+*.pdf binary
+*.png binary
+*.svg -diff
+*.csv whitespace=cr-at-eol

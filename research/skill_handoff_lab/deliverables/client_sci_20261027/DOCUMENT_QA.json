@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "scope": "Compiled output, text and exact generated-input copies; visual review recorded separately",
+  "documents": [
+    {
+      "path": "01_CLIENT_PROPOSAL_CN.pdf",
+      "pages": 9,
+      "bytes": 2791708,
+      "sha256": "9a0b6f3f5b6402f642e1d5363880c2121db686f944e252de850aa808cc4cc3b8",
+      "text_characters": 7234
+    },
+    {
+      "path": "07_MENTOR_BRIEF_CN.pdf",
+      "pages": 2,
+      "bytes": 98156,
+      "sha256": "2786210a4621b6b6983e410812a3010cf02c72036a1c2a75a82ef2240955881a",
+      "text_characters": 1818
+    },
+    {
+      "path": "02_PAPER_SEED/main.pdf",
+      "pages": 10,
+      "bytes": 1184519,
+      "sha256": "014326e36d738feac80715603c67a430f870b0c279cb1e9ab61a915a8f10dc7e",
+      "text_characters": 40611
+    }
+  ],
+  "source_copies": [
+    {
+      "source": "03_FIGURES/Fig1_system_layers.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/Fig1_system_layers.pdf",
+      "sha256": "8d60fce3bea54fbe388c65718fbbdd2fffca0de047cefda829e20ada8b57f1ab"
+    },
+    {
+      "source": "03_FIGURES/Fig2_method_graph.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/Fig2_method_graph.pdf",
+      "sha256": "3c7fee1b8e82c95ce976f6666f85c28082efddcaf8b39cfe08579e8856d134d0"
+    },
+    {
+      "source": "03_FIGURES/Fig3_physx_scene_board.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/Fig3_physx_scene_board.pdf",
+      "sha256": "008157600478563a14f37ce42d0651be0cd68029e9aad91ed4ae21c89c91b4d4"
+    },
+    {
+      "source": "03_FIGURES/Fig4_historical_online_learning.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/Fig4_historical_online_learning.pdf",
+      "sha256": "0d1e9d4afdea43e11b9b339bc35cc9c6f43fb51c794a69cfdee68819339a1cf0"
+    },
+    {
+      "source": "03_FIGURES/Fig5_historical_frozen_tests.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/Fig5_historical_frozen_tests.pdf",
+      "sha256": "dbf00265c15e474f156f09768ba6f340243471fe10c46362fcd4b37f661e486a"
+    },
+    {
+      "source": "03_FIGURES/Fig6_new_pilot.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/Fig6_new_pilot.pdf",
+      "sha256": "62965d8256b58d783f94a183156df4d89a88a00659483d5ebc3932a7c6df8f41"
+    },
+    {
+      "source": "03_FIGURES/FigS1_actual_contact_state_diagnostic.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/FigS1_actual_contact_state_diagnostic.pdf",
+      "sha256": "6f0f9e0dc362270a64a7561b71edbe9822274f03425c2883975f602baa6fa7d7"
+    },
+    {
+      "source": "03_FIGURES/FigS2_new_pilot_online_learning.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/FigS2_new_pilot_online_learning.pdf",
+      "sha256": "f3ec4c9c9e144c521c7c0015cf63882e7d45883de80de39dc1057b914b81e0fc"
+    },
+    {
+      "source": "03_FIGURES/FigS3_new_pilot_physical_trajectories.pdf",
+      "paper_copy": "02_PAPER_SEED/figures/FigS3_new_pilot_physical_trajectories.pdf",
+      "sha256": "9c3a48e7dc379418a8cc98bb2b533259462380cf260cc574dc340cc499d1cc85"
+    },
+    {
+      "source": "04_TABLES/Tab1_environment.tex",
+      "paper_copy": "02_PAPER_SEED/tables/environment.tex",
+      "sha256": "7debaf54f733f738d130b52be3b4e24aacbf3c12e872326d9d6fd9ad8dd0f0ae"
+    },
+    {
+      "source": "04_TABLES/Tab2_historical_results.tex",
+      "paper_copy": "02_PAPER_SEED/tables/historical_results.tex",
+      "sha256": "65e750d0165f71aabbc13c7c71f76c2d9c3aad7d038da6dd0c7e309863f90aaa"
+    },
+    {
+      "source": "04_TABLES/Tab3_new_pilot.tex",
+      "paper_copy": "02_PAPER_SEED/tables/new_pilot.tex",
+      "sha256": "950ac8283a190822da2e153bbbc1c89fb332add101aaaf012dab072727449cef"
+    },
+    {
+      "source": "04_TABLES/Tab4_ablation_budget.tex",
+      "paper_copy": "02_PAPER_SEED/tables/ablation_budget.tex",
+      "sha256": "5addf66a6f20cf5951476c902217f20c7578cd45254a544cd83c1ce06f088d3c"
+    }
+  ],
+  "latex_warnings": 0,
+  "latex_overfull_boxes": 0,
+  "required_sections": [
+    "abstract.tex",
+    "experiments.tex",
+    "introduction.tex",
+    "limitations.tex",
+    "method.tex",
+    "problem.tex",
+    "related.tex",
+    "results.tex"
+  ],
+  "compiler": "system pdfTeX 3.141592653-2.6-1.40.22 / BibTeX; TeX Live 2022/dev/Debian",
+  "renderer": "/usr/bin/pdftoppm (system Poppler)",
+  "note": "Bundled Poppler requires newer GLIBC; system Poppler used without installation. No system maintenance performed."
+}

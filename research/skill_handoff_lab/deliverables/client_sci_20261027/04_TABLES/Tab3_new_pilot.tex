@@ -1,0 +1,23 @@
+\begin{tabular}{llllr}
+\toprule
+Method & Seed & Task & Independent success & Model train steps \\
+\midrule
+B0 & 31 & P2 & 30/32 & 0 \\
+Feedback + backoff & 31 & P2 & 30/32 & 0 \\
+B1 & 31 & P2 & 30/32 & 16384 \\
+B1 & 41 & P2 & 29/32 & 16384 \\
+B1 & 51 & P2 & 30/32 & 16384 \\
+B2 & 31 & P2 & 30/32 & 16384 \\
+B2 & 41 & P2 & 30/32 & 16384 \\
+B2 & 51 & P2 & 30/32 & 16384 \\
+B3 measured-history mask (eval) & 31 & P2 & 30/32 & 16384 \\
+B3 next-goal mask (eval) & 31 & P2 & 30/32 & 16384 \\
+B3 no next goal (train) & 31 & P2 & 30/32 & 16384 \\
+B3 history mask (eval) & 31 & P2 & 30/32 & 16384 \\
+B3 & 31 & P2 & 30/32 & 16384 \\
+B3 & 41 & P2 & 30/32 & 16384 \\
+B3 & 51 & P2 & 30/32 & 16384 \\
+Fixed contact +4 mm & 31 & P2 & 29/32 & 0 \\
+Fixed contact -4 mm & 31 & P2 & 30/32 & 0 \\
+\bottomrule
+\end{tabular}

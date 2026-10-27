@@ -1,0 +1,33 @@
+{
+  "version": "client_sci_v7_p2",
+  "split": "test_id",
+  "scope": "SYNTHETIC P2; no field data",
+  "case_seed": 102751,
+  "episode_seconds": 12,
+  "groups": [
+    {
+      "id": "v7_test_id_0",
+      "gap": 0.054,
+      "goal_x": 0.137,
+      "slot_y": -0.023,
+      "mass": 0.045,
+      "mu": 0.27,
+      "direction": -0.055,
+      "initial_yaw": -0.025,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v7_test_id_1",
+      "gap": 0.056,
+      "goal_x": 0.14500000000000002,
+      "slot_y": -0.027,
+      "mass": 0.06,
+      "mu": 0.31,
+      "direction": 0.055,
+      "initial_yaw": 0.025,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    }
+  ]
+}

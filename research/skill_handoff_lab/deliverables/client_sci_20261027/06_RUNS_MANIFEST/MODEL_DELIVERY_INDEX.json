@@ -1,0 +1,749 @@
+{
+  "scope": "Own SYNTHETIC P2 models only; no site data, production settings or real-robot observations",
+  "models": [
+    {
+      "cohort": "formal",
+      "run": "B1_seed31",
+      "online_training_interactions": 16384,
+      "files": {
+        "policy.zip": {
+          "sha256": "9e2349d738619b2a095e47c3ec15c73a25d2173bce67252f826828d2a9f5e69a",
+          "bytes": 238979,
+          "archive_member": "formal/B1_seed31/policy.zip",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed31/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "501deca477660608eb9c2e5826792bce1a46034f54a30e2278235c0ed365915c",
+          "bytes": 42663,
+          "archive_member": "formal/B1_seed31/task_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed31/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "130c5ad9c2ab5a24c33b11541be9505eeeb31f85e4b72ace8c50d3baaff53995",
+          "bytes": 1405,
+          "archive_member": "formal/B1_seed31/frame_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed31/frame_source.py"
+        },
+        "boundary_credit_source.py": {
+          "sha256": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+          "bytes": 3216,
+          "archive_member": "formal/B1_seed31/boundary_credit_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed31/boundary_credit_source.py"
+        },
+        "run_config.json": {
+          "sha256": "32168a14fb42cda510c0f1958114abc0af763cf1a1f17ac58c3d39972b661d35",
+          "bytes": 1173,
+          "archive_member": "formal/B1_seed31/run_config.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed31/run_config.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "archive_member": "formal/B1_seed31/scene.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed31/scene.json"
+        },
+        "manifest.json": {
+          "sha256": "d0d06414e826e8323b49a2db81dc74108b695b7440c7d3e3fcfe85d31e490328",
+          "bytes": 6498,
+          "archive_member": "formal/B1_seed31/manifest.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed31/manifest.json"
+        },
+        "training_episodes.json": {
+          "sha256": "5aa462b1b7a3a19bb8d9f2172678c00521b1143546d0f212795261d336e9e388",
+          "bytes": 83036,
+          "archive_member": "formal/B1_seed31/training_episodes.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed31/training_episodes.json"
+        },
+        "credit_audits.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "archive_member": "formal/B1_seed31/credit_audits.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed31/credit_audits.json"
+        }
+      }
+    },
+    {
+      "cohort": "formal",
+      "run": "B1_seed41",
+      "online_training_interactions": 16384,
+      "files": {
+        "policy.zip": {
+          "sha256": "e84f56190b30b6985f5ce26dbee5a2e086b07070cebd30be99e45087824aeda0",
+          "bytes": 238979,
+          "archive_member": "formal/B1_seed41/policy.zip",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed41/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "501deca477660608eb9c2e5826792bce1a46034f54a30e2278235c0ed365915c",
+          "bytes": 42663,
+          "archive_member": "formal/B1_seed41/task_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed41/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "130c5ad9c2ab5a24c33b11541be9505eeeb31f85e4b72ace8c50d3baaff53995",
+          "bytes": 1405,
+          "archive_member": "formal/B1_seed41/frame_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed41/frame_source.py"
+        },
+        "boundary_credit_source.py": {
+          "sha256": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+          "bytes": 3216,
+          "archive_member": "formal/B1_seed41/boundary_credit_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed41/boundary_credit_source.py"
+        },
+        "run_config.json": {
+          "sha256": "47e9ce058f49f0f5fc93c4f2626cfe09328b53f3cfff3730102c066a7784a810",
+          "bytes": 1173,
+          "archive_member": "formal/B1_seed41/run_config.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed41/run_config.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "archive_member": "formal/B1_seed41/scene.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed41/scene.json"
+        },
+        "manifest.json": {
+          "sha256": "8a270185ac6bac218c5202ee6afcb958404d10bc183ab9cc2cb2fde758a73610",
+          "bytes": 6501,
+          "archive_member": "formal/B1_seed41/manifest.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed41/manifest.json"
+        },
+        "training_episodes.json": {
+          "sha256": "0cf9c8ed83d7c63bcb5548301248aa59a078078fe7a1dbb8d8bd3ac606d331f3",
+          "bytes": 83139,
+          "archive_member": "formal/B1_seed41/training_episodes.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed41/training_episodes.json"
+        },
+        "credit_audits.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "archive_member": "formal/B1_seed41/credit_audits.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed41/credit_audits.json"
+        }
+      }
+    },
+    {
+      "cohort": "formal",
+      "run": "B1_seed51",
+      "online_training_interactions": 16384,
+      "files": {
+        "policy.zip": {
+          "sha256": "582107cd6776a729d14c15270fc8c0bc8b9ef75aa8d49fc267b1e3ea6da71272",
+          "bytes": 238979,
+          "archive_member": "formal/B1_seed51/policy.zip",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed51/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "501deca477660608eb9c2e5826792bce1a46034f54a30e2278235c0ed365915c",
+          "bytes": 42663,
+          "archive_member": "formal/B1_seed51/task_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed51/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "130c5ad9c2ab5a24c33b11541be9505eeeb31f85e4b72ace8c50d3baaff53995",
+          "bytes": 1405,
+          "archive_member": "formal/B1_seed51/frame_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed51/frame_source.py"
+        },
+        "boundary_credit_source.py": {
+          "sha256": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+          "bytes": 3216,
+          "archive_member": "formal/B1_seed51/boundary_credit_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed51/boundary_credit_source.py"
+        },
+        "run_config.json": {
+          "sha256": "a1ea5826ed583f94f368457c48d43a29bea0f5e32f0416d291df4fec0ee23a44",
+          "bytes": 1173,
+          "archive_member": "formal/B1_seed51/run_config.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed51/run_config.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "archive_member": "formal/B1_seed51/scene.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed51/scene.json"
+        },
+        "manifest.json": {
+          "sha256": "6503c7304fedc905261b26bae9af61fb1e3e7cfc25ee3fcb6b718d074e2bac94",
+          "bytes": 6499,
+          "archive_member": "formal/B1_seed51/manifest.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed51/manifest.json"
+        },
+        "training_episodes.json": {
+          "sha256": "316177e33c79e21f7644e7ee057badf4c57aa42fb8c5db95ce8d419bb820476a",
+          "bytes": 83095,
+          "archive_member": "formal/B1_seed51/training_episodes.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed51/training_episodes.json"
+        },
+        "credit_audits.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "archive_member": "formal/B1_seed51/credit_audits.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B1_seed51/credit_audits.json"
+        }
+      }
+    },
+    {
+      "cohort": "formal",
+      "run": "B2_seed31",
+      "online_training_interactions": 16384,
+      "files": {
+        "policy.zip": {
+          "sha256": "76b62baf7da9617e22e4bf35ef6a4f103a834ace82666068f4bc2d8dc976aa8a",
+          "bytes": 238979,
+          "archive_member": "formal/B2_seed31/policy.zip",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed31/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "501deca477660608eb9c2e5826792bce1a46034f54a30e2278235c0ed365915c",
+          "bytes": 42663,
+          "archive_member": "formal/B2_seed31/task_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed31/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "130c5ad9c2ab5a24c33b11541be9505eeeb31f85e4b72ace8c50d3baaff53995",
+          "bytes": 1405,
+          "archive_member": "formal/B2_seed31/frame_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed31/frame_source.py"
+        },
+        "boundary_credit_source.py": {
+          "sha256": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+          "bytes": 3216,
+          "archive_member": "formal/B2_seed31/boundary_credit_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed31/boundary_credit_source.py"
+        },
+        "run_config.json": {
+          "sha256": "9cc2ebd62f48b4987207501d75babcd692087c70b5ee02164243770dbb749e6e",
+          "bytes": 1173,
+          "archive_member": "formal/B2_seed31/run_config.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed31/run_config.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "archive_member": "formal/B2_seed31/scene.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed31/scene.json"
+        },
+        "manifest.json": {
+          "sha256": "157c50ca7ff62caba9d45e64b351a78f635d686e9c760a268d8be8774dd9d6ee",
+          "bytes": 6501,
+          "archive_member": "formal/B2_seed31/manifest.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed31/manifest.json"
+        },
+        "training_episodes.json": {
+          "sha256": "f9e5ce5aebb58f8bc2d4dc2572e93a6863cd146769b52a1ff59cd282b1213137",
+          "bytes": 83005,
+          "archive_member": "formal/B2_seed31/training_episodes.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed31/training_episodes.json"
+        },
+        "credit_audits.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "archive_member": "formal/B2_seed31/credit_audits.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed31/credit_audits.json"
+        }
+      }
+    },
+    {
+      "cohort": "formal",
+      "run": "B2_seed41",
+      "online_training_interactions": 16384,
+      "files": {
+        "policy.zip": {
+          "sha256": "b2ec272423ce34c429ca805aa1f6eec5c321ce9ee77d6c2ee223e5a3d45e05de",
+          "bytes": 238979,
+          "archive_member": "formal/B2_seed41/policy.zip",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed41/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "501deca477660608eb9c2e5826792bce1a46034f54a30e2278235c0ed365915c",
+          "bytes": 42663,
+          "archive_member": "formal/B2_seed41/task_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed41/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "130c5ad9c2ab5a24c33b11541be9505eeeb31f85e4b72ace8c50d3baaff53995",
+          "bytes": 1405,
+          "archive_member": "formal/B2_seed41/frame_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed41/frame_source.py"
+        },
+        "boundary_credit_source.py": {
+          "sha256": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+          "bytes": 3216,
+          "archive_member": "formal/B2_seed41/boundary_credit_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed41/boundary_credit_source.py"
+        },
+        "run_config.json": {
+          "sha256": "04d178362e9a88cace1bdb16ea2f6d051a02dc1cfa3a96cfddb56038bbafcb55",
+          "bytes": 1173,
+          "archive_member": "formal/B2_seed41/run_config.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed41/run_config.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "archive_member": "formal/B2_seed41/scene.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed41/scene.json"
+        },
+        "manifest.json": {
+          "sha256": "875427744ff5256ab8830e30795081e6d4a6b4dbf1e17b5cd8546502525d034a",
+          "bytes": 6501,
+          "archive_member": "formal/B2_seed41/manifest.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed41/manifest.json"
+        },
+        "training_episodes.json": {
+          "sha256": "b7d8d848691d0fe20060133d809b0997f8474309053fac51fd1a03bd590f1997",
+          "bytes": 83027,
+          "archive_member": "formal/B2_seed41/training_episodes.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed41/training_episodes.json"
+        },
+        "credit_audits.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "archive_member": "formal/B2_seed41/credit_audits.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed41/credit_audits.json"
+        }
+      }
+    },
+    {
+      "cohort": "formal",
+      "run": "B2_seed51",
+      "online_training_interactions": 16384,
+      "files": {
+        "policy.zip": {
+          "sha256": "9cdbdc050a6e52f3e4d07af58e322c752c843fb371d8073a884b8e65e040e720",
+          "bytes": 238979,
+          "archive_member": "formal/B2_seed51/policy.zip",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed51/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "501deca477660608eb9c2e5826792bce1a46034f54a30e2278235c0ed365915c",
+          "bytes": 42663,
+          "archive_member": "formal/B2_seed51/task_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed51/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "130c5ad9c2ab5a24c33b11541be9505eeeb31f85e4b72ace8c50d3baaff53995",
+          "bytes": 1405,
+          "archive_member": "formal/B2_seed51/frame_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed51/frame_source.py"
+        },
+        "boundary_credit_source.py": {
+          "sha256": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+          "bytes": 3216,
+          "archive_member": "formal/B2_seed51/boundary_credit_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed51/boundary_credit_source.py"
+        },
+        "run_config.json": {
+          "sha256": "79152c4b654f4270d83334a0124e4dfc9a953e6bb5aa40a3c46f2e22ff0a85d0",
+          "bytes": 1173,
+          "archive_member": "formal/B2_seed51/run_config.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed51/run_config.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "archive_member": "formal/B2_seed51/scene.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed51/scene.json"
+        },
+        "manifest.json": {
+          "sha256": "6764e60f9111c8c0c8bd5b4c79b16b072f73a17cffe5236b64eb07dcc153cf7b",
+          "bytes": 6501,
+          "archive_member": "formal/B2_seed51/manifest.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed51/manifest.json"
+        },
+        "training_episodes.json": {
+          "sha256": "9c00d93049fc91f39838a7306d8977dbfe2e4b8b918b2df3579ff6608edc1478",
+          "bytes": 82999,
+          "archive_member": "formal/B2_seed51/training_episodes.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed51/training_episodes.json"
+        },
+        "credit_audits.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "archive_member": "formal/B2_seed51/credit_audits.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B2_seed51/credit_audits.json"
+        }
+      }
+    },
+    {
+      "cohort": "formal",
+      "run": "B3_no_next_seed31",
+      "online_training_interactions": 16384,
+      "files": {
+        "policy.zip": {
+          "sha256": "b25b241188aecb65e5a463e66165ddb3b3dd3c156a0f6c7d9616534b1068ddde",
+          "bytes": 238979,
+          "archive_member": "formal/B3_no_next_seed31/policy.zip",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_no_next_seed31/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "501deca477660608eb9c2e5826792bce1a46034f54a30e2278235c0ed365915c",
+          "bytes": 42663,
+          "archive_member": "formal/B3_no_next_seed31/task_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_no_next_seed31/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "130c5ad9c2ab5a24c33b11541be9505eeeb31f85e4b72ace8c50d3baaff53995",
+          "bytes": 1405,
+          "archive_member": "formal/B3_no_next_seed31/frame_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_no_next_seed31/frame_source.py"
+        },
+        "boundary_credit_source.py": {
+          "sha256": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+          "bytes": 3216,
+          "archive_member": "formal/B3_no_next_seed31/boundary_credit_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_no_next_seed31/boundary_credit_source.py"
+        },
+        "run_config.json": {
+          "sha256": "374bfae759991bbac7ec513e283d1a90b7614ec0079ef9a7083b53044d51c82b",
+          "bytes": 1181,
+          "archive_member": "formal/B3_no_next_seed31/run_config.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_no_next_seed31/run_config.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "archive_member": "formal/B3_no_next_seed31/scene.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_no_next_seed31/scene.json"
+        },
+        "manifest.json": {
+          "sha256": "be85d65fdd0e0b8baa3ca7e279e87f896de7d4423bafbc7c9a807cd46b18e6ab",
+          "bytes": 6501,
+          "archive_member": "formal/B3_no_next_seed31/manifest.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_no_next_seed31/manifest.json"
+        },
+        "training_episodes.json": {
+          "sha256": "8eb9f19447b46c6f4f351831582e4daf4a42dd19f898bb8dca0a803f452bceab",
+          "bytes": 83155,
+          "archive_member": "formal/B3_no_next_seed31/training_episodes.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_no_next_seed31/training_episodes.json"
+        },
+        "credit_audits.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "archive_member": "formal/B3_no_next_seed31/credit_audits.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_no_next_seed31/credit_audits.json"
+        }
+      }
+    },
+    {
+      "cohort": "formal",
+      "run": "B3_seed31",
+      "online_training_interactions": 16384,
+      "files": {
+        "policy.zip": {
+          "sha256": "fa7734762bd51c219b07db6725964293d97ce58c196d94891862852d3f8c05a3",
+          "bytes": 238979,
+          "archive_member": "formal/B3_seed31/policy.zip",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed31/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "501deca477660608eb9c2e5826792bce1a46034f54a30e2278235c0ed365915c",
+          "bytes": 42663,
+          "archive_member": "formal/B3_seed31/task_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed31/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "130c5ad9c2ab5a24c33b11541be9505eeeb31f85e4b72ace8c50d3baaff53995",
+          "bytes": 1405,
+          "archive_member": "formal/B3_seed31/frame_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed31/frame_source.py"
+        },
+        "boundary_credit_source.py": {
+          "sha256": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+          "bytes": 3216,
+          "archive_member": "formal/B3_seed31/boundary_credit_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed31/boundary_credit_source.py"
+        },
+        "run_config.json": {
+          "sha256": "f984c7b7f64635b823f39fcda009eadd6fcbad35d8e426b1527cb87634eed36a",
+          "bytes": 1174,
+          "archive_member": "formal/B3_seed31/run_config.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed31/run_config.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "archive_member": "formal/B3_seed31/scene.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed31/scene.json"
+        },
+        "manifest.json": {
+          "sha256": "f2128bb383f804ec8f74dd7fc6b90cb1338d80822623393281046a969e70e96e",
+          "bytes": 6500,
+          "archive_member": "formal/B3_seed31/manifest.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed31/manifest.json"
+        },
+        "training_episodes.json": {
+          "sha256": "7d4e7abfbf67646540bdeda4e47f39331f20e9b1b9cf32744bed1c295b9d26a4",
+          "bytes": 83155,
+          "archive_member": "formal/B3_seed31/training_episodes.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed31/training_episodes.json"
+        },
+        "credit_audits.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "archive_member": "formal/B3_seed31/credit_audits.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed31/credit_audits.json"
+        }
+      }
+    },
+    {
+      "cohort": "formal",
+      "run": "B3_seed41",
+      "online_training_interactions": 16384,
+      "files": {
+        "policy.zip": {
+          "sha256": "e56662799c35975766f3987b49081c245b789242458fc268bd21cecdf23573f8",
+          "bytes": 238979,
+          "archive_member": "formal/B3_seed41/policy.zip",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed41/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "501deca477660608eb9c2e5826792bce1a46034f54a30e2278235c0ed365915c",
+          "bytes": 42663,
+          "archive_member": "formal/B3_seed41/task_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed41/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "130c5ad9c2ab5a24c33b11541be9505eeeb31f85e4b72ace8c50d3baaff53995",
+          "bytes": 1405,
+          "archive_member": "formal/B3_seed41/frame_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed41/frame_source.py"
+        },
+        "boundary_credit_source.py": {
+          "sha256": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+          "bytes": 3216,
+          "archive_member": "formal/B3_seed41/boundary_credit_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed41/boundary_credit_source.py"
+        },
+        "run_config.json": {
+          "sha256": "940d0936de7f63ce91da09e93b4af5ba74f495ba25a2fee95e1dc5f59c9bd24e",
+          "bytes": 1174,
+          "archive_member": "formal/B3_seed41/run_config.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed41/run_config.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "archive_member": "formal/B3_seed41/scene.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed41/scene.json"
+        },
+        "manifest.json": {
+          "sha256": "211003e679a1fdd8c16fee34fd2ad44f3c66e6daf3ec528e945323b45959588f",
+          "bytes": 6499,
+          "archive_member": "formal/B3_seed41/manifest.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed41/manifest.json"
+        },
+        "training_episodes.json": {
+          "sha256": "d209b203fa80c6501ed5edb56f5f71c130d99e83b03de0ecb41f497b06f92d10",
+          "bytes": 83039,
+          "archive_member": "formal/B3_seed41/training_episodes.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed41/training_episodes.json"
+        },
+        "credit_audits.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "archive_member": "formal/B3_seed41/credit_audits.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed41/credit_audits.json"
+        }
+      }
+    },
+    {
+      "cohort": "formal",
+      "run": "B3_seed51",
+      "online_training_interactions": 16384,
+      "files": {
+        "policy.zip": {
+          "sha256": "9ed8abf0f3b1b533d050f3f73099c37a44aca63fe57a18d0bf5e02cf53f87fd5",
+          "bytes": 238979,
+          "archive_member": "formal/B3_seed51/policy.zip",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed51/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "501deca477660608eb9c2e5826792bce1a46034f54a30e2278235c0ed365915c",
+          "bytes": 42663,
+          "archive_member": "formal/B3_seed51/task_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed51/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "130c5ad9c2ab5a24c33b11541be9505eeeb31f85e4b72ace8c50d3baaff53995",
+          "bytes": 1405,
+          "archive_member": "formal/B3_seed51/frame_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed51/frame_source.py"
+        },
+        "boundary_credit_source.py": {
+          "sha256": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+          "bytes": 3216,
+          "archive_member": "formal/B3_seed51/boundary_credit_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed51/boundary_credit_source.py"
+        },
+        "run_config.json": {
+          "sha256": "3358199ae36e1cc9c274f997628bac8cd35d85d7c04fd8bc9c61e5282ef9f114",
+          "bytes": 1174,
+          "archive_member": "formal/B3_seed51/run_config.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed51/run_config.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "archive_member": "formal/B3_seed51/scene.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed51/scene.json"
+        },
+        "manifest.json": {
+          "sha256": "b922bc372b13ff4cbc0fbc33294f9c96f3f8be0ecf77c386ffcc1c820da256a1",
+          "bytes": 6500,
+          "archive_member": "formal/B3_seed51/manifest.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed51/manifest.json"
+        },
+        "training_episodes.json": {
+          "sha256": "60990e774e89bea6a13ce36feea295024d5ddbe06d8fc8f9fea1dff54b198ba1",
+          "bytes": 82988,
+          "archive_member": "formal/B3_seed51/training_episodes.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed51/training_episodes.json"
+        },
+        "credit_audits.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "archive_member": "formal/B3_seed51/credit_audits.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/formal/B3_seed51/credit_audits.json"
+        }
+      }
+    },
+    {
+      "cohort": "pre_fix_software_diagnostic",
+      "run": "B1_seed31",
+      "online_training_interactions": 16384,
+      "files": {
+        "policy.zip": {
+          "sha256": "d131d5aa1a1051b55456ef0ac26cc26b837da0b0936ed5f500d04208c5fdc064",
+          "bytes": 238979,
+          "archive_member": "pre_fix_software_diagnostic/B1_seed31/policy.zip",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "5a504b32b701fe21d92e17cbf01d03b077798989883e35874aa35ff632f0934d",
+          "bytes": 43298,
+          "archive_member": "pre_fix_software_diagnostic/B1_seed31/task_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "04fe772857c72a9c5e9a723ba526dd8f6b752ec86d138048d42594b14056d51b",
+          "bytes": 721,
+          "archive_member": "pre_fix_software_diagnostic/B1_seed31/frame_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/frame_source.py"
+        },
+        "boundary_credit_source.py": {
+          "sha256": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+          "bytes": 3216,
+          "archive_member": "pre_fix_software_diagnostic/B1_seed31/boundary_credit_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/boundary_credit_source.py"
+        },
+        "run_config.json": {
+          "sha256": "abc93fd4e09fdae15e0c76b66cb97162693e867288f273217244fd61d3be1474",
+          "bytes": 1166,
+          "archive_member": "pre_fix_software_diagnostic/B1_seed31/run_config.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/run_config.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "archive_member": "pre_fix_software_diagnostic/B1_seed31/scene.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/scene.json"
+        },
+        "manifest.json": {
+          "sha256": "e5abcb9ef685a5f172469c635f3725ab85f57b574faab39b1dde833317838154",
+          "bytes": 6498,
+          "archive_member": "pre_fix_software_diagnostic/B1_seed31/manifest.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/manifest.json"
+        },
+        "training_episodes.json": {
+          "sha256": "5aa462b1b7a3a19bb8d9f2172678c00521b1143546d0f212795261d336e9e388",
+          "bytes": 83036,
+          "archive_member": "pre_fix_software_diagnostic/B1_seed31/training_episodes.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/training_episodes.json"
+        },
+        "credit_audits.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "archive_member": "pre_fix_software_diagnostic/B1_seed31/credit_audits.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/credit_audits.json"
+        }
+      }
+    },
+    {
+      "cohort": "pre_fix_software_diagnostic",
+      "run": "B3_seed31",
+      "online_training_interactions": 16384,
+      "files": {
+        "policy.zip": {
+          "sha256": "382f196b686d55b7c18799414366127693af898261e61d163d392304139f3535",
+          "bytes": 238979,
+          "archive_member": "pre_fix_software_diagnostic/B3_seed31/policy.zip",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "5a504b32b701fe21d92e17cbf01d03b077798989883e35874aa35ff632f0934d",
+          "bytes": 43298,
+          "archive_member": "pre_fix_software_diagnostic/B3_seed31/task_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "04fe772857c72a9c5e9a723ba526dd8f6b752ec86d138048d42594b14056d51b",
+          "bytes": 721,
+          "archive_member": "pre_fix_software_diagnostic/B3_seed31/frame_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/frame_source.py"
+        },
+        "boundary_credit_source.py": {
+          "sha256": "af38e70a6e993f98eddcf14ce90fc5f54b6df60b7086a276d99ed33e585b43e9",
+          "bytes": 3216,
+          "archive_member": "pre_fix_software_diagnostic/B3_seed31/boundary_credit_source.py",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/boundary_credit_source.py"
+        },
+        "run_config.json": {
+          "sha256": "f64c16be7d62338e79d8dc4878e2790a4aeab97493b42f0a78512c4df091f429",
+          "bytes": 1167,
+          "archive_member": "pre_fix_software_diagnostic/B3_seed31/run_config.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/run_config.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "archive_member": "pre_fix_software_diagnostic/B3_seed31/scene.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/scene.json"
+        },
+        "manifest.json": {
+          "sha256": "ea57d586291d7e2031c08feefd57478dfd3d34931e07a56671501c9463dc499b",
+          "bytes": 6502,
+          "archive_member": "pre_fix_software_diagnostic/B3_seed31/manifest.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/manifest.json"
+        },
+        "training_episodes.json": {
+          "sha256": "e7b19eef33145878af6ffbcf58e2542f3ca32521042bc9d070ee8bd1a3bc1fc5",
+          "bytes": 83035,
+          "archive_member": "pre_fix_software_diagnostic/B3_seed31/training_episodes.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/training_episodes.json"
+        },
+        "credit_audits.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "archive_member": "pre_fix_software_diagnostic/B3_seed31/credit_audits.json",
+          "original_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/credit_audits.json"
+        }
+      }
+    }
+  ],
+  "model_count": 12,
+  "formal_models": 10,
+  "formal_interactions": 163840,
+  "software_diagnostic_interactions": 32768,
+  "source_authority": "Each model own captured source bytes, not current Git HEAD",
+  "all_full_traces_preserved": true,
+  "delivery_archive": {
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/MODELS_AND_CONFIGS.tar.gz",
+    "sha256": "5bac83fba063e3f6ab3daa73f2b4e1c1e8178aecb156c03b6de84b2138403920",
+    "bytes": 2812457,
+    "verified_members": 109
+  }
+}

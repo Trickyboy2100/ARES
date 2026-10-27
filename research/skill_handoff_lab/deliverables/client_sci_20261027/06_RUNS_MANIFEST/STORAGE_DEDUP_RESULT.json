@@ -1,0 +1,970 @@
+{
+  "operation": "SHA256_VERIFIED_HARDLINK_COALESCING",
+  "allocated_bytes_before": 2961850368,
+  "allocated_bytes_after": 2755403776,
+  "allocated_bytes_released": 206446592,
+  "coalesced": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_HANDOFF_V6/fig_contact_failure_diagnostic.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/fig_contact_failure_diagnostic.png",
+      "sha256": "f850d1b3649195b3a33fcb385adc163a8549c18aaf16962c9a340f7e8be4c93b",
+      "bytes": 177896
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_HANDOFF_V6/fig_online_learning_v6.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/fig_online_learning_v6.png",
+      "sha256": "b35d589ac6f52ebb88918337c92cac4d89937fff376e96f4649132698b2a28a0",
+      "bytes": 164836
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_ppo_seed31/checkpoints/policy_65536_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_ppo_seed31/policy.zip",
+      "sha256": "685744e26a7f1cf86b097afaae02443f68474592d81bd8a6daed48460899c218",
+      "bytes": 225729
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_ppo_seed51/checkpoints/policy_65536_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_ppo_seed51/policy.zip",
+      "sha256": "81738a17a4ce2b71d03afd79d513e81a601a866758a63542da6debd955e52dfb",
+      "bytes": 225729
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_recover_seed31/checkpoints/policy_65536_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_recover_seed31/policy.zip",
+      "sha256": "f167557babd77b12936a90834e726cc1cc0b39cbf7a9e7add424ff8044b17b80",
+      "bytes": 225729
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_recover_seed51/checkpoints/policy_65536_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_recover_seed51/policy.zip",
+      "sha256": "4a9e50b507e34c231ec5e2ce86a3cbebc2688d056deff4ff2dee6c1d2b171f0b",
+      "bytes": 225729
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_residual_seed31/checkpoints/policy_65536_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_residual_seed31/policy.zip",
+      "sha256": "5129336b3dfd1f74d7f34baada0869f9a3a1f36723fd22b316a6614f829093b9",
+      "bytes": 225729
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_residual_seed41/checkpoints/policy_65536_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_residual_seed41/policy.zip",
+      "sha256": "b0597000fa35ad72f0f0dfecb518d2191388a5bcc7cd7d21bdfb5d4f762a5198",
+      "bytes": 225729
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_residual_seed51/checkpoints/policy_65536_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_residual_seed51/policy.zip",
+      "sha256": "71d99b289e2af4358167dad3ec251dac8cb6c5960b12b34022a72a9dfe590787",
+      "bytes": 225729
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/handoff_v6_ppo_pilot31/checkpoints/policy_32768_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/handoff_v6_ppo_pilot31/policy.zip",
+      "sha256": "c84d5c36087542c311eaf029ea65709b4b25c646daf46b042e2bb088730fe7f1",
+      "bytes": 225729
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_recover_seed41/checkpoints/policy_65536_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_recover_seed41/policy.zip",
+      "sha256": "049fc5302317d9eb5dba2c4376530ce583e7f12ffd03694cb8e6436d5043864b",
+      "bytes": 225729
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_ppo_seed41/checkpoints/policy_65536_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_ppo_seed41/policy.zip",
+      "sha256": "4c464e37d63328cf9dfa11a9d0b8d74491fcde5615d82eae32e0c5f884f61b34",
+      "bytes": 225729
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_active2_high31/checkpoints/policy_65536_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_active2_high31/policy.zip",
+      "sha256": "b25d0ac13ac3615493d8adf18c01b1568d1820ff160440a0d0cee3763f34f09e",
+      "bytes": 224929
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_active2_low31/checkpoints/policy_65536_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_active2_low31/policy.zip",
+      "sha256": "21b8c71d2b1767595f2553b3a18ff6f5f4882a11dc336f2c2493da93c46d9b97",
+      "bytes": 224930
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_bootstrap_all_seed31/checkpoints/policy_65536_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_bootstrap_all_seed31/policy.zip",
+      "sha256": "20a52c0db991eabf41e7eef72b929b3843ff76b7d969d5b965d49b0124c1662b",
+      "bytes": 251120
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_HANDOFF_V6/video_frame_records.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_actual_training_video/video_frame_records.json",
+      "sha256": "254680ced6883c043e7009c9876526944b0e5d38459a10a42c3e7431be5dbfae",
+      "bytes": 322981
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_HANDOFF_V6/actual_physics.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_actual_training_video/actual_physics.gif",
+      "sha256": "25a06d024c5fb601a68618df7bab90b3b111e10d59bdf5534fc469ef9a0cd31b",
+      "bytes": 963165
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_hybrid_conditional_pilot31/checkpoints/policy_32768_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_hybrid_conditional_pilot31/policy.zip",
+      "sha256": "b688b29b2eea29b95b92f16b1d41b61d0ca7acc43b728b11e888c589c4bdca86",
+      "bytes": 223552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_hybrid_joint_pilot31/checkpoints/policy_32768_after_update.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/contact_handoff_20261016_r1/v6b_hybrid_joint_pilot31/policy.zip",
+      "sha256": "2d720a3dc47c72675e3197cef955cf065a3d9c49b52dbdf4b70fe2a2e3e433b1",
+      "bytes": 223553
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/media/actual_single_execution_2success_2failure.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_single_execution_demo/actual_physics.gif",
+      "sha256": "e1785665b39215daedadb9b751549814e116b2eadf7c56598a003d23874820d0",
+      "bytes": 633492
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/contact_v5_standard_seed41/policy.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_v5_standard_seed41/policy.zip",
+      "sha256": "e1781cee47d0a7899afee122dbeecbf9dce39ee731db00760a14091ec51db1f8",
+      "bytes": 186805
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/contact_v5_standard_seed51/policy.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_v5_standard_seed51/policy.zip",
+      "sha256": "a971342955dc01917958ba1159a016e671a4d78df9a21bbe20c163edf64ec1fa",
+      "bytes": 186805
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/contact_v5_boundary_seed41/policy.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_v5_boundary_seed41/policy.zip",
+      "sha256": "c00cae2d8bce8cccc77534837a6233cfc9ee81bc39722c6e388d4d5aed787655",
+      "bytes": 215825
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/contact_v5_boundary_seed31/policy.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_v5_boundary_seed31/policy.zip",
+      "sha256": "13d3ba202583a7c07cb90ee23ff35e7b1154c9ab3e62a5391a7681fa4f14a43f",
+      "bytes": 215829
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/contact_v5_boundary_seed31/video_frame_records.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_v5_boundary_seed31/video_frame_records.json",
+      "sha256": "115965ec578b16e1a20a64fbd297bf7e79e4bd57f68a611ead5ef9698e223f30",
+      "bytes": 414511
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_v5_boundary_seed31/actual_physics_trace.npz",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_v5_all_mc_seed31/actual_physics_trace.npz",
+      "sha256": "168fb279e55e49d8ba88b26c1d5d742421123c8509f619c3bcc18716ac1ba940",
+      "bytes": 4015631
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/media/actual_16env_training_and_evaluation.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_v5_boundary_seed31/actual_physics.gif",
+      "sha256": "f9e33c3fb737e9a6aafee4ce5facde974a57f9151d6dbc0e201a84251a12014f",
+      "bytes": 1052240
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/contact_v5_standard_seed31/policy.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_v5_standard_seed31/policy.zip",
+      "sha256": "ad222d0c33ddb2be4a772f4e9020843ffcbf530397514592f0fd9b07132e4429",
+      "bytes": 186809
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/contact_v5_all_mc_seed31/policy.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_v5_all_mc_seed31/policy.zip",
+      "sha256": "f996de04859db8333927b8491e420f711b21ce6da534752b060ccd8798828d34",
+      "bytes": 215824
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/contact_residual65536_v4_seed31/policy.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_residual65536_v4_seed31/policy.zip",
+      "sha256": "bf00ccf89b7ca44efcf92a9de6bb3fcba9b31e24c56ac59f4ae36a401997b7ea",
+      "bytes": 186757
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/contact_standard65536_v4_seed31/policy.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_standard65536_v4_seed31/policy.zip",
+      "sha256": "bc53a6d49335e3731ae1e65ea39159e532c0922cabce1ead65f4fc19953ad231",
+      "bytes": 186757
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/contact_residual65536_v4_seed31/video_frame_records.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_residual65536_v4_seed31/video_frame_records.json",
+      "sha256": "69aef6ce3793b78e5e80f56ae8eeb7c9fc58812f6e218b651347cca7cc181d1f",
+      "bytes": 560818
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/heldout_contact_v5_boundary_seed31/actual_physics_trace.npz",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/heldout_contact_v5_all_mc_seed31/actual_physics_trace.npz",
+      "sha256": "8831ce61c777e47d2a7721ab43acc8e1745b7579e0c98a6d68965e83d1bd415f",
+      "bytes": 4085295
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/contact_ppo16_v4_seed31/policy.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_ppo16_v4_seed31/policy.zip",
+      "sha256": "e5398d33d9994da060f15d0928ecdf4f14962e71cb12db282e69b46b075ee238",
+      "bytes": 186756
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/CONTACT_COMPOSITION/RELEASE/contact_v5_boundary_seed51/policy.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/skill_composition_20261016_r0/contact_v5_boundary_seed51/policy.zip",
+      "sha256": "77041eb2857c12612f0fae9615099683d74ea2403c4d5dbdce9412c68bc7e164",
+      "bytes": 215841
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/R1/raw/replay_standoff_v1/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/replay_standoff_v1/physical_scene.png",
+      "sha256": "768a7acca6654296ff852d9a91fc53d32ade2e157efe469ac989cf14ea46e683",
+      "bytes": 446387
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/R1/raw/replay_feedback_v1/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/replay_feedback_v1/physical_scene.png",
+      "sha256": "384bbd1c296609e118ea47c57d5a7aa5e5cfa3b4fc6048cc8cfe6243c721816a",
+      "bytes": 445775
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/R1/online_ppo_physics.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/smoke16_camera_v2/online_ppo_physics.gif",
+      "sha256": "853ead57b3750b0697d0626cee315e8bb45bfb312da6f31ca310d987b3dcbb85",
+      "bytes": 1640054
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/R1/raw/smoke16_camera_v2/online_ppo_physics.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/smoke16_camera_v2/online_ppo_physics.gif",
+      "sha256": "853ead57b3750b0697d0626cee315e8bb45bfb312da6f31ca310d987b3dcbb85",
+      "bytes": 1640054
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/R1/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/smoke16_camera_v2/physical_scene.png",
+      "sha256": "50e393101e2f4801bcdd703588c4dda812971b5697f6c31d73a65a6a2f2f4478",
+      "bytes": 765476
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/R1/raw/smoke16_camera_v2/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/smoke16_camera_v2/physical_scene.png",
+      "sha256": "50e393101e2f4801bcdd703588c4dda812971b5697f6c31d73a65a6a2f2f4478",
+      "bytes": 765476
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/R1/raw/smoke16_camera_v2/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/smoke16_camera_v2/ppo_physics.zip",
+      "sha256": "cd995ca419b44ad61cbd31db32be316ca9f106d5295c835bb06a4d73dae7c642",
+      "bytes": 165107
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/R1/raw/replay_nominal_v2/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/replay_nominal_v2/physical_scene.png",
+      "sha256": "1936e93afea6ec5c1a4d35553dbfcbbd68b3d13e8b5783cf2248c36e3050be91",
+      "bytes": 446890
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/R1/raw/smoke4_v1/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/smoke4_v1/ppo_physics.zip",
+      "sha256": "116638dc0253cf089620bcb951cbef588dbf94924a1b8f19951b578bee39a410",
+      "bytes": 163938
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/R1/raw/smoke1_v6/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/smoke1_v6/ppo_physics.zip",
+      "sha256": "2318a10b931fca91b02c5a692282a42ea0551ac00b91a3bdc19e72c7ab306bdb",
+      "bytes": 163644
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/R1/raw/replay_lift_v1/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/r1_20261014/replay_lift_v1/physical_scene.png",
+      "sha256": "c0b73b2aeef60a7c222edf0c8bc9da16a546f2009e599f6fcee87487ec1bcdc6",
+      "bytes": 445796
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed31/online_ppo_physics.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_blind_seed31/online_ppo_physics.gif",
+      "sha256": "b6fc85cdfba6767950b25c234b2f952b3b23944aa56148b49c87f2ddf7e4c3d7",
+      "bytes": 3408923
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed31/process_states.json.gz",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_blind_seed31/process_states.json.gz",
+      "sha256": "55c35d3676b09e40fa497401594be923c85607a1c8613bff4c32645ef3f0ae4d",
+      "bytes": 3107632
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed31/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_blind_seed31/physical_scene.png",
+      "sha256": "66e6ec2023fdacbff58e175f708b36329857f37638fd5ff39c9acba39b92549c",
+      "bytes": 801856
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed31/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_blind_seed31/ppo_physics.zip",
+      "sha256": "c1ec4aec55e079f682fcefd73f04f4ce17d88e12470d1c71f929cc97b46e32b3",
+      "bytes": 202560
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_blind_seed31/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_blind_seed31/ppo_physics.zip",
+      "sha256": "c1ec4aec55e079f682fcefd73f04f4ce17d88e12470d1c71f929cc97b46e32b3",
+      "bytes": 202560
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed31/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_seed31/ppo_physics.zip",
+      "sha256": "16e8bd3665fa332d5c8b85124c548949e6fcdf3fc26c190ff350332f565f457e",
+      "bytes": 202560
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_seed31/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_seed31/ppo_physics.zip",
+      "sha256": "16e8bd3665fa332d5c8b85124c548949e6fcdf3fc26c190ff350332f565f457e",
+      "bytes": 202560
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_seed59/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed59/ppo_physics.zip",
+      "sha256": "f8d631f480d5d338d27528e01993cac7a68d7ffac754aba8a9414b49a1f58939",
+      "bytes": 202560
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_blind_seed47/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed47/ppo_physics.zip",
+      "sha256": "6b3300a0438a18946ba92240e5f0e2b4cd35bb793ac09e7e051b5908f8fc7a1f",
+      "bytes": 202560
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_blind_seed59/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed59/ppo_physics.zip",
+      "sha256": "6aed72effbf5063719c7460a3308d2984bc53b408e9537cc1d572deef80f05c9",
+      "bytes": 202560
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_seed47/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed47/ppo_physics.zip",
+      "sha256": "093786bbf33d013a76b49a34aad5d5db0ab7248d486cf0fbeaa53436cd663276",
+      "bytes": 202560
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed31/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_blind_seed31/industrial_episodes.json",
+      "sha256": "b5d0e84b29e621e75161d84716ba01fa7fdbc91da9f1369387201fca03e0642f",
+      "bytes": 160899
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_blind_seed31/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_blind_seed31/industrial_episodes.json",
+      "sha256": "b5d0e84b29e621e75161d84716ba01fa7fdbc91da9f1369387201fca03e0642f",
+      "bytes": 160899
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed31_val/process_states.json.gz",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_ppo_seed31_val/process_states.json.gz",
+      "sha256": "c527508b5d49916f93a2193c9a8ca7edfa4d2308dfdad0c926f6f4d888d05192",
+      "bytes": 12724074
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed31_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_ppo_seed31_val/ppo_physics.zip",
+      "sha256": "cb3118535d81c4b7c61e6342fd22fe028e971f05243ca785ba76780ca32f6082",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_ppo_seed31_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_ppo_seed31_val/ppo_physics.zip",
+      "sha256": "cb3118535d81c4b7c61e6342fd22fe028e971f05243ca785ba76780ca32f6082",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/strict_guard_v21_ppo31_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/strict_guard_v21_ppo31_val/ppo_physics.zip",
+      "sha256": "fe28b52c500b0a9255e2fe5e43b7375bccca7153afff08c6e6cd51f475c12d2e",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_ppo_seed31_test/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed31_test/ppo_physics.zip",
+      "sha256": "476edf57b46fc73fa367e4834b38043e3f7c07032c4700802135f923df114c50",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_residual_seed47_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_residual_seed47_val/ppo_physics.zip",
+      "sha256": "72f5262a7be6c6c24e72db7963e8cce210dee6a197a7dcebdac94da5057a28f7",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_ppo_seed47_test/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed47_test/ppo_physics.zip",
+      "sha256": "2c47abc2cb97d9f4797d4987dd0007af13313e35d7e1d7663d489179fbec23d7",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_residual_seed59_test/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_residual_seed59_test/ppo_physics.zip",
+      "sha256": "f74bff20aed0c7bdeed115125a9bee9102696a93ccef3ea259146cef2ba4133f",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_ppo_seed59_test/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed59_test/ppo_physics.zip",
+      "sha256": "3058e1dccbc1263ee6e16cdce414be85e44d97c099855f9ecfdbe033b02a0859",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_residual_seed59_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_residual_seed59_val/ppo_physics.zip",
+      "sha256": "ceb965a3a55c4184d0422df1d56b8b1ceb54db7f79048a539eac0a851345d465",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_residual_seed31_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_residual_seed31_val/ppo_physics.zip",
+      "sha256": "a28ef42588d42f7d76d520f9f92371ae5f42c5b01267d9e6eb5cb8d4819131d5",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_ppo_seed47_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed47_val/ppo_physics.zip",
+      "sha256": "50296836e4aa3f75a326661b3a7cb0c3771078f59a3441027206e1f11c3d449b",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_residual_seed47_test/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_residual_seed47_test/ppo_physics.zip",
+      "sha256": "56257de2151fd3decc4cfdca3d743cbcdaa980f7042e46a8e15dbde8ff309e95",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_residual_seed31_test/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_residual_seed31_test/ppo_physics.zip",
+      "sha256": "411493201dd253ff3df55db60b5a3ab37e9f0b1725b74daf4e9f17bd1090dc86",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_ppo_seed59_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed59_val/ppo_physics.zip",
+      "sha256": "36dc881946f050b04fc03b4f795f7cea14d7231839a56b74f597482c58ee840d",
+      "bytes": 176429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed31_val/action_audit.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_ppo_seed31_val/action_audit.json",
+      "sha256": "2c7d05737f7161857087546dc4833d41fb791efda06517e2797fc8b058f424ba",
+      "bytes": 22329868
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v20_fullchain/process_states.json.gz",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v20_fullchain/process_states.json.gz",
+      "sha256": "6718a57d9c9214291476e5accdd932fd8859569bf017564f4aff215cd47fb31b",
+      "bytes": 152325
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/fullchain_capture_v22/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/fullchain_capture_v22/ppo_physics.zip",
+      "sha256": "774b7bc5213527e4d21fd164bc3bd172d8c932f085a43da3324e9eafa79a27c9",
+      "bytes": 196131
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v20_fullchain/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v20_fullchain/ppo_physics.zip",
+      "sha256": "f783eb1dbe08c225cd7913b459e03e382aa0269eb494d00426a59009edab510b",
+      "bytes": 196131
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v20_fullchain/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v20_fullchain/ppo_physics.zip",
+      "sha256": "f783eb1dbe08c225cd7913b459e03e382aa0269eb494d00426a59009edab510b",
+      "bytes": 196131
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/fig_fullchain_terminal_success.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/fullchain_capture_v22/terminal_success_physics.png",
+      "sha256": "49510a3f288a1e8425a186b477571be34faabeb595a1826668bf8a63d32cd50d",
+      "bytes": 454650
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v20_fullchain/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v20_fullchain/physical_scene.png",
+      "sha256": "b1a39a576e05421ce65c91abfeb0cb215751dc0bf214ce93c0557beaf3944985",
+      "bytes": 468111
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v20_fullchain/policy_evaluation.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v20_fullchain/policy_evaluation.gif",
+      "sha256": "c0592db9b615d49abe3ece215f856d11372b97696b0df7d0abd840cfe5d54bf4",
+      "bytes": 2090634
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed31_val/process_states.json.gz",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_blind_seed31_val/process_states.json.gz",
+      "sha256": "091a21b9793ddf698dd1e89e24b886c909b35c570b06f560cc60384480509306",
+      "bytes": 5776933
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed31_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_blind_seed31_val/ppo_physics.zip",
+      "sha256": "0adec834373aa0f5da3a84872613786cd9376b5ceb2e15758dc301e2301c735a",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_blind_seed31_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_blind_seed31_val/ppo_physics.zip",
+      "sha256": "0adec834373aa0f5da3a84872613786cd9376b5ceb2e15758dc301e2301c735a",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed31_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_seed31_val/ppo_physics.zip",
+      "sha256": "ea5ef3821bd83a7563dbeefb9c55e0466c89f6a8cc1fcdd962929fbff376018a",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_seed31_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_seed31_val/ppo_physics.zip",
+      "sha256": "ea5ef3821bd83a7563dbeefb9c55e0466c89f6a8cc1fcdd962929fbff376018a",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/strict_guard_v21_contract_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/strict_guard_v21_contract_val/ppo_physics.zip",
+      "sha256": "2ff829ed160521e7f1955278758a76f1e0a994a3f47365c337f17b0df4f285a4",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_blind_seed47_test/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed47_test/ppo_physics.zip",
+      "sha256": "77bddecd8eb09a93f6d64ba13500e376fb4b3e10b2b921b6419fdbee8b94e445",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_blind_seed47_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed47_val/ppo_physics.zip",
+      "sha256": "efe2faa2d9b30a9a9421084344c354d209c47bc5a1f75cd454721933513a0a79",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_seed31_test/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed31_test/ppo_physics.zip",
+      "sha256": "83ec0499fb1d72f613657c2701e4752da191e72c40c29497adb220624e507ff3",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_seed47_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed47_val/ppo_physics.zip",
+      "sha256": "bbef94a1a12d54c0e67dd6f94be94cbf033c90138e60e4c82b80a289291ab7db",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_seed59_test/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed59_test/ppo_physics.zip",
+      "sha256": "af8e38de7f63866aec9349a5aa4adf76f27465e6f8d7b0079e86a1d30cff4ecb",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_blind_seed59_test/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed59_test/ppo_physics.zip",
+      "sha256": "80b538ef9a8cceb3287d840fe3d3d9d57bad0c1a44cc304ccde5bcc2f7c66313",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_blind_seed31_test/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed31_test/ppo_physics.zip",
+      "sha256": "59c94ab8c677b75d5e8dc851ff19af1feda9b1d0c3ef6010a6dcf89c49ac0740",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_seed47_test/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed47_test/ppo_physics.zip",
+      "sha256": "4f970aa9f7e3ca1ae73709d45b1712e05e0b042e35c33a59d37ffbf60f617a64",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_blind_seed59_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed59_val/ppo_physics.zip",
+      "sha256": "342a1b32e96d1ec3bc1b2311bcf20205450b6bc7c67bd172fca1c94c1c368bc3",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_seed59_val/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed59_val/ppo_physics.zip",
+      "sha256": "2cf95fbf4f7d69fa176dba3604bc8e188903ab911db7d7a14f8a8fe9093e8a8a",
+      "bytes": 202552
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed31_val/action_audit.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_blind_seed31_val/action_audit.json",
+      "sha256": "fecad1b3680ea8b3d2a55e3bd5f46c2cbf25858b5ccb7ccbaef646a0b9f20ef4",
+      "bytes": 10715823
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed31/online_ppo_physics.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_seed31/online_ppo_physics.gif",
+      "sha256": "93f99a019c9881f42d4d139809627d5f6397eb55c6650d2fb12024d7462a1b6e",
+      "bytes": 3409270
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed31/process_states.json.gz",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_seed31/process_states.json.gz",
+      "sha256": "7921bc6d9e93fa473b72db46a532ee4ff75cd63d61e3e29965e873607c5cec1b",
+      "bytes": 3106166
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed31/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_seed31/physical_scene.png",
+      "sha256": "b0e13826909906170a38332f24b45af6b6b75b49b2c3f441b900fec3b030d096",
+      "bytes": 801755
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed31/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_seed31/industrial_episodes.json",
+      "sha256": "6d5b9e5ca70daed0e455828f4be1f194d41347a74189a32193fc0b544e2e288e",
+      "bytes": 164429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_seed31/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_seed31/industrial_episodes.json",
+      "sha256": "6d5b9e5ca70daed0e455828f4be1f194d41347a74189a32193fc0b544e2e288e",
+      "bytes": 164429
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed31/online_ppo_physics.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_ppo_seed31/online_ppo_physics.gif",
+      "sha256": "0f35c4f327f9be9ab36771230dc927c2ed8fe10e2be76558efec4caf83aed8e2",
+      "bytes": 3403180
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed31/process_states.json.gz",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_ppo_seed31/process_states.json.gz",
+      "sha256": "087143024ddbf0b69931833ad50a3278f3f72ac534e2dca824dc636e7a325648",
+      "bytes": 6820636
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed31/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_ppo_seed31/physical_scene.png",
+      "sha256": "8be38837b8f959ec2627a0c052174c04a2cbfa77d2730d6a658fc91dab9d840a",
+      "bytes": 802256
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed31/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_ppo_seed31/ppo_physics.zip",
+      "sha256": "7c63adb9ef8219a377bd7a920ac317bc12dbed10c4f5131d34f2c26773f37732",
+      "bytes": 176437
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_ppo_seed31/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_ppo_seed31/ppo_physics.zip",
+      "sha256": "7c63adb9ef8219a377bd7a920ac317bc12dbed10c4f5131d34f2c26773f37732",
+      "bytes": 176437
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_residual_seed31/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_residual_seed31/ppo_physics.zip",
+      "sha256": "ed59ce7f7c9a1f8408715cb052823d8adb671d6ba1bc32f84cd3d85338175916",
+      "bytes": 176437
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_ppo_seed47/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed47/ppo_physics.zip",
+      "sha256": "19d35da6b24ffa318663be7106d52cc6fdb389aa5a64582b0a7554f7b21bc689",
+      "bytes": 176437
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_residual_seed59/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_residual_seed59/ppo_physics.zip",
+      "sha256": "3020b0feb2b0e0a1c07e2b756f5231c6bb4b93afc16e77e0ee2c73b30b2f77ce",
+      "bytes": 176437
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_residual_seed47/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_residual_seed47/ppo_physics.zip",
+      "sha256": "3da1268a57b70f27bc95b585b79a40523095478d123f2a0ece6df916ddb2b130",
+      "bytes": 176437
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_ppo_seed59/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_ppo_seed59/ppo_physics.zip",
+      "sha256": "cb588d85fbce4ec417a99ef4de70aaf6e22c5b8d248ed98b5e9d9ecf88934197",
+      "bytes": 176437
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v20_nominal_validation/process_states.json.gz",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v20_nominal_validation/process_states.json.gz",
+      "sha256": "33400123864ac7e2ca3b95a9de7d48386b4a63f510deb970ce2fa16423717020",
+      "bytes": 5769788
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed31_val/process_states.json.gz",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_seed31_val/process_states.json.gz",
+      "sha256": "1b0cd07891bbf13792d8f9f9aa540c7c14c26013e917ae1be2092cded2155631",
+      "bytes": 5768547
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed31_val/action_audit.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v19_contract_seed31_val/action_audit.json",
+      "sha256": "fc65891f8570b87dfc7ba0694557170b56aa1406f3ba69ea30ca2541f31e3387",
+      "bytes": 11964600
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v20_nominal_validation/action_audit.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v20_nominal_validation/action_audit.json",
+      "sha256": "fea6e9c4f573c604551dfb85fb7c3fc4b335e8ae731eb4111fd878e6153800b5",
+      "bytes": 8088823
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v20_nominal_test/process_states.json.gz",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v20_nominal_test/process_states.json.gz",
+      "sha256": "c9ae07053e76565122254920e0dc45dc8ef40f8319d83d48d1a25105e38d6200",
+      "bytes": 5890217
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v20_nominal_test/action_audit.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/multicontract_v20_nominal_test/action_audit.json",
+      "sha256": "c8b098674d87e9d2fc45639ca53d9b1bc9608efb5428dbdb38bcd2b785d2230d",
+      "bytes": 8273422
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_residual_seed31/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_residual_seed31/industrial_episodes.json",
+      "sha256": "a71488b283a6d374154b0085dacfdf0306111710e0b5c591f1cdbeed57082e12",
+      "bytes": 160978
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_seed59/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed59/industrial_episodes.json",
+      "sha256": "adc320924a37159149fd462c5c7505093ffb2704fdfa73d19a8647b752915d6c",
+      "bytes": 170116
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_blind_seed47/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed47/industrial_episodes.json",
+      "sha256": "d0b65635e3bda062eeb38c087dce95afb94812fb5ea4f917df47e6d4dcfb273b",
+      "bytes": 157400
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_blind_seed59/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_blind_seed59/industrial_episodes.json",
+      "sha256": "2f7bc4494b650f8b0a3009eb7b1cde002585d5942aa68814e9546e38c407f54f",
+      "bytes": 162014
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_contract_seed47/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_contract_seed47/industrial_episodes.json",
+      "sha256": "7c870e5e01ca76897537f08fc6b2316c366904767abdd905ccf7acf8945fd461",
+      "bytes": 158630
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_residual_seed59/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_residual_seed59/industrial_episodes.json",
+      "sha256": "2a11f6fbb54dc5659425d793f8121bc20f0821b40275015a3f0987a2e3772a9c",
+      "bytes": 158617
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/MULTICONTRACT/raw_compact/multicontract_v19_residual_seed47/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/multicontract_20261014/grid_complete/r1_20261014/multicontract_v19_residual_seed47/industrial_episodes.json",
+      "sha256": "7df47e8056aafa4698c97ff9c7867267f5eb2356a52769b16c718d6771861772",
+      "bytes": 163170
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/online_ppo_physics.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_ppo16_seed31_v7/online_ppo_physics.gif",
+      "sha256": "d94a9d92949615603b7f43048f30f453154aab8690e372b1cb258cb8db091fd1",
+      "bytes": 3452273
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_ppo16_seed31_v7/online_ppo_physics.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_ppo16_seed31_v7/online_ppo_physics.gif",
+      "sha256": "d94a9d92949615603b7f43048f30f453154aab8690e372b1cb258cb8db091fd1",
+      "bytes": 3452273
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_ppo16_seed31_v7/physical_scene.png",
+      "sha256": "32e969e6f2d9e914b34e78eeb16cfc81d6821d5bb3c4b7adea146f3607776592",
+      "bytes": 805004
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_ppo16_seed31_v7/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_ppo16_seed31_v7/physical_scene.png",
+      "sha256": "32e969e6f2d9e914b34e78eeb16cfc81d6821d5bb3c4b7adea146f3607776592",
+      "bytes": 805004
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_ppo16_seed31_v7/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_ppo16_seed31_v7/ppo_physics.zip",
+      "sha256": "17a89f286030d67125b29883d052aa714ba041b8a25ab8c99fdd04737d7e16a2",
+      "bytes": 174302
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_residual16_seed31_v7/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_residual16_seed31_v7/ppo_physics.zip",
+      "sha256": "91a87fbffe7a3b5f7078990b3cecf3fd97a24f43c4197385f266a7dab76e9df7",
+      "bytes": 174302
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_ppo16_seed31_v7/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_ppo16_seed31_v7/industrial_episodes.json",
+      "sha256": "19a433096510de0360ef8a6f4a83235dbaf4552a309cab84c2353cb06c5fb298",
+      "bytes": 209623
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_single_nominal_v3/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_single_nominal_v3/physical_scene.png",
+      "sha256": "9e8e3078d7c136985f3ce0934fe6297aaedaf3dfc6a5ae4e9b6e4d5f583cc0f8",
+      "bytes": 562200
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_policy_demo_v9/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_policy_demo_v9/physical_scene.png",
+      "sha256": "c1bf4fca355ba22b4835af06c4f4bdc8508cc688b557345c6b866b2a0b05e7af",
+      "bytes": 563916
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/single_env_success_failure.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_policy_demo_v9/policy_evaluation.gif",
+      "sha256": "e7fc402aad4de240597b12c3126ba7d866b4cff803fd2843342e65864bff061f",
+      "bytes": 6813373
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_policy_demo_v9/policy_evaluation.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_policy_demo_v9/policy_evaluation.gif",
+      "sha256": "e7fc402aad4de240597b12c3126ba7d866b4cff803fd2843342e65864bff061f",
+      "bytes": 6813373
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_policy_demo_v9/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_policy_demo_v9/ppo_physics.zip",
+      "sha256": "3010d1325ec8a89063b6d4602984ca2214473366420bdcedde23384315ee5da6",
+      "bytes": 172273
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_single_nominal_v2/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_single_nominal_v2/physical_scene.png",
+      "sha256": "645605a27dac2c39e62d1dc75a7a8eb35b4593648cdeb0085a06b3d31641e8d3",
+      "bytes": 560857
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_single_nominal_v1/online_ppo_physics.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_single_nominal_v1/online_ppo_physics.gif",
+      "sha256": "648374ad5c5d2215d6c025944bb1af3fbae3b60df5d9b77a4c3c317d825d9ba3",
+      "bytes": 307754
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_single_nominal_v1/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_single_nominal_v1/physical_scene.png",
+      "sha256": "576de186d613a12511c24fd7b176359e2bb0673fd29d9d7ee2f6f56b1dcdbc1f",
+      "bytes": 564687
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_single_nominal_v1/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_single_nominal_v1/ppo_physics.zip",
+      "sha256": "62293dec1cbdc81e7d1ed52a2f7151670177888891f849934bbec60fa94330de",
+      "bytes": 167545
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_contract16_seed31_v8/online_ppo_physics.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_contract16_seed31_v8/online_ppo_physics.gif",
+      "sha256": "248525bf1720bdd896bd278441fe0e26abfda51fcba54f739cbbc0727b2f98f1",
+      "bytes": 3452485
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_contract16_seed31_v8/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_contract16_seed31_v8/physical_scene.png",
+      "sha256": "e25e5b1912bf9e08311b4d0295486ca731d6dfc10296511952b02c5bacdf3552",
+      "bytes": 803575
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_contract16_seed31_v8/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_contract16_seed31_v8/ppo_physics.zip",
+      "sha256": "df5e62c4471f401f9cdf9e51322c062633fba402ab9d41cbfc7bd25143e11392",
+      "bytes": 199145
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_contract16_seed31_v8/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_contract16_seed31_v8/industrial_episodes.json",
+      "sha256": "c79c0d783c09db3d858a33745fabd5abb2e98ce89eb4224d364cef1a0166d325",
+      "bytes": 316900
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_single_nominal_v0/online_ppo_physics.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_single_nominal_v0/online_ppo_physics.gif",
+      "sha256": "0452f06dde2dbf1b902175148e22d76d20b7af885ae15ac0c3890f1d66582225",
+      "bytes": 4864006
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_single_nominal_v0/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_single_nominal_v0/physical_scene.png",
+      "sha256": "ac37d0c2774b25d4de4712b188a9cdbcaf58f30df6472714eb1ecc26733e94ac",
+      "bytes": 563468
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_single_nominal_v0/ppo_physics.zip",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_single_nominal_v0/ppo_physics.zip",
+      "sha256": "9eaea814af3d0eb66565af59e5d94caf9adad41e19875ffe59fab037b669981b",
+      "bytes": 167547
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_single_nominal_v0/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_single_nominal_v0/industrial_episodes.json",
+      "sha256": "6a3cf7579e8ea04c9619c56ea896a2c01205bef10fa9e4697b093e5bf4fa7481",
+      "bytes": 315075
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_residual16_seed31_v7/online_ppo_physics.gif",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_residual16_seed31_v7/online_ppo_physics.gif",
+      "sha256": "daa6caa1fda274bb8ed078a7b14ae28c4d41b350f3dc359bdcabfe2a07401876",
+      "bytes": 3454723
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_residual16_seed31_v7/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_residual16_seed31_v7/physical_scene.png",
+      "sha256": "6b0439941c1179bd4a39b5ce889404cf546825321686a94c8ef73c23979f7950",
+      "bytes": 802894
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_residual16_seed31_v7/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_residual16_seed31_v7/industrial_episodes.json",
+      "sha256": "ab9a3abd5bf9771a59ce34888bd40e22651769d9076920d6192df66171a69e21",
+      "bytes": 327499
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_single_nominal_v4/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_single_nominal_v4/physical_scene.png",
+      "sha256": "9986985d64ad4489f2a51680c72abfb7bb3070328e8cab24586fd92f13005f14",
+      "bytes": 569524
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_single_nominal_v6/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_single_nominal_v6/physical_scene.png",
+      "sha256": "e441c7b8effaa269465f167bc5799f9bff12d627de5414232a6ab1ac74428881",
+      "bytes": 561097
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_nominal16_seed31_v7/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_nominal16_seed31_v7/physical_scene.png",
+      "sha256": "5e692590697604f99ff0b1d0a4f60d031f9cb6a17639d884ccdedccb812ca2fd",
+      "bytes": 802640
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_nominal16_seed31_v7/industrial_episodes.json",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_nominal16_seed31_v7/industrial_episodes.json",
+      "sha256": "56c306c14980f765790a4311eb727ec3a3cdd4b2b7750cf98b7aab19a824f949",
+      "bytes": 343013
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_single_nominal_v5/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_single_nominal_v5/physical_scene.png",
+      "sha256": "88de4f4c69e4418578923a973ea1b2af597fe22f4a649a73c5e76821e379aab3",
+      "bytes": 570481
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/mentor_package/03_PRELIMINARY_RESULTS/INDUSTRIAL_RL/raw/industrial_nominal4_v7/physical_scene.png",
+      "canonical": "/home/andyee/robot-research/ARES-Skilllab/runs/industrial_20261014/industrial_nominal4_v7/physical_scene.png",
+      "sha256": "36487ebfdd0ce115ac66719f3a481b25b15174b3014166693da08f8cffe54b92",
+      "bytes": 640270
+    }
+  ],
+  "content_deleted": false,
+  "warning": "Hard-linked historical evidence is immutable: future edits must use atomic replacement, never in-place writes."
+}

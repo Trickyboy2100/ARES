@@ -1,0 +1,5369 @@
+{
+  "figure": "Fig3",
+  "scope": "SYNTHETIC / REPRODUCED_LIVE_PHYSX / STATE_BASED",
+  "script_sha256": "90d734b17d0a1b60626391dd27e3a462c3a467e84cd1e7b54f1713b79a3d88e5",
+  "pixel_modifications": "None; raw frames copied byte-for-byte, only arranged with external vector labels",
+  "limits": [
+    "Not a terminal-state photograph",
+    "Not field/CAD tray/grasping",
+    "Not online training footage",
+    "Not the new v7 pilot"
+  ],
+  "images": [
+    {
+      "file": "Fig3a_success_episode_raw.png",
+      "sha256": "d0c475912bb132499928b9cc1df9ed22dfa07fa6422a13e9b03775b48b75f826",
+      "raw_source": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_publication_20261027/physics_capture_v2/publication_raw/contact_3_tick000800.png",
+      "raw_sha256": "d0c475912bb132499928b9cc1df9ed22dfa07fa6422a13e9b03775b48b75f826",
+      "source_task_sha256": "bc4f48979e0a05607a162a17868611e0b57fa206de1e5bfd0ca76446a94396c3",
+      "asset_sha256": "30d2c7250f2e09fdf7da889a536165e5a89bfe5e6ecd4f63bbb45f9b6495fde0",
+      "checkpoint_sha256": "5129336b3dfd1f74d7f34baada0869f9a3a1f36723fd22b316a6614f829093b9",
+      "physics_steps": 800,
+      "case_id": 3,
+      "independent_eventual_episode_success": true,
+      "pixel_size": [
+        1920,
+        1200
+      ],
+      "capture_role": "LIVE_PHYSX_EVALUATION_NOT_TRAINING",
+      "terminal_frame": false,
+      "appearance_identity": {
+        "before": {
+          "sha256": "4e33ab469a8f40dad0a4b43a21cbce2dfd54ef17192542b0b19628ef1e0aebea",
+          "physical_and_geometric_attributes": 8336
+        },
+        "after": {
+          "sha256": "4e33ab469a8f40dad0a4b43a21cbce2dfd54ef17192542b0b19628ef1e0aebea",
+          "physical_and_geometric_attributes": 8336
+        },
+        "equal": true,
+        "diff_scope": [
+          "camera pose/resolution",
+          "UsdPreviewSurface color/metallic/roughness binding",
+          "Dome/Distant lighting",
+          "render antialiasing"
+        ],
+        "no_changes": [
+          "collisions",
+          "mass/inertia",
+          "initial states",
+          "controller",
+          "reward",
+          "success conditions"
+        ],
+        "material_bindings": [
+          {
+            "prim": "/World/envs/env_0/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_0/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_0/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_1/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_1/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_1/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_1/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_2/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_2/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_3/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_3/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_3/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_3/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_4/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_4/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_5/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_5/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_5/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_5/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_6/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_6/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_7/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_7/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_7/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_7/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_8/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_8/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_9/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_9/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_9/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_9/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_10/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_10/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_11/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_11/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_11/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_11/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_12/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_12/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_13/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_13/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_13/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_13/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_14/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_14/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_15/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_15/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_15/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_15/Rail_R/geometry/mesh",
+            "material": "rail"
+          }
+        ]
+      },
+      "camera_record": {
+        "file": "publication_raw/contact_3_tick000800.png",
+        "phase": 1,
+        "physics_steps": 800,
+        "view": "contact_3",
+        "state_source": "CURRENT_ACTUAL_PHYSX_NO_STATE_WRITES",
+        "is_training": false,
+        "physics_step": 800,
+        "control_step": 400,
+        "time_s": 6.666666666666667,
+        "case_id": 3,
+        "q": [
+          1.6702970266342163,
+          1.6073217391967773,
+          -1.3050774335861206,
+          1.2203694581985474,
+          -0.8221683502197266,
+          -1.1039990186691284
+        ],
+        "qd": [
+          -0.029701359570026398,
+          -0.03534995764493942,
+          0.029170159250497818,
+          0.030928315594792366,
+          0.010327630676329136,
+          -0.004060751758515835
+        ],
+        "object_position": [
+          0.5772809982299805,
+          -0.501126766204834,
+          1.4449999332427979
+        ],
+        "object_quaternion_wxyz": [
+          1.0,
+          1.109548975364305e-06,
+          -8.167259011315764e-07,
+          2.2196622921910603e-06
+        ],
+        "object_linear_velocity": [
+          0.011326274834573269,
+          0.00020019395742565393,
+          -3.8341004255926237e-05
+        ],
+        "object_angular_velocity": [
+          0.0029671660158783197,
+          -0.00927068293094635,
+          0.007821115665137768
+        ],
+        "paddle_position": [
+          0.5422806739807129,
+          -0.4991469383239746,
+          1.45001220703125
+        ],
+        "command": [
+          0.5435850620269775,
+          -0.4991212487220764,
+          1.4500000476837158
+        ],
+        "joint_velocity_command": [
+          -0.02983035333454609,
+          -0.03565554320812225,
+          0.028879880905151367,
+          0.030942929908633232,
+          0.010351547971367836,
+          -0.00384179363027215
+        ],
+        "goal": [
+          0.5973759889602661,
+          -0.49873027205467224,
+          1.4450000524520874
+        ],
+        "robot_contact_force": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.19457685947418213,
+            -1.157619180958136e-06,
+            6.0539315427377e-07
+          ]
+        ],
+        "env": 3
+      }
+    },
+    {
+      "file": "Fig3b_timeout_episode_raw.png",
+      "sha256": "a28774e47f8bb5bfc1b05f349de61b6bb5547ee5d7df02df17f035ee2039d103",
+      "raw_source": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_publication_20261027/physics_capture_v2/publication_raw/contact_1_tick001184.png",
+      "raw_sha256": "a28774e47f8bb5bfc1b05f349de61b6bb5547ee5d7df02df17f035ee2039d103",
+      "source_task_sha256": "bc4f48979e0a05607a162a17868611e0b57fa206de1e5bfd0ca76446a94396c3",
+      "asset_sha256": "30d2c7250f2e09fdf7da889a536165e5a89bfe5e6ecd4f63bbb45f9b6495fde0",
+      "checkpoint_sha256": "5129336b3dfd1f74d7f34baada0869f9a3a1f36723fd22b316a6614f829093b9",
+      "physics_steps": 1184,
+      "case_id": 1,
+      "independent_eventual_episode_success": false,
+      "pixel_size": [
+        1920,
+        1200
+      ],
+      "capture_role": "LIVE_PHYSX_EVALUATION_NOT_TRAINING",
+      "terminal_frame": false,
+      "appearance_identity": {
+        "before": {
+          "sha256": "4e33ab469a8f40dad0a4b43a21cbce2dfd54ef17192542b0b19628ef1e0aebea",
+          "physical_and_geometric_attributes": 8336
+        },
+        "after": {
+          "sha256": "4e33ab469a8f40dad0a4b43a21cbce2dfd54ef17192542b0b19628ef1e0aebea",
+          "physical_and_geometric_attributes": 8336
+        },
+        "equal": true,
+        "diff_scope": [
+          "camera pose/resolution",
+          "UsdPreviewSurface color/metallic/roughness binding",
+          "Dome/Distant lighting",
+          "render antialiasing"
+        ],
+        "no_changes": [
+          "collisions",
+          "mass/inertia",
+          "initial states",
+          "controller",
+          "reward",
+          "success conditions"
+        ],
+        "material_bindings": [
+          {
+            "prim": "/World/envs/env_0/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_0/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_0/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_1/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_1/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_1/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_1/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_2/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_2/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_3/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_3/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_3/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_3/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_4/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_4/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_5/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_5/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_5/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_5/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_6/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_6/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_7/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_7/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_7/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_7/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_8/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_8/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_9/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_9/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_9/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_9/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_10/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_10/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_11/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_11/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_11/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_11/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_12/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_12/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_13/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_13/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_13/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_13/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_14/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_14/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_15/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_15/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_15/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_15/Rail_R/geometry/mesh",
+            "material": "rail"
+          }
+        ]
+      },
+      "camera_record": {
+        "file": "publication_raw/contact_1_tick001184.png",
+        "phase": 1,
+        "physics_steps": 1184,
+        "view": "contact_1",
+        "state_source": "CURRENT_ACTUAL_PHYSX_NO_STATE_WRITES",
+        "is_training": false,
+        "physics_step": 1184,
+        "control_step": 592,
+        "time_s": 9.866666666666667,
+        "case_id": 1,
+        "q": [
+          1.7720930576324463,
+          1.739245891571045,
+          -1.401266098022461,
+          1.1082828044891357,
+          -0.8570775985717773,
+          -1.079014539718628
+        ],
+        "qd": [
+          -0.013604770414531231,
+          0.013442400842905045,
+          -0.0035018587950617075,
+          -0.1113312840461731,
+          0.0989166647195816,
+          -0.10000122338533401
+        ],
+        "object_position": [
+          0.5385556221008301,
+          -0.49596095085144043,
+          1.4453439712524414
+        ],
+        "object_quaternion_wxyz": [
+          0.9954639077186584,
+          -0.0043578725308179855,
+          -0.0003510085225570947,
+          0.09503944218158722
+        ],
+        "object_linear_velocity": [
+          -0.13673022389411926,
+          0.08200778812170029,
+          -0.04125210642814636
+        ],
+        "object_angular_velocity": [
+          0.7428364753723145,
+          1.250482201576233,
+          -7.505889415740967
+        ],
+        "paddle_position": [
+          0.5012521743774414,
+          -0.5000662803649902,
+          1.4509937763214111
+        ],
+        "command": [
+          0.5050176382064819,
+          -0.49598878622055054,
+          1.4500000476837158
+        ],
+        "joint_velocity_command": [
+          -0.10000000894069672,
+          -0.036008019000291824,
+          0.01688029058277607,
+          0.07962684333324432,
+          -0.02058839239180088,
+          0.009872868657112122
+        ],
+        "goal": [
+          0.5973759889602661,
+          -0.49873027205467224,
+          1.4450000524520874
+        ],
+        "robot_contact_force": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -43.485862731933594,
+            -8.404661178588867,
+            0.005388176534324884
+          ]
+        ],
+        "env": 1
+      }
+    },
+    {
+      "file": "Fig3c_16env_raw.png",
+      "sha256": "946a0c06f6305db9429d53b8091a493f5c3cfdad54032a53a7583d68fd26cce5",
+      "raw_source": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_publication_20261027/physics_capture_v3/publication_raw/array_tick000800.png",
+      "raw_sha256": "946a0c06f6305db9429d53b8091a493f5c3cfdad54032a53a7583d68fd26cce5",
+      "source_task_sha256": "bc4f48979e0a05607a162a17868611e0b57fa206de1e5bfd0ca76446a94396c3",
+      "asset_sha256": "30d2c7250f2e09fdf7da889a536165e5a89bfe5e6ecd4f63bbb45f9b6495fde0",
+      "checkpoint_sha256": "5129336b3dfd1f74d7f34baada0869f9a3a1f36723fd22b316a6614f829093b9",
+      "physics_steps": 800,
+      "case_id": null,
+      "independent_eventual_episode_success": null,
+      "pixel_size": [
+        1920,
+        1200
+      ],
+      "capture_role": "LIVE_PHYSX_EVALUATION_NOT_TRAINING",
+      "terminal_frame": false,
+      "appearance_identity": {
+        "before": {
+          "sha256": "4e33ab469a8f40dad0a4b43a21cbce2dfd54ef17192542b0b19628ef1e0aebea",
+          "physical_and_geometric_attributes": 8336
+        },
+        "after": {
+          "sha256": "4e33ab469a8f40dad0a4b43a21cbce2dfd54ef17192542b0b19628ef1e0aebea",
+          "physical_and_geometric_attributes": 8336
+        },
+        "equal": true,
+        "diff_scope": [
+          "camera pose/resolution",
+          "UsdPreviewSurface color/metallic/roughness binding",
+          "Dome/Distant lighting",
+          "render antialiasing"
+        ],
+        "no_changes": [
+          "collisions",
+          "mass/inertia",
+          "initial states",
+          "controller",
+          "reward",
+          "success conditions"
+        ],
+        "material_bindings": [
+          {
+            "prim": "/World/envs/env_0/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_0/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_0/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_0/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_1/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_1/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_1/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_1/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_1/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_2/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_2/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_2/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_3/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_3/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_3/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_3/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_3/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_4/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_4/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_4/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_5/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_5/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_5/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_5/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_5/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_6/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_6/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_6/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_7/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_7/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_7/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_7/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_7/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_8/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_8/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_8/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_9/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_9/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_9/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_9/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_9/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_10/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_10/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_10/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_11/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_11/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_11/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_11/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_11/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_12/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_12/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_12/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_13/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_13/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_13/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_13/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_13/Rail_R/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_14/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_14/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_14/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot",
+            "material": "arm inherited visual binding"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_0/visuals/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_0/collisions/Link0/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_1/visuals/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_1/collisions/Link1/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_2/visuals/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_2/collisions/Link2/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_3/visuals/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_3/collisions/Link3/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_4/visuals/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_4/collisions/Link4/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_5/visuals/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_5/collisions/Link5/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/visuals/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/collisions/Link6/node_STL_BINARY_/mesh",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_baselink",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link1",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link2",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link3",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link4",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link5",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/FixedGripper_4C2_Link6",
+            "material": "arm"
+          },
+          {
+            "prim": "/World/envs/env_15/Robot/Link_6/ResearchPaddle",
+            "material": "paddle"
+          },
+          {
+            "prim": "/World/envs/env_15/Workpiece/geometry/mesh",
+            "material": "cube"
+          },
+          {
+            "prim": "/World/envs/env_15/Table/geometry/mesh",
+            "material": "table"
+          },
+          {
+            "prim": "/World/envs/env_15/Rail_L/geometry/mesh",
+            "material": "rail"
+          },
+          {
+            "prim": "/World/envs/env_15/Rail_R/geometry/mesh",
+            "material": "rail"
+          }
+        ]
+      },
+      "camera_record": {
+        "file": "publication_raw/array_tick000800.png",
+        "phase": "EVALUATION",
+        "physics_steps": 800,
+        "view": "array",
+        "state_source": "CURRENT_ACTUAL_PHYSX_NO_STATE_WRITES",
+        "is_training": false
+      }
+    }
+  ]
+}

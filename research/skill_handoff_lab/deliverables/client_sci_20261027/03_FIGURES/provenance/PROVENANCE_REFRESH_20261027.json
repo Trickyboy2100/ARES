@@ -1,0 +1,95 @@
+{
+  "operation": "NARROW_PROVENANCE_INPUT_REFRESH_WITHOUT_REDRAW",
+  "date": "2026-10-27",
+  "script_sha256": "c0d75134aab16c7166c45462f01bf4fa22119140f2338289cb0c9beb93deedff",
+  "reason": "Physical summary now includes expanded measured initial-state audit metadata; every plotted/exported consumed metric remains exactly unchanged.",
+  "target_manifest": "03_FIGURES/provenance/FIGURE_PROVENANCE.json",
+  "only_updated_input_key": "repos/ARES/research/skill_handoff_lab/deliverables/client_sci_20261027/06_RUNS_MANIFEST/PHYSICAL_CAUSAL_INTERVENTIONS.json",
+  "old_input_record": {
+    "sha256": "a7ee85b453c9314f7d16f3df380c73ec440b95f7c158e159957cac9cc6a08ca2",
+    "bytes": 5642
+  },
+  "new_input_record": {
+    "sha256": "8729b560b794e05e1a8395dfd2bd3551a50190bf0feb458f62d88c9dee42e5ed",
+    "bytes": 7713
+  },
+  "frozen_export_csv": "03_FIGURES/data/new_pilot_physical_interventions.csv",
+  "frozen_csv_sha256": "9eea90c061cda478836ba1173cb1e4e51e005cdf63de10bfafa2fc5b30d68f3c",
+  "verified_comparisons": 6,
+  "verified_consumed_fields": [
+    "comparison",
+    "left",
+    "right",
+    "matched_cases",
+    "left_successes",
+    "right_successes",
+    "rescued_cases",
+    "lost_cases",
+    "initial_max_difference",
+    "mean_object_xyz_rms_difference_um",
+    "mean_applied_reference_delta_rms_difference_um",
+    "caution"
+  ],
+  "reproduced_metric_projection_sha256": "97bdf59a3a6d8e313e4d0422aba492a0205054b952954f68340ec6d69ee77dfc",
+  "frozen_outputs_verified_before_and_after": 54,
+  "frozen_output_hashes_unchanged": true,
+  "redraw_performed": false,
+  "output_files_modified": [],
+  "expanded_initial_component_audit": {
+    "same-model remove effect history": {
+      "q": 0.0,
+      "qd": 0.0,
+      "object_position": 0.0,
+      "paddle_position": 0.0,
+      "object_quaternion": 0.0,
+      "object_linear_velocity": 0.0,
+      "object_angular_velocity": 0.0
+    },
+    "same-model measured response only removed; command memory retained": {
+      "q": 0.0,
+      "qd": 0.0,
+      "object_position": 0.0,
+      "paddle_position": 0.0,
+      "object_quaternion": 0.0,
+      "object_linear_velocity": 0.0,
+      "object_angular_velocity": 0.0
+    },
+    "same-model partial next-contract mask": {
+      "q": 0.0,
+      "qd": 0.0,
+      "object_position": 0.0,
+      "paddle_position": 0.0,
+      "object_quaternion": 0.0,
+      "object_linear_velocity": 0.0,
+      "object_angular_velocity": 0.0
+    },
+    "existing bounded backoff/recontact controller": {
+      "q": 0.0,
+      "qd": 0.0,
+      "object_position": 0.0,
+      "paddle_position": 0.0,
+      "object_quaternion": 0.0,
+      "object_linear_velocity": 0.0,
+      "object_angular_velocity": 0.0
+    },
+    "fixed -4mm phase0 contact endpoint": {
+      "q": 0.0,
+      "qd": 0.0,
+      "object_position": 0.0,
+      "paddle_position": 0.0,
+      "object_quaternion": 0.0,
+      "object_linear_velocity": 0.0,
+      "object_angular_velocity": 0.0
+    },
+    "fixed +4mm phase0 contact endpoint": {
+      "q": 0.0,
+      "qd": 0.0,
+      "object_position": 0.0,
+      "paddle_position": 0.0,
+      "object_quaternion": 0.0,
+      "object_linear_velocity": 0.0,
+      "object_angular_velocity": 0.0
+    }
+  },
+  "limitations": "Equality covers recorded initial state only; hidden PhysX contact/solver cache is not restored or proven identical. This validation does not reconstruct or assert every unconsumed old JSON field."
+}

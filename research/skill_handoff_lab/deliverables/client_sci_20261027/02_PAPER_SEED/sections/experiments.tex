@@ -1,0 +1,24 @@
+\section{Experimental Protocol}
+\subsection{Physical tasks and evidence levels}
+P1 is two-stage free-cube pushing. P2 uses a 40 mm cube, a separate 30 mm research paddle and 100 mm guide rails, with a target sufficiently deep for the cube to enter the guide. It is not precision insertion of a measured industrial tray. Mass, inertia, friction, entrance direction, initial yaw and target vary through actual PhysX properties or geometry. Original robot/gripper collisions remain; the paddle's merged tool inertia retains a historical approximation.
+
+\begin{table*}[t]\centering\small
+\caption{Historical environment and evidence scope. The new pilot extends the actor to 64 inputs while retaining common physical state and constraint interfaces. Generated source: Tab1\_environment.tex.}\label{tab:environment}
+\input{tables/environment}
+\end{table*}
+
+One Isaac Lab 2.3.0 application \cite{isaaclab230} hosts independent cloned environments rather than 16 separate applications. Actions change robot references and joint drives through real physics integration; object states are not rewritten during action execution. The experiment is synthetic/state-based/actual PhysX. The ARES-R field-reference track remains separate and is neither a training-label source nor an openly published scene.
+
+\safewidefigure{Fig3_physx_scene_board.pdf}{Actual Isaac Sim 5.1/Isaac Lab live physics evaluation of the historical v6b residual seed31 policy, not new B3 training or recorded-trajectory playback. Case3 is shown at physics tick800 (6.67 s) and later passes independent acceptance; case1 is shown at tick1184 (9.87 s) and later times out. Both images are nonterminal frames. The overview contains 16 independent environments. Physical attribute signatures are unchanged by render styling. The complete live evaluation has 55/64 independently accepted successes.}{fig:scene}
+
+\subsection{Splits, budgets and evaluation}
+Historical v6 uses eight train groups, two validation groups and distinct ID, geometry and dynamics test groups. Three seeds (31, 41, 51) are evaluated on the same 32 cases per split. These historical tests have been read and cannot be reused for selecting new architecture or thresholds. The new pilot uses newly declared development groups, followed by a separately sealed final set only if the mechanism warrants promotion.
+
+B0 is tuned legal damped/task-frame feedback; B1 is BODY-XY residual PPO; B2 is task-frame residual PPO; B3 is the actual effect-history candidate; B4 is finite search or scoring only when the interface supports it. The corrected pilot fixes seeds 31/41/51 and 16,384 online interactions per model, followed by 32 new P2 validation cases with case seed 102741. All learned methods use the same 64-dimensional input shape, two 64-unit hidden layers and three Gaussian outputs. A failed pilot is retained, not replaced by a favorable seed. P2-only completion is the primary metric; P1, time, contact/rotation diagnostics, interaction count and planning budget are secondary.
+
+The preregistered promotion criterion requires a positive B3--B2 P2 count difference in all three paired seeds, mean improvement of at least two cases out of 32, and conditioning interventions with a consistent behavioral/result contribution. Otherwise the mechanism remains a prototype and is not expanded to five seeds or final-test selection. A fixed $-4/0/+4$ mm phase-0 contact-parameter experiment performs three complete physical executions per case; its hindsight union is not an equal-budget online search baseline.
+
+\subsection{Independent process checks and statistics}
+Exact post-step terminal state is saved before reset with physics ticks. A 120 Hz sampled FCL/OBB check covers tool, cube, table and rails, plus FK/soft-limit and final stability checks. A separate mesh diagnostic samples actual robot collision geometry in a limited subset. Neither is continuous-collision detection or a hardware safety certificate. A simulated 80 N net-contact bound is uncalibrated for hardware.
+
+We report per-seed counts and paired case differences. Seed sample standard deviation is not a binomial confidence interval, and repeated evaluation of the same cases under multiple models does not create independent environments. Time comparisons use explicitly identified common-success cases. Additional prediction/suffix interaction, demonstration continuation and diagnostic runs are accounted for separately. Software-incomplete runs are not assigned fabricated physical failure labels.

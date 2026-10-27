@@ -1,0 +1,25 @@
+\section{Problem Formulation}
+We consider a finite-horizon controlled physical process with robot state $q,\dot q$, free-object pose $x_o,R_o$, object velocities $v_o,\omega_o$, current stage $k$, task geometry $g$, and a skill contract $C$. The contract describes permissible action dimensions, reference-motion bounds, workspace, orientation requirements and task termination. The simulator advances at 120 Hz and control actions at 60 Hz. Stage transitions preserve robot, object and contact dynamics; they do not reset the object to an advantageous state.
+
+\paragraph{Observation and information.}
+The historical actor receives a 56-dimensional state-based observation including robot state, object pose and velocities, object--tool relation, stage and subsequent target errors, a simulated net-contact proxy and known geometry/dynamics context. Exact friction and mass context are assumed available in simulation. This is not a learned visual observation or an unknown-parameter identification result. Future suffix success and independent acceptance labels are never actor inputs. A proposed feedback history $h_t$ may contain only already observed execution effects.
+
+\paragraph{Task-relative action.}
+Let $T_g$ express the local task frame and $\xi_{\rm nom}$ a nominal contact reference increment. A residual parameter policy yields
+\begin{equation}
+ \xi_t=\mathcal{P}_{C_t}\!\left(\xi_{\rm nom}(o_t,C_t)+f_\theta(o_t,C_t,C_{t+1},h_t)\right),
+ \label{eq:action}
+\end{equation}
+where $\mathcal{P}_{C_t}$ applies executable bounds to the \emph{combined} command. A DLS controller maps the reference to constrained joint commands. Joint soft limits, tool orientation and reference lead bounds remain active for both nominal and learning components. Task-frame conversion alone is baseline B2, not the proposed innovation.
+
+\paragraph{Objective and endpoint.}
+The primary endpoint is independently accepted complete P2 success, not reward or intermediate position alone. The v6 contract requires target error below 8 mm, speed below 10 mm/s, angular speed below 0.2 rad/s, square-object symmetry yaw error below $8^\circ$, upright error below $5^\circ$, object height within 8 mm of the supported reference height, and 0.5 s of continuous stable completion, within a 12 s deadline. P1 is reported separately as a foundational task. A sampled geometric/process audit complements the environment's success flag.
+
+The historical reward was fixed before its formal comparison:
+\begin{equation}
+\begin{split}
+ r_t={}&60\Delta d_t-\Delta t-0.0002\|a_t\|^2\\
+       &+3I_{\rm switch}+10I_{\rm success}-5I_{\rm violation}.
+\end{split}
+\end{equation}
+Progress is recomputed within each stage without counting a reset target distance as instantaneous achieved progress. This stagewise shaping is \emph{not} claimed to be a globally policy-invariant potential difference: a phase-dependent potential would require an explicit jump correction. The new pilot uses the same stagewise progress and terminal/time terms across all learned controls, with action cost based on the applied reference rather than an unexecuted proposal. Reward changes are not an algorithmic contribution. Potential-based shaping $\gamma\Phi(s_{t+1})-\Phi(s_t)$ remains an untested alternative. Current contact policies use fixed control intervals and ordinary MDP PPO; unequal-duration high-level options would require explicit SMDP discounting and are not asserted here.

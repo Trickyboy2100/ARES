@@ -1,0 +1,5 @@
+method,training_seed_replicates,validation_cases_per_model,mean_success_rate,sample_seed_sd,model_training_budget_per_seed,note
+B0,0,32,0.9375,,0,Validation rows do not add training interactions; SD is not CI
+B1,3,32,0.9270833333333334,0.018042195912175808,16384,Validation rows do not add training interactions; SD is not CI
+B2,3,32,0.9375,0.0,16384,Validation rows do not add training interactions; SD is not CI
+B3,3,32,0.9375,0.0,16384,Validation rows do not add training interactions; SD is not CI

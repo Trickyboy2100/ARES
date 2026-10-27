@@ -1,0 +1,552 @@
+[
+  {
+    "run": "B1_seed31",
+    "checkpoint_sha256": "9e2349d738619b2a095e47c3ec15c73a25d2173bce67252f826828d2a9f5e69a",
+    "actor_tensors": [
+      {
+        "name": "log_std",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.01989569514989853,
+        "parameter_norm": 2.6262102127075195
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0016689926851540804,
+        "parameter_norm": 11.301641464233398
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0007138634682632983,
+        "parameter_norm": 0.061661411076784134
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0014909253222867846,
+        "parameter_norm": 11.270544052124023
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0005666902288794518,
+        "parameter_norm": 0.08938732743263245
+      },
+      {
+        "name": "action_net.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.045557230710983276,
+        "parameter_norm": 0.04367676004767418
+      },
+      {
+        "name": "action_net.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.01757768541574478,
+        "parameter_norm": 0.001563065918162465
+      }
+    ],
+    "actor_has_nonzero_adam_moments": true,
+    "log_std": [
+      -1.502611517906189,
+      -1.529971718788147,
+      -1.516022801399231
+    ],
+    "caution": "Optimizer/Actor evidence only. Physical effect and qualified task outcome require separate trajectory and intervention audits."
+  },
+  {
+    "run": "B1_seed41",
+    "checkpoint_sha256": "e84f56190b30b6985f5ce26dbee5a2e086b07070cebd30be99e45087824aeda0",
+    "actor_tensors": [
+      {
+        "name": "log_std",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.01648382656276226,
+        "parameter_norm": 2.6173644065856934
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0016793081304058433,
+        "parameter_norm": 11.303855895996094
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0005267047672532499,
+        "parameter_norm": 0.05300827696919441
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0015147925587370992,
+        "parameter_norm": 11.271378517150879
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0004110057489015162,
+        "parameter_norm": 0.07732880860567093
+      },
+      {
+        "name": "action_net.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.07704125344753265,
+        "parameter_norm": 0.046429555863142014
+      },
+      {
+        "name": "action_net.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.02178437076508999,
+        "parameter_norm": 0.0021678460761904716
+      }
+    ],
+    "actor_has_nonzero_adam_moments": true,
+    "log_std": [
+      -1.5355228185653687,
+      -1.5047062635421753,
+      -1.4928581714630127
+    ],
+    "caution": "Optimizer/Actor evidence only. Physical effect and qualified task outcome require separate trajectory and intervention audits."
+  },
+  {
+    "run": "B1_seed51",
+    "checkpoint_sha256": "582107cd6776a729d14c15270fc8c0bc8b9ef75aa8d49fc267b1e3ea6da71272",
+    "actor_tensors": [
+      {
+        "name": "log_std",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.019961195066571236,
+        "parameter_norm": 2.618386745452881
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.005589890293776989,
+        "parameter_norm": 11.327174186706543
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0023149631451815367,
+        "parameter_norm": 0.060182567685842514
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.00443473644554615,
+        "parameter_norm": 11.293140411376953
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0016112452140077949,
+        "parameter_norm": 0.07208766788244247
+      },
+      {
+        "name": "action_net.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.07049093395471573,
+        "parameter_norm": 0.07276895642280579
+      },
+      {
+        "name": "action_net.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.026259632781147957,
+        "parameter_norm": 0.003307624952867627
+      }
+    ],
+    "actor_has_nonzero_adam_moments": true,
+    "log_std": [
+      -1.5166282653808594,
+      -1.50119149684906,
+      -1.5173041820526123
+    ],
+    "caution": "Optimizer/Actor evidence only. Physical effect and qualified task outcome require separate trajectory and intervention audits."
+  },
+  {
+    "run": "B2_seed31",
+    "checkpoint_sha256": "76b62baf7da9617e22e4bf35ef6a4f103a834ace82666068f4bc2d8dc976aa8a",
+    "actor_tensors": [
+      {
+        "name": "log_std",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.012267938815057278,
+        "parameter_norm": 2.6323328018188477
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0037326153833419085,
+        "parameter_norm": 11.307548522949219
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0016006577061489224,
+        "parameter_norm": 0.05714269354939461
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0031884117051959038,
+        "parameter_norm": 11.273155212402344
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0012145357904955745,
+        "parameter_norm": 0.08333759009838104
+      },
+      {
+        "name": "action_net.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.11208651214838028,
+        "parameter_norm": 0.043647587299346924
+      },
+      {
+        "name": "action_net.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.047282762825489044,
+        "parameter_norm": 0.0026613143272697926
+      }
+    ],
+    "actor_has_nonzero_adam_moments": true,
+    "log_std": [
+      -1.5202579498291016,
+      -1.5226446390151978,
+      -1.5164250135421753
+    ],
+    "caution": "Optimizer/Actor evidence only. Physical effect and qualified task outcome require separate trajectory and intervention audits."
+  },
+  {
+    "run": "B2_seed41",
+    "checkpoint_sha256": "b2ec272423ce34c429ca805aa1f6eec5c321ce9ee77d6c2ee223e5a3d45e05de",
+    "actor_tensors": [
+      {
+        "name": "log_std",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.011974979192018509,
+        "parameter_norm": 2.622844696044922
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0015942666213959455,
+        "parameter_norm": 11.298962593078613
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0006675805198028684,
+        "parameter_norm": 0.05318694934248924
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0014439744409173727,
+        "parameter_norm": 11.263875961303711
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0005281385383568704,
+        "parameter_norm": 0.07612030953168869
+      },
+      {
+        "name": "action_net.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.06142963469028473,
+        "parameter_norm": 0.03658509626984596
+      },
+      {
+        "name": "action_net.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.02549844980239868,
+        "parameter_norm": 0.0019891937263309956
+      }
+    ],
+    "actor_has_nonzero_adam_moments": true,
+    "log_std": [
+      -1.5288399457931519,
+      -1.5091111660003662,
+      -1.5048412084579468
+    ],
+    "caution": "Optimizer/Actor evidence only. Physical effect and qualified task outcome require separate trajectory and intervention audits."
+  },
+  {
+    "run": "B2_seed51",
+    "checkpoint_sha256": "9cdbdc050a6e52f3e4d07af58e322c752c843fb371d8073a884b8e65e040e720",
+    "actor_tensors": [
+      {
+        "name": "log_std",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.010126644745469093,
+        "parameter_norm": 2.612863063812256
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0027173911221325397,
+        "parameter_norm": 11.315690994262695
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0011506462469696999,
+        "parameter_norm": 0.051833778619766235
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.002729528583586216,
+        "parameter_norm": 11.288735389709473
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0009869314962998033,
+        "parameter_norm": 0.06287671625614166
+      },
+      {
+        "name": "action_net.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.10230744630098343,
+        "parameter_norm": 0.06262543052434921
+      },
+      {
+        "name": "action_net.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.03847917169332504,
+        "parameter_norm": 0.003750029020011425
+      }
+    ],
+    "actor_has_nonzero_adam_moments": true,
+    "log_std": [
+      -1.5093225240707397,
+      -1.5111467838287354,
+      -1.5051358938217163
+    ],
+    "caution": "Optimizer/Actor evidence only. Physical effect and qualified task outcome require separate trajectory and intervention audits."
+  },
+  {
+    "run": "B3_no_next_seed31",
+    "checkpoint_sha256": "b25b241188aecb65e5a463e66165ddb3b3dd3c156a0f6c7d9616534b1068ddde",
+    "actor_tensors": [
+      {
+        "name": "log_std",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.01081026066094637,
+        "parameter_norm": 2.621469497680664
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0014575261157006025,
+        "parameter_norm": 11.314626693725586
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0006915099220350385,
+        "parameter_norm": 0.04992717131972313
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.001325140823610127,
+        "parameter_norm": 11.280519485473633
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0005337261245585978,
+        "parameter_norm": 0.07514093816280365
+      },
+      {
+        "name": "action_net.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.07351088523864746,
+        "parameter_norm": 0.04987241327762604
+      },
+      {
+        "name": "action_net.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.028255360201001167,
+        "parameter_norm": 0.0018078361172229052
+      }
+    ],
+    "actor_has_nonzero_adam_moments": true,
+    "log_std": [
+      -1.4997806549072266,
+      -1.5313687324523926,
+      -1.5091949701309204
+    ],
+    "caution": "Optimizer/Actor evidence only. Physical effect and qualified task outcome require separate trajectory and intervention audits."
+  },
+  {
+    "run": "B3_seed31",
+    "checkpoint_sha256": "fa7734762bd51c219b07db6725964293d97ce58c196d94891862852d3f8c05a3",
+    "actor_tensors": [
+      {
+        "name": "log_std",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.018875116482377052,
+        "parameter_norm": 2.6262176036834717
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0037525140214711428,
+        "parameter_norm": 11.310586929321289
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0016038300236687064,
+        "parameter_norm": 0.05657097324728966
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0031974930316209793,
+        "parameter_norm": 11.27691650390625
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0012370009208098054,
+        "parameter_norm": 0.08439543843269348
+      },
+      {
+        "name": "action_net.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.10558933764696121,
+        "parameter_norm": 0.05003400146961212
+      },
+      {
+        "name": "action_net.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.04743757098913193,
+        "parameter_norm": 0.001830326160416007
+      }
+    ],
+    "actor_has_nonzero_adam_moments": true,
+    "log_std": [
+      -1.523139476776123,
+      -1.5153377056121826,
+      -1.5102370977401733
+    ],
+    "caution": "Optimizer/Actor evidence only. Physical effect and qualified task outcome require separate trajectory and intervention audits."
+  },
+  {
+    "run": "B3_seed41",
+    "checkpoint_sha256": "e56662799c35975766f3987b49081c245b789242458fc268bd21cecdf23573f8",
+    "actor_tensors": [
+      {
+        "name": "log_std",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.01028342917561531,
+        "parameter_norm": 2.621394157409668
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0018509820802137256,
+        "parameter_norm": 11.316034317016602
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0007205805159173906,
+        "parameter_norm": 0.053636543452739716
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0016815904527902603,
+        "parameter_norm": 11.281600952148438
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0005716253654100001,
+        "parameter_norm": 0.07564561814069748
+      },
+      {
+        "name": "action_net.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0700547844171524,
+        "parameter_norm": 0.05416523292660713
+      },
+      {
+        "name": "action_net.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.02722332440316677,
+        "parameter_norm": 0.0008499263785779476
+      }
+    ],
+    "actor_has_nonzero_adam_moments": true,
+    "log_std": [
+      -1.537160038948059,
+      -1.499254822731018,
+      -1.5036892890930176
+    ],
+    "caution": "Optimizer/Actor evidence only. Physical effect and qualified task outcome require separate trajectory and intervention audits."
+  },
+  {
+    "run": "B3_seed51",
+    "checkpoint_sha256": "9ed8abf0f3b1b533d050f3f73099c37a44aca63fe57a18d0bf5e02cf53f87fd5",
+    "actor_tensors": [
+      {
+        "name": "log_std",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.011083584278821945,
+        "parameter_norm": 2.6127631664276123
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0030671164859086275,
+        "parameter_norm": 11.324299812316895
+      },
+      {
+        "name": "mlp_extractor.policy_net.0.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0012730476446449757,
+        "parameter_norm": 0.05281934514641762
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0025867591612040997,
+        "parameter_norm": 11.289644241333008
+      },
+      {
+        "name": "mlp_extractor.policy_net.2.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0009193337173201144,
+        "parameter_norm": 0.06695638597011566
+      },
+      {
+        "name": "action_net.weight",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.0601411834359169,
+        "parameter_norm": 0.06586498022079468
+      },
+      {
+        "name": "action_net.bias",
+        "adam_steps": 384,
+        "adam_first_moment_norm": 0.019880376756191254,
+        "parameter_norm": 0.003104215720668435
+      }
+    ],
+    "actor_has_nonzero_adam_moments": true,
+    "log_std": [
+      -1.513842225074768,
+      -1.5117264986038208,
+      -1.4998321533203125
+    ],
+    "caution": "Optimizer/Actor evidence only. Physical effect and qualified task outcome require separate trajectory and intervention audits."
+  }
+]

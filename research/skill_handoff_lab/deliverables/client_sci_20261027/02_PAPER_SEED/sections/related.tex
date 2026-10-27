@@ -1,0 +1,12 @@
+\section{Related Work and Novelty Boundary}
+\paragraph{Parameterized actions and skill composition.}
+RAPS studies parameterized action primitives as an RL action interface \cite{dalal2021raps}. STAP uses task-agnostic skill values and planning to reason about geometric dependencies in skill sequences \cite{agia2023stap}. These precedents rule out claims that parameterized skills or successor feasibility are themselves new. The question here is narrower: whether observed sustained-contact effects can improve a constrained residual decision in a physically continuous task, beyond ordinary residual RL and task-relative control.
+
+\paragraph{Residual and geometry-aware skills.}
+Residual Skill Policies already learn residual corrections in skill space \cite{rana2023reskill}. HACMan++ studies contact-rich manipulation through actionable contact/action abstractions \cite{jiang2024hacmanpp}. GRN addresses feasibility-related reasoning \cite{bouhsain2025grn}, while Fabrica combines planning and geometrically structured residual skills \cite{tian2025fabrica}. Therefore, using a nominal controller, task frame, geometry input or feasibility mask cannot independently support novelty. A successful extension would need to show that a particular execution-feedback pathway changes actions and improves P2 under matched resources, with competing explanations removed.
+
+\paragraph{Recovery and heterogeneous composition.}
+RecoveryChaining combines nominal policies with learned recovery \cite{vats2025recovery}. TASP studies the composition of heterogeneous black-box skills \cite{hedegaard2026tasp}. Our experiments do not yet implement a high-level recovery scheduler or reproduce these benchmarks. A future recovery mechanism must start from genuine recoverable physical states and be compared with legitimate retry and re-contact controllers.
+
+\paragraph{Implications for this manuscript.}
+The supplied literature comparison documents mechanism overlap, available implementation evidence and replication costs. The empirical boundary is strict: existing ARES results are self-built simulation experiments, not official benchmark scores. The task-frame change is an engineering/inductive-bias baseline. Only a reproducible increment over that baseline, linked to a genuine outcome-conditioning intervention, could justify a stronger method claim. None of the present text claims the first use of residual RL, skill chaining, successor value or learned termination.

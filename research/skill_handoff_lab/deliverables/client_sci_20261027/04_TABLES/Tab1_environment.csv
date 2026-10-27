@@ -1,0 +1,8 @@
+component,value,status
+Physics / control,Isaac Sim 5.1; Isaac Lab 2.3.0; 120 / 60 Hz,Verified synthetic simulation
+P1 / P2,Free-workpiece two-stage push / deep guided slot,Self-built; not official benchmark
+Robot / object,Single JAKA; 40 mm cube; 30 mm research paddle,No real tray grasping claim
+Actor / policy,56D state-based observation; MLP 64--64,Not vision deployment
+Task acceptance,Post-step state and 30 controls stable completion,Independent task/geometry checks
+Formal cohort,"3 methods x 3 seeds x 65,536 interactions",Historical formal training
+Full historical cohort,"901,120 interactions; 16 trained runs including diagnostics",Not 16 formal seeds

@@ -1,0 +1,105 @@
+{
+  "version": "client_sci_v7_p2",
+  "split": "train",
+  "scope": "SYNTHETIC P2; no field data",
+  "case_seed": 102731,
+  "episode_seconds": 12,
+  "groups": [
+    {
+      "id": "v7_train_0",
+      "gap": 0.054,
+      "goal_x": 0.137,
+      "slot_y": -0.023,
+      "mass": 0.045,
+      "mu": 0.27,
+      "direction": -0.08,
+      "initial_yaw": -0.025,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v7_train_1",
+      "gap": 0.056,
+      "goal_x": 0.14500000000000002,
+      "slot_y": -0.027,
+      "mass": 0.06,
+      "mu": 0.31,
+      "direction": -0.04,
+      "initial_yaw": 0.025,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v7_train_2",
+      "gap": 0.054,
+      "goal_x": 0.137,
+      "slot_y": -0.023,
+      "mass": 0.075,
+      "mu": 0.35000000000000003,
+      "direction": 0,
+      "initial_yaw": -0.025,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v7_train_3",
+      "gap": 0.056,
+      "goal_x": 0.14500000000000002,
+      "slot_y": -0.027,
+      "mass": 0.045,
+      "mu": 0.27,
+      "direction": 0.04,
+      "initial_yaw": 0.025,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v7_train_4",
+      "gap": 0.054,
+      "goal_x": 0.137,
+      "slot_y": -0.023,
+      "mass": 0.06,
+      "mu": 0.31,
+      "direction": 0.08,
+      "initial_yaw": -0.025,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v7_train_5",
+      "gap": 0.056,
+      "goal_x": 0.14500000000000002,
+      "slot_y": -0.027,
+      "mass": 0.075,
+      "mu": 0.35000000000000003,
+      "direction": -0.06,
+      "initial_yaw": 0.025,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v7_train_6",
+      "gap": 0.054,
+      "goal_x": 0.137,
+      "slot_y": -0.023,
+      "mass": 0.045,
+      "mu": 0.27,
+      "direction": 0.02,
+      "initial_yaw": -0.025,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    },
+    {
+      "id": "v7_train_7",
+      "gap": 0.056,
+      "goal_x": 0.14500000000000002,
+      "slot_y": -0.027,
+      "mass": 0.06,
+      "mu": 0.31,
+      "direction": 0.06,
+      "initial_yaw": 0.025,
+      "entry_x": 0.1,
+      "rail_length": 0.1
+    }
+  ]
+}

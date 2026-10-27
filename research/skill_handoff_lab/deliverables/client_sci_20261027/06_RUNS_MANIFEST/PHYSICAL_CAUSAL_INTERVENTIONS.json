@@ -1,0 +1,194 @@
+{
+  "scope": "cold-start matched reset and continuous trajectories; no partial contact state restore",
+  "comparisons": [
+    {
+      "label": "same-model remove effect history",
+      "left": "B3_seed31_validation",
+      "right": "B3_no_outcome_intervention",
+      "n": 32,
+      "left_successes": 30,
+      "right_successes": 30,
+      "rescued_case_ids": [],
+      "lost_case_ids": [],
+      "common_valid_handoff_cases": 32,
+      "common_handoff_left_suffix_successes": 30,
+      "common_handoff_right_suffix_successes": 30,
+      "mean_handoff_object_difference_m": 3.288349610758621e-05,
+      "initial_max_difference": 0.0,
+      "initial_max_recorded_physical_state_difference": 0.0,
+      "initial_component_maxima": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "paddle_position": 0.0,
+        "object_quaternion": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0
+      },
+      "mean_object_xyz_rms_difference_m": 5.4214277412256706e-05,
+      "mean_applied_reference_delta_rms_difference_m": 2.0570283282950186e-05,
+      "sources": {
+        "B3_seed31_validation": "2f7dbd16bf853e32708da755f591a6a8456629ba7030f212866318ed66dce75b",
+        "B3_no_outcome_intervention": "579ea3191a148609ffd58619f3312e61b949989625f74f5d23c81dab57535ac5"
+      }
+    },
+    {
+      "label": "same-model measured response only removed; command memory retained",
+      "left": "B3_seed31_validation",
+      "right": "B3_measured_response_intervention",
+      "n": 32,
+      "left_successes": 30,
+      "right_successes": 30,
+      "rescued_case_ids": [],
+      "lost_case_ids": [],
+      "common_valid_handoff_cases": 32,
+      "common_handoff_left_suffix_successes": 30,
+      "common_handoff_right_suffix_successes": 30,
+      "mean_handoff_object_difference_m": 4.378665851107925e-05,
+      "initial_max_difference": 0.0,
+      "initial_max_recorded_physical_state_difference": 0.0,
+      "initial_component_maxima": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "paddle_position": 0.0,
+        "object_quaternion": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0
+      },
+      "mean_object_xyz_rms_difference_m": 7.877377404952313e-05,
+      "mean_applied_reference_delta_rms_difference_m": 2.4608329361797132e-05,
+      "sources": {
+        "B3_seed31_validation": "2f7dbd16bf853e32708da755f591a6a8456629ba7030f212866318ed66dce75b",
+        "B3_measured_response_intervention": "f6a9dcc679b643a09a100887fef51638d35fc0170527c1143c5a7fb48df2778a"
+      }
+    },
+    {
+      "label": "same-model partial next-contract mask",
+      "left": "B3_seed31_validation",
+      "right": "B3_no_next_intervention",
+      "n": 32,
+      "left_successes": 30,
+      "right_successes": 30,
+      "rescued_case_ids": [],
+      "lost_case_ids": [],
+      "common_valid_handoff_cases": 32,
+      "common_handoff_left_suffix_successes": 30,
+      "common_handoff_right_suffix_successes": 30,
+      "mean_handoff_object_difference_m": 0.00010892654670629493,
+      "initial_max_difference": 0.0,
+      "initial_max_recorded_physical_state_difference": 0.0,
+      "initial_component_maxima": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "paddle_position": 0.0,
+        "object_quaternion": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0
+      },
+      "mean_object_xyz_rms_difference_m": 0.00019386486940220493,
+      "mean_applied_reference_delta_rms_difference_m": 6.148752227375098e-05,
+      "sources": {
+        "B3_seed31_validation": "2f7dbd16bf853e32708da755f591a6a8456629ba7030f212866318ed66dce75b",
+        "B3_no_next_intervention": "c9203426df4db3b5dc4a42c06a850d5bb12c2ced172ed22c87873114a9157e68"
+      }
+    },
+    {
+      "label": "existing bounded backoff/recontact controller",
+      "left": "B0_validation",
+      "right": "B0_withdraw_validation",
+      "n": 32,
+      "left_successes": 30,
+      "right_successes": 30,
+      "rescued_case_ids": [],
+      "lost_case_ids": [],
+      "common_valid_handoff_cases": 32,
+      "common_handoff_left_suffix_successes": 30,
+      "common_handoff_right_suffix_successes": 30,
+      "mean_handoff_object_difference_m": 0.0,
+      "initial_max_difference": 0.0,
+      "initial_max_recorded_physical_state_difference": 0.0,
+      "initial_component_maxima": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "paddle_position": 0.0,
+        "object_quaternion": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0
+      },
+      "mean_object_xyz_rms_difference_m": 0.0002838093205355108,
+      "mean_applied_reference_delta_rms_difference_m": 1.9763660930038895e-05,
+      "sources": {
+        "B0_validation": "b7cd49f7211eb31ee079b8615a5afd9c88b3dea5e9ae159c80283bb5a51697a4",
+        "B0_withdraw_validation": "d1304926887f9ce18180e80cd30123912bbfb64883290ac48865a27e81c648f3"
+      }
+    },
+    {
+      "label": "fixed -4mm phase0 contact endpoint",
+      "left": "B0_validation",
+      "right": "B4_parameter_-1.0",
+      "n": 32,
+      "left_successes": 30,
+      "right_successes": 30,
+      "rescued_case_ids": [],
+      "lost_case_ids": [],
+      "common_valid_handoff_cases": 32,
+      "common_handoff_left_suffix_successes": 30,
+      "common_handoff_right_suffix_successes": 30,
+      "mean_handoff_object_difference_m": 0.0015188821491580644,
+      "initial_max_difference": 0.0,
+      "initial_max_recorded_physical_state_difference": 0.0,
+      "initial_component_maxima": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "paddle_position": 0.0,
+        "object_quaternion": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0
+      },
+      "mean_object_xyz_rms_difference_m": 0.0007283220866156626,
+      "mean_applied_reference_delta_rms_difference_m": 0.00010085618100674765,
+      "sources": {
+        "B0_validation": "b7cd49f7211eb31ee079b8615a5afd9c88b3dea5e9ae159c80283bb5a51697a4",
+        "B4_parameter_-1.0": "6df6b635d4f8ece00e6271e98566193ae1824ef8448695710a416ae62b156856"
+      }
+    },
+    {
+      "label": "fixed +4mm phase0 contact endpoint",
+      "left": "B0_validation",
+      "right": "B4_parameter_+1.0",
+      "n": 32,
+      "left_successes": 30,
+      "right_successes": 29,
+      "rescued_case_ids": [],
+      "lost_case_ids": [
+        17
+      ],
+      "common_valid_handoff_cases": 32,
+      "common_handoff_left_suffix_successes": 30,
+      "common_handoff_right_suffix_successes": 29,
+      "mean_handoff_object_difference_m": 0.0012930378592182466,
+      "initial_max_difference": 0.0,
+      "initial_max_recorded_physical_state_difference": 0.0,
+      "initial_component_maxima": {
+        "q": 0.0,
+        "qd": 0.0,
+        "object_position": 0.0,
+        "paddle_position": 0.0,
+        "object_quaternion": 0.0,
+        "object_linear_velocity": 0.0,
+        "object_angular_velocity": 0.0
+      },
+      "mean_object_xyz_rms_difference_m": 0.0011452717481006403,
+      "mean_applied_reference_delta_rms_difference_m": 0.00011057643553158414,
+      "sources": {
+        "B0_validation": "b7cd49f7211eb31ee079b8615a5afd9c88b3dea5e9ae159c80283bb5a51697a4",
+        "B4_parameter_+1.0": "a56f531abd4578bf6a841afac3429f9cbca6cd0c952d75e17eb3ac253d08de58"
+      }
+    }
+  ],
+  "caution": "matched initial recorded q/qd/object pose, linear/angular velocity and paddle pose only; hidden PhysX solver/contact cache not restored or proven identical. Aligned by elapsed physics sample per case, not identical subsequent states; differences combine state-action feedback; no velocity-only causal claim"
+}

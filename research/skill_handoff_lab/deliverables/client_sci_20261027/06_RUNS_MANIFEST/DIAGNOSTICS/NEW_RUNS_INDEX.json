@@ -1,0 +1,664 @@
+{
+  "scope": "SYNTHETIC P2; validation-only bounded pilot; no field data",
+  "runs": [
+    {
+      "method": "B1",
+      "seed": 31,
+      "split": "train",
+      "family": "P2",
+      "n": 8,
+      "raw_successes": 8,
+      "independent_successes": 8,
+      "interactions": 16384,
+      "run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31",
+      "source_sha256": "5a504b32b701fe21d92e17cbf01d03b077798989883e35874aa35ff632f0934d",
+      "audit_sha256": "9fa677ebafc3461d7b7d819384786867337c95edf29f3ea4a333381d0530f880",
+      "online_training_interactions": 16384,
+      "optimizer_updates": 384,
+      "parameters_changed": true,
+      "wall_s": 53.87252343446016,
+      "raw_success_case_ids": [
+        6,
+        7,
+        5,
+        0,
+        4,
+        1,
+        2,
+        3
+      ],
+      "successful_completion_time_mean_s": 9.220833333333333,
+      "applied_xy_rms_m": 0.00022853908012621105,
+      "requested_contact_parameter_rms_m": 5.9372676332714036e-05,
+      "rms_scope": "actual named evaluation cases only; invalid padding case -1 excluded",
+      "limitations": [
+        "state-based actor assumes observed object pose/velocity",
+        "fixed research paddle; no contact grasp",
+        "no field scene or measured tray CAD",
+        "prototype group split not a formal generalization claim"
+      ],
+      "artifacts": {
+        "manifest.json": {
+          "sha256": "e5abcb9ef685a5f172469c635f3725ab85f57b574faab39b1dde833317838154",
+          "bytes": 6498,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/manifest.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/scene.json"
+        },
+        "run_config.json": {
+          "sha256": "abc93fd4e09fdae15e0c76b66cb97162693e867288f273217244fd61d3be1474",
+          "bytes": 1166,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/run_config.json"
+        },
+        "policy.zip": {
+          "sha256": "d131d5aa1a1051b55456ef0ac26cc26b837da0b0936ed5f500d04208c5fdc064",
+          "bytes": 238979,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "5a504b32b701fe21d92e17cbf01d03b077798989883e35874aa35ff632f0934d",
+          "bytes": 43298,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "04fe772857c72a9c5e9a723ba526dd8f6b752ec86d138048d42594b14056d51b",
+          "bytes": 721,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/frame_source.py"
+        },
+        "frozen_evaluation.json": {
+          "sha256": "327028a5197dd8bb32a0a453a279c4e54e57d69fd5712ca21ac590aae6b8d626",
+          "bytes": 41497,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/frozen_evaluation.json"
+        },
+        "training_episodes.json": {
+          "sha256": "5aa462b1b7a3a19bb8d9f2172678c00521b1143546d0f212795261d336e9e388",
+          "bytes": 83036,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/training_episodes.json"
+        },
+        "action_log.json": {
+          "sha256": "c765d19d6e8e2d295677f74ebb2dfeb58c3aeb8d947e64deb5820d9867c3cdad",
+          "bytes": 9822343,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/action_log.json"
+        },
+        "actual_physics_trace.npz": {
+          "sha256": "67c1f5566cf1164fa08b76065d761d6b5984019d18a3cb8cadd287b15810a4ce",
+          "bytes": 2252462,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/actual_physics_trace.npz"
+        },
+        "INDEPENDENT_TASK_AND_CONTACT.json": {
+          "sha256": "9fa677ebafc3461d7b7d819384786867337c95edf29f3ea4a333381d0530f880",
+          "bytes": 7799,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31/INDEPENDENT_TASK_AND_CONTACT.json"
+        }
+      },
+      "independent_success_case_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "method": "B1",
+      "seed": 31,
+      "split": "validation",
+      "family": "P2",
+      "n": 32,
+      "raw_successes": 30,
+      "independent_successes": 30,
+      "interactions": 16384,
+      "run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31_validation",
+      "source_sha256": "5a504b32b701fe21d92e17cbf01d03b077798989883e35874aa35ff632f0934d",
+      "audit_sha256": "51828500c1c63871cc54ab253b0478539e2a65b02c23602e6b09c8f914afc6a5",
+      "online_training_interactions": 0,
+      "optimizer_updates": 0,
+      "parameters_changed": false,
+      "wall_s": 41.604908507317305,
+      "raw_success_case_ids": [
+        9,
+        8,
+        14,
+        13,
+        0,
+        7,
+        12,
+        11,
+        6,
+        10,
+        15,
+        5,
+        2,
+        1,
+        3,
+        30,
+        27,
+        25,
+        28,
+        24,
+        29,
+        23,
+        22,
+        16,
+        26,
+        18,
+        19,
+        21,
+        17,
+        20
+      ],
+      "successful_completion_time_mean_s": 9.262222222222222,
+      "applied_xy_rms_m": 0.00022439031454268843,
+      "requested_contact_parameter_rms_m": 5.640904782922007e-05,
+      "rms_scope": "actual named evaluation cases only; invalid padding case -1 excluded",
+      "limitations": [
+        "state-based actor assumes observed object pose/velocity",
+        "fixed research paddle; no contact grasp",
+        "no field scene or measured tray CAD",
+        "prototype group split not a formal generalization claim"
+      ],
+      "artifacts": {
+        "manifest.json": {
+          "sha256": "b283213baedd21003ec2f85b57e1dc9479a0d8bcbde60a106139ccb52bc485d6",
+          "bytes": 6601,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31_validation/manifest.json"
+        },
+        "scene.json": {
+          "sha256": "ee6304acc5e27635ae1de7e07fe68c903bb6db934ac26e27e43a4259ed232ec8",
+          "bytes": 686,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31_validation/scene.json"
+        },
+        "run_config.json": {
+          "sha256": "21590025a5f341cd33afcaf62240b58afba2104218f48d83dba27ca44a215370",
+          "bytes": 1270,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31_validation/run_config.json"
+        },
+        "task_source.py": {
+          "sha256": "5a504b32b701fe21d92e17cbf01d03b077798989883e35874aa35ff632f0934d",
+          "bytes": 43298,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31_validation/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "04fe772857c72a9c5e9a723ba526dd8f6b752ec86d138048d42594b14056d51b",
+          "bytes": 721,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31_validation/frame_source.py"
+        },
+        "frozen_evaluation.json": {
+          "sha256": "c9adbe27a4a8e4b6147b9be655e978fbed8d0c4916fce07e982be4a27fd22179",
+          "bytes": 166223,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31_validation/frozen_evaluation.json"
+        },
+        "training_episodes.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31_validation/training_episodes.json"
+        },
+        "action_log.json": {
+          "sha256": "f69382e3567a385595844ce5fa65f3ab3d1ae44a82359ea7b313cfbf87a7d2c7",
+          "bytes": 7830974,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31_validation/action_log.json"
+        },
+        "actual_physics_trace.npz": {
+          "sha256": "7fea4a36c7bbcbf01e4fd5017e11c79e36f8306f6fbd3252f734a04b0f0d4abb",
+          "bytes": 4803685,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31_validation/actual_physics_trace.npz"
+        },
+        "INDEPENDENT_TASK_AND_CONTACT.json": {
+          "sha256": "51828500c1c63871cc54ab253b0478539e2a65b02c23602e6b09c8f914afc6a5",
+          "bytes": 29070,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B1_seed31_validation/INDEPENDENT_TASK_AND_CONTACT.json"
+        }
+      },
+      "independent_success_case_ids": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        25,
+        24,
+        30,
+        29,
+        16,
+        23,
+        28,
+        27,
+        22,
+        26,
+        21,
+        18,
+        17,
+        19,
+        20
+      ]
+    },
+    {
+      "method": "B3",
+      "seed": 31,
+      "split": "train",
+      "family": "P2",
+      "n": 8,
+      "raw_successes": 8,
+      "independent_successes": 8,
+      "interactions": 16384,
+      "run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31",
+      "source_sha256": "5a504b32b701fe21d92e17cbf01d03b077798989883e35874aa35ff632f0934d",
+      "audit_sha256": "903431c52332cf36e030dbb601c7ee594b7e4c1b9deb678cc76e6ae4ba0b2072",
+      "online_training_interactions": 16384,
+      "optimizer_updates": 384,
+      "parameters_changed": true,
+      "wall_s": 63.916072925552726,
+      "raw_success_case_ids": [
+        6,
+        7,
+        5,
+        0,
+        4,
+        1,
+        2,
+        3
+      ],
+      "successful_completion_time_mean_s": 9.220833333333333,
+      "applied_xy_rms_m": 0.00022874244314152747,
+      "requested_contact_parameter_rms_m": 4.6200966608012095e-05,
+      "rms_scope": "actual named evaluation cases only; invalid padding case -1 excluded",
+      "limitations": [
+        "state-based actor assumes observed object pose/velocity",
+        "fixed research paddle; no contact grasp",
+        "no field scene or measured tray CAD",
+        "prototype group split not a formal generalization claim"
+      ],
+      "artifacts": {
+        "manifest.json": {
+          "sha256": "ea57d586291d7e2031c08feefd57478dfd3d34931e07a56671501c9463dc499b",
+          "bytes": 6502,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/manifest.json"
+        },
+        "scene.json": {
+          "sha256": "4a843b67f11282e61719cf7d8a549b3365895581ecf3b849d330e42345b2e4ba",
+          "bytes": 2211,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/scene.json"
+        },
+        "run_config.json": {
+          "sha256": "f64c16be7d62338e79d8dc4878e2790a4aeab97493b42f0a78512c4df091f429",
+          "bytes": 1167,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/run_config.json"
+        },
+        "policy.zip": {
+          "sha256": "382f196b686d55b7c18799414366127693af898261e61d163d392304139f3535",
+          "bytes": 238979,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/policy.zip"
+        },
+        "task_source.py": {
+          "sha256": "5a504b32b701fe21d92e17cbf01d03b077798989883e35874aa35ff632f0934d",
+          "bytes": 43298,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "04fe772857c72a9c5e9a723ba526dd8f6b752ec86d138048d42594b14056d51b",
+          "bytes": 721,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/frame_source.py"
+        },
+        "frozen_evaluation.json": {
+          "sha256": "4f901f3afbed489892feef45c0a7e6648e9c608a9f1bdeb7165f1f9f49aa26cc",
+          "bytes": 41550,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/frozen_evaluation.json"
+        },
+        "training_episodes.json": {
+          "sha256": "e7b19eef33145878af6ffbcf58e2542f3ca32521042bc9d070ee8bd1a3bc1fc5",
+          "bytes": 83035,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/training_episodes.json"
+        },
+        "action_log.json": {
+          "sha256": "b486c9fbd4034543d868944c02340fcc0494000d1fd48a6ee18e68a707da870d",
+          "bytes": 9789583,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/action_log.json"
+        },
+        "actual_physics_trace.npz": {
+          "sha256": "f73c5026e7769a946afb99034a04aa1d416857afaca22c31c7191faa374705f4",
+          "bytes": 2232005,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/actual_physics_trace.npz"
+        },
+        "INDEPENDENT_TASK_AND_CONTACT.json": {
+          "sha256": "903431c52332cf36e030dbb601c7ee594b7e4c1b9deb678cc76e6ae4ba0b2072",
+          "bytes": 7801,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31/INDEPENDENT_TASK_AND_CONTACT.json"
+        }
+      },
+      "independent_success_case_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "method": "B3",
+      "seed": 31,
+      "split": "validation",
+      "family": "P2",
+      "n": 32,
+      "raw_successes": 30,
+      "independent_successes": 30,
+      "interactions": 16384,
+      "run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31_validation",
+      "source_sha256": "5a504b32b701fe21d92e17cbf01d03b077798989883e35874aa35ff632f0934d",
+      "audit_sha256": "3cf6c88d2e8b7c05361a07558c1c4cb454e85f63c51bc253b76acc71452278e5",
+      "online_training_interactions": 0,
+      "optimizer_updates": 0,
+      "parameters_changed": false,
+      "wall_s": 50.89178601838648,
+      "raw_success_case_ids": [
+        9,
+        8,
+        0,
+        6,
+        14,
+        7,
+        13,
+        12,
+        2,
+        5,
+        11,
+        1,
+        10,
+        15,
+        3,
+        30,
+        27,
+        25,
+        22,
+        23,
+        16,
+        24,
+        28,
+        18,
+        19,
+        29,
+        21,
+        26,
+        17,
+        20
+      ],
+      "successful_completion_time_mean_s": 9.322777777777778,
+      "applied_xy_rms_m": 0.0002231322432635352,
+      "requested_contact_parameter_rms_m": 4.650522896554321e-05,
+      "rms_scope": "actual named evaluation cases only; invalid padding case -1 excluded",
+      "limitations": [
+        "state-based actor assumes observed object pose/velocity",
+        "fixed research paddle; no contact grasp",
+        "no field scene or measured tray CAD",
+        "prototype group split not a formal generalization claim"
+      ],
+      "artifacts": {
+        "manifest.json": {
+          "sha256": "5d41ecd1422505cbcfdd52a22791db7712a6743fe5d5641c32c23b9c6551fdcc",
+          "bytes": 6603,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31_validation/manifest.json"
+        },
+        "scene.json": {
+          "sha256": "ee6304acc5e27635ae1de7e07fe68c903bb6db934ac26e27e43a4259ed232ec8",
+          "bytes": 686,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31_validation/scene.json"
+        },
+        "run_config.json": {
+          "sha256": "9ad0831ac68511730bc78780d3d1b5416f53374a44b8f9de5fa3c9c44cbe2edd",
+          "bytes": 1271,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31_validation/run_config.json"
+        },
+        "task_source.py": {
+          "sha256": "5a504b32b701fe21d92e17cbf01d03b077798989883e35874aa35ff632f0934d",
+          "bytes": 43298,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31_validation/task_source.py"
+        },
+        "frame_source.py": {
+          "sha256": "04fe772857c72a9c5e9a723ba526dd8f6b752ec86d138048d42594b14056d51b",
+          "bytes": 721,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31_validation/frame_source.py"
+        },
+        "frozen_evaluation.json": {
+          "sha256": "0cd95c134f93ce1a15aa1206236c82d246ebd211568146e111a8cd6a5d890cdf",
+          "bytes": 166218,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31_validation/frozen_evaluation.json"
+        },
+        "training_episodes.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31_validation/training_episodes.json"
+        },
+        "action_log.json": {
+          "sha256": "729ce4b8df7960cfa6a2e31c112ec474865197bd6f8cb8b1a7cd2995d34bb934",
+          "bytes": 7908792,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31_validation/action_log.json"
+        },
+        "actual_physics_trace.npz": {
+          "sha256": "86cf73d5c5a6f9c00e15ff1a5aa6ccfb0481980c49aaffc10410fb6150ab83a1",
+          "bytes": 4844792,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31_validation/actual_physics_trace.npz"
+        },
+        "INDEPENDENT_TASK_AND_CONTACT.json": {
+          "sha256": "3cf6c88d2e8b7c05361a07558c1c4cb454e85f63c51bc253b76acc71452278e5",
+          "bytes": 29042,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/B3_seed31_validation/INDEPENDENT_TASK_AND_CONTACT.json"
+        }
+      },
+      "independent_success_case_ids": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        25,
+        24,
+        16,
+        22,
+        30,
+        23,
+        29,
+        28,
+        18,
+        21,
+        27,
+        17,
+        26,
+        19,
+        20
+      ]
+    },
+    {
+      "method": "smoke1",
+      "seed": 31,
+      "split": "validation",
+      "family": "P2",
+      "n": 2,
+      "raw_successes": 2,
+      "independent_successes": 2,
+      "interactions": 0,
+      "run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke1",
+      "source_sha256": "c81b81d943ab60169f0407ca0cee177179aefd50b7d026ae2c5cc05b48f3e9ad",
+      "audit_sha256": "ffcbf23e5a9fca94698b7b96dc92edda984c4c418dc888a8cbf903b60d40a0b8",
+      "online_training_interactions": 0,
+      "optimizer_updates": 0,
+      "parameters_changed": false,
+      "wall_s": 38.30916212964803,
+      "raw_success_case_ids": [
+        0,
+        1
+      ],
+      "successful_completion_time_mean_s": 9.241666666666667,
+      "applied_xy_rms_m": 0.0002223521878477186,
+      "requested_contact_parameter_rms_m": 0.0,
+      "rms_scope": "actual named evaluation cases only; invalid padding case -1 excluded",
+      "limitations": [
+        "state-based actor assumes observed object pose/velocity",
+        "fixed research paddle; no contact grasp",
+        "no field scene or measured tray CAD",
+        "prototype group split not a formal generalization claim"
+      ],
+      "artifacts": {
+        "manifest.json": {
+          "sha256": "c6fdd90125124e41b345fc12d7a721b74bc06e2c4072c9b55f020713135b5e9c",
+          "bytes": 2336,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke1/manifest.json"
+        },
+        "run_config.json": {
+          "sha256": "e3802cbaa8b8fcc5b752f97ec18a0ff0f02e0201766e985ffadb270a7085d440",
+          "bytes": 1038,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke1/run_config.json"
+        },
+        "task_source.py": {
+          "sha256": "c81b81d943ab60169f0407ca0cee177179aefd50b7d026ae2c5cc05b48f3e9ad",
+          "bytes": 43108,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke1/task_source.py"
+        },
+        "frozen_evaluation.json": {
+          "sha256": "6f5fb3c6267ba97261d7b02303f51dd9c8e5b5453500b53608110c357f99003c",
+          "bytes": 10381,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke1/frozen_evaluation.json"
+        },
+        "training_episodes.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke1/training_episodes.json"
+        },
+        "action_log.json": {
+          "sha256": "27f43f5a67b4086949e9695fe145408aed39c4903686e0adb1a67031b933faa9",
+          "bytes": 437745,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke1/action_log.json"
+        },
+        "actual_physics_trace.npz": {
+          "sha256": "924cd9274977c33f72805c486412bc5c56ee74832b4ede7b8b7257335b2e7026",
+          "bytes": 241346,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke1/actual_physics_trace.npz"
+        },
+        "INDEPENDENT_TASK_AND_CONTACT.json": {
+          "sha256": "ffcbf23e5a9fca94698b7b96dc92edda984c4c418dc888a8cbf903b60d40a0b8",
+          "bytes": 2471,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke1/INDEPENDENT_TASK_AND_CONTACT.json"
+        }
+      },
+      "independent_success_case_ids": [
+        0,
+        1
+      ]
+    },
+    {
+      "method": "smoke4",
+      "seed": 31,
+      "split": "validation",
+      "family": "P2",
+      "n": 8,
+      "raw_successes": 6,
+      "independent_successes": 6,
+      "interactions": 0,
+      "run": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke4",
+      "source_sha256": "ed7aeb36238e4bee4dabd008e9fb3a5b4c092e9485112bc849b85e2f97a7f717",
+      "audit_sha256": "de9953ec1cdaecb4f1fb7560028842866cfdb65b350ac2e57c8d92291f8abbce",
+      "online_training_interactions": 0,
+      "optimizer_updates": 0,
+      "parameters_changed": false,
+      "wall_s": 45.79936195258051,
+      "raw_success_case_ids": [
+        0,
+        2,
+        1,
+        6,
+        5,
+        7
+      ],
+      "successful_completion_time_mean_s": 9.172222222222222,
+      "applied_xy_rms_m": 0.00022239495592657477,
+      "requested_contact_parameter_rms_m": 0.0,
+      "rms_scope": "actual named evaluation cases only; invalid padding case -1 excluded",
+      "limitations": [
+        "state-based actor assumes observed object pose/velocity",
+        "fixed research paddle; no contact grasp",
+        "no field scene or measured tray CAD",
+        "prototype group split not a formal generalization claim"
+      ],
+      "artifacts": {
+        "manifest.json": {
+          "sha256": "2457468319b23bec4463cc0c064b8f402fa36c6ac1a35e2ca210d3332ee5805b",
+          "bytes": 3155,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke4/manifest.json"
+        },
+        "run_config.json": {
+          "sha256": "16200d352bcf5a0b6893c3054cbd3fed81fa5d18a0091ffb1c2223d8262063f4",
+          "bytes": 1038,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke4/run_config.json"
+        },
+        "task_source.py": {
+          "sha256": "ed7aeb36238e4bee4dabd008e9fb3a5b4c092e9485112bc849b85e2f97a7f717",
+          "bytes": 42995,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke4/task_source.py"
+        },
+        "frozen_evaluation.json": {
+          "sha256": "7df4982c712321188d68831c2e210b050a52afc3ac610cccce1c27072e8a7f02",
+          "bytes": 41489,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke4/frozen_evaluation.json"
+        },
+        "training_episodes.json": {
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke4/training_episodes.json"
+        },
+        "action_log.json": {
+          "sha256": "2d4a5f72b3839ca9e6bd25ec6f593f42eaf2a7a37768f9aa3e55193d1f61f0e7",
+          "bytes": 1417191,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke4/action_log.json"
+        },
+        "actual_physics_trace.npz": {
+          "sha256": "dfa5d48faae179e9f50e746ab2b468ced2f06a8edd6697eaf435ea72676dd2ef",
+          "bytes": 1063438,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke4/actual_physics_trace.npz"
+        },
+        "INDEPENDENT_TASK_AND_CONTACT.json": {
+          "sha256": "de9953ec1cdaecb4f1fb7560028842866cfdb65b350ac2e57c8d92291f8abbce",
+          "bytes": 7793,
+          "local_path": "/home/andyee/robot-research/ARES-Skilllab/runs/client_sci_pilot_20261027/smoke4/INDEPENDENT_TASK_AND_CONTACT.json"
+        }
+      },
+      "independent_success_case_ids": [
+        0,
+        1,
+        2,
+        6,
+        5,
+        7
+      ]
+    }
+  ],
+  "online_training_interactions": 32768,
+  "final_tests_evaluated": false,
+  "source_sha256": "8f16409732feb15081acba21101a35a50a48bb224b33a473885477c357c5186f"
+}

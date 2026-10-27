@@ -1,0 +1,10 @@
+method_a,method_b,seed,n,a_successes,b_successes,a_only_success,b_only_success,same_success_set,a_only_case_ids,b_only_case_ids
+B2,B1,31,32,30,30,0,0,True,[],[]
+B2,B1,41,32,30,29,1,0,False,[24],[]
+B2,B1,51,32,30,30,0,0,True,[],[]
+B3_measured_response_intervention,B3,31,32,30,30,0,0,True,[],[]
+B3_no_next_intervention,B3,31,32,30,30,0,0,True,[],[]
+B3_no_outcome_intervention,B3,31,32,30,30,0,0,True,[],[]
+B3,B2,31,32,30,30,0,0,True,[],[]
+B3,B2,41,32,30,30,0,0,True,[],[]
+B3,B2,51,32,30,30,0,0,True,[],[]

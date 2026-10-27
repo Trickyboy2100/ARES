@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "scope": "OWN_SYNTHETIC_CLIENT_DELIVERY",
+  "checks": {
+    "compiled_documents": [
+      {
+        "path": "01_CLIENT_PROPOSAL_CN.pdf",
+        "pages": 9,
+        "sha256": "9a0b6f3f5b6402f642e1d5363880c2121db686f944e252de850aa808cc4cc3b8"
+      },
+      {
+        "path": "07_MENTOR_BRIEF_CN.pdf",
+        "pages": 2,
+        "sha256": "2786210a4621b6b6983e410812a3010cf02c72036a1c2a75a82ef2240955881a"
+      },
+      {
+        "path": "02_PAPER_SEED/main.pdf",
+        "pages": 10,
+        "sha256": "014326e36d738feac80715603c67a430f870b0c279cb1e9ab61a915a8f10dc7e"
+      }
+    ],
+    "exact_paper_input_copies": 13,
+    "figure_inputs": 111,
+    "figure_outputs": 54,
+    "independently_audited_formal_runs": 27,
+    "model_member_hashes": 108,
+    "models_cpu_loaded": [
+      {
+        "run": "B1_seed31",
+        "cohort": "formal",
+        "sha256": "9e2349d738619b2a095e47c3ec15c73a25d2173bce67252f826828d2a9f5e69a",
+        "cpu_load": "PASS",
+        "parameters": 16903,
+        "recorded_interactions": 16384
+      },
+      {
+        "run": "B1_seed41",
+        "cohort": "formal",
+        "sha256": "e84f56190b30b6985f5ce26dbee5a2e086b07070cebd30be99e45087824aeda0",
+        "cpu_load": "PASS",
+        "parameters": 16903,
+        "recorded_interactions": 16384
+      },
+      {
+        "run": "B1_seed51",
+        "cohort": "formal",
+        "sha256": "582107cd6776a729d14c15270fc8c0bc8b9ef75aa8d49fc267b1e3ea6da71272",
+        "cpu_load": "PASS",
+        "parameters": 16903,
+        "recorded_interactions": 16384
+      },
+      {
+        "run": "B2_seed31",
+        "cohort": "formal",
+        "sha256": "76b62baf7da9617e22e4bf35ef6a4f103a834ace82666068f4bc2d8dc976aa8a",
+        "cpu_load": "PASS",
+        "parameters": 16903,
+        "recorded_interactions": 16384
+      },
+      {
+        "run": "B2_seed41",
+        "cohort": "formal",
+        "sha256": "b2ec272423ce34c429ca805aa1f6eec5c321ce9ee77d6c2ee223e5a3d45e05de",
+        "cpu_load": "PASS",
+        "parameters": 16903,
+        "recorded_interactions": 16384
+      },
+      {
+        "run": "B2_seed51",
+        "cohort": "formal",
+        "sha256": "9cdbdc050a6e52f3e4d07af58e322c752c843fb371d8073a884b8e65e040e720",
+        "cpu_load": "PASS",
+        "parameters": 16903,
+        "recorded_interactions": 16384
+      },
+      {
+        "run": "B3_no_next_seed31",
+        "cohort": "formal",
+        "sha256": "b25b241188aecb65e5a463e66165ddb3b3dd3c156a0f6c7d9616534b1068ddde",
+        "cpu_load": "PASS",
+        "parameters": 16903,
+        "recorded_interactions": 16384
+      },
+      {
+        "run": "B3_seed31",
+        "cohort": "formal",
+        "sha256": "fa7734762bd51c219b07db6725964293d97ce58c196d94891862852d3f8c05a3",
+        "cpu_load": "PASS",
+        "parameters": 16903,
+        "recorded_interactions": 16384
+      },
+      {
+        "run": "B3_seed41",
+        "cohort": "formal",
+        "sha256": "e56662799c35975766f3987b49081c245b789242458fc268bd21cecdf23573f8",
+        "cpu_load": "PASS",
+        "parameters": 16903,
+        "recorded_interactions": 16384
+      },
+      {
+        "run": "B3_seed51",
+        "cohort": "formal",
+        "sha256": "9ed8abf0f3b1b533d050f3f73099c37a44aca63fe57a18d0bf5e02cf53f87fd5",
+        "cpu_load": "PASS",
+        "parameters": 16903,
+        "recorded_interactions": 16384
+      },
+      {
+        "run": "B1_seed31",
+        "cohort": "pre_fix_software_diagnostic",
+        "sha256": "d131d5aa1a1051b55456ef0ac26cc26b837da0b0936ed5f500d04208c5fdc064",
+        "cpu_load": "PASS",
+        "parameters": 16903,
+        "recorded_interactions": 16384
+      },
+      {
+        "run": "B3_seed31",
+        "cohort": "pre_fix_software_diagnostic",
+        "sha256": "382f196b686d55b7c18799414366127693af898261e61d163d392304139f3535",
+        "cpu_load": "PASS",
+        "parameters": 16903,
+        "recorded_interactions": 16384
+      }
+    ],
+    "all_new_interactions_including_software_diagnostics": 196608,
+    "sealed_final_test_hashes_unchanged": true
+  },
+  "limitations": [
+    "Hash/load checks are not a robot safety certificate",
+    "PDF visual QA is separately recorded",
+    "No unobserved final-test outcome is inspected",
+    "Pilot is not convergence or new-method superiority proof"
+  ]
+}
