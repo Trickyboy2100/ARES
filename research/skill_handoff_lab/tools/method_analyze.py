@@ -89,23 +89,34 @@ def main():
     if release_pairs:csvout(out/'PYRAMID_RELEASE_CASES.csv',release_pairs)
     failure=[]
     for row in raw['rows']:
-        ordinal=(row['seeds'][0]-200000)//16;trace=json.loads((base/'validation64_r1'/f'{row["policy"]}_{ordinal:03d}.json').read_text());last,prev=trace['transitions'][-2:]
+        ordinal=(row['seeds'][0]-200000)//16;trace=json.loads((base/'validation64_r1'/f'{row["policy"]}_{ordinal:03d}.json').read_text());before,state=trace['transitions'][-2:]
         for j,seed in enumerate(row['seeds']):
             if row['success'][j]:continue
-            state=prev;before=last;phase=state['authority']['phase_before'][j];delta=np.array(state['cubeA'][j][:3])-np.array(state['cubeB'][j][:3]);velocity=(np.array(state['cubeA'][j][:3])-np.array(before['cubeA'][j][:3]))/.05
+            phase=state['authority']['phase_before'][j];delta=np.array(state['cubeA'][j][:3])-np.array(state['cubeB'][j][:3]);velocity=(np.array(state['cubeA'][j][:3])-np.array(before['cubeA'][j][:3]))/.05
             failure.append(dict(task='StackCube-v1',seed=seed,policy=row['policy'],phase_before_final_step=phase,diagnostic='PRE_PLACE_NOT_REACHED' if phase<4 else 'LOWERING_OR_PREPLACE_INCOMPLETE' if phase<6 else 'RELEASE_DWELL_INCOMPLETE' if phase==6 else 'NATIVE_FAILURE_AFTER_RELEASE',AB_xy_mm=float(np.linalg.norm(delta[:2])*1000),AB_height_mm=float(delta[2]*1000),finger_opening_mm=float(sum(state['q'][j][-2:])*1000),last_step_velocity_proxy_mm_s=float(np.linalg.norm(velocity)*1000),scope='Observed phase/state diagnostic, not a reconstructed native contact predicate'))
     csvout(out/'PHYSICAL_FAILURE_DIAGNOSTICS.csv',failure)
+    peg=[]
+    for folder in ['peg_authority_pilot','peg_tracking_r2','peg_feedback_r3']:
+        for r in physical[folder]['rows']:
+            label=r.get('policy',r.get('variant'));case=r['seed']-110000;trace_file=base/folder/f'case{case:03d}_{label}.json';trace=json.loads(trace_file.read_text());last=trace['transitions'][-1];error=last['info']['peg_head_pos_at_hole'][0];stop=r.get('failure')
+            peg.append(dict(folder=folder,seed=r['seed'],policy=label,native_success=r['success'],actual_steps=r['steps'],unused_native_budget=100-r['steps'],stop_reason='SUCCESS' if r['success'] else stop if stop in ['NATIVE_HORIZON','PLANNER_FAILURE'] else 'EXCEPTION' if stop else 'PROGRAM_END_BEFORE_SUCCESS',head_axial_mm=error[0]*1000,head_lateral_y_mm=error[1]*1000,head_lateral_z_mm=error[2]*1000,measured_finger_opening_mm=float(sum(last['q'][0][-2:])*1000),trajectory_sha256=sha(trace_file)))
+    csvout(out/'PEG_FAILURE_DIAGNOSTICS.csv',peg)
+
     csvout(out/'CONTROL_AUTHORITY_MAP.csv',authority)
     method_differences=np.array([[by[f'parameter_ppo_{s}'][c]-by[f'residual_ppo_{s}'][c] for c in cases] for s in [31,37,43]],float)
     rng=np.random.default_rng(20261028);boot=[]
     for _ in range(5000):
         selected_seeds=rng.integers(0,3,3);selected_groups=rng.integers(0,4,4);selected_cases=np.concatenate([np.arange(g*16,(g+1)*16) for g in selected_groups]);boot.append(method_differences[selected_seeds][:,selected_cases].mean())
     summary=dict(source_kind='NEW_NATIVE_PHYSICS_AND_TRAINING',task_scores=tables,training_control_interactions=614400,total_control_interactions=sum(r['control_interactions'] for r in cost),trained_PPO_models=6,ppo_actor_updates_verified=True,sealed_test_used=False,independent_method_increment='NOT_ESTABLISHED',parameter_minus_residual_mean_pp=float(method_differences.mean()*100),paired_hierarchical_ci95_pp=(np.quantile(boot,[.025,.975])*100).tolist(),statistical_unit='Shared case groups of16 + training seeds; not3x64 independent scenes',physical_folders={k:dict(task=v.get('task'),rows=len(v['rows']),interactions=v.get('physical_interactions')) for k,v in physical.items()},interpretation='Parameter PPO does not consistently beat ordinary Residual PPO; paired abstention does not improve nominal on current development data; strong fixed/CEM controls matter.')
+    summary['pyramid_design_results']={folder:{policy:dict(success=sum(r['success'] for r in physical[folder]['rows'] if r['policy']==policy),cases=sum(r['policy']==policy for r in physical[folder]['rows'])) for policy in sorted({r['policy'] for r in physical[folder]['rows']})} for folder in ['pyramid_paired_parameters','pyramid_release_control'] if folder in physical}
+    summary['pyramid_release_explanation']='Immediate first release has11/16 versus12/16 nominal, with1 rescue and2 regressions on the same16 DESIGN conditions; not a learned increment.'
     save(out/'RESULTS.json',summary)
     with (out/'RESULTS_TABLE.tex').open('w') as f:
-        f.write('\\begin{tabular}{lrrr}\\toprule\nPolicy & Success & Rescue & Regress \\\\\n\\midrule\n')
-        for r in tables:f.write(r['policy'].replace('_','\\_')+f" & {r['successes']}/{r['cases']} & {r['rescues']} & {r['regressions']} \\\\\n")
-        f.write('\\bottomrule\\end{tabular}\n')
+        f.write(r'\begin{tabular}{lrrrl}\toprule'+'\n'+r'Policy & Success & Rescue & Regress & $\Delta$pp [95\% grouped CI] \\'+'\n'+r'\midrule'+'\n')
+        for r in tables:
+            cells=[r['policy'].replace('_',r'\_'),f"{r['successes']}/{r['cases']}",str(r['rescues']),str(r['regressions']),f"{r['gain_pp']:+.2f} [{r['gain_group_ci95_low_pp']:+.2f}, {r['gain_group_ci95_high_pp']:+.2f}]"]
+            f.write(' & '.join(cells)+r' \\'+'\n')
+        f.write(r'\bottomrule\end{tabular}'+'\n')
     print(json.dumps({k:summary[k] for k in ['total_control_interactions','training_control_interactions','parameter_minus_residual_mean_pp','paired_hierarchical_ci95_pp','independent_method_increment']}))
 
 if __name__=='__main__':main()

@@ -22,16 +22,18 @@ def figures(args):
         fig,ax=plt.subplots(figsize=(12,7));fig.subplots_adjust(top=.74,bottom=.18,left=.12,right=.95);return fig,ax
     for name,kind in [('Fig1_system','system'),('Fig2_method','method')]:
         fig=plt.figure(figsize=(12,7));ax=fig.add_axes([.04,.13,.92,.62]);ax.set(xlim=(0,12),ylim=(0,6));ax.axis('off')
-        labels=(['Native task\nphysics / reward / horizon','Versioned skills\nlegal parameters','Actual commands\nobject effects','Native terminal\noutcome','Train-only paired\ncold-reset branches','Shared PPO / CEM\npaired vs absolute model'] if kind=='system' else ['Current state\nprevious physical effect','One legal place\nboundary decision','Three legal choices\nKEEP / lower / higher','Actual task suffix\nfull native outcome','Train-only supervision\npaired outcome delta','Empirical ensemble\nmean - SD > 0.05'])
-        positions=[(.25,3.8),(4.3,3.8),(8.3,3.8),(.25,.6),(4.3,.6),(8.3,.6)]
+        labels=(['Native task\nphysics / reward / horizon','Versioned skills\nlegal parameters','Actual commands\nobject effects','Native terminal\noutcome','Train-only paired\ncold-reset branches','Shared PPO / CEM\npaired vs absolute model'] if kind=='system' else ['Current state\nprevious physical effect','Ensemble estimate\npaired gain / uncertainty','Boundary decision\nKEEP / lower / higher','Actual task suffix\nfull native outcome','Train-only labels\nNO future labels at deployment','Fit paired / absolute\nsame model capacity'])
+        positions=[(.25,3.8),(4.3,3.8),(8.3,3.8),(8.3,.6),(4.3,.6),(.25,.6)]
         for i,((x,y),label) in enumerate(zip(positions,labels)):
             ax.add_patch(FancyBboxPatch((x,y),3.35,1.4,boxstyle='round,pad=.15',edgecolor='#3a7184',facecolor='#e5eff1'));ax.text(x+1.675,y+.7,label,ha='center',va='center',fontsize=13)
-        # Boundary-to-boundary arrows, avoiding text and crossing flows.
+        # Serpentine flow with arrows terminating outside node text.
         for before,after in [(0,1),(1,2),(3,4),(4,5)]:
-            x,y=positions[before];xx,yy=positions[after]
-            ax.annotate('',xy=(xx-.15,yy+.7),xytext=(x+3.5,y+.7),arrowprops=dict(arrowstyle='->',lw=1.8,color='#7895a5'))
-        ax.annotate('',xy=(1.925,2.15),xytext=(1.925,3.65),arrowprops=dict(arrowstyle='->',lw=1.8,color='#7895a5'))
-        ax.text(2.15,2.8,'full physical suffix',fontsize=10,color='#4a6071')
+            x,y=positions[before];xx,yy=positions[after];right=xx>x
+            ax.annotate('',xy=(xx-.15 if right else xx+3.5,yy+.7),xytext=(x+3.5 if right else x-.15,y+.7),arrowprops=dict(arrowstyle='->',lw=1.8,color='#7895a5'))
+        ax.annotate('',xy=(9.975,2.15),xytext=(9.975,3.65),arrowprops=dict(arrowstyle='->',lw=1.8,color='#7895a5'))
+        ax.text(7.6,2.8,'physical execution',fontsize=10,color='#4a6071')
+        ax.annotate('',xy=(4.3,3.65),xytext=(3.75,2.15),arrowprops=dict(arrowstyle='->',lw=1.5,ls='--',color='#4a8e7e'))
+        ax.text(.4,2.8,'train-only fitted models',fontsize=10,color='#4a8e7e')
         finish(fig,name,'Measured skill authority and outcome comparison' if kind=='system' else 'Implemented one-boundary selector (contextual bandit)', 'Implemented components only. No new PPO likelihood, no trained latent dynamics model, no claimed safety guarantee.\nThe empirical abstention mechanism is evaluated even when it yields no improvement.', ['method_stack_physics.py','method_outcome_selector.py','BENCHMARK_PROTOCOL.json'])
     # Native success uses full 0-100% axes; paired count plots carry small effects honestly.
     fig,ax=chart();labels=[r['policy'] for r in table];values=[r['success_rate']*100 for r in table];colors=['#346c86' if x.startswith('residual') else '#d2824b' if x.startswith('parameter') else '#4a8e7e' if x in ['paired','no_abstain'] else '#8796a3' for x in labels]
@@ -113,7 +115,9 @@ def figures(args):
             if folder.startswith('pyramid_video_'):
                 reference=load(runs/'pyramid_paired_parameters/RESULTS.json');original=next(r for r in reference['rows'] if r['seed']==case and r['policy']==policy)
                 assert initial_sha==original['initial_sha256'] and summary['success']==original['success']
-            vf="drawbox=x=0:y=0:w=iw:h=35:color=white:t=fill,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='"+title+"':fontcolor=black:fontsize=12:x=6:y=8"
+            header1=f'SAPIEN PhysX | {summary["task"]} | case {case}'
+            header2=f'{policy} | terminal success={int(summary["success"])} | NO PHYSICAL ROBOT'
+            vf="drawbox=x=0:y=0:w=iw:h=44:color=white:t=fill,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='"+header1+"':fontcolor=black:fontsize=11:x=5:y=4,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='"+header2+"':fontcolor=black:fontsize=10:x=5:y=24"
             subprocess.run(['ffmpeg','-v','error','-y','-i',str(file),'-vf',vf,'-an','-c:v','libx264','-crf','20',str(target)],check=True)
             video_receipts.append(dict(path='media/'+target.name,source=str(file),source_sha256=sha(file),sha256=sha(target),kind='ACTUAL_SAPIEN_EPISODE_WITH_DISPLAY_LABEL',physical_robot=False,task=summary['task'],case=case,policy=policy,initial_sha256=initial_sha,trajectory_source=str(raw_json),trajectory_sha256=sha(raw_json),native_terminal_success=summary['success']))
     comparisons=[('stack_rescue_200003','nominal_case200003.mp4','parameter_ppo_43_case200003.mp4'),('stack_regression_200006','nominal_case200006.mp4','parameter_ppo_43_case200006.mp4'),('selector_regression_200020','nominal_case200020.mp4','no_abstain_case200020.mp4'),('pyramid_release_control_122000','pyramid_paired_parameters_000_tracked_nominal.mp4','pyramid_release_control_000_released_nominal.mp4'),('pyramid_rescue_122007','pyramid_video_rescue_000_tracked_nominal.mp4','pyramid_video_rescue_000_first_dx_minus.mp4'),('pyramid_regression_122005','pyramid_video_regression_000_tracked_nominal.mp4','pyramid_video_regression_000_first_dx_minus.mp4')]
@@ -124,9 +128,22 @@ def figures(args):
         filt="[0:v]setpts=PTS-STARTPTS[l];[1:v]setpts=PTS-STARTPTS[r];[l][r]hstack=inputs=2:shortest=0,pad=iw:ih+36:0:36:white,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Same initial state - native 20Hz timing - shorter stream holds final frame':fontsize=18:fontcolor=black:x=8:y=8[v]"
         subprocess.run(['ffmpeg','-v','error','-y','-i',str(media/left),'-i',str(media/right),'-filter_complex',filt,'-map','[v]','-an','-c:v','libx264','-crf','20',str(target)],check=True)
         video_receipts.append(dict(path='media/'+target.name,source=[left,right],sha256=sha(target),kind='SYNCHRONIZED_SAME_CASE_ACTUAL_EPISODES',timing='20Hz native control; shorter completed program final frame held, not extra physics'))
+    for case,folder,name in [(122007,'pyramid_video_rescue','rescue'),(122005,'pyramid_video_regression','regression')]:
+        files=[media/f'{folder}_000_{policy}.mp4' for policy in ['tracked_nominal','first_dx_minus']]
+        canvas=Image.new('RGB',(2048,1160),'white');draw=ImageDraw.Draw(canvas);draw.text((18,9),f'ACTUAL SAPIEN / PhysX | Pyramid {case} | {name} | nominal above, -12mm below | last panel = terminal',font=font,fill='#203b51')
+        for row,file in enumerate(files):
+            count=int(json.loads(subprocess.check_output(['ffprobe','-v','error','-show_entries','stream=nb_frames','-of','json',str(file)]))['streams'][0]['nb_frames'])
+            for col,index in enumerate([9,39,79,count-1]):
+                canvas.paste(frame(file,index),(col*512,60+row*550));draw.text((col*512+8,60+row*550+516),f'Actual step {index+1}; t={(index+1)/20:.2f}s',font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',17),fill='#203b51')
+        target=figs/f'Fig10_pyramid_{name}.png';canvas.save(target);entries.append(dict(file='figures/'+target.name,source=[str(file.relative_to(out)) for file in files],source_kind='ACTUAL_NATIVE_SIMULATION_FRAMES',sha256=sha(target)))
     # Store exact plot sources and playback metadata, not fabricated image-generation assets.
     (out/'FIGURE_MANIFEST.json').write_text(json.dumps(dict(figures=entries,videos=video_receipts,renderer='Matplotlib / actual SAPIEN render frames; no generated robot imagery',source_kind='NEW_PHYSICAL_SIMULATION',sealed_test_opened=False),indent=2)+'\n')
     html='<!doctype html><meta charset="utf-8"><title>ARES方法演进证据</title><style>body{font:17px/1.7 system-ui;max-width:1400px;margin:35px auto;color:#203b51}img{width:100%}video{width:49%;max-height:550px}a{color:#237986}table{border-collapse:collapse}td,th{padding:8px;border-bottom:1px solid #ddd}</style><h1>ARES甲方SCI：方法演进真实证据</h1><p>本轮没有独立算法增量。普通Residual PPO仍是强基线；差分弃权选择未提高当前开发集成功率。封存测试未打开。所有视频为真实SAPIEN/PhysX运行，不是实机或状态动画。</p><p><a href="CLIENT_METHOD_UPDATE_CN.pdf">中文方案PDF</a> · <a href="PAPER_METHOD_EVOLUTION.pdf">英文论文草稿</a> · <a href="RESULTS.json">指标</a> · <a href="EXPERIMENT_RESULTS.csv">主表CSV</a> · <a href="CASE_PAIRED_CONFUSION.csv">逐案例配对</a> · <a href="REPRODUCE.md">复现</a></p>'
+    html+='<h2>先看同案例对比（完整实际视频）</h2><p>左：名义；右：候选。救回与退化均展示，统计见全表。Pyramid较短程序结束后仅保持末帧用于对照，不增加物理时长。</p>'
+    for entry in video_receipts:
+        if Path(entry['path']).name.startswith('PAIRED_'):
+            html+=f'<h3>{Path(entry["path"]).stem}</h3><video style="width:100%;max-height:650px" controls preload="none" src="{entry["path"]}"></video>'
+    html+='<h2>每张独立科学图（点击打开原图）</h2>'
     for entry in entries:html+=f'<h2>{Path(entry["file"]).stem}</h2><a href="{entry["file"]}"><img loading="lazy" src="{entry["file"]}"></a>'
     html+='<h2>实际模拟视频：完整单条素材</h2>'
     for entry in video_receipts:html+=f'<p>{entry["path"]}</p><video controls preload="none" src="{entry["path"]}"></video>'
@@ -158,7 +175,7 @@ def pdf(args):
         f'本轮实做：6组普通PPO模型，3个训练种子×2种动作接口，共614,400次在线控制交互；512训练条件×3条冷重置后缀共76,800次交互；另运行同76,800成本的CEM。所有实际试验与评价合计{result["total_control_interactions"]:,}次控制交互，计数范围见成本CSV。',
         '新64例开发评价：名义控制60/64，固定高度与CEM 62/64；普通Residual PPO为63、62、64/64，参数化PPO为62、63、60/64。参数化接口并未稳定优于普通残差。三种子共用案例，不能视为192个独立场景。',
         '差分模型结果：保守弃权60/64，去掉弃权62/64，去掉执行效果60/64、去掉后续目标59/64、同容量绝对结果模型60/64。单一预测/门控构件没有独立增量，不能包装成SCI新算法。',
-        '物理新证据：Pyramid原生250步任务中，官方规划器在4例完成4例。16例同初态参数对照为12/16、12/16、7/16；−12mm包含1次救回与1次退化，+12mm造成5次退化。第一层动作确实改变后续任务，而不是只改变TCP图。',
+        '物理新证据：Pyramid原生250步任务中，官方规划器在4例完成4例。16例同初态参数对照为12/16、12/16、7/16；−12mm包含1次救回与1次退化，+12mm造成5次退化。第一层动作确实改变后续任务。及时松爪消融11/16（1救回、2退化），偏置9/16、9/16，未改善总体。',
         '负结果与转向：Peg三轮原生100步试验仍仅1/8，接触/跟踪基线偏弱；手写Pyramid控制0/16，不能拿它当论文弱基线。下一研究对象已实测转为官方Pyramid技能后的状态/收益选择，尚未宣称其RL增益。',
         '决策：不再扩大原R3似然、不扩五种子、不打开封存测试。本轮state-based观察含仿真状态真值，非privileged感知、多模态迁移、JAKA硬件成功均未验证。ARES-R保持只读，未使用受限现场资料。']:
         y=text(paragraph,y)
@@ -171,7 +188,7 @@ def pdf(args):
     c.drawImage(str(out/'figures/Fig6a_native_results.png'),42,96,width=W-84,height=300,preserveAspectRatio=True)
     text('收益须超过强固定控制、同容量绝对价值与普通PPO；本轮尚未达到。图表不把开发集称为未见封存测试。',82,size=9)
     c.showPage();head('同案例实际视频帧：救回与退化都保留',4)
-    c.drawImage(str(out/'figures/Fig3a_stack_rescue.png'),42,390,width=W-84,height=315,preserveAspectRatio=True)
+    c.drawImage(str(out/'figures/Fig10_pyramid_rescue.png'),42,390,width=W-84,height=315,preserveAspectRatio=True)
     c.drawImage(str(out/'figures/Fig3b_stack_regression.png'),42,65,width=W-84,height=315,preserveAspectRatio=True)
     text('帧来自新的原生物理运行，与完整评价的初态哈希和终态逐项一致；不是状态动画，也不是实机。',H-88,size=9)
     c.showPage();head('可复现性、成本与下一轮收缩条件',5);y=H-88
@@ -180,6 +197,7 @@ def pdf(args):
         '模型：6组最终PPO、初始权重、4种选择器、真实轨迹保存在非Git运行目录。MODEL_INDEX.json列出SHA与loader；ACTOR_UPDATE_AUDIT.json证明Actor真实更新且已参与新物理评价。公开仓库仅含允许的模拟素材、源码、标量数据、哈希和复现脚本。',
         '公平性：本轮模型输入为显式state-based条件；差分与绝对模型使用相同容量、相同真实后缀。配对采集3条分支成本都单独计入；CEM以同等成本在训练条件选固定参数，不使用测试案例oracle。部分独立任务共用GPU0，壁钟时间不用于算法效率优劣判断。',
         '科学边界：新参数接口不是新PPO损失；M1为一次边界的contextual bandit，不是长程SMDP。ensemble标准差是经验不确定性，不是在线安全保证。只保留可反证机制，不因失败而放宽物理、horizon、reward或成功谓词。',
+        '补充实测：官方程序第一层移动后延迟到下一次接近才松爪。同16设计案例加入第一层及时松爪，11/16（1救回、2退化），两个偏置变体9/16、9/16；简单控制解释同样未改善。原始handoff漂移和动作保留，未把这组设计复用当独立测试。',
         '下一轮只做：基于Pyramid已有双向可控证据，将第一层实际执行后果与下一技能状态绑定，比较同权限规则、普通参数PPO、绝对价值、配对差分与搜索。先确认有独立收益，再扩5种子与完全封存测试；Peg先完成可靠抓持/姿态/入口跟踪基线，JAKA暂不进入成功迁移主表。']:
         y=text(paragraph,y)
     c.save();print('CLIENT_METHOD_UPDATE_CN.pdf generated')
