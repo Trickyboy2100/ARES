@@ -90,6 +90,8 @@ Pyramid官方planner在单env CPU优化路径可能是速度瓶颈：不能静�
 **推进与最后交付：**
 在研究成果目录 `research/skill_handoff_lab/deliverables/client_sci_20261027/11_PAPER_FIRST_20261028/` 输出 `00_PAPER_THESIS.md`、`PHYSICAL_SKILL_BOUNDARY_SPEC.md`、`OPPORTUNITY_STUDY.csv`、`METHOD_AND_BASELINES.md`、`ONLINE_RL_RESULTS.csv`、`CASEWISE_EFFECTS.csv`、`VIDEOS/index.html`（视频大文件留非Git）、`FIGURES/*.pdf/*.png`、`LATEX/*.tex`、`MENTOR_DECISION_CN.pdf`和源码/模型/场景SHA索引。同步维护现有01客户中文方案和02英文论文（不能把新设想写成已测算法）。少量技术图是论文证据，不因为想展示多视频就生成不必要模型/训练。`STORAGE_CLEANUP_REPORT.md`实际清理无引用/重复大ckpt，正式模型/物理负结果/原始轨迹/受限现场资料不删；不改Git历史或生产ARES-R。
 
+**论文文字审核特别事项**：`PAPER_METHOD_EVOLUTION.tex` 当前的RAPS书目短标题“Robot Learning with Spatially Abstracted Primitives”不是原论文标题；正式标题为 *Accelerating Robotic Reinforcement Learning via Parameterized Action Primitives*（Dalal等，NeurIPS2021）。必须核实并修订全部reference作者/会议/年份/DOI和引用范围。最新ICML2026 DAWN (*What Makes Value Learning Efficient in Residual Reinforcement Learning?*, https://proceedings.mlr.press/v306/ma26s.html)直接研究ResidualRL critic的base-data anchor和LayerNorm；若实验切到SAC/value learning，须纳入强基线而非将其已有做法视为创新。Foresight Residual RL（https://arxiv.org/abs/2607.16506）已明确优化下游技能成功的terminal state，ViSkill/STAP亦然；须形成更具体的可执行Skill Contract、实测后果反馈或跨任务独立机制贡献，**缺少这些证据时不可称原创**。
+
 **最终应向用户解释**：这篇论文只解决什么具体问题；两个RL决策与单次参数分类有什么区别；第一阶段真的完整结束了吗；新的可执行参数在哪些真实物理条件下改善了后续可行性；强基线为什么没有同样解决；训练了多少、每种子结果如何、是否跨场景/任务成立；能直接打开哪些同案例视频/论文表；离可投稿还缺什么。
 
 **执行原则：**允许Codex自主尝试有实际依据的算法与物理参数，但始终服务上述一篇论文。强planner、原生终态、真实物理与任务分布不可为制造正结果而削弱。不要无界审计/文献搜索、不要持续盲训Stack64、不要把16设计案例的15/16 oracle并集写成RL胜利。优先跑出新训练集上的实际可控handoff与两个边界RL原型，然后再决定方法方向。
