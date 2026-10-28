@@ -1,0 +1,50 @@
+"""Version the compact public evidence; retain full raw physics/videos non-Git."""
+import argparse,csv,gzip,hashlib,json,shutil,subprocess
+from pathlib import Path
+
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def main():
+ p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args();root,out=a.root.resolve(),a.output.resolve();workspace=root.parents[1];rows=[]
+ for name in ['boundary_smoke_r1','boundary_smoke_r2','vector_smoke_r3','vector_smoke_r4','vector_smoke_r5','opportunity64','development64']:
+  f=root/name/'RESULTS.json';d=json.loads(f.read_text());cost=d.get('physical_interactions',sum(r.get('steps',0) for r in d.get('rows',[])));rows.append(dict(phase=name,physical_interactions=cost,kind='formal' if name in ['opportunity64','development64'] else 'engineering',source=str(f),sha256=sha(f)))
+ for f in sorted(root.glob('ppo_*/HISTORY.json')):
+  h=json.loads(f.read_text());rows.append(dict(phase=f.parent.name,physical_interactions=h[-1]['physical_interactions'],kind='ablation' if h[-1]['mode']!='full' else 'online_main',source=str(f),sha256=sha(f)))
+ rows.extend([dict(phase='vector_smoke_r1',physical_interactions=0,kind='engineering',source='Rigid transform fault before first env.step'),dict(phase='vector_smoke_r2',physical_interactions=1152,kind='engineering',source='72 completed steps x16; both saved MP4 streams independently have72 frames; full16-env trajectory absent')])
+ ledger=dict(total_external_control_interactions=sum(r['physical_interactions'] for r in rows),engineering_interactions=sum(r['physical_interactions'] for r in rows if r['kind']=='engineering'),rows=rows,counting='External native control transitions; includes all250 batch padding steps, excludes internal reset settling, CPU fits, tests and graphics-only replay',gpu_memory_snapshot_MiB=3234,gpu_memory_snapshot_scope='Single in-evaluation nvidia-smi sample; NOT a measured peak',driver_changes=False)
+ assert next(r for r in rows if r['phase']=='development64')['physical_interactions']==240000
+ (out/'COST_LEDGER.json').write_text(json.dumps(ledger,indent=2)+'\n');data=out/'REPRO_DATA';data.mkdir(exist_ok=True);models=out/'MODELS';models.mkdir(exist_ok=True);mi=[]
+ for f in sorted(root.glob('ppo_*/model_*.pt'))+[root/'prior/prior.pt']:
+  target=models/(f.parent.name+'_'+f.name);shutil.copyfile(f,target);mi.append(dict(file=str(target.relative_to(out)),sha256=sha(target),bytes=target.stat().st_size,source=str(f),source_sha256=sha(f)))
+ (out/'MODEL_INDEX.json').write_text(json.dumps(mi,indent=2)+'\n')
+ for name in ['opportunity64','development64']:
+  f=root/name/'RESULTS.json'
+  with gzip.open(data/(name+'_RESULTS.json.gz'),'wb') as z:z.write(f.read_bytes())
+ for f in [root/'visuals/SELECTED_ORIGINAL_STATES.json.gz',root/'visuals/RENDER_MANIFEST.json',workspace/'reports/single_paper_20261028/RUNTIME.json']:
+  if f.exists():shutil.copyfile(f,data/f.name)
+ phases=out/'SOURCE_PHASES';phases.mkdir(exist_ok=True)
+ for folder in ['source_r1','source_e0','source_main_training','source_eval']:
+  for f in (root/folder).glob('*.py'):shutil.copyfile(f,phases/(folder+'_'+f.name))
+ raw=[]
+ for f in sorted(root.rglob('*')):
+  if f.is_file() and 'cache' not in f.parts and 'visuals' not in f.parts and 'preserved_current_documents' not in f.parts:raw.append(dict(file=str(f),sha256=sha(f),bytes=f.stat().st_size))
+ (out/'RAW_SOURCE_INDEX.json').write_text(json.dumps(raw,indent=2)+'\n')
+ scene=[]
+ for name in ['opportunity64','development64']:
+  for r in json.loads((root/name/'RESULTS.json').read_text())['rows']:scene.append(dict(split=name,seeds=r['seeds'],policy=r.get('method',r.get('policy')),initial_state_batch_sha256=r['initial_sha256'],trajectory_sha256=r['trajectory_sha256']))
+ (out/'SCENE_SHA_INDEX.json').write_text(json.dumps(scene,indent=2)+'\n');tools=out.parents[2]/'tools';source=[dict(file=str(f),sha256=sha(f)) for f in sorted(tools.glob('handoff*')) if f.is_file()];(out/'SOURCE_SHA_INDEX.json').write_text(json.dumps(source,indent=2)+'\n')
+ videos=out/'VIDEOS';videos.mkdir(exist_ok=True);entries=json.loads((root/'visuals/RENDER_MANIFEST.json').read_text());cards=[]
+ labels={'verified_A_changes_downstream':'前段均已松爪稳定：不同支撑状态影响同一后缀','same_posterior_second_decision':'前段后验完全相同：第二决策改变真实抓取结果','trained_policy_rescue':'已训练策略同案例：候选救回普通PPO失败','trained_policy_regression':'已训练策略同案例：候选破坏普通PPO成功'}
+ for e in entries:
+  frame=e['keyframes'][-2];shutil.copyfile(root/'visuals'/frame,videos/frame);url=(root/'visuals'/e['video']).as_uri();cards.append(f'<article><h2>{labels[e["name"]]}</h2><p>Case {e["seed"]} · {" / ".join(e["policies"])}</p><video controls preload="metadata" poster="{frame}" src="{url}"></video><p>Original recorded physical states; graphics-only replay. Max state readback error {e["max_state_readback_error"]:.2g}. Selected qualitative example, not an extra statistical sample.</p></article>')
+ stats=json.loads((out/'STATISTICAL_SUMMARY.json').read_text());ci=stats['candidate_minus_ordinary']['reset_batch_and_seed_bootstrap_ci_pp'];html='''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARES单篇论文物理证据</title><style>body{font:16px/1.6 system-ui,sans-serif;background:#eff3f6;color:#173547;max-width:1200px;margin:auto;padding:30px}h1{font-size:32px}article{background:white;padding:24px;margin:22px 0;border-radius:12px}video{width:100%;max-height:750px;background:#101d2b}img{max-width:100%}.note{border-left:5px solid #b9562c;padding:18px;background:#fff3e9}a{color:#176987}</style><h1>真实技能边界、实际物理后果与公平RL对照</h1><p class="note">公开Panda / 原生StackPyramid-v1；不是实机。普通PPO三种子51/53/56，候选51/54/55；平均差0。当前风险正则没有可靠独立增益。以下保留救回与退化，不用成功影片替代统计。</p><p>原始录像大文件保留在非Git运行目录；本机可直接播放。跨机器需携带visuals目录，或用公开的SELECTED_ORIGINAL_STATES.json.gz重新渲染。影片使用保存的真实关节/物体状态，不生成理想化TCP路径，不产生新实验结果。</p>'''+''.join(cards)
+ html+='<article><h2>完整图表与数据</h2><p><a href="../MENTOR_DECISION_CN.pdf">中文研究判断</a> · <a href="../LATEX/PAPER_SKILL_HANDOFF.pdf">英文论文工作稿</a> · <a href="../DEVELOPMENT_RESULTS.csv">所有方法/种子结果</a> · <a href="../CASEWISE_EFFECTS.csv">逐案例救回与退化</a> · <a href="../COST_LEDGER.json">真实交互成本</a></p>'
+ for f in sorted((out/'FIGURES').glob('*.png')):html+=f'<h3>{f.stem}</h3><a href="../FIGURES/{f.stem}.pdf"><img src="../FIGURES/{f.name}" loading="lazy"></a>'
+ html+='</article></html>';(videos/'index.html').write_text(html)
+ # Local primary opening page: rewrite relative evidence links to absolute file
+ # references while keeping the videos alongside it for portable local playback.
+ local=html
+ for e in entries:local=local.replace((root/'visuals'/e['video']).as_uri(),e['video']);local=local.replace(f'poster="{e["keyframes"][-2]}"',f'poster="{e["keyframes"][-2]}"')
+ local=local.replace('href="../',f'href="{out.as_uri()}/').replace('src="../',f'src="{out.as_uri()}/');(root/'visuals/OPEN_ME.html').write_text(local)
+ (out/'README.md').write_text(f'''# Single-paper skill-handoff evidence\n\nStart with [VIDEOS/index.html](VIDEOS/index.html). On the collection host open `{root}/visuals/OPEN_ME.html` for four playable, same-case comparisons and all figures. Videos are graphics-only renders of original measured states (maximum readback discrepancy1.2e-7), not new physics outcomes. Two are training-design interventions; two are posthoc learned-policy rescue/regression examples.\n\nMain result: ordinary PPO51/53/56; candidate51/54/55 on the same64 unseen development scenes. Mean difference0pp, seed/reset-batch95% descriptive bootstrap interval [{ci[0]:.3f},{ci[1]:.3f}]pp. No independent method benefit established. Nine new physical predecessor cases and18 second-boundary contexts establish executable physical opportunity, not a novel algorithm.\n\nNew external control interactions: {ledger['total_external_control_interactions']:,}. All250-step padding, engineering failures,144k common collection,288k main RL,48k ablations and240k evaluation are counted. Actual single-GPU memory sample3234MiB is not a peak measurement. Full trajectories remain at `{root}` with RAW_SOURCE_INDEX hashes. ARES-R was mounted read-only and network namespace contained loopback only; runtime evidence is in REPRO_DATA/RUNTIME.json.\n\nMODELS includes every final main/ablation checkpoint, matched16k checkpoints and the shared prior; MODEL_INDEX lists exact SHA. REPRO_DATA includes actual structured train/development results and four original single-environment state-pair traces. SOURCE_PHASES preserves exact E0/main-training snapshots; source-index hashes identify current scripts. The native public URDF/SRDF hashes are pinned in RUNTIME.json.\n\nFull reproduction: from this worktree run `bash research/skill_handoff_lab/tools/handoff_reproduce.sh /absolute/new/run/path`. It performs NEW real physics collection/training/evaluation, approximately720k external interactions excluding engineering probes; requires the workspace runtime layout described in METHOD_AND_BASELINES.md and pinned public ManiSkill. No site binaries or restricted assets are needed. MPLib0.1.1 exposes no global RNG seed through its installed Python API; bounded RRT fallback is a stochastic component. Strict matching plan reuse aligns paired prefixes, but additional planner repeats would be needed for publication-grade repeatability. Sampling/planner/GPU numerics can diverge on a different stack; report differences rather than replacing them with saved outcomes. Selected videos can be reconstructed without new physics using handoff_render_saved.py.\n\nRead MENTOR_DECISION_CN.md and LATEX/PAPER_SKILL_HANDOFF.tex for the one-paper scientific claim, tested candidate and honest limitations. The sealed scene pool remains unopened; second task/five-seed expansion is deferred until independent benefit exists. No final PPT is produced.\n''')
+ print(json.dumps(dict(total=ledger['total_external_control_interactions'],engineering=ledger['engineering_interactions'],models=len(mi),raw_files=len(raw)),indent=2))
+if __name__=='__main__':main()
