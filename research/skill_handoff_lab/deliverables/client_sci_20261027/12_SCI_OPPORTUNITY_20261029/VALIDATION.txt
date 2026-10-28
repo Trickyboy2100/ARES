@@ -1,0 +1,9 @@
+/home/andyee/miniconda3/envs/jnl263_round42_maniskill/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.045s
+
+OK
+
+Physical evidence: all 26 trajectory SHA256 checks, native250/4000-step batch checks, same-reset SHA checks, 31 identical handoff observations in tracking intervention; total 104000 steps. All assertions passed in handoff_science_report.py. Original design prefixes: 362 comparisons including q/qvel/all actor poses and velocities, maximum difference 0. All four GPU processes exited 0. Three figures visually reviewed; symlog preserves the large displacement outlier. Training phase1 and phase2 snapshots match checkpoint source hashes.

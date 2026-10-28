@@ -1,0 +1,929 @@
+{
+  "scope": "DESIGN data; finite tested-action hindsight ceiling, not policy performance",
+  "episodes": 576,
+  "case_count": 64,
+  "matrix": [
+    [
+      59,
+      56,
+      56
+    ],
+    [
+      55,
+      52,
+      55
+    ],
+    [
+      58,
+      58,
+      56
+    ]
+  ],
+  "outcome_location": {
+    "native_success": 505,
+    "predecessor_not_verified": 33,
+    "successor_did_not_complete": 36,
+    "both_local_contracts_pass_native_fails": 2
+  },
+  "failure_errors": {
+    "A_BOUNDARY_NOT_VERIFIED": 15,
+    "C_NOT_GRASPED": 28,
+    "None": 2,
+    "C_BOUNDARY_NOT_VERIFIED": 4,
+    "C_LOST_ON_LIFT": 4,
+    "A_NOT_GRASPED": 18
+  },
+  "nominal": 52,
+  "best_fixed": 59,
+  "oracle_A_Cnom": 60,
+  "oracle_C_Anom": 57,
+  "joint_oracle": 62,
+  "oracle_C_by_fixed_A": [
+    60,
+    57,
+    59
+  ],
+  "risk": {
+    "all": {
+      "tokens": 735,
+      "positive": 13,
+      "unique_positive_cases": 12,
+      "by_stage": {
+        "0": {
+          "tokens": 192,
+          "positive": 5
+        },
+        "1": {
+          "tokens": 543,
+          "positive": 8
+        }
+      }
+    },
+    "non_reference": {
+      "tokens": 490,
+      "positive": 13,
+      "unique_positive_cases": 12,
+      "by_stage": {
+        "0": {
+          "tokens": 128,
+          "positive": 5
+        },
+        "1": {
+          "tokens": 362,
+          "positive": 8
+        }
+      }
+    }
+  },
+  "identical_suffix_start_contexts": 181,
+  "max_suffix_observation_difference": 0.0,
+  "cases": [
+    {
+      "seed": 420000,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420001,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420002,
+      "nominal": 0,
+      "oracle_A_Cnom": 0,
+      "oracle_C_Anom": 0,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": [
+        0,
+        2
+      ]
+    },
+    {
+      "seed": 420003,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420004,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420005,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420006,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420007,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420008,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420009,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": true,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420010,
+      "nominal": 0,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": true,
+      "successor_action_sensitive_prefixes": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "seed": 420011,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420012,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420013,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420014,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420015,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420016,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420017,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420018,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420019,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": [
+        2
+      ]
+    },
+    {
+      "seed": 420020,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420021,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420022,
+      "nominal": 0,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": true,
+      "successor_action_sensitive_prefixes": [
+        1
+      ]
+    },
+    {
+      "seed": 420023,
+      "nominal": 0,
+      "oracle_A_Cnom": 0,
+      "oracle_C_Anom": 0,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": [
+        0
+      ]
+    },
+    {
+      "seed": 420024,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420025,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420026,
+      "nominal": 0,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": true,
+      "successor_action_sensitive_prefixes": [
+        1
+      ]
+    },
+    {
+      "seed": 420027,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": [
+        2
+      ]
+    },
+    {
+      "seed": 420028,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420029,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420030,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": [
+        0
+      ]
+    },
+    {
+      "seed": 420031,
+      "nominal": 0,
+      "oracle_A_Cnom": 0,
+      "oracle_C_Anom": 0,
+      "joint_oracle": 0,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420032,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420033,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420034,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420035,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420036,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": true,
+      "successor_action_sensitive_prefixes": [
+        0
+      ]
+    },
+    {
+      "seed": 420037,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420038,
+      "nominal": 0,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": true,
+      "successor_action_sensitive_prefixes": [
+        1
+      ]
+    },
+    {
+      "seed": 420039,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420040,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420041,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420042,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420043,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420044,
+      "nominal": 0,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 0,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": true,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420045,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420046,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420047,
+      "nominal": 0,
+      "oracle_A_Cnom": 0,
+      "oracle_C_Anom": 0,
+      "joint_oracle": 0,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420048,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420049,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420050,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420051,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": [
+        1
+      ]
+    },
+    {
+      "seed": 420052,
+      "nominal": 0,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": true,
+      "successor_action_sensitive_prefixes": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "seed": 420053,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420054,
+      "nominal": 0,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 0,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420055,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420056,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420057,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420058,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420059,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420060,
+      "nominal": 0,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 0,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": true,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420061,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420062,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": []
+    },
+    {
+      "seed": 420063,
+      "nominal": 1,
+      "oracle_A_Cnom": 1,
+      "oracle_C_Anom": 1,
+      "joint_oracle": 1,
+      "verified_A_different_suffix_outcomes": false,
+      "successor_action_sensitive_prefixes": [
+        1
+      ]
+    }
+  ],
+  "local_native_mismatches": [
+    {
+      "seed": 420010,
+      "a": 0,
+      "c": 1,
+      "boundaries": [
+        {
+          "valid": true,
+          "stage": 0,
+          "step": 73,
+          "opening_m": 0.0799759030342102,
+          "not_grasped": true,
+          "objects_static": true,
+          "robot_static": true,
+          "target_xy_error_m": 0.007780693623908415,
+          "on_table": true,
+          "height_error_m": -0.0020000414252281176,
+          "actor_table_force_N": 0.6278399229049683,
+          "C_A_force_N": 0.0,
+          "C_B_force_N": 0.0,
+          "AB_distance_m": 0.05856814235448837,
+          "native_AB_margin_m": 0.0030004001404354275,
+          "A": [
+            -0.033737801015377045,
+            0.013727385550737381,
+            0.01999995857477188,
+            0.6291687488555908,
+            6.497698905150173e-06,
+            1.587149881743244e-06,
+            0.7772687077522278
+          ],
+          "B": [
+            0.022803867235779762,
+            0.029000481590628624,
+            0.019999882206320763,
+            0.9099809527397156,
+            5.871550001756987e-06,
+            -7.655769877601415e-06,
+            0.4146499037742615
+          ],
+          "C": [
+            0.02705817110836506,
+            0.09336941689252853,
+            0.019999800249934196,
+            0.9803849458694458,
+            3.175461870341678e-06,
+            -1.0767569619929418e-05,
+            -0.19709181785583496
+          ],
+          "predicted_centered_min_overlap_m2": 0.00036950801017027494,
+          "actual_min_overlap_m2": 0.0,
+          "consecutive_valid_steps": 3,
+          "requested": -1.0,
+          "clipped": -1.0,
+          "applied_rad": -1.5707963267948966,
+          "goal": [
+            -0.026379004292161647,
+            0.01625469717685779,
+            0.022
+          ],
+          "physical_steps": 73
+        },
+        {
+          "valid": true,
+          "stage": 1,
+          "step": 143,
+          "opening_m": 0.07997582852840424,
+          "not_grasped": true,
+          "objects_static": true,
+          "robot_static": true,
+          "target_xy_error_m": 0.006726418621838093,
+          "on_table": false,
+          "height_error_m": -0.003000304102897644,
+          "actor_table_force_N": 0.0,
+          "C_A_force_N": 0.3165663778781891,
+          "C_B_force_N": 0.32889753580093384,
+          "AB_distance_m": 0.06267464905977249,
+          "native_AB_margin_m": -0.0011061065648486912,
+          "A": [
+            -0.03373851627111435,
+            0.013731027953326702,
+            0.020000284537672997,
+            0.629170835018158,
+            -2.749630766629707e-05,
+            2.502865572751034e-05,
+            0.7772669792175293
+          ],
+          "B": [
+            0.028062256053090096,
+            0.02416062355041504,
+            0.019999932497739792,
+            0.9162642359733582,
+            -1.564776357554365e-05,
+            -3.2345276849810034e-05,
+            0.4005741775035858
+          ],
+          "C": [
+            -0.009523292072117329,
+            0.018220173195004463,
+            0.059999652206897736,
+            0.9999998807907104,
+            -9.071292879525572e-05,
+            -1.2518773473857436e-05,
+            0.0003983706992585212
+          ],
+          "predicted_centered_min_overlap_m2": 0.00029857055898519495,
+          "actual_min_overlap_m2": 0.00011429611262110411,
+          "consecutive_valid_steps": 3,
+          "requested": 0.0,
+          "clipped": 0.0,
+          "applied_rad": 0.0,
+          "goal": [
+            -0.002835901454091072,
+            0.01894371770322323,
+            0.06299995630979538
+          ],
+          "physical_steps": 70
+        }
+      ]
+    },
+    {
+      "seed": 420023,
+      "a": 2,
+      "c": 0,
+      "boundaries": [
+        {
+          "valid": true,
+          "stage": 0,
+          "step": 79,
+          "opening_m": 0.07998423278331757,
+          "not_grasped": true,
+          "objects_static": true,
+          "robot_static": true,
+          "target_xy_error_m": 0.007788011938104446,
+          "on_table": true,
+          "height_error_m": -0.0020000153481960284,
+          "actor_table_force_N": 0.6278305053710938,
+          "C_A_force_N": 0.0,
+          "C_B_force_N": 0.0,
+          "AB_distance_m": 0.05797195807099342,
+          "native_AB_margin_m": 0.003596584423930377,
+          "A": [
+            -0.05725526809692383,
+            -0.1512165069580078,
+            0.01999998465180397,
+            0.9993681907653809,
+            5.290615717967739e-06,
+            -3.881494649249362e-06,
+            0.035541683435440063
+          ],
+          "B": [
+            0.0007166862487792969,
+            -0.15123510360717773,
+            0.019999807700514793,
+            0.883545994758606,
+            8.555344720662106e-06,
+            -5.7251800171798095e-06,
+            0.4683443605899811
+          ],
+          "C": [
+            -0.0343623161315918,
+            -0.0907135009765625,
+            0.019999925047159195,
+            0.2613302171230316,
+            -4.439280019141734e-06,
+            -5.76276715946733e-06,
+            -0.9652494192123413
+          ],
+          "predicted_centered_min_overlap_m2": 0.00037821201001147684,
+          "actual_min_overlap_m2": 0.0,
+          "consecutive_valid_steps": 3,
+          "requested": 1.0,
+          "clipped": 1.0,
+          "applied_rad": 1.5707963267948966,
+          "goal": [
+            -0.05024125700687469,
+            -0.15460129326983388,
+            0.022
+          ],
+          "physical_steps": 79
+        },
+        {
+          "valid": true,
+          "stage": 1,
+          "step": 134,
+          "opening_m": 0.07998058199882507,
+          "not_grasped": true,
+          "objects_static": true,
+          "robot_static": true,
+          "target_xy_error_m": 0.005844909697771072,
+          "on_table": false,
+          "height_error_m": -0.0029958337545394897,
+          "actor_table_force_N": 0.0,
+          "C_A_force_N": 0.4124360978603363,
+          "C_B_force_N": 0.21724407374858856,
+          "AB_distance_m": 0.06349170207977295,
+          "native_AB_margin_m": -0.001923159584849149,
+          "A": [
+            -0.05725574493408203,
+            -0.15121841430664062,
+            0.020000208169221878,
+            0.9993680119514465,
+            3.894848850904964e-05,
+            -1.7988699255511165e-05,
+            0.035545554012060165
+          ],
+          "B": [
+            0.006177425384521484,
+            -0.1539440155029297,
+            0.020000338554382324,
+            0.8717843890190125,
+            2.9935546990600415e-05,
+            -7.6364221968106e-06,
+            0.48988965153694153
+          ],
+          "C": [
+            -0.030492305755615234,
+            -0.1494760513305664,
+            0.06000415235757828,
+            0.17374448478221893,
+            7.138529326766729e-06,
+            2.5207253884218517e-07,
+            -0.9847906827926636
+          ],
+          "predicted_centered_min_overlap_m2": 0.0002798807544187323,
+          "actual_min_overlap_m2": 0.00017282368690892656,
+          "consecutive_valid_steps": 3,
+          "requested": -1.0,
+          "clipped": -1.0,
+          "applied_rad": -0.35,
+          "goal": [
+            -0.025539398193359375,
+            -0.15257954597473145,
+            0.06299998611211777
+          ],
+          "physical_steps": 55
+        }
+      ]
+    }
+  ]
+}

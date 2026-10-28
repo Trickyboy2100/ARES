@@ -44,7 +44,10 @@ class VectorHandoff:
             raise SkillFailure('PLANNER_'+label+':'+result['status'])
         if not cache_hit:self.plan_cache[key]=(state.copy(),target.copy(),{k:(v.copy() if isinstance(v,np.ndarray) else v) for k,v in result.items()})
         positions=result['position'];self.plans.append(dict(env=i,stage=int(self.stage[i]),step=self.steps,label=label,start_q=q.tolist(),target_p=pose.p.tolist(),target_q=pose.q.tolist(),position=positions.tolist(),planning_wall_s=wall,fallback_rrt=fallback,plan_cache_hit=bool(cache_hit)))
-        indices=list(range(0,len(positions),3))
+        # Diagnostic override; default retains the ee44ec8 executor exactly.
+        stride=getattr(self,'path_stride_by_label',{}).get(label,3)
+        assert stride in (1,2,3)
+        indices=list(range(0,len(positions),stride))
         if indices[-1]!=len(positions)-1:indices.append(len(positions)-1)
         for index in indices:yield np.r_[positions[index],self.grip[i]],label
         for _ in range(6):

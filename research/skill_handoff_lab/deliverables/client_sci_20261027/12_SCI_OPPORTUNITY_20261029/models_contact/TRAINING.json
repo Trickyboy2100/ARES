@@ -1,0 +1,16 @@
+{
+  "contract_contact": {
+    "1": {
+      "n_fit": 402,
+      "n_cal": 141,
+      "cal_brier_vs_observed_suffix": 0.07190285830069248,
+      "note": "observed terminal return"
+    },
+    "0": {
+      "n_fit": 144,
+      "n_cal": 48,
+      "cal_brier_vs_observed_suffix": 0.0699403144213066,
+      "note": "stage0 fitted backup estimates optimal suffix, not observed uniform suffix; Brier not same estimand"
+    }
+  }
+}

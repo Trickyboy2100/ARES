@@ -1,0 +1,129 @@
+{
+  "total_new_physics_steps": 104000,
+  "new_physics_episodes": 416,
+  "offline_models_trained": 5,
+  "optimizer_steps": 3000,
+  "tracking_probe": [
+    {
+      "batch": 0,
+      "baseline": 14,
+      "full_samples": 14,
+      "rescues": 0,
+      "regressions": 0,
+      "identical_observed_handoffs": true
+    },
+    {
+      "batch": 3,
+      "baseline": 14,
+      "full_samples": 13,
+      "rescues": 0,
+      "regressions": 1,
+      "identical_observed_handoffs": true
+    }
+  ],
+  "contact_same_process": {
+    "fitted_value": 29,
+    "contract_contact": 29,
+    "rescues": 0,
+    "regressions": 0,
+    "cases": 32,
+    "scope": "Same-process paired comparison, shared strict-state plan cache"
+  },
+  "table": [
+    {
+      "method": "nominal",
+      "cases": 32,
+      "success": 30,
+      "rescues": 0,
+      "regressions": 0,
+      "A_verified": 30,
+      "suffix_failures": 0
+    },
+    {
+      "method": "rule",
+      "cases": 32,
+      "success": 30,
+      "rescues": 1,
+      "regressions": 1,
+      "A_verified": 30,
+      "suffix_failures": 0
+    },
+    {
+      "method": "fixed",
+      "cases": 32,
+      "success": 30,
+      "rescues": 1,
+      "regressions": 1,
+      "A_verified": 30,
+      "suffix_failures": 0
+    },
+    {
+      "method": "ordinary_ppo",
+      "cases": 32,
+      "success": 29,
+      "rescues": 1,
+      "regressions": 2,
+      "A_verified": 30,
+      "suffix_failures": 1
+    },
+    {
+      "method": "supervised",
+      "cases": 32,
+      "success": 30,
+      "rescues": 0,
+      "regressions": 0,
+      "A_verified": 30,
+      "suffix_failures": 0
+    },
+    {
+      "method": "fitted_value",
+      "cases": 32,
+      "success": 30,
+      "rescues": 0,
+      "regressions": 0,
+      "A_verified": 30,
+      "suffix_failures": 0
+    },
+    {
+      "method": "contract",
+      "cases": 32,
+      "success": 30,
+      "rescues": 0,
+      "regressions": 0,
+      "A_verified": 30,
+      "suffix_failures": 0
+    },
+    {
+      "method": "contract_no_history",
+      "cases": 32,
+      "success": 30,
+      "rescues": 0,
+      "regressions": 0,
+      "A_verified": 30,
+      "suffix_failures": 0
+    },
+    {
+      "method": "contract_contact",
+      "cases": 32,
+      "success": 29,
+      "rescues": 0,
+      "regressions": 1,
+      "A_verified": 30,
+      "suffix_failures": 1
+    }
+  ],
+  "train_seeds": [
+    420000,
+    420047
+  ],
+  "calibration_seeds": [
+    420048,
+    420063
+  ],
+  "development_seeds": [
+    530000,
+    530031
+  ],
+  "contact_variant": "Adapted after first results; same reused development cases, not unseen evaluation",
+  "sealed_test_opened": false
+}

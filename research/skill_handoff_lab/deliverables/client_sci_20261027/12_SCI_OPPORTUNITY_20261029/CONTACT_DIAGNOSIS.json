@@ -1,0 +1,55 @@
+{
+  "planner_calls": 6518,
+  "failed_plans": 0,
+  "recorded_prefix_state_comparisons": 362,
+  "recorded_prefix_max_abs_difference": 0.0,
+  "scope": "Post-execution association; no causal proof or policy input",
+  "groups": {
+    "0": {
+      "tcp_target_error_mm": {
+        "median": 6.631460245763729,
+        "q90": 11.744220460070974
+      },
+      "tcp_cube_xy_mm": {
+        "median": 4.28922858810747,
+        "q90": 6.249898405495507
+      },
+      "cube_moved_since_handoff_mm": {
+        "median": 3.7463448941369775,
+        "q90": 5.9646431614004785
+      },
+      "handoff_nearest_obstacle_center_mm": {
+        "median": 158.89410383246977,
+        "q90": 306.57110556978495
+      },
+      "finger_opening_mm": {
+        "median": 42.8910069167614,
+        "q90": 44.33831386268139
+      },
+      "n": 515
+    },
+    "1": {
+      "tcp_target_error_mm": {
+        "median": 35.16842735840315,
+        "q90": 37.2924485094414
+      },
+      "tcp_cube_xy_mm": {
+        "median": 26.81523213982686,
+        "q90": 98.1340169584638
+      },
+      "cube_moved_since_handoff_mm": {
+        "median": 22.342344493618302,
+        "q90": 97.45417844744118
+      },
+      "handoff_nearest_obstacle_center_mm": {
+        "median": 63.72989296973329,
+        "q90": 204.17958125528207
+      },
+      "finger_opening_mm": {
+        "median": 0.0,
+        "q90": 0.0
+      },
+      "n": 28
+    }
+  }
+}

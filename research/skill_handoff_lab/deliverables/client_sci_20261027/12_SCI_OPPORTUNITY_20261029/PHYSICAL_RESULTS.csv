@@ -1,0 +1,10 @@
+method,cases,success,rescues,regressions,A_verified,suffix_failures
+nominal,32,30,0,0,30,0
+rule,32,30,1,1,30,0
+fixed,32,30,1,1,30,0
+ordinary_ppo,32,29,1,2,30,1
+supervised,32,30,0,0,30,0
+fitted_value,32,30,0,0,30,0
+contract,32,30,0,0,30,0
+contract_no_history,32,30,0,0,30,0
+contract_contact,32,29,0,1,30,1
