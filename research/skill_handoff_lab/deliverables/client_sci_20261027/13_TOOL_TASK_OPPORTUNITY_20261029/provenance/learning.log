@@ -1,0 +1,39 @@
+/home/andyee/miniconda3/envs/jnl263_round42_maniskill/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/andyee/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-tj1esodm because there was an issue with the default path ({configdir}); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+{
+  "prefix_availability_mismatches": 3,
+  "prefix_backup": "each actual rollout; no assumed identical prefix",
+  "prefix_max_difference": 11.437105417251587,
+  "training_cases": 12,
+  "physical_grid_episodes": 108,
+  "stage_tokens": [
+    108,
+    104
+  ],
+  "best_fixed": [
+    1,
+    0
+  ],
+  "fixed_successes": 5.0,
+  "finite_observed_union": 11.0,
+  "losses": {
+    "supervised": {
+      "1": 0.08988169580698013,
+      "0": 0.33617764711380005
+    },
+    "fitted_q": {
+      "1": 0.08988169580698013,
+      "0": 0.3939465284347534
+    },
+    "margin_fitted_q": {
+      "1": 0.1396940052509308,
+      "0": 0.3881549835205078
+    }
+  },
+  "training_epochs": 300,
+  "seed": 20261029,
+  "train_scope": "12 design cases, no development cases",
+  "auxiliary": "measured terminal position / angle tolerance margins; no future input at deployment"
+}

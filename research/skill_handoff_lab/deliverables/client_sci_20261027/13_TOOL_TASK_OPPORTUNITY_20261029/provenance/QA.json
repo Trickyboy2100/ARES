@@ -1,0 +1,30 @@
+{
+  "archive_members": 400,
+  "archive_sha256": "all match",
+  "python_compile": "PASS",
+  "videos": {
+    "charger_handoff.mp4": {
+      "width": 1280,
+      "height": 720,
+      "duration": "10.050000",
+      "nb_frames": "201"
+    },
+    "pull_grasp.mp4": {
+      "width": 1280,
+      "height": 720,
+      "duration": "5.050000",
+      "nb_frames": "101"
+    }
+  },
+  "render_pose_readback": "PASS",
+  "review": "Pull final frame and Charger camera candidates inspected; changed Charger to unobstructed side view; final figures individually saved",
+  "physical_results": {
+    "episodes": 388,
+    "recorded_steps": 56400,
+    "initial_pair_groups": 72,
+    "native_horizon_and_criterion": "PASS",
+    "pose_action_finiteness": "PASS",
+    "initial_state_hash_pairing": "PASS",
+    "recorded_file_hashes": "PASS"
+  }
+}

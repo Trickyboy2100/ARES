@@ -1,0 +1,36 @@
+[
+  {
+    "video": "pull_grasp.mp4",
+    "source": [
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/pull_tool_20261029/design8_v4_retry/712000_g0.035_y0.00.json.gz",
+        "sha256": "840ca9b056fcd311ab8e825fb5ce12241f6facf6ce16cc17c908be5e1fad05e3"
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/pull_tool_20261029/design8_v4_retry/712000_g0.105_y0.00.json.gz",
+        "sha256": "f7a150ab80a10bbc7e355b59e549ca3af289b4b0f8cb8c37aec20de691ec2f1f"
+      }
+    ],
+    "physics_steps": 0,
+    "frames": 101,
+    "max_state_readback_error": 1.1920928955078125e-07,
+    "pose_source": "measured per-step joint and actor poses; unrecorded velocities not reconstructed; graphics only"
+  },
+  {
+    "video": "charger_handoff.mp4",
+    "source": [
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/pull_tool_20261029/charger_design4/721000_a45.0_d0.05.json.gz",
+        "sha256": "95e873dbc7b654c7598d06cf1e430d568af97168c32283fd97517943e7db7277"
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/pull_tool_20261029/charger_design4/721000_a45.0_d0.075.json.gz",
+        "sha256": "df971ef11035db556b901b3ad4fc0cd16d2bdea3b1c9ee6e0c886ae12e33a809"
+      }
+    ],
+    "physics_steps": 0,
+    "frames": 201,
+    "max_state_readback_error": 1.1920928955078125e-07,
+    "pose_source": "measured per-step joint and actor poses; unrecorded velocities not reconstructed; graphics only"
+  }
+]

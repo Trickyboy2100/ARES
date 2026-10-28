@@ -1,0 +1,15 @@
+{
+  "torch": "2.7.0+cu128",
+  "numpy": "1.26.4",
+  "sapien": "3.0.3",
+  "mplib": "0.1.1",
+  "gymnasium": "1.4.0",
+  "matplotlib": "3.11.1",
+  "trimesh": "4.12.2",
+  "transforms3d": "0.4.2",
+  "python": "3.11.15",
+  "maniskill_commit": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+  "base_commit": "8f201b5ac6c5c920008b5e41c81814f7f73bb413",
+  "gpu": "single local RTX3080",
+  "isolation": "handoff_offline.sh: unshare-net/ipc; ARES-R read-only; GPU0"
+}

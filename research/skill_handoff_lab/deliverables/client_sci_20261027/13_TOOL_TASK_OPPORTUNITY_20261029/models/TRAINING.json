@@ -1,0 +1,35 @@
+{
+  "prefix_availability_mismatches": 3,
+  "prefix_backup": "each actual rollout; no assumed identical prefix",
+  "prefix_max_difference": 11.437105417251587,
+  "training_cases": 12,
+  "physical_grid_episodes": 108,
+  "stage_tokens": [
+    108,
+    104
+  ],
+  "best_fixed": [
+    1,
+    0
+  ],
+  "fixed_successes": 5.0,
+  "finite_observed_union": 11.0,
+  "losses": {
+    "supervised": {
+      "1": 0.08988169580698013,
+      "0": 0.33617764711380005
+    },
+    "fitted_q": {
+      "1": 0.08988169580698013,
+      "0": 0.3939465284347534
+    },
+    "margin_fitted_q": {
+      "1": 0.1396940052509308,
+      "0": 0.3881549835205078
+    }
+  },
+  "training_epochs": 300,
+  "seed": 20261029,
+  "train_scope": "12 design cases, no development cases",
+  "auxiliary": "measured terminal position / angle tolerance margins; no future input at deployment"
+}

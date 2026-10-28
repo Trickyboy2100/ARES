@@ -1,0 +1,18 @@
+/home/andyee/miniconda3/envs/jnl263_round42_maniskill/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/home/andyee/robot-research/ARES-Skilllab/worktrees/ares-sci-single-paper-skill-handoff-20261028/research/skill_handoff_lab/tools/charger_probe.py", line 70, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/worktrees/ares-sci-single-paper-skill-handoff-20261028/research/skill_handoff_lab/tools/charger_probe.py", line 58, in main
+    else:strong(env,seed,angle,standoff,mode!='open_loop')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/worktrees/ares-sci-single-paper-skill-handoff-20261028/research/skill_handoff_lab/tools/charger_probe.py", line 42, in strong
+    move(goal*sapien.Pose([-standoff,0,0])*attached.inv(),f'ALIGN_FEEDBACK_{k}')
+  File "/home/andyee/robot-research/ARES-Skilllab/worktrees/ares-sci-single-paper-skill-handoff-20261028/research/skill_handoff_lab/tools/charger_probe.py", line 28, in move
+    if p.move_to_pose_with_screw(target,refine_steps=4)==-1:raise Failure('PLAN_'+label)
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/worktrees/ares-sci-single-paper-skill-handoff-20261028/research/skill_handoff_lab/tools/pull_tool_physics.py", line 54, in move_to_pose_with_screw
+    if idx[-1]!=len(r['position'])-1:idx.append(len(r['position'])-1)
+       ~~~^^^^
+IndexError: list index out of range

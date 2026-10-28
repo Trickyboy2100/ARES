@@ -1,0 +1,31 @@
+/home/andyee/miniconda3/envs/jnl263_round42_maniskill/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[33;1m2026-10-29 06:48:34,460 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-29 06:48:34,542 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/mani-skill/ManiSkill/issues/421.[0m
+[33;1m2026-10-29 06:48:34,543 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/mani-skill/ManiSkill/issues/421.[0m
+[33;1m2026-10-29 06:48:35,022 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-29 06:48:35,030 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/mani-skill/ManiSkill/issues/421.[0m
+[33;1m2026-10-29 06:48:35,031 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/mani-skill/ManiSkill/issues/421.[0m
+Traceback (most recent call last):
+  File "/home/andyee/robot-research/ARES-Skilllab/worktrees/ares-sci-single-paper-skill-handoff-20261028/research/skill_handoff_lab/tools/pull_tool_physics.py", line 127, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/worktrees/ares-sci-single-paper-skill-handoff-20261028/research/skill_handoff_lab/tools/pull_tool_physics.py", line 113, in main
+    else:strong(env,seed,gx,ya,hy,feedback=mode!='open_loop',rule=mode=='rule')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/worktrees/ares-sci-single-paper-skill-handoff-20261028/research/skill_handoff_lab/tools/pull_tool_physics.py", line 67, in strong
+    tool=sp(u.l_shape_tool);closing=np.array([0.,1.,0.]);closing*=1 if np.dot(closing,quat2mat(sp(u.agent.tcp).q)[:,1])>=0 else -1;g=u.agent.build_grasp_pose(np.array([0,0,-1]),closing,tool.p+np.array([grasp_x,0,0]));move(g*sapien.Pose([0,0,-.065]),'REACH');move(g,'DESCEND');p.close_gripper(t=6)
+                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/worktrees/ares-sci-single-paper-skill-handoff-20261028/research/skill_handoff_lab/tools/pull_tool_physics.py", line 65, in move
+    if p.move_to_pose_with_screw(pose)==-1:raise Failure('PLAN_'+label)
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/worktrees/ares-sci-single-paper-skill-handoff-20261028/research/skill_handoff_lab/tools/pull_tool_physics.py", line 56, in move_to_pose_with_screw
+    return self.follow_path(r,refine_steps=kwargs.get('refine_steps',0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/external/benchmark_scout_20261027/ManiSkill/mani_skill/examples/motionplanning/two_finger_gripper/motionplanner.py", line 52, in follow_path
+    obs, reward, terminated, truncated, info = self.env.step(action)
+                                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andyee/robot-research/ARES-Skilllab/worktrees/ares-sci-single-paper-skill-handoff-20261028/research/skill_handoff_lab/tools/pull_tool_physics.py", line 29, in step
+    if len(self.records)>=self.horizon:raise Horizon('NATIVE_HORIZON')
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'int' and 'NoneType'
