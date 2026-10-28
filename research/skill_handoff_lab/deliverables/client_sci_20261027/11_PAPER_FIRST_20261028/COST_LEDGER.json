@@ -1,0 +1,134 @@
+{
+  "total_external_control_interactions": 786543,
+  "engineering_interactions": 66543,
+  "rows": [
+    {
+      "phase": "boundary_smoke_r1",
+      "physical_interactions": 2509,
+      "kind": "engineering",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/boundary_smoke_r1/RESULTS.json",
+      "sha256": "1af364bced19614ac794f2cddd848d79125a3d92b4c82757accccdb9ba860c5b"
+    },
+    {
+      "phase": "boundary_smoke_r2",
+      "physical_interactions": 2882,
+      "kind": "engineering",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/boundary_smoke_r2/RESULTS.json",
+      "sha256": "84b335f5ab72ab3fe1a8b4a198e529a646278c52f3f0dbbe7971c64e063caa39"
+    },
+    {
+      "phase": "vector_smoke_r3",
+      "physical_interactions": 20000,
+      "kind": "engineering",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/vector_smoke_r3/RESULTS.json",
+      "sha256": "a39a88e80301571123e059f8ca9f259c13fb67420ce8d321b31f96d8b4ea522e"
+    },
+    {
+      "phase": "vector_smoke_r4",
+      "physical_interactions": 20000,
+      "kind": "engineering",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/vector_smoke_r4/RESULTS.json",
+      "sha256": "c5d8f81ab50133d78b9cce546cd3243f9dcff7e07a2e7bd4eacc85830d493b9b"
+    },
+    {
+      "phase": "vector_smoke_r5",
+      "physical_interactions": 20000,
+      "kind": "engineering",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/vector_smoke_r5/RESULTS.json",
+      "sha256": "0df004260e1ffddb8d467b7e62d901d89a3177bd988e1581cee955a96b46cb5b"
+    },
+    {
+      "phase": "opportunity64",
+      "physical_interactions": 144000,
+      "kind": "formal",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/opportunity64/RESULTS.json",
+      "sha256": "2ef4ad8770bdad0db04265e8f4f3e9d5eab908575bb47ccf2d912b400a217c3b"
+    },
+    {
+      "phase": "development64",
+      "physical_interactions": 240000,
+      "kind": "formal",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/development64/RESULTS.json",
+      "sha256": "df375537646b79a56f76b2f1e1749aba8048d6d0de81ee1f6666ff6fa5e91cbf"
+    },
+    {
+      "phase": "ppo_s31_b0_full",
+      "physical_interactions": 48000,
+      "kind": "online_main",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/ppo_s31_b0_full/HISTORY.json",
+      "sha256": "7329d11f9a3e79dff5d06f382015226a63aee5effad58c30ceca227fa3212ece"
+    },
+    {
+      "phase": "ppo_s31_b2_full",
+      "physical_interactions": 48000,
+      "kind": "online_main",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/ppo_s31_b2_full/HISTORY.json",
+      "sha256": "ea9202d1e0c8823b2ade210ff7a295a0b339f1ed2fb15bec700132062c5de395"
+    },
+    {
+      "phase": "ppo_s31_b2_no_next",
+      "physical_interactions": 16000,
+      "kind": "ablation",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/ppo_s31_b2_no_next/HISTORY.json",
+      "sha256": "900fb963e22e6839d8b4cc13dde2969521583be2adce2a6ef95589aa0bf03185"
+    },
+    {
+      "phase": "ppo_s31_b2_no_posterior",
+      "physical_interactions": 16000,
+      "kind": "ablation",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/ppo_s31_b2_no_posterior/HISTORY.json",
+      "sha256": "9ea202b5264396b885bd2cfdccaf75d5b9ef3b946954132acd8717696b5a711a"
+    },
+    {
+      "phase": "ppo_s31_b2_no_second",
+      "physical_interactions": 16000,
+      "kind": "ablation",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/ppo_s31_b2_no_second/HISTORY.json",
+      "sha256": "04fae8e8c0cebc80ab393b2fa26e9fc15f82b9bd6746e9f9ea4861a2a069c4bc"
+    },
+    {
+      "phase": "ppo_s37_b0_full",
+      "physical_interactions": 48000,
+      "kind": "online_main",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/ppo_s37_b0_full/HISTORY.json",
+      "sha256": "21af0197a0ffca00f6dcdc949873387000967e8e97c3e358fbdbf2f8e055a527"
+    },
+    {
+      "phase": "ppo_s37_b2_full",
+      "physical_interactions": 48000,
+      "kind": "online_main",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/ppo_s37_b2_full/HISTORY.json",
+      "sha256": "456e2ac6e26e74d532c43d32e7b99fdab59729b0440b22b7da7d15ff1da97bba"
+    },
+    {
+      "phase": "ppo_s43_b0_full",
+      "physical_interactions": 48000,
+      "kind": "online_main",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/ppo_s43_b0_full/HISTORY.json",
+      "sha256": "90db5a309bf61728a55a4fa6954abf9ccf54e1e38c27034421861a09b5a4282f"
+    },
+    {
+      "phase": "ppo_s43_b2_full",
+      "physical_interactions": 48000,
+      "kind": "online_main",
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/ppo_s43_b2_full/HISTORY.json",
+      "sha256": "27c72d658d9a1d672272a8f5f2d06a23fc02530be6620161b80a4ba2208e2bc0"
+    },
+    {
+      "phase": "vector_smoke_r1",
+      "physical_interactions": 0,
+      "kind": "engineering",
+      "source": "Rigid transform fault before first env.step"
+    },
+    {
+      "phase": "vector_smoke_r2",
+      "physical_interactions": 1152,
+      "kind": "engineering",
+      "source": "72 completed steps x16; both saved MP4 streams independently have72 frames; full16-env trajectory absent"
+    }
+  ],
+  "counting": "External native control transitions; includes all250 batch padding steps, excludes internal reset settling, CPU fits, tests and graphics-only replay",
+  "gpu_memory_snapshot_MiB": 3234,
+  "gpu_memory_snapshot_scope": "Single in-evaluation nvidia-smi sample; NOT a measured peak",
+  "driver_changes": false
+}

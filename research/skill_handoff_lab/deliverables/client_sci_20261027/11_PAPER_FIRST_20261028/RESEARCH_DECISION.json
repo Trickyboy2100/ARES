@@ -1,0 +1,23 @@
+{
+  "decision": "NO RELIABLE INDEPENDENT METHOD INCREMENT; not ready for SCI method submission",
+  "robust_pilot_increment": false,
+  "candidate_minus_ordinary": {
+    "mean_difference_pp": 0.0,
+    "seed_differences": [
+      0,
+      1,
+      -1
+    ],
+    "case_and_seed_bootstrap_ci_pp": [
+      -3.6458333333333335,
+      3.6458333333333335
+    ],
+    "reset_batch_and_seed_bootstrap_ci_pp": [
+      -3.125,
+      4.166666666666666
+    ]
+  },
+  "sealed_test": "UNOPENED",
+  "second_task": "NOT_STARTED_PENDING_INDEPENDENT_INCREMENT",
+  "submission_ready": false
+}

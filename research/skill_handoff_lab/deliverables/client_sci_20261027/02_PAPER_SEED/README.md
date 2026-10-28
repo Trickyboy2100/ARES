@@ -1,7 +1,3 @@
-# English working manuscript
+# Current single-paper manuscript
 
-Run `bash build.sh` in this directory with a standard user TeX installation (pdflatex/BibTeX or latexmk). This is an editable generic two-column article, not an accepted-journal template. `main.pdf` is the compiled result. Eight sections, bibliography, PDF figures and editable LaTeX tables are included. Figure-generation code/data/provenance are in sibling `03_FIGURES/`.
-
-The initial draft deliberately distinguishes historical verified results, implemented pilots, and hypotheses. Old v6b tests have already been read and must not choose new hyperparameters. All tasks described in the public experiment are synthetic/state-based PhysX, not October field scenes, a measured tray, real grasping or hardware safety validation. Update the pilot table only from actual run artifacts and independently accepted outcomes; do not copy expected numbers into it.
-
-Alternative broader working title (only if outcome-aware mechanism earns independent evidence): *Task-Conditioned Outcome-Aware Parameterized Skill Reinforcement Learning for Multi-Stage Robotic Manipulation*. Current narrower title is preferred because that advantage is not yet established.
+Compile11_PAPER_FIRST_20261028/LATEX/PAPER_SKILL_HANDOFF.tex from its own LATEX directory; main.pdf is the synchronized current manuscript. The wrapper main.tex can also be compiled from02_PAPER_SEED; figure/table roots are resolved explicitly. Historical source/PDFs are preserved under runs/single_paper_20261028/preserved_current_documents. No old results have been relabeled as new.

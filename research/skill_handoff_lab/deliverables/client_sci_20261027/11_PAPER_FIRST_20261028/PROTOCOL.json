@@ -1,0 +1,47 @@
+{
+  "version": "pilot_v1",
+  "task": "StackPyramid-v1",
+  "native_horizon": 250,
+  "train_design": [
+    420000,
+    420063
+  ],
+  "fit": [
+    420000,
+    420047
+  ],
+  "calibration": [
+    420048,
+    420063
+  ],
+  "train_pool": [
+    420000,
+    420511
+  ],
+  "development": [
+    520000,
+    520063
+  ],
+  "sealed_unopened": [
+    620000,
+    620127
+  ],
+  "seeds": [
+    31,
+    37,
+    43
+  ],
+  "updates": 12,
+  "episodes_per_update": 16,
+  "ablation_updates": 4,
+  "beta": [
+    0,
+    2
+  ],
+  "gamma": 1,
+  "source_hashes": {
+    "handoff_vector.py": "dba81cf9d7735682a6626a90c6ee784aca00dc787f128d56483230b61d1156be",
+    "handoff_physics.py": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f",
+    "handoff_learn.py": "cc27f9369e1f530dfe6d85793c7165dfe77feb29527b20564e4d95c0663a9562"
+  }
+}

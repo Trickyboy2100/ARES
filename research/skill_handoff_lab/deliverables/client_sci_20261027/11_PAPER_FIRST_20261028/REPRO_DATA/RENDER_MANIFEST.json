@@ -1,0 +1,144 @@
+[
+  {
+    "name": "verified_A_changes_downstream",
+    "seed": 420010,
+    "policies": [
+      "A0_C1",
+      "A2_C1"
+    ],
+    "sources": [
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/opportunity64/000_A0_C1.json",
+        "sha256": "fedddf0661b3b3f8abb638909c18ef59cec92e75e75a3b1a44194027a9e6fe31",
+        "policy": "A0_C1",
+        "model_sha256": null
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/opportunity64/000_A2_C1.json",
+        "sha256": "adcc890e1d08664c3da31596924a86f9753ab2e6d7400264e6d9bd28b39c3904",
+        "policy": "A2_C1",
+        "model_sha256": null
+      }
+    ],
+    "video": "verified_A_changes_downstream.mp4",
+    "video_sha256": "3be6d4fc6e750a6f5d6643082dd57238bc5399ab669a0e42e86386b4f7042757",
+    "keyframes": [
+      "verified_A_changes_downstream_step000.png",
+      "verified_A_changes_downstream_step045.png",
+      "verified_A_changes_downstream_step080.png",
+      "verified_A_changes_downstream_step110.png",
+      "verified_A_changes_downstream_step160.png",
+      "verified_A_changes_downstream_step250.png"
+    ],
+    "max_state_readback_error": 1.1920928955078125e-07,
+    "physics_steps": 0,
+    "replay_kind": "graphics-only original measured state replay; not a new experiment"
+  },
+  {
+    "name": "same_posterior_second_decision",
+    "seed": 420002,
+    "policies": [
+      "A0_C0",
+      "A0_C1"
+    ],
+    "sources": [
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/opportunity64/000_A0_C0.json",
+        "sha256": "5feede24fd13271d3d34c1628e3ee7e560933d115d2327d9a47a2147ab392d73",
+        "policy": "A0_C0",
+        "model_sha256": null
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/opportunity64/000_A0_C1.json",
+        "sha256": "fedddf0661b3b3f8abb638909c18ef59cec92e75e75a3b1a44194027a9e6fe31",
+        "policy": "A0_C1",
+        "model_sha256": null
+      }
+    ],
+    "video": "same_posterior_second_decision.mp4",
+    "video_sha256": "739b0dd4014b25d340a5efdcb3bee72c38414f687d4e8259a9317dbcef8f8d56",
+    "keyframes": [
+      "same_posterior_second_decision_step000.png",
+      "same_posterior_second_decision_step045.png",
+      "same_posterior_second_decision_step080.png",
+      "same_posterior_second_decision_step110.png",
+      "same_posterior_second_decision_step160.png",
+      "same_posterior_second_decision_step250.png"
+    ],
+    "max_state_readback_error": 1.1920928955078125e-07,
+    "physics_steps": 0,
+    "replay_kind": "graphics-only original measured state replay; not a new experiment"
+  },
+  {
+    "name": "trained_policy_rescue",
+    "seed": 520005,
+    "policies": [
+      "ppo_s37_b0_full",
+      "ppo_s37_b2_full"
+    ],
+    "scope": "posthoc qualitative dev example, not an extra statistical sample",
+    "sources": [
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/development64/ppo_s37_b0_full_0.trace.json.gz",
+        "sha256": "6dee12c2e3e993daa10ab93ec2a80bfd29a8a2115ccb60dab935a9a835ab9228",
+        "policy": "ppo_s37_b0_full",
+        "model_sha256": "20314bbe3c187a9cde5cb63908bebdd28db5c0eb469b514a3f0400ff4394d04e"
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/development64/ppo_s37_b2_full_0.trace.json.gz",
+        "sha256": "d433e57adda243e549a752ac9668f364c6c29a4b768a7ff65ebee3b75fbd93d3",
+        "policy": "ppo_s37_b2_full",
+        "model_sha256": "bf5abcb96e01092137e6136093c65a36a9d8538b454325db8fed8372e47f02b5"
+      }
+    ],
+    "video": "trained_policy_rescue.mp4",
+    "video_sha256": "f928a39540c58503ec80adc949b593827e4d7720c76a608e577f68b41d25f2cd",
+    "keyframes": [
+      "trained_policy_rescue_step000.png",
+      "trained_policy_rescue_step045.png",
+      "trained_policy_rescue_step080.png",
+      "trained_policy_rescue_step110.png",
+      "trained_policy_rescue_step160.png",
+      "trained_policy_rescue_step250.png"
+    ],
+    "max_state_readback_error": 1.1920928955078125e-07,
+    "physics_steps": 0,
+    "replay_kind": "graphics-only original measured state replay; not a new experiment"
+  },
+  {
+    "name": "trained_policy_regression",
+    "seed": 520001,
+    "policies": [
+      "ppo_s43_b0_full",
+      "ppo_s43_b2_full"
+    ],
+    "scope": "posthoc qualitative dev example, not an extra statistical sample",
+    "sources": [
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/development64/ppo_s43_b0_full_0.trace.json.gz",
+        "sha256": "b5f6f457c8d3cbf86b16a78383f43e248353e6180988e136addcae9a58b9f03d",
+        "policy": "ppo_s43_b0_full",
+        "model_sha256": "887544025736b669a04823c1acb6be936c09e0efa1176440645f1c3366e1a3cd"
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/single_paper_20261028/development64/ppo_s43_b2_full_0.trace.json.gz",
+        "sha256": "8a2cce2ce746477190fe7125a3a7a8a7d8a9fd40797f9fd5b024fa1adbabc927",
+        "policy": "ppo_s43_b2_full",
+        "model_sha256": "cb9fe7b4ef20fcc671ce83f18aa1f74d4d09f5f247a853c6e67ab9c113223246"
+      }
+    ],
+    "video": "trained_policy_regression.mp4",
+    "video_sha256": "686072719f51f24e074dc5fca0e7920f011a499c22343ede9bb39adff57bc873",
+    "keyframes": [
+      "trained_policy_regression_step000.png",
+      "trained_policy_regression_step045.png",
+      "trained_policy_regression_step080.png",
+      "trained_policy_regression_step110.png",
+      "trained_policy_regression_step160.png",
+      "trained_policy_regression_step250.png"
+    ],
+    "max_state_readback_error": 1.1920928955078125e-07,
+    "physics_steps": 0,
+    "replay_kind": "graphics-only original measured state replay; not a new experiment"
+  }
+]

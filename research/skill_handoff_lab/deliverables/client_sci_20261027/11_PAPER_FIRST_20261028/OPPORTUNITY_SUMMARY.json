@@ -1,0 +1,177 @@
+{
+  "n": 64,
+  "nominal_success": 52,
+  "best_fixed": 59,
+  "hindsight_union": 62,
+  "current_verified_downstream_different_cases": [
+    420009,
+    420010,
+    420022,
+    420026,
+    420036,
+    420038,
+    420044,
+    420052,
+    420060
+  ],
+  "identical_posterior_C_choice_different_outcome": [
+    [
+      420002,
+      0
+    ],
+    [
+      420002,
+      2
+    ],
+    [
+      420010,
+      0
+    ],
+    [
+      420010,
+      1
+    ],
+    [
+      420010,
+      2
+    ],
+    [
+      420019,
+      2
+    ],
+    [
+      420022,
+      1
+    ],
+    [
+      420023,
+      0
+    ],
+    [
+      420026,
+      1
+    ],
+    [
+      420027,
+      2
+    ],
+    [
+      420030,
+      0
+    ],
+    [
+      420036,
+      0
+    ],
+    [
+      420038,
+      1
+    ],
+    [
+      420051,
+      1
+    ],
+    [
+      420052,
+      0
+    ],
+    [
+      420052,
+      1
+    ],
+    [
+      420052,
+      2
+    ],
+    [
+      420063,
+      1
+    ]
+  ],
+  "prefix_comparison_n": 181,
+  "prefix_max_abs_difference": 0.0,
+  "grid": [
+    {
+      "A_action": 0,
+      "C_action": 0,
+      "n": 64,
+      "A_verified": 61,
+      "native_success": 59,
+      "verified_program_success": 59,
+      "conditional_success": 0.9672131147540983
+    },
+    {
+      "A_action": 0,
+      "C_action": 1,
+      "n": 64,
+      "A_verified": 61,
+      "native_success": 56,
+      "verified_program_success": 57,
+      "conditional_success": 0.9180327868852459
+    },
+    {
+      "A_action": 0,
+      "C_action": 2,
+      "n": 64,
+      "A_verified": 61,
+      "native_success": 56,
+      "verified_program_success": 56,
+      "conditional_success": 0.9180327868852459
+    },
+    {
+      "A_action": 1,
+      "C_action": 0,
+      "n": 64,
+      "A_verified": 60,
+      "native_success": 55,
+      "verified_program_success": 55,
+      "conditional_success": 0.9166666666666666
+    },
+    {
+      "A_action": 1,
+      "C_action": 1,
+      "n": 64,
+      "A_verified": 60,
+      "native_success": 52,
+      "verified_program_success": 52,
+      "conditional_success": 0.8666666666666667
+    },
+    {
+      "A_action": 1,
+      "C_action": 2,
+      "n": 64,
+      "A_verified": 60,
+      "native_success": 55,
+      "verified_program_success": 55,
+      "conditional_success": 0.9166666666666666
+    },
+    {
+      "A_action": 2,
+      "C_action": 0,
+      "n": 64,
+      "A_verified": 60,
+      "native_success": 58,
+      "verified_program_success": 59,
+      "conditional_success": 0.9666666666666667
+    },
+    {
+      "A_action": 2,
+      "C_action": 1,
+      "n": 64,
+      "A_verified": 60,
+      "native_success": 58,
+      "verified_program_success": 58,
+      "conditional_success": 0.9666666666666667
+    },
+    {
+      "A_action": 2,
+      "C_action": 2,
+      "n": 64,
+      "A_verified": 60,
+      "native_success": 56,
+      "verified_program_success": 56,
+      "conditional_success": 0.9333333333333333
+    }
+  ],
+  "physical_interactions": 144000
+}

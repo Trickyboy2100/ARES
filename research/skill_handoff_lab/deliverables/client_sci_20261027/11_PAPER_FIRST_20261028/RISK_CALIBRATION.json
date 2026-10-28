@@ -1,0 +1,53 @@
+{
+  "scope": "Posthoc diagnosis, NOT new training or development model selection",
+  "metrics": {
+    "fit": {
+      "n": 546,
+      "positive_labels": 9,
+      "brier": 2.938478110004878e-05,
+      "constant_prevalence_brier": 0.01621181016785412,
+      "mean_predicted_risk": 0.016819527372717857,
+      "observed_prevalence": 0.016483516483516484,
+      "bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.2,
+          "n": 537,
+          "predicted": 0.0008910828619264066,
+          "observed": 0.0
+        },
+        {
+          "lower": 0.8,
+          "upper": 1.0,
+          "n": 9,
+          "predicted": 0.9672167301177979,
+          "observed": 1.0
+        }
+      ]
+    },
+    "calibration": {
+      "n": 189,
+      "positive_labels": 4,
+      "brier": 0.023301580339732245,
+      "constant_prevalence_brier": 0.020716105372190027,
+      "mean_predicted_risk": 0.006505372002720833,
+      "observed_prevalence": 0.021164021164021163,
+      "bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.2,
+          "n": 188,
+          "predicted": 0.0033715947065502405,
+          "observed": 0.02127659574468085
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.6000000000000001,
+          "n": 1,
+          "predicted": 0.5956556797027588,
+          "observed": 0.0
+        }
+      ]
+    }
+  }
+}
