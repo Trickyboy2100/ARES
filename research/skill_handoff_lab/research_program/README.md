@@ -32,7 +32,7 @@ cuRobo和控制接口兼容。**当前研究证据**：公开 ManiSkill Panda �
 | 10 | [paper/CLAIM_MATRIX.md](paper/CLAIM_MATRIX.md) | 投稿前的论文主张—证据映射，暂不反复生成PDF |
 
 **新增真实视频联动工具**：
-[program_charger_video_sync.py](../../tools/program_charger_video_sync.py)
+[program_charger_video_sync.py](../tools/program_charger_video_sync.py)
 支持从同案例的真实物理状态记录生成 RAW.mp4、ANNOTATED.mp4、
 DATA.json、MANIFEST.json 和 SYNC_VIEWER.html；视频与曲线共享物理step。
 当前仅已提交脚本，尚未在用户GPU上执行或验收渲染结果。
