@@ -92,7 +92,7 @@ def verify(state: dict) -> list[str]:
         doc = PROGRAM / doc_name
         if not doc.exists():
             continue
-        for target in re.findall(r"\\]\\(([^)]+)\\)", doc.read_text(encoding="utf-8")):
+        for target in re.findall(r"\]\(([^)]+)\)", doc.read_text(encoding="utf-8")):
             target = target.split("#", 1)[0].strip()
             if not target or target.startswith(("https://", "http://", "mailto:")):
                 continue
