@@ -1,6 +1,6 @@
 # EXP-001｜PlugCharger 原生强基线、执行随机性与接触失败
 
-**状态：READY；阶段S2；这是当前活动实验。**
+**状态：RUNNING；阶段S2；这是当前活动实验。2026-10-31已完成首轮物理闭环，最终控制修正待独立确认。**
 参照 `../STATE.json` 与已执行
 [13_TOOL_TASK_OPPORTUNITY_20261029](../../deliverables/client_sci_20261027/13_TOOL_TASK_OPPORTUNITY_20261029/README.md)。
 原稿c013已被研究者看过，原8场景不是新sealed测试。
@@ -59,8 +59,13 @@ MPLib RRT回退不保证跨进程逐位相同。不能把12训练案例当108独
 
 ## 实际执行记录（仅实验发生后填写）
 
-- Source/run/seed/scene/checkpoint/hash：PENDING
-- Strong baseline & matched outcome：PENDING
-- Control stochasticity and failure classes：PENDING
-- Physical controllability headroom：PENDING
-- Decision and recommended next experiment：PENDING
+- Question：同动作跨进程波动能否解释失败；强几何反馈能否修复真实接触停滞？
+- Prior best explanation：旧积分控制、规划随机性、接触失配和预算混合；不是已证实的RL价值缺陷。
+- Manipulable action：同抓持15°/接近25 mm后，合法小步几何反馈；失配时撤回原接近点或保持当前轴向位置。原生200步与成功不变。
+- Matched comparator：原积分控制与新反馈均具有当前原生到位后的保持；每个方法/初态独立冷进程。
+- Split：721000/723002历史诊断；724000–003新设计；725000–007冻结后确认，现已看过，不能复用为sealed。
+- Measured outcome：重复18/18成败一致、17/18记录状态一致；设计1/4→4/4；冻结确认1/8→5/8（救回5、退化1）。4例事后单因素修正2/4→4/4，不能拼接为7/8。
+- Cost：14场景、74完整episode，14800步加已保存崩溃105步=14905控制步；训练更新0。
+- Source/run/checkpoint/hash：无训练checkpoint；[结果与运行SHA索引](../evidence/EXP-001/2026-10-31/README.md)，非Git原始路径和每次源码SHA见RUN_INDEX。
+- Limitation：小样本、特权物体位姿；一例共同前段抓持失败。当前成果是强控制器改进，尚未证明独立RL增益或非规则可解决的机会。
+- Decision：继续EXP-001，先独立确认最终servo_local_hold_stop；基于剩余真实接触失败再进入EXP-002，暂不扩训。

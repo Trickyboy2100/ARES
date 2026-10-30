@@ -3,13 +3,13 @@
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
   "last_review": "2026-10-31",
   "baseline_commit": "c013f7e33fe65c3a76c3ef2dfc1dedc6d4816a67",
-  "branch": "codex/ares-sci-research-program-20261031",
+  "branch": "research-sci-program",
   "scientific_goal": "Task-conditioned executable skill-parameter reinforcement learning with genuine physical execution-effect adaptation for transferable robotic manipulation",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S2",
   "active_experiment": "EXP-001",
-  "latest_evidence": "../deliverables/client_sci_20261027/13_TOOL_TASK_OPPORTUNITY_20261029/README.md",
-  "next_action": "Repeat native PlugCharger strong controllers with matched resets and bounded planning randomness; attribute failure to planning/tracking/contact/budget; characterize whether legal feedback corrections have repeatable benefit. If geometry solves them, pivot task, not weaken baseline.",
+  "latest_evidence": "evidence/EXP-001/2026-10-31/README.md",
+  "next_action": "EXP-001: freeze servo_local_hold_stop and compare against servo_stop and frozen_stop in separate cold processes on a new uninspected native PlugCharger scene group. Validate the post-hoc 4/4 controller fix before claiming a new 8-case score. Characterize remaining contact failures for EXP-002; no RL training yet.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "active",
@@ -22,7 +22,7 @@
   "experiments": [
     {
       "id": "EXP-001",
-      "status": "ready",
+      "status": "running",
       "stage": "S2",
       "card": "experiments/EXP-001_BASELINE_AND_CAUSALITY.md",
       "depends_on": [],
@@ -70,12 +70,22 @@
     }
   ],
   "unresolved_questions": [
-    "How many native PlugCharger failures survive a fully tuned strong baseline within 200 steps?",
-    "Do legal contact actions rescue failures repeatably, accounting for MPLib/RRT variability?",
+    "Does the final local-depth-hold controller retain the frozen servo 5/8 gain and remove its regression on new native scenes?",
+    "Which contact failures remain after strong geometric control, distinct from shared grasp-prefix failure and RRT variability?",
     "Does effect history add deployable information beyond privileged current state and a generic history encoder?",
     "Can a mature residual SAC/PPO learn the correction at reasonable counted physical+offline data cost?",
     "Are benefits novel versus Foresight, STAP, DAWN, SCOUT and simple replan/search?"
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
-  "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation."
+  "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
+  "latest_run_summary": {
+    "experiment": "EXP-001",
+    "complete_episodes": 74,
+    "distinct_scene_seeds": 14,
+    "physical_control_steps": 14905,
+    "optimizer_steps": 0,
+    "repeat_same_outcome": "18/18",
+    "frozen_new8": "integral+hold 1/8; bounded servo+hold 5/8; rescues5/regressions1",
+    "posthoc_fix": "local-depth hold4/4 on four inspected cases; not independent confirmation"
+  }
 }

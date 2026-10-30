@@ -1,0 +1,39 @@
+{
+  "verified_episodes": 74,
+  "recorded_physics_steps": 14905,
+  "native_horizon_and_final_criterion": "PASS",
+  "raw_sha256": "PASS",
+  "initial_hashes": "PASS",
+  "finite_states_actions": "PASS",
+  "bounded_servo_actions": 1230,
+  "python_compile": "PASS",
+  "video": {
+    "programs": [],
+    "streams": [
+      {
+        "width": 1280,
+        "height": 720,
+        "duration": "10.050000",
+        "nb_frames": "201"
+      }
+    ]
+  },
+  "video_sha256": "9c4080f62fc049706f1ce5a3856d4da11452b69ca388930afdc387f3ad9e3bc4",
+  "pose_render_receipt": {
+    "sources": [
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_721000/721000_a15.0_d0.025.json.gz",
+        "sha256": "a3fa9d6316b4d57ed64178c0898bc012292f44c2997c71f896567d4ee32cccd0"
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_721000/721000_a15.0_d0.025.json.gz",
+        "sha256": "0ae80694e1107a7ef62a87eb583df34ee8678128e7b7876e080ad177a3ddd0f3"
+      }
+    ],
+    "physics_steps": 0,
+    "frames": 201,
+    "max_pose_readback_error": 1.1920928955078125e-07
+  },
+  "manual_review": "final video frame and paired control chart inspected",
+  "no_trained_checkpoint": true
+}

@@ -1,0 +1,1184 @@
+{
+  "local_hold_posthoc_pairs": [
+    {
+      "seed": 725000,
+      "previous_servo": true,
+      "local_hold": true,
+      "alignment_boundary_difference": 0.0
+    },
+    {
+      "seed": 725002,
+      "previous_servo": false,
+      "local_hold": true,
+      "alignment_boundary_difference": 0.0
+    },
+    {
+      "seed": 725005,
+      "previous_servo": false,
+      "local_hold": true,
+      "alignment_boundary_difference": 0.0
+    },
+    {
+      "seed": 725006,
+      "previous_servo": true,
+      "local_hold": true,
+      "alignment_boundary_difference": 0.0
+    }
+  ],
+  "protocols": {
+    "design": {
+      "scenes": 4,
+      "baseline": 1,
+      "servo": 4,
+      "rescues": 3,
+      "regressions": 0,
+      "verified_alignment_pairs": 4,
+      "all_available_alignment_boundaries_identical": true
+    },
+    "confirmation": {
+      "scenes": 8,
+      "baseline": 1,
+      "servo": 5,
+      "rescues": 5,
+      "regressions": 1,
+      "verified_alignment_pairs": 7,
+      "all_available_alignment_boundaries_identical": true
+    }
+  },
+  "cold_process_pairs": [
+    {
+      "seed": 721000,
+      "baseline": false,
+      "servo": true,
+      "same_alignment_boundary": true,
+      "boundary_difference": 0.0
+    },
+    {
+      "seed": 724000,
+      "baseline": false,
+      "servo": true,
+      "same_alignment_boundary": true,
+      "boundary_difference": 0.0
+    },
+    {
+      "seed": 724001,
+      "baseline": true,
+      "servo": true,
+      "same_alignment_boundary": true,
+      "boundary_difference": 0.0
+    },
+    {
+      "seed": 724002,
+      "baseline": false,
+      "servo": true,
+      "same_alignment_boundary": true,
+      "boundary_difference": 0.0
+    },
+    {
+      "seed": 724003,
+      "baseline": false,
+      "servo": true,
+      "same_alignment_boundary": true,
+      "boundary_difference": 0.0
+    },
+    {
+      "seed": 725000,
+      "baseline": false,
+      "servo": true,
+      "same_alignment_boundary": true,
+      "boundary_difference": 0.0
+    },
+    {
+      "seed": 725001,
+      "baseline": false,
+      "servo": true,
+      "same_alignment_boundary": true,
+      "boundary_difference": 0.0
+    },
+    {
+      "seed": 725002,
+      "baseline": true,
+      "servo": false,
+      "same_alignment_boundary": true,
+      "boundary_difference": 0.0
+    },
+    {
+      "seed": 725003,
+      "baseline": false,
+      "servo": true,
+      "same_alignment_boundary": true,
+      "boundary_difference": 0.0
+    },
+    {
+      "seed": 725004,
+      "baseline": false,
+      "servo": false,
+      "same_alignment_boundary": false,
+      "boundary_difference": null
+    },
+    {
+      "seed": 725005,
+      "baseline": false,
+      "servo": false,
+      "same_alignment_boundary": true,
+      "boundary_difference": 0.0
+    },
+    {
+      "seed": 725006,
+      "baseline": false,
+      "servo": true,
+      "same_alignment_boundary": true,
+      "boundary_difference": 0.0
+    },
+    {
+      "seed": 725007,
+      "baseline": false,
+      "servo": true,
+      "same_alignment_boundary": true,
+      "boundary_difference": 0.0
+    }
+  ],
+  "crashes": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_pilot/721000_a15.0_d0.025_CRASH.json.gz",
+      "physical_steps": 105,
+      "error": "RuntimeError('Fail to parameterize path')",
+      "sha256": "c1d5fce9281b57775db9bdafb775c877e72d393e09cba4389ca91c15e368d4c8"
+    }
+  ],
+  "total_including_crashes": 14905,
+  "groups": {
+    "frozen_process0": {
+      "episodes": 18,
+      "scenes": 6,
+      "success": 5,
+      "steps": 3600,
+      "plans": 208,
+      "rrt": 19,
+      "wall_s": 86.55261895206058,
+      "plan_s": 1.4756002235226333,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 5,
+        "BUDGET": 5,
+        "SUCCESS": 5,
+        "GRASP_CHECK": 2,
+        "PLAN_OR_IK": 1
+      }
+    },
+    "frozen_process1": {
+      "episodes": 18,
+      "scenes": 6,
+      "success": 5,
+      "steps": 3600,
+      "plans": 212,
+      "rrt": 18,
+      "wall_s": 86.82287537591765,
+      "plan_s": 1.4810402673319913,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 5,
+        "BUDGET": 6,
+        "SUCCESS": 5,
+        "GRASP_CHECK": 2
+      }
+    },
+    "frozen_stop_721000": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 12,
+      "rrt": 0,
+      "wall_s": 5.774256326025352,
+      "plan_s": 0.05180379399098456,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 1
+      }
+    },
+    "frozen_stop_724000": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 12,
+      "rrt": 0,
+      "wall_s": 5.4470548030221835,
+      "plan_s": 0.049159848887939006,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 1
+      }
+    },
+    "frozen_stop_724001": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 12,
+      "rrt": 0,
+      "wall_s": 5.71246773499297,
+      "plan_s": 0.05340828205225989,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "frozen_stop_724002": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 12,
+      "rrt": 0,
+      "wall_s": 5.678304806991946,
+      "plan_s": 0.052938823064323515,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 1
+      }
+    },
+    "frozen_stop_724003": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 12,
+      "rrt": 0,
+      "wall_s": 5.45646310801385,
+      "plan_s": 0.059182900993619114,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 1
+      }
+    },
+    "frozen_stop_725000": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 12,
+      "rrt": 0,
+      "wall_s": 5.597600179025903,
+      "plan_s": 0.05545403278665617,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 1
+      }
+    },
+    "frozen_stop_725001": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 12,
+      "rrt": 0,
+      "wall_s": 5.187934067973401,
+      "plan_s": 0.05433126998832449,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 1
+      }
+    },
+    "frozen_stop_725002": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 12,
+      "rrt": 0,
+      "wall_s": 5.641952036006842,
+      "plan_s": 0.053002273896709085,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "frozen_stop_725003": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 11,
+      "rrt": 0,
+      "wall_s": 5.621125414036214,
+      "plan_s": 0.048466290812939405,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 1
+      }
+    },
+    "frozen_stop_725004": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 2,
+      "rrt": 0,
+      "wall_s": 5.35048145998735,
+      "plan_s": 0.010364799934905022,
+      "failures": {
+        "GRASP_CHECK": 1
+      }
+    },
+    "frozen_stop_725005": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 12,
+      "rrt": 0,
+      "wall_s": 5.64734020200558,
+      "plan_s": 0.053100994031410664,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 1
+      }
+    },
+    "frozen_stop_725006": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 12,
+      "rrt": 0,
+      "wall_s": 5.3799058349686675,
+      "plan_s": 0.05132874904666096,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 1
+      }
+    },
+    "frozen_stop_725007": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 12,
+      "rrt": 0,
+      "wall_s": 5.540709747001529,
+      "plan_s": 0.053731638996396214,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 1
+      }
+    },
+    "servo_bias_721000": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 13,
+      "rrt": 0,
+      "wall_s": 5.6610372309805825,
+      "plan_s": 0.021685705054551363,
+      "failures": {
+        "PLAN_OR_IK": 1
+      }
+    },
+    "servo_bias_tolerance": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 123,
+      "rrt": 0,
+      "wall_s": 5.8584659630432725,
+      "plan_s": 0.04613425175193697,
+      "failures": {
+        "CONTACT_WITHOUT_NATIVE_GOAL": 1
+      }
+    },
+    "servo_ik_pilot": {
+      "episodes": 6,
+      "scenes": 2,
+      "success": 0,
+      "steps": 1200,
+      "plans": 411,
+      "rrt": 5,
+      "wall_s": 27.958119154092856,
+      "plan_s": 0.4124985374510288,
+      "failures": {
+        "NO_TOOL_SOCKET_CONTACT": 3,
+        "PLAN_OR_IK": 2,
+        "GRASP_CHECK": 1
+      }
+    },
+    "servo_local_hold_stop_725000": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 48,
+      "rrt": 0,
+      "wall_s": 5.6686672730138525,
+      "plan_s": 0.03237206506310031,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_local_hold_stop_725002": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 35,
+      "rrt": 0,
+      "wall_s": 5.960053262999281,
+      "plan_s": 0.02747050899779424,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_local_hold_stop_725005": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 31,
+      "rrt": 0,
+      "wall_s": 5.689761613029987,
+      "plan_s": 0.028336858958937228,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_local_hold_stop_725006": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 33,
+      "rrt": 0,
+      "wall_s": 5.782538569008466,
+      "plan_s": 0.027464670012705028,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_stop_721000": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 32,
+      "rrt": 0,
+      "wall_s": 5.8677846300415695,
+      "plan_s": 0.027189009124413133,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_stop_724000": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 28,
+      "rrt": 0,
+      "wall_s": 5.8326697570155375,
+      "plan_s": 0.023685652122367173,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_stop_724001": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 31,
+      "rrt": 0,
+      "wall_s": 5.739735598966945,
+      "plan_s": 0.027409849979449064,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_stop_724002": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 42,
+      "rrt": 0,
+      "wall_s": 5.749012503016274,
+      "plan_s": 0.028231942793354392,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_stop_724003": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 65,
+      "rrt": 0,
+      "wall_s": 5.414753703982569,
+      "plan_s": 0.034263460198417306,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_stop_725000": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 64,
+      "rrt": 0,
+      "wall_s": 5.5768719670013525,
+      "plan_s": 0.03640151483705267,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_stop_725001": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 45,
+      "rrt": 0,
+      "wall_s": 5.341000504035037,
+      "plan_s": 0.030438132816925645,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_stop_725002": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 119,
+      "rrt": 0,
+      "wall_s": 5.708562244020868,
+      "plan_s": 0.04643539368407801,
+      "failures": {
+        "NO_TOOL_SOCKET_CONTACT": 1
+      }
+    },
+    "servo_stop_725003": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 29,
+      "rrt": 0,
+      "wall_s": 5.846878825046588,
+      "plan_s": 0.026048586063552648,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_stop_725004": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 2,
+      "rrt": 0,
+      "wall_s": 5.388005201006308,
+      "plan_s": 0.010736853000707924,
+      "failures": {
+        "GRASP_CHECK": 1
+      }
+    },
+    "servo_stop_725005": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 0,
+      "steps": 200,
+      "plans": 110,
+      "rrt": 0,
+      "wall_s": 5.663387136009987,
+      "plan_s": 0.04606357612647116,
+      "failures": {
+        "NO_TOOL_SOCKET_CONTACT": 1
+      }
+    },
+    "servo_stop_725006": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 32,
+      "rrt": 0,
+      "wall_s": 5.719894898997154,
+      "plan_s": 0.025449726090300828,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    "servo_stop_725007": {
+      "episodes": 1,
+      "scenes": 1,
+      "success": 1,
+      "steps": 200,
+      "plans": 56,
+      "rrt": 0,
+      "wall_s": 5.778992379026022,
+      "plan_s": 0.03183350811013952,
+      "failures": {
+        "SUCCESS": 1
+      }
+    }
+  },
+  "cross_process_repeats": [
+    {
+      "seed": 721000,
+      "angle": 15.0,
+      "standoff": 0.025,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 0,
+      "rrt1": 0
+    },
+    {
+      "seed": 721000,
+      "angle": 45.0,
+      "standoff": 0.05,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 2,
+      "rrt1": 2
+    },
+    {
+      "seed": 721000,
+      "angle": 45.0,
+      "standoff": 0.075,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 1,
+      "rrt1": 1
+    },
+    {
+      "seed": 723002,
+      "angle": 15.0,
+      "standoff": 0.025,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 0,
+      "rrt1": 0
+    },
+    {
+      "seed": 723002,
+      "angle": 45.0,
+      "standoff": 0.05,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 2,
+      "rrt1": 2
+    },
+    {
+      "seed": 723002,
+      "angle": 45.0,
+      "standoff": 0.075,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 2,
+      "rrt1": 2
+    },
+    {
+      "seed": 724000,
+      "angle": 15.0,
+      "standoff": 0.025,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 0,
+      "rrt1": 0
+    },
+    {
+      "seed": 724000,
+      "angle": 45.0,
+      "standoff": 0.05,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 1,
+      "rrt1": 1
+    },
+    {
+      "seed": 724000,
+      "angle": 45.0,
+      "standoff": 0.075,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 2,
+      "rrt1": 2
+    },
+    {
+      "seed": 724001,
+      "angle": 15.0,
+      "standoff": 0.025,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 0,
+      "rrt1": 0
+    },
+    {
+      "seed": 724001,
+      "angle": 45.0,
+      "standoff": 0.05,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 1,
+      "rrt1": 1
+    },
+    {
+      "seed": 724001,
+      "angle": 45.0,
+      "standoff": 0.075,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 1,
+      "rrt1": 1
+    },
+    {
+      "seed": 724002,
+      "angle": 15.0,
+      "standoff": 0.025,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 0,
+      "rrt1": 0
+    },
+    {
+      "seed": 724002,
+      "angle": 45.0,
+      "standoff": 0.05,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 3,
+      "rrt1": 3
+    },
+    {
+      "seed": 724002,
+      "angle": 45.0,
+      "standoff": 0.075,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 1,
+      "rrt1": 1
+    },
+    {
+      "seed": 724003,
+      "angle": 15.0,
+      "standoff": 0.025,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 0,
+      "rrt1": 0
+    },
+    {
+      "seed": 724003,
+      "angle": 45.0,
+      "standoff": 0.05,
+      "max_recorded_state_difference": 0.0,
+      "same_outcome": true,
+      "rrt0": 1,
+      "rrt1": 1
+    },
+    {
+      "seed": 724003,
+      "angle": 45.0,
+      "standoff": 0.075,
+      "max_recorded_state_difference": 12.735372066497803,
+      "same_outcome": true,
+      "rrt0": 2,
+      "rrt1": 1
+    }
+  ],
+  "comparison_vs_frozen": {
+    "servo_bias_721000": {
+      "n": 1,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_bias_tolerance": {
+      "n": 1,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_ik_pilot": {
+      "n": 6,
+      "rescues": 0,
+      "regressions": 2
+    },
+    "servo_local_hold_stop_725000": {
+      "n": 0,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_local_hold_stop_725002": {
+      "n": 0,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_local_hold_stop_725005": {
+      "n": 0,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_local_hold_stop_725006": {
+      "n": 0,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_stop_721000": {
+      "n": 1,
+      "rescues": 1,
+      "regressions": 0
+    },
+    "servo_stop_724000": {
+      "n": 1,
+      "rescues": 1,
+      "regressions": 0
+    },
+    "servo_stop_724001": {
+      "n": 1,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_stop_724002": {
+      "n": 1,
+      "rescues": 1,
+      "regressions": 0
+    },
+    "servo_stop_724003": {
+      "n": 1,
+      "rescues": 1,
+      "regressions": 0
+    },
+    "servo_stop_725000": {
+      "n": 0,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_stop_725001": {
+      "n": 0,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_stop_725002": {
+      "n": 0,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_stop_725003": {
+      "n": 0,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_stop_725004": {
+      "n": 0,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_stop_725005": {
+      "n": 0,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_stop_725006": {
+      "n": 0,
+      "rescues": 0,
+      "regressions": 0
+    },
+    "servo_stop_725007": {
+      "n": 0,
+      "rescues": 0,
+      "regressions": 0
+    }
+  },
+  "recorded_steps": 14800,
+  "optimizer_steps": 0,
+  "raw_root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001",
+  "raw": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/721000_a15.0_d0.025.json.gz",
+      "sha256": "7d00d6ed097365b1bf724c022e1c13b2b6282358dc481733618b9432ae4f1979"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/721000_a45.0_d0.05.json.gz",
+      "sha256": "f8741062f1cbe2f714a8d7972f52a25644f76c5c6f8a0ef994e62c62d63ac83b"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/721000_a45.0_d0.075.json.gz",
+      "sha256": "85f2758dc2c877a2ba98d39663546a6a262b9ee3c29b730b224198eae5d57f03"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/723002_a15.0_d0.025.json.gz",
+      "sha256": "b195a67fb23d4e11cd8ceb742fa54f6b03871f4152871f44e7ed5504bc18b89b"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/723002_a45.0_d0.05.json.gz",
+      "sha256": "86269344f02ce75cc25b62203a45f316687ef26525aeb618001e4c45a006b42f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/723002_a45.0_d0.075.json.gz",
+      "sha256": "67a3718ea2296a7149576515d6377014fa5153c80ca5d770386c6806693b3bec"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/724000_a15.0_d0.025.json.gz",
+      "sha256": "d180d6ef2c7d284359dd5535eef77a8c3b3119ba59726b9881b5167aa4fe268b"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/724000_a45.0_d0.05.json.gz",
+      "sha256": "47c2369cf1fbc778ecde5f6e32524cb853bc359a149e078c198e7e850ae2e630"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/724000_a45.0_d0.075.json.gz",
+      "sha256": "4ff58d5fa75995c45184003a71f57449723de7c6f56d73eeabb441d469334fe7"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/724001_a15.0_d0.025.json.gz",
+      "sha256": "18067ab8dda93dd4ec8ba080887490e6c8d596f22a07f4a2449f6af49a0667f1"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/724001_a45.0_d0.05.json.gz",
+      "sha256": "0a4ede24fb6ec3879b30e9af61008d7cdd6a9d4cb16421698c66c8bc1fcf0bbc"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/724001_a45.0_d0.075.json.gz",
+      "sha256": "af81ec7f6d159f0dcea7c17f0b46d678fd1faf7bd05b611989742f2addbafc41"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/724002_a15.0_d0.025.json.gz",
+      "sha256": "6ba6d90b38407236a9315a083b2807476fdc27e7fa5c30099f4338fcf51516b1"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/724002_a45.0_d0.05.json.gz",
+      "sha256": "a24ba9e8a247657c868c3f8e20fd014ba25885f837e121a96f607d9de3f44dc6"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/724002_a45.0_d0.075.json.gz",
+      "sha256": "d79a3afaf70e068e6c1bbe137c0ffc5a52025887441e5a69d00df34241880075"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/724003_a15.0_d0.025.json.gz",
+      "sha256": "d96a3e8e90b691f1435b8d71550310f31ba566c72813a4c8ad4ebe44c887e0e0"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/724003_a45.0_d0.05.json.gz",
+      "sha256": "fe76654a74893d861e702d43ac454b4b31d99360d95bbe5e39ddc9bbcf8251f2"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process0/724003_a45.0_d0.075.json.gz",
+      "sha256": "ae1ac4ec4abc10ff8698d43512d093c6f339aff0654fa5091ebf9a13fae8d474"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/721000_a15.0_d0.025.json.gz",
+      "sha256": "0927d600e4a0ed8952a69c348b1693dbba94e2acb8c02f21b4fad517c2d09195"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/721000_a45.0_d0.05.json.gz",
+      "sha256": "f5b09163f52a3faeaed814818c759618331d68af6600e9f66877cfe49006683f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/721000_a45.0_d0.075.json.gz",
+      "sha256": "8f535821c3f35f06fd39b48b50544caa6b409d4db3ed3cca45bb87f9d52046e2"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/723002_a15.0_d0.025.json.gz",
+      "sha256": "a4d700f37d6194e8eebca9a19ae835fb3f80306d1475d71dd4dd950ad2fa1498"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/723002_a45.0_d0.05.json.gz",
+      "sha256": "7abf0664bca132a0e7f8c0fc8a0d9c7c7d4238933386645c0a9945f58e43e3ba"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/723002_a45.0_d0.075.json.gz",
+      "sha256": "b575650003dccf8a8a9aa32bb233be8e168f648b7acb733a5b6579498e95cb83"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/724000_a15.0_d0.025.json.gz",
+      "sha256": "feca2c1c6c7ee3ea408503650f8afc9283cbf0fa43cd8b576798bec19d499f9d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/724000_a45.0_d0.05.json.gz",
+      "sha256": "b7a38eb41a26989f5cf54417ebcc4c0871c9c0d03b921b170a8778f05f0b97e7"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/724000_a45.0_d0.075.json.gz",
+      "sha256": "fdf89f326b70a029c44a3a60218e6c1f9a7e18c5a3fb1b319bd0a1b5bd8f70b2"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/724001_a15.0_d0.025.json.gz",
+      "sha256": "01aba933d2c3ef3d3bced93295d17240b636b17b4d747d0245ebe8df1c4a3716"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/724001_a45.0_d0.05.json.gz",
+      "sha256": "dcd6d1443594f377515bab66135631f0aabc6db4000cac95147a398fa95b31f8"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/724001_a45.0_d0.075.json.gz",
+      "sha256": "3665f2ef80e2cb1daaf3be7836e2a62c6210f57a50032befdad8e610222c523b"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/724002_a15.0_d0.025.json.gz",
+      "sha256": "302dea51b98732c8b50c1561de5cbb9f98d19c8c7438f813918ba7343dcfb3f0"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/724002_a45.0_d0.05.json.gz",
+      "sha256": "d5ef2f9ee5d763f81c1659632f8a177f5abd9577c010b31338f7f92c86afa81e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/724002_a45.0_d0.075.json.gz",
+      "sha256": "ec3b14b95b8298a12ba738c9363eaa316c9459e51eb271ac3c0799e51138cc94"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/724003_a15.0_d0.025.json.gz",
+      "sha256": "8c4a6d0e93b01a492a0da49373bc447f77a251aa9f784a68fd7e76e7251fe2d8"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/724003_a45.0_d0.05.json.gz",
+      "sha256": "a6a87a58a5cff18d884c327ba230c795595967e390d75d0f97e47dab374998e6"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_process1/724003_a45.0_d0.075.json.gz",
+      "sha256": "0984bd8ab747ff06eff9903e090d25df093d19353d8ca6c9b372da1116f2dea8"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_721000/721000_a15.0_d0.025.json.gz",
+      "sha256": "a3fa9d6316b4d57ed64178c0898bc012292f44c2997c71f896567d4ee32cccd0"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_724000/724000_a15.0_d0.025.json.gz",
+      "sha256": "ba0d6e73ef5f9c803dc1f2697e9aa404c5fe0281da3a225aa89556b118f0f0a8"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_724001/724001_a15.0_d0.025.json.gz",
+      "sha256": "9a800de122bdb7f45f8572d7520c884fe26284e96a09ca76c934c4356b66bc5c"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_724002/724002_a15.0_d0.025.json.gz",
+      "sha256": "4af5ee8ccd21c67c234c94986edc25cb4998afaa88f4716ebdaede4d66abfcd7"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_724003/724003_a15.0_d0.025.json.gz",
+      "sha256": "68ce62ef4764fff1245d44d612df73bf684914309fdff476489ef573b5818b40"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_725000/725000_a15.0_d0.025.json.gz",
+      "sha256": "1e02d8ec6ed789a5171c67e99bf0e63dff14cbda38e76fba76535775d52e698a"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_725001/725001_a15.0_d0.025.json.gz",
+      "sha256": "0da49cc95ed9291990c3376ec93f2513451a0e79ca13bbd33538fe724d3ef156"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_725002/725002_a15.0_d0.025.json.gz",
+      "sha256": "0b38acbfb408266b86d7e7955232f59d7a826394b18ca8e2d04a99f8614faf8e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_725003/725003_a15.0_d0.025.json.gz",
+      "sha256": "12653069f8c4051ea22dd7a56b3ea99d259e00b091f648b319759dacd08e93c7"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_725004/725004_a15.0_d0.025.json.gz",
+      "sha256": "1c449b9f079f0a804d6843fa7996cc762996e202c3197b2a5460b4871ca62115"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_725005/725005_a15.0_d0.025.json.gz",
+      "sha256": "b61505b80f7f22adc5e672eb899ed2b169e2312944027661c1fdec65d39328c6"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_725006/725006_a15.0_d0.025.json.gz",
+      "sha256": "9f07d8f1138a534e020b091c25736868c22bb945dee801f9f6d4ef1660dddfeb"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_725007/725007_a15.0_d0.025.json.gz",
+      "sha256": "5327d28bf402e2fe85d6b07a39f933178e95a59168ed4238b5db1b4570b005fa"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_bias_721000/721000_a15.0_d0.025.json.gz",
+      "sha256": "12071959865276fc33490c197dfe16f39417ae8c8b5e01f5e1464ca4a4779894"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_bias_tolerance/721000_a15.0_d0.025.json.gz",
+      "sha256": "a9eac47e75348197b08c4f71c1442f54539095a5d71e0f090c1c3b6760c92fe5"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_ik_pilot/721000_a15.0_d0.025.json.gz",
+      "sha256": "79cd854e29abba493fe50bf7390a20fa419977db6148e3c20a001d250bde2808"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_ik_pilot/721000_a45.0_d0.05.json.gz",
+      "sha256": "f071da3ab092b6963e67520eb2095de0fcdef6e50b9eb41a5acb452e8e395be2"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_ik_pilot/721000_a45.0_d0.075.json.gz",
+      "sha256": "5a93823defe15712e8f37641072ebb0a5a57069931372ebd541960a035c1b5e7"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_ik_pilot/723002_a15.0_d0.025.json.gz",
+      "sha256": "00bda5b12e8b0c04544ee1f367aefb78f30e8e8833ab4a9f6f64108293e22155"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_ik_pilot/723002_a45.0_d0.05.json.gz",
+      "sha256": "e315a4571d4e78b50523c8f0a12f8131d0fc0990e8aaa7fc9a6c632e2075b38e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_ik_pilot/723002_a45.0_d0.075.json.gz",
+      "sha256": "1ba6ed2c11b01e2b0e32cf3a1538561dd263cc407966de06d0bbd6613ab2e7a6"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_725000/725000_a15.0_d0.025.json.gz",
+      "sha256": "a5aa7c4dfd25205029871c4b557b608db26cc048e94d7a5fb9f07fa9e0de3016"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_725002/725002_a15.0_d0.025.json.gz",
+      "sha256": "ecbfc4957923aa05ef03751ff5fe50c0ba3c9fc8f86ae2530f25e6ba50c98657"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_725005/725005_a15.0_d0.025.json.gz",
+      "sha256": "57492ff40060d7454538dc61349e18314c7e90e7846518296a3de43c5df6f153"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_725006/725006_a15.0_d0.025.json.gz",
+      "sha256": "76da74ae3eace4b144fdadb460fe813b4d3bd9c7a8a244dc748d985182aeb888"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_721000/721000_a15.0_d0.025.json.gz",
+      "sha256": "0ae80694e1107a7ef62a87eb583df34ee8678128e7b7876e080ad177a3ddd0f3"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_724000/724000_a15.0_d0.025.json.gz",
+      "sha256": "340ab852300d1eebd41fe7713a1e4ba6c6db3a3d0c55e4220c46b2bb325f8a50"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_724001/724001_a15.0_d0.025.json.gz",
+      "sha256": "6033f625a8037bd333fc81e738494e901296b9c60602878cc9c1462132486b4a"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_724002/724002_a15.0_d0.025.json.gz",
+      "sha256": "23207520d3293239c4b95aac4e97b8a029228b4d789209b5e6b7e261620ab0ac"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_724003/724003_a15.0_d0.025.json.gz",
+      "sha256": "523590257c045dd67f281b4fefd7bf777b3de8548b620c866cd66c17d88d6167"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_725000/725000_a15.0_d0.025.json.gz",
+      "sha256": "357a7fe92ba1615ab271fda3cb3abf50b1ad81accb9a2712d9fe797a10d9fe15"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_725001/725001_a15.0_d0.025.json.gz",
+      "sha256": "2707f8879141cd68b862fa00b64389584c865d1a959b649e09c6ec34e22021ed"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_725002/725002_a15.0_d0.025.json.gz",
+      "sha256": "0c450cba070bea551fb3f4d8098a428bb2b89db3da63bb246efd7f6debf91658"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_725003/725003_a15.0_d0.025.json.gz",
+      "sha256": "a3101ae3baa762491cac0bd387986f45df2cba5f9a96fedb4f550d97fcef15cc"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_725004/725004_a15.0_d0.025.json.gz",
+      "sha256": "97fd85aa98ec6949c70f7d0714e0723d2d33ff1a470330b21a103168d4ff9bd5"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_725005/725005_a15.0_d0.025.json.gz",
+      "sha256": "8bf664a72470e4c0e540792571986c9f347f650ab6cfc21469172df022c76903"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_725006/725006_a15.0_d0.025.json.gz",
+      "sha256": "a3d1a667a8c9eb304ec40916e1c84e2b4df9b2acb45a37e3eaa579420042c267"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_725007/725007_a15.0_d0.025.json.gz",
+      "sha256": "b6948f33d29bb7f50163e240c938036ccb2d4a9a46cb8830866a813b5a580a07"
+    }
+  ],
+  "claim": "No independent RL mechanism evaluated"
+}
