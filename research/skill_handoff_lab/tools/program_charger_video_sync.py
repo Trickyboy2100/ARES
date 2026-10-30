@@ -15,7 +15,7 @@ from pathlib import Path
 
 import numpy as np
 
-from program_charger_mechanism import arrays, load, sha
+from program_charger_mechanism import arrays, load, sha, rotation
 
 
 def font(size):
@@ -76,10 +76,13 @@ def plot_panel(draw, y, name, key, unit, series, colors, step):
     draw.text((x1-110, y+4), f"{lo:.2f}..{hi:.2f} {unit}", fill="#cbd5e1", font=f)
 
 
-def projected_origin(camera, z, key):
+def projected_feature(camera, z, key, local_xyz=(0., 0., 0.)):
+    """Project a measured actor pose plus a native model-local geometry point."""
     K = camera.get_intrinsic_matrix()[0].cpu().numpy()
     E = camera.get_extrinsic_matrix()[0].cpu().numpy()
-    coord = E @ np.r_[np.asarray(z[key][:3], dtype=float), 1.]
+    xyz = np.asarray(z[key][:3], dtype=float) + (
+        rotation(z[key][3:]) @ np.asarray(local_xyz, dtype=float))
+    coord = E @ np.r_[xyz, 1.]
     assert coord[2] > 0
     uv = K @ coord[:3]
     return (float(uv[0]/uv[2]), float(uv[1]/uv[2]))
@@ -100,7 +103,7 @@ small{color:#94a3b8}a{color:#79d4f7}
 </style></head><body><main><h1>ARES | Time-aligned physical execution evidence</h1>
 <p>Both videos are <b>MEASURED_POSE_REPLAY</b> of recorded physics; no new physics simulation.
 The vertical cursor on measured curves corresponds to the video's physical control step.
-Orange and cyan rings mark <b>measured actor origins, not plug-tip/socket-opening contact points</b>.</p>
+Geometry markers use recorded actor poses plus the native charger peg dimensions: <b>actual pin-tip guide points and socket-mouth guide points, not measured contact patches</b>.</p>
 <div class="controls"><label>Video <select id="choice"><option value="annotated">Annotated + trace MP4</option>
 <option value="raw">Unannotated RAW MP4</option></select></label>
 <button id="back">Previous event</button><button id="forward">Next event</button>
@@ -211,8 +214,16 @@ def main():
                       for g in tensors for k in tensors[g]))
                 rgb=env.unwrapped.render_rgb_array()[0].cpu().numpy()
                 raw.paste(Image.fromarray(np.asarray(rgb,dtype=np.uint8)),(960*i,0))
-                measurements.append((z,[(name,projected_origin(camera,z,name))
-                                        for name in ("tool","cube")]))
+                # Native PlugCharger geometry: each peg is centered at local x=8mm,
+                # with half-length=8mm and y=+/-7mm. The mouth is at the
+                # receptacle front x=0. These guide points are NOT contact force.
+                guide=[
+                    ("pin_tip_+",projected_feature(camera,z,"tool",(.016,.007,0))),
+                    ("pin_tip_-",projected_feature(camera,z,"tool",(.016,-.007,0))),
+                    ("mouth_+",projected_feature(camera,z,"cube",(0.,.007,0.))),
+                    ("mouth_-",projected_feature(camera,z,"cube",(0.,-.007,0.))),
+                ]
+                measurements.append((z,guide))
             assert raw_mp4.stdin and annotated_mp4.stdin
             raw_mp4.stdin.write(np.asarray(raw).tobytes())
             annotated=Image.new("RGB",(1920,1080),"#102030")
@@ -227,8 +238,11 @@ def main():
                 for key,(u,v) in origins:
                     x,y=u+left,v+70
                     if 0<=u<960 and 0<=v<720:
-                        col="#f4b34b" if key=="tool" else "#4fd1e7"
-                        draw.ellipse((x-10,y-10,x+10,y+10),outline=col,width=3)
+                        col="#f4b34b" if key.startswith("pin_tip") else "#4fd1e7"
+                        draw.ellipse((x-7,y-7,x+7,y+7),outline=col,width=3)
+                draw.text((left+16,710),
+                          "GOLD: pin-tip guides | CYAN: socket-mouth guides",
+                          font=sub,fill="#f3f4f6")
                 a=series[i];idx=max(0,step-1)
                 draw.rectangle((left,746,left+960,790),fill="#102030")
                 txt=(f"Axial {a['x'][idx]:.2f} mm  |  Lateral {a['lateral'][idx]:.2f} mm"
@@ -239,6 +253,18 @@ def main():
                  ("Lateral error","lateral","mm"),
                  ("Contact proxy","force","N")]):
                 plot_panel(draw,800+panel*86,name,key,unit,series,colors,step)
+            # Two source-backed contact-mode strips: 0 ALIGN, 1 ADVANCE,
+            # 2 HOLD; no servo annotation shows as neutral grey.
+            for i, a in enumerate(series):
+                y0=1031+22*i
+                draw.text((9,y0),("Old mode","New mode")[i],font=font(15),fill=colors[i])
+                for j, m in enumerate(a["mode"]):
+                    c="#62748a" if not np.isfinite(m) else (
+                      "#5f91d8" if int(m)==0 else "#f2b35c" if int(m)==1 else "#50a983")
+                    x0=115+int(j/200*1755);x1=115+int((j+1)/200*1755)
+                    draw.rectangle((x0,y0,x1+1,y0+12),fill=c)
+                cursor=115+int(max(0,step-1)/200*1755)
+                draw.line((cursor,y0-1,cursor,y0+14),fill="#ffffff",width=2)
             annotated_mp4.stdin.write(np.asarray(annotated).tobytes())
         assert max_readback<1e-5, "pose replay mismatch"
     finally:
@@ -269,7 +295,7 @@ def main():
     (args.out/"DATA.json").write_text(json.dumps(payload,indent=2,allow_nan=False)+"\n")
     build_viewer(args.out,payload,args.fps)
     receipt={"seed":args.seed,"physics_steps":0,"source_kind":"MEASURED_POSE_REPLAY",
-         "camera":"fixed world camera; measured actor origins projected, NOT contact points",
+         "camera":"fixed world camera; native pin tips (+16mm x, +/-7mm y) and front-mouth guides projected from measured actor poses; NOT measured contact patches",
          "step_to_time":"frame k represents physical step k, 20 fps; frame 0 is initial",
          "max_pose_readback_error":max_readback,
          "source":[{"path":str(p),"sha256":sha(p)} for p,t in sources],
