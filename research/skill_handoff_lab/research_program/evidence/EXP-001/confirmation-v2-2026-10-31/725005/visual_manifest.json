@@ -1,0 +1,128 @@
+{
+  "seed": 725005,
+  "frame": 114,
+  "selection": "largest measured one-step backward axial displacement in original servo",
+  "physics_steps": 0,
+  "max_pose_readback_error": 1.1920928955078125e-07,
+  "source_type": "MEASURED_POSE_REPLAY",
+  "sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_725005/725005_a15.0_d0.025.json.gz",
+      "sha256": "8bf664a72470e4c0e540792571986c9f347f650ab6cfc21469172df022c76903",
+      "execution_manifest": {
+        "commit": "eb8a93f88d2ca407b12c23e0a3abb07b7f61f16d",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "232ee9d369b700bdb8508380e86321a58e5fea77418c1f87e6d015de0ff64cac"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "725005",
+        "variant": "servo_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_725005/725005_a15.0_d0.025.json.gz",
+      "sha256": "57492ff40060d7454538dc61349e18314c7e90e7846518296a3de43c5df6f153",
+      "execution_manifest": {
+        "commit": "eb8a93f88d2ca407b12c23e0a3abb07b7f61f16d",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "725005",
+        "variant": "servo_local_hold_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    }
+  ],
+  "projected_actor_centers": [
+    {
+      "tool": [
+        487.9815768405316,
+        350.38023262212175
+      ],
+      "cube": [
+        430.30214246995257,
+        346.93853087104213
+      ]
+    },
+    {
+      "tool": [
+        465.91738500843724,
+        348.1247043437575
+      ],
+      "cube": [
+        430.30214246995257,
+        346.93853087104213
+      ]
+    }
+  ],
+  "camera_intrinsic": [
+    [
+      1086.3353271484375,
+      0.0,
+      480.0
+    ],
+    [
+      0.0,
+      1086.3353271484375,
+      360.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_extrinsic": [
+    [
+      -0.9125094413757324,
+      -0.4090557098388672,
+      5.960465188081798e-08,
+      0.0006784722208976746
+    ],
+    [
+      -0.23982320725917816,
+      0.5349903106689453,
+      -0.8101050853729248,
+      0.13732416927814484
+    ],
+    [
+      0.33137810230255127,
+      -0.7392285466194153,
+      -0.5862847566604614,
+      0.3731173276901245
+    ]
+  ],
+  "script_sha256": "f4eef733f46a648d786397cbe7dc69a442070c507463bbbed2636ae0bb33441f",
+  "files": {
+    "RAW.png": "fc610b7951284465d5e37f547593b92023aea08176617aa811cfd3dd02c786b2",
+    "ANNOTATED.png": "ed166d583d7be9a30f0330271865862370190c889275ee05de44725d2d4527d0",
+    "TRACE.png": "2d04cc2a3c21d3f3ae1e5da5ce331756a13fe1a48b0a17a795fc680d5cd11cca",
+    "TRACE.svg": "e2a99ce5aa7270186ebad18d32935ee0206bac7c41adf2cfefa49db2afe38995",
+    "CAPTION.md": "e12074636399634c34f99abad2d7075f1972a746a3135803b9444f658fd0b779"
+  },
+  "analysis_script_sha256": "df64c609c0dd164355bfa49d93747543455a8d137bbdf9df2188c03df671842b"
+}

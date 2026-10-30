@@ -8,8 +8,8 @@
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S2",
   "active_experiment": "EXP-001",
-  "latest_evidence": "evidence/EXP-001/2026-10-31/README.md",
-  "next_action": "EXP-001: freeze servo_local_hold_stop and independently verify it against servo_stop and frozen_stop on genuinely new uninspected native PlugCharger scenes using cold-process matched controls; classify remaining contact failures. Use VISUAL_EVIDENCE_PROTOCOL.md for a few raw/annotated/trace mechanism figures, do not pool post-hoc 4/4 with previous 8 or claim RL gain.",
+  "latest_evidence": "evidence/EXP-001/confirmation-v2-2026-10-31/README.md",
+  "next_action": "EXP-001 controller confirmation complete: new 726000-007 integral 2/8, original servo 7/8, local-depth servo 7/8; all 7 reached suffix succeed. Do not expand same-distribution servo tests or train contact RL. Diagnose remaining grasp-prefix feasibility and downstream IK together: use measured grasp/lift/attachment evidence, bounded legal depth/orientation and rule-based feasibility baseline on a small new design group. Advance EXP-002 only if a full-task action benefit remains beyond strong rules.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "active",
@@ -70,23 +70,25 @@
     }
   ],
   "unresolved_questions": [
-    "Does the final local-depth-hold controller retain the frozen servo 5/8 gain and remove its regression on new native scenes?",
-    "Which contact failures remain after strong geometric control, distinct from shared grasp-prefix failure and RRT variability?",
-    "Does effect history add deployable information beyond privileged current state and a generic history encoder?",
-    "Can a mature residual SAC/PPO learn the correction at reasonable counted physical+offline data cost?",
-    "Are benefits novel versus Foresight, STAP, DAWN, SCOUT and simple replan/search?"
+    "Can feasible grasp geometry/depth improve complete-task outcomes beyond a rule-based grasp and downstream IK contract?",
+    "Does any contact-phase opportunity remain beyond the now-strong servo under justified task conditions?",
+    "Does execution history add information beyond privileged current physical state, rather than redundant pose differences?",
+    "Only after physical opportunity: can same-authority RL beat strong rules/search and distinguish a new mechanism?"
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
   "latest_run_summary": {
     "experiment": "EXP-001",
-    "complete_episodes": 74,
-    "distinct_scene_seeds": 14,
-    "physical_control_steps": 14905,
+    "this_turn_complete_episodes": 28,
+    "this_turn_distinct_scenes": 8,
+    "this_turn_physical_steps": 5600,
     "optimizer_steps": 0,
-    "repeat_same_outcome": "18/18",
-    "frozen_new8": "integral+hold 1/8; bounded servo+hold 5/8; rescues5/regressions1",
-    "posthoc_fix": "local-depth hold4/4 on four inspected cases; not independent confirmation"
+    "independent_confirmation": "2/8 integral, 7/8 servo, 7/8 local hold; local vs servo 0 rescues/0 regressions",
+    "suffix": "7/7 reached suffix succeed; shared failure is grasp prefix",
+    "posthoc_grasp_diagnostic": "4/4 fail, no rescue; one angle passes grasp but fails suffix IK",
+    "cumulative_complete_episodes": 102,
+    "cumulative_physical_steps": 20505,
+    "cumulative_distinct_scenes": 22
   },
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md"
 }

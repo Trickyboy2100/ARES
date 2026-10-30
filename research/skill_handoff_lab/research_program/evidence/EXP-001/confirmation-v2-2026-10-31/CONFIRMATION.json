@@ -1,0 +1,1129 @@
+{
+  "episodes": 24,
+  "scenes": 8,
+  "physics_steps": 4800,
+  "optimizer_steps": 0,
+  "success": {
+    "frozen_stop": 2,
+    "servo_stop": 7,
+    "servo_local_hold_stop": 7
+  },
+  "paired": {
+    "frozen_stop_to_local": {
+      "rescues": 5,
+      "regressions": 0,
+      "both_success": 2,
+      "both_fail": 1,
+      "exact_two_sided_p": 0.0625
+    },
+    "servo_stop_to_local": {
+      "rescues": 0,
+      "regressions": 0,
+      "both_success": 7,
+      "both_fail": 1,
+      "exact_two_sided_p": 1
+    }
+  },
+  "boundary_checks": [
+    {
+      "seed": 726000,
+      "old_vs_local_align_delta": 0.0,
+      "integral_vs_local_align_delta": 0.0
+    },
+    {
+      "seed": 726001,
+      "old_vs_local_align_delta": 0.0,
+      "integral_vs_local_align_delta": 0.0
+    },
+    {
+      "seed": 726002,
+      "old_vs_local_align_delta": 0.0,
+      "integral_vs_local_align_delta": 0.0
+    },
+    {
+      "seed": 726003,
+      "old_vs_local_align_delta": 0.0,
+      "integral_vs_local_align_delta": 0.0
+    },
+    {
+      "seed": 726004,
+      "old_vs_local_align_delta": 0.0,
+      "integral_vs_local_align_delta": 0.0
+    },
+    {
+      "seed": 726005,
+      "old_vs_local_align_delta": null,
+      "integral_vs_local_align_delta": null
+    },
+    {
+      "seed": 726006,
+      "old_vs_local_align_delta": 0.0,
+      "integral_vs_local_align_delta": 0.0
+    },
+    {
+      "seed": 726007,
+      "old_vs_local_align_delta": 0.0,
+      "integral_vs_local_align_delta": 0.0
+    }
+  ],
+  "rows": [
+    {
+      "seed": 726000,
+      "variant": "frozen_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 4.936330486088991,
+      "angle_rad": 0.00406301487237215,
+      "wall_s": 5.993071652017534,
+      "planning_wall_s": 0.05554915510583669,
+      "plan_calls": 12,
+      "rrt_calls": 0,
+      "servo_steps": 0,
+      "mode_switches": 0,
+      "backward_travel_mm": -0.0,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": null,
+      "peak_contact_proxy_N": 2.169756935654876,
+      "first_native_success_step": 154
+    },
+    {
+      "seed": 726000,
+      "variant": "servo_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 4.9545071087777615,
+      "angle_rad": 0.0025255046784877777,
+      "wall_s": 5.6368734579882585,
+      "planning_wall_s": 0.03951709042303264,
+      "plan_calls": 90,
+      "rrt_calls": 0,
+      "servo_steps": 86,
+      "mode_switches": 15,
+      "backward_travel_mm": 28.527125059749313,
+      "backward_steps_over_0_5mm": 20,
+      "net_axial_progress_mm": 22.736370941971074,
+      "peak_contact_proxy_N": 1.5814723245210138,
+      "first_native_success_step": 172
+    },
+    {
+      "seed": 726000,
+      "variant": "servo_local_hold_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 3.610034938901663,
+      "angle_rad": 0.004384133964776993,
+      "wall_s": 5.885984999011271,
+      "planning_wall_s": 0.026046890823636204,
+      "plan_calls": 31,
+      "rrt_calls": 0,
+      "servo_steps": 27,
+      "mode_switches": 5,
+      "backward_travel_mm": 0.08159025052314917,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": 24.08604372687907,
+      "peak_contact_proxy_N": 2.1342264088408025,
+      "first_native_success_step": 113
+    },
+    {
+      "seed": 726001,
+      "variant": "frozen_stop",
+      "success": false,
+      "error": "CONTACT_WITHOUT_GOAL",
+      "position_mm": 19.197694957256317,
+      "angle_rad": 0.21524310111999512,
+      "wall_s": 5.856875404948369,
+      "planning_wall_s": 0.0571974579943344,
+      "plan_calls": 12,
+      "rrt_calls": 0,
+      "servo_steps": 0,
+      "mode_switches": 0,
+      "backward_travel_mm": -0.0,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": null,
+      "peak_contact_proxy_N": 103.08927380298366,
+      "first_native_success_step": null
+    },
+    {
+      "seed": 726001,
+      "variant": "servo_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 4.294120706617832,
+      "angle_rad": 0.0008171850931830704,
+      "wall_s": 6.003500922990497,
+      "planning_wall_s": 0.025979904748965055,
+      "plan_calls": 32,
+      "rrt_calls": 0,
+      "servo_steps": 28,
+      "mode_switches": 7,
+      "backward_travel_mm": 2.089761932909532,
+      "backward_steps_over_0_5mm": 1,
+      "net_axial_progress_mm": 16.007459152427344,
+      "peak_contact_proxy_N": 1.1475463013868312,
+      "first_native_success_step": 111
+    },
+    {
+      "seed": 726001,
+      "variant": "servo_local_hold_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 3.7313951179385185,
+      "angle_rad": 0.0012166125234216452,
+      "wall_s": 6.047361135017127,
+      "planning_wall_s": 0.025976555072702467,
+      "plan_calls": 30,
+      "rrt_calls": 0,
+      "servo_steps": 26,
+      "mode_switches": 3,
+      "backward_travel_mm": 0.32254308047384583,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": 16.572376604275433,
+      "peak_contact_proxy_N": 1.3377127832300204,
+      "first_native_success_step": 109
+    },
+    {
+      "seed": 726002,
+      "variant": "frozen_stop",
+      "success": false,
+      "error": "CONTACT_WITHOUT_GOAL",
+      "position_mm": 22.122306749224663,
+      "angle_rad": 0.2588898837566376,
+      "wall_s": 5.747594204032794,
+      "planning_wall_s": 0.05187463201582432,
+      "plan_calls": 12,
+      "rrt_calls": 0,
+      "servo_steps": 0,
+      "mode_switches": 0,
+      "backward_travel_mm": -0.0,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": null,
+      "peak_contact_proxy_N": 77.27893086652415,
+      "first_native_success_step": null
+    },
+    {
+      "seed": 726002,
+      "variant": "servo_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 4.759292118251324,
+      "angle_rad": 0.0027159214951097965,
+      "wall_s": 5.599911438999698,
+      "planning_wall_s": 0.04103415971621871,
+      "plan_calls": 75,
+      "rrt_calls": 0,
+      "servo_steps": 71,
+      "mode_switches": 5,
+      "backward_travel_mm": 25.48420608681819,
+      "backward_steps_over_0_5mm": 19,
+      "net_axial_progress_mm": 25.159852572706303,
+      "peak_contact_proxy_N": 4.8190198992245925,
+      "first_native_success_step": 156
+    },
+    {
+      "seed": 726002,
+      "variant": "servo_local_hold_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 4.62911743670702,
+      "angle_rad": 0.02117854729294777,
+      "wall_s": 5.807126107974909,
+      "planning_wall_s": 0.03271529724588618,
+      "plan_calls": 55,
+      "rrt_calls": 0,
+      "servo_steps": 51,
+      "mode_switches": 2,
+      "backward_travel_mm": 0.2950746788335188,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": 25.57041178268538,
+      "peak_contact_proxy_N": 28.12260421404035,
+      "first_native_success_step": 136
+    },
+    {
+      "seed": 726003,
+      "variant": "frozen_stop",
+      "success": false,
+      "error": "CONTACT_WITHOUT_GOAL",
+      "position_mm": 267.9715156555176,
+      "angle_rad": 1.724096655845642,
+      "wall_s": 5.732104502967559,
+      "planning_wall_s": 0.05105712893418968,
+      "plan_calls": 12,
+      "rrt_calls": 0,
+      "servo_steps": 0,
+      "mode_switches": 0,
+      "backward_travel_mm": -0.0,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": null,
+      "peak_contact_proxy_N": 132.52319581457667,
+      "first_native_success_step": null
+    },
+    {
+      "seed": 726003,
+      "variant": "servo_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 4.821969196200371,
+      "angle_rad": 0.0032400679774582386,
+      "wall_s": 5.90304558200296,
+      "planning_wall_s": 0.03266388893825933,
+      "plan_calls": 64,
+      "rrt_calls": 0,
+      "servo_steps": 60,
+      "mode_switches": 9,
+      "backward_travel_mm": 21.923742468358906,
+      "backward_steps_over_0_5mm": 14,
+      "net_axial_progress_mm": 20.905761279391868,
+      "peak_contact_proxy_N": 3.8442224129794065,
+      "first_native_success_step": 140
+    },
+    {
+      "seed": 726003,
+      "variant": "servo_local_hold_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 3.881670767441392,
+      "angle_rad": 0.0009542804909870028,
+      "wall_s": 5.898593177029397,
+      "planning_wall_s": 0.02461715880781412,
+      "plan_calls": 29,
+      "rrt_calls": 0,
+      "servo_steps": 25,
+      "mode_switches": 6,
+      "backward_travel_mm": 0.15243062479980551,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": 21.882575192182536,
+      "peak_contact_proxy_N": 1.2460796981644744,
+      "first_native_success_step": 105
+    },
+    {
+      "seed": 726004,
+      "variant": "frozen_stop",
+      "success": false,
+      "error": "CONTACT_WITHOUT_GOAL",
+      "position_mm": 24.621549993753433,
+      "angle_rad": 0.24626801908016205,
+      "wall_s": 5.805610457027797,
+      "planning_wall_s": 0.053409484040457755,
+      "plan_calls": 12,
+      "rrt_calls": 0,
+      "servo_steps": 0,
+      "mode_switches": 0,
+      "backward_travel_mm": -0.0,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": null,
+      "peak_contact_proxy_N": 77.78040752858276,
+      "first_native_success_step": null
+    },
+    {
+      "seed": 726004,
+      "variant": "servo_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 3.5492994356900454,
+      "angle_rad": 0.005493381526321173,
+      "wall_s": 5.808963568008039,
+      "planning_wall_s": 0.03542825079057366,
+      "plan_calls": 48,
+      "rrt_calls": 0,
+      "servo_steps": 44,
+      "mode_switches": 7,
+      "backward_travel_mm": 8.585068212901309,
+      "backward_steps_over_0_5mm": 6,
+      "net_axial_progress_mm": 21.122974526121553,
+      "peak_contact_proxy_N": 3.5465267967787106,
+      "first_native_success_step": 140
+    },
+    {
+      "seed": 726004,
+      "variant": "servo_local_hold_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 3.8659574929624796,
+      "angle_rad": 0.004411865025758743,
+      "wall_s": 5.852811727963854,
+      "planning_wall_s": 0.028250157076399773,
+      "plan_calls": 32,
+      "rrt_calls": 0,
+      "servo_steps": 28,
+      "mode_switches": 9,
+      "backward_travel_mm": -0.0,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": 20.805315483195116,
+      "peak_contact_proxy_N": 3.431654088685802,
+      "first_native_success_step": 124
+    },
+    {
+      "seed": 726005,
+      "variant": "frozen_stop",
+      "success": false,
+      "error": "CHARGER_NOT_GRASPED",
+      "position_mm": 197.4058449268341,
+      "angle_rad": 0.8787615895271301,
+      "wall_s": 5.783300402981695,
+      "planning_wall_s": 0.009722821996547282,
+      "plan_calls": 2,
+      "rrt_calls": 0,
+      "servo_steps": 0,
+      "mode_switches": 0,
+      "backward_travel_mm": -0.0,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": null,
+      "peak_contact_proxy_N": 0.0,
+      "first_native_success_step": null
+    },
+    {
+      "seed": 726005,
+      "variant": "servo_stop",
+      "success": false,
+      "error": "CHARGER_NOT_GRASPED",
+      "position_mm": 197.4058449268341,
+      "angle_rad": 0.8787615895271301,
+      "wall_s": 5.897443818976171,
+      "planning_wall_s": 0.009873309987597167,
+      "plan_calls": 2,
+      "rrt_calls": 0,
+      "servo_steps": 0,
+      "mode_switches": 0,
+      "backward_travel_mm": -0.0,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": null,
+      "peak_contact_proxy_N": 0.0,
+      "first_native_success_step": null
+    },
+    {
+      "seed": 726005,
+      "variant": "servo_local_hold_stop",
+      "success": false,
+      "error": "CHARGER_NOT_GRASPED",
+      "position_mm": 197.4058449268341,
+      "angle_rad": 0.8787615895271301,
+      "wall_s": 5.7145423630136065,
+      "planning_wall_s": 0.009786078066099435,
+      "plan_calls": 2,
+      "rrt_calls": 0,
+      "servo_steps": 0,
+      "mode_switches": 0,
+      "backward_travel_mm": -0.0,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": null,
+      "peak_contact_proxy_N": 0.0,
+      "first_native_success_step": null
+    },
+    {
+      "seed": 726006,
+      "variant": "frozen_stop",
+      "success": false,
+      "error": "CONTACT_WITHOUT_GOAL",
+      "position_mm": 21.925149485468864,
+      "angle_rad": 0.20300763845443726,
+      "wall_s": 5.8906475600088015,
+      "planning_wall_s": 0.05533114104764536,
+      "plan_calls": 12,
+      "rrt_calls": 0,
+      "servo_steps": 0,
+      "mode_switches": 0,
+      "backward_travel_mm": -0.0,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": null,
+      "peak_contact_proxy_N": 99.44503118445891,
+      "first_native_success_step": null
+    },
+    {
+      "seed": 726006,
+      "variant": "servo_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 3.902387572452426,
+      "angle_rad": 0.0024297640193253756,
+      "wall_s": 5.910360053007025,
+      "planning_wall_s": 0.029408934526145458,
+      "plan_calls": 52,
+      "rrt_calls": 0,
+      "servo_steps": 48,
+      "mode_switches": 9,
+      "backward_travel_mm": 10.913282761735605,
+      "backward_steps_over_0_5mm": 7,
+      "net_axial_progress_mm": 19.55413990479678,
+      "peak_contact_proxy_N": 3.3849035725748164,
+      "first_native_success_step": 127
+    },
+    {
+      "seed": 726006,
+      "variant": "servo_local_hold_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 4.8986682668328285,
+      "angle_rad": 0.005075845401734114,
+      "wall_s": 5.992501864035148,
+      "planning_wall_s": 0.03157302096951753,
+      "plan_calls": 53,
+      "rrt_calls": 0,
+      "servo_steps": 49,
+      "mode_switches": 4,
+      "backward_travel_mm": 0.37384839641820733,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": 18.646445692529255,
+      "peak_contact_proxy_N": 19.049325045714077,
+      "first_native_success_step": 128
+    },
+    {
+      "seed": 726007,
+      "variant": "frozen_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 4.869971890002489,
+      "angle_rad": 0.0053086853586137295,
+      "wall_s": 5.682591315009631,
+      "planning_wall_s": 0.05234387697419152,
+      "plan_calls": 12,
+      "rrt_calls": 0,
+      "servo_steps": 0,
+      "mode_switches": 0,
+      "backward_travel_mm": -0.0,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": null,
+      "peak_contact_proxy_N": 33.24117187425297,
+      "first_native_success_step": 167
+    },
+    {
+      "seed": 726007,
+      "variant": "servo_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 4.8135388642549515,
+      "angle_rad": 0.002100141951814294,
+      "wall_s": 5.933194860990625,
+      "planning_wall_s": 0.03209680272266269,
+      "plan_calls": 36,
+      "rrt_calls": 0,
+      "servo_steps": 32,
+      "mode_switches": 5,
+      "backward_travel_mm": 1.919916282059848,
+      "backward_steps_over_0_5mm": 1,
+      "net_axial_progress_mm": 20.3879068491662,
+      "peak_contact_proxy_N": 1.9990431460534916,
+      "first_native_success_step": 129
+    },
+    {
+      "seed": 726007,
+      "variant": "servo_local_hold_stop",
+      "success": true,
+      "error": "SUCCESS",
+      "position_mm": 3.7993802689015865,
+      "angle_rad": 0.0035397480241954327,
+      "wall_s": 5.808566883963067,
+      "planning_wall_s": 0.0285951109835878,
+      "plan_calls": 36,
+      "rrt_calls": 0,
+      "servo_steps": 32,
+      "mode_switches": 5,
+      "backward_travel_mm": -0.0,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": 21.39130497154737,
+      "peak_contact_proxy_N": 2.598385240920735,
+      "first_native_success_step": 129
+    }
+  ],
+  "sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_726000/726000_a15.0_d0.025.json.gz",
+      "sha256": "c475cd6853f01951c81723513699753de88069fc21c0ef5790f93558891ffb76",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726000",
+        "variant": "frozen_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_726000/726000_a15.0_d0.025.json.gz",
+      "sha256": "7404a3dfc8e73404b2540bbcaeb605e1471c87ddbd5982fef28e4f3f73be461c",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726000",
+        "variant": "servo_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_726000/726000_a15.0_d0.025.json.gz",
+      "sha256": "92629e5f7674912271303ae0ebd2ad18c1725cb6f3c2ac25ef6a8713c36daf75",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726000",
+        "variant": "servo_local_hold_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_726001/726001_a15.0_d0.025.json.gz",
+      "sha256": "bffbbd741dcdde46a31f8505f509e66f79ff86dc58315abb76d5eea17ca3e218",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726001",
+        "variant": "frozen_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_726001/726001_a15.0_d0.025.json.gz",
+      "sha256": "be03d4cf0aa7b31a003104dff259f13c392d5e49629136d7debcd6ec4c1654ec",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726001",
+        "variant": "servo_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_726001/726001_a15.0_d0.025.json.gz",
+      "sha256": "b4420c4f8b03663db36eba07242cc6dd5a7a4c7ac63751ce3227fc4d7a8cee77",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726001",
+        "variant": "servo_local_hold_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_726002/726002_a15.0_d0.025.json.gz",
+      "sha256": "001d63f82a41de1d5b7fdb4e6d2d6174c900d1ffd7665a6b0ba2b7f8c7687f5f",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726002",
+        "variant": "frozen_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_726002/726002_a15.0_d0.025.json.gz",
+      "sha256": "c37e2a851e3fda284d9abe01fe1422691e532aabe023c8a97de3d4591325008d",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726002",
+        "variant": "servo_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_726002/726002_a15.0_d0.025.json.gz",
+      "sha256": "3222428d94be2694f10e7cb885845dacd624d7ddcad150dc2984197cf1b40cad",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726002",
+        "variant": "servo_local_hold_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_726003/726003_a15.0_d0.025.json.gz",
+      "sha256": "91983dc13fe3c418ca0090135ccde19764af670b2cde442bb39bd80dd2d73c47",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726003",
+        "variant": "frozen_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_726003/726003_a15.0_d0.025.json.gz",
+      "sha256": "8289be3bf827e791890777602a4736947a24179bde7b270cfd908b79947f2e18",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726003",
+        "variant": "servo_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_726003/726003_a15.0_d0.025.json.gz",
+      "sha256": "5f83ec9f4df30c94940426a3be228efaaa4e7790dcd0d62516f39519e563bbdb",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726003",
+        "variant": "servo_local_hold_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_726004/726004_a15.0_d0.025.json.gz",
+      "sha256": "b54b1f03d96cada02cda06cd0f5041ca8454670055c53e6f67fa56aff30868a6",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726004",
+        "variant": "frozen_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_726004/726004_a15.0_d0.025.json.gz",
+      "sha256": "621c955c51396229d834f45680694ec2372e6b50484e15a862c0f005033616dd",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726004",
+        "variant": "servo_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_726004/726004_a15.0_d0.025.json.gz",
+      "sha256": "f724c775eb5ebb1b470975714085220d752b0deded17e17cad30fc631bf93e44",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726004",
+        "variant": "servo_local_hold_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_726005/726005_a15.0_d0.025.json.gz",
+      "sha256": "d1b6909dbaaafade005564d6d5b2f21fed173b0fa3a590fb3b10557c56e3e805",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726005",
+        "variant": "frozen_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_726005/726005_a15.0_d0.025.json.gz",
+      "sha256": "7b067f7cc28a894c9894b790c0f1361f431083571fc24760063a0a9df9dac69e",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726005",
+        "variant": "servo_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_726005/726005_a15.0_d0.025.json.gz",
+      "sha256": "9290873597df5ac8910f87b033d8b639df3e3b6e7f01ea3f143b55d63c94c61b",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726005",
+        "variant": "servo_local_hold_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_726006/726006_a15.0_d0.025.json.gz",
+      "sha256": "5e3ec47bcfb352c13699acb789055931a35c903b2fc49a482220d4e0096913f2",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726006",
+        "variant": "frozen_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_726006/726006_a15.0_d0.025.json.gz",
+      "sha256": "93a18da2ba125cef150a34e307d008d8f344a7e03267994f8550b7d52e1f9b11",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726006",
+        "variant": "servo_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_726006/726006_a15.0_d0.025.json.gz",
+      "sha256": "b642a47732e1fe8cb3d62ead1ea6cc57a9d11bc204c16dead0c2533b3d830371",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726006",
+        "variant": "servo_local_hold_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/frozen_stop_726007/726007_a15.0_d0.025.json.gz",
+      "sha256": "b41cef8bb00e3c54c3877a71239dae0a23fa2c7f00ca42293356f01f1e2b76c6",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726007",
+        "variant": "frozen_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_726007/726007_a15.0_d0.025.json.gz",
+      "sha256": "dda571cc7803cdc03e3be65bba5257859a1e2940b2c790eae8025e7ed5ac725a",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726007",
+        "variant": "servo_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_726007/726007_a15.0_d0.025.json.gz",
+      "sha256": "e8b37fbc4839f4c542f51524ee5927df0283118465b9437f6867affc30d6f637",
+      "manifest": {
+        "commit": "932c0f90087381accb9c36880ba3d26111de06db",
+        "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "dependencies": {
+          "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+          "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+        },
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": "726007",
+        "variant": "servo_local_hold_stop",
+        "python_numpy_torch_seed": 31031,
+        "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "native_task_modified": false,
+        "optimizer_steps": 0,
+        "restricted_field_data": false,
+        "episodes": 1,
+        "physical_steps": 200
+      }
+    }
+  ]
+}

@@ -37,3 +37,6 @@ uncertainty & limitation | exact raw path/hash | science decision`。
 ## EXP-001｜2026-10-31 原生强控制与重复性
 
 [完整精简证据与源码/原始SHA索引](evidence/EXP-001/2026-10-31/README.md)：原生PlugCharger200，14初态、74完整执行+105步已记录异常，合计14905控制步、0优化步。18跨进程配对成败一致、17记录状态一致；设计4例原积分+保持1、有界反馈+保持4；冻结新8例1→5，5救回/1退化。事后局部轴向保持修正4例2→4，不是新确认集。保存真实非Git轨迹与一组标注的姿态回放视频；无现场数据。支持控制器修复，不支持独立RL创新；科学决定D-006，活动实验仍EXP-001。
+
+## EXP-001 independent confirmation and visual mechanism, 2026-10-31
+[Source-backed evidence](evidence/EXP-001/confirmation-v2-2026-10-31/README.md): 24 cold-process episodes on 8 new scenes, 2/8 integral vs 7/8 original servo vs 7/8 local-depth servo. Four additional inspected grasp-angle diagnostics all fail. 5600 actual steps, zero optimizer updates. Protocol RAW/ANNOTATED/TRACE/CAPTION generated for two historical diagnostic cases; replay adds zero physics. No new RL claim. EXP-002 opportunity not yet established beyond the strong suffix.

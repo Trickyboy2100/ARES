@@ -1,0 +1,30 @@
+[
+  {
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_stop_725002/725002_a15.0_d0.025.json.gz",
+    "sha256": "0c450cba070bea551fb3f4d8098a428bb2b89db3da63bb246efd7f6debf91658",
+    "success": false,
+    "mechanism": {
+      "servo_steps": 115,
+      "mode_switches": 26,
+      "backward_travel_mm": 41.36561363142986,
+      "backward_steps_over_0_5mm": 30,
+      "net_axial_progress_mm": 3.405969795295782,
+      "peak_contact_proxy_N": 0.0,
+      "first_native_success_step": null
+    }
+  },
+  {
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-001/servo_local_hold_stop_725002/725002_a15.0_d0.025.json.gz",
+    "sha256": "ecbfc4957923aa05ef03751ff5fe50c0ba3c9fc8f86ae2530f25e6ba50c98657",
+    "success": true,
+    "mechanism": {
+      "servo_steps": 31,
+      "mode_switches": 3,
+      "backward_travel_mm": 0.00044884374289111406,
+      "backward_steps_over_0_5mm": 0,
+      "net_axial_progress_mm": 18.99082489357082,
+      "peak_contact_proxy_N": 3.7731249015014603,
+      "first_native_success_step": 116
+    }
+  }
+]
