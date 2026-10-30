@@ -1,3 +1,7 @@
+> **ARES SCI 单篇方法论文研究总控（2026-10-31）**：请先看 [研究总索引](research/skill_handoff_lab/research_program/README.md)，当前任务以其 `STATE.json` 为准。下方为既有工程/历史说明，不代表最新研究进度。
+
+---
+
 # PG-JY — 金榆双臂机器人开发平台
 
 双臂 JAKA MiniCobo + Inspire EG2-4C2 夹爪系统的完整开发仓库，涵盖仿真、运动规划、视觉位姿估计三个模块。

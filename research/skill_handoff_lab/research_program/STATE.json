@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
+  "last_review": "2026-10-31",
+  "baseline_commit": "c013f7e33fe65c3a76c3ef2dfc1dedc6d4816a67",
+  "branch": "codex/ares-sci-research-program-20261031",
+  "scientific_goal": "Task-conditioned executable skill-parameter reinforcement learning with genuine physical execution-effect adaptation for transferable robotic manipulation",
+  "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
+  "current_stage": "S2",
+  "active_experiment": "EXP-001",
+  "latest_evidence": "../deliverables/client_sci_20261027/13_TOOL_TASK_OPPORTUNITY_20261029/README.md",
+  "next_action": "Repeat native PlugCharger strong controllers with matched resets and bounded planning randomness; attribute failure to planning/tracking/contact/budget; characterize whether legal feedback corrections have repeatable benefit. If geometry solves them, pivot task, not weaken baseline.",
+  "stage_status": {
+    "S1": "maintain_alongside_experiments",
+    "S2": "active",
+    "S3": "planned",
+    "S4": "planned",
+    "S5": "hypothesis_only",
+    "S6": "not_started",
+    "S7": "not_started"
+  },
+  "experiments": [
+    {
+      "id": "EXP-001",
+      "status": "ready",
+      "stage": "S2",
+      "card": "experiments/EXP-001_BASELINE_AND_CAUSALITY.md",
+      "depends_on": [],
+      "primary_claim": "Distinguish control defects and nondeterminism from state-dependent contact failures."
+    },
+    {
+      "id": "EXP-002",
+      "status": "queued",
+      "stage": "S3",
+      "card": "experiments/EXP-002_ACTION_AUTHORITY.md",
+      "depends_on": [
+        "EXP-001"
+      ],
+      "primary_claim": "Find physically useful, executable contact-phase corrections under full-task constraints."
+    },
+    {
+      "id": "EXP-003",
+      "status": "queued",
+      "stage": "S4",
+      "card": "experiments/EXP-003_STRONG_RL_BASELINES.md",
+      "depends_on": [
+        "EXP-002"
+      ],
+      "primary_claim": "Get well-trained same-authority residual RL, with full-cost baselines."
+    },
+    {
+      "id": "EXP-004",
+      "status": "queued",
+      "stage": "S5",
+      "card": "experiments/EXP-004_EFFECT_CONDITIONED_METHOD.md",
+      "depends_on": [
+        "EXP-003"
+      ],
+      "primary_claim": "Isolate additional causal value of explicit action-effect feedback over equal-observation/history RL and strong planning."
+    },
+    {
+      "id": "EXP-005",
+      "status": "queued",
+      "stage": "S6",
+      "card": "experiments/EXP-005_GENERALIZATION.md",
+      "depends_on": [
+        "EXP-004"
+      ],
+      "primary_claim": "After a reliable independent gain, test novel conditions, another contact mechanism and industrial adapter."
+    }
+  ],
+  "unresolved_questions": [
+    "How many native PlugCharger failures survive a fully tuned strong baseline within 200 steps?",
+    "Do legal contact actions rescue failures repeatably, accounting for MPLib/RRT variability?",
+    "Does effect history add deployable information beyond privileged current state and a generic history encoder?",
+    "Can a mature residual SAC/PPO learn the correction at reasonable counted physical+offline data cost?",
+    "Are benefits novel versus Foresight, STAP, DAWN, SCOUT and simple replan/search?"
+  ],
+  "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
+  "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation."
+}

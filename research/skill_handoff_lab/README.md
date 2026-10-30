@@ -1,3 +1,7 @@
+> **当前甲方 SCI 方法研究（2026-10-31）**：统一入口在 [research_program/README.md](research_program/README.md)；`STATE.json` 管理当前阶段和实验。下文为早期 Skill-Handoff Lab 初始化及历史结果，不再是活动研究任务。
+
+---
+
 # ARES Skill-Handoff Lab — RTX 3080 Ubuntu sim-to-real starting point
 
 **Purpose:** prepare a **research-only**, hardware-free experimental base using the real ARES dual-arm URDF and the ARES-R Skill / Motion / Scene contracts. Prove (or disprove) the *skill terminal-state / successor feasibility* hypothesis before training RL.
