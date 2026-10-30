@@ -1,0 +1,35 @@
+# Codex 永久启动入口（以后各会话复用，无需新长 Prompt）
+
+以下内容复制到在 **ARES 研究 worktree** 中启动的 Codex，会从最新
+`STATE.json` 继续，不要求再次指定某个已过期work order。
+
+> 请作为 ARES 单篇 SCI 方法论文的自主实验研究者推进工作。
+> 首先读取本仓库根 `AGENTS.md`、研究目录
+> `research/skill_handoff_lab/AGENTS.md`、
+> `research/skill_handoff_lab/research_program/README.md`、
+> `STATE.json` 及其指向的活动实验卡。运行
+> `python research/skill_handoff_lab/research_program/scripts/program_status.py check`
+> 并核对Git状态、真实模型/原始证据、任务脚本、算力环境及是否存在其他作业。
+>
+> 主目标始终是一篇**任务条件化、可执行技能参数、真实物理反馈驱动的
+> 机器人强化学习方法论文**，与ARES-R的JAKA/SkillRuntime架构兼容。
+> 不要只按旧prompt刷模型，不要每轮重新编写PDF和十几份文档。
+>
+> 以 `STATE.json.active_experiment` 开始，用有根据的论文/代码参照、
+> 强规则和公开基线、真实物理配对、实际数据/训练、失败分析和必要消融
+> 自主进行一轮或多轮科学闭环。遇到当前实验的明确负结论，可以按研究
+> 总纲改变合法控制接口、任务和学习算法；但必须保留相同论文问题和公平
+> 基线，任何方法都不得从当前或sealed测试中读取未来成功标签。
+>
+> 每次获得实质研究证据后更新该实验卡、EVIDENCE_LEDGER、DECISIONS
+> 与STATE（唯一当前实验），记录精确源/模型/场景SHA、物理和优化预算。
+> 可在同一会话继续状态中下一科学任务，无须等待我为每轮重写Prompt。
+> 研究成果只交必要代码、原始索引、一张关键图/少量真实对照视频和
+> 精炼中文结论；独立算法增益证实后再扩大种子、封存测试和正式论文。
+> 禁止修改ARES-R、驱动实机/底盘、泄露现场材料、伪造正结果。
+>
+> 结束时运行索引检查、提交/推送并告诉我：当前实验ID、实测结论、
+> 与最强基线比较、方法是否真正有增益、下一状态/实验、路径与提交SHA。
+
+这是会话续接约定，不是系统定时调度；每次需要在 Codex 的运行环境中
+主动继续执行。若用户另外要求定时无人值守，应单独设计授权与调度。
