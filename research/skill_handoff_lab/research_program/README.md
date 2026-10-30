@@ -63,6 +63,6 @@ Prompt 在会话结束后永久自动运行。下一次会话从同一入口、�
 - [两真实技能边界与RL比较](../deliverables/client_sci_20261027/11_PAPER_FIRST_20261028/README.md)
 - [参数学习与风险消融](../deliverables/client_sci_20261027/10_METHOD_EVOLUTION_20261028/README.md)
 - [公开基准转向](../deliverables/client_sci_20261027/09_BENCHMARK_PIVOT/BENCHMARK_SCOUT_DECISION.md)
-- [实际 PhysX 闭环/可视化](../deliverables/client_sci_20261027/08_ITERATIVE_RESEARCH/README.md)
+- [实际 PhysX 闭环/可视化](../deliverables/client_sci_20261027/08_ITERATIVE_RESEARCH/index.html)
 
 以上是**历史证据**而非仍需逐条执行的旧工作单。

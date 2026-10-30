@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 import sys
 
@@ -82,6 +83,21 @@ def verify(state: dict) -> list[str]:
         for dep in by_id[active].get("depends_on", []):
             if by_id[dep]["status"] not in {"done", "pivoted"}:
                 problems.append(f"active {active} depends on unfinished {dep}")
+
+    # Check local Markdown links so index moves do not strand readers.
+    # External URLs and fragment-only links are intentionally excluded.
+    for doc_name in REQUIRED:
+        if not doc_name.endswith(".md"):
+            continue
+        doc = PROGRAM / doc_name
+        if not doc.exists():
+            continue
+        for target in re.findall(r"\\]\\(([^)]+)\\)", doc.read_text(encoding="utf-8")):
+            target = target.split("#", 1)[0].strip()
+            if not target or target.startswith(("https://", "http://", "mailto:")):
+                continue
+            if not (doc.parent / target).exists():
+                problems.append(f"{doc_name}: broken local link {target}")
 
     if not state.get("next_action"):
         problems.append("STATE next_action must be nonblank")
