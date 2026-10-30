@@ -32,3 +32,27 @@
 
 只要没有独立实验证据，就在 `paper/CLAIM_MATRIX.md` 标记PROPOSED或
 UNVERIFIED。不要因为论文发布日期较新而省略强先例。
+
+## 2026-10-31 最近邻外审焦点（实际工作前需核对论文全文/代码）
+
+- Sidhik等，**An adaptive framework for trajectory following in changing-contact
+  robot manipulation tasks**，Robotics and Autonomous Systems 181 (2024)，
+  https://doi.org/10.1016/j.robot.2024.104785
+  已讨论预测模型误差、在线接触模式辨识和控制器调整。
+- Liu等，**Hybrid Residual Reinforcement Learning for Contact-Rich
+  Robotic Book Insertion**，2026预印本，
+  https://arxiv.org/abs/2609.19962
+  已将名义接近/插入控制与有界Residual PPO纠偏结合。
+- Li等，**SCOUT**，CoRL2026，https://liy1shu.github.io/SCOUT/
+  已利用动作—结果误差更新对未观测动力学的在线信念。
+- Ma等，**DAWN**，ICML2026，https://proceedings.mlr.press/v306/ma26s.html
+  及 https://github.com/Guozheng-Ma/DAWN；名义数据预热和Critic LN
+  已是先例，其示例是ManiSkill2/v2，不能不经适配直接运行本机v1。
+- **Constraint-Grounded RL for Variable Impedance Control**，2026，
+  https://arxiv.org/abs/2609.13516；根据任务/力约束调整残差、
+  推进率与控制增益已有先例。
+
+因此“用动作效果预测+RL”“学习插入推进率”“切换接触阶段”
+均不自动具备独立新颖性。方法核心应落在**任务/技能合同中的
+有效物理作用条件、可测而不冗余的执行信念与跨任务参数决策**，
+并通过几何/RLS/MPC/相同历史ResidualRL等强对照证实。

@@ -40,3 +40,5 @@ uncertainty & limitation | exact raw path/hash | science decision`。
 
 ## EXP-001 independent confirmation and visual mechanism, 2026-10-31
 [Source-backed evidence](evidence/EXP-001/confirmation-v2-2026-10-31/README.md): 24 cold-process episodes on 8 new scenes, 2/8 integral vs 7/8 original servo vs 7/8 local-depth servo. Four additional inspected grasp-angle diagnostics all fail. 5600 actual steps, zero optimizer updates. Protocol RAW/ANNOTATED/TRACE/CAPTION generated for two historical diagnostic cases; replay adds zero physics. No new RL claim. EXP-002 opportunity not yet established beyond the strong suffix.
+
+| [EXP-001独立确认55861de](evidence/EXP-001/confirmation-v2-2026-10-31/README.md) | 新8初态积分2/8、servo7/8、depth-hold7/8；7/7进入后段成功；同成功7例首次到位平均快18.71步 | 当前插入后段确定性控制饱和；方法RL更新0。另25/5等历史样本不可拼为训练新证据。 |

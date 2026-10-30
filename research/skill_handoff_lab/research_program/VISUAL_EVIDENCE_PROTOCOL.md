@@ -56,3 +56,26 @@
 执行源码/配置/模型SHA、任务原生判据/时限、真实raw source路径及
 标注生成脚本。原始/圈注必须可在同一时间点并列比较；视频与图像原始版
 不能被标注版覆盖。无独立RL增量时一律注明 `NO NEW RL CLAIM`。
+
+## 全程视频保留、数据联动与可点击回放（2026-10-31）
+
+不能让两张静态RAW/ANNOTATED图代替10秒全程视频。
+每个重要配对实验保留 **RAW.mp4、ANNOTATED.mp4** 和
+按完整物理step导出的 DATA.json / MANIFEST.json /
+SYNC_VIEWER.html。标注视频用英文标关键actor/任务轴、实测轴向
+深度、横向误差、接触力代理、控制模式；TRACE移动游标与当前
+视频帧严格对齐，点击时序图可跳转原版或标注版视频。
+第0帧为初态，物理控制第k步在20Hz视频的k/20秒显示。
+
+仓库已提交生成器：
+`research/skill_handoff_lab/tools/program_charger_video_sync.py`。
+它读取先前真实的200步轨迹，**不调用 env.step()**；产生的是
+MEASURED_POSE_REPLAY，而不是新的实验物理回合。
+Codex须先在用户GPU上检查语法、实际试运行、完整两视频编码、
+帧/曲线步对齐、相机投影及source SHA。**当前只是实现代码，
+未实际验收生成物，不得宣称视频已经产出。**
+现有圆圈投影的是charger/receptacle actor原点，不是插针末端
+或插孔接触位置。若要标注实际接触点，需要合法资产几何及
+世界-相机投影，在图注写明测量/示意之别。
+RAW必须保持原始物理视觉内容，无额外虚构接触图像；
+ANNOTATED和TRACE链接来自真实源轨迹而非理想化动画。

@@ -6,14 +6,14 @@
   "branch": "research-sci-program",
   "scientific_goal": "Task-conditioned executable skill-parameter reinforcement learning with genuine physical execution-effect adaptation for transferable robotic manipulation",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
-  "current_stage": "S2",
-  "active_experiment": "EXP-001",
+  "current_stage": "S3",
+  "active_experiment": "EXP-002",
   "latest_evidence": "evidence/EXP-001/confirmation-v2-2026-10-31/README.md",
-  "next_action": "EXP-001 controller confirmation complete: new 726000-007 integral 2/8, original servo 7/8, local-depth servo 7/8; all 7 reached suffix succeed. Do not expand same-distribution servo tests or train contact RL. Diagnose remaining grasp-prefix feasibility and downstream IK together: use measured grasp/lift/attachment evidence, bounded legal depth/orientation and rule-based feasibility baseline on a small new design group. Advance EXP-002 only if a full-task action benefit remains beyond strong rules.",
+  "next_action": "EXP-002: proactive two-track research: test fresh native PlugCharger strong control and an explicitly named, physically realistic grasp/contact/observation-variation task family; identify observable action-conditioned effects and nontrivial rescue/regression beyond geometry/replan/RLS. Do not train on the already-solved 7/8 native cases. If learnable authority exists, autonomously proceed to strong online same-action residual SAC/PPO and a single effect-conditioned mechanism. First run program_charger_video_sync.py on the user's GPU; preserve RAW+ANNOTATED MP4, step-linked TRACE and source SHA. Never claim new RL gain without new independent results.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
-    "S2": "active",
-    "S3": "planned",
+    "S2": "complete_for_current_strong_controller",
+    "S3": "active",
     "S4": "planned",
     "S5": "hypothesis_only",
     "S6": "not_started",
@@ -22,7 +22,7 @@
   "experiments": [
     {
       "id": "EXP-001",
-      "status": "running",
+      "status": "done",
       "stage": "S2",
       "card": "experiments/EXP-001_BASELINE_AND_CAUSALITY.md",
       "depends_on": [],
@@ -30,7 +30,7 @@
     },
     {
       "id": "EXP-002",
-      "status": "queued",
+      "status": "ready",
       "stage": "S3",
       "card": "experiments/EXP-002_ACTION_AUTHORITY.md",
       "depends_on": [
@@ -70,10 +70,10 @@
     }
   ],
   "unresolved_questions": [
-    "Can feasible grasp geometry/depth improve complete-task outcomes beyond a rule-based grasp and downstream IK contract?",
-    "Does any contact-phase opportunity remain beyond the now-strong servo under justified task conditions?",
-    "Does execution history add information beyond privileged current physical state, rather than redundant pose differences?",
-    "Only after physical opportunity: can same-authority RL beat strong rules/search and distinguish a new mechanism?"
+    "Do legitimate new grasp/attachment/task/contact conditions expose repeatable failure of the best depth-hold+replan controller?",
+    "Are different legal actions beneficial under different current observations or short action-effect probes, rather than one always-best rule?",
+    "Can physically plausible unobserved dynamics/contact changes generate state aliasing that effect history helps resolve beyond generic history and strong online adaptive control?",
+    "Can mature residual PPO/SAC trained on enough genuine effective decisions improve full-task success, and does any new mechanism beat matched baselines?"
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
@@ -88,7 +88,8 @@
     "posthoc_grasp_diagnostic": "4/4 fail, no rescue; one angle passes grasp but fails suffix IK",
     "cumulative_complete_episodes": 102,
     "cumulative_physical_steps": 20505,
-    "cumulative_distinct_scenes": 22
+    "cumulative_distinct_scenes": 22,
+    "addendum": "No new physics in this program update; previous 55861de new 8 scenarios: integral2, servo7, depth-hold7, all seven contact-stage executions successful; sole common grasp failure."
   },
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md"
 }
