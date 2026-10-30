@@ -9,7 +9,7 @@
   "current_stage": "S2",
   "active_experiment": "EXP-001",
   "latest_evidence": "evidence/EXP-001/2026-10-31/README.md",
-  "next_action": "EXP-001: freeze servo_local_hold_stop and compare against servo_stop and frozen_stop in separate cold processes on a new uninspected native PlugCharger scene group. Validate the post-hoc 4/4 controller fix before claiming a new 8-case score. Characterize remaining contact failures for EXP-002; no RL training yet.",
+  "next_action": "EXP-001: freeze servo_local_hold_stop and independently verify it against servo_stop and frozen_stop on genuinely new uninspected native PlugCharger scenes using cold-process matched controls; classify remaining contact failures. Use VISUAL_EVIDENCE_PROTOCOL.md for a few raw/annotated/trace mechanism figures, do not pool post-hoc 4/4 with previous 8 or claim RL gain.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "active",
@@ -87,5 +87,6 @@
     "repeat_same_outcome": "18/18",
     "frozen_new8": "integral+hold 1/8; bounded servo+hold 5/8; rescues5/regressions1",
     "posthoc_fix": "local-depth hold4/4 on four inspected cases; not independent confirmation"
-  }
+  },
+  "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md"
 }

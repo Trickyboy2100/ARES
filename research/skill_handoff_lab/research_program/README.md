@@ -28,6 +28,7 @@ cuRobo和控制接口兼容。**当前研究证据**：公开 ManiSkill Panda �
 | 7 | [PRIOR_ART.md](PRIOR_ART.md) | 近邻论文、源码、必须避免重复的已有贡献 |
 | 8 | [OPERATING_PROTOCOL.md](OPERATING_PROTOCOL.md) | Codex 自主续接、实验质量、算力/视频/数据规范 |
 | 9 | [DECISIONS.md](DECISIONS.md) | 为什么保留/放弃一项方法及下一科学决策 |
+| 8a | [VISUAL_EVIDENCE_PROTOCOL.md](VISUAL_EVIDENCE_PROTOCOL.md) | 原版、英文圈注、机制曲线与真实来源规范 |
 | 10 | [paper/CLAIM_MATRIX.md](paper/CLAIM_MATRIX.md) | 投稿前的论文主张—证据映射，暂不反复生成PDF |
 
 可执行实验卡片在 [`experiments/`](experiments/README.md)。**动态任务只有一个来源：`STATE.json.active_experiment`。**
