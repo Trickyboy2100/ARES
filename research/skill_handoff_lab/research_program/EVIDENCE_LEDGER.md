@@ -42,3 +42,15 @@ uncertainty & limitation | exact raw path/hash | science decision`。
 [Source-backed evidence](evidence/EXP-001/confirmation-v2-2026-10-31/README.md): 24 cold-process episodes on 8 new scenes, 2/8 integral vs 7/8 original servo vs 7/8 local-depth servo. Four additional inspected grasp-angle diagnostics all fail. 5600 actual steps, zero optimizer updates. Protocol RAW/ANNOTATED/TRACE/CAPTION generated for two historical diagnostic cases; replay adds zero physics. No new RL claim. EXP-002 opportunity not yet established beyond the strong suffix.
 
 | [EXP-001独立确认55861de](evidence/EXP-001/confirmation-v2-2026-10-31/README.md) | 新8初态积分2/8、servo7/8、depth-hold7/8；7/7进入后段成功；同成功7例首次到位平均快18.71步 | 当前插入后段确定性控制饱和；方法RL更新0。另25/5等历史样本不可拼为训练新证据。 |
+
+## 2026-10-31｜EXP-002真实双轨探索、在线SAC与反馈消融
+
+[主证据](evidence/EXP-002/2026-10-31/README.md) · [逐例SHA](evidence/EXP-002/2026-10-31/analysis/EPISODES.json) · [成本](evidence/EXP-002/2026-10-31/analysis/SUMMARY.json) · [成对比较](evidence/EXP-002/2026-10-31/analysis/EVAL_COMPARISON.json) · [模型](evidence/EXP-002/2026-10-31/models/INDEX.json)。
+
+原生新4scene3/4；自定义质量/摩擦12/12由强控制成功。观测偏差新4scene×3条件：geometry4、RLS6、search10、SAC1、effect SAC3、prior-only3、同SAC零Z7，分母均12。零Z六救回零退化；effect/prior-only逐例完全同成败。所有当前比较的记录前段边界相同，无前段失败；不是不可见PhysX内部状态等同证明。
+
+真实训练包含普通SAC、效果特征SAC、既有critic-LN对照；每轮1024技能决策、896次actor/critic更新，训练物理步/尾段/原生全任务成本分别记录。LN alpha=.1协议偏差与补齐的alpha=.02分开报告，实际结果从模型训练manifest解析。崩溃旧run的四episode800步也计入，重复恢复文件不重复计数。完整累积成本以SUMMARY为准，不把重渲染或CPU分析计为物理实验。
+
+方法收益：UNVERIFIED。没有复现SCOUT/DAWN/STAP论文成绩；最近邻源码/许可已核对，LayerNorm不是新方法。完整视频与英文圈注为实测姿态重播，保留源轨迹、投影、帧PTS和浏览器同步QA。下一项EXP-003，重点参数权限和强RL学习能力，不以扩大弱SAC或小样本反馈特征网络代替机制研究。
+
+最终补齐对照：critic-LN alpha0.02普通SAC10/12，alpha0.1偏差组4/12；同设置effect+LN2/12，prior-only2/12。共五组真实训练，每组1024技能决策、896次actor/critic更新。结果仍不支持候选特征的独立算法收益。

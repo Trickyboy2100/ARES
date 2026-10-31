@@ -1,0 +1,1088 @@
+{
+  "scores": [
+    {
+      "comparison": "controls/geometry",
+      "episodes": 12,
+      "unique_conditions": 12,
+      "success": 4,
+      "training_alphas": [],
+      "training_methods": [],
+      "checkpoints": [],
+      "prefix_failures": 0,
+      "first_criteria_mean_step_success_only": 128.5,
+      "transient_success_terminal_failure": 2,
+      "source_versions": [
+        "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592"
+      ],
+      "stop_rules": [
+        "OBSERVED_GOAL_STOP"
+      ],
+      "duplicate_condition_warning": false
+    },
+    {
+      "comparison": "controls/rls",
+      "episodes": 12,
+      "unique_conditions": 12,
+      "success": 6,
+      "training_alphas": [],
+      "training_methods": [],
+      "checkpoints": [],
+      "prefix_failures": 0,
+      "first_criteria_mean_step_success_only": 140.66666666666666,
+      "transient_success_terminal_failure": 0,
+      "source_versions": [
+        "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592"
+      ],
+      "stop_rules": [
+        "OBSERVED_GOAL_STOP"
+      ],
+      "duplicate_condition_warning": false
+    },
+    {
+      "comparison": "controls/search",
+      "episodes": 12,
+      "unique_conditions": 12,
+      "success": 10,
+      "training_alphas": [],
+      "training_methods": [],
+      "checkpoints": [],
+      "prefix_failures": 0,
+      "first_criteria_mean_step_success_only": 141.7,
+      "transient_success_terminal_failure": 1,
+      "source_versions": [
+        "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592"
+      ],
+      "stop_rules": [
+        "OBSERVED_GOAL_STOP"
+      ],
+      "duplicate_condition_warning": false
+    },
+    {
+      "comparison": "eval_effect_ln_prior_only",
+      "episodes": 12,
+      "unique_conditions": 12,
+      "success": 2,
+      "training_alphas": [
+        0.02
+      ],
+      "training_methods": [
+        "effect_ln_sac"
+      ],
+      "checkpoints": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_ln_sac_alpha002/MODEL.zip"
+      ],
+      "prefix_failures": 0,
+      "first_criteria_mean_step_success_only": 122.0,
+      "transient_success_terminal_failure": 1,
+      "source_versions": [
+        "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592"
+      ],
+      "stop_rules": [
+        "OBSERVED_GOAL_STOP"
+      ],
+      "duplicate_condition_warning": false
+    },
+    {
+      "comparison": "eval_effect_ln_sac",
+      "episodes": 12,
+      "unique_conditions": 12,
+      "success": 2,
+      "training_alphas": [
+        0.02
+      ],
+      "training_methods": [
+        "effect_ln_sac"
+      ],
+      "checkpoints": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_ln_sac_alpha002/MODEL.zip"
+      ],
+      "prefix_failures": 0,
+      "first_criteria_mean_step_success_only": 122.0,
+      "transient_success_terminal_failure": 1,
+      "source_versions": [
+        "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592"
+      ],
+      "stop_rules": [
+        "OBSERVED_GOAL_STOP"
+      ],
+      "duplicate_condition_warning": false
+    },
+    {
+      "comparison": "eval_effect_prior_only",
+      "episodes": 12,
+      "unique_conditions": 12,
+      "success": 3,
+      "training_alphas": [
+        0.02
+      ],
+      "training_methods": [
+        "effect_sac"
+      ],
+      "checkpoints": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_sac_pilot_1024_retry/MODEL.zip"
+      ],
+      "prefix_failures": 0,
+      "first_criteria_mean_step_success_only": 168.0,
+      "transient_success_terminal_failure": 0,
+      "source_versions": [
+        "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592"
+      ],
+      "stop_rules": [
+        "OBSERVED_GOAL_STOP"
+      ],
+      "duplicate_condition_warning": false
+    },
+    {
+      "comparison": "eval_effect_sac",
+      "episodes": 12,
+      "unique_conditions": 12,
+      "success": 3,
+      "training_alphas": [
+        0.02
+      ],
+      "training_methods": [
+        "effect_sac"
+      ],
+      "checkpoints": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_sac_pilot_1024_retry/MODEL.zip"
+      ],
+      "prefix_failures": 0,
+      "first_criteria_mean_step_success_only": 167.33333333333334,
+      "transient_success_terminal_failure": 0,
+      "source_versions": [
+        "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592"
+      ],
+      "stop_rules": [
+        "OBSERVED_GOAL_STOP"
+      ],
+      "duplicate_condition_warning": false
+    },
+    {
+      "comparison": "eval_ln_sac",
+      "episodes": 12,
+      "unique_conditions": 12,
+      "success": 4,
+      "training_alphas": [
+        0.1
+      ],
+      "training_methods": [
+        "ln_sac"
+      ],
+      "checkpoints": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/ln_sac_pilot_1024/MODEL.zip"
+      ],
+      "prefix_failures": 0,
+      "first_criteria_mean_step_success_only": 118.75,
+      "transient_success_terminal_failure": 1,
+      "source_versions": [
+        "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592"
+      ],
+      "stop_rules": [
+        "OBSERVED_GOAL_STOP"
+      ],
+      "duplicate_condition_warning": false
+    },
+    {
+      "comparison": "eval_ln_sac_alpha002",
+      "episodes": 12,
+      "unique_conditions": 12,
+      "success": 10,
+      "training_alphas": [
+        0.02
+      ],
+      "training_methods": [
+        "ln_sac"
+      ],
+      "checkpoints": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/ln_sac_alpha002/MODEL.zip"
+      ],
+      "prefix_failures": 0,
+      "first_criteria_mean_step_success_only": 146.4,
+      "transient_success_terminal_failure": 2,
+      "source_versions": [
+        "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592"
+      ],
+      "stop_rules": [
+        "OBSERVED_GOAL_STOP"
+      ],
+      "duplicate_condition_warning": false
+    },
+    {
+      "comparison": "eval_sac",
+      "episodes": 12,
+      "unique_conditions": 12,
+      "success": 1,
+      "training_alphas": [
+        0.02
+      ],
+      "training_methods": [
+        "sac"
+      ],
+      "checkpoints": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024_retry/MODEL.zip"
+      ],
+      "prefix_failures": 0,
+      "first_criteria_mean_step_success_only": 149.0,
+      "transient_success_terminal_failure": 2,
+      "source_versions": [
+        "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592"
+      ],
+      "stop_rules": [
+        "OBSERVED_GOAL_STOP"
+      ],
+      "duplicate_condition_warning": false
+    },
+    {
+      "comparison": "eval_sac_zero_z",
+      "episodes": 12,
+      "unique_conditions": 12,
+      "success": 7,
+      "training_alphas": [
+        0.02
+      ],
+      "training_methods": [
+        "sac"
+      ],
+      "checkpoints": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024_retry/MODEL.zip"
+      ],
+      "prefix_failures": 0,
+      "first_criteria_mean_step_success_only": 139.42857142857142,
+      "transient_success_terminal_failure": 0,
+      "source_versions": [
+        "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592"
+      ],
+      "stop_rules": [
+        "OBSERVED_GOAL_STOP"
+      ],
+      "duplicate_condition_warning": false
+    }
+  ],
+  "pairs": [
+    {
+      "left": "controls/geometry",
+      "right": "controls/rls",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 6,
+      "right_rescues": 2,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.16666666666666666,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/geometry",
+      "right": "controls/search",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 10,
+      "right_rescues": 6,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.5,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/geometry",
+      "right": "eval_effect_ln_prior_only",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 2,
+      "right_rescues": 2,
+      "right_regressions": 4,
+      "right_minus_left_success_fraction": -0.16666666666666666,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/geometry",
+      "right": "eval_effect_ln_sac",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 2,
+      "right_rescues": 2,
+      "right_regressions": 4,
+      "right_minus_left_success_fraction": -0.16666666666666666,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/geometry",
+      "right": "eval_effect_prior_only",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 3,
+      "right_rescues": 2,
+      "right_regressions": 3,
+      "right_minus_left_success_fraction": -0.08333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/geometry",
+      "right": "eval_effect_sac",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 3,
+      "right_rescues": 2,
+      "right_regressions": 3,
+      "right_minus_left_success_fraction": -0.08333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/geometry",
+      "right": "eval_ln_sac",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 4,
+      "right_rescues": 1,
+      "right_regressions": 1,
+      "right_minus_left_success_fraction": 0.0,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/geometry",
+      "right": "eval_ln_sac_alpha002",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 10,
+      "right_rescues": 7,
+      "right_regressions": 1,
+      "right_minus_left_success_fraction": 0.5,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/geometry",
+      "right": "eval_sac",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 1,
+      "right_rescues": 0,
+      "right_regressions": 3,
+      "right_minus_left_success_fraction": -0.25,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/geometry",
+      "right": "eval_sac_zero_z",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 7,
+      "right_rescues": 4,
+      "right_regressions": 1,
+      "right_minus_left_success_fraction": 0.25,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/rls",
+      "right": "eval_effect_ln_prior_only",
+      "paired_conditions": 12,
+      "left_success": 6,
+      "right_success": 2,
+      "right_rescues": 2,
+      "right_regressions": 6,
+      "right_minus_left_success_fraction": -0.3333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/rls",
+      "right": "eval_effect_ln_sac",
+      "paired_conditions": 12,
+      "left_success": 6,
+      "right_success": 2,
+      "right_rescues": 2,
+      "right_regressions": 6,
+      "right_minus_left_success_fraction": -0.3333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/rls",
+      "right": "eval_effect_prior_only",
+      "paired_conditions": 12,
+      "left_success": 6,
+      "right_success": 3,
+      "right_rescues": 2,
+      "right_regressions": 5,
+      "right_minus_left_success_fraction": -0.25,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/rls",
+      "right": "eval_effect_sac",
+      "paired_conditions": 12,
+      "left_success": 6,
+      "right_success": 3,
+      "right_rescues": 2,
+      "right_regressions": 5,
+      "right_minus_left_success_fraction": -0.25,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/rls",
+      "right": "eval_ln_sac",
+      "paired_conditions": 12,
+      "left_success": 6,
+      "right_success": 4,
+      "right_rescues": 1,
+      "right_regressions": 3,
+      "right_minus_left_success_fraction": -0.16666666666666666,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/rls",
+      "right": "eval_ln_sac_alpha002",
+      "paired_conditions": 12,
+      "left_success": 6,
+      "right_success": 10,
+      "right_rescues": 5,
+      "right_regressions": 1,
+      "right_minus_left_success_fraction": 0.3333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/rls",
+      "right": "eval_sac",
+      "paired_conditions": 12,
+      "left_success": 6,
+      "right_success": 1,
+      "right_rescues": 0,
+      "right_regressions": 5,
+      "right_minus_left_success_fraction": -0.4166666666666667,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/rls",
+      "right": "eval_sac_zero_z",
+      "paired_conditions": 12,
+      "left_success": 6,
+      "right_success": 7,
+      "right_rescues": 4,
+      "right_regressions": 3,
+      "right_minus_left_success_fraction": 0.08333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/search",
+      "right": "controls/rls",
+      "paired_conditions": 12,
+      "left_success": 10,
+      "right_success": 6,
+      "right_rescues": 0,
+      "right_regressions": 4,
+      "right_minus_left_success_fraction": -0.3333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/search",
+      "right": "eval_effect_ln_prior_only",
+      "paired_conditions": 12,
+      "left_success": 10,
+      "right_success": 2,
+      "right_rescues": 1,
+      "right_regressions": 9,
+      "right_minus_left_success_fraction": -0.6666666666666666,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/search",
+      "right": "eval_effect_ln_sac",
+      "paired_conditions": 12,
+      "left_success": 10,
+      "right_success": 2,
+      "right_rescues": 1,
+      "right_regressions": 9,
+      "right_minus_left_success_fraction": -0.6666666666666666,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/search",
+      "right": "eval_effect_prior_only",
+      "paired_conditions": 12,
+      "left_success": 10,
+      "right_success": 3,
+      "right_rescues": 1,
+      "right_regressions": 8,
+      "right_minus_left_success_fraction": -0.5833333333333334,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/search",
+      "right": "eval_effect_sac",
+      "paired_conditions": 12,
+      "left_success": 10,
+      "right_success": 3,
+      "right_rescues": 1,
+      "right_regressions": 8,
+      "right_minus_left_success_fraction": -0.5833333333333334,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/search",
+      "right": "eval_ln_sac",
+      "paired_conditions": 12,
+      "left_success": 10,
+      "right_success": 4,
+      "right_rescues": 1,
+      "right_regressions": 7,
+      "right_minus_left_success_fraction": -0.5,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/search",
+      "right": "eval_ln_sac_alpha002",
+      "paired_conditions": 12,
+      "left_success": 10,
+      "right_success": 10,
+      "right_rescues": 2,
+      "right_regressions": 2,
+      "right_minus_left_success_fraction": 0.0,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/search",
+      "right": "eval_sac",
+      "paired_conditions": 12,
+      "left_success": 10,
+      "right_success": 1,
+      "right_rescues": 0,
+      "right_regressions": 9,
+      "right_minus_left_success_fraction": -0.75,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "controls/search",
+      "right": "eval_sac_zero_z",
+      "paired_conditions": 12,
+      "left_success": 10,
+      "right_success": 7,
+      "right_rescues": 2,
+      "right_regressions": 5,
+      "right_minus_left_success_fraction": -0.25,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_prior_only",
+      "right": "eval_effect_ln_sac",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 2,
+      "right_rescues": 0,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.0,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_prior_only",
+      "right": "eval_effect_prior_only",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 3,
+      "right_rescues": 1,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.08333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_prior_only",
+      "right": "eval_effect_sac",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 3,
+      "right_rescues": 1,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.08333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_prior_only",
+      "right": "eval_ln_sac",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 4,
+      "right_rescues": 3,
+      "right_regressions": 1,
+      "right_minus_left_success_fraction": 0.16666666666666666,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_prior_only",
+      "right": "eval_ln_sac_alpha002",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 10,
+      "right_rescues": 8,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.6666666666666666,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_prior_only",
+      "right": "eval_sac",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 1,
+      "right_rescues": 1,
+      "right_regressions": 2,
+      "right_minus_left_success_fraction": -0.08333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_prior_only",
+      "right": "eval_sac_zero_z",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 7,
+      "right_rescues": 5,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.4166666666666667,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_sac",
+      "right": "eval_effect_prior_only",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 3,
+      "right_rescues": 1,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.08333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_sac",
+      "right": "eval_effect_sac",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 3,
+      "right_rescues": 1,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.08333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_sac",
+      "right": "eval_ln_sac",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 4,
+      "right_rescues": 3,
+      "right_regressions": 1,
+      "right_minus_left_success_fraction": 0.16666666666666666,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_sac",
+      "right": "eval_ln_sac_alpha002",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 10,
+      "right_rescues": 8,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.6666666666666666,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_sac",
+      "right": "eval_sac",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 1,
+      "right_rescues": 1,
+      "right_regressions": 2,
+      "right_minus_left_success_fraction": -0.08333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_ln_sac",
+      "right": "eval_sac_zero_z",
+      "paired_conditions": 12,
+      "left_success": 2,
+      "right_success": 7,
+      "right_rescues": 5,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.4166666666666667,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_prior_only",
+      "right": "eval_effect_sac",
+      "paired_conditions": 12,
+      "left_success": 3,
+      "right_success": 3,
+      "right_rescues": 0,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.0,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_prior_only",
+      "right": "eval_ln_sac",
+      "paired_conditions": 12,
+      "left_success": 3,
+      "right_success": 4,
+      "right_rescues": 2,
+      "right_regressions": 1,
+      "right_minus_left_success_fraction": 0.08333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_prior_only",
+      "right": "eval_ln_sac_alpha002",
+      "paired_conditions": 12,
+      "left_success": 3,
+      "right_success": 10,
+      "right_rescues": 7,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.5833333333333334,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_prior_only",
+      "right": "eval_sac",
+      "paired_conditions": 12,
+      "left_success": 3,
+      "right_success": 1,
+      "right_rescues": 1,
+      "right_regressions": 3,
+      "right_minus_left_success_fraction": -0.16666666666666666,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_prior_only",
+      "right": "eval_sac_zero_z",
+      "paired_conditions": 12,
+      "left_success": 3,
+      "right_success": 7,
+      "right_rescues": 4,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.3333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_sac",
+      "right": "eval_ln_sac",
+      "paired_conditions": 12,
+      "left_success": 3,
+      "right_success": 4,
+      "right_rescues": 2,
+      "right_regressions": 1,
+      "right_minus_left_success_fraction": 0.08333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_sac",
+      "right": "eval_ln_sac_alpha002",
+      "paired_conditions": 12,
+      "left_success": 3,
+      "right_success": 10,
+      "right_rescues": 7,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.5833333333333334,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_sac",
+      "right": "eval_sac",
+      "paired_conditions": 12,
+      "left_success": 3,
+      "right_success": 1,
+      "right_rescues": 1,
+      "right_regressions": 3,
+      "right_minus_left_success_fraction": -0.16666666666666666,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_effect_sac",
+      "right": "eval_sac_zero_z",
+      "paired_conditions": 12,
+      "left_success": 3,
+      "right_success": 7,
+      "right_rescues": 4,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.3333333333333333,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_ln_sac",
+      "right": "eval_ln_sac_alpha002",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 10,
+      "right_rescues": 7,
+      "right_regressions": 1,
+      "right_minus_left_success_fraction": 0.5,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_ln_sac",
+      "right": "eval_sac",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 1,
+      "right_rescues": 1,
+      "right_regressions": 4,
+      "right_minus_left_success_fraction": -0.25,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_ln_sac",
+      "right": "eval_sac_zero_z",
+      "paired_conditions": 12,
+      "left_success": 4,
+      "right_success": 7,
+      "right_rescues": 4,
+      "right_regressions": 1,
+      "right_minus_left_success_fraction": 0.25,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_ln_sac_alpha002",
+      "right": "eval_sac",
+      "paired_conditions": 12,
+      "left_success": 10,
+      "right_success": 1,
+      "right_rescues": 0,
+      "right_regressions": 9,
+      "right_minus_left_success_fraction": -0.75,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_ln_sac_alpha002",
+      "right": "eval_sac_zero_z",
+      "paired_conditions": 12,
+      "left_success": 10,
+      "right_success": 7,
+      "right_rescues": 2,
+      "right_regressions": 5,
+      "right_minus_left_success_fraction": -0.25,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    },
+    {
+      "left": "eval_sac",
+      "right": "eval_sac_zero_z",
+      "paired_conditions": 12,
+      "left_success": 1,
+      "right_success": 7,
+      "right_rescues": 6,
+      "right_regressions": 0,
+      "right_minus_left_success_fraction": 0.5,
+      "exact_recorded_prefix": 12,
+      "same_initial_hash": 12,
+      "differing_source_pairs": 0,
+      "max_prefix_numeric_difference": 0,
+      "stop_rule_matching_required": true
+    }
+  ]
+}

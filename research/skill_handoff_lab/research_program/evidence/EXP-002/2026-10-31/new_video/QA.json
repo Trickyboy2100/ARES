@@ -1,0 +1,55 @@
+{
+  "physics_steps_added": 0,
+  "videos": {
+    "RAW.mp4": {
+      "width": 1920,
+      "height": 720,
+      "r_frame_rate": "20/1",
+      "duration": "10.050000",
+      "nb_frames": "201",
+      "pts_k_div_20_pass": true
+    },
+    "ANNOTATED.mp4": {
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "20/1",
+      "duration": "10.050000",
+      "nb_frames": "201",
+      "pts_k_div_20_pass": true
+    }
+  },
+  "source_copy_sha": {
+    "LEFT_SOURCE.json.gz": "e698d9d8c05535b4c7a43bde5f9ce2e1988bbded57fb6a943e42e82e81b47a31",
+    "RIGHT_SOURCE.json.gz": "99c5cfdfce749eba75096042452bf9dce5b21a2341ff4ba904002f5b4a938056"
+  },
+  "measured_lateral_max_error_mm": {
+    "Geometry feedback": 7.192321815063796e-06,
+    "Progress search": 5.702734823698208e-06
+  },
+  "terminal": {
+    "Geometry feedback": {
+      "success": false,
+      "true_position_mm": 16.075273975729942,
+      "true_lateral_mm": 1.5477185772401099,
+      "measured_lateral_mm": 0.5439494863646802
+    },
+    "Progress search": {
+      "success": true,
+      "true_position_mm": 3.472596872597933,
+      "true_lateral_mm": 0.4980903408040396,
+      "measured_lateral_mm": 1.518659293491381
+    }
+  },
+  "same_initial_hash_and_prefix_boundary": true,
+  "browser": {
+    "errors": [],
+    "series201": true,
+    "nativeDuration": 10.05,
+    "floorFrame150": true,
+    "clickSeeks100": true,
+    "rawSwitch": true,
+    "contactClickSeeks140": true
+  },
+  "max_pose_readback_error": 1.1920928955078125e-07,
+  "visual_review": "Reviewed original wrist-obscured image, opposite low camera step150, and contact detail plot. Opposite camera visibly exposes failed-controller extended pin/axial gap; successful insertion reduces gap. Occluded pin tips are not contact patches; guide overlays explicitly marked. All source states unchanged."
+}

@@ -1,6 +1,6 @@
 # EXP-002｜Task-conditioned grasp-to-contact and effect-based adaptation
 
-**STATUS: READY；研究阶段 S3；继承 EXP-001 的完整物理基线，成为下一活动实验。**
+**STATUS: DONE（首轮动作机会研究）；已实际推进EXP-003；H3辨识与新机制收益仍未确立。**
 
 ## 一、论文主科学问题不变
 
@@ -83,10 +83,9 @@ TRACE上移动游标对应视频时刻，点击曲线可跳转视频；另保留
 原版、英文圈注版、关键帧、CAPTION和source SHA。具体工具已加入：
 research/skill_handoff_lab/tools/program_charger_video_sync.py
 读取已有200步真实轨迹，离线姿态重渲染并输出两段视频和SYNC_VIEWER.html；
-**代码已写进Git但尚未在用户RTX上运行，Codex先做预检/实际执行/QA，
-不得把未生成的MP4称已交付。** 当新的物理实验可在env.step中直接
+**历史首例已在RTX实际渲染并做逐帧及浏览器QA；每个新案例仍须独立验收。** 当新的物理实验可在env.step中直接
 录制RGB时，优先保留真正的原始物理执行录像，回放需要明确标记。
-目前图中的投影环是actor原点而非插头尖端/插座开口，不得误称接触点。
+新版投影环使用原生插针末端/插孔口沿几何，仍只是可遮挡的几何引导，不是接触patch测量。
 
 首轮案例建议先保留已看725002/725005作诊断可视化，并在新实验中
 选择一例实际接触救回、一例退化和一例共同失败，图注分别写清
@@ -100,6 +99,4 @@ OBSERVED、INTERPRETATION、NOT ESTABLISHED，不靠单例推成功率。
 ARES-R只读，零实机动作和受限现场数据公开。
 
 ### 实际研究结果
-**PENDING。本次是科学路线和工具代码升级：新增物理训练0次、
-控制交互0步、算法收益0 pp。** 后续Codex在用户GPU上的实际运行
-需单独记账并推动STATE/DECISIONS/EVIDENCE_LEDGER更新。
+见[2026-10-31真实实验](../evidence/EXP-002/2026-10-31/README.md)。原生新4例3/4；独立命名任务的中等质量/摩擦变化12/12被强控制解决。观测偏差下真实动作排序有条件差异，新4场景×3偏差：geometry4/12、RLS6/12、search10/12；普通SAC1/12、效果特征SAC3/12、同模型prior-only3/12。零Z通道干预7/12（六救回零退化）。已真实在线训练，完整成本见机器索引；不把确定性搜索、动作约束或既有LayerNorm当新RL。H1/H2初步成立，H3仅有有限接触证据特征，未显示独立反馈收益。活动实验转为EXP-003，先建立有能力的普通RL基线。

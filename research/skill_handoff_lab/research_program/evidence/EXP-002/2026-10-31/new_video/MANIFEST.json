@@ -1,0 +1,152 @@
+{
+  "seed": 729000,
+  "physics_steps": 0,
+  "source_kind": "MEASURED_POSE_REPLAY",
+  "camera": "fixed world camera; native pin tips (+16mm x, +/-7mm y) and front-mouth guides projected from measured actor poses; NOT measured contact patches",
+  "step_to_time": "frame k represents physical step k, 20 fps; frame 0 is initial",
+  "max_pose_readback_error": 1.1920928955078125e-07,
+  "source": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_controls_-1.2/geometry_729000.json.gz",
+      "sha256": "e698d9d8c05535b4c7a43bde5f9ce2e1988bbded57fb6a943e42e82e81b47a31"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_controls_-1.2/search_729000.json.gz",
+      "sha256": "99c5cfdfce749eba75096042452bf9dce5b21a2341ff4ba904002f5b4a938056"
+    }
+  ],
+  "source_script_sha256": "f08afbfaacf86ca76967ada013056dffd1c26d567a58ed455c4b594cf06ba55d",
+  "source_execution_manifests": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_controls_-1.2/manifest.json",
+      "sha256": "81a7de710d45f2e6a90a24bd8f2109818f009a6a12b9f20bf62c4cc99c036638",
+      "content": {
+        "task": "ARES-AdaptivePlug-v0",
+        "native_physics": true,
+        "observation_bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "hidden_bias_not_in_observation": true,
+        "original_success_horizon": true,
+        "sources": {
+          "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+          "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+          "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+        },
+        "optimizer_steps": 0
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_controls_-1.2/manifest.json",
+      "sha256": "81a7de710d45f2e6a90a24bd8f2109818f009a6a12b9f20bf62c4cc99c036638",
+      "content": {
+        "task": "ARES-AdaptivePlug-v0",
+        "native_physics": true,
+        "observation_bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "hidden_bias_not_in_observation": true,
+        "original_success_horizon": true,
+        "sources": {
+          "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+          "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+          "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+          "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+        },
+        "optimizer_steps": 0
+      }
+    }
+  ],
+  "labels": [
+    "Geometry feedback",
+    "Progress search"
+  ],
+  "analysis_privilege": "True task pose and goal errors are offline evaluation signals, not necessarily policy inputs; see source execution manifests.",
+  "native_task_source_sha256": "6a68400b90f04c22fe8bde510a7082fc239b6f2f54552e2f3ab4bb123ed556ff",
+  "frame_count": 201,
+  "fps": 20,
+  "camera_intrinsic": [
+    [
+      1086.3353271484375,
+      0.0,
+      480.0
+    ],
+    [
+      0.0,
+      1086.3353271484375,
+      360.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_choice": "goal-positive-y",
+  "camera_eye_world": [
+    -0.03568260314366023,
+    0.23679259421377902,
+    0.1250000014901161
+  ],
+  "camera_target_world": [
+    0.056828048219096594,
+    -0.0499577839628477,
+    0.10000000149011612
+  ],
+  "camera_extrinsic": [
+    [
+      -0.9516982436180115,
+      -0.3070347309112549,
+      -7.450578820566989e-09,
+      0.038744475692510605
+    ],
+    [
+      -0.025388242676854134,
+      0.07869455963373184,
+      -0.9965754151344299,
+      0.10503174364566803
+    ],
+    [
+      0.3059832453727722,
+      -0.9484390616416931,
+      -0.08268855512142181,
+      0.2458377629518509
+    ]
+  ],
+  "outputs": {
+    "RAW.mp4": "8d2bcd35f37d119ff8b8ff36b7f2a7198d1641415881772e6cc78c9e1043da06",
+    "ANNOTATED.mp4": "6ada8df5fadfacf26813cb58aed0edb797b8959c985810b17fb1187cb6b1fa99",
+    "RAW.png": "0b28843ff5305d844a3d46e153aaa246df8fefc1c7d23d228fb4e811a868a263",
+    "ANNOTATED.png": "84e6c9c2d906821510fb0f7b00a60d9ebbb1973d32d96ddbc1da08f5a35fc8c7",
+    "DATA.json": "e9155c459b16c3bc1c2f7d1242310d6df8362a34d010da99a7b07eed73c0392c",
+    "SYNC_VIEWER.html": "f02257b2b78a3113ed1c50f17b9f999ebcb16d8071eb5eae0c335096bdbe5666",
+    "package_and_qa.py": "7dec90b97131972cfa1991086a1a2c396d89d917a934185839aad7575c585dd3",
+    "TRACE_CONTACT.png": "0a9297ba9b1e9c90b4541402a5b8328c265d3885fff214970f5d7b7123539227",
+    "CAPTION.md": "006068e500a4f2e6ea84fed4b41a34f8697df7526df914f296fbe2fde7be1432",
+    "RIGHT_SOURCE.json.gz": "99c5cfdfce749eba75096042452bf9dce5b21a2341ff4ba904002f5b4a938056",
+    "QA.json": "64ec6c41634fc155d43e2a0c0fc61fbbe7528a39a3ac3237b15ced4c817c2544",
+    "TRACE.svg": "1f6892a16640c65c8f87f3bdc68a79cbd28e3f01cf394c40dea5ec3141a81558",
+    "QA_BROWSER.html": "4d8b5afb979ff2907bc4fc3040ba7435b7b39da082936a7f75e3fff3da2cd46d",
+    "ALTERNATE_CAMERA_INDEX.json": "a4782b29202799325261a0ceadbfea535d6e225116941157557e94f75b8628aa",
+    "TRACE.png": "a77d8244fc82b7b8b1080918184992f793f1095a85be8f3a3e89b053d5d84c6a",
+    "LEFT_SOURCE.json.gz": "e698d9d8c05535b4c7a43bde5f9ce2e1988bbded57fb6a943e42e82e81b47a31",
+    "README.md": "9942ddd59890ff4fecd56dea9fb2741cc5ea7be14576948305afbf30d2d3ea6f",
+    "render_source.py": "f08afbfaacf86ca76967ada013056dffd1c26d567a58ed455c4b594cf06ba55d"
+  },
+  "portable_trace_copies": [
+    "LEFT_SOURCE.json.gz",
+    "RIGHT_SOURCE.json.gz"
+  ],
+  "svg_whitespace_normalization": {
+    "operation": "rstrip each line only; no SVG geometry/content changes",
+    "sha256": {
+      "TRACE.svg": {
+        "before": "19b0f5e39d101df9f22834e443d19319c0eff810019e8208c400cd27f745f808",
+        "after": "1f6892a16640c65c8f87f3bdc68a79cbd28e3f01cf394c40dea5ec3141a81558"
+      }
+    }
+  }
+}

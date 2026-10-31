@@ -1,0 +1,22 @@
+{
+  "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+  "executable": "/home/andyee/robot-research/ARES-Skilllab/envs/method-evolution-20261028/bin/python",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.4",
+    "sapien": "3.0.3",
+    "mani_skill": "3.0.0b21",
+    "gymnasium": "1.4.0",
+    "stable_baselines3": "2.7.0",
+    "mplib": "0.1.1",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.1"
+  },
+  "maniskill_git": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+  "launcher_sha256": "e2331654bae85eda751117d2634efb106cd93b752e038fb4f9773e705db9696f",
+  "simulator_device": "GPU0 RTX3080 via isolated launcher",
+  "neural_training_device": "CPU",
+  "network_isolated": true,
+  "hardware_commands": 0
+}

@@ -45,11 +45,22 @@ def close_pipe(process):
 
 
 def trace_series(trace):
-    a = arrays(trace)
+    initial = dict(trace["initial_measure"], phase="INITIAL")
+    R = (rotation(initial["cube"][3:]) @ np.diag([-1., -1., 1.])).T @ rotation(initial["tool"][3:])
+    initial["goal_angle_error_rad"] = float(np.arccos(np.clip((np.trace(R)-1)/2, -1, 1)))
+    a = arrays({"steps": [initial, *trace["steps"]]})
     for key in ("x", "lateral", "angle", "force"):
         v = np.asarray(a[key], dtype=float)
-        assert len(v) == 200 and np.isfinite(v).all(), key
-    return {k: np.asarray(a[k], dtype=float) for k in ("x", "lateral", "angle", "force", "mode")}
+        assert len(v) == 201 and np.isfinite(v).all(), key
+    states=[initial,*trace["steps"]]
+    bias=np.asarray(trace["summary"].get("bias_mm",[0.,0.]))
+    local=np.array([(rotation(z["cube"][3:])@np.diag([-1.,-1.,1.])).T@(np.array(z["tool"][:3])-z["cube"][:3])*1000 for z in states])
+    a["measured_lateral"]=np.linalg.norm(local[:,1:]-bias,axis=1)
+    for j,z in enumerate(states):
+        if "skill_action" in z:
+            action=z["skill_action"]
+            a["mode"][j]=3 if action["advance_m"]<0 else int(action["forward_allowed"])
+    return {k: np.asarray(a[k], dtype=float) for k in ("x", "lateral", "measured_lateral", "angle", "force", "mode")}
 
 
 def plot_panel(draw, y, name, key, unit, series, colors, step):
@@ -65,11 +76,11 @@ def plot_panel(draw, y, name, key, unit, series, colors, step):
         hi, lo = hi+pad, lo-pad
     draw.line([(x0, y+h), (x1, y+h)], fill="#475569", width=1)
     for i, src in enumerate(series):
-        xy = [(int(x0 + j/199*(x1-x0)),
+        xy = [(int(x0 + j/200*(x1-x0)),
                int(y+h - (float(v)-lo)/(hi-lo)*h))
               for j, v in enumerate(src[key])]
         draw.line(xy, fill=colors[i], width=3, joint="curve")
-    pos = int(x0 + max(0, min(step-1, 199))/199*(x1-x0))
+    pos = int(x0 + max(0, min(step, 200))/200*(x1-x0))
     draw.line([(pos, y-3), (pos, y+h+2)], fill="#f8fafc", width=2)
     f = font(16)
     draw.text((10, y+6), name, fill="#e2e8f0", font=f)
@@ -107,14 +118,15 @@ Geometry markers use recorded actor poses plus the native charger peg dimensions
 <div class="controls"><label>Video <select id="choice"><option value="annotated">Annotated + trace MP4</option>
 <option value="raw">Unannotated RAW MP4</option></select></label>
 <button id="back">Previous event</button><button id="forward">Next event</button>
-<button id="play">Play / Pause</button><b id="step">Step 0</b></div>
+<button id="play">Play / Pause</button><label>Curves <select id="window"><option value="0">Full episode</option><option value="80">Contact detail (steps 80–200)</option></select></label><b id="step">Step 0</b></div>
 <video id="movie" controls preload="metadata"></video>
 <h3>Recorded signals (click any point to seek video)</h3>
-<canvas id="plot" width="1400" height="390"></canvas>
+<canvas id="plot" width="1400" height="580"></canvas>
 <div id="events"></div><p><small>Panels: signed axial position (mm), lateral error (mm),
 contact-force proxy (N), and event markers. Raw source SHA and render receipt are in MANIFEST.json.
 The displayed servo mode refers to the command selected using the preceding observation.
-All old and improved controller results are diagnostic; NO NEW RL CLAIM.</small></p>
+All paired results are diagnostic; NO NEW RL CLAIM.
+True task-frame error is offline analysis, not an assertion that the policy observed it.</small></p>
 <p><a href="RAW.mp4">Original MP4</a> · <a href="ANNOTATED.mp4">Annotated MP4</a>
 · <a href="DATA.json">Measured time series</a> · <a href="MANIFEST.json">Source and file hashes</a></p>
 </main><script>
@@ -122,32 +134,37 @@ const D=__BUNDLE__;
 const video=document.querySelector('#movie'), choice=document.querySelector('#choice'),
  canvas=document.querySelector('#plot'),ctx=canvas.getContext('2d'),stepEl=document.querySelector('#step');
 const fps=D.fps;
-function swap(){const t=video.currentTime||0,wasPlaying=!video.paused;video.src=choice.value==='raw'?'RAW.mp4':'ANNOTATED.mp4';video.currentTime=t;if(wasPlaying)video.play().catch(()=>{});}
-choice.addEventListener('change',swap);swap();
-function currentStep(){return Math.max(0,Math.min(200,Math.round(video.currentTime*fps)));}
+const windowSelect=document.querySelector('#window');windowSelect.onchange=()=>draw();
+document.querySelector("h1").textContent="ARES | "+D.task+" | synchronized measured-pose replay";
+function swap(){mediaTime=null;const t=video.currentTime||0,wasPlaying=!video.paused;video.src=choice.value==='raw'?'RAW.mp4':'ANNOTATED.mp4';video.currentTime=t;if(wasPlaying)video.play().catch(()=>{});}
+choice.addEventListener('change',swap);
+let mediaTime=null;
+if(video.requestVideoFrameCallback){const frame=(_now,meta)=>{mediaTime=meta.mediaTime;draw();video.requestVideoFrameCallback(frame);};video.requestVideoFrameCallback(frame);}
+swap();
+function currentStep(){return Math.max(0,Math.min(200,Math.floor((mediaTime===null?video.currentTime:mediaTime)*fps+1e-7)));}
 function draw(){
-const w=canvas.width, x0=92,x1=w-40,top=30,ph=94;
+const w=canvas.width, x0=92,x1=w-40,top=30,ph=94,start=Number(windowSelect.value);
 ctx.fillStyle='#182838';ctx.fillRect(0,0,w,canvas.height);
-const keys=[['axial_mm','Axial (mm)'],['lateral_mm','Lateral (mm)'],['force_N','Contact proxy (N)']];
+const keys=[['axial_mm','Axial (mm)'],['lateral_mm','True lateral (mm)'],['measured_lateral_mm','Measured lateral (mm)'],['angle_rad','Angle (rad)'],['force_N','Contact proxy (N)']];
 const cols=['#f2994a','#4fd1e7'];
 for(let p=0;p<keys.length;p++){const key=keys[p][0],y=top+p*ph;
- const all=D.series.flatMap(s=>s[key]),lo0=Math.min(...all),hi0=Math.max(...all),
+ const all=D.series.flatMap(s=>s[key].slice(start)),lo0=Math.min(...all),hi0=Math.max(...all),
  lo=lo0-(hi0-lo0||1)*.08,hi=hi0+(hi0-lo0||1)*.08;
  ctx.strokeStyle='#3b5264';ctx.beginPath();ctx.moveTo(x0,y+ph-18);ctx.lineTo(x1,y+ph-18);ctx.stroke();
  ctx.fillStyle='#d7e5ed';ctx.font='15px system-ui';ctx.fillText(keys[p][1],8,y+20);
  D.series.forEach((s,k)=>{ctx.beginPath();ctx.strokeStyle=cols[k];ctx.lineWidth=2;
-  s[key].forEach((v,j)=>{const x=x0+(j+1)/200*(x1-x0),yy=y+ph-18-(v-lo)/(hi-lo)*(ph-25);
-   if(j===0)ctx.moveTo(x,yy);else ctx.lineTo(x,yy);});ctx.stroke();});
- const cursor=x0+currentStep()/200*(x1-x0);
+  s[key].forEach((v,j)=>{if(j<start)return;const x=x0+(j-start)/(200-start)*(x1-x0),yy=y+ph-18-(v-lo)/(hi-lo)*(ph-25);
+   if(j===start)ctx.moveTo(x,yy);else ctx.lineTo(x,yy);});ctx.stroke();});
+ const cursor=x0+Math.max(0,currentStep()-start)/(200-start)*(x1-x0);
  ctx.strokeStyle='#f8fafc';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(cursor,y);ctx.lineTo(cursor,y+ph-18);ctx.stroke();
 }
-ctx.fillStyle='#f2994a';ctx.fillText('Original rollback servo',x0,350);
-ctx.fillStyle='#4fd1e7';ctx.fillText('Depth-preserving alignment',x0+300,350);
-ctx.fillStyle='#fff';ctx.fillText('step '+currentStep()+'/200  |  '+(currentStep()/fps).toFixed(2)+' s',w-270,350);
-stepEl.textContent='Physical step '+currentStep()+'/200';
+ctx.fillStyle='#f2994a';ctx.fillText(D.series[0].policy,x0,540);
+ctx.fillStyle='#4fd1e7';ctx.fillText(D.series[1].policy,x0+420,540);
+ctx.fillStyle='#fff';ctx.fillText('step '+currentStep()+'/200  |  '+(currentStep()/fps).toFixed(2)+' s',w-270,540);
+stepEl.textContent='Physical step '+currentStep()+'/200 | '+D.series.map(s=>s.policy+': '+s.phase[currentStep()]+' / '+(['ALIGN','ADVANCE','HOLD','BACKOFF'][s.mode[currentStep()]]||'PREFIX')).join(' | ');
 }
 canvas.onclick=e=>{const r=canvas.getBoundingClientRect(),x=(e.clientX-r.left)/r.width*canvas.width,
- step=Math.round(Math.max(0,Math.min(1,(x-92)/(canvas.width-132)))*200);video.currentTime=step/fps;draw();};
+ step=Math.round(Number(windowSelect.value)+Math.max(0,Math.min(1,(x-92)/(canvas.width-132)))*(200-Number(windowSelect.value)));video.currentTime=step/fps;draw();};
 document.querySelector('#play').onclick=()=>video.paused?video.play():video.pause();
 const events=D.events;
 function seekEvent(sign){const now=currentStep(),sorted=events.map(e=>e.step);
@@ -162,6 +179,14 @@ function animate(){if(!video.paused)draw();requestAnimationFrame(animate);}anima
     (out/"SYNC_VIEWER.html").write_text(raw.replace("__BUNDLE__",embedded), encoding="utf-8")
 
 
+def execution_manifest(path):
+    for name in ("manifest.json", "MANIFEST.json"):
+        candidate=path.parent/name
+        if candidate.exists():
+            return {"path":str(candidate),"sha256":sha(candidate),"content":json.loads(candidate.read_text())}
+    return {"missing":True,"directory":str(path.parent)}
+
+
 def main():
     from PIL import Image, ImageDraw
     import torch
@@ -170,21 +195,45 @@ def main():
     from mani_skill.utils import sapien_utils
 
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--root",type=Path,required=True,help="EXP-001 source runs directory")
+    ap.add_argument("--root",type=Path,help="EXP-001 source runs directory (unless --left/--right supplied)")
     ap.add_argument("--out",type=Path,required=True,help="New output directory; never overwrite")
-    ap.add_argument("--seed",type=int,required=True)
+    ap.add_argument("--seed",type=int,help="Scene seed; inferred from explicit traces if omitted")
+    ap.add_argument("--left",type=Path,help="Explicit left gzip physics trace")
+    ap.add_argument("--right",type=Path,help="Explicit right gzip physics trace")
+    ap.add_argument("--left-label",default=None)
+    ap.add_argument("--right-label",default=None)
     ap.add_argument("--fps",type=int,default=20)
+    ap.add_argument("--camera-side",choices=["legacy","goal-positive-y","goal-negative-y"],default="legacy",help="Low socket-local side view; pose-derived, no geometry edits")
     args=ap.parse_args()
     assert args.fps==20, "native PlugCharger uses 20Hz; preserve step/time alignment"
-    args.out.mkdir(parents=True,exist_ok=False)
-
     variants=("servo_stop","servo_local_hold_stop")
-    sources=[load(args.root,k,args.seed) for k in variants]
+    if args.left or args.right:
+        if not (args.left and args.right): ap.error("--left and --right must be supplied together")
+        sources=[(p.resolve(),json.load(gzip.open(p,"rt"))) for p in (args.left,args.right)]
+        labels=[args.left_label or sources[0][1]["summary"].get("label","Left policy"),
+                args.right_label or sources[1][1]["summary"].get("label","Right policy")]
+        trace_seeds={int(t["summary"]["seed"]) for _,t in sources}
+        assert len(trace_seeds)==1, "paired trace seeds differ"
+        seed=trace_seeds.pop()
+        if args.seed is not None: assert args.seed==seed
+        args.seed=seed
+    else:
+        if args.root is None or args.seed is None: ap.error("default mode needs --root and --seed")
+        sources=[load(args.root,k,args.seed) for k in variants]
+        labels=[args.left_label or "Original rollback servo",args.right_label or "Depth-preserving servo"]
+    args.out.mkdir(parents=True,exist_ok=False)
     assert len({t["summary"]["initial_sha256"] for _,t in sources})==1
     assert all(len(t["steps"])==200 for _,t in sources)
     series=[trace_series(t) for _,t in sources]
     mid=np.asarray(sources[0][1]["steps"][70]["cube"][:3],dtype=float)
-    pose=sapien_utils.look_at(mid+np.array([-.15,.29,.23]),mid+np.array([-.02,0,0]))
+    if args.camera_side=="legacy":
+        eye=mid+np.array([-.14,-.30,.09]);target=mid+np.array([-.02,0,0])
+    else:
+        goal_rotation=rotation(sources[0][1]["steps"][70]["cube"][3:])@np.diag([-1.,-1.,1.])
+        sign=1 if args.camera_side=="goal-positive-y" else -1
+        eye=mid+goal_rotation@np.array([-.04,sign*.30,.025])
+        target=mid+goal_rotation@np.array([-.012,0.,0.])
+    pose=sapien_utils.look_at(eye,target)
     env=gym.make("PlugCharger-v1",num_envs=1,obs_mode="state",
         control_mode="pd_joint_pos",render_mode="rgb_array",
         sim_backend="physx_cuda",render_backend="gpu",
@@ -193,6 +242,8 @@ def main():
     camera=next(iter(env.unwrapped._human_render_cameras.values())).camera
     raw_mp4=pipe(args.out/"RAW.mp4",1920,720,args.fps)
     annotated_mp4=pipe(args.out/"ANNOTATED.mp4",1920,1080,args.fps)
+    camera_K=camera.get_intrinsic_matrix()[0].cpu().numpy().tolist()
+    camera_E=camera.get_extrinsic_matrix()[0].cpu().numpy().tolist()
     max_readback=0.
     colors=("#f2994a","#4fd1e7")
     heading=font(25);sub=font(19)
@@ -226,6 +277,7 @@ def main():
                 measurements.append((z,guide))
             assert raw_mp4.stdin and annotated_mp4.stdin
             raw_mp4.stdin.write(np.asarray(raw).tobytes())
+            if step==150: raw.save(args.out/"RAW.png")
             annotated=Image.new("RGB",(1920,1080),"#102030")
             annotated.paste(raw,(0,70))
             draw=ImageDraw.Draw(annotated)
@@ -233,7 +285,7 @@ def main():
                       font=heading,fill="#f7fafc")
             for i,(z,origins) in enumerate(measurements):
                 left=960*i
-                draw.text((left+20,38),("Original servo: rollback","Depth-preserving servo")[i],
+                draw.text((left+20,38),labels[i],
                           font=sub,fill=colors[i])
                 for key,(u,v) in origins:
                     x,y=u+left,v+70
@@ -241,11 +293,11 @@ def main():
                         col="#f4b34b" if key.startswith("pin_tip") else "#4fd1e7"
                         draw.ellipse((x-7,y-7,x+7,y+7),outline=col,width=3)
                 draw.text((left+16,710),
-                          "GOLD: pin-tip guides | CYAN: socket-mouth guides",
+                          "Geometry/goal truth: analysis only | guides may be occluded",
                           font=sub,fill="#f3f4f6")
-                a=series[i];idx=max(0,step-1)
+                a=series[i];idx=step
                 draw.rectangle((left,746,left+960,790),fill="#102030")
-                txt=(f"Axial {a['x'][idx]:.2f} mm  |  Lateral {a['lateral'][idx]:.2f} mm"
+                txt=(f"True x {a['x'][idx]:.2f}mm | lat true/meas {a['lateral'][idx]:.2f}/{a['measured_lateral'][idx]:.2f}mm"
                      f"  |  Force proxy {a['force'][idx]:.2f} N  |  final {int(sources[i][1]['summary']['success'])}")
                 draw.text((left+12,756),txt,font=sub,fill="#f3f4f6")
             for panel,(name,key,unit) in enumerate([
@@ -257,15 +309,16 @@ def main():
             # 2 HOLD; no servo annotation shows as neutral grey.
             for i, a in enumerate(series):
                 y0=1031+22*i
-                draw.text((9,y0),("Old mode","New mode")[i],font=font(15),fill=colors[i])
+                draw.text((9,y0),("Left mode","Right mode")[i],font=font(15),fill=colors[i])
                 for j, m in enumerate(a["mode"]):
                     c="#62748a" if not np.isfinite(m) else (
-                      "#5f91d8" if int(m)==0 else "#f2b35c" if int(m)==1 else "#50a983")
+                      "#5f91d8" if int(m)==0 else "#f2b35c" if int(m)==1 else "#50a983" if int(m)==2 else "#d076be")
                     x0=115+int(j/200*1755);x1=115+int((j+1)/200*1755)
                     draw.rectangle((x0,y0,x1+1,y0+12),fill=c)
-                cursor=115+int(max(0,step-1)/200*1755)
+                cursor=115+int(step/200*1755)
                 draw.line((cursor,y0-1,cursor,y0+14),fill="#ffffff",width=2)
             annotated_mp4.stdin.write(np.asarray(annotated).tobytes())
+            if step==150: annotated.save(args.out/"ANNOTATED.png")
         assert max_readback<1e-5, "pose replay mismatch"
     finally:
         close_pipe(raw_mp4)
@@ -275,23 +328,27 @@ def main():
     dat=[]
     for i,(p,t) in enumerate(sources):
         a=series[i];dat.append({
-          "policy":variants[i],"source_sha256":sha(p),
+          "policy":labels[i],"source_sha256":sha(p),
           "source":str(p),"terminal_success":bool(t["summary"]["success"]),
           "axial_mm":a["x"].tolist(),"lateral_mm":a["lateral"].tolist(),
+          "measured_lateral_mm":a["measured_lateral"].tolist(),
+          "observation_bias_mm":t["summary"].get("bias_mm",[0.,0.]),
+          "true_goal_usage":"offline analysis only; biased measured goal was available to controller",
+          "skill_action":[None,*[z.get("skill_action") for z in t["steps"]]],
           "angle_rad":a["angle"].tolist(),"force_N":a["force"].tolist(),
+          "physical_step":list(range(201)),"time_s":[k/args.fps for k in range(201)],
+          "phase":["INITIAL", *[z["phase"] for z in t["steps"]]],
           "mode":[None if not np.isfinite(x) else int(x) for x in a["mode"]]
         })
     events=[]
-    old=series[0]
-    for j in range(1,200):
-        if old["x"][j]-old["x"][j-1]<-0.5:
-            events.append({"step":j+1,"label":"old-servo rollback >0.5mm"})
-        if old["force"][j]>0.1 and old["force"][j-1]<=0.1:
-            events.append({"step":j+1,"label":"old-servo contact onset (proxy)"})
-        if series[1]["force"][j]>0.1 and series[1]["force"][j-1]<=0.1:
-            events.append({"step":j+1,"label":"depth-hold contact onset (proxy)"})
+    for i,src in enumerate(series):
+        for j in range(1,201):
+            if sources[i][1]["steps"][j-1]["phase"]=="CONTACT_SERVO" and src["x"][j]-src["x"][j-1]<-0.5:
+                events.append({"step":j,"label":labels[i]+" rollback >0.5mm"})
+            if src["force"][j]>0.1 and src["force"][j-1]<=0.1:
+                events.append({"step":j,"label":labels[i]+" contact onset (proxy)"})
     events.sort(key=lambda x:x["step"])
-    payload={"seed":args.seed,"fps":args.fps,"horizon":200,"series":dat,"events":events}
+    payload={"seed":args.seed,"fps":args.fps,"horizon":200,"task":sources[0][1]["summary"].get("physical_config",{}).get("task","PlugCharger-v1"),"series":dat,"events":events}
     (args.out/"DATA.json").write_text(json.dumps(payload,indent=2,allow_nan=False)+"\n")
     build_viewer(args.out,payload,args.fps)
     receipt={"seed":args.seed,"physics_steps":0,"source_kind":"MEASURED_POSE_REPLAY",
@@ -300,8 +357,16 @@ def main():
          "max_pose_readback_error":max_readback,
          "source":[{"path":str(p),"sha256":sha(p)} for p,t in sources],
          "source_script_sha256":sha(Path(__file__)),
+         "source_execution_manifests":[execution_manifest(p) for p,t in sources],
+         "labels":labels,
+         "analysis_privilege":"True task pose and goal errors are offline evaluation signals, not necessarily policy inputs; see source execution manifests.",
+         "native_task_source_sha256":sha(Path(__import__("inspect").getfile(type(env.unwrapped)))),
+         "frame_count":201,"fps":20,
+         "camera_intrinsic":camera_K,
+         "camera_choice":args.camera_side,"camera_eye_world":eye.tolist(),"camera_target_world":target.tolist(),
+         "camera_extrinsic":camera_E,
          "outputs":{name:sha(args.out/name) for name in
-            ["RAW.mp4","ANNOTATED.mp4","DATA.json","SYNC_VIEWER.html"]}}
+            ["RAW.mp4","ANNOTATED.mp4","RAW.png","ANNOTATED.png","DATA.json","SYNC_VIEWER.html"]}}
     (args.out/"MANIFEST.json").write_text(json.dumps(receipt,indent=2)+"\n")
     print(json.dumps({"out":str(args.out),"source_kind":"MEASURED_POSE_REPLAY",
                       "physics_steps":0,"frames":201,"max_readback_error":max_readback},indent=2))

@@ -1,0 +1,44 @@
+[
+  {
+    "run": "sac_pilot_1024",
+    "accounting": {
+      "reason": "numpy bool success-terminal serialization failed on fourth episode; first three fully indexed. Native-terminal and finally-tail partial files are duplicates of the same fourth 200-step execution.",
+      "complete_indexed_episodes": 3,
+      "complete_indexed_steps": 600,
+      "additional_crash_episodes": 1,
+      "additional_crash_steps": 200,
+      "total_actual_physical_steps": 800,
+      "optimizer_updates": 0,
+      "recovered_source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024/episodes/train_00004_native_terminal_728003.json.gz",
+      "recovered_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024/RECOVERED_CRASH_728003.json.gz",
+      "recovered_sha256": "ed55928060cc2990270d2677799c8bdd5f6332b95448b731931d6a7d0d724730",
+      "previous_recovery_note": "RECOVERED_PHYSICS.json.gz was mistakenly copied from an already-indexed valid episode; retained but not counted again."
+    },
+    "recovered_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024/RECOVERED_CRASH_728003.json.gz",
+    "recovered_sha256": "ed55928060cc2990270d2677799c8bdd5f6332b95448b731931d6a7d0d724730",
+    "duplicate_of_indexed_episode": false,
+    "disposition": "INCLUDED_RECOVERED_EPISODE",
+    "valid_indexed_episode_count": 4
+  },
+  {
+    "run": "sac_pilot_1024",
+    "accounting": {
+      "reason": "numpy bool success-terminal serialization failed on fourth episode; first three fully indexed. Native-terminal and finally-tail partial files are duplicates of the same fourth 200-step execution.",
+      "complete_indexed_episodes": 3,
+      "complete_indexed_steps": 600,
+      "additional_crash_episodes": 1,
+      "additional_crash_steps": 200,
+      "total_actual_physical_steps": 800,
+      "optimizer_updates": 0,
+      "recovered_source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024/episodes/train_00004_native_terminal_728003.json.gz",
+      "recovered_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024/RECOVERED_CRASH_728003.json.gz",
+      "recovered_sha256": "ed55928060cc2990270d2677799c8bdd5f6332b95448b731931d6a7d0d724730",
+      "previous_recovery_note": "RECOVERED_PHYSICS.json.gz was mistakenly copied from an already-indexed valid episode; retained but not counted again."
+    },
+    "recovered_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024/RECOVERED_PHYSICS.json.gz",
+    "recovered_sha256": "94b4c207c851a9b5cb97f8aafb433f56f066e8338c353865174b5861c1b6b278",
+    "duplicate_of_indexed_episode": true,
+    "disposition": "DO_NOT_DOUBLE_COUNT",
+    "valid_indexed_episode_count": 4
+  }
+]

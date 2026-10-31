@@ -1,0 +1,52 @@
+[
+  {
+    "method": "sac",
+    "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024_retry/MODEL.zip",
+    "model_sha256": "fa5ee830fd3874044cdce126f6f91a1f2c8586adfb8ab3c7c26e81d443653bca",
+    "actor_parameters": 10374,
+    "changed_parameters": 9968,
+    "actor_l2_change": 3.1191012859344482,
+    "initial_actor_sha256": "aa2905aa2e8da0c6adc5c2292a48e5ee160e7d57467e20d5879ef4b11356be33",
+    "final_actor_sha256": "3cee4dfa3ad7644e0ffd506ff4e3c6ed1a1391a6f87804107edd804005977342"
+  },
+  {
+    "method": "effect_sac",
+    "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_sac_pilot_1024_retry/MODEL.zip",
+    "model_sha256": "81d3efa415264ef3848eb3a7cd4be48204633575b999b3e577a32f3f4c947a9b",
+    "actor_parameters": 10374,
+    "changed_parameters": 10181,
+    "actor_l2_change": 3.6694142818450928,
+    "initial_actor_sha256": "aa2905aa2e8da0c6adc5c2292a48e5ee160e7d57467e20d5879ef4b11356be33",
+    "final_actor_sha256": "8149aef4eae51e42d4c87d0a9f6b48f99c3a24f0f6d0a9b28cb9f24345146d65"
+  },
+  {
+    "method": "ln_sac_alpha01",
+    "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/ln_sac_pilot_1024/MODEL.zip",
+    "model_sha256": "6c7bd1291a9c64c0b5698e9d01d39996edc41e76075d0a165f1f32a08a5f1147",
+    "actor_parameters": 10374,
+    "changed_parameters": 9921,
+    "actor_l2_change": 2.6641533374786377,
+    "initial_actor_sha256": "aa2905aa2e8da0c6adc5c2292a48e5ee160e7d57467e20d5879ef4b11356be33",
+    "final_actor_sha256": "14f10c34e159476b99442442235101af743d255bf8c8a525e7cb9e58bc61f06e"
+  },
+  {
+    "method": "ln_sac_alpha002",
+    "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/ln_sac_alpha002/MODEL.zip",
+    "model_sha256": "d9f46fa2303c5499cc4f024f8e9f7380ef5fe09eb551f47fc21c6aacd0c0a512",
+    "actor_parameters": 10374,
+    "changed_parameters": 9935,
+    "actor_l2_change": 4.172128200531006,
+    "initial_actor_sha256": "aa2905aa2e8da0c6adc5c2292a48e5ee160e7d57467e20d5879ef4b11356be33",
+    "final_actor_sha256": "61cf13f7290176af7fdbdd5e9e37f753bde33d7d0bcf180f4e01426977d6645d"
+  },
+  {
+    "method": "effect_ln_sac_alpha002",
+    "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_ln_sac_alpha002/MODEL.zip",
+    "model_sha256": "cc9aec0b867e4241404984ad6656363eb29df2c4af56b8e2cc9560e2ef9fd37d",
+    "actor_parameters": 10374,
+    "changed_parameters": 10350,
+    "actor_l2_change": 3.9084460735321045,
+    "initial_actor_sha256": "aa2905aa2e8da0c6adc5c2292a48e5ee160e7d57467e20d5879ef4b11356be33",
+    "final_actor_sha256": "d05f1da863c8f5b0b37b753d30d65d70d9601b7ba37e1a837b21772e6f03f4e4"
+  }
+]

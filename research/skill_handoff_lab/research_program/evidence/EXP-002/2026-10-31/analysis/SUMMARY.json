@@ -1,0 +1,1114 @@
+{
+  "budget": {
+    "saved_complete_episodes": 426,
+    "saved_physics_steps": 85200,
+    "saved_prefix_steps": 36069,
+    "saved_skill_decisions": 9232,
+    "optimizer_updates": 4480,
+    "finalized_run_optimizer_updates": 4480,
+    "unfinalized_training_runs": [],
+    "excludes_live_unfinished_episodes": true,
+    "training_tail_episodes": 5
+  },
+  "groups": [
+    {
+      "run": "adaptive_smoke",
+      "policy": "fixed_minus",
+      "mode": "diagnostic",
+      "stop_rule": "UNKNOWN_STOP_RULE",
+      "source": "a9248aea69827b2416a117678d28314563cfd7f48fff5f7fb25ed8f2b1fc18e3",
+      "episodes": 1,
+      "scored_episodes": 1,
+      "success": 1,
+      "physical_steps": 200,
+      "prefix_steps": 84,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    {
+      "run": "adaptive_smoke",
+      "policy": "fixed_plus",
+      "mode": "diagnostic",
+      "stop_rule": "UNKNOWN_STOP_RULE",
+      "source": "a9248aea69827b2416a117678d28314563cfd7f48fff5f7fb25ed8f2b1fc18e3",
+      "episodes": 1,
+      "scored_episodes": 1,
+      "success": 0,
+      "physical_steps": 200,
+      "prefix_steps": 84,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1
+      }
+    },
+    {
+      "run": "adaptive_smoke",
+      "policy": "geometry",
+      "mode": "diagnostic",
+      "stop_rule": "UNKNOWN_STOP_RULE",
+      "source": "a9248aea69827b2416a117678d28314563cfd7f48fff5f7fb25ed8f2b1fc18e3",
+      "episodes": 1,
+      "scored_episodes": 1,
+      "success": 1,
+      "physical_steps": 200,
+      "prefix_steps": 84,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    {
+      "run": "adaptive_smoke",
+      "policy": "rls",
+      "mode": "diagnostic",
+      "stop_rule": "UNKNOWN_STOP_RULE",
+      "source": "a9248aea69827b2416a117678d28314563cfd7f48fff5f7fb25ed8f2b1fc18e3",
+      "episodes": 1,
+      "scored_episodes": 1,
+      "success": 0,
+      "physical_steps": 200,
+      "prefix_steps": 84,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1
+      }
+    },
+    {
+      "run": "adaptive_smoke",
+      "policy": "search",
+      "mode": "diagnostic",
+      "stop_rule": "UNKNOWN_STOP_RULE",
+      "source": "a9248aea69827b2416a117678d28314563cfd7f48fff5f7fb25ed8f2b1fc18e3",
+      "episodes": 1,
+      "scored_episodes": 1,
+      "success": 1,
+      "physical_steps": 200,
+      "prefix_steps": 84,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    {
+      "run": "bias_minus12_v2",
+      "policy": "fixed_minus",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 0,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 2
+      }
+    },
+    {
+      "run": "bias_minus12_v2",
+      "policy": "fixed_plus",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 1,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "SUCCESS": 1,
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1
+      }
+    },
+    {
+      "run": "bias_minus12_v2",
+      "policy": "geometry",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 0,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 2
+      }
+    },
+    {
+      "run": "bias_minus12_v2",
+      "policy": "rls",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 0,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 2
+      }
+    },
+    {
+      "run": "bias_minus12_v2",
+      "policy": "search",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 0,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 2
+      }
+    },
+    {
+      "run": "bias_plus12",
+      "policy": "fixed_minus",
+      "mode": "diagnostic",
+      "stop_rule": "UNKNOWN_STOP_RULE",
+      "source": "a837fd85d7e57c92e6c7299bf12faeada97d39bac897a4359f2b426e66aeba66",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 2,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "bias_plus12",
+      "policy": "fixed_plus",
+      "mode": "diagnostic",
+      "stop_rule": "UNKNOWN_STOP_RULE",
+      "source": "a837fd85d7e57c92e6c7299bf12faeada97d39bac897a4359f2b426e66aeba66",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 0,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 2
+      }
+    },
+    {
+      "run": "bias_plus12",
+      "policy": "geometry",
+      "mode": "diagnostic",
+      "stop_rule": "UNKNOWN_STOP_RULE",
+      "source": "a837fd85d7e57c92e6c7299bf12faeada97d39bac897a4359f2b426e66aeba66",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 1,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1,
+        "SUCCESS": 1
+      }
+    },
+    {
+      "run": "bias_plus12",
+      "policy": "rls",
+      "mode": "diagnostic",
+      "stop_rule": "UNKNOWN_STOP_RULE",
+      "source": "a837fd85d7e57c92e6c7299bf12faeada97d39bac897a4359f2b426e66aeba66",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 1,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "SUCCESS": 1,
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1
+      }
+    },
+    {
+      "run": "bias_plus12",
+      "policy": "search",
+      "mode": "diagnostic",
+      "stop_rule": "UNKNOWN_STOP_RULE",
+      "source": "a837fd85d7e57c92e6c7299bf12faeada97d39bac897a4359f2b426e66aeba66",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 2,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "bias_plus12_v2",
+      "policy": "fixed_minus",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 2,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "bias_plus12_v2",
+      "policy": "fixed_plus",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 0,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 2
+      }
+    },
+    {
+      "run": "bias_plus12_v2",
+      "policy": "geometry",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 1,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1,
+        "SUCCESS": 1
+      }
+    },
+    {
+      "run": "bias_plus12_v2",
+      "policy": "rls",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 1,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "SUCCESS": 1,
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1
+      }
+    },
+    {
+      "run": "bias_plus12_v2",
+      "policy": "search",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 1,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1,
+        "SUCCESS": 1
+      }
+    },
+    {
+      "run": "effect_ln_sac_alpha002",
+      "policy": "effect_ln_sac",
+      "mode": "train",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 45,
+      "scored_episodes": 44,
+      "success": 17,
+      "physical_steps": 9000,
+      "prefix_steps": 3685,
+      "failures": {
+        "NO_RECORDED_SOCKET_CONTACT": 5,
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 18,
+        "SUCCESS": 17,
+        "PREFIX_GRASP_OR_LIFT": 4,
+        "TRAINING_TAIL_NOT_POLICY_OUTCOME": 1
+      }
+    },
+    {
+      "run": "effect_sac_pilot_1024_retry",
+      "policy": "effect_sac",
+      "mode": "train",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 44,
+      "scored_episodes": 43,
+      "success": 15,
+      "physical_steps": 8800,
+      "prefix_steps": 3590,
+      "failures": {
+        "NO_RECORDED_SOCKET_CONTACT": 4,
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 20,
+        "SUCCESS": 15,
+        "PREFIX_GRASP_OR_LIFT": 4,
+        "TRAINING_TAIL_NOT_POLICY_OUTCOME": 1
+      }
+    },
+    {
+      "run": "eval_controls_-1.2",
+      "policy": "geometry",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 4,
+      "scored_episodes": 4,
+      "success": 0,
+      "physical_steps": 800,
+      "prefix_steps": 355,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 4
+      }
+    },
+    {
+      "run": "eval_controls_-1.2",
+      "policy": "rls",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 4,
+      "scored_episodes": 4,
+      "success": 2,
+      "physical_steps": 800,
+      "prefix_steps": 355,
+      "failures": {
+        "SUCCESS": 2,
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 2
+      }
+    },
+    {
+      "run": "eval_controls_-1.2",
+      "policy": "search",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 4,
+      "scored_episodes": 4,
+      "success": 4,
+      "physical_steps": 800,
+      "prefix_steps": 355,
+      "failures": {
+        "SUCCESS": 4
+      }
+    },
+    {
+      "run": "eval_controls_0",
+      "policy": "geometry",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 4,
+      "scored_episodes": 4,
+      "success": 4,
+      "physical_steps": 800,
+      "prefix_steps": 355,
+      "failures": {
+        "SUCCESS": 4
+      }
+    },
+    {
+      "run": "eval_controls_0",
+      "policy": "rls",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 4,
+      "scored_episodes": 4,
+      "success": 4,
+      "physical_steps": 800,
+      "prefix_steps": 355,
+      "failures": {
+        "SUCCESS": 4
+      }
+    },
+    {
+      "run": "eval_controls_0",
+      "policy": "search",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 4,
+      "scored_episodes": 4,
+      "success": 4,
+      "physical_steps": 800,
+      "prefix_steps": 355,
+      "failures": {
+        "SUCCESS": 4
+      }
+    },
+    {
+      "run": "eval_controls_1.2",
+      "policy": "geometry",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 4,
+      "scored_episodes": 4,
+      "success": 0,
+      "physical_steps": 800,
+      "prefix_steps": 355,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 4
+      }
+    },
+    {
+      "run": "eval_controls_1.2",
+      "policy": "rls",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 4,
+      "scored_episodes": 4,
+      "success": 0,
+      "physical_steps": 800,
+      "prefix_steps": 355,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 4
+      }
+    },
+    {
+      "run": "eval_controls_1.2",
+      "policy": "search",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 4,
+      "scored_episodes": 4,
+      "success": 2,
+      "physical_steps": 800,
+      "prefix_steps": 355,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 2,
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "eval_effect_ln_prior_only",
+      "policy": "effect_ln_sac",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 12,
+      "scored_episodes": 12,
+      "success": 2,
+      "physical_steps": 2400,
+      "prefix_steps": 1065,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 10,
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "eval_effect_ln_sac",
+      "policy": "effect_ln_sac",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 12,
+      "scored_episodes": 12,
+      "success": 2,
+      "physical_steps": 2400,
+      "prefix_steps": 1065,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 10,
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "eval_effect_prior_only",
+      "policy": "effect_sac",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 12,
+      "scored_episodes": 12,
+      "success": 3,
+      "physical_steps": 2400,
+      "prefix_steps": 1065,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 9,
+        "SUCCESS": 3
+      }
+    },
+    {
+      "run": "eval_effect_sac",
+      "policy": "effect_sac",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 12,
+      "scored_episodes": 12,
+      "success": 3,
+      "physical_steps": 2400,
+      "prefix_steps": 1065,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 9,
+        "SUCCESS": 3
+      }
+    },
+    {
+      "run": "eval_ln_sac",
+      "policy": "ln_sac",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 12,
+      "scored_episodes": 12,
+      "success": 4,
+      "physical_steps": 2400,
+      "prefix_steps": 1065,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 8,
+        "SUCCESS": 4
+      }
+    },
+    {
+      "run": "eval_ln_sac_alpha002",
+      "policy": "ln_sac",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 12,
+      "scored_episodes": 12,
+      "success": 10,
+      "physical_steps": 2400,
+      "prefix_steps": 1065,
+      "failures": {
+        "SUCCESS": 10,
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 2
+      }
+    },
+    {
+      "run": "eval_sac",
+      "policy": "sac",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 12,
+      "scored_episodes": 12,
+      "success": 1,
+      "physical_steps": 2400,
+      "prefix_steps": 1065,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 11,
+        "SUCCESS": 1
+      }
+    },
+    {
+      "run": "eval_sac_zero_z",
+      "policy": "sac",
+      "mode": "eval",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 12,
+      "scored_episodes": 12,
+      "success": 7,
+      "physical_steps": 2400,
+      "prefix_steps": 1065,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 5,
+        "SUCCESS": 7
+      }
+    },
+    {
+      "run": "heavy_highfriction",
+      "policy": "geometry",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 2,
+      "physical_steps": 400,
+      "prefix_steps": 175,
+      "failures": {
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "heavy_highfriction",
+      "policy": "rls",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 2,
+      "physical_steps": 400,
+      "prefix_steps": 175,
+      "failures": {
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "heavy_highfriction",
+      "policy": "search",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 2,
+      "physical_steps": 400,
+      "prefix_steps": 175,
+      "failures": {
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "light_lowfriction",
+      "policy": "geometry",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 2,
+      "physical_steps": 400,
+      "prefix_steps": 174,
+      "failures": {
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "light_lowfriction",
+      "policy": "rls",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 2,
+      "physical_steps": 400,
+      "prefix_steps": 174,
+      "failures": {
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "light_lowfriction",
+      "policy": "search",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 2,
+      "physical_steps": 400,
+      "prefix_steps": 174,
+      "failures": {
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "ln_sac_alpha002",
+      "policy": "ln_sac",
+      "mode": "train",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 48,
+      "scored_episodes": 47,
+      "success": 22,
+      "physical_steps": 9600,
+      "prefix_steps": 3911,
+      "failures": {
+        "NO_RECORDED_SOCKET_CONTACT": 4,
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 16,
+        "SUCCESS": 22,
+        "PREFIX_GRASP_OR_LIFT": 5,
+        "TRAINING_TAIL_NOT_POLICY_OUTCOME": 1
+      }
+    },
+    {
+      "run": "ln_sac_pilot_1024",
+      "policy": "ln_sac",
+      "mode": "train",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 45,
+      "scored_episodes": 44,
+      "success": 18,
+      "physical_steps": 9000,
+      "prefix_steps": 3685,
+      "failures": {
+        "NO_RECORDED_SOCKET_CONTACT": 6,
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 16,
+        "SUCCESS": 18,
+        "PREFIX_GRASP_OR_LIFT": 4,
+        "TRAINING_TAIL_NOT_POLICY_OUTCOME": 1
+      }
+    },
+    {
+      "run": "native_727000_003",
+      "policy": "servo_local_hold_stop",
+      "mode": "diagnostic",
+      "stop_rule": "NATIVE_TRUE_GOAL_STOP",
+      "source": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+      "episodes": 4,
+      "scored_episodes": 4,
+      "success": 3,
+      "physical_steps": 800,
+      "prefix_steps": 330,
+      "failures": {
+        "SUCCESS": 3,
+        "PREFIX_GRASP_OR_LIFT": 1
+      }
+    },
+    {
+      "run": "repeat_controls_-1.2",
+      "policy": "geometry",
+      "mode": "diagnostic",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 1,
+      "scored_episodes": 1,
+      "success": 0,
+      "physical_steps": 200,
+      "prefix_steps": 83,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1
+      }
+    },
+    {
+      "run": "repeat_controls_-1.2",
+      "policy": "search",
+      "mode": "diagnostic",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 1,
+      "scored_episodes": 1,
+      "success": 1,
+      "physical_steps": 200,
+      "prefix_steps": 83,
+      "failures": {
+        "SUCCESS": 1
+      }
+    },
+    {
+      "run": "repeat_controls_1.2",
+      "policy": "geometry",
+      "mode": "diagnostic",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 1,
+      "scored_episodes": 1,
+      "success": 0,
+      "physical_steps": 200,
+      "prefix_steps": 83,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1
+      }
+    },
+    {
+      "run": "repeat_controls_1.2",
+      "policy": "search",
+      "mode": "diagnostic",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 1,
+      "scored_episodes": 1,
+      "success": 0,
+      "physical_steps": 200,
+      "prefix_steps": 83,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1
+      }
+    },
+    {
+      "run": "sac_pilot_1024",
+      "policy": "sac",
+      "mode": "train",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "0dab2da19d2d4519974616476e340c587988400b52c40baffa0ef15945b235b2",
+      "episodes": 4,
+      "scored_episodes": 4,
+      "success": 1,
+      "physical_steps": 800,
+      "prefix_steps": 325,
+      "failures": {
+        "NO_RECORDED_SOCKET_CONTACT": 2,
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1,
+        "SUCCESS": 1
+      }
+    },
+    {
+      "run": "sac_pilot_1024_retry",
+      "policy": "sac",
+      "mode": "train",
+      "stop_rule": "OBSERVED_GOAL_STOP",
+      "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+      "episodes": 45,
+      "scored_episodes": 44,
+      "success": 16,
+      "physical_steps": 9000,
+      "prefix_steps": 3685,
+      "failures": {
+        "NO_RECORDED_SOCKET_CONTACT": 4,
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 20,
+        "SUCCESS": 16,
+        "PREFIX_GRASP_OR_LIFT": 4,
+        "TRAINING_TAIL_NOT_POLICY_OUTCOME": 1
+      }
+    },
+    {
+      "run": "search_v3_-1",
+      "policy": "rls",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "b7532a8556435fd56694a52bd520b1f6267b3fe1ce0e7977325e9f1dfbb8ec3d",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 1,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1,
+        "SUCCESS": 1
+      }
+    },
+    {
+      "run": "search_v3_-1",
+      "policy": "search",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "b7532a8556435fd56694a52bd520b1f6267b3fe1ce0e7977325e9f1dfbb8ec3d",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 2,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "SUCCESS": 2
+      }
+    },
+    {
+      "run": "search_v3_1",
+      "policy": "rls",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "b7532a8556435fd56694a52bd520b1f6267b3fe1ce0e7977325e9f1dfbb8ec3d",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 1,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "SUCCESS": 1,
+        "CONTACT_WITHOUT_TERMINAL_GOAL": 1
+      }
+    },
+    {
+      "run": "search_v3_1",
+      "policy": "search",
+      "mode": "diagnostic",
+      "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+      "source": "b7532a8556435fd56694a52bd520b1f6267b3fe1ce0e7977325e9f1dfbb8ec3d",
+      "episodes": 2,
+      "scored_episodes": 2,
+      "success": 2,
+      "physical_steps": 400,
+      "prefix_steps": 176,
+      "failures": {
+        "SUCCESS": 2
+      }
+    }
+  ],
+  "effect": [
+    {
+      "run": "effect_ln_sac_alpha002",
+      "policy": "effect_ln_sac",
+      "policy_nonprior_decisions": 88,
+      "decisions": 1024,
+      "used_nonzero": 88,
+      "posterior_nonprior": 88,
+      "prior_decisions": 936,
+      "constant_episodes": 27,
+      "episodes": 45,
+      "used_fraction": 0.0859375,
+      "prior_fraction": 0.9140625
+    },
+    {
+      "run": "effect_sac_pilot_1024_retry",
+      "policy": "effect_sac",
+      "policy_nonprior_decisions": 110,
+      "decisions": 1024,
+      "used_nonzero": 110,
+      "posterior_nonprior": 110,
+      "prior_decisions": 914,
+      "constant_episodes": 28,
+      "episodes": 44,
+      "used_fraction": 0.107421875,
+      "prior_fraction": 0.892578125
+    },
+    {
+      "run": "eval_effect_ln_prior_only",
+      "policy": "effect_ln_sac",
+      "policy_nonprior_decisions": 0,
+      "decisions": 301,
+      "used_nonzero": 100,
+      "posterior_nonprior": 100,
+      "prior_decisions": 201,
+      "constant_episodes": 1,
+      "episodes": 12,
+      "used_fraction": 0.33222591362126247,
+      "prior_fraction": 0.6677740863787376
+    },
+    {
+      "run": "eval_effect_ln_sac",
+      "policy": "effect_ln_sac",
+      "policy_nonprior_decisions": 96,
+      "decisions": 301,
+      "used_nonzero": 96,
+      "posterior_nonprior": 96,
+      "prior_decisions": 205,
+      "constant_episodes": 1,
+      "episodes": 12,
+      "used_fraction": 0.31893687707641194,
+      "prior_fraction": 0.6810631229235881
+    },
+    {
+      "run": "eval_effect_prior_only",
+      "policy": "effect_sac",
+      "policy_nonprior_decisions": 0,
+      "decisions": 316,
+      "used_nonzero": 139,
+      "posterior_nonprior": 139,
+      "prior_decisions": 177,
+      "constant_episodes": 1,
+      "episodes": 12,
+      "used_fraction": 0.439873417721519,
+      "prior_fraction": 0.560126582278481
+    },
+    {
+      "run": "eval_effect_sac",
+      "policy": "effect_sac",
+      "policy_nonprior_decisions": 132,
+      "decisions": 316,
+      "used_nonzero": 132,
+      "posterior_nonprior": 132,
+      "prior_decisions": 184,
+      "constant_episodes": 1,
+      "episodes": 12,
+      "used_fraction": 0.4177215189873418,
+      "prior_fraction": 0.5822784810126582
+    },
+    {
+      "run": "eval_ln_sac",
+      "policy": "ln_sac",
+      "policy_nonprior_decisions": 0,
+      "decisions": 259,
+      "used_nonzero": 43,
+      "posterior_nonprior": 43,
+      "prior_decisions": 216,
+      "constant_episodes": 3,
+      "episodes": 12,
+      "used_fraction": 0.16602316602316602,
+      "prior_fraction": 0.833976833976834
+    },
+    {
+      "run": "eval_ln_sac_alpha002",
+      "policy": "ln_sac",
+      "policy_nonprior_decisions": 0,
+      "decisions": 211,
+      "used_nonzero": 4,
+      "posterior_nonprior": 4,
+      "prior_decisions": 207,
+      "constant_episodes": 11,
+      "episodes": 12,
+      "used_fraction": 0.018957345971563982,
+      "prior_fraction": 0.981042654028436
+    },
+    {
+      "run": "eval_sac",
+      "policy": "sac",
+      "policy_nonprior_decisions": 0,
+      "decisions": 327,
+      "used_nonzero": 90,
+      "posterior_nonprior": 90,
+      "prior_decisions": 237,
+      "constant_episodes": 3,
+      "episodes": 12,
+      "used_fraction": 0.27522935779816515,
+      "prior_fraction": 0.7247706422018348
+    },
+    {
+      "run": "eval_sac_zero_z",
+      "policy": "sac",
+      "policy_nonprior_decisions": 0,
+      "decisions": 236,
+      "used_nonzero": 30,
+      "posterior_nonprior": 30,
+      "prior_decisions": 206,
+      "constant_episodes": 5,
+      "episodes": 12,
+      "used_fraction": 0.1271186440677966,
+      "prior_fraction": 0.8728813559322034
+    },
+    {
+      "run": "ln_sac_alpha002",
+      "policy": "ln_sac",
+      "policy_nonprior_decisions": 0,
+      "decisions": 1024,
+      "used_nonzero": 84,
+      "posterior_nonprior": 84,
+      "prior_decisions": 940,
+      "constant_episodes": 30,
+      "episodes": 48,
+      "used_fraction": 0.08203125,
+      "prior_fraction": 0.91796875
+    },
+    {
+      "run": "ln_sac_pilot_1024",
+      "policy": "ln_sac",
+      "policy_nonprior_decisions": 0,
+      "decisions": 1024,
+      "used_nonzero": 42,
+      "posterior_nonprior": 42,
+      "prior_decisions": 982,
+      "constant_episodes": 36,
+      "episodes": 45,
+      "used_fraction": 0.041015625,
+      "prior_fraction": 0.958984375
+    },
+    {
+      "run": "sac_pilot_1024",
+      "policy": "sac",
+      "policy_nonprior_decisions": 0,
+      "decisions": 90,
+      "used_nonzero": 0,
+      "posterior_nonprior": 0,
+      "prior_decisions": 90,
+      "constant_episodes": 3,
+      "episodes": 3,
+      "used_fraction": 0.0,
+      "prior_fraction": 1.0
+    },
+    {
+      "run": "sac_pilot_1024_retry",
+      "policy": "sac",
+      "policy_nonprior_decisions": 0,
+      "decisions": 1024,
+      "used_nonzero": 84,
+      "posterior_nonprior": 84,
+      "prior_decisions": 940,
+      "constant_episodes": 31,
+      "episodes": 45,
+      "used_fraction": 0.08203125,
+      "prior_fraction": 0.91796875
+    }
+  ],
+  "qa_failures": 0,
+  "paired_boundaries": 1358,
+  "exact_paired_boundaries": 1358,
+  "interpretation": "Scores grouped by exact run/source/stop rule. Diagnostics and training are not held-out evaluation."
+}

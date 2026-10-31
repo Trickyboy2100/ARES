@@ -1,0 +1,33 @@
+{
+  "errors": [],
+  "series201": true,
+  "nativeDuration": 10.05,
+  "floorFrame150": true,
+  "clickSeeks100": true,
+  "rawSwitch": true,
+  "sha": [
+    "0c450cba070bea551fb3f4d8098a428bb2b89db3da63bb246efd7f6debf91658",
+    "ecbfc4957923aa05ef03751ff5fe50c0ba3c9fc8f86ae2530f25e6ba50c98657"
+  ],
+  "videos": {
+    "RAW.mp4": {
+      "width": 1920,
+      "height": 720,
+      "r_frame_rate": "20/1",
+      "duration": "10.050000",
+      "nb_frames": "201",
+      "pts_k_div_20_pass": true
+    },
+    "ANNOTATED.mp4": {
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "20/1",
+      "duration": "10.050000",
+      "nb_frames": "201",
+      "pts_k_div_20_pass": true
+    }
+  },
+  "max_pose_readback_error": 1.1920928955078125e-07,
+  "visual_review": "Reviewed frame150 before and after low-side-view camera change; side view exposes charger/socket progress, physically occluded pin guides explicitly labeled. No measured contact patches claimed.",
+  "physics_steps_added": 0
+}

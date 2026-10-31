@@ -1,0 +1,12 @@
+{
+  "feature_contract": "PASS",
+  "critic_layernorm_parameters_and_target": "PASS",
+  "counts": {
+    "actor": 0,
+    "critic": 4,
+    "critic_target": 4
+  },
+  "physics_steps": 0,
+  "optimizer_steps": 0,
+  "all_four_policy_feature_dispatch": "PASS (stub interface only; not physics evidence)"
+}

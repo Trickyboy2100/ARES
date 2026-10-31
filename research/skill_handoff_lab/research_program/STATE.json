@@ -2,20 +2,20 @@
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
   "last_review": "2026-10-31",
-  "baseline_commit": "c013f7e33fe65c3a76c3ef2dfc1dedc6d4816a67",
+  "baseline_commit": "b953e092b38bd50ace5d6c776e6bcc52baa3e586",
   "branch": "research-sci-program",
   "scientific_goal": "Task-conditioned executable skill-parameter reinforcement learning with genuine physical execution-effect adaptation for transferable robotic manipulation",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
-  "current_stage": "S3",
-  "active_experiment": "EXP-002",
-  "latest_evidence": "evidence/EXP-001/confirmation-v2-2026-10-31/README.md",
-  "next_action": "EXP-002: proactive two-track research: test fresh native PlugCharger strong control and an explicitly named, physically realistic grasp/contact/observation-variation task family; identify observable action-conditioned effects and nontrivial rescue/regression beyond geometry/replan/RLS. Do not train on the already-solved 7/8 native cases. If learnable authority exists, autonomously proceed to strong online same-action residual SAC/PPO and a single effect-conditioned mechanism. First run program_charger_video_sync.py on the user's GPU; preserve RAW+ANNOTATED MP4, step-linked TRACE and source SHA. Never claim new RL gain without new independent results.",
+  "current_stage": "S4",
+  "active_experiment": "EXP-003",
+  "latest_evidence": "evidence/EXP-002/2026-10-31/README.md",
+  "next_action": "EXP-003: consolidate matched-alpha critic-LayerNorm ordinary SAC10/12 versus search10/12 (two mutual rescues). Matched effect+LN2/12 and prior-only2/12 do not support the current feature mechanism. First test observable stable skill-completion contracts: both LN failures satisfied native success transiently but never entered hold under the stricter observed orientation threshold. Preserve strong baselines; then confirm independent training seeds and new Y/YZ-error scenarios with task-justified action permissions and identifiable contact probes. Do not scale the current effect features, use true-goal oracle stopping, or claim LayerNorm/zero-Z as new methods.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
-    "S3": "active",
-    "S4": "planned",
-    "S5": "hypothesis_only",
+    "S3": "initial_action_authority_confirmed_identification_incomplete",
+    "S4": "active_bounded_training_completed_baseline_not_mature",
+    "S5": "candidate_tested_no_feedback_gain",
     "S6": "not_started",
     "S7": "not_started"
   },
@@ -30,7 +30,7 @@
     },
     {
       "id": "EXP-002",
-      "status": "ready",
+      "status": "done",
       "stage": "S3",
       "card": "experiments/EXP-002_ACTION_AUTHORITY.md",
       "depends_on": [
@@ -40,7 +40,7 @@
     },
     {
       "id": "EXP-003",
-      "status": "queued",
+      "status": "running",
       "stage": "S4",
       "card": "experiments/EXP-003_STRONG_RL_BASELINES.md",
       "depends_on": [
@@ -70,26 +70,51 @@
     }
   ],
   "unresolved_questions": [
-    "Do legitimate new grasp/attachment/task/contact conditions expose repeatable failure of the best depth-hold+replan controller?",
-    "Are different legal actions beneficial under different current observations or short action-effect probes, rather than one always-best rule?",
-    "Can physically plausible unobserved dynamics/contact changes generate state aliasing that effect history helps resolve beyond generic history and strong online adaptive control?",
-    "Can mature residual PPO/SAC trained on enough genuine effective decisions improve full-task success, and does any new mechanism beat matched baselines?"
+    "Matched LN failures never enter hold: native success occurs at154/161 but the stricter observed orientation threshold blocks termination. Can an observable, stable completion contract preserve success without privileged true-goal stopping?",
+    "Can task-conditioned restriction of legitimate skill parameters retain search successes without removing authority needed under real YZ/grasp variations?",
+    "Can persistent contact probes identify hidden task error beyond the same raw history and geometric search, with measurable information and control benefit?",
+    "Can a mature matched-authority RL baseline outperform progress search10/12 on new conditions rather than just weak SAC1/12?",
+    "How much residual failure is observed-goal early stopping or insufficient hold stability, rather than wrong contact action?"
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
   "latest_run_summary": {
-    "experiment": "EXP-001",
-    "this_turn_complete_episodes": 28,
-    "this_turn_distinct_scenes": 8,
-    "this_turn_physical_steps": 5600,
-    "optimizer_steps": 0,
-    "independent_confirmation": "2/8 integral, 7/8 servo, 7/8 local hold; local vs servo 0 rescues/0 regressions",
-    "suffix": "7/7 reached suffix succeed; shared failure is grasp prefix",
-    "posthoc_grasp_diagnostic": "4/4 fail, no rescue; one angle passes grasp but fails suffix IK",
-    "cumulative_complete_episodes": 102,
-    "cumulative_physical_steps": 20505,
-    "cumulative_distinct_scenes": 22,
-    "addendum": "No new physics in this program update; previous 55861de new 8 scenarios: integral2, servo7, depth-hold7, all seven contact-stage executions successful; sole common grasp failure."
+    "experiment": "EXP-002 -> EXP-003",
+    "saved_complete_episodes": 426,
+    "saved_physics_steps": 85200,
+    "saved_prefix_steps": 36069,
+    "saved_skill_decisions": 9232,
+    "optimizer_updates": 4480,
+    "finalized_run_optimizer_updates": 4480,
+    "unfinalized_training_runs": [],
+    "excludes_live_unfinished_episodes": true,
+    "training_tail_episodes": 5,
+    "training_runs": 5,
+    "skill_decisions_per_training_run": 1024,
+    "actor_and_critic_updates_per_run": 896,
+    "development_scene_seeds": [
+      729000,
+      729001,
+      729002,
+      729003
+    ],
+    "development_conditions": 12,
+    "scores": {
+      "geometry": 4,
+      "rls": 6,
+      "search": 10,
+      "sac": 1,
+      "effect_sac": 3,
+      "effect_prior_only": 3,
+      "sac_zero_z_posthoc": 7,
+      "ln_sac_alpha01": 4,
+      "ln_sac_alpha002": 10,
+      "effect_ln_sac": 2,
+      "effect_ln_prior_only": 2
+    },
+    "denominator": 12,
+    "claim": "No independent method gain; ordinary critic-LN baseline effective; feature candidate not supported",
+    "raw_root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002"
   },
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md"
 }

@@ -1,0 +1,1514 @@
+[
+  {
+    "run": "adaptive_smoke",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/adaptive_smoke",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": true,
+      "observation_bias_mm": [
+        0.8,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "a9248aea69827b2416a117678d28314563cfd7f48fff5f7fb25ed8f2b1fc18e3",
+        "program_adaptive_task.py": "bda6a2950c9e81d34a7a0e1061a842ecc19095c8b0b581986ee2ee7ce3aba108",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "UNKNOWN_STOP_RULE",
+    "source": "a9248aea69827b2416a117678d28314563cfd7f48fff5f7fb25ed8f2b1fc18e3",
+    "result": null
+  },
+  {
+    "run": "bias_minus12_v2",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/bias_minus12_v2",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": true,
+      "observation_bias_mm": [
+        -1.2,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+    "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+    "result": null
+  },
+  {
+    "run": "bias_plus12",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/bias_plus12",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": true,
+      "observation_bias_mm": [
+        1.2,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "a837fd85d7e57c92e6c7299bf12faeada97d39bac897a4359f2b426e66aeba66",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "UNKNOWN_STOP_RULE",
+    "source": "a837fd85d7e57c92e6c7299bf12faeada97d39bac897a4359f2b426e66aeba66",
+    "result": null
+  },
+  {
+    "run": "bias_plus12_v2",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/bias_plus12_v2",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": true,
+      "observation_bias_mm": [
+        1.2,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+    "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+    "result": null
+  },
+  {
+    "run": "effect_ln_sac_alpha002",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_ln_sac_alpha002",
+    "manifest": {
+      "method": "effect_ln_sac",
+      "mode": "train",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        728000,
+        728001,
+        728002,
+        728003,
+        728004,
+        728005,
+        728006,
+        728007,
+        728008,
+        728009,
+        728010,
+        728011,
+        728012,
+        728013,
+        728014,
+        728015,
+        728016,
+        728017,
+        728018,
+        728019,
+        728020,
+        728021,
+        728022,
+        728023,
+        728024,
+        728025,
+        728026,
+        728027,
+        728028,
+        728029,
+        728030,
+        728031
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "1147a902f312a0e52c4655335787e782e1c33a2278d7acc157de99916ec806c7",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f",
+        "program_sac_policy.py": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_ln_sac_alpha002",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "train",
+        "method": "effect_ln_sac",
+        "steps": 1024,
+        "model": null,
+        "zero_z": false,
+        "project_y_only": false,
+        "prior_only": false,
+        "seed": 31031,
+        "seeds": null,
+        "alpha": 0.02,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 45,
+      "physics_steps": 9000,
+      "prefix_steps": 3685,
+      "policy_decisions": 1024,
+      "tail_hold_steps": 37,
+      "tail_episodes": 1,
+      "success": 17,
+      "native_terminal_episodes": 44,
+      "native_terminal_success": 17,
+      "optimizer_updates": 896,
+      "actor_optimizer_steps": 896,
+      "critic_optimizer_steps": 896,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 264.07646092696814,
+      "error": null
+    }
+  },
+  {
+    "run": "effect_sac_pilot_1024_retry",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_sac_pilot_1024_retry",
+    "manifest": {
+      "method": "effect_sac",
+      "mode": "train",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        728000,
+        728001,
+        728002,
+        728003,
+        728004,
+        728005,
+        728006,
+        728007,
+        728008,
+        728009,
+        728010,
+        728011,
+        728012,
+        728013,
+        728014,
+        728015,
+        728016,
+        728017,
+        728018,
+        728019,
+        728020,
+        728021,
+        728022,
+        728023,
+        728024,
+        728025,
+        728026,
+        728027,
+        728028,
+        728029,
+        728030,
+        728031
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "339990fa35ee56a25a2c636ded542c839e02a4d9f897c3acb9bac57c5a470f14",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "8bfc1de65cb2ebaa0bc4c93f0f145e1a415f2b4b8db96c5998e50516a1f66206"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_sac_pilot_1024_retry",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "train",
+        "method": "effect_sac",
+        "steps": 1024,
+        "model": null,
+        "seed": 31031,
+        "seeds": null,
+        "alpha": 0.02,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 44,
+      "physics_steps": 8800,
+      "prefix_steps": 3590,
+      "policy_decisions": 1024,
+      "tail_hold_steps": 10,
+      "tail_episodes": 1,
+      "success": 15,
+      "native_terminal_episodes": 43,
+      "native_terminal_success": 15,
+      "optimizer_updates": 896,
+      "actor_optimizer_steps": 896,
+      "critic_optimizer_steps": 896,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 256.7666124430252,
+      "error": null
+    }
+  },
+  {
+    "run": "eval_controls_-1.2",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_controls_-1.2",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": true,
+      "observation_bias_mm": [
+        -1.2,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": null
+  },
+  {
+    "run": "eval_controls_0",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_controls_0",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": true,
+      "observation_bias_mm": [
+        0.0,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": null
+  },
+  {
+    "run": "eval_controls_1.2",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_controls_1.2",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": true,
+      "observation_bias_mm": [
+        1.2,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": null
+  },
+  {
+    "run": "eval_effect_ln_prior_only",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_effect_ln_prior_only",
+    "manifest": {
+      "method": "effect_ln_sac",
+      "mode": "eval",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        729000,
+        729001,
+        729002,
+        729003
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "1147a902f312a0e52c4655335787e782e1c33a2278d7acc157de99916ec806c7",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f",
+        "program_sac_policy.py": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_effect_ln_prior_only",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "eval",
+        "method": "effect_ln_sac",
+        "steps": 1024,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_ln_sac_alpha002/MODEL.zip",
+        "zero_z": false,
+        "project_y_only": false,
+        "prior_only": true,
+        "seed": 31031,
+        "seeds": "729000,729001,729002,729003",
+        "alpha": 0.02,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 12,
+      "physics_steps": 2400,
+      "prefix_steps": 1065,
+      "policy_decisions": 301,
+      "tail_hold_steps": 0,
+      "tail_episodes": 0,
+      "success": 2,
+      "native_terminal_episodes": 12,
+      "native_terminal_success": 2,
+      "optimizer_updates": 0,
+      "actor_optimizer_steps": 0,
+      "critic_optimizer_steps": 0,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 71.22522883600323,
+      "error": null
+    }
+  },
+  {
+    "run": "eval_effect_ln_sac",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_effect_ln_sac",
+    "manifest": {
+      "method": "effect_ln_sac",
+      "mode": "eval",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        729000,
+        729001,
+        729002,
+        729003
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "1147a902f312a0e52c4655335787e782e1c33a2278d7acc157de99916ec806c7",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f",
+        "program_sac_policy.py": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_effect_ln_sac",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "eval",
+        "method": "effect_ln_sac",
+        "steps": 1024,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_ln_sac_alpha002/MODEL.zip",
+        "zero_z": false,
+        "project_y_only": false,
+        "prior_only": false,
+        "seed": 31031,
+        "seeds": "729000,729001,729002,729003",
+        "alpha": 0.02,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 12,
+      "physics_steps": 2400,
+      "prefix_steps": 1065,
+      "policy_decisions": 301,
+      "tail_hold_steps": 0,
+      "tail_episodes": 0,
+      "success": 2,
+      "native_terminal_episodes": 12,
+      "native_terminal_success": 2,
+      "optimizer_updates": 0,
+      "actor_optimizer_steps": 0,
+      "critic_optimizer_steps": 0,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 71.30593285796931,
+      "error": null
+    }
+  },
+  {
+    "run": "eval_effect_prior_only",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_effect_prior_only",
+    "manifest": {
+      "method": "effect_sac",
+      "mode": "eval",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        729000,
+        729001,
+        729002,
+        729003
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "e8006b6b2c41cbcf8701216fb9f35e015bfeab697b3bdbbaa5f1fea2cb80933a",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f",
+        "program_sac_policy.py": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_effect_prior_only",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "eval",
+        "method": "effect_sac",
+        "steps": 1024,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_sac_pilot_1024_retry/MODEL.zip",
+        "zero_z": false,
+        "project_y_only": false,
+        "prior_only": true,
+        "seed": 31031,
+        "seeds": "729000,729001,729002,729003",
+        "alpha": 0.1,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 12,
+      "physics_steps": 2400,
+      "prefix_steps": 1065,
+      "policy_decisions": 316,
+      "tail_hold_steps": 0,
+      "tail_episodes": 0,
+      "success": 3,
+      "native_terminal_episodes": 12,
+      "native_terminal_success": 3,
+      "optimizer_updates": 0,
+      "actor_optimizer_steps": 0,
+      "critic_optimizer_steps": 0,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 71.46930125897052,
+      "error": null
+    }
+  },
+  {
+    "run": "eval_effect_sac",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_effect_sac",
+    "manifest": {
+      "method": "effect_sac",
+      "mode": "eval",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        729000,
+        729001,
+        729002,
+        729003
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "55cd5e643b91a185be7333ed46aa7fc81387dd177f3af5261e883cd6366842c9",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_effect_sac",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "eval",
+        "method": "effect_sac",
+        "steps": 1024,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/effect_sac_pilot_1024_retry/MODEL.zip",
+        "prior_only": false,
+        "seed": 31031,
+        "seeds": "729000,729001,729002,729003",
+        "alpha": 0.1,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 12,
+      "physics_steps": 2400,
+      "prefix_steps": 1065,
+      "policy_decisions": 316,
+      "tail_hold_steps": 0,
+      "tail_episodes": 0,
+      "success": 3,
+      "native_terminal_episodes": 12,
+      "native_terminal_success": 3,
+      "optimizer_updates": 0,
+      "actor_optimizer_steps": 0,
+      "critic_optimizer_steps": 0,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 71.03863958601141,
+      "error": null
+    }
+  },
+  {
+    "run": "eval_ln_sac",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_ln_sac",
+    "manifest": {
+      "method": "ln_sac",
+      "mode": "eval",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        729000,
+        729001,
+        729002,
+        729003
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "e8006b6b2c41cbcf8701216fb9f35e015bfeab697b3bdbbaa5f1fea2cb80933a",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f",
+        "program_sac_policy.py": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_ln_sac",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "eval",
+        "method": "ln_sac",
+        "steps": 1024,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/ln_sac_pilot_1024/MODEL.zip",
+        "zero_z": false,
+        "project_y_only": false,
+        "prior_only": false,
+        "seed": 31031,
+        "seeds": "729000,729001,729002,729003",
+        "alpha": 0.1,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 12,
+      "physics_steps": 2400,
+      "prefix_steps": 1065,
+      "policy_decisions": 259,
+      "tail_hold_steps": 0,
+      "tail_episodes": 0,
+      "success": 4,
+      "native_terminal_episodes": 12,
+      "native_terminal_success": 4,
+      "optimizer_updates": 0,
+      "actor_optimizer_steps": 0,
+      "critic_optimizer_steps": 0,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 70.74160351004684,
+      "error": null
+    }
+  },
+  {
+    "run": "eval_ln_sac_alpha002",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_ln_sac_alpha002",
+    "manifest": {
+      "method": "ln_sac",
+      "mode": "eval",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        729000,
+        729001,
+        729002,
+        729003
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "e308b42cb0ac7882210eb26eebbc775b0fbb1183c30ea13a6a001f81a80bafa8",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f",
+        "program_sac_policy.py": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_ln_sac_alpha002",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "eval",
+        "method": "ln_sac",
+        "steps": 1024,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/ln_sac_alpha002/MODEL.zip",
+        "zero_z": false,
+        "project_y_only": false,
+        "prior_only": false,
+        "seed": 31031,
+        "seeds": "729000,729001,729002,729003",
+        "alpha": 0.02,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 12,
+      "physics_steps": 2400,
+      "prefix_steps": 1065,
+      "policy_decisions": 211,
+      "tail_hold_steps": 0,
+      "tail_episodes": 0,
+      "success": 10,
+      "native_terminal_episodes": 12,
+      "native_terminal_success": 10,
+      "optimizer_updates": 0,
+      "actor_optimizer_steps": 0,
+      "critic_optimizer_steps": 0,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 71.04748736100737,
+      "error": null
+    }
+  },
+  {
+    "run": "eval_sac",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_sac",
+    "manifest": {
+      "method": "sac",
+      "mode": "eval",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        729000,
+        729001,
+        729002,
+        729003
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "55cd5e643b91a185be7333ed46aa7fc81387dd177f3af5261e883cd6366842c9",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_sac",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "eval",
+        "method": "sac",
+        "steps": 1024,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024_retry/MODEL.zip",
+        "prior_only": false,
+        "seed": 31031,
+        "seeds": "729000,729001,729002,729003",
+        "alpha": 0.1,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 12,
+      "physics_steps": 2400,
+      "prefix_steps": 1065,
+      "policy_decisions": 327,
+      "tail_hold_steps": 0,
+      "tail_episodes": 0,
+      "success": 1,
+      "native_terminal_episodes": 12,
+      "native_terminal_success": 1,
+      "optimizer_updates": 0,
+      "actor_optimizer_steps": 0,
+      "critic_optimizer_steps": 0,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 70.83525690098759,
+      "error": null
+    }
+  },
+  {
+    "run": "eval_sac_zero_z",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_sac_zero_z",
+    "manifest": {
+      "method": "sac",
+      "mode": "eval",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        729000,
+        729001,
+        729002,
+        729003
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "e8006b6b2c41cbcf8701216fb9f35e015bfeab697b3bdbbaa5f1fea2cb80933a",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f",
+        "program_sac_policy.py": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_sac_zero_z",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "eval",
+        "method": "sac",
+        "steps": 1024,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024_retry/MODEL.zip",
+        "zero_z": true,
+        "project_y_only": false,
+        "prior_only": false,
+        "seed": 31031,
+        "seeds": "729000,729001,729002,729003",
+        "alpha": 0.1,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 12,
+      "physics_steps": 2400,
+      "prefix_steps": 1065,
+      "policy_decisions": 236,
+      "tail_hold_steps": 0,
+      "tail_episodes": 0,
+      "success": 7,
+      "native_terminal_episodes": 12,
+      "native_terminal_success": 7,
+      "optimizer_updates": 0,
+      "actor_optimizer_steps": 0,
+      "critic_optimizer_steps": 0,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 70.97666103602387,
+      "error": null
+    }
+  },
+  {
+    "run": "heavy_highfriction",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/heavy_highfriction",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": false,
+      "observation_bias_mm": [
+        0.0,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+    "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+    "result": null
+  },
+  {
+    "run": "light_lowfriction",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/light_lowfriction",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": false,
+      "observation_bias_mm": [
+        0.0,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+    "source": "18e3563eb693641cdcb2006deb97451a4c3581c65d8f140ed8677ab16af4bcd1",
+    "result": null
+  },
+  {
+    "run": "ln_sac_alpha002",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/ln_sac_alpha002",
+    "manifest": {
+      "method": "ln_sac",
+      "mode": "train",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        728000,
+        728001,
+        728002,
+        728003,
+        728004,
+        728005,
+        728006,
+        728007,
+        728008,
+        728009,
+        728010,
+        728011,
+        728012,
+        728013,
+        728014,
+        728015,
+        728016,
+        728017,
+        728018,
+        728019,
+        728020,
+        728021,
+        728022,
+        728023,
+        728024,
+        728025,
+        728026,
+        728027,
+        728028,
+        728029,
+        728030,
+        728031
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "e308b42cb0ac7882210eb26eebbc775b0fbb1183c30ea13a6a001f81a80bafa8",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f",
+        "program_sac_policy.py": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/ln_sac_alpha002",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "train",
+        "method": "ln_sac",
+        "steps": 1024,
+        "model": null,
+        "zero_z": false,
+        "project_y_only": false,
+        "prior_only": false,
+        "seed": 31031,
+        "seeds": null,
+        "alpha": 0.02,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 48,
+      "physics_steps": 9600,
+      "prefix_steps": 3911,
+      "policy_decisions": 1024,
+      "tail_hold_steps": 37,
+      "tail_episodes": 1,
+      "success": 23,
+      "native_terminal_episodes": 47,
+      "native_terminal_success": 22,
+      "optimizer_updates": 896,
+      "actor_optimizer_steps": 896,
+      "critic_optimizer_steps": 896,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 280.1310549629852,
+      "error": null
+    }
+  },
+  {
+    "run": "ln_sac_pilot_1024",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/ln_sac_pilot_1024",
+    "manifest": {
+      "method": "ln_sac",
+      "mode": "train",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        728000,
+        728001,
+        728002,
+        728003,
+        728004,
+        728005,
+        728006,
+        728007,
+        728008,
+        728009,
+        728010,
+        728011,
+        728012,
+        728013,
+        728014,
+        728015,
+        728016,
+        728017,
+        728018,
+        728019,
+        728020,
+        728021,
+        728022,
+        728023,
+        728024,
+        728025,
+        728026,
+        728027,
+        728028,
+        728029,
+        728030,
+        728031
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "e8006b6b2c41cbcf8701216fb9f35e015bfeab697b3bdbbaa5f1fea2cb80933a",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f",
+        "program_sac_policy.py": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/ln_sac_pilot_1024",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "train",
+        "method": "ln_sac",
+        "steps": 1024,
+        "model": null,
+        "zero_z": false,
+        "project_y_only": false,
+        "prior_only": false,
+        "seed": 31031,
+        "seeds": null,
+        "alpha": 0.1,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 45,
+      "physics_steps": 9000,
+      "prefix_steps": 3685,
+      "policy_decisions": 1024,
+      "tail_hold_steps": 101,
+      "tail_episodes": 1,
+      "success": 18,
+      "native_terminal_episodes": 44,
+      "native_terminal_success": 18,
+      "optimizer_updates": 896,
+      "actor_optimizer_steps": 896,
+      "critic_optimizer_steps": 896,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 259.2426171739935,
+      "error": null
+    }
+  },
+  {
+    "run": "native_727000_003",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/native_727000_003",
+    "manifest": {
+      "commit": "b953e092b38bd50ace5d6c776e6bcc52baa3e586",
+      "source_sha256": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+      "dependencies": {
+        "charger_probe.py": "e8f358af1f28fbd729ea521f257af085f9636f8d892ed5a32bef776a6398e75f",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_charger_feedback.py": "cc766d3df2e1428a15077f13843b0c77cba8acf72e03fe5d6c3d5e06c83f02fc"
+      },
+      "task": "PlugCharger-v1",
+      "horizon": 200,
+      "seeds": "727000,727001,727002,727003",
+      "variant": "servo_local_hold_stop",
+      "python_numpy_torch_seed": 31031,
+      "mplib_seed": "no public setter in pinned 0.1.1; RRT variability measured, not assumed controlled",
+      "gpu": "NVIDIA GeForce RTX 3080",
+      "native_task_modified": false,
+      "optimizer_steps": 0,
+      "restricted_field_data": false,
+      "episodes": 4,
+      "physical_steps": 800
+    },
+    "stop_rule": "NATIVE_TRUE_GOAL_STOP",
+    "source": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+    "result": null
+  },
+  {
+    "run": "repeat_controls_-1.2",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/repeat_controls_-1.2",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": true,
+      "observation_bias_mm": [
+        -1.2,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": null
+  },
+  {
+    "run": "repeat_controls_1.2",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/repeat_controls_1.2",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": true,
+      "observation_bias_mm": [
+        1.2,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": null
+  },
+  {
+    "run": "sac_pilot_1024",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024",
+    "manifest": {
+      "method": "sac",
+      "mode": "train",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        728000,
+        728001,
+        728002,
+        728003,
+        728004,
+        728005,
+        728006,
+        728007,
+        728008,
+        728009,
+        728010,
+        728011,
+        728012,
+        728013,
+        728014,
+        728015,
+        728016,
+        728017,
+        728018,
+        728019,
+        728020,
+        728021,
+        728022,
+        728023,
+        728024,
+        728025,
+        728026,
+        728027,
+        728028,
+        728029,
+        728030,
+        728031
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "339990fa35ee56a25a2c636ded542c839e02a4d9f897c3acb9bac57c5a470f14",
+        "program_adaptive_contact.py": "0dab2da19d2d4519974616476e340c587988400b52c40baffa0ef15945b235b2",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "8bfc1de65cb2ebaa0bc4c93f0f145e1a415f2b4b8db96c5998e50516a1f66206"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "train",
+        "method": "sac",
+        "steps": 1024,
+        "model": null,
+        "seed": 31031,
+        "seeds": null,
+        "alpha": 0.02,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "0dab2da19d2d4519974616476e340c587988400b52c40baffa0ef15945b235b2",
+    "result": {
+      "complete_episodes": 3,
+      "physics_steps": 600,
+      "prefix_steps": 248,
+      "policy_decisions": 106,
+      "tail_hold_steps": 0,
+      "tail_episodes": 0,
+      "success": 0,
+      "native_terminal_episodes": 3,
+      "native_terminal_success": 0,
+      "optimizer_updates": 0,
+      "actor_optimizer_steps": 0,
+      "critic_optimizer_steps": 0,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 22.089675575029105,
+      "error": "TypeError('Object of type bool_ is not JSON serializable')"
+    }
+  },
+  {
+    "run": "sac_pilot_1024_retry",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024_retry",
+    "manifest": {
+      "method": "sac",
+      "mode": "train",
+      "claim": "BOUNDED_PILOT_NOT_MATURE_BASELINE",
+      "seeds": [
+        728000,
+        728001,
+        728002,
+        728003,
+        728004,
+        728005,
+        728006,
+        728007,
+        728008,
+        728009,
+        728010,
+        728011,
+        728012,
+        728013,
+        728014,
+        728015,
+        728016,
+        728017,
+        728018,
+        728019,
+        728020,
+        728021,
+        728022,
+        728023,
+        728024,
+        728025,
+        728026,
+        728027,
+        728028,
+        728029,
+        728030,
+        728031
+      ],
+      "biases_y_mm": [
+        -1.2,
+        0.0,
+        1.2
+      ],
+      "bias_z_mm": 0.0,
+      "native_horizon": 200,
+      "native_success_unchanged": true,
+      "custom_observation_distribution": true,
+      "steps_requested": 1024,
+      "observation_contract": "same four raw state/action/effect observations (84); six zeros for SAC or six derived finite-window contract-belief features for effect SAC; same 90-input network and action limits",
+      "candidate_claim": "UNVERIFIED_GEOMETRIC_EFFECT_FEATURE_MECHANISM_NOT_ESTABLISHED_NOVEL",
+      "sb3_version": "2.7.0",
+      "sources": {
+        "program_adaptive_rl.py": "339990fa35ee56a25a2c636ded542c839e02a4d9f897c3acb9bac57c5a470f14",
+        "program_adaptive_contact.py": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_contract_effect.py": "8bfc1de65cb2ebaa0bc4c93f0f145e1a415f2b4b8db96c5998e50516a1f66206"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/sac_pilot_1024_retry",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "train",
+        "method": "sac",
+        "steps": 1024,
+        "model": null,
+        "seed": 31031,
+        "seeds": null,
+        "alpha": 0.02,
+        "density": 1.0,
+        "friction": null
+      },
+      "git_head": "b953e092b38bd50ace5d6c776e6bcc52baa3e586"
+    },
+    "stop_rule": "OBSERVED_GOAL_STOP",
+    "source": "2681604062fdee908f3ff626374d61a74a349ca094190ff3b1e1efeae85ff592",
+    "result": {
+      "complete_episodes": 45,
+      "physics_steps": 9000,
+      "prefix_steps": 3685,
+      "policy_decisions": 1024,
+      "tail_hold_steps": 69,
+      "tail_episodes": 1,
+      "success": 16,
+      "native_terminal_episodes": 44,
+      "native_terminal_success": 16,
+      "optimizer_updates": 896,
+      "actor_optimizer_steps": 896,
+      "critic_optimizer_steps": 896,
+      "entropy_optimizer_steps": 0,
+      "wall_s": 262.94662550097564,
+      "error": null
+    }
+  },
+  {
+    "run": "search_v3_-1",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/search_v3_-1",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": true,
+      "observation_bias_mm": [
+        -1.2,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "b7532a8556435fd56694a52bd520b1f6267b3fe1ce0e7977325e9f1dfbb8ec3d",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+    "source": "b7532a8556435fd56694a52bd520b1f6267b3fe1ce0e7977325e9f1dfbb8ec3d",
+    "result": null
+  },
+  {
+    "run": "search_v3_1",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/search_v3_1",
+    "manifest": {
+      "task": "ARES-AdaptivePlug-v0",
+      "native_physics": true,
+      "observation_bias_mm": [
+        1.2,
+        0.0
+      ],
+      "hidden_bias_not_in_observation": true,
+      "original_success_horizon": true,
+      "sources": {
+        "program_adaptive_contact.py": "b7532a8556435fd56694a52bd520b1f6267b3fe1ce0e7977325e9f1dfbb8ec3d",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+      },
+      "optimizer_steps": 0
+    },
+    "stop_rule": "PRIVILEGED_NATIVE_GOAL_STOP",
+    "source": "b7532a8556435fd56694a52bd520b1f6267b3fe1ce0e7977325e9f1dfbb8ec3d",
+    "result": null
+  }
+]

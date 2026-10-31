@@ -1,0 +1,126 @@
+[
+  {
+    "original": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_controls_-1.2/geometry_729000.json.gz",
+    "repeat": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/repeat_controls_-1.2/geometry_729000.json.gz",
+    "policy": "geometry",
+    "seed": 729000,
+    "bias_mm": [
+      -1.2,
+      0.0
+    ],
+    "same_success": true,
+    "same_initial_hash": true,
+    "same_stop_rule": true,
+    "original_success": false,
+    "repeat_success": false,
+    "step_count_equal": true,
+    "trajectory_field_max_abs": {
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "tool": 0.0,
+      "cube": 0.0,
+      "tcp_T_tool": 0.0,
+      "tool_linear_velocity": 0.0,
+      "tool_angular_velocity": 0.0,
+      "cube_linear_velocity": 0.0,
+      "action": 0.0,
+      "tool_cube_force_N": 0.0,
+      "native_success": 0.0
+    },
+    "exact_recorded_trajectory": true
+  },
+  {
+    "original": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_controls_-1.2/search_729000.json.gz",
+    "repeat": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/repeat_controls_-1.2/search_729000.json.gz",
+    "policy": "search",
+    "seed": 729000,
+    "bias_mm": [
+      -1.2,
+      0.0
+    ],
+    "same_success": true,
+    "same_initial_hash": true,
+    "same_stop_rule": true,
+    "original_success": true,
+    "repeat_success": true,
+    "step_count_equal": true,
+    "trajectory_field_max_abs": {
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "tool": 0.0,
+      "cube": 0.0,
+      "tcp_T_tool": 0.0,
+      "tool_linear_velocity": 0.0,
+      "tool_angular_velocity": 0.0,
+      "cube_linear_velocity": 0.0,
+      "action": 0.0,
+      "tool_cube_force_N": 0.0,
+      "native_success": 0.0
+    },
+    "exact_recorded_trajectory": true
+  },
+  {
+    "original": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_controls_1.2/geometry_729000.json.gz",
+    "repeat": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/repeat_controls_1.2/geometry_729000.json.gz",
+    "policy": "geometry",
+    "seed": 729000,
+    "bias_mm": [
+      1.2,
+      0.0
+    ],
+    "same_success": true,
+    "same_initial_hash": true,
+    "same_stop_rule": true,
+    "original_success": false,
+    "repeat_success": false,
+    "step_count_equal": true,
+    "trajectory_field_max_abs": {
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "tool": 0.0,
+      "cube": 0.0,
+      "tcp_T_tool": 0.0,
+      "tool_linear_velocity": 0.0,
+      "tool_angular_velocity": 0.0,
+      "cube_linear_velocity": 0.0,
+      "action": 0.0,
+      "tool_cube_force_N": 0.0,
+      "native_success": 0.0
+    },
+    "exact_recorded_trajectory": true
+  },
+  {
+    "original": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/eval_controls_1.2/search_729000.json.gz",
+    "repeat": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002/repeat_controls_1.2/search_729000.json.gz",
+    "policy": "search",
+    "seed": 729000,
+    "bias_mm": [
+      1.2,
+      0.0
+    ],
+    "same_success": true,
+    "same_initial_hash": true,
+    "same_stop_rule": true,
+    "original_success": false,
+    "repeat_success": false,
+    "step_count_equal": true,
+    "trajectory_field_max_abs": {
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "tool": 0.0,
+      "cube": 0.0,
+      "tcp_T_tool": 0.0,
+      "tool_linear_velocity": 0.0,
+      "tool_angular_velocity": 0.0,
+      "cube_linear_velocity": 0.0,
+      "action": 0.0,
+      "tool_cube_force_N": 0.0,
+      "native_success": 0.0
+    },
+    "exact_recorded_trajectory": true
+  }
+]
