@@ -9,12 +9,12 @@
   "current_stage": "S4",
   "active_experiment": "EXP-003",
   "latest_evidence": "evidence/EXP-003/2026-11-01/README.md",
-  "next_action": "EXP-003 A component comparisons complete; freeze local insertion expansion. Continue B with the predeclared stable-boundary/moderate-load paired physical experiment in B_CONTRACT_SCOPE_AND_NEXT_EXPERIMENT.md (8 contexts, native100, strong full-suffix/adaptive comparator), inspecting measured stability and timing rather than imposing administrative gates. Train a two-boundary candidate only if conditional parameter ranking persists beyond strong models; EXP-004 independent gain remains unverified.",
+  "next_action": "EXP-003 STAP-FIRST publication development. (1) Reproduce STAP planner algorithm at high fidelity from official pinned code: skill sequence, dynamics model, Q-product scoring, policy-initialized CEM and elite updates, deterministic fixture + smallest viable official example; if old env incompatible, isolate and port method kernel, do not claim paper benchmark reproduction. (2) In parallel execute the predeclared 8-context stable-grasp/moderate-load native PullCubeTool physical comparison with strongest whole-suffix planner; if single best grasp dominates, autonomously test physically justified varying successor task requirements in a separately named variant, not a weakened baseline. (3) On an actually non-saturated TWO-SKILL task, compare strong planner, RAPS-style parameter RL, STAP-style dynamics+Q+CEM, Foresight-style downstream predictor, ordinary same-interface RL, then ONE minimal executable SkillResult/successor-contract learning improvement; track all data/query costs. (4) Preserve full RAW+ANNOTATED MP4, synchronized physical event traces, exact SHA. Avoid expanding saturated PlugCharger35/36. Report actual trained/evaluated outputs; no claimed new RL advantage until independent seeds and novel cases.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
     "S3": "initial_action_authority_confirmed_identification_incomplete",
-    "S4": "active_dual_workstream_strong_rl_and_two_skill_task",
+    "S4": "active_STAP_replication_and_multi_skill_credible_method",
     "S5": "candidate_tested_no_feedback_gain",
     "S6": "not_started",
     "S7": "not_started"
@@ -70,11 +70,11 @@
     }
   ],
   "unresolved_questions": [
-    "Can one executable multi-stage task have two meaningful parameter decision boundaries that affect downstream success beyond strong fixed/search baselines and native geometry?",
-    "Does including successor contract and actual predecessor SkillResult change an RL parameter decision and improve whole-task outcome with identical action authority?",
-    "Under a shared observable completion contract and real new YZ settings, can strong LN residual SAC learn robustly without Z-channel degeneration or transient-success loss?",
-    "Which closest prior model (STAP/Foresight/SCOUT/DAWN) explains any improvement, and what mechanism remains distinct after ablation?",
-    "Are latent tool/grasp/contact dynamics actually partially observable and identifiable from action-effect history? If not avoid unnecessary POMDP."
+    "Can we reproduce STAP's original CEM+skill Q/dynamics planning mechanism at high fidelity, then port to the exact same two-skill physical contract without future oracle state?",
+    "Do new stable-grasp+tool-load and varied successor-goal conditions exhibit reproducible task-dependent parameter ranking beyond the strongest whole-suffix rule and STAP model search?",
+    "Can any SkillResult/successor-contract auxiliary learning mechanism improve real full-task success or predeclared physics-data/query efficiency beyond equal-data STAP, Foresight and ordinary RL?",
+    "Can an actually trained two-dimensional SAC effective-action policy remove the unused-Z entropy/critic confound without covert extra information?",
+    "After a concrete gain, does it survive independent training seeds, new scene groups, a second distinct task and correctly counted physical costs?"
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
@@ -130,7 +130,35 @@
     },
     "claim": "NO_INDEPENDENT_METHOD_GAIN_ESTABLISHED",
     "sources": "evidence/EXP-003/2026-11-01/README.md",
-    "unfinished_runs": []
+    "unfinished_runs": [],
+    "independent_review_2026_11_01": {
+      "source": "evidence/EXP-003/2026-11-01/component_A/EVAL_EPISODES.csv",
+      "method": "casewise paired from raw CSV + exhaustive 6^6 scene-cluster bootstrap, not internal PAIRS.json",
+      "task_sac_vs_search": {
+        "success": "35/36 vs 32/36",
+        "rescue": 4,
+        "regression": 1,
+        "p_mcnemar": 0.375,
+        "net_gain_pp": 8.3333,
+        "scene_bootstrap_95pp": [
+          -5.5556,
+          22.2222
+        ]
+      },
+      "task_sac_vs_full": {
+        "success": "35/36 vs 31/36",
+        "rescue": 5,
+        "regression": 1,
+        "p_mcnemar": 0.21875
+      },
+      "task_sac_vs_yonly": {
+        "success": "35/36 vs 33/36",
+        "rescue": 3,
+        "regression": 1,
+        "p_mcnemar": 0.625
+      },
+      "caveat": "single training seed, six scene clusters, one used stop engineering; masks are environment projections on 3D SAC actor; no new physics"
+    }
   },
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md"
 }
