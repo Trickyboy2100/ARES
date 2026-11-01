@@ -8,8 +8,8 @@
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S4",
   "active_experiment": "EXP-003",
-  "latest_evidence": "evidence/EXP-003/2026-11-01/README.md",
-  "next_action": "EXP-003 STAP-FIRST publication development. (1) Reproduce STAP planner algorithm at high fidelity from official pinned code: skill sequence, dynamics model, Q-product scoring, policy-initialized CEM and elite updates, deterministic fixture + smallest viable official example; if old env incompatible, isolate and port method kernel, do not claim paper benchmark reproduction. (2) In parallel execute the predeclared 8-context stable-grasp/moderate-load native PullCubeTool physical comparison with strongest whole-suffix planner; if single best grasp dominates, autonomously test physically justified varying successor task requirements in a separately named variant, not a weakened baseline. (3) On an actually non-saturated TWO-SKILL task, compare strong planner, RAPS-style parameter RL, STAP-style dynamics+Q+CEM, Foresight-style downstream predictor, ordinary same-interface RL, then ONE minimal executable SkillResult/successor-contract learning improvement; track all data/query costs. (4) Preserve full RAW+ANNOTATED MP4, synchronized physical event traces, exact SHA. Avoid expanding saturated PlugCharger35/36. Report actual trained/evaluated outputs; no claimed new RL advantage until independent seeds and novel cases.",
+  "latest_evidence": "evidence/EXP-003/2026-11-01/stap_followup/README.md",
+  "next_action": "EXP-003 STAP-first follow-up: read stap_followup/README and exact paired negative results. Preserve baseline control and native100-step goal. First collect a bounded96-episode stratified real two-skill intervention panel on new training scenes743040–743047, grasp90/100/105mm and hook−55/−65/−75mm, two masses and declared targets; prioritize coverage, do not exhaust every combination. Existing64 episodes cover only2 initial scenes. Establish stronger same-authority ordinary Fitted Q or mature SAC, STAP sequence/posterior and deterministic remaining-budget guard, policy-matched downstream value and supervised scoring. If reproducible task-conditioned residual opportunity remains beyond fixed/geometry, train exactly one contract-margin auxiliary value mechanism to decide retaining vs revising planned parameters, compare equal-capacity generic auxiliary and equal observations/data. New evaluation scenes743050–743053; current743020/21 now development. Do not claim more accurate dynamics or deterministic guard as new RL, do not expand PlugCharger or paper drafting.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -158,6 +158,34 @@
         "p_mcnemar": 0.625
       },
       "caveat": "single training seed, six scene clusters, one used stop engineering; masks are environment projections on 3D SAC actor; no new physics"
+    },
+    "stap_followup": {
+      "episodes": 224,
+      "control_steps": 22400,
+      "optimizer_updates": 5600,
+      "training_seeds": [
+        31103
+      ],
+      "training_scene_seeds": [
+        743010,
+        743011
+      ],
+      "development_scene_seeds": [
+        743020,
+        743021
+      ],
+      "official_kernel_fixtures": 12,
+      "official_full_benchmark": "NOT_REPRODUCED_LEGACY_GYM_MISSING",
+      "paired_absolute_stap_open": "6/8",
+      "paired_absolute_stap_replan": "3/8",
+      "budget_guard": "4/8",
+      "strongest_tested_fixed": "4/8",
+      "ordinary_fitted_q": "3/8",
+      "foresight_state_analogue": "3/8",
+      "paired_residual_open": "4/8",
+      "paired_residual_replan": "3/8",
+      "claim": "NO_INDEPENDENT_METHOD_GAIN_ESTABLISHED",
+      "scope": "real offline physical task variant; one trained seed; paired prefix exact; no sealed test; not converged RL proof"
     }
   },
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md"

@@ -1,0 +1,166 @@
+{
+  "source_kind": "MEASURED_POSE_REPLAY",
+  "physics_steps_added": 0,
+  "frames": 101,
+  "fps": 20,
+  "frame_mapping": "frame k = actual step k, timestamp k/20 seconds; initial frame0",
+  "max_state_readback_error": 1.1920928955078125e-07,
+  "sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/stap_followup/eval32/743021_m1.25_y-0.08_fixed/TRAJECTORY.json.gz",
+      "sha256": "aac05886821b7e3a3d0120ddfc68a2cd3901b37cfac473f35fa4af92acf935d4",
+      "execution_manifest": {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/stap_followup/eval32/743021_m1.25_y-0.08_fixed/MANIFEST.json",
+        "sha256": "055fc4276b7d52cf62a655528f037cb151a069dfa456218f63120d0873f76d1d",
+        "content": {
+          "task": "ARES-ToolTarget-v0",
+          "native_parent": "PullCubeTool-v1",
+          "native_goal_retained": true,
+          "additional_goal_tolerance_m": 0.04,
+          "seed": 743021,
+          "density_scale": 1.25,
+          "target_y": -0.08,
+          "method": "fixed",
+          "model_sha256": "eb1a870799873ada93539c55305e5fb753faf67c8959fb570df1e66aa9265d50",
+          "source_sha256": {
+            "program_stap_evaluate.py": "8cfd7e9a3f7b78acd0fe231b363b5f6fcebeee449251ee76cfdb8d3b26adca36",
+            "program_stap_tool.py": "b1d49d9aeece5220d37fc70b415b9922e4745b382c43c833876b2dc2d36ae1d0",
+            "program_stap_learning.py": "5b5e9c924e54c6b562d354b1e177093dec603b06748bab1f8dc1f5694ed2a9b2",
+            "program_stap_kernel.py": "1299ad1f997acbc2bd44cc44e0469a41414107fec4e0c4a57189494e8e22fafb",
+            "program_multiskill_pull.py": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b",
+            "program_multiskill_contact_probe.py": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9",
+            "pull_tool_physics.py": "f15e019e80aa05716dffe8895f6ef3f1b90658b955135eebe10abc7c951b09e3",
+            "handoff_physics.py": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+          },
+          "horizon": 100,
+          "training": false,
+          "acceleration": 6.0,
+          "velocity": 1.8,
+          "target_feedback": true,
+          "scope": "ACTUAL_OFFLINE_PHYSICS; learned selector or fixed strong baseline; no hardware"
+        }
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/stap_followup/eval32/743021_m1.25_y-0.08_stap/TRAJECTORY.json.gz",
+      "sha256": "d41552ff11ec941c45481daa3d03f8c0c001d15c2b236b78e747b393a995a77f",
+      "execution_manifest": {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/stap_followup/eval32/743021_m1.25_y-0.08_stap/MANIFEST.json",
+        "sha256": "f4e28ca31769019cf1dac04031a6412b270761e614bf71067f6398b61ccd1883",
+        "content": {
+          "task": "ARES-ToolTarget-v0",
+          "native_parent": "PullCubeTool-v1",
+          "native_goal_retained": true,
+          "additional_goal_tolerance_m": 0.04,
+          "seed": 743021,
+          "density_scale": 1.25,
+          "target_y": -0.08,
+          "method": "stap",
+          "model_sha256": "eb1a870799873ada93539c55305e5fb753faf67c8959fb570df1e66aa9265d50",
+          "source_sha256": {
+            "program_stap_evaluate.py": "8cfd7e9a3f7b78acd0fe231b363b5f6fcebeee449251ee76cfdb8d3b26adca36",
+            "program_stap_tool.py": "b1d49d9aeece5220d37fc70b415b9922e4745b382c43c833876b2dc2d36ae1d0",
+            "program_stap_learning.py": "5b5e9c924e54c6b562d354b1e177093dec603b06748bab1f8dc1f5694ed2a9b2",
+            "program_stap_kernel.py": "1299ad1f997acbc2bd44cc44e0469a41414107fec4e0c4a57189494e8e22fafb",
+            "program_multiskill_pull.py": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b",
+            "program_multiskill_contact_probe.py": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9",
+            "pull_tool_physics.py": "f15e019e80aa05716dffe8895f6ef3f1b90658b955135eebe10abc7c951b09e3",
+            "handoff_physics.py": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+          },
+          "horizon": 100,
+          "training": false,
+          "acceleration": 6.0,
+          "velocity": 1.8,
+          "target_feedback": true,
+          "scope": "ACTUAL_OFFLINE_PHYSICS; learned selector or fixed strong baseline; no hardware"
+        }
+      }
+    }
+  ],
+  "camera_eye_world": [
+    0.55,
+    -0.8,
+    0.65
+  ],
+  "camera_target_world": [
+    0.02,
+    -0.1,
+    0.08
+  ],
+  "camera_fov_rad": 0.95,
+  "camera_intrinsic": [
+    [
+      583.3487548828125,
+      0.0,
+      400.0
+    ],
+    [
+      0.0,
+      583.3487548828125,
+      300.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_extrinsic": [
+    [
+      0.7972583174705505,
+      0.6036385297775269,
+      1.4901162970204496e-08,
+      0.04441865161061287
+    ],
+    [
+      0.32868972420692444,
+      -0.43411844968795776,
+      -0.8387516140937805,
+      0.01711442321538925
+    ],
+    [
+      -0.5063028335571289,
+      0.6687016487121582,
+      -0.5445142388343811,
+      1.1673619747161865
+    ]
+  ],
+  "all_tool_bound_corner_pixel_min": [
+    252.42855297787,
+    256.86715661662635
+  ],
+  "all_tool_bound_corner_pixel_max": [
+    550.8989647345147,
+    389.9851164921083
+  ],
+  "all_cube_corner_pixel_min": [
+    374.7006347730645,
+    284.4502276754235
+  ],
+  "all_cube_corner_pixel_max": [
+    515.2478301316575,
+    365.78095796317535
+  ],
+  "native_model_source_sha256": "87e0963be3541f830d4e88308595a52ee29748b73c13552027c9e6c1ea9377b4",
+  "render_source_sha256": "6206d0da295f741a207856463991e08c647d62b778ff1d76a643286358ae95f5",
+  "outputs": {
+    "DATA.json": "e2ca3bc3eeec19e5c6aaf586006394327ac7124f589c2b42df99c1abaedc71df",
+    "ANNOTATED_050.png": "688866eb321a90e897a5d92fbddd5093a940c800efdc9a1f1fc99a3c1d3ebc5f",
+    "SYNC_VIEWER.html": "6976156ec8482300ef1d60b87cd9e86eed91dc9aeb66c71b59abcf94d3f672e5",
+    "RAW_050.png": "571668ad8ebf6c57a8a81f372b1c57a00eec30d146542caaa16587e2cf7600bf",
+    "RAW.mp4": "f0c1b24af9047e16cd801f0f8a63734f616d01fa6295ed36c2baa0697bb99efb",
+    "CAPTION.md": "6fb8ef8fb9ae4622de92cba47874e86fe98771d49fced7aa1f961a052b74a0ad",
+    "ANNOTATED.mp4": "a850dc6d0a0e8639cee67c52f23f833dac1c148197f5d50310e52ed6dc5ae4e9",
+    "RIGHT_SOURCE.json.gz": "d41552ff11ec941c45481daa3d03f8c0c001d15c2b236b78e747b393a995a77f",
+    "TRACE.svg": "2beb046388deeb029721e05559d5bb71c8c1a84013630d9791981398d747b359",
+    "RAW_000.png": "a5dfb2df663de0b2544f023b5f6f8f721937ea8e4edb60761136211c76686665",
+    "ANNOTATED_100.png": "bf3e0eaec49a777c5e23804fbbd467712ee8ca4f5f7a6211d89b5de76a8ac392",
+    "TRACE.png": "124fab1365d5916b322e5353b332a97feae6a49f3347db65ab1b144808716f6f",
+    "viewer_source.py": "2df9615ce5069b53af590221d97a6dc9e0bc3ee7f6c8eddc92ac68dea4c9257c",
+    "ANNOTATED_000.png": "d8d0c676af068bff94b3da3249ae97b733728269a8c6bb4178557c90e1a45c37",
+    "LEFT_SOURCE.json.gz": "aac05886821b7e3a3d0120ddfc68a2cd3901b37cfac473f35fa4af92acf935d4",
+    "RAW_100.png": "3498ea25138d1767f26ad0f70332d0afdb9420e959b02bb62a4103536c709b01",
+    "render_source.py": "6206d0da295f741a207856463991e08c647d62b778ff1d76a643286358ae95f5"
+  },
+  "viewer_refinement": "Compact measured cards and loadedmetadata seek preservation; exact video render source remains render_source.py"
+}

@@ -1,0 +1,174 @@
+{
+  "source": "/home/andyee/robot-research/ARES-Skilllab/repos/ARES-SCI-program/research/skill_handoff_lab/research_program/evidence/EXP-003/2026-11-01/component_A/EVAL_EPISODES.csv",
+  "scope": "6 initial scenes x 6 predeclared task variants; one used in stop engineering; development not sealed; single training seed",
+  "comparisons": {
+    "task_sac_vs_strong_search": {
+      "n_conditions": 36,
+      "n_distinct_scenes": 6,
+      "baseline_success": 32,
+      "candidate_success": 35,
+      "rescue": 4,
+      "regression": 1,
+      "net_gain_pp": 8.333333333333334,
+      "paired_exact_p": 0.375,
+      "scene_net_success_deltas": {
+        "732000": 0,
+        "732001": -1,
+        "732002": 0,
+        "732003": 2,
+        "732004": 1,
+        "732005": 1
+      },
+      "families": {
+        "Y": {
+          "n": 18,
+          "base": 18,
+          "candidate": 18
+        },
+        "YZ": {
+          "n": 18,
+          "base": 14,
+          "candidate": 17
+        }
+      },
+      "all_scenes_exact_bootstrap": {
+        "enumerations": 46656,
+        "low_95_pp": -5.555555555555555,
+        "high_95_pp": 22.22222222222222,
+        "p_bootstrap_difference_nonpositive_descriptive": 0.14450445816186558
+      },
+      "five_scene_sensitivity_exclude_732000": {
+        "enumerations": 3125,
+        "low_95_pp": -6.666666666666667,
+        "high_95_pp": 23.333333333333332,
+        "p_bootstrap_difference_nonpositive_descriptive": 0.13984
+      }
+    },
+    "task_sac_vs_full_sac": {
+      "n_conditions": 36,
+      "n_distinct_scenes": 6,
+      "baseline_success": 31,
+      "candidate_success": 35,
+      "rescue": 5,
+      "regression": 1,
+      "net_gain_pp": 11.11111111111111,
+      "paired_exact_p": 0.21875,
+      "scene_net_success_deltas": {
+        "732000": 0,
+        "732001": 0,
+        "732002": 1,
+        "732003": 1,
+        "732004": 1,
+        "732005": 1
+      },
+      "families": {
+        "Y": {
+          "n": 18,
+          "base": 16,
+          "candidate": 18
+        },
+        "YZ": {
+          "n": 18,
+          "base": 15,
+          "candidate": 17
+        }
+      },
+      "all_scenes_exact_bootstrap": {
+        "enumerations": 46656,
+        "low_95_pp": 5.555555555555555,
+        "high_95_pp": 16.666666666666664,
+        "p_bootstrap_difference_nonpositive_descriptive": 0.0013717421124828531
+      },
+      "five_scene_sensitivity_exclude_732000": {
+        "enumerations": 3125,
+        "low_95_pp": 6.666666666666667,
+        "high_95_pp": 16.666666666666664,
+        "p_bootstrap_difference_nonpositive_descriptive": 0.00032
+      }
+    },
+    "task_sac_vs_y_only_sac": {
+      "n_conditions": 36,
+      "n_distinct_scenes": 6,
+      "baseline_success": 33,
+      "candidate_success": 35,
+      "rescue": 3,
+      "regression": 1,
+      "net_gain_pp": 5.555555555555555,
+      "paired_exact_p": 0.625,
+      "scene_net_success_deltas": {
+        "732000": 1,
+        "732001": -1,
+        "732002": 1,
+        "732003": 0,
+        "732004": 0,
+        "732005": 1
+      },
+      "families": {
+        "Y": {
+          "n": 18,
+          "base": 18,
+          "candidate": 18
+        },
+        "YZ": {
+          "n": 18,
+          "base": 15,
+          "candidate": 17
+        }
+      },
+      "all_scenes_exact_bootstrap": {
+        "enumerations": 46656,
+        "low_95_pp": -5.555555555555555,
+        "high_95_pp": 13.88888888888889,
+        "p_bootstrap_difference_nonpositive_descriptive": 0.2040895061728395
+      },
+      "five_scene_sensitivity_exclude_732000": {
+        "enumerations": 3125,
+        "low_95_pp": -6.666666666666667,
+        "high_95_pp": 13.333333333333334,
+        "p_bootstrap_difference_nonpositive_descriptive": 0.37536
+      }
+    },
+    "task_sac_2048_vs_search": {
+      "n_conditions": 36,
+      "n_distinct_scenes": 6,
+      "baseline_success": 32,
+      "candidate_success": 31,
+      "rescue": 2,
+      "regression": 3,
+      "net_gain_pp": -2.7777777777777777,
+      "paired_exact_p": 1.0,
+      "scene_net_success_deltas": {
+        "732000": -1,
+        "732001": 0,
+        "732002": -1,
+        "732003": 1,
+        "732004": 0,
+        "732005": 0
+      },
+      "families": {
+        "Y": {
+          "n": 18,
+          "base": 18,
+          "candidate": 17
+        },
+        "YZ": {
+          "n": 18,
+          "base": 14,
+          "candidate": 14
+        }
+      },
+      "all_scenes_exact_bootstrap": {
+        "enumerations": 46656,
+        "low_95_pp": -11.11111111111111,
+        "high_95_pp": 5.555555555555555,
+        "p_bootstrap_difference_nonpositive_descriptive": 0.8144075788751715
+      },
+      "five_scene_sensitivity_exclude_732000": {
+        "enumerations": 3125,
+        "low_95_pp": -10.0,
+        "high_95_pp": 10.0,
+        "p_bootstrap_difference_nonpositive_descriptive": 0.63968
+      }
+    }
+  }
+}

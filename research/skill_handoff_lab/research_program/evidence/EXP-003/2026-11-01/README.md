@@ -47,3 +47,7 @@ B共77条实际任务执行、9200控制步、14个不同原生初态种子，0�
 A包括失败smoke及全部对照：1258条完整记录、251600物理控制步、11520优化更新。B另计77条/9200步。
 
 [核心结果图](component_A/CORE_RESULTS.png) · [配对救回退化图](component_A/PAIRED_TRADEOFF.png) · [复现说明](REPRODUCE.md) · [全部A模型及轨迹归档索引](component_A/raw/INDEX.json) · [配对救回/退化和6场景聚类bootstrap](component_A/PAIRS.json) · [公平性限制](component_A/FAIRNESS_REVIEW.md)。开发集小、单训练种子，不能宣称统计稳定泛化。SAC按决策gamma=.99，不是物理时长校正SMDP学习。所有运行仅本机GPU0，后期最多两个隔离进程共享；墙钟成本不用于独占算法速度排名。动态可执行认证仍NOT_PROVEN，无实机结论。ARES-R只读，无现场命令，无受限数据。
+
+## 后续STAP实测（保留以上历史结果）
+
+[2026-11-01 STAP算法核、224条物理与严格配对后验退化](stap_followup/README.md) · [新交互审查页](stap_followup/REVIEW.html)。

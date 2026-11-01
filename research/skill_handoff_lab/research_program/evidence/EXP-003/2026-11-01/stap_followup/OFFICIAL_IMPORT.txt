@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "/home/andyee/robot-research/ARES-Skilllab/external/STAP-0fe0dcbd/stap/__init__.py", line 1, in <module>
+    from . import agents
+  File "/home/andyee/robot-research/ARES-Skilllab/external/STAP-0fe0dcbd/stap/agents/__init__.py", line 1, in <module>
+    from .base import Agent
+  File "/home/andyee/robot-research/ARES-Skilllab/external/STAP-0fe0dcbd/stap/agents/base.py", line 3, in <module>
+    import gym
+ModuleNotFoundError: No module named 'gym'

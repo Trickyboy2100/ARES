@@ -58,3 +58,5 @@ uncertainty & limitation | exact raw path/hash | science decision`。
 ## EXP-003｜2026-11-01 实际执行追加
 
 [结果与精确来源索引](evidence/EXP-003/2026-11-01/README.md)：A三种普通LN-SAC各4096决策、3840优化更新；完成合同/全权限与投影权限/强搜索/真实checkpoint对照，6开发初态、单训练seed。B三任务77条原生物理执行、9200步、14初态种子；强完整后段TwoRobot8/8与同前段正交2/4，无RL更新。全部源快照、模型、回放缓冲、原始轨迹、SHA清单及三组完整实测状态回放视频保存。动态认证未证明，无实机/密封测试/独立算法增益。成本详见A SUMMARY与B_RESEARCH_SYNTHESIS，不能将多个参数条件或视频帧视为独立样本。
+
+- 2026-11-01 STAP follow-up：[224条真实物理、5600优化、算法核12组、严格同前段后验退化与强预算控制](evidence/EXP-003/2026-11-01/stap_followup/README.md)。原始包/模型/源码/SHA/全程双视频齐备；无新RL增益。

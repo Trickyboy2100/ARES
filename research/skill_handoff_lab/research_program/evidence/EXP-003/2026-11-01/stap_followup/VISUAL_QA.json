@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "videos": [
+    {
+      "video": "video_rescue/RAW.mp4",
+      "sha256": "f0c1b24af9047e16cd801f0f8a63734f616d01fa6295ed36c2baa0697bb99efb",
+      "width": 1600,
+      "height": 600,
+      "r_frame_rate": "20/1",
+      "nb_read_frames": "101"
+    },
+    {
+      "video": "video_rescue/ANNOTATED.mp4",
+      "sha256": "a850dc6d0a0e8639cee67c52f23f833dac1c148197f5d50310e52ed6dc5ae4e9",
+      "width": 1600,
+      "height": 1060,
+      "r_frame_rate": "20/1",
+      "nb_read_frames": "101"
+    },
+    {
+      "video": "video_replan_regression/RAW.mp4",
+      "sha256": "9641186cdadff6ab9cde957c8182bdc0c7981048180352c3d9ff87b24ba54fc1",
+      "width": 1600,
+      "height": 600,
+      "r_frame_rate": "20/1",
+      "nb_read_frames": "101"
+    },
+    {
+      "video": "video_replan_regression/ANNOTATED.mp4",
+      "sha256": "f55cce64a4b1733ec96ca1120bf12d198862c767dfd917e2e667068d607e67d6",
+      "width": 1600,
+      "height": 1060,
+      "r_frame_rate": "20/1",
+      "nb_read_frames": "101"
+    }
+  ],
+  "frame_contract": "frame0 initial, frame k physical control step k at k/20 s",
+  "state_and_signal_checks": true,
+  "scope": "Programmatic full video QA plus separate human-visible frame/browser inspection; graphics replay adds zero physics",
+  "browser_checks": {
+    "review_page_loaded": true,
+    "decision_button_step39_time195": true,
+    "raw_switch_preserves_step39_after_loadedmetadata": true,
+    "playback_reaches_step100_time500": true,
+    "compact_skill_result_cards": true,
+    "note": "Temporary localhost server expired during QA; restarted. Switching media has transient load state; requested physical time restored after loadedmetadata."
+  }
+}

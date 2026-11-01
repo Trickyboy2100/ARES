@@ -1,0 +1,351 @@
+{
+  "ablations": {
+    "cem_budget16": {
+      "stap": {
+        "success": 3,
+        "n": 8,
+        "critic_queries": 7560
+      },
+      "stap_open": {
+        "success": 5,
+        "n": 8,
+        "critic_queries": 6048
+      }
+    },
+    "residual_paired16": {
+      "stap": {
+        "success": 3,
+        "n": 8,
+        "critic_queries": 1912
+      },
+      "stap_open": {
+        "success": 4,
+        "n": 8,
+        "critic_queries": 1536
+      }
+    },
+    "absolute_paired16": {
+      "stap": {
+        "success": 3,
+        "n": 8,
+        "critic_queries": 1912
+      },
+      "stap_open": {
+        "success": 6,
+        "n": 8,
+        "critic_queries": 1536
+      }
+    }
+  },
+  "episodes": 224,
+  "control_steps": 22400,
+  "groups": {
+    "absolute_paired16": {
+      "episodes": 16,
+      "success": 9,
+      "native": 10,
+      "failures": {
+        "BUDGET_HOOK": 1,
+        "SUCCESS": 9,
+        "BUDGET_TARGET_FEEDBACK": 1,
+        "SUCCESSOR_CONTACT_OR_GOAL": 4,
+        "BUDGET_TRANSFER": 1
+      }
+    },
+    "budget_guard8": {
+      "episodes": 8,
+      "success": 4,
+      "native": 5,
+      "failures": {
+        "SUCCESS": 4,
+        "BUDGET_TARGET_FEEDBACK": 1,
+        "BUDGET_TRANSFER": 1,
+        "SUCCESSOR_CONTACT_OR_GOAL": 2
+      }
+    },
+    "cem_budget16": {
+      "episodes": 16,
+      "success": 8,
+      "native": 9,
+      "failures": {
+        "BUDGET_HOOK": 1,
+        "SUCCESSOR_CONTACT_OR_GOAL": 4,
+        "BUDGET_TARGET_FEEDBACK": 1,
+        "SUCCESS": 8,
+        "BUDGET_TRANSFER": 2
+      }
+    },
+    "eval32": {
+      "episodes": 32,
+      "success": 13,
+      "native": 16,
+      "failures": {
+        "BUDGET_TRANSFER": 12,
+        "BUDGET_HOOK": 2,
+        "BUDGET_TARGET_FEEDBACK": 1,
+        "SUCCESSOR_CONTACT_OR_GOAL": 4,
+        "SUCCESS": 13
+      }
+    },
+    "fixed100_8": {
+      "episodes": 8,
+      "success": 3,
+      "native": 4,
+      "failures": {
+        "BUDGET_TRANSFER": 2,
+        "SUCCESSOR_CONTACT_OR_GOAL": 3,
+        "SUCCESS": 3
+      }
+    },
+    "fixed100_hook65_8": {
+      "episodes": 8,
+      "success": 4,
+      "native": 4,
+      "failures": {
+        "BUDGET_TRANSFER": 3,
+        "SUCCESSOR_CONTACT_OR_GOAL": 1,
+        "SUCCESS": 4
+      }
+    },
+    "load8_timing": {
+      "episodes": 8,
+      "success": 0,
+      "native": 0,
+      "failures": {
+        "SUCCESSOR_CONTACT_OR_GOAL": 4,
+        "BUDGET_TRANSFER": 3,
+        "BUDGET_HOOK": 1
+      }
+    },
+    "load8_v2": {
+      "episodes": 8,
+      "success": 0,
+      "native": 0,
+      "failures": {
+        "BUDGET_PULL": 3,
+        "PREFIX": 5
+      }
+    },
+    "residual_paired16": {
+      "episodes": 16,
+      "success": 7,
+      "native": 9,
+      "failures": {
+        "BUDGET_TRANSFER": 4,
+        "SUCCESSOR_CONTACT_OR_GOAL": 5,
+        "SUCCESS": 7
+      }
+    },
+    "target16": {
+      "episodes": 16,
+      "success": 5,
+      "native": 10,
+      "failures": {
+        "SUCCESSOR_CONTACT_OR_GOAL": 11,
+        "SUCCESS": 5
+      }
+    },
+    "target_feedback64": {
+      "episodes": 64,
+      "success": 40,
+      "native": 48,
+      "failures": {
+        "SUCCESSOR_CONTACT_OR_GOAL": 21,
+        "SUCCESS": 40,
+        "BUDGET_TARGET_FEEDBACK": 3
+      }
+    },
+    "transfer8": {
+      "episodes": 8,
+      "success": 2,
+      "native": 3,
+      "failures": {
+        "BUDGET_HOOK": 2,
+        "BUDGET_TRANSFER": 2,
+        "SUCCESS": 2,
+        "SUCCESSOR_CONTACT_OR_GOAL": 2
+      }
+    },
+    "wide_target16": {
+      "episodes": 16,
+      "success": 9,
+      "native": 12,
+      "failures": {
+        "SUCCESS": 9,
+        "SUCCESSOR_CONTACT_OR_GOAL": 6,
+        "BUDGET_TARGET_FEEDBACK": 1
+      }
+    }
+  },
+  "evaluation": {
+    "fixed": {
+      "success": 3,
+      "native": 4,
+      "n": 8,
+      "queries": 0,
+      "selector_wall_s": 0,
+      "wall_s": 26.77644386095926
+    },
+    "foresight": {
+      "success": 3,
+      "native": 4,
+      "n": 8,
+      "queries": 264,
+      "selector_wall_s": 0.002260676061268896,
+      "wall_s": 28.00946282001678
+    },
+    "fq": {
+      "success": 3,
+      "native": 4,
+      "n": 8,
+      "queries": 528,
+      "selector_wall_s": 0.005078270914964378,
+      "wall_s": 26.778248774062376
+    },
+    "stap": {
+      "success": 4,
+      "native": 4,
+      "n": 8,
+      "queries": 1936,
+      "selector_wall_s": 0.030989513848908246,
+      "wall_s": 26.50378773699049
+    }
+  },
+  "paired_vs_fixed": {
+    "fixed": {
+      "rescue": 0,
+      "regression": 0,
+      "exact_mcnemar_p": 1.0
+    },
+    "foresight": {
+      "rescue": 0,
+      "regression": 0,
+      "exact_mcnemar_p": 1.0
+    },
+    "fq": {
+      "rescue": 0,
+      "regression": 0,
+      "exact_mcnemar_p": 1.0
+    },
+    "stap": {
+      "rescue": 1,
+      "regression": 0,
+      "exact_mcnemar_p": 1.0
+    }
+  },
+  "stap_model_errors": [
+    {
+      "case": [
+        743020,
+        0.75,
+        -0.08
+      ],
+      "relative_translation_error_mm": 42.51873076048436,
+      "tool_translation_error_mm": 172.05335406769873,
+      "budget_error_steps": 11.49290943145752,
+      "predicted_product": 0.9997379183769226,
+      "actual_success": false,
+      "replanned_hook": 1.0,
+      "openloop_hook": 0.3968920409679413
+    },
+    {
+      "case": [
+        743020,
+        0.75,
+        0.08
+      ],
+      "relative_translation_error_mm": 39.74480268688102,
+      "tool_translation_error_mm": 171.9745385361277,
+      "budget_error_steps": 10.145141124725342,
+      "predicted_product": 0.9998288154602051,
+      "actual_success": false,
+      "replanned_hook": 1.0,
+      "openloop_hook": -0.67530757188797
+    },
+    {
+      "case": [
+        743020,
+        1.25,
+        -0.08
+      ],
+      "relative_translation_error_mm": 31.001366155693344,
+      "tool_translation_error_mm": 174.57622337857666,
+      "budget_error_steps": 7.78356146812439,
+      "predicted_product": 0.9996708631515503,
+      "actual_success": false,
+      "replanned_hook": 1.0,
+      "openloop_hook": -0.00867503136396408
+    },
+    {
+      "case": [
+        743020,
+        1.25,
+        0.08
+      ],
+      "relative_translation_error_mm": 34.44894582432695,
+      "tool_translation_error_mm": 172.96351664475517,
+      "budget_error_steps": 7.021880626678467,
+      "predicted_product": 0.9997507929801941,
+      "actual_success": false,
+      "replanned_hook": 1.0,
+      "openloop_hook": -0.7174696326255798
+    },
+    {
+      "case": [
+        743021,
+        0.75,
+        -0.08
+      ],
+      "relative_translation_error_mm": 16.080198704131178,
+      "tool_translation_error_mm": 92.84438179703625,
+      "budget_error_steps": 4.8891003131866455,
+      "predicted_product": 0.9999724626541138,
+      "actual_success": true,
+      "replanned_hook": 1.0,
+      "openloop_hook": 0.019432924687862396
+    },
+    {
+      "case": [
+        743021,
+        0.75,
+        0.08
+      ],
+      "relative_translation_error_mm": 13.554677414480969,
+      "tool_translation_error_mm": 91.39788348226782,
+      "budget_error_steps": 3.8798158168792725,
+      "predicted_product": 0.9999833106994629,
+      "actual_success": true,
+      "replanned_hook": -0.4969279170036316,
+      "openloop_hook": -0.8715430498123169
+    },
+    {
+      "case": [
+        743021,
+        1.25,
+        -0.08
+      ],
+      "relative_translation_error_mm": 10.986798008977313,
+      "tool_translation_error_mm": 89.09363890966715,
+      "budget_error_steps": 2.1776115894317627,
+      "predicted_product": 0.9999603033065796,
+      "actual_success": true,
+      "replanned_hook": 1.0,
+      "openloop_hook": 0.03271041065454483
+    },
+    {
+      "case": [
+        743021,
+        1.25,
+        0.08
+      ],
+      "relative_translation_error_mm": 2.538152993851643,
+      "tool_translation_error_mm": 90.53273833968804,
+      "budget_error_steps": 0.34302830696105957,
+      "predicted_product": 0.9999679327011108,
+      "actual_success": true,
+      "replanned_hook": 1.0,
+      "openloop_hook": -0.12930354475975037
+    }
+  ],
+  "scope": "Development exploration; one training seed; two training and two new scene seeds; no independent method claim; startup failure has zero recorded control steps"
+}

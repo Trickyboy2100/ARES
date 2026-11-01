@@ -1,0 +1,134 @@
+{
+  "absolute_paired16": [
+    {
+      "seed": 743020,
+      "mass": 0.75,
+      "target": -0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": false,
+      "openloop": true
+    },
+    {
+      "seed": 743020,
+      "mass": 0.75,
+      "target": 0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": false,
+      "openloop": true
+    },
+    {
+      "seed": 743021,
+      "mass": 0.75,
+      "target": -0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": true,
+      "openloop": true
+    },
+    {
+      "seed": 743021,
+      "mass": 0.75,
+      "target": 0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": true,
+      "openloop": true
+    },
+    {
+      "seed": 743020,
+      "mass": 1.25,
+      "target": -0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": false,
+      "openloop": false
+    },
+    {
+      "seed": 743020,
+      "mass": 1.25,
+      "target": 0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": false,
+      "openloop": false
+    },
+    {
+      "seed": 743021,
+      "mass": 1.25,
+      "target": -0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": false,
+      "openloop": true
+    },
+    {
+      "seed": 743021,
+      "mass": 1.25,
+      "target": 0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": true,
+      "openloop": true
+    }
+  ],
+  "residual_paired16": [
+    {
+      "seed": 743020,
+      "mass": 0.75,
+      "target": -0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": false,
+      "openloop": false
+    },
+    {
+      "seed": 743020,
+      "mass": 0.75,
+      "target": 0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": false,
+      "openloop": true
+    },
+    {
+      "seed": 743021,
+      "mass": 0.75,
+      "target": -0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": true,
+      "openloop": true
+    },
+    {
+      "seed": 743021,
+      "mass": 0.75,
+      "target": 0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": true,
+      "openloop": true
+    },
+    {
+      "seed": 743020,
+      "mass": 1.25,
+      "target": -0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": false,
+      "openloop": false
+    },
+    {
+      "seed": 743020,
+      "mass": 1.25,
+      "target": 0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": false,
+      "openloop": false
+    },
+    {
+      "seed": 743021,
+      "mass": 1.25,
+      "target": -0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": false,
+      "openloop": false
+    },
+    {
+      "seed": 743021,
+      "mass": 1.25,
+      "target": 0.08,
+      "same_first_parameter_and_physical_prefix": true,
+      "replan": true,
+      "openloop": true
+    }
+  ]
+}
