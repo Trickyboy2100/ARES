@@ -1,0 +1,2187 @@
+[
+  {
+    "run": "eval_full",
+    "checkpoint": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_full/MODEL.zip",
+    "checkpoint_sha256": "d6c223d91cff96bf55aefa1ce23f880f1db9bbd4dba32dd69da575dd552966d1",
+    "training_decisions": 4096,
+    "training_authority": "full",
+    "evaluation_authority": "full",
+    "completion": "dwell",
+    "episodes": 36,
+    "success": 31,
+    "condition_identity": [
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      }
+    ],
+    "sensitivity_excluding_stop_development_seed732000": {
+      "episodes": 30,
+      "success": 25,
+      "distinct_scenes": 5
+    },
+    "interpretation": "Actual completed checkpoint physical evaluation, not training-window interpolation; whole36 dwell remains primary; legacy12 is a separate paired-stop diagnostic, not a learning-curve point; remove732000 only as prespecified engineering-reuse sensitivity."
+  },
+  {
+    "run": "eval_full_2048",
+    "checkpoint": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_full/CHECKPOINT_2048.zip",
+    "checkpoint_sha256": "16d22f065e3dfc288bddf2d19d071f9117ea9dcd151e83e8e006578ef0e027c8",
+    "training_decisions": 2048,
+    "training_authority": "full",
+    "evaluation_authority": "full",
+    "completion": "dwell",
+    "episodes": 36,
+    "success": 32,
+    "condition_identity": [
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      }
+    ],
+    "sensitivity_excluding_stop_development_seed732000": {
+      "episodes": 30,
+      "success": 26,
+      "distinct_scenes": 5
+    },
+    "interpretation": "Actual completed checkpoint physical evaluation, not training-window interpolation; whole36 dwell remains primary; legacy12 is a separate paired-stop diagnostic, not a learning-curve point; remove732000 only as prespecified engineering-reuse sensitivity."
+  },
+  {
+    "run": "eval_full_legacy",
+    "checkpoint": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_full/MODEL.zip",
+    "checkpoint_sha256": "d6c223d91cff96bf55aefa1ce23f880f1db9bbd4dba32dd69da575dd552966d1",
+    "training_decisions": 4096,
+    "training_authority": "full",
+    "evaluation_authority": "full",
+    "completion": "legacy",
+    "episodes": 12,
+    "success": 10,
+    "condition_identity": [
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      }
+    ],
+    "sensitivity_excluding_stop_development_seed732000": {
+      "episodes": 6,
+      "success": 4,
+      "distinct_scenes": 1
+    },
+    "interpretation": "Actual completed checkpoint physical evaluation, not training-window interpolation; whole36 dwell remains primary; legacy12 is a separate paired-stop diagnostic, not a learning-curve point; remove732000 only as prespecified engineering-reuse sensitivity."
+  },
+  {
+    "run": "eval_task",
+    "checkpoint": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_task/MODEL.zip",
+    "checkpoint_sha256": "8e00e5d025d5a213291d4645c1565087314c16c2d49d1b420e51419426dda840",
+    "training_decisions": 4096,
+    "training_authority": "task",
+    "evaluation_authority": "task",
+    "completion": "dwell",
+    "episodes": 36,
+    "success": 35,
+    "condition_identity": [
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      }
+    ],
+    "sensitivity_excluding_stop_development_seed732000": {
+      "episodes": 30,
+      "success": 29,
+      "distinct_scenes": 5
+    },
+    "interpretation": "Actual completed checkpoint physical evaluation, not training-window interpolation; whole36 dwell remains primary; legacy12 is a separate paired-stop diagnostic, not a learning-curve point; remove732000 only as prespecified engineering-reuse sensitivity."
+  },
+  {
+    "run": "eval_task_2048",
+    "checkpoint": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_task/CHECKPOINT_2048.zip",
+    "checkpoint_sha256": "612ed5f478f1ed0fecdb88c38ebce2d90f1f5d61a0362f395301968e2666adf1",
+    "training_decisions": 2048,
+    "training_authority": "task",
+    "evaluation_authority": "task",
+    "completion": "dwell",
+    "episodes": 36,
+    "success": 31,
+    "condition_identity": [
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      }
+    ],
+    "sensitivity_excluding_stop_development_seed732000": {
+      "episodes": 30,
+      "success": 26,
+      "distinct_scenes": 5
+    },
+    "interpretation": "Actual completed checkpoint physical evaluation, not training-window interpolation; whole36 dwell remains primary; legacy12 is a separate paired-stop diagnostic, not a learning-curve point; remove732000 only as prespecified engineering-reuse sensitivity."
+  },
+  {
+    "run": "eval_y_only",
+    "checkpoint": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_y_only/MODEL.zip",
+    "checkpoint_sha256": "6a99e789b6447a204fed89197cb728b6f860db2c97a1baf8957e5fdea56a4275",
+    "training_decisions": 4096,
+    "training_authority": "y_only",
+    "evaluation_authority": "y_only",
+    "completion": "dwell",
+    "episodes": 36,
+    "success": 33,
+    "condition_identity": [
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      }
+    ],
+    "sensitivity_excluding_stop_development_seed732000": {
+      "episodes": 30,
+      "success": 28,
+      "distinct_scenes": 5
+    },
+    "interpretation": "Actual completed checkpoint physical evaluation, not training-window interpolation; whole36 dwell remains primary; legacy12 is a separate paired-stop diagnostic, not a learning-curve point; remove732000 only as prespecified engineering-reuse sensitivity."
+  },
+  {
+    "run": "eval_y_only_2048",
+    "checkpoint": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_y_only/CHECKPOINT_2048.zip",
+    "checkpoint_sha256": "3bc9f7a86cad78a9f0214ec06b7af418a880f3b45259c593bec0a8e86af91b69",
+    "training_decisions": 2048,
+    "training_authority": "y_only",
+    "evaluation_authority": "y_only",
+    "completion": "dwell",
+    "episodes": 36,
+    "success": 26,
+    "condition_identity": [
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732000,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732001,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      },
+      {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e"
+      }
+    ],
+    "sensitivity_excluding_stop_development_seed732000": {
+      "episodes": 30,
+      "success": 23,
+      "distinct_scenes": 5
+    },
+    "interpretation": "Actual completed checkpoint physical evaluation, not training-window interpolation; whole36 dwell remains primary; legacy12 is a separate paired-stop diagnostic, not a learning-curve point; remove732000 only as prespecified engineering-reuse sensitivity."
+  }
+]

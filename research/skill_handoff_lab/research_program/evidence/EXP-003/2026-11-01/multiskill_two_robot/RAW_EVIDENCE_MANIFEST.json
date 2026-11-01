@@ -1,0 +1,669 @@
+{
+  "archive": "RAW_EVIDENCE.tar.gz",
+  "sha256": "a6fc48cfc83e5d6724cea973f160b62c3ecdeb8df10618ab6c4c47e7eef672c3",
+  "bytes": 1339822,
+  "source_root": "runs/research_program/EXP-003/multiskill_two_robot",
+  "files": [
+    {
+      "path": "742000_continuous_clear/MANIFEST.json",
+      "bytes": 2443,
+      "sha256": "6055d94dbf2ddd318b20df0d76c4f5f77aec11374d70428fa658796973617e12"
+    },
+    {
+      "path": "742000_continuous_clear/RESULTS.json",
+      "bytes": 4755,
+      "sha256": "bf856eec4da6f310be600880ea06f6cb761d537a9bff1e1a622029a7c4f7f3ab"
+    },
+    {
+      "path": "742000_continuous_clear/TRAJECTORY.json.gz",
+      "bytes": 92162,
+      "sha256": "2eecf4f349d2beeff5e12b467855d6365a92911dc673c4524efa75583c57d4ca"
+    },
+    {
+      "path": "742000_continuous_clear/program_multiskill_two_robot.py",
+      "bytes": 13454,
+      "sha256": "2512041f4e7c4678c8081aa58ce9a24e08b67dfb5e6e966b350b0a09c5db63da"
+    },
+    {
+      "path": "742000_continuous_clear/source_0_handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "742000_continuous_clear/source_1_method_stack_physics.py",
+      "bytes": 7239,
+      "sha256": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+    },
+    {
+      "path": "742000_continuous_clear/source_2_two_robot_pick_cube.py",
+      "bytes": 10097,
+      "sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba"
+    },
+    {
+      "path": "742000_continuous_clear/source_3_scene_builder.py",
+      "bytes": 10321,
+      "sha256": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a"
+    },
+    {
+      "path": "742000_continuous_clear/source_4_multi_agent.py",
+      "bytes": 3969,
+      "sha256": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39"
+    },
+    {
+      "path": "742000_continuous_clear/source_5_motionplanner.py",
+      "bytes": 848,
+      "sha256": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531"
+    },
+    {
+      "path": "742000_continuous_clear/source_6_motionplanner.py",
+      "bytes": 7218,
+      "sha256": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+    },
+    {
+      "path": "742000_continuous_p020/MANIFEST.json",
+      "bytes": 2443,
+      "sha256": "d68ce92159b99c7adfd388e799fba5ac803951bfe6781759a18955f369eb2e11"
+    },
+    {
+      "path": "742000_continuous_p020/RESULTS.json",
+      "bytes": 4755,
+      "sha256": "37365aaaa18e7f162b7cb4a0fd257e74970c5ae9832b6121b0755745cc7b95f0"
+    },
+    {
+      "path": "742000_continuous_p020/TRAJECTORY.json.gz",
+      "bytes": 91897,
+      "sha256": "25b2c18d8c693ad688d189d7b928df7f7c3297f56d86fa810684e5d7506811ab"
+    },
+    {
+      "path": "742000_continuous_p020/program_multiskill_two_robot.py",
+      "bytes": 13454,
+      "sha256": "2512041f4e7c4678c8081aa58ce9a24e08b67dfb5e6e966b350b0a09c5db63da"
+    },
+    {
+      "path": "742000_continuous_p020/source_0_handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "742000_continuous_p020/source_1_method_stack_physics.py",
+      "bytes": 7239,
+      "sha256": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+    },
+    {
+      "path": "742000_continuous_p020/source_2_two_robot_pick_cube.py",
+      "bytes": 10097,
+      "sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba"
+    },
+    {
+      "path": "742000_continuous_p020/source_3_scene_builder.py",
+      "bytes": 10321,
+      "sha256": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a"
+    },
+    {
+      "path": "742000_continuous_p020/source_4_multi_agent.py",
+      "bytes": 3969,
+      "sha256": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39"
+    },
+    {
+      "path": "742000_continuous_p020/source_5_motionplanner.py",
+      "bytes": 848,
+      "sha256": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531"
+    },
+    {
+      "path": "742000_continuous_p020/source_6_motionplanner.py",
+      "bytes": 7218,
+      "sha256": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+    },
+    {
+      "path": "742000_continuous_p080/MANIFEST.json",
+      "bytes": 2443,
+      "sha256": "45ba04f937f85d37ebaabf0375bc6819802d2ae13e3b2186866f135e4dfa7e06"
+    },
+    {
+      "path": "742000_continuous_p080/RESULTS.json",
+      "bytes": 4750,
+      "sha256": "41680cd6f095953bb5b642307dcd4d9812ff3483f7a6eaf4073ae3a38baaa0cd"
+    },
+    {
+      "path": "742000_continuous_p080/TRAJECTORY.json.gz",
+      "bytes": 88675,
+      "sha256": "dbbc2c0357a9e3cecf18f784360886da7126c8455059feb6768010bdc109dcd4"
+    },
+    {
+      "path": "742000_continuous_p080/program_multiskill_two_robot.py",
+      "bytes": 13454,
+      "sha256": "2512041f4e7c4678c8081aa58ce9a24e08b67dfb5e6e966b350b0a09c5db63da"
+    },
+    {
+      "path": "742000_continuous_p080/source_0_handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "742000_continuous_p080/source_1_method_stack_physics.py",
+      "bytes": 7239,
+      "sha256": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+    },
+    {
+      "path": "742000_continuous_p080/source_2_two_robot_pick_cube.py",
+      "bytes": 10097,
+      "sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba"
+    },
+    {
+      "path": "742000_continuous_p080/source_3_scene_builder.py",
+      "bytes": 10321,
+      "sha256": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a"
+    },
+    {
+      "path": "742000_continuous_p080/source_4_multi_agent.py",
+      "bytes": 3969,
+      "sha256": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39"
+    },
+    {
+      "path": "742000_continuous_p080/source_5_motionplanner.py",
+      "bytes": 848,
+      "sha256": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531"
+    },
+    {
+      "path": "742000_continuous_p080/source_6_motionplanner.py",
+      "bytes": 7218,
+      "sha256": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+    },
+    {
+      "path": "742000_nominal/MANIFEST.json",
+      "bytes": 2354,
+      "sha256": "80446d1b096288613e3eb2c042d09f583a71d6c9fb6e6bf24724b4c9aa74b6b0"
+    },
+    {
+      "path": "742000_nominal/RESULTS.json",
+      "bytes": 4612,
+      "sha256": "40a5592e0188efb4af8f0b7745d5d1881a99a99773fa59a2b9590162848ed088"
+    },
+    {
+      "path": "742000_nominal/TRAJECTORY.json.gz",
+      "bytes": 70592,
+      "sha256": "67a8346c357a62856fb40a672f23d281c0a44f704e317bddef9a4e9e8af03904"
+    },
+    {
+      "path": "742000_nominal/program_multiskill_two_robot.py",
+      "bytes": 13162,
+      "sha256": "878a76d3befc5567620144f1ec698154a05fb19c7ed24b754f946e07a66c1fd9"
+    },
+    {
+      "path": "742000_nominal/source_0_handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "742000_nominal/source_1_method_stack_physics.py",
+      "bytes": 7239,
+      "sha256": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+    },
+    {
+      "path": "742000_nominal/source_2_two_robot_pick_cube.py",
+      "bytes": 10097,
+      "sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba"
+    },
+    {
+      "path": "742000_nominal/source_3_scene_builder.py",
+      "bytes": 10321,
+      "sha256": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a"
+    },
+    {
+      "path": "742000_nominal/source_4_multi_agent.py",
+      "bytes": 3969,
+      "sha256": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39"
+    },
+    {
+      "path": "742000_nominal/source_5_motionplanner.py",
+      "bytes": 848,
+      "sha256": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531"
+    },
+    {
+      "path": "742000_nominal/source_6_motionplanner.py",
+      "bytes": 7218,
+      "sha256": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+    },
+    {
+      "path": "742000_stride3/MANIFEST.json",
+      "bytes": 2405,
+      "sha256": "35a93d7df8a8653f7e260eb6b3a4d438f6717c01c54f03f43775f8d0aff72991"
+    },
+    {
+      "path": "742000_stride3/RESULTS.json",
+      "bytes": 4737,
+      "sha256": "85873cb6c46b354c7ce02f28cd39a743fcfa3d5f1a72f6dd88a643e5994e48cd"
+    },
+    {
+      "path": "742000_stride3/TRAJECTORY.json.gz",
+      "bytes": 92370,
+      "sha256": "fb00aa3b1c24516638a85616e56b8ba3e5d8bcc1be0b1a4ecfb3d75154bc69bf"
+    },
+    {
+      "path": "742000_stride3/program_multiskill_two_robot.py",
+      "bytes": 13162,
+      "sha256": "878a76d3befc5567620144f1ec698154a05fb19c7ed24b754f946e07a66c1fd9"
+    },
+    {
+      "path": "742000_stride3/source_0_handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "742000_stride3/source_1_method_stack_physics.py",
+      "bytes": 7239,
+      "sha256": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+    },
+    {
+      "path": "742000_stride3/source_2_two_robot_pick_cube.py",
+      "bytes": 10097,
+      "sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba"
+    },
+    {
+      "path": "742000_stride3/source_3_scene_builder.py",
+      "bytes": 10321,
+      "sha256": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a"
+    },
+    {
+      "path": "742000_stride3/source_4_multi_agent.py",
+      "bytes": 3969,
+      "sha256": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39"
+    },
+    {
+      "path": "742000_stride3/source_5_motionplanner.py",
+      "bytes": 848,
+      "sha256": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531"
+    },
+    {
+      "path": "742000_stride3/source_6_motionplanner.py",
+      "bytes": 7218,
+      "sha256": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+    },
+    {
+      "path": "742001_continuous_clear/MANIFEST.json",
+      "bytes": 2443,
+      "sha256": "1b355c5e66779d56da84ffc72e9fda121a6ea683e2875c53417b881dea5b9952"
+    },
+    {
+      "path": "742001_continuous_clear/RESULTS.json",
+      "bytes": 4757,
+      "sha256": "890e3600d6582636c3fa2dfd02305fd83854fa62b12ef91d9e08801bbcb67a30"
+    },
+    {
+      "path": "742001_continuous_clear/TRAJECTORY.json.gz",
+      "bytes": 96446,
+      "sha256": "aae2b1a3e86357e94c6f9387c248c409790ceceac2ce4b7094d598d7d2cb288c"
+    },
+    {
+      "path": "742001_continuous_clear/program_multiskill_two_robot.py",
+      "bytes": 13454,
+      "sha256": "2512041f4e7c4678c8081aa58ce9a24e08b67dfb5e6e966b350b0a09c5db63da"
+    },
+    {
+      "path": "742001_continuous_clear/source_0_handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "742001_continuous_clear/source_1_method_stack_physics.py",
+      "bytes": 7239,
+      "sha256": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+    },
+    {
+      "path": "742001_continuous_clear/source_2_two_robot_pick_cube.py",
+      "bytes": 10097,
+      "sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba"
+    },
+    {
+      "path": "742001_continuous_clear/source_3_scene_builder.py",
+      "bytes": 10321,
+      "sha256": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a"
+    },
+    {
+      "path": "742001_continuous_clear/source_4_multi_agent.py",
+      "bytes": 3969,
+      "sha256": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39"
+    },
+    {
+      "path": "742001_continuous_clear/source_5_motionplanner.py",
+      "bytes": 848,
+      "sha256": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531"
+    },
+    {
+      "path": "742001_continuous_clear/source_6_motionplanner.py",
+      "bytes": 7218,
+      "sha256": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+    },
+    {
+      "path": "742001_continuous_p020/MANIFEST.json",
+      "bytes": 2443,
+      "sha256": "4d919c0e50b00b070292c2052d1d6d5ca0a9d91c6e714e2643ade29016956605"
+    },
+    {
+      "path": "742001_continuous_p020/RESULTS.json",
+      "bytes": 4760,
+      "sha256": "3725fc8f0dfb362f9358ce2ce13583a12e11e0f2d2bfb5e9d8f9f4f7595e19df"
+    },
+    {
+      "path": "742001_continuous_p020/TRAJECTORY.json.gz",
+      "bytes": 95756,
+      "sha256": "cc1c525b9eb34cb828733f066a26b211ec84d88d60fc147281b9f0544c588a65"
+    },
+    {
+      "path": "742001_continuous_p020/program_multiskill_two_robot.py",
+      "bytes": 13454,
+      "sha256": "2512041f4e7c4678c8081aa58ce9a24e08b67dfb5e6e966b350b0a09c5db63da"
+    },
+    {
+      "path": "742001_continuous_p020/source_0_handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "742001_continuous_p020/source_1_method_stack_physics.py",
+      "bytes": 7239,
+      "sha256": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+    },
+    {
+      "path": "742001_continuous_p020/source_2_two_robot_pick_cube.py",
+      "bytes": 10097,
+      "sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba"
+    },
+    {
+      "path": "742001_continuous_p020/source_3_scene_builder.py",
+      "bytes": 10321,
+      "sha256": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a"
+    },
+    {
+      "path": "742001_continuous_p020/source_4_multi_agent.py",
+      "bytes": 3969,
+      "sha256": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39"
+    },
+    {
+      "path": "742001_continuous_p020/source_5_motionplanner.py",
+      "bytes": 848,
+      "sha256": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531"
+    },
+    {
+      "path": "742001_continuous_p020/source_6_motionplanner.py",
+      "bytes": 7218,
+      "sha256": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+    },
+    {
+      "path": "742001_continuous_p080/MANIFEST.json",
+      "bytes": 2443,
+      "sha256": "5307a106b0419b6b2eacf44ce51880f55f59f3dceac6aca6e171a4b34210083a"
+    },
+    {
+      "path": "742001_continuous_p080/RESULTS.json",
+      "bytes": 4587,
+      "sha256": "9ae6ea9d06e805fe7eb05da445223814aef5f231c0752e53fd17c037d8b13c70"
+    },
+    {
+      "path": "742001_continuous_p080/TRAJECTORY.json.gz",
+      "bytes": 94751,
+      "sha256": "dd0f763cc07ab094419ade7692223cdd93d503ddec1ab54c3e279cccd91a9a1a"
+    },
+    {
+      "path": "742001_continuous_p080/program_multiskill_two_robot.py",
+      "bytes": 13454,
+      "sha256": "2512041f4e7c4678c8081aa58ce9a24e08b67dfb5e6e966b350b0a09c5db63da"
+    },
+    {
+      "path": "742001_continuous_p080/source_0_handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "742001_continuous_p080/source_1_method_stack_physics.py",
+      "bytes": 7239,
+      "sha256": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+    },
+    {
+      "path": "742001_continuous_p080/source_2_two_robot_pick_cube.py",
+      "bytes": 10097,
+      "sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba"
+    },
+    {
+      "path": "742001_continuous_p080/source_3_scene_builder.py",
+      "bytes": 10321,
+      "sha256": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a"
+    },
+    {
+      "path": "742001_continuous_p080/source_4_multi_agent.py",
+      "bytes": 3969,
+      "sha256": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39"
+    },
+    {
+      "path": "742001_continuous_p080/source_5_motionplanner.py",
+      "bytes": 848,
+      "sha256": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531"
+    },
+    {
+      "path": "742001_continuous_p080/source_6_motionplanner.py",
+      "bytes": 7218,
+      "sha256": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+    },
+    {
+      "path": "742001_nominal/MANIFEST.json",
+      "bytes": 2354,
+      "sha256": "698669f7a9bc1bbb518a8b63910873b4bec61a3963e8d45f150792b6f5139204"
+    },
+    {
+      "path": "742001_nominal/RESULTS.json",
+      "bytes": 4583,
+      "sha256": "3db05c653df675face930202e145c3c48adb5c729dabb86411fde58622c36ddf"
+    },
+    {
+      "path": "742001_nominal/TRAJECTORY.json.gz",
+      "bytes": 70767,
+      "sha256": "46aff77226d154c09f67a3a34364f4407e22e354edc2314ceac2fddf0ac9ebe4"
+    },
+    {
+      "path": "742001_nominal/program_multiskill_two_robot.py",
+      "bytes": 13162,
+      "sha256": "878a76d3befc5567620144f1ec698154a05fb19c7ed24b754f946e07a66c1fd9"
+    },
+    {
+      "path": "742001_nominal/source_0_handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "742001_nominal/source_1_method_stack_physics.py",
+      "bytes": 7239,
+      "sha256": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+    },
+    {
+      "path": "742001_nominal/source_2_two_robot_pick_cube.py",
+      "bytes": 10097,
+      "sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba"
+    },
+    {
+      "path": "742001_nominal/source_3_scene_builder.py",
+      "bytes": 10321,
+      "sha256": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a"
+    },
+    {
+      "path": "742001_nominal/source_4_multi_agent.py",
+      "bytes": 3969,
+      "sha256": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39"
+    },
+    {
+      "path": "742001_nominal/source_5_motionplanner.py",
+      "bytes": 848,
+      "sha256": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531"
+    },
+    {
+      "path": "742001_nominal/source_6_motionplanner.py",
+      "bytes": 7218,
+      "sha256": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+    },
+    {
+      "path": "742001_p020_aligned/MANIFEST.json",
+      "bytes": 2473,
+      "sha256": "47ec17905c8941a2609e00ff4c93793cd6cb630a9500844d24ad1b5a2b578e8b"
+    },
+    {
+      "path": "742001_p020_aligned/RESULTS.json",
+      "bytes": 4748,
+      "sha256": "a3932b2c0eacd6e2b3d7c40f68b86ebb7a198e2733fbb4cc6237d22e0722d0d7"
+    },
+    {
+      "path": "742001_p020_aligned/TRAJECTORY.json.gz",
+      "bytes": 93232,
+      "sha256": "79b86b366d1e35f4bb81e0b922579b1b097acffb6899de389c4adb59235aa6e9"
+    },
+    {
+      "path": "742001_p020_aligned/program_multiskill_two_robot.py",
+      "bytes": 13685,
+      "sha256": "08fe007c637ef97a440beedc5917688b55f42860be74650466fd2e9f73d305dd"
+    },
+    {
+      "path": "742001_p020_aligned/source_0_handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "742001_p020_aligned/source_1_method_stack_physics.py",
+      "bytes": 7239,
+      "sha256": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+    },
+    {
+      "path": "742001_p020_aligned/source_2_two_robot_pick_cube.py",
+      "bytes": 10097,
+      "sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba"
+    },
+    {
+      "path": "742001_p020_aligned/source_3_scene_builder.py",
+      "bytes": 10321,
+      "sha256": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a"
+    },
+    {
+      "path": "742001_p020_aligned/source_4_multi_agent.py",
+      "bytes": 3969,
+      "sha256": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39"
+    },
+    {
+      "path": "742001_p020_aligned/source_5_motionplanner.py",
+      "bytes": 848,
+      "sha256": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531"
+    },
+    {
+      "path": "742001_p020_aligned/source_6_motionplanner.py",
+      "bytes": 7218,
+      "sha256": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+    },
+    {
+      "path": "742001_p020_aligned_y/MANIFEST.json",
+      "bytes": 2471,
+      "sha256": "6bf6895087095da2f8781dfc9a13fff41779e438a9838634856e09539feee2dc"
+    },
+    {
+      "path": "742001_p020_aligned_y/RESULTS.json",
+      "bytes": 4771,
+      "sha256": "52837a08921969e173775a7d4523df38c0cba846fc09e9bb62ef65b819415c6c"
+    },
+    {
+      "path": "742001_p020_aligned_y/TRAJECTORY.json.gz",
+      "bytes": 90360,
+      "sha256": "a4dce2622bc63b930837e7c6d97842d224b2f3e9f71739be0a2ce64acdf91d5c"
+    },
+    {
+      "path": "742001_p020_aligned_y/program_multiskill_two_robot.py",
+      "bytes": 13685,
+      "sha256": "08fe007c637ef97a440beedc5917688b55f42860be74650466fd2e9f73d305dd"
+    },
+    {
+      "path": "742001_p020_aligned_y/source_0_handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "742001_p020_aligned_y/source_1_method_stack_physics.py",
+      "bytes": 7239,
+      "sha256": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+    },
+    {
+      "path": "742001_p020_aligned_y/source_2_two_robot_pick_cube.py",
+      "bytes": 10097,
+      "sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba"
+    },
+    {
+      "path": "742001_p020_aligned_y/source_3_scene_builder.py",
+      "bytes": 10321,
+      "sha256": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a"
+    },
+    {
+      "path": "742001_p020_aligned_y/source_4_multi_agent.py",
+      "bytes": 3969,
+      "sha256": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39"
+    },
+    {
+      "path": "742001_p020_aligned_y/source_5_motionplanner.py",
+      "bytes": 848,
+      "sha256": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531"
+    },
+    {
+      "path": "742001_p020_aligned_y/source_6_motionplanner.py",
+      "bytes": 7218,
+      "sha256": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+    },
+    {
+      "path": "742001_stride3/MANIFEST.json",
+      "bytes": 2405,
+      "sha256": "76574679a8ac96b95c3a0f10d98649998d78ffcc6cfa5cb5de61e019ef250fe3"
+    },
+    {
+      "path": "742001_stride3/RESULTS.json",
+      "bytes": 4708,
+      "sha256": "921d55cb9efe9971b2e47e571d2962ca1dccc39edb831b4fd1541829c32ad892"
+    },
+    {
+      "path": "742001_stride3/TRAJECTORY.json.gz",
+      "bytes": 95623,
+      "sha256": "9efe5238c9fd6024679409cbee483bbc64913212378b8665c37ddcccf5fb05f0"
+    },
+    {
+      "path": "742001_stride3/program_multiskill_two_robot.py",
+      "bytes": 13162,
+      "sha256": "878a76d3befc5567620144f1ec698154a05fb19c7ed24b754f946e07a66c1fd9"
+    },
+    {
+      "path": "742001_stride3/source_0_handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "742001_stride3/source_1_method_stack_physics.py",
+      "bytes": 7239,
+      "sha256": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+    },
+    {
+      "path": "742001_stride3/source_2_two_robot_pick_cube.py",
+      "bytes": 10097,
+      "sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba"
+    },
+    {
+      "path": "742001_stride3/source_3_scene_builder.py",
+      "bytes": 10321,
+      "sha256": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a"
+    },
+    {
+      "path": "742001_stride3/source_4_multi_agent.py",
+      "bytes": 3969,
+      "sha256": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39"
+    },
+    {
+      "path": "742001_stride3/source_5_motionplanner.py",
+      "bytes": 848,
+      "sha256": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531"
+    },
+    {
+      "path": "742001_stride3/source_6_motionplanner.py",
+      "bytes": 7218,
+      "sha256": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+    }
+  ],
+  "scope": "complete raw physics traces plus exact per-run source snapshots; no physical hardware data"
+}

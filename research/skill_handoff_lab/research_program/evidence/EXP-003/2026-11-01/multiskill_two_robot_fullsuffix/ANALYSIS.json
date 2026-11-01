@@ -1,0 +1,5049 @@
+{
+  "episodes": 12,
+  "actual_physical_steps": 1200,
+  "native_successes": 10,
+  "optimizer_updates": 0,
+  "same_seed_initial_states_exact": {
+    "742010": true,
+    "742011": true,
+    "742012": true,
+    "742013": true
+  },
+  "resource_context": "SHARED_GPU_CONTENTION; timing not exclusive performance",
+  "rows": [
+    {
+      "prediction": {
+        "selection_objective": "full-suffix",
+        "predicted_suffix_steps": 50,
+        "remaining_budget_at_boundary": 51,
+        "actual_suffix_steps_to_first_native_success": 43,
+        "actual_executed_suffix_motion_steps": 46,
+        "observed_suffix_steps": 51,
+        "success_time_censored": false,
+        "predicted_minus_actual_success_steps": 7
+      },
+      "case": "742010_full_p020",
+      "seed": 742010,
+      "parameters": {
+        "push_y": 0.02,
+        "grasp_axis": "geometry",
+        "path_stride": 3,
+        "controller": "continuous-clear",
+        "align_grasp_sign": true,
+        "axis_objective": "full-suffix"
+      },
+      "resource_context": "SHARED_GPU_CONTENTION",
+      "success": true,
+      "error": null,
+      "steps": 100,
+      "boundaries": [
+        0,
+        49
+      ],
+      "skill_results": [
+        {
+          "skill": "LEFT_PUSH",
+          "boundary_step": 49,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              0.026590636000037193,
+              0.01620042324066162,
+              0.019999876618385315,
+              0.9999998807907104,
+              3.961995389545336e-06,
+              2.4819676127663115e-06,
+              -0.0003311464097350836
+            ],
+            "goal": [
+              0.03570866957306862,
+              0.1314740926027298,
+              0.232608363032341,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -0.000463437958387658,
+              -0.00022826422355137765,
+              -6.364317232510075e-05
+            ],
+            "cube_angular_velocity": [
+              0.00871241558343172,
+              -0.0136933708563447,
+              -0.0003325951111037284
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 51,
+            "cube_goal_distance_m": 0.2420196831226349,
+            "0": {
+              "q": [
+                -0.02595723606646061,
+                0.27933868765830994,
+                -0.03112880326807499,
+                -2.2288684844970703,
+                0.014433826319873333,
+                2.505500078201294,
+                0.7182102799415588,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                0.0007621144759468734,
+                -0.05480095371603966,
+                -0.0013054340379312634,
+                -0.08809571713209152,
+                -0.001549772685393691,
+                0.008340909145772457,
+                -0.0009831212228164077,
+                -4.692256879934575e-06,
+                -5.171820703253616e-06
+              ],
+              "tcp": [
+                0.03143635392189026,
+                -0.20323556661605835,
+                0.14275605976581573,
+                0.0008452996844425797,
+                0.7072207927703857,
+                0.7069915533065796,
+                -0.000940087134949863
+              ],
+              "tcp_T_cube": [
+                0.21974363923072815,
+                -0.004900496453046799,
+                0.12220238894224167,
+                0.000850167591124773,
+                -0.7069866061210632,
+                -0.7072256803512573,
+                0.0009408528567291796
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.02425530180335045,
+                0.40139079093933105,
+                -0.022659756243228912,
+                -1.9865913391113281,
+                -0.009428195655345917,
+                2.373929262161255,
+                0.7834233641624451,
+                0.03999999910593033,
+                0.03999999910593033
+              ],
+              "qvel": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tcp": [
+                -0.000279991771094501,
+                0.14261557161808014,
+                0.15653881430625916,
+                0.0004884674563072622,
+                0.7113469839096069,
+                -0.7027642130851746,
+                -0.010373696684837341
+              ],
+              "tcp_T_cube": [
+                0.1286381036043167,
+                -0.027403298765420914,
+                0.1343391090631485,
+                0.0004929767455905676,
+                -0.7115796208381653,
+                0.7025286555290222,
+                0.010368983261287212
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          },
+          "postcondition": "cube y>=0 and on table; velocity retained, not silently declared settled"
+        },
+        {
+          "skill": "RIGHT_PICK_TO_GOAL",
+          "boundary_step": 100,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              0.03479614108800888,
+              0.1314558982849121,
+              0.2321189045906067,
+              0.9999867677688599,
+              0.00299373478628695,
+              0.0013895496958866715,
+              -0.003935909364372492
+            ],
+            "goal": [
+              0.03570866957306862,
+              0.1314740926027298,
+              0.232608363032341,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              0.0011339611373841763,
+              0.04813065379858017,
+              0.06506327539682388
+            ],
+            "cube_angular_velocity": [
+              0.27477872371673584,
+              -4.225942611694336,
+              2.679849147796631
+            ],
+            "native_success": true,
+            "contact_valid": true,
+            "remaining_steps": 0,
+            "cube_goal_distance_m": 0.0010356683051213622,
+            "0": {
+              "q": [
+                -0.025890886783599854,
+                0.27421751618385315,
+                -0.03126416355371475,
+                -2.237245559692383,
+                0.014271624386310577,
+                2.5063865184783936,
+                0.7181185483932495,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                4.421574146817875e-07,
+                -1.009551215247484e-05,
+                -1.308566766056174e-06,
+                -0.00013746180047746748,
+                -6.873910933791194e-07,
+                0.00015954872651491314,
+                -3.8906626286916435e-05,
+                -5.0268408813280985e-06,
+                -4.8489405344298575e-06
+              ],
+              "tcp": [
+                0.031330980360507965,
+                -0.20602528750896454,
+                0.14244191348552704,
+                0.0016317928675562143,
+                0.7071883678436279,
+                0.7070208191871643,
+                -0.0018276820192113519
+              ],
+              "tcp_T_cube": [
+                0.33703917264938354,
+                0.0033602118492126465,
+                -0.09132795035839081,
+                0.004738539922982454,
+                -0.7043939232826233,
+                -0.709787130355835,
+                0.0029551945626735687
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.06339957565069199,
+                0.29004502296447754,
+                -0.007176443934440613,
+                -1.9275305271148682,
+                0.0008177802665159106,
+                2.2233035564422607,
+                0.8450540900230408,
+                0.018245548009872437,
+                0.01827615313231945
+              ],
+              "qvel": [
+                0.00021239650959614664,
+                -0.004929038230329752,
+                -0.00025607773568481207,
+                -0.008434663526713848,
+                -0.0011217461433261633,
+                0.0020142868161201477,
+                0.0053215292282402515,
+                0.019550252705812454,
+                -0.016319064423441887
+              ],
+              "tcp": [
+                0.03462712839245796,
+                0.13618391752243042,
+                0.23674985766410828,
+                0.002430056454613805,
+                0.7058219909667969,
+                -0.7083830237388611,
+                0.001676437328569591
+              ],
+              "tcp_T_cube": [
+                0.004700422286987305,
+                -0.00019105151295661926,
+                0.004658147692680359,
+                0.0035521360114216805,
+                -0.7085911631584167,
+                0.705594003200531,
+                -0.004787465091794729
+              ],
+              "grasped": true,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 27.868019104003906,
+                "panda_rightfinger": 27.869888305664062,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          }
+        }
+      ],
+      "initial_sha256": "53ef3d7160f9fa6aae34ee58858442167e32fc0516f27166ae3fb389a4870896",
+      "final_goal_distance_m": 0.0010356683051213622,
+      "first_native_success_step": 92,
+      "tracking": {
+        "0": {
+          "max_abs_joint_tracking_error_rad": 0.1724168806816011,
+          "median_abs_joint_tracking_error_rad": 5.246220474069106e-05,
+          "max_abs_qvel_rad_s": 1.7886264324188232
+        },
+        "1": {
+          "max_abs_joint_tracking_error_rad": 0.13923766383399555,
+          "median_abs_joint_tracking_error_rad": 5.690380930900574e-07,
+          "max_abs_qvel_rad_s": 1.5240594148635864
+        }
+      },
+      "phases": {
+        "LEFT_REACH": {
+          "steps": 8,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_CONTACT_APPROACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_PUSH": {
+          "steps": 16,
+          "peak_link_cube_force_N": 0.4271015524864197
+        },
+        "LEFT_RELEASE": {
+          "steps": 16,
+          "peak_link_cube_force_N": 0.0
+        },
+        "PUSH_SETTLE": {
+          "steps": 2,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_REACH": {
+          "steps": 12,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_DESCEND": {
+          "steps": 6,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_CLOSE": {
+          "steps": 6,
+          "peak_link_cube_force_N": 28.100305557250977
+        },
+        "RIGHT_LIFT": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.8955020904541
+        },
+        "RIGHT_TO_GOAL": {
+          "steps": 12,
+          "peak_link_cube_force_N": 27.8878116607666
+        },
+        "RIGHT_GOAL_FEEDBACK": {
+          "steps": 4,
+          "peak_link_cube_force_N": 27.88803482055664
+        },
+        "TERMINAL_HOLD": {
+          "steps": 5,
+          "peak_link_cube_force_N": 27.870269775390625
+        }
+      },
+      "wall_s": 9.592237485048827,
+      "planning_wall_s": 0.10408598906360567,
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742010_full_p020/TRAJECTORY.json.gz",
+      "sha256": "6973a5b3a30e4163e3091cf045c8fc0b03aa5a371a5f12f9e8932c60d70b8678"
+    },
+    {
+      "prediction": {
+        "selection_objective": "full-suffix",
+        "predicted_suffix_steps": 57,
+        "remaining_budget_at_boundary": 51,
+        "actual_suffix_steps_to_first_native_success": 50,
+        "actual_executed_suffix_motion_steps": 51,
+        "observed_suffix_steps": 51,
+        "success_time_censored": false,
+        "predicted_minus_actual_success_steps": 7
+      },
+      "case": "742010_full_p020_other",
+      "seed": 742010,
+      "parameters": {
+        "push_y": 0.02,
+        "grasp_axis": "cube_y",
+        "path_stride": 3,
+        "controller": "continuous-clear",
+        "align_grasp_sign": true,
+        "axis_objective": "full-suffix"
+      },
+      "resource_context": "SHARED_GPU_CONTENTION",
+      "success": true,
+      "error": "Horizon: NATIVE100",
+      "steps": 100,
+      "boundaries": [
+        0,
+        49
+      ],
+      "skill_results": [
+        {
+          "skill": "LEFT_PUSH",
+          "boundary_step": 49,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              0.026590636000037193,
+              0.01620042324066162,
+              0.019999876618385315,
+              0.9999998807907104,
+              3.961995389545336e-06,
+              2.4819676127663115e-06,
+              -0.0003311464097350836
+            ],
+            "goal": [
+              0.03570866957306862,
+              0.1314740926027298,
+              0.232608363032341,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -0.000463437958387658,
+              -0.00022826422355137765,
+              -6.364317232510075e-05
+            ],
+            "cube_angular_velocity": [
+              0.00871241558343172,
+              -0.0136933708563447,
+              -0.0003325951111037284
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 51,
+            "cube_goal_distance_m": 0.2420196831226349,
+            "0": {
+              "q": [
+                -0.02595723606646061,
+                0.27933868765830994,
+                -0.03112880326807499,
+                -2.2288684844970703,
+                0.014433826319873333,
+                2.505500078201294,
+                0.7182102799415588,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                0.0007621144759468734,
+                -0.05480095371603966,
+                -0.0013054340379312634,
+                -0.08809571713209152,
+                -0.001549772685393691,
+                0.008340909145772457,
+                -0.0009831212228164077,
+                -4.692256879934575e-06,
+                -5.171820703253616e-06
+              ],
+              "tcp": [
+                0.03143635392189026,
+                -0.20323556661605835,
+                0.14275605976581573,
+                0.0008452996844425797,
+                0.7072207927703857,
+                0.7069915533065796,
+                -0.000940087134949863
+              ],
+              "tcp_T_cube": [
+                0.21974363923072815,
+                -0.004900496453046799,
+                0.12220238894224167,
+                0.000850167591124773,
+                -0.7069866061210632,
+                -0.7072256803512573,
+                0.0009408528567291796
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.02425530180335045,
+                0.40139079093933105,
+                -0.022659756243228912,
+                -1.9865913391113281,
+                -0.009428195655345917,
+                2.373929262161255,
+                0.7834233641624451,
+                0.03999999910593033,
+                0.03999999910593033
+              ],
+              "qvel": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tcp": [
+                -0.000279991771094501,
+                0.14261557161808014,
+                0.15653881430625916,
+                0.0004884674563072622,
+                0.7113469839096069,
+                -0.7027642130851746,
+                -0.010373696684837341
+              ],
+              "tcp_T_cube": [
+                0.1286381036043167,
+                -0.027403298765420914,
+                0.1343391090631485,
+                0.0004929767455905676,
+                -0.7115796208381653,
+                0.7025286555290222,
+                0.010368983261287212
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          },
+          "postcondition": "cube y>=0 and on table; velocity retained, not silently declared settled"
+        },
+        {
+          "skill": "RIGHT_PICK_TO_GOAL",
+          "boundary_step": 100,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              0.03694141283631325,
+              0.12195965647697449,
+              0.22501271963119507,
+              0.9997356534004211,
+              -0.02234775759279728,
+              0.004235480446368456,
+              0.003351000137627125
+            ],
+            "goal": [
+              0.03570866957306862,
+              0.1314740926027298,
+              0.232608363032341,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -0.02712545357644558,
+              0.0348353311419487,
+              0.06719661504030228
+            ],
+            "cube_angular_velocity": [
+              2.046790838241577,
+              -0.45958974957466125,
+              1.6376698017120361
+            ],
+            "native_success": true,
+            "contact_valid": true,
+            "remaining_steps": 0,
+            "cube_goal_distance_m": 0.012236746028065681,
+            "0": {
+              "q": [
+                -0.025890886783599854,
+                0.27421751618385315,
+                -0.03126416355371475,
+                -2.237245559692383,
+                0.014271624386310577,
+                2.5063865184783936,
+                0.7181185483932495,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                4.421574146817875e-07,
+                -1.009551215247484e-05,
+                -1.308566766056174e-06,
+                -0.00013746180047746748,
+                -6.873910933791194e-07,
+                0.00015954872651491314,
+                -3.8906626286916435e-05,
+                -5.0268408813280985e-06,
+                -4.8489405344298575e-06
+              ],
+              "tcp": [
+                0.031330980360507965,
+                -0.20602528750896454,
+                0.14244191348552704,
+                0.0016317928675562143,
+                0.7071883678436279,
+                0.7070208191871643,
+                -0.0018276820192113519
+              ],
+              "tcp_T_cube": [
+                0.3275783061981201,
+                0.005509685724973679,
+                -0.0841759741306305,
+                -0.011184264905750751,
+                -0.7094148993492126,
+                -0.7044980525970459,
+                -0.016962945461273193
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                -0.23918955028057098,
+                0.3418804109096527,
+                0.32329416275024414,
+                -1.8894389867782593,
+                -0.14634405076503754,
+                2.2365012168884277,
+                -0.6351728439331055,
+                0.018265703693032265,
+                0.018299512565135956
+              ],
+              "qvel": [
+                -0.024488156661391258,
+                -0.056379374116659164,
+                0.01581677235662937,
+                -0.06424129009246826,
+                0.06064815819263458,
+                -0.060054097324609756,
+                -0.028406398370862007,
+                0.020585961639881134,
+                -0.0195714570581913
+              ],
+              "tcp": [
+                0.0362958163022995,
+                0.12197317183017731,
+                0.23277825117111206,
+                0.013582443818449974,
+                0.9999001622200012,
+                0.002078509423881769,
+                -0.0032646178733557463
+              ],
+              "tcp_T_cube": [
+                0.000696670264005661,
+                -0.0001945793628692627,
+                0.007758691906929016,
+                -0.008768808096647263,
+                -0.99996018409729,
+                0.0012572770938277245,
+                -0.0009722381946630776
+              ],
+              "grasped": true,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 27.79310417175293,
+                "panda_rightfinger": 27.841360092163086,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          }
+        }
+      ],
+      "initial_sha256": "53ef3d7160f9fa6aae34ee58858442167e32fc0516f27166ae3fb389a4870896",
+      "final_goal_distance_m": 0.012236746028065681,
+      "first_native_success_step": 99,
+      "tracking": {
+        "0": {
+          "max_abs_joint_tracking_error_rad": 0.1724168806816011,
+          "median_abs_joint_tracking_error_rad": 5.246220474069106e-05,
+          "max_abs_qvel_rad_s": 1.7886264324188232
+        },
+        "1": {
+          "max_abs_joint_tracking_error_rad": 0.20318384043090565,
+          "median_abs_joint_tracking_error_rad": 2.384185791015625e-07,
+          "max_abs_qvel_rad_s": 2.033876895904541
+        }
+      },
+      "phases": {
+        "LEFT_REACH": {
+          "steps": 8,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_CONTACT_APPROACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_PUSH": {
+          "steps": 16,
+          "peak_link_cube_force_N": 0.4271015524864197
+        },
+        "LEFT_RELEASE": {
+          "steps": 16,
+          "peak_link_cube_force_N": 0.0
+        },
+        "PUSH_SETTLE": {
+          "steps": 2,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_REACH": {
+          "steps": 20,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_DESCEND": {
+          "steps": 5,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_CLOSE": {
+          "steps": 6,
+          "peak_link_cube_force_N": 29.52703094482422
+        },
+        "RIGHT_LIFT": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.890819549560547
+        },
+        "RIGHT_TO_GOAL": {
+          "steps": 12,
+          "peak_link_cube_force_N": 27.9580020904541
+        },
+        "RIGHT_GOAL_FEEDBACK": {
+          "steps": 2,
+          "peak_link_cube_force_N": 27.841360092163086
+        }
+      },
+      "wall_s": 10.412268611020409,
+      "planning_wall_s": 0.0807715049595572,
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742010_full_p020_other/TRAJECTORY.json.gz",
+      "sha256": "1b9292661c9f59ed39b28248ffd10fe7df3170a73c54afa3496c0c63a22b14e4"
+    },
+    {
+      "prediction": {
+        "selection_objective": "full-suffix",
+        "predicted_suffix_steps": 44,
+        "remaining_budget_at_boundary": 44,
+        "actual_suffix_steps_to_first_native_success": 41,
+        "actual_executed_suffix_motion_steps": 39,
+        "observed_suffix_steps": 44,
+        "success_time_censored": false,
+        "predicted_minus_actual_success_steps": 3
+      },
+      "case": "742010_full_p050",
+      "seed": 742010,
+      "parameters": {
+        "push_y": 0.05,
+        "grasp_axis": "geometry",
+        "path_stride": 3,
+        "controller": "continuous-clear",
+        "align_grasp_sign": true,
+        "axis_objective": "full-suffix"
+      },
+      "resource_context": "SHARED_GPU_CONTENTION",
+      "success": true,
+      "error": null,
+      "steps": 100,
+      "boundaries": [
+        0,
+        56
+      ],
+      "skill_results": [
+        {
+          "skill": "LEFT_PUSH",
+          "boundary_step": 56,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              0.022024452686309814,
+              0.05106840282678604,
+              0.019999932497739792,
+              0.9999998807907104,
+              6.521992872876581e-06,
+              -6.065226898499532e-06,
+              -0.00020827219123020768
+            ],
+            "goal": [
+              0.03570866957306862,
+              0.1314740926027298,
+              0.232608363032341,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -8.39029235066846e-06,
+              -0.0001651088532526046,
+              -0.0001148299197666347
+            ],
+            "cube_angular_velocity": [
+              0.008052509278059006,
+              -0.0004654813965316862,
+              3.5686720366356894e-05
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 44,
+            "cube_goal_distance_m": 0.22771622240543365,
+            "0": {
+              "q": [
+                -0.018524663522839546,
+                0.27988800406455994,
+                -0.030371299013495445,
+                -2.228449583053589,
+                0.013982666656374931,
+                2.5064613819122314,
+                0.726781964302063,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                0.0007828163215890527,
+                -0.1197207123041153,
+                -0.002774035558104515,
+                -0.1666083186864853,
+                -0.003150966949760914,
+                0.022558514028787613,
+                -0.0014937262749299407,
+                -4.766635811392916e-06,
+                -5.097758275951492e-06
+              ],
+              "tcp": [
+                0.02697618119418621,
+                -0.2027033418416977,
+                0.14269530773162842,
+                0.0006087059737183154,
+                0.7072368264198303,
+                0.7069761157035828,
+                -0.0006003216258250177
+              ],
+              "tcp_T_cube": [
+                0.25397926568984985,
+                -0.005046797916293144,
+                0.12226123362779617,
+                0.000609155569691211,
+                -0.7070895433425903,
+                -0.707123339176178,
+                0.0006090952665545046
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.02425530180335045,
+                0.40139079093933105,
+                -0.022659756243228912,
+                -1.9865913391113281,
+                -0.009428195655345917,
+                2.373929262161255,
+                0.7834233641624451,
+                0.03999999910593033,
+                0.03999999910593033
+              ],
+              "qvel": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tcp": [
+                -0.000279991771094501,
+                0.14261557161808014,
+                0.15653881430625916,
+                0.0004884674563072622,
+                0.7113469839096069,
+                -0.7027642130851746,
+                -0.010373696684837341
+              ],
+              "tcp_T_cube": [
+                0.0937211737036705,
+                -0.0232649277895689,
+                0.1348937302827835,
+                0.0004995297640562057,
+                -0.7114932537078857,
+                0.7026160359382629,
+                0.010373326018452644
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          },
+          "postcondition": "cube y>=0 and on table; velocity retained, not silently declared settled"
+        },
+        {
+          "skill": "RIGHT_PICK_TO_GOAL",
+          "boundary_step": 100,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              0.034579601138830185,
+              0.13523486256599426,
+              0.22890503704547882,
+              0.9999914765357971,
+              0.0019366098567843437,
+              0.0012219847412779927,
+              -0.003423200687393546
+            ],
+            "goal": [
+              0.03570866957306862,
+              0.1314740926027298,
+              0.232608363032341,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -0.003201716812327504,
+              0.05981144681572914,
+              0.06066287308931351
+            ],
+            "cube_angular_velocity": [
+              0.3071143925189972,
+              -4.354561805725098,
+              2.779012680053711
+            ],
+            "native_success": true,
+            "contact_valid": true,
+            "remaining_steps": 0,
+            "cube_goal_distance_m": 0.005397481843829155,
+            "0": {
+              "q": [
+                -0.01844552904367447,
+                0.269082635641098,
+                -0.0306464321911335,
+                -2.2445974349975586,
+                0.013667242601513863,
+                2.5087785720825195,
+                0.7266408205032349,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                5.31897171640594e-07,
+                -1.0657535312930122e-05,
+                1.2244220748414136e-08,
+                -0.00013751117512583733,
+                -6.77774266932829e-07,
+                0.0001530488079879433,
+                -3.890690641128458e-05,
+                -5.023501216783188e-06,
+                -4.810796781384852e-06
+              ],
+              "tcp": [
+                0.026861323043704033,
+                -0.20778360962867737,
+                0.14264743030071259,
+                0.0016156242927536368,
+                0.7072077989578247,
+                0.7070017457008362,
+                -0.0017315263394266367
+              ],
+              "tcp_T_cube": [
+                0.3426085412502289,
+                0.007604122161865234,
+                -0.08788160979747772,
+                0.0038550689350813627,
+                -0.7047805786132812,
+                -0.7094113230705261,
+                0.002230970188975334
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.06314654648303986,
+                0.2806122601032257,
+                -0.006873341742902994,
+                -1.9503040313720703,
+                0.0007024730439297855,
+                2.2406651973724365,
+                0.844174861907959,
+                0.01824154332280159,
+                0.01827174611389637
+              ],
+              "qvel": [
+                -0.004068042151629925,
+                -0.014305182732641697,
+                -0.0026188278570771217,
+                -0.033733777701854706,
+                -0.0014473297633230686,
+                -0.006551007740199566,
+                0.00742306187748909,
+                0.02051459066569805,
+                -0.015383939258754253
+              ],
+              "tcp": [
+                0.03440409526228905,
+                0.14021605253219604,
+                0.23395922780036926,
+                0.0037489845417439938,
+                0.7061575055122375,
+                -0.7080376148223877,
+                0.003193000564351678
+              ],
+              "tcp_T_cube": [
+                0.004930838942527771,
+                -0.00019267573952674866,
+                0.005102694034576416,
+                0.00424036243930459,
+                -0.7085641026496887,
+                0.7056126594543457,
+                -0.0054399133659899235
+              ],
+              "grasped": true,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 27.869842529296875,
+                "panda_rightfinger": 27.869091033935547,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          }
+        }
+      ],
+      "initial_sha256": "53ef3d7160f9fa6aae34ee58858442167e32fc0516f27166ae3fb389a4870896",
+      "final_goal_distance_m": 0.005397481843829155,
+      "first_native_success_step": 97,
+      "tracking": {
+        "0": {
+          "max_abs_joint_tracking_error_rad": 0.19615891883057812,
+          "median_abs_joint_tracking_error_rad": 0.0002664963482903234,
+          "max_abs_qvel_rad_s": 1.9962154626846313
+        },
+        "1": {
+          "max_abs_joint_tracking_error_rad": 0.12749190568633506,
+          "median_abs_joint_tracking_error_rad": 0.0,
+          "max_abs_qvel_rad_s": 1.390614628791809
+        }
+      },
+      "phases": {
+        "LEFT_REACH": {
+          "steps": 8,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_CONTACT_APPROACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_PUSH": {
+          "steps": 22,
+          "peak_link_cube_force_N": 0.2826293110847473
+        },
+        "LEFT_RELEASE": {
+          "steps": 17,
+          "peak_link_cube_force_N": 0.0
+        },
+        "PUSH_SETTLE": {
+          "steps": 2,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_REACH": {
+          "steps": 10,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_DESCEND": {
+          "steps": 6,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_CLOSE": {
+          "steps": 6,
+          "peak_link_cube_force_N": 28.291942596435547
+        },
+        "RIGHT_LIFT": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.91299057006836
+        },
+        "RIGHT_TO_GOAL": {
+          "steps": 11,
+          "peak_link_cube_force_N": 27.89777183532715
+        },
+        "TERMINAL_HOLD": {
+          "steps": 5,
+          "peak_link_cube_force_N": 27.879480361938477
+        }
+      },
+      "wall_s": 9.552821949007921,
+      "planning_wall_s": 0.09340317407622933,
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742010_full_p050/TRAJECTORY.json.gz",
+      "sha256": "b43ad2e80dd15ce65440ebbb6e1bdbfe71c211a24712fe65060aba86137238e1"
+    },
+    {
+      "prediction": {
+        "selection_objective": "full-suffix",
+        "predicted_suffix_steps": 48,
+        "remaining_budget_at_boundary": 47,
+        "actual_suffix_steps_to_first_native_success": 46,
+        "actual_executed_suffix_motion_steps": 44,
+        "observed_suffix_steps": 47,
+        "success_time_censored": false,
+        "predicted_minus_actual_success_steps": 2
+      },
+      "case": "742011_full_p020",
+      "seed": 742011,
+      "parameters": {
+        "push_y": 0.02,
+        "grasp_axis": "geometry",
+        "path_stride": 3,
+        "controller": "continuous-clear",
+        "align_grasp_sign": true,
+        "axis_objective": "full-suffix"
+      },
+      "resource_context": "SHARED_GPU_CONTENTION",
+      "success": true,
+      "error": null,
+      "steps": 100,
+      "boundaries": [
+        0,
+        53
+      ],
+      "skill_results": [
+        {
+          "skill": "LEFT_PUSH",
+          "boundary_step": 53,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              -0.0004390777030494064,
+              0.021959213539958,
+              0.02000000886619091,
+              0.9994952082633972,
+              4.045796231366694e-06,
+              -4.220030859869439e-06,
+              -0.03176682069897652
+            ],
+            "goal": [
+              -0.04111656919121742,
+              0.17447714507579803,
+              0.02841157466173172,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -1.5533205441897735e-05,
+              -0.00026369758415967226,
+              -0.0001113218895625323
+            ],
+            "cube_angular_velocity": [
+              0.0093042878434062,
+              -0.0003281167009845376,
+              0.0002321482461411506
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 47,
+            "cube_goal_distance_m": 0.15807318687438965,
+            "0": {
+              "q": [
+                -0.01785971038043499,
+                0.28124144673347473,
+                -0.008630531840026379,
+                -2.2249755859375,
+                0.006856432184576988,
+                2.5057475566864014,
+                0.7551364302635193,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -0.0012660038191825151,
+                -0.12081827968358994,
+                -0.0014150706119835377,
+                -0.16414868831634521,
+                -0.0005071131745353341,
+                0.01475334819406271,
+                -0.0016981476219370961,
+                -4.997362793801585e-06,
+                -4.919747425446985e-06
+              ],
+              "tcp": [
+                0.01444315630942583,
+                -0.20102572441101074,
+                0.1431518942117691,
+                -0.0004531655868049711,
+                0.7076038718223572,
+                0.7066087126731873,
+                -0.0007400777540169656
+              ],
+              "tcp_T_cube": [
+                0.22301383316516876,
+                -0.014988305978477001,
+                0.1230865865945816,
+                -0.0004295459948480129,
+                -0.6847999691963196,
+                -0.7287303805351257,
+                0.000759944727178663
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.002705293707549572,
+                0.3877759575843811,
+                0.01485210657119751,
+                -1.9414974451065063,
+                0.008869707584381104,
+                2.357165813446045,
+                0.7790756821632385,
+                0.03999999910593033,
+                0.03999999910593033
+              ],
+              "qvel": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tcp": [
+                0.011898936703801155,
+                0.12492139637470245,
+                0.1822752058506012,
+                0.005565563682466745,
+                0.7128369808197021,
+                -0.7011653780937195,
+                0.014128296636044979
+              ],
+              "tcp_T_cube": [
+                0.09817155450582504,
+                0.015979532152414322,
+                0.16490505635738373,
+                0.005119786132127047,
+                -0.7347509860992432,
+                0.6781668066978455,
+                -0.014297793619334698
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          },
+          "postcondition": "cube y>=0 and on table; velocity retained, not silently declared settled"
+        },
+        {
+          "skill": "RIGHT_PICK_TO_GOAL",
+          "boundary_step": 100,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              -0.040894802659749985,
+              0.17751337587833405,
+              0.029110588133335114,
+              0.9993317127227783,
+              -0.002120604505762458,
+              0.0012270634761080146,
+              -0.036470677703619
+            ],
+            "goal": [
+              -0.04111656919121742,
+              0.17447714507579803,
+              0.02841157466173172,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              0.009610901586711407,
+              0.06998838484287262,
+              0.02688528597354889
+            ],
+            "cube_angular_velocity": [
+              0.6220792531967163,
+              -1.8778387308120728,
+              3.232076644897461
+            ],
+            "native_success": true,
+            "contact_valid": true,
+            "remaining_steps": 0,
+            "cube_goal_distance_m": 0.0031235392671078444,
+            "0": {
+              "q": [
+                -0.018044691532850266,
+                0.27043139934539795,
+                -0.008801067247986794,
+                -2.240952968597412,
+                0.0068086846731603146,
+                2.507272720336914,
+                0.7549745440483093,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -6.067559752409579e-07,
+                -1.0376586033089552e-05,
+                5.139616519045376e-07,
+                -0.00013745790056418628,
+                -3.4603661447363265e-07,
+                0.0001595526555320248,
+                -3.7285983125912026e-05,
+                -4.998404165235115e-06,
+                -4.858842203248059e-06
+              ],
+              "tcp": [
+                0.014508569613099098,
+                -0.20618794858455658,
+                0.1431044340133667,
+                0.00079791818279773,
+                0.7076703906059265,
+                0.7065392136573792,
+                -0.0020627977792173624
+              ],
+              "tcp_T_cube": [
+                0.38407057523727417,
+                -0.05581483989953995,
+                0.11254023015499115,
+                0.0002388959692325443,
+                -0.6814336776733398,
+                -0.7318796515464783,
+                -0.00033432815689593554
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                -0.05479683727025986,
+                0.5906752943992615,
+                -0.015143081545829773,
+                -2.116110324859619,
+                0.015426333993673325,
+                2.700732707977295,
+                0.7721409201622009,
+                0.018250852823257446,
+                0.018273910507559776
+              ],
+              "qvel": [
+                -0.001607692800462246,
+                -0.042501889169216156,
+                0.005513784475624561,
+                -0.08300133049488068,
+                -5.4420073865912855e-05,
+                0.0720861628651619,
+                -0.008661702275276184,
+                0.019435498863458633,
+                -0.009735689498484135
+              ],
+              "tcp": [
+                -0.04066172614693642,
+                0.1836235374212265,
+                0.025106705725193024,
+                -0.001542003476060927,
+                0.6826164126396179,
+                -0.7307702302932739,
+                -0.0027092606760561466
+              ],
+              "tcp_T_cube": [
+                0.006087899208068848,
+                -0.00017587095499038696,
+                -0.004040524363517761,
+                -0.003786425106227398,
+                -0.7088119983673096,
+                0.7053787708282471,
+                0.0034757491666823626
+              ],
+              "grasped": true,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 27.965763092041016,
+                "panda_rightfinger": 27.964523315429688,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          }
+        }
+      ],
+      "initial_sha256": "9b0a3df5077e0419bb2fd430ca8628429839270d8258487cdaf55b5496bf83ed",
+      "final_goal_distance_m": 0.0031235392671078444,
+      "first_native_success_step": 99,
+      "tracking": {
+        "0": {
+          "max_abs_joint_tracking_error_rad": 0.17895498481713368,
+          "median_abs_joint_tracking_error_rad": 0.00011640091720389314,
+          "max_abs_qvel_rad_s": 1.8629751205444336
+        },
+        "1": {
+          "max_abs_joint_tracking_error_rad": 0.14730457885306514,
+          "median_abs_joint_tracking_error_rad": 0.0,
+          "max_abs_qvel_rad_s": 1.5323537588119507
+        }
+      },
+      "phases": {
+        "LEFT_REACH": {
+          "steps": 9,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_CONTACT_APPROACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_PUSH": {
+          "steps": 20,
+          "peak_link_cube_force_N": 0.9264903664588928
+        },
+        "LEFT_RELEASE": {
+          "steps": 15,
+          "peak_link_cube_force_N": 0.0
+        },
+        "PUSH_SETTLE": {
+          "steps": 2,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_REACH": {
+          "steps": 11,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_DESCEND": {
+          "steps": 8,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_CLOSE": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.890104293823242
+        },
+        "RIGHT_LIFT": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.893198013305664
+        },
+        "RIGHT_TO_GOAL": {
+          "steps": 13,
+          "peak_link_cube_force_N": 27.97871208190918
+        },
+        "TERMINAL_HOLD": {
+          "steps": 3,
+          "peak_link_cube_force_N": 27.9730224609375
+        }
+      },
+      "wall_s": 9.656676854996476,
+      "planning_wall_s": 0.13908202102174982,
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742011_full_p020/TRAJECTORY.json.gz",
+      "sha256": "4310eb26fa15038ef19d2419c3c517809ac1325b635bf8cea74fc3cad752b85b"
+    },
+    {
+      "prediction": {
+        "selection_objective": "full-suffix",
+        "predicted_suffix_steps": 55,
+        "remaining_budget_at_boundary": 47,
+        "actual_suffix_steps_to_first_native_success": null,
+        "actual_executed_suffix_motion_steps": 47,
+        "observed_suffix_steps": 47,
+        "success_time_censored": true
+      },
+      "case": "742011_full_p020_other",
+      "seed": 742011,
+      "parameters": {
+        "push_y": 0.02,
+        "grasp_axis": "cube_y",
+        "path_stride": 3,
+        "controller": "continuous-clear",
+        "align_grasp_sign": true,
+        "axis_objective": "full-suffix"
+      },
+      "resource_context": "SHARED_GPU_CONTENTION",
+      "success": false,
+      "error": "Horizon: NATIVE100",
+      "steps": 100,
+      "boundaries": [
+        0,
+        53
+      ],
+      "skill_results": [
+        {
+          "skill": "LEFT_PUSH",
+          "boundary_step": 53,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              -0.0004390777030494064,
+              0.021959213539958,
+              0.02000000886619091,
+              0.9994952082633972,
+              4.045796231366694e-06,
+              -4.220030859869439e-06,
+              -0.03176682069897652
+            ],
+            "goal": [
+              -0.04111656919121742,
+              0.17447714507579803,
+              0.02841157466173172,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -1.5533205441897735e-05,
+              -0.00026369758415967226,
+              -0.0001113218895625323
+            ],
+            "cube_angular_velocity": [
+              0.0093042878434062,
+              -0.0003281167009845376,
+              0.0002321482461411506
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 47,
+            "cube_goal_distance_m": 0.15807318687438965,
+            "0": {
+              "q": [
+                -0.01785971038043499,
+                0.28124144673347473,
+                -0.008630531840026379,
+                -2.2249755859375,
+                0.006856432184576988,
+                2.5057475566864014,
+                0.7551364302635193,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -0.0012660038191825151,
+                -0.12081827968358994,
+                -0.0014150706119835377,
+                -0.16414868831634521,
+                -0.0005071131745353341,
+                0.01475334819406271,
+                -0.0016981476219370961,
+                -4.997362793801585e-06,
+                -4.919747425446985e-06
+              ],
+              "tcp": [
+                0.01444315630942583,
+                -0.20102572441101074,
+                0.1431518942117691,
+                -0.0004531655868049711,
+                0.7076038718223572,
+                0.7066087126731873,
+                -0.0007400777540169656
+              ],
+              "tcp_T_cube": [
+                0.22301383316516876,
+                -0.014988305978477001,
+                0.1230865865945816,
+                -0.0004295459948480129,
+                -0.6847999691963196,
+                -0.7287303805351257,
+                0.000759944727178663
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.002705293707549572,
+                0.3877759575843811,
+                0.01485210657119751,
+                -1.9414974451065063,
+                0.008869707584381104,
+                2.357165813446045,
+                0.7790756821632385,
+                0.03999999910593033,
+                0.03999999910593033
+              ],
+              "qvel": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tcp": [
+                0.011898936703801155,
+                0.12492139637470245,
+                0.1822752058506012,
+                0.005565563682466745,
+                0.7128369808197021,
+                -0.7011653780937195,
+                0.014128296636044979
+              ],
+              "tcp_T_cube": [
+                0.09817155450582504,
+                0.015979532152414322,
+                0.16490505635738373,
+                0.005119786132127047,
+                -0.7347509860992432,
+                0.6781668066978455,
+                -0.014297793619334698
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          },
+          "postcondition": "cube y>=0 and on table; velocity retained, not silently declared settled"
+        },
+        {
+          "skill": "RIGHT_PICK_TO_GOAL",
+          "boundary_step": 100,
+          "physical_success": false,
+          "measurement": {
+            "cube": [
+              -0.03409631922841072,
+              0.1487162709236145,
+              0.03540155291557312,
+              0.9994307160377502,
+              -0.0022686852607876062,
+              0.0010178658412769437,
+              -0.03364460542798042
+            ],
+            "goal": [
+              -0.04111656919121742,
+              0.17447714507579803,
+              0.02841157466173172,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -0.1137947142124176,
+              0.2817608714103699,
+              -0.016761578619480133
+            ],
+            "cube_angular_velocity": [
+              4.17292594909668,
+              -0.3391468822956085,
+              1.8469417095184326
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 0,
+            "cube_goal_distance_m": 0.027600115165114403,
+            "0": {
+              "q": [
+                -0.018044691532850266,
+                0.27043139934539795,
+                -0.008801067247986794,
+                -2.240952968597412,
+                0.0068086846731603146,
+                2.507272720336914,
+                0.7549745440483093,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -6.067559752409579e-07,
+                -1.0376586033089552e-05,
+                5.139616519045376e-07,
+                -0.00013745790056418628,
+                -3.4603661447363265e-07,
+                0.0001595526555320248,
+                -3.7285983125912026e-05,
+                -4.998404165235115e-06,
+                -4.858842203248059e-06
+              ],
+              "tcp": [
+                0.014508569613099098,
+                -0.20618794858455658,
+                0.1431044340133667,
+                0.00079791818279773,
+                0.7076703906059265,
+                0.7065392136573792,
+                -0.0020627977792173624
+              ],
+              "tcp_T_cube": [
+                0.35525912046432495,
+                -0.0489814393222332,
+                0.10635361075401306,
+                -1.9453313143458217e-05,
+                -0.6835001707077026,
+                -0.7299501895904541,
+                -0.0002884508576244116
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                -0.286498099565506,
+                0.6384068727493286,
+                0.220122829079628,
+                -1.993160367012024,
+                -0.25964611768722534,
+                2.60907244682312,
+                -0.6043180823326111,
+                0.018254879862070084,
+                0.01829148642718792
+              ],
+              "qvel": [
+                -0.2174375057220459,
+                -0.37493184208869934,
+                -0.05566451698541641,
+                -0.9989949464797974,
+                -0.051956407725811005,
+                0.5682768821716309,
+                -0.032456763088703156,
+                0.015197591856122017,
+                -0.02406853623688221
+              ],
+              "tcp": [
+                -0.03495774790644646,
+                0.14858269691467285,
+                0.03938791900873184,
+                0.0019386318745091558,
+                0.9994646906852722,
+                -0.032655976712703705,
+                -0.0002644117339514196
+              ],
+              "tcp_T_cube": [
+                0.0008524805307388306,
+                -0.00020503997802734375,
+                0.00398525595664978,
+                -0.00035428593400865793,
+                -0.9999991059303284,
+                -0.0009878315031528473,
+                -0.0007441982161253691
+              ],
+              "grasped": true,
+              "static": false,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 27.775798797607422,
+                "panda_rightfinger": 27.943523406982422,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          }
+        }
+      ],
+      "initial_sha256": "9b0a3df5077e0419bb2fd430ca8628429839270d8258487cdaf55b5496bf83ed",
+      "final_goal_distance_m": 0.027600115165114403,
+      "first_native_success_step": null,
+      "tracking": {
+        "0": {
+          "max_abs_joint_tracking_error_rad": 0.17895498481713368,
+          "median_abs_joint_tracking_error_rad": 0.00011640091720389314,
+          "max_abs_qvel_rad_s": 1.8629751205444336
+        },
+        "1": {
+          "max_abs_joint_tracking_error_rad": 0.20376853690401406,
+          "median_abs_joint_tracking_error_rad": 0.0,
+          "max_abs_qvel_rad_s": 2.039787769317627
+        }
+      },
+      "phases": {
+        "LEFT_REACH": {
+          "steps": 9,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_CONTACT_APPROACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_PUSH": {
+          "steps": 20,
+          "peak_link_cube_force_N": 0.9264903664588928
+        },
+        "LEFT_RELEASE": {
+          "steps": 15,
+          "peak_link_cube_force_N": 0.0
+        },
+        "PUSH_SETTLE": {
+          "steps": 2,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_REACH": {
+          "steps": 18,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_DESCEND": {
+          "steps": 6,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_CLOSE": {
+          "steps": 6,
+          "peak_link_cube_force_N": 29.92938804626465
+        },
+        "RIGHT_LIFT": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.911434173583984
+        },
+        "RIGHT_TO_GOAL": {
+          "steps": 11,
+          "peak_link_cube_force_N": 27.95580291748047
+        }
+      },
+      "wall_s": 9.3638532779878,
+      "planning_wall_s": 0.06036743114236742,
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742011_full_p020_other/TRAJECTORY.json.gz",
+      "sha256": "8d79077e6aa4423d3fb1b4239253ecafe0fd18fa931a66a2d46b5a6d508cd2db"
+    },
+    {
+      "prediction": {
+        "selection_objective": "full-suffix",
+        "predicted_suffix_steps": 46,
+        "remaining_budget_at_boundary": 43,
+        "actual_suffix_steps_to_first_native_success": 42,
+        "actual_executed_suffix_motion_steps": 40,
+        "observed_suffix_steps": 43,
+        "success_time_censored": false,
+        "predicted_minus_actual_success_steps": 4
+      },
+      "case": "742011_full_p050",
+      "seed": 742011,
+      "parameters": {
+        "push_y": 0.05,
+        "grasp_axis": "geometry",
+        "path_stride": 3,
+        "controller": "continuous-clear",
+        "align_grasp_sign": true,
+        "axis_objective": "full-suffix"
+      },
+      "resource_context": "SHARED_GPU_CONTENTION",
+      "success": true,
+      "error": null,
+      "steps": 100,
+      "boundaries": [
+        0,
+        57
+      ],
+      "skill_results": [
+        {
+          "skill": "LEFT_PUSH",
+          "boundary_step": 57,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              -0.000670498120598495,
+              0.05089394375681877,
+              0.019999995827674866,
+              0.9999558925628662,
+              4.758379873237573e-06,
+              -3.84829809263465e-06,
+              0.009391049854457378
+            ],
+            "goal": [
+              -0.04111656919121742,
+              0.17447714507579803,
+              0.02841157466173172,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -6.996798038017005e-05,
+              -0.0001885672681964934,
+              -0.00011152266233693808
+            ],
+            "cube_angular_velocity": [
+              0.00774359330534935,
+              -0.0018783591222018003,
+              3.337303041917039e-06
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 43,
+            "cube_goal_distance_m": 0.1303052008152008,
+            "0": {
+              "q": [
+                -0.012788391672074795,
+                0.2776503264904022,
+                -0.007204785011708736,
+                -2.2308695316314697,
+                0.006874335929751396,
+                2.5071370601654053,
+                0.7600212097167969,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -0.0012780539691448212,
+                -0.1177218034863472,
+                -0.0013452802086248994,
+                -0.16366949677467346,
+                -0.0003971827682107687,
+                0.02179126627743244,
+                -0.001047902973368764,
+                -4.877570972894318e-06,
+                -4.914237251796294e-06
+              ],
+              "tcp": [
+                0.010796874761581421,
+                -0.20274363458156586,
+                0.14299079775810242,
+                -0.00028431377722881734,
+                0.7070640921592712,
+                0.7071483731269836,
+                -0.0012194771552458405
+              ],
+              "tcp_T_cube": [
+                0.2538014054298401,
+                -0.011175893247127533,
+                0.12267934530973434,
+                -0.0002951102505903691,
+                -0.7136737704277039,
+                -0.700477123260498,
+                0.0012228392297402024
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.002705293707549572,
+                0.3877759575843811,
+                0.01485210657119751,
+                -1.9414974451065063,
+                0.008869707584381104,
+                2.357165813446045,
+                0.7790756821632385,
+                0.03999999910593033,
+                0.03999999910593033
+              ],
+              "qvel": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tcp": [
+                0.011898936703801155,
+                0.12492139637470245,
+                0.1822752058506012,
+                0.005565563682466745,
+                0.7128369808197021,
+                -0.7011653780937195,
+                0.014128296636044979
+              ],
+              "tcp_T_cube": [
+                0.06924821436405182,
+                0.01572849228978157,
+                0.16409935057163239,
+                0.005704088136553764,
+                -0.7062209248542786,
+                0.70782870054245,
+                -0.014076000079512596
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          },
+          "postcondition": "cube y>=0 and on table; velocity retained, not silently declared settled"
+        },
+        {
+          "skill": "RIGHT_PICK_TO_GOAL",
+          "boundary_step": 100,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              -0.04108041897416115,
+              0.17601890861988068,
+              0.02897740714251995,
+              0.9999854564666748,
+              -0.001782293082214892,
+              0.0024654921144247055,
+              0.0044530355371534824
+            ],
+            "goal": [
+              -0.04111656919121742,
+              0.17447714507579803,
+              0.02841157466173172,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              0.002456703456118703,
+              0.07054388523101807,
+              0.06486296653747559
+            ],
+            "cube_angular_velocity": [
+              0.32912448048591614,
+              -3.862395763397217,
+              2.5731022357940674
+            ],
+            "native_success": true,
+            "contact_valid": true,
+            "remaining_steps": 0,
+            "cube_goal_distance_m": 0.0016427136724814773,
+            "0": {
+              "q": [
+                -0.01300271786749363,
+                0.26702213287353516,
+                -0.007381607312709093,
+                -2.24672794342041,
+                0.00683622295036912,
+                2.509376049041748,
+                0.759924590587616,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -1.0946999395855528e-07,
+                -1.038039681588998e-05,
+                2.092332493930371e-07,
+                -0.00013746305194217712,
+                -3.4499475987104233e-07,
+                0.00015955294657032937,
+                -3.8365975342458114e-05,
+                -5.032874923927011e-06,
+                -4.817825811187504e-06
+              ],
+              "tcp": [
+                0.010918732732534409,
+                -0.20774394273757935,
+                0.14294463396072388,
+                0.000754514941945672,
+                0.7071673274040222,
+                0.7070420980453491,
+                -0.002295221434906125
+              ],
+              "tcp_T_cube": [
+                0.38424187898635864,
+                -0.051820483058691025,
+                0.11242414265871048,
+                0.0012271105078980327,
+                -0.71031254529953,
+                -0.703885018825531,
+                -0.0007051236461848021
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                -0.0684342011809349,
+                0.5754209160804749,
+                -0.0036060353741049767,
+                -2.1161623001098633,
+                0.0015439682174474,
+                2.693101644515991,
+                0.6993542909622192,
+                0.018247321248054504,
+                0.018270285800099373
+              ],
+              "qvel": [
+                -0.0068452744744718075,
+                -0.05299729108810425,
+                0.006215214729309082,
+                -0.1142817959189415,
+                0.0005573565722443163,
+                0.09016779065132141,
+                -0.01680169627070427,
+                0.014510086737573147,
+                -0.012697563506662846
+              ],
+              "tcp": [
+                -0.04132372513413429,
+                0.18068280816078186,
+                0.03306855261325836,
+                0.00099831388797611,
+                0.71175616979599,
+                -0.7024258375167847,
+                3.395394514882355e-06
+              ],
+              "tcp_T_cube": [
+                0.0046609193086624146,
+                -0.00018753483891487122,
+                0.00409744493663311,
+                -0.002002069028094411,
+                -0.7086196541786194,
+                0.7055875658988953,
+                -0.000501850270666182
+              ],
+              "grasped": true,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 27.965587615966797,
+                "panda_rightfinger": 27.9619197845459,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          }
+        }
+      ],
+      "initial_sha256": "9b0a3df5077e0419bb2fd430ca8628429839270d8258487cdaf55b5496bf83ed",
+      "final_goal_distance_m": 0.0016427136724814773,
+      "first_native_success_step": 99,
+      "tracking": {
+        "0": {
+          "max_abs_joint_tracking_error_rad": 0.1967844168905699,
+          "median_abs_joint_tracking_error_rad": 0.0001902231245489096,
+          "max_abs_qvel_rad_s": 2.0396220684051514
+        },
+        "1": {
+          "max_abs_joint_tracking_error_rad": 0.1252252598640584,
+          "median_abs_joint_tracking_error_rad": 0.0,
+          "max_abs_qvel_rad_s": 1.3062207698822021
+        }
+      },
+      "phases": {
+        "LEFT_REACH": {
+          "steps": 9,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_CONTACT_APPROACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_PUSH": {
+          "steps": 22,
+          "peak_link_cube_force_N": 0.9880881309509277
+        },
+        "LEFT_RELEASE": {
+          "steps": 17,
+          "peak_link_cube_force_N": 0.0
+        },
+        "PUSH_SETTLE": {
+          "steps": 2,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_REACH": {
+          "steps": 11,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_DESCEND": {
+          "steps": 6,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_CLOSE": {
+          "steps": 6,
+          "peak_link_cube_force_N": 28.500709533691406
+        },
+        "RIGHT_LIFT": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.9237003326416
+        },
+        "RIGHT_TO_GOAL": {
+          "steps": 11,
+          "peak_link_cube_force_N": 27.97666358947754
+        },
+        "TERMINAL_HOLD": {
+          "steps": 3,
+          "peak_link_cube_force_N": 27.97509002685547
+        }
+      },
+      "wall_s": 9.302032185019925,
+      "planning_wall_s": 0.1365525409928523,
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742011_full_p050/TRAJECTORY.json.gz",
+      "sha256": "d3d08d733c63732308e4d5514e8d2072d8f4ec4cadeb7206e0421384ff2dbca3"
+    },
+    {
+      "prediction": {
+        "selection_objective": "full-suffix",
+        "predicted_suffix_steps": 48,
+        "remaining_budget_at_boundary": 50,
+        "actual_suffix_steps_to_first_native_success": 44,
+        "actual_executed_suffix_motion_steps": 42,
+        "observed_suffix_steps": 50,
+        "success_time_censored": false,
+        "predicted_minus_actual_success_steps": 4
+      },
+      "case": "742012_full_p020",
+      "seed": 742012,
+      "parameters": {
+        "push_y": 0.02,
+        "grasp_axis": "geometry",
+        "path_stride": 3,
+        "controller": "continuous-clear",
+        "align_grasp_sign": true,
+        "axis_objective": "full-suffix"
+      },
+      "resource_context": "SHARED_GPU_CONTENTION",
+      "success": true,
+      "error": null,
+      "steps": 100,
+      "boundaries": [
+        0,
+        50
+      ],
+      "skill_results": [
+        {
+          "skill": "LEFT_PUSH",
+          "boundary_step": 50,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              0.02925596572458744,
+              0.02080855332314968,
+              0.01999993436038494,
+              -0.000697694777045399,
+              6.143543942016549e-06,
+              6.5931403696595225e-06,
+              0.9999997615814209
+            ],
+            "goal": [
+              -0.0409785695374012,
+              0.1442362368106842,
+              0.04813157021999359,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              9.305252206104342e-06,
+              0.0001633868523640558,
+              -0.00011491261830087751
+            ],
+            "cube_angular_velocity": [
+              -0.008017485961318016,
+              0.00048551426152698696,
+              3.144058064208366e-05
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 50,
+            "cube_goal_distance_m": 0.14477109909057617,
+            "0": {
+              "q": [
+                -0.04417630657553673,
+                0.2804942727088928,
+                -0.003132137469947338,
+                -2.2239227294921875,
+                0.0023955474607646465,
+                2.505000352859497,
+                0.7349521517753601,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -0.001896096859127283,
+                -0.12142138183116913,
+                -0.0008847303106449544,
+                -0.164890319108963,
+                0.00027689384296536446,
+                0.014794742688536644,
+                -0.0027391661424189806,
+                -4.608243671100354e-06,
+                -5.130767931404989e-06
+              ],
+              "tcp": [
+                0.02595931850373745,
+                -0.20097213983535767,
+                0.14389441907405853,
+                -0.00040321939741261303,
+                0.7066347599029541,
+                0.7075784206390381,
+                2.948188193840906e-05
+              ],
+              "tcp_T_cube": [
+                0.22170022130012512,
+                0.003658110275864601,
+                0.12402833998203278,
+                3.876960545312613e-05,
+                -0.7070852518081665,
+                0.7071282267570496,
+                -0.00040351063944399357
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.007839862257242203,
+                0.38078176975250244,
+                0.02985662780702114,
+                -1.9713672399520874,
+                0.005835826974362135,
+                2.3731257915496826,
+                0.7876431941986084,
+                0.03999999910593033,
+                0.03999999910593033
+              ],
+              "qvel": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tcp": [
+                0.024172283709049225,
+                0.13329431414604187,
+                0.1754523515701294,
+                0.0018476115074008703,
+                0.717239499092102,
+                -0.6967053413391113,
+                0.012871760874986649
+              ],
+              "tcp_T_cube": [
+                0.109290212392807,
+                0.0005794111639261246,
+                0.157796248793602,
+                0.01287028193473816,
+                0.697205662727356,
+                0.7167531847953796,
+                0.0018475824035704136
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          },
+          "postcondition": "cube y>=0 and on table; velocity retained, not silently declared settled"
+        },
+        {
+          "skill": "RIGHT_PICK_TO_GOAL",
+          "boundary_step": 100,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              -0.04001599922776222,
+              0.1483144611120224,
+              0.048321597278118134,
+              0.004036980215460062,
+              0.0032603798899799585,
+              -0.0006744694546796381,
+              0.9999862909317017
+            ],
+            "goal": [
+              -0.0409785695374012,
+              0.1442362368106842,
+              0.04813157021999359,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              0.0016370287630707026,
+              0.04155171662569046,
+              0.06420274823904037
+            ],
+            "cube_angular_velocity": [
+              0.26590701937675476,
+              -3.537478446960449,
+              1.9121506214141846
+            ],
+            "native_success": true,
+            "contact_valid": true,
+            "remaining_steps": 0,
+            "cube_goal_distance_m": 0.0041945879347622395,
+            "0": {
+              "q": [
+                -0.044408123940229416,
+                0.26963376998901367,
+                -0.0032428211998194456,
+                -2.239975929260254,
+                0.0024265183601528406,
+                2.5065295696258545,
+                0.7346864342689514,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -2.336165835004067e-06,
+                -1.0656992344593164e-05,
+                4.858919311345744e-08,
+                -0.00013745861360803246,
+                -2.288581697484915e-07,
+                0.00015955056005623192,
+                -3.782603016588837e-05,
+                -5.049256742495345e-06,
+                -4.809419351659017e-06
+              ],
+              "tcp": [
+                0.025902412831783295,
+                -0.2061578631401062,
+                0.14384032785892487,
+                0.0008212226093746722,
+                0.7066737413406372,
+                0.7075377106666565,
+                -0.00133269012439996
+              ],
+              "tcp_T_cube": [
+                0.3548418879508972,
+                -0.0654163658618927,
+                0.09448589384555817,
+                0.0004974555922672153,
+                -0.7103772759437561,
+                0.703811526298523,
+                0.0036100628785789013
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                -0.07000046968460083,
+                0.5832852125167847,
+                0.002759917639195919,
+                -2.023540496826172,
+                -0.004459521733224392,
+                2.611614227294922,
+                0.7233158349990845,
+                0.01824452355504036,
+                0.01826891489326954
+              ],
+              "qvel": [
+                -9.08536312635988e-05,
+                -0.0034029697999358177,
+                0.0009843454463407397,
+                -0.007099565118551254,
+                3.819520861725323e-05,
+                0.012240062467753887,
+                0.0008068687748163939,
+                0.014020615257322788,
+                -0.014538469724357128
+              ],
+              "tcp": [
+                -0.04020253196358681,
+                0.1527581661939621,
+                0.05299539119005203,
+                0.002046133391559124,
+                0.7064764499664307,
+                -0.7077324390411377,
+                0.001302126096561551
+              ],
+              "tcp_T_cube": [
+                0.0044211894273757935,
+                -0.0001993626356124878,
+                0.004694577306509018,
+                0.00409109378233552,
+                0.7048764824867249,
+                0.7093182802200317,
+                0.000209868885576725
+              ],
+              "grasped": true,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 27.94148826599121,
+                "panda_rightfinger": 27.946819305419922,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          }
+        }
+      ],
+      "initial_sha256": "8bc817fc7c2a6574e534a1eba8badb49348c54fcee76499d8723c23224ed0481",
+      "final_goal_distance_m": 0.0041945879347622395,
+      "first_native_success_step": 94,
+      "tracking": {
+        "0": {
+          "max_abs_joint_tracking_error_rad": 0.17791875854791517,
+          "median_abs_joint_tracking_error_rad": 4.62227229690896e-05,
+          "max_abs_qvel_rad_s": 1.8128916025161743
+        },
+        "1": {
+          "max_abs_joint_tracking_error_rad": 0.1336967101818951,
+          "median_abs_joint_tracking_error_rad": 0.0,
+          "max_abs_qvel_rad_s": 1.3868753910064697
+        }
+      },
+      "phases": {
+        "LEFT_REACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_CONTACT_APPROACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_PUSH": {
+          "steps": 19,
+          "peak_link_cube_force_N": 0.12944631278514862
+        },
+        "LEFT_RELEASE": {
+          "steps": 15,
+          "peak_link_cube_force_N": 0.0
+        },
+        "PUSH_SETTLE": {
+          "steps": 2,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_REACH": {
+          "steps": 12,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_DESCEND": {
+          "steps": 6,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_CLOSE": {
+          "steps": 6,
+          "peak_link_cube_force_N": 28.425765991210938
+        },
+        "RIGHT_LIFT": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.885889053344727
+        },
+        "RIGHT_TO_GOAL": {
+          "steps": 12,
+          "peak_link_cube_force_N": 27.969039916992188
+        },
+        "TERMINAL_HOLD": {
+          "steps": 8,
+          "peak_link_cube_force_N": 27.961278915405273
+        }
+      },
+      "wall_s": 9.980394103971776,
+      "planning_wall_s": 0.08615318103693426,
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742012_full_p020/TRAJECTORY.json.gz",
+      "sha256": "52c06066b26dc6f30605d082294911acc5c84e8ec9a9357b0ef861db530f0ca0"
+    },
+    {
+      "prediction": {
+        "selection_objective": "full-suffix",
+        "predicted_suffix_steps": 54,
+        "remaining_budget_at_boundary": 50,
+        "actual_suffix_steps_to_first_native_success": 50,
+        "actual_executed_suffix_motion_steps": 48,
+        "observed_suffix_steps": 50,
+        "success_time_censored": false,
+        "predicted_minus_actual_success_steps": 4
+      },
+      "case": "742012_full_p020_other",
+      "seed": 742012,
+      "parameters": {
+        "push_y": 0.02,
+        "grasp_axis": "cube_y",
+        "path_stride": 3,
+        "controller": "continuous-clear",
+        "align_grasp_sign": true,
+        "axis_objective": "full-suffix"
+      },
+      "resource_context": "SHARED_GPU_CONTENTION",
+      "success": true,
+      "error": null,
+      "steps": 100,
+      "boundaries": [
+        0,
+        50
+      ],
+      "skill_results": [
+        {
+          "skill": "LEFT_PUSH",
+          "boundary_step": 50,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              0.02925596572458744,
+              0.02080855332314968,
+              0.01999993436038494,
+              -0.000697694777045399,
+              6.143543942016549e-06,
+              6.5931403696595225e-06,
+              0.9999997615814209
+            ],
+            "goal": [
+              -0.0409785695374012,
+              0.1442362368106842,
+              0.04813157021999359,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              9.305252206104342e-06,
+              0.0001633868523640558,
+              -0.00011491261830087751
+            ],
+            "cube_angular_velocity": [
+              -0.008017485961318016,
+              0.00048551426152698696,
+              3.144058064208366e-05
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 50,
+            "cube_goal_distance_m": 0.14477109909057617,
+            "0": {
+              "q": [
+                -0.04417630657553673,
+                0.2804942727088928,
+                -0.003132137469947338,
+                -2.2239227294921875,
+                0.0023955474607646465,
+                2.505000352859497,
+                0.7349521517753601,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -0.001896096859127283,
+                -0.12142138183116913,
+                -0.0008847303106449544,
+                -0.164890319108963,
+                0.00027689384296536446,
+                0.014794742688536644,
+                -0.0027391661424189806,
+                -4.608243671100354e-06,
+                -5.130767931404989e-06
+              ],
+              "tcp": [
+                0.02595931850373745,
+                -0.20097213983535767,
+                0.14389441907405853,
+                -0.00040321939741261303,
+                0.7066347599029541,
+                0.7075784206390381,
+                2.948188193840906e-05
+              ],
+              "tcp_T_cube": [
+                0.22170022130012512,
+                0.003658110275864601,
+                0.12402833998203278,
+                3.876960545312613e-05,
+                -0.7070852518081665,
+                0.7071282267570496,
+                -0.00040351063944399357
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.007839862257242203,
+                0.38078176975250244,
+                0.02985662780702114,
+                -1.9713672399520874,
+                0.005835826974362135,
+                2.3731257915496826,
+                0.7876431941986084,
+                0.03999999910593033,
+                0.03999999910593033
+              ],
+              "qvel": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tcp": [
+                0.024172283709049225,
+                0.13329431414604187,
+                0.1754523515701294,
+                0.0018476115074008703,
+                0.717239499092102,
+                -0.6967053413391113,
+                0.012871760874986649
+              ],
+              "tcp_T_cube": [
+                0.109290212392807,
+                0.0005794111639261246,
+                0.157796248793602,
+                0.01287028193473816,
+                0.697205662727356,
+                0.7167531847953796,
+                0.0018475824035704136
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          },
+          "postcondition": "cube y>=0 and on table; velocity retained, not silently declared settled"
+        },
+        {
+          "skill": "RIGHT_PICK_TO_GOAL",
+          "boundary_step": 100,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              -0.04114200919866562,
+              0.1453160047531128,
+              0.04799806326627731,
+              0.0005939388065598905,
+              0.003601974342018366,
+              0.01094935741275549,
+              0.9999333620071411
+            ],
+            "goal": [
+              -0.0409785695374012,
+              0.1442362368106842,
+              0.04813157021999359,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -0.022275643423199654,
+              0.034138478338718414,
+              0.04253982752561569
+            ],
+            "cube_angular_velocity": [
+              -0.13078713417053223,
+              -0.10511961579322815,
+              1.186362624168396
+            ],
+            "native_success": true,
+            "contact_valid": true,
+            "remaining_steps": 0,
+            "cube_goal_distance_m": 0.0011001979000866413,
+            "0": {
+              "q": [
+                -0.044408123940229416,
+                0.26963376998901367,
+                -0.0032428211998194456,
+                -2.239975929260254,
+                0.0024265183601528406,
+                2.5065295696258545,
+                0.7346864342689514,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -2.336165835004067e-06,
+                -1.0656992344593164e-05,
+                4.858919311345744e-08,
+                -0.00013745861360803246,
+                -2.288581697484915e-07,
+                0.00015955056005623192,
+                -3.782603016588837e-05,
+                -5.049256742495345e-06,
+                -4.809419351659017e-06
+              ],
+              "tcp": [
+                0.025902412831783295,
+                -0.2061578631401062,
+                0.14384032785892487,
+                0.0008212226093746722,
+                0.7066737413406372,
+                0.7075377106666565,
+                -0.00133269012439996
+              ],
+              "tcp_T_cube": [
+                0.35184580087661743,
+                -0.06654579937458038,
+                0.09481938183307648,
+                0.008960390463471413,
+                -0.7079219222068787,
+                0.7062202095985413,
+                -0.004367131739854813
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                -0.3190660774707794,
+                0.6238504648208618,
+                0.24557772278785706,
+                -1.9825559854507446,
+                -0.2704254388809204,
+                2.5775763988494873,
+                -0.6691833138465881,
+                0.018314456567168236,
+                0.018347619101405144
+              ],
+              "qvel": [
+                -0.029370782896876335,
+                -0.07285548746585846,
+                0.011394064873456955,
+                -0.146297886967659,
+                0.0004346058703958988,
+                0.08378095179796219,
+                -0.024036245420575142,
+                0.018376324325799942,
+                -0.019520286470651627
+              ],
+              "tcp": [
+                -0.04155796021223068,
+                0.14508864283561707,
+                0.05100919306278229,
+                0.0010014844592660666,
+                0.999996542930603,
+                -0.002384563907980919,
+                -0.0005182206514291465
+              ],
+              "tcp_T_cube": [
+                0.0004179626703262329,
+                -0.00023539364337921143,
+                0.003010232001543045,
+                0.00305826123803854,
+                0.0017884013941511512,
+                0.9999441504478455,
+                -0.009956182911992073
+              ],
+              "grasped": true,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 27.8321475982666,
+                "panda_rightfinger": 27.874710083007812,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          }
+        }
+      ],
+      "initial_sha256": "8bc817fc7c2a6574e534a1eba8badb49348c54fcee76499d8723c23224ed0481",
+      "final_goal_distance_m": 0.0011001979000866413,
+      "first_native_success_step": 100,
+      "tracking": {
+        "0": {
+          "max_abs_joint_tracking_error_rad": 0.17791875854791517,
+          "median_abs_joint_tracking_error_rad": 4.62227229690896e-05,
+          "max_abs_qvel_rad_s": 1.8128916025161743
+        },
+        "1": {
+          "max_abs_joint_tracking_error_rad": 0.204353083957103,
+          "median_abs_joint_tracking_error_rad": 0.0,
+          "max_abs_qvel_rad_s": 2.0456299781799316
+        }
+      },
+      "phases": {
+        "LEFT_REACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_CONTACT_APPROACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_PUSH": {
+          "steps": 19,
+          "peak_link_cube_force_N": 0.12944631278514862
+        },
+        "LEFT_RELEASE": {
+          "steps": 15,
+          "peak_link_cube_force_N": 0.0
+        },
+        "PUSH_SETTLE": {
+          "steps": 2,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_REACH": {
+          "steps": 18,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_DESCEND": {
+          "steps": 6,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_CLOSE": {
+          "steps": 6,
+          "peak_link_cube_force_N": 29.050085067749023
+        },
+        "RIGHT_LIFT": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.914140701293945
+        },
+        "RIGHT_TO_GOAL": {
+          "steps": 12,
+          "peak_link_cube_force_N": 27.94725799560547
+        },
+        "TERMINAL_HOLD": {
+          "steps": 2,
+          "peak_link_cube_force_N": 27.88524627685547
+        }
+      },
+      "wall_s": 9.486075680004433,
+      "planning_wall_s": 0.064702438947279,
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742012_full_p020_other/TRAJECTORY.json.gz",
+      "sha256": "01080655f079c35d247a6bca33a9efccc5664781a271e8858208cee4b5cfa281"
+    },
+    {
+      "prediction": {
+        "selection_objective": "full-suffix",
+        "predicted_suffix_steps": 45,
+        "remaining_budget_at_boundary": 44,
+        "actual_suffix_steps_to_first_native_success": 40,
+        "actual_executed_suffix_motion_steps": 38,
+        "observed_suffix_steps": 44,
+        "success_time_censored": false,
+        "predicted_minus_actual_success_steps": 5
+      },
+      "case": "742012_full_p050",
+      "seed": 742012,
+      "parameters": {
+        "push_y": 0.05,
+        "grasp_axis": "geometry",
+        "path_stride": 3,
+        "controller": "continuous-clear",
+        "align_grasp_sign": true,
+        "axis_objective": "full-suffix"
+      },
+      "resource_context": "SHARED_GPU_CONTENTION",
+      "success": true,
+      "error": null,
+      "steps": 100,
+      "boundaries": [
+        0,
+        56
+      ],
+      "skill_results": [
+        {
+          "skill": "LEFT_PUSH",
+          "boundary_step": 56,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              0.022185107693076134,
+              0.052209701389074326,
+              0.01999996416270733,
+              -0.0006977047305554152,
+              -4.8907363634498324e-06,
+              -2.466029854986118e-06,
+              0.9999997019767761
+            ],
+            "goal": [
+              -0.0409785695374012,
+              0.1442362368106842,
+              0.04813157021999359,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              0.00045865337597206235,
+              0.00041876104660332203,
+              -7.673646177863702e-05
+            ],
+            "cube_angular_velocity": [
+              -0.010618925094604492,
+              0.009944968856871128,
+              -0.00013179249071981758
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 44,
+            "cube_goal_distance_m": 0.11510829627513885,
+            "0": {
+              "q": [
+                -0.03863723203539848,
+                0.278298556804657,
+                -0.002730426611378789,
+                -2.2294726371765137,
+                0.002087649889290333,
+                2.506704330444336,
+                0.741193413734436,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -0.0019236172083765268,
+                -0.12223299592733383,
+                -0.0008897144580259919,
+                -0.1702468991279602,
+                0.00025896047009155154,
+                0.023335710167884827,
+                -0.0025208464358001947,
+                -4.716418970929226e-06,
+                -5.167081326362677e-06
+              ],
+              "tcp": [
+                0.02262703701853752,
+                -0.20266298949718475,
+                0.1431269645690918,
+                0.00018070414080284536,
+                0.7066609859466553,
+                0.7075520753860474,
+                -0.0005573733360506594
+              ],
+              "tcp_T_cube": [
+                0.25500139594078064,
+                -5.5130571126937866e-05,
+                0.12286102026700974,
+                -0.0005627001519314945,
+                -0.7070587873458862,
+                0.707154393196106,
+                0.00017859740182757378
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.007839862257242203,
+                0.38078176975250244,
+                0.02985662780702114,
+                -1.9713672399520874,
+                0.005835826974362135,
+                2.3731257915496826,
+                0.7876431941986084,
+                0.03999999910593033,
+                0.03999999910593033
+              ],
+              "qvel": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tcp": [
+                0.024172283709049225,
+                0.13329431414604187,
+                0.1754523515701294,
+                0.0018476115074008703,
+                0.717239499092102,
+                -0.6967053413391113,
+                0.012871760874986649
+              ],
+              "tcp_T_cube": [
+                0.07770495861768723,
+                0.006729623302817345,
+                0.15703743696212769,
+                0.012868678197264671,
+                0.6972055435180664,
+                0.7167532444000244,
+                0.0018617677269503474
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          },
+          "postcondition": "cube y>=0 and on table; velocity retained, not silently declared settled"
+        },
+        {
+          "skill": "RIGHT_PICK_TO_GOAL",
+          "boundary_step": 100,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              -0.040412575006484985,
+              0.14698751270771027,
+              0.04823407903313637,
+              0.005068599712103605,
+              0.00588335981592536,
+              0.002009343123063445,
+              0.9999677538871765
+            ],
+            "goal": [
+              -0.0409785695374012,
+              0.1442362368106842,
+              0.04813157021999359,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              0.007180286571383476,
+              0.043982796370983124,
+              0.06394568830728531
+            ],
+            "cube_angular_velocity": [
+              0.28141796588897705,
+              -2.7119944095611572,
+              1.4083385467529297
+            ],
+            "native_success": true,
+            "contact_valid": true,
+            "remaining_steps": 0,
+            "cube_goal_distance_m": 0.0028107608668506145,
+            "0": {
+              "q": [
+                -0.03888349235057831,
+                0.26726454496383667,
+                -0.0028468805830925703,
+                -2.2459716796875,
+                0.0021149630192667246,
+                2.5091004371643066,
+                0.7409496307373047,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -2.3017273633740842e-06,
+                -1.0943314009637106e-05,
+                5.0491269831809404e-08,
+                -0.00013744717580266297,
+                -2.2670501209631766e-07,
+                0.00016171892639249563,
+                -3.728681258508004e-05,
+                -5.016288014303427e-06,
+                -4.770375198859256e-06
+              ],
+              "tcp": [
+                0.02261178381741047,
+                -0.2078539878129959,
+                0.14307275414466858,
+                0.0012150120455771685,
+                0.7067128419876099,
+                0.7074974179267883,
+                -0.0016903820214793086
+              ],
+              "tcp_T_cube": [
+                0.3552979528903961,
+                -0.0625670999288559,
+                0.09342195093631744,
+                0.0038952818140387535,
+                -0.7110528945922852,
+                0.7031164169311523,
+                0.003965973854064941
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                -0.06982175260782242,
+                0.584132194519043,
+                0.002021245425567031,
+                -2.021345853805542,
+                -0.0033458711113780737,
+                2.6115972995758057,
+                0.7226390838623047,
+                0.018240774050354958,
+                0.018265217542648315
+              ],
+              "qvel": [
+                0.00280644535087049,
+                -0.012283122166991234,
+                0.005329163745045662,
+                -0.021980468183755875,
+                0.00032325871870853007,
+                0.02254534140229225,
+                -0.005464017391204834,
+                0.014631527476012707,
+                -0.014671968296170235
+              ],
+              "tcp": [
+                -0.04060239717364311,
+                0.15193122625350952,
+                0.053267233073711395,
+                0.002494265791028738,
+                0.7062196135520935,
+                -0.7079861760139465,
+                0.001798274926841259
+              ],
+              "tcp_T_cube": [
+                0.004912585020065308,
+                -0.00020712614059448242,
+                0.005062878131866455,
+                0.0045432159677147865,
+                0.7044020891189575,
+                0.7097797989845276,
+                -0.0030993041582405567
+              ],
+              "grasped": true,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 27.9210205078125,
+                "panda_rightfinger": 27.931856155395508,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          }
+        }
+      ],
+      "initial_sha256": "8bc817fc7c2a6574e534a1eba8badb49348c54fcee76499d8723c23224ed0481",
+      "final_goal_distance_m": 0.0028107608668506145,
+      "first_native_success_step": 96,
+      "tracking": {
+        "0": {
+          "max_abs_joint_tracking_error_rad": 0.19691547617453953,
+          "median_abs_joint_tracking_error_rad": 9.722371435981806e-05,
+          "max_abs_qvel_rad_s": 2.0037736892700195
+        },
+        "1": {
+          "max_abs_joint_tracking_error_rad": 0.10728202761238004,
+          "median_abs_joint_tracking_error_rad": 0.0,
+          "max_abs_qvel_rad_s": 1.1195355653762817
+        }
+      },
+      "phases": {
+        "LEFT_REACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_CONTACT_APPROACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_PUSH": {
+          "steps": 23,
+          "peak_link_cube_force_N": 0.319352924823761
+        },
+        "LEFT_RELEASE": {
+          "steps": 17,
+          "peak_link_cube_force_N": 0.0
+        },
+        "PUSH_SETTLE": {
+          "steps": 2,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_REACH": {
+          "steps": 10,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_DESCEND": {
+          "steps": 6,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_CLOSE": {
+          "steps": 6,
+          "peak_link_cube_force_N": 28.61033058166504
+        },
+        "RIGHT_LIFT": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.887310028076172
+        },
+        "RIGHT_TO_GOAL": {
+          "steps": 10,
+          "peak_link_cube_force_N": 27.955535888671875
+        },
+        "TERMINAL_HOLD": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.951091766357422
+        }
+      },
+      "wall_s": 9.880483063985594,
+      "planning_wall_s": 0.09625456313369796,
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742012_full_p050/TRAJECTORY.json.gz",
+      "sha256": "bbd6243761c0015bc3a86d1f8dd4f92f8e6dcf11621b50df2616a05268b2b153"
+    },
+    {
+      "prediction": {
+        "selection_objective": "full-suffix",
+        "predicted_suffix_steps": 47,
+        "remaining_budget_at_boundary": 46,
+        "actual_suffix_steps_to_first_native_success": 45,
+        "actual_executed_suffix_motion_steps": 43,
+        "observed_suffix_steps": 46,
+        "success_time_censored": false,
+        "predicted_minus_actual_success_steps": 2
+      },
+      "case": "742013_full_p020",
+      "seed": 742013,
+      "parameters": {
+        "push_y": 0.02,
+        "grasp_axis": "geometry",
+        "path_stride": 3,
+        "controller": "continuous-clear",
+        "align_grasp_sign": true,
+        "axis_objective": "full-suffix"
+      },
+      "resource_context": "SHARED_GPU_CONTENTION",
+      "success": true,
+      "error": null,
+      "steps": 100,
+      "boundaries": [
+        0,
+        54
+      ],
+      "skill_results": [
+        {
+          "skill": "LEFT_PUSH",
+          "boundary_step": 54,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              -0.025223132222890854,
+              0.02319803275167942,
+              0.01999996230006218,
+              0.06009279936552048,
+              4.362092113296967e-06,
+              6.354849119816208e-06,
+              0.9981927871704102
+            ],
+            "goal": [
+              0.03825589641928673,
+              0.15619896352291107,
+              0.023777887225151062,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -1.7931424736161716e-05,
+              0.00023211429652292281,
+              -0.00013410863175522536
+            ],
+            "cube_angular_velocity": [
+              -0.009209563955664635,
+              -0.00015195053128991276,
+              0.00023319419415201992
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 46,
+            "cube_goal_distance_m": 0.14742152392864227,
+            "0": {
+              "q": [
+                0.02544630505144596,
+                0.2839365005493164,
+                -0.006956239230930805,
+                -2.2225375175476074,
+                0.00300196697935462,
+                2.505769968032837,
+                0.8031682372093201,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -0.0005790406721644104,
+                -0.14256171882152557,
+                -0.0016218909295275807,
+                -0.1871628314256668,
+                -0.00089945865329355,
+                0.01673290878534317,
+                0.0014325155643746257,
+                -5.027234237786615e-06,
+                -4.7712492232676595e-06
+              ],
+              "tcp": [
+                -0.010110031813383102,
+                -0.20029060542583466,
+                0.14260263741016388,
+                0.0003080644237343222,
+                0.7076079845428467,
+                0.706605076789856,
+                -0.0001813615090213716
+              ],
+              "tcp_T_cube": [
+                0.22355176508426666,
+                -0.015452052466571331,
+                0.12244520336389542,
+                -0.00015494428225792944,
+                -0.747850239276886,
+                0.6638672947883606,
+                0.0003169917326886207
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.0007239676779136062,
+                0.38248756527900696,
+                -0.016776490956544876,
+                -1.9460983276367188,
+                0.017749762162566185,
+                2.3287792205810547,
+                0.8157567381858826,
+                0.03999999910593033,
+                0.03999999910593033
+              ],
+              "qvel": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tcp": [
+                -0.008486718870699406,
+                0.13189607858657837,
+                0.1810193955898285,
+                -0.002263937843963504,
+                0.6865209937095642,
+                -0.7271022796630859,
+                0.002426158171147108
+              ],
+              "tcp_T_cube": [
+                0.1094728410243988,
+                0.011541564017534256,
+                0.16095061600208282,
+                0.0022841012105345726,
+                0.6845332384109497,
+                0.728973925113678,
+                -0.0024131753016263247
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          },
+          "postcondition": "cube y>=0 and on table; velocity retained, not silently declared settled"
+        },
+        {
+          "skill": "RIGHT_PICK_TO_GOAL",
+          "boundary_step": 100,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              0.0373816043138504,
+              0.15903215110301971,
+              0.0243984367698431,
+              0.06166502833366394,
+              0.0005852666217833757,
+              0.0017326234374195337,
+              0.9980951547622681
+            ],
+            "goal": [
+              0.03825589641928673,
+              0.15619896352291107,
+              0.023777887225151062,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              0.00199267640709877,
+              0.07290907204151154,
+              0.027366112917661667
+            ],
+            "cube_angular_velocity": [
+              0.5194305777549744,
+              -2.107450485229492,
+              3.273613691329956
+            ],
+            "native_success": true,
+            "contact_valid": true,
+            "remaining_steps": 0,
+            "cube_goal_distance_m": 0.0030292607843875885,
+            "0": {
+              "q": [
+                0.025174254551529884,
+                0.27128782868385315,
+                -0.007223328109830618,
+                -2.240849494934082,
+                0.002923419000580907,
+                2.50748610496521,
+                0.8033117055892944,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -3.4746329902191064e-07,
+                -1.0091012882185169e-05,
+                1.7108000349708163e-07,
+                -0.00013743581075686961,
+                -4.5847560414813415e-08,
+                0.0001617392263142392,
+                3.9412727346643806e-05,
+                -4.992448339180555e-06,
+                -4.72716828880948e-06
+              ],
+              "tcp": [
+                -0.00969616137444973,
+                -0.20615136623382568,
+                0.14269445836544037,
+                0.0017429874278604984,
+                0.7078337073326111,
+                0.7063751816749573,
+                -0.0015361927216872573
+              ],
+              "tcp_T_cube": [
+                0.36582449078559875,
+                0.046289533376693726,
+                0.11661463975906372,
+                0.00021236843895167112,
+                -0.7486799359321594,
+                0.6629306674003601,
+                0.001021405216306448
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.0865013524889946,
+                0.6363053321838379,
+                -0.020069347694516182,
+                -2.0419046878814697,
+                0.026428379118442535,
+                2.6710243225097656,
+                0.9507838487625122,
+                0.018251867964863777,
+                0.01827591098845005
+              ],
+              "qvel": [
+                0.00434018624946475,
+                -0.04769359529018402,
+                -0.010832780972123146,
+                -0.09896033257246017,
+                -0.0014781993813812733,
+                0.08507775515317917,
+                0.028697263449430466,
+                0.019552813842892647,
+                -0.010545497760176659
+              ],
+              "tcp": [
+                0.03793282061815262,
+                0.1651288866996765,
+                0.0205533504486084,
+                -0.002140563679859042,
+                0.6639279127120972,
+                -0.7477884292602539,
+                -0.002736019669100642
+              ],
+              "tcp_T_cube": [
+                0.006092682480812073,
+                -0.00016959011554718018,
+                -0.003887031227350235,
+                -0.003769866656512022,
+                0.7054168581962585,
+                0.7087734937667847,
+                -0.003555762115865946
+              ],
+              "grasped": true,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 27.95351791381836,
+                "panda_rightfinger": 27.95926856994629,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          }
+        }
+      ],
+      "initial_sha256": "29d0aecd822336ebe14c454f794cbe43aa17753abefca4784a2704bf2959955e",
+      "final_goal_distance_m": 0.0030292607843875885,
+      "first_native_success_step": 99,
+      "tracking": {
+        "0": {
+          "max_abs_joint_tracking_error_rad": 0.17471612461162,
+          "median_abs_joint_tracking_error_rad": 9.709247387945652e-05,
+          "max_abs_qvel_rad_s": 1.8117674589157104
+        },
+        "1": {
+          "max_abs_joint_tracking_error_rad": 0.13574881436959663,
+          "median_abs_joint_tracking_error_rad": 0.0,
+          "max_abs_qvel_rad_s": 1.4160131216049194
+        }
+      },
+      "phases": {
+        "LEFT_REACH": {
+          "steps": 10,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_CONTACT_APPROACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_PUSH": {
+          "steps": 20,
+          "peak_link_cube_force_N": 0.8890717625617981
+        },
+        "LEFT_RELEASE": {
+          "steps": 15,
+          "peak_link_cube_force_N": 0.0
+        },
+        "PUSH_SETTLE": {
+          "steps": 2,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_REACH": {
+          "steps": 11,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_DESCEND": {
+          "steps": 8,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_CLOSE": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.891647338867188
+        },
+        "RIGHT_LIFT": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.896120071411133
+        },
+        "RIGHT_TO_GOAL": {
+          "steps": 12,
+          "peak_link_cube_force_N": 27.977989196777344
+        },
+        "TERMINAL_HOLD": {
+          "steps": 3,
+          "peak_link_cube_force_N": 27.972854614257812
+        }
+      },
+      "wall_s": 9.887529322004411,
+      "planning_wall_s": 0.08706624497426674,
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742013_full_p020/TRAJECTORY.json.gz",
+      "sha256": "382e693c0283aed9aa13cf223f2542e8817d3f3026c3dd3333dc0117469e0889"
+    },
+    {
+      "prediction": {
+        "selection_objective": "full-suffix",
+        "predicted_suffix_steps": 54,
+        "remaining_budget_at_boundary": 46,
+        "actual_suffix_steps_to_first_native_success": null,
+        "actual_executed_suffix_motion_steps": 46,
+        "observed_suffix_steps": 46,
+        "success_time_censored": true
+      },
+      "case": "742013_full_p020_other",
+      "seed": 742013,
+      "parameters": {
+        "push_y": 0.02,
+        "grasp_axis": "cube_y",
+        "path_stride": 3,
+        "controller": "continuous-clear",
+        "align_grasp_sign": true,
+        "axis_objective": "full-suffix"
+      },
+      "resource_context": "SHARED_GPU_CONTENTION",
+      "success": false,
+      "error": "Horizon: NATIVE100",
+      "steps": 100,
+      "boundaries": [
+        0,
+        54
+      ],
+      "skill_results": [
+        {
+          "skill": "LEFT_PUSH",
+          "boundary_step": 54,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              -0.025223132222890854,
+              0.02319803275167942,
+              0.01999996230006218,
+              0.06009279936552048,
+              4.362092113296967e-06,
+              6.354849119816208e-06,
+              0.9981927871704102
+            ],
+            "goal": [
+              0.03825589641928673,
+              0.15619896352291107,
+              0.023777887225151062,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -1.7931424736161716e-05,
+              0.00023211429652292281,
+              -0.00013410863175522536
+            ],
+            "cube_angular_velocity": [
+              -0.009209563955664635,
+              -0.00015195053128991276,
+              0.00023319419415201992
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 46,
+            "cube_goal_distance_m": 0.14742152392864227,
+            "0": {
+              "q": [
+                0.02544630505144596,
+                0.2839365005493164,
+                -0.006956239230930805,
+                -2.2225375175476074,
+                0.00300196697935462,
+                2.505769968032837,
+                0.8031682372093201,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -0.0005790406721644104,
+                -0.14256171882152557,
+                -0.0016218909295275807,
+                -0.1871628314256668,
+                -0.00089945865329355,
+                0.01673290878534317,
+                0.0014325155643746257,
+                -5.027234237786615e-06,
+                -4.7712492232676595e-06
+              ],
+              "tcp": [
+                -0.010110031813383102,
+                -0.20029060542583466,
+                0.14260263741016388,
+                0.0003080644237343222,
+                0.7076079845428467,
+                0.706605076789856,
+                -0.0001813615090213716
+              ],
+              "tcp_T_cube": [
+                0.22355176508426666,
+                -0.015452052466571331,
+                0.12244520336389542,
+                -0.00015494428225792944,
+                -0.747850239276886,
+                0.6638672947883606,
+                0.0003169917326886207
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.0007239676779136062,
+                0.38248756527900696,
+                -0.016776490956544876,
+                -1.9460983276367188,
+                0.017749762162566185,
+                2.3287792205810547,
+                0.8157567381858826,
+                0.03999999910593033,
+                0.03999999910593033
+              ],
+              "qvel": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tcp": [
+                -0.008486718870699406,
+                0.13189607858657837,
+                0.1810193955898285,
+                -0.002263937843963504,
+                0.6865209937095642,
+                -0.7271022796630859,
+                0.002426158171147108
+              ],
+              "tcp_T_cube": [
+                0.1094728410243988,
+                0.011541564017534256,
+                0.16095061600208282,
+                0.0022841012105345726,
+                0.6845332384109497,
+                0.728973925113678,
+                -0.0024131753016263247
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          },
+          "postcondition": "cube y>=0 and on table; velocity retained, not silently declared settled"
+        },
+        {
+          "skill": "RIGHT_PICK_TO_GOAL",
+          "boundary_step": 100,
+          "physical_success": false,
+          "measurement": {
+            "cube": [
+              0.022745782509446144,
+              0.12570954859256744,
+              0.03448885679244995,
+              0.05972224101424217,
+              0.0030258698388934135,
+              0.006704895757138729,
+              0.9981878995895386
+            ],
+            "goal": [
+              0.03825589641928673,
+              0.15619896352291107,
+              0.023777887225151062,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              0.13391320407390594,
+              0.29840290546417236,
+              -0.046560000628232956
+            ],
+            "cube_angular_velocity": [
+              2.7705447673797607,
+              -0.5018599033355713,
+              1.965520977973938
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 0,
+            "cube_goal_distance_m": 0.035845402628183365,
+            "0": {
+              "q": [
+                0.025174254551529884,
+                0.27128782868385315,
+                -0.007223328109830618,
+                -2.240849494934082,
+                0.002923419000580907,
+                2.50748610496521,
+                0.8033117055892944,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -3.4746329902191064e-07,
+                -1.0091012882185169e-05,
+                1.7108000349708163e-07,
+                -0.00013743581075686961,
+                -4.5847560414813415e-08,
+                0.0001617392263142392,
+                3.9412727346643806e-05,
+                -4.992448339180555e-06,
+                -4.72716828880948e-06
+              ],
+              "tcp": [
+                -0.00969616137444973,
+                -0.20615136623382568,
+                0.14269445836544037,
+                0.0017429874278604984,
+                0.7078337073326111,
+                0.7063751816749573,
+                -0.0015361927216872573
+              ],
+              "tcp_T_cube": [
+                0.3324252963066101,
+                0.0317254513502121,
+                0.1066746637225151,
+                0.005448670592159033,
+                -0.747373640537262,
+                0.6643810272216797,
+                -0.0007769782096147537
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                -0.1730995923280716,
+                0.6853438019752502,
+                0.207280233502388,
+                -1.9031262397766113,
+                -0.24403201043605804,
+                2.569896697998047,
+                -0.47131675481796265,
+                0.01826709881424904,
+                0.018303340300917625
+              ],
+              "qvel": [
+                0.1565794050693512,
+                -0.3671204745769501,
+                0.009487135335803032,
+                -1.076164960861206,
+                -0.08191962540149689,
+                0.6260939240455627,
+                0.2984366714954376,
+                0.017052263021469116,
+                -0.02314912900328636
+              ],
+              "tcp": [
+                0.021679673343896866,
+                0.12564650177955627,
+                0.03850405663251877,
+                0.00278674578294158,
+                0.9981938004493713,
+                -0.06001177057623863,
+                -0.00010373187251389027
+              ],
+              "tcp_T_cube": [
+                0.0010503679513931274,
+                -0.00021272897720336914,
+                0.004014212638139725,
+                0.0026809186674654484,
+                0.0002963889273814857,
+                0.9999880194664001,
+                -0.004086481872946024
+              ],
+              "grasped": true,
+              "static": false,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 27.784706115722656,
+                "panda_rightfinger": 27.960803985595703,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          }
+        }
+      ],
+      "initial_sha256": "29d0aecd822336ebe14c454f794cbe43aa17753abefca4784a2704bf2959955e",
+      "final_goal_distance_m": 0.035845402628183365,
+      "first_native_success_step": null,
+      "tracking": {
+        "0": {
+          "max_abs_joint_tracking_error_rad": 0.17471612461162,
+          "median_abs_joint_tracking_error_rad": 9.709247387945652e-05,
+          "max_abs_qvel_rad_s": 1.8117674589157104
+        },
+        "1": {
+          "max_abs_joint_tracking_error_rad": 0.205578958646164,
+          "median_abs_joint_tracking_error_rad": 0.0,
+          "max_abs_qvel_rad_s": 2.0578908920288086
+        }
+      },
+      "phases": {
+        "LEFT_REACH": {
+          "steps": 10,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_CONTACT_APPROACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_PUSH": {
+          "steps": 20,
+          "peak_link_cube_force_N": 0.8890717625617981
+        },
+        "LEFT_RELEASE": {
+          "steps": 15,
+          "peak_link_cube_force_N": 0.0
+        },
+        "PUSH_SETTLE": {
+          "steps": 2,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_REACH": {
+          "steps": 18,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_DESCEND": {
+          "steps": 6,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_CLOSE": {
+          "steps": 6,
+          "peak_link_cube_force_N": 29.223665237426758
+        },
+        "RIGHT_LIFT": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.921306610107422
+        },
+        "RIGHT_TO_GOAL": {
+          "steps": 10,
+          "peak_link_cube_force_N": 27.961538314819336
+        }
+      },
+      "wall_s": 9.976628814009018,
+      "planning_wall_s": 0.06250037596328184,
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742013_full_p020_other/TRAJECTORY.json.gz",
+      "sha256": "dfcc99db98153c0be09c33767fd16d703ee6f9023fafb4eb8d8dd3bc1df5ed53"
+    },
+    {
+      "prediction": {
+        "selection_objective": "full-suffix",
+        "predicted_suffix_steps": 44,
+        "remaining_budget_at_boundary": 41,
+        "actual_suffix_steps_to_first_native_success": 41,
+        "actual_executed_suffix_motion_steps": 40,
+        "observed_suffix_steps": 41,
+        "success_time_censored": false,
+        "predicted_minus_actual_success_steps": 3
+      },
+      "case": "742013_full_p050",
+      "seed": 742013,
+      "parameters": {
+        "push_y": 0.05,
+        "grasp_axis": "geometry",
+        "path_stride": 3,
+        "controller": "continuous-clear",
+        "align_grasp_sign": true,
+        "axis_objective": "full-suffix"
+      },
+      "resource_context": "SHARED_GPU_CONTENTION",
+      "success": true,
+      "error": null,
+      "steps": 100,
+      "boundaries": [
+        0,
+        59
+      ],
+      "skill_results": [
+        {
+          "skill": "LEFT_PUSH",
+          "boundary_step": 59,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              -0.04184859246015549,
+              0.05214027687907219,
+              0.019999971613287926,
+              -0.06962791085243225,
+              3.4704830795817543e-06,
+              5.242644874670077e-06,
+              0.9975729584693909
+            ],
+            "goal": [
+              0.03825589641928673,
+              0.15619896352291107,
+              0.023777887225151062,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              0.00010766453488031402,
+              7.001816265983507e-05,
+              -0.00011502653069328517
+            ],
+            "cube_angular_velocity": [
+              -0.004981199279427528,
+              0.0028411727398633957,
+              -0.00020237888384144753
+            ],
+            "native_success": false,
+            "contact_valid": true,
+            "remaining_steps": 41,
+            "cube_goal_distance_m": 0.1313743144273758,
+            "0": {
+              "q": [
+                0.048981476575136185,
+                0.2720245122909546,
+                -0.002301502972841263,
+                -2.2317285537719727,
+                0.0021196899469941854,
+                2.5059280395507812,
+                0.8283023834228516,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -0.001112804631702602,
+                -0.11888651549816132,
+                -0.0016121399821713567,
+                -0.16491973400115967,
+                -0.000477486290037632,
+                0.02157922275364399,
+                0.0037134040612727404,
+                -5.101168426335789e-06,
+                -4.668098426918732e-06
+              ],
+              "tcp": [
+                -0.02560574561357498,
+                -0.2028350979089737,
+                0.1456325501203537,
+                -0.0010197007795795798,
+                0.7063430547714233,
+                0.7078686952590942,
+                0.0004971341113559902
+              ],
+              "tcp_T_cube": [
+                0.25473958253860474,
+                -0.015599936246871948,
+                0.12619102001190186,
+                0.0005730896373279393,
+                -0.6569694876670837,
+                0.7539161443710327,
+                -0.0009838578989729285
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.0007239676779136062,
+                0.38248756527900696,
+                -0.016776490956544876,
+                -1.9460983276367188,
+                0.017749762162566185,
+                2.3287792205810547,
+                0.8157567381858826,
+                0.03999999910593033,
+                0.03999999910593033
+              ],
+              "qvel": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tcp": [
+                -0.008486718870699406,
+                0.13189607858657837,
+                0.1810193955898285,
+                -0.002263937843963504,
+                0.6865209937095642,
+                -0.7271022796630859,
+                0.002426158171147108
+              ],
+              "tcp_T_cube": [
+                0.08153203129768372,
+                0.0297995712608099,
+                0.1608283519744873,
+                0.00257647386752069,
+                0.7731385827064514,
+                0.6342281699180603,
+                -0.0020956373773515224
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          },
+          "postcondition": "cube y>=0 and on table; velocity retained, not silently declared settled"
+        },
+        {
+          "skill": "RIGHT_PICK_TO_GOAL",
+          "boundary_step": 100,
+          "physical_success": true,
+          "measurement": {
+            "cube": [
+              0.03807015344500542,
+              0.15838567912578583,
+              0.02416406199336052,
+              -0.0693456307053566,
+              0.009361389093101025,
+              0.002193948021158576,
+              0.9975463151931763
+            ],
+            "goal": [
+              0.03825589641928673,
+              0.15619896352291107,
+              0.023777887225151062,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "cube_linear_velocity": [
+              -0.006520446855574846,
+              0.06724283844232559,
+              0.05640290677547455
+            ],
+            "cube_angular_velocity": [
+              0.050986457616090775,
+              -1.1569656133651733,
+              1.4974805116653442
+            ],
+            "native_success": true,
+            "contact_valid": true,
+            "remaining_steps": 0,
+            "cube_goal_distance_m": 0.002228308003395796,
+            "0": {
+              "q": [
+                0.04859953373670578,
+                0.261298269033432,
+                -0.0025925789959728718,
+                -2.247710943222046,
+                0.002077839570119977,
+                2.508145809173584,
+                0.8286733627319336,
+                0.0,
+                0.0
+              ],
+              "qvel": [
+                -1.372635665575217e-06,
+                -1.0654334801074583e-05,
+                1.5843035328089172e-08,
+                -0.0001374513958580792,
+                -5.9660458795463e-09,
+                0.00015957390132825822,
+                3.995368388132192e-05,
+                -5.0762946557370014e-06,
+                -4.806777269550366e-06
+              ],
+              "tcp": [
+                -0.0249938927590847,
+                -0.20785506069660187,
+                0.14556491374969482,
+                0.00012929257354699075,
+                0.706701934337616,
+                0.7075111865997314,
+                -0.0004974051262252033
+              ],
+              "tcp_T_cube": [
+                0.36627569794654846,
+                0.0635463148355484,
+                0.12104327976703644,
+                0.007662804797291756,
+                -0.6567683815956116,
+                0.7540356516838074,
+                0.005167302675545216
+              ],
+              "grasped": false,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 0.0,
+                "panda_rightfinger": 0.0,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            },
+            "1": {
+              "q": [
+                0.04757290333509445,
+                0.6173142790794373,
+                0.014556803740561008,
+                -2.0486040115356445,
+                -0.018391089513897896,
+                2.6683850288391113,
+                0.7179194092750549,
+                0.018244799226522446,
+                0.018269279971718788
+              ],
+              "qvel": [
+                0.012749535962939262,
+                -0.05250279977917671,
+                -0.014059166423976421,
+                -0.1167234480381012,
+                -0.002217945409938693,
+                0.09781414270401001,
+                0.045762743800878525,
+                0.018088802695274353,
+                -0.012776069343090057
+              ],
+              "tcp": [
+                0.037160422652959824,
+                0.16325607895851135,
+                0.029189661145210266,
+                0.000909471302293241,
+                0.7559033036231995,
+                -0.6546820402145386,
+                0.0009190986165776849
+              ],
+              "tcp_T_cube": [
+                0.004937395453453064,
+                -0.0002058669924736023,
+                0.005038321018218994,
+                0.006493742112070322,
+                0.7055047750473022,
+                0.7086426019668579,
+                -0.006816170644015074
+              ],
+              "grasped": true,
+              "static": true,
+              "robot_cube_force_N": {
+                "panda_link0": 0.0,
+                "panda_link1": 0.0,
+                "panda_link2": 0.0,
+                "panda_link3": 0.0,
+                "panda_link4": 0.0,
+                "panda_link5": 0.0,
+                "panda_link6": 0.0,
+                "panda_link7": 0.0,
+                "panda_link8": 0.0,
+                "panda_hand": 0.0,
+                "panda_hand_tcp": 0.0,
+                "panda_leftfinger": 27.884828567504883,
+                "panda_rightfinger": 27.928604125976562,
+                "camera_base_link": 0.0,
+                "camera_link": 0.0
+              }
+            }
+          }
+        }
+      ],
+      "initial_sha256": "29d0aecd822336ebe14c454f794cbe43aa17753abefca4784a2704bf2959955e",
+      "final_goal_distance_m": 0.002228308003395796,
+      "first_native_success_step": 100,
+      "tracking": {
+        "0": {
+          "max_abs_joint_tracking_error_rad": 0.1958539515379738,
+          "median_abs_joint_tracking_error_rad": 0.00015877117402851582,
+          "max_abs_qvel_rad_s": 1.9969251155853271
+        },
+        "1": {
+          "max_abs_joint_tracking_error_rad": 0.11634735773766502,
+          "median_abs_joint_tracking_error_rad": 0.0,
+          "max_abs_qvel_rad_s": 1.2162363529205322
+        }
+      },
+      "phases": {
+        "LEFT_REACH": {
+          "steps": 10,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_CONTACT_APPROACH": {
+          "steps": 7,
+          "peak_link_cube_force_N": 0.0
+        },
+        "LEFT_PUSH": {
+          "steps": 23,
+          "peak_link_cube_force_N": 1.0830827951431274
+        },
+        "LEFT_RELEASE": {
+          "steps": 17,
+          "peak_link_cube_force_N": 0.06852539628744125
+        },
+        "PUSH_SETTLE": {
+          "steps": 2,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_REACH": {
+          "steps": 10,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_DESCEND": {
+          "steps": 6,
+          "peak_link_cube_force_N": 0.0
+        },
+        "RIGHT_CLOSE": {
+          "steps": 6,
+          "peak_link_cube_force_N": 28.87661361694336
+        },
+        "RIGHT_LIFT": {
+          "steps": 6,
+          "peak_link_cube_force_N": 27.869659423828125
+        },
+        "RIGHT_TO_GOAL": {
+          "steps": 12,
+          "peak_link_cube_force_N": 27.966182708740234
+        },
+        "TERMINAL_HOLD": {
+          "steps": 1,
+          "peak_link_cube_force_N": 27.928604125976562
+        }
+      },
+      "wall_s": 10.260324710980058,
+      "planning_wall_s": 0.08331903716316447,
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742013_full_p050/TRAJECTORY.json.gz",
+      "sha256": "88b6aa2bd8b2dedbee153ec79df5685fe7f610f08b113b668c9bff6abe302a15"
+    }
+  ]
+}

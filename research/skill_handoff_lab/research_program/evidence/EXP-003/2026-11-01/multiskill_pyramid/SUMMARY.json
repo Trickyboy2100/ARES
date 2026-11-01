@@ -1,0 +1,36 @@
+{
+  "episodes": 10,
+  "physical_steps": 2500,
+  "optimizer_updates": 0,
+  "initial_hash_consistent": true,
+  "two_boundary_episodes": 5,
+  "verified_first_boundary": 5,
+  "scope": "NATIVE_PARAMETER_SCOUT_NOT_RL_GAIN",
+  "kinematic_valid_but_precursor_failed": 3,
+  "policies": {
+    "axis0": {
+      "successes": 2,
+      "episodes": 2
+    },
+    "axis90": {
+      "successes": 0,
+      "episodes": 2
+    },
+    "axis90_rule": {
+      "successes": 0,
+      "episodes": 1
+    },
+    "axis_minus90": {
+      "successes": 0,
+      "episodes": 2
+    },
+    "axis_minus90_rule": {
+      "successes": 1,
+      "episodes": 1
+    },
+    "axis_search": {
+      "successes": 2,
+      "episodes": 2
+    }
+  }
+}

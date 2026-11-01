@@ -1,0 +1,939 @@
+{
+  "archive": "RAW_EVIDENCE.tar.gz",
+  "sha256": "26f2ddb7861ca3a4f59dde5647439a1c4f609a47a48d7b1227548650e367409a",
+  "bytes": 2768625,
+  "source_root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_pull",
+  "files": [
+    {
+      "path": "740000_g035/MANIFEST.json",
+      "bytes": 1306,
+      "sha256": "7f7913ddc03e13b432d351df23bf0948d6e45491e2b74b9f0686998d101cfd78"
+    },
+    {
+      "path": "740000_g035/RESULTS.json",
+      "bytes": 6098,
+      "sha256": "a6760b2691bf317c70e1fece3ee15300db1ca81ef92389a4990bca263e230833"
+    },
+    {
+      "path": "740000_g035/TRAJECTORY.json.gz",
+      "bytes": 75162,
+      "sha256": "f4dc04a25246312c53fc2bf74f145eabb4028cd18a00b3e2e5dfca3715773436"
+    },
+    {
+      "path": "740000_g035/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740000_g035/program_multiskill_pull.py",
+      "bytes": 11092,
+      "sha256": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c"
+    },
+    {
+      "path": "740000_g035/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740000_g035_h055/MANIFEST.json",
+      "bytes": 1308,
+      "sha256": "10a768cdc974bce0c8d3dea5469ce21d0201d751880dbfa73f92c82a4896bcc8"
+    },
+    {
+      "path": "740000_g035_h055/RESULTS.json",
+      "bytes": 6111,
+      "sha256": "4b181f570463f79ada5404eb7d795f1bd19454febb5126c4343935ef0a061cca"
+    },
+    {
+      "path": "740000_g035_h055/TRAJECTORY.json.gz",
+      "bytes": 75721,
+      "sha256": "5b6ff5a54990712a044d5a40c28fa6cfdb35d9bdb543e17b6ebea75b75d44f2c"
+    },
+    {
+      "path": "740000_g035_h055/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740000_g035_h055/program_multiskill_pull.py",
+      "bytes": 11092,
+      "sha256": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c"
+    },
+    {
+      "path": "740000_g035_h055/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740000_g035_h075/MANIFEST.json",
+      "bytes": 1308,
+      "sha256": "80f717e231d60b1196b4abe95c334b5ab53ce5aba8ed639241fa8cf36b780f37"
+    },
+    {
+      "path": "740000_g035_h075/RESULTS.json",
+      "bytes": 6101,
+      "sha256": "32adcc2c198a2ce4e8ae4ea73d76ed07ea17fbc5401b21a041d5a806ada8fa61"
+    },
+    {
+      "path": "740000_g035_h075/TRAJECTORY.json.gz",
+      "bytes": 75268,
+      "sha256": "72e8579f699f17e53f542fbfc77428969aa78a3ba404346780c2320ce0519093"
+    },
+    {
+      "path": "740000_g035_h075/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740000_g035_h075/program_multiskill_pull.py",
+      "bytes": 11092,
+      "sha256": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c"
+    },
+    {
+      "path": "740000_g035_h075/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740000_g070_h055/MANIFEST.json",
+      "bytes": 1485,
+      "sha256": "166d658a61b35b479bb6734368922e6135a10ad1ca9fd19a39ee3c65ce30fe1b"
+    },
+    {
+      "path": "740000_g070_h055/RESULTS.json",
+      "bytes": 6183,
+      "sha256": "bcb01583881e25c82f3fd04522472843a74f667f8ff3b9e6deaa71f26b9ab17e"
+    },
+    {
+      "path": "740000_g070_h055/TRAJECTORY.json.gz",
+      "bytes": 77499,
+      "sha256": "0c1c70a31a3adfac327ca0b058928b5e953043ade789da3716250e52347ac364"
+    },
+    {
+      "path": "740000_g070_h055/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740000_g070_h055/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740000_g070_h055/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740000_g070_h065/MANIFEST.json",
+      "bytes": 1485,
+      "sha256": "09d102bfbc8c748ca7ce8f053596533bdedf0107f594f25fc7d4fde75d0f19ea"
+    },
+    {
+      "path": "740000_g070_h065/RESULTS.json",
+      "bytes": 6186,
+      "sha256": "cc9d938170bf0cd40b15b1b9b8f2c59f28a8df16bbbc1acf071021f1a9d0f2d1"
+    },
+    {
+      "path": "740000_g070_h065/TRAJECTORY.json.gz",
+      "bytes": 76137,
+      "sha256": "31c31e518f7e6f6bcc35c02934d43cf48b1404315b60c2867cdc8d43d6c81797"
+    },
+    {
+      "path": "740000_g070_h065/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740000_g070_h065/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740000_g070_h065/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740000_g105/MANIFEST.json",
+      "bytes": 1306,
+      "sha256": "95d075edd7b7b1126a93a357796ff7ecc4d99935cc84bbbd4bc5fa5904aad3f5"
+    },
+    {
+      "path": "740000_g105/RESULTS.json",
+      "bytes": 6079,
+      "sha256": "74e8328fb81aaa9433a2cbfe6ad3bfa7d7df823a742fe6f0ec479457ba468ca2"
+    },
+    {
+      "path": "740000_g105/TRAJECTORY.json.gz",
+      "bytes": 115923,
+      "sha256": "dd53300bc04d84ac3b35447e4d0f909a5fe6fff6787e5db314d1c336e6bd394c"
+    },
+    {
+      "path": "740000_g105/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740000_g105/program_multiskill_pull.py",
+      "bytes": 11092,
+      "sha256": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c"
+    },
+    {
+      "path": "740000_g105/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740000_lookahead/MANIFEST.json",
+      "bytes": 1305,
+      "sha256": "726e7851f41f0189fbba3f2a1fbd45f86d7f4c8608e9256b27de25f28001dadc"
+    },
+    {
+      "path": "740000_lookahead/RESULTS.json",
+      "bytes": 6102,
+      "sha256": "7a5e0afabc42a3c413b348385b4bd21dc5556fb9953ebd9afbf585ce6f6683bd"
+    },
+    {
+      "path": "740000_lookahead/TRAJECTORY.json.gz",
+      "bytes": 72616,
+      "sha256": "083611bf228f33fce90b8858b46fe5ea098581499f1089be451e17c05dfbb567"
+    },
+    {
+      "path": "740000_lookahead/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740000_lookahead/program_multiskill_pull.py",
+      "bytes": 11092,
+      "sha256": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c"
+    },
+    {
+      "path": "740000_lookahead/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740001_g035/MANIFEST.json",
+      "bytes": 1306,
+      "sha256": "e91734aa188405d805e7bf3167c40cce63715ab5c0356c64959ebb6793fe1bb7"
+    },
+    {
+      "path": "740001_g035/RESULTS.json",
+      "bytes": 6102,
+      "sha256": "3ad51b38580da0f303dc945b62247f25822d72bc7d627e8200910af619c92349"
+    },
+    {
+      "path": "740001_g035/TRAJECTORY.json.gz",
+      "bytes": 73193,
+      "sha256": "83c5d55b9fbdc32015a3626d82bfd44d7a00faedd993168b49d26a04e6efab0d"
+    },
+    {
+      "path": "740001_g035/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740001_g035/program_multiskill_pull.py",
+      "bytes": 11092,
+      "sha256": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c"
+    },
+    {
+      "path": "740001_g035/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740001_g070_h065/MANIFEST.json",
+      "bytes": 1307,
+      "sha256": "0d81b4ef33a318ccdf2cf26f236aadfb04c4789cb1ef9063c2fb93c99c754bee"
+    },
+    {
+      "path": "740001_g070_h065/RESULTS.json",
+      "bytes": 6102,
+      "sha256": "ab85658b56e95f0c3655dfebf936310ebcbbc1e8782b40fb6156e24f508994a5"
+    },
+    {
+      "path": "740001_g070_h065/TRAJECTORY.json.gz",
+      "bytes": 72630,
+      "sha256": "04109b32704a1035afbedf5ced932da3e44157f9434ed5a8b92efe881848513e"
+    },
+    {
+      "path": "740001_g070_h065/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740001_g070_h065/program_multiskill_pull.py",
+      "bytes": 11092,
+      "sha256": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c"
+    },
+    {
+      "path": "740001_g070_h065/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740001_g070_h075/MANIFEST.json",
+      "bytes": 1307,
+      "sha256": "dbe2d6fc247e6000e4c6f21bfae13f2f4d0f5f6d8f49fa29e308ca3214136a5f"
+    },
+    {
+      "path": "740001_g070_h075/RESULTS.json",
+      "bytes": 6075,
+      "sha256": "f44e56adf66e30ff3b1a53eff330af515ce73e9c38b0feb54d418de358a2d500"
+    },
+    {
+      "path": "740001_g070_h075/TRAJECTORY.json.gz",
+      "bytes": 73101,
+      "sha256": "9cfb3b7077ac8c1ea063992ac99ec31f9f538e55a322a880a941c8f1de87978e"
+    },
+    {
+      "path": "740001_g070_h075/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740001_g070_h075/program_multiskill_pull.py",
+      "bytes": 11092,
+      "sha256": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c"
+    },
+    {
+      "path": "740001_g070_h075/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740001_g105/MANIFEST.json",
+      "bytes": 1306,
+      "sha256": "1bb81aba7c863546e30422723568bf187f5840283bed68e0c33a04fbcdac43ba"
+    },
+    {
+      "path": "740001_g105/RESULTS.json",
+      "bytes": 6092,
+      "sha256": "f7814f748a70456f0da946e08f71dc9ab8e924129019dfc57227876998a973f0"
+    },
+    {
+      "path": "740001_g105/TRAJECTORY.json.gz",
+      "bytes": 73494,
+      "sha256": "a104c17e8f16d03828320e555367af69ca40f257dd26c5fe234803f1602cdb2a"
+    },
+    {
+      "path": "740001_g105/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740001_g105/program_multiskill_pull.py",
+      "bytes": 11092,
+      "sha256": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c"
+    },
+    {
+      "path": "740001_g105/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740001_lookahead/MANIFEST.json",
+      "bytes": 1305,
+      "sha256": "676fb685a24e5380c88bd2caedca6e1b439b48466021b409ca815df919f4fcee"
+    },
+    {
+      "path": "740001_lookahead/RESULTS.json",
+      "bytes": 6099,
+      "sha256": "ae6afba73b1239b4f6ad179ee8f6f21946f2c5ad7d8586090bccd33a2f49d689"
+    },
+    {
+      "path": "740001_lookahead/TRAJECTORY.json.gz",
+      "bytes": 72973,
+      "sha256": "b95ec79e87520ef89bcab3d0503399c53b43165bc3409b8b92bc521733e10e38"
+    },
+    {
+      "path": "740001_lookahead/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740001_lookahead/program_multiskill_pull.py",
+      "bytes": 11092,
+      "sha256": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c"
+    },
+    {
+      "path": "740001_lookahead/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740002_g035/MANIFEST.json",
+      "bytes": 1306,
+      "sha256": "81216c14b89e6ea4c4546544df6f6c15637f05277060c3f0120d322b579d2149"
+    },
+    {
+      "path": "740002_g035/RESULTS.json",
+      "bytes": 6087,
+      "sha256": "1d557c44ba80a8559b434cc720d1594433d82d0527f982597453c0a37f06f5f5"
+    },
+    {
+      "path": "740002_g035/TRAJECTORY.json.gz",
+      "bytes": 73828,
+      "sha256": "293f52134e4de4542316fe26a20f21a4999174329551a92c23fef3e89385d0d3"
+    },
+    {
+      "path": "740002_g035/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740002_g035/program_multiskill_pull.py",
+      "bytes": 11092,
+      "sha256": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c"
+    },
+    {
+      "path": "740002_g035/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740002_g070_h055/MANIFEST.json",
+      "bytes": 1485,
+      "sha256": "a001870c4f62a70442df19d63ccf69641ee002c63c1d799decb54ab7b8d49412"
+    },
+    {
+      "path": "740002_g070_h055/RESULTS.json",
+      "bytes": 6175,
+      "sha256": "bc873dd8caf3e69e518ce37ead16d804b95d43bf2f919024eb714c62aa33146d"
+    },
+    {
+      "path": "740002_g070_h055/TRAJECTORY.json.gz",
+      "bytes": 73478,
+      "sha256": "fa50ad4094aaec9a74363e0a88473b4e16e2745bbbd2581771334c416fd3275a"
+    },
+    {
+      "path": "740002_g070_h055/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740002_g070_h055/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740002_g070_h055/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740002_g070_h065/MANIFEST.json",
+      "bytes": 1485,
+      "sha256": "c92136cf4fe4881659259c08e1e9921deefeee1ed2c87e1019a9283eec6c9a88"
+    },
+    {
+      "path": "740002_g070_h065/RESULTS.json",
+      "bytes": 6163,
+      "sha256": "06ea1f4f6de1688907794e4475c9b13b5ac76ac96d9f719efb58c8bc183bef17"
+    },
+    {
+      "path": "740002_g070_h065/TRAJECTORY.json.gz",
+      "bytes": 73368,
+      "sha256": "0c985651d139e4fca170f421475b0caf99e4c5ae30096eb568fab604daa9d09a"
+    },
+    {
+      "path": "740002_g070_h065/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740002_g070_h065/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740002_g070_h065/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740002_lookahead/MANIFEST.json",
+      "bytes": 1305,
+      "sha256": "026c238667dacc734c64f13fe14cf1166b477a30aac48638fa520ca346067955"
+    },
+    {
+      "path": "740002_lookahead/RESULTS.json",
+      "bytes": 6113,
+      "sha256": "e5d171fa9b5166100a7573ecb5d220a3a5568bb21873310bb2188e9da9daa45c"
+    },
+    {
+      "path": "740002_lookahead/TRAJECTORY.json.gz",
+      "bytes": 73596,
+      "sha256": "e2ea509db81ec047cea9e731d0b7cc900b6f224faec003dcc5405bc107b72e74"
+    },
+    {
+      "path": "740002_lookahead/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740002_lookahead/program_multiskill_pull.py",
+      "bytes": 11092,
+      "sha256": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c"
+    },
+    {
+      "path": "740002_lookahead/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740003_g105_pull250/MANIFEST.json",
+      "bytes": 1484,
+      "sha256": "4dbc142ab9b549b7badbff58ac64f7f6f41d25e4bff21a7124a9e4b436b45f32"
+    },
+    {
+      "path": "740003_g105_pull250/RESULTS.json",
+      "bytes": 6176,
+      "sha256": "d8ff4b232aaddb46ad4bdbddc17805a8835b5cdb050135d74c217053346d838c"
+    },
+    {
+      "path": "740003_g105_pull250/TRAJECTORY.json.gz",
+      "bytes": 72224,
+      "sha256": "fd4190230ebb8f1398a15932ee9da8c8be10ed5724be1761c99463254031bfe8"
+    },
+    {
+      "path": "740003_g105_pull250/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740003_g105_pull250/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740003_g105_pull250/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740003_g105_pull290/MANIFEST.json",
+      "bytes": 1484,
+      "sha256": "499c73c32c0bfb1eb17ab9a26405cc974e0d728b47ba077cdf37dee26d5d049d"
+    },
+    {
+      "path": "740003_g105_pull290/RESULTS.json",
+      "bytes": 6182,
+      "sha256": "f4ad9132f2f3d04c5b4a11acf23a9274e38dcdc9481df8f020583956ec89feee"
+    },
+    {
+      "path": "740003_g105_pull290/TRAJECTORY.json.gz",
+      "bytes": 72397,
+      "sha256": "7f7c640214f485e998bfbdb928c1518b0bea9e212d257cd8d0d15ac8f8b7a305"
+    },
+    {
+      "path": "740003_g105_pull290/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740003_g105_pull290/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740003_g105_pull290/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740003_goal/MANIFEST.json",
+      "bytes": 1482,
+      "sha256": "772229491be2d51e76d54180cdd8b93ec8ca263e88b208e6b31ab1017ee6653c"
+    },
+    {
+      "path": "740003_goal/RESULTS.json",
+      "bytes": 6148,
+      "sha256": "54b5fd15a87bb4309f1de4745398f3682f9b10720f04e5bd9afbb5258451f597"
+    },
+    {
+      "path": "740003_goal/TRAJECTORY.json.gz",
+      "bytes": 71739,
+      "sha256": "ff2959005b7be8e76a42ec6102ee6d24361b885c25bc6b7796926c0c29c069f1"
+    },
+    {
+      "path": "740003_goal/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740003_goal/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740003_goal/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740003_pull250/MANIFEST.json",
+      "bytes": 1483,
+      "sha256": "4a8c2a73f375798041fa626166ee1f4500c500f2d238dc90ad92561f30bd8d81"
+    },
+    {
+      "path": "740003_pull250/RESULTS.json",
+      "bytes": 6157,
+      "sha256": "9e91f71a0d87df54b6da002eec60030f10a1884d5a47d079b707c8b2ab044f7a"
+    },
+    {
+      "path": "740003_pull250/TRAJECTORY.json.gz",
+      "bytes": 71753,
+      "sha256": "1e698d465dff4f9cfb870abc614c6c7de891f3b1a7218f4f2c97b8204757c930"
+    },
+    {
+      "path": "740003_pull250/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740003_pull250/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740003_pull250/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740003_pull290/MANIFEST.json",
+      "bytes": 1483,
+      "sha256": "f3641524c3b194b65c837ae4839e645a2921556380515d22ec020bd4fb9d60df"
+    },
+    {
+      "path": "740003_pull290/RESULTS.json",
+      "bytes": 6165,
+      "sha256": "f8c2418ea3f7408077e73a555efbc64beebc6463845ee6a82135267c439f5185"
+    },
+    {
+      "path": "740003_pull290/TRAJECTORY.json.gz",
+      "bytes": 72677,
+      "sha256": "51ea332ef58749816e2f1833e2d36eed87e6f2306eb2f9c33bc0e94011abd288"
+    },
+    {
+      "path": "740003_pull290/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740003_pull290/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740003_pull290/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740004_g105_pull250/MANIFEST.json",
+      "bytes": 1484,
+      "sha256": "eebd595d5fcc4c04c6dfd7e2bcc1c58e500db7ec1e8e5705d5fe2f941d8bcfb1"
+    },
+    {
+      "path": "740004_g105_pull250/RESULTS.json",
+      "bytes": 6176,
+      "sha256": "250e3baea91fc1f8b394ffa3b129e784956e239c5dd4ec04b84d50ed79b9e461"
+    },
+    {
+      "path": "740004_g105_pull250/TRAJECTORY.json.gz",
+      "bytes": 73496,
+      "sha256": "01252b2176c67d6d61f6a78ea5e2e7d5a513c639472e26f666e9bf565744075b"
+    },
+    {
+      "path": "740004_g105_pull250/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740004_g105_pull250/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740004_g105_pull250/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740004_g105_pull290/MANIFEST.json",
+      "bytes": 1484,
+      "sha256": "cf0449d38cb36acb27d1a86db651c9e8c07a23a3dbbdc2b2b1070d8a8612b248"
+    },
+    {
+      "path": "740004_g105_pull290/RESULTS.json",
+      "bytes": 6187,
+      "sha256": "6f91b5803839613a76b363fcfcaee0a74135c29ead5b2a5295d374575e2c4b83"
+    },
+    {
+      "path": "740004_g105_pull290/TRAJECTORY.json.gz",
+      "bytes": 73742,
+      "sha256": "87a33f2465fcc056174adaa12c402f92e4dbda4577479bc4bc0d04783990a5d2"
+    },
+    {
+      "path": "740004_g105_pull290/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740004_g105_pull290/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740004_g105_pull290/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740004_goal/MANIFEST.json",
+      "bytes": 1482,
+      "sha256": "fc2e5cdc77554298ec48674da2f2b5d3c1db3583f996329cce48e5202d8c2311"
+    },
+    {
+      "path": "740004_goal/RESULTS.json",
+      "bytes": 6133,
+      "sha256": "e56b9dd58dc14c495930e5f7ede5025293b5423f5472b157c91d784e3240516b"
+    },
+    {
+      "path": "740004_goal/TRAJECTORY.json.gz",
+      "bytes": 73446,
+      "sha256": "d24513c3fea5a2ab2b74656ea5bb5c62d130ef06ad1fec9b1da0a9880ef818ec"
+    },
+    {
+      "path": "740004_goal/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740004_goal/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740004_goal/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740004_pull250/MANIFEST.json",
+      "bytes": 1483,
+      "sha256": "d1f1f51c10e4e318acc84a04a3d4c9cf1a02f0ef0466cad45a57f3b643094f4d"
+    },
+    {
+      "path": "740004_pull250/RESULTS.json",
+      "bytes": 6139,
+      "sha256": "ca7e7d991c64bd8f4ace47f49880d37a3ede74f3cd5f4ea65978cc3bd456ac57"
+    },
+    {
+      "path": "740004_pull250/TRAJECTORY.json.gz",
+      "bytes": 73459,
+      "sha256": "50ff8d63b759221dfd4c3c6666dc0d7f1b09590ee87cf5fb2f15d83a56e11c88"
+    },
+    {
+      "path": "740004_pull250/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740004_pull250/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740004_pull250/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740004_pull290/MANIFEST.json",
+      "bytes": 1483,
+      "sha256": "7b9720043cad74eca14592d73cf70e463ce0246e36de77be09e32445ab1ad059"
+    },
+    {
+      "path": "740004_pull290/RESULTS.json",
+      "bytes": 6171,
+      "sha256": "257bae22a396ebfa49662b7571ece769b738dc0620bd5637f77780fc8450ca01"
+    },
+    {
+      "path": "740004_pull290/TRAJECTORY.json.gz",
+      "bytes": 73614,
+      "sha256": "335a93ce7de6b22d67d8dce3a960dc26f7c5d6554f4f25436e16fed7b794fd39"
+    },
+    {
+      "path": "740004_pull290/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740004_pull290/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740004_pull290/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740005_g105_pull250/MANIFEST.json",
+      "bytes": 1484,
+      "sha256": "88da83b84b2c26459d88723f9ec8889364206e07fc29257a993bdf3988705608"
+    },
+    {
+      "path": "740005_g105_pull250/RESULTS.json",
+      "bytes": 6188,
+      "sha256": "6fda527dbbcb83af49a149495fb2b561907a51f02260f67968fccd9b6fa2d80d"
+    },
+    {
+      "path": "740005_g105_pull250/TRAJECTORY.json.gz",
+      "bytes": 72304,
+      "sha256": "b53b7889dc7a3b6c95f74e40e933f49aad62ac9dbd1a3abe66f09b7398afee66"
+    },
+    {
+      "path": "740005_g105_pull250/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740005_g105_pull250/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740005_g105_pull250/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740005_g105_pull290/MANIFEST.json",
+      "bytes": 1484,
+      "sha256": "323f618ea62236055af6327674879235462758a56c3b8b5b764e7c1eef896f71"
+    },
+    {
+      "path": "740005_g105_pull290/RESULTS.json",
+      "bytes": 6193,
+      "sha256": "48455df4e424aaf0d6e87860680b96c2875db60b69956cb05a80ba795091771f"
+    },
+    {
+      "path": "740005_g105_pull290/TRAJECTORY.json.gz",
+      "bytes": 72662,
+      "sha256": "e0e5643ac1086b613e1dfaf5b9932fd0af252439636e336563c1ce375f56c0ca"
+    },
+    {
+      "path": "740005_g105_pull290/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740005_g105_pull290/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740005_g105_pull290/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740005_goal/MANIFEST.json",
+      "bytes": 1482,
+      "sha256": "6d108aa6af26727d03ec72cd7d8fa9a8b75c816a542b3583cb6e505a7371f413"
+    },
+    {
+      "path": "740005_goal/RESULTS.json",
+      "bytes": 6154,
+      "sha256": "6c6f2da07f85538f6e9ba10c819348d36e3a99f3bec74d94942fe9019f5ba9ac"
+    },
+    {
+      "path": "740005_goal/TRAJECTORY.json.gz",
+      "bytes": 71198,
+      "sha256": "0d8d5de1a838fe6478365796e3bf230d2726723f7f1a72b758b7d8fe1a7c084d"
+    },
+    {
+      "path": "740005_goal/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740005_goal/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740005_goal/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740005_pull250/MANIFEST.json",
+      "bytes": 1483,
+      "sha256": "4bd93809a59759542eb17b7787a1ddb26c94ebe1861bdf32da8994c9b1709d91"
+    },
+    {
+      "path": "740005_pull250/RESULTS.json",
+      "bytes": 6163,
+      "sha256": "e0505a93ba69b5ea0899e43aca43252ef56b6085189fc4bc859eac262c332714"
+    },
+    {
+      "path": "740005_pull250/TRAJECTORY.json.gz",
+      "bytes": 71219,
+      "sha256": "433778e2f96e42c37f3be6a0e2fbac613fb0e92dc6be8fb7aac1ee5eb9f0eb1f"
+    },
+    {
+      "path": "740005_pull250/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740005_pull250/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740005_pull250/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740005_pull290/MANIFEST.json",
+      "bytes": 1483,
+      "sha256": "9c8b1d19efa92d4272ffb9ce18d95b244f75ef916de5bb6832593105b0fe38ed"
+    },
+    {
+      "path": "740005_pull290/RESULTS.json",
+      "bytes": 6172,
+      "sha256": "5b148c74039882f7fb2cb0a74cf0ef8fb8319e144201b988bb0ae8542cb98efe"
+    },
+    {
+      "path": "740005_pull290/TRAJECTORY.json.gz",
+      "bytes": 71585,
+      "sha256": "73813cc612b319c9150f7b63dcbcacf98a780c656e3ea5b762a9281ebca8b049"
+    },
+    {
+      "path": "740005_pull290/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740005_pull290/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740005_pull290/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    }
+  ],
+  "scope": "complete raw physics traces plus exact per-run source snapshots; no physical hardware data"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "left": "742000_continuous_p020",
+    "right": "742000_continuous_p080",
+    "initial_exact": true,
+    "shared_action_prefix_steps": 17,
+    "shared_prefix_states_exact": true,
+    "second_decision_boundary": 53,
+    "same_second_boundary_state": false,
+    "left_success": true,
+    "right_success": false
+  },
+  {
+    "left": "742001_continuous_p020",
+    "right": "742001_continuous_p080",
+    "initial_exact": true,
+    "shared_action_prefix_steps": 18,
+    "shared_prefix_states_exact": true,
+    "second_decision_boundary": 55,
+    "same_second_boundary_state": false,
+    "left_success": false,
+    "right_success": false
+  },
+  {
+    "left": "742001_p020_aligned",
+    "right": "742001_p020_aligned_y",
+    "initial_exact": true,
+    "shared_action_prefix_steps": 56,
+    "shared_prefix_states_exact": true,
+    "second_decision_boundary": 55,
+    "same_second_boundary_state": true,
+    "left_success": false,
+    "right_success": false
+  }
+]

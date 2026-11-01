@@ -1,0 +1,2383 @@
+{
+  "classification": "MEASURED_TRAJECTORY_CPU_DIAGNOSTIC",
+  "new_physics_steps": 0,
+  "optimizer_updates": 0,
+  "window_definition": "last40 actual servo control steps before terminal hold; last10 skill decisions for progress; success windows occur earlier than failures so not matched time.",
+  "gate_definition": "advance allowed if lateral<0.4mm and orientation<0.03rad; negative advance bypasses alignment gate; positive advance clipped at4mm",
+  "source_sha256": "abda66e71a52619412a503e4f71867285faa13b9cc16f6339baa12fe4caf4b23",
+  "pairs": [
+    {
+      "failure": {
+        "seed": 732001,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "success": false,
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713",
+        "trace_sha256": "19710db19f72950e5a0563cac2b8df473f5de33865ca143c94df24f522054773",
+        "hold_entry": null,
+        "servo_steps": 119,
+        "window_servo_steps": 40,
+        "tail_transition_count": 10,
+        "forward_allowed_fraction": 0.0,
+        "lateral_gate_block_fraction": 1.0,
+        "orientation_gate_block_fraction": 0.0,
+        "both_gate_block_fraction": 0.0,
+        "median_lateral_error_mm": 2.944996114820242,
+        "median_orientation_error_rad": 0.005190451529034797,
+        "requested_clipped_max_difference": 0.0,
+        "residual_abs_ge_095_fraction": 0.0,
+        "near_bound_fraction_y_z_advance": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_delta_clipping_fraction": 0.0,
+        "advance_upper4mm_fraction": 1.0,
+        "advance_negative_fraction": 0.0,
+        "mean_action": [
+          -0.31947276890277865,
+          0.26997154355049136,
+          0.8185966849327088
+        ],
+        "mean_commanded_advance_mm": 4.0,
+        "median_contact_force_N": 0.0,
+        "max_contact_force_N": 0.0,
+        "mean_requested_target_relative_true_axis_mm": [
+          -0.4792091533541679,
+          0.404957315325737
+        ],
+        "target_true_axis_analysis_only": true,
+        "median_lateral_target_change_per_decision_mm": 0.43079472737751906,
+        "net_actual_axial_progress_last10_decisions_mm": -0.10836869478225708,
+        "median_actual_axial_progress_per_decision_mm": 0.004004687070846558,
+        "final_native_position_error_mm": 20.077276974916458,
+        "final_native_orientation_rad": 0.004250308498740196,
+        "zero_forward_with_gt03mm_axial_progress_decisions": 2,
+        "max_axial_progress_mm_with_zero_forward": 0.7774010300636292
+      },
+      "nearest_success": {
+        "seed": 732001,
+        "bias_mm": [
+          -1.2,
+          0.0
+        ],
+        "family": "Y",
+        "success": true,
+        "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713",
+        "trace_sha256": "6525ca75a3ecacd88271b29a05860b610dfac9e579bb3bd0b239025afab3830b",
+        "hold_entry": 146,
+        "servo_steps": 62,
+        "window_servo_steps": 40,
+        "tail_transition_count": 10,
+        "forward_allowed_fraction": 0.0,
+        "lateral_gate_block_fraction": 1.0,
+        "orientation_gate_block_fraction": 0.225,
+        "both_gate_block_fraction": 0.225,
+        "median_lateral_error_mm": 1.929075107909739,
+        "median_orientation_error_rad": 0.014626954658299655,
+        "requested_clipped_max_difference": 0.0,
+        "residual_abs_ge_095_fraction": 0.75,
+        "near_bound_fraction_y_z_advance": [
+          0.35,
+          0.3,
+          0.1
+        ],
+        "joint_delta_clipping_fraction": 0.2,
+        "advance_upper4mm_fraction": 0.85,
+        "advance_negative_fraction": 0.0,
+        "mean_action": [
+          0.37446950674057006,
+          -0.33299699127674104,
+          0.7717083394527435
+        ],
+        "mean_commanded_advance_mm": 3.933383083343506,
+        "median_contact_force_N": 10.692791545060949,
+        "max_contact_force_N": 49.4046723009821,
+        "mean_requested_target_relative_true_axis_mm": [
+          -0.6382957398891445,
+          -0.49949548691511153
+        ],
+        "target_true_axis_analysis_only": true,
+        "median_lateral_target_change_per_decision_mm": 1.2412482419635547,
+        "net_actual_axial_progress_last10_decisions_mm": 12.570947408676147,
+        "median_actual_axial_progress_per_decision_mm": 0.03246590495109558,
+        "final_native_position_error_mm": 3.5703377798199654,
+        "final_native_orientation_rad": 0.0076581151224672794,
+        "zero_forward_with_gt03mm_axial_progress_decisions": 3,
+        "max_axial_progress_mm_with_zero_forward": 5.61957061290741
+      },
+      "same_initial_sha256": true,
+      "comparison": "Same physical initialization, changed observation-bias condition. Not identical observed boundary or single-action causal intervention."
+    },
+    {
+      "failure": {
+        "seed": 732002,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "success": false,
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a",
+        "trace_sha256": "681bdbd5fecfe5c624ffc1d015c85c8f8ecce77d067675fb2d74c1a39b232b83",
+        "hold_entry": null,
+        "servo_steps": 122,
+        "window_servo_steps": 40,
+        "tail_transition_count": 10,
+        "forward_allowed_fraction": 0.1,
+        "lateral_gate_block_fraction": 0.9,
+        "orientation_gate_block_fraction": 0.05,
+        "both_gate_block_fraction": 0.05,
+        "median_lateral_error_mm": 1.5412881039083004,
+        "median_orientation_error_rad": 0.013237512096345834,
+        "requested_clipped_max_difference": 0.0,
+        "residual_abs_ge_095_fraction": 0.25,
+        "near_bound_fraction_y_z_advance": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "joint_delta_clipping_fraction": 0.025,
+        "advance_upper4mm_fraction": 0.85,
+        "advance_negative_fraction": 0.0,
+        "mean_action": [
+          0.48585093915462496,
+          -0.10632193684577942,
+          0.6879893481731415
+        ],
+        "mean_commanded_advance_mm": 3.906250429153442,
+        "median_contact_force_N": 13.65925130445536,
+        "max_contact_force_N": 22.561224799105982,
+        "mean_requested_target_relative_true_axis_mm": [
+          1.9287764087319388,
+          -1.3594829052686699
+        ],
+        "target_true_axis_analysis_only": true,
+        "median_lateral_target_change_per_decision_mm": 1.2233879107512626,
+        "net_actual_axial_progress_last10_decisions_mm": -0.05560517311096192,
+        "median_actual_axial_progress_per_decision_mm": -0.0034943222999572754,
+        "final_native_position_error_mm": 16.308462247252464,
+        "final_native_orientation_rad": 0.00910455547273159,
+        "zero_forward_with_gt03mm_axial_progress_decisions": 1,
+        "max_axial_progress_mm_with_zero_forward": 1.6241326928138733
+      },
+      "nearest_success": {
+        "seed": 732002,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "success": true,
+        "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a",
+        "trace_sha256": "f817ec3d395dd6444285517bd8df97ecf0d7939417419801bf45278586f410a9",
+        "hold_entry": 120,
+        "servo_steps": 38,
+        "window_servo_steps": 38,
+        "tail_transition_count": 10,
+        "forward_allowed_fraction": 0.10526315789473684,
+        "lateral_gate_block_fraction": 0.8947368421052632,
+        "orientation_gate_block_fraction": 0.23684210526315788,
+        "both_gate_block_fraction": 0.23684210526315788,
+        "median_lateral_error_mm": 1.9875384168699384,
+        "median_orientation_error_rad": 0.013794345607833122,
+        "requested_clipped_max_difference": 0.0,
+        "residual_abs_ge_095_fraction": 0.15789473684210525,
+        "near_bound_fraction_y_z_advance": [
+          0.15789473684210525,
+          0.05263157894736842,
+          0.0
+        ],
+        "joint_delta_clipping_fraction": 0.18421052631578946,
+        "advance_upper4mm_fraction": 0.6842105263157895,
+        "advance_negative_fraction": 0.0,
+        "mean_action": [
+          -0.08748816816430342,
+          0.04140076198075947,
+          0.620069610445123
+        ],
+        "mean_commanded_advance_mm": 3.71627298154329,
+        "median_contact_force_N": 8.045170264710691,
+        "max_contact_force_N": 26.181242377258346,
+        "mean_requested_target_relative_true_axis_mm": [
+          -1.3312322522464566,
+          -1.1378988570288606
+        ],
+        "target_true_axis_analysis_only": true,
+        "median_lateral_target_change_per_decision_mm": 1.7494642683153612,
+        "net_actual_axial_progress_last10_decisions_mm": 19.79406364262104,
+        "median_actual_axial_progress_per_decision_mm": 2.86767240613699,
+        "final_native_position_error_mm": 2.951900474727154,
+        "final_native_orientation_rad": 0.07336155325174332,
+        "zero_forward_with_gt03mm_axial_progress_decisions": 4,
+        "max_axial_progress_mm_with_zero_forward": 3.531714528799057
+      },
+      "same_initial_sha256": true,
+      "comparison": "Same physical initialization, changed observation-bias condition. Not identical observed boundary or single-action causal intervention."
+    },
+    {
+      "failure": {
+        "seed": 732003,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "success": false,
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96",
+        "trace_sha256": "f7bc7ee2deb47fb3aed83cc00becf8484d3c8149b756315a2396e887e69d3269",
+        "hold_entry": null,
+        "servo_steps": 99,
+        "window_servo_steps": 40,
+        "tail_transition_count": 10,
+        "forward_allowed_fraction": 0.05,
+        "lateral_gate_block_fraction": 0.95,
+        "orientation_gate_block_fraction": 0.0,
+        "both_gate_block_fraction": 0.0,
+        "median_lateral_error_mm": 2.0038827788084745,
+        "median_orientation_error_rad": 0.012496291694010543,
+        "requested_clipped_max_difference": 0.0,
+        "residual_abs_ge_095_fraction": 0.775,
+        "near_bound_fraction_y_z_advance": [
+          0.3,
+          0.275,
+          0.2
+        ],
+        "joint_delta_clipping_fraction": 0.0,
+        "advance_upper4mm_fraction": 0.725,
+        "advance_negative_fraction": 0.0,
+        "mean_action": [
+          0.3619581609964371,
+          0.359908801317215,
+          0.6404237449169159
+        ],
+        "mean_commanded_advance_mm": 3.7639611721038815,
+        "median_contact_force_N": 14.721118558436551,
+        "max_contact_force_N": 27.180172312989797,
+        "mean_requested_target_relative_true_axis_mm": [
+          1.7429372414946571,
+          -0.6601367980241771
+        ],
+        "target_true_axis_analysis_only": true,
+        "median_lateral_target_change_per_decision_mm": 1.9334421823698547,
+        "net_actual_axial_progress_last10_decisions_mm": -0.012037158012390138,
+        "median_actual_axial_progress_per_decision_mm": 0.006994605064392091,
+        "final_native_position_error_mm": 16.211120411753654,
+        "final_native_orientation_rad": 0.01664433814585209,
+        "zero_forward_with_gt03mm_axial_progress_decisions": 1,
+        "max_axial_progress_mm_with_zero_forward": 0.6798535585403442
+      },
+      "nearest_success": {
+        "seed": 732003,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "success": true,
+        "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96",
+        "trace_sha256": "a82f758394e8b6f876422466fff5c5339388468c56d0acc2f75cb03e133e48ea",
+        "hold_entry": 163,
+        "servo_steps": 59,
+        "window_servo_steps": 40,
+        "tail_transition_count": 10,
+        "forward_allowed_fraction": 0.075,
+        "lateral_gate_block_fraction": 0.9,
+        "orientation_gate_block_fraction": 0.175,
+        "both_gate_block_fraction": 0.15,
+        "median_lateral_error_mm": 2.2739070700481534,
+        "median_orientation_error_rad": 0.013108150698174486,
+        "requested_clipped_max_difference": 0.0,
+        "residual_abs_ge_095_fraction": 0.075,
+        "near_bound_fraction_y_z_advance": [
+          0.075,
+          0.075,
+          0.0
+        ],
+        "joint_delta_clipping_fraction": 0.125,
+        "advance_upper4mm_fraction": 0.8,
+        "advance_negative_fraction": 0.0,
+        "mean_action": [
+          0.0455173060297966,
+          -0.18479167819023132,
+          0.6349953889846802
+        ],
+        "mean_commanded_advance_mm": 3.570772218704224,
+        "median_contact_force_N": 8.27845632284108,
+        "max_contact_force_N": 34.66099927608219,
+        "mean_requested_target_relative_true_axis_mm": [
+          -1.1317240409553064,
+          -1.477187517285348
+        ],
+        "target_true_axis_analysis_only": true,
+        "median_lateral_target_change_per_decision_mm": 1.9786369581841556,
+        "net_actual_axial_progress_last10_decisions_mm": 19.929002970457077,
+        "median_actual_axial_progress_per_decision_mm": 1.5225596725940704,
+        "final_native_position_error_mm": 2.6431025471538305,
+        "final_native_orientation_rad": 0.010969224385917187,
+        "zero_forward_with_gt03mm_axial_progress_decisions": 5,
+        "max_axial_progress_mm_with_zero_forward": 4.731364548206329
+      },
+      "same_initial_sha256": true,
+      "comparison": "Same physical initialization, changed observation-bias condition. Not identical observed boundary or single-action causal intervention."
+    },
+    {
+      "failure": {
+        "seed": 732004,
+        "bias_mm": [
+          1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "success": false,
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c",
+        "trace_sha256": "1cf7c1f13fa39e4f38024faa00817a864a6443ea9e6f06baa1ebe656dca831a1",
+        "hold_entry": null,
+        "servo_steps": 119,
+        "window_servo_steps": 40,
+        "tail_transition_count": 10,
+        "forward_allowed_fraction": 0.0,
+        "lateral_gate_block_fraction": 1.0,
+        "orientation_gate_block_fraction": 0.0,
+        "both_gate_block_fraction": 0.0,
+        "median_lateral_error_mm": 1.389694749377668,
+        "median_orientation_error_rad": 0.01078423256153607,
+        "requested_clipped_max_difference": 0.0,
+        "residual_abs_ge_095_fraction": 0.3,
+        "near_bound_fraction_y_z_advance": [
+          0.2,
+          0.1,
+          0.0
+        ],
+        "joint_delta_clipping_fraction": 0.0,
+        "advance_upper4mm_fraction": 0.7,
+        "advance_negative_fraction": 0.0,
+        "mean_action": [
+          0.460291163623333,
+          0.37853543758392333,
+          0.6422746777534485
+        ],
+        "mean_commanded_advance_mm": 3.7363783359527587,
+        "median_contact_force_N": 13.821302433014502,
+        "max_contact_force_N": 21.78298868432973,
+        "mean_requested_target_relative_true_axis_mm": [
+          1.8904367454350006,
+          -0.6321968436241145
+        ],
+        "target_true_axis_analysis_only": true,
+        "median_lateral_target_change_per_decision_mm": 1.1019401099417794,
+        "net_actual_axial_progress_last10_decisions_mm": 0.07910281419754028,
+        "median_actual_axial_progress_per_decision_mm": 0.00043958425521850586,
+        "final_native_position_error_mm": 16.067249700427055,
+        "final_native_orientation_rad": 0.011015002615749836,
+        "zero_forward_with_gt03mm_axial_progress_decisions": 0,
+        "max_axial_progress_mm_with_zero_forward": 0.09128451347351074
+      },
+      "nearest_success": {
+        "seed": 732004,
+        "bias_mm": [
+          -1.2,
+          -1.2
+        ],
+        "family": "YZ",
+        "success": true,
+        "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c",
+        "trace_sha256": "89410fba800cb6dbb4f1188605ff911a76a3b65ef9aecab2e3496758a00d050a",
+        "hold_entry": 155,
+        "servo_steps": 71,
+        "window_servo_steps": 40,
+        "tail_transition_count": 10,
+        "forward_allowed_fraction": 0.05,
+        "lateral_gate_block_fraction": 0.95,
+        "orientation_gate_block_fraction": 0.15,
+        "both_gate_block_fraction": 0.15,
+        "median_lateral_error_mm": 1.385048613883555,
+        "median_orientation_error_rad": 0.016104591228015865,
+        "requested_clipped_max_difference": 0.0,
+        "residual_abs_ge_095_fraction": 0.275,
+        "near_bound_fraction_y_z_advance": [
+          0.175,
+          0.1,
+          0.0
+        ],
+        "joint_delta_clipping_fraction": 0.05,
+        "advance_upper4mm_fraction": 0.7,
+        "advance_negative_fraction": 0.0,
+        "mean_action": [
+          0.45989546477794646,
+          -0.2894118994474411,
+          0.6421987146139145
+        ],
+        "mean_commanded_advance_mm": 3.8083923339843757,
+        "median_contact_force_N": 10.016215916861455,
+        "max_contact_force_N": 29.301403556712863,
+        "mean_requested_target_relative_true_axis_mm": [
+          -0.5101568028330801,
+          -1.6341178491711628
+        ],
+        "target_true_axis_analysis_only": true,
+        "median_lateral_target_change_per_decision_mm": 1.3115477987630866,
+        "net_actual_axial_progress_last10_decisions_mm": 14.1921266913414,
+        "median_actual_axial_progress_per_decision_mm": 0.09818375110626221,
+        "final_native_position_error_mm": 1.8934484105557203,
+        "final_native_orientation_rad": 0.012322011403739452,
+        "zero_forward_with_gt03mm_axial_progress_decisions": 4,
+        "max_axial_progress_mm_with_zero_forward": 5.330130457878113
+      },
+      "same_initial_sha256": true,
+      "comparison": "Same physical initialization, changed observation-bias condition. Not identical observed boundary or single-action causal intervention."
+    },
+    {
+      "failure": {
+        "seed": 732005,
+        "bias_mm": [
+          1.2,
+          0.0
+        ],
+        "family": "Y",
+        "success": false,
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e",
+        "trace_sha256": "002f15532c8ab8ca5365ae8206b2c054ea6e32a077e6ff1ab0c50698eac1867b",
+        "hold_entry": null,
+        "servo_steps": 113,
+        "window_servo_steps": 40,
+        "tail_transition_count": 10,
+        "forward_allowed_fraction": 0.05,
+        "lateral_gate_block_fraction": 0.95,
+        "orientation_gate_block_fraction": 0.0,
+        "both_gate_block_fraction": 0.0,
+        "median_lateral_error_mm": 1.3436269364319742,
+        "median_orientation_error_rad": 0.011585654431887207,
+        "requested_clipped_max_difference": 0.0,
+        "residual_abs_ge_095_fraction": 0.1,
+        "near_bound_fraction_y_z_advance": [
+          0.0,
+          0.0,
+          0.1
+        ],
+        "joint_delta_clipping_fraction": 0.0,
+        "advance_upper4mm_fraction": 0.5,
+        "advance_negative_fraction": 0.0,
+        "mean_action": [
+          0.5538198083639145,
+          0.054123972356319425,
+          0.4443753153085709
+        ],
+        "mean_commanded_advance_mm": 3.1619302272796634,
+        "median_contact_force_N": 18.018701898117925,
+        "max_contact_force_N": 27.489108767910512,
+        "mean_requested_target_relative_true_axis_mm": [
+          2.0307297125458734,
+          0.08118595853447914
+        ],
+        "target_true_axis_analysis_only": true,
+        "median_lateral_target_change_per_decision_mm": 1.1495859487586269,
+        "net_actual_axial_progress_last10_decisions_mm": -0.0020563602447509766,
+        "median_actual_axial_progress_per_decision_mm": -0.0022545456886291504,
+        "final_native_position_error_mm": 16.25160500407219,
+        "final_native_orientation_rad": 0.010319261811673641,
+        "zero_forward_with_gt03mm_axial_progress_decisions": 1,
+        "max_axial_progress_mm_with_zero_forward": 5.085204541683197
+      },
+      "nearest_success": {
+        "seed": 732005,
+        "bias_mm": [
+          0.0,
+          0.0
+        ],
+        "family": "Y",
+        "success": true,
+        "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e",
+        "trace_sha256": "af64e1c43c2f56c6f0b79e1543b037843fec41db1702321a903fcaa9d741bc26",
+        "hold_entry": 145,
+        "servo_steps": 55,
+        "window_servo_steps": 40,
+        "tail_transition_count": 10,
+        "forward_allowed_fraction": 0.025,
+        "lateral_gate_block_fraction": 0.975,
+        "orientation_gate_block_fraction": 0.075,
+        "both_gate_block_fraction": 0.075,
+        "median_lateral_error_mm": 1.7085961299017072,
+        "median_orientation_error_rad": 0.00796340633104766,
+        "requested_clipped_max_difference": 0.0,
+        "residual_abs_ge_095_fraction": 0.0,
+        "near_bound_fraction_y_z_advance": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_delta_clipping_fraction": 0.0,
+        "advance_upper4mm_fraction": 0.725,
+        "advance_negative_fraction": 0.0,
+        "mean_action": [
+          0.14284697026014329,
+          -0.313996222615242,
+          0.5255140319466591
+        ],
+        "mean_commanded_advance_mm": 3.3740372002124785,
+        "median_contact_force_N": 6.321994333434288,
+        "max_contact_force_N": 26.467748607632114,
+        "mean_requested_target_relative_true_axis_mm": [
+          0.21427045539021491,
+          -0.470994333922863
+        ],
+        "target_true_axis_analysis_only": true,
+        "median_lateral_target_change_per_decision_mm": 1.052286252635712,
+        "net_actual_axial_progress_last10_decisions_mm": 17.265944927930832,
+        "median_actual_axial_progress_per_decision_mm": 0.5699858069419861,
+        "final_native_position_error_mm": 3.986557014286518,
+        "final_native_orientation_rad": 0.005590006243437529,
+        "zero_forward_with_gt03mm_axial_progress_decisions": 7,
+        "max_axial_progress_mm_with_zero_forward": 5.085565149784088
+      },
+      "same_initial_sha256": true,
+      "comparison": "Same physical initialization, changed observation-bias condition. Not identical observed boundary or single-action causal intervention."
+    }
+  ],
+  "all_episode_metrics": [
+    {
+      "seed": 732000,
+      "bias_mm": [
+        -1.2,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368",
+      "trace_sha256": "2690c08ded30bdb0d6a19f53b53c09e41f1c2f61aeba077211689f440bb215d6",
+      "hold_entry": 125,
+      "servo_steps": 45,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.15,
+      "lateral_gate_block_fraction": 0.85,
+      "orientation_gate_block_fraction": 0.125,
+      "both_gate_block_fraction": 0.125,
+      "median_lateral_error_mm": 1.5438295085914433,
+      "median_orientation_error_rad": 0.013654273133844565,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.025,
+      "near_bound_fraction_y_z_advance": [
+        0.025,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.125,
+      "advance_upper4mm_fraction": 0.525,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.013083574175834656,
+        0.002585136890411377,
+        0.5838670551776886
+      ],
+      "mean_commanded_advance_mm": 3.8011411190032955,
+      "median_contact_force_N": 8.277848983031259,
+      "max_contact_force_N": 31.20871953864245,
+      "mean_requested_target_relative_true_axis_mm": [
+        -1.219625361263753,
+        0.0038777053356170653
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.9365396412575686,
+      "net_actual_axial_progress_last10_decisions_mm": 18.61247345805168,
+      "median_actual_axial_progress_per_decision_mm": 0.8726920932531357,
+      "final_native_position_error_mm": 2.9631522484123707,
+      "final_native_orientation_rad": 0.04047621414065361,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 4,
+      "max_axial_progress_mm_with_zero_forward": 4.3137334287166595
+    },
+    {
+      "seed": 732000,
+      "bias_mm": [
+        0.0,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368",
+      "trace_sha256": "fb4fcbc18394ec41f37c7eddefcda098512b862ad134a699f9eb3f3f7c44c007",
+      "hold_entry": 124,
+      "servo_steps": 45,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.075,
+      "lateral_gate_block_fraction": 0.925,
+      "orientation_gate_block_fraction": 0.15,
+      "both_gate_block_fraction": 0.15,
+      "median_lateral_error_mm": 1.4955203514546156,
+      "median_orientation_error_rad": 0.014058366342968814,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.5,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.0454593688249588,
+        -0.12066074162721634,
+        0.5782833248376846
+      ],
+      "mean_commanded_advance_mm": 3.8006491780281073,
+      "median_contact_force_N": 8.378537343457085,
+      "max_contact_force_N": 29.5898021201868,
+      "mean_requested_target_relative_true_axis_mm": [
+        -0.06818905323743821,
+        -0.1809911124408245
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.317757324067766,
+      "net_actual_axial_progress_last10_decisions_mm": 18.595008552074436,
+      "median_actual_axial_progress_per_decision_mm": 1.3190530240535738,
+      "final_native_position_error_mm": 3.0107307247817516,
+      "final_native_orientation_rad": 0.03684190288186073,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 7,
+      "max_axial_progress_mm_with_zero_forward": 4.276707768440247
+    },
+    {
+      "seed": 732000,
+      "bias_mm": [
+        1.2,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368",
+      "trace_sha256": "48fbbb0ec9cba62c62e990925c25772f56f1722234d229ed68971e7d8893ea39",
+      "hold_entry": 104,
+      "servo_steps": 25,
+      "window_servo_steps": 25,
+      "tail_transition_count": 7,
+      "forward_allowed_fraction": 0.16,
+      "lateral_gate_block_fraction": 0.84,
+      "orientation_gate_block_fraction": 0.0,
+      "both_gate_block_fraction": 0.0,
+      "median_lateral_error_mm": 0.6754883215762675,
+      "median_orientation_error_rad": 0.0032388917507619967,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.16,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.4096850323677063,
+        0.28679886817932126,
+        0.3184590530395508
+      ],
+      "mean_commanded_advance_mm": 3.2709638977050783,
+      "median_contact_force_N": 0.0,
+      "max_contact_force_N": 6.937444667045547,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.5854724514484402,
+        0.4301983022689819
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 0.7331388700808663,
+      "net_actual_axial_progress_last10_decisions_mm": 20.08377611637116,
+      "median_actual_axial_progress_per_decision_mm": 3.275059163570404,
+      "final_native_position_error_mm": 3.4603113308548927,
+      "final_native_orientation_rad": 0.0018562136683613062,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 4,
+      "max_axial_progress_mm_with_zero_forward": 4.76287305355072
+    },
+    {
+      "seed": 732000,
+      "bias_mm": [
+        -1.2,
+        -1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368",
+      "trace_sha256": "96db11cab460dd36b0247aa9b4d81f84f7e147f41de460026fa7887161235b98",
+      "hold_entry": 124,
+      "servo_steps": 44,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.075,
+      "lateral_gate_block_fraction": 0.925,
+      "orientation_gate_block_fraction": 0.025,
+      "both_gate_block_fraction": 0.025,
+      "median_lateral_error_mm": 1.3336107949726284,
+      "median_orientation_error_rad": 0.009491652935572897,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.5,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.08821069598197936,
+        -0.03734351396560669,
+        0.5043532013893127
+      ],
+      "mean_commanded_advance_mm": 3.508380317687988,
+      "median_contact_force_N": 5.79284214953138,
+      "max_contact_force_N": 17.637217655687756,
+      "mean_requested_target_relative_true_axis_mm": [
+        -1.0676839560270324,
+        -1.2560152709484103
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.0542078575491383,
+      "net_actual_axial_progress_last10_decisions_mm": 21.58898264169693,
+      "median_actual_axial_progress_per_decision_mm": 2.204442024230957,
+      "final_native_position_error_mm": 2.067754277959466,
+      "final_native_orientation_rad": 0.022062743082642555,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 4,
+      "max_axial_progress_mm_with_zero_forward": 6.7641884088516235
+    },
+    {
+      "seed": 732000,
+      "bias_mm": [
+        0.0,
+        1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368",
+      "trace_sha256": "6a8d3f8be6941a6890f38de2800778cb3d27361ae3f84d5493896be8aa2fa207",
+      "hold_entry": 131,
+      "servo_steps": 52,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.05,
+      "lateral_gate_block_fraction": 0.95,
+      "orientation_gate_block_fraction": 0.125,
+      "both_gate_block_fraction": 0.125,
+      "median_lateral_error_mm": 0.8691212569829077,
+      "median_orientation_error_rad": 0.01781380947734831,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.05,
+      "advance_upper4mm_fraction": 0.7,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.05479090809822083,
+        -0.3595542013645172,
+        0.6118882298469543
+      ],
+      "mean_commanded_advance_mm": 3.680418300628662,
+      "median_contact_force_N": 10.092538126641113,
+      "max_contact_force_N": 18.286402798559394,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.08218636214733124,
+        0.6606686979532236
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.2113207629905252,
+      "net_actual_axial_progress_last10_decisions_mm": 15.425111353397371,
+      "median_actual_axial_progress_per_decision_mm": 1.4182664453983307,
+      "final_native_position_error_mm": 3.886196296662092,
+      "final_native_orientation_rad": 0.010009066201746464,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 5,
+      "max_axial_progress_mm_with_zero_forward": 3.457009792327881
+    },
+    {
+      "seed": 732000,
+      "bias_mm": [
+        1.2,
+        -1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "3b568ee206735bf91c48cab9cd42adb98d813a00681630c7f799ccf327fdb368",
+      "trace_sha256": "3f88a01730b843df9c9e1aa6851fbca67806d425f5c4eaf702efd12eb9cd0006",
+      "hold_entry": 107,
+      "servo_steps": 27,
+      "window_servo_steps": 27,
+      "tail_transition_count": 7,
+      "forward_allowed_fraction": 0.1111111111111111,
+      "lateral_gate_block_fraction": 0.8888888888888888,
+      "orientation_gate_block_fraction": 0.037037037037037035,
+      "both_gate_block_fraction": 0.037037037037037035,
+      "median_lateral_error_mm": 0.6945920758880675,
+      "median_orientation_error_rad": 0.0030881620842895747,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.4074074074074074,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.5691867735650804,
+        0.0519893831676907,
+        0.4427106292159469
+      ],
+      "mean_commanded_advance_mm": 3.5066302970603664,
+      "median_contact_force_N": 0.0,
+      "max_contact_force_N": 12.996963694771022,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.34621983965237935,
+        -1.1220159252484636
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 0.5127872718396815,
+      "net_actual_axial_progress_last10_decisions_mm": 22.034338861703876,
+      "median_actual_axial_progress_per_decision_mm": 3.268454223871231,
+      "final_native_position_error_mm": 1.4700243482366204,
+      "final_native_orientation_rad": 0.03568261116743088,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 3,
+      "max_axial_progress_mm_with_zero_forward": 6.28449022769928
+    },
+    {
+      "seed": 732001,
+      "bias_mm": [
+        -1.2,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713",
+      "trace_sha256": "6525ca75a3ecacd88271b29a05860b610dfac9e579bb3bd0b239025afab3830b",
+      "hold_entry": 146,
+      "servo_steps": 62,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.0,
+      "lateral_gate_block_fraction": 1.0,
+      "orientation_gate_block_fraction": 0.225,
+      "both_gate_block_fraction": 0.225,
+      "median_lateral_error_mm": 1.929075107909739,
+      "median_orientation_error_rad": 0.014626954658299655,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.75,
+      "near_bound_fraction_y_z_advance": [
+        0.35,
+        0.3,
+        0.1
+      ],
+      "joint_delta_clipping_fraction": 0.2,
+      "advance_upper4mm_fraction": 0.85,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.37446950674057006,
+        -0.33299699127674104,
+        0.7717083394527435
+      ],
+      "mean_commanded_advance_mm": 3.933383083343506,
+      "median_contact_force_N": 10.692791545060949,
+      "max_contact_force_N": 49.4046723009821,
+      "mean_requested_target_relative_true_axis_mm": [
+        -0.6382957398891445,
+        -0.49949548691511153
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.2412482419635547,
+      "net_actual_axial_progress_last10_decisions_mm": 12.570947408676147,
+      "median_actual_axial_progress_per_decision_mm": 0.03246590495109558,
+      "final_native_position_error_mm": 3.5703377798199654,
+      "final_native_orientation_rad": 0.0076581151224672794,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 3,
+      "max_axial_progress_mm_with_zero_forward": 5.61957061290741
+    },
+    {
+      "seed": 732001,
+      "bias_mm": [
+        0.0,
+        0.0
+      ],
+      "family": "Y",
+      "success": false,
+      "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713",
+      "trace_sha256": "19710db19f72950e5a0563cac2b8df473f5de33865ca143c94df24f522054773",
+      "hold_entry": null,
+      "servo_steps": 119,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.0,
+      "lateral_gate_block_fraction": 1.0,
+      "orientation_gate_block_fraction": 0.0,
+      "both_gate_block_fraction": 0.0,
+      "median_lateral_error_mm": 2.944996114820242,
+      "median_orientation_error_rad": 0.005190451529034797,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 1.0,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.31947276890277865,
+        0.26997154355049136,
+        0.8185966849327088
+      ],
+      "mean_commanded_advance_mm": 4.0,
+      "median_contact_force_N": 0.0,
+      "max_contact_force_N": 0.0,
+      "mean_requested_target_relative_true_axis_mm": [
+        -0.4792091533541679,
+        0.404957315325737
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 0.43079472737751906,
+      "net_actual_axial_progress_last10_decisions_mm": -0.10836869478225708,
+      "median_actual_axial_progress_per_decision_mm": 0.004004687070846558,
+      "final_native_position_error_mm": 20.077276974916458,
+      "final_native_orientation_rad": 0.004250308498740196,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 2,
+      "max_axial_progress_mm_with_zero_forward": 0.7774010300636292
+    },
+    {
+      "seed": 732001,
+      "bias_mm": [
+        1.2,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713",
+      "trace_sha256": "ef3bfbd96301ec45f34d49a3254986376233339f2e9b4ccbb8a644543a16286d",
+      "hold_entry": 117,
+      "servo_steps": 32,
+      "window_servo_steps": 32,
+      "tail_transition_count": 8,
+      "forward_allowed_fraction": 0.21875,
+      "lateral_gate_block_fraction": 0.78125,
+      "orientation_gate_block_fraction": 0.15625,
+      "both_gate_block_fraction": 0.15625,
+      "median_lateral_error_mm": 0.8243292395491153,
+      "median_orientation_error_rad": 0.0022053614518952117,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.125,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.125,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0625,
+      "advance_upper4mm_fraction": 0.375,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.49210260808467865,
+        0.032456882297992706,
+        0.40827490389347076
+      ],
+      "mean_commanded_advance_mm": 3.386895835399628,
+      "median_contact_force_N": 0.0,
+      "max_contact_force_N": 25.71321051594411,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.46184608787298204,
+        0.04868532344698906
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 0.6763607237037563,
+      "net_actual_axial_progress_last10_decisions_mm": 26.05877667665482,
+      "median_actual_axial_progress_per_decision_mm": 2.866058796644211,
+      "final_native_position_error_mm": 1.6169792506843805,
+      "final_native_orientation_rad": 0.0241769440472126,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 2,
+      "max_axial_progress_mm_with_zero_forward": 7.204994559288025
+    },
+    {
+      "seed": 732001,
+      "bias_mm": [
+        -1.2,
+        -1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713",
+      "trace_sha256": "3599fc66be16d636a569a9f3cff7d078074919efe3a27fa5ef270120530f3997",
+      "hold_entry": 141,
+      "servo_steps": 57,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.075,
+      "lateral_gate_block_fraction": 0.925,
+      "orientation_gate_block_fraction": 0.25,
+      "both_gate_block_fraction": 0.25,
+      "median_lateral_error_mm": 2.183297066949308,
+      "median_orientation_error_rad": 0.016513601721447113,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.125,
+      "near_bound_fraction_y_z_advance": [
+        0.125,
+        0.125,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.175,
+      "advance_upper4mm_fraction": 0.825,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.10401775687932968,
+        -0.1880335584282875,
+        0.6648413300514221
+      ],
+      "mean_commanded_advance_mm": 3.545574283599853,
+      "median_contact_force_N": 9.708319136168814,
+      "max_contact_force_N": 34.971137197992725,
+      "mean_requested_target_relative_true_axis_mm": [
+        -1.0439733646810059,
+        -1.482050337642432
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 2.03535784311381,
+      "net_actual_axial_progress_last10_decisions_mm": 14.697574079036713,
+      "median_actual_axial_progress_per_decision_mm": 1.2051984667778015,
+      "final_native_position_error_mm": 2.915546763688326,
+      "final_native_orientation_rad": 0.030805427581071854,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 5,
+      "max_axial_progress_mm_with_zero_forward": 5.358010530471802
+    },
+    {
+      "seed": 732001,
+      "bias_mm": [
+        0.0,
+        1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713",
+      "trace_sha256": "a4ff036dac6182d5d5e2b8cd066169ccb0f84fef70a9e066bdf18f9f2636cdf0",
+      "hold_entry": 148,
+      "servo_steps": 64,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.0,
+      "lateral_gate_block_fraction": 0.975,
+      "orientation_gate_block_fraction": 0.6,
+      "both_gate_block_fraction": 0.575,
+      "median_lateral_error_mm": 1.5224411035887897,
+      "median_orientation_error_rad": 0.03363294427189058,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.1,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "joint_delta_clipping_fraction": 0.075,
+      "advance_upper4mm_fraction": 1.0,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.30501267313957214,
+        -0.5921380162239075,
+        0.8515299320220947
+      ],
+      "mean_commanded_advance_mm": 4.0,
+      "median_contact_force_N": 8.006706570083253,
+      "max_contact_force_N": 29.17410950635543,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.4575190097093582,
+        0.31179297566413827
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.1105993351333456,
+      "net_actual_axial_progress_last10_decisions_mm": 12.503966689109802,
+      "median_actual_axial_progress_per_decision_mm": 1.3017430901527405,
+      "final_native_position_error_mm": 3.633201587945223,
+      "final_native_orientation_rad": 0.03720400854945183,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 8,
+      "max_axial_progress_mm_with_zero_forward": 2.640172839164734
+    },
+    {
+      "seed": 732001,
+      "bias_mm": [
+        1.2,
+        -1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "928b9f8a4c528ea3c2b53697ec387d0b779f60099f2a092f805427bdfae6f713",
+      "trace_sha256": "780c9d047a89cab3482709435759f9a919bce209c165a787ec864b7005f887da",
+      "hold_entry": 144,
+      "servo_steps": 59,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.075,
+      "lateral_gate_block_fraction": 0.925,
+      "orientation_gate_block_fraction": 0.3,
+      "both_gate_block_fraction": 0.3,
+      "median_lateral_error_mm": 2.4675544118508697,
+      "median_orientation_error_rad": 0.017172650025347055,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.575,
+      "near_bound_fraction_y_z_advance": [
+        0.1,
+        0.275,
+        0.2
+      ],
+      "joint_delta_clipping_fraction": 0.025,
+      "advance_upper4mm_fraction": 0.875,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.022895190119743346,
+        -0.18575631976127624,
+        0.7619730234146118
+      ],
+      "mean_commanded_advance_mm": 3.6466607093811034,
+      "median_contact_force_N": 10.001846691966744,
+      "max_contact_force_N": 36.79139934724327,
+      "mean_requested_target_relative_true_axis_mm": [
+        1.1656572148203856,
+        -1.4786344796419146
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 2.3770042691430713,
+      "net_actual_axial_progress_last10_decisions_mm": 15.159085392951965,
+      "median_actual_axial_progress_per_decision_mm": 1.0486803948879242,
+      "final_native_position_error_mm": 2.4967205245047808,
+      "final_native_orientation_rad": 0.05712448060512543,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 5,
+      "max_axial_progress_mm_with_zero_forward": 3.946840763092041
+    },
+    {
+      "seed": 732002,
+      "bias_mm": [
+        -1.2,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a",
+      "trace_sha256": "a8dc9f6b85ea48bd2c09ea8c751effc1d8aeb8ea7868425bbf3b77b5e3bd8a6a",
+      "hold_entry": 126,
+      "servo_steps": 45,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.15,
+      "lateral_gate_block_fraction": 0.85,
+      "orientation_gate_block_fraction": 0.125,
+      "both_gate_block_fraction": 0.125,
+      "median_lateral_error_mm": 1.4734853757545352,
+      "median_orientation_error_rad": 0.012409899625522733,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.025,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.025,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.025,
+      "advance_upper4mm_fraction": 0.825,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.11203063577413559,
+        -0.03030250072479248,
+        0.6183724582195282
+      ],
+      "mean_commanded_advance_mm": 3.8367629051208496,
+      "median_contact_force_N": 12.24115998869717,
+      "max_contact_force_N": 26.220416422256857,
+      "mean_requested_target_relative_true_axis_mm": [
+        -1.031954046338797,
+        -0.04545375108718872
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.275384931419253,
+      "net_actual_axial_progress_last10_decisions_mm": 16.282149776816368,
+      "median_actual_axial_progress_per_decision_mm": 0.8011011406779289,
+      "final_native_position_error_mm": 3.0212511774152517,
+      "final_native_orientation_rad": 0.0170020442456007,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 4,
+      "max_axial_progress_mm_with_zero_forward": 4.736532270908356
+    },
+    {
+      "seed": 732002,
+      "bias_mm": [
+        0.0,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a",
+      "trace_sha256": "8fa4ce540fe9e20dcd195308c84dfac73e2dd7308821f6191ba0f6ae645ba554",
+      "hold_entry": 100,
+      "servo_steps": 19,
+      "window_servo_steps": 19,
+      "tail_transition_count": 5,
+      "forward_allowed_fraction": 0.2631578947368421,
+      "lateral_gate_block_fraction": 0.7368421052631579,
+      "orientation_gate_block_fraction": 0.0,
+      "both_gate_block_fraction": 0.0,
+      "median_lateral_error_mm": 0.6151413545012474,
+      "median_orientation_error_rad": 0.003966816277475691,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.0,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.5611193305567691,
+        0.43154345688066986,
+        0.2597572928980777
+      ],
+      "mean_commanded_advance_mm": 3.039029171592311,
+      "median_contact_force_N": 0.33649525584454176,
+      "max_contact_force_N": 10.597460315062873,
+      "mean_requested_target_relative_true_axis_mm": [
+        -0.8416789958351537,
+        0.6473151853210047
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 0.4103511724568339,
+      "net_actual_axial_progress_last10_decisions_mm": 19.754418358206753,
+      "median_actual_axial_progress_per_decision_mm": 4.640775918960571,
+      "final_native_position_error_mm": 2.8647389262914658,
+      "final_native_orientation_rad": 0.019800543785095215,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 2,
+      "max_axial_progress_mm_with_zero_forward": 5.54509311914444
+    },
+    {
+      "seed": 732002,
+      "bias_mm": [
+        1.2,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a",
+      "trace_sha256": "1ae7a12bcd5221599ea024be76ea876935a7efdcaba722382d1a4100598bf751",
+      "hold_entry": 98,
+      "servo_steps": 16,
+      "window_servo_steps": 16,
+      "tail_transition_count": 4,
+      "forward_allowed_fraction": 0.375,
+      "lateral_gate_block_fraction": 0.625,
+      "orientation_gate_block_fraction": 0.0,
+      "both_gate_block_fraction": 0.0,
+      "median_lateral_error_mm": 0.6371201598085463,
+      "median_orientation_error_rad": 0.01163738627906832,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.25,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.41770315170288086,
+        0.034359365701675415,
+        0.38573941588401794
+      ],
+      "mean_commanded_advance_mm": 3.3520911931991577,
+      "median_contact_force_N": 5.508344430965456,
+      "max_contact_force_N": 22.970426651041656,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.5734452724456788,
+        0.05153904855251312
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 0.2611096844069761,
+      "net_actual_axial_progress_last10_decisions_mm": 19.71104480326176,
+      "median_actual_axial_progress_per_decision_mm": 5.137329176068306,
+      "final_native_position_error_mm": 2.8065810911357403,
+      "final_native_orientation_rad": 0.02381751872599125,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 2,
+      "max_axial_progress_mm_with_zero_forward": 6.652670726180077
+    },
+    {
+      "seed": 732002,
+      "bias_mm": [
+        -1.2,
+        -1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a",
+      "trace_sha256": "f817ec3d395dd6444285517bd8df97ecf0d7939417419801bf45278586f410a9",
+      "hold_entry": 120,
+      "servo_steps": 38,
+      "window_servo_steps": 38,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.10526315789473684,
+      "lateral_gate_block_fraction": 0.8947368421052632,
+      "orientation_gate_block_fraction": 0.23684210526315788,
+      "both_gate_block_fraction": 0.23684210526315788,
+      "median_lateral_error_mm": 1.9875384168699384,
+      "median_orientation_error_rad": 0.013794345607833122,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.15789473684210525,
+      "near_bound_fraction_y_z_advance": [
+        0.15789473684210525,
+        0.05263157894736842,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.18421052631578946,
+      "advance_upper4mm_fraction": 0.6842105263157895,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.08748816816430342,
+        0.04140076198075947,
+        0.620069610445123
+      ],
+      "mean_commanded_advance_mm": 3.71627298154329,
+      "median_contact_force_N": 8.045170264710691,
+      "max_contact_force_N": 26.181242377258346,
+      "mean_requested_target_relative_true_axis_mm": [
+        -1.3312322522464566,
+        -1.1378988570288606
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.7494642683153612,
+      "net_actual_axial_progress_last10_decisions_mm": 19.79406364262104,
+      "median_actual_axial_progress_per_decision_mm": 2.86767240613699,
+      "final_native_position_error_mm": 2.951900474727154,
+      "final_native_orientation_rad": 0.07336155325174332,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 4,
+      "max_axial_progress_mm_with_zero_forward": 3.531714528799057
+    },
+    {
+      "seed": 732002,
+      "bias_mm": [
+        0.0,
+        1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a",
+      "trace_sha256": "f6960dc5e51db5ca61facf4392663080609440f823fa4d7e2eb72d2eadcfe7e7",
+      "hold_entry": 108,
+      "servo_steps": 27,
+      "window_servo_steps": 27,
+      "tail_transition_count": 7,
+      "forward_allowed_fraction": 0.14814814814814814,
+      "lateral_gate_block_fraction": 0.8518518518518519,
+      "orientation_gate_block_fraction": 0.0,
+      "both_gate_block_fraction": 0.0,
+      "median_lateral_error_mm": 0.5908660823479295,
+      "median_orientation_error_rad": 0.013689329231040926,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.5555555555555556,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.47671003694887515,
+        -0.1634003034344426,
+        0.5451452996995714
+      ],
+      "mean_commanded_advance_mm": 3.6529921778926147,
+      "median_contact_force_N": 4.242525633572079,
+      "max_contact_force_N": 14.165816008814433,
+      "mean_requested_target_relative_true_axis_mm": [
+        -0.7150650554233127,
+        0.9548995448483355
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 0.6653996923002741,
+      "net_actual_axial_progress_last10_decisions_mm": 19.486375153064728,
+      "median_actual_axial_progress_per_decision_mm": 3.0647143721580505,
+      "final_native_position_error_mm": 3.0247573740780354,
+      "final_native_orientation_rad": 0.013120602816343307,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 4,
+      "max_axial_progress_mm_with_zero_forward": 3.479383885860443
+    },
+    {
+      "seed": 732002,
+      "bias_mm": [
+        1.2,
+        -1.2
+      ],
+      "family": "YZ",
+      "success": false,
+      "initial_sha256": "5ddf7d5c8b119ac2e538990243e4c2c4b36eeeb76389db01a6295a393ef3c67a",
+      "trace_sha256": "681bdbd5fecfe5c624ffc1d015c85c8f8ecce77d067675fb2d74c1a39b232b83",
+      "hold_entry": null,
+      "servo_steps": 122,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.1,
+      "lateral_gate_block_fraction": 0.9,
+      "orientation_gate_block_fraction": 0.05,
+      "both_gate_block_fraction": 0.05,
+      "median_lateral_error_mm": 1.5412881039083004,
+      "median_orientation_error_rad": 0.013237512096345834,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.25,
+      "near_bound_fraction_y_z_advance": [
+        0.25,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.025,
+      "advance_upper4mm_fraction": 0.85,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.48585093915462496,
+        -0.10632193684577942,
+        0.6879893481731415
+      ],
+      "mean_commanded_advance_mm": 3.906250429153442,
+      "median_contact_force_N": 13.65925130445536,
+      "max_contact_force_N": 22.561224799105982,
+      "mean_requested_target_relative_true_axis_mm": [
+        1.9287764087319388,
+        -1.3594829052686699
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.2233879107512626,
+      "net_actual_axial_progress_last10_decisions_mm": -0.05560517311096192,
+      "median_actual_axial_progress_per_decision_mm": -0.0034943222999572754,
+      "final_native_position_error_mm": 16.308462247252464,
+      "final_native_orientation_rad": 0.00910455547273159,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 1,
+      "max_axial_progress_mm_with_zero_forward": 1.6241326928138733
+    },
+    {
+      "seed": 732003,
+      "bias_mm": [
+        -1.2,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96",
+      "trace_sha256": "da925019c7bbea105b8be9b0ab1b0cfce6fe3f55a09325ac360bee9074c6583e",
+      "hold_entry": 163,
+      "servo_steps": 59,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.125,
+      "lateral_gate_block_fraction": 0.875,
+      "orientation_gate_block_fraction": 0.225,
+      "both_gate_block_fraction": 0.225,
+      "median_lateral_error_mm": 1.3387438375502825,
+      "median_orientation_error_rad": 0.014025955618313093,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.4,
+      "near_bound_fraction_y_z_advance": [
+        0.1,
+        0.3,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.2,
+      "advance_upper4mm_fraction": 0.775,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.15487247854471206,
+        -0.22244455218315123,
+        0.6174913972616196
+      ],
+      "mean_commanded_advance_mm": 3.5246299266815186,
+      "median_contact_force_N": 7.747252571780681,
+      "max_contact_force_N": 44.123670052905126,
+      "mean_requested_target_relative_true_axis_mm": [
+        -0.9676912821829321,
+        -0.3336668282747269
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.7428934407963212,
+      "net_actual_axial_progress_last10_decisions_mm": 19.16667371988297,
+      "median_actual_axial_progress_per_decision_mm": 1.2458190321922302,
+      "final_native_position_error_mm": 3.4102178178727627,
+      "final_native_orientation_rad": 0.007508374750614166,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 5,
+      "max_axial_progress_mm_with_zero_forward": 4.209332168102264
+    },
+    {
+      "seed": 732003,
+      "bias_mm": [
+        0.0,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96",
+      "trace_sha256": "c8c9059600860202ec31973bd210f606c5106a6fa595a032f03e88d1a78f6ef9",
+      "hold_entry": 166,
+      "servo_steps": 62,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.05,
+      "lateral_gate_block_fraction": 0.9,
+      "orientation_gate_block_fraction": 0.175,
+      "both_gate_block_fraction": 0.125,
+      "median_lateral_error_mm": 2.056923694908619,
+      "median_orientation_error_rad": 0.01443472489505914,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.3,
+      "near_bound_fraction_y_z_advance": [
+        0.1,
+        0.2,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.05,
+      "advance_upper4mm_fraction": 0.7,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.03285338282585144,
+        -0.36033294200897215,
+        0.620894193649292
+      ],
+      "mean_commanded_advance_mm": 3.542317819595337,
+      "median_contact_force_N": 8.013319239573795,
+      "max_contact_force_N": 43.80909135872385,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.04928007423877716,
+        -0.5404994130134583
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.9961648921829562,
+      "net_actual_axial_progress_last10_decisions_mm": 13.852651417255403,
+      "median_actual_axial_progress_per_decision_mm": 0.9588740766048433,
+      "final_native_position_error_mm": 3.2288094516843557,
+      "final_native_orientation_rad": 0.013831178657710552,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 7,
+      "max_axial_progress_mm_with_zero_forward": 3.962162882089615
+    },
+    {
+      "seed": 732003,
+      "bias_mm": [
+        1.2,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96",
+      "trace_sha256": "66070eecc988b894988aea92894bc159d4d00bb3a530444c16df395092b2f080",
+      "hold_entry": 137,
+      "servo_steps": 33,
+      "window_servo_steps": 33,
+      "tail_transition_count": 9,
+      "forward_allowed_fraction": 0.21212121212121213,
+      "lateral_gate_block_fraction": 0.7878787878787878,
+      "orientation_gate_block_fraction": 0.030303030303030304,
+      "both_gate_block_fraction": 0.030303030303030304,
+      "median_lateral_error_mm": 1.1686856159940362,
+      "median_orientation_error_rad": 0.0015440809271017578,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.030303030303030304,
+      "advance_upper4mm_fraction": 0.48484848484848486,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.7197547265977571,
+        0.053186134858564896,
+        0.4353809754053752
+      ],
+      "mean_commanded_advance_mm": 3.2904017910812837,
+      "median_contact_force_N": 0.0,
+      "max_contact_force_N": 26.899806746232038,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.12036791010336444,
+        0.07977920228784735
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 0.8357130175316372,
+      "net_actual_axial_progress_last10_decisions_mm": 25.0603698194027,
+      "median_actual_axial_progress_per_decision_mm": 2.30620801448822,
+      "final_native_position_error_mm": 2.7547196950763464,
+      "final_native_orientation_rad": 0.01281229592859745,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 2,
+      "max_axial_progress_mm_with_zero_forward": 6.56479224562645
+    },
+    {
+      "seed": 732003,
+      "bias_mm": [
+        -1.2,
+        -1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96",
+      "trace_sha256": "a82f758394e8b6f876422466fff5c5339388468c56d0acc2f75cb03e133e48ea",
+      "hold_entry": 163,
+      "servo_steps": 59,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.075,
+      "lateral_gate_block_fraction": 0.9,
+      "orientation_gate_block_fraction": 0.175,
+      "both_gate_block_fraction": 0.15,
+      "median_lateral_error_mm": 2.2739070700481534,
+      "median_orientation_error_rad": 0.013108150698174486,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.075,
+      "near_bound_fraction_y_z_advance": [
+        0.075,
+        0.075,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.125,
+      "advance_upper4mm_fraction": 0.8,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.0455173060297966,
+        -0.18479167819023132,
+        0.6349953889846802
+      ],
+      "mean_commanded_advance_mm": 3.570772218704224,
+      "median_contact_force_N": 8.27845632284108,
+      "max_contact_force_N": 34.66099927608219,
+      "mean_requested_target_relative_true_axis_mm": [
+        -1.1317240409553064,
+        -1.477187517285348
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.9786369581841556,
+      "net_actual_axial_progress_last10_decisions_mm": 19.929002970457077,
+      "median_actual_axial_progress_per_decision_mm": 1.5225596725940704,
+      "final_native_position_error_mm": 2.6431025471538305,
+      "final_native_orientation_rad": 0.010969224385917187,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 5,
+      "max_axial_progress_mm_with_zero_forward": 4.731364548206329
+    },
+    {
+      "seed": 732003,
+      "bias_mm": [
+        0.0,
+        1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96",
+      "trace_sha256": "74de939e672ab1c13c8c9290b46f737f79b75714cb23ae646d038a8e61cfebd3",
+      "hold_entry": 171,
+      "servo_steps": 66,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.0,
+      "lateral_gate_block_fraction": 0.975,
+      "orientation_gate_block_fraction": 0.65,
+      "both_gate_block_fraction": 0.625,
+      "median_lateral_error_mm": 1.795807620510459,
+      "median_orientation_error_rad": 0.03540065634429575,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.55,
+      "near_bound_fraction_y_z_advance": [
+        0.2,
+        0.35,
+        0.2
+      ],
+      "joint_delta_clipping_fraction": 0.325,
+      "advance_upper4mm_fraction": 0.95,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.11490913331508637,
+        -0.5291760236024856,
+        0.8067970633506775
+      ],
+      "mean_commanded_advance_mm": 3.8457293510437016,
+      "median_contact_force_N": 8.852416550589101,
+      "max_contact_force_N": 50.0394141019562,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.17236369997262954,
+        0.4062359645962711
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.2535910353830715,
+      "net_actual_axial_progress_last10_decisions_mm": 12.14425265789032,
+      "median_actual_axial_progress_per_decision_mm": 1.165030151605606,
+      "final_native_position_error_mm": 4.018094390630722,
+      "final_native_orientation_rad": 0.0188276544213295,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 8,
+      "max_axial_progress_mm_with_zero_forward": 2.6405595242977142
+    },
+    {
+      "seed": 732003,
+      "bias_mm": [
+        1.2,
+        -1.2
+      ],
+      "family": "YZ",
+      "success": false,
+      "initial_sha256": "8c86578e7a79c0158d5fcebfe896bbaac6bc2c692f6166cf0ceac17975c59e96",
+      "trace_sha256": "f7bc7ee2deb47fb3aed83cc00becf8484d3c8149b756315a2396e887e69d3269",
+      "hold_entry": null,
+      "servo_steps": 99,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.05,
+      "lateral_gate_block_fraction": 0.95,
+      "orientation_gate_block_fraction": 0.0,
+      "both_gate_block_fraction": 0.0,
+      "median_lateral_error_mm": 2.0038827788084745,
+      "median_orientation_error_rad": 0.012496291694010543,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.775,
+      "near_bound_fraction_y_z_advance": [
+        0.3,
+        0.275,
+        0.2
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.725,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.3619581609964371,
+        0.359908801317215,
+        0.6404237449169159
+      ],
+      "mean_commanded_advance_mm": 3.7639611721038815,
+      "median_contact_force_N": 14.721118558436551,
+      "max_contact_force_N": 27.180172312989797,
+      "mean_requested_target_relative_true_axis_mm": [
+        1.7429372414946571,
+        -0.6601367980241771
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.9334421823698547,
+      "net_actual_axial_progress_last10_decisions_mm": -0.012037158012390138,
+      "median_actual_axial_progress_per_decision_mm": 0.006994605064392091,
+      "final_native_position_error_mm": 16.211120411753654,
+      "final_native_orientation_rad": 0.01664433814585209,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 1,
+      "max_axial_progress_mm_with_zero_forward": 0.6798535585403442
+    },
+    {
+      "seed": 732004,
+      "bias_mm": [
+        -1.2,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c",
+      "trace_sha256": "d33f575182c02bd3f6d717733f5a636d467e55a2066dd46af709b6151ce7638b",
+      "hold_entry": 143,
+      "servo_steps": 58,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.025,
+      "lateral_gate_block_fraction": 0.975,
+      "orientation_gate_block_fraction": 0.275,
+      "both_gate_block_fraction": 0.275,
+      "median_lateral_error_mm": 1.283824269194156,
+      "median_orientation_error_rad": 0.01646078766755983,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.1,
+      "near_bound_fraction_y_z_advance": [
+        0.1,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.15,
+      "advance_upper4mm_fraction": 0.75,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.12479955852031707,
+        -0.18391842246055604,
+        0.6552671492099762
+      ],
+      "mean_commanded_advance_mm": 3.7681099176406856,
+      "median_contact_force_N": 10.592128257878244,
+      "max_contact_force_N": 34.49517877263491,
+      "mean_requested_target_relative_true_axis_mm": [
+        -1.0128006622195243,
+        -0.27587763369083407
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.9098452096903578,
+      "net_actual_axial_progress_last10_decisions_mm": 12.620128691196442,
+      "median_actual_axial_progress_per_decision_mm": 0.7490254938602448,
+      "final_native_position_error_mm": 3.479890525341034,
+      "final_native_orientation_rad": 0.0386248342692852,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 7,
+      "max_axial_progress_mm_with_zero_forward": 3.4795552492141724
+    },
+    {
+      "seed": 732004,
+      "bias_mm": [
+        0.0,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c",
+      "trace_sha256": "aae86fce673cfec647253272a42180ea944798e309c8bf7f2ebf864bed7d6215",
+      "hold_entry": 135,
+      "servo_steps": 51,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.025,
+      "lateral_gate_block_fraction": 0.975,
+      "orientation_gate_block_fraction": 0.15,
+      "both_gate_block_fraction": 0.15,
+      "median_lateral_error_mm": 0.964299135375768,
+      "median_orientation_error_rad": 0.014349730207067356,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.025,
+      "advance_upper4mm_fraction": 0.6,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.14692864567041397,
+        -0.07171926796436309,
+        0.5394654303789139
+      ],
+      "mean_commanded_advance_mm": 3.625179719924927,
+      "median_contact_force_N": 5.967177291788972,
+      "max_contact_force_N": 14.257328921650451,
+      "mean_requested_target_relative_true_axis_mm": [
+        -0.22039296850562096,
+        -0.10757890194654465
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.1621497936357457,
+      "net_actual_axial_progress_last10_decisions_mm": 14.641858637332916,
+      "median_actual_axial_progress_per_decision_mm": 1.7997324466705322,
+      "final_native_position_error_mm": 3.470728872343898,
+      "final_native_orientation_rad": 0.03047579526901245,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 8,
+      "max_axial_progress_mm_with_zero_forward": 2.963356673717499
+    },
+    {
+      "seed": 732004,
+      "bias_mm": [
+        1.2,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c",
+      "trace_sha256": "cc83bb5889637392f4b11236bc761c16a594766ff9d6cc62162943ebe95afebc",
+      "hold_entry": 113,
+      "servo_steps": 29,
+      "window_servo_steps": 29,
+      "tail_transition_count": 8,
+      "forward_allowed_fraction": 0.27586206896551724,
+      "lateral_gate_block_fraction": 0.7241379310344828,
+      "orientation_gate_block_fraction": 0.0,
+      "both_gate_block_fraction": 0.0,
+      "median_lateral_error_mm": 0.7090807193890214,
+      "median_orientation_error_rad": 0.005121138352989783,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.41379310344827586,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        -0.5502310086940897,
+        0.2397545863842142,
+        0.45404356101463583
+      ],
+      "mean_commanded_advance_mm": 3.4219565884820353,
+      "median_contact_force_N": 0.0,
+      "max_contact_force_N": 11.3367870198926,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.37465348695886536,
+        0.3596318795763213
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 0.5413475463555244,
+      "net_actual_axial_progress_last10_decisions_mm": 17.59539544582367,
+      "median_actual_axial_progress_per_decision_mm": 1.8592067062854767,
+      "final_native_position_error_mm": 3.8726138882339,
+      "final_native_orientation_rad": 0.006982321850955486,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 2,
+      "max_axial_progress_mm_with_zero_forward": 1.6181319952011108
+    },
+    {
+      "seed": 732004,
+      "bias_mm": [
+        -1.2,
+        -1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c",
+      "trace_sha256": "89410fba800cb6dbb4f1188605ff911a76a3b65ef9aecab2e3496758a00d050a",
+      "hold_entry": 155,
+      "servo_steps": 71,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.05,
+      "lateral_gate_block_fraction": 0.95,
+      "orientation_gate_block_fraction": 0.15,
+      "both_gate_block_fraction": 0.15,
+      "median_lateral_error_mm": 1.385048613883555,
+      "median_orientation_error_rad": 0.016104591228015865,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.275,
+      "near_bound_fraction_y_z_advance": [
+        0.175,
+        0.1,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.05,
+      "advance_upper4mm_fraction": 0.7,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.45989546477794646,
+        -0.2894118994474411,
+        0.6421987146139145
+      ],
+      "mean_commanded_advance_mm": 3.8083923339843757,
+      "median_contact_force_N": 10.016215916861455,
+      "max_contact_force_N": 29.301403556712863,
+      "mean_requested_target_relative_true_axis_mm": [
+        -0.5101568028330801,
+        -1.6341178491711628
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.3115477987630866,
+      "net_actual_axial_progress_last10_decisions_mm": 14.1921266913414,
+      "median_actual_axial_progress_per_decision_mm": 0.09818375110626221,
+      "final_native_position_error_mm": 1.8934484105557203,
+      "final_native_orientation_rad": 0.012322011403739452,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 4,
+      "max_axial_progress_mm_with_zero_forward": 5.330130457878113
+    },
+    {
+      "seed": 732004,
+      "bias_mm": [
+        0.0,
+        1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c",
+      "trace_sha256": "f89e60b435632ab10fcc758814a19eee8f0b633f7364355a0796ca483eab3ea4",
+      "hold_entry": 158,
+      "servo_steps": 73,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.0,
+      "lateral_gate_block_fraction": 1.0,
+      "orientation_gate_block_fraction": 0.45,
+      "both_gate_block_fraction": 0.45,
+      "median_lateral_error_mm": 1.4593317755497992,
+      "median_orientation_error_rad": 0.027987891343075798,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.575,
+      "near_bound_fraction_y_z_advance": [
+        0.275,
+        0.2,
+        0.1
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 1.0,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.06784945130348205,
+        -0.14411565363407136,
+        0.8756887674331665
+      ],
+      "mean_commanded_advance_mm": 4.0,
+      "median_contact_force_N": 8.913029435635744,
+      "max_contact_force_N": 25.897877329757396,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.10177417695522309,
+        0.9838265195488942
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.6655898780980225,
+      "net_actual_axial_progress_last10_decisions_mm": 12.322477996349335,
+      "median_actual_axial_progress_per_decision_mm": 1.2778602540493011,
+      "final_native_position_error_mm": 3.8014957681298256,
+      "final_native_orientation_rad": 0.024649308994412422,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 9,
+      "max_axial_progress_mm_with_zero_forward": 2.457462251186371
+    },
+    {
+      "seed": 732004,
+      "bias_mm": [
+        1.2,
+        -1.2
+      ],
+      "family": "YZ",
+      "success": false,
+      "initial_sha256": "68ed67afe306805af5d6519df455c0acb3e7c3f93fa1216807bb834068dfa77c",
+      "trace_sha256": "1cf7c1f13fa39e4f38024faa00817a864a6443ea9e6f06baa1ebe656dca831a1",
+      "hold_entry": null,
+      "servo_steps": 119,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.0,
+      "lateral_gate_block_fraction": 1.0,
+      "orientation_gate_block_fraction": 0.0,
+      "both_gate_block_fraction": 0.0,
+      "median_lateral_error_mm": 1.389694749377668,
+      "median_orientation_error_rad": 0.01078423256153607,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.3,
+      "near_bound_fraction_y_z_advance": [
+        0.2,
+        0.1,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.7,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.460291163623333,
+        0.37853543758392333,
+        0.6422746777534485
+      ],
+      "mean_commanded_advance_mm": 3.7363783359527587,
+      "median_contact_force_N": 13.821302433014502,
+      "max_contact_force_N": 21.78298868432973,
+      "mean_requested_target_relative_true_axis_mm": [
+        1.8904367454350006,
+        -0.6321968436241145
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.1019401099417794,
+      "net_actual_axial_progress_last10_decisions_mm": 0.07910281419754028,
+      "median_actual_axial_progress_per_decision_mm": 0.00043958425521850586,
+      "final_native_position_error_mm": 16.067249700427055,
+      "final_native_orientation_rad": 0.011015002615749836,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 0,
+      "max_axial_progress_mm_with_zero_forward": 0.09128451347351074
+    },
+    {
+      "seed": 732005,
+      "bias_mm": [
+        -1.2,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e",
+      "trace_sha256": "ab738f675eb00cbca9d6ced61cdb53379a101e9caf6e2904c07b99633918f75e",
+      "hold_entry": 122,
+      "servo_steps": 32,
+      "window_servo_steps": 32,
+      "tail_transition_count": 8,
+      "forward_allowed_fraction": 0.125,
+      "lateral_gate_block_fraction": 0.875,
+      "orientation_gate_block_fraction": 0.0625,
+      "both_gate_block_fraction": 0.0625,
+      "median_lateral_error_mm": 1.103864808101207,
+      "median_orientation_error_rad": 0.0037471854212457797,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.625,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.257131427526474,
+        0.07452874630689621,
+        0.5335947573184967
+      ],
+      "mean_commanded_advance_mm": 3.432414948940277,
+      "median_contact_force_N": 0.0,
+      "max_contact_force_N": 23.19616211134063,
+      "mean_requested_target_relative_true_axis_mm": [
+        -0.8143028587102886,
+        0.11179311946034431
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.3771616143268324,
+      "net_actual_axial_progress_last10_decisions_mm": 23.575086891651154,
+      "median_actual_axial_progress_per_decision_mm": 4.084816202521324,
+      "final_native_position_error_mm": 3.2295186538249254,
+      "final_native_orientation_rad": 0.0188601091504097,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 4,
+      "max_axial_progress_mm_with_zero_forward": 5.085356533527374
+    },
+    {
+      "seed": 732005,
+      "bias_mm": [
+        0.0,
+        0.0
+      ],
+      "family": "Y",
+      "success": true,
+      "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e",
+      "trace_sha256": "af64e1c43c2f56c6f0b79e1543b037843fec41db1702321a903fcaa9d741bc26",
+      "hold_entry": 145,
+      "servo_steps": 55,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.025,
+      "lateral_gate_block_fraction": 0.975,
+      "orientation_gate_block_fraction": 0.075,
+      "both_gate_block_fraction": 0.075,
+      "median_lateral_error_mm": 1.7085961299017072,
+      "median_orientation_error_rad": 0.00796340633104766,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.0,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.725,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.14284697026014329,
+        -0.313996222615242,
+        0.5255140319466591
+      ],
+      "mean_commanded_advance_mm": 3.3740372002124785,
+      "median_contact_force_N": 6.321994333434288,
+      "max_contact_force_N": 26.467748607632114,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.21427045539021491,
+        -0.470994333922863
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.052286252635712,
+      "net_actual_axial_progress_last10_decisions_mm": 17.265944927930832,
+      "median_actual_axial_progress_per_decision_mm": 0.5699858069419861,
+      "final_native_position_error_mm": 3.986557014286518,
+      "final_native_orientation_rad": 0.005590006243437529,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 7,
+      "max_axial_progress_mm_with_zero_forward": 5.085565149784088
+    },
+    {
+      "seed": 732005,
+      "bias_mm": [
+        1.2,
+        0.0
+      ],
+      "family": "Y",
+      "success": false,
+      "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e",
+      "trace_sha256": "002f15532c8ab8ca5365ae8206b2c054ea6e32a077e6ff1ab0c50698eac1867b",
+      "hold_entry": null,
+      "servo_steps": 113,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.05,
+      "lateral_gate_block_fraction": 0.95,
+      "orientation_gate_block_fraction": 0.0,
+      "both_gate_block_fraction": 0.0,
+      "median_lateral_error_mm": 1.3436269364319742,
+      "median_orientation_error_rad": 0.011585654431887207,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.1,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "joint_delta_clipping_fraction": 0.0,
+      "advance_upper4mm_fraction": 0.5,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.5538198083639145,
+        0.054123972356319425,
+        0.4443753153085709
+      ],
+      "mean_commanded_advance_mm": 3.1619302272796634,
+      "median_contact_force_N": 18.018701898117925,
+      "max_contact_force_N": 27.489108767910512,
+      "mean_requested_target_relative_true_axis_mm": [
+        2.0307297125458734,
+        0.08118595853447914
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.1495859487586269,
+      "net_actual_axial_progress_last10_decisions_mm": -0.0020563602447509766,
+      "median_actual_axial_progress_per_decision_mm": -0.0022545456886291504,
+      "final_native_position_error_mm": 16.25160500407219,
+      "final_native_orientation_rad": 0.010319261811673641,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 1,
+      "max_axial_progress_mm_with_zero_forward": 5.085204541683197
+    },
+    {
+      "seed": 732005,
+      "bias_mm": [
+        -1.2,
+        -1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e",
+      "trace_sha256": "972aa988f8c3b9b5ac51291ec5a02194e9f7e6d0a731a74cafdf42aebb39d152",
+      "hold_entry": 149,
+      "servo_steps": 59,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.05,
+      "lateral_gate_block_fraction": 0.95,
+      "orientation_gate_block_fraction": 0.25,
+      "both_gate_block_fraction": 0.25,
+      "median_lateral_error_mm": 2.3741573095321655,
+      "median_orientation_error_rad": 0.0162925288025663,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.3,
+      "near_bound_fraction_y_z_advance": [
+        0.1,
+        0.1,
+        0.2
+      ],
+      "joint_delta_clipping_fraction": 0.1,
+      "advance_upper4mm_fraction": 0.9,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.19773194789886475,
+        -0.15089581459760665,
+        0.7854148745536804
+      ],
+      "mean_commanded_advance_mm": 3.9027632236480714,
+      "median_contact_force_N": 11.918271736415829,
+      "max_contact_force_N": 34.03754391756126,
+      "mean_requested_target_relative_true_axis_mm": [
+        -0.903402078151703,
+        -1.4263437218964101
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.9980905853946975,
+      "net_actual_axial_progress_last10_decisions_mm": 15.537413954734804,
+      "median_actual_axial_progress_per_decision_mm": 0.041019171476364136,
+      "final_native_position_error_mm": 2.9581282287836075,
+      "final_native_orientation_rad": 0.025710850954055786,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 3,
+      "max_axial_progress_mm_with_zero_forward": 5.98989799618721
+    },
+    {
+      "seed": 732005,
+      "bias_mm": [
+        0.0,
+        1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e",
+      "trace_sha256": "d7dae7ad984a2179811d42e3d0a4b7951fcd99ed2e12449c32b90192a4c22521",
+      "hold_entry": 139,
+      "servo_steps": 50,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.1,
+      "lateral_gate_block_fraction": 0.875,
+      "orientation_gate_block_fraction": 0.6,
+      "both_gate_block_fraction": 0.575,
+      "median_lateral_error_mm": 0.818819971755147,
+      "median_orientation_error_rad": 0.04615929342936242,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.15,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.05,
+        0.15
+      ],
+      "joint_delta_clipping_fraction": 0.325,
+      "advance_upper4mm_fraction": 0.9,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.5340310215950013,
+        -0.3278206646442413,
+        0.7905720233917236
+      ],
+      "mean_commanded_advance_mm": 3.9058426380157467,
+      "median_contact_force_N": 16.46341220074095,
+      "max_contact_force_N": 50.34774112276331,
+      "mean_requested_target_relative_true_axis_mm": [
+        0.8010465323925018,
+        0.7082690030336374
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.120117330776033,
+      "net_actual_axial_progress_last10_decisions_mm": 23.51358458399773,
+      "median_actual_axial_progress_per_decision_mm": 2.0973142236471176,
+      "final_native_position_error_mm": 3.834531409665942,
+      "final_native_orientation_rad": 0.023026201874017715,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 6,
+      "max_axial_progress_mm_with_zero_forward": 5.949925631284714
+    },
+    {
+      "seed": 732005,
+      "bias_mm": [
+        1.2,
+        -1.2
+      ],
+      "family": "YZ",
+      "success": true,
+      "initial_sha256": "7e24e2585110304f49405099117337121aecdf2cad490b9d61abb593b741028e",
+      "trace_sha256": "339538b5c3d25fc34339df0dcb0866833b04375b34641a53c33710c92bcffd97",
+      "hold_entry": 142,
+      "servo_steps": 52,
+      "window_servo_steps": 40,
+      "tail_transition_count": 10,
+      "forward_allowed_fraction": 0.1,
+      "lateral_gate_block_fraction": 0.9,
+      "orientation_gate_block_fraction": 0.25,
+      "both_gate_block_fraction": 0.25,
+      "median_lateral_error_mm": 2.1676768083125353,
+      "median_orientation_error_rad": 0.014387751719212444,
+      "requested_clipped_max_difference": 0.0,
+      "residual_abs_ge_095_fraction": 0.1,
+      "near_bound_fraction_y_z_advance": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "joint_delta_clipping_fraction": 0.175,
+      "advance_upper4mm_fraction": 0.9,
+      "advance_negative_fraction": 0.0,
+      "mean_action": [
+        0.125453919172287,
+        -0.06319204568862916,
+        0.7763773918151855
+      ],
+      "mean_commanded_advance_mm": 3.814587736129761,
+      "median_contact_force_N": 6.7126437942646655,
+      "max_contact_force_N": 28.914671386334987,
+      "mean_requested_target_relative_true_axis_mm": [
+        1.3881808787584313,
+        -1.2947880685329438
+      ],
+      "target_true_axis_analysis_only": true,
+      "median_lateral_target_change_per_decision_mm": 1.4350129183182627,
+      "net_actual_axial_progress_last10_decisions_mm": 24.093089997768406,
+      "median_actual_axial_progress_per_decision_mm": 1.9816752523183823,
+      "final_native_position_error_mm": 3.278955351561308,
+      "final_native_orientation_rad": 0.016922246664762497,
+      "zero_forward_with_gt03mm_axial_progress_decisions": 5,
+      "max_axial_progress_mm_with_zero_forward": 5.288079380989075
+    }
+  ],
+  "limitations": [
+    "Targets relative to true axis are analyst-only calculations with logged bias, never actor inputs.",
+    "Correlated target errors/contact/gate blocking are mechanism evidence; frozen-action physical interventions are needed to identify causal remedy.",
+    "Late success/failure windows differ in phase/time; no population significance from five failures."
+  ]
+}

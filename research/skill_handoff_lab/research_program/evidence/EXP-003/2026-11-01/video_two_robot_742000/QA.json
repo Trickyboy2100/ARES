@@ -1,0 +1,63 @@
+{
+  "claim": "PHYSICAL_HANDOFF_PARAMETER_PAIR_NOT_RL_GAIN",
+  "physics_steps_added": 0,
+  "sources": [
+    {
+      "sha256": "25b2c18d8c693ad688d189d7b928df7f7c3297f56d86fa810684e5d7506811ab",
+      "success": true,
+      "decision_steps": [
+        0,
+        53
+      ],
+      "verified_boundary_steps": [
+        53,
+        100
+      ],
+      "error": null
+    },
+    {
+      "sha256": "dbbc2c0357a9e3cecf18f784360886da7126c8455059feb6768010bdc109dcd4",
+      "success": false,
+      "decision_steps": [
+        0,
+        97
+      ],
+      "verified_boundary_steps": [
+        97
+      ],
+      "error": "Horizon: NATIVE100"
+    }
+  ],
+  "videos": {
+    "RAW.mp4": {
+      "width": 1600,
+      "height": 600,
+      "r_frame_rate": "20/1",
+      "duration": "5.050000",
+      "nb_frames": "101",
+      "all_pts_pass": true
+    },
+    "ANNOTATED.mp4": {
+      "width": 1600,
+      "height": 1060,
+      "r_frame_rate": "20/1",
+      "duration": "5.050000",
+      "nb_frames": "101",
+      "all_pts_pass": true
+    }
+  },
+  "same_initial_hash": true,
+  "browser": {
+    "duration": 5.05,
+    "floor50": true,
+    "click50": true,
+    "source_decision_count": true,
+    "last_decision_seek": true,
+    "raw_switch": true,
+    "no_future_result": true
+  },
+  "max_state_readback_error": 5.960464477539063e-08,
+  "all_cube_goal_centers_inside_frame": true,
+  "derived_signal_max_absolute_tolerance": 1e-10,
+  "visual_review": "Full two-arm context and same-frame actual pixel closeup reviewed; no generated contact geometry."
+}

@@ -1,0 +1,35 @@
+{
+  "recorded_at": "2026-11-01T06:37:21.689924+00:00",
+  "gpu": "single local RTX3080 GPU0",
+  "policy": "At most two offline simulation processes on GPU0; later A comparisons share the same device after B completes. No other GPUs.",
+  "initial_exclusive_A": [
+    "train_full",
+    "eval_full"
+  ],
+  "overlap_A": [
+    "train_y_only",
+    "eval_y_only",
+    "train_task",
+    "eval_task",
+    "controls_full",
+    "controls_y_only",
+    "controls_task",
+    "controls_legacy",
+    "controls_rls",
+    "eval_full_2048",
+    "eval_y_only_2048",
+    "eval_task_2048",
+    "eval_full_legacy",
+    "controls_fast_full",
+    "controls_fast_y_only",
+    "controls_fast_task"
+  ],
+  "overlap_B": [
+    "multiskill_clearance",
+    "multiskill_two_robot",
+    "multiskill_two_robot_fullsuffix",
+    "multiskill_slowdown"
+  ],
+  "measurement_limitation": "All potentially overlapping runs are conservatively marked shared-resource wall time. Physical control-step counts and optimizer counts remain exact. Do not rank computational speed from these wall times.",
+  "activation_boundary": "Before first clearance followup; A y_only was active. Earlier B43 runs and full A train/eval were sequential."
+}

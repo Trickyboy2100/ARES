@@ -1,0 +1,197 @@
+{
+  "script_sha256": "897257c3b784b6d81173a23301e5fc543c08c4415b3dfdeaaa9cb8fe5c94c736",
+  "sources": {
+    "EVAL_SCORES.json": "4628e11a7b9c59719909f4bb9f84bfec5e70143028d18fa4b7de2063f9a4b0c6",
+    "PAIRS.json": "4bf861d8ecd536c33fa7bfd3b32b6895afe31a11c48bf69c281a54ab58d4abd9"
+  },
+  "paired": [
+    {
+      "authority": "full",
+      "search": "controls_fast_full::search_unique_fast",
+      "model": "eval_full::model",
+      "rescues": 5,
+      "regressions": 4,
+      "matched_conditions": 36,
+      "recorded_prefix_equal": 36,
+      "scene_cluster_bootstrap": {
+        "method": "paired scene-cluster percentile bootstrap",
+        "direction": "right success rate minus left success rate",
+        "bootstrap_seed": 20261101,
+        "replicates": 20000,
+        "confidence": 0.95,
+        "independent_scene_clusters": 6,
+        "engineering_reused_scene": 732000,
+        "engineering_scene_present": true,
+        "interpretation": "EXPLORATORY ONLY: primary design has six independent scenes, one used for stop engineering. Thirty-six conditions are not 36 independent samples. This interval is not final statistical evidence or a novelty claim.",
+        "six_conditions_per_scene_complete": true,
+        "clusters": [
+          {
+            "seed": 732000,
+            "conditions": 6,
+            "right_minus_left_successes": 0
+          },
+          {
+            "seed": 732001,
+            "conditions": 6,
+            "right_minus_left_successes": -1
+          },
+          {
+            "seed": 732002,
+            "conditions": 6,
+            "right_minus_left_successes": 0
+          },
+          {
+            "seed": 732003,
+            "conditions": 6,
+            "right_minus_left_successes": 1
+          },
+          {
+            "seed": 732004,
+            "conditions": 6,
+            "right_minus_left_successes": 0
+          },
+          {
+            "seed": 732005,
+            "conditions": 6,
+            "right_minus_left_successes": 1
+          }
+        ],
+        "status": "EXPLORATORY_ESTIMATED",
+        "difference": 0.027777777777777776,
+        "percentile_95_interval": [
+          -0.05555555555555555,
+          0.1111111111111111
+        ],
+        "unit": "success-rate fraction",
+        "weighting": "equal scene weight; all six matched conditions retained together per sampled scene",
+        "limitation": "Percentile interval can be degenerate when all observed scene differences agree; it does not establish zero uncertainty beyond these scenes."
+      }
+    },
+    {
+      "authority": "y_only",
+      "search": "controls_fast_y_only::search_unique_fast",
+      "model": "eval_y_only::model",
+      "rescues": 10,
+      "regressions": 2,
+      "matched_conditions": 36,
+      "recorded_prefix_equal": 36,
+      "scene_cluster_bootstrap": {
+        "method": "paired scene-cluster percentile bootstrap",
+        "direction": "right success rate minus left success rate",
+        "bootstrap_seed": 20261101,
+        "replicates": 20000,
+        "confidence": 0.95,
+        "independent_scene_clusters": 6,
+        "engineering_reused_scene": 732000,
+        "engineering_scene_present": true,
+        "interpretation": "EXPLORATORY ONLY: primary design has six independent scenes, one used for stop engineering. Thirty-six conditions are not 36 independent samples. This interval is not final statistical evidence or a novelty claim.",
+        "six_conditions_per_scene_complete": true,
+        "clusters": [
+          {
+            "seed": 732000,
+            "conditions": 6,
+            "right_minus_left_successes": 0
+          },
+          {
+            "seed": 732001,
+            "conditions": 6,
+            "right_minus_left_successes": 1
+          },
+          {
+            "seed": 732002,
+            "conditions": 6,
+            "right_minus_left_successes": 2
+          },
+          {
+            "seed": 732003,
+            "conditions": 6,
+            "right_minus_left_successes": 2
+          },
+          {
+            "seed": 732004,
+            "conditions": 6,
+            "right_minus_left_successes": 2
+          },
+          {
+            "seed": 732005,
+            "conditions": 6,
+            "right_minus_left_successes": 1
+          }
+        ],
+        "status": "EXPLORATORY_ESTIMATED",
+        "difference": 0.2222222222222222,
+        "percentile_95_interval": [
+          0.1111111111111111,
+          0.3055555555555555
+        ],
+        "unit": "success-rate fraction",
+        "weighting": "equal scene weight; all six matched conditions retained together per sampled scene",
+        "limitation": "Percentile interval can be degenerate when all observed scene differences agree; it does not establish zero uncertainty beyond these scenes."
+      }
+    },
+    {
+      "authority": "task",
+      "search": "controls_fast_task::search_unique_fast",
+      "model": "eval_task::model",
+      "rescues": 6,
+      "regressions": 1,
+      "matched_conditions": 36,
+      "recorded_prefix_equal": 36,
+      "scene_cluster_bootstrap": {
+        "method": "paired scene-cluster percentile bootstrap",
+        "direction": "right success rate minus left success rate",
+        "bootstrap_seed": 20261101,
+        "replicates": 20000,
+        "confidence": 0.95,
+        "independent_scene_clusters": 6,
+        "engineering_reused_scene": 732000,
+        "engineering_scene_present": true,
+        "interpretation": "EXPLORATORY ONLY: primary design has six independent scenes, one used for stop engineering. Thirty-six conditions are not 36 independent samples. This interval is not final statistical evidence or a novelty claim.",
+        "six_conditions_per_scene_complete": true,
+        "clusters": [
+          {
+            "seed": 732000,
+            "conditions": 6,
+            "right_minus_left_successes": 0
+          },
+          {
+            "seed": 732001,
+            "conditions": 6,
+            "right_minus_left_successes": -1
+          },
+          {
+            "seed": 732002,
+            "conditions": 6,
+            "right_minus_left_successes": 1
+          },
+          {
+            "seed": 732003,
+            "conditions": 6,
+            "right_minus_left_successes": 2
+          },
+          {
+            "seed": 732004,
+            "conditions": 6,
+            "right_minus_left_successes": 1
+          },
+          {
+            "seed": 732005,
+            "conditions": 6,
+            "right_minus_left_successes": 2
+          }
+        ],
+        "status": "EXPLORATORY_ESTIMATED",
+        "difference": 0.13888888888888887,
+        "percentile_95_interval": [
+          0.0,
+          0.27777777777777773
+        ],
+        "unit": "success-rate fraction",
+        "weighting": "equal scene weight; all six matched conditions retained together per sampled scene",
+        "limitation": "Percentile interval can be degenerate when all observed scene differences agree; it does not establish zero uncertainty beyond these scenes."
+      }
+    }
+  ],
+  "physics_steps_added": 0,
+  "limitation": "Raw development counts; six scene clusters, not 36 independent initial scenes. Error bars omitted; exploratory cluster intervals are in PAIRS.json. No novelty or convergence claim."
+}

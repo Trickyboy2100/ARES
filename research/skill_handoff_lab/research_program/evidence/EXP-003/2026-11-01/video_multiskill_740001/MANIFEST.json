@@ -1,0 +1,332 @@
+{
+  "source_kind": "MEASURED_POSE_REPLAY",
+  "physics_steps_added": 0,
+  "frames": 101,
+  "fps": 20,
+  "frame_mapping": "frame k = actual step k, timestamp k/20 seconds; initial frame0",
+  "max_state_readback_error": 1.1920928955078125e-07,
+  "sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_pull/740001_g035/TRAJECTORY.json.gz",
+      "sha256": "83c5d55b9fbdc32015a3626d82bfd44d7a00faedd993168b49d26a04e6efab0d",
+      "execution_manifest": {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_pull/740001_g035/MANIFEST.json",
+        "sha256": "e91734aa188405d805e7bf3167c40cce63715ab5c0356c64959ebb6793fe1bb7",
+        "content": {
+          "task": "PullCubeTool-v1",
+          "native_horizon": 100,
+          "initial_distribution": "NATIVE_UNCHANGED",
+          "source_kind": "ACTUAL_PHYSX_EXECUTION",
+          "hardware_commands": false,
+          "optimizer_updates": 0,
+          "seed": 740001,
+          "random_seed": 31031,
+          "requested_parameters": {
+            "grasp_x": 0.035,
+            "hook_y": null
+          },
+          "baseline": "unchanged measured-attachment lookahead + nine-candidate post-grasp geometry search",
+          "decision_boundaries": [
+            "before physical grasp",
+            "after retained grasp and commanded 55mm lift"
+          ],
+          "reset_count": 1,
+          "source_sha256": {
+            "program_multiskill_pull.py": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c",
+            "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+            "handoff_physics.py": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+          },
+          "native_source_sha256": "87e0963be3541f830d4e88308595a52ee29748b73c13552027c9e6c1ea9377b4",
+          "maniskill_revision": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+          "maniskill_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "git_head": "93015705d17a5b2caaa2a5dfa0f019545a18d3e9",
+          "fairness": "same native100 full physics; fixed parameters are diagnostic interventions; no oracle outcome selection"
+        }
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_pull/740001_lookahead/TRAJECTORY.json.gz",
+      "sha256": "b95ec79e87520ef89bcab3d0503399c53b43165bc3409b8b92bc521733e10e38",
+      "execution_manifest": {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_pull/740001_lookahead/MANIFEST.json",
+        "sha256": "676fb685a24e5380c88bd2caedca6e1b439b48466021b409ca815df919f4fcee",
+        "content": {
+          "task": "PullCubeTool-v1",
+          "native_horizon": 100,
+          "initial_distribution": "NATIVE_UNCHANGED",
+          "source_kind": "ACTUAL_PHYSX_EXECUTION",
+          "hardware_commands": false,
+          "optimizer_updates": 0,
+          "seed": 740001,
+          "random_seed": 31031,
+          "requested_parameters": {
+            "grasp_x": null,
+            "hook_y": null
+          },
+          "baseline": "unchanged measured-attachment lookahead + nine-candidate post-grasp geometry search",
+          "decision_boundaries": [
+            "before physical grasp",
+            "after retained grasp and commanded 55mm lift"
+          ],
+          "reset_count": 1,
+          "source_sha256": {
+            "program_multiskill_pull.py": "a6a8267492993ed7292f5ad611b45243ff658d78c48c88d5f807d2b1d8b44e5c",
+            "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+            "handoff_physics.py": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+          },
+          "native_source_sha256": "87e0963be3541f830d4e88308595a52ee29748b73c13552027c9e6c1ea9377b4",
+          "maniskill_revision": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+          "maniskill_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "git_head": "93015705d17a5b2caaa2a5dfa0f019545a18d3e9",
+          "fairness": "same native100 full physics; fixed parameters are diagnostic interventions; no oracle outcome selection"
+        }
+      }
+    }
+  ],
+  "camera_eye_world": [
+    0.55,
+    -0.8,
+    0.65
+  ],
+  "camera_target_world": [
+    0.02,
+    -0.1,
+    0.08
+  ],
+  "camera_fov_rad": 0.95,
+  "camera_intrinsic": [
+    [
+      583.3487548828125,
+      0.0,
+      400.0
+    ],
+    [
+      0.0,
+      583.3487548828125,
+      300.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_extrinsic": [
+    [
+      0.7972583174705505,
+      0.6036385297775269,
+      1.4901162970204496e-08,
+      0.04441865161061287
+    ],
+    [
+      0.32868972420692444,
+      -0.43411844968795776,
+      -0.8387516140937805,
+      0.01711442321538925
+    ],
+    [
+      -0.5063028335571289,
+      0.6687016487121582,
+      -0.5445142388343811,
+      1.1673619747161865
+    ]
+  ],
+  "all_tool_bound_corner_pixel_min": [
+    258.7243308695212,
+    250.4607968550193
+  ],
+  "all_tool_bound_corner_pixel_max": [
+    499.0923682065327,
+    512.3763768313302
+  ],
+  "all_cube_corner_pixel_min": [
+    352.26694021432957,
+    301.69412755212744
+  ],
+  "all_cube_corner_pixel_max": [
+    503.83368842620297,
+    519.599053856841
+  ],
+  "native_model_source_sha256": "87e0963be3541f830d4e88308595a52ee29748b73c13552027c9e6c1ea9377b4",
+  "render_source_sha256": "52d1ee813fa2e21da67e285c476785aae73e7e1649de571c74bb3d18a18e9f67",
+  "outputs": {
+    "DATA.json": "532f1a81e894af22bbd960887127c23b0a5eb229cccaeba8405ffea1b8a3d896",
+    "ANNOTATED_050.png": "101552e546cad5d174fa7f0f86a1c666a58d513dd569ed257b46e9a896d74a6f",
+    "SYNC_VIEWER.html": "0df4f3b1f60a9ea7a8db7088c9b106bfa9da779bc8f60f326be37a52853e4044",
+    "RAW_050.png": "8c58265d1082963da64b03868ad792db08e930f90f560dfebc21d66f94e9a1b9",
+    "contact_overlay_source.py": "085249b33839b22d4f2c015f652f242d1cd04f24ca590c8b73389bc50a41f7fd",
+    "TRACE_CONTACT_PHASE.png": "fb10cdfcb0fb98abc527f9ec5163748cb8557b576e91cd0f9ec8017800a07bb9",
+    "RAW.mp4": "007d815a927e7814cda10bca785d9a1fa2cd6ac253fa31a2eb7180e198126a8a",
+    "contact_plot_source.py": "9ef9b214972b035c4964d05b0c195826eb3a23998d3a94f6acd5529d054c24a2",
+    "CAPTION.md": "3af287573fea30540286eb8ed0c21613e728184700eb46d59e6351814f12ba9b",
+    "LEFT_CONTACT_REPEAT.json.gz": "9d4c3a51e4eddc5822a38e533c8ad913d8c8c1b43f787156d57ea432637cdf4a",
+    "ANNOTATED.mp4": "b241b299499f2270953b7c0c8c1bc52a3cb2523e61d57d1974eca44eab8c896d",
+    "RIGHT_SOURCE.json.gz": "b95ec79e87520ef89bcab3d0503399c53b43165bc3409b8b92bc521733e10e38",
+    "QA.json": "80342c1d7c8c51bed254b8819cb2a7db178c6d492a34c6bf11876856c3ff56a8",
+    "TRACE.svg": "e8fd80bfb89bb063d741225601a1021f585cbea4e67f8f59e0fd0ad68c5b3f4b",
+    "RAW_000.png": "ad620d4d1849863404e1be658ed83a06b31637e8024501222a3fcd4c052660c7",
+    "ANNOTATED_100.png": "4cf3fade83277b136c9cb4eb39a4ad42467fdd76f3cce4f4f8ea8762327a0bb0",
+    "QA_BROWSER.html": "1fba1ee95ae87f38e4b75b11f8baba4712e7b8b6a648957dc13e6e6a0aa0ff62",
+    "TRACE_CONTACT_PHASE.svg": "5850c5f9518d60c50eaeaca1316944f8d24a1f7025bc7ae019cdde780963bc7d",
+    "TRACE.png": "6ecff58d1f2ec189c155757ffb4505f65bbe0f6fe412086c28afd65f17211b07",
+    "ANNOTATED_000.png": "50c653fe3be56528803cf09e89010ff8060b7153eaae0072b0110cab9892efcd",
+    "LEFT_SOURCE.json.gz": "83c5d55b9fbdc32015a3626d82bfd44d7a00faedd993168b49d26a04e6efab0d",
+    "RAW_100.png": "9309c4338425391a5807d2ca51643d89015ef3a6208a3784d7d96bae02474b3a",
+    "PREVIOUS_RENDER_INDEX.json": "fefba3f0abbad2470828f1ba0b118f2bbda87979ca6b07e1a2217796b220c18a",
+    "RIGHT_CONTACT_REPEAT.json.gz": "e6e4736c432bf2ca64536422c9124ac721debd6f9e19a7e2966e8cd84a991682",
+    "README.md": "44ec97df7166b4d1d88f08ec6b3cd8d0a63506415f254ad237d40d77475a47c1",
+    "render_source.py": "52d1ee813fa2e21da67e285c476785aae73e7e1649de571c74bb3d18a18e9f67"
+  },
+  "secondary_contact_sources": [
+    {
+      "original_source_sha256": "83c5d55b9fbdc32015a3626d82bfd44d7a00faedd993168b49d26a04e6efab0d",
+      "probe_source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_contact_probe/740001_g035/TRAJECTORY.json.gz",
+      "probe_sha256": "9d4c3a51e4eddc5822a38e533c8ad913d8c8c1b43f787156d57ea432637cdf4a",
+      "portable_copy": "LEFT_CONTACT_REPEAT.json.gz",
+      "same_initial_hash": true,
+      "max_abs_recorded_state_action_differences": {
+        "action": 0.0,
+        "q": 0.0,
+        "qvel": 0.0,
+        "tcp": 0.0,
+        "tool": 0.0,
+        "cube": 0.0,
+        "tcp_T_tool": 0.0
+      },
+      "control_steps": 100,
+      "physics_substeps": 500,
+      "all_five_substeps_per_control_step": true,
+      "first_tool_contact_over_half_N": {
+        "control_step": 58,
+        "substep": 2,
+        "time_s": 2.87,
+        "phase": "TRANSFER",
+        "force_N": 4.010553012013722
+      },
+      "tool_max_N": 4.010553012013722,
+      "all_robot_link_cube_force_max_N": 0.0,
+      "source_manifest": {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_contact_probe/740001_g035/MANIFEST.json",
+        "sha256": "22a698cacb03319e80db1c7bd267275faa6426a2424ecb9ca5992fa05fd262b7",
+        "content": {
+          "task": "PullCubeTool-v1",
+          "native_horizon": 100,
+          "initial_distribution": "NATIVE_UNCHANGED",
+          "source_kind": "ACTUAL_PHYSX_EXECUTION",
+          "hardware_commands": false,
+          "optimizer_updates": 0,
+          "seed": 740001,
+          "random_seed": 31031,
+          "requested_parameters": {
+            "grasp_x": 0.035,
+            "hook_y": null,
+            "pull_distance": 0.27,
+            "pull_policy": "fixed"
+          },
+          "baseline": "unchanged measured-attachment lookahead + nine-candidate post-grasp geometry search",
+          "decision_boundaries": [
+            "before physical grasp",
+            "after retained grasp and commanded 55mm lift"
+          ],
+          "reset_count": 1,
+          "source_sha256": {
+            "program_multiskill_pull.py": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486",
+            "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+            "handoff_physics.py": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f",
+            "program_multiskill_contact_probe.py": "96ea5142a5d2232094a30e990118ab10abe83841ce88272c8b0766521c010ce0"
+          },
+          "native_source_sha256": "87e0963be3541f830d4e88308595a52ee29748b73c13552027c9e6c1ea9377b4",
+          "reset_contact_measurement": "UNVALIDATED_UNTIL_FIRST_ENV_STEP; raw initial contact may reflect stale simulator buffer",
+          "maniskill_revision": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+          "maniskill_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "git_head": "93015705d17a5b2caaa2a5dfa0f019545a18d3e9",
+          "fairness": "same native100 full physics; fixed parameters are diagnostic interventions; no oracle outcome selection",
+          "contact_instrumentation": "all robot links and tool against cube; forces after each actual100Hzphysics substep using existing _after_simulation_step hook, plus20Hz frame values; reset values invalid; no new physics steps"
+        }
+      }
+    },
+    {
+      "original_source_sha256": "b95ec79e87520ef89bcab3d0503399c53b43165bc3409b8b92bc521733e10e38",
+      "probe_source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_contact_probe/740001_g070/TRAJECTORY.json.gz",
+      "probe_sha256": "e6e4736c432bf2ca64536422c9124ac721debd6f9e19a7e2966e8cd84a991682",
+      "portable_copy": "RIGHT_CONTACT_REPEAT.json.gz",
+      "same_initial_hash": true,
+      "max_abs_recorded_state_action_differences": {
+        "action": 0.0,
+        "q": 0.0,
+        "qvel": 0.0,
+        "tcp": 0.0,
+        "tool": 0.0,
+        "cube": 0.0,
+        "tcp_T_tool": 0.0
+      },
+      "control_steps": 100,
+      "physics_substeps": 500,
+      "all_five_substeps_per_control_step": true,
+      "first_tool_contact_over_half_N": {
+        "control_step": 69,
+        "substep": 3,
+        "time_s": 3.4299999999999997,
+        "phase": "HOOK",
+        "force_N": 4.08262376036161
+      },
+      "tool_max_N": 16.613659092405612,
+      "all_robot_link_cube_force_max_N": 0.0,
+      "source_manifest": {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_contact_probe/740001_g070/MANIFEST.json",
+        "sha256": "2ead8773f061502e1ae55ee1dd610b8a2632b308f31aac796962594522655fb5",
+        "content": {
+          "task": "PullCubeTool-v1",
+          "native_horizon": 100,
+          "initial_distribution": "NATIVE_UNCHANGED",
+          "source_kind": "ACTUAL_PHYSX_EXECUTION",
+          "hardware_commands": false,
+          "optimizer_updates": 0,
+          "seed": 740001,
+          "random_seed": 31031,
+          "requested_parameters": {
+            "grasp_x": 0.07,
+            "hook_y": null,
+            "pull_distance": 0.27,
+            "pull_policy": "fixed"
+          },
+          "baseline": "unchanged measured-attachment lookahead + nine-candidate post-grasp geometry search",
+          "decision_boundaries": [
+            "before physical grasp",
+            "after retained grasp and commanded 55mm lift"
+          ],
+          "reset_count": 1,
+          "source_sha256": {
+            "program_multiskill_pull.py": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486",
+            "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+            "handoff_physics.py": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f",
+            "program_multiskill_contact_probe.py": "96ea5142a5d2232094a30e990118ab10abe83841ce88272c8b0766521c010ce0"
+          },
+          "native_source_sha256": "87e0963be3541f830d4e88308595a52ee29748b73c13552027c9e6c1ea9377b4",
+          "reset_contact_measurement": "UNVALIDATED_UNTIL_FIRST_ENV_STEP; raw initial contact may reflect stale simulator buffer",
+          "maniskill_revision": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+          "maniskill_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "git_head": "93015705d17a5b2caaa2a5dfa0f019545a18d3e9",
+          "fairness": "same native100 full physics; fixed parameters are diagnostic interventions; no oracle outcome selection",
+          "contact_instrumentation": "all robot links and tool against cube; forces after each actual100Hzphysics substep using existing _after_simulation_step hook, plus20Hz frame values; reset values invalid; no new physics steps"
+        }
+      }
+    }
+  ],
+  "contact_overlay_source_sha256": "085249b33839b22d4f2c015f652f242d1cd04f24ca590c8b73389bc50a41f7fd",
+  "contact_overlay_physics_steps_added": 0,
+  "secondary_probe_existing_physics_budget": {
+    "control_steps": 200,
+    "substeps": 1000,
+    "note": "already counted in physical_design contact-probe experiment; not counted again as rendering"
+  },
+  "original_raw_video_sha256": "007d815a927e7814cda10bca785d9a1fa2cd6ac253fa31a2eb7180e198126a8a",
+  "prior_video_package": {
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/video_multiskill_740001_wide",
+    "manifest_sha256": "3109a785ef265fb8c5f8d44cd8947da8589b12544c5ac8a1e8dc28852d29aba6"
+  },
+  "original_review_package": {
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/video_multiskill_740001_pre_contact_package",
+    "manifest_sha256": "3a2832f1cd28b5b3108c9a305baf64ed8623de870f8134dbfbc922e80c9e44b6"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "physics_steps": 0,
+  "optimizer_updates": 0,
+  "synthetic_CPU_test_not_experiment": true,
+  "checks": [
+    {
+      "name": "full_Y_unique_count9",
+      "pass_": true
+    },
+    {
+      "name": "full_Y_original_state_transition_exact",
+      "pass_": true
+    },
+    {
+      "name": "full_YZ_unique_count9",
+      "pass_": true
+    },
+    {
+      "name": "full_YZ_original_state_transition_exact",
+      "pass_": true
+    },
+    {
+      "name": "y_only_Y_unique_count3",
+      "pass_": true
+    },
+    {
+      "name": "y_only_Y_preserves_first_order",
+      "pass_": true
+    },
+    {
+      "name": "y_only_Y_original_state_transition_exact",
+      "pass_": true
+    },
+    {
+      "name": "y_only_YZ_unique_count3",
+      "pass_": true
+    },
+    {
+      "name": "y_only_YZ_preserves_first_order",
+      "pass_": true
+    },
+    {
+      "name": "y_only_YZ_original_state_transition_exact",
+      "pass_": true
+    },
+    {
+      "name": "task_Y_unique_count3",
+      "pass_": true
+    },
+    {
+      "name": "task_Y_preserves_first_order",
+      "pass_": true
+    },
+    {
+      "name": "task_Y_original_state_transition_exact",
+      "pass_": true
+    },
+    {
+      "name": "task_YZ_unique_count9",
+      "pass_": true
+    },
+    {
+      "name": "task_YZ_original_state_transition_exact",
+      "pass_": true
+    },
+    {
+      "name": "original_search_still9",
+      "pass_": true
+    },
+    {
+      "name": "invalid_authority_rejected",
+      "pass_": true
+    }
+  ],
+  "all_pass": true,
+  "sources": {
+    "program_adaptive_contact.py": "e2d41f66f06e0d43cecd3474c4d81105431341604d54d655df5b479c0002d4a9",
+    "program_authority_search.py": "61bc3def411d425795296f70e833c911176e4bf4f1aceab1615d55622d7b7b3e"
+  }
+}

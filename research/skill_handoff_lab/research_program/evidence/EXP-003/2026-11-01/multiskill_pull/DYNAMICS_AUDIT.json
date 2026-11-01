@@ -1,0 +1,130 @@
+{
+  "urdf": "external/benchmark_scout_20261027/ManiSkill/mani_skill/assets/robots/panda/panda_v2.urdf",
+  "urdf_sha256": "524c6986dbbabe244e05801f262862205e880834d01459b06ee273016d0579ba",
+  "urdf_arm_velocity_limits_rad_s": [
+    2.175,
+    2.175,
+    2.175,
+    2.175,
+    2.61,
+    2.61,
+    2.61
+  ],
+  "urdf_acceleration_limit_present": false,
+  "planner_defaults": "mplib defaults ones for velocity AND acceleration, native solver scales both by.9; not URDF velocity-scaled",
+  "execution": "TracePlanner manual stride2 sends every2nd native TOPP position at20Hz, with endpoint included. Native timing/acceleration guarantees are not preserved.",
+  "limitations": "20Hz physical qvel samples do not bound100Hz peaks; finite differences of commands are not actual actuator acceleration or torque; no hardware safety certification.",
+  "rows": [
+    {
+      "case": "740001_g035",
+      "path": "runs/research_program/EXP-003/multiskill_pull/740001_g035/TRAJECTORY.json.gz",
+      "sha256": "83c5d55b9fbdc32015a3626d82bfd44d7a00faedd993168b49d26a04e6efab0d",
+      "native_success": false,
+      "transfer_control_steps": 20,
+      "actual_max_joint_velocity_rad_s": 1.372404932975769,
+      "actual_max_URDF_velocity_ratio": 0.6309907737819628,
+      "frames_exceeding_nominal_planner_point9_velocity": 18,
+      "command_max_finite_difference_velocity_rad_s": 1.8437199907780188,
+      "command_max_finite_difference_acceleration_rad_s2": 14.12927633149614,
+      "actual20Hz_qvel_difference_peak_rad_s2": 6.216250993311405,
+      "transfer_raw_path_fd_velocity": 0.8775318115469855,
+      "transfer_raw_path_fd_acceleration": 0.9531343791570277,
+      "transfer_tracking_error_peak_rad": 0.12000366112837968,
+      "transfer_attachment_rotation_peak_deg": 13.194000355765487
+    },
+    {
+      "case": "740001_lookahead",
+      "path": "runs/research_program/EXP-003/multiskill_pull/740001_lookahead/TRAJECTORY.json.gz",
+      "sha256": "b95ec79e87520ef89bcab3d0503399c53b43165bc3409b8b92bc521733e10e38",
+      "native_success": true,
+      "transfer_control_steps": 24,
+      "actual_max_joint_velocity_rad_s": 1.4106868505477905,
+      "actual_max_URDF_velocity_ratio": 0.6485916554242716,
+      "frames_exceeding_nominal_planner_point9_velocity": 21,
+      "command_max_finite_difference_velocity_rad_s": 1.8755420523120625,
+      "command_max_finite_difference_acceleration_rad_s2": 12.77042137223929,
+      "actual20Hz_qvel_difference_peak_rad_s2": 5.4916795922326855,
+      "transfer_raw_path_fd_velocity": 0.9275243408852818,
+      "transfer_raw_path_fd_acceleration": 0.9553570263431508,
+      "transfer_tracking_error_peak_rad": 0.13830240028686003,
+      "transfer_attachment_rotation_peak_deg": 0.2703789214695147
+    },
+    {
+      "case": "740000_lookahead",
+      "path": "runs/research_program/EXP-003/multiskill_pull/740000_lookahead/TRAJECTORY.json.gz",
+      "sha256": "083611bf228f33fce90b8858b46fe5ea098581499f1089be451e17c05dfbb567",
+      "native_success": false,
+      "transfer_control_steps": 33,
+      "actual_max_joint_velocity_rad_s": 1.4389187097549438,
+      "actual_max_URDF_velocity_ratio": 0.6615718205769857,
+      "frames_exceeding_nominal_planner_point9_velocity": 21,
+      "command_max_finite_difference_velocity_rad_s": 1.8335291758201722,
+      "command_max_finite_difference_acceleration_rad_s2": 5.484695625069346,
+      "actual20Hz_qvel_difference_peak_rad_s2": 3.3155280351638794,
+      "transfer_raw_path_fd_velocity": 0.9167716937255799,
+      "transfer_raw_path_fd_acceleration": 0.9334263211284275,
+      "transfer_tracking_error_peak_rad": 0.14237532561854604,
+      "transfer_attachment_rotation_peak_deg": 0.29534907594961435
+    },
+    {
+      "case": "740000_g105",
+      "path": "runs/research_program/EXP-003/multiskill_pull/740000_g105/TRAJECTORY.json.gz",
+      "sha256": "dd53300bc04d84ac3b35447e4d0f909a5fe6fff6787e5db314d1c336e6bd394c",
+      "native_success": false,
+      "transfer_control_steps": 54,
+      "actual_max_joint_velocity_rad_s": 1.4153220653533936,
+      "actual_max_URDF_velocity_ratio": 0.650722788668227,
+      "frames_exceeding_nominal_planner_point9_velocity": 19,
+      "command_max_finite_difference_velocity_rad_s": 1.8043745972394865,
+      "command_max_finite_difference_acceleration_rad_s2": 11.049982841024962,
+      "actual20Hz_qvel_difference_peak_rad_s2": 5.704535208642483,
+      "transfer_raw_path_fd_velocity": 0.9022102901202311,
+      "transfer_raw_path_fd_acceleration": 0.9171225121781033,
+      "transfer_tracking_error_peak_rad": 0.1406109287295625,
+      "transfer_attachment_rotation_peak_deg": 0.21510806668630478
+    },
+    {
+      "case": "740001_g105",
+      "path": "runs/research_program/EXP-003/multiskill_pull/740001_g105/TRAJECTORY.json.gz",
+      "sha256": "a104c17e8f16d03828320e555367af69ca40f257dd26c5fe234803f1602cdb2a",
+      "native_success": true,
+      "transfer_control_steps": 26,
+      "actual_max_joint_velocity_rad_s": 1.449460506439209,
+      "actual_max_URDF_velocity_ratio": 0.6664186236502111,
+      "frames_exceeding_nominal_planner_point9_velocity": 27,
+      "command_max_finite_difference_velocity_rad_s": 1.8653996749620738,
+      "command_max_finite_difference_acceleration_rad_s2": 12.364607939362335,
+      "actual20Hz_qvel_difference_peak_rad_s2": 5.92790687456727,
+      "transfer_raw_path_fd_velocity": 0.932700064382872,
+      "transfer_raw_path_fd_acceleration": 0.9662079452159131,
+      "transfer_tracking_error_peak_rad": 0.14313860235784492,
+      "transfer_attachment_rotation_peak_deg": 0.31786151422100994
+    }
+  ],
+  "contact_chronology": [
+    {
+      "label": "g035",
+      "first_tool_contact_over_half_N": {
+        "step": 58,
+        "substep": 2,
+        "phase": "TRANSFER"
+      },
+      "preceding_control_frame": 57,
+      "preceding_attachment_rotation_deg": 10.410374971094582,
+      "preceding_attachment_translation_mm": 5.6053794827666925,
+      "scope": "100Hz contact force threshold and20Hz attachment chronology; not a no-contact proof below0.5N"
+    },
+    {
+      "label": "g070",
+      "first_tool_contact_over_half_N": {
+        "step": 69,
+        "substep": 3,
+        "phase": "HOOK"
+      },
+      "preceding_control_frame": 68,
+      "preceding_attachment_rotation_deg": 0.050938213503116704,
+      "preceding_attachment_translation_mm": 0.06035453356140994,
+      "scope": "100Hz contact force threshold and20Hz attachment chronology; not a no-contact proof below0.5N"
+    }
+  ]
+}

@@ -1,0 +1,1699 @@
+{
+  "episodes": 6,
+  "actual_control_steps": 600,
+  "actual_substep_samples": 3000,
+  "optimizer_updates": 0,
+  "successes": 2,
+  "rescued": 0,
+  "degraded": 0,
+  "all_prefixes_exact": true,
+  "scope": "controlled physical transfer-height diagnostic, not RL or independent held-out evaluation",
+  "rows": [
+    {
+      "case": "740000_g070_h100",
+      "seed": 740000,
+      "grasp_x": 0.07,
+      "transfer_height_m": 0.1,
+      "path": "runs/research_program/EXP-003/multiskill_clearance/740000_g070_h100/TRAJECTORY.json.gz",
+      "sha256": "3e705dc0da41c5350a0c6ce2fb610e4b7d3d39ad0ac45f2ff4dc2009c04f8fe2",
+      "prior_path": "runs/research_program/EXP-003/multiskill_pull/740000_lookahead/TRAJECTORY.json.gz",
+      "prior_sha256": "083611bf228f33fce90b8858b46fe5ea098581499f1089be451e17c05dfbb567",
+      "prefix": {
+        "steps": 52,
+        "other_steps": 52,
+        "initial_exact": true,
+        "max_abs_deltas": {
+          "action": 0.0,
+          "q": 0.0,
+          "qvel": 0.0,
+          "tcp": 0.0,
+          "tool": 0.0,
+          "cube": 0.0,
+          "tcp_T_tool": 0.0
+        },
+        "exact": true
+      },
+      "prior": {
+        "success": false,
+        "error": "Horizon: NATIVE_HORIZON",
+        "steps": 100,
+        "phases": {
+          "REACH": {
+            "steps": 23,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "DESCEND": {
+            "steps": 13,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "GRASP": {
+            "steps": 6,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "LIFT": {
+            "steps": 10,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "TRANSFER": {
+            "steps": 33,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "HOOK": {
+            "steps": 15,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          }
+        },
+        "final_distance_m": 0.8632804155349731,
+        "selected_parameters": {
+          "tool_yaw_rad": -0.25874305555652466,
+          "hook_y_m": -0.075
+        },
+        "search": [
+          {
+            "phase": "SEARCH",
+            "step": 52,
+            "planning_wall_s": 0.16496992099564523,
+            "candidates": [
+              {
+                "angle": -0.25874305555652466,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 82
+              },
+              {
+                "angle": -0.25874305555652466,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 83
+              },
+              {
+                "angle": -0.25874305555652466,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 81
+              },
+              {
+                "angle": -0.13874305555652464,
+                "hook_y": -0.055,
+                "valid": false,
+                "predicted_steps": 105
+              },
+              {
+                "angle": -0.13874305555652464,
+                "hook_y": -0.065,
+                "valid": false,
+                "predicted_steps": 122
+              },
+              {
+                "angle": -0.13874305555652464,
+                "hook_y": -0.075,
+                "valid": false,
+                "predicted_steps": 135
+              },
+              {
+                "angle": -0.01874305555652464,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 298
+              },
+              {
+                "angle": -0.01874305555652464,
+                "hook_y": -0.065,
+                "valid": false,
+                "predicted_steps": 0
+              },
+              {
+                "angle": -0.01874305555652464,
+                "hook_y": -0.075,
+                "valid": false,
+                "predicted_steps": 337
+              }
+            ],
+            "selected": [
+              -0.25874305555652466,
+              -0.075
+            ]
+          }
+        ]
+      },
+      "current": {
+        "success": false,
+        "error": "Horizon: NATIVE_HORIZON",
+        "steps": 100,
+        "phases": {
+          "REACH": {
+            "steps": 23,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 115
+          },
+          "DESCEND": {
+            "steps": 13,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 65
+          },
+          "GRASP": {
+            "steps": 6,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 30
+          },
+          "LIFT": {
+            "steps": 10,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 50
+          },
+          "TRANSFER": {
+            "steps": 31,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 155
+          },
+          "HOOK": {
+            "steps": 17,
+            "tool_contact_peak_N": 18.807002149369758,
+            "robot_contact_peak_N": 0.0,
+            "samples": 85
+          }
+        },
+        "final_distance_m": 0.8671999573707581,
+        "selected_parameters": {
+          "tool_yaw_rad": -0.13874305555652464,
+          "hook_y_m": -0.055,
+          "pull_distance_m": 0.27,
+          "pull_policy": "fixed",
+          "transfer_height_m": 0.1
+        },
+        "search": [
+          {
+            "phase": "SEARCH",
+            "step": 52,
+            "planning_wall_s": 0.21734009101055562,
+            "candidates": [
+              {
+                "angle": -0.25874305555652466,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 42
+              },
+              {
+                "angle": -0.25874305555652466,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 42
+              },
+              {
+                "angle": -0.25874305555652466,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 29
+              },
+              {
+                "angle": -0.13874305555652464,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 131
+              },
+              {
+                "angle": -0.13874305555652464,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 117
+              },
+              {
+                "angle": -0.13874305555652464,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 135
+              },
+              {
+                "angle": -0.01874305555652464,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 225
+              },
+              {
+                "angle": -0.01874305555652464,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 275
+              },
+              {
+                "angle": -0.01874305555652464,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 0
+              }
+            ],
+            "selected": [
+              -0.13874305555652464,
+              -0.055
+            ]
+          }
+        ]
+      },
+      "rescued": false,
+      "degraded": false
+    },
+    {
+      "case": "740000_g070_h120",
+      "seed": 740000,
+      "grasp_x": 0.07,
+      "transfer_height_m": 0.12,
+      "path": "runs/research_program/EXP-003/multiskill_clearance/740000_g070_h120/TRAJECTORY.json.gz",
+      "sha256": "9c02f6a49451e84f9bd5b9f3cde274f09705c3204670f7ba6cf71e02dcec9d49",
+      "prior_path": "runs/research_program/EXP-003/multiskill_pull/740000_lookahead/TRAJECTORY.json.gz",
+      "prior_sha256": "083611bf228f33fce90b8858b46fe5ea098581499f1089be451e17c05dfbb567",
+      "prefix": {
+        "steps": 52,
+        "other_steps": 52,
+        "initial_exact": true,
+        "max_abs_deltas": {
+          "action": 0.0,
+          "q": 0.0,
+          "qvel": 0.0,
+          "tcp": 0.0,
+          "tool": 0.0,
+          "cube": 0.0,
+          "tcp_T_tool": 0.0
+        },
+        "exact": true
+      },
+      "prior": {
+        "success": false,
+        "error": "Horizon: NATIVE_HORIZON",
+        "steps": 100,
+        "phases": {
+          "REACH": {
+            "steps": 23,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "DESCEND": {
+            "steps": 13,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "GRASP": {
+            "steps": 6,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "LIFT": {
+            "steps": 10,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "TRANSFER": {
+            "steps": 33,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "HOOK": {
+            "steps": 15,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          }
+        },
+        "final_distance_m": 0.8632804155349731,
+        "selected_parameters": {
+          "tool_yaw_rad": -0.25874305555652466,
+          "hook_y_m": -0.075
+        },
+        "search": [
+          {
+            "phase": "SEARCH",
+            "step": 52,
+            "planning_wall_s": 0.16496992099564523,
+            "candidates": [
+              {
+                "angle": -0.25874305555652466,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 82
+              },
+              {
+                "angle": -0.25874305555652466,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 83
+              },
+              {
+                "angle": -0.25874305555652466,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 81
+              },
+              {
+                "angle": -0.13874305555652464,
+                "hook_y": -0.055,
+                "valid": false,
+                "predicted_steps": 105
+              },
+              {
+                "angle": -0.13874305555652464,
+                "hook_y": -0.065,
+                "valid": false,
+                "predicted_steps": 122
+              },
+              {
+                "angle": -0.13874305555652464,
+                "hook_y": -0.075,
+                "valid": false,
+                "predicted_steps": 135
+              },
+              {
+                "angle": -0.01874305555652464,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 298
+              },
+              {
+                "angle": -0.01874305555652464,
+                "hook_y": -0.065,
+                "valid": false,
+                "predicted_steps": 0
+              },
+              {
+                "angle": -0.01874305555652464,
+                "hook_y": -0.075,
+                "valid": false,
+                "predicted_steps": 337
+              }
+            ],
+            "selected": [
+              -0.25874305555652466,
+              -0.075
+            ]
+          }
+        ]
+      },
+      "current": {
+        "success": false,
+        "error": "Horizon: NATIVE_HORIZON",
+        "steps": 100,
+        "phases": {
+          "REACH": {
+            "steps": 23,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 115
+          },
+          "DESCEND": {
+            "steps": 13,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 65
+          },
+          "GRASP": {
+            "steps": 6,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 30
+          },
+          "LIFT": {
+            "steps": 10,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 50
+          },
+          "TRANSFER": {
+            "steps": 29,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 145
+          },
+          "HOOK": {
+            "steps": 14,
+            "tool_contact_peak_N": 25.77415842359455,
+            "robot_contact_peak_N": 0.0,
+            "samples": 70
+          },
+          "PULL": {
+            "steps": 5,
+            "tool_contact_peak_N": 0.4157809597796432,
+            "robot_contact_peak_N": 0.0,
+            "samples": 25
+          }
+        },
+        "final_distance_m": 0.864727795124054,
+        "selected_parameters": {
+          "tool_yaw_rad": -0.25874305555652466,
+          "hook_y_m": -0.065,
+          "pull_distance_m": 0.27,
+          "pull_policy": "fixed",
+          "transfer_height_m": 0.12
+        },
+        "search": [
+          {
+            "phase": "SEARCH",
+            "step": 52,
+            "planning_wall_s": 0.1917512469808571,
+            "candidates": [
+              {
+                "angle": -0.25874305555652466,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 72
+              },
+              {
+                "angle": -0.25874305555652466,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 72
+              },
+              {
+                "angle": -0.25874305555652466,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 72
+              },
+              {
+                "angle": -0.13874305555652464,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 100
+              },
+              {
+                "angle": -0.13874305555652464,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 146
+              },
+              {
+                "angle": -0.13874305555652464,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 129
+              },
+              {
+                "angle": -0.01874305555652464,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 221
+              },
+              {
+                "angle": -0.01874305555652464,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 46
+              },
+              {
+                "angle": -0.01874305555652464,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 353
+              }
+            ],
+            "selected": [
+              -0.25874305555652466,
+              -0.065
+            ]
+          }
+        ]
+      },
+      "rescued": false,
+      "degraded": false
+    },
+    {
+      "case": "740001_g035_h100",
+      "seed": 740001,
+      "grasp_x": 0.035,
+      "transfer_height_m": 0.1,
+      "path": "runs/research_program/EXP-003/multiskill_clearance/740001_g035_h100/TRAJECTORY.json.gz",
+      "sha256": "eabd235d08613d61efc35e8e9edad6b08a1b587340d308b9f73eb9d95f4dcd89",
+      "prior_path": "runs/research_program/EXP-003/multiskill_pull/740001_g035/TRAJECTORY.json.gz",
+      "prior_sha256": "83c5d55b9fbdc32015a3626d82bfd44d7a00faedd993168b49d26a04e6efab0d",
+      "prefix": {
+        "steps": 44,
+        "other_steps": 44,
+        "initial_exact": true,
+        "max_abs_deltas": {
+          "action": 0.0,
+          "q": 0.0,
+          "qvel": 0.0,
+          "tcp": 0.0,
+          "tool": 0.0,
+          "cube": 0.0,
+          "tcp_T_tool": 0.0
+        },
+        "exact": true
+      },
+      "prior": {
+        "success": false,
+        "error": "Horizon: NATIVE_HORIZON",
+        "steps": 100,
+        "phases": {
+          "REACH": {
+            "steps": 17,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "DESCEND": {
+            "steps": 10,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "GRASP": {
+            "steps": 6,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "LIFT": {
+            "steps": 11,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "TRANSFER": {
+            "steps": 20,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "HOOK": {
+            "steps": 16,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "PULL": {
+            "steps": 20,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          }
+        },
+        "final_distance_m": 1.0023219585418701,
+        "selected_parameters": {
+          "tool_yaw_rad": -0.5423241889641757,
+          "hook_y_m": -0.065
+        },
+        "search": [
+          {
+            "phase": "SEARCH",
+            "step": 44,
+            "planning_wall_s": 0.13335705600911751,
+            "candidates": [
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 50
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 48
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 48
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 52
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 52
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 53
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 51
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 50
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 50
+              }
+            ],
+            "selected": [
+              -0.5423241889641757,
+              -0.065
+            ]
+          }
+        ]
+      },
+      "current": {
+        "success": false,
+        "error": "Horizon: NATIVE_HORIZON",
+        "steps": 100,
+        "phases": {
+          "REACH": {
+            "steps": 17,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 85
+          },
+          "DESCEND": {
+            "steps": 10,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 50
+          },
+          "GRASP": {
+            "steps": 6,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 30
+          },
+          "LIFT": {
+            "steps": 11,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 55
+          },
+          "TRANSFER": {
+            "steps": 20,
+            "tool_contact_peak_N": 5.3263879483484065,
+            "robot_contact_peak_N": 0.0,
+            "samples": 100
+          },
+          "HOOK": {
+            "steps": 17,
+            "tool_contact_peak_N": 1.6806800916359812,
+            "robot_contact_peak_N": 0.0,
+            "samples": 85
+          },
+          "PULL": {
+            "steps": 19,
+            "tool_contact_peak_N": 0.27858818855103273,
+            "robot_contact_peak_N": 0.0,
+            "samples": 95
+          }
+        },
+        "final_distance_m": 0.994808554649353,
+        "selected_parameters": {
+          "tool_yaw_rad": -0.5423241889641757,
+          "hook_y_m": -0.075,
+          "pull_distance_m": 0.27,
+          "pull_policy": "fixed",
+          "transfer_height_m": 0.1
+        },
+        "search": [
+          {
+            "phase": "SEARCH",
+            "step": 44,
+            "planning_wall_s": 0.14953731204150245,
+            "candidates": [
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 49
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 49
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 48
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 52
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 54
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 52
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 53
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 53
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 53
+              }
+            ],
+            "selected": [
+              -0.5423241889641757,
+              -0.075
+            ]
+          }
+        ]
+      },
+      "rescued": false,
+      "degraded": false
+    },
+    {
+      "case": "740001_g035_h120",
+      "seed": 740001,
+      "grasp_x": 0.035,
+      "transfer_height_m": 0.12,
+      "path": "runs/research_program/EXP-003/multiskill_clearance/740001_g035_h120/TRAJECTORY.json.gz",
+      "sha256": "59395d644fe7c99fa12a734ee0182d78dc761ff683fbbe32ad63399ecdabf44e",
+      "prior_path": "runs/research_program/EXP-003/multiskill_pull/740001_g035/TRAJECTORY.json.gz",
+      "prior_sha256": "83c5d55b9fbdc32015a3626d82bfd44d7a00faedd993168b49d26a04e6efab0d",
+      "prefix": {
+        "steps": 44,
+        "other_steps": 44,
+        "initial_exact": true,
+        "max_abs_deltas": {
+          "action": 0.0,
+          "q": 0.0,
+          "qvel": 0.0,
+          "tcp": 0.0,
+          "tool": 0.0,
+          "cube": 0.0,
+          "tcp_T_tool": 0.0
+        },
+        "exact": true
+      },
+      "prior": {
+        "success": false,
+        "error": "Horizon: NATIVE_HORIZON",
+        "steps": 100,
+        "phases": {
+          "REACH": {
+            "steps": 17,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "DESCEND": {
+            "steps": 10,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "GRASP": {
+            "steps": 6,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "LIFT": {
+            "steps": 11,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "TRANSFER": {
+            "steps": 20,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "HOOK": {
+            "steps": 16,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "PULL": {
+            "steps": 20,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          }
+        },
+        "final_distance_m": 1.0023219585418701,
+        "selected_parameters": {
+          "tool_yaw_rad": -0.5423241889641757,
+          "hook_y_m": -0.065
+        },
+        "search": [
+          {
+            "phase": "SEARCH",
+            "step": 44,
+            "planning_wall_s": 0.13335705600911751,
+            "candidates": [
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 50
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 48
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 48
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 52
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 52
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 53
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 51
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 50
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 50
+              }
+            ],
+            "selected": [
+              -0.5423241889641757,
+              -0.065
+            ]
+          }
+        ]
+      },
+      "current": {
+        "success": false,
+        "error": "Horizon: NATIVE_HORIZON",
+        "steps": 100,
+        "phases": {
+          "REACH": {
+            "steps": 17,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 85
+          },
+          "DESCEND": {
+            "steps": 10,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 50
+          },
+          "GRASP": {
+            "steps": 6,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 30
+          },
+          "LIFT": {
+            "steps": 11,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 55
+          },
+          "TRANSFER": {
+            "steps": 20,
+            "tool_contact_peak_N": 3.485473787101537,
+            "robot_contact_peak_N": 0.0,
+            "samples": 100
+          },
+          "HOOK": {
+            "steps": 19,
+            "tool_contact_peak_N": 1.203888280905274,
+            "robot_contact_peak_N": 0.0,
+            "samples": 95
+          },
+          "PULL": {
+            "steps": 17,
+            "tool_contact_peak_N": 0.22730358580983842,
+            "robot_contact_peak_N": 0.0,
+            "samples": 85
+          }
+        },
+        "final_distance_m": 0.97929447889328,
+        "selected_parameters": {
+          "tool_yaw_rad": -0.5423241889641757,
+          "hook_y_m": -0.065,
+          "pull_distance_m": 0.27,
+          "pull_policy": "fixed",
+          "transfer_height_m": 0.12
+        },
+        "search": [
+          {
+            "phase": "SEARCH",
+            "step": 44,
+            "planning_wall_s": 0.1339963449863717,
+            "candidates": [
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 51
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 50
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 51
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 54
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 52
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": false,
+                "predicted_steps": 30
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 52
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 52
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 52
+              }
+            ],
+            "selected": [
+              -0.5423241889641757,
+              -0.065
+            ]
+          }
+        ]
+      },
+      "rescued": false,
+      "degraded": false
+    },
+    {
+      "case": "740001_g070_h100",
+      "seed": 740001,
+      "grasp_x": 0.07,
+      "transfer_height_m": 0.1,
+      "path": "runs/research_program/EXP-003/multiskill_clearance/740001_g070_h100/TRAJECTORY.json.gz",
+      "sha256": "4cc4a62fdf0540f3f1996cc695bcd7fcc225d5c0b8974615bc8ccaa00082b90e",
+      "prior_path": "runs/research_program/EXP-003/multiskill_pull/740001_lookahead/TRAJECTORY.json.gz",
+      "prior_sha256": "b95ec79e87520ef89bcab3d0503399c53b43165bc3409b8b92bc521733e10e38",
+      "prefix": {
+        "steps": 41,
+        "other_steps": 41,
+        "initial_exact": true,
+        "max_abs_deltas": {
+          "action": 0.0,
+          "q": 0.0,
+          "qvel": 0.0,
+          "tcp": 0.0,
+          "tool": 0.0,
+          "cube": 0.0,
+          "tcp_T_tool": 0.0
+        },
+        "exact": true
+      },
+      "prior": {
+        "success": true,
+        "error": null,
+        "steps": 100,
+        "phases": {
+          "REACH": {
+            "steps": 16,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "DESCEND": {
+            "steps": 10,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "GRASP": {
+            "steps": 6,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "LIFT": {
+            "steps": 9,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "TRANSFER": {
+            "steps": 24,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "HOOK": {
+            "steps": 8,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "PULL": {
+            "steps": 25,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "TERMINAL_HOLD": {
+            "steps": 2,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          }
+        },
+        "final_distance_m": 0.5775949954986572,
+        "selected_parameters": {
+          "tool_yaw_rad": -0.5423241889641757,
+          "hook_y_m": -0.055
+        },
+        "search": [
+          {
+            "phase": "SEARCH",
+            "step": 41,
+            "planning_wall_s": 0.13606761198025197,
+            "candidates": [
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 54
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 55
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 56
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 58
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 59
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 56
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 57
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 57
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 57
+              }
+            ],
+            "selected": [
+              -0.5423241889641757,
+              -0.055
+            ]
+          }
+        ]
+      },
+      "current": {
+        "success": true,
+        "error": null,
+        "steps": 100,
+        "phases": {
+          "REACH": {
+            "steps": 16,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 80
+          },
+          "DESCEND": {
+            "steps": 10,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 50
+          },
+          "GRASP": {
+            "steps": 6,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 30
+          },
+          "LIFT": {
+            "steps": 9,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 45
+          },
+          "TRANSFER": {
+            "steps": 24,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 120
+          },
+          "HOOK": {
+            "steps": 9,
+            "tool_contact_peak_N": 17.958078042146294,
+            "robot_contact_peak_N": 0.0,
+            "samples": 45
+          },
+          "PULL": {
+            "steps": 23,
+            "tool_contact_peak_N": 1.339326012366843,
+            "robot_contact_peak_N": 0.0,
+            "samples": 115
+          },
+          "TERMINAL_HOLD": {
+            "steps": 3,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 15
+          }
+        },
+        "final_distance_m": 0.5797281265258789,
+        "selected_parameters": {
+          "tool_yaw_rad": -0.5423241889641757,
+          "hook_y_m": -0.055,
+          "pull_distance_m": 0.27,
+          "pull_policy": "fixed",
+          "transfer_height_m": 0.1
+        },
+        "search": [
+          {
+            "phase": "SEARCH",
+            "step": 41,
+            "planning_wall_s": 0.3547383930417709,
+            "candidates": [
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 55
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 56
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 58
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 57
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 57
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 58
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 57
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 60
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 60
+              }
+            ],
+            "selected": [
+              -0.5423241889641757,
+              -0.055
+            ]
+          }
+        ]
+      },
+      "rescued": false,
+      "degraded": false
+    },
+    {
+      "case": "740001_g070_h120",
+      "seed": 740001,
+      "grasp_x": 0.07,
+      "transfer_height_m": 0.12,
+      "path": "runs/research_program/EXP-003/multiskill_clearance/740001_g070_h120/TRAJECTORY.json.gz",
+      "sha256": "ff7e891a312370c86a5b5e309b0addc7b0616c9334427fe01d691a439ae98440",
+      "prior_path": "runs/research_program/EXP-003/multiskill_pull/740001_lookahead/TRAJECTORY.json.gz",
+      "prior_sha256": "b95ec79e87520ef89bcab3d0503399c53b43165bc3409b8b92bc521733e10e38",
+      "prefix": {
+        "steps": 41,
+        "other_steps": 41,
+        "initial_exact": true,
+        "max_abs_deltas": {
+          "action": 0.0,
+          "q": 0.0,
+          "qvel": 0.0,
+          "tcp": 0.0,
+          "tool": 0.0,
+          "cube": 0.0,
+          "tcp_T_tool": 0.0
+        },
+        "exact": true
+      },
+      "prior": {
+        "success": true,
+        "error": null,
+        "steps": 100,
+        "phases": {
+          "REACH": {
+            "steps": 16,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "DESCEND": {
+            "steps": 10,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "GRASP": {
+            "steps": 6,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "LIFT": {
+            "steps": 9,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "TRANSFER": {
+            "steps": 24,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "HOOK": {
+            "steps": 8,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "PULL": {
+            "steps": 25,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          },
+          "TERMINAL_HOLD": {
+            "steps": 2,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 0
+          }
+        },
+        "final_distance_m": 0.5775949954986572,
+        "selected_parameters": {
+          "tool_yaw_rad": -0.5423241889641757,
+          "hook_y_m": -0.055
+        },
+        "search": [
+          {
+            "phase": "SEARCH",
+            "step": 41,
+            "planning_wall_s": 0.13606761198025197,
+            "candidates": [
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 54
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 55
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 56
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 58
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 59
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 56
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.055,
+                "valid": true,
+                "predicted_steps": 57
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.065,
+                "valid": true,
+                "predicted_steps": 57
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.075,
+                "valid": true,
+                "predicted_steps": 57
+              }
+            ],
+            "selected": [
+              -0.5423241889641757,
+              -0.055
+            ]
+          }
+        ]
+      },
+      "current": {
+        "success": true,
+        "error": "Horizon: NATIVE_HORIZON",
+        "steps": 100,
+        "phases": {
+          "REACH": {
+            "steps": 16,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 80
+          },
+          "DESCEND": {
+            "steps": 10,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 50
+          },
+          "GRASP": {
+            "steps": 6,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 30
+          },
+          "LIFT": {
+            "steps": 9,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 45
+          },
+          "TRANSFER": {
+            "steps": 24,
+            "tool_contact_peak_N": 0.0,
+            "robot_contact_peak_N": 0.0,
+            "samples": 120
+          },
+          "HOOK": {
+            "steps": 11,
+            "tool_contact_peak_N": 21.40545251124617,
+            "robot_contact_peak_N": 0.0,
+            "samples": 55
+          },
+          "PULL": {
+            "steps": 24,
+            "tool_contact_peak_N": 1.0575584009762198,
+            "robot_contact_peak_N": 0.0,
+            "samples": 120
+          }
+        },
+        "final_distance_m": 0.5723869800567627,
+        "selected_parameters": {
+          "tool_yaw_rad": -0.5423241889641757,
+          "hook_y_m": -0.055,
+          "pull_distance_m": 0.27,
+          "pull_policy": "fixed",
+          "transfer_height_m": 0.12
+        },
+        "search": [
+          {
+            "phase": "SEARCH",
+            "step": 41,
+            "planning_wall_s": 0.1560904060024768,
+            "candidates": [
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 58
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 60
+              },
+              {
+                "angle": -0.5423241889641757,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 61
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 59
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 59
+              },
+              {
+                "angle": -0.4223241889641757,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 60
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.055,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 59
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.065,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 59
+              },
+              {
+                "angle": -0.3023241889641757,
+                "hook_y": -0.075,
+                "pull_distance_m": 0.27,
+                "valid": true,
+                "predicted_steps": 59
+              }
+            ],
+            "selected": [
+              -0.5423241889641757,
+              -0.055
+            ]
+          }
+        ]
+      },
+      "rescued": false,
+      "degraded": false
+    }
+  ]
+}

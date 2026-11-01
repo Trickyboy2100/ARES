@@ -54,3 +54,7 @@ uncertainty & limitation | exact raw path/hash | science decision`。
 方法收益：UNVERIFIED。没有复现SCOUT/DAWN/STAP论文成绩；最近邻源码/许可已核对，LayerNorm不是新方法。完整视频与英文圈注为实测姿态重播，保留源轨迹、投影、帧PTS和浏览器同步QA。下一项EXP-003，重点参数权限和强RL学习能力，不以扩大弱SAC或小样本反馈特征网络代替机制研究。
 
 最终补齐对照：critic-LN alpha0.02普通SAC10/12，alpha0.1偏差组4/12；同设置effect+LN2/12，prior-only2/12。共五组真实训练，每组1024技能决策、896次actor/critic更新。结果仍不支持候选特征的独立算法收益。
+
+## EXP-003｜2026-11-01 实际执行追加
+
+[结果与精确来源索引](evidence/EXP-003/2026-11-01/README.md)：A三种普通LN-SAC各4096决策、3840优化更新；完成合同/全权限与投影权限/强搜索/真实checkpoint对照，6开发初态、单训练seed。B三任务77条原生物理执行、9200步、14初态种子；强完整后段TwoRobot8/8与同前段正交2/4，无RL更新。全部源快照、模型、回放缓冲、原始轨迹、SHA清单及三组完整实测状态回放视频保存。动态认证未证明，无实机/密封测试/独立算法增益。成本详见A SUMMARY与B_RESEARCH_SYNTHESIS，不能将多个参数条件或视频帧视为独立样本。

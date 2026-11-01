@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "checks": [
+    "fixed-seed repeatability",
+    "whole-scene six-condition resampling known interval",
+    "incomplete cluster rejected",
+    "SHA mismatches excluded",
+    "identical paired results degenerate interval disclosed",
+    "engineering scene removal leaves five clusters"
+  ],
+  "synthetic_unit_test_not_physics": true,
+  "known_example": {
+    "method": "paired scene-cluster percentile bootstrap",
+    "direction": "right success rate minus left success rate",
+    "bootstrap_seed": 20261101,
+    "replicates": 20000,
+    "confidence": 0.95,
+    "independent_scene_clusters": 6,
+    "engineering_reused_scene": 732000,
+    "engineering_scene_present": true,
+    "interpretation": "EXPLORATORY ONLY: primary design has six independent scenes, one used for stop engineering. Thirty-six conditions are not 36 independent samples. This interval is not final statistical evidence or a novelty claim.",
+    "six_conditions_per_scene_complete": true,
+    "clusters": [
+      {
+        "seed": 732000,
+        "conditions": 6,
+        "right_minus_left_successes": 6
+      },
+      {
+        "seed": 732001,
+        "conditions": 6,
+        "right_minus_left_successes": 0
+      },
+      {
+        "seed": 732002,
+        "conditions": 6,
+        "right_minus_left_successes": 0
+      },
+      {
+        "seed": 732003,
+        "conditions": 6,
+        "right_minus_left_successes": 0
+      },
+      {
+        "seed": 732004,
+        "conditions": 6,
+        "right_minus_left_successes": 0
+      },
+      {
+        "seed": 732005,
+        "conditions": 6,
+        "right_minus_left_successes": 0
+      }
+    ],
+    "status": "EXPLORATORY_ESTIMATED",
+    "difference": 0.16666666666666666,
+    "percentile_95_interval": [
+      0.0,
+      0.5
+    ],
+    "unit": "success-rate fraction",
+    "weighting": "equal scene weight; all six matched conditions retained together per sampled scene",
+    "limitation": "Percentile interval can be degenerate when all observed scene differences agree; it does not establish zero uncertainty beyond these scenes."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "oracle_boundary": "Native success is allowed as terminal training reward and evaluation label; actor input/online stop use observed geometry, frame velocity and declared family, not true bias or native success.",
+  "native_success_contract": "position<=.005m and angle<=.2rad at physical step200",
+  "observable_completion_contract": "current source:4mm/.12rad enter,4.6mm/.16rad exit,20Hz pose-delta velocity<=.02m/s and .3rad/s,3 unique-step dwell; historical smoke source versions retained",
+  "claim": "COMPONENT_BASELINE_NOT_MULTISKILL_METHOD",
+  "finalized_cost_including_failed_smokes": {
+    "complete_episodes": 1258,
+    "physics_steps": 251600,
+    "policy_decisions": 21995,
+    "optimizer_updates": 11520,
+    "tail_hold_steps": 359,
+    "tail_episodes": 4
+  },
+  "final_run_count": 22,
+  "unfinished_runs_excluded_from_final_costs": [],
+  "unfinished_recorded_physics_lower_bound": 0,
+  "unfinished_optimizer_cost": 0,
+  "expected_runs": {
+    "train_full": "FINAL",
+    "train_y_only": "FINAL",
+    "train_task": "FINAL",
+    "eval_full": "FINAL",
+    "eval_y_only": "FINAL",
+    "eval_task": "FINAL"
+  },
+  "controls_expected": "full geometry/search; all-authority original and fast deduplicated search; full RLS and legacy controls on two-scene diagnostic panel; absence is not zero cost",
+  "warnings": [],
+  "source_sha256": "6af90000512526f8b124a370fd3c80158a9872788660bc80702fe035a81a85a2",
+  "completion_definitions": {
+    "ever_success": "any recorded native criterion true; auxiliary only",
+    "success": "native criterion on step200",
+    "hold_entered_before_native": "hold entered while native criterion false; may later become successful, so not automatically false termination",
+    "hold_final_failure": "observable hold entered but native final failure",
+    "hold_then_lost": "native success at hold entry but native final failure"
+  }
+}

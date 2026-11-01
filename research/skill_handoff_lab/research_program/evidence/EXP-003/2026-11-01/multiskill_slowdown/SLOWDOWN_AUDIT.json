@@ -1,0 +1,212 @@
+{
+  "episodes": 4,
+  "physical_control_steps": 400,
+  "physical_substeps": 2000,
+  "optimizer_updates": 0,
+  "resource_context": "SHARED_GPU_CONTENTION",
+  "dynamics_contract": "Separate actual100Hz URDF velocity ratio from uncertified acceleration/full TOPP contract; no hardware validation",
+  "rows": [
+    {
+      "grasp": "035",
+      "paths": {
+        "1": "runs/research_program/EXP-003/multiskill_slowdown/740001_g035_transfer_stride1/TRAJECTORY.json.gz",
+        "2": "runs/research_program/EXP-003/multiskill_slowdown/740001_g035_transfer_stride2/TRAJECTORY.json.gz"
+      },
+      "sha256": {
+        "1": "bdb097b77f26f348c5eb717b74e12b91c5d87bc237cb57b88db12caaa26da632",
+        "2": "eabf71e78ce77a4065d58b61268ee088490140e36bc0b74d016908b063f826e8"
+      },
+      "fresh_control_vs_historical": {
+        "initial_exact": true,
+        "steps": 100,
+        "max_abs_difference": {
+          "action": 0.0,
+          "q": 0.0,
+          "qvel": 0.0,
+          "tcp": 0.0,
+          "tool": 0.0,
+          "cube": 0.0,
+          "tcp_T_tool": 0.0
+        },
+        "exact": true
+      },
+      "slowdown_prefix_vs_control": {
+        "initial_exact": true,
+        "steps": 44,
+        "max_abs_difference": {
+          "action": 0.0,
+          "q": 0.0,
+          "qvel": 0.0,
+          "tcp": 0.0,
+          "tool": 0.0,
+          "cube": 0.0,
+          "tcp_T_tool": 0.0
+        },
+        "exact": true
+      },
+      "second_boundary_steps": {
+        "1": 44,
+        "2": 44
+      },
+      "same_raw_transfer_path": true,
+      "raw_transfer_sha256": {
+        "1": "06fdd5001bc29a9ea206455613c20a1d4b6887253deb16dc372e81d8d471a461",
+        "2": "06fdd5001bc29a9ea206455613c20a1d4b6887253deb16dc372e81d8d471a461"
+      },
+      "control": {
+        "success": false,
+        "error": "Horizon: NATIVE_HORIZON",
+        "control_steps": 100,
+        "physical_substeps": 500,
+        "transfer_steps": 20,
+        "transfer_substeps": 100,
+        "transfer_max_attachment_rotation_deg": 13.194000355765487,
+        "transfer_100Hz_peak_velocity_rad_s": 1.7532753944396973,
+        "transfer_100Hz_max_URDF_velocity_ratio": 0.8061036296274471,
+        "transfer_100Hz_peak_qacc_rad_s2": 59.52875900268555,
+        "transfer_100Hz_samples_above_nominal_point9_velocity": 44,
+        "transfer_100Hz_samples_above_nominal_point9_acceleration": 95,
+        "transfer_max_within_control_qvel_change": 0.517629861831665,
+        "first_nonzero_tool_cube_contact": {
+          "step": 58,
+          "substep": 2,
+          "phase": "TRANSFER",
+          "force_N": 4.010553012013722
+        },
+        "attachment_before_first_contact_deg": 10.410374971094582,
+        "transfer_tool_peak_N": 4.010553012013722,
+        "final_cube_distance_m": 1.0023219585418701
+      },
+      "slowdown": {
+        "success": false,
+        "error": "Horizon: NATIVE_HORIZON",
+        "control_steps": 100,
+        "physical_substeps": 500,
+        "transfer_steps": 39,
+        "transfer_substeps": 195,
+        "transfer_max_attachment_rotation_deg": 13.712894000121542,
+        "transfer_100Hz_peak_velocity_rad_s": 0.9449544548988342,
+        "transfer_100Hz_max_URDF_velocity_ratio": 0.43446181834429165,
+        "transfer_100Hz_peak_qacc_rad_s2": 29.597869873046875,
+        "transfer_100Hz_samples_above_nominal_point9_velocity": 4,
+        "transfer_100Hz_samples_above_nominal_point9_acceleration": 180,
+        "transfer_max_within_control_qvel_change": 0.27604007720947266,
+        "first_nonzero_tool_cube_contact": {
+          "step": 69,
+          "substep": 1,
+          "phase": "TRANSFER",
+          "force_N": 2.442412532929577
+        },
+        "attachment_before_first_contact_deg": 10.784377725474302,
+        "transfer_tool_peak_N": 2.442412532929577,
+        "final_cube_distance_m": 1.004014492034912
+      },
+      "fetch_force_audit": {
+        "samples": 500,
+        "force_norm_max_difference": 0.0,
+        "exact": true
+      }
+    },
+    {
+      "grasp": "070",
+      "paths": {
+        "1": "runs/research_program/EXP-003/multiskill_slowdown/740001_g070_transfer_stride1/TRAJECTORY.json.gz",
+        "2": "runs/research_program/EXP-003/multiskill_slowdown/740001_g070_transfer_stride2/TRAJECTORY.json.gz"
+      },
+      "sha256": {
+        "1": "909e58d9cfd0cd2673d8dfe79c6d64e114c0cf20d4325eb6704524e549681348",
+        "2": "e8dca43dae5aaea54697463510b87ba3c6b5d0e84ab538a83e1ad31cfdc6aeb4"
+      },
+      "fresh_control_vs_historical": {
+        "initial_exact": true,
+        "steps": 100,
+        "max_abs_difference": {
+          "action": 0.0,
+          "q": 0.0,
+          "qvel": 0.0,
+          "tcp": 0.0,
+          "tool": 0.0,
+          "cube": 0.0,
+          "tcp_T_tool": 0.0
+        },
+        "exact": true
+      },
+      "slowdown_prefix_vs_control": {
+        "initial_exact": true,
+        "steps": 41,
+        "max_abs_difference": {
+          "action": 0.0,
+          "q": 0.0,
+          "qvel": 0.0,
+          "tcp": 0.0,
+          "tool": 0.0,
+          "cube": 0.0,
+          "tcp_T_tool": 0.0
+        },
+        "exact": true
+      },
+      "second_boundary_steps": {
+        "1": 41,
+        "2": 41
+      },
+      "same_raw_transfer_path": true,
+      "raw_transfer_sha256": {
+        "1": "4d5a9d2ebf4caabbb054787dc89bb3a8e0209efa4d0a38e519a2ea1fef73ada5",
+        "2": "4d5a9d2ebf4caabbb054787dc89bb3a8e0209efa4d0a38e519a2ea1fef73ada5"
+      },
+      "control": {
+        "success": true,
+        "error": null,
+        "control_steps": 100,
+        "physical_substeps": 500,
+        "transfer_steps": 24,
+        "transfer_substeps": 120,
+        "transfer_max_attachment_rotation_deg": 0.2703789214695147,
+        "transfer_100Hz_peak_velocity_rad_s": 2.0397489070892334,
+        "transfer_100Hz_max_URDF_velocity_ratio": 0.9378155894663143,
+        "transfer_100Hz_peak_qacc_rad_s2": 65.77354431152344,
+        "transfer_100Hz_samples_above_nominal_point9_velocity": 62,
+        "transfer_100Hz_samples_above_nominal_point9_acceleration": 117,
+        "transfer_max_within_control_qvel_change": 0.6300710439682007,
+        "first_nonzero_tool_cube_contact": {
+          "step": 69,
+          "substep": 3,
+          "phase": "HOOK",
+          "force_N": 4.08262376036161
+        },
+        "attachment_before_first_contact_deg": 0.050938213503116704,
+        "transfer_tool_peak_N": 0.0,
+        "final_cube_distance_m": 0.5775949954986572
+      },
+      "slowdown": {
+        "success": false,
+        "error": "Horizon: NATIVE_HORIZON",
+        "control_steps": 100,
+        "physical_substeps": 500,
+        "transfer_steps": 46,
+        "transfer_substeps": 230,
+        "transfer_max_attachment_rotation_deg": 0.21126681298475178,
+        "transfer_100Hz_peak_velocity_rad_s": 1.0626556873321533,
+        "transfer_100Hz_max_URDF_velocity_ratio": 0.48857732750903604,
+        "transfer_100Hz_peak_qacc_rad_s2": 33.20536804199219,
+        "transfer_100Hz_samples_above_nominal_point9_velocity": 23,
+        "transfer_100Hz_samples_above_nominal_point9_acceleration": 214,
+        "transfer_max_within_control_qvel_change": 0.3311948776245117,
+        "first_nonzero_tool_cube_contact": {
+          "step": 91,
+          "substep": 3,
+          "phase": "HOOK",
+          "force_N": 1.2953846722324478
+        },
+        "attachment_before_first_contact_deg": 0.05407568188701396,
+        "transfer_tool_peak_N": 0.0,
+        "final_cube_distance_m": 0.8300486207008362
+      },
+      "fetch_force_audit": {
+        "samples": 500,
+        "force_norm_max_difference": 0.0,
+        "exact": true
+      }
+    }
+  ]
+}

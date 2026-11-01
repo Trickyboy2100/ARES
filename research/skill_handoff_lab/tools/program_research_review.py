@@ -1,0 +1,50 @@
+"""CPU-only, repeatable evidence portal. Read summaries verbatim; never pool families/seeds."""
+import argparse,datetime,hashlib,html,json
+from pathlib import Path
+
+def esc(x):return html.escape(str(x))
+def show(x):
+    if x is None:return '未提供 / unavailable'
+    return json.dumps(x,ensure_ascii=False) if isinstance(x,(dict,list)) else str(x)
+def table(rows,fields):
+    if not rows:return '<p class="warn">尚无完成结果 / No completed results in this source.</p>'
+    return '<div class="scroll"><table><thead><tr>'+''.join('<th>'+esc(label)+'</th>' for key,label in fields)+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+esc(show(r.get(key)))+'</td>' for key,label in fields)+'</tr>' for r in rows)+'</tbody></table></div>'
+
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--evidence',type=Path,default=Path(__file__).resolve().parents[1]/'research_program/evidence/EXP-003/2026-11-01');a=ap.parse_args();p=a.evidence.resolve();sources={}
+    def read(name,default):
+        f=p/name
+        if not f.exists():sources[name]={'status':'MISSING'};return default
+        raw=f.read_bytes();sources[name]={'sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw)};return json.loads(raw)
+    def link(name,label):return '<a href="'+esc(name)+'">'+esc(label)+'</a>' if (p/name).exists() else '<span class="warn">'+esc(label)+' — missing</span>'
+    scores=read('component_A/EVAL_SCORES.json',[]);A=read('component_A/SUMMARY.json',{});pull=read('multiskill_pull/SUMMARY.json',{});pyr=read('multiskill_pyramid/SUMMARY.json',{})
+    if not isinstance(scores,list) or not all(isinstance(s,dict) for s in scores):raise ValueError('Expected list of evaluation-group rows; refusing guessed aggregation.')
+    stamp=datetime.datetime.now(datetime.timezone.utc).isoformat();parts=['''<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARES SCI · Research Evidence Review</title><style>body{margin:0;background:#eef2f6;color:#152638;font:16px/1.6 system-ui,sans-serif}main{max-width:1280px;margin:auto;padding:28px}header,section{background:white;padding:24px;margin:18px 0;border-radius:14px;box-shadow:0 3px 16px #1231}h1{font-size:30px;margin:0}h2{margin:0 0 14px}h3{margin-bottom:8px}a{color:#006e94}nav a{margin-right:20px}.note,.warn{padding:12px;border-left:4px solid #cf9d29;background:#fff8e8}.good{border-left:4px solid #008e89;background:#eefaf9;padding:12px}.small{font-size:13px;color:#526579}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:9px;border-bottom:1px solid #dde5ed;vertical-align:top}th{background:#eaf1f5;white-space:nowrap}.scroll{overflow:auto}video,img{max-width:100%;height:auto;background:#132334}.links a{display:inline-block;margin:5px 18px 5px 0}code{overflow-wrap:anywhere}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}@media(max-width:800px){.grid{grid-template-columns:1fr}}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f1f5f8;padding:15px}</style><main><header><h1>ARES SCI · 研发证据审阅 / Evidence Review</h1><p>任务条件化的可执行技能参数与跨阶段物理适应。已完成证据、未完成对照及方法边界分别展示。</p><nav><a href="#claim">结论边界</a><a href="#A">A：学习组件</a><a href="#B">B：两技能物理</a><a href="#video">完整视频</a><a href="#sources">来源</a></nav></header>''']
+    parts.append('<section id="claim"><h2>本轮能说明什么 / Claim boundary</h2><p class="good">真实物理指仿真器中实际执行 action 并推进动力学；不是机器人实机实验。视频为这些已执行状态的 <b>MEASURED_POSE_REPLAY</b>：按保存关节与物体状态渲染，不重新执行动作、不生成额外物理试验。</p><p class="warn">当前页面不宣称原创 RL 增益。A 是学习/控制组件；B 的两边界轨迹是物理参数干预与确定性控制器修复。成功案例或训练结果不等于超越公平强基线，亦不等于跨种子泛化。</p><p>Physics means actual simulated dynamics. Rendered playback preserves recorded states. Full curves and terminal scores are offline reviewer information, not policy inputs or current-frame success. SkillResult cards appear only after their actual boundaries.</p></section>')
+    parts.append('<section id="A"><h2>A · 已完成评估 / Completed evaluations</h2><p class="note">每行直接读取 EVAL_SCORES.json。ALL 与子条件相互重叠，禁止相加；多个条件共享 scene seed，并非独立训练种子。episodes、distinct_scene_seeds 和训练种子是不同统计单位。本页面不计算置信区间或汇总“方法胜率”。</p>')
+    fields=[('group','Evaluation group'),('authority','Action authority'),('completion','Completion'),('family','Family'),('success','Final successes'),('episodes','Episodes'),('distinct_scene_seeds','Scene seeds'),('ever_success','Ever success'),('hold_final_failure','Hold → final fail')];parts.append(table(scores,fields));parts.append('<p>'+link('component_A/EVAL_SCORES.json','完整评估行 / EVAL_SCORES.json')+' · '+link('component_A/README.md','A 实验说明')+'</p>')
+    parts.append('<p class="note">本轮最强确定性对照仍为原任务权限搜索32/36。任务权限SAC35/36相对它救回4、退化1；6场景聚类bootstrap开发差值区间为[-5.56,+22.22]个百分点。下方快搜索配对图是另一项对照，不能替换最强基线来夸大增益。单训练种子，尚无原创方法或稳定泛化结论。</p>')
+    for f,title in [('component_A/CORE_RESULTS.png','同条件核心结果 / shared conditions'),('component_A/PAIRED_TRADEOFF.png','同权限救回与退化 / paired tradeoff'),('component_A/CHECKPOINT_EVAL.png','实际checkpoint评估 / actual physical evaluation')]:
+        if (p/f).exists():parts.append('<details open><summary>'+esc(title)+'</summary><a href="'+f+'"><img src="'+f+'"></a></details>')
+    for key in ['claim','native_success_contract','observable_completion_contract','oracle_boundary','expected_runs','finalized_cost_including_failed_smokes','unfinished_recorded_physics_lower_bound','controls_expected','warnings']:
+        if key in A:parts.append('<details><summary>'+esc(key)+'</summary><pre>'+esc(show(A[key]))+'</pre></details>')
+    parts.append('<p class="small">Missing / unfinished runs are not failures with zero success and are not zero cost. Cost fields retain the producer’s definitions and may update on regeneration.</p></section>')
+    parts.append('<section id="B"><h2>B · 两个真实执行边界 / Two executed skill boundaries</h2><div class="grid">')
+    for name,title,d in [('multiskill_pull','PullCubeTool · pick → use tool',pull),('multiskill_pyramid','StackPyramid · support → top placement',pyr)]:
+        parts.append('<article><h3>'+title+'</h3>'+table([d],[('episodes','Episodes'),('physical_steps','Physical steps'),('two_boundary_episodes','Two boundaries'),('optimizer_updates','Updates')])+'<p>'+esc(d.get('scope','unavailable'))+'</p>'+link(name+'/README.md','实验边界与失败说明')+' · '+link(name+'/SUMMARY.json','原始汇总')+'</article>')
+    parts.append('</div><p class="warn">策略行的初态和样本数可能不同，不能直接将下表视为等预算排行榜。Pull 参数枚举不代表学得的新策略；Pyramid 某个侧向抓持修复成功不代表所有方向可行。两边界计数继承各报告定义，真实验证结果见视频时间线和原始记录。</p>')
+    for title,d,key in [('PullCubeTool',pull,'policy_outcomes'),('Pyramid',pyr,'policies')]:
+        rows=[dict(v,policy=k) for k,v in d.get(key,{}).items()];parts.append('<details><summary>'+title+' · 原始逐策略计数 / no pooling</summary>'+table(rows,[('policy','Policy'),('successes','Successes'),('episodes','Episodes'),('seeds','Reported scene seeds')])+'</details>')
+    parts.append('<h3>强后段规划与物理归因 / Strong successor controls</h3><p>TwoRobot 完整后段几何控制：4 个新初态 × 2 个前段终点，8/8；相同前段状态的正交抓持干预为 2/4。下方双臂视频展示较早的控制器诊断，不能当作这个更强版本的对比视频。</p><p>本轮 B 共77条实际原生任务执行、9200控制步、14个不同初态种子，零 RL 更新；混合用途的成功数不汇总成胜率。Pull 同路径降速降低冲击但没有修复差抓持漂移，较好抓持反因额外22步耗尽预算。</p><p class="links">'+''.join(link(f,l) for f,l in [('B_RESEARCH_SYNTHESIS.md','B 科学结论与成本'),('multiskill_two_robot_fullsuffix/SCIENCE_NOTES.md','完整后段强基线'),('multiskill_slowdown/README.md','100Hz 同路径降速实验'),('B_CONTRACT_SCOPE_AND_NEXT_EXPERIMENT.md','完成合同边界与下一项反证')])+'</p>')
+    parts.append('</section><section id="video"><h2>完整物理轨迹回放 / Full trajectory review</h2><p>使用同步入口查看阶段、参数决策及实际结果；以下视频包含全原生时限，不是局部成功剪辑。</p>')
+    for folder,title in [('video_multiskill_740001','PullCubeTool：35mm干预 vs 强几何控制'),('video_pyramid_741000','Pyramid：固定侧向夹爪 vs 方向感知控制器修复'),('video_two_robot_742000','TwoRobot：20mm vs80mm交接参数 / 原生100步')] if (p/'video_two_robot_742000').exists() else [('video_multiskill_740001','PullCubeTool：35mm干预 vs 强几何控制'),('video_pyramid_741000','Pyramid：固定侧向夹爪 vs 方向感知控制器修复')]:
+        manifest=read(folder+'/MANIFEST.json',{});qa=read(folder+'/QA.json',{});parts.append('<article><h3>'+esc(title)+'</h3><p class="links">'+''.join(link(folder+'/'+f,l) for f,l in [('SYNC_VIEWER.html','打开可点击同步时序 / SYNC'),('RAW.mp4','全程原版 RAW'),('ANNOTATED.mp4','英文高亮 ANNOTATED'),('CAPTION.md','结论与限制'),('QA.json','QA'),('MANIFEST.json','来源 SHA')])+'</p>')
+        if (p/folder/'ANNOTATED.mp4').exists():parts.append('<video controls preload="none" poster="'+folder+('/ANNOTATED_068.png' if 'pyramid' in folder else ('/ANNOTATED_070.png' if 'two_robot' in folder else '/ANNOTATED_050.png'))+'"><source src="'+folder+'/ANNOTATED.mp4" type="video/mp4"></video>')
+        parts.append('<p class="small">'+esc(show({'frames':manifest.get('frames'),'fps':manifest.get('fps'),'physics_steps_added_by_rendering':manifest.get('physics_steps_added'),'source_kind':manifest.get('source_kind'),'browser_QA':qa.get('browser')}))+'</p>')
+        detail='CONTACT_CLOSEUP.png' if 'pyramid' in folder else ('HANDOFF_CLOSEUP.png' if 'two_robot' in folder else 'TRACE_CONTACT_PHASE.png')
+        if (p/folder/detail).exists():parts.append('<details><summary>近景 / 接触时序证据</summary><a href="'+folder+'/'+detail+'"><img src="'+folder+'/'+detail+'"></a></details>')
+        if 'pull' not in folder and 'multiskill' in folder:parts.append('<p>原20Hz接触与独立匹配重复实验的100Hz帧内峰值分开呈现。后者不是原视频实验直接采得的子步数据；100个控制步动作/状态一致性审计和两个源SHA均保留。</p>')
+        parts.append('</article>')
+    parts.append('</section><section id="sources"><h2>可重现与来源 / Reproducibility</h2><p>生成时间 UTC：'+esc(stamp)+'</p><p>重新生成：<code>python research/skill_handoff_lab/tools/program_research_review.py --evidence '+esc(str(p))+'</code></p><p>'+link('README.md','本轮总说明')+' · <a href="REVIEW_SOURCES.json">本次读取的源文件SHA快照</a></p><p class="small">页面是生成时快照，不自动监视训练。缺失结果明确保留为未提供；重新运行脚本即可读取最新完成报告。</p></section></main></html>')
+    (p/'REVIEW.html').write_text('\n'.join(parts));(p/'REVIEW_SOURCES.json').write_text(json.dumps({'generated_at_utc':stamp,'generator_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'sources':sources,'aggregation':'none; preserve producer rows, ALL/subfamily overlap explicit'},indent=2)+'\n');print(p/'REVIEW.html')
+if __name__=='__main__':main()

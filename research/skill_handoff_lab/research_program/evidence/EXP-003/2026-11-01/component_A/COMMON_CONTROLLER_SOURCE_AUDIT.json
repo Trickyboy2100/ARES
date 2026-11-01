@@ -1,0 +1,245 @@
+{
+  "status": "PASS",
+  "scope": "Actual saved train_full/train_y_only/train_task source snapshots; CPU static audit, not simulator rerun.",
+  "checks": {
+    "make_episode": true,
+    "BaselineEnv": true,
+    "CompletionGate": true,
+    "Episode.step": true,
+    "Episode": true,
+    "SkillEnv": true,
+    "entire_training_branch": true,
+    "SAC_call": true,
+    "whole_entry_ast_equal_after_three_exact_nontraining_changes": true,
+    "all_source_manifest_hashes_valid": true,
+    "all_other_common_snapshot_files_byte_identical": true,
+    "runtime_args_identical_except_declared_authority_and_output": true
+  },
+  "runs": {
+    "train_full": {
+      "snapshot_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_full",
+      "manifest_sha256": "8fd9ca82cf2c47a61efa51792851e8af9e408bbaa59beee19025bb4c07ee3821",
+      "source_manifest_checks": {
+        "program_skill_baselines.py": true,
+        "program_completion_contract.py": true,
+        "program_adaptive_rl.py": true,
+        "program_adaptive_contact.py": true,
+        "program_adaptive_task.py": true,
+        "program_contract_effect.py": true,
+        "program_sac_policy.py": true,
+        "program_charger.py": true,
+        "pull_tool_physics.py": true
+      },
+      "source_sha256": {
+        "program_adaptive_contact.py": "e2d41f66f06e0d43cecd3474c4d81105431341604d54d655df5b479c0002d4a9",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "program_skill_baselines.py": "acd6ae7b20dc73793e0b12c43cae392f50c0cf012df2b6d21085ca02a658cc17",
+        "program_completion_contract.py": "48ceb4b9d52e4ae25fe124fbe1f824bec69c25a3359f122677b5a430bc1abd0a",
+        "program_sac_policy.py": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611",
+        "program_adaptive_rl.py": "1147a902f312a0e52c4655335787e782e1c33a2278d7acc157de99916ec806c7"
+      },
+      "ast_blocks_sha256": {
+        "make_episode": "db1280ca69c4ee694341b821f7181ba604084d33b1e00504405b18d4efc09d8f",
+        "BaselineEnv": "8d91b1bda2bbd50f3fb926ad535a7fc5ad6170eecf6c590792f0624b869a8bda",
+        "CompletionGate": "75a03f85e60928078d20d7a290031556e5f6ab259fa19533f3584e7a3620a64d",
+        "Episode.step": "92e1423faab531c46fd1b4d36eec11bc49d420afe508def4f0ba0a9dbe9a2de5",
+        "Episode": "60a02cd36b783c6d85a6fdcb4ee658652b1bb06b576e5517ddb9ec06005d66c3",
+        "SkillEnv": "fe211635b42c495c0a3761dc564198afcb01d88dc29b99b49ca9b27ca19c6d84",
+        "entire_training_branch": "0842e6367042731d749afb5512a3c3250beaf6335bcaea1bf1e25a348dbb0d28",
+        "SAC_call": "f5b38d6b3c788e9b5f7552e1aa6f3c0ae60aa97c0b2f8b24c87c62ea15f04d33"
+      },
+      "SAC_arguments": [
+        "CriticLayerNormPolicy",
+        "env"
+      ],
+      "SAC_keywords": {
+        "policy_kwargs": "dict(net_arch=[128, 128])",
+        "learning_rate": "0.0003",
+        "buffer_size": "50000",
+        "learning_starts": "256",
+        "batch_size": "128",
+        "train_freq": "1",
+        "gradient_steps": "1",
+        "ent_coef": "0.02",
+        "gamma": "0.99",
+        "tau": "0.005",
+        "seed": "a.seed",
+        "device": "'cpu'",
+        "verbose": "0"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_full",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "train",
+        "authority": "full",
+        "completion": "dwell",
+        "steps": 4096,
+        "seed": 31101,
+        "seeds": null,
+        "model": null,
+        "policies": "geometry,search,rls",
+        "conditions": "0,1,2,3,4,5",
+        "legacy_model": false,
+        "resume": null
+      },
+      "normalized_whole_entry_ast_sha256": "2292d51a4b032823cad691ee4839317d725a2bf25a75b2ccf1d0c4b6316a7a54"
+    },
+    "train_y_only": {
+      "snapshot_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_y_only",
+      "manifest_sha256": "961b1dcf4a8012b4fbf249b99ded32d1a12bb5f96a676f14d55006245a735329",
+      "source_manifest_checks": {
+        "program_skill_baselines.py": true,
+        "program_completion_contract.py": true,
+        "program_adaptive_rl.py": true,
+        "program_adaptive_contact.py": true,
+        "program_adaptive_task.py": true,
+        "program_contract_effect.py": true,
+        "program_sac_policy.py": true,
+        "program_charger.py": true,
+        "pull_tool_physics.py": true
+      },
+      "source_sha256": {
+        "program_adaptive_contact.py": "e2d41f66f06e0d43cecd3474c4d81105431341604d54d655df5b479c0002d4a9",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "program_skill_baselines.py": "acd6ae7b20dc73793e0b12c43cae392f50c0cf012df2b6d21085ca02a658cc17",
+        "program_completion_contract.py": "48ceb4b9d52e4ae25fe124fbe1f824bec69c25a3359f122677b5a430bc1abd0a",
+        "program_sac_policy.py": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611",
+        "program_adaptive_rl.py": "1147a902f312a0e52c4655335787e782e1c33a2278d7acc157de99916ec806c7"
+      },
+      "ast_blocks_sha256": {
+        "make_episode": "db1280ca69c4ee694341b821f7181ba604084d33b1e00504405b18d4efc09d8f",
+        "BaselineEnv": "8d91b1bda2bbd50f3fb926ad535a7fc5ad6170eecf6c590792f0624b869a8bda",
+        "CompletionGate": "75a03f85e60928078d20d7a290031556e5f6ab259fa19533f3584e7a3620a64d",
+        "Episode.step": "92e1423faab531c46fd1b4d36eec11bc49d420afe508def4f0ba0a9dbe9a2de5",
+        "Episode": "60a02cd36b783c6d85a6fdcb4ee658652b1bb06b576e5517ddb9ec06005d66c3",
+        "SkillEnv": "fe211635b42c495c0a3761dc564198afcb01d88dc29b99b49ca9b27ca19c6d84",
+        "entire_training_branch": "0842e6367042731d749afb5512a3c3250beaf6335bcaea1bf1e25a348dbb0d28",
+        "SAC_call": "f5b38d6b3c788e9b5f7552e1aa6f3c0ae60aa97c0b2f8b24c87c62ea15f04d33"
+      },
+      "SAC_arguments": [
+        "CriticLayerNormPolicy",
+        "env"
+      ],
+      "SAC_keywords": {
+        "policy_kwargs": "dict(net_arch=[128, 128])",
+        "learning_rate": "0.0003",
+        "buffer_size": "50000",
+        "learning_starts": "256",
+        "batch_size": "128",
+        "train_freq": "1",
+        "gradient_steps": "1",
+        "ent_coef": "0.02",
+        "gamma": "0.99",
+        "tau": "0.005",
+        "seed": "a.seed",
+        "device": "'cpu'",
+        "verbose": "0"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_y_only",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "train",
+        "authority": "y_only",
+        "completion": "dwell",
+        "steps": 4096,
+        "seed": 31101,
+        "seeds": null,
+        "model": null,
+        "policies": "geometry,search,rls",
+        "conditions": "0,1,2,3,4,5",
+        "legacy_model": false,
+        "resume": null
+      },
+      "normalized_whole_entry_ast_sha256": "2292d51a4b032823cad691ee4839317d725a2bf25a75b2ccf1d0c4b6316a7a54"
+    },
+    "train_task": {
+      "snapshot_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_task",
+      "manifest_sha256": "d47dbf3433998a6890294397ec1a10fea0e770fb0c3d94e17a5138ccaf5e2702",
+      "source_manifest_checks": {
+        "program_skill_baselines.py": true,
+        "program_completion_contract.py": true,
+        "program_authority_search.py": true,
+        "program_adaptive_rl.py": true,
+        "program_adaptive_contact.py": true,
+        "program_adaptive_task.py": true,
+        "program_contract_effect.py": true,
+        "program_sac_policy.py": true,
+        "program_charger.py": true,
+        "pull_tool_physics.py": true
+      },
+      "source_sha256": {
+        "program_adaptive_contact.py": "e2d41f66f06e0d43cecd3474c4d81105431341604d54d655df5b479c0002d4a9",
+        "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+        "program_contract_effect.py": "0a69d4602be0fbd5f2c90814ba39f3539804cb4afe253d7fd039b59709509d7f",
+        "pull_tool_physics.py": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62",
+        "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+        "program_authority_search.py": "61bc3def411d425795296f70e833c911176e4bf4f1aceab1615d55622d7b7b3e",
+        "program_skill_baselines.py": "111d34198639fb745a924d4bf0d97144e53a6b912efd71f455fc1d5200cade17",
+        "program_completion_contract.py": "48ceb4b9d52e4ae25fe124fbe1f824bec69c25a3359f122677b5a430bc1abd0a",
+        "program_sac_policy.py": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611",
+        "program_adaptive_rl.py": "1147a902f312a0e52c4655335787e782e1c33a2278d7acc157de99916ec806c7"
+      },
+      "ast_blocks_sha256": {
+        "make_episode": "db1280ca69c4ee694341b821f7181ba604084d33b1e00504405b18d4efc09d8f",
+        "BaselineEnv": "8d91b1bda2bbd50f3fb926ad535a7fc5ad6170eecf6c590792f0624b869a8bda",
+        "CompletionGate": "75a03f85e60928078d20d7a290031556e5f6ab259fa19533f3584e7a3620a64d",
+        "Episode.step": "92e1423faab531c46fd1b4d36eec11bc49d420afe508def4f0ba0a9dbe9a2de5",
+        "Episode": "60a02cd36b783c6d85a6fdcb4ee658652b1bb06b576e5517ddb9ec06005d66c3",
+        "SkillEnv": "fe211635b42c495c0a3761dc564198afcb01d88dc29b99b49ca9b27ca19c6d84",
+        "entire_training_branch": "0842e6367042731d749afb5512a3c3250beaf6335bcaea1bf1e25a348dbb0d28",
+        "SAC_call": "f5b38d6b3c788e9b5f7552e1aa6f3c0ae60aa97c0b2f8b24c87c62ea15f04d33"
+      },
+      "SAC_arguments": [
+        "CriticLayerNormPolicy",
+        "env"
+      ],
+      "SAC_keywords": {
+        "policy_kwargs": "dict(net_arch=[128, 128])",
+        "learning_rate": "0.0003",
+        "buffer_size": "50000",
+        "learning_starts": "256",
+        "batch_size": "128",
+        "train_freq": "1",
+        "gradient_steps": "1",
+        "ent_coef": "0.02",
+        "gamma": "0.99",
+        "tau": "0.005",
+        "seed": "a.seed",
+        "device": "'cpu'",
+        "verbose": "0"
+      },
+      "args": {
+        "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/component_A/train_task",
+        "sb3_root": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+        "mode": "train",
+        "authority": "task",
+        "completion": "dwell",
+        "steps": 4096,
+        "seed": 31101,
+        "seeds": null,
+        "model": null,
+        "policies": "geometry,search,rls",
+        "conditions": "0,1,2,3,4,5",
+        "legacy_model": false,
+        "resume": null
+      },
+      "normalized_whole_entry_ast_sha256": "2292d51a4b032823cad691ee4839317d725a2bf25a75b2ccf1d0c4b6316a7a54"
+    }
+  },
+  "observed_differences": [
+    "train_full and train_y_only snapshots byte-identical",
+    "train_task adds lazy helper import, source snapshot list entry, and search_unique control-policy branch only",
+    "search_unique_fast is absent from these three training snapshots; later evaluation changes are not asserted to be present here"
+  ],
+  "limitations": [
+    "Source equivalence does not prove identical simulator random streams or floating-point trajectories.",
+    "Authority projection is the declared intervention; three-dimensional actor entropy/replay alias limitation remains.",
+    "No new RL method or statistical gain is established."
+  ]
+}

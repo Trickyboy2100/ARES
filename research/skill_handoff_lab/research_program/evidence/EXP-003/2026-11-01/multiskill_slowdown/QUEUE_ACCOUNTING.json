@@ -1,0 +1,82 @@
+[
+  {
+    "label": "740001_g035_transfer_stride2",
+    "command": [
+      "/home/andyee/robot-research/ARES-Skilllab/envs/method-evolution-20261028/bin/python",
+      "/home/andyee/robot-research/ARES-Skilllab/repos/ARES-SCI-program/research/skill_handoff_lab/tools/program_multiskill_contact_probe.py",
+      "--seed",
+      "740001",
+      "--grasp-x",
+      "0.035",
+      "--transfer-stride",
+      "2",
+      "--label",
+      "740001_g035_transfer_stride2",
+      "--out",
+      "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_slowdown/740001_g035_transfer_stride2"
+    ],
+    "exit_code": 0,
+    "wall_s": 16.905524044996127,
+    "resource_context": "SHARED_GPU_CONTENTION"
+  },
+  {
+    "label": "740001_g035_transfer_stride1",
+    "command": [
+      "/home/andyee/robot-research/ARES-Skilllab/envs/method-evolution-20261028/bin/python",
+      "/home/andyee/robot-research/ARES-Skilllab/repos/ARES-SCI-program/research/skill_handoff_lab/tools/program_multiskill_contact_probe.py",
+      "--seed",
+      "740001",
+      "--grasp-x",
+      "0.035",
+      "--transfer-stride",
+      "1",
+      "--label",
+      "740001_g035_transfer_stride1",
+      "--out",
+      "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_slowdown/740001_g035_transfer_stride1"
+    ],
+    "exit_code": 0,
+    "wall_s": 16.367782558954787,
+    "resource_context": "SHARED_GPU_CONTENTION"
+  },
+  {
+    "label": "740001_g070_transfer_stride2",
+    "command": [
+      "/home/andyee/robot-research/ARES-Skilllab/envs/method-evolution-20261028/bin/python",
+      "/home/andyee/robot-research/ARES-Skilllab/repos/ARES-SCI-program/research/skill_handoff_lab/tools/program_multiskill_contact_probe.py",
+      "--seed",
+      "740001",
+      "--grasp-x",
+      "0.07",
+      "--transfer-stride",
+      "2",
+      "--label",
+      "740001_g070_transfer_stride2",
+      "--out",
+      "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_slowdown/740001_g070_transfer_stride2"
+    ],
+    "exit_code": 0,
+    "wall_s": 16.323832278954796,
+    "resource_context": "SHARED_GPU_CONTENTION"
+  },
+  {
+    "label": "740001_g070_transfer_stride1",
+    "command": [
+      "/home/andyee/robot-research/ARES-Skilllab/envs/method-evolution-20261028/bin/python",
+      "/home/andyee/robot-research/ARES-Skilllab/repos/ARES-SCI-program/research/skill_handoff_lab/tools/program_multiskill_contact_probe.py",
+      "--seed",
+      "740001",
+      "--grasp-x",
+      "0.07",
+      "--transfer-stride",
+      "1",
+      "--label",
+      "740001_g070_transfer_stride1",
+      "--out",
+      "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_slowdown/740001_g070_transfer_stride1"
+    ],
+    "exit_code": 0,
+    "wall_s": 15.621870650968049,
+    "resource_context": "SHARED_GPU_CONTENTION"
+  }
+]

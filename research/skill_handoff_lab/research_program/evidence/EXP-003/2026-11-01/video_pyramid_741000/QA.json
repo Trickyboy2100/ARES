@@ -1,0 +1,140 @@
+{
+  "claim": "SHARED_CONTROLLER_REPAIR_NOT_RL_GAIN",
+  "physics_steps_added": 0,
+  "sources": [
+    {
+      "sha256": "58d1d7af6ed4ce087b19f1bcf365629ff4212d9f67b2713e0618882b6b9a2ba3",
+      "success": false,
+      "decision_steps": [
+        0
+      ],
+      "verified_boundary_steps": [],
+      "error": "SkillFailure: A_BOUNDARY_NOT_VERIFIED"
+    },
+    {
+      "sha256": "17f7529d785f6631d2773f35e8403b3086b8ba088230122964a5e0089c38103a",
+      "success": true,
+      "decision_steps": [
+        0,
+        78
+      ],
+      "verified_boundary_steps": [
+        78,
+        149
+      ],
+      "error": null
+    }
+  ],
+  "videos": {
+    "RAW.mp4": {
+      "width": 1600,
+      "height": 600,
+      "r_frame_rate": "20/1",
+      "duration": "12.550000",
+      "nb_frames": "251",
+      "all_pts_pass": true
+    },
+    "ANNOTATED.mp4": {
+      "width": 1600,
+      "height": 1060,
+      "r_frame_rate": "20/1",
+      "duration": "12.550000",
+      "nb_frames": "251",
+      "all_pts_pass": true
+    }
+  },
+  "same_initial_hash": true,
+  "browser": {
+    "duration": 12.55,
+    "floor100": true,
+    "click125": true,
+    "source_decision_count": true,
+    "last_decision_seek": true,
+    "raw_switch": true,
+    "no_future_result": true
+  },
+  "max_state_readback_error": 1.1920928955078125e-07,
+  "all_three_cube_bounds_inside_frame": true,
+  "exact_prefix_through_physical_step": 39,
+  "prefix_max_abs_differences": {
+    "action": 0.0,
+    "q": 0.0,
+    "qvel": 0.0,
+    "tcp": 0.0,
+    "cubeA": 0.0,
+    "cubeB": 0.0,
+    "cubeC": 0.0
+  },
+  "visual_review": {
+    "reviewed": [
+      "CONTACT_CLOSEUP.png",
+      "ANNOTATED_068.png",
+      "ANNOTATED_150.png"
+    ],
+    "result": "2x contact inset occupies empty tabletop, preserves robot/context and all text/curves; 3x step68 opening exposes differing finger orientation. Pixel enlargement does not add spatial resolution."
+  },
+  "contact_zoom": {
+    "physics_steps_added": 0,
+    "RAW_sha256_unchanged": "2cbf7995c5b55fd5321f8e60e0b14e7025dcb7ed8dba056adf7dc2d88d97b6de",
+    "frames": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90
+    ],
+    "geometry": "recorded A/B mean projected with stored camera K/E; box 180x150, source pixel coordinates in CONTACT_CROPS.json",
+    "video_magnification": 2,
+    "standalone_magnification": 3,
+    "standalone_frame": 68,
+    "resampling": "NEAREST; no generated or sharpened pixels",
+    "source_sha256": "752e9be3bfe5952b7cad7d666c280f328a93b9ec9fedf2502342e430a625b59a",
+    "all_crop_bounds_valid": true
+  }
+}

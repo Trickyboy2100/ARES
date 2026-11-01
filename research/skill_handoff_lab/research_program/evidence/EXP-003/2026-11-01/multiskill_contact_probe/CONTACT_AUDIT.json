@@ -1,0 +1,598 @@
+[
+  {
+    "attachment_reference": "actual endLIFT TCP-relative tool pose",
+    "attachment_drift": {
+      "LIFT": {
+        "rotation_max_deg": 10.691485043092234,
+        "translation_max_mm": 5.661144385260031
+      },
+      "TRANSFER": {
+        "rotation_max_deg": 13.194000355765487,
+        "translation_max_mm": 7.0165131474424856
+      },
+      "HOOK": {
+        "rotation_max_deg": 13.086434939187223,
+        "translation_max_mm": 7.015586270851043
+      },
+      "PULL": {
+        "rotation_max_deg": 13.084747993753863,
+        "translation_max_mm": 7.049130398111863
+      }
+    },
+    "label": "g035",
+    "success": false,
+    "initial_match": true,
+    "exact_recorded_action_state_match": true,
+    "max_abs_differences": {
+      "action": 0.0,
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "tool": 0.0,
+      "cube": 0.0,
+      "tcp_T_tool": 0.0
+    },
+    "control_steps": 100,
+    "physical_substeps": 500,
+    "all_frames_have5_substeps": true,
+    "phases": {
+      "REACH": {
+        "samples": 85,
+        "tool_peak_N": 0.0,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.0,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "DESCEND": {
+        "samples": 50,
+        "tool_peak_N": 0.0,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.0,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "GRASP": {
+        "samples": 30,
+        "tool_peak_N": 0.0,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.0,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "LIFT": {
+        "samples": 55,
+        "tool_peak_N": 0.0,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.0,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "TRANSFER": {
+        "samples": 100,
+        "tool_peak_N": 4.010553012013722,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.11640831555444056,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "HOOK": {
+        "samples": 80,
+        "tool_peak_N": 1.5900664459159959,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.1487531196010053,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "PULL": {
+        "samples": 100,
+        "tool_peak_N": 0.010975035216231796,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.00020070609082912987,
+        "robot_impulse_norm_sum_Ns": 0.0
+      }
+    },
+    "contact_events_over_half_N": [
+      {
+        "control_step": 58,
+        "substep": 2,
+        "phase": "TRANSFER",
+        "tool_force_N": 4.010553012013722,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 58,
+        "substep": 3,
+        "phase": "TRANSFER",
+        "tool_force_N": 2.8618276967617375,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 59,
+        "substep": 1,
+        "phase": "TRANSFER",
+        "tool_force_N": 1.4793317671443527,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 60,
+        "substep": 1,
+        "phase": "TRANSFER",
+        "tool_force_N": 0.7223466926287738,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 67,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 0.7097815575676066,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 68,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 1.0174297049069299,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 69,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 1.2888572530280002,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 70,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 1.5026685174619263,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 71,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 1.5900664459159959,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 72,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 1.294441154047252,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 73,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 0.6846325867668912,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 74,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 0.75870983513433,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 75,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 0.5662541433442493,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      }
+    ],
+    "trace": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_contact_probe/740001_g035/TRAJECTORY.json.gz",
+    "trace_sha256": "9d4c3a51e4eddc5822a38e533c8ad913d8c8c1b43f787156d57ea432637cdf4a",
+    "original": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_pull/740001_g035/TRAJECTORY.json.gz",
+    "original_sha256": "83c5d55b9fbdc32015a3626d82bfd44d7a00faedd993168b49d26a04e6efab0d",
+    "scope": "Read-only contact instrumentation. Impulse norm sums are contact exposure, not net impulse or causal contribution. Attribution requires command/state match and temporal evidence."
+  },
+  {
+    "attachment_reference": "actual endLIFT TCP-relative tool pose",
+    "attachment_drift": {
+      "LIFT": {
+        "rotation_max_deg": 0.3533573785076161,
+        "translation_max_mm": 0.39872544754903266
+      },
+      "TRANSFER": {
+        "rotation_max_deg": 0.2703789214695147,
+        "translation_max_mm": 0.2875828209611285
+      },
+      "HOOK": {
+        "rotation_max_deg": 12.962679658111867,
+        "translation_max_mm": 14.481152596036466
+      },
+      "PULL": {
+        "rotation_max_deg": 9.90096249833103,
+        "translation_max_mm": 11.002263001863549
+      }
+    },
+    "label": "g070",
+    "success": true,
+    "initial_match": true,
+    "exact_recorded_action_state_match": true,
+    "max_abs_differences": {
+      "action": 0.0,
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "tool": 0.0,
+      "cube": 0.0,
+      "tcp_T_tool": 0.0
+    },
+    "control_steps": 100,
+    "physical_substeps": 500,
+    "all_frames_have5_substeps": true,
+    "phases": {
+      "REACH": {
+        "samples": 80,
+        "tool_peak_N": 0.0,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.0,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "DESCEND": {
+        "samples": 50,
+        "tool_peak_N": 0.0,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.0,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "GRASP": {
+        "samples": 30,
+        "tool_peak_N": 0.0,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.0,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "LIFT": {
+        "samples": 45,
+        "tool_peak_N": 0.0,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.0,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "TRANSFER": {
+        "samples": 120,
+        "tool_peak_N": 0.0,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.0,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "HOOK": {
+        "samples": 40,
+        "tool_peak_N": 16.613659092405612,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 2.2021635769163157,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "PULL": {
+        "samples": 125,
+        "tool_peak_N": 1.427213104875517,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.21299669866179358,
+        "robot_impulse_norm_sum_Ns": 0.0
+      },
+      "TERMINAL_HOLD": {
+        "samples": 10,
+        "tool_peak_N": 0.03947262143153103,
+        "robot_peak_N": 0.0,
+        "robot_peak_link": null,
+        "tool_impulse_norm_sum_Ns": 0.0003947262054924919,
+        "robot_impulse_norm_sum_Ns": 0.0
+      }
+    },
+    "contact_events_over_half_N": [
+      {
+        "control_step": 69,
+        "substep": 3,
+        "phase": "HOOK",
+        "tool_force_N": 4.08262376036161,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 69,
+        "substep": 4,
+        "phase": "HOOK",
+        "tool_force_N": 7.790648793745887,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 69,
+        "substep": 5,
+        "phase": "HOOK",
+        "tool_force_N": 10.97463800510522,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 70,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 15.36652465705302,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 70,
+        "substep": 2,
+        "phase": "HOOK",
+        "tool_force_N": 9.526008335250928,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 70,
+        "substep": 3,
+        "phase": "HOOK",
+        "tool_force_N": 10.578886373096946,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 70,
+        "substep": 4,
+        "phase": "HOOK",
+        "tool_force_N": 12.175509556107084,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 70,
+        "substep": 5,
+        "phase": "HOOK",
+        "tool_force_N": 10.447645206086161,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 71,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 11.166988628508859,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 71,
+        "substep": 2,
+        "phase": "HOOK",
+        "tool_force_N": 10.590203061408262,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 71,
+        "substep": 3,
+        "phase": "HOOK",
+        "tool_force_N": 11.278244081354371,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 71,
+        "substep": 4,
+        "phase": "HOOK",
+        "tool_force_N": 10.66731002667222,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 71,
+        "substep": 5,
+        "phase": "HOOK",
+        "tool_force_N": 11.17819191774895,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 72,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 10.45952347077787,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 72,
+        "substep": 2,
+        "phase": "HOOK",
+        "tool_force_N": 10.430409066125863,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 72,
+        "substep": 3,
+        "phase": "HOOK",
+        "tool_force_N": 10.722520871341672,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 72,
+        "substep": 4,
+        "phase": "HOOK",
+        "tool_force_N": 10.471579084075778,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 72,
+        "substep": 5,
+        "phase": "HOOK",
+        "tool_force_N": 11.129461896169104,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 73,
+        "substep": 1,
+        "phase": "HOOK",
+        "tool_force_N": 14.089992679077453,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 73,
+        "substep": 2,
+        "phase": "HOOK",
+        "tool_force_N": 16.613659092405612,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 79,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 0.646337644527649,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 80,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 0.7547699362143679,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 81,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 0.8956929692442271,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 82,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 1.0367878076828427,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 83,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 1.1977005188993668,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 84,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 1.3317956642047328,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 85,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 1.3774144002657018,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 86,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 1.427213104875517,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 87,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 1.2963601541833791,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 88,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 1.0914607127945728,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 89,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 0.986257487635763,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 90,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 0.5444549176641269,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 91,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 0.7841998125636901,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 92,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 0.6526459695829483,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      },
+      {
+        "control_step": 93,
+        "substep": 1,
+        "phase": "PULL",
+        "tool_force_N": 0.6178529096188298,
+        "robot_max_force_N": 0.0,
+        "robot_link": null
+      }
+    ],
+    "trace": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_contact_probe/740001_g070/TRAJECTORY.json.gz",
+    "trace_sha256": "e6e4736c432bf2ca64536422c9124ac721debd6f9e19a7e2966e8cd84a991682",
+    "original": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_pull/740001_lookahead/TRAJECTORY.json.gz",
+    "original_sha256": "b95ec79e87520ef89bcab3d0503399c53b43165bc3409b8b92bc521733e10e38",
+    "scope": "Read-only contact instrumentation. Impulse norm sums are contact exposure, not net impulse or causal contribution. Attribution requires command/state match and temporal evidence."
+  }
+]

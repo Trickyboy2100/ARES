@@ -1,0 +1,30 @@
+# Completion-contract scope and one falsifiable next experiment
+
+## Preserve labels, qualify their scope
+
+Existing raw `physical_success` and phase labels are not rewritten. Their operational definitions are weaker than a general skill-completion/force-closure claim.
+
+| Observed classification | What is actually supported | Remaining ambiguity |
+|---|---|---|
+|Pull `PICK_TOOL` retained after commanded55mm lift|native `is_grasping`, executed lift command, retained grasp; actual attachment/velocities recorded|No relative-attachment stability window, rest requirement or force-closure/wrench-margin verification. The commanded55mm is not proof of exactly55mm measured displacement.|
+|Pull g035 later TRANSFER drift/contact|attachment changes precede first nonzero tool/cube force; slowdown does not cure drift|May expose inadequate first-skill completion contract/poor grasp conditioning. Cannot automatically call it “fully successful first skill requiring downstream RL adaptation.”|
+|Pull g070/g105740000 long TRANSFER|small measured drift(.295°/.215°), long route and horizon exhaustion|Better evidence for downstream planning/runtime budget failure, though first completion is still only the same weak operational contract.|
+|TwoRobot LEFT_PUSH boundary|cube y≥0, cube still on table, actual pose/velocity observed; two-step settle command|No enforced static criterion. Actual residual velocity is visible, so no claim of hidden posterior state.|
+|TwoRobot failed orthogonal suffix|same measured first boundary, right grasp retained, goal distance/static criterion not met by100|Serial scheduling, tracking and geometry explain an important part; not a demonstrated RL-only need.|
+|Pyramid side-axis release failures|original explicit release/static/pose checks fail; intended open geometry overlaps neighboring support|Precursor contract fails before second decision; deterministic repair evidence must not be labeled cross-stage RL gain.|
+
+Three-cause attribution therefore remains: (A) verified precursor-contract failure; (B) nominal precursor success with insufficiently verified physical stability, or verified success but successor mismatch; (C) successor execution/planning/runtime failure. Pull g035 currently spans A/B because the first contract omitted stability, rather than being a clean B example. Do not report its retained-grasp flag as proof that a robust completed skill failed only in its successor.
+
+## One next physical experiment, not executed this round
+
+**Hypothesis:** After enforcing an operationally stable grasp boundary and an explicitly validated trajectory-dynamics envelope, moderate tool-load changes can produce a reproducible reversal in the best legal transfer parameter that a strong geometry/online-adaptive model cannot completely predict.
+
+1. Use two predeclared new physical initial states, two moderate construction-time tool-density multipliers(.75,1.25), and two previously viable grasp positions(.07,.105): eight initial conditions. This is a declared native-derived physical distribution, not untouched native-task evidence. Keep original task goal and100-step horizon; read back actual mass/inertia/friction, never change mass after grasp.
+2. Require retained grasp plus three consecutive20Hz observations of low relative attachment change (translation≤.5mm, rotation≤.5°), low tool world speed(<.02m/s and<.1rad/s), with at most six additional control steps. Thresholds are predeclared empirical completion conditions, **not proof of full force closure**. Record all failed contracts as precursor failures; their budget cost remains in the native horizon. All competing methods use this same boundary and state/history observations.
+3. First validate a shared trajectory timing implementation against actual100Hz q/qvel/qacc readback: URDF velocity bounds plus an explicitly documented simulation acceleration envelope. Current stride2/3 and even raw native samples do not establish this. No faster-stride shortcut or outcome-tuned relaxation is permitted. Dynamics repair is common infrastructure, not method gain.
+4. Only on stable first boundaries compare two conservative timing parameters for the same geometric TRANSFER path. Pair physical executions from identical initial states; preserve full100 and later shared feedback. Give complete-successor geometry and online load/response estimation the same context and observed execution data. The mass factor may be declared context or hidden to all methods consistently; never give truth to only one policy.
+5. Measure successor contact/attachment drift, legal-dynamics violations, full native outcome and remaining time. If one grasp/timing dominates, or differences vanish after stable boundary/common dynamics, reject this proposed RL opportunity. If stable-prefix cases show reproducible context-dependent parameter ordering that the strong adaptive model misses, only then train a small task-conditioned policy and compare equal-action/equal-budget alternatives.
+
+This design is falsifiable without a large network sweep. It may conclude that stronger grasp completion or model control solves the issue; that negative result is scientifically preferable to training around an invalid completion label. No physics, training or distribution modification described here has been run in this round.
+
+These checks are experimental variables to inspect, not an administrative stopping gate. Report control-rate pose-delta stability separately from instantaneous PhysX velocity, as the A experiment already exposed aliasing/jitter. If all viable grasps fail a proposed threshold, examine whether the measurement/hold controller or the threshold is physically justified before discarding the task. Likewise distinguish bounds on commanded trajectory derivatives from measured acceleration due to tracking and external contact impulses; a large measured qacc alone does not establish violation of an unspecified robot acceleration limit. Keep the baseline thresholds and any justified revision visible, apply revisions to all methods, and preserve failures. Do not spend a new session only certifying a gate without the paired physical question.

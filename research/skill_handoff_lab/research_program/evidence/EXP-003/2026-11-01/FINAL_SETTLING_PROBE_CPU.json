@@ -1,0 +1,52 @@
+{
+  "device": "CPU",
+  "physics_steps": 0,
+  "checks": [
+    {
+      "name": "unconfirmed_probe_bounded6",
+      "pass_": true
+    },
+    {
+      "name": "duplicate_completion_call_no_new_probe",
+      "pass_": true
+    },
+    {
+      "name": "cooldown8_from_probe_start",
+      "pass_": true
+    },
+    {
+      "name": "probe_capped_at_native200",
+      "pass_": true
+    },
+    {
+      "name": "duplicate_at_horizon_no_steps",
+      "pass_": true
+    },
+    {
+      "name": "confirmation_breaks_probe",
+      "pass_": true
+    },
+    {
+      "name": "confirmed_duplicate_no_extra_motion",
+      "pass_": true
+    },
+    {
+      "name": "outer_exit_aborts_probe",
+      "pass_": true
+    },
+    {
+      "name": "probe_holds_current_q_and_closed_gripper",
+      "pass_": true
+    },
+    {
+      "name": "outer_servo_loop_rechecks_remaining_budget_static",
+      "pass_": true
+    }
+  ],
+  "all_pass": true,
+  "sources": {
+    "program_skill_baselines.py": "afbad8e2d45b180afe3f40973f2be0b9203885cc4e191f7ae65950fe33655f36",
+    "program_adaptive_contact.py": "e2d41f66f06e0d43cecd3474c4d81105431341604d54d655df5b479c0002d4a9"
+  },
+  "limitation": "Exact hook executed against stub step counter, not PhysX or full Episode.step; outer-loop guard is AST inspection."
+}

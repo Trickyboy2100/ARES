@@ -1,0 +1,43 @@
+{
+  "device": "CPU",
+  "physics_steps": 0,
+  "optimizer_updates": 0,
+  "synthetic_unit_inputs_not_research_data": true,
+  "checks": [
+    {
+      "name": "stationary_frames_ignore_instantaneous_jitter",
+      "pass_": true
+    },
+    {
+      "name": "raw_instantaneous_velocity_preserved",
+      "pass_": true
+    },
+    {
+      "name": "same_frame_repeat_not_new_dwell",
+      "pass_": true
+    },
+    {
+      "name": "quaternion_double_cover_invariant",
+      "pass_": true
+    },
+    {
+      "name": "translation_divided_by_control_dt",
+      "pass_": true
+    },
+    {
+      "name": "control_dt_scaling",
+      "pass_": true
+    },
+    {
+      "name": "rotation_geodesic_rate",
+      "pass_": true
+    },
+    {
+      "name": "three_distinct_stable_frames_reach",
+      "pass_": true
+    }
+  ],
+  "all_pass": true,
+  "source_sha256": "acd6ae7b20dc73793e0b12c43cae392f50c0cf012df2b6d21085ca02a658cc17",
+  "limitation": "Observed control-rate pose stability can alias substep oscillation; not proof of zero instantaneous velocity or hardware sensor validation."
+}

@@ -1,0 +1,346 @@
+[
+  {
+    "run": "741000_axis0",
+    "attachment_projected_geometry": {
+      "A_LIFT": {
+        "predicted_A_axis_radius_m": 0.02033741265762144,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.002662588608479406,
+        "predicted_A_goal": [
+          0.06183528191461219,
+          -0.17896077080054448,
+          0.021999999835363774
+        ]
+      },
+      "A_PREPLACE": {
+        "predicted_A_axis_radius_m": 0.020335779818690888,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.00266513934708305,
+        "predicted_A_goal": [
+          0.06183619715912545,
+          -0.178967461114798,
+          0.021997856878832912
+        ]
+      }
+    },
+    "B_displacement_max_by_phase_m": {
+      "A_REACH": 5.574632744678246e-07,
+      "A_DESCEND": 5.54718898564316e-07,
+      "A_CLOSE": 5.556336356085657e-07,
+      "A_LIFT": 5.54718898564316e-07,
+      "A_PREPLACE": 5.565484276666791e-07,
+      "A_PLACE": 0.0027891006255533,
+      "A_OPEN": 0.003687023241937653,
+      "A_RETREAT": 0.0036869831865184687,
+      "A_SETTLE": 0.0036869845790054568
+    },
+    "scope": "CPU reconstruction of recorded measured attachment and commanded TCP pose. Positive projection margin refutes initial overlap along separation axis; does not prove swept gripper clearance or exact contact partner."
+  },
+  {
+    "run": "741000_axis90",
+    "attachment_projected_geometry": {
+      "A_LIFT": {
+        "predicted_A_axis_radius_m": 0.020312167917055157,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.002687839349681642,
+        "predicted_A_goal": [
+          0.011337176794698374,
+          -0.12846304519457982,
+          0.021999999835363774
+        ]
+      },
+      "A_PREPLACE": {
+        "predicted_A_axis_radius_m": 0.020310955199285403,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.0026844291895337102,
+        "predicted_A_goal": [
+          0.01133832637505874,
+          -0.1284676682013677,
+          0.02199778077173343
+        ]
+      }
+    },
+    "B_displacement_max_by_phase_m": {
+      "A_REACH": 5.574632744678246e-07,
+      "A_DESCEND": 5.54718898564316e-07,
+      "A_CLOSE": 5.556336356085657e-07,
+      "A_LIFT": 5.54718898564316e-07,
+      "A_PREPLACE": 5.565484276666791e-07,
+      "A_PLACE": 0.00885793305494434,
+      "A_OPEN": 0.018681732465120005,
+      "A_RETREAT": 0.01868042927240595,
+      "A_SETTLE": 0.018680428138936247
+    },
+    "scope": "CPU reconstruction of recorded measured attachment and commanded TCP pose. Positive projection margin refutes initial overlap along separation axis; does not prove swept gripper clearance or exact contact partner."
+  },
+  {
+    "run": "741000_axis_minus90",
+    "attachment_projected_geometry": {
+      "A_LIFT": {
+        "predicted_A_axis_radius_m": 0.020312167917055157,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.002687825312457315,
+        "predicted_A_goal": [
+          0.011337176794698374,
+          -0.22945848150534795,
+          0.021999999835363774
+        ]
+      },
+      "A_PREPLACE": {
+        "predicted_A_axis_radius_m": 0.020310704235164838,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.002694954153677081,
+        "predicted_A_goal": [
+          0.011338378991898265,
+          -0.2294641469520908,
+          0.021998052269704645
+        ]
+      }
+    },
+    "B_displacement_max_by_phase_m": {
+      "A_REACH": 5.574632744678246e-07,
+      "A_DESCEND": 5.54718898564316e-07,
+      "A_CLOSE": 5.556336356085657e-07,
+      "A_LIFT": 5.54718898564316e-07,
+      "A_PREPLACE": 5.565484276666791e-07,
+      "A_PLACE": 0.007826689696565662,
+      "A_OPEN": 0.015642130826417307,
+      "A_RETREAT": 0.015970621473636183,
+      "A_SETTLE": 0.015970131881514856
+    },
+    "scope": "CPU reconstruction of recorded measured attachment and commanded TCP pose. Positive projection margin refutes initial overlap along separation axis; does not prove swept gripper clearance or exact contact partner."
+  },
+  {
+    "run": "741000_axis_minus90_rule",
+    "attachment_projected_geometry": {
+      "A_LIFT": {
+        "predicted_A_axis_radius_m": 0.020337412657621436,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.002999998672433727,
+        "predicted_A_goal": [
+          0.01133717646466329,
+          -0.22979589960589064,
+          0.021999999835363774
+        ]
+      },
+      "A_PREPLACE": {
+        "predicted_A_axis_radius_m": 0.02033940766253013,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.0029986964574594682,
+        "predicted_A_goal": [
+          0.01133335690351516,
+          -0.22979659218584994,
+          0.021997909572403454
+        ]
+      }
+    },
+    "B_displacement_max_by_phase_m": {
+      "A_REACH": 5.574632744678246e-07,
+      "A_DESCEND": 5.54718898564316e-07,
+      "A_CLOSE": 5.556336356085657e-07,
+      "A_LIFT": 5.54718898564316e-07,
+      "A_PREPLACE": 5.565484276666791e-07,
+      "A_PLACE": 5.565484276666791e-07,
+      "A_OPEN": 5.556336356085657e-07,
+      "A_RETREAT": 5.556336356085657e-07,
+      "A_SETTLE": 5.556336356085657e-07
+    },
+    "scope": "CPU reconstruction of recorded measured attachment and commanded TCP pose. Positive projection margin refutes initial overlap along separation axis; does not prove swept gripper clearance or exact contact partner."
+  },
+  {
+    "run": "741000_axis_search",
+    "attachment_projected_geometry": {
+      "A_LIFT": {
+        "predicted_A_axis_radius_m": 0.02033741265762144,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.002662588608479406,
+        "predicted_A_goal": [
+          0.06183528191461219,
+          -0.17896077080054448,
+          0.021999999835363774
+        ]
+      },
+      "A_PREPLACE": {
+        "predicted_A_axis_radius_m": 0.020335779818690888,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.00266513934708305,
+        "predicted_A_goal": [
+          0.06183619715912545,
+          -0.178967461114798,
+          0.021997856878832912
+        ]
+      }
+    },
+    "B_displacement_max_by_phase_m": {
+      "A_REACH": 5.574632744678246e-07,
+      "A_DESCEND": 5.54718898564316e-07,
+      "A_CLOSE": 5.556336356085657e-07,
+      "A_LIFT": 5.54718898564316e-07,
+      "A_PREPLACE": 5.565484276666791e-07,
+      "A_PLACE": 0.0027891006255533,
+      "A_OPEN": 0.003687023241937653,
+      "A_RETREAT": 0.0036869831865184687,
+      "A_SETTLE": 0.0036869845790054568
+    },
+    "scope": "CPU reconstruction of recorded measured attachment and commanded TCP pose. Positive projection margin refutes initial overlap along separation axis; does not prove swept gripper clearance or exact contact partner."
+  },
+  {
+    "run": "741001_axis0",
+    "attachment_projected_geometry": {
+      "A_LIFT": {
+        "predicted_A_axis_radius_m": 0.02029343783632367,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.0027065609025376802,
+        "predicted_A_goal": [
+          -0.015857714057833663,
+          -0.05706707411170099,
+          0.021999999404794635
+        ]
+      },
+      "A_PREPLACE": {
+        "predicted_A_axis_radius_m": 0.020291053046569783,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.002710222872599189,
+        "predicted_A_goal": [
+          -0.015856438032315456,
+          -0.05706603395231772,
+          0.02199815555926396
+        ]
+      }
+    },
+    "B_displacement_max_by_phase_m": {
+      "A_REACH": 5.952659540885288e-07,
+      "A_DESCEND": 5.952659540885288e-07,
+      "A_CLOSE": 5.952659540885288e-07,
+      "A_LIFT": 5.976508199588858e-07,
+      "A_PREPLACE": 5.952659540885288e-07,
+      "A_PLACE": 0.0010303624639910298,
+      "A_OPEN": 0.001904362015760147,
+      "A_RETREAT": 0.0019043602857344304,
+      "A_SETTLE": 0.001904362015760147
+    },
+    "scope": "CPU reconstruction of recorded measured attachment and commanded TCP pose. Positive projection margin refutes initial overlap along separation axis; does not prove swept gripper clearance or exact contact partner."
+  },
+  {
+    "run": "741001_axis90",
+    "attachment_projected_geometry": {
+      "A_LIFT": {
+        "predicted_A_axis_radius_m": 0.020083593310344382,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.0029164058561236654,
+        "predicted_A_goal": [
+          -0.062423086554677,
+          -0.010501575886310082,
+          0.021999999404794635
+        ]
+      },
+      "A_PREPLACE": {
+        "predicted_A_axis_radius_m": 0.020083248947993983,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.002920248640258416,
+        "predicted_A_goal": [
+          -0.0624219865376894,
+          -0.010498076834773247,
+          0.021997482957442617
+        ]
+      }
+    },
+    "B_displacement_max_by_phase_m": {
+      "A_REACH": 5.952659540885288e-07,
+      "A_DESCEND": 5.952659540885288e-07,
+      "A_CLOSE": 5.952659540885288e-07,
+      "A_LIFT": 5.976508199588858e-07,
+      "A_PREPLACE": 5.952659540885288e-07,
+      "A_PLACE": 0.010503391347853828,
+      "A_OPEN": 0.023038867425644587,
+      "A_RETREAT": 0.023370044537646482,
+      "A_SETTLE": 0.023370044537646482
+    },
+    "scope": "CPU reconstruction of recorded measured attachment and commanded TCP pose. Positive projection margin refutes initial overlap along separation axis; does not prove swept gripper clearance or exact contact partner."
+  },
+  {
+    "run": "741001_axis90_rule",
+    "attachment_projected_geometry": {},
+    "B_displacement_max_by_phase_m": {
+      "A_REACH": 5.952659540885288e-07,
+      "A_DESCEND": 5.952659540885288e-07,
+      "A_CLOSE": 5.952659540885288e-07,
+      "A_LIFT": 5.976508199588858e-07
+    },
+    "scope": "CPU reconstruction of recorded measured attachment and commanded TCP pose. Positive projection margin refutes initial overlap along separation axis; does not prove swept gripper clearance or exact contact partner."
+  },
+  {
+    "run": "741001_axis_minus90",
+    "attachment_projected_geometry": {
+      "A_LIFT": {
+        "predicted_A_axis_radius_m": 0.020083593310344386,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.002916407247595964,
+        "predicted_A_goal": [
+          -0.062423086554677,
+          -0.10363257326841448,
+          0.021999999404794635
+        ]
+      },
+      "A_PREPLACE": {
+        "predicted_A_axis_radius_m": 0.020082899153008142,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.0029157053021150806,
+        "predicted_A_goal": [
+          -0.062422530553524744,
+          -0.10363116169564111,
+          0.021998157312857234
+        ]
+      }
+    },
+    "B_displacement_max_by_phase_m": {
+      "A_REACH": 5.952659540885288e-07,
+      "A_DESCEND": 5.952659540885288e-07,
+      "A_CLOSE": 5.952659540885288e-07,
+      "A_LIFT": 5.976508199588858e-07,
+      "A_PREPLACE": 5.952659540885288e-07,
+      "A_PLACE": 0.010893280973061848,
+      "A_OPEN": 0.022366399736729225,
+      "A_RETREAT": 0.022918515307981214,
+      "A_SETTLE": 0.022918515307981214
+    },
+    "scope": "CPU reconstruction of recorded measured attachment and commanded TCP pose. Positive projection margin refutes initial overlap along separation axis; does not prove swept gripper clearance or exact contact partner."
+  },
+  {
+    "run": "741001_axis_search",
+    "attachment_projected_geometry": {
+      "A_LIFT": {
+        "predicted_A_axis_radius_m": 0.02029343783632367,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.0027065609025376802,
+        "predicted_A_goal": [
+          -0.015857714057833663,
+          -0.05706707411170099,
+          0.021999999404794635
+        ]
+      },
+      "A_PREPLACE": {
+        "predicted_A_axis_radius_m": 0.020291053046569783,
+        "legacy_A_axis_radius_m": 0.02,
+        "predicted_separation_margin_m": 0.002710222872599189,
+        "predicted_A_goal": [
+          -0.015856438032315456,
+          -0.05706603395231772,
+          0.02199815555926396
+        ]
+      }
+    },
+    "B_displacement_max_by_phase_m": {
+      "A_REACH": 5.952659540885288e-07,
+      "A_DESCEND": 5.952659540885288e-07,
+      "A_CLOSE": 5.952659540885288e-07,
+      "A_LIFT": 5.976508199588858e-07,
+      "A_PREPLACE": 5.952659540885288e-07,
+      "A_PLACE": 0.0010303624639910298,
+      "A_OPEN": 0.001904362015760147,
+      "A_RETREAT": 0.0019043602857344304,
+      "A_SETTLE": 0.001904362015760147
+    },
+    "scope": "CPU reconstruction of recorded measured attachment and commanded TCP pose. Positive projection margin refutes initial overlap along separation axis; does not prove swept gripper clearance or exact contact partner."
+  }
+]

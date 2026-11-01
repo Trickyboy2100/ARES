@@ -1,0 +1,89 @@
+{
+  "physics_steps": 0,
+  "optimizer_steps": 0,
+  "device": "CPU",
+  "checks": [
+    {
+      "name": "same_physical_frame_counted_once",
+      "pass_": true
+    },
+    {
+      "name": "outer_hysteresis_retains_active",
+      "pass_": true
+    },
+    {
+      "name": "third_distinct_stable_frame_reaches",
+      "pass_": true
+    },
+    {
+      "name": "distance_exit_resets_dwell",
+      "pass_": true
+    },
+    {
+      "name": "angle_exit_resets_dwell",
+      "pass_": true
+    },
+    {
+      "name": "motion_resets_dwell",
+      "pass_": true
+    },
+    {
+      "name": "new_dwell_after_motion_not_early",
+      "pass_": true
+    },
+    {
+      "name": "new_dwell_after_motion_completes",
+      "pass_": true
+    },
+    {
+      "name": "pure_gate_has_no_evaluate_or_bias_access",
+      "pass_": true
+    },
+    {
+      "name": "invalid_distance_cannot_confirm",
+      "pass_": true
+    },
+    {
+      "name": "reverse_step_not_counted",
+      "pass_": true
+    },
+    {
+      "name": "projection_full_Y",
+      "pass_": true
+    },
+    {
+      "name": "context92_full_Y",
+      "pass_": true
+    },
+    {
+      "name": "projection_y_only_YZ",
+      "pass_": true
+    },
+    {
+      "name": "context92_y_only_YZ",
+      "pass_": true
+    },
+    {
+      "name": "projection_task_Y",
+      "pass_": true
+    },
+    {
+      "name": "context92_task_Y",
+      "pass_": true
+    },
+    {
+      "name": "projection_task_YZ",
+      "pass_": true
+    },
+    {
+      "name": "context92_task_YZ",
+      "pass_": true
+    }
+  ],
+  "all_pass": true,
+  "sources": {
+    "program_completion_contract.py": "48ceb4b9d52e4ae25fe124fbe1f824bec69c25a3359f122677b5a430bc1abd0a",
+    "program_skill_baselines.py": "afbad8e2d45b180afe3f40973f2be0b9203885cc4e191f7ae65950fe33655f36",
+    "program_adaptive_contact.py": "e2d41f66f06e0d43cecd3474c4d81105431341604d54d655df5b479c0002d4a9"
+  }
+}

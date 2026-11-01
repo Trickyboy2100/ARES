@@ -1,0 +1,192 @@
+{
+  "task": "TwoRobotPickCube-v1",
+  "claim": "PHYSICAL_HANDOFF_PARAMETER_PAIR_NOT_RL_GAIN",
+  "source_kind": "MEASURED_POSE_REPLAY",
+  "physics_steps_added": 0,
+  "frames": 101,
+  "fps": 20,
+  "max_state_readback_error": 5.960464477539063e-08,
+  "frame_mapping": "frame k=physical step k, PTS k/20; initial frame0",
+  "camera_eye": [
+    1.3,
+    0,
+    0.9
+  ],
+  "camera_target": [
+    0,
+    0,
+    0.2
+  ],
+  "camera_intrinsic": [
+    [
+      517.9378662109375,
+      0.0,
+      400.0
+    ],
+    [
+      0.0,
+      517.9378662109375,
+      300.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_extrinsic": [
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.4740998148918152,
+      0.0,
+      -0.8804711103439331,
+      0.17609426379203796
+    ],
+    [
+      -0.8804712295532227,
+      0.0,
+      -0.4740998148918152,
+      1.5713022947311401
+    ]
+  ],
+  "all_cube_goal_center_pixel_min": [
+    340.2307687935863,
+    332.318300978136
+  ],
+  "all_cube_goal_center_pixel_max": [
+    449.02658598187304,
+    348.3169991210281
+  ],
+  "native_model_source_sha256": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba",
+  "sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_two_robot/742000_continuous_p020/TRAJECTORY.json.gz",
+      "sha256": "25b2c18d8c693ad688d189d7b928df7f7c3297f56d86fa810684e5d7506811ab",
+      "execution_manifest": {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_two_robot/742000_continuous_p020/MANIFEST.json",
+        "sha256": "d68ce92159b99c7adfd388e799fba5ac803951bfe6781759a18955f369eb2e11",
+        "content": {
+          "resource_context": "SHARED_GPU_CONTENTION",
+          "task": "TwoRobotPickCube-v1",
+          "native_horizon": 100,
+          "initial_distribution": "NATIVE_UNCHANGED",
+          "source_kind": "ACTUAL_PHYSX_EXECUTION",
+          "optimizer_updates": 0,
+          "reset_count": 1,
+          "seed": 742000,
+          "parameters": {
+            "push_y": 0.02,
+            "grasp_axis": "geometry",
+            "path_stride": 3,
+            "controller": "continuous-clear"
+          },
+          "source_sha256": "2512041f4e7c4678c8081aa58ce9a24e08b67dfb5e6e966b350b0a09c5db63da",
+          "baseline_status": "DEVELOPMENT_SCOUT_NOT_YET_VALIDATED_STRONG",
+          "collision_scope": "native robot self collision planner; other robot and cube NOT registered as planning obstacles; actual contacts logged",
+          "timing": "subsampled absolute targets, not native TOPP timing; actual tracking recorded",
+          "dependencies_sha256": {
+            "/home/andyee/robot-research/ARES-Skilllab/repos/ARES-SCI-program/research/skill_handoff_lab/tools/handoff_physics.py": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f",
+            "/home/andyee/robot-research/ARES-Skilllab/repos/ARES-SCI-program/research/skill_handoff_lab/tools/method_stack_physics.py": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e",
+            "/home/andyee/robot-research/ARES-Skilllab/external/benchmark_scout_20261027/ManiSkill/mani_skill/envs/tasks/tabletop/two_robot_pick_cube.py": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba",
+            "/home/andyee/robot-research/ARES-Skilllab/external/benchmark_scout_20261027/ManiSkill/mani_skill/utils/scene_builder/table/scene_builder.py": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a",
+            "/home/andyee/robot-research/ARES-Skilllab/external/benchmark_scout_20261027/ManiSkill/mani_skill/agents/multi_agent.py": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39",
+            "/home/andyee/robot-research/ARES-Skilllab/external/benchmark_scout_20261027/ManiSkill/mani_skill/examples/motionplanning/panda/motionplanner.py": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531",
+            "/home/andyee/robot-research/ARES-Skilllab/external/benchmark_scout_20261027/ManiSkill/mani_skill/examples/motionplanning/base_motionplanner/motionplanner.py": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+          },
+          "maniskill_revision": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+          "maniskill_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_two_robot/742000_continuous_p080/TRAJECTORY.json.gz",
+      "sha256": "dbbc2c0357a9e3cecf18f784360886da7126c8455059feb6768010bdc109dcd4",
+      "execution_manifest": {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_two_robot/742000_continuous_p080/MANIFEST.json",
+        "sha256": "45ba04f937f85d37ebaabf0375bc6819802d2ae13e3b2186866f135e4dfa7e06",
+        "content": {
+          "resource_context": "SHARED_GPU_CONTENTION",
+          "task": "TwoRobotPickCube-v1",
+          "native_horizon": 100,
+          "initial_distribution": "NATIVE_UNCHANGED",
+          "source_kind": "ACTUAL_PHYSX_EXECUTION",
+          "optimizer_updates": 0,
+          "reset_count": 1,
+          "seed": 742000,
+          "parameters": {
+            "push_y": 0.08,
+            "grasp_axis": "geometry",
+            "path_stride": 3,
+            "controller": "continuous-clear"
+          },
+          "source_sha256": "2512041f4e7c4678c8081aa58ce9a24e08b67dfb5e6e966b350b0a09c5db63da",
+          "baseline_status": "DEVELOPMENT_SCOUT_NOT_YET_VALIDATED_STRONG",
+          "collision_scope": "native robot self collision planner; other robot and cube NOT registered as planning obstacles; actual contacts logged",
+          "timing": "subsampled absolute targets, not native TOPP timing; actual tracking recorded",
+          "dependencies_sha256": {
+            "/home/andyee/robot-research/ARES-Skilllab/repos/ARES-SCI-program/research/skill_handoff_lab/tools/handoff_physics.py": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f",
+            "/home/andyee/robot-research/ARES-Skilllab/repos/ARES-SCI-program/research/skill_handoff_lab/tools/method_stack_physics.py": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e",
+            "/home/andyee/robot-research/ARES-Skilllab/external/benchmark_scout_20261027/ManiSkill/mani_skill/envs/tasks/tabletop/two_robot_pick_cube.py": "2ba4682398e4ecf2ec97e44fb226e17e5a319c25b8730745c1d0cd766c82b5ba",
+            "/home/andyee/robot-research/ARES-Skilllab/external/benchmark_scout_20261027/ManiSkill/mani_skill/utils/scene_builder/table/scene_builder.py": "251d40544a4cc3cbcdd7a8fb81835a898d165330ce819fcf2a9a7fab6c309d3a",
+            "/home/andyee/robot-research/ARES-Skilllab/external/benchmark_scout_20261027/ManiSkill/mani_skill/agents/multi_agent.py": "69874ba0bf3ccbf02e540651bb0104d7ffb2871154a0d6b24f41bb483ea2aa39",
+            "/home/andyee/robot-research/ARES-Skilllab/external/benchmark_scout_20261027/ManiSkill/mani_skill/examples/motionplanning/panda/motionplanner.py": "9e9fa6b968e3cf555a9c87c4b6d518a000ff3bd8f2203ccae2d86a0d1873d531",
+            "/home/andyee/robot-research/ARES-Skilllab/external/benchmark_scout_20261027/ManiSkill/mani_skill/examples/motionplanning/base_motionplanner/motionplanner.py": "e0ca3ebdde9901e9a7699873941f4c72e9293fcb54f106fdde147201a6d03bfb"
+          },
+          "maniskill_revision": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+          "maniskill_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      }
+    }
+  ],
+  "render_source_sha256": "7b983fa3303798c2f5a3a7305f7ee9c0dfd360fc78641f01a8b3b48ea90622c0",
+  "outputs": {
+    "DATA.json": "fc9edd390161b2efb2efebb46cf1f51ac87075f390930a1649ba7c0d4de19486",
+    "SYNC_VIEWER.html": "42317e51cb292a6f12ca407650f7bb3ac19484deca5377bb14066a68bdf24973",
+    "RAW_070.png": "df72de3469242acfd6e7d70fba6643139c9a3baa6b1217556cc8c6c3c582d2a2",
+    "ANNOTATED_040.png": "75a78f56d4d179bdccc03e453847c461ab39e1d911f8767ebd92cd8517b7707a",
+    "RAW.mp4": "b45a8eaee085a827b53fbd2ba564455eeaa2620154bac6e5ef4276e8a2532f53",
+    "HANDOFF_CLOSEUP.png": "bc0edb63ecd1e8c391f43ecf7b648cb4464c8f7146a0d78b5ef68b849ffc0883",
+    "CAPTION.md": "74f59f6a1f1d011293acf3426aae16d507eddf86734dba011dff19072a85e148",
+    "ANNOTATED.mp4": "86d2a4023fae1e27a1db967ce4b4d4bba6e02ab61740a92ad67dfb38da45a2b6",
+    "RIGHT_SOURCE.json.gz": "dbbc2c0357a9e3cecf18f784360886da7126c8455059feb6768010bdc109dcd4",
+    "QA.json": "56de807a5c6b23a57480c8cc88542b85eda604a98bc79a7cd0aad78d4c0bd93d",
+    "ANNOTATED_070.png": "c3ac676d78354cdf6cc73a3613c561058739df6ef05cd7a031b3afe260cea6cd",
+    "TRACE.svg": "14173c8a50364858beee79f3ba2862d2f841abf83e66ba2a11d05a990a8572d2",
+    "RAW_000.png": "bdc37599476a9a56f086b8dcd1e4476edcef9dd92e3fe45038183de2587922fd",
+    "ANNOTATED_100.png": "255397b448dd9a9dcccf97b4140b5a3372bc456a143cc6b303cbeb734078eede",
+    "QA_BROWSER.html": "3a888853cec8cbaa5217b6a2ca927050846cd6bd62ecbae49d51c80cfdb6782d",
+    "TRACE.png": "53badc240399d476f19b570beb70f82a6100cb4d12f2b51eea582b85ab00ebb2",
+    "ANNOTATED_000.png": "96f5c6e10fa2dc89cef85a76ecbc814eef76ef1182edd4ba3e7c1841a1b4267f",
+    "LEFT_SOURCE.json.gz": "25b2c18d8c693ad688d189d7b928df7f7c3297f56d86fa810684e5d7506811ab",
+    "RAW_100.png": "1283bec9a7f45557ebfbffdb404fac2ba4e754f5536633f618491b93e9dbe764",
+    "RAW_040.png": "6a398ffb844413ef25e389ae5f885058e14e4445cdd81459b949eafdfc49968d",
+    "README.md": "9a30a9f028b982f2625f03efc4ff2c81a62b57c66c11d7504717fcc8a1f09ed7",
+    "render_source.py": "7b983fa3303798c2f5a3a7305f7ee9c0dfd360fc78641f01a8b3b48ea90622c0"
+  },
+  "closeup": {
+    "frame": 70,
+    "source": "RAW_070.png",
+    "source_sha256": "df72de3469242acfd6e7d70fba6643139c9a3baa6b1217556cc8c6c3c582d2a2",
+    "pixel_boxes": [
+      [
+        336,
+        234,
+        516,
+        394
+      ],
+      [
+        1146,
+        234,
+        1326,
+        394
+      ]
+    ],
+    "scale": 3,
+    "resampling": "NEAREST"
+  }
+}

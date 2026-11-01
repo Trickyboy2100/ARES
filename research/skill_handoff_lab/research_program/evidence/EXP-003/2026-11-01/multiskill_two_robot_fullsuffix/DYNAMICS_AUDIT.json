@@ -1,0 +1,838 @@
+{
+  "episodes": 24,
+  "native_control_steps": 2400,
+  "urdf": "external/benchmark_scout_20261027/ManiSkill/mani_skill/assets/robots/panda/panda_v3.urdf",
+  "urdf_sha256": "d040277352476639950e2ddce1dff8a1c0e95df470e5e9ed186cd01c468fa412",
+  "URDF_arm_velocity_limits": [
+    2.175,
+    2.175,
+    2.175,
+    2.175,
+    2.61,
+    2.61,
+    2.61
+  ],
+  "URDF_acceleration_limit_available": false,
+  "actual20Hz_max_URDF_ratio": 0.9931953474022877,
+  "command_fd_accel_peak": 30.30304522852835,
+  "status": "DYNAMIC_SKILL_CONTRACT_NOT_PROVEN",
+  "scope": "Native success and action-space validity do not imply dynamical certification. Sampled arm velocity remains below URDF bounds, but100Hz peaks are unmeasured; stride3 does not preserve original.9rad/s/.9rad/s2 TOPP timing; command finite differences are not physical acceleration. Gripper dynamic limits not certified.",
+  "rows": [
+    {
+      "case": "742000_continuous_clear",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot/742000_continuous_clear/TRAJECTORY.json.gz",
+      "sha256": "2eecf4f349d2beeff5e12b467855d6365a92911dc673c4524efa75583c57d4ca",
+      "success": true,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 2.029820203781128,
+          "actual20Hz_max_URDF_velocity_ratio": 0.9332506684051164,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 22,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.3983055613935,
+          "command_fd_velocity_rad_s": 2.8022743965891594,
+          "command_fd_acceleration_rad_s2": 21.637808199069926,
+          "tracking_max_rad": 0.19666453616784385,
+          "raw_planned_path_fd_velocity": 0.934091826131711,
+          "raw_planned_path_fd_acceleration": 1.1643623172953086
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 1.1397535800933838,
+          "actual20Hz_max_URDF_velocity_ratio": 0.5240246345256937,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 5,
+          "actual20Hz_velocity_fd_accel_rad_s2": 8.833147697150707,
+          "command_fd_velocity_rad_s": 1.8799147954296513,
+          "command_fd_acceleration_rad_s2": 19.865078916379716,
+          "tracking_max_rad": 0.10941108548016643,
+          "raw_planned_path_fd_velocity": 0.9214800076745089,
+          "raw_planned_path_fd_acceleration": 1.1687354873514353
+        }
+      ]
+    },
+    {
+      "case": "742000_continuous_p020",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot/742000_continuous_p020/TRAJECTORY.json.gz",
+      "sha256": "25b2c18d8c693ad688d189d7b928df7f7c3297f56d86fa810684e5d7506811ab",
+      "success": true,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.8966729640960693,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8720335467108365,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 18,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.3983055613935,
+          "command_fd_velocity_rad_s": 2.7757770844562035,
+          "command_fd_acceleration_rad_s2": 21.637808199069926,
+          "tracking_max_rad": 0.18191232396835422,
+          "raw_planned_path_fd_velocity": 0.9371764537011407,
+          "raw_planned_path_fd_acceleration": 1.3320923247065684
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 1.4022655487060547,
+          "actual20Hz_max_URDF_velocity_ratio": 0.644719792508531,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 9,
+          "actual20Hz_velocity_fd_accel_rad_s2": 7.914899326860905,
+          "command_fd_velocity_rad_s": 2.214677272733261,
+          "command_fd_acceleration_rad_s2": 18.354770190285304,
+          "tracking_max_rad": 0.13539090597507042,
+          "raw_planned_path_fd_velocity": 0.9256819118512016,
+          "raw_planned_path_fd_acceleration": 1.1568082676673972
+        }
+      ]
+    },
+    {
+      "case": "742000_continuous_p080",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot/742000_continuous_p080/TRAJECTORY.json.gz",
+      "sha256": "dbbc2c0357a9e3cecf18f784360886da7126c8455059feb6768010bdc109dcd4",
+      "success": false,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 2.1601998805999756,
+          "actual20Hz_max_URDF_velocity_ratio": 0.9931953474022877,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 29,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.3983055613935,
+          "command_fd_velocity_rad_s": 2.78821757584236,
+          "command_fd_acceleration_rad_s2": 21.637808199069926,
+          "tracking_max_rad": 0.21430655842109703,
+          "raw_planned_path_fd_velocity": 0.9294058586141252,
+          "raw_planned_path_fd_acceleration": 1.0115421032820036
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 0.2666638493537903,
+          "actual20Hz_max_URDF_velocity_ratio": 0.12260406866840934,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 0,
+          "actual20Hz_velocity_fd_accel_rad_s2": 3.8913142681121826,
+          "command_fd_velocity_rad_s": 0.6563373026164221,
+          "command_fd_acceleration_rad_s2": 8.755686506626413,
+          "tracking_max_rad": 0.026687989241505616,
+          "raw_planned_path_fd_velocity": 0.9217797133959715,
+          "raw_planned_path_fd_acceleration": 0.97397498520686
+        }
+      ]
+    },
+    {
+      "case": "742000_nominal",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot/742000_nominal/TRAJECTORY.json.gz",
+      "sha256": "67a8346c357a62856fb40a672f23d281c0a44f704e317bddef9a4e9e8af03904",
+      "success": false,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 0.42594024538993835,
+          "actual20Hz_max_URDF_velocity_ratio": 0.19583459558158087,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 0,
+          "actual20Hz_velocity_fd_accel_rad_s2": 1.548918456537649,
+          "command_fd_velocity_rad_s": 0.5656542207681081,
+          "command_fd_acceleration_rad_s2": 2.956917226663602,
+          "tracking_max_rad": 0.039827200458161904,
+          "raw_planned_path_fd_velocity": 0.5656542207681081,
+          "raw_planned_path_fd_acceleration": 1.1014422543790257
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 0.0,
+          "actual20Hz_max_URDF_velocity_ratio": 0.0,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 0,
+          "actual20Hz_velocity_fd_accel_rad_s2": 0.0,
+          "command_fd_velocity_rad_s": 0.0,
+          "command_fd_acceleration_rad_s2": 0.0,
+          "tracking_max_rad": 0.0,
+          "raw_planned_path_fd_velocity": null,
+          "raw_planned_path_fd_acceleration": null
+        }
+      ]
+    },
+    {
+      "case": "742000_stride3",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot/742000_stride3/TRAJECTORY.json.gz",
+      "sha256": "fb00aa3b1c24516638a85616e56b8ba3e5d8bcc1be0b1a4ecfb3d75154bc69bf",
+      "success": false,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.0011621713638306,
+          "actual20Hz_max_URDF_velocity_ratio": 0.46030444660406006,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 4,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.3983055613935,
+          "command_fd_velocity_rad_s": 1.6308225768562767,
+          "command_fd_acceleration_rad_s2": 22.02754095107595,
+          "tracking_max_rad": 0.09525681176243861,
+          "raw_planned_path_fd_velocity": 0.5899718490590766,
+          "raw_planned_path_fd_acceleration": 1.0859232250611581
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 1.073893427848816,
+          "actual20Hz_max_URDF_velocity_ratio": 0.49374410475807634,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 2,
+          "actual20Hz_velocity_fd_accel_rad_s2": 9.970944337546825,
+          "command_fd_velocity_rad_s": 1.770996158444138,
+          "command_fd_acceleration_rad_s2": 30.133923709641135,
+          "tracking_max_rad": 0.10110233977141969,
+          "raw_planned_path_fd_velocity": 0.9367064727477059,
+          "raw_planned_path_fd_acceleration": 1.0158175714886084
+        }
+      ]
+    },
+    {
+      "case": "742001_continuous_clear",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot/742001_continuous_clear/TRAJECTORY.json.gz",
+      "sha256": "aae2b1a3e86357e94c6f9387c248c409790ceceac2ce4b7094d598d7d2cb288c",
+      "success": false,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 2.020617961883545,
+          "actual20Hz_max_URDF_velocity_ratio": 0.9290197525901357,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 21,
+          "actual20Hz_velocity_fd_accel_rad_s2": 12.323435433208942,
+          "command_fd_velocity_rad_s": 2.8047451853367145,
+          "command_fd_acceleration_rad_s2": 29.052261108115466,
+          "tracking_max_rad": 0.19612773852663512,
+          "raw_planned_path_fd_velocity": 0.9349153331384796,
+          "raw_planned_path_fd_acceleration": 1.1177736633734445
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 2.1371958255767822,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8188489753167748,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 16,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.854058337863535,
+          "command_fd_velocity_rad_s": 2.7707108126212665,
+          "command_fd_acceleration_rad_s2": 23.504304240895642,
+          "tracking_max_rad": 0.21346688133796987,
+          "raw_planned_path_fd_velocity": 0.923571196901003,
+          "raw_planned_path_fd_acceleration": 1.1223799134544963
+        }
+      ]
+    },
+    {
+      "case": "742001_continuous_p020",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot/742001_continuous_p020/TRAJECTORY.json.gz",
+      "sha256": "cc1c525b9eb34cb828733f066a26b211ec84d88d60fc147281b9f0544c588a65",
+      "success": false,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.8286552429199219,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8407610312275503,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 17,
+          "actual20Hz_velocity_fd_accel_rad_s2": 8.903759364038706,
+          "command_fd_velocity_rad_s": 2.740600728347742,
+          "command_fd_acceleration_rad_s2": 21.849627056030393,
+          "tracking_max_rad": 0.17571105683430455,
+          "raw_planned_path_fd_velocity": 0.928998552944762,
+          "raw_planned_path_fd_acceleration": 1.064470521055316
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 2.080360174179077,
+          "actual20Hz_max_URDF_velocity_ratio": 0.7970728636701445,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 15,
+          "actual20Hz_velocity_fd_accel_rad_s2": 8.773778517497703,
+          "command_fd_velocity_rad_s": 2.7517576015473333,
+          "command_fd_acceleration_rad_s2": 18.724947130941768,
+          "tracking_max_rad": 0.2078198428225766,
+          "raw_planned_path_fd_velocity": 0.9211736428564737,
+          "raw_planned_path_fd_acceleration": 1.146166426045214
+        }
+      ]
+    },
+    {
+      "case": "742001_continuous_p080",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot/742001_continuous_p080/TRAJECTORY.json.gz",
+      "sha256": "dd0f763cc07ab094419ade7692223cdd93d503ddec1ab54c3e279cccd91a9a1a",
+      "success": false,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 2.1306815147399902,
+          "actual20Hz_max_URDF_velocity_ratio": 0.9796236849379266,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 13,
+          "actual20Hz_velocity_fd_accel_rad_s2": 8.094463795423508,
+          "command_fd_velocity_rad_s": 2.7944595519615634,
+          "command_fd_acceleration_rad_s2": 16.03044219147338,
+          "tracking_max_rad": 0.2075421361691936,
+          "raw_planned_path_fd_velocity": 0.9314872188376544,
+          "raw_planned_path_fd_acceleration": 1.064470521055316
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 0.0,
+          "actual20Hz_max_URDF_velocity_ratio": 0.0,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 0,
+          "actual20Hz_velocity_fd_accel_rad_s2": 0.0,
+          "command_fd_velocity_rad_s": 0.0,
+          "command_fd_acceleration_rad_s2": 0.0,
+          "tracking_max_rad": 0.0,
+          "raw_planned_path_fd_velocity": null,
+          "raw_planned_path_fd_acceleration": null
+        }
+      ]
+    },
+    {
+      "case": "742001_nominal",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot/742001_nominal/TRAJECTORY.json.gz",
+      "sha256": "46aff77226d154c09f67a3a34364f4407e22e354edc2314ceac2fddf0ac9ebe4",
+      "success": false,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 0.4044113755226135,
+          "actual20Hz_max_URDF_velocity_ratio": 0.1859362646080982,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 0,
+          "actual20Hz_velocity_fd_accel_rad_s2": 1.4633012260310352,
+          "command_fd_velocity_rad_s": 0.5290803625883456,
+          "command_fd_acceleration_rad_s2": 3.26228862862008,
+          "tracking_max_rad": 0.037736189137231424,
+          "raw_planned_path_fd_velocity": 0.5290803625883456,
+          "raw_planned_path_fd_acceleration": 1.090391103425503
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 0.0,
+          "actual20Hz_max_URDF_velocity_ratio": 0.0,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 0,
+          "actual20Hz_velocity_fd_accel_rad_s2": 0.0,
+          "command_fd_velocity_rad_s": 0.0,
+          "command_fd_acceleration_rad_s2": 0.0,
+          "tracking_max_rad": 0.0,
+          "raw_planned_path_fd_velocity": null,
+          "raw_planned_path_fd_acceleration": null
+        }
+      ]
+    },
+    {
+      "case": "742001_p020_aligned",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot/742001_p020_aligned/TRAJECTORY.json.gz",
+      "sha256": "79b86b366d1e35f4bb81e0b922579b1b097acffb6899de389c4adb59235aa6e9",
+      "success": false,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.8286552429199219,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8407610312275503,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 17,
+          "actual20Hz_velocity_fd_accel_rad_s2": 8.903759364038706,
+          "command_fd_velocity_rad_s": 2.740600728347742,
+          "command_fd_acceleration_rad_s2": 21.849627056030393,
+          "tracking_max_rad": 0.17571105683430455,
+          "raw_planned_path_fd_velocity": 0.928998552944762,
+          "raw_planned_path_fd_acceleration": 1.064470521055316
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 1.571263074874878,
+          "actual20Hz_max_URDF_velocity_ratio": 0.7224198045401738,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 11,
+          "actual20Hz_velocity_fd_accel_rad_s2": 11.630826890468597,
+          "command_fd_velocity_rad_s": 2.4175963119486488,
+          "command_fd_acceleration_rad_s2": 26.63858566174264,
+          "tracking_max_rad": 0.15314390784475185,
+          "raw_planned_path_fd_velocity": 0.9260757295827649,
+          "raw_planned_path_fd_acceleration": 1.1686474817660384
+        }
+      ]
+    },
+    {
+      "case": "742001_p020_aligned_y",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot/742001_p020_aligned_y/TRAJECTORY.json.gz",
+      "sha256": "a4dce2622bc63b930837e7c6d97842d224b2f3e9f71739be0a2ce64acdf91d5c",
+      "success": false,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.8286552429199219,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8407610312275503,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 17,
+          "actual20Hz_velocity_fd_accel_rad_s2": 8.903759364038706,
+          "command_fd_velocity_rad_s": 2.740600728347742,
+          "command_fd_acceleration_rad_s2": 21.849627056030393,
+          "tracking_max_rad": 0.17571105683430455,
+          "raw_planned_path_fd_velocity": 0.928998552944762,
+          "raw_planned_path_fd_acceleration": 1.064470521055316
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 2.0148587226867676,
+          "actual20Hz_max_URDF_velocity_ratio": 0.7719765221022098,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 16,
+          "actual20Hz_velocity_fd_accel_rad_s2": 12.542799756047316,
+          "command_fd_velocity_rad_s": 2.778225248583702,
+          "command_fd_acceleration_rad_s2": 29.032818301738978,
+          "tracking_max_rad": 0.2012842244869771,
+          "raw_planned_path_fd_velocity": 0.9260757295827649,
+          "raw_planned_path_fd_acceleration": 1.141321504623871
+        }
+      ]
+    },
+    {
+      "case": "742001_stride3",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot/742001_stride3/TRAJECTORY.json.gz",
+      "sha256": "9efe5238c9fd6024679409cbee483bbc64913212378b8665c37ddcccf5fb05f0",
+      "success": false,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 0.9448549747467041,
+          "actual20Hz_max_URDF_velocity_ratio": 0.43441608034331225,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 3,
+          "actual20Hz_velocity_fd_accel_rad_s2": 9.690170884132385,
+          "command_fd_velocity_rad_s": 1.608754839160187,
+          "command_fd_acceleration_rad_s2": 23.00839605616298,
+          "tracking_max_rad": 0.0897199180975532,
+          "raw_planned_path_fd_velocity": 0.5547707582060646,
+          "raw_planned_path_fd_acceleration": 1.1020750498455631
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 2.091040849685669,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8011650765079191,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 13,
+          "actual20Hz_velocity_fd_accel_rad_s2": 6.111507415771484,
+          "command_fd_velocity_rad_s": 2.7597020476748035,
+          "command_fd_acceleration_rad_s2": 8.45752086927609,
+          "tracking_max_rad": 0.20888419124229207,
+          "raw_planned_path_fd_velocity": 0.9215511092205819,
+          "raw_planned_path_fd_acceleration": 1.1650072074527615
+        }
+      ]
+    },
+    {
+      "case": "742010_full_p020",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742010_full_p020/TRAJECTORY.json.gz",
+      "sha256": "6973a5b3a30e4163e3091cf045c8fc0b03aa5a371a5f12f9e8932c60d70b8678",
+      "success": true,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.7886264324188232,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8223569804224475,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 16,
+          "actual20Hz_velocity_fd_accel_rad_s2": 7.946328539401293,
+          "command_fd_velocity_rad_s": 2.7159510703103074,
+          "command_fd_acceleration_rad_s2": 18.05222991168822,
+          "tracking_max_rad": 0.1724168806816011,
+          "raw_planned_path_fd_velocity": 0.9278833761102678,
+          "raw_planned_path_fd_acceleration": 1.064169705829343
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 1.5240594148635864,
+          "actual20Hz_max_URDF_velocity_ratio": 0.7007169723510743,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 11,
+          "actual20Hz_velocity_fd_accel_rad_s2": 11.728443913161755,
+          "command_fd_velocity_rad_s": 2.1239845623893494,
+          "command_fd_acceleration_rad_s2": 24.821032979582643,
+          "tracking_max_rad": 0.13923766383399555,
+          "raw_planned_path_fd_velocity": 0.91665289931957,
+          "raw_planned_path_fd_acceleration": 1.2709092338516246
+        }
+      ]
+    },
+    {
+      "case": "742010_full_p020_other",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742010_full_p020_other/TRAJECTORY.json.gz",
+      "sha256": "1b9292661c9f59ed39b28248ffd10fe7df3170a73c54afa3496c0c63a22b14e4",
+      "success": true,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.7886264324188232,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8223569804224475,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 16,
+          "actual20Hz_velocity_fd_accel_rad_s2": 7.946328539401293,
+          "command_fd_velocity_rad_s": 2.7159510703103074,
+          "command_fd_acceleration_rad_s2": 18.05222991168822,
+          "tracking_max_rad": 0.1724168806816011,
+          "raw_planned_path_fd_velocity": 0.9278833761102678,
+          "raw_planned_path_fd_acceleration": 1.064169705829343
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 2.033876895904541,
+          "actual20Hz_max_URDF_velocity_ratio": 0.779263178507487,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 18,
+          "actual20Hz_velocity_fd_accel_rad_s2": 11.783261969685555,
+          "command_fd_velocity_rad_s": 2.7499568208868563,
+          "command_fd_acceleration_rad_s2": 25.20677988212334,
+          "tracking_max_rad": 0.20318384043090565,
+          "raw_planned_path_fd_velocity": 0.91665289931957,
+          "raw_planned_path_fd_acceleration": 1.319254684559534
+        }
+      ]
+    },
+    {
+      "case": "742010_full_p050",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742010_full_p050/TRAJECTORY.json.gz",
+      "sha256": "b43ad2e80dd15ce65440ebbb6e1bdbfe71c211a24712fe65060aba86137238e1",
+      "success": true,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.9962154626846313,
+          "actual20Hz_max_URDF_velocity_ratio": 0.9178002127285663,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 19,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.845728851854801,
+          "command_fd_velocity_rad_s": 2.7980734357516246,
+          "command_fd_acceleration_rad_s2": 26.027945873364807,
+          "tracking_max_rad": 0.19615891883057812,
+          "raw_planned_path_fd_velocity": 0.9326915835379257,
+          "raw_planned_path_fd_acceleration": 1.0975759206079514
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 1.390614628791809,
+          "actual20Hz_max_URDF_velocity_ratio": 0.639363047720372,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 6,
+          "actual20Hz_velocity_fd_accel_rad_s2": 8.737588115036488,
+          "command_fd_velocity_rad_s": 1.962770095552444,
+          "command_fd_acceleration_rad_s2": 19.58229518118086,
+          "tracking_max_rad": 0.12749190568633506,
+          "raw_planned_path_fd_velocity": 0.928005036171865,
+          "raw_planned_path_fd_acceleration": 1.168407106270086
+        }
+      ]
+    },
+    {
+      "case": "742011_full_p020",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742011_full_p020/TRAJECTORY.json.gz",
+      "sha256": "4310eb26fa15038ef19d2419c3c517809ac1325b635bf8cea74fc3cad752b85b",
+      "success": true,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.8629751205444336,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8565402853077856,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 18,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.787191521376371,
+          "command_fd_velocity_rad_s": 2.7949303620052612,
+          "command_fd_acceleration_rad_s2": 23.058043373348976,
+          "tracking_max_rad": 0.17895498481713368,
+          "raw_planned_path_fd_velocity": 0.9445539570399841,
+          "raw_planned_path_fd_acceleration": 1.1828022388137958
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 1.5323537588119507,
+          "actual20Hz_max_URDF_velocity_ratio": 0.7045304638215866,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 10,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.023341961205006,
+          "command_fd_velocity_rad_s": 2.361980584228318,
+          "command_fd_acceleration_rad_s2": 22.056328436178415,
+          "tracking_max_rad": 0.14730457885306514,
+          "raw_planned_path_fd_velocity": 0.9265550630035924,
+          "raw_planned_path_fd_acceleration": 1.1687507374698034
+        }
+      ]
+    },
+    {
+      "case": "742011_full_p020_other",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742011_full_p020_other/TRAJECTORY.json.gz",
+      "sha256": "8d79077e6aa4423d3fb1b4239253ecafe0fd18fa931a66a2d46b5a6d508cd2db",
+      "success": false,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.8629751205444336,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8565402853077856,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 18,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.787191521376371,
+          "command_fd_velocity_rad_s": 2.7949303620052612,
+          "command_fd_acceleration_rad_s2": 23.058043373348976,
+          "tracking_max_rad": 0.17895498481713368,
+          "raw_planned_path_fd_velocity": 0.9445539570399841,
+          "raw_planned_path_fd_acceleration": 1.1828022388137958
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 2.039787769317627,
+          "actual20Hz_max_URDF_velocity_ratio": 0.781527880964608,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 17,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.177446674206294,
+          "command_fd_velocity_rad_s": 2.7796637313614623,
+          "command_fd_acceleration_rad_s2": 21.638965607304158,
+          "tracking_max_rad": 0.20376853690401406,
+          "raw_planned_path_fd_velocity": 0.9265550630035924,
+          "raw_planned_path_fd_acceleration": 1.1437236352974443
+        }
+      ]
+    },
+    {
+      "case": "742011_full_p050",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742011_full_p050/TRAJECTORY.json.gz",
+      "sha256": "d3d08d733c63732308e4d5514e8d2072d8f4ec4cadeb7206e0421384ff2dbca3",
+      "success": true,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 2.0396220684051514,
+          "actual20Hz_max_URDF_velocity_ratio": 0.9377572728299547,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 22,
+          "actual20Hz_velocity_fd_accel_rad_s2": 12.913077976554632,
+          "command_fd_velocity_rad_s": 2.814882258352127,
+          "command_fd_acceleration_rad_s2": 30.30304522852835,
+          "tracking_max_rad": 0.1967844168905699,
+          "raw_planned_path_fd_velocity": 0.9382942562275565,
+          "raw_planned_path_fd_acceleration": 1.1506822294127692
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 1.3062207698822021,
+          "actual20Hz_max_URDF_velocity_ratio": 0.6005612735090585,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 7,
+          "actual20Hz_velocity_fd_accel_rad_s2": 6.332519054412842,
+          "command_fd_velocity_rad_s": 1.9868032086255205,
+          "command_fd_acceleration_rad_s2": 12.264199019177278,
+          "tracking_max_rad": 0.1252252598640584,
+          "raw_planned_path_fd_velocity": 0.9350697355176063,
+          "raw_planned_path_fd_acceleration": 1.1701705129991689
+        }
+      ]
+    },
+    {
+      "case": "742012_full_p020",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742012_full_p020/TRAJECTORY.json.gz",
+      "sha256": "52c06066b26dc6f30605d082294911acc5c84e8ec9a9357b0ef861db530f0ca0",
+      "success": true,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.8128916025161743,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8335133804672067,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 15,
+          "actual20Hz_velocity_fd_accel_rad_s2": 9.457679949700832,
+          "command_fd_velocity_rad_s": 2.7959767438894545,
+          "command_fd_acceleration_rad_s2": 23.819637184488403,
+          "tracking_max_rad": 0.17791875854791517,
+          "raw_planned_path_fd_velocity": 0.9446348673908034,
+          "raw_planned_path_fd_acceleration": 1.2238502914589053
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 1.3868753910064697,
+          "actual20Hz_max_URDF_velocity_ratio": 0.6376438579340091,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 9,
+          "actual20Hz_velocity_fd_accel_rad_s2": 7.252458184957504,
+          "command_fd_velocity_rad_s": 2.1817019026363083,
+          "command_fd_acceleration_rad_s2": 17.090749615919073,
+          "tracking_max_rad": 0.1336967101818951,
+          "raw_planned_path_fd_velocity": 0.9288439009289684,
+          "raw_planned_path_fd_acceleration": 1.1568002850865786
+        }
+      ]
+    },
+    {
+      "case": "742012_full_p020_other",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742012_full_p020_other/TRAJECTORY.json.gz",
+      "sha256": "01080655f079c35d247a6bca33a9efccc5664781a271e8858208cee4b5cfa281",
+      "success": true,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.8128916025161743,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8335133804672067,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 15,
+          "actual20Hz_velocity_fd_accel_rad_s2": 9.457679949700832,
+          "command_fd_velocity_rad_s": 2.7959767438894545,
+          "command_fd_acceleration_rad_s2": 23.819637184488403,
+          "tracking_max_rad": 0.17791875854791517,
+          "raw_planned_path_fd_velocity": 0.9446348673908034,
+          "raw_planned_path_fd_acceleration": 1.2238502914589053
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 2.0456299781799316,
+          "actual20Hz_max_URDF_velocity_ratio": 0.7837662751647249,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 16,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.849199691438116,
+          "command_fd_velocity_rad_s": 2.7865298707908552,
+          "command_fd_acceleration_rad_s2": 23.497571751372654,
+          "tracking_max_rad": 0.204353083957103,
+          "raw_planned_path_fd_velocity": 0.9288439009289684,
+          "raw_planned_path_fd_acceleration": 1.1738087659436844
+        }
+      ]
+    },
+    {
+      "case": "742012_full_p050",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742012_full_p050/TRAJECTORY.json.gz",
+      "sha256": "bbd6243761c0015bc3a86d1f8dd4f92f8e6dcf11621b50df2616a05268b2b153",
+      "success": true,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 2.0037736892700195,
+          "actual20Hz_max_URDF_velocity_ratio": 0.9212752594344918,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 19,
+          "actual20Hz_velocity_fd_accel_rad_s2": 8.862203489989042,
+          "command_fd_velocity_rad_s": 2.804578647423508,
+          "command_fd_acceleration_rad_s2": 21.92251650680372,
+          "tracking_max_rad": 0.19691547617453953,
+          "raw_planned_path_fd_velocity": 0.9348599131063162,
+          "raw_planned_path_fd_acceleration": 1.116333724832552
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 1.1195355653762817,
+          "actual20Hz_max_URDF_velocity_ratio": 0.5147289955753019,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 6,
+          "actual20Hz_velocity_fd_accel_rad_s2": 8.192087709903717,
+          "command_fd_velocity_rad_s": 1.8309630172733815,
+          "command_fd_acceleration_rad_s2": 18.72053297799425,
+          "tracking_max_rad": 0.10728202761238004,
+          "raw_planned_path_fd_velocity": 0.9287025156438766,
+          "raw_planned_path_fd_acceleration": 1.1691413021611472
+        }
+      ]
+    },
+    {
+      "case": "742013_full_p020",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742013_full_p020/TRAJECTORY.json.gz",
+      "sha256": "382e693c0283aed9aa13cf223f2542e8817d3f3026c3dd3333dc0117469e0889",
+      "success": true,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.8117674589157104,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8329965328348095,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 17,
+          "actual20Hz_velocity_fd_accel_rad_s2": 7.944375723600388,
+          "command_fd_velocity_rad_s": 2.741317622795889,
+          "command_fd_acceleration_rad_s2": 20.55626382268167,
+          "tracking_max_rad": 0.17471612461162,
+          "raw_planned_path_fd_velocity": 0.9357455570276496,
+          "raw_planned_path_fd_acceleration": 1.1512661344935002
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 1.4160131216049194,
+          "actual20Hz_max_URDF_velocity_ratio": 0.6510405156804228,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 9,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.028637275099754,
+          "command_fd_velocity_rad_s": 2.2034732047523375,
+          "command_fd_acceleration_rad_s2": 22.03012109073885,
+          "tracking_max_rad": 0.13574881436959663,
+          "raw_planned_path_fd_velocity": 0.9337445286910484,
+          "raw_planned_path_fd_acceleration": 1.1686506524815508
+        }
+      ]
+    },
+    {
+      "case": "742013_full_p020_other",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742013_full_p020_other/TRAJECTORY.json.gz",
+      "sha256": "dfcc99db98153c0be09c33767fd16d703ee6f9023fafb4eb8d8dd3bc1df5ed53",
+      "success": false,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.8117674589157104,
+          "actual20Hz_max_URDF_velocity_ratio": 0.8329965328348095,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 17,
+          "actual20Hz_velocity_fd_accel_rad_s2": 7.944375723600388,
+          "command_fd_velocity_rad_s": 2.741317622795889,
+          "command_fd_acceleration_rad_s2": 20.55626382268167,
+          "tracking_max_rad": 0.17471612461162,
+          "raw_planned_path_fd_velocity": 0.9357455570276496,
+          "raw_planned_path_fd_acceleration": 1.1512661344935002
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 2.0578908920288086,
+          "actual20Hz_max_URDF_velocity_ratio": 0.788463943306057,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 16,
+          "actual20Hz_velocity_fd_accel_rad_s2": 10.65019100671634,
+          "command_fd_velocity_rad_s": 2.8012322542450874,
+          "command_fd_acceleration_rad_s2": 22.87921355436477,
+          "tracking_max_rad": 0.205578958646164,
+          "raw_planned_path_fd_velocity": 0.9337445286910484,
+          "raw_planned_path_fd_acceleration": 1.1456860896839947
+        }
+      ]
+    },
+    {
+      "case": "742013_full_p050",
+      "path": "runs/research_program/EXP-003/multiskill_two_robot_fullsuffix/742013_full_p050/TRAJECTORY.json.gz",
+      "sha256": "88b6aa2bd8b2dedbee153ec79df5685fe7f610f08b113b668c9bff6abe302a15",
+      "success": true,
+      "robots": [
+        {
+          "arm": 0,
+          "actual20Hz_max_velocity_rad_s": 1.9969251155853271,
+          "actual20Hz_max_URDF_velocity_ratio": 0.9181264899242885,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 21,
+          "actual20Hz_velocity_fd_accel_rad_s2": 7.944375723600388,
+          "command_fd_velocity_rad_s": 2.7959665999714245,
+          "command_fd_acceleration_rad_s2": 17.797049737003064,
+          "tracking_max_rad": 0.1958539515379738,
+          "raw_planned_path_fd_velocity": 0.9319893760737452,
+          "raw_planned_path_fd_acceleration": 1.0683911242982622
+        },
+        {
+          "arm": 1,
+          "actual20Hz_max_velocity_rad_s": 1.2162363529205322,
+          "actual20Hz_max_URDF_velocity_ratio": 0.5591891277795551,
+          "actual20Hz_frames_over_URDF_velocity": 0,
+          "actual20Hz_frames_over_planner_point9_velocity": 7,
+          "actual20Hz_velocity_fd_accel_rad_s2": 7.539735920727253,
+          "command_fd_velocity_rad_s": 1.9213509466451129,
+          "command_fd_acceleration_rad_s2": 17.465634969695195,
+          "tracking_max_rad": 0.11634735773766502,
+          "raw_planned_path_fd_velocity": 0.9238288475400358,
+          "raw_planned_path_fd_acceleration": 1.1680813083152495
+        }
+      ]
+    }
+  ]
+}

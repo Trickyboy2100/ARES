@@ -1,0 +1,79 @@
+{
+  "archive": "RAW_EVIDENCE.tar.gz",
+  "sha256": "c2690c65b7f7ac8887729f22d0a8883f12ff32653d3a7a455a38330d5d25a2b4",
+  "bytes": 208668,
+  "source_root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_contact_probe",
+  "files": [
+    {
+      "path": "740001_g035/MANIFEST.json",
+      "bytes": 1821,
+      "sha256": "22a698cacb03319e80db1c7bd267275faa6426a2424ecb9ca5992fa05fd262b7"
+    },
+    {
+      "path": "740001_g035/RESULTS.json",
+      "bytes": 24805,
+      "sha256": "6b081e48e95cd87a7d27303d0b8e74f510263b3090e4abfb5c61f62c25d2a112"
+    },
+    {
+      "path": "740001_g035/TRAJECTORY.json.gz",
+      "bytes": 88198,
+      "sha256": "9d4c3a51e4eddc5822a38e533c8ad913d8c8c1b43f787156d57ea432637cdf4a"
+    },
+    {
+      "path": "740001_g035/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740001_g035/program_multiskill_contact_probe.py",
+      "bytes": 2512,
+      "sha256": "96ea5142a5d2232094a30e990118ab10abe83841ce88272c8b0766521c010ce0"
+    },
+    {
+      "path": "740001_g035/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740001_g035/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    },
+    {
+      "path": "740001_g070/MANIFEST.json",
+      "bytes": 1820,
+      "sha256": "2ead8773f061502e1ae55ee1dd610b8a2632b308f31aac796962594522655fb5"
+    },
+    {
+      "path": "740001_g070/RESULTS.json",
+      "bytes": 38997,
+      "sha256": "b94b5ee10db334edd74bcf2474f35b1ba19d18e3002452f5d89419cd71871d0f"
+    },
+    {
+      "path": "740001_g070/TRAJECTORY.json.gz",
+      "bytes": 88775,
+      "sha256": "e6e4736c432bf2ca64536422c9124ac721debd6f9e19a7e2966e8cd84a991682"
+    },
+    {
+      "path": "740001_g070/handoff_physics.py",
+      "bytes": 11640,
+      "sha256": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f"
+    },
+    {
+      "path": "740001_g070/program_multiskill_contact_probe.py",
+      "bytes": 2512,
+      "sha256": "96ea5142a5d2232094a30e990118ab10abe83841ce88272c8b0766521c010ce0"
+    },
+    {
+      "path": "740001_g070/program_multiskill_pull.py",
+      "bytes": 12523,
+      "sha256": "b7e94eecca13a97b06c46ed713e32372cb0eb67619420b7cca6f5dd89cd22486"
+    },
+    {
+      "path": "740001_g070/pull_tool_physics.py",
+      "bytes": 13068,
+      "sha256": "6e07ef8b20796a3f0548d18d1dc2a0c1fd4c1bedd1d03d5f734c33b7aae4bb62"
+    }
+  ],
+  "scope": "complete raw physics traces plus exact per-run source snapshots; no physical hardware data"
+}

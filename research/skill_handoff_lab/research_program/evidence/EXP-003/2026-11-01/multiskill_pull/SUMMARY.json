@@ -1,0 +1,171 @@
+{
+  "episodes": 31,
+  "physical_steps": 3100,
+  "optimizer_updates": 0,
+  "scene_seeds": [
+    740000,
+    740001,
+    740002,
+    740003,
+    740004,
+    740005
+  ],
+  "initial_hash_consistent": true,
+  "strong_baseline": [
+    {
+      "seed": 740000,
+      "success": false,
+      "error": "Horizon: NATIVE_HORIZON",
+      "grasp_x_m": 0.07,
+      "selected_hook_y_m": -0.075
+    },
+    {
+      "seed": 740001,
+      "success": true,
+      "error": null,
+      "grasp_x_m": 0.07,
+      "selected_hook_y_m": -0.055
+    },
+    {
+      "seed": 740002,
+      "success": false,
+      "error": "Horizon: NATIVE_HORIZON",
+      "grasp_x_m": 0.07,
+      "selected_hook_y_m": -0.075
+    }
+  ],
+  "two_boundary_episodes": 31,
+  "scope": "PHYSICAL_PARAMETER_INTERVENTION_NOT_LEARNED_METHOD",
+  "note": "Kinematic/budget predictions are not contact success labels. Native goal cube/base distance <0.6m, horizon100.",
+  "outcome_classes": {
+    "PREFIX_SUCCESS_PREDICTED_FEASIBLE_EXECUTION_FAILURE": 6,
+    "PREFIX_SUCCESS_PREDICTED_SUFFIX_INFEASIBLE": 9,
+    "SUCCESS": 16
+  },
+  "selected_contract_false_positive": 6,
+  "selected_contract_false_negative": 1,
+  "policy_outcomes": {
+    "g035": {
+      "episodes": 3,
+      "successes": 0,
+      "seeds": [
+        740000,
+        740001,
+        740002
+      ],
+      "mean_distance_m": 1.0021739999453227
+    },
+    "g035_h055": {
+      "episodes": 1,
+      "successes": 0,
+      "seeds": [
+        740000
+      ],
+      "mean_distance_m": 1.0366544723510742
+    },
+    "g035_h075": {
+      "episodes": 1,
+      "successes": 0,
+      "seeds": [
+        740000
+      ],
+      "mean_distance_m": 1.0350501537322998
+    },
+    "g070_h055": {
+      "episodes": 2,
+      "successes": 0,
+      "seeds": [
+        740000,
+        740002
+      ],
+      "mean_distance_m": 0.8139702677726746
+    },
+    "g070_h065": {
+      "episodes": 3,
+      "successes": 1,
+      "seeds": [
+        740000,
+        740001,
+        740002
+      ],
+      "mean_distance_m": 0.7390823165575663
+    },
+    "g105": {
+      "episodes": 2,
+      "successes": 1,
+      "seeds": [
+        740000,
+        740001
+      ],
+      "mean_distance_m": 0.7288427650928497
+    },
+    "lookahead": {
+      "episodes": 3,
+      "successes": 1,
+      "seeds": [
+        740000,
+        740001,
+        740002
+      ],
+      "mean_distance_m": 0.6803118785222372
+    },
+    "g070_h075": {
+      "episodes": 1,
+      "successes": 1,
+      "seeds": [
+        740001
+      ],
+      "mean_distance_m": 0.5719080567359924
+    },
+    "g105_pull250": {
+      "episodes": 3,
+      "successes": 3,
+      "seeds": [
+        740003,
+        740004,
+        740005
+      ],
+      "mean_distance_m": 0.5321446657180786
+    },
+    "g105_pull290": {
+      "episodes": 3,
+      "successes": 3,
+      "seeds": [
+        740003,
+        740004,
+        740005
+      ],
+      "mean_distance_m": 0.4873136480649312
+    },
+    "goal": {
+      "episodes": 3,
+      "successes": 2,
+      "seeds": [
+        740003,
+        740004,
+        740005
+      ],
+      "mean_distance_m": 0.5914121170838674
+    },
+    "pull250": {
+      "episodes": 3,
+      "successes": 2,
+      "seeds": [
+        740003,
+        740004,
+        740005
+      ],
+      "mean_distance_m": 0.5914121170838674
+    },
+    "pull290": {
+      "episodes": 3,
+      "successes": 2,
+      "seeds": [
+        740003,
+        740004,
+        740005
+      ],
+      "mean_distance_m": 0.5859284897645315
+    }
+  }
+}

@@ -61,10 +61,15 @@ class Episode:
         axis,angle=quat2axangle(local.q)
         if angle>np.pi:angle-=2*np.pi
         return np.clip(np.r_[local.p/.025,axis*angle/.2,velocity/.1,force/10,self.last_action,self.previous_delta/.004,(200-len(self.env.records))/200,self.last_authority],-10,10).astype(np.float32)
+    def completion_reached(self):
+        """Overridable observable completion contract; historical default unchanged."""
+        measured=self.goal.inv()*sp(self.env.unwrapped.charger)
+        return bool(np.linalg.norm(measured.p)<=.004 and 2*np.arccos(np.clip(abs(measured.q[0]),0,1))<=.03)
     def step(self, requested):
         obs=self.observation();start=len(self.env.records);requested=np.array(requested,dtype=float);action=np.clip(requested,-1,1);u=self.env.unwrapped;initial_local=(self.goal.inv()*sp(u.charger)).p.copy();reward=0.;self.last_action=action.copy();authorities=[]
         if self.error is None:
             for _ in range(min(4,200-len(self.env.records))):
+                if len(self.env.records)>=200:break
                 self.env.phase='CONTACT_SERVO';actual=sp(u.charger);tcp=sp(u.agent.tcp)
                 corrected=self.goal*sapien.Pose([0,action[0]*.0015,action[1]*.0015]);local=corrected.inv()*actual
                 orient=2*np.arccos(np.clip(abs(local.q[0]),0,1));lateral=np.linalg.norm(local.p[1:]);aligned=lateral<.0004 and orient<.03
@@ -79,8 +84,8 @@ class Episode:
                 self.env.records[-1]['servo']=dict(lateral_m=float(lateral),orientation_rad=float(orient),advance=bool(aligned),desired_local_x=x)
                 self.env.records[-1]['skill_action']=dict(requested=requested.tolist(),clipped=action.tolist(),applied_goal_offset_m=[0,action[0]*.0015,action[1]*.0015],advance_m=advance,forward_allowed=bool(aligned and advance>0),joint_limit_active=bool(authorities[-1][1]))
                 measured=self.goal.inv()*sp(u.charger)
-                if np.linalg.norm(measured.p)<=.004 and 2*np.arccos(np.clip(abs(measured.q[0]),0,1))<=.03:break
-        measured=self.goal.inv()*sp(u.charger);success=np.linalg.norm(measured.p)<=.004 and 2*np.arccos(np.clip(abs(measured.q[0]),0,1))<=.03;final_local=(self.goal.inv()*sp(u.charger)).p.copy();reward=float((final_local[0]-initial_local[0])/.02)-.005
+                if self.completion_reached():break
+        measured=self.goal.inv()*sp(u.charger);success=self.completion_reached();final_local=(self.goal.inv()*sp(u.charger)).p.copy();reward=float((final_local[0]-initial_local[0])/.02)-.005
         self.done=bool(success or self.error is not None or len(self.env.records)>=200)
         if self.done:
             q=np.array(serial(u.agent.robot.get_qpos()[0,:7]));self.env.phase='TERMINAL_HOLD'
@@ -94,6 +99,7 @@ class Episode:
     def save(self,out,label):
         out=Path(out);out.mkdir(parents=True,exist_ok=True);env=self.env;u=env.unwrapped;self.physics_steps+=len(env.records)
         row=dict(seed=self.seed,label=label,success=bool(u.evaluate()['success'][0]),error=self.error,steps=len(env.records),prefix_steps=self.prefix_steps,initial_sha256=env.initial_sha,bias_mm=self.bias_mm,physical_config=u.adaptation_metadata(),physical_readback=u.physical_readback(),wall_s=time.monotonic()-self.started,final=serial(u.evaluate()),decisions=len(self.transitions),planning_wall_s=sum(c['wall_s'] for c in env.calls))
+        row.update(getattr(self,'extra_summary',{}))
         path=out/f'{label}_{self.seed}.json.gz'
         if path.exists():raise FileExistsError(path)
         payload=json.dumps(dict(summary=row,initial=env.initial,initial_measure=env.initial_measure,steps=env.records,plans=env.plans,calls=env.calls,transitions=self.transitions,prefix_boundary=self.prefix_boundary),separators=(',',':'))

@@ -1,0 +1,25 @@
+{
+  "implemented_diagnostic": "selected kinematic and remaining-step margin as naive physical-value proxy",
+  "proposed_distribution_or_relabeling_method": "PROPOSED_NOT_IMPLEMENTED_NOT_TESTED",
+  "all_executed_episodes": {
+    "episodes": 31,
+    "successes": 16,
+    "TP": 15,
+    "FP": 6,
+    "FN": 1,
+    "TN": 9,
+    "budget_margin_in_panel_AUC": 0.7291666666666666
+  },
+  "unique_seed_and_applied_parameters": {
+    "episodes": 28,
+    "successes": 14,
+    "TP": 13,
+    "FP": 5,
+    "FN": 1,
+    "TN": 9,
+    "budget_margin_in_panel_AUC": 0.7780612244897959
+  },
+  "scene_draws": 6,
+  "scope": "Descriptive only, no fitting or held-out claim. Several goal rules apply exactly the same parameters as fixed250; repeated physical trials counted in budget but deduplicated in second diagnostic. Feasibility is not a probability; no probability calibration asserted.",
+  "observable_state": "Actual TCP-relative attachment derives from current TCP/tool poses already in full state; actual tool velocity is observed. No POMDP or privileged posterior-information claim."
+}

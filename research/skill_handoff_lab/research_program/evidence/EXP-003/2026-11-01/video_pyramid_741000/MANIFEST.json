@@ -1,0 +1,213 @@
+{
+  "task": "StackPyramid-v1",
+  "claim": "SHARED_CONTROLLER_REPAIR_NOT_RL_GAIN",
+  "source_kind": "MEASURED_POSE_REPLAY",
+  "physics_steps_added": 0,
+  "frames": 251,
+  "fps": 20,
+  "frame_mapping": "frame k=step k, timestamp k/20; frame0 initial",
+  "max_state_readback_error": 1.1920928955078125e-07,
+  "all_cube_corner_pixel_min": [
+    227.07072459520865,
+    199.99604378545578
+  ],
+  "all_cube_corner_pixel_max": [
+    389.30938288822244,
+    390.9074690350386
+  ],
+  "camera_intrinsic": [
+    [
+      583.3487548828125,
+      0.0,
+      400.0
+    ],
+    [
+      0.0,
+      583.3487548828125,
+      300.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_extrinsic": [
+    [
+      -0.6904756426811218,
+      0.7233555316925049,
+      2.9802318834981634e-08,
+      -0.013809587806463242
+    ],
+    [
+      0.3367804288864136,
+      0.3214721381664276,
+      -0.8850054144859314,
+      0.07753608375787735
+    ],
+    [
+      -0.6401735544204712,
+      -0.6110746264457703,
+      -0.46558067202568054,
+      0.7117566466331482
+    ]
+  ],
+  "sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_pyramid/741000_axis_minus90/TRAJECTORY.json.gz",
+      "sha256": "58d1d7af6ed4ce087b19f1bcf365629ff4212d9f67b2713e0618882b6b9a2ba3",
+      "execution_manifest": {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_pyramid/741000_axis_minus90/MANIFEST.json",
+        "sha256": "0aa6ad2d8dba8e4f164ffc4c16476abe7fca0203f1b04ed134f8fb9e7fb81e92",
+        "content": {
+          "task": "StackPyramid-v1",
+          "native_horizon": 250,
+          "seed": 741000,
+          "label": "axis_minus90",
+          "requested_axis_degrees": -90.0,
+          "requested_top_offset": 0,
+          "native_source_sha256": "186605bb746ca19c4a717516b2530bbf70e9a2f897c7e3a2df89ce3b9ec4457e",
+          "maniskill_revision": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+          "maniskill_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "random_seed": 31031,
+          "initial_distribution": "NATIVE_UNCHANGED",
+          "source_sha256": {
+            "program_multiskill_pyramid.py": "3bd669ffa63fc7b23c0b12ec3bdfc39eb5312e6ac6711dc55457c1f21a7f24d3",
+            "handoff_physics.py": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f",
+            "method_stack_physics.py": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+          },
+          "hardware_commands": false,
+          "optimizer_updates": 0,
+          "parameter_authority": "support axis four cardinal directions; top offset +-8mm",
+          "search_scope": "full two-skill kinematic approach cost, predicted attachment; not contact outcome oracle"
+        }
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_pyramid/741000_axis_minus90_rule/TRAJECTORY.json.gz",
+      "sha256": "17f7529d785f6631d2773f35e8403b3086b8ba088230122964a5e0089c38103a",
+      "execution_manifest": {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/multiskill_pyramid/741000_axis_minus90_rule/MANIFEST.json",
+        "sha256": "616d0aa943623536445a0e227501b84c58d1dbecc95e614221ffb6d2239f12b5",
+        "content": {
+          "task": "StackPyramid-v1",
+          "native_horizon": 250,
+          "seed": 741000,
+          "label": "axis_minus90_rule",
+          "requested_axis_degrees": -90.0,
+          "requested_top_offset": 0,
+          "axis_aware_release": true,
+          "rule_scope": "deterministic controller repair; not RL; axis0exactlegacy; nonzeroaxes use perpendicular placing grip and actual attachment footprint",
+          "native_source_sha256": "186605bb746ca19c4a717516b2530bbf70e9a2f897c7e3a2df89ce3b9ec4457e",
+          "maniskill_revision": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+          "maniskill_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "random_seed": 31031,
+          "initial_distribution": "NATIVE_UNCHANGED",
+          "source_sha256": {
+            "program_multiskill_pyramid.py": "eae504e48abaa3d7aa0fe849ffeecb20d2b72245005748d3d723367fe4eb0ba1",
+            "handoff_physics.py": "a021571a0037f9aba337b948ba521afe8c1dac19b3fcc01bfbbf0c5612f4412f",
+            "method_stack_physics.py": "793187065e6a4e17eb05530e480ac7ddc24f68f36c08c5bcd730d222b135440e"
+          },
+          "hardware_commands": false,
+          "optimizer_updates": 0,
+          "parameter_authority": "support axis four cardinal directions; top offset +-8mm",
+          "search_scope": "full two-skill kinematic approach cost, predicted attachment; not contact outcome oracle"
+        }
+      }
+    }
+  ],
+  "native_model_source_sha256": "186605bb746ca19c4a717516b2530bbf70e9a2f897c7e3a2df89ce3b9ec4457e",
+  "render_source_sha256": "b579e8bc2fcf882308ce1d239533d21be2ee9535d44ae864b78e90f36888d162",
+  "shared_viewer_source_sha256": "52d1ee813fa2e21da67e285c476785aae73e7e1649de571c74bb3d18a18e9f67",
+  "outputs": {
+    "DATA.json": "776933f7dd57274db5b454a90b32a248b65fd4cc6d11c2329390d558268cafc9",
+    "SYNC_VIEWER.html": "9315c5547fe4e4f8f13b7623fea9b5d0e603efc753bb0a1de0ecef52e8ee55ff",
+    "RAW.mp4": "2cbf7995c5b55fd5321f8e60e0b14e7025dcb7ed8dba056adf7dc2d88d97b6de",
+    "CAPTION.md": "dd89440d6b2e7cdaeccee706bd1643fa17b5fc677f0719676c9293b481541731",
+    "ANNOTATED.mp4": "13c7102b5e039c56fe59a05ca09a32f9cbc471002e854bba4840dec4a432dff8",
+    "RIGHT_SOURCE.json.gz": "17f7529d785f6631d2773f35e8403b3086b8ba088230122964a5e0089c38103a",
+    "contact_zoom_source.py": "752e9be3bfe5952b7cad7d666c280f328a93b9ec9fedf2502342e430a625b59a",
+    "QA.json": "be5a77be46c85453c27cd104ae650990e8b0d12691f555c540cebb2efd9278e5",
+    "ANNOTATED_068.png": "b0c26af7b0c4b553381d91a1f857aa161989d0b24bbdb404d6afed3e8b72a044",
+    "ANNOTATED_250.png": "10903308895b4c8c4b54ad5d6e874e95ffaea0394b98864c2e1901b0cba7d511",
+    "TRACE.svg": "5d9461c80d554fd61b0d7626a8b54eee0893552e6417ba0c6d9d901e01231018",
+    "CONTACT_CROPS.json": "0af4e42e79720ee6655fe0ec7ddf704fd28c7aeec7ebacb89f073067b2e79c44",
+    "RAW_000.png": "ea25ed70f4b433acae41917914aa94c89c9d3afeeb16c8c0e77e9be80517629d",
+    "ANNOTATED_100.png": "dd0d1d1effede764fc10a2cb9071afe771f287aa31da8d134373d718db312174",
+    "QA_BROWSER.html": "b5b4065606c94f6f2ac67744c29f1fbd8e17142f18b83976189e502e3f67bdbb",
+    "CONTACT_CLOSEUP.png": "928c53e9111877b8763c6d9e67e43ade8865d1e2ee621837071a7a977a62832c",
+    "TRACE.png": "0d32c720b698672ab0271d8c9691614298cd38d0bfcd7023fe15150a069b70ab",
+    "RAW_150.png": "9b2f9523eb4525a57db5f9c8dc500b217acc010015481e9fe3f9ec95f188d057",
+    "ANNOTATED_000.png": "70f0077eadc32ac5227c6c6762ae12268547a92a8c42aee2002e47c39639539d",
+    "LEFT_SOURCE.json.gz": "58d1d7af6ed4ce087b19f1bcf365629ff4212d9f67b2713e0618882b6b9a2ba3",
+    "RAW_250.png": "0693931bc1baa746ee4adb40aee43ca297d9b34003939f7b4cca20661b9408f2",
+    "RAW_100.png": "cb36e9607e54e15aab2b4f8b3c0ea81a4e2471542f337c9d3ef67c0d29c1a172",
+    "README.md": "507235c757b32774c9aecf018ee1bde5d2876c004814b57027a6cb149ccc0dca",
+    "render_source.py": "b579e8bc2fcf882308ce1d239533d21be2ee9535d44ae864b78e90f36888d162",
+    "ANNOTATED_150.png": "9dc5fe8361c40889b9a23217c52e9f331f62326c479f405b487798bbfc71ab8e"
+  },
+  "contact_zoom": {
+    "physics_steps_added": 0,
+    "RAW_sha256_unchanged": "2cbf7995c5b55fd5321f8e60e0b14e7025dcb7ed8dba056adf7dc2d88d97b6de",
+    "frames": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90
+    ],
+    "geometry": "recorded A/B mean projected with stored camera K/E; box 180x150, source pixel coordinates in CONTACT_CROPS.json",
+    "video_magnification": 2,
+    "standalone_magnification": 3,
+    "standalone_frame": 68,
+    "resampling": "NEAREST; no generated or sharpened pixels",
+    "source_sha256": "752e9be3bfe5952b7cad7d666c280f328a93b9ec9fedf2502342e430a625b59a",
+    "all_crop_bounds_valid": true
+  }
+}
