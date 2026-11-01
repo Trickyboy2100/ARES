@@ -56,3 +56,26 @@ UNVERIFIED。不要因为论文发布日期较新而省略强先例。
 均不自动具备独立新颖性。方法核心应落在**任务/技能合同中的
 有效物理作用条件、可测而不冗余的执行信念与跨任务参数决策**，
 并通过几何/RLS/MPC/相同历史ResidualRL等强对照证实。
+## 2026-11-01 论文主线所需理论与最近邻（非额外提纲）
+
+- Sutton, Precup & Singh (1999) Option/SMDP：时间抽象技能、开始
+  集/内部策略/终止，https://doi.org/10.1016/S0004-3702(99)00052-1
+- Bacon, Harb & Precup (AAAI2017) Option-Critic：学习option终止策略
+  已有成熟理论，https://doi.org/10.1609/aaai.v31i1.10916
+- RAPS (NeurIPS2021)：已把参数化基元当作RL动作接口，
+  https://proceedings.neurips.cc/paper/2021/hash/b6846b0186a035fcc76b1b1d26fd42fa-Abstract.html
+- STAP (ICRA2023)：相邻技能参数的几何依赖、Q价值、搜索，
+  https://sites.google.com/stanford.edu/stap/home
+- Foresight Residual RL (2026)：局部成功终态的下游价值与残差训练，
+  https://arxiv.org/abs/2607.16506
+- Fabrica (CoRL2025)：双臂规划/残差接触多物体装配，
+  https://proceedings.mlr.press/v305/tian25a.html
+- DAWN (ICML2026)：已研究名义策略数据锚定与Critic LayerNorm，
+  https://proceedings.mlr.press/v306/ma26s.html
+- SCOUT (CoRL2026)：动作-结果信念在线更新，
+  https://liy1shu.github.io/SCOUT/
+
+因此论文不能以“参数化”“加一个后续Q头”“加入动作历史”
+“学终止门限”或“CriticLN”中的任何一项单独声称首次提出。
+**原创机会必须从任务条件/真实SkillResult/后继可执行合同的
+具体耦合机制与多任务独立增益中建立**。

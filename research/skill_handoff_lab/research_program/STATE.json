@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
-  "last_review": "2026-10-31",
+  "last_review": "2026-11-01",
   "baseline_commit": "b953e092b38bd50ace5d6c776e6bcc52baa3e586",
   "branch": "research-sci-program",
-  "scientific_goal": "Task-conditioned executable skill-parameter reinforcement learning with genuine physical execution-effect adaptation for transferable robotic manipulation",
+  "scientific_goal": "One SCI paper: task-conditioned executable parameter adaptation ACROSS REAL MULTI-STAGE ROBOT SKILLS using nominal skill primitives and measured SkillResult to improve successor feasibility, whole-task success and transfer; contact servo and SAC are component baselines",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S4",
   "active_experiment": "EXP-003",
   "latest_evidence": "evidence/EXP-002/2026-10-31/README.md",
-  "next_action": "EXP-003: consolidate matched-alpha critic-LayerNorm ordinary SAC10/12 versus search10/12 (two mutual rescues). Matched effect+LN2/12 and prior-only2/12 do not support the current feature mechanism. First test observable stable skill-completion contracts: both LN failures satisfied native success transiently but never entered hold under the stricter observed orientation threshold. Preserve strong baselines; then confirm independent training seeds and new Y/YZ-error scenarios with task-justified action permissions and identifiable contact probes. Do not scale the current effect features, use true-goal oracle stopping, or claim LayerNorm/zero-Z as new methods.",
+  "next_action": "EXP-003 is a two-track SCI research task: (A) add an identical observable dwell/hold completion contract to all controllers, compare trained lateral-Y-only vs full-YZ/advance SAC+critic-LN on NEW Y-only and genuinely YZ/task-variation scenes, plus search; count complete physics and skill decisions, preserve the same legal actions/inputs. (B, high paper priority) immediately scout actual two-decision skill chains PickTool→UseTool or PlaceA/Release→PickC/PlaceC under strong non-weakened planning; demonstrate legal predecessor parameters affect successor feasibility and subsequent redecision; actively discover a learned mechanism with controlled comparison to STAP/Foresight and ordinary same-interface RL. Only if observation-aliasing is established, consider POMDP belief/active probing. Produce original+highlight synchronized complete videos of BOTH skill transitions and physical effect graphs, not only local insert clips. Run actual code and multiple grounded experiments before finishing; no claim of novelty without repeated evidence.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
     "S3": "initial_action_authority_confirmed_identification_incomplete",
-    "S4": "active_bounded_training_completed_baseline_not_mature",
+    "S4": "active_dual_workstream_strong_rl_and_two_skill_task",
     "S5": "candidate_tested_no_feedback_gain",
     "S6": "not_started",
     "S7": "not_started"
@@ -70,11 +70,11 @@
     }
   ],
   "unresolved_questions": [
-    "Matched LN failures never enter hold: native success occurs at154/161 but the stricter observed orientation threshold blocks termination. Can an observable, stable completion contract preserve success without privileged true-goal stopping?",
-    "Can task-conditioned restriction of legitimate skill parameters retain search successes without removing authority needed under real YZ/grasp variations?",
-    "Can persistent contact probes identify hidden task error beyond the same raw history and geometric search, with measurable information and control benefit?",
-    "Can a mature matched-authority RL baseline outperform progress search10/12 on new conditions rather than just weak SAC1/12?",
-    "How much residual failure is observed-goal early stopping or insufficient hold stability, rather than wrong contact action?"
+    "Can one executable multi-stage task have two meaningful parameter decision boundaries that affect downstream success beyond strong fixed/search baselines and native geometry?",
+    "Does including successor contract and actual predecessor SkillResult change an RL parameter decision and improve whole-task outcome with identical action authority?",
+    "Under a shared observable completion contract and real new YZ settings, can strong LN residual SAC learn robustly without Z-channel degeneration or transient-success loss?",
+    "Which closest prior model (STAP/Foresight/SCOUT/DAWN) explains any improvement, and what mechanism remains distinct after ablation?",
+    "Are latent tool/grasp/contact dynamics actually partially observable and identifiable from action-effect history? If not avoid unnecessary POMDP."
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
@@ -114,7 +114,8 @@
     },
     "denominator": 12,
     "claim": "No independent method gain; ordinary critic-LN baseline effective; feature candidate not supported",
-    "raw_root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002"
+    "raw_root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-002",
+    "audit_2026_11_01": "No new experiments; program reorientation to two-skill method and mature RL in parallel. Existing b116457 4 scenes x 3 biases: search10/12, LN-SAC10/12, effect+LN2/12, Z-zero ordinary SAC7/12 posthoc; neither contact nor new effect feature is a paper method gain."
   },
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md"
 }

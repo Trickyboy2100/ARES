@@ -127,3 +127,42 @@ dy ≈ B(contact-mode,task,latent-attachment)*du + noise；
 要把“方法正增益”与“任务选得更难、控制器修得更好、
 额外预采集数据/计算”完全区分。SCOUT和2024年改变接触模式的
 前馈模型已有相似思想，独立机制必须有实际强基线与消融支持。
+## I. 从“局部接触”回到“多技能适应”的方法排序（2026-11-01）
+
+下一轮不能把PlugCharger10/12→12/12作为整篇SCI研究目的。
+历史论文对象是`前段参数→真实SkillResult→后段参数→完整任务回报`。
+SAC/LayerNorm、Y/Z权限和可观测到位保持都只是执行器与学习基础。
+
+**A. 基础（必需，不当作原创）**：
+强名义规划/伺服 + 共同可观测成功保持合同；
+同动作合法权限的普通Residual SAC/PPO + CriticLN/必要的DAWN思想；
+新Y与YZ变化下Y-only/full的公平训练。锁定完整物理成本与训练seed。
+不必执着16个PhysX环境，选能稳定训练的公开仿真与硬件预算。
+
+**B. 主研究对象（必须恢复）**：
+真实两技能序列如`PickTool→OperateWithTool`或
+`PlaceSupport→NextPick/Stack`，有两个有效的合法动作参数决定。
+前一技能真实抓持/松爪/稳定状态能够影响后段，而且同一策略需
+根据后验状态重新决策。可完成的成熟规划是技能底座，不强行把
+规划修正算方法成功。
+
+**C. 创新假设竞争（只选最有证据的一项进入论文方法）**：
+1. `contract-conditioned authority`：合同约束的可执行参数有效性，
+   排除不必要动作，但动作mask本身是旧技术。研究是否有跨任务
+   状态依赖的动作权限学习益处。
+2. `outcome-conditioned successor value`：当前技能局部合格但后段
+   可行性不同；从真实SkillResult学习后续合法参数及长期价值。
+   STAP/Foresight已有下游成功思想，须对照其价值/搜索。
+3. `belief-conditioned adaptation`：只有在可观察状态缺少关键接触/
+   抓持属性而真实动作结果能辨识时，才用POMDP信念或短探针。
+   SCOUT与系统辨识已有技术，需独立的跨技能合同价值和效率证据。
+
+**D. 理论模型与公平验证**：
+有可观察的技能级后验时优先Option/SMDP：
+`Q_k(o_k,xi_k,C_{k+1})=E[r_k+gamma^{tau_k}V_{k+1}(o_{k+1},C_{k+1})]`。
+真实隐藏状态需要belief更新才用POMDP，避免把旧上一步位移增加为
+所谓新观测。联合评价`local_success`、
+`downstream_feasibility | actual predecessor valid`、`full_task_success`、
+`elapsed_physics`、`rescue/regression`及感知与规划成本。
+选择方法后在不同新任务条件下与强规则、普通RL、最邻近
+STAP/Foresight/SCOUT功能对照，不能单靠历史12个已看条件。

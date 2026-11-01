@@ -44,3 +44,15 @@
 先测试新video_sync生成器语法和真实GPU输出；
 至少保留一组全程RAW+ANNOTATED+SYNC_VIEWER并校验记录SHA。
 原控制增益不能冒充新方法增益。
+## 2026-11-01 当前工作方向：必须回到两技能研究
+
+请先读最新 `PAPER_CONTRACT.md` 和活动
+`experiments/EXP-003_STRONG_RL_BASELINES.md`，
+不要把之前临时插入研究、Z屏蔽/stop/LN当成整篇论文题目。
+以**一篇任务条件化、多阶段技能参数自适应的SCI方法论文**
+为唯一目标，主动执行共享强RL底座与多技能物理机会并行工作流。
+研究新方法时参考RAPS/STAP/Foresight/Fabrica/SCOUT/DAWN，
+形成与已有工作不同、可反证的机制，不要只给算法起名字。
+同会话内可积极进行几轮实测、改代码、训练、失败分析和真实
+视频/学术图；保留历史/工作树，推送并更新STATE等现有索引。
+不用每轮写新论文PDF。ARES-R只读、禁止实机/泄露受限资料。

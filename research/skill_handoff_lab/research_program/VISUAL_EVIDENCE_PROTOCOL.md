@@ -77,3 +77,18 @@ Codex须先在用户GPU上检查语法、实际试运行、完整两视频编码
 原版圆圈只投影actor原点；本轮生成器已改用原生资产插针末端及插孔口沿几何的世界-相机投影，并保存矩阵。它们是可遮挡的几何引导标记，仍不能冒称真实接触patch或力传感器接触点。
 RAW必须保持原始物理视觉内容，无额外虚构接触图像；
 ANNOTATED和TRACE链接来自真实源轨迹而非理想化动画。
+## 论文主线型学术视频：不仅展示单技能接触
+
+代表性跨技能实验应保存同episode的：
+**原版RAW.mp4、英文ANNOTATED.mp4、同物理时间同步的TRACE与可点击浏览页**。
+在视频上标注`Skill k Parameter`、`Measured SkillResult`、
+`Successor Preconditions`、`Skill k+1 Chosen Parameter`、
+`Actual Object / Tool Motion`、`Full-Task Result`；
+对应的曲线显示下一技能可执行性/支撑/夹持/接触裕量、
+实际后段成功和决策时刻，不能拿source truth替代policy可观测数据。
+每帧必须能通过origin trace SHA核对，图中说明名义控制/普通RL/
+候选方法以及是否真正发生RL在线训练。
+
+同一初态并列展示救回、退化和共同失败；若只显示局部插入
+而完全没有后续技能参数选择，该片只能当底层控制机理图，
+不能当“多阶段参数适应算法”的论文主证据。
