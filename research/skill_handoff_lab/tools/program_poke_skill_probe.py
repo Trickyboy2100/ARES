@@ -19,7 +19,7 @@ def execute(env,seed,gx):
  try:
   tool=r.sp(u.peg);closing=np.array([0.,1.,0.]);closing*=1 if np.dot(closing,r.quat2mat(r.sp(u.agent.tcp).q)[:,1])>=0 else -1
   grasp=u.agent.build_grasp_pose(np.array([0,0,-1]),closing,tool.p+np.array([gx,0,0]));env.decisions.append(dict(stage=0,skill='PICK_PEG',boundary_step=0,parameters=dict(grasp_offset_m=gx),observation=env.measure()))
-  
+
   if not getattr(env,'direct_approach',False):move(grasp*r.sapien.Pose([0,0,-.05]),'REACH')
   move(grasp,'DESCEND');p.close_gripper(t=4)
   if not bool(u.agent.is_grasping(u.peg)[0]):raise r.Failure('PEG_NOT_GRASPED')
