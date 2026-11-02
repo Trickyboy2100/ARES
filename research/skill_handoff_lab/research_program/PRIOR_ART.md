@@ -79,3 +79,20 @@ UNVERIFIED。不要因为论文发布日期较新而省略强先例。
 “学终止门限”或“CriticLN”中的任何一项单独声称首次提出。
 **原创机会必须从任务条件/真实SkillResult/后继可执行合同的
 具体耦合机制与多任务独立增益中建立**。
+
+## 2026-11-02｜针对真实多技能执行的新近邻（已读论文摘要/方法与官方代码说明）
+
+更深入的逐论文方法、现有实验和下一物理闭环见 [THEORY_REVIEW_NEXT_RESEARCH_LOOP](evidence/EXP-003/2026-11-02/pyramid_contract/THEORY_REVIEW_NEXT_RESEARCH_LOOP.md)。
+以下先例使旧的“后继合同/价值辅助”不能自动被称为原创。
+
+- **Sequential Dexterity** (CoRL2023) https://proceedings.mlr.press/v229/chen23e.html / https://github.com/sequential-dexterity/SeqDex：真实前段终态分布、后继transition feasibility及后向微调。代码提供bi-optimization/tvalue_trainer，旧IsaacGym不可直接搬到ManiSkill。
+- **ViSkill** (IROS2023) https://arxiv.org/abs/2307.16503 / https://github.com/med-air/ViSkill：value-informed技能链，提供train_sl.py和train_sc.py，说明后继价值学习本身是先例。
+- **TASP** (ICRA2026) https://benned-h.github.io/tasp/ / https://cs.brown.edu/people/gdk/pubs/tasp_icra.pdf：black-box/力控/学习技能的initiation/termination与CIP head/tail可行性规划；不能把几何衔接和SkillContract接口独立声称新算法。
+- **SPIN** (CoRL2025) https://proceedings.mlr.press/v305/jung25a.html：Skill-RRT+低扰动技能connector+planner distillation；减少强规划在线查询属于可研究的系统性能，但蒸馏本身已有先例。
+- **SPIRE** (CoRL2024, PMLR2025) https://proceedings.mlr.press/v270/zhou25a.html：TAMP对长程任务做学习子问题分解，再结合模仿与RL；优先学物理接触剩余误差而不是替代全部规划。
+- **Practice Makes Perfect / EES** (RSS2024) https://ees.csail.mit.edu/ / https://github.com/rai-opensource/predicators：基于技能能力与任务分布主动选择练习数据；“主动采样动作/任务”不是首次，predicators项目研究使用请注意README提醒。
+- **Demystifying Action Space Design** (ICML2026) https://proceedings.mlr.press/v306/feng26ab.html：动作表示影响学习与稳定性；ARES三维SAC后投影Y-only不是严格二维网络，适合补强A线公平对照。
+- **FAWAM** (CoRL2026) https://fawam.github.io/ / https://github.com/HaotianHehaha/FAWAM：接触力轨迹预测与执行时纠偏；官方代码截至本次核查仅发布Force-Envisioned模型训练/推理，在线residual correction代码尚未放出，不可宣称完整复现。
+- **Uncertain task duration planning** (Robotics and Autonomous Systems2025) https://doi.org/10.1016/j.robot.2025.104926：情境条件化随机执行时间及限时规划早有研究，deadline/survival必须作为基线或与之区分。
+
+核心思考：当前STAP后验误选、工具碰撞前附着漂移、双臂执行时间误判，可能属于“已验证几何可达之后，真实后段接触/执行时间仍不确定”的不同残差机制。先分开真实物理检验，防止将所有失败归因一个所谓新网络。强几何Pyramid36/36是控制资产，非RL正增益；研究状态继续UNVERIFIED。
