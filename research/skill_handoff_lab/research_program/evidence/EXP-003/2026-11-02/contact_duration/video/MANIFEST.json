@@ -1,0 +1,109 @@
+{
+  "source_kind": "MEASURED_POSE_REPLAY",
+  "physics_steps_added": 0,
+  "frames": 101,
+  "fps": 20,
+  "frame_mapping": "frame k = actual step k, timestamp k/20 seconds; initial frame0",
+  "max_state_readback_error": 1.1920928955078125e-07,
+  "sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_all_contacts/745000_m0.75_g0.035_baseline.json.gz",
+      "sha256": "4f0eaa3a435e84fd638ca8691036230cfda3dbd85ab7ecddddc78bafdc68413e",
+      "execution_manifest": {
+        "missing": true,
+        "directory": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_all_contacts"
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_all_contacts/745000_m0.75_g0.035_frozen12.json.gz",
+      "sha256": "d81bf80d5c3ace6cdc6c02f1c580e8864045cec67ab69ef63acc42c011173019",
+      "execution_manifest": {
+        "missing": true,
+        "directory": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_all_contacts"
+      }
+    }
+  ],
+  "camera_eye_world": [
+    0.55,
+    -0.8,
+    0.65
+  ],
+  "camera_target_world": [
+    0.02,
+    -0.1,
+    0.08
+  ],
+  "camera_fov_rad": 0.95,
+  "camera_intrinsic": [
+    [
+      583.3487548828125,
+      0.0,
+      400.0
+    ],
+    [
+      0.0,
+      583.3487548828125,
+      300.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_extrinsic": [
+    [
+      0.7972583174705505,
+      0.6036385297775269,
+      1.4901162970204496e-08,
+      0.04441865161061287
+    ],
+    [
+      0.32868972420692444,
+      -0.43411844968795776,
+      -0.8387516140937805,
+      0.01711442321538925
+    ],
+    [
+      -0.5063028335571289,
+      0.6687016487121582,
+      -0.5445142388343811,
+      1.1673619747161865
+    ]
+  ],
+  "all_tool_bound_corner_pixel_min": [
+    261.790772771841,
+    226.87363492218455
+  ],
+  "all_tool_bound_corner_pixel_max": [
+    559.2121513003227,
+    399.5462723984543
+  ],
+  "all_cube_corner_pixel_min": [
+    428.8402455722575,
+    259.27823657420424
+  ],
+  "all_cube_corner_pixel_max": [
+    537.4165241890731,
+    370.57561361549625
+  ],
+  "native_model_source_sha256": "87e0963be3541f830d4e88308595a52ee29748b73c13552027c9e6c1ea9377b4",
+  "render_source_sha256": "420e9c288979493cb2e8bec0ea544ed27eb1827538d232e8c1899415947f8fc2",
+  "outputs": {
+    "DATA.json": "4cba5ae7e4a0eec71a255bf6c58bd444f55c0e3cd1021ca29e1fc1131d0bf3c5",
+    "ANNOTATED_050.png": "66c17dcbb8871a52d58dbc8bceae05bbc497026c1003ff6658a957029020e815",
+    "SYNC_VIEWER.html": "a927ef5b0e91d3736537cb0256a0d89d846d979134e19e2e571277779a35209c",
+    "RAW_050.png": "1ad390217fdbb54cc7679e058b7c50c2b0de41fa872049157ad2a7fcae9b1190",
+    "RAW.mp4": "3c027ef465d470d866d5e26e1ed290897766e559f72aeec844fe3634fbdf8cb8",
+    "CAPTION.md": "8042f3a5a59160d79fc1b101cbb0f43e8dcc6ff58657b8f0b521485a6f28f6ab",
+    "ANNOTATED.mp4": "75a10ed222997704ba09d58d09d6ff4aac743b48fb56e6f5b3f5d8749f4e3b27",
+    "RIGHT_SOURCE.json.gz": "d81bf80d5c3ace6cdc6c02f1c580e8864045cec67ab69ef63acc42c011173019",
+    "RAW_000.png": "66475649111f9882208f4f11b5cebf6d6c55574e7fbfb02e350a4e315b2f3432",
+    "ANNOTATED_100.png": "2e44ecce4f9927f7577ba5e39684985282709ae19167cee2578e67de71ef365e",
+    "TRACE.png": "420f385ba3f6b0a8147fa5c5ad2adf38e4b6ed6dedb5bc9619fa95c2fff8b4b9",
+    "ANNOTATED_000.png": "a75eb0f86ccdd954f92e79617f79e23634de4ca41be28613f864afdb32b3b08e",
+    "LEFT_SOURCE.json.gz": "4f0eaa3a435e84fd638ca8691036230cfda3dbd85ab7ecddddc78bafdc68413e",
+    "RAW_100.png": "5b36a834f86762805957129a0fd9d77f5f422806a734c1eeac12b26895ae9a8a",
+    "render_source.py": "420e9c288979493cb2e8bec0ea544ed27eb1827538d232e8c1899415947f8fc2"
+  }
+}

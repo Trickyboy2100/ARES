@@ -126,3 +126,9 @@
 学术先例补充Sequential Dexterity/ViSkill/Foresight（后继可行与后向训练）、TASP/SPIN（异构技能运动衔接与规划蒸馏）、SPIRE/DAWN（强基座）、EES（主动练习）、FAWAM（力反馈纠偏）、随机时长规划及Action Space Design；简单合同Q/已测状态/预算输入都不是独立创新。
 
 决定：现有EXP-003 A/B两工作流不变；保留最强四姿态搜索、STAP核和稳定log-Q，先追踪历史少量真实两阶段敏感案例的力学原因；在实际后继净空/接近或工具接触漂移/限时中做有界同权限真实物理对照，要求Codex同会话自主推进下一项有辨识力的实验，不仅返回Gate。几何解决则记RETAINED，再寻找可测执行残差；有真正剩余学习空间才训普通两边界RL和最小新机制。理论审查、原始数据与运行建议见新[研究评估](evidence/EXP-003/2026-11-02/pyramid_contract/THEORY_REVIEW_NEXT_RESEARCH_LOOP.md)。独立算法增益继续UNVERIFIED，测试密封及ARES-R边界不变。
+
+## 2026-11-02｜接触/时长累积闭环（contact_duration）
+
+完成312有效物理episode/44700步，另8个FK日志API错误尝试800步单独INVALID保留；11000真实优化更新。旧Pyramid576审计与原初态counterfactual厘清C抓持/前段合同失败，原36/36几何资产保留。工具干预baseline3/12→measured/frozen refresh均5/12；严格前段一致36/36，反馈信息非必要。等时等待不充分，plan_screw Success仍有13–14mm终点FK误差；细积分下降但成功抓位交叉，不能宣称通用修复。108新设计有限网格最佳固定6/12、oracle7/12；新开发普通FittedQ、监督、STAP-open/replan、后续价值类比及固定均2/4，继承100mm参考也2/4。没有独立算法增益，UNVERIFIED。
+
+永久保留：旧SAC/STAP/log-Q/36of36、两边界真实结果、只读100Hz接触与FK检查。下一轮先共享计划终点/实测到位/接触入口/预算合同，并用新设计物理配对验证抓位×后继调度残差，不扩训练量或叠模块。初始n2与原n16同seed不相同，54诊断条不可当旧case复现；另36条仅reset恢复记录初态，之后真实物理。详见[研究结论](evidence/EXP-003/2026-11-02/contact_duration/README.md)、[审查页](evidence/EXP-003/2026-11-02/contact_duration/REVIEW.html)。

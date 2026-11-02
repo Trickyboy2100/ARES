@@ -59,7 +59,7 @@ def execute_chain(env, seed, grasp_x=None, hook_y=None, pull_distance=.27, pull_
         nominal_yaw=cube_yaw if env.target_y is None else float(np.arctan2(sp(u.cube).p[1]-env.target_y,sp(u.cube).p[0]-(sp(u.agent.robot).p[0]+.57)))
         if lookahead:
             trials=[];start=time.monotonic();tool=sp(u.l_shape_tool)
-            for gx in [.07,.105]:
+            for gx in getattr(env,'grasp_candidates',[.07,.105]):
                 closing=np.array([0.,1.,0.]);closing*=1 if np.dot(closing,quat2mat(sp(u.agent.tcp).q)[:,1])>=0 else -1
                 predicted_grasp=u.agent.build_grasp_pose(np.array([0,0,-1]),closing,tool.p+[gx,0,0]);att=predicted_grasp.inv()*tool
                 quat=axangle2quat([0,0,1],cube_yaw);origin=sp(u.cube).p-quat2mat(quat)@np.array([.126,.0625,0]);origin[2]=.026;target=sapien.Pose(origin,quat)*att.inv()

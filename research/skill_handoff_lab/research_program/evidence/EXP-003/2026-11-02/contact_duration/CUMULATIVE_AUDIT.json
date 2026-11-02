@@ -1,0 +1,99 @@
+{
+  "tool": {
+    "episodes": 96,
+    "scene_clusters": 8,
+    "target_conditions": 16,
+    "success": 49,
+    "success_hist": {
+      "0": 7,
+      "3": 1,
+      "4": 1,
+      "6": 7
+    },
+    "mixed": [
+      {
+        "seed": 743041,
+        "mass": 1.25,
+        "target": 0.08,
+        "success": 3,
+        "distance_spread_mm": 62.05
+      },
+      {
+        "seed": 743046,
+        "mass": 0.75,
+        "target": 0.08,
+        "success": 4,
+        "distance_spread_mm": 65.11
+      }
+    ],
+    "largest_distance_spread_mm": 118.42,
+    "best_measured_fixed": 8,
+    "finite_action_oracle": 9
+  },
+  "old_pyramid": {
+    "episodes": 576,
+    "scenes": 64,
+    "nominal": 52,
+    "best_fixed": 59,
+    "measured_action_oracle": 62,
+    "predecessor_sensitive": 9,
+    "successor_sensitive": 13,
+    "both_sensitive": [
+      420010,
+      420022,
+      420026,
+      420036,
+      420038,
+      420052
+    ],
+    "both_parameters_needed_vs_nominal": [
+      420002,
+      420023
+    ]
+  },
+  "new_pyramid": {
+    "variants": {
+      "pilot": {
+        "episodes": 18,
+        "success": 0,
+        "scene_clusters": 1,
+        "geometry_queries": 0,
+        "success_by_context": {
+          "744000/0": 0,
+          "744000/45": 0
+        }
+      },
+      "symmetry": {
+        "episodes": 36,
+        "success": 29,
+        "scene_clusters": 2,
+        "geometry_queries": 0,
+        "success_by_context": {
+          "744000/0": 9,
+          "744000/45": 2,
+          "744001/0": 9,
+          "744001/45": 9
+        }
+      },
+      "feasible": {
+        "episodes": 36,
+        "success": 36,
+        "scene_clusters": 2,
+        "geometry_queries": 144,
+        "success_by_context": {
+          "744000/0": 9,
+          "744000/45": 9,
+          "744001/0": 9,
+          "744001/45": 9
+        }
+      }
+    },
+    "exact_prefix_pairs": 36,
+    "paired_rescues": 7,
+    "paired_regressions": 0,
+    "total_episodes": 90,
+    "optimizer_updates": 0
+  },
+  "new_simulation_steps": 0,
+  "claim": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN"
+}

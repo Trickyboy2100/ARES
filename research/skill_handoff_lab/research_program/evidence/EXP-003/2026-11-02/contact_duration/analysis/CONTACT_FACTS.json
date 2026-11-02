@@ -1,0 +1,82 @@
+[
+  {
+    "grasp": 0.035,
+    "mode": "baseline",
+    "success": false,
+    "first_tool_table_step": null,
+    "first_tool_cube_step": 70,
+    "max_rotation_before_first_table_or_cube_deg": 0.49415128634876715,
+    "max_rotation_after_boundary_deg": 11.906206370613953,
+    "terminal_distance_mm": 835.2026343345642
+  },
+  {
+    "grasp": 0.035,
+    "mode": "frozen12",
+    "success": true,
+    "first_tool_table_step": 82,
+    "first_tool_cube_step": 79,
+    "max_rotation_before_first_table_or_cube_deg": 0.440294391877784,
+    "max_rotation_after_boundary_deg": 2.213385260932269,
+    "terminal_distance_mm": 597.4205136299133
+  },
+  {
+    "grasp": 0.035,
+    "mode": "slow3",
+    "success": false,
+    "first_tool_table_step": null,
+    "first_tool_cube_step": 76,
+    "max_rotation_before_first_table_or_cube_deg": 0.3394950980990555,
+    "max_rotation_after_boundary_deg": 11.843401474404473,
+    "terminal_distance_mm": 833.9993357658386
+  },
+  {
+    "grasp": 0.035,
+    "mode": "settle9",
+    "success": false,
+    "first_tool_table_step": null,
+    "first_tool_cube_step": 79,
+    "max_rotation_before_first_table_or_cube_deg": 0.4158765922435724,
+    "max_rotation_after_boundary_deg": 11.430738853201289,
+    "terminal_distance_mm": 606.8530678749084
+  },
+  {
+    "grasp": 0.07,
+    "mode": "baseline",
+    "success": false,
+    "first_tool_table_step": 70,
+    "first_tool_cube_step": 67,
+    "max_rotation_before_first_table_or_cube_deg": 0.5339247970317839,
+    "max_rotation_after_boundary_deg": 12.737491644596357,
+    "terminal_distance_mm": 614.8175001144409
+  },
+  {
+    "grasp": 0.07,
+    "mode": "frozen12",
+    "success": true,
+    "first_tool_table_step": null,
+    "first_tool_cube_step": 76,
+    "max_rotation_before_first_table_or_cube_deg": 0.5479317479414507,
+    "max_rotation_after_boundary_deg": 2.075313638522318,
+    "terminal_distance_mm": 599.1928577423096
+  },
+  {
+    "grasp": 0.07,
+    "mode": "slow3",
+    "success": false,
+    "first_tool_table_step": 83,
+    "first_tool_cube_step": 73,
+    "max_rotation_before_first_table_or_cube_deg": 0.24340292407114425,
+    "max_rotation_after_boundary_deg": 12.889745780107544,
+    "terminal_distance_mm": 603.3185720443726
+  },
+  {
+    "grasp": 0.07,
+    "mode": "settle9",
+    "success": false,
+    "first_tool_table_step": null,
+    "first_tool_cube_step": 76,
+    "max_rotation_before_first_table_or_cube_deg": 0.5339247970317839,
+    "max_rotation_after_boundary_deg": 10.545645934910528,
+    "terminal_distance_mm": 602.3362874984741
+  }
+]

@@ -1,0 +1,1513 @@
+{
+  "scores": {
+    "pyramid_refresh": {
+      "refresh": {
+        "n": 18,
+        "success": 7
+      }
+    },
+    "evaluation": {
+      "fixed": {
+        "n": 4,
+        "success": 2
+      },
+      "geometry_baseline": {
+        "n": 4,
+        "success": 0
+      },
+      "geometry_frozen12": {
+        "n": 4,
+        "success": 0
+      },
+      "geometry_slow3": {
+        "n": 4,
+        "success": 0
+      },
+      "ordinary": {
+        "n": 4,
+        "success": 2
+      },
+      "supervised": {
+        "n": 4,
+        "success": 2
+      },
+      "stap_open": {
+        "n": 4,
+        "success": 2
+      },
+      "stap_replan": {
+        "n": 4,
+        "success": 2
+      },
+      "foresight": {
+        "n": 4,
+        "success": 2
+      }
+    },
+    "retained100": {
+      "baseline": {
+        "n": 4,
+        "success": 2
+      },
+      "frozen12": {
+        "n": 4,
+        "success": 2
+      },
+      "slow3": {
+        "n": 4,
+        "success": 2
+      }
+    },
+    "tool_controls": {
+      "frozen12": {
+        "n": 12,
+        "success": 5
+      },
+      "slow3": {
+        "n": 12,
+        "success": 3
+      }
+    },
+    "tool_effect": {
+      "baseline": {
+        "n": 12,
+        "success": 3
+      },
+      "refresh12": {
+        "n": 12,
+        "success": 5
+      }
+    },
+    "train108": {
+      "baseline": {
+        "n": 36,
+        "success": 7
+      },
+      "frozen12": {
+        "n": 36,
+        "success": 7
+      },
+      "slow3": {
+        "n": 36,
+        "success": 11
+      }
+    },
+    "pyramid_recorded": {
+      "legacy": {
+        "n": 18,
+        "success": 7
+      },
+      "strong": {
+        "n": 18,
+        "success": 7
+      }
+    },
+    "tool_all_contacts": {
+      "baseline": {
+        "n": 2,
+        "success": 0
+      },
+      "frozen12": {
+        "n": 2,
+        "success": 2
+      },
+      "slow3": {
+        "n": 2,
+        "success": 0
+      },
+      "settle9": {
+        "n": 2,
+        "success": 0
+      }
+    },
+    "endpoint": {
+      "baseline": {
+        "n": 2,
+        "success": 0
+      },
+      "frozen12": {
+        "n": 2,
+        "success": 0
+      },
+      "settle9": {
+        "n": 2,
+        "success": 0
+      },
+      "dense02": {
+        "n": 2,
+        "success": 0
+      }
+    },
+    "endpoint_fixed": {
+      "baseline": {
+        "n": 2,
+        "success": 0
+      },
+      "frozen12": {
+        "n": 2,
+        "success": 2
+      },
+      "settle9": {
+        "n": 2,
+        "success": 0
+      },
+      "dense02": {
+        "n": 2,
+        "success": 1
+      }
+    },
+    "endpoint_dense": {
+      "dense005": {
+        "n": 2,
+        "success": 1
+      }
+    },
+    "pyramid_joint": {
+      "legacy": {
+        "n": 18,
+        "success": 7
+      },
+      "strong": {
+        "n": 18,
+        "success": 7
+      }
+    }
+  },
+  "errors": {
+    "pyramid_refresh": {
+      "None": 18
+    },
+    "evaluation": {
+      "None": 25,
+      "Failure('PLAN_HOOK')": 5,
+      "Horizon('NATIVE_HORIZON')": 6
+    },
+    "retained100": {
+      "None": 6,
+      "Horizon('NATIVE_HORIZON')": 6
+    },
+    "tool_controls": {
+      "None": 21,
+      "Horizon('NATIVE_HORIZON')": 3
+    },
+    "tool_effect": {
+      "None": 22,
+      "Horizon('NATIVE_HORIZON')": 2
+    },
+    "train108": {
+      "None": 92,
+      "Horizon('NATIVE_HORIZON')": 12,
+      "Failure('PLAN_TRANSFER')": 2,
+      "Failure('PLAN_HOOK')": 2
+    },
+    "pyramid_recorded": {
+      "None": 36
+    },
+    "tool_all_contacts": {
+      "None": 8
+    },
+    "endpoint": {
+      "AttributeError(\"'numpy.ndarray' object has no attribute 'p'\")": 8
+    },
+    "endpoint_fixed": {
+      "None": 8
+    },
+    "endpoint_dense": {
+      "None": 2
+    },
+    "pyramid_joint": {
+      "None": 36
+    }
+  },
+  "total_executed_episodes": 320,
+  "total_control_steps": 45500,
+  "invalid_logger_episodes": 8,
+  "valid_episodes": 312,
+  "instrumentation_checks": [
+    {
+      "grasp": 0.035,
+      "mode": "baseline",
+      "all100_steps_identical": true
+    },
+    {
+      "grasp": 0.035,
+      "mode": "frozen12",
+      "all100_steps_identical": true
+    },
+    {
+      "grasp": 0.035,
+      "mode": "slow3",
+      "all100_steps_identical": true
+    },
+    {
+      "grasp": 0.07,
+      "mode": "baseline",
+      "all100_steps_identical": true
+    },
+    {
+      "grasp": 0.07,
+      "mode": "frozen12",
+      "all100_steps_identical": true
+    },
+    {
+      "grasp": 0.07,
+      "mode": "slow3",
+      "all100_steps_identical": true
+    }
+  ],
+  "endpoints": [
+    {
+      "grasp": 0.035,
+      "mode": "baseline",
+      "success": false,
+      "fk_mm": [
+        14.220707955185636
+      ],
+      "transfer_steps": 21,
+      "finish_step": 88
+    },
+    {
+      "grasp": 0.035,
+      "mode": "frozen12",
+      "success": true,
+      "fk_mm": [
+        14.220631254018961,
+        5.415149881416943,
+        0.9558341686878388
+      ],
+      "transfer_steps": 30,
+      "finish_step": 99
+    },
+    {
+      "grasp": 0.035,
+      "mode": "settle9",
+      "success": false,
+      "fk_mm": [
+        14.220707955185636
+      ],
+      "transfer_steps": 21,
+      "finish_step": 96
+    },
+    {
+      "grasp": 0.035,
+      "mode": "dense02",
+      "success": false,
+      "fk_mm": [
+        2.82146759994564
+      ],
+      "transfer_steps": 21,
+      "finish_step": 88
+    },
+    {
+      "grasp": 0.07,
+      "mode": "baseline",
+      "success": false,
+      "fk_mm": [
+        13.47740870198142
+      ],
+      "transfer_steps": 22,
+      "finish_step": 86
+    },
+    {
+      "grasp": 0.07,
+      "mode": "frozen12",
+      "success": true,
+      "fk_mm": [
+        13.477419147010355,
+        5.949464600694236,
+        1.4225334064659745
+      ],
+      "transfer_steps": 31,
+      "finish_step": 96
+    },
+    {
+      "grasp": 0.07,
+      "mode": "settle9",
+      "success": false,
+      "fk_mm": [
+        13.47740870198142
+      ],
+      "transfer_steps": 22,
+      "finish_step": 95
+    },
+    {
+      "grasp": 0.07,
+      "mode": "dense02",
+      "success": true,
+      "fk_mm": [
+        2.6900857408262002
+      ],
+      "transfer_steps": 22,
+      "finish_step": 87
+    },
+    {
+      "grasp": 0.035,
+      "mode": "dense005",
+      "success": true,
+      "fk_mm": [
+        0.005588886468177359
+      ],
+      "transfer_steps": 21,
+      "finish_step": 90
+    },
+    {
+      "grasp": 0.07,
+      "mode": "dense005",
+      "success": false,
+      "fk_mm": [
+        0.6725965498506766
+      ],
+      "transfer_steps": 22,
+      "finish_step": 87
+    }
+  ],
+  "paired_development_vs_fixed": {
+    "fixed": {
+      "rescue": 0,
+      "regression": 0,
+      "scene_clusters": 2
+    },
+    "foresight": {
+      "rescue": 0,
+      "regression": 0,
+      "scene_clusters": 2
+    },
+    "geometry_baseline": {
+      "rescue": 0,
+      "regression": 2,
+      "scene_clusters": 2
+    },
+    "geometry_frozen12": {
+      "rescue": 0,
+      "regression": 2,
+      "scene_clusters": 2
+    },
+    "geometry_slow3": {
+      "rescue": 0,
+      "regression": 2,
+      "scene_clusters": 2
+    },
+    "ordinary": {
+      "rescue": 0,
+      "regression": 0,
+      "scene_clusters": 2
+    },
+    "stap_open": {
+      "rescue": 0,
+      "regression": 0,
+      "scene_clusters": 2
+    },
+    "stap_replan": {
+      "rescue": 0,
+      "regression": 0,
+      "scene_clusters": 2
+    },
+    "supervised": {
+      "rescue": 0,
+      "regression": 0,
+      "scene_clusters": 2
+    }
+  },
+  "sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_refresh/refresh_A0_C0.json.gz",
+      "sha256": "41a62411659444245c7ce2ff3072d3cdf697dd334c0c785f507a92c1f3cda81d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_refresh/refresh_A0_C1.json.gz",
+      "sha256": "846abd3c42a9ec078bc10cd244d28a2211d1b2517b2774e67c3a5a7cfeeab195"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_refresh/refresh_A0_C2.json.gz",
+      "sha256": "4ae18d6722eb0d1c407cda5b0581210d6c4e52b05e11ac89e5c7e21fe07e2437"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_refresh/refresh_A1_C0.json.gz",
+      "sha256": "a4eea266c1cb6ed2ea689417ef9a7bb992e21606df81800bf859198d6b54e575"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_refresh/refresh_A1_C1.json.gz",
+      "sha256": "55711c1678f3aa9c54df1fe690754496a20bb9770ed0c2d674dae91523586835"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_refresh/refresh_A1_C2.json.gz",
+      "sha256": "0c018347b9daaff74c99733d00000fcd5accfd54fb7e104530d4078aa5f6f6e8"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_refresh/refresh_A2_C0.json.gz",
+      "sha256": "2ed8bd346036317d0d60c9324de6bb270dda14fb47a1e47c910518d76dc12d04"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_refresh/refresh_A2_C1.json.gz",
+      "sha256": "68ad43b02429d0d34fa4c4796461af7aff65b1742d3b525b5c657fc8b9668a7e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_refresh/refresh_A2_C2.json.gz",
+      "sha256": "7dd23da244b4d77f03b0c509b2037a358c91e49041badf0ce8057b5fd7353a4d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m0.75_fixed.json.gz",
+      "sha256": "a72c8d4fe3b90c2a66c529d1961fecbaa72f4aea58f4178d2199593ba3ff386e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m0.75_geometry_baseline.json.gz",
+      "sha256": "00884aab9bc203e36df096b4b8919309fe0fffebbb2be27b4d386002bedfa965"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m0.75_geometry_frozen12.json.gz",
+      "sha256": "b582cabd754ca50426727ff4bafc5da5cc9fe8a464b2e7e2c53f897db7ece674"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m0.75_geometry_slow3.json.gz",
+      "sha256": "7a8142deaef482ffdf954bec07c93ac586e691ef8594fc387fd75d4157723f32"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m0.75_ordinary.json.gz",
+      "sha256": "bf10be347d205fb05bd6f22e3599563e740ba5245a0a6d770be3e911f38e4993"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m0.75_supervised.json.gz",
+      "sha256": "b8f85dc9e1c6afe317763b2eaeb2036585661495485d55695186ad58bc29c3df"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m0.75_stap_open.json.gz",
+      "sha256": "8ef3436d9d064d428139f5c528893f1f7f606d2ed9e865f9ba11976605422f3b"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m0.75_stap_replan.json.gz",
+      "sha256": "69b3b03bd3b5b4d207b986e55e5345f7f3456c22b692691eede158797ef70ad8"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m0.75_foresight.json.gz",
+      "sha256": "8e4f88ec8387ef7b25d7bbc50bfee729d400870a4636de432370cd7cc2220e86"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m0.75_fixed.json.gz",
+      "sha256": "df918d4d4122db1edce20c14986ebf46824be45bd5729a4b0dd8565e3964b0b4"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m0.75_geometry_baseline.json.gz",
+      "sha256": "378bc4e55e8bf053b78e22d432f04832d14176805dd818584a80e1a5a0f07e52"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m0.75_geometry_frozen12.json.gz",
+      "sha256": "3f17e253d152f8a032af79b1a221b9b9e8b1cfb0632584d094e94e71ce8573ef"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m0.75_geometry_slow3.json.gz",
+      "sha256": "826e6ed31b5dd3bcc3302cd075c7e94ede38db5664a1a0458dc9492921c044de"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m0.75_ordinary.json.gz",
+      "sha256": "cb4ba2972b0e3f428f113e0536cc2fdec6aadde61ac2ecdc582368d66e2eb4e9"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m0.75_supervised.json.gz",
+      "sha256": "fcfb0c991e2b03d6d5e58ab51b71ff5a6c3fdff8353ee08d03c94dd9f8223e83"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m0.75_stap_open.json.gz",
+      "sha256": "09303cd45a1b506e4a3190b9406b859dc1642dfdaeeb97684e1c33937ddf4003"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m0.75_stap_replan.json.gz",
+      "sha256": "69ba08946fc8e43334e3cb7202dc243ad2545df3fb9e5c17e66bc37873df062c"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m0.75_foresight.json.gz",
+      "sha256": "099fc36014e79f41cc0ede6ee6ae8b61c6e72d246de85d3d0731c01350f531c9"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m1.25_fixed.json.gz",
+      "sha256": "a220f8e109a5d223f414db4390a3226c5b51ad23dd3fbd9fc77c6d9ef1e40013"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m1.25_geometry_baseline.json.gz",
+      "sha256": "b4aa8ff925af5c7dbe50f0dbfbafae7f48e640b32f01262efb270d345674aa29"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m1.25_geometry_frozen12.json.gz",
+      "sha256": "90b3e6437c35869eed540a0e1239acc68a3361605059093fca9938a4c366939e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m1.25_geometry_slow3.json.gz",
+      "sha256": "edaa15cd0e875fa585dd8c8a36f16f8b81fd74debf43a124dee4616f1f595862"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m1.25_ordinary.json.gz",
+      "sha256": "5229e6430aa13ae7d814f7c528d578a474d76d053236ad5a05f8f2615fd5f992"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m1.25_supervised.json.gz",
+      "sha256": "1a894fb8a5bb7314b569daa3d470fa6b1d5dd78b706b6d7c5deaf9e4c0379c95"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m1.25_stap_open.json.gz",
+      "sha256": "8e968819faccd5489b4d5cc403ecd5897783c3495b4e1e2b08a64509a0b21713"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m1.25_stap_replan.json.gz",
+      "sha256": "4b4e3a3c62f482b6e177af4ab59ac5be785f9861311051c61e1c168b8d74d968"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745020_m1.25_foresight.json.gz",
+      "sha256": "cae1503a2078987a9d0775cfd5ddbf9cbf5ec52e60c2aff2a47b6c705ca96e3f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m1.25_fixed.json.gz",
+      "sha256": "e7424530ed8ade8ed72eb73050597594dac8b87c94848771d6bf98ca9e0345bd"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m1.25_geometry_baseline.json.gz",
+      "sha256": "4a9b9882d1034d318a916511419a2b22e3d2b21e4f6bac99334008d36bc2af8b"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m1.25_geometry_frozen12.json.gz",
+      "sha256": "1cd4522b5fdd5cb3c5fb7073f19f04c109c80a0509ef0d4f812036c80f00b4b4"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m1.25_geometry_slow3.json.gz",
+      "sha256": "1167cde746adea4c682b084e4d075c4643d5a2e65f141d82aef42a24d07daa5f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m1.25_ordinary.json.gz",
+      "sha256": "bb8971415eb5ea12ab70d47b6670323f6e36dd4bbb0d72341806b4c3b0141649"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m1.25_supervised.json.gz",
+      "sha256": "ed6705793fae5ee581ae1e0ac9ab192a977ad52cd410d1a67c9c1540a1d7dbbb"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m1.25_stap_open.json.gz",
+      "sha256": "376bc74d0ce566caeb2d4f0a332db97de61cd1f6e7419f57c7026932461d1114"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m1.25_stap_replan.json.gz",
+      "sha256": "d2866ebffa03cde1ce1d83ff5f37ed17c31ea6760cba86ef87b857506fea18cb"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/evaluation/745021_m1.25_foresight.json.gz",
+      "sha256": "08f2e794b6cc8bbed32ed33121b3e1230c5363788c9bd04bd82f84a2b2e64159"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/retained100/745020_m0.75_g0.1_baseline.json.gz",
+      "sha256": "fcf2109d7e6ede6e3b3cb2dac8c32714d8d8ef6447b930c66a7532f00ecaf339"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/retained100/745020_m0.75_g0.1_frozen12.json.gz",
+      "sha256": "311a198e7a1c071aa9428c5c6c80b2d0158054ba5718d0e0f340ce304b26c1a0"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/retained100/745020_m0.75_g0.1_slow3.json.gz",
+      "sha256": "e650e9a8bc85acdb631ea88908a15b0045e46401c4e605fdbad8d5afbfdf7e35"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/retained100/745021_m0.75_g0.1_baseline.json.gz",
+      "sha256": "b1133ec8ed90420bc304c52722a5524b9f57104132a39f15f639dfc5b06f7ef6"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/retained100/745021_m0.75_g0.1_frozen12.json.gz",
+      "sha256": "6bb933fc4285b41f59ec7a9e2f84697247759d45543a90b62913972479410fdc"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/retained100/745021_m0.75_g0.1_slow3.json.gz",
+      "sha256": "515fce7ae5840bbfd65df1a00eb6b3e2b4c246b56150b1569a5a736dd561ab81"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/retained100/745020_m1.25_g0.1_baseline.json.gz",
+      "sha256": "2169af8b18304c769f433e0d789077bc07d94ecbb892cd31689718a5c8245f66"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/retained100/745020_m1.25_g0.1_frozen12.json.gz",
+      "sha256": "14417bbf63c551b437606ec5df7855f6de184dd6d1c02268a8866a8050aff8e8"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/retained100/745020_m1.25_g0.1_slow3.json.gz",
+      "sha256": "ab4c50e52d9589874302cd467283ffe051f0debc2196c553f9de65e3849782c1"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/retained100/745021_m1.25_g0.1_baseline.json.gz",
+      "sha256": "390132a37fc227facfcd8f84937675c119909c8df52a212dd1b7eb991ccf6b69"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/retained100/745021_m1.25_g0.1_frozen12.json.gz",
+      "sha256": "559f7db396cb9e2d5ccbde0b4f9bce28ceb6df6c510863b93b12f78a722b6018"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/retained100/745021_m1.25_g0.1_slow3.json.gz",
+      "sha256": "7f4ec8460dad9d0533fd4548f9d5edfd31803241a07dd6b74a99281e3c2cb75a"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745000_m0.75_g0.035_frozen12.json.gz",
+      "sha256": "0df8d8239cbeb8653a30cc3107a03f54b524ff19c4573851dcb12dee96b2347d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745000_m0.75_g0.035_slow3.json.gz",
+      "sha256": "89ec76d67f4e8d0597393804d1a2f3a4d1761672c4c2ac5e8eafdc099d44f833"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745000_m0.75_g0.07_frozen12.json.gz",
+      "sha256": "4bfd3f3dc6d3ee8d499323f353629097dc5afe35e451fb5bf8eb706dc8d3f045"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745000_m0.75_g0.07_slow3.json.gz",
+      "sha256": "b2d8800eada493bb4022fb67e39a01d2caf8d69981f0e70f8fe1ccf9dfab38df"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745000_m0.75_g0.105_frozen12.json.gz",
+      "sha256": "f0254c7c741ea457be2391f3997d1276f7338cdeb08a92a3ab4401af185ac868"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745000_m0.75_g0.105_slow3.json.gz",
+      "sha256": "36e90e3942ecd96712eaef86c4b57abf446872866afd74ec629af5c460f03f7e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745001_m0.75_g0.035_frozen12.json.gz",
+      "sha256": "17371c162cddac32cbd5ca447c0f18fd0c32b16ecd12b6e46cfae9aae33f9c35"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745001_m0.75_g0.035_slow3.json.gz",
+      "sha256": "d8ba1f4477cf1caf978efa3cf43e4fa44914d52fe0f875fffee68aaea43a047e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745001_m0.75_g0.07_frozen12.json.gz",
+      "sha256": "9ff8a8a01a165952c790d9ad39f5023e4e7d3f2825b06b8205c80d2473ee27f4"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745001_m0.75_g0.07_slow3.json.gz",
+      "sha256": "6bdafaebc4527c6a78bdda077cb9df7dc8ef3ed09bd84b9d4b3645c3e8394ed9"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745001_m0.75_g0.105_frozen12.json.gz",
+      "sha256": "80d642891524eeb5b454e4f2b71e7addf12e780f8642a900e6dcad1025bb93bc"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745001_m0.75_g0.105_slow3.json.gz",
+      "sha256": "3199a39139dd88c43c4123a5e7a3ff538575b5dc393346b1af895400b712e3bb"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745000_m1.25_g0.035_frozen12.json.gz",
+      "sha256": "f6fe93306507839b1920a59d09838c24ebf3564ee7acd930b4053c836c5e6dc4"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745000_m1.25_g0.035_slow3.json.gz",
+      "sha256": "62d512566bbe9ddd70d0b9a75357703cf496577cd863792c958738709f160d92"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745000_m1.25_g0.07_frozen12.json.gz",
+      "sha256": "81141e8adc23b41bca0ee9230d89a20b84f5c62883e94200ef7ac10181be42f1"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745000_m1.25_g0.07_slow3.json.gz",
+      "sha256": "7e774c288e6c2fc2a6e50fe01fe4df3ac456d9b61d12940f102113d825b78d18"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745000_m1.25_g0.105_frozen12.json.gz",
+      "sha256": "abbdf7c75084a5b97518208a37dc7e10fba0de5f58bf3b0572dcbb51efddde9f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745000_m1.25_g0.105_slow3.json.gz",
+      "sha256": "a73ba1af6b7b671e68e77c2a9130690a71fd3ca07cdfbf37f87468038e903dbb"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745001_m1.25_g0.035_frozen12.json.gz",
+      "sha256": "521b3015576f5db4d2d0f1717e704d2ca041b3273404a8adeb7396670126fc68"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745001_m1.25_g0.035_slow3.json.gz",
+      "sha256": "1871791e3f8abbbabf432a34adb097f267127c9488a70c06aa3863331ede6550"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745001_m1.25_g0.07_frozen12.json.gz",
+      "sha256": "d4f48f8ada7b755326345c71f3527e71eeab0db7f676f98b10b5c63a4cd5a015"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745001_m1.25_g0.07_slow3.json.gz",
+      "sha256": "9dcebe3962552f44b5936761fb985df00208150fa1121d24aaa0920a5cb20b31"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745001_m1.25_g0.105_frozen12.json.gz",
+      "sha256": "5e5e9708056d524f39d38046538651e69f3f049f6e92ae171fbae9b610e06c28"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_controls/745001_m1.25_g0.105_slow3.json.gz",
+      "sha256": "a935b65d81b0c60c7730871ce7ed694a9abb3e84941fa4b548a54652f22673ad"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745000_m0.75_g0.035_baseline.json.gz",
+      "sha256": "294cd289f69c43bfd2b5464b785072f4df2f75dc4d0de86e03b3d722275f01e5"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745000_m0.75_g0.035_refresh12.json.gz",
+      "sha256": "2f75f5d75086cc6b15a240a3c186a572c8e7b34f5507693c245986fd2bf76c6f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745000_m0.75_g0.07_baseline.json.gz",
+      "sha256": "56ffbc65fa5fab63aeffa92186b68856b80dd9572cf63da0315e978b5c137420"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745000_m0.75_g0.07_refresh12.json.gz",
+      "sha256": "1fdaf36ea589fccb0a4dd1b1781a2cede67904c327273a5fe494afeed86b7c25"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745000_m0.75_g0.105_baseline.json.gz",
+      "sha256": "fe89f7ccc5c316ecc99483c40abbf30afd96499dc3e1d2f86dc35d9d821cb052"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745000_m0.75_g0.105_refresh12.json.gz",
+      "sha256": "79b2f99779f3dace30a442e2aba097a7ca5e81032f01db8a9d5ca405e59302dc"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745001_m0.75_g0.035_baseline.json.gz",
+      "sha256": "3b3e0d86a0312e983548b08761e41b1f8c2248159cfc82f981a6d4644b4cd631"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745001_m0.75_g0.035_refresh12.json.gz",
+      "sha256": "96e62e03050a517363331eca7ddf7401d539c9886a9c0cdb020fd55775f92d9f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745001_m0.75_g0.07_baseline.json.gz",
+      "sha256": "30abca20de1678d87f4579e75085c9bda2a8f827ddd1476fd0a4a83a74e7ab09"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745001_m0.75_g0.07_refresh12.json.gz",
+      "sha256": "990e0ee4b2b4229e16bbec8138687488a67ccd8cb52370577d0f146fb7c3e7ba"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745001_m0.75_g0.105_baseline.json.gz",
+      "sha256": "a800a861a4efbd4bdc63e74b7185ca39366db0fead213e88755b422628af064b"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745001_m0.75_g0.105_refresh12.json.gz",
+      "sha256": "c58b11b6360d3928d5ab6317987cf6cd163329286be4679d47139f6951a3562d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745000_m1.25_g0.035_baseline.json.gz",
+      "sha256": "ebee046f16a195e35361808188952d66101b06c73a3e40c278fd265f6414c3ea"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745000_m1.25_g0.035_refresh12.json.gz",
+      "sha256": "1faaeb09728b3b681839e1c6caf68e191deed47b414c5c499406696b43b34ad9"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745000_m1.25_g0.07_baseline.json.gz",
+      "sha256": "5d4f1631c3946c06c17c4f1197a1d3fd79c62f5783186999bde0d715dbc515fd"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745000_m1.25_g0.07_refresh12.json.gz",
+      "sha256": "d18d839b72eb85e9360174c4d5d82c374dfdd0ad379848a94a9e26a4d17c09dd"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745000_m1.25_g0.105_baseline.json.gz",
+      "sha256": "1d9d5aa829cdd6de0c3d91c6a7d32e25f9c9fc6455e38276b6bb0e64a76c4437"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745000_m1.25_g0.105_refresh12.json.gz",
+      "sha256": "b5b27181e87ce8f067847a0c830ed8d151335b8b3911f0c850c8a13e866e6e0b"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745001_m1.25_g0.035_baseline.json.gz",
+      "sha256": "48f4e4a9770847e067f30bc5f61b33f05179fe79bc1e18fa3ec40c8d1b898f7f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745001_m1.25_g0.035_refresh12.json.gz",
+      "sha256": "7529cda2dde9f2f78ffcde8f5f1cb69b435b12cd71143094546f11d0d1b69008"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745001_m1.25_g0.07_baseline.json.gz",
+      "sha256": "23952e01d3d6fa101d9d29d785048e0a6c4b11498205e335345e9d0b2eaf2efe"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745001_m1.25_g0.07_refresh12.json.gz",
+      "sha256": "0819bb9b45aed1de014ccf5d2a078be0fb1edb689a602ad3441631c3cbf701b0"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745001_m1.25_g0.105_baseline.json.gz",
+      "sha256": "ce2050fc8099f1daf4e93d54d01cfecaf0dc1a6a1455f0e04aeb114c427340b1"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_effect/745001_m1.25_g0.105_refresh12.json.gz",
+      "sha256": "db2101119e7cef6382d72c4d3a9cba6c96a839e9edc2640f9d3eaa0fdabb0a61"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m0.75_g0.035_baseline.json.gz",
+      "sha256": "1319697693e4d73603b6bc28f73c272156d8e1b2ce73880968e97784bd822479"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m0.75_g0.035_frozen12.json.gz",
+      "sha256": "820ba95214a03ca32b69cbc745ad1d99a72666db0e143c8da3462aac3fe0365f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m0.75_g0.035_slow3.json.gz",
+      "sha256": "88a7032491b7d4754cb0cfa619552745369b894ad65701cfaf409ad91b6ef60d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m0.75_g0.07_baseline.json.gz",
+      "sha256": "60abdc4968874c19fe14578fd8f11d7efd7b844095f5fc3d4aaa960046f0ae75"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m0.75_g0.07_frozen12.json.gz",
+      "sha256": "f0c3f1c162c2efa17a7ed2f568038a0bb81faeac988af658179d085005891712"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m0.75_g0.07_slow3.json.gz",
+      "sha256": "c42c5c771f71e1110dd96e51f651ebccb763beaac0b04ee20b024e0866bc7781"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m0.75_g0.105_baseline.json.gz",
+      "sha256": "aea9a78cd436b908f2f28c4e3a4cbe83cd41f3f8598d623bdc59cbd289ed9dab"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m0.75_g0.105_frozen12.json.gz",
+      "sha256": "5c9036627399fdc9444498c216e8b229df8374a19f80561d74d800581f8dd87e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m0.75_g0.105_slow3.json.gz",
+      "sha256": "93003c90ce68af55211ed0fcdc7795870044193a4b0c0f738cfb57a312ed00de"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m0.75_g0.035_baseline.json.gz",
+      "sha256": "b815d4e60bcd0223837b4fb0a8cbc482d3476b3d56d4db15059140292952038d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m0.75_g0.035_frozen12.json.gz",
+      "sha256": "d70b1e2f6b732b1e4ac0d81b59ab6b309ba9c645641e627b9ccbb0568dcf00a8"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m0.75_g0.035_slow3.json.gz",
+      "sha256": "983a94cf3b40cb99dc357397a0aa06563bcba5eafd5b6ec2efc5e26ea84132ea"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m0.75_g0.07_baseline.json.gz",
+      "sha256": "dacfe7f3e5eabe5cd77bab87611db99c0342e34d7a9518c8ec1e30d4aebb7e99"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m0.75_g0.07_frozen12.json.gz",
+      "sha256": "a4e80cbf20042658ececdc343d625af10a6370c17cadee2a4f16f57bd3c498c6"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m0.75_g0.07_slow3.json.gz",
+      "sha256": "260c268ec8b769e2f1a61c161eda040c1c2fd6c1b747cc6e7d780820969d2e28"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m0.75_g0.105_baseline.json.gz",
+      "sha256": "90a3da762c06bb9080f9468c570bc07f7ae73cb73e70e1c357931405ddc39627"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m0.75_g0.105_frozen12.json.gz",
+      "sha256": "744d515a8d2aec8aecc9f524e7af7805d6835c493f104f078a6340f110c334df"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m0.75_g0.105_slow3.json.gz",
+      "sha256": "000dc493a8b4541e6665b0dbcb424d021bbdd2d7f62af1261bb7c7e6f409972a"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m0.75_g0.035_baseline.json.gz",
+      "sha256": "a1510b0062efe70bfc1270ecd0cce2119ec03920995c5fd24b31a34788a78e0b"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m0.75_g0.035_frozen12.json.gz",
+      "sha256": "49218301669952fd0eea3afa68109e376a9681f6521b5e981b671785057e49b4"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m0.75_g0.035_slow3.json.gz",
+      "sha256": "ce93704010e84d7bea7f67fd7ea5b80b4d67ab9ef91fa14823192a123535f489"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m0.75_g0.07_baseline.json.gz",
+      "sha256": "a2be30f2fb0b8b6d71e41ea29ee486a726b1df7d6a315019d8f46e598cda16a7"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m0.75_g0.07_frozen12.json.gz",
+      "sha256": "c72f49487c34a9ede1bd166cf0f62c2d6830a83d53d4d727ad225069ebfb80d3"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m0.75_g0.07_slow3.json.gz",
+      "sha256": "17e4d3f3e7501fd2fd13936a1526a4ea11957284d4da5cd1cb2783d7f13849b9"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m0.75_g0.105_baseline.json.gz",
+      "sha256": "1c86642ff3954eeae9cb520ab96e615cfc41cd3af882b578348999453e0c5863"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m0.75_g0.105_frozen12.json.gz",
+      "sha256": "0e073d6809d55172b900f240cebe3484388138d6dce90c0e5fb89fe114f3e914"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m0.75_g0.105_slow3.json.gz",
+      "sha256": "c460958c6cca681ce2cbff703ddbd6a1bc63ab146bc3c6541f09ef62e3160788"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m0.75_g0.035_baseline.json.gz",
+      "sha256": "1227fd6a06f7daebe808de529ae9cf4b2478d606c32f585dd1b3e9e6da7358dd"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m0.75_g0.035_frozen12.json.gz",
+      "sha256": "c90bb5141c4c3250cbbdaede069a9eddf3215885a5c51f3e0555d307a6b31051"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m0.75_g0.035_slow3.json.gz",
+      "sha256": "f9db71e586cd34f22de8967b35014b2ba2e5e8404306c5564b717a9875ea1799"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m0.75_g0.07_baseline.json.gz",
+      "sha256": "abea0b012b768763d0a34aa58cb8769cff1f59c71a571d9d9c43c696426a6461"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m0.75_g0.07_frozen12.json.gz",
+      "sha256": "38c2d7efb8df2cfd41fd55f77c60d78a10e937fb9e8ec760c85dd43c7982d6eb"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m0.75_g0.07_slow3.json.gz",
+      "sha256": "a4ee86ae48122d29c28b32a40bb03b88289f9d4646ea388c50a693b2f6851ce9"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m0.75_g0.105_baseline.json.gz",
+      "sha256": "de78e0a7c70dc31ab81c538a2192a35add6c63f9af78827673ff64c084f72eb2"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m0.75_g0.105_frozen12.json.gz",
+      "sha256": "1545f27c7729df91cfffebd11a067801f26a8c9607193c27904a09050b0f28d9"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m0.75_g0.105_slow3.json.gz",
+      "sha256": "807d41972a622655fba245bbef90fa85bf046b9dfe434a4cdc81afd789ae56ea"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m0.75_g0.035_baseline.json.gz",
+      "sha256": "ad8445cdac22bb7193db31ad10bc439f924bcf9a275463dfce2cf2e9f08730df"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m0.75_g0.035_frozen12.json.gz",
+      "sha256": "5f3372480dc659e8e28496b115ea29adafe02e696c431b914bd8cc606f408b8c"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m0.75_g0.035_slow3.json.gz",
+      "sha256": "71ca316413486add0c347feacf1e7c04d577972d9c93324291c2861438bf2087"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m0.75_g0.07_baseline.json.gz",
+      "sha256": "cc05da44b0a30dc911e6066bdcf47d97ef86e7743344aae82689149240c10dca"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m0.75_g0.07_frozen12.json.gz",
+      "sha256": "90ae3291ded04d574a45e837724e9b98ce6c45ed9539bc602c4eb4c381889e45"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m0.75_g0.07_slow3.json.gz",
+      "sha256": "58d5c45972ad15b8eddcdc7d4610f2d39530c623773f863ed524bd53c4b54834"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m0.75_g0.105_baseline.json.gz",
+      "sha256": "8551938e762576113979cd9eda87dc83bb016aba768ef8c4fc72d3d65eba8eff"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m0.75_g0.105_frozen12.json.gz",
+      "sha256": "8488d862c9536e2e4b3bbc59ea17562ea10e7a14184d3e1fef4be6ca78d00bb1"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m0.75_g0.105_slow3.json.gz",
+      "sha256": "ce4b88cbdea99dff58e04e2bac3e41bc063463195b8bd6c62ca1c0a36b87c436"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m0.75_g0.035_baseline.json.gz",
+      "sha256": "9a2e80f62e39598f5175b0400ce1efd4a753bde7a5753a358aea4fe507dad998"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m0.75_g0.035_frozen12.json.gz",
+      "sha256": "13670f43f62a978b6af6cfb09f635ec26377bd53321ce099c94251b2d0f0217d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m0.75_g0.035_slow3.json.gz",
+      "sha256": "6b297f78882f7454f30308340325e6c8c42b9f1bbd876c7751e90a7dfe53ba25"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m0.75_g0.07_baseline.json.gz",
+      "sha256": "848ee0868e6bbf0cfbb2246c6b2557915011c5cd18e6b23d72036e1beb03cfc2"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m0.75_g0.07_frozen12.json.gz",
+      "sha256": "5fec0a6345ebf58d3b345e3bf099ccf61bf5fd01e17413f3bcb2f84ed00505a5"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m0.75_g0.07_slow3.json.gz",
+      "sha256": "d688a8fb742a6cabbadc638fc251f468c979fe22b911e5875d7f47aed1c4e449"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m0.75_g0.105_baseline.json.gz",
+      "sha256": "4426aaef06177068b2c3bfce25b2554a26fbbfb16d7f4e218587a45ec20eac71"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m0.75_g0.105_frozen12.json.gz",
+      "sha256": "4295079a3b1080fcb17f52b0acc8c7c0e436a7de0ad51c901d76d08bfa6aaff4"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m0.75_g0.105_slow3.json.gz",
+      "sha256": "b62b4e5c5c80cf0fbd4303e1468f3b2a3390cb3de33800851b7bb5f1985d23d2"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m1.25_g0.035_baseline.json.gz",
+      "sha256": "fdb829ac74383e2ecd4b9bc9dbdda543b68b4718248fad0bfdd197dc86039bf6"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m1.25_g0.035_frozen12.json.gz",
+      "sha256": "e5a33a1963a470e38c0fef5f3a929140299bac9d88527a1e1831fbe5f2ed989d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m1.25_g0.035_slow3.json.gz",
+      "sha256": "9e19143393c665c1391d30938c255fbb0cdceb82b2e319aef7cce8ea658dbf86"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m1.25_g0.07_baseline.json.gz",
+      "sha256": "5134fb06c8e5cc6da77e3d17a5d9f98bd96129565e2f47195dd2bc1569e041c4"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m1.25_g0.07_frozen12.json.gz",
+      "sha256": "295f37ef16bbb3c47f52af7e3ae8b087002e91af4b84d0d4cbb25f3f8368ef55"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m1.25_g0.07_slow3.json.gz",
+      "sha256": "cc8ed75bd758b7a08f59229a0bb6870cc4b4cbb83a27e3151cc893da0e9bf08e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m1.25_g0.105_baseline.json.gz",
+      "sha256": "3470de358f0e33b148a39140da753e7ff6daf036b0c8d924b5df6c0c58cf9ca7"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m1.25_g0.105_frozen12.json.gz",
+      "sha256": "e06448d0a1605b1d09e03b0ecbb8c0c4f7b7daab578201a2667fd26abca0456b"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745010_m1.25_g0.105_slow3.json.gz",
+      "sha256": "0c1df88e1d2f3da46b43550330aa762983c6adacf1796b71ff8eb71e7f62bf0f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m1.25_g0.035_baseline.json.gz",
+      "sha256": "d1bf0864d255ff1e4ca2b7999a59711b7cbc37961c2b0a53498cae9d55a1f190"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m1.25_g0.035_frozen12.json.gz",
+      "sha256": "54e3b008190109838e224b09cb9cc11a9311ece49de417988b7184f813f848ec"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m1.25_g0.035_slow3.json.gz",
+      "sha256": "d0c456f5c8e532456bda5b99214b5e809073ce3c8c706b1d8a5173591d799b02"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m1.25_g0.07_baseline.json.gz",
+      "sha256": "ea5e05efa49d6e150c1a8401e71efac5ac11cc56a9817a85a206c32928b23090"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m1.25_g0.07_frozen12.json.gz",
+      "sha256": "371da9a29633c6e31f2cd51f18e7b0d7aaa4d40ff305b2a34f1c38ca3416080a"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m1.25_g0.07_slow3.json.gz",
+      "sha256": "96ef6d185967b1a81b92c1409287c7a4baac10b756e403edd1c630f95fdca132"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m1.25_g0.105_baseline.json.gz",
+      "sha256": "fb51442c383f5bf31210dd9b1e928c089abb4cd74e0b890716e6a6700fd1dbcd"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m1.25_g0.105_frozen12.json.gz",
+      "sha256": "dc7d73c29dad446968a18b82eb2e03d3df83a247b21962499a7a97cb0480b9c4"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745011_m1.25_g0.105_slow3.json.gz",
+      "sha256": "c014a16c1c61a8bfc801ed52d244ba7adebaa3f1e957ad6efb7e56ce705796a8"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m1.25_g0.035_baseline.json.gz",
+      "sha256": "8406aaaafadcf1f04b227969f6eba82e79aa6d830f8b63e6af19634ab54894ab"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m1.25_g0.035_frozen12.json.gz",
+      "sha256": "b25ca8c8276e666ab7de7501f4e3b17b459a48d8399e5a4424498bb1a1dabbbd"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m1.25_g0.035_slow3.json.gz",
+      "sha256": "6f7800ecc505bb87654363c2b564c377b61ec2a8bc86011dba51c08e7b9d398f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m1.25_g0.07_baseline.json.gz",
+      "sha256": "9d67f22a60fd399b8bc625b202533a58bd168c183c1f4b0f7e1bd3b7d06d119c"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m1.25_g0.07_frozen12.json.gz",
+      "sha256": "61ecbfa4b1d8632a440dec7020c1fa31c15de27b926812d38ec7dc4790c8c556"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m1.25_g0.07_slow3.json.gz",
+      "sha256": "a54c8455639e2a11bfc4560cf2f78ab10333c347b35514f2d8d0770098086565"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m1.25_g0.105_baseline.json.gz",
+      "sha256": "1472a9c66c37197b912c05e4ba757ebfda15e1d51ad4ae275e9b58218af002be"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m1.25_g0.105_frozen12.json.gz",
+      "sha256": "61330a5fc21471f3a1b853cf4692778854845bdd861e6da13179cf27ede6788d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745012_m1.25_g0.105_slow3.json.gz",
+      "sha256": "53a4476e5195e1f7fb20ee6bc8a4c0af06ef4d4c45491c0d27934524e0f3a557"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m1.25_g0.035_baseline.json.gz",
+      "sha256": "2ca8537b0c52c7a9dbaea857ce6f94090e9d06c03b1e4f5bc5eefe541dde6cc0"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m1.25_g0.035_frozen12.json.gz",
+      "sha256": "649feb1d48f457525ccd01ca16b298952fe002e954b9848c59ff92acb8030a00"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m1.25_g0.035_slow3.json.gz",
+      "sha256": "fa80f606557ec0ccf20f035aa623af8f577c1c7ca4139e1be44b013f0c8cac22"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m1.25_g0.07_baseline.json.gz",
+      "sha256": "d77fa617e1f1af0ebc8830e3c08dcfdecc77b0e5856da616938b109de3e56010"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m1.25_g0.07_frozen12.json.gz",
+      "sha256": "927d5d33613d87288480f20e25e1ffb13f93ae77d44594bd51af77c796c59c88"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m1.25_g0.07_slow3.json.gz",
+      "sha256": "5f4af20c5f230948b0cdcf6fe54c498344b8693db310ab1fd8c3a9ab6058d8eb"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m1.25_g0.105_baseline.json.gz",
+      "sha256": "aa463c7bb0437dfe1cb070a343814fd668e5858974dab53078a38b91a0798eb3"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m1.25_g0.105_frozen12.json.gz",
+      "sha256": "0f600b4781d5753b12ea30ddab3a41cc8d3dd09ce2c72f44ca17e40b1ebca961"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745013_m1.25_g0.105_slow3.json.gz",
+      "sha256": "3ad6c62b6bbcc73f6e068395a6545512237dd5cad37e983a2f65ab6bec849487"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m1.25_g0.035_baseline.json.gz",
+      "sha256": "2379299dcfcaa58988d61296d355911cf251319234ffc96f56b97bd2d019272e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m1.25_g0.035_frozen12.json.gz",
+      "sha256": "d784d0f9b7795d71a14830eb0feee1b8a212fe19465a3f7c190b6c7810cf1e25"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m1.25_g0.035_slow3.json.gz",
+      "sha256": "50a1b945974eb848d0460187176c5b89f491bccb7775f8715c606cef9ad0a0f4"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m1.25_g0.07_baseline.json.gz",
+      "sha256": "e22d623a26dea2865003552edf3c330da8833fd43f78bdf1fa5847fc0b0c7fc3"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m1.25_g0.07_frozen12.json.gz",
+      "sha256": "ecea448f364834d14e5fcc1d47b2cfba55eaf339a907fe8d3f4f9537b3c9d4a0"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m1.25_g0.07_slow3.json.gz",
+      "sha256": "48bd79b0dc2e930c9c62c7195070d16fc85a04e730ed25fc37886f189c8c7b9c"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m1.25_g0.105_baseline.json.gz",
+      "sha256": "c37d728cc6f10c9b092f805e471838d6df3d4d347544364b7037756745692100"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m1.25_g0.105_frozen12.json.gz",
+      "sha256": "cd9596511b391532287ef631f41a02a63a0e43e3205c3db49dfcc3b6263157d0"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745014_m1.25_g0.105_slow3.json.gz",
+      "sha256": "850446e251dbec31c74e568099c9598c58397a242683f9607b212ada08e99279"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m1.25_g0.035_baseline.json.gz",
+      "sha256": "70a98d4c799b9c5d0785189575c18047a3182e4f37e1cbe6dbd623812d5cf791"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m1.25_g0.035_frozen12.json.gz",
+      "sha256": "1b77c2e43144b532be7cdc4d57b32603a0e885b5dee5d45e391bb0c82ffa1b0e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m1.25_g0.035_slow3.json.gz",
+      "sha256": "30fc22948ad78e71351d16c09fc6fdefab3a30b1c332b0466a2582daad3c3d38"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m1.25_g0.07_baseline.json.gz",
+      "sha256": "2c15eb2f69ae37905f28a0473bb5dffdc177af435253e874adfdd3df03216969"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m1.25_g0.07_frozen12.json.gz",
+      "sha256": "5f2ed52800ff6f5d260d1644429112356bdb872525352023ee8d3ab9818f3664"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m1.25_g0.07_slow3.json.gz",
+      "sha256": "3c343b6907fe71d9684c9ef3b46b8a65135d2bf1dc7794319075e9906557f8b2"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m1.25_g0.105_baseline.json.gz",
+      "sha256": "c9850cd18853021c3df3326b987647809983ff9e605e14708435093802e02615"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m1.25_g0.105_frozen12.json.gz",
+      "sha256": "fd344bb9b5d2cc6d98ed4d6a0dc144998449eb9da2187b27bbb00e1bdb309899"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/train108/745015_m1.25_g0.105_slow3.json.gz",
+      "sha256": "6826b8b09d0b6933c0618b585a41056e33cb9f83ea922837e3224553cee41df1"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/legacy_A0_C0.json.gz",
+      "sha256": "e948f4b75dd890c7d53776a3cfe2baa38fdceaed93996f7b94d8ae24da89d629"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/legacy_A0_C1.json.gz",
+      "sha256": "0fc8629451c2faaace3bef180ad419778765655c9512637d35a6de2ef434f324"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/legacy_A0_C2.json.gz",
+      "sha256": "1d89eb43b6d3515cb06548a1b61e4f4f9cb521447c9c899e173f36c1c3b88e17"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/legacy_A1_C0.json.gz",
+      "sha256": "a1b9f3d8463ecda382b9e847c944b93c84a87c8c11e14aeda3a7225271d98197"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/legacy_A1_C1.json.gz",
+      "sha256": "5e986c78b9c72585474126bdd8e51d971b1ebd88dd956a6135dea5849e7d6754"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/legacy_A1_C2.json.gz",
+      "sha256": "873cf9f4017e316cb8133730ea45acf44954f40c87ce2067f2a1cf7cb95c4b92"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/legacy_A2_C0.json.gz",
+      "sha256": "2ccd76f7efc39e3e5264445f934bc855f7825e2c85cc2f6203bad2c66b672e61"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/legacy_A2_C1.json.gz",
+      "sha256": "43ee9168fd54b64ad8fac373a38df513cc9a44fceab2d04b6af1a595eb18648b"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/legacy_A2_C2.json.gz",
+      "sha256": "bb5cf417d446f981df39a43cfd7ccbc6946804ff3b727eec6e4e034fc5bd7196"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/strong_A0_C0.json.gz",
+      "sha256": "37874081fe5c07991e3d6e927297224b28c7ea1e8c9e8f666c69124b6dcf373d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/strong_A0_C1.json.gz",
+      "sha256": "b978897b1e59d4298e9b9c8b9e89f6249e0045081936594299ce9a758b2b86e7"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/strong_A0_C2.json.gz",
+      "sha256": "9b0eaa6147fb2b2809a8d801d5eeab114782e68da123da50c343428534dab6d2"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/strong_A1_C0.json.gz",
+      "sha256": "70b99fbb0c6a0f044212334333e6a6233cfd80f9c8979d54372b5abd256053ee"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/strong_A1_C1.json.gz",
+      "sha256": "193e8ad3d2757e03f9267c1d96c8ee4e48df4662235fbfeeb7ed6cb3c30de56a"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/strong_A1_C2.json.gz",
+      "sha256": "d0bdb00087c5c5d7c7276e6b59b0d72d3bdb00b271bbdf507dafb308bd6539ff"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/strong_A2_C0.json.gz",
+      "sha256": "66d75884bbd943b3b9ed12c80825386c91afd18b43a8a3665f3efec33dd41a35"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/strong_A2_C1.json.gz",
+      "sha256": "b33536c53fcb3482b28e5ac7247b9612888b466a64527dab2c029cdabbfd55a6"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_recorded/strong_A2_C2.json.gz",
+      "sha256": "a344a2d24a45125ede8a4858bf1a979ad314140dcd51463587cae5b506061add"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_all_contacts/745000_m0.75_g0.035_baseline.json.gz",
+      "sha256": "4f0eaa3a435e84fd638ca8691036230cfda3dbd85ab7ecddddc78bafdc68413e"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_all_contacts/745000_m0.75_g0.035_frozen12.json.gz",
+      "sha256": "d81bf80d5c3ace6cdc6c02f1c580e8864045cec67ab69ef63acc42c011173019"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_all_contacts/745000_m0.75_g0.035_slow3.json.gz",
+      "sha256": "8a554367675bb499275cd66f9faf63b4ce56c061501d12d32f7747ce3d47e57f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_all_contacts/745000_m0.75_g0.035_settle9.json.gz",
+      "sha256": "1f652141dc0746e607b8606c57ca2ef428ebfb48fad785e5fbbd49c7b7181448"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_all_contacts/745000_m0.75_g0.07_baseline.json.gz",
+      "sha256": "8372fd0234e66f454f0b979981f9b149bcf1c11ae08516fe729018b9a13c65d5"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_all_contacts/745000_m0.75_g0.07_frozen12.json.gz",
+      "sha256": "35ae7116707767f5f0f606b684b4341243a8ab3a28957e6bce9ae2156060e0be"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_all_contacts/745000_m0.75_g0.07_slow3.json.gz",
+      "sha256": "3b160569baeaa76c7292e6f52cc212fd0ce1d0fa4045fd8624d5394ee836154c"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/tool_all_contacts/745000_m0.75_g0.07_settle9.json.gz",
+      "sha256": "37fa0bf106dd67be15bb2eb60c4c7b33f9cb20cbaafef44441a5907311a74d3c"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint/745000_m0.75_g0.035_baseline.json.gz",
+      "sha256": "78aa88e18be9818d92d68761f701f839c8c406967c8fd64c6ef93ca52d3615e3"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint/745000_m0.75_g0.035_frozen12.json.gz",
+      "sha256": "7b911228d7af9c3973e86b2456996d1eeaa50af27fc332bb8223d9306f64f0b1"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint/745000_m0.75_g0.035_settle9.json.gz",
+      "sha256": "72dd7a47f6c5d71ce819367c71255f0c91efccb95186087435bc87725833d019"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint/745000_m0.75_g0.035_dense02.json.gz",
+      "sha256": "1ab4eab56ef9b6e0dfc613db3e31b638942290da27ff88fe98026368199efdd1"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint/745000_m0.75_g0.07_baseline.json.gz",
+      "sha256": "e18f4aee6258104d3273e7312c0fda50349ca40f0e5980ba917511eec4516482"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint/745000_m0.75_g0.07_frozen12.json.gz",
+      "sha256": "aa99c78ee46de826ac9a235309ada41770934135dc2e53205a6ca72f0d822033"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint/745000_m0.75_g0.07_settle9.json.gz",
+      "sha256": "52703d84eb3fd95dcf3a03e5f62e4948fe80f79cce4312444cc58ed2001eaf82"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint/745000_m0.75_g0.07_dense02.json.gz",
+      "sha256": "e5a8e846e6cd676935e8e8d3882cb9841539f04f373c12938a566fc37522771a"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint_fixed/745000_m0.75_g0.035_baseline.json.gz",
+      "sha256": "2bdea680b1c335e82ac54fbadac54166f795cc1dfca359be11f7a7d39bf11291"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint_fixed/745000_m0.75_g0.035_frozen12.json.gz",
+      "sha256": "684282940d25d291ba3ad98ede7d4212d190ad5b0e3a688512febdf60815502d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint_fixed/745000_m0.75_g0.035_settle9.json.gz",
+      "sha256": "3886a5492132eee496649e5671e0786b33e8e5ab9ae49a6154f52fa30662ee4d"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint_fixed/745000_m0.75_g0.035_dense02.json.gz",
+      "sha256": "6bbe68a4130dee051bdb82ac8e76fdbe7fc3bf8fb74ba606b943a83a3e50cabb"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint_fixed/745000_m0.75_g0.07_baseline.json.gz",
+      "sha256": "8c2690c015ab635d872ed4044230369b54c4596c202367fc662746451c33909f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint_fixed/745000_m0.75_g0.07_frozen12.json.gz",
+      "sha256": "389be987ecf36191a4c045c15c7dc854c156b912863cf1e44a070cf7a09e8450"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint_fixed/745000_m0.75_g0.07_settle9.json.gz",
+      "sha256": "8a56ecd0ed1483b913335e2013b8ba5caa6af8eced49c741ff126be94e713a60"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint_fixed/745000_m0.75_g0.07_dense02.json.gz",
+      "sha256": "1d844c7adabb97061ae86ac72147ba3fe560945178f81e838815494a33b03fd4"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint_dense/745000_m0.75_g0.035_dense005.json.gz",
+      "sha256": "80e3f617baf32d6a6eb30ba42a9a5f2d542fc86b43f35e9e2602a7b30a1df5fe"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/endpoint_dense/745000_m0.75_g0.07_dense005.json.gz",
+      "sha256": "31a649db681203ad9a2bb3de2e3e72d22df6234ae8375959f7a01d5d4ff06c31"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/legacy_A0_C0.json.gz",
+      "sha256": "232d1a6b6dabfec264dc729d874b649748772aae18aa2b0a9f7184635b5ac3fc"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/legacy_A0_C1.json.gz",
+      "sha256": "474689c2901d46b5008d31bb9888b84db83f23f661ff6ac22f72f14919b4fb1a"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/legacy_A0_C2.json.gz",
+      "sha256": "7c85cc211e7e03118a563eb1370727bc6177fd53294da6d074b86e91d5eaa902"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/legacy_A1_C0.json.gz",
+      "sha256": "57dd0d63c2a4a086c4e99d3d1da72e0333ac88186faa82f3a0769dd7c17aea11"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/legacy_A1_C1.json.gz",
+      "sha256": "11709a7cc4b916ce3cb99d384abe3bbfd40699bf7cd0643381c8ca03539e1369"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/legacy_A1_C2.json.gz",
+      "sha256": "aa51a8f6ee8831020b3e72f86b74c7304b29746159e532daedc29767dc3786f0"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/legacy_A2_C0.json.gz",
+      "sha256": "adab8096bb6b4de5025d9595b24fdc683c15cb502732799c552f3422c13fbfb8"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/legacy_A2_C1.json.gz",
+      "sha256": "1a203ae72578a8fb900679d64b44c19a994694a566f87c25e536a40b35adeb0c"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/legacy_A2_C2.json.gz",
+      "sha256": "6addb3b896559a149f143f1350d949f8e36b52eb95b5900b42571eddd7671656"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/strong_A0_C0.json.gz",
+      "sha256": "645b493fe67fafcca49ff836c26689ce77243620ce6e04e6863793af361778d3"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/strong_A0_C1.json.gz",
+      "sha256": "08406381851f47fce9ec6538c33246a91aa9d6610fbfc9f0b5e90d9db1d1ff82"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/strong_A0_C2.json.gz",
+      "sha256": "79c214627248969f1090dd0391481963a03338519a14f4edd1ad8154f13a7d3f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/strong_A1_C0.json.gz",
+      "sha256": "c92bcfa5a804878ce6737961e8e16b5ecd1fb06c475fb0e579a7cf000e4c32eb"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/strong_A1_C1.json.gz",
+      "sha256": "7ceccc8edf87a2ab36dde2fd198284c4661a242f3745384c34d0e79c11fa6d74"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/strong_A1_C2.json.gz",
+      "sha256": "d131b4c7e0cd719fc74083fdd01e60c1946de7c18f060bc170d5b9b88ecf493a"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/strong_A2_C0.json.gz",
+      "sha256": "58b61e97c263b8441c15a8fd17794b47ea51b60fe18e277553121ee8b4c4a6d0"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/strong_A2_C1.json.gz",
+      "sha256": "bf2fbf3f8af2d1b79d6d2884ddadc40798b3d49a01faf48b1422b5031387f548"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contact_duration_20261102/pyramid_joint/strong_A2_C2.json.gz",
+      "sha256": "7dde422c02a9fdf71602d902ebab1fb301a590a9a4bc4415ac6546fd4e08dbc2"
+    }
+  ]
+}

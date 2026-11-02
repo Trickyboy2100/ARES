@@ -178,3 +178,9 @@ B完成77原生物理任务/9200步、3任务族；完整后段TwoRobot几何8/8
 在任何物理对比中逐案例保留：合法前段和后段候选、前段实测SkillResult、接触模式、剩余预算、几何规划是否可行、预测 vs 实际动作持续步数、原生全任务成功与追加合同、同前段rescue/regression、有效RL决策数和规划查询。若物理可用机会出现，**同轮继续**普通同权限两边界RL（参考SPIRE/DAWN基础）与SeqDex/ViSkill式后继feasibility、STAP/Foresight强对照；仅提出并实现一个小而可消融的执行后果/预算机制。允许连续做2–3次有区分力的物理—学习闭环，不能只做审计/写十页报告。检验没有严格反转但存在持续物理成本差异时，可先做物理因果诊断，独立测试之前再决定是否把效率列为论文主指标。没有可靠机会不强行训新网络。
 
 额外系统基线改进：将已有Y-only 3D-SAC输出投影的混杂与真正2D actor/critic/entropy分开；在A线有界验证新action表示，但**不能替代B的多技能研究**。任何控制/规划修复为所有算法共同版本，明确保留既有训练与失败而非将之计为独立贡献。新增本轮文献/纯数据分析=物理0、优化0；方法依旧UNVERIFIED。下一次Codex应该从当下STATE与最新Pyramid README继续执行实测，而不是重复已完成yaw实验。
+
+## 2026-11-02｜接触/时长累积闭环（contact_duration）
+
+完成312有效物理episode/44700步，另8个FK日志API错误尝试800步单独INVALID保留；11000真实优化更新。旧Pyramid576审计与原初态counterfactual厘清C抓持/前段合同失败，原36/36几何资产保留。工具干预baseline3/12→measured/frozen refresh均5/12；严格前段一致36/36，反馈信息非必要。等时等待不充分，plan_screw Success仍有13–14mm终点FK误差；细积分下降但成功抓位交叉，不能宣称通用修复。108新设计有限网格最佳固定6/12、oracle7/12；新开发普通FittedQ、监督、STAP-open/replan、后续价值类比及固定均2/4，继承100mm参考也2/4。没有独立算法增益，UNVERIFIED。
+
+永久保留：旧SAC/STAP/log-Q/36of36、两边界真实结果、只读100Hz接触与FK检查。下一轮先共享计划终点/实测到位/接触入口/预算合同，并用新设计物理配对验证抓位×后继调度残差，不扩训练量或叠模块。初始n2与原n16同seed不相同，54诊断条不可当旧case复现；另36条仅reset恢复记录初态，之后真实物理。详见[研究结论](../evidence/EXP-003/2026-11-02/contact_duration/README.md)、[审查页](../evidence/EXP-003/2026-11-02/contact_duration/REVIEW.html)。

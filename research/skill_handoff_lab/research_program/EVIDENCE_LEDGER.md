@@ -88,3 +88,9 @@ uncertainty & limitation | exact raw path/hash | science decision`。
 最新Pyramid `SUMMARY.json`：pilot0/18（只1 scene，与后两组不能当严格配对）；nearest symmetry29/36；4个可行对称姿态36/36，后两者36同前段、7救回0退化；feasible版本实际记录144 candidate queries。各自四个(scene,yaw)上下文，feasible全部9/9；2独立物理scene，没有RL训练。
 
 历史Pyramid `HISTORICAL_OPPORTUNITY.json`：576条/64scene，名义52/64、强固定59/64、9动作后验成功并集62/64；前段有效参数改变后继成败的scene数9，后段同起点更改动作敏感的scene数13，二者重合6（420010、420022、420026、420036、420038、420052）。仅相对名义A/C单侧改动均无法救回而联合参数改变可成功的已测scene是420002和420023；既有开发样本不能用于新方法泛化成绩。工具train96有14/16二值终局不随六合法动作变化，但同上下文连续target距离可变化，如743043/+80mm约229–348mm，不能等同物理效果恒定。后验STAP Q退化及TwoRobot预算假阴性仍为具体OPEN_MECHANISM线索，尚未形成原创增益。
+
+## 2026-11-02｜接触/时长累积闭环（contact_duration）
+
+完成312有效物理episode/44700步，另8个FK日志API错误尝试800步单独INVALID保留；11000真实优化更新。旧Pyramid576审计与原初态counterfactual厘清C抓持/前段合同失败，原36/36几何资产保留。工具干预baseline3/12→measured/frozen refresh均5/12；严格前段一致36/36，反馈信息非必要。等时等待不充分，plan_screw Success仍有13–14mm终点FK误差；细积分下降但成功抓位交叉，不能宣称通用修复。108新设计有限网格最佳固定6/12、oracle7/12；新开发普通FittedQ、监督、STAP-open/replan、后续价值类比及固定均2/4，继承100mm参考也2/4。没有独立算法增益，UNVERIFIED。
+
+永久保留：旧SAC/STAP/log-Q/36of36、两边界真实结果、只读100Hz接触与FK检查。下一轮先共享计划终点/实测到位/接触入口/预算合同，并用新设计物理配对验证抓位×后继调度残差，不扩训练量或叠模块。初始n2与原n16同seed不相同，54诊断条不可当旧case复现；另36条仅reset恢复记录初态，之后真实物理。详见[研究结论](evidence/EXP-003/2026-11-02/contact_duration/README.md)、[审查页](evidence/EXP-003/2026-11-02/contact_duration/REVIEW.html)。

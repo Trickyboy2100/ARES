@@ -8,8 +8,8 @@
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S4",
   "active_experiment": "EXP-003",
-  "latest_evidence": "evidence/EXP-003/2026-11-02/pyramid_contract/README.md",
-  "next_action": "Continue EXP-003 cumulative A/B workflow with latest actual evidence pyramid_contract: 90 new PhysX, nearest symmetry29/36 -> strong 4-feasible-symmetry36/36, exact matched7 rescues0 regressions. Retain this planner and STAP/log-Q/SkillResult; no RL gain. First run scripts/audit_cumulative_skill_opportunities.py on Ubuntu and read evidence/EXP-003/2026-11-02/pyramid_contract/THEORY_REVIEW_NEXT_RESEARCH_LOOP.md and recent papers SeqDex, ViSkill, TASP, SPIRE, SPIN, EES, FAWAM, 2026 action space design. Historical Pyramid576 has predecessor-sensitive9, successor-sensitive13, overlapping6 scenes, two cases420002/420023 requiring joint A/C change vs nominal; old cases are diagnosis only. Review real old trajectories, existing axis-aware support/TwoRobot and full geometric planning, then actually execute bounded new matched physics for legitimate alternative successor approach/clearance contracts with original physical success and horizon. If strongest geometry saturates, in SAME research session continue to contact-sensitive Tool: genuine tool grasp/attachment stability before collision, successor correction authority and right-censored time-budget, with strong adaptive-control comparator; do not repeat yaw or narrow hook sweeps and do not manufacture failure. If reproducible action-sensitive residual survives strong common controllers, implement/test same-authority ordinary two-boundary RL and one causally justified incremental outcome/duration mechanism against STAP/SeqDex/ViSkill/Foresight-style controls. Codex should autonomously complete informative hypothesis->physical intervention->analysis->next experiment cycles, not stop at first Gate; keep all results and raw/annotated sync videos. A-side optionally train native 2D actor/critic/entropy vs old projected 3D-SAC when relevant. Keep actual optimizer/physics/search costs, independent scene clusters, past sealed tests untouched, ARES-R read-only; no manuscript or novelty claim without real independent gain.",
+  "latest_evidence": "evidence/EXP-003/2026-11-02/contact_duration/README.md",
+  "next_action": "Continue EXP-003 cumulative A/B from contact_duration/README.md. Keep previous strong Pyramid36/36, SAC, STAP/log-Q and physical SkillResult. New312 valid physical episodes plus8 invalid logger attempts,11000 actual optimizer updates found: frozen attachment replanning matches measured refresh rescue; waiting9 is insufficient; plan_screw Success can leave13-14mm FK endpoint error. Finer integration has crossing physical successes at35/70mm, not monotonic benefit. Ordinary two-boundary Fitted Q/STAP/supervised/downstream analogue all2/4 fresh development, tied fixed100/105 references; no new method gain. Next run bounded new-design paired contact-entry experiments with shared contract separating planned FK, measured arrival, contact onset and remaining native100 budget; log screw vs fallback, compare equally allowed online arrival/contact control vs fixed schedules. Verify stable grasp-by-successor ranking interaction after strong controller before a minimal duration/feasibility learning increment. Do not train saturated yaw/hook grids; oldn16 vs n2 same seeds not identical initialization; recorded-initial physics must retain label. No sealed tests or ARES-R writes. A-side unchanged; inherited SAC retained.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -251,6 +251,85 @@
       "measured_oracle": "4/4 contexts",
       "ranking_reversals": 0,
       "claim": "DETERMINISTIC_PLANNING_GAIN_NOT_RL; LOCAL_NEGATIVE_LEARNING_OPPORTUNITY"
+    },
+    "contact_duration_20261102": {
+      "valid_episodes": 312,
+      "valid_control_steps": 44700,
+      "invalid_logger_episodes": 8,
+      "invalid_terminal_hold_steps": 800,
+      "optimizer_updates": 11000,
+      "train_scene_seeds": [
+        745010,
+        745011,
+        745012,
+        745013
+      ],
+      "calibration_scene_seeds": [
+        745014,
+        745015
+      ],
+      "development_scene_seeds": [
+        745020,
+        745021
+      ],
+      "training_seed": 31132,
+      "calibration_q1_Brier": 0.4248647705256052,
+      "finite_panel_best_fixed": "6/12",
+      "finite_panel_oracle": "7/12",
+      "fresh_physical_scores": {
+        "fixed": {
+          "n": 4,
+          "success": 2
+        },
+        "geometry_baseline": {
+          "n": 4,
+          "success": 0
+        },
+        "geometry_frozen12": {
+          "n": 4,
+          "success": 0
+        },
+        "geometry_slow3": {
+          "n": 4,
+          "success": 0
+        },
+        "ordinary": {
+          "n": 4,
+          "success": 2
+        },
+        "supervised": {
+          "n": 4,
+          "success": 2
+        },
+        "stap_open": {
+          "n": 4,
+          "success": 2
+        },
+        "stap_replan": {
+          "n": 4,
+          "success": 2
+        },
+        "foresight": {
+          "n": 4,
+          "success": 2
+        }
+      },
+      "strong100mm_reference": {
+        "baseline": {
+          "n": 4,
+          "success": 2
+        },
+        "frozen12": {
+          "n": 4,
+          "success": 2
+        },
+        "slow3": {
+          "n": 4,
+          "success": 2
+        }
+      },
+      "claim": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
+      "source": "evidence/EXP-003/2026-11-02/contact_duration/README.md"
     }
   },
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
@@ -260,7 +339,7 @@
     "new_optimizer_updates": 0,
     "literature_note": "evidence/EXP-003/2026-11-02/pyramid_contract/THEORY_REVIEW_NEXT_RESEARCH_LOOP.md",
     "audit_script": "scripts/audit_cumulative_skill_opportunities.py",
-    "audit_script_execution": "NOT_YET_EXECUTED_ON_CODEX_GPU_HOST",
+    "audit_script_execution": "PASS_ON_UBUNTU_2026_11_02",
     "historical_pyramid_predecessor_sensitive_scene_count": 9,
     "historical_pyramid_successor_sensitive_scene_count": 13,
     "historical_pyramid_overlap_scene_count": 6,

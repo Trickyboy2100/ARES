@@ -1,0 +1,20 @@
+{
+  "RAW": {
+    "width": 1600,
+    "height": 600,
+    "r_frame_rate": "20/1",
+    "duration": "5.050000",
+    "nb_frames": "101"
+  },
+  "ANNOTATED": {
+    "width": 1600,
+    "height": 1060,
+    "r_frame_rate": "20/1",
+    "duration": "5.050000",
+    "nb_frames": "101"
+  },
+  "frame_source_mapping": "frame k = physical step k; 20fps; callback mediaTime; click rounding to integer k",
+  "physics_steps_added": 0,
+  "readback_error": 1.1920928955078125e-07,
+  "visual_review": "ANNOTATED_100 and MECHANISM PNG inspected; frame0/50 thumbnails and standalone plots retained"
+}
