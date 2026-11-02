@@ -9,7 +9,7 @@
   "current_stage": "S4",
   "active_experiment": "EXP-003",
   "latest_evidence": "evidence/EXP-003/2026-11-02/pyramid_contract/README.md",
-  "next_action": "Cumulative EXP-003: retain shared A SAC baseline, STAP kernel/log-Q, SkillResult boundaries and new bounded cube-symmetry feasibility controller. Raw audits96 tool and576 Pyramid agree. New90 real episodes/22500 steps: nearest symmetry29/36, full feasible symmetry36/36 with7 rescues0 regressions and36 exact support prefixes; these are deterministic planning gains, not RL. Strong control all9 actions succeed across2 scenes x2 top-yaw contracts; fixed=oracle4/4, no ranking reversal. Do not train or expand this saturated yaw panel or old hook heads. Next inspect existing axis-aware support-layout and TwoRobot full-suffix assets for physically genuine successor approach/clearance contracts with opposing feasible parameter preferences; run a predeclared bounded crossed panel only after retaining strong symmetry/full-suffix planning and native horizons. If geometry saturates it, use an existing contact-sensitive multiskill task. Train same-authority ordinary RL and one incremental mechanism only with remaining repeated physical opportunity. Keep all historical negative/positive results and sealed data untouched; independent method UNVERIFIED.",
+  "next_action": "Continue EXP-003 cumulative A/B workflow with latest actual evidence pyramid_contract: 90 new PhysX, nearest symmetry29/36 -> strong 4-feasible-symmetry36/36, exact matched7 rescues0 regressions. Retain this planner and STAP/log-Q/SkillResult; no RL gain. First run scripts/audit_cumulative_skill_opportunities.py on Ubuntu and read evidence/EXP-003/2026-11-02/pyramid_contract/THEORY_REVIEW_NEXT_RESEARCH_LOOP.md and recent papers SeqDex, ViSkill, TASP, SPIRE, SPIN, EES, FAWAM, 2026 action space design. Historical Pyramid576 has predecessor-sensitive9, successor-sensitive13, overlapping6 scenes, two cases420002/420023 requiring joint A/C change vs nominal; old cases are diagnosis only. Review real old trajectories, existing axis-aware support/TwoRobot and full geometric planning, then actually execute bounded new matched physics for legitimate alternative successor approach/clearance contracts with original physical success and horizon. If strongest geometry saturates, in SAME research session continue to contact-sensitive Tool: genuine tool grasp/attachment stability before collision, successor correction authority and right-censored time-budget, with strong adaptive-control comparator; do not repeat yaw or narrow hook sweeps and do not manufacture failure. If reproducible action-sensitive residual survives strong common controllers, implement/test same-authority ordinary two-boundary RL and one causally justified incremental outcome/duration mechanism against STAP/SeqDex/ViSkill/Foresight-style controls. Codex should autonomously complete informative hypothesis->physical intervention->analysis->next experiment cycles, not stop at first Gate; keep all results and raw/annotated sync videos. A-side optionally train native 2D actor/critic/entropy vs old projected 3D-SAC when relevant. Keep actual optimizer/physics/search costs, independent scene clusters, past sealed tests untouched, ARES-R read-only; no manuscript or novelty claim without real independent gain.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -253,5 +253,21 @@
       "claim": "DETERMINISTIC_PLANNING_GAIN_NOT_RL; LOCAL_NEGATIVE_LEARNING_OPPORTUNITY"
     }
   },
-  "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md"
+  "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
+  "research_review_20261102": {
+    "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
+    "new_physics_episodes": 0,
+    "new_optimizer_updates": 0,
+    "literature_note": "evidence/EXP-003/2026-11-02/pyramid_contract/THEORY_REVIEW_NEXT_RESEARCH_LOOP.md",
+    "audit_script": "scripts/audit_cumulative_skill_opportunities.py",
+    "audit_script_execution": "NOT_YET_EXECUTED_ON_CODEX_GPU_HOST",
+    "historical_pyramid_predecessor_sensitive_scene_count": 9,
+    "historical_pyramid_successor_sensitive_scene_count": 13,
+    "historical_pyramid_overlap_scene_count": 6,
+    "historical_joint_only_relative_to_nominal_seeds": [
+      420002,
+      420023
+    ],
+    "latest_strong_pyramid": "36/36 across two physical scenes; deterministic geometry, not RL"
+  }
 }
