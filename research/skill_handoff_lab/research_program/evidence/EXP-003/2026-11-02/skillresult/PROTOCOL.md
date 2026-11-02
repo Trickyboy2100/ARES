@@ -1,0 +1,19 @@
+# SkillResult continuation, 2026-11-02
+
+Scope: public native-derived PullCubeTool physics only; no ARES-R modifications or hardware. Native100-step horizon and native success retained, conjunctive declared goal radius40mm. No manuscript-level independent gain yet: UNVERIFIED.
+
+## Physical design
+96 episodes: scenes743040–47, targets y±80mm, hook offsets−55/−65/−75mm; each scene has grasp100mm and a companion90mm (scene index mod4<2) or105mm. Mass scales alternate. Mass is balanced BETWEEN scenes, not a causal within-scene mass study. Same controller as prior evidence: full native paths, acceleration6, velocity1.8, measured attachment refresh, bounded geometric yaw search and target feedback. Full initial state and prefix must be checked before causal claims. Queue PREDECLARATION exists before execution.
+
+## Bounded learned comparison (specified during training-data collection)
+Training: historical64 physical trajectories plus new scenes743040–45. Calibration only:743046–47. Evaluation initially743050/51 ×2 masses ×2 targets,8 contexts;743052/53 remain unused until an informative reason to expand. Not final sealed tests or multisample-seed proof.
+
+A shared residual-dynamics STAP/Fitted-Q/Foresight-analogue model is fitted1200 updates per value phase; actors200 updates each. Terminal heads share64/64 architecture and five outputs: ordinary success BCE; equal-capacity generic outcome auxiliary; realized contract-margin auxiliary; paired relative success ranking; relative ranking plus contract auxiliary. Same features include real post-grasp state, budget, mass and target. Auxiliary targets are actual terminal native margin, declared-goal margin, observed PULL completion budget and retained grasp; never future online inputs. Generic targets are actual cube xyz and tool x. Auxiliary weight0.1, pairwise weight0.2 fixed before test. Ordinary terminal Q and terminal supervised scorer coincide mathematically and are one baseline, not two independent algorithms. First-stage Fitted-Q policy is shared across these heads to isolate successor selection. This is NOT a claimed novel complete two-boundary algorithm.
+
+Positive-temperature calibration uses only held-out training scenes and cannot alter action ordering. Calibration fitting scores are not held-out generalization. Three scene-bootstrap critics provide a mean-minus-one-standard-deviation UQ baseline (3x critic cost). This is a standard uncertainty-aware analogue, NOT a reproduction of STAP's SCOD estimator. Official pinned scod_cem.py filters high-uncertainty candidates; SCOD VaR/CVaR also exists. Neither uncertainty, planning, posterior feedback nor contract auxiliaries alone establish originality.
+
+Strong controls: fixed100/−65, fixed100 plus 9-candidate measured-attachment geometric search, STAP open/replan, STAP deterministic budget guard, UQ planning, common-interface ordinary/Foresight analogue. Record actual rescue/regression and costs. If physical gains absent, preserve negatives and avoid expanding final seeds/training for a claim.
+
+Primary sources: https://arxiv.org/abs/2210.12250 and https://github.com/agiachris/STAP at0fe0dcbd5ede5ce4ee3d952642f70b5550a0813c. Foresight comparison is a state-based fixed-suffix analogue, not the VLA method at https://arxiv.org/abs/2607.16506 .
+
+Before any new-scene evaluation, training scene743041 shows grasp90 outperforming100 for +80mm target, without a strict reversal at−80mm. Add fixed90/−65 as a strong train-selected baseline. Also add STAP low-confidence retention (<0.05 posterior best Q) as an ordinary deterministic abstention diagnostic; this threshold is declared before evaluation, not claimed new RL. Realized contract auxiliary labels refer to terminal geometric/budget outcomes, not certified IK/collision margins. Scene-calibrated temperature is monotone and cannot repair within-state action ranking by itself.

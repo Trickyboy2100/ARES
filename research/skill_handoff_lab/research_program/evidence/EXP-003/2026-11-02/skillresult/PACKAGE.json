@@ -1,0 +1,97 @@
+{
+  "physical_episodes": 320,
+  "physics_control_steps": 32000,
+  "optimizer_updates": 13600,
+  "training_seed": 31110,
+  "archives": {
+    "training_physics.tar.gz": {
+      "bytes": 21404227,
+      "sha256": "d29e7d30fa426c8bc23bb35228fed84c192a1a59cc00fdaeb158dda1b6333ec0"
+    },
+    "policy_physics.tar.gz": {
+      "bytes": 52828975,
+      "sha256": "38d5ea9c2fd85192e6f30a998ed051e094ba6ce3147b7e35b19b7daba78367dd"
+    }
+  },
+  "videos": [
+    {
+      "path": "video_grasp/RAW.mp4",
+      "sha256": "2ede37f5d85e91d9acf46003779ec2a5ce9d79ce920c1b3e04c9e65df51c58e0",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1600,
+            "height": 600,
+            "r_frame_rate": "20/1",
+            "nb_read_frames": "101"
+          }
+        ]
+      }
+    },
+    {
+      "path": "video_grasp/ANNOTATED.mp4",
+      "sha256": "80991754db2c7b1a3b4f2828747373f2e28db167b5e7b83931a127a043cfb09f",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1600,
+            "height": 1060,
+            "r_frame_rate": "20/1",
+            "nb_read_frames": "101"
+          }
+        ]
+      }
+    },
+    {
+      "path": "video_successor/RAW.mp4",
+      "sha256": "0237956de960dcb3ad85f4ab368fb9e3af0329d204d171bcdf56b49edecb4367",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1600,
+            "height": 600,
+            "r_frame_rate": "20/1",
+            "nb_read_frames": "101"
+          }
+        ]
+      }
+    },
+    {
+      "path": "video_successor/ANNOTATED.mp4",
+      "sha256": "6c191c63a896355b239da2579993c7fb3b026ecf0909bbe9c2c79ebfbe81abf5",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1600,
+            "height": 1060,
+            "r_frame_rate": "20/1",
+            "nb_read_frames": "101"
+          }
+        ]
+      }
+    }
+  ],
+  "checkpoint_sha256": {
+    "SUCCESSOR.pt": "71e485e5116db4c653517c9a4712a2a03b56dbd6fccb0f007b28a66fe32d079c",
+    "MODEL.pt": "9fbf41a74b62aaa1c113346235f69751f52241de5e720aaf7c08103ea3e321b6"
+  },
+  "evaluator_sha256": {
+    "program_skillresult_numerics.py": "5a5aba8e55ea6344ec08465a3a70b7e84e5db406962df14069e33676cc2d7cb6",
+    "program_skillresult_package.py": "a7052709043c4d6251c8bc92d9f8104ea23d2c4d4112c8c52309e93d66935aea",
+    "program_skillresult_dataset.py": "2646a110085baafdb36245629e360c93b0b622d7ec5ea2ae3b2d4b8875eab124",
+    "program_skillresult_budget.py": "52a9b76b97fdb8200e71f443d1736f16b42c10e9f02a0d09580e11bc15e083c5",
+    "program_skillresult_evaluate.py": "51ee7df92fd077a3495f31ce7b6c4cf248404cd750cde4585bfe0638f1607141",
+    "program_skillresult_analyze.py": "7e4e2a03f6d6fae0fb1b000363b19fdeb875ec3aa74515fc6c50327343179fbb",
+    "program_skillresult_logkernel.py": "53d6fca1c57dde902efdbb24efcb8e055c12132d1739c6cceeaaf4d8641dcecb",
+    "program_skillresult_video_notes.py": "abb0d5d2c5ca5867dd7c4546a23a86d52071b2de830c070369bb03ebb898b473",
+    "program_skillresult_evaluate_v2.py": "fd55475db2b778ab989070bb885b4cc22a1a53db8c3957a4be97170edc4caacf",
+    "program_skillresult_learning.py": "2054ae5e7c1838c2fd0a065a754265f9f0b0f1bdef3c7943d73b787648b24f6b"
+  },
+  "scope": "Public simulator assets and actual measured states only; zero hardware operations. All original outcomes including diagnostic numerical failures retained.",
+  "preview_server_sha256": "ad9450e228563725277095118df34d573d3ccd040173ba25253f9a17bfb57ea2",
+  "code_commit": "2b845b8c2fd98fcb89907ae4ab53aea2d09bf9e4"
+}

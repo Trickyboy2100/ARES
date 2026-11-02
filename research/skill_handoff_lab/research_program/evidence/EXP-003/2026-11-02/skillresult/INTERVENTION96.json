@@ -1,0 +1,16 @@
+{
+  "episodes": 96,
+  "physics_steps": 9600,
+  "intervention_success": 49,
+  "contexts": 16,
+  "common_fixed100_success": {
+    "-0.055": 7,
+    "-0.065": 8,
+    "-0.075": 8
+  },
+  "retrospective_oracle_context_success": 9,
+  "strict_goal_ranking_reversals": [],
+  "methods": {},
+  "paired_vs_ordinary": {},
+  "limits": "Oracle is retrospective measured-action upper bound, not policy. 96 rows are 8 scenes, not 96 independent trials. Mass is between-scene balanced. Evaluation is a bounded pilot, not final multi-seed proof."
+}

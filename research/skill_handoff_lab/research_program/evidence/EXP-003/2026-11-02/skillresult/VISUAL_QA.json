@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "figure": "KEY_FIGURE.png inspected; source panels and labels verified",
+  "video_frames_each": 101,
+  "video_fps": 20,
+  "source_readback_max_error": 1.1920928955078125e-07,
+  "browser_test": {
+    "page": "video_successor/SYNC_VIEWER.html",
+    "clicked_boundary_step": 38,
+    "actual_video_time_s": 1.9,
+    "ui_step": 38,
+    "raw_switch_preserved_time_s": 1.9,
+    "paused": true,
+    "seekable_end_s": 5.05,
+    "server": "program_evidence_server.py byte ranges; plain http.server had zero seekable range and was not accepted"
+  },
+  "caption_correction": "Verified actual shared first grasp90.78125mm from source DATA; corrected handwritten105mm caption before final delivery",
+  "physics": "No additional steps for render or UI checks"
+}

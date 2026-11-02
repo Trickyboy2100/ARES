@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
-  "last_review": "2026-11-01",
-  "baseline_commit": "93015705d17a5b2caaa2a5dfa0f019545a18d3e9",
+  "last_review": "2026-11-02",
+  "baseline_commit": "99c43b98feb0ffa22b05716be1829157771f2201",
   "branch": "research-sci-program",
   "scientific_goal": "One SCI paper: task-conditioned executable parameter adaptation ACROSS REAL MULTI-STAGE ROBOT SKILLS using nominal skill primitives and measured SkillResult to improve successor feasibility, whole-task success and transfer; contact servo and SAC are component baselines",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S4",
   "active_experiment": "EXP-003",
-  "latest_evidence": "evidence/EXP-003/2026-11-01/stap_followup/README.md",
-  "next_action": "EXP-003 STAP-first follow-up: read stap_followup/README and exact paired negative results. Preserve baseline control and native100-step goal. First collect a bounded96-episode stratified real two-skill intervention panel on new training scenes743040–743047, grasp90/100/105mm and hook−55/−65/−75mm, two masses and declared targets; prioritize coverage, do not exhaust every combination. Existing64 episodes cover only2 initial scenes. Establish stronger same-authority ordinary Fitted Q or mature SAC, STAP sequence/posterior and deterministic remaining-budget guard, policy-matched downstream value and supervised scoring. If reproducible task-conditioned residual opportunity remains beyond fixed/geometry, train exactly one contract-margin auxiliary value mechanism to decide retaining vs revising planned parameters, compare equal-capacity generic auxiliary and equal observations/data. New evaluation scenes743050–743053; current743020/21 now development. Do not claim more accurate dynamics or deterministic guard as new RL, do not expand PlugCharger or paper drafting.",
+  "latest_evidence": "evidence/EXP-003/2026-11-02/skillresult/README.md",
+  "next_action": "Keep PAPER_CONTRACT and EXP-003 dual workflows. Read latest skillresult README, original regressions and corrected112, not the probability-saturated diagnostic scores. No independent method gain: ordinary1/8, all auxiliary/ranking heads2/8, strongest fixed/geometric/STAP-open/UQ3/8. Tested96 panel has oracle9/16 vs fixed8/16 and no strict goal-ranking reversal. Do not expand this narrow hook grid, Plug training or manuscript. Next inspect native StackPyramid PLACE_SUPPORT→PLACE_TOP with audited release geometry and complete native timing, then bounded support-geometry/top-placement physical pairs under strong fixed and geometric baselines. Seek real conflicting successor-contract parameter rankings before another learner; retain current numerical log-ranking repair and all negatives. Tool task can only continue with a physically motivated new contact/executability distinction, not more samples of the same ineffective interface. Scenes743050/51 are development after numerical repair;743052/53 remain unused. No POMDP or independent novelty claim without evidence.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -186,6 +186,52 @@
       "paired_residual_replan": "3/8",
       "claim": "NO_INDEPENDENT_METHOD_GAIN_ESTABLISHED",
       "scope": "real offline physical task variant; one trained seed; paired prefix exact; no sealed test; not converged RL proof"
+    },
+    "skillresult_20261102": {
+      "episodes": 320,
+      "control_steps": 32000,
+      "optimizer_updates": 13600,
+      "training_episodes": 136,
+      "calibration_episodes": 24,
+      "training_seed": 31110,
+      "new_training_scene_seeds": [
+        743040,
+        743041,
+        743042,
+        743043,
+        743044,
+        743045
+      ],
+      "calibration_scene_seeds": [
+        743046,
+        743047
+      ],
+      "development_scene_seeds": [
+        743050,
+        743051
+      ],
+      "intervention_success": "49/96",
+      "panel_oracle": "9/16",
+      "panel_fixed": "8/16",
+      "strict_goal_ranking_reversals": 0,
+      "corrected_scores": {
+        "contract": "2/8",
+        "fixed": "3/8",
+        "fixed90": "2/8",
+        "foresight": "2/8",
+        "generic": "2/8",
+        "geometry": "2/8",
+        "geometry_fixed": "3/8",
+        "ordinary": "1/8",
+        "relative": "2/8",
+        "relative_contract": "2/8",
+        "stap": "2/8",
+        "stap_guard": "2/8",
+        "stap_open": "3/8",
+        "stap_uq": "3/8"
+      },
+      "numeric_diagnostic_episodes": 112,
+      "claim": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN"
     }
   },
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md"

@@ -1,0 +1,326 @@
+{
+  "diagnostic_probability_rank": {
+    "contract": {
+      "n": 8,
+      "success": 2
+    },
+    "fixed": {
+      "n": 8,
+      "success": 3
+    },
+    "fixed90": {
+      "n": 8,
+      "success": 2
+    },
+    "foresight": {
+      "n": 8,
+      "success": 2
+    },
+    "generic": {
+      "n": 8,
+      "success": 4
+    },
+    "geometry": {
+      "n": 8,
+      "success": 2
+    },
+    "geometry_fixed": {
+      "n": 8,
+      "success": 3
+    },
+    "ordinary": {
+      "n": 8,
+      "success": 2
+    },
+    "relative": {
+      "n": 8,
+      "success": 3
+    },
+    "relative_contract": {
+      "n": 8,
+      "success": 3
+    },
+    "stap": {
+      "n": 8,
+      "success": 3
+    },
+    "stap_guard": {
+      "n": 8,
+      "success": 3
+    },
+    "stap_open": {
+      "n": 8,
+      "success": 3
+    },
+    "stap_uq": {
+      "n": 8,
+      "success": 2
+    }
+  },
+  "episodes": 320,
+  "physics_steps": 32000,
+  "intervention_success": 49,
+  "contexts": 16,
+  "common_fixed100_success": {
+    "-0.055": 7,
+    "-0.065": 8,
+    "-0.075": 8
+  },
+  "retrospective_oracle_context_success": 9,
+  "strict_goal_ranking_reversals": [],
+  "methods": {
+    "contract": {
+      "n": 8,
+      "success": 2,
+      "native": 4,
+      "mean_wall_s": 3.6348007724882336,
+      "failures": {
+        "NATIVE_REGION": 2,
+        "BUDGET_HOOK": 2,
+        "DECLARED_TARGET": 2,
+        "SUCCESS": 2
+      },
+      "selected_action_brier": 0.24999993214975003
+    },
+    "fixed": {
+      "n": 8,
+      "success": 3,
+      "native": 4,
+      "mean_wall_s": 3.45267290022457,
+      "failures": {
+        "BUDGET_HOOK": 3,
+        "NATIVE_REGION": 1,
+        "DECLARED_TARGET": 1,
+        "SUCCESS": 3
+      },
+      "selected_action_brier": null
+    },
+    "fixed90": {
+      "n": 8,
+      "success": 2,
+      "native": 3,
+      "mean_wall_s": 3.4448961950838566,
+      "failures": {
+        "BUDGET_HOOK": 3,
+        "NATIVE_REGION": 2,
+        "DECLARED_TARGET": 1,
+        "SUCCESS": 2
+      },
+      "selected_action_brier": null
+    },
+    "foresight": {
+      "n": 8,
+      "success": 2,
+      "native": 4,
+      "mean_wall_s": 3.5617820641055005,
+      "failures": {
+        "BUDGET_HOOK": 4,
+        "DECLARED_TARGET": 2,
+        "SUCCESS": 2
+      },
+      "selected_action_brier": null
+    },
+    "generic": {
+      "n": 8,
+      "success": 2,
+      "native": 4,
+      "mean_wall_s": 3.507305842867936,
+      "failures": {
+        "NATIVE_REGION": 2,
+        "BUDGET_HOOK": 2,
+        "DECLARED_TARGET": 2,
+        "SUCCESS": 2
+      },
+      "selected_action_brier": 0.2499999998425051
+    },
+    "geometry": {
+      "n": 8,
+      "success": 2,
+      "native": 4,
+      "mean_wall_s": 3.5627861388784368,
+      "failures": {
+        "BUDGET_HOOK": 3,
+        "NATIVE_REGION": 1,
+        "DECLARED_TARGET": 2,
+        "SUCCESS": 2
+      },
+      "selected_action_brier": null
+    },
+    "geometry_fixed": {
+      "n": 8,
+      "success": 3,
+      "native": 4,
+      "mean_wall_s": 3.5479557577345986,
+      "failures": {
+        "BUDGET_HOOK": 4,
+        "DECLARED_TARGET": 1,
+        "SUCCESS": 3
+      },
+      "selected_action_brier": null
+    },
+    "ordinary": {
+      "n": 8,
+      "success": 1,
+      "native": 4,
+      "mean_wall_s": 3.466129777239985,
+      "failures": {
+        "NATIVE_REGION": 2,
+        "BUDGET_HOOK": 2,
+        "DECLARED_TARGET": 3,
+        "SUCCESS": 1
+      },
+      "selected_action_brier": 0.3749999607429455
+    },
+    "relative": {
+      "n": 8,
+      "success": 2,
+      "native": 4,
+      "mean_wall_s": 3.4659083452279447,
+      "failures": {
+        "NATIVE_REGION": 2,
+        "BUDGET_HOOK": 2,
+        "DECLARED_TARGET": 2,
+        "SUCCESS": 2
+      },
+      "selected_action_brier": 0.2499968679738486
+    },
+    "relative_contract": {
+      "n": 8,
+      "success": 2,
+      "native": 4,
+      "mean_wall_s": 3.466712037232355,
+      "failures": {
+        "NATIVE_REGION": 2,
+        "BUDGET_HOOK": 2,
+        "DECLARED_TARGET": 2,
+        "SUCCESS": 2
+      },
+      "selected_action_brier": 0.24939070251074053
+    },
+    "stap": {
+      "n": 8,
+      "success": 2,
+      "native": 4,
+      "mean_wall_s": 3.454068888735492,
+      "failures": {
+        "BUDGET_HOOK": 3,
+        "NATIVE_REGION": 1,
+        "DECLARED_TARGET": 2,
+        "SUCCESS": 2
+      },
+      "selected_action_brier": 0.1250000000001783
+    },
+    "stap_guard": {
+      "n": 8,
+      "success": 2,
+      "native": 4,
+      "mean_wall_s": 3.4954135719890473,
+      "failures": {
+        "BUDGET_HOOK": 3,
+        "NATIVE_REGION": 1,
+        "DECLARED_TARGET": 2,
+        "SUCCESS": 2
+      },
+      "selected_action_brier": 0.1250000000001783
+    },
+    "stap_open": {
+      "n": 8,
+      "success": 3,
+      "native": 4,
+      "mean_wall_s": 3.479477073517046,
+      "failures": {
+        "BUDGET_HOOK": 3,
+        "NATIVE_REGION": 1,
+        "DECLARED_TARGET": 1,
+        "SUCCESS": 3
+      },
+      "selected_action_brier": null
+    },
+    "stap_uq": {
+      "n": 8,
+      "success": 3,
+      "native": 4,
+      "mean_wall_s": 3.453244051997899,
+      "failures": {
+        "NATIVE_REGION": 3,
+        "BUDGET_HOOK": 1,
+        "DECLARED_TARGET": 1,
+        "SUCCESS": 3
+      },
+      "selected_action_brier": null
+    }
+  },
+  "paired_vs_ordinary": {
+    "contract": {
+      "rescue": 1,
+      "regression": 0,
+      "exact_prefix_matches": 8
+    },
+    "fixed": {
+      "rescue": 2,
+      "regression": 0,
+      "exact_prefix_matches": 0
+    },
+    "fixed90": {
+      "rescue": 1,
+      "regression": 0,
+      "exact_prefix_matches": 0
+    },
+    "foresight": {
+      "rescue": 1,
+      "regression": 0,
+      "exact_prefix_matches": 0
+    },
+    "generic": {
+      "rescue": 1,
+      "regression": 0,
+      "exact_prefix_matches": 8
+    },
+    "geometry": {
+      "rescue": 1,
+      "regression": 0,
+      "exact_prefix_matches": 0
+    },
+    "geometry_fixed": {
+      "rescue": 2,
+      "regression": 0,
+      "exact_prefix_matches": 0
+    },
+    "ordinary": {
+      "rescue": 0,
+      "regression": 0,
+      "exact_prefix_matches": 8
+    },
+    "relative": {
+      "rescue": 1,
+      "regression": 0,
+      "exact_prefix_matches": 8
+    },
+    "relative_contract": {
+      "rescue": 1,
+      "regression": 0,
+      "exact_prefix_matches": 8
+    },
+    "stap": {
+      "rescue": 1,
+      "regression": 0,
+      "exact_prefix_matches": 0
+    },
+    "stap_guard": {
+      "rescue": 1,
+      "regression": 0,
+      "exact_prefix_matches": 0
+    },
+    "stap_open": {
+      "rescue": 2,
+      "regression": 0,
+      "exact_prefix_matches": 0
+    },
+    "stap_uq": {
+      "rescue": 2,
+      "regression": 0,
+      "exact_prefix_matches": 0
+    }
+  },
+  "limits": "Oracle is retrospective measured-action upper bound, not policy. 96 rows are 8 scenes, not 96 independent trials. Mass is between-scene balanced. Evaluation is a bounded pilot, not final multi-seed proof."
+}

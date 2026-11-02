@@ -60,3 +60,8 @@ uncertainty & limitation | exact raw path/hash | science decision`。
 [结果与精确来源索引](evidence/EXP-003/2026-11-01/README.md)：A三种普通LN-SAC各4096决策、3840优化更新；完成合同/全权限与投影权限/强搜索/真实checkpoint对照，6开发初态、单训练seed。B三任务77条原生物理执行、9200步、14初态种子；强完整后段TwoRobot8/8与同前段正交2/4，无RL更新。全部源快照、模型、回放缓冲、原始轨迹、SHA清单及三组完整实测状态回放视频保存。动态认证未证明，无实机/密封测试/独立算法增益。成本详见A SUMMARY与B_RESEARCH_SYNTHESIS，不能将多个参数条件或视频帧视为独立样本。
 
 - 2026-11-01 STAP follow-up：[224条真实物理、5600优化、算法核12组、严格同前段后验退化与强预算控制](evidence/EXP-003/2026-11-01/stap_followup/README.md)。原始包/模型/源码/SHA/全程双视频齐备；无新RL增益。
+
+
+## 2026-11-02｜真实SkillResult配对、数值修复与最小机制否证
+
+[结果/关键图/同步视频](evidence/EXP-003/2026-11-02/skillresult/README.md)。保留历史，新增320真实物理回合/32000控制步、13600优化更新。96干预面板固定8/16、事后上限9/16，无严格目标排序反转。复算三例退化，区分低Q强制改参、预算与双成功合同。发现概率饱和选参并列，保留112诊断并以logits/log-Q另跑112确认。修正后ordinary1/8，generic/contract/relative/relative+contract均2/8；固定、强几何、STAP-open和3critic-UQ均3/8。组合机制没有独立增益；2个新测试初态已作开发诊断，未使用743052/53。公开模型/真实数据/四个完整视频及同帧曲线已归档。下一步优先原生多技能后继合同冲突的物理机会，不扩大窄hook网格或网络模块；保持UNVERIFIED。

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "logit_bias": 0.0,
+      "probability_rank_action": 1.0,
+      "log_rank_action": 1.0
+    },
+    {
+      "logit_bias": 20.0,
+      "probability_rank_action": -0.5309511423110962,
+      "log_rank_action": 1.0
+    },
+    {
+      "logit_bias": 100.0,
+      "probability_rank_action": -0.5309511423110962,
+      "log_rank_action": 1.0
+    }
+  ],
+  "scope": "Synthetic numerical fixture only, zero physical evidence"
+}

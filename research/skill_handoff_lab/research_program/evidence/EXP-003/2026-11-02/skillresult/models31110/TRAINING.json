@@ -1,0 +1,199 @@
+{
+  "residual_dynamics": true,
+  "seed": 31110,
+  "episodes": 136,
+  "shared_recorded_physics_steps": 13600,
+  "fresh_physics_steps": 0,
+  "suffix_rows": 136,
+  "auto_suffix_rows": 16,
+  "successes": 79,
+  "optimizer_updates": 4000,
+  "updates_per_value_phase": 1200,
+  "actor_initialization_updates": 400,
+  "gamma": 1.0,
+  "objective": "undiscounted full-task success at native horizon, remaining time observable",
+  "logs": [
+    {
+      "phase": "common_models",
+      "step": 0,
+      "loss": 3.2697267532348633
+    },
+    {
+      "phase": "common_models",
+      "step": 100,
+      "loss": 0.06331277638673782
+    },
+    {
+      "phase": "common_models",
+      "step": 200,
+      "loss": 0.0069075715728104115
+    },
+    {
+      "phase": "common_models",
+      "step": 300,
+      "loss": 0.003132694400846958
+    },
+    {
+      "phase": "common_models",
+      "step": 400,
+      "loss": 0.0017240747110918164
+    },
+    {
+      "phase": "common_models",
+      "step": 500,
+      "loss": 0.000987963518127799
+    },
+    {
+      "phase": "common_models",
+      "step": 600,
+      "loss": 0.0005810670554637909
+    },
+    {
+      "phase": "common_models",
+      "step": 700,
+      "loss": 0.0003724113339558244
+    },
+    {
+      "phase": "common_models",
+      "step": 800,
+      "loss": 0.0002642664476297796
+    },
+    {
+      "phase": "common_models",
+      "step": 900,
+      "loss": 0.00019695211085490882
+    },
+    {
+      "phase": "common_models",
+      "step": 1000,
+      "loss": 0.0001466613175580278
+    },
+    {
+      "phase": "common_models",
+      "step": 1100,
+      "loss": 0.00010731603106250986
+    },
+    {
+      "phase": "fq",
+      "step": 0,
+      "loss": 0.6679211258888245
+    },
+    {
+      "phase": "fq",
+      "step": 100,
+      "loss": 0.03287842497229576
+    },
+    {
+      "phase": "fq",
+      "step": 200,
+      "loss": 0.0006889898213557899
+    },
+    {
+      "phase": "fq",
+      "step": 300,
+      "loss": 0.0002564263704698533
+    },
+    {
+      "phase": "fq",
+      "step": 400,
+      "loss": 0.00017819582717493176
+    },
+    {
+      "phase": "fq",
+      "step": 500,
+      "loss": 0.0001519520446890965
+    },
+    {
+      "phase": "fq",
+      "step": 600,
+      "loss": 0.00014083905261941254
+    },
+    {
+      "phase": "fq",
+      "step": 700,
+      "loss": 0.00013564339315053076
+    },
+    {
+      "phase": "fq",
+      "step": 800,
+      "loss": 0.00013288459740579128
+    },
+    {
+      "phase": "fq",
+      "step": 900,
+      "loss": 0.00013124060933478177
+    },
+    {
+      "phase": "fq",
+      "step": 1000,
+      "loss": 0.00013015301374252886
+    },
+    {
+      "phase": "fq",
+      "step": 1100,
+      "loss": 0.00012912892270833254
+    },
+    {
+      "phase": "foresight",
+      "step": 0,
+      "loss": 0.6904929280281067
+    },
+    {
+      "phase": "foresight",
+      "step": 100,
+      "loss": 0.07968708872795105
+    },
+    {
+      "phase": "foresight",
+      "step": 200,
+      "loss": 0.07695987075567245
+    },
+    {
+      "phase": "foresight",
+      "step": 300,
+      "loss": 0.0762261226773262
+    },
+    {
+      "phase": "foresight",
+      "step": 400,
+      "loss": 0.07589223980903625
+    },
+    {
+      "phase": "foresight",
+      "step": 500,
+      "loss": 0.07575777173042297
+    },
+    {
+      "phase": "foresight",
+      "step": 600,
+      "loss": 0.07571972161531448
+    },
+    {
+      "phase": "foresight",
+      "step": 700,
+      "loss": 0.07573193311691284
+    },
+    {
+      "phase": "foresight",
+      "step": 800,
+      "loss": 0.0756927877664566
+    },
+    {
+      "phase": "foresight",
+      "step": 900,
+      "loss": 0.07568728178739548
+    },
+    {
+      "phase": "foresight",
+      "step": 1000,
+      "loss": 0.07568389177322388
+    },
+    {
+      "phase": "foresight",
+      "step": 1100,
+      "loss": 0.07568161934614182
+    }
+  ],
+  "scope": "Bounded offline fitted-Q and mechanism baselines; not SAC/PPO, not converged official STAP checkpoints. Models share exact physical dataset. Foresight fixed-geometric-suffix predictor uses only its actually executed auto-suffix rows; no imagined success labels. Contract relabeling only auxiliary loss; generic auxiliary and ordinary Q are ablations.",
+  "dataset_sha256": "1bc2eed2b05e4f39565c8ec5e2d6329a0a7d8b135c7c8d03d625ede55248e6a0"
+}

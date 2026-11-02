@@ -1,0 +1,3198 @@
+{
+  "summary": {
+    "corrected112": {
+      "cases": 112,
+      "predicted_within_budget": 101,
+      "actual_success_among_predicted_feasible": 31,
+      "primary_not_completed_among_predicted_feasible": 41,
+      "median_primary_count_error": 0.0
+    },
+    "eval112": {
+      "cases": 112,
+      "predicted_within_budget": 102,
+      "actual_success_among_predicted_feasible": 37,
+      "primary_not_completed_among_predicted_feasible": 42,
+      "median_primary_count_error": 0.0
+    },
+    "train96": {
+      "cases": 93,
+      "predicted_within_budget": 82,
+      "actual_success_among_predicted_feasible": 49,
+      "primary_not_completed_among_predicted_feasible": 10,
+      "median_primary_count_error": 0.0
+    }
+  },
+  "rows": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 98,
+      "remaining": 61,
+      "observed_primary_steps": 18,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 50,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 46,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_foresight/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 50,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_generic/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 98,
+      "remaining": 61,
+      "observed_primary_steps": 18,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_geometry/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 50,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 46,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 98,
+      "remaining": 61,
+      "observed_primary_steps": 18,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_relative/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 98,
+      "remaining": 61,
+      "observed_primary_steps": 18,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 98,
+      "remaining": 61,
+      "observed_primary_steps": 18,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_stap/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y-0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 98,
+      "remaining": 61,
+      "observed_primary_steps": 18,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 52,
+      "remaining": 61,
+      "observed_primary_steps": 21,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 45,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 44,
+      "remaining": 61,
+      "observed_primary_steps": 56,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_foresight/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 43,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_generic/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 52,
+      "remaining": 61,
+      "observed_primary_steps": 21,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_geometry/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 44,
+      "remaining": 61,
+      "observed_primary_steps": 19,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 42,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 52,
+      "remaining": 61,
+      "observed_primary_steps": 21,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_relative/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 52,
+      "remaining": 61,
+      "observed_primary_steps": 21,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 52,
+      "remaining": 61,
+      "observed_primary_steps": 21,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_stap/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 48,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 48,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 48,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m0.75_y0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 52,
+      "remaining": 61,
+      "observed_primary_steps": 21,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 94,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 51,
+      "remaining": 61,
+      "observed_primary_steps": 19,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 45,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_foresight/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 50,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_generic/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 94,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_geometry/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 50,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 46,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 94,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_relative/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 94,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 94,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_stap/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 40,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 40,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 40,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y-0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 43,
+      "remaining": 59,
+      "observed_primary_steps": 15,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 47,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 45,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 44,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_foresight/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 42,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_generic/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 47,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_geometry/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 44,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 42,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 47,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_relative/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 47,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 47,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_stap/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 42,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 42,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 42,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743050_m1.25_y0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 46,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_foresight/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_generic/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_geometry/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_relative/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_stap/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 60,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 60,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 60,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y-0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_foresight/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_generic/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_geometry/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_relative/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_stap/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m0.75_y0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 35,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_foresight/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_generic/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_geometry/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 30,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_relative/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_stap/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y-0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 34,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_foresight/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_generic/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 34,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_geometry/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_relative/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 35,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 35,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_stap/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 34,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/corrected112/743051_m1.25_y0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "corrected112",
+      "predicted": 35,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 98,
+      "remaining": 61,
+      "observed_primary_steps": 18,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 50,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 46,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_foresight/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 50,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_generic/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 98,
+      "remaining": 61,
+      "observed_primary_steps": 18,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_geometry/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 50,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 46,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 98,
+      "remaining": 61,
+      "observed_primary_steps": 18,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_relative/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 98,
+      "remaining": 61,
+      "observed_primary_steps": 18,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 98,
+      "remaining": 61,
+      "observed_primary_steps": 18,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_stap/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y-0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 43,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 52,
+      "remaining": 61,
+      "observed_primary_steps": 21,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 45,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 44,
+      "remaining": 61,
+      "observed_primary_steps": 56,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_foresight/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 43,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_generic/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 52,
+      "remaining": 61,
+      "observed_primary_steps": 21,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_geometry/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 44,
+      "remaining": 61,
+      "observed_primary_steps": 19,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 42,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 52,
+      "remaining": 61,
+      "observed_primary_steps": 21,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_relative/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 52,
+      "remaining": 61,
+      "observed_primary_steps": 21,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 52,
+      "remaining": 61,
+      "observed_primary_steps": 21,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_stap/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 48,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 48,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 48,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m0.75_y0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 44,
+      "remaining": 61,
+      "observed_primary_steps": 19,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 94,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 51,
+      "remaining": 61,
+      "observed_primary_steps": 19,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 45,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_foresight/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 50,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_generic/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 94,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_geometry/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 50,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 46,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 94,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_relative/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 94,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 94,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_stap/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 40,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 40,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 40,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y-0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 41,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 47,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 45,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 44,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_foresight/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 42,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_generic/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 47,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_geometry/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 44,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 42,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 47,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_relative/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 47,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 47,
+      "remaining": 61,
+      "observed_primary_steps": 61,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_stap/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 42,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 42,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 42,
+      "remaining": 60,
+      "observed_primary_steps": 60,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743050_m1.25_y0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 47,
+      "remaining": 61,
+      "observed_primary_steps": 17,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_foresight/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_generic/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_geometry/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_relative/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_stap/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 61,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 61,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 61,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y-0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_foresight/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_generic/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_geometry/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_relative/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_stap/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 35,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 35,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 35,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m0.75_y0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 35,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_foresight/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_generic/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_geometry/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 30,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_relative/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_stap/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 31,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y-0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 32,
+      "remaining": 61,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_fixed90/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 34,
+      "remaining": 62,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_foresight/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_generic/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_geometry/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_geometry_fixed/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_ordinary/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_relative/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_relative_contract/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_stap/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_stap_guard/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 33,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_stap_open/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 35,
+      "remaining": 62,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/eval112/743051_m1.25_y0.08_stap_uq/TRAJECTORY.json.gz",
+      "group": "eval112",
+      "predicted": 35,
+      "remaining": 62,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case00_s743040_y-0.08_h-0.055/743040_m0.75_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 32,
+      "remaining": 63,
+      "observed_primary_steps": 30,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case00_s743040_y-0.08_h-0.055/743040_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 33,
+      "remaining": 63,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case01_s743040_y-0.08_h-0.065/743040_m0.75_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 32,
+      "remaining": 63,
+      "observed_primary_steps": 30,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case01_s743040_y-0.08_h-0.065/743040_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 33,
+      "remaining": 63,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case02_s743040_y-0.08_h-0.075/743040_m0.75_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 32,
+      "remaining": 63,
+      "observed_primary_steps": 30,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case02_s743040_y-0.08_h-0.075/743040_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 31,
+      "remaining": 63,
+      "observed_primary_steps": 29,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case03_s743040_y0.08_h-0.055/743040_m0.75_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 33,
+      "remaining": 63,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case03_s743040_y0.08_h-0.055/743040_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 33,
+      "remaining": 63,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case04_s743040_y0.08_h-0.065/743040_m0.75_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 33,
+      "remaining": 63,
+      "observed_primary_steps": 30,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case04_s743040_y0.08_h-0.065/743040_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 32,
+      "remaining": 63,
+      "observed_primary_steps": 30,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case05_s743040_y0.08_h-0.075/743040_m0.75_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 32,
+      "remaining": 63,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case05_s743040_y0.08_h-0.075/743040_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 32,
+      "remaining": 63,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case06_s743041_y-0.08_h-0.055/743041_m1.25_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 40,
+      "remaining": 59,
+      "observed_primary_steps": 38,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case06_s743041_y-0.08_h-0.055/743041_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 39,
+      "remaining": 59,
+      "observed_primary_steps": 37,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case07_s743041_y-0.08_h-0.065/743041_m1.25_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 39,
+      "remaining": 59,
+      "observed_primary_steps": 37,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case07_s743041_y-0.08_h-0.065/743041_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 38,
+      "remaining": 59,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case08_s743041_y-0.08_h-0.075/743041_m1.25_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 37,
+      "remaining": 59,
+      "observed_primary_steps": 37,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case08_s743041_y-0.08_h-0.075/743041_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 38,
+      "remaining": 59,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case09_s743041_y0.08_h-0.055/743041_m1.25_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 40,
+      "remaining": 59,
+      "observed_primary_steps": 39,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case09_s743041_y0.08_h-0.055/743041_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 41,
+      "remaining": 59,
+      "observed_primary_steps": 38,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case10_s743041_y0.08_h-0.065/743041_m1.25_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 41,
+      "remaining": 59,
+      "observed_primary_steps": 39,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case10_s743041_y0.08_h-0.065/743041_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 40,
+      "remaining": 59,
+      "observed_primary_steps": 37,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case11_s743041_y0.08_h-0.075/743041_m1.25_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 39,
+      "remaining": 59,
+      "observed_primary_steps": 37,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case11_s743041_y0.08_h-0.075/743041_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 40,
+      "remaining": 59,
+      "observed_primary_steps": 37,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case12_s743042_y-0.08_h-0.055/743042_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 35,
+      "remaining": 61,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case12_s743042_y-0.08_h-0.055/743042_m0.75_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 35,
+      "remaining": 61,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case13_s743042_y-0.08_h-0.065/743042_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 35,
+      "remaining": 61,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case13_s743042_y-0.08_h-0.065/743042_m0.75_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 35,
+      "remaining": 61,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case14_s743042_y-0.08_h-0.075/743042_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 35,
+      "remaining": 61,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case14_s743042_y-0.08_h-0.075/743042_m0.75_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 35,
+      "remaining": 61,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case15_s743042_y0.08_h-0.055/743042_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 39,
+      "remaining": 61,
+      "observed_primary_steps": 38,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case15_s743042_y0.08_h-0.055/743042_m0.75_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 39,
+      "remaining": 61,
+      "observed_primary_steps": 38,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case16_s743042_y0.08_h-0.065/743042_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 37,
+      "remaining": 61,
+      "observed_primary_steps": 37,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case16_s743042_y0.08_h-0.065/743042_m0.75_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 37,
+      "remaining": 61,
+      "observed_primary_steps": 37,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case17_s743042_y0.08_h-0.075/743042_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 38,
+      "remaining": 61,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case17_s743042_y0.08_h-0.075/743042_m0.75_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 37,
+      "remaining": 61,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case18_s743043_y-0.08_h-0.055/743043_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 30,
+      "remaining": 67,
+      "observed_primary_steps": 37,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case18_s743043_y-0.08_h-0.055/743043_m1.25_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 30,
+      "remaining": 65,
+      "observed_primary_steps": 37,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case19_s743043_y-0.08_h-0.065/743043_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 29,
+      "remaining": 67,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case19_s743043_y-0.08_h-0.065/743043_m1.25_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 30,
+      "remaining": 65,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case20_s743043_y-0.08_h-0.075/743043_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 30,
+      "remaining": 67,
+      "observed_primary_steps": 38,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case20_s743043_y-0.08_h-0.075/743043_m1.25_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 30,
+      "remaining": 65,
+      "observed_primary_steps": 39,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case21_s743043_y0.08_h-0.055/743043_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 32,
+      "remaining": 67,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case21_s743043_y0.08_h-0.055/743043_m1.25_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 33,
+      "remaining": 65,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case22_s743043_y0.08_h-0.065/743043_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 33,
+      "remaining": 67,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case22_s743043_y0.08_h-0.065/743043_m1.25_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 32,
+      "remaining": 65,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case23_s743043_y0.08_h-0.075/743043_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 34,
+      "remaining": 67,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case23_s743043_y0.08_h-0.075/743043_m1.25_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 33,
+      "remaining": 65,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case24_s743044_y-0.08_h-0.055/743044_m0.75_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 37,
+      "remaining": 65,
+      "observed_primary_steps": 37,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case24_s743044_y-0.08_h-0.055/743044_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 36,
+      "remaining": 66,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case25_s743044_y-0.08_h-0.065/743044_m0.75_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 35,
+      "remaining": 65,
+      "observed_primary_steps": 37,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case25_s743044_y-0.08_h-0.065/743044_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 35,
+      "remaining": 66,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case26_s743044_y-0.08_h-0.075/743044_m0.75_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 35,
+      "remaining": 65,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case26_s743044_y-0.08_h-0.075/743044_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 35,
+      "remaining": 66,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case27_s743044_y0.08_h-0.055/743044_m0.75_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 33,
+      "remaining": 65,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case27_s743044_y0.08_h-0.055/743044_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 33,
+      "remaining": 66,
+      "observed_primary_steps": 32,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case28_s743044_y0.08_h-0.065/743044_m0.75_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 32,
+      "remaining": 65,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case28_s743044_y0.08_h-0.065/743044_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 32,
+      "remaining": 66,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case29_s743044_y0.08_h-0.075/743044_m0.75_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 32,
+      "remaining": 65,
+      "observed_primary_steps": 31,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case29_s743044_y0.08_h-0.075/743044_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 32,
+      "remaining": 66,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case30_s743045_y-0.08_h-0.055/743045_m1.25_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 52,
+      "remaining": 62,
+      "observed_primary_steps": 62,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case30_s743045_y-0.08_h-0.055/743045_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 167,
+      "remaining": 62,
+      "observed_primary_steps": 62,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case31_s743045_y-0.08_h-0.065/743045_m1.25_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 49,
+      "remaining": 62,
+      "observed_primary_steps": 62,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case31_s743045_y-0.08_h-0.065/743045_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 131,
+      "remaining": 62,
+      "observed_primary_steps": 62,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case32_s743045_y-0.08_h-0.075/743045_m1.25_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 51,
+      "remaining": 62,
+      "observed_primary_steps": 62,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case32_s743045_y-0.08_h-0.075/743045_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 102,
+      "remaining": 62,
+      "observed_primary_steps": 62,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case33_s743045_y0.08_h-0.055/743045_m1.25_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 45,
+      "remaining": 62,
+      "observed_primary_steps": 62,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case33_s743045_y0.08_h-0.055/743045_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 49,
+      "remaining": 62,
+      "observed_primary_steps": 62,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case34_s743045_y0.08_h-0.065/743045_m1.25_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 45,
+      "remaining": 62,
+      "observed_primary_steps": 62,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case34_s743045_y0.08_h-0.065/743045_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 47,
+      "remaining": 62,
+      "observed_primary_steps": 62,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case35_s743045_y0.08_h-0.075/743045_m1.25_g0.09/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 43,
+      "remaining": 62,
+      "observed_primary_steps": 62,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case35_s743045_y0.08_h-0.075/743045_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 46,
+      "remaining": 62,
+      "observed_primary_steps": 62,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case36_s743046_y-0.08_h-0.055/743046_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 38,
+      "remaining": 65,
+      "observed_primary_steps": 36,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case36_s743046_y-0.08_h-0.055/743046_m0.75_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 39,
+      "remaining": 65,
+      "observed_primary_steps": 39,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case37_s743046_y-0.08_h-0.065/743046_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 40,
+      "remaining": 65,
+      "observed_primary_steps": 39,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case37_s743046_y-0.08_h-0.065/743046_m0.75_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 38,
+      "remaining": 65,
+      "observed_primary_steps": 38,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case38_s743046_y-0.08_h-0.075/743046_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 38,
+      "remaining": 65,
+      "observed_primary_steps": 38,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case38_s743046_y-0.08_h-0.075/743046_m0.75_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 38,
+      "remaining": 65,
+      "observed_primary_steps": 38,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case39_s743046_y0.08_h-0.055/743046_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 34,
+      "remaining": 65,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case39_s743046_y0.08_h-0.055/743046_m0.75_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 34,
+      "remaining": 65,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case40_s743046_y0.08_h-0.065/743046_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 34,
+      "remaining": 65,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case40_s743046_y0.08_h-0.065/743046_m0.75_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 34,
+      "remaining": 65,
+      "observed_primary_steps": 35,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case41_s743046_y0.08_h-0.075/743046_m0.75_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 35,
+      "remaining": 65,
+      "observed_primary_steps": 33,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case41_s743046_y0.08_h-0.075/743046_m0.75_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 35,
+      "remaining": 65,
+      "observed_primary_steps": 34,
+      "complete_primary": true,
+      "task_success": true,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case42_s743047_y-0.08_h-0.055/743047_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 635,
+      "remaining": 65,
+      "observed_primary_steps": 65,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TRANSFER"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case42_s743047_y-0.08_h-0.055/743047_m1.25_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 628,
+      "remaining": 64,
+      "observed_primary_steps": 64,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TRANSFER"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case43_s743047_y-0.08_h-0.065/743047_m1.25_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 650,
+      "remaining": 64,
+      "observed_primary_steps": 64,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TRANSFER"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case44_s743047_y-0.08_h-0.075/743047_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 592,
+      "remaining": 65,
+      "observed_primary_steps": 65,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TRANSFER"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case45_s743047_y0.08_h-0.055/743047_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 126,
+      "remaining": 65,
+      "observed_primary_steps": 23,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "TERMINAL_HOLD"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case45_s743047_y0.08_h-0.055/743047_m1.25_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 188,
+      "remaining": 64,
+      "observed_primary_steps": 64,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case46_s743047_y0.08_h-0.065/743047_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 137,
+      "remaining": 65,
+      "observed_primary_steps": 65,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case46_s743047_y0.08_h-0.065/743047_m1.25_g0.105/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 128,
+      "remaining": 64,
+      "observed_primary_steps": 64,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/skillresult_20261102/train96/case47_s743047_y0.08_h-0.075/743047_m1.25_g0.1/TRAJECTORY.json.gz",
+      "group": "train96",
+      "predicted": 51,
+      "remaining": 65,
+      "observed_primary_steps": 65,
+      "complete_primary": false,
+      "task_success": false,
+      "phase_at_horizon": "HOOK"
+    }
+  ],
+  "scope": "Predictor omits target feedback and physical attachment drift. Counts are not hard feasibility certificates; only observed completed primary paths have uncensored errors."
+}
