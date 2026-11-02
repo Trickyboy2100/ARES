@@ -1,0 +1,289 @@
+{
+  "data_source": "Committed physical SUMMARY.json, not network/model predictions",
+  "native_physics_episodes_reanalyzed": 596,
+  "new_physics_episodes": 0,
+  "stage1_hook_height": {
+    "episodes": 36,
+    "scene_clusters": 4,
+    "crossed_scene_mass_contexts": 4,
+    "grasp_groups_with_selected_stage1_variants": 11,
+    "grasp_groups_with_mixed_binary_success": 0,
+    "predecessor_unverified_grasp_groups": 1,
+    "within_grasp_stage1_variation": [
+      {
+        "scene_mass_grasp": [
+          746000,
+          1.0,
+          0.035
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 0,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746000,
+          1.0,
+          0.07
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 3,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746000,
+          1.0,
+          0.105
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 3,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746001,
+          1.0,
+          0.035
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 0,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746001,
+          1.0,
+          0.07
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 3,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746001,
+          1.0,
+          0.105
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 3,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746002,
+          1.0,
+          0.035
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 0,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746002,
+          1.0,
+          0.07
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 0,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746002,
+          1.0,
+          0.105
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 0,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746003,
+          1.0,
+          0.07
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 3,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746003,
+          1.0,
+          0.105
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 3,
+        "mixed_outcome": false
+      }
+    ],
+    "scope": "Selected stage1 parameters after verified predecessor; does NOT imply downstream motion executed. Includes planning failures."
+  },
+  "stage1_transfer_acceleration": {
+    "episodes": 36,
+    "scene_clusters": 4,
+    "crossed_scene_mass_contexts": 4,
+    "grasp_groups_with_selected_stage1_variants": 11,
+    "grasp_groups_with_mixed_binary_success": 1,
+    "predecessor_unverified_grasp_groups": 1,
+    "within_grasp_stage1_variation": [
+      {
+        "scene_mass_grasp": [
+          746000,
+          1.0,
+          0.035
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 0,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746000,
+          1.0,
+          0.07
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 3,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746000,
+          1.0,
+          0.105
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 3,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746001,
+          1.0,
+          0.035
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 0,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746001,
+          1.0,
+          0.07
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 2,
+        "mixed_outcome": true
+      },
+      {
+        "scene_mass_grasp": [
+          746001,
+          1.0,
+          0.105
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 3,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746002,
+          1.0,
+          0.035
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 0,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746002,
+          1.0,
+          0.07
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 0,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746002,
+          1.0,
+          0.105
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 0,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746003,
+          1.0,
+          0.07
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 3,
+        "mixed_outcome": false
+      },
+      {
+        "scene_mass_grasp": [
+          746003,
+          1.0,
+          0.105
+        ],
+        "actions_selected": 3,
+        "unique_stage1_levels": 3,
+        "successes": 3,
+        "mixed_outcome": false
+      }
+    ],
+    "scope": "Selected stage1 parameters after verified predecessor; does NOT imply downstream motion executed. Includes planning failures."
+  },
+  "development_8_policies": {
+    "physical_scene_clusters": 8,
+    "methods_per_scene": 8,
+    "all_8_pass_contexts": 7,
+    "all_8_fail_contexts": [
+      [
+        746204,
+        1.0
+      ]
+    ],
+    "discriminating_contexts": 0,
+    "caution": "These are outcomes for observed methods, not a global action-space upper bound"
+  },
+  "online_exploration": {
+    "episodes": 287,
+    "repeated_scene_clusters": 64,
+    "contexts_with_mixed_outcomes": 24,
+    "causality_limit": "Both predecessor and successor actions changed; no isolated stage1 effect"
+  },
+  "interpretation": "The current discrete height parameter has zero tested terminal-success authority after verified grasp; acceleration has one narrow budget effect. No conclusion for untested successor action types, actual contact trajectory or continuous reward. Baseline saturation is not RL superiority."
+}

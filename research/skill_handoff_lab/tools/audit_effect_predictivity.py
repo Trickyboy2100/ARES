@@ -1,0 +1,11 @@
+"""Separate predicting effect magnitude from predicting useful action direction."""
+import argparse,json
+from pathlib import Path
+import numpy as np
+from program_contact_direction import physical_features
+p=argparse.ArgumentParser();p.add_argument('--model',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args();m=json.loads(a.model.read_text());obs=np.array([r['state']for r in m['rows']]);X=physical_features(obs);Y=np.array([r['jacobian']for r in m['rows']]);seeds=np.array([r['seed']for r in m['rows']]);pull=obs[:,51:53]-obs[:,14:16];pull/=np.maximum(np.linalg.norm(pull,axis=1,keepdims=True),1e-8);rows=[]
+for seed in sorted(set(seeds)):
+ tr=seeds!=seed;mu=X[tr].mean(0);tx=np.c_[np.ones(tr.sum()),X[tr]-mu];vx=np.c_[np.ones((~tr).sum()),X[~tr]-mu];B=np.linalg.solve(tx.T@tx+m['alpha']*np.diag([0]+[1]*X.shape[1]),tx.T@Y[tr].reshape(-1,4));pred=(vx@B).reshape(-1,2,2);glob=Y[tr].mean(0)
+ for i,j in enumerate(np.flatnonzero(~tr)):
+  true=Y[j].T@pull[j];conditional=pred[i].T@pull[j];constant=glob.T@pull[j];norm=np.linalg.norm(true);cos=lambda v:float(v@true/max(1e-12,np.linalg.norm(v)*norm));rows.append(dict(seed=int(seed),grasp=m['rows'][j]['grasp'],true_gradient=true.tolist(),conditional_gradient=conditional.tolist(),constant_gradient=constant.tolist(),gradient_norm_m=float(norm),conditional_cosine=cos(conditional),constant_cosine=cos(constant),conditional_best_axis=int(np.argmax(np.r_[conditional,-conditional])),constant_best_axis=int(np.argmax(np.r_[constant,-constant])),true_best_axis=int(np.argmax(np.r_[true,-true]))))
+valid=[r for r in rows if r['gradient_norm_m']>.005];result=dict(scope='Leave-scene-out after training-only alpha selection; finite terminal effects, not instantaneous contact Jacobian or independent evaluation',contexts=len(rows),nontrivial_gradient_contexts=len(valid),conditional_mean_direction_cosine=float(np.mean([r['conditional_cosine']for r in valid])),constant_mean_direction_cosine=float(np.mean([r['constant_cosine']for r in valid])),conditional_best_axis_correct=sum(r['conditional_best_axis']==r['true_best_axis']for r in valid),constant_best_axis_correct=sum(r['constant_best_axis']==r['true_best_axis']for r in valid),rows=rows);a.out.write_text(json.dumps(result,indent=2));print({k:v for k,v in result.items()if k!='rows'})

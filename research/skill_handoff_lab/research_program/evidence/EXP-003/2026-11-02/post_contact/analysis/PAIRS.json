@@ -1,0 +1,4088 @@
+{
+  "pilot": {
+    "episodes": 40,
+    "success": 10,
+    "contexts": [
+      {
+        "seed": 748000,
+        "grasp": 0.07,
+        "contact_step": 68,
+        "remaining": 32,
+        "cube_in_tool_frame": [
+          0.16718931339770046,
+          0.0406414302501147,
+          -0.04966141713017364
+        ],
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8778181076049805,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8778181076049805,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8778175711631775,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8778269290924072,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8778140544891357,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748000,
+        "grasp": 0.105,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      },
+      {
+        "seed": 748001,
+        "grasp": 0.07,
+        "contact_step": 73,
+        "remaining": 27,
+        "cube_in_tool_frame": [
+          0.12992377302450442,
+          0.06738585787881955,
+          -0.00501822066641483
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.46135467290878296,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4615638852119446,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.45571476221084595,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.46155834197998047,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4540764391422272,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748001,
+        "grasp": 0.105,
+        "contact_step": 67,
+        "remaining": 33,
+        "cube_in_tool_frame": [
+          0.12976378418834617,
+          0.054016099520372535,
+          -0.006221425530996544
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.47397905588150024,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.48236972093582153,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.46655893325805664,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4820117652416229,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4737095534801483,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748002,
+        "grasp": 0.07,
+        "contact_step": 65,
+        "remaining": 35,
+        "cube_in_tool_frame": [
+          0.16652967486049186,
+          0.05400642905546217,
+          -0.04979724108427304
+        ],
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8418329954147339,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8419824838638306,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8419826626777649,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8419826626777649,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8419826626777649,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748002,
+        "grasp": 0.105,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      },
+      {
+        "seed": 748003,
+        "grasp": 0.07,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.91219562292099,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.91219562292099,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.91219562292099,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.91219562292099,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.91219562292099,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      },
+      {
+        "seed": 748003,
+        "grasp": 0.105,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8945471048355103,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8945471048355103,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8945471048355103,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8945471048355103,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8945471048355103,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      }
+    ],
+    "strict_prefix_checks": 16,
+    "rescued_contexts": 0
+  },
+  "local": {
+    "episodes": 30,
+    "success": 10,
+    "contexts": [
+      {
+        "seed": 748000,
+        "grasp": 0.07,
+        "contact_step": 68,
+        "remaining": 32,
+        "cube_in_tool_frame": [
+          0.16718931339770046,
+          0.0406414302501147,
+          -0.04966141713017364
+        ],
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8778181076049805,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8780809640884399,
+            "error": "Failure('LOCAL_CONTACT_PLAN')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8780809640884399,
+            "error": "Failure('LOCAL_CONTACT_PLAN')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8780809640884399,
+            "error": "Failure('LOCAL_CONTACT_PLAN')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8780809640884399,
+            "error": "Failure('LOCAL_CONTACT_PLAN')"
+          }
+        ]
+      },
+      {
+        "seed": 748000,
+        "grasp": 0.105,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      },
+      {
+        "seed": 748001,
+        "grasp": 0.07,
+        "contact_step": 73,
+        "remaining": 27,
+        "cube_in_tool_frame": [
+          0.12992377302450442,
+          0.06738585787881955,
+          -0.00501822066641483
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.46135467290878296,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.46197864413261414,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.45900583267211914,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5109060406684875,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.44778162240982056,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748001,
+        "grasp": 0.105,
+        "contact_step": 67,
+        "remaining": 33,
+        "cube_in_tool_frame": [
+          0.12976378418834617,
+          0.054016099520372535,
+          -0.006221425530996544
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.47397905588150024,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.47752752900123596,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.473397821187973,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.48230642080307007,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4655914902687073,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748002,
+        "grasp": 0.07,
+        "contact_step": 65,
+        "remaining": 35,
+        "cube_in_tool_frame": [
+          0.16652967486049186,
+          0.05400642905546217,
+          -0.04979724108427304
+        ],
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8418329954147339,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8420373797416687,
+            "error": "Failure('LOCAL_CONTACT_PLAN')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8420373797416687,
+            "error": "Failure('LOCAL_CONTACT_PLAN')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8420373797416687,
+            "error": "Failure('LOCAL_CONTACT_PLAN')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.847891092300415,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748002,
+        "grasp": 0.105,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      }
+    ],
+    "strict_prefix_checks": 16,
+    "rescued_contexts": 0
+  },
+  "relative": {
+    "episodes": 30,
+    "success": 10,
+    "contexts": [
+      {
+        "seed": 748000,
+        "grasp": 0.07,
+        "contact_step": 68,
+        "remaining": 32,
+        "cube_in_tool_frame": [
+          0.16718931339770046,
+          0.0406414302501147,
+          -0.04966141713017364
+        ],
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8778181076049805,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8793784379959106,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8787612318992615,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8847885131835938,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8780065178871155,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748000,
+        "grasp": 0.105,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      },
+      {
+        "seed": 748001,
+        "grasp": 0.07,
+        "contact_step": 73,
+        "remaining": 27,
+        "cube_in_tool_frame": [
+          0.12992377302450442,
+          0.06738585787881955,
+          -0.00501822066641483
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.46135467290878296,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.46947428584098816,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4614013731479645,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5030319690704346,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.44703128933906555,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748001,
+        "grasp": 0.105,
+        "contact_step": 67,
+        "remaining": 33,
+        "cube_in_tool_frame": [
+          0.12976378418834617,
+          0.054016099520372535,
+          -0.006221425530996544
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.47397905588150024,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4822830855846405,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.48158538341522217,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.48070472478866577,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4641656279563904,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748002,
+        "grasp": 0.07,
+        "contact_step": 65,
+        "remaining": 35,
+        "cube_in_tool_frame": [
+          0.16652967486049186,
+          0.05400642905546217,
+          -0.04979724108427304
+        ],
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8418329954147339,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8437305092811584,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8426206111907959,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8504856824874878,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8421576023101807,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748002,
+        "grasp": 0.105,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      }
+    ],
+    "strict_prefix_checks": 16,
+    "rescued_contexts": 0
+  },
+  "pitch": {
+    "episodes": 30,
+    "success": 10,
+    "contexts": [
+      {
+        "seed": 748000,
+        "grasp": 0.07,
+        "contact_step": 68,
+        "remaining": 32,
+        "cube_in_tool_frame": [
+          0.16718931339770046,
+          0.0406414302501147,
+          -0.04966141713017364
+        ],
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8778181076049805,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8778157830238342,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8992058038711548,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8778148889541626,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8780809640884399,
+            "error": "Failure('LOCAL_CONTACT_PLAN')"
+          }
+        ]
+      },
+      {
+        "seed": 748000,
+        "grasp": 0.105,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8230369091033936,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      },
+      {
+        "seed": 748001,
+        "grasp": 0.07,
+        "contact_step": 73,
+        "remaining": 27,
+        "cube_in_tool_frame": [
+          0.12992377302450442,
+          0.06738585787881955,
+          -0.00501822066641483
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.46135467290878296,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4325418770313263,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4812079966068268,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4576040208339691,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4802972376346588,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748001,
+        "grasp": 0.105,
+        "contact_step": 67,
+        "remaining": 33,
+        "cube_in_tool_frame": [
+          0.12976378418834617,
+          0.054016099520372535,
+          -0.006221425530996544
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.47397905588150024,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.45889168977737427,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4961724281311035,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.47362348437309265,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4910499155521393,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748002,
+        "grasp": 0.07,
+        "contact_step": 65,
+        "remaining": 35,
+        "cube_in_tool_frame": [
+          0.16652967486049186,
+          0.05400642905546217,
+          -0.04979724108427304
+        ],
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8418329954147339,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8419823050498962,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8617685437202454,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8419753313064575,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8507239818572998,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748002,
+        "grasp": 0.105,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7914655208587646,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      }
+    ],
+    "strict_prefix_checks": 16,
+    "rescued_contexts": 0
+  },
+  "near": {
+    "episodes": 40,
+    "success": 9,
+    "contexts": [
+      {
+        "seed": 748028,
+        "grasp": 0.03765658408403397,
+        "contact_step": 62,
+        "remaining": 38,
+        "cube_in_tool_frame": [
+          0.12258576261967745,
+          0.10607937848953969,
+          -0.006212272100797988
+        ],
+        "nominal_success": false,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6200234889984131,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6775980591773987,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5564104914665222,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6830806732177734,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.45927268266677856,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748010,
+        "grasp": 0.03891672849655152,
+        "contact_step": 68,
+        "remaining": 32,
+        "cube_in_tool_frame": [
+          0.12282227450580359,
+          0.09805226593419289,
+          -0.006234856842361141
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5482810139656067,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6402767896652222,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4385724663734436,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.653935432434082,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.42225852608680725,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748011,
+        "grasp": 0.04315941780805588,
+        "contact_step": 70,
+        "remaining": 30,
+        "cube_in_tool_frame": [
+          0.14552454657997405,
+          0.12089092494915832,
+          -0.006050408707271464
+        ],
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6871176362037659,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.693093478679657,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6806252598762512,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.693093478679657,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6735473871231079,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748019,
+        "grasp": 0.03995676398277283,
+        "contact_step": 60,
+        "remaining": 40,
+        "cube_in_tool_frame": [
+          0.13892316993199216,
+          0.11829222606497625,
+          -0.0060871748326624085
+        ],
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6875954270362854,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6903961896896362,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6750537753105164,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6903961896896362,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6609159708023071,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748021,
+        "grasp": 0.05791317880153657,
+        "contact_step": 80,
+        "remaining": 20,
+        "cube_in_tool_frame": [
+          0.12919095101047237,
+          0.07416785938307896,
+          -0.015748588828745465
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5695804357528687,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7388509511947632,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7142506837844849,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7914741039276123,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7705581784248352,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748030,
+        "grasp": 0.09626852512359621,
+        "contact_step": 82,
+        "remaining": 18,
+        "cube_in_tool_frame": [
+          0.1278832455222242,
+          0.0663854369497608,
+          -0.00850431167568164
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5852164626121521,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6705710887908936,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6909986734390259,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7219739556312561,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7202238440513611,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748031,
+        "grasp": 0.09361429631710053,
+        "contact_step": 80,
+        "remaining": 20,
+        "cube_in_tool_frame": [
+          0.12999902716667874,
+          0.07896951551339633,
+          -0.005003058127100571
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5802807211875916,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6866101026535034,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6912594437599182,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7146381139755249,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.722694456577301,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748038,
+        "grasp": 0.09324239611625673,
+        "contact_step": 80,
+        "remaining": 20,
+        "cube_in_tool_frame": [
+          0.12999505145009965,
+          0.07046327087744901,
+          -0.005088556829658151
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5855487585067749,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6638509035110474,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6896119117736816,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7212073802947998,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7022931575775146,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      }
+    ],
+    "strict_prefix_checks": 32,
+    "rescued_contexts": 1
+  },
+  "design": {
+    "episodes": 120,
+    "success": 41,
+    "contexts": [
+      {
+        "seed": 748050,
+        "grasp": 0.04,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 1.0103497505187988,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 1.0103497505187988,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 1.0103497505187988,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 1.0103497505187988,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 1.0103497505187988,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748050,
+        "grasp": 0.07,
+        "contact_step": 81,
+        "remaining": 19,
+        "cube_in_tool_frame": [
+          0.13000224206118963,
+          0.07010960246040628,
+          -0.005036148895794685
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5859647393226624,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6505119204521179,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.674582302570343,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6997963786125183,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6909236907958984,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748051,
+        "grasp": 0.04,
+        "contact_step": 73,
+        "remaining": 27,
+        "cube_in_tool_frame": [
+          0.12298428666031758,
+          0.10529690449705656,
+          -0.005748302245274301
+        ],
+        "nominal_success": false,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6704379916191101,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7183582186698914,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5912795066833496,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7238826155662537,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.48073694109916687,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748051,
+        "grasp": 0.07,
+        "contact_step": 70,
+        "remaining": 30,
+        "cube_in_tool_frame": [
+          0.12991966162943108,
+          0.05696172025394133,
+          -0.005181842314791516
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.44782495498657227,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.44762301445007324,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4474518597126007,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.46055564284324646,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.43761199712753296,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748052,
+        "grasp": 0.04,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9836649298667908,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9836649298667908,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9836649298667908,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9836649298667908,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9836649298667908,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          }
+        ]
+      },
+      {
+        "seed": 748052,
+        "grasp": 0.07,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8728070855140686,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8728070855140686,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8728070855140686,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8728070855140686,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8728070855140686,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      },
+      {
+        "seed": 748053,
+        "grasp": 0.04,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9903196096420288,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9903196096420288,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9903196096420288,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9903196096420288,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9903196096420288,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          }
+        ]
+      },
+      {
+        "seed": 748053,
+        "grasp": 0.07,
+        "contact_step": 73,
+        "remaining": 27,
+        "cube_in_tool_frame": [
+          0.1653012808195466,
+          0.08997345310701763,
+          -0.04910262781383866
+        ],
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.9296631813049316,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.9308701157569885,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.9299702048301697,
+            "error": "Failure('LOCAL_CONTACT_PLAN')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.9365684986114502,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.9301722049713135,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748054,
+        "grasp": 0.04,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7811597585678101,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7811597585678101,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7811597585678101,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7811597585678101,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.7811597585678101,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          }
+        ]
+      },
+      {
+        "seed": 748054,
+        "grasp": 0.07,
+        "contact_step": 76,
+        "remaining": 24,
+        "cube_in_tool_frame": [
+          0.1299397518085065,
+          0.057217670066701316,
+          -0.005205884562628013
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5346444845199585,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5344367623329163,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5369687676429749,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5512362122535706,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5283880829811096,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748055,
+        "grasp": 0.04,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8417167663574219,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8417167663574219,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8417167663574219,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8417167663574219,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8417167663574219,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          }
+        ]
+      },
+      {
+        "seed": 748055,
+        "grasp": 0.07,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8417167663574219,
+            "error": "Failure('PLAN_TRANSFER')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8417167663574219,
+            "error": "Failure('PLAN_TRANSFER')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8417167663574219,
+            "error": "Failure('PLAN_TRANSFER')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8417167663574219,
+            "error": "Failure('PLAN_TRANSFER')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8417167663574219,
+            "error": "Failure('PLAN_TRANSFER')"
+          }
+        ]
+      },
+      {
+        "seed": 748056,
+        "grasp": 0.04,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8223249316215515,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8223249316215515,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8223249316215515,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8223249316215515,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8223249316215515,
+            "error": "Failure('UNSTABLE_GRASP_CONTRACT')"
+          }
+        ]
+      },
+      {
+        "seed": 748056,
+        "grasp": 0.07,
+        "contact_step": 77,
+        "remaining": 23,
+        "cube_in_tool_frame": [
+          0.1299990988495438,
+          0.06884866676565018,
+          -0.005360136299135607
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5825558304786682,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5846754312515259,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5839596390724182,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6047135591506958,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5811232924461365,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748057,
+        "grasp": 0.04,
+        "contact_step": 72,
+        "remaining": 28,
+        "cube_in_tool_frame": [
+          0.12160658476799575,
+          0.07982000688551102,
+          -0.005493760484126674
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5283164381980896,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5444323420524597,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4949606955051422,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6338905096054077,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4681532084941864,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748057,
+        "grasp": 0.07,
+        "contact_step": 68,
+        "remaining": 32,
+        "cube_in_tool_frame": [
+          0.1299771116449463,
+          0.06574741300616352,
+          -0.005032811102632431
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4737568199634552,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4615580439567566,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.46372190117836,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4741404950618744,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.4582698941230774,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748058,
+        "grasp": 0.04,
+        "contact_step": 69,
+        "remaining": 31,
+        "cube_in_tool_frame": [
+          0.12211627233767808,
+          0.09690887155209696,
+          -0.004997535011451723
+        ],
+        "nominal_success": false,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6598849892616272,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8260613679885864,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6766746640205383,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8327084183692932,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5746479630470276,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748058,
+        "grasp": 0.07,
+        "contact_step": 67,
+        "remaining": 33,
+        "cube_in_tool_frame": [
+          0.12999598666689946,
+          0.08311106903924484,
+          -0.005038125158265956
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5907938480377197,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6177242994308472,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5895411968231201,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7773668766021729,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5797848105430603,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748059,
+        "grasp": 0.04,
+        "contact_step": 69,
+        "remaining": 31,
+        "cube_in_tool_frame": [
+          0.12215935312725966,
+          0.09849071497055861,
+          -0.005736630646352771
+        ],
+        "nominal_success": false,
+        "any_success": true,
+        "mixed": true,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7266575694084167,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7863672375679016,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.6174787282943726,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.7900928258895874,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5563901662826538,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748059,
+        "grasp": 0.07,
+        "contact_step": 73,
+        "remaining": 27,
+        "cube_in_tool_frame": [
+          0.12993889117716065,
+          0.07120087153790128,
+          -0.005103778658537265
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5634375810623169,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5646336078643799,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5633847713470459,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.576643705368042,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5574713349342346,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748060,
+        "grasp": 0.04,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8711354732513428,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8711354732513428,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8711354732513428,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8711354732513428,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.8711354732513428,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          }
+        ]
+      },
+      {
+        "seed": 748060,
+        "grasp": 0.07,
+        "contact_step": 73,
+        "remaining": 27,
+        "cube_in_tool_frame": [
+          0.129993564068988,
+          0.054436359173358685,
+          -0.005008136672622463
+        ],
+        "nominal_success": true,
+        "any_success": true,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.494598388671875,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.49883151054382324,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.49214068055152893,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.5085408687591553,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": true,
+            "terminal_distance_m": 0.48777535557746887,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748061,
+        "grasp": 0.04,
+        "contact_step": null,
+        "remaining": null,
+        "cube_in_tool_frame": null,
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9266063570976257,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9266063570976257,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9266063570976257,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9266063570976257,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": false,
+            "success": false,
+            "terminal_distance_m": 0.9266063570976257,
+            "error": "NO_EFFECTIVE_CONTACT_BOUNDARY"
+          }
+        ]
+      },
+      {
+        "seed": 748061,
+        "grasp": 0.07,
+        "contact_step": 68,
+        "remaining": 32,
+        "cube_in_tool_frame": [
+          0.16464325974920918,
+          0.06346217341578558,
+          -0.04964882389690034
+        ],
+        "nominal_success": false,
+        "any_success": false,
+        "mixed": false,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.872706413269043,
+            "error": null
+          },
+          {
+            "action": [
+              -1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8745337724685669,
+            "error": null
+          },
+          {
+            "action": [
+              1.0,
+              0.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8740692138671875,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8807491064071655,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_initial": true,
+            "same_prefix": true,
+            "success": false,
+            "terminal_distance_m": 0.8730190992355347,
+            "error": null
+          }
+        ]
+      }
+    ],
+    "strict_prefix_checks": 56,
+    "rescued_contexts": 3
+  }
+}

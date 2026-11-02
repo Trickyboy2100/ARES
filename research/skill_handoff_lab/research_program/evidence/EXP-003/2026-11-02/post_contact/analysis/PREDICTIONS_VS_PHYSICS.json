@@ -1,0 +1,1327 @@
+{
+  "sac_summary": [
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "actual_contact_cases": 7,
+      "terminal_value_mse": 0.018983403870443227,
+      "out_of_probability_range": 4
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "actual_contact_cases": 7,
+      "terminal_value_mse": 0.018013731633435608,
+      "out_of_probability_range": 5
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "actual_contact_cases": 7,
+      "terminal_value_mse": 0.025513576786085807,
+      "out_of_probability_range": 4
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "actual_contact_cases": 7,
+      "terminal_value_mse": 0.004577937447360093,
+      "out_of_probability_range": 2
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "actual_contact_cases": 7,
+      "terminal_value_mse": 0.004421374175470489,
+      "out_of_probability_range": 4
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "actual_contact_cases": 7,
+      "terminal_value_mse": 0.09200285045507942,
+      "out_of_probability_range": 2
+    }
+  ],
+  "sac_rows": [
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748100,
+      "stage": 0,
+      "q_min": 0.7702260613441467,
+      "q_values": [
+        0.9581519365310669,
+        0.7702260613441467
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748100,
+      "stage": 1,
+      "q_min": 1.2670485973358154,
+      "q_values": [
+        1.2670485973358154,
+        1.4541704654693604
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748101,
+      "stage": 0,
+      "q_min": 0.8265382647514343,
+      "q_values": [
+        1.001919150352478,
+        0.8265382647514343
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748101,
+      "stage": 1,
+      "q_min": 1.15156888961792,
+      "q_values": [
+        1.15156888961792,
+        1.352574110031128
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748102,
+      "stage": 0,
+      "q_min": 0.9424347281455994,
+      "q_values": [
+        1.1109192371368408,
+        0.9424347281455994
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748102,
+      "stage": 1,
+      "q_min": 1.0951430797576904,
+      "q_values": [
+        1.0951430797576904,
+        1.2155616283416748
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748103,
+      "stage": 0,
+      "q_min": 0.15986214578151703,
+      "q_values": [
+        0.4076712429523468,
+        0.15986214578151703
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748104,
+      "stage": 0,
+      "q_min": 0.30926114320755005,
+      "q_values": [
+        0.3976513743400574,
+        0.30926114320755005
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748104,
+      "stage": 1,
+      "q_min": 1.02055025100708,
+      "q_values": [
+        1.318080186843872,
+        1.02055025100708
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748105,
+      "stage": 0,
+      "q_min": -0.17694176733493805,
+      "q_values": [
+        0.0656825453042984,
+        -0.17694176733493805
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748105,
+      "stage": 1,
+      "q_min": 0.05898825079202652,
+      "q_values": [
+        0.16921523213386536,
+        0.05898825079202652
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748106,
+      "stage": 0,
+      "q_min": 0.36426275968551636,
+      "q_values": [
+        0.5007147192955017,
+        0.36426275968551636
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748106,
+      "stage": 1,
+      "q_min": 0.843059241771698,
+      "q_values": [
+        1.175734281539917,
+        0.843059241771698
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748107,
+      "stage": 0,
+      "q_min": 0.4705106019973755,
+      "q_values": [
+        0.6661257743835449,
+        0.4705106019973755
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "seed": 748107,
+      "stage": 1,
+      "q_min": 0.9682004451751709,
+      "q_values": [
+        0.9682004451751709,
+        0.9819545149803162
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748100,
+      "stage": 0,
+      "q_min": 0.6826329827308655,
+      "q_values": [
+        0.8582009673118591,
+        0.6826329827308655
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748100,
+      "stage": 1,
+      "q_min": 1.289919376373291,
+      "q_values": [
+        1.289919376373291,
+        1.4467642307281494
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748101,
+      "stage": 0,
+      "q_min": 0.7564646601676941,
+      "q_values": [
+        0.9396864175796509,
+        0.7564646601676941
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748101,
+      "stage": 1,
+      "q_min": 1.1117236614227295,
+      "q_values": [
+        1.1117236614227295,
+        1.331117868423462
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748102,
+      "stage": 0,
+      "q_min": 0.8579372763633728,
+      "q_values": [
+        1.1272625923156738,
+        0.8579372763633728
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748102,
+      "stage": 1,
+      "q_min": 1.0290584564208984,
+      "q_values": [
+        1.0990196466445923,
+        1.0290584564208984
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748103,
+      "stage": 0,
+      "q_min": 0.11236291378736496,
+      "q_values": [
+        0.3651266098022461,
+        0.11236291378736496
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748104,
+      "stage": 0,
+      "q_min": 0.3123771846294403,
+      "q_values": [
+        0.36014944314956665,
+        0.3123771846294403
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748104,
+      "stage": 1,
+      "q_min": 1.0099785327911377,
+      "q_values": [
+        1.082772135734558,
+        1.0099785327911377
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748105,
+      "stage": 0,
+      "q_min": -0.11550246924161911,
+      "q_values": [
+        0.17420709133148193,
+        -0.11550246924161911
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748105,
+      "stage": 1,
+      "q_min": -0.14381074905395508,
+      "q_values": [
+        0.1421523243188858,
+        -0.14381074905395508
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748106,
+      "stage": 0,
+      "q_min": 0.3017551600933075,
+      "q_values": [
+        0.4149661660194397,
+        0.3017551600933075
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748106,
+      "stage": 1,
+      "q_min": 0.9113582968711853,
+      "q_values": [
+        1.0032557249069214,
+        0.9113582968711853
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748107,
+      "stage": 0,
+      "q_min": 0.3968563675880432,
+      "q_values": [
+        0.6517176628112793,
+        0.3968563675880432
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "seed": 748107,
+      "stage": 1,
+      "q_min": 0.008823379874229431,
+      "q_values": [
+        0.008823379874229431,
+        0.1760575920343399
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748100,
+      "stage": 0,
+      "q_min": 1.0458555221557617,
+      "q_values": [
+        1.127460241317749,
+        1.0458555221557617
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748100,
+      "stage": 1,
+      "q_min": 0.7180503606796265,
+      "q_values": [
+        0.9287594556808472,
+        0.7180503606796265
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748101,
+      "stage": 0,
+      "q_min": 1.0060899257659912,
+      "q_values": [
+        1.0091232061386108,
+        1.0060899257659912
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748101,
+      "stage": 1,
+      "q_min": 1.0859564542770386,
+      "q_values": [
+        1.0859564542770386,
+        1.1209293603897095
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748102,
+      "stage": 0,
+      "q_min": 1.061601996421814,
+      "q_values": [
+        1.061601996421814,
+        1.1887755393981934
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748102,
+      "stage": 1,
+      "q_min": 0.9344061017036438,
+      "q_values": [
+        1.0578045845031738,
+        0.9344061017036438
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748103,
+      "stage": 0,
+      "q_min": 0.21711613237857819,
+      "q_values": [
+        0.343759685754776,
+        0.21711613237857819
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748104,
+      "stage": 0,
+      "q_min": 0.5552785396575928,
+      "q_values": [
+        0.6696101427078247,
+        0.5552785396575928
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748104,
+      "stage": 1,
+      "q_min": 0.853347897529602,
+      "q_values": [
+        0.853347897529602,
+        0.9595040678977966
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748105,
+      "stage": 0,
+      "q_min": -0.12811338901519775,
+      "q_values": [
+        -0.12811338901519775,
+        -0.11524046957492828
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748105,
+      "stage": 1,
+      "q_min": -0.24287644028663635,
+      "q_values": [
+        -0.24287644028663635,
+        0.012892123311758041
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748106,
+      "stage": 0,
+      "q_min": 0.6666754484176636,
+      "q_values": [
+        0.8197553157806396,
+        0.6666754484176636
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748106,
+      "stage": 1,
+      "q_min": 1.069457769393921,
+      "q_values": [
+        1.1171478033065796,
+        1.069457769393921
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748107,
+      "stage": 0,
+      "q_min": 0.560431957244873,
+      "q_values": [
+        0.5945358276367188,
+        0.560431957244873
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "seed": 748107,
+      "stage": 1,
+      "q_min": 1.0456966161727905,
+      "q_values": [
+        1.0456966161727905,
+        1.1312520503997803
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748100,
+      "stage": 0,
+      "q_min": 0.941486656665802,
+      "q_values": [
+        0.941486656665802,
+        1.098746657371521
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748100,
+      "stage": 1,
+      "q_min": 0.9830507040023804,
+      "q_values": [
+        0.9830507040023804,
+        1.0963267087936401
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748101,
+      "stage": 0,
+      "q_min": 0.8772349953651428,
+      "q_values": [
+        0.8772349953651428,
+        1.1039248704910278
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748101,
+      "stage": 1,
+      "q_min": 1.0561045408248901,
+      "q_values": [
+        1.0561045408248901,
+        1.1315703392028809
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748102,
+      "stage": 0,
+      "q_min": 1.0524615049362183,
+      "q_values": [
+        1.1158697605133057,
+        1.0524615049362183
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748102,
+      "stage": 1,
+      "q_min": 0.866687536239624,
+      "q_values": [
+        0.866687536239624,
+        1.001365065574646
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748103,
+      "stage": 0,
+      "q_min": 0.2722330391407013,
+      "q_values": [
+        0.2722330391407013,
+        0.3349950313568115
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748104,
+      "stage": 0,
+      "q_min": 0.6232315897941589,
+      "q_values": [
+        0.6232315897941589,
+        0.6488956212997437
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748104,
+      "stage": 1,
+      "q_min": 0.9269984364509583,
+      "q_values": [
+        0.9269984364509583,
+        0.953016996383667
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748105,
+      "stage": 0,
+      "q_min": -0.2113044559955597,
+      "q_values": [
+        -0.1527423858642578,
+        -0.2113044559955597
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748105,
+      "stage": 1,
+      "q_min": -0.06438272446393967,
+      "q_values": [
+        -0.06438272446393967,
+        0.08891968429088593
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748106,
+      "stage": 0,
+      "q_min": 0.7770686745643616,
+      "q_values": [
+        0.8077237010002136,
+        0.7770686745643616
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748106,
+      "stage": 1,
+      "q_min": 0.967908501625061,
+      "q_values": [
+        1.0354753732681274,
+        0.967908501625061
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748107,
+      "stage": 0,
+      "q_min": 0.5140483975410461,
+      "q_values": [
+        0.5140483975410461,
+        0.596961259841919
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "seed": 748107,
+      "stage": 1,
+      "q_min": 0.01827903836965561,
+      "q_values": [
+        0.01827903836965561,
+        0.2230125069618225
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748100,
+      "stage": 0,
+      "q_min": 0.9922094345092773,
+      "q_values": [
+        1.0147722959518433,
+        0.9922094345092773
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748100,
+      "stage": 1,
+      "q_min": 1.0817457437515259,
+      "q_values": [
+        1.0885199308395386,
+        1.0817457437515259
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748101,
+      "stage": 0,
+      "q_min": 0.917843759059906,
+      "q_values": [
+        0.9943573474884033,
+        0.917843759059906
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748101,
+      "stage": 1,
+      "q_min": 1.0071945190429688,
+      "q_values": [
+        1.0071945190429688,
+        1.0789310932159424
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748102,
+      "stage": 0,
+      "q_min": 1.0916024446487427,
+      "q_values": [
+        1.0916024446487427,
+        1.111352801322937
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748102,
+      "stage": 1,
+      "q_min": 1.0447739362716675,
+      "q_values": [
+        1.0447739362716675,
+        1.1415441036224365
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748103,
+      "stage": 0,
+      "q_min": 0.24052947759628296,
+      "q_values": [
+        0.4197539687156677,
+        0.24052947759628296
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748104,
+      "stage": 0,
+      "q_min": 0.8862613439559937,
+      "q_values": [
+        1.0046449899673462,
+        0.8862613439559937
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748104,
+      "stage": 1,
+      "q_min": 0.9796129465103149,
+      "q_values": [
+        1.004920244216919,
+        0.9796129465103149
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748105,
+      "stage": 0,
+      "q_min": 0.07916615158319473,
+      "q_values": [
+        0.2757766544818878,
+        0.07916615158319473
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748105,
+      "stage": 1,
+      "q_min": -0.12770776450634003,
+      "q_values": [
+        -0.12770776450634003,
+        0.0013504419475793839
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748106,
+      "stage": 0,
+      "q_min": 0.8247457146644592,
+      "q_values": [
+        1.0075936317443848,
+        0.8247457146644592
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748106,
+      "stage": 1,
+      "q_min": 0.975103497505188,
+      "q_values": [
+        1.1057002544403076,
+        0.975103497505188
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748107,
+      "stage": 0,
+      "q_min": 0.6359984874725342,
+      "q_values": [
+        0.7990597486495972,
+        0.6359984874725342
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "seed": 748107,
+      "stage": 1,
+      "q_min": 0.9302429556846619,
+      "q_values": [
+        0.9302429556846619,
+        1.0174165964126587
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748100,
+      "stage": 0,
+      "q_min": 0.8851374983787537,
+      "q_values": [
+        0.8851374983787537,
+        1.1023410558700562
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748100,
+      "stage": 1,
+      "q_min": 0.9503847360610962,
+      "q_values": [
+        0.9503847360610962,
+        1.0079869031906128
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748101,
+      "stage": 0,
+      "q_min": 0.823702335357666,
+      "q_values": [
+        0.823702335357666,
+        1.0587726831436157
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748101,
+      "stage": 1,
+      "q_min": 0.9481822848320007,
+      "q_values": [
+        0.9481822848320007,
+        0.9954649209976196
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748102,
+      "stage": 0,
+      "q_min": 1.099870204925537,
+      "q_values": [
+        1.1031246185302734,
+        1.099870204925537
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748102,
+      "stage": 1,
+      "q_min": 0.9866983890533447,
+      "q_values": [
+        0.9866983890533447,
+        1.0857197046279907
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748103,
+      "stage": 0,
+      "q_min": 0.33176741003990173,
+      "q_values": [
+        0.33176741003990173,
+        0.436793714761734
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748104,
+      "stage": 0,
+      "q_min": 0.7555010318756104,
+      "q_values": [
+        0.850724458694458,
+        0.7555010318756104
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748104,
+      "stage": 1,
+      "q_min": 0.21000178158283234,
+      "q_values": [
+        0.7295886278152466,
+        0.21000178158283234
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748105,
+      "stage": 0,
+      "q_min": -0.13182218372821808,
+      "q_values": [
+        -0.08724276721477509,
+        -0.13182218372821808
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748105,
+      "stage": 1,
+      "q_min": -0.07452447712421417,
+      "q_values": [
+        -0.07452447712421417,
+        -0.023209484294056892
+      ],
+      "native_success": false,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748106,
+      "stage": 0,
+      "q_min": 0.917284369468689,
+      "q_values": [
+        0.9991163015365601,
+        0.917284369468689
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748106,
+      "stage": 1,
+      "q_min": 0.9136526584625244,
+      "q_values": [
+        0.9136526584625244,
+        0.9175645112991333
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748107,
+      "stage": 0,
+      "q_min": 0.4591353237628937,
+      "q_values": [
+        0.4591353237628937,
+        0.6166051626205444
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "seed": 748107,
+      "stage": 1,
+      "q_min": 1.039866328239441,
+      "q_values": [
+        1.1240184307098389,
+        1.039866328239441
+      ],
+      "native_success": true,
+      "definition": "stage0 soft option value; stage1 terminal-return estimate; network is unbounded, not a calibrated probability"
+    }
+  ],
+  "stap_rows": [
+    {
+      "seed": 748100,
+      "stage": 0,
+      "predicted_probability": 0.9929749965667725,
+      "actual_native_success": true,
+      "model_queries": 758
+    },
+    {
+      "seed": 748100,
+      "stage": 1,
+      "predicted_probability": 0.9999903440475464,
+      "actual_native_success": true,
+      "model_queries": 190
+    },
+    {
+      "seed": 748101,
+      "stage": 0,
+      "predicted_probability": 0.9995794296264648,
+      "actual_native_success": true,
+      "model_queries": 758
+    },
+    {
+      "seed": 748101,
+      "stage": 1,
+      "predicted_probability": 0.999936580657959,
+      "actual_native_success": true,
+      "model_queries": 190
+    },
+    {
+      "seed": 748102,
+      "stage": 0,
+      "predicted_probability": 0.9999972581863403,
+      "actual_native_success": true,
+      "model_queries": 758
+    },
+    {
+      "seed": 748102,
+      "stage": 1,
+      "predicted_probability": 0.9999998807907104,
+      "actual_native_success": true,
+      "model_queries": 190
+    },
+    {
+      "seed": 748103,
+      "stage": 0,
+      "predicted_probability": 1.070219013854512e-06,
+      "actual_native_success": false,
+      "model_queries": 758
+    },
+    {
+      "seed": 748104,
+      "stage": 0,
+      "predicted_probability": 0.788547158241272,
+      "actual_native_success": true,
+      "model_queries": 758
+    },
+    {
+      "seed": 748104,
+      "stage": 1,
+      "predicted_probability": 0.04318881407380104,
+      "actual_native_success": true,
+      "model_queries": 190
+    },
+    {
+      "seed": 748105,
+      "stage": 0,
+      "predicted_probability": 1.094100753107341e-05,
+      "actual_native_success": false,
+      "model_queries": 758
+    },
+    {
+      "seed": 748105,
+      "stage": 1,
+      "predicted_probability": 3.3403513953089714e-05,
+      "actual_native_success": false,
+      "model_queries": 190
+    },
+    {
+      "seed": 748106,
+      "stage": 0,
+      "predicted_probability": 0.562808632850647,
+      "actual_native_success": true,
+      "model_queries": 758
+    },
+    {
+      "seed": 748106,
+      "stage": 1,
+      "predicted_probability": 0.9984201192855835,
+      "actual_native_success": true,
+      "model_queries": 190
+    },
+    {
+      "seed": 748107,
+      "stage": 0,
+      "predicted_probability": 0.9972935318946838,
+      "actual_native_success": true,
+      "model_queries": 758
+    },
+    {
+      "seed": 748107,
+      "stage": 1,
+      "predicted_probability": 0.9894284605979919,
+      "actual_native_success": true,
+      "model_queries": 190
+    }
+  ],
+  "stap_full_task_Brier": 0.029488181056051457,
+  "scope": "New development cohort only; n8 scene clusters, not calibrated or sealed-test evidence"
+}

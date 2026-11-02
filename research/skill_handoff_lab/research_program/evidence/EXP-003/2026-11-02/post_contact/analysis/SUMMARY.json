@@ -1,0 +1,442 @@
+{
+  "claim": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
+  "task": "official PullCubeTool-v1",
+  "native_horizon": 100,
+  "development_seeds": [
+    748100,
+    748101,
+    748102,
+    748103,
+    748104,
+    748105,
+    748106,
+    748107
+  ],
+  "sealed": false,
+  "results": [
+    {
+      "cohort": "eval_offline",
+      "method": "fixed105",
+      "n": 8,
+      "success": 4,
+      "physical_steps": 800,
+      "planner_queries": 247,
+      "planner_wall_s": 1.6516179090831429,
+      "median_episode_wall_s": 3.9996858304948546,
+      "model_selection_wall_s": 4.951620940119028e-05,
+      "errors": {
+        "NONE": 4,
+        "Failure('PLAN_TRANSFER')": 1,
+        "Failure('PLAN_HOOK')": 2,
+        "Horizon('NATIVE_HORIZON')": 1
+      }
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "fixed70",
+      "n": 8,
+      "success": 4,
+      "physical_steps": 800,
+      "planner_queries": 268,
+      "planner_wall_s": 1.8323307069949806,
+      "median_episode_wall_s": 3.8899891249020584,
+      "model_selection_wall_s": 5.269399844110012e-05,
+      "errors": {
+        "NONE": 7,
+        "Failure('PLAN_HOOK')": 1
+      }
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "feedback",
+      "n": 8,
+      "success": 4,
+      "physical_steps": 800,
+      "planner_queries": 255,
+      "planner_wall_s": 1.6783736415673047,
+      "median_episode_wall_s": 4.010335010010749,
+      "model_selection_wall_s": 0.0007163439877331257,
+      "errors": {
+        "NONE": 4,
+        "Failure('PLAN_TRANSFER')": 1,
+        "Failure('PLAN_HOOK')": 2,
+        "Horizon('NATIVE_HORIZON')": 1
+      }
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "ordinary",
+      "n": 8,
+      "success": 6,
+      "physical_steps": 800,
+      "planner_queries": 275,
+      "planner_wall_s": 1.7752730350475758,
+      "median_episode_wall_s": 3.9928076489595696,
+      "model_selection_wall_s": 0.007361082127317786,
+      "errors": {
+        "NONE": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      }
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "conditional",
+      "n": 8,
+      "success": 5,
+      "physical_steps": 800,
+      "planner_queries": 274,
+      "planner_wall_s": 1.9353883933508769,
+      "median_episode_wall_s": 4.07118863001233,
+      "model_selection_wall_s": 0.012004120973870158,
+      "errors": {
+        "NONE": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      }
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "global",
+      "n": 8,
+      "success": 5,
+      "physical_steps": 800,
+      "planner_queries": 275,
+      "planner_wall_s": 2.205176804214716,
+      "median_episode_wall_s": 4.044574421539437,
+      "model_selection_wall_s": 0.011470410972833633,
+      "errors": {
+        "NONE": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      }
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "generic_aux",
+      "n": 8,
+      "success": 5,
+      "physical_steps": 800,
+      "planner_queries": 266,
+      "planner_wall_s": 1.7055076935794204,
+      "median_episode_wall_s": 3.9796349725220352,
+      "model_selection_wall_s": 0.007281020167283714,
+      "errors": {
+        "NONE": 6,
+        "Failure('PLAN_TRANSFER')": 1,
+        "Horizon('NATIVE_HORIZON')": 1
+      }
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "supervised",
+      "n": 8,
+      "success": 4,
+      "physical_steps": 800,
+      "planner_queries": 258,
+      "planner_wall_s": 1.5473844262305647,
+      "median_episode_wall_s": 4.030632902518846,
+      "model_selection_wall_s": 0.004794895998202264,
+      "errors": {
+        "NONE": 4,
+        "Failure('PLAN_TRANSFER')": 1,
+        "Failure('PLAN_HOOK')": 2,
+        "Horizon('NATIVE_HORIZON')": 1
+      }
+    },
+    {
+      "cohort": "eval_offline",
+      "method": "stap",
+      "n": 8,
+      "success": 6,
+      "physical_steps": 800,
+      "planner_queries": 264,
+      "planner_wall_s": 1.4878367207711563,
+      "median_episode_wall_s": 4.070681601937395,
+      "model_selection_wall_s": 0.034296188852749765,
+      "errors": {
+        "NONE": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      }
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "ordinary",
+      "n": 8,
+      "success": 6,
+      "physical_steps": 800,
+      "planner_queries": 275,
+      "planner_wall_s": 1.6947363516082987,
+      "median_episode_wall_s": 3.935078953509219,
+      "model_selection_wall_s": 0.007110067876055837,
+      "errors": {
+        "NONE": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      }
+    },
+    {
+      "cohort": "eval_online128",
+      "method": "conditional",
+      "n": 8,
+      "success": 5,
+      "physical_steps": 800,
+      "planner_queries": 276,
+      "planner_wall_s": 1.7169510175008327,
+      "median_episode_wall_s": 3.935838433506433,
+      "model_selection_wall_s": 0.011834884062409401,
+      "errors": {
+        "NONE": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      }
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "ordinary",
+      "n": 8,
+      "success": 6,
+      "physical_steps": 800,
+      "planner_queries": 265,
+      "planner_wall_s": 1.4771175448549911,
+      "median_episode_wall_s": 3.9121030180249363,
+      "model_selection_wall_s": 0.007273463066667318,
+      "errors": {
+        "NONE": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      }
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "conditional",
+      "n": 8,
+      "success": 6,
+      "physical_steps": 800,
+      "planner_queries": 276,
+      "planner_wall_s": 1.668429300421849,
+      "median_episode_wall_s": 3.908671092009172,
+      "model_selection_wall_s": 0.011796188075095415,
+      "errors": {
+        "NONE": 6,
+        "Failure('PLAN_TRANSFER')": 1,
+        "Horizon('NATIVE_HORIZON')": 1
+      }
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "fixed875",
+      "n": 8,
+      "success": 6,
+      "physical_steps": 800,
+      "planner_queries": 261,
+      "planner_wall_s": 1.725013962481171,
+      "median_episode_wall_s": 3.929254356538877,
+      "model_selection_wall_s": 5.7734083384275436e-05,
+      "errors": {
+        "NONE": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      }
+    },
+    {
+      "cohort": "eval_online256",
+      "method": "lookahead",
+      "n": 8,
+      "success": 1,
+      "physical_steps": 800,
+      "planner_queries": 275,
+      "planner_wall_s": 1.4928359437035397,
+      "median_episode_wall_s": 3.9384145280346274,
+      "model_selection_wall_s": 4.4574844650924206e-05,
+      "errors": {
+        "NONE": 4,
+        "Failure('UNSTABLE_GRASP_CONTRACT')": 1,
+        "NO_EFFECTIVE_CONTACT_BOUNDARY": 2,
+        "Failure('PLAN_HOOK')": 1
+      }
+    },
+    {
+      "cohort": "eval_matched_prefix",
+      "method": "fixed875",
+      "n": 8,
+      "success": 6,
+      "physical_steps": 800,
+      "planner_queries": 261,
+      "planner_wall_s": 1.6265800750115886,
+      "median_episode_wall_s": 3.9493189759668894,
+      "model_selection_wall_s": 6.241106893867254e-05,
+      "errors": {
+        "NONE": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      }
+    },
+    {
+      "cohort": "eval_matched_prefix",
+      "method": "ordinary",
+      "n": 8,
+      "success": 6,
+      "physical_steps": 800,
+      "planner_queries": 275,
+      "planner_wall_s": 1.8905150201171637,
+      "median_episode_wall_s": 3.9952738495194353,
+      "model_selection_wall_s": 0.007511410163715482,
+      "errors": {
+        "NONE": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      }
+    },
+    {
+      "cohort": "eval_matched_prefix",
+      "method": "conditional",
+      "n": 8,
+      "success": 6,
+      "physical_steps": 800,
+      "planner_queries": 275,
+      "planner_wall_s": 1.7642955001210794,
+      "median_episode_wall_s": 3.9809461930417456,
+      "model_selection_wall_s": 0.012985008186660707,
+      "errors": {
+        "NONE": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "cohort": "eval_offline",
+      "matched_initial_scenes": 8,
+      "same_initial": true,
+      "candidate_rescues": 0,
+      "candidate_regressions": 1,
+      "exact_mcnemar_p": 1.0
+    },
+    {
+      "cohort": "eval_online128",
+      "matched_initial_scenes": 8,
+      "same_initial": true,
+      "candidate_rescues": 0,
+      "candidate_regressions": 1,
+      "exact_mcnemar_p": 1.0
+    },
+    {
+      "cohort": "eval_online256",
+      "matched_initial_scenes": 8,
+      "same_initial": true,
+      "candidate_rescues": 0,
+      "candidate_regressions": 0,
+      "exact_mcnemar_p": 1.0
+    },
+    {
+      "cohort": "eval_matched_prefix",
+      "matched_initial_scenes": 8,
+      "same_initial": true,
+      "candidate_rescues": 0,
+      "candidate_regressions": 0,
+      "exact_mcnemar_p": 1.0,
+      "prefix_checks": [
+        {
+          "seed": 748100,
+          "steps": 65,
+          "same_prefix": true
+        },
+        {
+          "seed": 748101,
+          "steps": 66,
+          "same_prefix": true
+        },
+        {
+          "seed": 748102,
+          "steps": 72,
+          "same_prefix": true
+        },
+        {
+          "seed": 748104,
+          "steps": 72,
+          "same_prefix": true
+        },
+        {
+          "seed": 748105,
+          "steps": 69,
+          "same_prefix": true
+        },
+        {
+          "seed": 748106,
+          "steps": 74,
+          "same_prefix": true
+        },
+        {
+          "seed": 748107,
+          "steps": 68,
+          "same_prefix": true
+        }
+      ]
+    }
+  ],
+  "budget": {
+    "unique_completed_physical_episodes": 858,
+    "completed_control_steps": 85800,
+    "saved_partial_control_steps": 173,
+    "partial_episodes": [
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/sac_conditional/PARTIAL.json.gz",
+        "steps": 75,
+        "seed": 748024
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/sac_ordinary/PARTIAL.json.gz",
+        "steps": 70,
+        "seed": 748023
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/ordinary/PARTIAL.json.gz",
+        "steps": 28,
+        "seed": 748039
+      }
+    ],
+    "planner_queries": 28420,
+    "planner_wall_s": 184.1589871654287,
+    "SAC_gradient_iterations": 3186,
+    "SAC_optimizer_step_calls": 6372,
+    "joint_comparator_optimizer_steps": 1000,
+    "effect_model_fitting": "ridge linear solves, not neural optimizer steps",
+    "shared_offline_data_episodes": 190,
+    "shared_offline_replay_transitions": 320,
+    "shared_data_counting": "counted once globally; charged to each learning method as shared190episodes/19000steps",
+    "models": [
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/ordinary/INTERRUPTED.zip",
+        "sha256": "3bfbbb2b3148f5587ceb4700d4d2e978ff97651535ace868404c83f67d5039b7",
+        "online_decisions": 145,
+        "sac_gradient_iterations": 162,
+        "actor_optimizer_steps": 162,
+        "critic_optimizer_steps": 162
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/sac_ordinary/SAC_256.zip",
+        "sha256": "b41fef16f48c61b924521d391e477c2e99caeda9dfdec39226c6810a63189c6a",
+        "online_decisions": 256,
+        "sac_gradient_iterations": 1012,
+        "actor_optimizer_steps": 1012,
+        "critic_optimizer_steps": 1012
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/sac_conditional/SAC_256.zip",
+        "sha256": "36b51e9d6dce108715ea21417052fe77423e14773a85175d8d63237bc63ae386",
+        "online_decisions": 256,
+        "sac_gradient_iterations": 1012,
+        "actor_optimizer_steps": 1012,
+        "critic_optimizer_steps": 1012
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/sac_global/OFFLINE.zip",
+        "sha256": "67bd21274fe7a88782c2ea7aedf00af37f0c8032f4476f0601809ac228e5424e",
+        "online_decisions": 0,
+        "sac_gradient_iterations": 500,
+        "actor_optimizer_steps": 500,
+        "critic_optimizer_steps": 500
+      },
+      {
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/sac_generic_aux/OFFLINE.zip",
+        "sha256": "0ac8d1e1175e8c4575026e0496dfaf4760b02339ea969d009986968e490a3166",
+        "online_decisions": 0,
+        "sac_gradient_iterations": 500,
+        "actor_optimizer_steps": 500,
+        "critic_optimizer_steps": 500
+      }
+    ]
+  }
+}

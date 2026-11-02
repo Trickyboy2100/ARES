@@ -1,0 +1,317 @@
+{
+  "definition": "First actual TRANSFER/HOOK/PULL force>0.5N + same20Hz interval cubeXY displacement>0.1mm, compared with prior PULL-phase boundary",
+  "contexts": 22,
+  "earlier_than_pull": 14,
+  "median_delay_steps": 19.5,
+  "max_delay_steps": 35,
+  "rows": [
+    {
+      "seed": 748028,
+      "grasp": 0.03765658408403397,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/near/00000_748028.json.gz",
+      "sha256": "97fba07a7760282b984b700f3b79f940041b4c3b3417860185b7341d49de3579",
+      "pull_boundary": 62,
+      "earliest": {
+        "step": 44,
+        "phase": "TRANSFER",
+        "force_N": 1.7348722709427544,
+        "interval_cube_motion_m": 0.014068328589802377
+      },
+      "delay": 18
+    },
+    {
+      "seed": 748010,
+      "grasp": 0.03891672849655152,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/near/00005_748010.json.gz",
+      "sha256": "27434d7c1e34a591553f42ad4616a9b9e5689f68e69f8d285e586a7ac4dcc4e6",
+      "pull_boundary": 68,
+      "earliest": {
+        "step": 50,
+        "phase": "TRANSFER",
+        "force_N": 1.785508108574907,
+        "interval_cube_motion_m": 0.0192350261548831
+      },
+      "delay": 18
+    },
+    {
+      "seed": 748011,
+      "grasp": 0.04315941780805588,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/near/00010_748011.json.gz",
+      "sha256": "1029f9289cd5f554b812caa079dbbb3de5a0d4ea43a3b892303467a561cedd7c",
+      "pull_boundary": 70,
+      "earliest": {
+        "step": 49,
+        "phase": "TRANSFER",
+        "force_N": 2.803020830499967,
+        "interval_cube_motion_m": 0.013288816506604784
+      },
+      "delay": 21
+    },
+    {
+      "seed": 748019,
+      "grasp": 0.03995676398277283,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/near/00015_748019.json.gz",
+      "sha256": "0394e47067e86c37514ac421912523db923717ab9c17500699f45c62f4041da0",
+      "pull_boundary": 60,
+      "earliest": {
+        "step": 39,
+        "phase": "TRANSFER",
+        "force_N": 0.803666790909391,
+        "interval_cube_motion_m": 0.014122445853919965
+      },
+      "delay": 21
+    },
+    {
+      "seed": 748021,
+      "grasp": 0.05791317880153657,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/near/00020_748021.json.gz",
+      "sha256": "7424d9c9c947a3d11cc65348105442f1fedee9360cb228a0cbab93b054b8ae35",
+      "pull_boundary": 80,
+      "earliest": {
+        "step": 51,
+        "phase": "TRANSFER",
+        "force_N": 1.6912353200699677,
+        "interval_cube_motion_m": 0.0034332154906376263
+      },
+      "delay": 29
+    },
+    {
+      "seed": 748030,
+      "grasp": 0.09626852512359621,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/near/00025_748030.json.gz",
+      "sha256": "20467130a976ef813c980022ceec2c510a0af898edf05ae7c5fbe526195bdf43",
+      "pull_boundary": 82,
+      "earliest": {
+        "step": 47,
+        "phase": "TRANSFER",
+        "force_N": 1.5154936952120477,
+        "interval_cube_motion_m": 0.004527690976763803
+      },
+      "delay": 35
+    },
+    {
+      "seed": 748031,
+      "grasp": 0.09361429631710053,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/near/00030_748031.json.gz",
+      "sha256": "808a476d5d6d7bff1c149807004ff0d43af95033a862b47eca999e632f3c2ea8",
+      "pull_boundary": 80,
+      "earliest": {
+        "step": 80,
+        "phase": "PULL",
+        "force_N": 0.514957452867173,
+        "interval_cube_motion_m": 0.004689044398837872
+      },
+      "delay": 0
+    },
+    {
+      "seed": 748038,
+      "grasp": 0.09324239611625673,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/near/00035_748038.json.gz",
+      "sha256": "3cfa6fcf0110527c6651ed4f3dd803599830d928ae7baf849100f2404d11597f",
+      "pull_boundary": 80,
+      "earliest": {
+        "step": 80,
+        "phase": "PULL",
+        "force_N": 0.610684222956268,
+        "interval_cube_motion_m": 0.004730007909664722
+      },
+      "delay": 0
+    },
+    {
+      "seed": 748050,
+      "grasp": 0.07,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00005_748050.json.gz",
+      "sha256": "b747242719055e9875c5125d62459a5a34899f861a42fc22ef53415b28f1cc89",
+      "pull_boundary": 81,
+      "earliest": {
+        "step": 81,
+        "phase": "PULL",
+        "force_N": 0.7377141436897472,
+        "interval_cube_motion_m": 0.006060318423114464
+      },
+      "delay": 0
+    },
+    {
+      "seed": 748051,
+      "grasp": 0.04,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00010_748051.json.gz",
+      "sha256": "bb86669f488e352714ba63f202de3dfd1bf53e75fc0e99f6882de8a9848882d2",
+      "pull_boundary": 73,
+      "earliest": {
+        "step": 51,
+        "phase": "TRANSFER",
+        "force_N": 1.5618465312880725,
+        "interval_cube_motion_m": 0.01355534687094656
+      },
+      "delay": 22
+    },
+    {
+      "seed": 748051,
+      "grasp": 0.07,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00015_748051.json.gz",
+      "sha256": "beca519c14f1f930dddab791c3a7919666e7200c590f6e7607d71f5bda5cb6f2",
+      "pull_boundary": 70,
+      "earliest": {
+        "step": 70,
+        "phase": "PULL",
+        "force_N": 0.9257787337729187,
+        "interval_cube_motion_m": 0.009946701173444563
+      },
+      "delay": 0
+    },
+    {
+      "seed": 748053,
+      "grasp": 0.07,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00035_748053.json.gz",
+      "sha256": "5376968ab40a602364296c62b8810e0d2aa5bd80b7c2812941f1f9ca0f40e5f4",
+      "pull_boundary": 73,
+      "earliest": {
+        "step": 45,
+        "phase": "TRANSFER",
+        "force_N": 2.354822497172703,
+        "interval_cube_motion_m": 0.012381893175184745
+      },
+      "delay": 28
+    },
+    {
+      "seed": 748054,
+      "grasp": 0.07,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00045_748054.json.gz",
+      "sha256": "e3b3601820fc84b31601317d155f94fe563ed2ae9c074a19819fef768171071a",
+      "pull_boundary": 76,
+      "earliest": {
+        "step": 76,
+        "phase": "PULL",
+        "force_N": 0.6365138391734652,
+        "interval_cube_motion_m": 0.0042752772796360895
+      },
+      "delay": 0
+    },
+    {
+      "seed": 748056,
+      "grasp": 0.07,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00065_748056.json.gz",
+      "sha256": "b12e3fceeed3f733f19075eede38254b3e3607efa4713994be79fd04722d7a97",
+      "pull_boundary": 77,
+      "earliest": {
+        "step": 77,
+        "phase": "PULL",
+        "force_N": 0.8499227363110108,
+        "interval_cube_motion_m": 0.009517887189124758
+      },
+      "delay": 0
+    },
+    {
+      "seed": 748057,
+      "grasp": 0.04,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00070_748057.json.gz",
+      "sha256": "429fd1df23e4558b3ded2a70af231ba251b9bb97fe73f4a3943d673914192011",
+      "pull_boundary": 72,
+      "earliest": {
+        "step": 53,
+        "phase": "TRANSFER",
+        "force_N": 0.9055058383070853,
+        "interval_cube_motion_m": 0.009067894856605745
+      },
+      "delay": 19
+    },
+    {
+      "seed": 748057,
+      "grasp": 0.07,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00075_748057.json.gz",
+      "sha256": "b33b70c71cfa8d914944faeac0e19344006b44a4f52a4f95534762e7394d8444",
+      "pull_boundary": 68,
+      "earliest": {
+        "step": 68,
+        "phase": "PULL",
+        "force_N": 0.5305501210844382,
+        "interval_cube_motion_m": 0.007450655441819085
+      },
+      "delay": 0
+    },
+    {
+      "seed": 748058,
+      "grasp": 0.04,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00080_748058.json.gz",
+      "sha256": "60395a3dea7a925b40b05c5c4e47ae6051b7ae6b47504294f1bb7a5a6770610b",
+      "pull_boundary": 69,
+      "earliest": {
+        "step": 46,
+        "phase": "TRANSFER",
+        "force_N": 1.4891480974734708,
+        "interval_cube_motion_m": 0.005374672011408008
+      },
+      "delay": 23
+    },
+    {
+      "seed": 748058,
+      "grasp": 0.07,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00085_748058.json.gz",
+      "sha256": "22d0f985c823cd3c47663c6de880f81212a86d9af58a3a80ce1935432188be2e",
+      "pull_boundary": 67,
+      "earliest": {
+        "step": 44,
+        "phase": "TRANSFER",
+        "force_N": 1.1840784115323109,
+        "interval_cube_motion_m": 0.0021483799960977127
+      },
+      "delay": 23
+    },
+    {
+      "seed": 748059,
+      "grasp": 0.04,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00090_748059.json.gz",
+      "sha256": "759da44c553846ceda63f2aff0c5f6531ef2bbb222bf871b1704f6ffc95408a5",
+      "pull_boundary": 69,
+      "earliest": {
+        "step": 49,
+        "phase": "TRANSFER",
+        "force_N": 1.3892619899340701,
+        "interval_cube_motion_m": 0.01527588074090337
+      },
+      "delay": 20
+    },
+    {
+      "seed": 748059,
+      "grasp": 0.07,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00095_748059.json.gz",
+      "sha256": "b67bd8c1da34755d9949090aec481fa56799f9cef065b2400044082708fb83b1",
+      "pull_boundary": 73,
+      "earliest": {
+        "step": 51,
+        "phase": "TRANSFER",
+        "force_N": 1.5210104148822559,
+        "interval_cube_motion_m": 0.006772492328871866
+      },
+      "delay": 22
+    },
+    {
+      "seed": 748060,
+      "grasp": 0.07,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00105_748060.json.gz",
+      "sha256": "28119160fe782da35c5d412d04773fc86db75fd57db0d2f93d1f095a9eb4d0e9",
+      "pull_boundary": 73,
+      "earliest": {
+        "step": 73,
+        "phase": "PULL",
+        "force_N": 0.7001539382005258,
+        "interval_cube_motion_m": 0.006555240131767536
+      },
+      "delay": 0
+    },
+    {
+      "seed": 748061,
+      "grasp": 0.07,
+      "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/design/00115_748061.json.gz",
+      "sha256": "34746a4c21a51945bb75a89be4f75398a1f761a3db12e8bae1842884ef703049",
+      "pull_boundary": 68,
+      "earliest": {
+        "step": 42,
+        "phase": "TRANSFER",
+        "force_N": 2.8710435855618246,
+        "interval_cube_motion_m": 0.01785380121242239
+      },
+      "delay": 26
+    }
+  ]
+}

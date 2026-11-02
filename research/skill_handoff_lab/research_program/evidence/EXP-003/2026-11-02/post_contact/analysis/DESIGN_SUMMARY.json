@@ -1,0 +1,18 @@
+{
+  "design_episodes": 120,
+  "scene_clusters": 12,
+  "grasp_contexts": 24,
+  "actual_postcontact_contexts": 14,
+  "native_success_by_action": {
+    "Continue": 9,
+    "Lateral \u221215 mm": 7,
+    "Lateral +15 mm": 9,
+    "Yaw \u22120.15 rad": 5,
+    "Yaw +0.15 rad": 11
+  },
+  "fixed_prefix_rescued_contexts": 3,
+  "fixed_prefix_regressed_contexts": 4,
+  "nominal_grasp_oracle": 8,
+  "joint_grasp_contact_oracle": 8,
+  "warning": "Oracle is retrospective action-set coverage, not a deployable method or learned score."
+}

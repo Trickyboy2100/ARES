@@ -1,0 +1,642 @@
+{
+  "first_contact": {
+    "episodes": 24,
+    "success": 9,
+    "all_zero_traces_match": true,
+    "strict_prefix_pairs": 16,
+    "contexts": [
+      {
+        "seed": 748051,
+        "grasp": 0.04,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 51,
+        "contact_phase": "TRANSFER",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.6704379916191101,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.6373884081840515,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.6342259049415588,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748051,
+        "grasp": 0.07,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 70,
+        "contact_phase": "PULL",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.44782495498657227,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.44755518436431885,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.4483504593372345,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748052,
+        "grasp": 0.04,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 45,
+        "contact_phase": "TRANSFER",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.9836649298667908,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.9798955321311951,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.9826046824455261,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748052,
+        "grasp": 0.07,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 46,
+        "contact_phase": "TRANSFER",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.8728070855140686,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.8829635381698608,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.8807075023651123,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      },
+      {
+        "seed": 748058,
+        "grasp": 0.04,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 46,
+        "contact_phase": "TRANSFER",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.6598849892616272,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.597893238067627,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.6320775747299194,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748058,
+        "grasp": 0.07,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 44,
+        "contact_phase": "TRANSFER",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.5907938480377197,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.5886038541793823,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.8882046937942505,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      },
+      {
+        "seed": 748059,
+        "grasp": 0.04,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 49,
+        "contact_phase": "TRANSFER",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.7266575694084167,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.6521708965301514,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.6208850145339966,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      },
+      {
+        "seed": 748059,
+        "grasp": 0.07,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 51,
+        "contact_phase": "TRANSFER",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.5634375810623169,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.5827832818031311,
+            "error": "Horizon('NATIVE_HORIZON')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.5987282991409302,
+            "error": "Horizon('NATIVE_HORIZON')"
+          }
+        ]
+      }
+    ]
+  },
+  "pull_rejoin": {
+    "episodes": 24,
+    "success": 10,
+    "all_zero_traces_match": true,
+    "strict_prefix_pairs": 12,
+    "contexts": [
+      {
+        "seed": 748051,
+        "grasp": 0.04,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 73,
+        "contact_phase": "PULL",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.6704379916191101,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.7163322567939758,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.5357288718223572,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748051,
+        "grasp": 0.07,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 70,
+        "contact_phase": "PULL",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.44782495498657227,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.44755518436431885,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.4483504593372345,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748052,
+        "grasp": 0.04,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": null,
+        "contact_phase": null,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": false,
+            "success": false,
+            "distance": 0.9836649298667908,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": false,
+            "success": false,
+            "distance": 0.9836649298667908,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": false,
+            "success": false,
+            "distance": 0.9836649298667908,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748052,
+        "grasp": 0.07,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": null,
+        "contact_phase": null,
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": false,
+            "success": false,
+            "distance": 0.8728070855140686,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": false,
+            "success": false,
+            "distance": 0.8728070855140686,
+            "error": "Failure('PLAN_HOOK')"
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": false,
+            "success": false,
+            "distance": 0.8728070855140686,
+            "error": "Failure('PLAN_HOOK')"
+          }
+        ]
+      },
+      {
+        "seed": 748058,
+        "grasp": 0.04,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 69,
+        "contact_phase": "PULL",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.6598849892616272,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.8281655311584473,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.6063574552536011,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748058,
+        "grasp": 0.07,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 67,
+        "contact_phase": "PULL",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.5907938480377197,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.7466297149658203,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.5901836156845093,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748059,
+        "grasp": 0.04,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 69,
+        "contact_phase": "PULL",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.7266575694084167,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": false,
+            "distance": 0.7852516174316406,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.5891990661621094,
+            "error": null
+          }
+        ]
+      },
+      {
+        "seed": 748059,
+        "grasp": 0.07,
+        "zero_matches_full_original_100step_trace": true,
+        "contact_step": 73,
+        "contact_phase": "PULL",
+        "comparisons": [
+          {
+            "action": [
+              0.0,
+              0.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.5634375810623169,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              -1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.5707799196243286,
+            "error": null
+          },
+          {
+            "action": [
+              0.0,
+              1.0
+            ],
+            "same_prefix": true,
+            "success": true,
+            "distance": 0.5588025450706482,
+            "error": null
+          }
+        ]
+      }
+    ]
+  }
+}

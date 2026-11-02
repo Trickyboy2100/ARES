@@ -1,0 +1,27 @@
+{
+  "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contract_sac_20261102/evaluation512/fixed105/00005_746204.json.gz",
+  "sha256": "1df59f78f06d8979f6ddd8aad9c02400bfd695958f6bd79e2d958aa46ac72dbf",
+  "urdf_sha256": "524c6986dbbabe244e05801f262862205e880834d01459b06ee273016d0579ba",
+  "queries": [
+    {
+      "method": "screw",
+      "status": "screw plan failed",
+      "result_count": 0,
+      "wall_s": 0.011889069923199713
+    },
+    {
+      "method": "qpos",
+      "status": "IK Failed! Distance 0.113178 is greater than threshold 0.001000.",
+      "result_count": 0,
+      "wall_s": 0.03553194890264422
+    },
+    {
+      "method": "IK",
+      "status": "IK Failed! Distance 0.125844 is greater than threshold 0.001000.",
+      "result_count": 0,
+      "wall_s": 0.014127789996564388
+    }
+  ],
+  "scope": "CPU-only saved state query, no new task rollout; no proof of globally infeasible target",
+  "new_physics_steps": 0
+}

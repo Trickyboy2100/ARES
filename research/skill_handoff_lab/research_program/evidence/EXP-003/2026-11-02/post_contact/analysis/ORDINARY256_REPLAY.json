@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "run": "sac_ordinary",
+  "checkpoint": "256",
+  "transitions": 576,
+  "shared_physical_transitions": 320,
+  "max_errors": {
+    "observation": 5.960464477539063e-08,
+    "next_observation": 5.960464477539063e-08,
+    "action": 8.514949190185916e-09,
+    "native_reward": 0.0,
+    "terminal": 0.0
+  },
+  "source": "full physical initial state/contact boundary/final state and actual policy actions, not model predicted dynamics"
+}

@@ -8,8 +8,8 @@
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S4",
   "active_experiment": "EXP-003",
-  "latest_evidence": "evidence/EXP-003/2026-11-02/contract_sac/README.md",
-  "next_action": "EXP-003 / RESEARCH PIVOT AFTER 00c901a, not another gate: preserve shared corrected Tool stroke+FK controller, Pyramid symmetry 36/36, tested SAC/STAP/log-Q, and prior negatives. First run scripts/audit_smdp_action_authority.py against committed contract_sac/analysis/SUMMARY.json. Structural result independently computed: crossed hook height26/32/38mm has 0 mixed-success among 9 valid fixed-grasp groups; successor acceleration3/4.5/6 only 1 mixed among 9; 8 new dev scenes all methods pass on 7 and all fail PLAN_TRANSFER at746204. Do NOT use ordinary more SAC updates or solving 746204 alone as paper progress. Restrict 746204 to bounded shared-plan reachability/waypoint diagnosis; a fix makes stronger common baseline not novelty. Immediately investigate meaningful executable successor action authority AFTER actual verified tool contact / observed object motion: allow the planner to provide same good geometric nominal, then compare physically permissible contact-maintaining pull displacement/vector correction, contact approach/reposition and remaining native budget with SAME action & information available to strong feedback/geometry/ordinary RL. A direct controlled crossed-pair experiment under matched physical prefix MUST establish whether real postcontact choices change complete task outcomes; audit 100step time remaining. If event-level decisions are physically impossible within native100, change research benchmark with evidence (prefer existing ManiSkill StackPyramid250 or AssemblingKits200 contact-rich using same Panda stack) rather than quietly extending PullCubeTool native horizon or weakening control. Codex has autonomy to conduct several physically meaningful hypothesis/experiment/analysis loops in one run, and can adapt skills/valid action representations, not just report next plan. Once meaningful residual action effect exists, implement fully trained same-authority event/option SAC from mature baseline and compare HACMan++ contact primitives, Fabrica planned residual, RecoveryChaining and SCOUT conceptual opponents plus strong geometry, ordinary RL, STAP and actual outcome feedback under common budgets. Distinguish first-contact/plan failure from true physically recoverable error. Report full physical evidence, original success, independent scene clusters, paired rescue/regression, actual physical/compute cost, RAW/ANNOTATED synced video. Preserve sealed, no hardware, ARES-R read-only. Independent algorithm gain remains UNVERIFIED.",
+  "latest_evidence": "evidence/EXP-003/2026-11-02/post_contact/README.md",
+  "next_action": "EXP-003 cumulative continuation after post_contact: preserve strong corrected controller, Pyramid36/36, masked two-boundary SAC, STAP/log-Q, exact physical event/prefix audits and all negative models. Read post_contact/README and raw evidence. Do not expand unchanged lateral/yaw or effect-coordinate training: ordinary/conditional/fixed87.5mm/STAP all6/8 on development, and same87.5mm-prefix nominal/ordinary/conditional all6/8 with zero candidate rescues/regressions. Predictor CV improvement is not method gain. Native100 has real post-contact windows; do not falsely claim no executable window. New120-episode panel has3 fixed-prefix rescues but best nominal-grasp and joint oracle both8/12. First contact often precedes PULL by19.5steps; same transient correction/rejoin primitive confirms state/phase-dependent direction ranking, yet no extra coverage after stronger grasp. Next identify residual recovery after strong predecessor/control: distinguish tilted-tool cube~50mm below hook from proper~5mm hooking, and actual early-contact/remaining-budget constraints; share any reasonable control improvement with all methods. Do not spend the paper on746204 (3bounded CPU queries already done) or another fixed plan failure. If shared control removes that residual, use inherited mature PlugCharger native200 to test real grasp-result/contact-condition dependence with strong search/RLS/ordinary SAC, not saturated calibration-only or weaker controller. Only train a new independent increment after measurable benefit beyond best common control/ordinary RL; no extra auxiliary-head churn. Current8 development scenes have been examined and used for midpoint/timing diagnostics, never sealed. No cross-seed or convergence claim; no hardware/site data/ARES-R modifications.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -367,11 +367,11 @@
   },
   "action_authority_review_20261102": {
     "audit_script": "scripts/audit_smdp_action_authority.py",
-    "audit_execution": "SOURCE_JSON_ANALYZED_IN_CONNECTED_GITHUB_READER; NEW_PYTHON_SCRIPT_NOT_RUN_ON_UBUNTU",
+    "audit_execution": "PASS_ON_UBUNTU_RAW_AND_COMMITTED_SUMMARY",
     "physical_dataset": "evidence/EXP-003/2026-11-02/contract_sac/analysis/SUMMARY.json",
-    "valid_depth_grasp_contexts": 9,
+    "valid_depth_grasp_contexts": 8,
     "binary_success_sensitive_depth_contexts": 0,
-    "valid_accel_grasp_contexts": 9,
+    "valid_accel_grasp_contexts": 8,
     "binary_success_sensitive_accel_contexts": 1,
     "evaluation_scene_clusters": 8,
     "evaluation_all_methods_win_clusters": 7,
@@ -383,6 +383,70 @@
     "mass_of_SAC_training": 1,
     "new_physics_episodes": 0,
     "new_optimizer_updates": 0,
-    "method_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN"
+    "method_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
+    "previous_remote_count_note": "Previous9 valid-context statement superseded by local raw audit:11 selected,8 actual HOOK/PULL contexts.",
+    "selected_depth_grasp_contexts": 11,
+    "selected_accel_grasp_contexts": 11
+  },
+  "post_contact_20261102": {
+    "source": "evidence/EXP-003/2026-11-02/post_contact/README.md",
+    "complete_physics_episodes": 858,
+    "complete_control_steps": 85800,
+    "saved_partial_control_steps": 173,
+    "SAC_gradient_iterations": 3186,
+    "SAC_actor_optimizer_steps": 3186,
+    "SAC_critic_optimizer_steps": 3186,
+    "joint_comparator_optimizer_steps": 1000,
+    "shared_offline_episodes": 190,
+    "shared_offline_transitions": 320,
+    "online_decisions_per_comparison_SAC": 256,
+    "ordinary_online_physical_steps_including_partial": 14170,
+    "conditional_online_physical_steps_including_partial": 14275,
+    "design_scenes": 12,
+    "design_grasp_contexts": 24,
+    "design_actual_postcontact_contexts": 14,
+    "design_fixed_prefix_rescued_contexts": 3,
+    "best_nominal_grasp_coverage": "8/12",
+    "joint_grasp_contact_oracle": "8/12",
+    "offline_scores": {
+      "ordinary": "6/8",
+      "conditional": "5/8",
+      "global": "5/8",
+      "generic_aux": "5/8",
+      "stap": "6/8",
+      "supervised": "4/8"
+    },
+    "online256_scores": {
+      "ordinary": "6/8",
+      "conditional": "6/8",
+      "fixed875": "6/8"
+    },
+    "matched_prefix_scores": {
+      "nominal": "6/8",
+      "ordinary": "6/8",
+      "conditional": "6/8"
+    },
+    "candidate_rescues_regressions": [
+      0,
+      0
+    ],
+    "exact_matched_prefixes": 7,
+    "early_contact_zero_trace_equivalence": "8/8 full100step",
+    "training_seeds": [
+      31171
+    ],
+    "initial_exploratory_training_seed": 31161,
+    "development_seeds": [
+      748100,
+      748101,
+      748102,
+      748103,
+      748104,
+      748105,
+      748106,
+      748107
+    ],
+    "effect_direction_status": "NEGATIVE_METHOD_RESULT; physical effects exist but no independent gain",
+    "claim": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN"
   }
 }

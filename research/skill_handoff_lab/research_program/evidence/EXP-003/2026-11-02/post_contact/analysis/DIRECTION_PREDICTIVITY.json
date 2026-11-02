@@ -1,0 +1,583 @@
+{
+  "scope": "Leave-scene-out after training-only alpha selection; finite terminal effects, not instantaneous contact Jacobian or independent evaluation",
+  "contexts": 26,
+  "nontrivial_gradient_contexts": 22,
+  "conditional_mean_direction_cosine": 0.8596471553924414,
+  "constant_mean_direction_cosine": 0.7194658722416553,
+  "conditional_best_axis_correct": 19,
+  "constant_best_axis_correct": 18,
+  "rows": [
+    {
+      "seed": 748000,
+      "grasp": 0.07,
+      "true_gradient": [
+        -0.0008296418232541392,
+        0.0022644057729456026
+      ],
+      "conditional_gradient": [
+        -0.018178956688761638,
+        -0.02187043261608484
+      ],
+      "constant_gradient": [
+        0.017372852702410638,
+        0.03851784235940769
+      ],
+      "gradient_norm_m": 0.0024116050794941164,
+      "conditional_cosine": -0.5021784172774489,
+      "constant_cosine": 0.714484772453951,
+      "conditional_best_axis": 3,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748001,
+      "grasp": 0.07,
+      "true_gradient": [
+        0.008813285033325124,
+        0.03246129233823108
+      ],
+      "conditional_gradient": [
+        0.003638137037251766,
+        0.021432612156344382
+      ],
+      "constant_gradient": [
+        0.016475670299599527,
+        0.03661515752686563
+      ],
+      "gradient_norm_m": 0.033636431043538674,
+      "conditional_cosine": 0.9953025088160352,
+      "constant_cosine": 0.987588411669866,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748001,
+      "grasp": 0.105,
+      "true_gradient": [
+        -6.149037762551949e-05,
+        0.012156228811836325
+      ],
+      "conditional_gradient": [
+        -0.01632329913860723,
+        0.004463189335438141
+      ],
+      "constant_gradient": [
+        0.015433569533623301,
+        0.03486606472214422
+      ],
+      "gradient_norm_m": 0.012156384330558991,
+      "conditional_cosine": 0.2686191045014108,
+      "constant_cosine": 0.9123593387529636,
+      "conditional_best_axis": 2,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748002,
+      "grasp": 0.07,
+      "true_gradient": [
+        -0.00020407699132272077,
+        0.003093839617747415
+      ],
+      "conditional_gradient": [
+        -0.006809505514871867,
+        -0.007176252653628984
+      ],
+      "constant_gradient": [
+        0.015893421752593565,
+        0.03632095336209797
+      ],
+      "gradient_norm_m": 0.0031005630131849932,
+      "conditional_cosine": -0.6785215437858273,
+      "constant_cosine": 0.8877571124002814,
+      "conditional_best_axis": 3,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748010,
+      "grasp": 0.03891672849655152,
+      "true_gradient": [
+        0.10113447592712739,
+        0.11664708137721537
+      ],
+      "conditional_gradient": [
+        0.052118636557296726,
+        0.09837891019134976
+      ],
+      "constant_gradient": [
+        0.012920108565172724,
+        0.03347919517831354
+      ],
+      "gradient_norm_m": 0.1543849857171267,
+      "conditional_cosine": 0.9743221633598047,
+      "constant_cosine": 0.9407425298359403,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748011,
+      "grasp": 0.04315941780805588,
+      "true_gradient": [
+        0.005046019452835705,
+        0.00785204932093516
+      ],
+      "conditional_gradient": [
+        0.003836465289378062,
+        0.01262847644709297
+      ],
+      "constant_gradient": [
+        0.014184227751174297,
+        0.03345810318554745
+      ],
+      "gradient_norm_m": 0.009333648314394252,
+      "conditional_cosine": 0.9620857550713172,
+      "constant_cosine": 0.9855493157839748,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748019,
+      "grasp": 0.03995676398277283,
+      "true_gradient": [
+        0.006774730288134092,
+        0.013017607100970389
+      ],
+      "conditional_gradient": [
+        0.043028869145747724,
+        0.08037273500024696
+      ],
+      "constant_gradient": [
+        0.01580017146458143,
+        0.036236610515113274
+      ],
+      "gradient_norm_m": 0.014674980923742155,
+      "conditional_cosine": 0.999931759454452,
+      "constant_cosine": 0.9976423058123408,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748021,
+      "grasp": 0.05791317880153657,
+      "true_gradient": [
+        0.013883919948965921,
+        0.015037697893112472
+      ],
+      "conditional_gradient": [
+        0.035733183610717624,
+        0.06934537506635792
+      ],
+      "constant_gradient": [
+        0.01578714783340535,
+        0.036600508810873365
+      ],
+      "gradient_norm_m": 0.020466938976647513,
+      "conditional_cosine": 0.963845798701628,
+      "constant_cosine": 0.9433201335993048,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748028,
+      "grasp": 0.03765658408403397,
+      "true_gradient": [
+        0.06167468595290659,
+        0.11342167377572686
+      ],
+      "conditional_gradient": [
+        0.0732859094848299,
+        0.11970119690120415
+      ],
+      "constant_gradient": [
+        0.01467348072017156,
+        0.03384057614916733
+      ],
+      "gradient_norm_m": 0.12910554972377083,
+      "conditional_cosine": 0.9986830125958348,
+      "constant_cosine": 0.9960504768100366,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748030,
+      "grasp": 0.09626852512359621,
+      "true_gradient": [
+        -0.010152435409206564,
+        0.0009899323234035075
+      ],
+      "conditional_gradient": [
+        -0.01027876475634771,
+        0.00035815484553417345
+      ],
+      "constant_gradient": [
+        0.01811152007574445,
+        0.038522378476179064
+      ],
+      "gradient_norm_m": 0.01020058384324301,
+      "conditional_cosine": 0.9980556498068227,
+      "constant_cosine": -0.3356440731921864,
+      "conditional_best_axis": 2,
+      "constant_best_axis": 1,
+      "true_best_axis": 2
+    },
+    {
+      "seed": 748031,
+      "grasp": 0.09361429631710053,
+      "true_gradient": [
+        -0.002535599797791392,
+        -0.008304905996229923
+      ],
+      "conditional_gradient": [
+        -0.013823825020045507,
+        0.0003368124790949483
+      ],
+      "constant_gradient": [
+        0.017412352631901017,
+        0.03715048539040835
+      ],
+      "gradient_norm_m": 0.008683359369551365,
+      "conditional_cosine": 0.2686243232940424,
+      "constant_cosine": -0.9899392586655823,
+      "conditional_best_axis": 2,
+      "constant_best_axis": 1,
+      "true_best_axis": 3
+    },
+    {
+      "seed": 748038,
+      "grasp": 0.09324239611625673,
+      "true_gradient": [
+        -0.013265058822835464,
+        0.00950683552487617
+      ],
+      "conditional_gradient": [
+        -0.017117940258486605,
+        -0.01246883558713071
+      ],
+      "constant_gradient": [
+        0.01823534138960783,
+        0.03813841923598154
+      ],
+      "gradient_norm_m": 0.0163199787766508,
+      "conditional_cosine": 0.3140192817221772,
+      "constant_cosine": 0.17492642357630742,
+      "conditional_best_axis": 2,
+      "constant_best_axis": 1,
+      "true_best_axis": 2
+    },
+    {
+      "seed": 748050,
+      "grasp": 0.07,
+      "true_gradient": [
+        -0.012174179326807928,
+        0.00437212988088074
+      ],
+      "conditional_gradient": [
+        -0.001112238850434454,
+        0.010311086221464566
+      ],
+      "constant_gradient": [
+        0.01807895587880346,
+        0.03766164910441161
+      ],
+      "gradient_norm_m": 0.012935461413361634,
+      "conditional_cosine": 0.4369807136838071,
+      "constant_cosine": -0.10258223564278356,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 2
+    },
+    {
+      "seed": 748051,
+      "grasp": 0.04,
+      "true_gradient": [
+        0.06662483031205428,
+        0.12447306524477643
+      ],
+      "conditional_gradient": [
+        0.05739108671675441,
+        0.08923532839417575
+      ],
+      "constant_gradient": [
+        0.015619243255161315,
+        0.03471260838361717
+      ],
+      "gradient_norm_m": 0.14118219429354537,
+      "conditional_cosine": 0.9967947050668909,
+      "constant_cosine": 0.9976457086304539,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748051,
+      "grasp": 0.07,
+      "true_gradient": [
+        9.402506597168823e-05,
+        0.011318978835342894
+      ],
+      "conditional_gradient": [
+        0.005759862647750867,
+        0.029053848780249972
+      ],
+      "constant_gradient": [
+        0.015623964521600036,
+        0.034694974868386005
+      ],
+      "gradient_norm_m": 0.011319369354693368,
+      "conditional_cosine": 0.9824912850901167,
+      "constant_cosine": 0.9151903690341787,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748053,
+      "grasp": 0.07,
+      "true_gradient": [
+        0.0005239807069307849,
+        0.003697540615151724
+      ],
+      "conditional_gradient": [
+        0.016319912800100714,
+        0.012048043838371218
+      ],
+      "constant_gradient": [
+        0.017560925096631957,
+        0.0376460508754691
+      ],
+      "gradient_norm_m": 0.0037344828801230663,
+      "conditional_cosine": 0.700934313651001,
+      "constant_cosine": 0.9565995168043641,
+      "conditional_best_axis": 0,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748054,
+      "grasp": 0.07,
+      "true_gradient": [
+        -0.0011267687779567906,
+        0.011181534010931839
+      ],
+      "conditional_gradient": [
+        -0.0009361915643571144,
+        0.01559441091590489
+      ],
+      "constant_gradient": [
+        0.017696253943257297,
+        0.03831981623626122
+      ],
+      "gradient_norm_m": 0.011238163138013423,
+      "conditional_cosine": 0.9991812157295745,
+      "constant_cosine": 0.8612569492806152,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748056,
+      "grasp": 0.07,
+      "true_gradient": [
+        0.0001842818895309925,
+        0.010608204087937893
+      ],
+      "conditional_gradient": [
+        0.002376896920571826,
+        0.01740983593989474
+      ],
+      "constant_gradient": [
+        0.017320295861328456,
+        0.0364490764182133
+      ],
+      "gradient_norm_m": 0.01060980460640776,
+      "conditional_cosine": 0.9930086685151283,
+      "constant_cosine": 0.9105289122235611,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748057,
+      "grasp": 0.04,
+      "true_gradient": [
+        0.022018103773606003,
+        0.09054599701412536
+      ],
+      "conditional_gradient": [
+        0.062139899521357414,
+        0.08788658528163291
+      ],
+      "constant_gradient": [
+        0.016979065088047623,
+        0.03371170901013924
+      ],
+      "gradient_norm_m": 0.09318462571190207,
+      "conditional_cosine": 0.9298104016467171,
+      "constant_cosine": 0.974114372488418,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748057,
+      "grasp": 0.07,
+      "true_gradient": [
+        -0.00013526111302232036,
+        0.010005226860820424
+      ],
+      "conditional_gradient": [
+        0.013179107681002418,
+        0.03385165598972213
+      ],
+      "constant_gradient": [
+        0.016993404413193334,
+        0.03375889309627787
+      ],
+      "gradient_norm_m": 0.010006141119591435,
+      "conditional_cosine": 0.9268797401815806,
+      "constant_cosine": 0.8870583192580568,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748058,
+      "grasp": 0.04,
+      "true_gradient": [
+        0.08555180798594177,
+        0.12886156554233538
+      ],
+      "conditional_gradient": [
+        0.05760741099142886,
+        0.0915104897056848
+      ],
+      "constant_gradient": [
+        0.01440508815826496,
+        0.030880920106171293
+      ],
+      "gradient_norm_m": 0.15467519168788849,
+      "conditional_cosine": 0.9997060519235801,
+      "constant_cosine": 0.9888276896802297,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748058,
+      "grasp": 0.07,
+      "true_gradient": [
+        0.012266247492441111,
+        0.09925799176108757
+      ],
+      "conditional_gradient": [
+        0.01810777712543443,
+        0.034744260995675104
+      ],
+      "constant_gradient": [
+        0.014217490724118181,
+        0.030765508773367273
+      ],
+      "gradient_norm_m": 0.10001304792870752,
+      "conditional_cosine": 0.9367793866525778,
+      "constant_cosine": 0.9523535132180382,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748059,
+      "grasp": 0.04,
+      "true_gradient": [
+        0.0962645200045229,
+        0.1179058237972629
+      ],
+      "conditional_gradient": [
+        0.05724153536468687,
+        0.09824441119695859
+      ],
+      "constant_gradient": [
+        0.01413027730043575,
+        0.03346429180723352
+      ],
+      "gradient_norm_m": 0.15221248666588558,
+      "conditional_cosine": 0.9876800348808821,
+      "constant_cosine": 0.9596182674915825,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748059,
+      "grasp": 0.07,
+      "true_gradient": [
+        0.0005326791316890374,
+        0.010092200913976383
+      ],
+      "conditional_gradient": [
+        0.006924957798176727,
+        0.026925966498099932
+      ],
+      "constant_gradient": [
+        0.014113586765373037,
+        0.0334184900077334
+      ],
+      "gradient_norm_m": 0.010106248876086653,
+      "conditional_cosine": 0.9802652957022779,
+      "constant_cosine": 0.9404401871629038,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748060,
+      "grasp": 0.07,
+      "true_gradient": [
+        0.0007316925865577186,
+        0.019422971676799735
+      ],
+      "conditional_gradient": [
+        0.0013219557626302778,
+        0.016830177682046355
+      ],
+      "constant_gradient": [
+        0.014425997469124648,
+        0.03312295911575692
+      ],
+      "gradient_norm_m": 0.019436748771309163,
+      "conditional_cosine": 0.9991705622370537,
+      "constant_cosine": 0.931201532508196,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    },
+    {
+      "seed": 748061,
+      "grasp": 0.07,
+      "true_gradient": [
+        -0.00019026542187427115,
+        0.003488288843464178
+      ],
+      "conditional_gradient": [
+        0.002630715978146249,
+        0.005559970114260092
+      ],
+      "constant_gradient": [
+        0.01747750910504261,
+        0.03858632152115514
+      ],
+      "gradient_norm_m": 0.0034934739137708823,
+      "conditional_cosine": 0.8792883954668029,
+      "constant_cosine": 0.8870914396467208,
+      "conditional_best_axis": 1,
+      "constant_best_axis": 1,
+      "true_best_axis": 1
+    }
+  ]
+}

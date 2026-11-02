@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "scope": "encoded frame count/fps, all signal lengths, 3actual decisions, pose readback; static final annotated frame visually inspected",
+  "rows": [
+    {
+      "video": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/video_rescue/RAW.mp4",
+      "sha256": "1a63dc24083b7f94340b00d50c78e21e7c13fb865faebe36002eaaf6c8c97c14",
+      "width": 1600,
+      "height": 600,
+      "r_frame_rate": "20/1",
+      "duration": "5.050000",
+      "nb_frames": "101"
+    },
+    {
+      "video": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/video_rescue/ANNOTATED.mp4",
+      "sha256": "a83fb5423e1264206a66d1637cad3474e19b4264441d036e431a57425573ffca",
+      "width": 1600,
+      "height": 1060,
+      "r_frame_rate": "20/1",
+      "duration": "5.050000",
+      "nb_frames": "101"
+    },
+    {
+      "video": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/video_regression/RAW.mp4",
+      "sha256": "62662ecf837e23d6ed5cdcd1dec768284be6ed7c62d7f777645189b36d897aa7",
+      "width": 1600,
+      "height": 600,
+      "r_frame_rate": "20/1",
+      "duration": "5.050000",
+      "nb_frames": "101"
+    },
+    {
+      "video": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/post_contact_20261102/video_regression/ANNOTATED.mp4",
+      "sha256": "23c0ab60fbf1ff5b0d0b10aad5f3a912f8332b3c9d1dc65b9b14edcebc3e4372",
+      "width": 1600,
+      "height": 1060,
+      "r_frame_rate": "20/1",
+      "duration": "5.050000",
+      "nb_frames": "101"
+    }
+  ]
+}

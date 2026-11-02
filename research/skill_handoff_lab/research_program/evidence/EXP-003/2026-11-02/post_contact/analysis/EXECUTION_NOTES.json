@@ -1,0 +1,21 @@
+{
+  "nonphysical_launch_failures": [
+    {
+      "command": "initial near wrapper at /tmp/post_near.py inside bwrap",
+      "result": "exit2 file not found: isolated /tmp; copied wrapper into repository and reran",
+      "physics_steps": 0,
+      "provenance": "tool execution record; original failed log was superseded by successful launch log"
+    },
+    {
+      "command": "initial CPU direction unit check without pinned ManiSkill PYTHONPATH",
+      "result": "ModuleNotFoundError before env creation; rerun with existing pinned path passed",
+      "physics_steps": 0
+    }
+  ],
+  "partial_replay_audit": "Final buffers may end after first boundary in an unfinished episode. Original partial files lacked initial_measure; audit verifies identical serialized initial state against an actual complete episode with the same seed, reconstructs the boundary from actual saved PULL target/attachment and GRASP_STABILITY records, and checks all arrays. No synthetic transition or unexecuted reward is inserted. Future partial logger includes the missing fields.",
+  "metadata_corrections": [
+    "Selected vs executed height context counts",
+    "PULL trigger is not first physical contact",
+    "Change-of-variable entropy before common no-op projection, not executed-atom entropy"
+  ]
+}

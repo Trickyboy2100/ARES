@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "archive_entries_verified": 1070,
+  "restored_under_different_root": true,
+  "portable_metadata_files": 51,
+  "all_result_rows_equal": true,
+  "all_paired_results_equal": true,
+  "model_sha_equal": true,
+  "recomputed_budget": {
+    "unique_completed_physical_episodes": 858,
+    "completed_control_steps": 85800,
+    "saved_partial_control_steps": 173,
+    "planner_queries": 28420,
+    "SAC_gradient_iterations": 3186
+  },
+  "browser_interaction": "NOT_RUN_BROWSER_URL_POLICY_BLOCKED_FILE_PROTOCOL",
+  "video_and_static_visual_QA": "PASS_101frames20fps_pose_readback_curve_lengths_static_image_inspection"
+}
