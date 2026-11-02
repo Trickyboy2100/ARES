@@ -96,3 +96,5 @@ UNVERIFIED。不要因为论文发布日期较新而省略强先例。
 - **Uncertain task duration planning** (Robotics and Autonomous Systems2025) https://doi.org/10.1016/j.robot.2025.104926：情境条件化随机执行时间及限时规划早有研究，deadline/survival必须作为基线或与之区分。
 
 核心思考：当前STAP后验误选、工具碰撞前附着漂移、双臂执行时间误判，可能属于“已验证几何可达之后，真实后段接触/执行时间仍不确定”的不同残差机制。先分开真实物理检验，防止将所有失败归因一个所谓新网络。强几何Pyramid36/36是控制资产，非RL正增益；研究状态继续UNVERIFIED。
+
+代码复核补充：Grasp to Act 的官方 `https://github.com/hgupt3/g2a` 已含抓持优化、扰动、残差PPO和预训练checkpoint，README支持 Isaac Sim5.1/Isaac Lab2.3.2；其LEAP 16DoF手不等于ARES当前平行夹爪，借用稳定性评估机制时必须单独适配并验证，且不能把“用RL抑制手中滑移”作为原创。
