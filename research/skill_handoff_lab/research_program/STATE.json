@@ -9,7 +9,7 @@
   "current_stage": "S4",
   "active_experiment": "EXP-003",
   "latest_evidence": "evidence/EXP-003/2026-11-02/contract_sac/README.md",
-  "next_action": "Continue EXP-003 cumulative A/B from contract_sac/README.md. Preserve Pyramid36/36, mature SAC, STAP/log-Q and all physical evidence. Shared screw FK and stroke fixes explain controller gain, not independent RL: 2x2 stroke authority shows3/8 to6/8 without posterior update; arrival replan remains6/8. Real two-boundary SAC512 and model/supervised controls all7/8 new development scenes, with common746204 TRANSFER failure; STAP predicts0.00019 there. Do not train saturated hook height or slower acceleration grids. Next diagnose reachable intermediate tool-pose/path decomposition under unchanged100 native budget and measured tracking/contact execution; current finite candidate set may miss feasible routes. PokeCube50-step PickPeg->PokeCube scout remains0/4 standard and0/4 direct, weak controller NOT learning-opportunity evidence; establish credible nominal first. Only if shared strong execution leaves task-conditioned parameter ranking changes train a minimal new mechanism and ablations. SAC checkpoint workflow real but one seed/575 completed decisions not full convergence. Do not open sealed tests, change native success, write ARES-R or invent novelty.",
+  "next_action": "EXP-003 / RESEARCH PIVOT AFTER 00c901a, not another gate: preserve shared corrected Tool stroke+FK controller, Pyramid symmetry 36/36, tested SAC/STAP/log-Q, and prior negatives. First run scripts/audit_smdp_action_authority.py against committed contract_sac/analysis/SUMMARY.json. Structural result independently computed: crossed hook height26/32/38mm has 0 mixed-success among 9 valid fixed-grasp groups; successor acceleration3/4.5/6 only 1 mixed among 9; 8 new dev scenes all methods pass on 7 and all fail PLAN_TRANSFER at746204. Do NOT use ordinary more SAC updates or solving 746204 alone as paper progress. Restrict 746204 to bounded shared-plan reachability/waypoint diagnosis; a fix makes stronger common baseline not novelty. Immediately investigate meaningful executable successor action authority AFTER actual verified tool contact / observed object motion: allow the planner to provide same good geometric nominal, then compare physically permissible contact-maintaining pull displacement/vector correction, contact approach/reposition and remaining native budget with SAME action & information available to strong feedback/geometry/ordinary RL. A direct controlled crossed-pair experiment under matched physical prefix MUST establish whether real postcontact choices change complete task outcomes; audit 100step time remaining. If event-level decisions are physically impossible within native100, change research benchmark with evidence (prefer existing ManiSkill StackPyramid250 or AssemblingKits200 contact-rich using same Panda stack) rather than quietly extending PullCubeTool native horizon or weakening control. Codex has autonomy to conduct several physically meaningful hypothesis/experiment/analysis loops in one run, and can adapt skills/valid action representations, not just report next plan. Once meaningful residual action effect exists, implement fully trained same-authority event/option SAC from mature baseline and compare HACMan++ contact primitives, Fabrica planned residual, RecoveryChaining and SCOUT conceptual opponents plus strong geometry, ordinary RL, STAP and actual outcome feedback under common budgets. Distinguish first-contact/plan failure from true physically recoverable error. Report full physical evidence, original success, independent scene clusters, paired rescue/regression, actual physical/compute cost, RAW/ANNOTATED synced video. Preserve sealed, no hardware, ARES-R read-only. Independent algorithm gain remains UNVERIFIED.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -364,5 +364,25 @@
     "independent_gain": "UNVERIFIED",
     "shared_arrival_replan": "6/8_TO_6/8_NO_RESCUE",
     "second_task_scout": "PokeCube_v1_native50_NOT_YET_STRONG_BASELINE"
+  },
+  "action_authority_review_20261102": {
+    "audit_script": "scripts/audit_smdp_action_authority.py",
+    "audit_execution": "SOURCE_JSON_ANALYZED_IN_CONNECTED_GITHUB_READER; NEW_PYTHON_SCRIPT_NOT_RUN_ON_UBUNTU",
+    "physical_dataset": "evidence/EXP-003/2026-11-02/contract_sac/analysis/SUMMARY.json",
+    "valid_depth_grasp_contexts": 9,
+    "binary_success_sensitive_depth_contexts": 0,
+    "valid_accel_grasp_contexts": 9,
+    "binary_success_sensitive_accel_contexts": 1,
+    "evaluation_scene_clusters": 8,
+    "evaluation_all_methods_win_clusters": 7,
+    "evaluation_all_methods_fail_clusters": 1,
+    "failed_dev_scene": 746204,
+    "recovered_SAC_episodes": 287,
+    "recovered_SAC_training_scene_clusters": 64,
+    "recovered_SAC_scene_clusters_mixed_success": 24,
+    "mass_of_SAC_training": 1,
+    "new_physics_episodes": 0,
+    "new_optimizer_updates": 0,
+    "method_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN"
   }
 }
