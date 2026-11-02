@@ -1,0 +1,5 @@
+# Same-prefix stroke intervention
+
+Seed745000, tool density scale0.75, grasp35mm. Both physical traces are exactly identical through step78 (HOOK). Left: prior290mm stroke cap, terminal cube/base606.5mm, native failure. Right: initial geometric stroke321.1mm, terminal583.5mm, native success. The right controller does **not** need post-contact recomputation. This is deterministic actuator-authority correction, not RL or feedback-information gain.
+
+RAW and ANNOTATED are complete101-frame measured-pose renderings of real100-step physical trajectories, not live-captured original camera streams. No physics is advanced by rendering; frame k is recorded control step k at20Hz, initial frame0. Underlying contact sampling100Hz; plotted end-of-control force is not the100Hz contact-onset event. All source traces and SHA are retained. Native rule and100-step horizon unchanged. Graphics state readback max error1.2e-7. Model, final trajectory and full source parameters can be inspected in SYNC_VIEWER.

@@ -8,8 +8,8 @@
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S4",
   "active_experiment": "EXP-003",
-  "latest_evidence": "evidence/EXP-003/2026-11-02/contact_duration/README.md",
-  "next_action": "Continue EXP-003 cumulative A/B from contact_duration/README.md. Keep previous strong Pyramid36/36, SAC, STAP/log-Q and physical SkillResult. New312 valid physical episodes plus8 invalid logger attempts,11000 actual optimizer updates found: frozen attachment replanning matches measured refresh rescue; waiting9 is insufficient; plan_screw Success can leave13-14mm FK endpoint error. Finer integration has crossing physical successes at35/70mm, not monotonic benefit. Ordinary two-boundary Fitted Q/STAP/supervised/downstream analogue all2/4 fresh development, tied fixed100/105 references; no new method gain. Next run bounded new-design paired contact-entry experiments with shared contract separating planned FK, measured arrival, contact onset and remaining native100 budget; log screw vs fallback, compare equally allowed online arrival/contact control vs fixed schedules. Verify stable grasp-by-successor ranking interaction after strong controller before a minimal duration/feasibility learning increment. Do not train saturated yaw/hook grids; oldn16 vs n2 same seeds not identical initialization; recorded-initial physics must retain label. No sealed tests or ARES-R writes. A-side unchanged; inherited SAC retained.",
+  "latest_evidence": "evidence/EXP-003/2026-11-02/contract_sac/README.md",
+  "next_action": "Continue EXP-003 cumulative A/B from contract_sac/README.md. Preserve Pyramid36/36, mature SAC, STAP/log-Q and all physical evidence. Shared screw FK and stroke fixes explain controller gain, not independent RL: 2x2 stroke authority shows3/8 to6/8 without posterior update; arrival replan remains6/8. Real two-boundary SAC512 and model/supervised controls all7/8 new development scenes, with common746204 TRANSFER failure; STAP predicts0.00019 there. Do not train saturated hook height or slower acceleration grids. Next diagnose reachable intermediate tool-pose/path decomposition under unchanged100 native budget and measured tracking/contact execution; current finite candidate set may miss feasible routes. PokeCube50-step PickPeg->PokeCube scout remains0/4 standard and0/4 direct, weak controller NOT learning-opportunity evidence; establish credible nominal first. Only if shared strong execution leaves task-conditioned parameter ranking changes train a minimal new mechanism and ablations. SAC checkpoint workflow real but one seed/575 completed decisions not full convergence. Do not open sealed tests, change native success, write ARES-R or invent novelty.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -348,5 +348,21 @@
       420023
     ],
     "latest_strong_pyramid": "36/36 across two physical scenes; deterministic geometry, not RL"
+  },
+  "contract_sac_20261102": {
+    "source": "evidence/EXP-003/2026-11-02/contract_sac/README.md",
+    "complete_physics_episodes": 596,
+    "complete_control_steps": 59200,
+    "saved_partial_control_steps": 76,
+    "first_crash_partial_steps": "UNKNOWN_0_TO_100",
+    "sac_completed_decisions": 575,
+    "sac_measured_optimizer_updates": 1022,
+    "comparator_optimizer_updates": 10000,
+    "first_crash_updates": "INFERRED_138_TO_140_NOT_CHECKPOINT_MEASURED",
+    "sac_replay_audit": "PASS_645_TRANSITIONS_ZERO_ERROR",
+    "matched_development": "ALL_8_METHODS_7_OF_8",
+    "independent_gain": "UNVERIFIED",
+    "shared_arrival_replan": "6/8_TO_6/8_NO_RESCUE",
+    "second_task_scout": "PokeCube_v1_native50_NOT_YET_STRONG_BASELINE"
   }
 }

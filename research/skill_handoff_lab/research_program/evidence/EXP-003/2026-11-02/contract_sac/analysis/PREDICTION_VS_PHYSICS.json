@@ -1,0 +1,226 @@
+[
+  {
+    "method": "supervised",
+    "seed": 746200,
+    "stage0_predicted_success": 0.9998995975446523,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "supervised",
+    "seed": 746201,
+    "stage0_predicted_success": 0.9999230903402407,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "supervised",
+    "seed": 746202,
+    "stage0_predicted_success": 0.9996876076260693,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "supervised",
+    "seed": 746203,
+    "stage0_predicted_success": 0.9998406740428725,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "supervised",
+    "seed": 746204,
+    "stage0_predicted_success": 0.00014483641465009005,
+    "actual_success": false,
+    "error": "Failure('PLAN_TRANSFER')"
+  },
+  {
+    "method": "supervised",
+    "seed": 746205,
+    "stage0_predicted_success": 0.9994626954540217,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "supervised",
+    "seed": 746206,
+    "stage0_predicted_success": 0.031448411353725766,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "supervised",
+    "seed": 746207,
+    "stage0_predicted_success": 0.9998798865467248,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_open",
+    "seed": 746200,
+    "stage0_predicted_success": 0.9999293671197511,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_open",
+    "seed": 746201,
+    "stage0_predicted_success": 0.9999522138054259,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_open",
+    "seed": 746202,
+    "stage0_predicted_success": 0.9999568209359601,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_open",
+    "seed": 746203,
+    "stage0_predicted_success": 0.9999452480188727,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_open",
+    "seed": 746204,
+    "stage0_predicted_success": 0.0001902359368258205,
+    "actual_success": false,
+    "error": "Failure('PLAN_TRANSFER')"
+  },
+  {
+    "method": "stap_open",
+    "seed": 746205,
+    "stage0_predicted_success": 0.9998328712367797,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_open",
+    "seed": 746206,
+    "stage0_predicted_success": 0.5766888852472714,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_open",
+    "seed": 746207,
+    "stage0_predicted_success": 0.9999568926483422,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_replan",
+    "seed": 746200,
+    "stage0_predicted_success": 0.9999293671197511,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_replan",
+    "seed": 746201,
+    "stage0_predicted_success": 0.9999522138054259,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_replan",
+    "seed": 746202,
+    "stage0_predicted_success": 0.9999568209359601,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_replan",
+    "seed": 746203,
+    "stage0_predicted_success": 0.9999452480188727,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_replan",
+    "seed": 746204,
+    "stage0_predicted_success": 0.0001902359368258205,
+    "actual_success": false,
+    "error": "Failure('PLAN_TRANSFER')"
+  },
+  {
+    "method": "stap_replan",
+    "seed": 746205,
+    "stage0_predicted_success": 0.9998328712367797,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_replan",
+    "seed": 746206,
+    "stage0_predicted_success": 0.5766888852472714,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "stap_replan",
+    "seed": 746207,
+    "stage0_predicted_success": 0.9999568926483422,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "downstream",
+    "seed": 746200,
+    "stage0_predicted_success": 0.9997526048970053,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "downstream",
+    "seed": 746201,
+    "stage0_predicted_success": 0.999851559077684,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "downstream",
+    "seed": 746202,
+    "stage0_predicted_success": 0.9997855879042182,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "downstream",
+    "seed": 746203,
+    "stage0_predicted_success": 0.9997297773044083,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "downstream",
+    "seed": 746204,
+    "stage0_predicted_success": 0.00017974241525582044,
+    "actual_success": false,
+    "error": "Failure('PLAN_TRANSFER')"
+  },
+  {
+    "method": "downstream",
+    "seed": 746205,
+    "stage0_predicted_success": 0.9991193169894765,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "downstream",
+    "seed": 746206,
+    "stage0_predicted_success": 0.10576581335137271,
+    "actual_success": true,
+    "error": null
+  },
+  {
+    "method": "downstream",
+    "seed": 746207,
+    "stage0_predicted_success": 0.9998497962466274,
+    "actual_success": true,
+    "error": null
+  }
+]

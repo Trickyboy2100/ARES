@@ -1,0 +1,4266 @@
+{
+  "original_root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/contract_sac_20261102",
+  "archives": [
+    {
+      "archive": "RAW_00.tar.gz",
+      "size": 31552821,
+      "sha256": "e586c3317dbe592c16b2c1bc017e3058d1865c3481819b4ca28a11a2bc32d51a",
+      "entries": [
+        {
+          "path": "ACCEL.log",
+          "size": 33748,
+          "sha256": "721ae74a89cbfa6cee9c2cb60e05fac94d531590daa75ac3d624c0e545061998"
+        },
+        {
+          "path": "ARRIVAL.log",
+          "size": 16549,
+          "sha256": "5931cbc4a5ee0779df4dc9372360092e397f0f7ef8ba52383935428f14219584"
+        },
+        {
+          "path": "AUDIT.log",
+          "size": 2477,
+          "sha256": "eb4b3a9ae13a8b88cd91a84ea76e1091ed1c59a0807e76e146f5feac7b3d4491"
+        },
+        {
+          "path": "COMPARATORS.log",
+          "size": 360,
+          "sha256": "2827b5a9113addb76810a655ad0dcb4249f2def49cfeeec34a4b410d4e01090b"
+        },
+        {
+          "path": "EVAL512.log",
+          "size": 65331,
+          "sha256": "0383c071c26a6ab04ff64ee4ec60c1b9a9afd986bcb2d0b1ae4d7733646c7f8d"
+        },
+        {
+          "path": "FACTOR.log",
+          "size": 16489,
+          "sha256": "28a68143dd885141cb57ab6c5129a379b19755fd5b7a530478f3bef434e19ff9"
+        },
+        {
+          "path": "FEEDBACK.log",
+          "size": 16446,
+          "sha256": "a13cd5c69c0750c41c6d2e71cbc664ca446d7ba276ba273889fcc7fad3ad3646"
+        },
+        {
+          "path": "FLIP.log",
+          "size": 4951,
+          "sha256": "17b7af75cb635141eaf9d411902724f012ad78306f5b4fbc622f63cae5d7c408"
+        },
+        {
+          "path": "FLIP_FIXED.log",
+          "size": 12429,
+          "sha256": "b3991f92b842a82d9a5de13b65224ac8448217213193c5842cb0dd340230c6d8"
+        },
+        {
+          "path": "GRID.log",
+          "size": 643,
+          "sha256": "3e2b6516255d3676c201f0e9891d1dede3067986da30fb5aa6de56c9cecf1ec5"
+        },
+        {
+          "path": "GRID_RETRY.log",
+          "size": 33663,
+          "sha256": "ca5c450dede544fe88c790a317a9bcc085ae0274e3096936667c8c25476fe592"
+        },
+        {
+          "path": "PILOT.log",
+          "size": 16346,
+          "sha256": "d9e4304cad2cfb46f30ecdc1b5a34901ca31d92096c215fa4229f7ff5a8ebc6e"
+        },
+        {
+          "path": "POKE.log",
+          "size": 2292,
+          "sha256": "49bc47673d1583859445c0bcadcbb263c36bcf0633b71b612414afd2924235b0"
+        },
+        {
+          "path": "POKE_DIRECT.log",
+          "size": 2308,
+          "sha256": "879a7e5cd3ab48625776d173813631d5e366e16c0fdbb682392b31bdf88fd3f7"
+        },
+        {
+          "path": "SAC.log",
+          "size": 945532,
+          "sha256": "1d656d2bc4f215cdd61ebf916395ca723113f5d8cff13b55fd3e8037304b7891"
+        },
+        {
+          "path": "SAC_RECOVERED.log",
+          "size": 272866,
+          "sha256": "2431a87f5adbf3f9160fb83b789df64afffeef4cf1a5eebbe084336dece4dbdc"
+        },
+        {
+          "path": "VIDEO.log",
+          "size": 1379,
+          "sha256": "7e942d0f1f969446e68b721440a2e9249b28e27a5489faedfce629ae82d4e964"
+        },
+        {
+          "path": "WIDE.log",
+          "size": 17601,
+          "sha256": "9cfa723a10685a7df583a46d8c7c30d1deaaa714039d51e0f7fc1c18cbfaba56"
+        },
+        {
+          "path": "accel_grid/PROTOCOL.json",
+          "size": 1662,
+          "sha256": "18aa2ff9a2af476581c13d024df19ba264bacbd2de38510dc5363d960fbe85cc"
+        },
+        {
+          "path": "accel_grid/episodes/00001_746000.json.gz",
+          "size": 221566,
+          "sha256": "0d964b4afcd8e21d05b7a72a5eb700988982b21d0706bdb274a749ea274dc2f0"
+        },
+        {
+          "path": "accel_grid/episodes/00002_746000.json.gz",
+          "size": 218768,
+          "sha256": "a666d8236d885c0bc3a7f1e0cbf6c698f2f01780d19e7201c80146411efe4893"
+        },
+        {
+          "path": "accel_grid/episodes/00003_746000.json.gz",
+          "size": 217517,
+          "sha256": "e6cfdb4aa3bc4077ac0c0cf305e60ab200791a1f786a6ba1e3be0ca7ac6e25e7"
+        },
+        {
+          "path": "accel_grid/episodes/00004_746000.json.gz",
+          "size": 217115,
+          "sha256": "d943e33b1161e8559a1391f388bc688cbc804ad6d438de4b3d97f96a01e3fce1"
+        },
+        {
+          "path": "accel_grid/episodes/00005_746000.json.gz",
+          "size": 218932,
+          "sha256": "9818725b991ce5ba61d5a212b08d349d0e0ae9f2f0e395eab02f3d150d5918ce"
+        },
+        {
+          "path": "accel_grid/episodes/00006_746000.json.gz",
+          "size": 217383,
+          "sha256": "7e3b2517678762c457f6c669735beacd12e40b3646cd58fffe41c7ae26f00b18"
+        },
+        {
+          "path": "accel_grid/episodes/00007_746000.json.gz",
+          "size": 220877,
+          "sha256": "1fb9a10cf00f0baad08f4a98d2f371a07055196cfee75518a9461fe994ca2edc"
+        },
+        {
+          "path": "accel_grid/episodes/00008_746000.json.gz",
+          "size": 217348,
+          "sha256": "a16645d04a4849ee63f87cffa53d307f732381e0af3330ecc3bad0fb180123de"
+        },
+        {
+          "path": "accel_grid/episodes/00009_746000.json.gz",
+          "size": 214793,
+          "sha256": "87264a96fd983c74adae4941dc35e5e9adcbcedf97a5bc758758d3145e999234"
+        },
+        {
+          "path": "accel_grid/episodes/00010_746001.json.gz",
+          "size": 222692,
+          "sha256": "89b83512548758b2e055a8c1f3388741b09b69683188b01f7342eaf772c4bfab"
+        },
+        {
+          "path": "accel_grid/episodes/00011_746001.json.gz",
+          "size": 217989,
+          "sha256": "9863fb5e19e2cc1eae3d8207d1741ff595e9867517d34b9f9f00cad331945b01"
+        },
+        {
+          "path": "accel_grid/episodes/00012_746001.json.gz",
+          "size": 219573,
+          "sha256": "3eec494586f017e5d9712c5d46bea226de1c8c9216a9d01d7ba8e684b38a8e6e"
+        },
+        {
+          "path": "accel_grid/episodes/00013_746001.json.gz",
+          "size": 220460,
+          "sha256": "a5ee63fe1f3352ec5fbed81bfa924eedc368aba5a61578273d614da2f52809a4"
+        },
+        {
+          "path": "accel_grid/episodes/00014_746001.json.gz",
+          "size": 218681,
+          "sha256": "65999f58d32d90cdf663a071c97e0cb4f3f8f9def86f55158c5bea5e412b2f70"
+        },
+        {
+          "path": "accel_grid/episodes/00015_746001.json.gz",
+          "size": 224539,
+          "sha256": "39de42fa0cbdaf9bc512c690452197cb21c8dbb405fef144efae3b9a2d9e1067"
+        },
+        {
+          "path": "accel_grid/episodes/00016_746001.json.gz",
+          "size": 216938,
+          "sha256": "290c88c05286fb5a854dfc0b8d9939de830e05d5c442da5bbf381a3c90854cfe"
+        },
+        {
+          "path": "accel_grid/episodes/00017_746001.json.gz",
+          "size": 221129,
+          "sha256": "a952cd9408b0330528629df0359895deefcbaa392b29b1981972471ff1f25cdc"
+        },
+        {
+          "path": "accel_grid/episodes/00018_746001.json.gz",
+          "size": 219081,
+          "sha256": "c0df3444f31cd5a67a5fd8993256ec6dab11dcd7e7bc6f854ad5e4bbac4f8fa6"
+        },
+        {
+          "path": "accel_grid/episodes/00019_746002.json.gz",
+          "size": 214356,
+          "sha256": "6143bc5ca096eb753c35b3486b1021f0d4f3752ab8bbba4f20550d9ce22d0912"
+        },
+        {
+          "path": "accel_grid/episodes/00020_746002.json.gz",
+          "size": 212735,
+          "sha256": "719ddbdca61ea4ce644679063d9cd1f193506235857c863d12824599a24cd936"
+        },
+        {
+          "path": "accel_grid/episodes/00021_746002.json.gz",
+          "size": 212630,
+          "sha256": "1a2c2c8b10a8437d36d95c0bc8f7a074e6e3c7aa4615b632d32651fc8f43a220"
+        },
+        {
+          "path": "accel_grid/episodes/00022_746002.json.gz",
+          "size": 181248,
+          "sha256": "20ce73efa4f056a78d48ab1de9ac8619c90764ac9ffb9ff783408de5d1c7b5d5"
+        },
+        {
+          "path": "accel_grid/episodes/00023_746002.json.gz",
+          "size": 179456,
+          "sha256": "6742eeff42847d05e75b6c41b5786b8587adae3b5d1c3510623a9dfcdc335b4e"
+        },
+        {
+          "path": "accel_grid/episodes/00024_746002.json.gz",
+          "size": 179472,
+          "sha256": "a0225417e11ede4022e7e8325df750e18c9fd02378df63863cae31d63f357130"
+        },
+        {
+          "path": "accel_grid/episodes/00025_746002.json.gz",
+          "size": 180148,
+          "sha256": "0729143e32cb7d44c8c202d59244b009b25d25e2814a6f149f666502888adbd1"
+        },
+        {
+          "path": "accel_grid/episodes/00026_746002.json.gz",
+          "size": 178917,
+          "sha256": "801846dcfe78bb3a819c3e8ce3facd06fc973361d9043f6216c2baf8eac5fe26"
+        },
+        {
+          "path": "accel_grid/episodes/00027_746002.json.gz",
+          "size": 178911,
+          "sha256": "2735c979dc4b22a6771cd12407c9604b89eb72a42373b3e1c9e63feecba69f54"
+        },
+        {
+          "path": "accel_grid/episodes/00028_746003.json.gz",
+          "size": 198201,
+          "sha256": "8b2ae762b465ce2004195f65d9497c111958ea299b9a1ed82cca35133ba72267"
+        },
+        {
+          "path": "accel_grid/episodes/00029_746003.json.gz",
+          "size": 197196,
+          "sha256": "f7c152402675ef7ade7d66b5e89e1c009bbe43c0751e6a5e1fe174bd30388def"
+        },
+        {
+          "path": "accel_grid/episodes/00030_746003.json.gz",
+          "size": 197196,
+          "sha256": "e2b69787c8c6bf8344beefda206ad74cb2430a5ace92b9eb05b6b65b203b3c9c"
+        },
+        {
+          "path": "accel_grid/episodes/00031_746003.json.gz",
+          "size": 219806,
+          "sha256": "c2cc5ae32fda5bd2459cc26e6b5b478b009f8e8621754fc89f52838c4a4e90d4"
+        },
+        {
+          "path": "accel_grid/episodes/00032_746003.json.gz",
+          "size": 217777,
+          "sha256": "c5cfce4c3a8fd575b026c13db6951b4ba7fa6dc8992203bcbcaaa76c69e3e244"
+        },
+        {
+          "path": "accel_grid/episodes/00033_746003.json.gz",
+          "size": 217850,
+          "sha256": "0ec35b521d4e3cd9c500899f9bf544cdd146a65bc5c66c962aec3a36269b791b"
+        },
+        {
+          "path": "accel_grid/episodes/00034_746003.json.gz",
+          "size": 219097,
+          "sha256": "fc9f8f917e7a2840394145b56932bd14ea68f92109c9dff01009f6c735d511c0"
+        },
+        {
+          "path": "accel_grid/episodes/00035_746003.json.gz",
+          "size": 217554,
+          "sha256": "df246aa75b254ec58a455287d101b90381505d241a997308891f702b67ffb7ff"
+        },
+        {
+          "path": "accel_grid/episodes/00036_746003.json.gz",
+          "size": 215566,
+          "sha256": "5a8dc969a5644bca025d65aed70552e007eae1706bc27416f9395cb9f546b32b"
+        },
+        {
+          "path": "accel_grid/episodes/RESULTS.json",
+          "size": 23009,
+          "sha256": "eb0c4abd69f60b9a5122a8d81ee7d06aabbcc6a908deeb48c76556a813b4e418"
+        },
+        {
+          "path": "accel_grid/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "accel_grid/program_multiskill_pull.py",
+          "size": 13191,
+          "sha256": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b"
+        },
+        {
+          "path": "accel_grid/program_sac_policy.py",
+          "size": 1016,
+          "sha256": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+        },
+        {
+          "path": "accel_grid/program_stap_learning.py",
+          "size": 12033,
+          "sha256": "9968584bff18187d09c4b427f878435f31d024ae8e59b6919bb2b3dcebd6fd77"
+        },
+        {
+          "path": "accel_grid/program_stap_tool.py",
+          "size": 18105,
+          "sha256": "f729bc7d4f348890210a9299702efc21d4e39af5ba3f5b8f6c044626d49b432c"
+        },
+        {
+          "path": "accel_grid/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "accel_grid/program_tool_contract_control.py",
+          "size": 4099,
+          "sha256": "65c77cabe94ea57ce93a937e8ea52499326370a132614b31f7fc58c93e8d57e2"
+        },
+        {
+          "path": "accel_grid/program_tool_effect_probe.py",
+          "size": 5490,
+          "sha256": "3e52f6c34798ad41119f8ba59d48fc437acdef0d1d809125b1d2d69f3a25210a"
+        },
+        {
+          "path": "accel_grid/program_tool_smdp_sac.py",
+          "size": 9643,
+          "sha256": "98d645452c8d06a45ce4207d15622d564f2ab587959629cfa746311dcf59b35a"
+        },
+        {
+          "path": "accel_grid/pull_tool_physics.py",
+          "size": 13091,
+          "sha256": "f15e019e80aa05716dffe8895f6ef3f1b90658b955135eebe10abc7c951b09e3"
+        },
+        {
+          "path": "arrival/745000_m0.75_g0.035_corrected_arrival.json.gz",
+          "size": 220896,
+          "sha256": "ee1e3ad0c535fc050359d4ea865a2179ade083d26d1f7af2ee629fe969fab37a"
+        },
+        {
+          "path": "arrival/745000_m0.75_g0.035_corrected_feedback.json.gz",
+          "size": 217622,
+          "sha256": "964519a6aa5207fc83987348145bfedae611b53c974377ac13c0f2f0f5e11b5d"
+        },
+        {
+          "path": "arrival/745000_m0.75_g0.105_corrected_arrival.json.gz",
+          "size": 220040,
+          "sha256": "5a6d26eb941df584d2af28b93e5fabf9ce2736ea65dda53ae73c0ffb2b0281f5"
+        },
+        {
+          "path": "arrival/745000_m0.75_g0.105_corrected_feedback.json.gz",
+          "size": 221115,
+          "sha256": "4ff768b9eb0a9f224661c37bb47d4a1a147dfc3312ef065a3025c8fcc274c744"
+        },
+        {
+          "path": "arrival/745000_m1.25_g0.035_corrected_arrival.json.gz",
+          "size": 219916,
+          "sha256": "ccdc423251a56fd8468975ff06deef49d3dabd95c9b949ee7c3ede49fca124a6"
+        },
+        {
+          "path": "arrival/745000_m1.25_g0.035_corrected_feedback.json.gz",
+          "size": 219454,
+          "sha256": "02e69f1c40d599d31069c368f22a9e036817ed58d471da10bc51aff59105ab35"
+        },
+        {
+          "path": "arrival/745000_m1.25_g0.105_corrected_arrival.json.gz",
+          "size": 221645,
+          "sha256": "95be68cb0861a2b87012f0d369cd834e4b54cb176d2b723ad35a83c98b8693ff"
+        },
+        {
+          "path": "arrival/745000_m1.25_g0.105_corrected_feedback.json.gz",
+          "size": 217998,
+          "sha256": "08b7a4ee39dc815c66af8bf15c0cd23654c901c4668a8a85eca344811f724cee"
+        },
+        {
+          "path": "arrival/745010_m0.75_g0.035_corrected_arrival.json.gz",
+          "size": 218787,
+          "sha256": "fccebde9e8aaf039f9a3f63225a2f55f2afca707673500aa90c77f254708a7ee"
+        },
+        {
+          "path": "arrival/745010_m0.75_g0.035_corrected_feedback.json.gz",
+          "size": 218166,
+          "sha256": "9dc797c421bb41376334e97acfb7d112e0e642b195b0f70829efc7cc68a5f115"
+        },
+        {
+          "path": "arrival/745010_m0.75_g0.105_corrected_arrival.json.gz",
+          "size": 215517,
+          "sha256": "5af038e7df79130a339bfe216a25579bf733a457ac85f04960dd50f66aa37a65"
+        },
+        {
+          "path": "arrival/745010_m0.75_g0.105_corrected_feedback.json.gz",
+          "size": 214244,
+          "sha256": "b6994b143ed1faeda5c3a3b8c1033d566c33d3b3af9ccc5b258e280830effc38"
+        },
+        {
+          "path": "arrival/745010_m1.25_g0.035_corrected_arrival.json.gz",
+          "size": 218507,
+          "sha256": "824cc0a394ac08e823983f5fd1219a9c944866c8ea77e07cb211a8fb0f438a7c"
+        },
+        {
+          "path": "arrival/745010_m1.25_g0.035_corrected_feedback.json.gz",
+          "size": 219943,
+          "sha256": "cd46c55d69a680ef2ebce7b2e1369b2b1c13e7a5f2f6a84f7adc5cd0202460c3"
+        },
+        {
+          "path": "arrival/745010_m1.25_g0.105_corrected_arrival.json.gz",
+          "size": 220322,
+          "sha256": "ce2fbbc6d1a24e0bc8bcaa9c73205e1ac88dc253e8517592b824f3e53431cd09"
+        },
+        {
+          "path": "arrival/745010_m1.25_g0.105_corrected_feedback.json.gz",
+          "size": 216701,
+          "sha256": "72a8942018a3deec53839309d0cf36d1fb42e74e5c1fc15722fe35914eb28674"
+        },
+        {
+          "path": "arrival/PROTOCOL.json",
+          "size": 986,
+          "sha256": "b2792974f58ba356c45d55043bf5a0cfbfe351e70fd97159410e66df831f0b76"
+        },
+        {
+          "path": "arrival/RESULTS.json",
+          "size": 70148,
+          "sha256": "3455dc088521b234548094ab147380bfe10eb2448f7d07096118d2b1f30cde25"
+        },
+        {
+          "path": "arrival/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "arrival/program_multiskill_pull.py",
+          "size": 13191,
+          "sha256": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b"
+        },
+        {
+          "path": "arrival/program_stap_tool.py",
+          "size": 18217,
+          "sha256": "6f971bffbdb150c2b1c266b149a08efb10f7f375c8b2cab2dd4717df52ca1eb1"
+        },
+        {
+          "path": "arrival/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "arrival/program_tool_contract_control.py",
+          "size": 5204,
+          "sha256": "c219e764e68f1c931059c6483f6f601dc53be01d31c7ece839a6e48adfcfa80e"
+        },
+        {
+          "path": "arrival/program_tool_effect_probe.py",
+          "size": 5490,
+          "sha256": "3e52f6c34798ad41119f8ba59d48fc437acdef0d1d809125b1d2d69f3a25210a"
+        },
+        {
+          "path": "arrival/pull_tool_physics.py",
+          "size": 13108,
+          "sha256": "24d68fbb0b613883dfe863ccfa06e1c88fff9c10029810130c33ed60a92cf0d3"
+        },
+        {
+          "path": "comparators/MODEL.pt",
+          "size": 500061,
+          "sha256": "10972b7cab1a9e1f13f3ed72f04035d7c9ee72143cb02267a1c884aa8319ccd9"
+        },
+        {
+          "path": "comparators/TRAINING.json",
+          "size": 95988,
+          "sha256": "d37782967ac1de89932abd0a8930a006fe6ba79a0804e69220d6620c25d05e51"
+        },
+        {
+          "path": "depth_grid/PROTOCOL.json",
+          "size": 1557,
+          "sha256": "f97abf5a2403cb231723c3191bec0e487b5649ab0897f4eeefed770fd4d47def"
+        },
+        {
+          "path": "depth_grid/episodes/00001_746000.json.gz",
+          "size": 217566,
+          "sha256": "ad4a3c2f99a9ba3058a7c7c7abfa5bc904da31f6236483c513b88c04ee4df556"
+        },
+        {
+          "path": "depth_grid/episodes/00002_746000.json.gz",
+          "size": 215612,
+          "sha256": "780c7936cdc524a56ef504bc618b36cb70d8bc21ab3b2e32e525b739c2aec079"
+        },
+        {
+          "path": "depth_grid/episodes/00003_746000.json.gz",
+          "size": 217794,
+          "sha256": "39b98aa0ce7e8a997fdadb50b0c78f6d7f24e4a54f32cf415be53f6604f2dfcf"
+        },
+        {
+          "path": "depth_grid/episodes/00004_746000.json.gz",
+          "size": 216660,
+          "sha256": "0fff2b62bc52b5bcfc86e459da48964d336ef7ce5385fb79116ea8e401b81c84"
+        },
+        {
+          "path": "depth_grid/episodes/00005_746000.json.gz",
+          "size": 217059,
+          "sha256": "fb1469660d5540f5a2caa6d323d9a978a2b551bc07f03adf4ea975e1bd4780af"
+        },
+        {
+          "path": "depth_grid/episodes/00006_746000.json.gz",
+          "size": 217345,
+          "sha256": "50a82cbfd92803c41dd818d27e829db9c8984e3ef9b79a7b1930fd491a5bfa49"
+        },
+        {
+          "path": "depth_grid/episodes/00007_746000.json.gz",
+          "size": 214519,
+          "sha256": "5408407dfe4a323a50517f2ded9839729c086fb600e804dd5e298011b187c860"
+        },
+        {
+          "path": "depth_grid/episodes/00008_746000.json.gz",
+          "size": 212522,
+          "sha256": "6689e2aa65842cad36e3a456d7b745fd9154b6d9dd520d882072ef00dbbec7f6"
+        },
+        {
+          "path": "depth_grid/episodes/00009_746000.json.gz",
+          "size": 211999,
+          "sha256": "0307e4c95bfcba64651cab0a23896fd9c703356ea7ea3e50da13fecf968b3184"
+        },
+        {
+          "path": "depth_grid/episodes/00010_746001.json.gz",
+          "size": 218406,
+          "sha256": "fa137e75db416c87605cba8a46937238fc9bee6ec8f96ff6b81f9820237f08b4"
+        },
+        {
+          "path": "depth_grid/episodes/00011_746001.json.gz",
+          "size": 219180,
+          "sha256": "da383d943b7625af4b918383ce3fc19fba6aee92f188d2f404df028a516a892a"
+        },
+        {
+          "path": "depth_grid/episodes/00012_746001.json.gz",
+          "size": 219359,
+          "sha256": "2a1f008989cc2341874f6cd7ec4281c8c584156c298b1783441d94d60a4b2816"
+        },
+        {
+          "path": "depth_grid/episodes/00013_746001.json.gz",
+          "size": 223284,
+          "sha256": "6f0e8300de51655f644ce942c57c73019c2c4e4be689f74230bb2ee753f31762"
+        },
+        {
+          "path": "depth_grid/episodes/00014_746001.json.gz",
+          "size": 218953,
+          "sha256": "eff9e2a77883db378ddbe2451bf0724cfe532dfe5eff220f0badc93e36e506eb"
+        },
+        {
+          "path": "depth_grid/episodes/00015_746001.json.gz",
+          "size": 221600,
+          "sha256": "2535fa1dea323c4dc70eb286bcd5cfb3373a354054974adc1c1b774ba469fb15"
+        },
+        {
+          "path": "depth_grid/episodes/00016_746001.json.gz",
+          "size": 217902,
+          "sha256": "f4ce303e9dc0dbe9db87cf838878746682f086ffa6f03dd74c0a3be0a3265bc6"
+        },
+        {
+          "path": "depth_grid/episodes/00017_746001.json.gz",
+          "size": 218444,
+          "sha256": "b22b27a3afc7a138ca13aa0baac7a9a31cdd0a50f39bc0f124027c86b2d3e61a"
+        },
+        {
+          "path": "depth_grid/episodes/00018_746001.json.gz",
+          "size": 215490,
+          "sha256": "8f895af8c448fd24947f4a1f64734dadde5d4f4e00391540cdeb9fb24ee05da9"
+        },
+        {
+          "path": "depth_grid/episodes/00019_746002.json.gz",
+          "size": 211841,
+          "sha256": "747c8106ff792f3dc5a7fc93105836d68ad8e2f1dc3879849c0798ec5a87a18e"
+        },
+        {
+          "path": "depth_grid/episodes/00020_746002.json.gz",
+          "size": 210655,
+          "sha256": "6896a08a13bc994696228e8b042d35c4271f479598ed9b60265b274a48093d20"
+        },
+        {
+          "path": "depth_grid/episodes/00021_746002.json.gz",
+          "size": 210647,
+          "sha256": "09743fed5c437aae6b190dbdab95fa94008add6222f35e1b3de86499fedb68c3"
+        },
+        {
+          "path": "depth_grid/episodes/00022_746002.json.gz",
+          "size": 180562,
+          "sha256": "070291924c5ad9e758d75be4b0c39a854686edc12c6d1724ca4476b8c8874c1f"
+        },
+        {
+          "path": "depth_grid/episodes/00023_746002.json.gz",
+          "size": 178789,
+          "sha256": "050607a83e0c93f5bf1c57189e347f06056f4e49b2fbf22f9e02d45f983fbccc"
+        },
+        {
+          "path": "depth_grid/episodes/00024_746002.json.gz",
+          "size": 178791,
+          "sha256": "a567c7c9ed39914ef8ae8b60c12405c2e550902cadd7a4e7f23370df554f4d10"
+        },
+        {
+          "path": "depth_grid/episodes/00025_746002.json.gz",
+          "size": 179484,
+          "sha256": "28e9e27763a9af05c7b5c47d22c664355ed0905a43cc3033040a4d6ebd730fcb"
+        },
+        {
+          "path": "depth_grid/episodes/00026_746002.json.gz",
+          "size": 178267,
+          "sha256": "4551ee41007105c5555a74233b9ed6b6f0b4c3c93c6cd3b42a22d42294d6d46b"
+        },
+        {
+          "path": "depth_grid/episodes/00027_746002.json.gz",
+          "size": 178260,
+          "sha256": "4f37d687db5c037eed146fb949d4c23cd024abc13451714c18fcfc2c90fe464c"
+        },
+        {
+          "path": "depth_grid/episodes/00028_746003.json.gz",
+          "size": 198031,
+          "sha256": "b7189d996766cbdb6ad0e81b570fbd721ba7bef55d8c0a970b82644caf2c606c"
+        },
+        {
+          "path": "depth_grid/episodes/00029_746003.json.gz",
+          "size": 197016,
+          "sha256": "1c322b44fcb7b3200efecb572405a6b0c0d5a7c7a3015465d1e9bd9e7b855ecf"
+        },
+        {
+          "path": "depth_grid/episodes/00030_746003.json.gz",
+          "size": 197012,
+          "sha256": "1b8e3dc4e26692fc9affdf21ee5532fddf73310703cb8283446c33c367f865e2"
+        },
+        {
+          "path": "depth_grid/episodes/00031_746003.json.gz",
+          "size": 217206,
+          "sha256": "76bcc46b59a6cbde56cf7713c8adaf993af0213a5466ced8e30f9cf43d9caae5"
+        },
+        {
+          "path": "depth_grid/episodes/00032_746003.json.gz",
+          "size": 216611,
+          "sha256": "fff449aa4c6620c321daf1bf19677f0d44c0946e82533b00a4c9cb77fa120b9f"
+        },
+        {
+          "path": "depth_grid/episodes/00033_746003.json.gz",
+          "size": 217397,
+          "sha256": "40e1d69e525a263644e0d0e3977089198304dbdd3edd6b2f985ec28e91feaaba"
+        },
+        {
+          "path": "depth_grid/episodes/00034_746003.json.gz",
+          "size": 215048,
+          "sha256": "9a0ba771ea5827704ed7e0e549dcf35a79475722dbdb16b3cf45066748cecc8a"
+        },
+        {
+          "path": "depth_grid/episodes/00035_746003.json.gz",
+          "size": 216496,
+          "sha256": "adce49b3bed4c30506f21d08e4c5f05c2fd1c53a0729937724c031378274f3fb"
+        },
+        {
+          "path": "depth_grid/episodes/00036_746003.json.gz",
+          "size": 211574,
+          "sha256": "3a5b42ecea58403249510cc1a31df5a14bfec21396e469487e12658f6c0041e3"
+        },
+        {
+          "path": "depth_grid/episodes/RESULTS.json",
+          "size": 20720,
+          "sha256": "88e7d242162f690277b9a0e8335666b4998cd983cd5f87ad58d34311ad4a9e02"
+        },
+        {
+          "path": "depth_grid/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "depth_grid/program_multiskill_pull.py",
+          "size": 13191,
+          "sha256": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b"
+        },
+        {
+          "path": "depth_grid/program_sac_policy.py",
+          "size": 1016,
+          "sha256": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+        },
+        {
+          "path": "depth_grid/program_stap_learning.py",
+          "size": 12033,
+          "sha256": "9968584bff18187d09c4b427f878435f31d024ae8e59b6919bb2b3dcebd6fd77"
+        },
+        {
+          "path": "depth_grid/program_stap_tool.py",
+          "size": 17714,
+          "sha256": "2c4bc89af59170a7231a7910027ea8731a9ff8d809c10be146e49b79918ffce9"
+        },
+        {
+          "path": "depth_grid/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "depth_grid/program_tool_contract_control.py",
+          "size": 3247,
+          "sha256": "daea1360567a62d696ccf18bee61414a768dd25e7de6690941e66802a736b531"
+        },
+        {
+          "path": "depth_grid/program_tool_effect_probe.py",
+          "size": 5490,
+          "sha256": "3e52f6c34798ad41119f8ba59d48fc437acdef0d1d809125b1d2d69f3a25210a"
+        },
+        {
+          "path": "depth_grid/program_tool_smdp_sac.py",
+          "size": 6468,
+          "sha256": "3277896785755d38a801ec76214b53742f333283c14907b9e0a26650b780a23f"
+        },
+        {
+          "path": "depth_grid/pull_tool_physics.py",
+          "size": 13091,
+          "sha256": "f15e019e80aa05716dffe8895f6ef3f1b90658b955135eebe10abc7c951b09e3"
+        },
+        {
+          "path": "evaluation512/PROTOCOL.json",
+          "size": 633,
+          "sha256": "5359d8fc413a579139110a2cbde3f45f33d49d5129c7a15146f8f7e2754a0b4f"
+        },
+        {
+          "path": "evaluation512/RESULTS.json",
+          "size": 39299,
+          "sha256": "a3a5f954e68dcd995ae8bd64b78c46f090d5cc3aef91fb008ce7ea6d8f2f7b5b"
+        },
+        {
+          "path": "evaluation512/downstream/00001_746200.json.gz",
+          "size": 210462,
+          "sha256": "401240d9b2c9f427a4ef2ee5709073fc0f95bf0f2cd26130e3824bb8a8eb12c5"
+        },
+        {
+          "path": "evaluation512/downstream/00002_746201.json.gz",
+          "size": 216240,
+          "sha256": "ec2feb9fe0eb93fbf31c5a03d7fc59468226dcd6fd717120e00b62415235ffca"
+        },
+        {
+          "path": "evaluation512/downstream/00003_746202.json.gz",
+          "size": 214652,
+          "sha256": "32404726be2935c23a8cc3ec4cd1c856f9213e187e1bcd8f1f8f9618a777564d"
+        },
+        {
+          "path": "evaluation512/downstream/00004_746203.json.gz",
+          "size": 216563,
+          "sha256": "a81b5da149780a5553029cb2abf490804250bd1367fcfa4b884e0ab06a916d1b"
+        },
+        {
+          "path": "evaluation512/downstream/00005_746204.json.gz",
+          "size": 181341,
+          "sha256": "f03557f04ebc88a300812abfad3203202f1a1b83f65053a08618178c9beb206b"
+        },
+        {
+          "path": "evaluation512/downstream/00006_746205.json.gz",
+          "size": 214619,
+          "sha256": "02be1ce21dff703ed7986a0ed745d6bb2fd08193b8356683748137909a273e58"
+        },
+        {
+          "path": "evaluation512/downstream/00007_746206.json.gz",
+          "size": 219288,
+          "sha256": "67c4358c96ac7bf94181886ea29cb396c714a14d0bc5cb31b814533cfb26c76a"
+        },
+        {
+          "path": "evaluation512/downstream/00008_746207.json.gz",
+          "size": 215418,
+          "sha256": "4bf4688ebf2e45d825bd74c3495e571cd04f0f8246a9b16fd47a33291b3e6fb9"
+        },
+        {
+          "path": "evaluation512/downstream/746200_POLICY.json",
+          "size": 2614,
+          "sha256": "c783b934a407500797c169e3f35f6e77eadabc43fad0ef2299ae7def58140f66"
+        },
+        {
+          "path": "evaluation512/downstream/746201_POLICY.json",
+          "size": 2613,
+          "sha256": "feb99d14bf758f8268c321f0df49e2cc284f0a5905930335b853776f1150d7ec"
+        },
+        {
+          "path": "evaluation512/downstream/746202_POLICY.json",
+          "size": 2623,
+          "sha256": "cffb9246ce76a3d1928095bc75f74d824ed32fafebd50ded05b38eb82a05f969"
+        },
+        {
+          "path": "evaluation512/downstream/746203_POLICY.json",
+          "size": 2618,
+          "sha256": "f04d9d659c486ea6b6cdf62e6fed335ce8202e4629d2c3f7945a4524a53a563f"
+        },
+        {
+          "path": "evaluation512/downstream/746204_POLICY.json",
+          "size": 2631,
+          "sha256": "543a74b05b15bef0e4399dcd221cee51ab37fac6d0b300a46971cdbc89f78eab"
+        },
+        {
+          "path": "evaluation512/downstream/746205_POLICY.json",
+          "size": 2602,
+          "sha256": "d1541331a4362adaa39d285d8cdc8ba79d7623ffd98c43a2c1ed049bcfe73669"
+        },
+        {
+          "path": "evaluation512/downstream/746206_POLICY.json",
+          "size": 2609,
+          "sha256": "e89620286b7d2e64cf23755e9852124a758f5302a273a509891f7ce31066419c"
+        },
+        {
+          "path": "evaluation512/downstream/746207_POLICY.json",
+          "size": 2605,
+          "sha256": "1f3a09d3ccd31c99c9a397c50c02bc56c2b89edd235ec90e46f8c966091c3ac8"
+        },
+        {
+          "path": "evaluation512/downstream/RESULTS.json",
+          "size": 4667,
+          "sha256": "49177fa692007bbd7d08bac703042c1c9ed49379c13117d0d7caa6df6cec0287"
+        },
+        {
+          "path": "evaluation512/fixed070/00001_746200.json.gz",
+          "size": 210321,
+          "sha256": "14f86efa546092ea3a157f4637c8cafd60606c04b91115fc601dc9a245ce5333"
+        },
+        {
+          "path": "evaluation512/fixed070/00002_746201.json.gz",
+          "size": 216692,
+          "sha256": "dce7c678693aded7e4968f5ffdc5fc9ffad7f8d30750eb9dfc8492733011c962"
+        },
+        {
+          "path": "evaluation512/fixed070/00003_746202.json.gz",
+          "size": 215091,
+          "sha256": "22abfd0083b3018b215a3849af8e3c7a3fbc384faa1fb83cef0c5fd262c01ee3"
+        },
+        {
+          "path": "evaluation512/fixed070/00004_746203.json.gz",
+          "size": 216903,
+          "sha256": "e70069e16a3dd2b84b4c7d9066b6f0c15c3e0c162824466151f5c8553a6bb045"
+        },
+        {
+          "path": "evaluation512/fixed070/00005_746204.json.gz",
+          "size": 182389,
+          "sha256": "a61b146e9df3958030383fc2a65c65d22ebda751402a6399cd7666f0cc54101a"
+        },
+        {
+          "path": "evaluation512/fixed070/00006_746205.json.gz",
+          "size": 214241,
+          "sha256": "a75defe79bbbdd50f396b194ebb7552c4194a924e8fe137d71491d4d2ba4bd77"
+        },
+        {
+          "path": "evaluation512/fixed070/00007_746206.json.gz",
+          "size": 219411,
+          "sha256": "15f24617c44cee0d2107fb5633763603069a0b276197d93751c1d54b8965441c"
+        },
+        {
+          "path": "evaluation512/fixed070/00008_746207.json.gz",
+          "size": 220035,
+          "sha256": "38f4ee13764df98fd17527a9a1f5a24d49312e529e9b09d2cddd2e8943799e10"
+        },
+        {
+          "path": "evaluation512/fixed070/746200_POLICY.json",
+          "size": 2255,
+          "sha256": "7df07ea95b36237b350f36d6388d92d3d834d0d43db619241cb73086bdc5ceb3"
+        },
+        {
+          "path": "evaluation512/fixed070/746201_POLICY.json",
+          "size": 2266,
+          "sha256": "9e05e64f7267aafd65ce8ee88b92b13b471634cd013275d38f148c5c9cca55db"
+        },
+        {
+          "path": "evaluation512/fixed070/746202_POLICY.json",
+          "size": 2275,
+          "sha256": "1f10405c3cf133170cec846e6b873ff973fac227a2e11e32469a99e8616eeca6"
+        },
+        {
+          "path": "evaluation512/fixed070/746203_POLICY.json",
+          "size": 2269,
+          "sha256": "d48434c99de0ef5f7629efbc8f592af8f6e60fd616750b57ca84ce8249687b01"
+        },
+        {
+          "path": "evaluation512/fixed070/746204_POLICY.json",
+          "size": 2264,
+          "sha256": "882c18a6f8eb41dfdf4fa4c7396fbf2b77a732885a2b38f1a1bc25bfe827745a"
+        },
+        {
+          "path": "evaluation512/fixed070/746205_POLICY.json",
+          "size": 2262,
+          "sha256": "59ffa5a2fd3353f144c730c8fff8109fe1dcdf88360bfe4ab87e38242d1f7bc2"
+        },
+        {
+          "path": "evaluation512/fixed070/746206_POLICY.json",
+          "size": 2268,
+          "sha256": "9d509470aca25ff73e5b4848235c75478bd7ba6fda93ca895e08c9b05d7d6317"
+        },
+        {
+          "path": "evaluation512/fixed070/746207_POLICY.json",
+          "size": 2259,
+          "sha256": "61e84b0fe8137b85d83f6a8dda49c79fe1820cb14fc92b170af2f83bb57e9d04"
+        },
+        {
+          "path": "evaluation512/fixed070/RESULTS.json",
+          "size": 4534,
+          "sha256": "a9d226cea11a6ec9f996b28a1c4241c2b8094cc24904d2ceedaa3ff84e5a3714"
+        },
+        {
+          "path": "evaluation512/fixed105/00001_746200.json.gz",
+          "size": 207280,
+          "sha256": "4497b806f145276c55caae2b06110339795fc309f877ffade5c187ea9655c0a0"
+        },
+        {
+          "path": "evaluation512/fixed105/00002_746201.json.gz",
+          "size": 216639,
+          "sha256": "2972e08636893686fffa0603394e8a0885ef77a3225594d4e26b8822a8b02b59"
+        },
+        {
+          "path": "evaluation512/fixed105/00003_746202.json.gz",
+          "size": 214738,
+          "sha256": "1a5e4bef155729b7574040273123c6dbd1e1fdfd4c90be5b02042993421b6302"
+        },
+        {
+          "path": "evaluation512/fixed105/00004_746203.json.gz",
+          "size": 216466,
+          "sha256": "cab1c4f68a857cf941b37ea55c9bd401aeb04b03fdfaf6d0de0a15cf6a7f02f1"
+        },
+        {
+          "path": "evaluation512/fixed105/00005_746204.json.gz",
+          "size": 181083,
+          "sha256": "1df59f78f06d8979f6ddd8aad9c02400bfd695958f6bd79e2d958aa46ac72dbf"
+        },
+        {
+          "path": "evaluation512/fixed105/00006_746205.json.gz",
+          "size": 214612,
+          "sha256": "5c2afb27d5e33b1a3436d93278c993206a3fe9f84d06cedf33daf596ccdf5875"
+        },
+        {
+          "path": "evaluation512/fixed105/00007_746206.json.gz",
+          "size": 219291,
+          "sha256": "338c551350064937f9f95f5bcc593a8c6a965c8be1bdb4526e7e0d28693ec1ed"
+        },
+        {
+          "path": "evaluation512/fixed105/00008_746207.json.gz",
+          "size": 214462,
+          "sha256": "2e3a65d92b8a191fcdab04f061978783653415bfd5cb5e7a86a19081ec832fe7"
+        },
+        {
+          "path": "evaluation512/fixed105/746200_POLICY.json",
+          "size": 2261,
+          "sha256": "b4180311eb10de34bf5428ff91f6a988d908fc3e97963ce43206c42ff357d1c1"
+        },
+        {
+          "path": "evaluation512/fixed105/746201_POLICY.json",
+          "size": 2264,
+          "sha256": "eceae31aaff76a76dd6c893794fc5abaa1167761a580494ce2b0501201eef751"
+        },
+        {
+          "path": "evaluation512/fixed105/746202_POLICY.json",
+          "size": 2265,
+          "sha256": "0a7e79d78dc37119430d0a55fa11a8e4fee5257ec3ce4296eaa144ac800621c8"
+        },
+        {
+          "path": "evaluation512/fixed105/746203_POLICY.json",
+          "size": 2266,
+          "sha256": "7fe49833f82381ba4b9536a2c390c3697ba18af3ad01206d96d334c16dfd994f"
+        },
+        {
+          "path": "evaluation512/fixed105/746204_POLICY.json",
+          "size": 2268,
+          "sha256": "7b4ad36ade9454a4e5738920f28729130643859685b58a35d45f12745c80fc9e"
+        },
+        {
+          "path": "evaluation512/fixed105/746205_POLICY.json",
+          "size": 2262,
+          "sha256": "236aea748da28a04ee67079325850db27571d7606d8f8ffb3450750e89458b12"
+        },
+        {
+          "path": "evaluation512/fixed105/746206_POLICY.json",
+          "size": 2260,
+          "sha256": "97a0d634af6fb018fa3ff4e039c8e7fd54cae4c2ee482b48b17f3b4d5036e9df"
+        },
+        {
+          "path": "evaluation512/fixed105/746207_POLICY.json",
+          "size": 2257,
+          "sha256": "23927088d84fcbc491216e1e2f6bc2aa09daabb42d0017342d64574f41822208"
+        },
+        {
+          "path": "evaluation512/fixed105/RESULTS.json",
+          "size": 4651,
+          "sha256": "a7d0863dbd542da9c8f512e5d2584a6870b42d797b64e98af530381227491435"
+        },
+        {
+          "path": "evaluation512/program_contract_evaluate.py",
+          "size": 2102,
+          "sha256": "6dee6ff76fbd2e2058bbb17fc65b3d7518a37ca84620bac124be19372443ca95"
+        },
+        {
+          "path": "evaluation512/sac256/00001_746200.json.gz",
+          "size": 210886,
+          "sha256": "a5433eeeb7ba03c42223616e22ae02021e047bed1326822755e1a433d96ad4d2"
+        },
+        {
+          "path": "evaluation512/sac256/00002_746201.json.gz",
+          "size": 216365,
+          "sha256": "e5de035e51cb3c5f2baf39265c693f571fd0ef9b6e0495d4cfb64c2affd9198d"
+        },
+        {
+          "path": "evaluation512/sac256/00003_746202.json.gz",
+          "size": 215423,
+          "sha256": "b6b550624000f07e341b1cc4055e9be20ab88dc5ca7b83d845f4924f2721c61d"
+        },
+        {
+          "path": "evaluation512/sac256/00004_746203.json.gz",
+          "size": 216950,
+          "sha256": "dffe7037f0bd0ee02a953896477c829f3ca53e462be0943b628bbca149a2aae1"
+        },
+        {
+          "path": "evaluation512/sac256/00005_746204.json.gz",
+          "size": 181471,
+          "sha256": "61f049123bc4929aff1e7742fb64c37509b08a85fcaa992e49209d9e8c3c592b"
+        },
+        {
+          "path": "evaluation512/sac256/00006_746205.json.gz",
+          "size": 214239,
+          "sha256": "c34a5d443f3caafd0fb136a108bd8605231626abe04a4afdaf53b3ed329f665c"
+        },
+        {
+          "path": "evaluation512/sac256/00007_746206.json.gz",
+          "size": 217914,
+          "sha256": "5e5ac917bc68d7804e07528d3d9abdf9229edf750b8908266dfa49a99123f1c8"
+        },
+        {
+          "path": "evaluation512/sac256/00008_746207.json.gz",
+          "size": 216950,
+          "sha256": "f95b5c6509432e0590a878fd0a5d3f6cfe2923e0104e2bb7b451b2836ffb62e0"
+        },
+        {
+          "path": "evaluation512/sac256/746200_POLICY.json",
+          "size": 2297,
+          "sha256": "ce497afe344fe8455820cc796d745ec82d177a6e848fc1711dad8e1575e93448"
+        },
+        {
+          "path": "evaluation512/sac256/746201_POLICY.json",
+          "size": 2294,
+          "sha256": "05c163778c7602b0837e705e323c20ceb7b8e732d551a1f1e2b3b7bb9d5bc987"
+        },
+        {
+          "path": "evaluation512/sac256/746202_POLICY.json",
+          "size": 2303,
+          "sha256": "fbe3420e915687156772d242e4c98dba7702c0c66f7485bd06ac84eaa5a306b5"
+        },
+        {
+          "path": "evaluation512/sac256/746203_POLICY.json",
+          "size": 2300,
+          "sha256": "abceeb5ee885f039064c283d5afd43fc71e63e7baf35d3dc622d6188bb25c1e3"
+        },
+        {
+          "path": "evaluation512/sac256/746204_POLICY.json",
+          "size": 2304,
+          "sha256": "6e067f492de13fa585e08b5baf5d5c35c037b3980be85a971a99913cadae6063"
+        },
+        {
+          "path": "evaluation512/sac256/746205_POLICY.json",
+          "size": 2289,
+          "sha256": "7db01dcc4f92f5c7a5e5d65a78c39e21453650ec166d162bd09d1db78dcf340c"
+        },
+        {
+          "path": "evaluation512/sac256/746206_POLICY.json",
+          "size": 2297,
+          "sha256": "84520b279ead99c08c7a0a30a0ec347d72e19a182faad4928eb764b8a6613eb8"
+        },
+        {
+          "path": "evaluation512/sac256/746207_POLICY.json",
+          "size": 2298,
+          "sha256": "c298c8a7f33d985bb20662f9c6800c2f8ce48ad588090eaa4fa6e5475c8594b9"
+        },
+        {
+          "path": "evaluation512/sac256/RESULTS.json",
+          "size": 4752,
+          "sha256": "55f864357fd2177a2edfe6857a2945c9237f1c72059eaab26fdcb8c2b1efa148"
+        },
+        {
+          "path": "evaluation512/sac512/00001_746200.json.gz",
+          "size": 212112,
+          "sha256": "99213fcbe1da2bec266969e03d7dc084e90eb82dc25317db1be0eb52774f6735"
+        },
+        {
+          "path": "evaluation512/sac512/00002_746201.json.gz",
+          "size": 217431,
+          "sha256": "4d03a0748792f046e0a186c332e3a646d715b002f05bb04b1e906845072a9a1d"
+        },
+        {
+          "path": "evaluation512/sac512/00003_746202.json.gz",
+          "size": 215030,
+          "sha256": "ad917bd2d1991fd95186b3286a49fe7d8c836134bebb4fe534113804626e0651"
+        },
+        {
+          "path": "evaluation512/sac512/00004_746203.json.gz",
+          "size": 216483,
+          "sha256": "4902473deb24af181be06bf639363d0f7841f8b53de506969d832e14f6f7e07d"
+        },
+        {
+          "path": "evaluation512/sac512/00005_746204.json.gz",
+          "size": 185246,
+          "sha256": "32a9edaccc7a2b22f8c1327fea2c61cf2103fa3f70205e902cb09c465c21ad3c"
+        },
+        {
+          "path": "evaluation512/sac512/00006_746205.json.gz",
+          "size": 214905,
+          "sha256": "4faf858ac5ba78bce322a92f26a67c4101303841d10e7c632a91ba2da5884a29"
+        },
+        {
+          "path": "evaluation512/sac512/00007_746206.json.gz",
+          "size": 218562,
+          "sha256": "992fba89c9b3af3bf6048081936bba82ee8a6ad963aae6fe4e953d74add52724"
+        },
+        {
+          "path": "evaluation512/sac512/00008_746207.json.gz",
+          "size": 217155,
+          "sha256": "c51671504f45bea4a9346e9fd8d3b5ad94e59836608fe45e24a8d4f479a7763b"
+        },
+        {
+          "path": "evaluation512/sac512/746200_POLICY.json",
+          "size": 2294,
+          "sha256": "263828ad486e11a7c72b9ab5bf2781ad5375c98c9994eaf324268623f538a04d"
+        },
+        {
+          "path": "evaluation512/sac512/746201_POLICY.json",
+          "size": 2299,
+          "sha256": "c3555c280141e097aa5f19f69fad4db199ea431a18444fa6a0e45b7aa55e754c"
+        },
+        {
+          "path": "evaluation512/sac512/746202_POLICY.json",
+          "size": 2307,
+          "sha256": "c66e9252a262df9c9e42e49b0f8f3df56f3cf69363365216440ebbbe9e7f3a6f"
+        },
+        {
+          "path": "evaluation512/sac512/746203_POLICY.json",
+          "size": 2300,
+          "sha256": "f518cec60cbd986515235c23f6744f65d18cd490e0c24d9efc81da9e3d12c942"
+        },
+        {
+          "path": "evaluation512/sac512/746204_POLICY.json",
+          "size": 2295,
+          "sha256": "75ea445c9ac53a6962c10f782be13c18bf73a299bb1e45a74f84bac166795278"
+        },
+        {
+          "path": "evaluation512/sac512/746205_POLICY.json",
+          "size": 2285,
+          "sha256": "2610c7e66f8c97e888f5e98a5de3b6e1a54fca51bf679fc0985ca98df13d36fa"
+        },
+        {
+          "path": "evaluation512/sac512/746206_POLICY.json",
+          "size": 2301,
+          "sha256": "9acc0316ee5d2235441d64eaecb7a4519d6df5f92af6d57080c479169bdee3eb"
+        },
+        {
+          "path": "evaluation512/sac512/746207_POLICY.json",
+          "size": 2294,
+          "sha256": "c03e84e9ea542f2f492d3c54efdf9125b953686b86723ddc74127159f5e85404"
+        },
+        {
+          "path": "evaluation512/sac512/RESULTS.json",
+          "size": 4755,
+          "sha256": "f1ad98a73826999fc5e50c5d347036b21668b2f52cacd4e7fc2f066f2705215d"
+        },
+        {
+          "path": "evaluation512/stap_open/00001_746200.json.gz",
+          "size": 212261,
+          "sha256": "df1745e029f5e7a17c229f0b737803a4f3910523c2b3623c4e223a6c402a4615"
+        },
+        {
+          "path": "evaluation512/stap_open/00002_746201.json.gz",
+          "size": 218576,
+          "sha256": "60ad3700c5b90053b78e9c72bbfbd1f684917714c41aedac49a624cd1bfcd5be"
+        },
+        {
+          "path": "evaluation512/stap_open/00003_746202.json.gz",
+          "size": 214484,
+          "sha256": "670e3b05370f60b2679d8abb483436f90ec766243cf2ef9a522c3dca4014d991"
+        },
+        {
+          "path": "evaluation512/stap_open/00004_746203.json.gz",
+          "size": 216277,
+          "sha256": "1fbd94a95791177643634d6991c8146ca8f07bf121c0bb7084aff532e2f41d67"
+        },
+        {
+          "path": "evaluation512/stap_open/00005_746204.json.gz",
+          "size": 181112,
+          "sha256": "72de88c392533d950e3c7d130f75b898ab6d774dc97050404bf3769eea00c715"
+        },
+        {
+          "path": "evaluation512/stap_open/00006_746205.json.gz",
+          "size": 218079,
+          "sha256": "fb5ee0a27202336711c150c5eaf921af52c5cb183705f15ca31b58ad97fe5870"
+        },
+        {
+          "path": "evaluation512/stap_open/00007_746206.json.gz",
+          "size": 220178,
+          "sha256": "77a7fbb90102f31b93a835108440d8306398b53bf7a271971c00d1dacf548542"
+        },
+        {
+          "path": "evaluation512/stap_open/00008_746207.json.gz",
+          "size": 216331,
+          "sha256": "8bf0834bebd1e320d32a9a739ea69167bc5650a176b76a1779cc53e7e825aed7"
+        },
+        {
+          "path": "evaluation512/stap_open/746200_POLICY.json",
+          "size": 6415,
+          "sha256": "00dd65c184b8b256b5fd9547f759e8f4d126a303300eb3607fbd09adf9b49151"
+        },
+        {
+          "path": "evaluation512/stap_open/746201_POLICY.json",
+          "size": 6385,
+          "sha256": "8472d5d0533c22f04c187aff7e33813d76df12cd9796207b68076bd36785eea4"
+        },
+        {
+          "path": "evaluation512/stap_open/746202_POLICY.json",
+          "size": 6316,
+          "sha256": "723fffda1b2b383f9a9d9f399c278122e78f823870c9ed9f20d7bd31016f792a"
+        },
+        {
+          "path": "evaluation512/stap_open/746203_POLICY.json",
+          "size": 6483,
+          "sha256": "5b46a75b787f4a4510fa5e508955550067a6645ecfbbf58d59666b7e52d80c6a"
+        },
+        {
+          "path": "evaluation512/stap_open/746204_POLICY.json",
+          "size": 5892,
+          "sha256": "942eda1e07d32bc36340730ba11e0cfb511e6034eb41c7969a0cfc9ab6b63dd9"
+        },
+        {
+          "path": "evaluation512/stap_open/746205_POLICY.json",
+          "size": 6324,
+          "sha256": "732309a2dc1bde90dcb5ca6d5b53fd12cf27b9c0f6f46fcbb2b980eaf9c48e7f"
+        },
+        {
+          "path": "evaluation512/stap_open/746206_POLICY.json",
+          "size": 5967,
+          "sha256": "921a2e5159c0c6e3d79ce31c7c426bbb7fc43c7caeb02e090c6d79f900642275"
+        },
+        {
+          "path": "evaluation512/stap_open/746207_POLICY.json",
+          "size": 6335,
+          "sha256": "bb2cc322d4b54d7703029b98eb214e70147edf23e52ab4a16897a008f2a32e00"
+        },
+        {
+          "path": "evaluation512/stap_open/RESULTS.json",
+          "size": 4749,
+          "sha256": "b410519967ee020fe2c83aa0d11f2facc25a824da2d2eaddf123c6623b5aed9b"
+        },
+        {
+          "path": "evaluation512/stap_replan/00001_746200.json.gz",
+          "size": 212941,
+          "sha256": "eb60862c7841ddc65925fbd5dbe3b2fd0c48a3c72863c7a4834decf60f7ac070"
+        },
+        {
+          "path": "evaluation512/stap_replan/00002_746201.json.gz",
+          "size": 216520,
+          "sha256": "96a3ca83f1f6e7026db8d28a0b3bb5dcc5502dbe064438714f2e79403482c735"
+        },
+        {
+          "path": "evaluation512/stap_replan/00003_746202.json.gz",
+          "size": 214332,
+          "sha256": "794f6d5bad7d8ec7e8fffb833ec46bdff7f2acac0a88199a0d821d44f8f7a8ee"
+        },
+        {
+          "path": "evaluation512/stap_replan/00004_746203.json.gz",
+          "size": 215117,
+          "sha256": "a34858395597b76feeb705d0804dba4a2194c6bca50f04ba7c7e51d3cfb31512"
+        },
+        {
+          "path": "evaluation512/stap_replan/00005_746204.json.gz",
+          "size": 180882,
+          "sha256": "37b1aac6980296c6191deaf2475b3a38287d34e374816e9f184a2c1698281576"
+        },
+        {
+          "path": "evaluation512/stap_replan/00006_746205.json.gz",
+          "size": 214535,
+          "sha256": "a6f5138703d5c81f443c5b7c885a1693c96b6a70686982f79a57b1f5d9392343"
+        },
+        {
+          "path": "evaluation512/stap_replan/00007_746206.json.gz",
+          "size": 218667,
+          "sha256": "6efcf7f0cb96f971af088de4635ecbf51e6e284eab9ad006e8092a6efac536c5"
+        },
+        {
+          "path": "evaluation512/stap_replan/00008_746207.json.gz",
+          "size": 216770,
+          "sha256": "243b087c65eadeea4725268fcf45a724fdb9a4b11d2a2883bfad1814f87d3e64"
+        },
+        {
+          "path": "evaluation512/stap_replan/746200_POLICY.json",
+          "size": 6711,
+          "sha256": "fc19e0cc7b3090f8679630d1792d1816c19891afad4ec858bbeccfad73add7b0"
+        },
+        {
+          "path": "evaluation512/stap_replan/746201_POLICY.json",
+          "size": 6686,
+          "sha256": "4c3b22cd3e0ff219d5ccfeab2a93ae3c79b64942179a5d6ee1a3bd340235282b"
+        },
+        {
+          "path": "evaluation512/stap_replan/746202_POLICY.json",
+          "size": 6623,
+          "sha256": "bd705bedec61fa0b3874d6aa118e48a46ea4551434a4d0d9a132394bf5cee9ba"
+        },
+        {
+          "path": "evaluation512/stap_replan/746203_POLICY.json",
+          "size": 6786,
+          "sha256": "8269cd76b51ced3fe9e80a258306bafb618131c46f5d3b380df93096590368f3"
+        },
+        {
+          "path": "evaluation512/stap_replan/746204_POLICY.json",
+          "size": 6200,
+          "sha256": "8f524fdce5baeacb3c88ef0f1591a88ec2d6894b48a856e9b8d7568c6d7a5cb3"
+        },
+        {
+          "path": "evaluation512/stap_replan/746205_POLICY.json",
+          "size": 6617,
+          "sha256": "ff0b67c82c11403c8a86996e789d5525fb9494a826e2dad6c35590494bc1eb0e"
+        },
+        {
+          "path": "evaluation512/stap_replan/746206_POLICY.json",
+          "size": 6276,
+          "sha256": "d77e8a460fd23ae5a01e1d9ff1f5fcd15152cdc862e38f283b9ee1f241af280a"
+        },
+        {
+          "path": "evaluation512/stap_replan/746207_POLICY.json",
+          "size": 6628,
+          "sha256": "a53b8d0cef9d31615b901944b02d3b52987cce7faa56c7e640fb89f4167b9809"
+        },
+        {
+          "path": "evaluation512/stap_replan/RESULTS.json",
+          "size": 4758,
+          "sha256": "3d2aacd7340b0db34aed1317f4ed664693385f092df8273ce3b7e6a0619f4260"
+        },
+        {
+          "path": "evaluation512/supervised/00001_746200.json.gz",
+          "size": 212013,
+          "sha256": "34bc5c0adefe1a93aab1d47e68eef7287318cc699156f7de100b567aea5e9c31"
+        },
+        {
+          "path": "evaluation512/supervised/00002_746201.json.gz",
+          "size": 216694,
+          "sha256": "448cfaf2fa9b1ea59eaa3599b37fd4baf1c6abaf13f3db108e3328f9e8b0a831"
+        }
+      ]
+    },
+    {
+      "archive": "RAW_01.tar.gz",
+      "size": 30486280,
+      "sha256": "a044927a9f5fe6720ae3498a266f4c168a89ba3e504ec27078c379d1e4abf42d",
+      "entries": [
+        {
+          "path": "evaluation512/supervised/00003_746202.json.gz",
+          "size": 215405,
+          "sha256": "a834d50f9b1a61c12ab6810225ce48bb13c76f233d3585b641969bf92babc134"
+        },
+        {
+          "path": "evaluation512/supervised/00004_746203.json.gz",
+          "size": 217132,
+          "sha256": "415dee9a8389e521289e26fe6ec02aeb6a978b9491846da7ae2543972f2d6e1f"
+        },
+        {
+          "path": "evaluation512/supervised/00005_746204.json.gz",
+          "size": 182340,
+          "sha256": "9eea571b2d09ab7618eabc20ec76ceb0aad30c59e267b7d6d413bf30f7dc8268"
+        },
+        {
+          "path": "evaluation512/supervised/00006_746205.json.gz",
+          "size": 214645,
+          "sha256": "6e32e41844079fa0a9f69c9667f9fe7e35bd66b889757791e7c139028f2052c7"
+        },
+        {
+          "path": "evaluation512/supervised/00007_746206.json.gz",
+          "size": 218727,
+          "sha256": "4a613b52a915cc4d495091ef147bb7eef144e28dd1357faf6ec046c8869dd67a"
+        },
+        {
+          "path": "evaluation512/supervised/00008_746207.json.gz",
+          "size": 216823,
+          "sha256": "30345c108a2bd3095c9a60eabb5e3b1ca3f4204265e8ae46097ef7a2e9f234c6"
+        },
+        {
+          "path": "evaluation512/supervised/746200_POLICY.json",
+          "size": 2924,
+          "sha256": "5a287fb9810901f3a08c811ddea44b9e29080e0d7f6445c664c6e4a79ac769ea"
+        },
+        {
+          "path": "evaluation512/supervised/746201_POLICY.json",
+          "size": 2928,
+          "sha256": "1cddecc5cd5f6f09f272cda6161e6792a787baafc60d8c1f3387c44b0ebec34e"
+        },
+        {
+          "path": "evaluation512/supervised/746202_POLICY.json",
+          "size": 2941,
+          "sha256": "a5d03fdb6c3ce6acb3736ab8d9e6e075410bcd42a545a3523f3946791dc9c157"
+        },
+        {
+          "path": "evaluation512/supervised/746203_POLICY.json",
+          "size": 2925,
+          "sha256": "2173a52502c2ff6d485977c9d10e097f2f6e08d04afaba9b0e3abb33d69bd451"
+        },
+        {
+          "path": "evaluation512/supervised/746204_POLICY.json",
+          "size": 2933,
+          "sha256": "ef836f662371ac1c18315fd62fb8f8688029071aa9627dfc0fcc2aedcb0bb94d"
+        },
+        {
+          "path": "evaluation512/supervised/746205_POLICY.json",
+          "size": 2922,
+          "sha256": "5c8453d4cffa2bbd55f1d3e24d0b4fd8994c42a3a064656444b39f7047ce6dc0"
+        },
+        {
+          "path": "evaluation512/supervised/746206_POLICY.json",
+          "size": 2943,
+          "sha256": "7fc140c28ccd58935a0e800a690981bd4ce4c0ce5df4d34f05c4fc0479aaa3f7"
+        },
+        {
+          "path": "evaluation512/supervised/746207_POLICY.json",
+          "size": 2928,
+          "sha256": "bde903c1b51a801e5d2ee0bb8586a13f744b186a8780fd4570c00f68d950178a"
+        },
+        {
+          "path": "evaluation512/supervised/RESULTS.json",
+          "size": 4751,
+          "sha256": "7c82c86e69ee23f479c051955b61407d7fd36135c7a5b7746bb1dba10b9c7536"
+        },
+        {
+          "path": "factor/745000_m0.75_g0.035_corrected_expand.json.gz",
+          "size": 217547,
+          "sha256": "3f3f027c010f44665ccec4396f093ee505e9961ace08c31fb24a32d43e3ddf99"
+        },
+        {
+          "path": "factor/745000_m0.75_g0.035_corrected_recompute.json.gz",
+          "size": 220398,
+          "sha256": "983e8d329f47723d6b0458575e0c5ec052914ba3e3310bb857e9bab6532850e2"
+        },
+        {
+          "path": "factor/745000_m0.75_g0.105_corrected_expand.json.gz",
+          "size": 220629,
+          "sha256": "ba37f8126fc5b344f9ec0cbf6b7fd796e079a59d7feb5ce2e5a346ae50afd643"
+        },
+        {
+          "path": "factor/745000_m0.75_g0.105_corrected_recompute.json.gz",
+          "size": 220951,
+          "sha256": "51691e23e432589e902a0940a4883e11c913a82551aa367601b42c462ab013ac"
+        },
+        {
+          "path": "factor/745000_m1.25_g0.035_corrected_expand.json.gz",
+          "size": 218929,
+          "sha256": "27b936d1bcb2a73dd8e193bdf9938d3bf80f630fb613f6778bdf2d14d371f2a3"
+        },
+        {
+          "path": "factor/745000_m1.25_g0.035_corrected_recompute.json.gz",
+          "size": 222598,
+          "sha256": "ec43b5e3b1c6456aab082287173b75e377b9e34409ef0730aa3c58d5c5fda82c"
+        },
+        {
+          "path": "factor/745000_m1.25_g0.105_corrected_expand.json.gz",
+          "size": 221248,
+          "sha256": "7bb511c164006f085bc183c294c9f15ba309ab8994f39ce794d5d07a83bac837"
+        },
+        {
+          "path": "factor/745000_m1.25_g0.105_corrected_recompute.json.gz",
+          "size": 221288,
+          "sha256": "58c9e76a090a22d3530b725819bb7af526b1475555d492897c4c6cd1793f2e64"
+        },
+        {
+          "path": "factor/745010_m0.75_g0.035_corrected_expand.json.gz",
+          "size": 217648,
+          "sha256": "2e49cf0ac712130c819e16e3d9f2a3bbc2625cb1eb121219434d6f05ae2b9a28"
+        },
+        {
+          "path": "factor/745010_m0.75_g0.035_corrected_recompute.json.gz",
+          "size": 217739,
+          "sha256": "d762ee8840e4a0b7b2a0f5d1e13e904c9ee574979a68e674bc5f47ceb9fe9dd1"
+        },
+        {
+          "path": "factor/745010_m0.75_g0.105_corrected_expand.json.gz",
+          "size": 214151,
+          "sha256": "d148018ce80d3194d69cad40549a7955271f7ece28fb3205178968f89f70a198"
+        },
+        {
+          "path": "factor/745010_m0.75_g0.105_corrected_recompute.json.gz",
+          "size": 213724,
+          "sha256": "bfc7f4501ba4ae8f4cf5a66385a1f4cfb71b9c4207c3885f4fac55251e00a9c1"
+        },
+        {
+          "path": "factor/745010_m1.25_g0.035_corrected_expand.json.gz",
+          "size": 223717,
+          "sha256": "e4d9ea966f35c597c743f192e947cf79f4ca53c41526ad02c224f6652d3475d7"
+        },
+        {
+          "path": "factor/745010_m1.25_g0.035_corrected_recompute.json.gz",
+          "size": 219933,
+          "sha256": "ac02a95eb20e688a10d2f0ba66f8ef0907ce9893367eb76ea7c72b5125ed4546"
+        },
+        {
+          "path": "factor/745010_m1.25_g0.105_corrected_expand.json.gz",
+          "size": 216549,
+          "sha256": "5822b478bfb90a8855e11d5a475314a39aebc81e366cb4e2fd0d3caff56f22b3"
+        },
+        {
+          "path": "factor/745010_m1.25_g0.105_corrected_recompute.json.gz",
+          "size": 220270,
+          "sha256": "6c830dff588da8cd0ef388679048875bfa37fe36ef66c551d5d5d3497f7da20d"
+        },
+        {
+          "path": "factor/PROTOCOL.json",
+          "size": 986,
+          "sha256": "fa048a5b1600b1cf32b8bd5be0b9a364f417d62fefc44c9fc125f71ad017221b"
+        },
+        {
+          "path": "factor/RESULTS.json",
+          "size": 70063,
+          "sha256": "c718833f425b8cf26743a61691ab4683d99ffc730fecdb7923c1bc8856e9a4ec"
+        },
+        {
+          "path": "factor/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "factor/program_multiskill_pull.py",
+          "size": 13191,
+          "sha256": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b"
+        },
+        {
+          "path": "factor/program_stap_tool.py",
+          "size": 17951,
+          "sha256": "34e262b9338cfea3a7d367d04f93b00a989fd271a36c7150ff56ca4709032d0c"
+        },
+        {
+          "path": "factor/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "factor/program_tool_contract_control.py",
+          "size": 4099,
+          "sha256": "65c77cabe94ea57ce93a937e8ea52499326370a132614b31f7fc58c93e8d57e2"
+        },
+        {
+          "path": "factor/program_tool_effect_probe.py",
+          "size": 5490,
+          "sha256": "3e52f6c34798ad41119f8ba59d48fc437acdef0d1d809125b1d2d69f3a25210a"
+        },
+        {
+          "path": "factor/pull_tool_physics.py",
+          "size": 13091,
+          "sha256": "f15e019e80aa05716dffe8895f6ef3f1b90658b955135eebe10abc7c951b09e3"
+        },
+        {
+          "path": "feedback/745000_m0.75_g0.035_corrected.json.gz",
+          "size": 216149,
+          "sha256": "ffba3afae73e37dcd702b82e03e7c67029dfcae02239fb290eb63a3c2a12ce69"
+        },
+        {
+          "path": "feedback/745000_m0.75_g0.035_corrected_feedback.json.gz",
+          "size": 220253,
+          "sha256": "9d2e7cf79a584b7798cfacef8ca8a5aac75bacf01e1d8ee9d8f645b5ee5c3a93"
+        },
+        {
+          "path": "feedback/745000_m0.75_g0.105_corrected.json.gz",
+          "size": 220222,
+          "sha256": "c32da84d8b7ecf3d44cda4b1a291ab4a4c14ea3d34db0e80a02e754d13169194"
+        },
+        {
+          "path": "feedback/745000_m0.75_g0.105_corrected_feedback.json.gz",
+          "size": 219970,
+          "sha256": "125709d72faa2189db7acbf6eb85c7faf76b3570a18f3cf3ed885b2276082e82"
+        },
+        {
+          "path": "feedback/745000_m1.25_g0.035_corrected.json.gz",
+          "size": 218211,
+          "sha256": "d88c9f22c8e2b922018f8ea1597b6fd7e71a696dc136bd42df9645cca78f71e4"
+        },
+        {
+          "path": "feedback/745000_m1.25_g0.035_corrected_feedback.json.gz",
+          "size": 222088,
+          "sha256": "419cebc7beb8ec7d23374cfd0fc824acdadd815fa85658abc936b53ee285e116"
+        },
+        {
+          "path": "feedback/745000_m1.25_g0.105_corrected.json.gz",
+          "size": 216744,
+          "sha256": "c8f88bb91ffa872b1fa4cad48f58f36cb629dbeaa2c1a2db9b5c8c9b136dc1e8"
+        },
+        {
+          "path": "feedback/745000_m1.25_g0.105_corrected_feedback.json.gz",
+          "size": 220686,
+          "sha256": "8ce41e3c038f10bd20d706e7a5466eb75a38e0d676276d99672cd3e1d3955caf"
+        },
+        {
+          "path": "feedback/745010_m0.75_g0.035_corrected.json.gz",
+          "size": 217009,
+          "sha256": "df94829d7a6389b9d99056938a77359711acd6195e0b34a877631e657d00da45"
+        },
+        {
+          "path": "feedback/745010_m0.75_g0.035_corrected_feedback.json.gz",
+          "size": 215638,
+          "sha256": "7bb4fbd51286f2c2ea96607ad7a75eb7c2960a0c7170f3eb9f3a159785cece6b"
+        },
+        {
+          "path": "feedback/745010_m0.75_g0.105_corrected.json.gz",
+          "size": 213436,
+          "sha256": "f3b4c7143f2fb9a073028b7349bc66176ae22aa40e34b90b0293ab0bd4c9379a"
+        },
+        {
+          "path": "feedback/745010_m0.75_g0.105_corrected_feedback.json.gz",
+          "size": 211894,
+          "sha256": "b8252e15d7c4605edc5a5cd4d24dffa21aac9a3e08153368584e97c17d2e76e5"
+        },
+        {
+          "path": "feedback/745010_m1.25_g0.035_corrected.json.gz",
+          "size": 223197,
+          "sha256": "31850cc7c96df322c63dfaee5cfba83d7c340878c66ceaffc21269367b2ab9cc"
+        },
+        {
+          "path": "feedback/745010_m1.25_g0.035_corrected_feedback.json.gz",
+          "size": 219157,
+          "sha256": "07edd9164696bd684616608de157975eae1f647e526188e4312d81b7307c11d1"
+        },
+        {
+          "path": "feedback/745010_m1.25_g0.105_corrected.json.gz",
+          "size": 215872,
+          "sha256": "8a5f063f205444d60141a74daa9df81aec1180929f3f40ef54b8927ee4e7d4bb"
+        },
+        {
+          "path": "feedback/745010_m1.25_g0.105_corrected_feedback.json.gz",
+          "size": 218051,
+          "sha256": "09287877209e269633ca7d7a83b77763f88626bc36f7f5f6646cf1a50a0ffa5f"
+        },
+        {
+          "path": "feedback/PROTOCOL.json",
+          "size": 978,
+          "sha256": "0cc447056975d6db134b4e8b7fff1d0985071d6d94a57e875c2d05a1d96f1ea0"
+        },
+        {
+          "path": "feedback/RESULTS.json",
+          "size": 69995,
+          "sha256": "be22ca30b0abac9ecb36d41ae77a90d6cafff3021c945eef541cfc8ec9b37494"
+        },
+        {
+          "path": "feedback/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "feedback/program_multiskill_pull.py",
+          "size": 13191,
+          "sha256": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b"
+        },
+        {
+          "path": "feedback/program_stap_tool.py",
+          "size": 17369,
+          "sha256": "d46c2cbab2e2ebf7708c16e9b66e2c3078b262c7516657381c78199b05f715ec"
+        },
+        {
+          "path": "feedback/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "feedback/program_tool_contract_control.py",
+          "size": 3247,
+          "sha256": "daea1360567a62d696ccf18bee61414a768dd25e7de6690941e66802a736b531"
+        },
+        {
+          "path": "feedback/program_tool_effect_probe.py",
+          "size": 5490,
+          "sha256": "3e52f6c34798ad41119f8ba59d48fc437acdef0d1d809125b1d2d69f3a25210a"
+        },
+        {
+          "path": "feedback/pull_tool_physics.py",
+          "size": 13091,
+          "sha256": "f15e019e80aa05716dffe8895f6ef3f1b90658b955135eebe10abc7c951b09e3"
+        },
+        {
+          "path": "final_source/audit_tool_smdp_replay.py",
+          "size": 1818,
+          "sha256": "c200d9783289c89a6ac4d7ac074767f258440ba97761b80b1ee6014b8a39a03f"
+        },
+        {
+          "path": "final_source/package_contract_evidence.py",
+          "size": 1949,
+          "sha256": "7227c585d7d1b8a4ef2aa1721eac6993436f13e664a4d3bd9911d2c4f04e0e78"
+        },
+        {
+          "path": "final_source/program_contract_audit.py",
+          "size": 3543,
+          "sha256": "6b678ecbe3490944f39024e1980d8e7e3a38d99ec47400ae7e14a31b91f0cbe1"
+        },
+        {
+          "path": "final_source/program_contract_comparators.py",
+          "size": 4954,
+          "sha256": "6181a55f2079c89257f58a246cc81815a0261efe4baa62d052f45b473bf63f5f"
+        },
+        {
+          "path": "final_source/program_contract_diagnostics.py",
+          "size": 3376,
+          "sha256": "9a2289f90a28fd9aa58d91859662f07962e1cc7436d4d7b5bfd5fc81c3ffa2df"
+        },
+        {
+          "path": "final_source/program_contract_evaluate.py",
+          "size": 2102,
+          "sha256": "6dee6ff76fbd2e2058bbb17fc65b3d7518a37ca84620bac124be19372443ca95"
+        },
+        {
+          "path": "final_source/program_contract_figures.py",
+          "size": 4938,
+          "sha256": "2958f7c76ed1af822a33508819fb5cfaf7a29c525a848897e955517f00b5cd4a"
+        },
+        {
+          "path": "final_source/program_contract_prediction_audit.py",
+          "size": 818,
+          "sha256": "fd7acbc7494ecd488adbacba5b7f27b9bffe0a78b0b1784955c8df834a97ffd0"
+        },
+        {
+          "path": "final_source/program_poke_skill_probe.py",
+          "size": 5022,
+          "sha256": "b887fba87cc4dc6278fc7c29d2c579fa1cbdcab20c62b365ad7cfc79bad206ff"
+        },
+        {
+          "path": "final_source/program_stap_tool.py",
+          "size": 18217,
+          "sha256": "6f971bffbdb150c2b1c266b149a08efb10f7f375c8b2cab2dd4717df52ca1eb1"
+        },
+        {
+          "path": "final_source/program_tool_contract_control.py",
+          "size": 5204,
+          "sha256": "c219e764e68f1c931059c6483f6f601dc53be01d31c7ece839a6e48adfcfa80e"
+        },
+        {
+          "path": "final_source/program_tool_smdp_sac.py",
+          "size": 9643,
+          "sha256": "98d645452c8d06a45ce4207d15622d564f2ab587959629cfa746311dcf59b35a"
+        },
+        {
+          "path": "flip/746002_m1.0_gNone_corrected_feedback.json.gz",
+          "size": 178124,
+          "sha256": "41c5f984e9a2d323698d6e7cda1821db1ae5de7218cf0abe98b2956bb215c456"
+        },
+        {
+          "path": "flip/746002_m1.0_gNone_corrected_feedback_flip.json.gz",
+          "size": 195010,
+          "sha256": "396b95a9895f0581e6dc59df8ea746e5b3850f30bd9d625350201d772d7a1198"
+        },
+        {
+          "path": "flip/746204_m1.0_gNone_corrected_feedback.json.gz",
+          "size": 181820,
+          "sha256": "a8e9bf9c0131e8a04aba294ff93ef69eb6e0b0ff0a6afd3d0a5a7ffcc38122c4"
+        },
+        {
+          "path": "flip/746204_m1.0_gNone_corrected_feedback_flip.json.gz",
+          "size": 189034,
+          "sha256": "170c2f54c3f0fbaff2804b89ecc073a816932da85edd3ebd22f7a5e07f03bffa"
+        },
+        {
+          "path": "flip/PROTOCOL.json",
+          "size": 969,
+          "sha256": "2a273720423e6c8a20eb9460eec822f4fb829eb4906f8aec99ada749d3f8441b"
+        },
+        {
+          "path": "flip/RESULTS.json",
+          "size": 15427,
+          "sha256": "ee088de08d992612ca8cd9c016c492f781cbc366f757cd0092f7ce4574984d8d"
+        },
+        {
+          "path": "flip/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "flip/program_multiskill_pull.py",
+          "size": 13191,
+          "sha256": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b"
+        },
+        {
+          "path": "flip/program_stap_tool.py",
+          "size": 18217,
+          "sha256": "6f971bffbdb150c2b1c266b149a08efb10f7f375c8b2cab2dd4717df52ca1eb1"
+        },
+        {
+          "path": "flip/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "flip/program_tool_contract_control.py",
+          "size": 4272,
+          "sha256": "8376a2c5ada7a0edc92b46fd98927b9026fb7243eb5db94797f4bbd3e531879f"
+        },
+        {
+          "path": "flip/program_tool_effect_probe.py",
+          "size": 5490,
+          "sha256": "3e52f6c34798ad41119f8ba59d48fc437acdef0d1d809125b1d2d69f3a25210a"
+        },
+        {
+          "path": "flip/pull_tool_physics.py",
+          "size": 13108,
+          "sha256": "24d68fbb0b613883dfe863ccfa06e1c88fff9c10029810130c33ed60a92cf0d3"
+        },
+        {
+          "path": "flip_fixed/746002_m1.0_g0.035_corrected_feedback.json.gz",
+          "size": 210374,
+          "sha256": "7be5f298287540cc4b375fbf75c25712459d288ba50d2e26c242a40aa6068059"
+        },
+        {
+          "path": "flip_fixed/746002_m1.0_g0.035_corrected_feedback_flip.json.gz",
+          "size": 194897,
+          "sha256": "7c53d6b4efff83ce2fbc9d76c545f34ceaf5dc40a9ef47753752957c0fa9ea9c"
+        },
+        {
+          "path": "flip_fixed/746002_m1.0_g0.07_corrected_feedback.json.gz",
+          "size": 181618,
+          "sha256": "1f1b9a34f256f0d25d24d7e958b50e5371c49d2e33ad2ffbbe4afbdf2e908d89"
+        },
+        {
+          "path": "flip_fixed/746002_m1.0_g0.07_corrected_feedback_flip.json.gz",
+          "size": 194696,
+          "sha256": "b078ae27d14f5d9bdba5e36b9b6d3a0dcd1ba37c571fb32207fb5597ea4e6be4"
+        },
+        {
+          "path": "flip_fixed/746002_m1.0_g0.105_corrected_feedback.json.gz",
+          "size": 178043,
+          "sha256": "51f4fd60cfe7e81b5f9e8b1afaa75898dab4c3b2cb4f07e76bbd52218f2d4f1c"
+        },
+        {
+          "path": "flip_fixed/746002_m1.0_g0.105_corrected_feedback_flip.json.gz",
+          "size": 194571,
+          "sha256": "61f7ed0c7350567e83262cbe932e5fa4a0f243b87053b91b5c2f98b34d9ae429"
+        },
+        {
+          "path": "flip_fixed/746204_m1.0_g0.035_corrected_feedback.json.gz",
+          "size": 195573,
+          "sha256": "d7b9cb59b22601261b95c41edd6b246a5e7dcdafb1b9e8319b48529556fadd61"
+        },
+        {
+          "path": "flip_fixed/746204_m1.0_g0.035_corrected_feedback_flip.json.gz",
+          "size": 200779,
+          "sha256": "18cdc89e2b6479df3bc513069baff51f09d8848716d6657e9c04250861c2c328"
+        },
+        {
+          "path": "flip_fixed/746204_m1.0_g0.07_corrected_feedback.json.gz",
+          "size": 183278,
+          "sha256": "bb940a86d1161d6acbe9500f930b8eb858535d5d213d4ca9f266eba0cda07c39"
+        },
+        {
+          "path": "flip_fixed/746204_m1.0_g0.07_corrected_feedback_flip.json.gz",
+          "size": 197314,
+          "sha256": "b68435782ed1c786836d53ce9473f02e7bb4eff236c5f4a398367ef9e1552cba"
+        },
+        {
+          "path": "flip_fixed/746204_m1.0_g0.105_corrected_feedback.json.gz",
+          "size": 182058,
+          "sha256": "37d2717e6eb32fd846862aba8ef561fa7b9f9fe4ba520ee6e7fe3d229214043f"
+        },
+        {
+          "path": "flip_fixed/746204_m1.0_g0.105_corrected_feedback_flip.json.gz",
+          "size": 191192,
+          "sha256": "87b7991c18195d3099ec0507a1d30ddfa3bfcaed7326d8d6197de97dec17da03"
+        },
+        {
+          "path": "flip_fixed/PROTOCOL.json",
+          "size": 991,
+          "sha256": "f6057df7f3521513b2aaa16f41d4f6c1ad86d4d9b564919d2dff5928a26f0a14"
+        },
+        {
+          "path": "flip_fixed/RESULTS.json",
+          "size": 48762,
+          "sha256": "e6e95f5f11dc803a046982326f3b9ea4fb3f5194289f69ca5f22284d77b8300b"
+        },
+        {
+          "path": "flip_fixed/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "flip_fixed/program_multiskill_pull.py",
+          "size": 13191,
+          "sha256": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b"
+        },
+        {
+          "path": "flip_fixed/program_stap_tool.py",
+          "size": 18217,
+          "sha256": "6f971bffbdb150c2b1c266b149a08efb10f7f375c8b2cab2dd4717df52ca1eb1"
+        },
+        {
+          "path": "flip_fixed/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "flip_fixed/program_tool_contract_control.py",
+          "size": 4272,
+          "sha256": "8376a2c5ada7a0edc92b46fd98927b9026fb7243eb5db94797f4bbd3e531879f"
+        },
+        {
+          "path": "flip_fixed/program_tool_effect_probe.py",
+          "size": 5490,
+          "sha256": "3e52f6c34798ad41119f8ba59d48fc437acdef0d1d809125b1d2d69f3a25210a"
+        },
+        {
+          "path": "flip_fixed/pull_tool_physics.py",
+          "size": 13108,
+          "sha256": "24d68fbb0b613883dfe863ccfa06e1c88fff9c10029810130c33ed60a92cf0d3"
+        },
+        {
+          "path": "matching_512_data/RESULTS.json",
+          "size": 192649,
+          "sha256": "e6514c6cf2c6d18062f10d93c1e67b26c000755fc3fed7c912d4a756cbc8fd78"
+        },
+        {
+          "path": "pilot/745000_m0.75_g0.035_baseline.json.gz",
+          "size": 212479,
+          "sha256": "c1c2ab74db0a0b448b3d6c70aac16d180037eab5bc925f84051260bef8cd8f42"
+        },
+        {
+          "path": "pilot/745000_m0.75_g0.035_corrected.json.gz",
+          "size": 219313,
+          "sha256": "29eebfb855e333825eb6220bf8e3612e1a56d6b602ac86ac352af60b6d70fcd2"
+        },
+        {
+          "path": "pilot/745000_m0.75_g0.105_baseline.json.gz",
+          "size": 219460,
+          "sha256": "ffe167f60c3fadcf6bd9d8485552d4fdcd94753f0cbb03b86e5a6cdb529af560"
+        },
+        {
+          "path": "pilot/745000_m0.75_g0.105_corrected.json.gz",
+          "size": 220001,
+          "sha256": "619e0be8a8289de05037025523815be547fd50c31b1e184f0e3821c7f08adf72"
+        },
+        {
+          "path": "pilot/745000_m1.25_g0.035_baseline.json.gz",
+          "size": 214606,
+          "sha256": "e32184d9801f458ec1d0febe60e5c1d782669ff5a1dacb16f0f4cb364e4abc05"
+        },
+        {
+          "path": "pilot/745000_m1.25_g0.035_corrected.json.gz",
+          "size": 221524,
+          "sha256": "be36916eda538939706a103eab4d23261dd2aa294b72b8bbc057f30fbda73cae"
+        },
+        {
+          "path": "pilot/745000_m1.25_g0.105_baseline.json.gz",
+          "size": 219917,
+          "sha256": "9ea069acb556d49a61f42cbb14cc44c579f422f8cd8da3e22d2207a7e93712cf"
+        },
+        {
+          "path": "pilot/745000_m1.25_g0.105_corrected.json.gz",
+          "size": 220050,
+          "sha256": "bbeb918b0be5a23f1e4d47f881c4a1447f22eb00999af67296ae54c561a49e0d"
+        },
+        {
+          "path": "pilot/745010_m0.75_g0.035_baseline.json.gz",
+          "size": 213440,
+          "sha256": "2c446295487571c9c828ce0f11d237517dc1d829557343bb0c1cf45588ad617d"
+        },
+        {
+          "path": "pilot/745010_m0.75_g0.035_corrected.json.gz",
+          "size": 216913,
+          "sha256": "2367f2cec834b9a945f8b9e240167c09b1454ec80c907835a065d68087deff11"
+        },
+        {
+          "path": "pilot/745010_m0.75_g0.105_baseline.json.gz",
+          "size": 213326,
+          "sha256": "74e9662bc82fbc4d0802b6283b24ff714b2884a57b0d5e94f036320ec3de5e49"
+        },
+        {
+          "path": "pilot/745010_m0.75_g0.105_corrected.json.gz",
+          "size": 213432,
+          "sha256": "dae4e4a690349100929aa50319e278cfa74b1ebed14f77f3461ce12eee9be120"
+        },
+        {
+          "path": "pilot/745010_m1.25_g0.035_baseline.json.gz",
+          "size": 219544,
+          "sha256": "c334c0b36c865df697cbb4056d9e2da607c4a86240e917395ed176530c25e92e"
+        },
+        {
+          "path": "pilot/745010_m1.25_g0.035_corrected.json.gz",
+          "size": 222754,
+          "sha256": "ee9921d980f9c661a15bc7352c7ed7a59966d1343b058c3bec52fcbd4ec12bfa"
+        },
+        {
+          "path": "pilot/745010_m1.25_g0.105_baseline.json.gz",
+          "size": 210612,
+          "sha256": "ba7cb4c2f02df6d68c6bdaa66f87f23ea935371c8984393462d45afac35c25f3"
+        },
+        {
+          "path": "pilot/745010_m1.25_g0.105_corrected.json.gz",
+          "size": 219102,
+          "sha256": "ac0f548622294de2c2f1636d8af85a8fcacb15343f649082d9e3f632c5f75d79"
+        },
+        {
+          "path": "pilot/PROTOCOL.json",
+          "size": 968,
+          "sha256": "5bd95989995d4bf69a40f42d0da3d1afe3a2a98da6897ef59577596e74e1c070"
+        },
+        {
+          "path": "pilot/RESULTS.json",
+          "size": 69746,
+          "sha256": "7b97b2844723686370c4ca8cbf64ae604522d5e1d51f990784e50c4d297137ff"
+        },
+        {
+          "path": "pilot/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "pilot/program_multiskill_pull.py",
+          "size": 13191,
+          "sha256": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b"
+        },
+        {
+          "path": "pilot/program_stap_tool.py",
+          "size": 16964,
+          "sha256": "5d1d42a7e453ce01cc15a78ab22bf2891dfe252f40d6531b3c869c90158707d8"
+        },
+        {
+          "path": "pilot/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "pilot/program_tool_contract_control.py",
+          "size": 2990,
+          "sha256": "8237216bcf1cabb2fb94f2d5d90218e8defdaa112082ae854b094a7706892bac"
+        },
+        {
+          "path": "pilot/program_tool_effect_probe.py",
+          "size": 5490,
+          "sha256": "3e52f6c34798ad41119f8ba59d48fc437acdef0d1d809125b1d2d69f3a25210a"
+        },
+        {
+          "path": "pilot/pull_tool_physics.py",
+          "size": 13091,
+          "sha256": "f15e019e80aa05716dffe8895f6ef3f1b90658b955135eebe10abc7c951b09e3"
+        },
+        {
+          "path": "poke/747000_g-0.04.json.gz",
+          "size": 105362,
+          "sha256": "ef1787f78dbd7bd6fd7f446757da43153736ec1e0b3e332a1802f544e43a3edd"
+        },
+        {
+          "path": "poke/747000_g0.04.json.gz",
+          "size": 105837,
+          "sha256": "8094ebcfe6eb73dae9e6f0e6be971301681f89cc189234bfa86a52b8910e2e3d"
+        },
+        {
+          "path": "poke/747001_g-0.04.json.gz",
+          "size": 98347,
+          "sha256": "e87027ab9ee3b81ca55ccc4327f1309f0b89984316f026c5ac54766342669dc6"
+        },
+        {
+          "path": "poke/747001_g0.04.json.gz",
+          "size": 101650,
+          "sha256": "d62d6d117bc948dcadd2feb810aa53c8f66f4bc54df1dc9211b5a83e799fe0a6"
+        },
+        {
+          "path": "poke/PROTOCOL.json",
+          "size": 222,
+          "sha256": "caff7f2759a4a8e1a50b987f20f5f251a8ea61964b1848366a10e8ef65da313c"
+        },
+        {
+          "path": "poke/RESULTS.json",
+          "size": 2138,
+          "sha256": "8e8ebd311e635a03aecf4b811fd684c195327c835744f090f17bae7c6730f55b"
+        },
+        {
+          "path": "poke/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "poke/program_poke_skill_probe.py",
+          "size": 4847,
+          "sha256": "9230b10496a3248959fb78044924af153f3ea9c01d59dcc011b5a243e864dea6"
+        },
+        {
+          "path": "poke/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "poke/program_tool_contract_control.py",
+          "size": 4272,
+          "sha256": "8376a2c5ada7a0edc92b46fd98927b9026fb7243eb5db94797f4bbd3e531879f"
+        },
+        {
+          "path": "poke/pull_tool_physics.py",
+          "size": 13108,
+          "sha256": "24d68fbb0b613883dfe863ccfa06e1c88fff9c10029810130c33ed60a92cf0d3"
+        },
+        {
+          "path": "poke_direct/747000_g-0.04.json.gz",
+          "size": 107242,
+          "sha256": "fd0309ca38e2b98c493ab5fdc2e13f4e46e0e7567e2d5eb61b2fe4f8712a3853"
+        },
+        {
+          "path": "poke_direct/747000_g0.04.json.gz",
+          "size": 107763,
+          "sha256": "5799858f1be6c1bab456756e176e1e6868e35cfd9f6dd45d1f8d858fb904619c"
+        },
+        {
+          "path": "poke_direct/747001_g-0.04.json.gz",
+          "size": 88000,
+          "sha256": "76c90835ea803bbd35d52d8ae128e694caacf97a8bf80b1ee7c2546681aa8691"
+        },
+        {
+          "path": "poke_direct/747001_g0.04.json.gz",
+          "size": 92662,
+          "sha256": "5ba3e2975a7bd63d5cd927c107f00611d51663185d5b6401f316709397b616dd"
+        },
+        {
+          "path": "poke_direct/PROTOCOL.json",
+          "size": 249,
+          "sha256": "09adf49f8705aa54bdd7c5d829d344b208e8e55547b414332e1c1bc3335cf6f6"
+        },
+        {
+          "path": "poke_direct/RESULTS.json",
+          "size": 2154,
+          "sha256": "1ee670fd676e8180f4c268502c895b09fc4c4fa1e87effa8b8fac387e67502ff"
+        },
+        {
+          "path": "poke_direct/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "poke_direct/program_poke_skill_probe.py",
+          "size": 5022,
+          "sha256": "b887fba87cc4dc6278fc7c29d2c579fa1cbdcab20c62b365ad7cfc79bad206ff"
+        },
+        {
+          "path": "poke_direct/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "poke_direct/program_tool_contract_control.py",
+          "size": 4272,
+          "sha256": "8376a2c5ada7a0edc92b46fd98927b9026fb7243eb5db94797f4bbd3e531879f"
+        },
+        {
+          "path": "poke_direct/pull_tool_physics.py",
+          "size": 13108,
+          "sha256": "24d68fbb0b613883dfe863ccfa06e1c88fff9c10029810130c33ed60a92cf0d3"
+        },
+        {
+          "path": "sac/INITIAL.zip",
+          "size": 491209,
+          "sha256": "185cd082f42402ece8dc08434619c4acc8932bea4e8a0c3611292fa677beaa2e"
+        },
+        {
+          "path": "sac/PROTOCOL.json",
+          "size": 1551,
+          "sha256": "c0abe0ed221f6d3a3d97694e2a1323940cc779040a35145750083be6fc377a70"
+        },
+        {
+          "path": "sac/episodes/00001_746000.json.gz",
+          "size": 213293,
+          "sha256": "a4025ea8eba858425f2b35c2d680ae3f9a666327e56d2acc315ce15eae5b0add"
+        },
+        {
+          "path": "sac/episodes/00002_746001.json.gz",
+          "size": 218943,
+          "sha256": "8af65bddb19410a330b0682d0379ba2dccfc362336f54c783a32e5b87e13ba41"
+        },
+        {
+          "path": "sac/episodes/00003_746002.json.gz",
+          "size": 212304,
+          "sha256": "7262d5c7fb5489a124ceef12a94320438ccb630603292dc5ea44879234d35901"
+        },
+        {
+          "path": "sac/episodes/00004_746003.json.gz",
+          "size": 215391,
+          "sha256": "a6b7601ed995e757893b7b0b8ce350d4bb1345457ed726047b70ffeca897e3cc"
+        },
+        {
+          "path": "sac/episodes/00005_746004.json.gz",
+          "size": 174886,
+          "sha256": "050b196be49ea3c8ba2fd76d9e39c0c2f0c1eea107018efe48b2f924105059de"
+        },
+        {
+          "path": "sac/episodes/00006_746005.json.gz",
+          "size": 214954,
+          "sha256": "5eb1a6b7714b94f7eddf565fe6626d71b23a87ab463a1f9379c47c5c060bdfd8"
+        },
+        {
+          "path": "sac/episodes/00007_746006.json.gz",
+          "size": 218213,
+          "sha256": "43798520b7dbbc86b8bb13453035361d74bd2d8229f0722803ff5e8118dccc15"
+        },
+        {
+          "path": "sac/episodes/00008_746007.json.gz",
+          "size": 218679,
+          "sha256": "409703d63a63b80ff441d063814d24c8a605f755f593067968b105daf1f1117d"
+        },
+        {
+          "path": "sac/episodes/00009_746008.json.gz",
+          "size": 215174,
+          "sha256": "638b1a6689f9dd5428a2ac41bceb8db66401ed28c37e5e448b379fa281179cab"
+        },
+        {
+          "path": "sac/episodes/00010_746009.json.gz",
+          "size": 197790,
+          "sha256": "140c588be6f20303581acb8d6da29940872171a9942953b31abf7ae07ceb9e94"
+        },
+        {
+          "path": "sac/episodes/00011_746010.json.gz",
+          "size": 219865,
+          "sha256": "5398bb7e1daa3699f21eaaf0091962549f095100dbdef06d4a8f34772ef23e08"
+        },
+        {
+          "path": "sac/episodes/00012_746011.json.gz",
+          "size": 216828,
+          "sha256": "a865f9e1bb7eadac49bdb72f87109f9bde3adc08a564d26e8e1619617b4ea118"
+        },
+        {
+          "path": "sac/episodes/00013_746012.json.gz",
+          "size": 195623,
+          "sha256": "cdc8d3717a6b3320525d45f09f6ec46f1ed538a2142033a1d21c70916edd0760"
+        },
+        {
+          "path": "sac/episodes/00014_746013.json.gz",
+          "size": 186699,
+          "sha256": "3ec2b91400f368fa546eabc856ced540bedea19c0bcc7aecca970d7f61b7dc58"
+        },
+        {
+          "path": "sac/episodes/00015_746014.json.gz",
+          "size": 218661,
+          "sha256": "2a251e558fe35425d0dcc54ce0f957b5dd290746cae1635b1fe7a616895c6eb4"
+        },
+        {
+          "path": "sac/episodes/00016_746015.json.gz",
+          "size": 217414,
+          "sha256": "526ca5887a01cc572bb7cac379f989494aa4bc445f359293121c87834f119dd7"
+        },
+        {
+          "path": "sac/episodes/00017_746016.json.gz",
+          "size": 223642,
+          "sha256": "8ef3c02513d23520d9e8e7791394da42f8850f19bc8470092a79ff33ec9a930c"
+        },
+        {
+          "path": "sac/episodes/00018_746017.json.gz",
+          "size": 219222,
+          "sha256": "f42bd67b805955eb92824f1ba821b86f249970aa609ab6a2d4acb4d97dea7d0c"
+        },
+        {
+          "path": "sac/episodes/00019_746018.json.gz",
+          "size": 219121,
+          "sha256": "cd689fdccae3eafeaa6be6943f99dcebdccf638907bf36be241488e032cea4d9"
+        },
+        {
+          "path": "sac/episodes/00020_746019.json.gz",
+          "size": 217882,
+          "sha256": "85618d82e4cb652d57145a57f29f009d9b79872cfa65b1d783d5444b6bb8a696"
+        },
+        {
+          "path": "sac/episodes/00021_746020.json.gz",
+          "size": 215135,
+          "sha256": "772e3c34a02805d6799f849bdc0a09747d9a85480086f1337786a2e6cc4a39ba"
+        },
+        {
+          "path": "sac/episodes/00022_746021.json.gz",
+          "size": 217227,
+          "sha256": "5beadae87b03d40004ce9ecbd17e27872df63f5bf96ac2b95973e790a29fd8f9"
+        },
+        {
+          "path": "sac/episodes/00023_746022.json.gz",
+          "size": 219528,
+          "sha256": "b70ee6ff60de3e40441a279a55c19f8f3b6cd7fe7d93d932b57878aedaad1b27"
+        },
+        {
+          "path": "sac/episodes/00024_746023.json.gz",
+          "size": 217727,
+          "sha256": "5763fe1ba3b6ae8d8b23e0eb3e8e43cb4fd772a73cce29b9414208492fe62c75"
+        },
+        {
+          "path": "sac/episodes/00025_746024.json.gz",
+          "size": 219912,
+          "sha256": "ab966d2bad5dc9ae36225f78b6327231a26b0d5016e32e6275f434469eebf6f6"
+        },
+        {
+          "path": "sac/episodes/00026_746025.json.gz",
+          "size": 214822,
+          "sha256": "a5fac062210d96c86ec8372a044354baf0b04ae2a9640415f15127af46d4b111"
+        },
+        {
+          "path": "sac/episodes/00027_746026.json.gz",
+          "size": 186235,
+          "sha256": "5c9e8087430231ef93f4ca3656756afe16b3d231f5534bbf158e3c1756096937"
+        },
+        {
+          "path": "sac/episodes/00028_746027.json.gz",
+          "size": 217640,
+          "sha256": "338dcda323b9f9a6ef39d30d2ed49464d77141dc4310ce6cf6d742aae5b55d08"
+        },
+        {
+          "path": "sac/episodes/00029_746028.json.gz",
+          "size": 200179,
+          "sha256": "d8351e2864558e2b70179e6fc1fa043edf1bc2d148b1c25a54d9fcc20fe468de"
+        },
+        {
+          "path": "sac/episodes/00030_746029.json.gz",
+          "size": 201114,
+          "sha256": "b657bbd955d49897759b38054c8b57efebee095d964b08dede63246a83c43f9d"
+        },
+        {
+          "path": "sac/episodes/00031_746030.json.gz",
+          "size": 215296,
+          "sha256": "7224f9fd1d90494b58c73bb553ffdbb2744b954d50396e90f3ff674f3610bcf0"
+        },
+        {
+          "path": "sac/episodes/00032_746031.json.gz",
+          "size": 215870,
+          "sha256": "32f6ccb2d4d55f3a2e3b4f4d3e2cd19751b58aaae9276be539922a8b8664e1ca"
+        },
+        {
+          "path": "sac/episodes/00033_746032.json.gz",
+          "size": 216662,
+          "sha256": "1b94f45558387d19c5356dc33558bbcb535b2bf63e3c05cd94b28e43d9a49a9b"
+        },
+        {
+          "path": "sac/episodes/00034_746033.json.gz",
+          "size": 220201,
+          "sha256": "ea453b654235a33c88e00a8ffc2ebec21d0b2c0ae4caa01155e3cad99b2f605a"
+        },
+        {
+          "path": "sac/episodes/00035_746034.json.gz",
+          "size": 218859,
+          "sha256": "8056b8c0c7d2a87986a8457387b515c10e572c90fd1a093e986f3c252147c872"
+        },
+        {
+          "path": "sac/episodes/00036_746035.json.gz",
+          "size": 216357,
+          "sha256": "91013329d7ef51f52558f375d25ea5366ff2ae7f39d522abf1ebf696b548490c"
+        },
+        {
+          "path": "sac/episodes/00037_746036.json.gz",
+          "size": 176835,
+          "sha256": "bd8077ebaff3aad91abc57e001d808ac57fc65ebbcb65b6655d774f931df2780"
+        },
+        {
+          "path": "sac/episodes/00038_746037.json.gz",
+          "size": 178545,
+          "sha256": "48617223872d04521e3e06df6e311787b743d3714ecad5a3f8e7ff0585b2686a"
+        },
+        {
+          "path": "sac/episodes/00039_746038.json.gz",
+          "size": 174544,
+          "sha256": "c61c993e8e779eb38615cd9ccaad09d1f6e0a57f6e43e543283f22e41d64143b"
+        },
+        {
+          "path": "sac/episodes/00040_746039.json.gz",
+          "size": 218444,
+          "sha256": "5a1503ed6fc4eb6913d9bf1b0c47c229c0d5187b8be0a9a33f6744c62d9c41b7"
+        },
+        {
+          "path": "sac/episodes/00041_746040.json.gz",
+          "size": 219686,
+          "sha256": "68cacb7fd71657d05cb0174d334d81710483840f8172cbea73fdfc297c47c4a8"
+        },
+        {
+          "path": "sac/episodes/00042_746041.json.gz",
+          "size": 211899,
+          "sha256": "04e2dda84f835078ec721b75929d3747ba183d1446728ddb81e2cb0d8b48975c"
+        },
+        {
+          "path": "sac/episodes/00043_746042.json.gz",
+          "size": 195396,
+          "sha256": "c73882d362e2eea25d15de3506406c7abea3676db556c8f132835b334cdadb55"
+        },
+        {
+          "path": "sac/episodes/00044_746043.json.gz",
+          "size": 223186,
+          "sha256": "d747e8a54b1c9876c76a9baa27b4c96570fcf893ca7d882a882d93b2b7ed30b9"
+        },
+        {
+          "path": "sac/episodes/00045_746044.json.gz",
+          "size": 221383,
+          "sha256": "b94d5130429d1b4b561fb64d467d6acb5f87c5b4c3944ccbf1b55ed565ad7be3"
+        },
+        {
+          "path": "sac/episodes/00046_746045.json.gz",
+          "size": 220028,
+          "sha256": "ee7b7f14f1b80bc2071bb81d7e9a533cefc4bf7d726c29970d63d733fac447ba"
+        },
+        {
+          "path": "sac/episodes/00047_746046.json.gz",
+          "size": 175836,
+          "sha256": "7c133962ddcedaff63b01e8c2014d56028ca97e06dcbfc650257bd82985ed4ae"
+        },
+        {
+          "path": "sac/episodes/00048_746047.json.gz",
+          "size": 215035,
+          "sha256": "29886a1ee9838504c859c235af09650ef150f6a5a771c80ab5eebb07698edad7"
+        },
+        {
+          "path": "sac/episodes/00049_746048.json.gz",
+          "size": 216956,
+          "sha256": "5b773c72d4e3feb20f944ba325ae1760d4dd1abca1695278bf87fbe2305c1686"
+        },
+        {
+          "path": "sac/episodes/00050_746049.json.gz",
+          "size": 219792,
+          "sha256": "4d770d4fc3684ee39ecb72a4dafb1a70580f27efcd523a86dd675ee3d305c030"
+        },
+        {
+          "path": "sac/episodes/00051_746050.json.gz",
+          "size": 219739,
+          "sha256": "436e7031cef54f81e03e408b9c3a3231ff6f5fd574010d7e86a91085d45c55e2"
+        },
+        {
+          "path": "sac/episodes/00052_746051.json.gz",
+          "size": 217827,
+          "sha256": "82be4e75844e909f9d29a6a3abeee11cde4ec87a7433e5665eadea484b08c1ab"
+        },
+        {
+          "path": "sac/episodes/00053_746052.json.gz",
+          "size": 215747,
+          "sha256": "5baa6ae94614311d4852fdf784c1af18ecb0c3b774cae7e90bd4677b6c78d351"
+        },
+        {
+          "path": "sac/episodes/00054_746053.json.gz",
+          "size": 219159,
+          "sha256": "84ed71513af7840a7b6eac3da20f7fc217a4b3904d87d574fe6f41ae9c1c2a25"
+        },
+        {
+          "path": "sac/episodes/00055_746054.json.gz",
+          "size": 216971,
+          "sha256": "d2d6ea082389fae3b9acfdd8985ae31dd0e9fff72e34cdc7b02edd9565e2aeca"
+        },
+        {
+          "path": "sac/episodes/00056_746055.json.gz",
+          "size": 218555,
+          "sha256": "d9b06487b93c6f4c2a072e69ff2773c70f51424520f1a7d8c1cb227b89d7e350"
+        },
+        {
+          "path": "sac/episodes/00057_746056.json.gz",
+          "size": 216254,
+          "sha256": "a1ee619602c2a3005696f7a2d59472545f9f7243e7c634dfb48d740f34451c81"
+        },
+        {
+          "path": "sac/episodes/00058_746057.json.gz",
+          "size": 255143,
+          "sha256": "17a841a8148a23ac01a03c079f1a7c5fdf9176a63bf225d0a21ec429f39ad6aa"
+        },
+        {
+          "path": "sac/episodes/00059_746058.json.gz",
+          "size": 213383,
+          "sha256": "b49a1e3000fea853e3fac472363577fe6a0e03587f221082478acb9d663518ab"
+        },
+        {
+          "path": "sac/episodes/00060_746059.json.gz",
+          "size": 197297,
+          "sha256": "44ec208b88923f13e6f0b05938ae039e8fbeaed5406ab3f688da7f4aeab69e01"
+        },
+        {
+          "path": "sac/episodes/00061_746060.json.gz",
+          "size": 213545,
+          "sha256": "0e2e3b480627834b8ec2a61fcecf7b23c02419c2ea27f11c46cc60ab5aa006cb"
+        },
+        {
+          "path": "sac/episodes/00062_746061.json.gz",
+          "size": 217822,
+          "sha256": "860be903be64983376847475638727f0f863db53de8da16d1293ad2733fc2e53"
+        },
+        {
+          "path": "sac/episodes/00063_746062.json.gz",
+          "size": 218887,
+          "sha256": "1921ecfddc0bbeed4c56dee56626b8641328ef99889bcfead603f4e66723a680"
+        },
+        {
+          "path": "sac/episodes/00064_746063.json.gz",
+          "size": 214612,
+          "sha256": "e2c8cae49893a92186b5fe5eb78004e478d0aa27ed35fcc12a0491965c63b23a"
+        },
+        {
+          "path": "sac/episodes/00065_746000.json.gz",
+          "size": 185886,
+          "sha256": "3fe8b95f12bf8c98c5d556504b0db18c7b0421415820d94e41b4b1cf77ac2f4a"
+        },
+        {
+          "path": "sac/episodes/00066_746001.json.gz",
+          "size": 215402,
+          "sha256": "6d3636da83a9399c2d56dc77c2108540b7aaab6d13a6c7bd63fc48b1ee332734"
+        },
+        {
+          "path": "sac/episodes/00067_746002.json.gz",
+          "size": 219865,
+          "sha256": "eb0d8d95acd6796074f017a0ded42bcda75243195685ac72f6bdab33a81f49dd"
+        },
+        {
+          "path": "sac/episodes/RESULTS.json",
+          "size": 39498,
+          "sha256": "0117b2bb0998f4d01be9dbd14837a09b526aad821668ef7e39091409b8dea92b"
+        },
+        {
+          "path": "sac/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "sac/program_multiskill_pull.py",
+          "size": 13191,
+          "sha256": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b"
+        },
+        {
+          "path": "sac/program_sac_policy.py",
+          "size": 1016,
+          "sha256": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+        },
+        {
+          "path": "sac/program_stap_learning.py",
+          "size": 12033,
+          "sha256": "9968584bff18187d09c4b427f878435f31d024ae8e59b6919bb2b3dcebd6fd77"
+        },
+        {
+          "path": "sac/program_stap_tool.py",
+          "size": 17714,
+          "sha256": "2c4bc89af59170a7231a7910027ea8731a9ff8d809c10be146e49b79918ffce9"
+        },
+        {
+          "path": "sac/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "sac/program_tool_contract_control.py",
+          "size": 3247,
+          "sha256": "daea1360567a62d696ccf18bee61414a768dd25e7de6690941e66802a736b531"
+        },
+        {
+          "path": "sac/program_tool_effect_probe.py",
+          "size": 5490,
+          "sha256": "3e52f6c34798ad41119f8ba59d48fc437acdef0d1d809125b1d2d69f3a25210a"
+        },
+        {
+          "path": "sac/program_tool_smdp_sac.py",
+          "size": 7060,
+          "sha256": "7a60a93ff02ec453addf38659e44384aea735a59e6accbaaab5ddc94593c86bc"
+        },
+        {
+          "path": "sac/pull_tool_physics.py",
+          "size": 13091,
+          "sha256": "f15e019e80aa05716dffe8895f6ef3f1b90658b955135eebe10abc7c951b09e3"
+        }
+      ]
+    },
+    {
+      "archive": "RAW_02.tar.gz",
+      "size": 103102,
+      "sha256": "fd4cafa5469e62fb8260e215805b0ab70b95c71dc99acf2c097ae3daddaef8ea",
+      "entries": [
+        {
+          "path": "sac_recovered/BUFFER_256.pkl",
+          "size": 18801740,
+          "sha256": "e249b29a336bdec770a8c6177615f653a449c3e151147876cdad66de6179386f"
+        }
+      ]
+    },
+    {
+      "archive": "RAW_03.tar.gz",
+      "size": 1424165,
+      "sha256": "3c3163a027073e9e6c8fdaee835901d45b4a56a6b0bcc18c484fe42e1f2738e7",
+      "entries": [
+        {
+          "path": "sac_recovered/BUFFER_512.pkl",
+          "size": 18801740,
+          "sha256": "ebec269f5c75703b327fadf4fd958cb7a95f54fbe21db3df06f4d6a732020ae1"
+        },
+        {
+          "path": "sac_recovered/INITIAL.zip",
+          "size": 491209,
+          "sha256": "0a90e8a5b194023d5766b1278c49c228c0d36a3d5e204f266099243be7c40d05"
+        },
+        {
+          "path": "sac_recovered/INTERRUPTED.zip",
+          "size": 1068996,
+          "sha256": "ea57e55e05407284a229f2d4d2af1c2cdfef297acf45b6e27a088cd45b4dda4f"
+        }
+      ]
+    },
+    {
+      "archive": "RAW_04.tar.gz",
+      "size": 14292917,
+      "sha256": "a7e85fb4d53ec37c84a7da0ccac9777d65ab3e21d4beeb13e0da70b492646620",
+      "entries": [
+        {
+          "path": "sac_recovered/INTERRUPTED_BUFFER.pkl",
+          "size": 18801740,
+          "sha256": "6a3c8a07c44e999e1b36ad2440cb99fda29c1c49e2e35838c934e013533bfa59"
+        },
+        {
+          "path": "sac_recovered/PARTIAL.json.gz",
+          "size": 151554,
+          "sha256": "251cf27c278072175213e346a76ba5673005b295535b3b4d78cfc88541a8fe39"
+        },
+        {
+          "path": "sac_recovered/PROTOCOL.json",
+          "size": 1683,
+          "sha256": "d5ca6fa4e4425a91eb685105d4b1266a6400718f693c56e8af4f6c418b92ac58"
+        },
+        {
+          "path": "sac_recovered/SAC_256.zip",
+          "size": 1068948,
+          "sha256": "7cf090d3a579865d0da13756f97dd4664d52eb94deec39206480843c767d8207"
+        },
+        {
+          "path": "sac_recovered/SAC_512.zip",
+          "size": 1068979,
+          "sha256": "076f9a6b36ded20547ab4769c99ea22abf54aaf62e0d68cbda31cd39278fcd0a"
+        },
+        {
+          "path": "sac_recovered/TRAINING.json",
+          "size": 345,
+          "sha256": "59ed54a3af4999dab130f525040c2fdde7cdc2309adbdbf30616558f9424e940"
+        },
+        {
+          "path": "sac_recovered/TRAINING_256.json",
+          "size": 347,
+          "sha256": "3797cea429e84049594dbb0c207246c751d5bbdf2858c409b166bf5675b90179"
+        },
+        {
+          "path": "sac_recovered/TRAINING_512.json",
+          "size": 345,
+          "sha256": "59ed54a3af4999dab130f525040c2fdde7cdc2309adbdbf30616558f9424e940"
+        },
+        {
+          "path": "sac_recovered/WARMSTART.json",
+          "size": 253,
+          "sha256": "7c585faa99571e8332c43277019ceb72814c400a760441fb02c99aed79281b5d"
+        },
+        {
+          "path": "sac_recovered/episodes/00001_746000.json.gz",
+          "size": 213286,
+          "sha256": "a7e44e7b314201135d3e9a2e028bcc0edd2659656f00abbd585fe75225a5ccaa"
+        },
+        {
+          "path": "sac_recovered/episodes/00002_746001.json.gz",
+          "size": 218933,
+          "sha256": "0b41b7edf488071ed224259596d03f92c6dc2f9c5fdd006410a95aa2cc682192"
+        },
+        {
+          "path": "sac_recovered/episodes/00003_746002.json.gz",
+          "size": 212302,
+          "sha256": "c2a2402c99f451d4041feda2113cc52f80bedecae91eef9ade1bd2d4f929846c"
+        },
+        {
+          "path": "sac_recovered/episodes/00004_746003.json.gz",
+          "size": 215391,
+          "sha256": "0e0545cd0c48b9ff52bad2f64a8dffa9e32caf53ea4db433467da56cd94dc333"
+        },
+        {
+          "path": "sac_recovered/episodes/00005_746004.json.gz",
+          "size": 174895,
+          "sha256": "ecdb769d0454eccc08785a70c3f0e93441f69a62ca8d06f5530d248a7aff80ad"
+        },
+        {
+          "path": "sac_recovered/episodes/00006_746005.json.gz",
+          "size": 214961,
+          "sha256": "4fc50435cd304bae3bab657855c12bea37b37f6de6c215ceefaf28feb7dbf3a4"
+        },
+        {
+          "path": "sac_recovered/episodes/00007_746006.json.gz",
+          "size": 218213,
+          "sha256": "8385de69595251a66e9f3b5280acdbe94c14d714e32ebb106c3fa31215889430"
+        },
+        {
+          "path": "sac_recovered/episodes/00008_746007.json.gz",
+          "size": 218678,
+          "sha256": "4ebb4145b6721edbf6167ee12140586f88c6cd96bee35796ea8f2df0959cdfac"
+        },
+        {
+          "path": "sac_recovered/episodes/00009_746008.json.gz",
+          "size": 215173,
+          "sha256": "6145b9585b0474d4b78d3876dc400adcaae573d91dc28007f5a962addc8871f3"
+        },
+        {
+          "path": "sac_recovered/episodes/00010_746009.json.gz",
+          "size": 197789,
+          "sha256": "7beee10009e615917888ac0aee055b79f6156d284a3ca7c93a8d3f252452f007"
+        },
+        {
+          "path": "sac_recovered/episodes/00011_746010.json.gz",
+          "size": 219862,
+          "sha256": "90203955706fd2a353897e1904d5c3e4e928791d69f71e7702bb0f92c91907cd"
+        },
+        {
+          "path": "sac_recovered/episodes/00012_746011.json.gz",
+          "size": 216821,
+          "sha256": "1bba947484036a2443b66b3245577e01fdf85ecbe172835575a0eed849a8787e"
+        },
+        {
+          "path": "sac_recovered/episodes/00013_746012.json.gz",
+          "size": 195629,
+          "sha256": "2ac234873fb417863bb2c65d1983686e5d60ea405596b097d2863ac9226c6ff3"
+        },
+        {
+          "path": "sac_recovered/episodes/00014_746013.json.gz",
+          "size": 186701,
+          "sha256": "aa4a6b55a7b19091f66da2444c7928bf21ead429ce140dcb11a8549b2f5418e1"
+        },
+        {
+          "path": "sac_recovered/episodes/00015_746014.json.gz",
+          "size": 218664,
+          "sha256": "9f31eeb99e8644878b4c3458d5e07cd2fafab1a0ff0e62ea257fdc7446a32ecd"
+        },
+        {
+          "path": "sac_recovered/episodes/00016_746015.json.gz",
+          "size": 217425,
+          "sha256": "43cac2cea502f3003e5a8f923ae801664b27cae87d9256f9ed9075421356901b"
+        },
+        {
+          "path": "sac_recovered/episodes/00017_746016.json.gz",
+          "size": 223638,
+          "sha256": "80f1bdbd2a399c6a54bc5e9a80aed73ed62b6708f3b9b27feb0776360ae4053b"
+        },
+        {
+          "path": "sac_recovered/episodes/00018_746017.json.gz",
+          "size": 219222,
+          "sha256": "63687cec9ae2ceafe71eccd4efc4018cf0dc8f6af0fb33de5aaeac113d75902f"
+        },
+        {
+          "path": "sac_recovered/episodes/00019_746018.json.gz",
+          "size": 219118,
+          "sha256": "03cddce2dd7cf9e40f7222ecfe04dbdb655f986deea30316dd6beba9f8bacfd9"
+        },
+        {
+          "path": "sac_recovered/episodes/00020_746019.json.gz",
+          "size": 217877,
+          "sha256": "82084184ee5e0d206cc838e9346e90976a9239c433edb52c1c6febe2b8a5dec4"
+        },
+        {
+          "path": "sac_recovered/episodes/00021_746020.json.gz",
+          "size": 215138,
+          "sha256": "a51bf448e262c9b5418ecf51fdb376a746f5553ec05540902d32f4d71ed1a5bd"
+        },
+        {
+          "path": "sac_recovered/episodes/00022_746021.json.gz",
+          "size": 217229,
+          "sha256": "6a1f72c517dbbecc0213a45104292483388444261acf2de030a0ce1f6f88a4a0"
+        },
+        {
+          "path": "sac_recovered/episodes/00023_746022.json.gz",
+          "size": 219531,
+          "sha256": "e2233d935238586bb96ba42816080ddcb8e5c5c05a607da5d5ddbc9f2a907283"
+        },
+        {
+          "path": "sac_recovered/episodes/00024_746023.json.gz",
+          "size": 217710,
+          "sha256": "710a842e68902ea5566f004de18cbab6853548631dcf5b4fe7738f095180ef09"
+        },
+        {
+          "path": "sac_recovered/episodes/00025_746024.json.gz",
+          "size": 219906,
+          "sha256": "946b522453be1fc189c8ca41e8a71aa02c0f85e6db987131b8c8682886119e09"
+        },
+        {
+          "path": "sac_recovered/episodes/00026_746025.json.gz",
+          "size": 214815,
+          "sha256": "486ffd3a1061ba1c4a06cae68479f63a3d746baeaf6d1bacc53cf810a189e3b3"
+        },
+        {
+          "path": "sac_recovered/episodes/00027_746026.json.gz",
+          "size": 186241,
+          "sha256": "c3ad21d2717bd839c1b1d10ed8f23b4c490764fb07c6d0cd763ca7933e8c0fcb"
+        },
+        {
+          "path": "sac_recovered/episodes/00028_746027.json.gz",
+          "size": 217637,
+          "sha256": "c506b5fa82c79eb42c16b9190ea2d26104f359c947864c3fdacf3e79f9d22d4a"
+        },
+        {
+          "path": "sac_recovered/episodes/00029_746028.json.gz",
+          "size": 200177,
+          "sha256": "55a8f74eb39186bc11c208fd4027b6fef6a24c800fadce65e0725326d0a2576c"
+        },
+        {
+          "path": "sac_recovered/episodes/00030_746029.json.gz",
+          "size": 201106,
+          "sha256": "8f032499341d1195ed002bad83607938b42fc18ca8307a22d4fee10703b56f9f"
+        },
+        {
+          "path": "sac_recovered/episodes/00031_746030.json.gz",
+          "size": 215303,
+          "sha256": "a79ba38d2d490604d94b75888642374a00e5facfb7e4b5eabdd429095f5c55f7"
+        },
+        {
+          "path": "sac_recovered/episodes/00032_746031.json.gz",
+          "size": 215866,
+          "sha256": "785eb0f2306b977c5e9b374344ba6d20d70c01752621821c781ec5b69da3a506"
+        },
+        {
+          "path": "sac_recovered/episodes/00033_746032.json.gz",
+          "size": 216628,
+          "sha256": "69f43cf6ead39178bc5c451c9a7206d02f786968c9b7560fb55876833261bed0"
+        },
+        {
+          "path": "sac_recovered/episodes/00034_746033.json.gz",
+          "size": 220104,
+          "sha256": "95557050e732bc688a7c28c5a7ccdb7bb9755a1a6eb2b2d11425976782778dac"
+        },
+        {
+          "path": "sac_recovered/episodes/00035_746034.json.gz",
+          "size": 218429,
+          "sha256": "d9452d2b065f59618bc9df61dae08cf4dc8e53f2868fa40490665ff7da321e37"
+        },
+        {
+          "path": "sac_recovered/episodes/00036_746035.json.gz",
+          "size": 213574,
+          "sha256": "a01328466655ff74cb781c713e080f5a502b6d596a754e22f066093d6911008f"
+        },
+        {
+          "path": "sac_recovered/episodes/00037_746036.json.gz",
+          "size": 176418,
+          "sha256": "642424e409702c0ff084e2248d07b8fe74225e9718739786280eaceb724131e7"
+        },
+        {
+          "path": "sac_recovered/episodes/00038_746037.json.gz",
+          "size": 178690,
+          "sha256": "fee59c3e0ecdebb97af499db438efd0dbc9808e5506a0d6d4c031edbd6f7dd7f"
+        },
+        {
+          "path": "sac_recovered/episodes/00039_746038.json.gz",
+          "size": 182894,
+          "sha256": "482a3281a36ce099ae972358e9f1ae1ebc4679afae6d3a566ec9ac0840c2c884"
+        },
+        {
+          "path": "sac_recovered/episodes/00040_746039.json.gz",
+          "size": 217772,
+          "sha256": "0a27cfd42cda34ca161c2466268770741ef880b732f60772392effcc582db694"
+        },
+        {
+          "path": "sac_recovered/episodes/00041_746040.json.gz",
+          "size": 219603,
+          "sha256": "351351db7c9d49e2ec4a3ea5938f01b350d65d2904f0505a1f1995dfda42bf06"
+        },
+        {
+          "path": "sac_recovered/episodes/00042_746041.json.gz",
+          "size": 215798,
+          "sha256": "94a2ed6f58406f30ddac0774c8475e52efd0e7e3b182537cd576c9c0391f4ac1"
+        },
+        {
+          "path": "sac_recovered/episodes/00043_746042.json.gz",
+          "size": 195467,
+          "sha256": "cad4c9731ec38cfaf12e8c95674c9f15dc54f35a19f8be8b389d8657ab6ad274"
+        },
+        {
+          "path": "sac_recovered/episodes/00044_746043.json.gz",
+          "size": 220346,
+          "sha256": "fec6d18ac41d2b5064a98c114e7a8bf7bd6965f612b946be5887927adf1a9da4"
+        },
+        {
+          "path": "sac_recovered/episodes/00045_746044.json.gz",
+          "size": 217502,
+          "sha256": "5812997c8921e1a0c81c537564360e7c0b9addbea37ade2fbc53885ae57303ca"
+        },
+        {
+          "path": "sac_recovered/episodes/00046_746045.json.gz",
+          "size": 219033,
+          "sha256": "934238dfd44d3e9d6341da75f386cada79248f3824ed4d7995ef1db8175bc3e0"
+        },
+        {
+          "path": "sac_recovered/episodes/00047_746046.json.gz",
+          "size": 205128,
+          "sha256": "4f3f12b830f1bdd405df1f2e25ef67ea1e0c3630e1a6f1a8c90e980527445de0"
+        },
+        {
+          "path": "sac_recovered/episodes/00048_746047.json.gz",
+          "size": 203319,
+          "sha256": "6bc8a05fb4b03b595e676c36e130b817d04eada639b0e14751cf7fbe3dfc2d15"
+        },
+        {
+          "path": "sac_recovered/episodes/00049_746048.json.gz",
+          "size": 215203,
+          "sha256": "dbac3c0ab600bd4504233530e2a87d5e590cbf8ff7e1eb8011abe41572e8fdba"
+        },
+        {
+          "path": "sac_recovered/episodes/00050_746049.json.gz",
+          "size": 218104,
+          "sha256": "956cb7f86ebc861e99095e5cb842762a111df62fa7abafda7d9380e4a49dcbb4"
+        },
+        {
+          "path": "sac_recovered/episodes/00051_746050.json.gz",
+          "size": 218677,
+          "sha256": "413d3cd4ce25ea39f0b73b040f2acb50dc3482920600fdffcee368746b728e95"
+        },
+        {
+          "path": "sac_recovered/episodes/00052_746051.json.gz",
+          "size": 217695,
+          "sha256": "a8df06f39681fa23659474f4366397c14956d32cf95a31a80d943df5015f7684"
+        },
+        {
+          "path": "sac_recovered/episodes/00053_746052.json.gz",
+          "size": 215008,
+          "sha256": "81b93f59e6c48089df66ab55e53180035e99d83f1239864a3bd66d9e2a98ab71"
+        },
+        {
+          "path": "sac_recovered/episodes/00054_746053.json.gz",
+          "size": 220401,
+          "sha256": "2f666e01705f6b5175828e93d820adfb91a2d4fabdf783b6add1ace7c278826e"
+        },
+        {
+          "path": "sac_recovered/episodes/00055_746054.json.gz",
+          "size": 215178,
+          "sha256": "34a1bbffdf18ab1ff0e712c710595750fa325cb89bf6b6dde531b8039f63cd18"
+        },
+        {
+          "path": "sac_recovered/episodes/00056_746055.json.gz",
+          "size": 218009,
+          "sha256": "3d2ea0cc219f96dbbd4c3d8577f8e55355f460d2621961a2b1fcf892284986e6"
+        },
+        {
+          "path": "sac_recovered/episodes/00057_746056.json.gz",
+          "size": 215548,
+          "sha256": "a18b5fb8bcb0d8a3639b55543c8f2665c4f494b5b8efcd2ce7c4845f3e65ba58"
+        },
+        {
+          "path": "sac_recovered/episodes/00058_746057.json.gz",
+          "size": 222031,
+          "sha256": "325a3005e2abebe75630b94436ff1ddcfcbd899cc9b3d25d8af104c550e5cf7f"
+        }
+      ]
+    },
+    {
+      "archive": "RAW_05.tar.gz",
+      "size": 33383858,
+      "sha256": "3fa6120a22feaea003163bf8f4906efaba139046cda9ab7cfe888382af03874c",
+      "entries": [
+        {
+          "path": "sac_recovered/episodes/00059_746058.json.gz",
+          "size": 218879,
+          "sha256": "f082e7b963475624b5c29d4463d323bf5c5aa6dd3ad6252b6c5aa719c75ad233"
+        },
+        {
+          "path": "sac_recovered/episodes/00060_746059.json.gz",
+          "size": 223925,
+          "sha256": "66cfa5fd9404aca450a92ebd654a272677b7a6ddb49d87bfc3463fca6a5c4c55"
+        },
+        {
+          "path": "sac_recovered/episodes/00061_746060.json.gz",
+          "size": 214737,
+          "sha256": "428c5225b603095249b0bd252d967627864c80d94b1d6ef726670d94c3edaee8"
+        },
+        {
+          "path": "sac_recovered/episodes/00062_746061.json.gz",
+          "size": 216669,
+          "sha256": "6a741137c74f3f8e754af715fa7a797e76daddb4e94490ad847304f0623dd4e6"
+        },
+        {
+          "path": "sac_recovered/episodes/00063_746062.json.gz",
+          "size": 177799,
+          "sha256": "2e1ffcf32f0051b8ec4d41d992397802da27b580871b2c1d55d0bc9199ab5820"
+        },
+        {
+          "path": "sac_recovered/episodes/00064_746063.json.gz",
+          "size": 217860,
+          "sha256": "5a21ca246d1b62fdaad58239c392441d825d6d6a824b3ca440a17616d5ddf70c"
+        },
+        {
+          "path": "sac_recovered/episodes/00065_746000.json.gz",
+          "size": 218509,
+          "sha256": "719867a6ce71becfc628de03e1b547414f54daec1c466b3784344489f56671df"
+        },
+        {
+          "path": "sac_recovered/episodes/00066_746001.json.gz",
+          "size": 220424,
+          "sha256": "592199745dd8f55f8086b0808a9c470708d9fa9629793d39e145845f0e7487db"
+        },
+        {
+          "path": "sac_recovered/episodes/00067_746002.json.gz",
+          "size": 183322,
+          "sha256": "6e45e0d93cdb0ec5db1676171c42c9d1c1323f4785ea8f0d6540011e22095b81"
+        },
+        {
+          "path": "sac_recovered/episodes/00068_746003.json.gz",
+          "size": 215146,
+          "sha256": "52d677cd026df1578701c1844f121050a13483c3d4604eeb8846929f28d47caf"
+        },
+        {
+          "path": "sac_recovered/episodes/00069_746004.json.gz",
+          "size": 210914,
+          "sha256": "b76490589de22a5f8e0dcda6597e8e40e0445baa8d21513823e6f6587e281bca"
+        },
+        {
+          "path": "sac_recovered/episodes/00070_746005.json.gz",
+          "size": 215642,
+          "sha256": "d6c09f28725772d7dd2e68b11927488720b799406a4fb073ed4c32aec64d389e"
+        },
+        {
+          "path": "sac_recovered/episodes/00071_746006.json.gz",
+          "size": 219282,
+          "sha256": "5776861cbce96cc54d1749f410c34cae0b3fb0e203adb221f4b7e1c46e33ffb9"
+        },
+        {
+          "path": "sac_recovered/episodes/00072_746007.json.gz",
+          "size": 216530,
+          "sha256": "14e731f781da604e120cfa81a832d36683a9fd6e410b5877a63ea05720313da3"
+        },
+        {
+          "path": "sac_recovered/episodes/00073_746008.json.gz",
+          "size": 213370,
+          "sha256": "a980d9156d02a400563f7f623224add0965d797ab86d9c1193187c207dfb81ba"
+        },
+        {
+          "path": "sac_recovered/episodes/00074_746009.json.gz",
+          "size": 219598,
+          "sha256": "688016ec8ab3b59fb14d0de81ff94e659def997214e5f8a8b8a6b106f3fb4b64"
+        },
+        {
+          "path": "sac_recovered/episodes/00075_746010.json.gz",
+          "size": 217032,
+          "sha256": "4a9fc36431565a6737387b052b51447d0477f86be0b941e58be9ec4acb816d44"
+        },
+        {
+          "path": "sac_recovered/episodes/00076_746011.json.gz",
+          "size": 218379,
+          "sha256": "294585aeda9755404e96838cf8b3de85c88e0e30ac663860898080c5670faedc"
+        },
+        {
+          "path": "sac_recovered/episodes/00077_746012.json.gz",
+          "size": 220182,
+          "sha256": "48d7e65aca035c0e367732d8410c7dde4133384c30497e0500c84670593c4ef7"
+        },
+        {
+          "path": "sac_recovered/episodes/00078_746013.json.gz",
+          "size": 180516,
+          "sha256": "4af38d5fb33512eef7c969636916a8892297665cb9b2ad96778fd28ee9301e40"
+        },
+        {
+          "path": "sac_recovered/episodes/00079_746014.json.gz",
+          "size": 217342,
+          "sha256": "760b4c13fba98285ba6e7f807351e66d3002eab25a52f826c884b245aaaddfac"
+        },
+        {
+          "path": "sac_recovered/episodes/00080_746015.json.gz",
+          "size": 216971,
+          "sha256": "16f54bfaa78b5385cb543adf9d782a0bc76fed8684cbf8c749631b71710198cb"
+        },
+        {
+          "path": "sac_recovered/episodes/00081_746016.json.gz",
+          "size": 224027,
+          "sha256": "46b26c426e0c8af67a26c53e40edb49e2caac8935479fbf74a314f62c1b1efa0"
+        },
+        {
+          "path": "sac_recovered/episodes/00082_746017.json.gz",
+          "size": 217553,
+          "sha256": "6a464d5ff3ad8606a63b32bc59e2ac85e7e6ff8bd7b4502b56e9714a048ec193"
+        },
+        {
+          "path": "sac_recovered/episodes/00083_746018.json.gz",
+          "size": 218088,
+          "sha256": "3270a458ac3f9ca142c5a2eb966187c2528179879cafc50e47c316e5cd131fe6"
+        },
+        {
+          "path": "sac_recovered/episodes/00084_746019.json.gz",
+          "size": 217497,
+          "sha256": "7c4d1712f7508909dced4a85f87e8cc7c8e694561600963410e1fcb5540ac2ba"
+        },
+        {
+          "path": "sac_recovered/episodes/00085_746020.json.gz",
+          "size": 216108,
+          "sha256": "b18d7e0698d8ce0efdcb49c5d80781cf172778a1a589170ee5f3aea49ce1e8de"
+        },
+        {
+          "path": "sac_recovered/episodes/00086_746021.json.gz",
+          "size": 213663,
+          "sha256": "57f4d874e6065c7670aea175db24d679eea46d4f4de68f250caedd2d21c0f2d9"
+        },
+        {
+          "path": "sac_recovered/episodes/00087_746022.json.gz",
+          "size": 219533,
+          "sha256": "e3c8c193ed64a79cb7d93ba32a07bf1f01280b914770c564da5f63ef1aa6daac"
+        },
+        {
+          "path": "sac_recovered/episodes/00088_746023.json.gz",
+          "size": 217424,
+          "sha256": "e443f0f49f2b2ff815b1977513ad1f454e1b244e9a00271786378ad8a54761d3"
+        },
+        {
+          "path": "sac_recovered/episodes/00089_746024.json.gz",
+          "size": 216749,
+          "sha256": "201ea65199a85684ebdc938c9e9684a42dd03d2bf448499d6b67ce873bc88e84"
+        },
+        {
+          "path": "sac_recovered/episodes/00090_746025.json.gz",
+          "size": 216917,
+          "sha256": "3cc3b575ac36d1d3d79ac770eec2ea4cdaee25fd37a0e70770262e0e6a4279d0"
+        },
+        {
+          "path": "sac_recovered/episodes/00091_746026.json.gz",
+          "size": 185734,
+          "sha256": "f1d7659a64e4cec62e9a291d96a9729fb85f3f5679663b65d565610139b2cbbb"
+        },
+        {
+          "path": "sac_recovered/episodes/00092_746027.json.gz",
+          "size": 217901,
+          "sha256": "122c9abca0753dbdee5ea6bd86e2ef31ddeffc9e2534d6e25f530671af43cb5b"
+        },
+        {
+          "path": "sac_recovered/episodes/00093_746028.json.gz",
+          "size": 197478,
+          "sha256": "ad4dc16c24d87b22712bb5cd93c5cd50debe0ea00717ee8c2949e43122693b4d"
+        },
+        {
+          "path": "sac_recovered/episodes/00094_746029.json.gz",
+          "size": 219507,
+          "sha256": "6b8a1db1a1d2c2f6187f2946253aa5f93e623a6ae4747eb68114169435314778"
+        },
+        {
+          "path": "sac_recovered/episodes/00095_746030.json.gz",
+          "size": 215403,
+          "sha256": "456eacfe6782b8a130fd31b630edf8605852a77644895a73a7d08831ceffb1f3"
+        },
+        {
+          "path": "sac_recovered/episodes/00096_746031.json.gz",
+          "size": 215676,
+          "sha256": "e8f324a854d3fe4b20b3ec15a53746d071e8218a17691ce055f6e95b2a3edb28"
+        },
+        {
+          "path": "sac_recovered/episodes/00097_746032.json.gz",
+          "size": 217864,
+          "sha256": "401004b3049154f963663dfae0c88bd53c6f043b1191f4cc00bb122f7f97003b"
+        },
+        {
+          "path": "sac_recovered/episodes/00098_746033.json.gz",
+          "size": 222273,
+          "sha256": "9e66eb7a090ac633727a634e46a01a8e7442a289fffbdee4a52afeb58b689e25"
+        },
+        {
+          "path": "sac_recovered/episodes/00099_746034.json.gz",
+          "size": 215218,
+          "sha256": "7a6f544cb870c3e6620e6f0adf1eb538d7a46927c3747865f7c87ca9e4cf577d"
+        },
+        {
+          "path": "sac_recovered/episodes/00100_746035.json.gz",
+          "size": 217412,
+          "sha256": "d2eb025ee950fe9db38a0c9e73aae4b85ac07519f20efb103dfeac914a229bb8"
+        },
+        {
+          "path": "sac_recovered/episodes/00101_746036.json.gz",
+          "size": 177680,
+          "sha256": "9276d4290ff7ba9ffe9e19822a7d450c037c0b90d0809c9fe9cc70b093f64240"
+        },
+        {
+          "path": "sac_recovered/episodes/00102_746037.json.gz",
+          "size": 179113,
+          "sha256": "d820318bf871f8d1c584ff51dd8cd736791a109a4969dd4114a6b484ac6a29ff"
+        },
+        {
+          "path": "sac_recovered/episodes/00103_746038.json.gz",
+          "size": 179060,
+          "sha256": "32e188436e235d3afa9431f5aa2f269e493880ef4d3ae35a7ce260e2f1af62fe"
+        },
+        {
+          "path": "sac_recovered/episodes/00104_746039.json.gz",
+          "size": 221095,
+          "sha256": "05861a1e77745184e1c81c2f27f91129326802a7f72d1fbf7d84127f6cd115b3"
+        },
+        {
+          "path": "sac_recovered/episodes/00105_746040.json.gz",
+          "size": 217501,
+          "sha256": "2bf8c3e6aa9ac1563d8c841df8b0aee5e7d668eb04acb80418552f052815d07a"
+        },
+        {
+          "path": "sac_recovered/episodes/00106_746041.json.gz",
+          "size": 218275,
+          "sha256": "6db1bdd245f07d9448d62ea7894829aace64a70f0c38d305018304ca90b1e58f"
+        },
+        {
+          "path": "sac_recovered/episodes/00107_746042.json.gz",
+          "size": 195162,
+          "sha256": "fa55ea39fb6cbb2aba1766729f982445c7c913809b4f537265a85a9b1473f739"
+        },
+        {
+          "path": "sac_recovered/episodes/00108_746043.json.gz",
+          "size": 216385,
+          "sha256": "845274e5214331b98c9d1ccd773d7a1889e2758172ecb7a2d8c30f2f0493b873"
+        },
+        {
+          "path": "sac_recovered/episodes/00109_746044.json.gz",
+          "size": 220153,
+          "sha256": "176e565a341b0ee1acf2085ee7dd94ddae5b9a23257bec004cfaf6bfe5487d22"
+        },
+        {
+          "path": "sac_recovered/episodes/00110_746045.json.gz",
+          "size": 215941,
+          "sha256": "e9edd0eb37281c38111ef7ccf6efbf64228830f7a39008a3c3644be5afb76555"
+        },
+        {
+          "path": "sac_recovered/episodes/00111_746046.json.gz",
+          "size": 197289,
+          "sha256": "6512fbcf8dd30fea8f1fcdabf44416d287bdd132922d303cf65a83acc27b0740"
+        },
+        {
+          "path": "sac_recovered/episodes/00112_746047.json.gz",
+          "size": 177618,
+          "sha256": "f589b8b8973d0a9898c46055a045b71ade9acb7145b71bc1dd5d4ddd6d8bbba1"
+        },
+        {
+          "path": "sac_recovered/episodes/00113_746048.json.gz",
+          "size": 215308,
+          "sha256": "1b17ff70dc3e4e6dc00871dd3c3af62a1d50671eefc8f3d50b73042412820b06"
+        },
+        {
+          "path": "sac_recovered/episodes/00114_746049.json.gz",
+          "size": 220703,
+          "sha256": "5c0b2fc5b3c1eebbb600bf5539e2d973c47a465e7703de1025fd4e34e23af601"
+        },
+        {
+          "path": "sac_recovered/episodes/00115_746050.json.gz",
+          "size": 219073,
+          "sha256": "ebbe635fbff7806fa31855f9aa6f17b9a72893ca66518ec377c4b6482b24a3f2"
+        },
+        {
+          "path": "sac_recovered/episodes/00116_746051.json.gz",
+          "size": 177549,
+          "sha256": "1b47ca5e453cd6f39d754b9a3c20b92185e1cc5f27ab26108b128c53af37db80"
+        },
+        {
+          "path": "sac_recovered/episodes/00117_746052.json.gz",
+          "size": 218126,
+          "sha256": "e9e4fd2ca7137551d58f3fa72f1ed2271811c9db1b74001ad3ada5b6f49f9940"
+        },
+        {
+          "path": "sac_recovered/episodes/00118_746053.json.gz",
+          "size": 216673,
+          "sha256": "e2950b7b9c2fc26b2b03664fd11e8112802413c71c26b96a563e3c2d694c6dfa"
+        },
+        {
+          "path": "sac_recovered/episodes/00119_746054.json.gz",
+          "size": 216773,
+          "sha256": "4afb6a863d5549df74f3274303198e5784eb33b3f670a6fb86eefa95a72666ba"
+        },
+        {
+          "path": "sac_recovered/episodes/00120_746055.json.gz",
+          "size": 214760,
+          "sha256": "60737532778143edfc5c414e9eb762ec1c64af2f3eb6dbd058b7f27cca804076"
+        },
+        {
+          "path": "sac_recovered/episodes/00121_746056.json.gz",
+          "size": 219587,
+          "sha256": "6dc4c78ed025666af66b13278dfbf46f01b55871c134b6b4545024ab1b7afce0"
+        },
+        {
+          "path": "sac_recovered/episodes/00122_746057.json.gz",
+          "size": 219507,
+          "sha256": "b955e256290b224e617c2f71f284055a26dcf7c702abeaa4fb434f65da934786"
+        },
+        {
+          "path": "sac_recovered/episodes/00123_746058.json.gz",
+          "size": 213963,
+          "sha256": "af21e04f78f0587c70365f2f845e4bbd57c99a23d6ae5e474023881572798398"
+        },
+        {
+          "path": "sac_recovered/episodes/00124_746059.json.gz",
+          "size": 221751,
+          "sha256": "b149cb0de3d734b737d21434b60194c626b4cd5ed8217b2020ab3ea9cd240bf9"
+        },
+        {
+          "path": "sac_recovered/episodes/00125_746060.json.gz",
+          "size": 212128,
+          "sha256": "185eda28165c32ae6c28236ef5d39bba34bd1bf00ecd8f296616a2464e6411df"
+        },
+        {
+          "path": "sac_recovered/episodes/00126_746061.json.gz",
+          "size": 215379,
+          "sha256": "ddfdce88443b0ba428372b0599c703c208aed641b952b80c4aa5ab9ea75110fa"
+        },
+        {
+          "path": "sac_recovered/episodes/00127_746062.json.gz",
+          "size": 297445,
+          "sha256": "9096036c5a485a9974af72b35f768f82d1680d6eb154c02c3cb1c2f6616712a8"
+        },
+        {
+          "path": "sac_recovered/episodes/00128_746063.json.gz",
+          "size": 215039,
+          "sha256": "be67de9440906601af1e9327045cfef1b94e973295149a580c25f12940d267bb"
+        },
+        {
+          "path": "sac_recovered/episodes/00129_746000.json.gz",
+          "size": 216041,
+          "sha256": "d30f4bc42643a94fed7b174a9d3ea1cf854c6712ad544acea20e9ffb0d7115fe"
+        },
+        {
+          "path": "sac_recovered/episodes/00130_746001.json.gz",
+          "size": 216994,
+          "sha256": "1d8cb6e90c973551717bf3d2272602eaa8f496c211972fb2015c7cde2e160559"
+        },
+        {
+          "path": "sac_recovered/episodes/00131_746002.json.gz",
+          "size": 181068,
+          "sha256": "c6651f26dfe4f77ed2ced2dcc74549cbe47be48022739916b5a8d7521a41d66d"
+        },
+        {
+          "path": "sac_recovered/episodes/00132_746003.json.gz",
+          "size": 214842,
+          "sha256": "7f2e4112752e0c1bfcd92f5e047ce289fea97cf1b68bf4b59f121d304c4a6c2f"
+        },
+        {
+          "path": "sac_recovered/episodes/00133_746004.json.gz",
+          "size": 206724,
+          "sha256": "0bdf03eb71a8764293aa3a7e4ef00920c1a4304f3e75c4bc9ca4194766671bcf"
+        },
+        {
+          "path": "sac_recovered/episodes/00134_746005.json.gz",
+          "size": 215602,
+          "sha256": "ed6f9c30932b3e4496c51917e44f987e1f082a6e6caad24cea268d1eabecc37e"
+        },
+        {
+          "path": "sac_recovered/episodes/00135_746006.json.gz",
+          "size": 219142,
+          "sha256": "9e92e9a934ad3c9376e5583568ec0053a17f80ec66ab53f68a7a619d7cfde95f"
+        },
+        {
+          "path": "sac_recovered/episodes/00136_746007.json.gz",
+          "size": 217283,
+          "sha256": "8131fd84b59183c68ae542e80d5cef169151fdcba93ed7a381d8cbf006b2d8e7"
+        },
+        {
+          "path": "sac_recovered/episodes/00137_746008.json.gz",
+          "size": 219292,
+          "sha256": "801607343454051cd9ad89f9085eb882a4c33c101d6d3c7dada42af59979c051"
+        },
+        {
+          "path": "sac_recovered/episodes/00138_746009.json.gz",
+          "size": 218116,
+          "sha256": "749d0e339f72cd950dda703b6290f7bd6934f94dbd373746564a5abb7663cf97"
+        },
+        {
+          "path": "sac_recovered/episodes/00139_746010.json.gz",
+          "size": 217290,
+          "sha256": "c9a82615d4d6f8ee640fb95f0baa0e074399a7558df2276f988879b5a93b53d3"
+        },
+        {
+          "path": "sac_recovered/episodes/00140_746011.json.gz",
+          "size": 219344,
+          "sha256": "b3c680764dc015b9cbae8de2ed8f76a0c4936286df135ed76ebdeebffbff575c"
+        },
+        {
+          "path": "sac_recovered/episodes/00141_746012.json.gz",
+          "size": 221410,
+          "sha256": "49af5c23174bd6d0ebf1c927441f131b161218e2491bba2409ac7f504c08e3fa"
+        },
+        {
+          "path": "sac_recovered/episodes/00142_746013.json.gz",
+          "size": 180277,
+          "sha256": "3bc244b00414132e5f40d415276d55b28c280a27a70f6dce410d429b5986d09f"
+        },
+        {
+          "path": "sac_recovered/episodes/00143_746014.json.gz",
+          "size": 217381,
+          "sha256": "db42da470051424fea1e7bec68e0d32db16639165e45bde44f7f0bf636447327"
+        },
+        {
+          "path": "sac_recovered/episodes/00144_746015.json.gz",
+          "size": 220891,
+          "sha256": "b23b9945d226b75e68c4536a25f49c26df910230460798201e0db922576d7091"
+        },
+        {
+          "path": "sac_recovered/episodes/00145_746016.json.gz",
+          "size": 224436,
+          "sha256": "35492d2d2c90b363038c116f6e8049d210522d979a9dc0999dffbac20acff487"
+        },
+        {
+          "path": "sac_recovered/episodes/00146_746017.json.gz",
+          "size": 219240,
+          "sha256": "ee1433d140d47e37b135f112593a28e01b9a2bd46ba95cc7c4dad543643481eb"
+        },
+        {
+          "path": "sac_recovered/episodes/00147_746018.json.gz",
+          "size": 219995,
+          "sha256": "92b11127bbb0a551f3ddbf3222d78c0493e1f735a4fdf169175efe86cb851d9a"
+        },
+        {
+          "path": "sac_recovered/episodes/00148_746019.json.gz",
+          "size": 216839,
+          "sha256": "df16b7e4b9c166b5b1ab52f3f9e3de2b4e1d18ead7467f1aee1dc409ec358491"
+        },
+        {
+          "path": "sac_recovered/episodes/00149_746020.json.gz",
+          "size": 215194,
+          "sha256": "ec1b3ab2d55c45b1718fc1f1762f1996889d8e34a49743e4a7640cdd45f6f20f"
+        },
+        {
+          "path": "sac_recovered/episodes/00150_746021.json.gz",
+          "size": 215111,
+          "sha256": "838596036b80a693d6c3f2478f4185a7777da689a9a7ad80b5e4bcea55aeeff4"
+        },
+        {
+          "path": "sac_recovered/episodes/00151_746022.json.gz",
+          "size": 219076,
+          "sha256": "a6c3b74c23f4d186bfaaa04d4cbf123e6c27e223c7f97e6b8e527b101cd6e4a6"
+        },
+        {
+          "path": "sac_recovered/episodes/00152_746023.json.gz",
+          "size": 217572,
+          "sha256": "2d57c23ab9eae1b096c84cef0c481f89ba59e875b23be8285a0acb6d8877eb07"
+        },
+        {
+          "path": "sac_recovered/episodes/00153_746024.json.gz",
+          "size": 216444,
+          "sha256": "ea885fc0fe1034b8be4f088f716a8207e944b103e6c75a71dbe0432559a57ef2"
+        },
+        {
+          "path": "sac_recovered/episodes/00154_746025.json.gz",
+          "size": 213893,
+          "sha256": "3b194aa403138937dd9e6c4df319b13c3248ce7bd0a9e28fa436aa27a36a6dfd"
+        },
+        {
+          "path": "sac_recovered/episodes/00155_746026.json.gz",
+          "size": 183674,
+          "sha256": "79e89df718502e76eb260fcc0a9fdb6cdd5830e85178da1e9d3be4b4907a7bd3"
+        },
+        {
+          "path": "sac_recovered/episodes/00156_746027.json.gz",
+          "size": 218186,
+          "sha256": "609cebd1a0ef854d37d8acf601a9b09a24a00c7500e7bcbc999a0ba6e8f39e1f"
+        },
+        {
+          "path": "sac_recovered/episodes/00157_746028.json.gz",
+          "size": 198279,
+          "sha256": "aea04454bc91d639192dc838c1e2bf5fbbbc1efb6a304f22eb780c1047ea82a6"
+        },
+        {
+          "path": "sac_recovered/episodes/00158_746029.json.gz",
+          "size": 216143,
+          "sha256": "1fe7a3b8456f09d44156571a0e8f9bf2de1426cca22ef613573b221881ddb5d9"
+        },
+        {
+          "path": "sac_recovered/episodes/00159_746030.json.gz",
+          "size": 217936,
+          "sha256": "d20bfb0dbf817cba1fc6c7851ba2de2971a73c3b63cc0d2da0cf9839c17d8672"
+        },
+        {
+          "path": "sac_recovered/episodes/00160_746031.json.gz",
+          "size": 216031,
+          "sha256": "8ef735cb278836c4bd2f23713981e44e96cf7340d33bd3a47bc5e4005941809f"
+        },
+        {
+          "path": "sac_recovered/episodes/00161_746032.json.gz",
+          "size": 217765,
+          "sha256": "dc1049ecb4fb08d4a9606ff9b5ca3ebe87747982b98b296377ad80bcd546fa21"
+        },
+        {
+          "path": "sac_recovered/episodes/00162_746033.json.gz",
+          "size": 219834,
+          "sha256": "44f2e82af45af53e9843a9ce8816474fc5a41176f6610e93732e3179cfa8679f"
+        },
+        {
+          "path": "sac_recovered/episodes/00163_746034.json.gz",
+          "size": 212971,
+          "sha256": "99bc88b17d9e4cbfdf437c59c9d905e634f75fd79c0a693a3185277e0b5be18d"
+        },
+        {
+          "path": "sac_recovered/episodes/00164_746035.json.gz",
+          "size": 212533,
+          "sha256": "6f22478c0fd7541f8a2ad3df54fbdbfe2acbcb41dc74ec9ae737432e74614f51"
+        },
+        {
+          "path": "sac_recovered/episodes/00165_746036.json.gz",
+          "size": 177616,
+          "sha256": "da646326097d6a92b0ca23c3371655c99b67e205d090fa945212d6a53600bd6e"
+        },
+        {
+          "path": "sac_recovered/episodes/00166_746037.json.gz",
+          "size": 175987,
+          "sha256": "c4adaba3fd4ec16f499059d453a61decdd1ab3cd0707f6d7b8355b7c2485fed6"
+        },
+        {
+          "path": "sac_recovered/episodes/00167_746038.json.gz",
+          "size": 184105,
+          "sha256": "832915c75ac32b4f9ba22e39f2ed9909e0cad173bfa76e5c264f01a2b7129fc4"
+        },
+        {
+          "path": "sac_recovered/episodes/00168_746039.json.gz",
+          "size": 223141,
+          "sha256": "678060fa502261a3889c15faf77cb7d0686becfb0bdf552a58e4744f8f76249b"
+        },
+        {
+          "path": "sac_recovered/episodes/00169_746040.json.gz",
+          "size": 218365,
+          "sha256": "3965a6b8d3f68728e930aaedf35a90a292654b43c1b05bcd4f929e0378b34d4e"
+        },
+        {
+          "path": "sac_recovered/episodes/00170_746041.json.gz",
+          "size": 218468,
+          "sha256": "66dc9f967034b42976aaa09e04e818c36c7f151d8a1f3fe9c58ecdac352aa390"
+        },
+        {
+          "path": "sac_recovered/episodes/00171_746042.json.gz",
+          "size": 193927,
+          "sha256": "c22870a51bad6cae36cfbca00a063b4406ea6286fa06323bb4b89eb1e5217468"
+        },
+        {
+          "path": "sac_recovered/episodes/00172_746043.json.gz",
+          "size": 217151,
+          "sha256": "790ff1599dd5f3a933225b87fe0fafbea693c2f62e807828072246f00f510b64"
+        },
+        {
+          "path": "sac_recovered/episodes/00173_746044.json.gz",
+          "size": 219025,
+          "sha256": "dd3b6e80ea62453580b26eb366d6f1b5958268be240b7ecbb55c966e0078ee28"
+        },
+        {
+          "path": "sac_recovered/episodes/00174_746045.json.gz",
+          "size": 216103,
+          "sha256": "4e081ccccea5e3fd155567ee1ea5c276782e083208a3590b21a5e4097e852c8d"
+        },
+        {
+          "path": "sac_recovered/episodes/00175_746046.json.gz",
+          "size": 175037,
+          "sha256": "41176a4cdc4091149707cab5ee02eb1c5ac376b8cdc63f62b646dac3a0cdf583"
+        },
+        {
+          "path": "sac_recovered/episodes/00176_746047.json.gz",
+          "size": 179445,
+          "sha256": "ae954c635a13773b87a53e8cb16cd12fcd19af3bc7de9e0f0961be131c223f32"
+        },
+        {
+          "path": "sac_recovered/episodes/00177_746048.json.gz",
+          "size": 215241,
+          "sha256": "58ba76828f92835773a9f299ad57f0a7d9403aaecccaefd4a58bc4552f087c09"
+        },
+        {
+          "path": "sac_recovered/episodes/00178_746049.json.gz",
+          "size": 220020,
+          "sha256": "3092e969187fc60fe8be4693e166f6d3bd05d1507577e612d91f57441a8c942e"
+        },
+        {
+          "path": "sac_recovered/episodes/00179_746050.json.gz",
+          "size": 219687,
+          "sha256": "9aa9c6ce0851d2ba48d6a180e849504a922c19397f2467e72f6dbe4a6093a189"
+        },
+        {
+          "path": "sac_recovered/episodes/00180_746051.json.gz",
+          "size": 201105,
+          "sha256": "3bd2d90108c076fabba82df7df3120130baff9ae45eefefeb043442d5d18917b"
+        },
+        {
+          "path": "sac_recovered/episodes/00181_746052.json.gz",
+          "size": 218873,
+          "sha256": "40a19c9e5fa8d0bf38a44458c9827a08d7cc15e43627f5af2661920d54405d3f"
+        },
+        {
+          "path": "sac_recovered/episodes/00182_746053.json.gz",
+          "size": 216710,
+          "sha256": "8052c1c862505438342bdf7f65988f8748d26e1977432dd278c46639b0084c63"
+        },
+        {
+          "path": "sac_recovered/episodes/00183_746054.json.gz",
+          "size": 219631,
+          "sha256": "48a8e0b0d3a9f7d969f460c1935a278794352767c36cb605f8c85d2dde7f68d7"
+        },
+        {
+          "path": "sac_recovered/episodes/00184_746055.json.gz",
+          "size": 215278,
+          "sha256": "e4f33f54fb8228f3f057ef2f76e22b284a7f6b1fef3ecaa45ab473e6c74b1a76"
+        },
+        {
+          "path": "sac_recovered/episodes/00185_746056.json.gz",
+          "size": 214978,
+          "sha256": "2988ded60e14ac274bf8d77bb44ff77caadd5cee4c7156637ce99169d4af52ba"
+        },
+        {
+          "path": "sac_recovered/episodes/00186_746057.json.gz",
+          "size": 196653,
+          "sha256": "82053012d0a5a12d6396ad1395704385998a75a2b7443bcfc8e1d993129e96ff"
+        },
+        {
+          "path": "sac_recovered/episodes/00187_746058.json.gz",
+          "size": 211890,
+          "sha256": "85042229e6e7086409065030cc2af4f9ac4befb0bb35ab6615eba67b2a8a036b"
+        },
+        {
+          "path": "sac_recovered/episodes/00188_746059.json.gz",
+          "size": 222553,
+          "sha256": "98a1ca140d8fd11a6a39b384e46976b809495ce96c3de9a7278eaea78b055e33"
+        },
+        {
+          "path": "sac_recovered/episodes/00189_746060.json.gz",
+          "size": 212403,
+          "sha256": "e2efe583926b38532bc8ff316414d8bf9afb758492868c8e378cdce95d224716"
+        },
+        {
+          "path": "sac_recovered/episodes/00190_746061.json.gz",
+          "size": 214865,
+          "sha256": "d05081c2e1b489711ad44ae24b6e735ebfcfc5b9677264a42b9b52ecfbef97aa"
+        },
+        {
+          "path": "sac_recovered/episodes/00191_746062.json.gz",
+          "size": 181146,
+          "sha256": "ae0bcabf93e3e20cedb8abc37b859420375bbdfb68f92b50193093273caaf226"
+        },
+        {
+          "path": "sac_recovered/episodes/00192_746063.json.gz",
+          "size": 218164,
+          "sha256": "c7fadb830c131bf12ca730f24bd79fe7c21614d2423585641e1b56a71335c5b3"
+        },
+        {
+          "path": "sac_recovered/episodes/00193_746000.json.gz",
+          "size": 217268,
+          "sha256": "74ac43f7a06573b92f03ad2d0218ca4ac313959c0915bd47618241c727de116c"
+        },
+        {
+          "path": "sac_recovered/episodes/00194_746001.json.gz",
+          "size": 219129,
+          "sha256": "79d1fa9f386496bf4ed33401e466732cf4103e04f83cd436d41b1ff7e6c54519"
+        },
+        {
+          "path": "sac_recovered/episodes/00195_746002.json.gz",
+          "size": 181911,
+          "sha256": "c6001057ab6e02420cf7e3f7632d2c606563c77ed98daef453b2973da47cf2e8"
+        },
+        {
+          "path": "sac_recovered/episodes/00196_746003.json.gz",
+          "size": 215507,
+          "sha256": "6bff68df498d279882f80f58645668864d4609a6796542249d215c5865e0dc75"
+        },
+        {
+          "path": "sac_recovered/episodes/00197_746004.json.gz",
+          "size": 184012,
+          "sha256": "61a77b8ccabb43a0990f4169e0444985fa238dc4024bc43162a85ff0c325daf6"
+        },
+        {
+          "path": "sac_recovered/episodes/00198_746005.json.gz",
+          "size": 214714,
+          "sha256": "4e1be70dd691efc6cdf281b2bc182c412c0b025fc4e49c29fe07dfc9ec1ae596"
+        },
+        {
+          "path": "sac_recovered/episodes/00199_746006.json.gz",
+          "size": 219775,
+          "sha256": "5b8bac2406f5d4403c8cfe07163871652414be00dd2403e723cd031fe69230ef"
+        },
+        {
+          "path": "sac_recovered/episodes/00200_746007.json.gz",
+          "size": 216059,
+          "sha256": "5f3ec608aabb4a159e2fd2ffc0582be7ca392523b8a54b4fd35bebbc79d97324"
+        },
+        {
+          "path": "sac_recovered/episodes/00201_746008.json.gz",
+          "size": 212385,
+          "sha256": "49f57940071f549620491b6a973b68fa2bfbd035789c570086bd81e2769f460e"
+        },
+        {
+          "path": "sac_recovered/episodes/00202_746009.json.gz",
+          "size": 283393,
+          "sha256": "442e857debef5c9335bed494025f92ad6d643813cb7c7370203a877c769abe64"
+        },
+        {
+          "path": "sac_recovered/episodes/00203_746010.json.gz",
+          "size": 215985,
+          "sha256": "3821f4e2d0749f611678c6a9071142f341c104c73f596b97d9fb14bfb1dba2c8"
+        },
+        {
+          "path": "sac_recovered/episodes/00204_746011.json.gz",
+          "size": 218694,
+          "sha256": "b45cadde1cceaa62ceda807cc73ffd546b0b6256484f13ead285e66df5ab2b14"
+        },
+        {
+          "path": "sac_recovered/episodes/00205_746012.json.gz",
+          "size": 223280,
+          "sha256": "1f501818c50e2088c37e9d44476182ba3c473030e31b46fc1812dccedf66422e"
+        },
+        {
+          "path": "sac_recovered/episodes/00206_746013.json.gz",
+          "size": 185357,
+          "sha256": "1377f44667945a4c03b995e823502d553b6a43133152bbc6dfb63a5a17a32deb"
+        },
+        {
+          "path": "sac_recovered/episodes/00207_746014.json.gz",
+          "size": 216614,
+          "sha256": "c67966db20c56d298a4253f607daae5f634cd340d52d3676f4948d42c1efdc13"
+        },
+        {
+          "path": "sac_recovered/episodes/00208_746015.json.gz",
+          "size": 218277,
+          "sha256": "674d22f3f278f25078a790f7aeb4977d1c8fe571928144e313d3a5f964c3953a"
+        },
+        {
+          "path": "sac_recovered/episodes/00209_746016.json.gz",
+          "size": 224119,
+          "sha256": "4ea2665d622263af56e7967fbb3f7bcec3ae10ef49eead40781a777f040d7a8c"
+        },
+        {
+          "path": "sac_recovered/episodes/00210_746017.json.gz",
+          "size": 218046,
+          "sha256": "8ee7766a4568adf2f0c38305e964673b019b0ea60e75876e1f7ced52957ae9f5"
+        },
+        {
+          "path": "sac_recovered/episodes/00211_746018.json.gz",
+          "size": 217707,
+          "sha256": "35305f129984aa15952519d64ddc6eef8518fa455a65193be18a6156718ec8a3"
+        },
+        {
+          "path": "sac_recovered/episodes/00212_746019.json.gz",
+          "size": 217784,
+          "sha256": "3ac810ee8431db41750e320da6d282e2645321a79bd63bcec758d9f556d9d254"
+        },
+        {
+          "path": "sac_recovered/episodes/00213_746020.json.gz",
+          "size": 215261,
+          "sha256": "63ea2f8ec341d37c6db0d6d838c595ce18b4e5b18e14a18b49bc661f13917d45"
+        },
+        {
+          "path": "sac_recovered/episodes/00214_746021.json.gz",
+          "size": 214159,
+          "sha256": "576fd70dee371a9e70168eb7d50088c9220fb76baa3f119095355142e852df5f"
+        },
+        {
+          "path": "sac_recovered/episodes/00215_746022.json.gz",
+          "size": 219743,
+          "sha256": "41740fc97260e5148942cb6132a8390f50d8393ef61a088830087438ea7c4ab1"
+        }
+      ]
+    },
+    {
+      "archive": "RAW_06.tar.gz",
+      "size": 18904999,
+      "sha256": "cfcbd34419ac842648301fb90d9cb06e74696032ba021a0be3ce5860eb8eaad4",
+      "entries": [
+        {
+          "path": "sac_recovered/episodes/00216_746023.json.gz",
+          "size": 218415,
+          "sha256": "b7a103379c82e268f1eaeb0276f225a78f825124ce30f87dbfc7c43800440743"
+        },
+        {
+          "path": "sac_recovered/episodes/00217_746024.json.gz",
+          "size": 216600,
+          "sha256": "5c6bd627307a047ccc7fbf71506a5dabb7c6befa8b44745f73d0f8c971f159a0"
+        },
+        {
+          "path": "sac_recovered/episodes/00218_746025.json.gz",
+          "size": 214546,
+          "sha256": "2795196c5adb0e5a65fd89f9af8c4c9e86d0b031c3928820b406ae1ffe56b004"
+        },
+        {
+          "path": "sac_recovered/episodes/00219_746026.json.gz",
+          "size": 180330,
+          "sha256": "b3d7f8c5d989dac38e9c5420beb04acf89e2e38f5602eede27c182bf23ee3afe"
+        },
+        {
+          "path": "sac_recovered/episodes/00220_746027.json.gz",
+          "size": 218150,
+          "sha256": "987019ff540c55aada9e9d998fb7de0a725c68b59ff7b7da9bbd0273f2269f8f"
+        },
+        {
+          "path": "sac_recovered/episodes/00221_746028.json.gz",
+          "size": 195264,
+          "sha256": "0438b9080584a48f0c98cfdd73d89469ab492bb85a3616b77bdd1126f0ce86e9"
+        },
+        {
+          "path": "sac_recovered/episodes/00222_746029.json.gz",
+          "size": 219741,
+          "sha256": "dba66770e9294f4e130bd449a70ea3d1c70eb49ceaccfaac60b6a288173a3386"
+        },
+        {
+          "path": "sac_recovered/episodes/00223_746030.json.gz",
+          "size": 214696,
+          "sha256": "16273a9b20ebc2ba0b1880649cd3c500490f3d3426f76de7483f5655251d42c3"
+        },
+        {
+          "path": "sac_recovered/episodes/00224_746031.json.gz",
+          "size": 215459,
+          "sha256": "2a6daf44e7dc4149b16402a616a154338b2f646ba9cde4210ce448c2a77ff1e3"
+        },
+        {
+          "path": "sac_recovered/episodes/00225_746032.json.gz",
+          "size": 219134,
+          "sha256": "31de6d2c19bd7a965f8ae2944e99ec215ab1a4df59163788caf22f0902241f52"
+        },
+        {
+          "path": "sac_recovered/episodes/00226_746033.json.gz",
+          "size": 221618,
+          "sha256": "76ed5a34c5c5af9565c9bad66da1e730c3eb06ffab1f2e6cda6530846e53eff3"
+        },
+        {
+          "path": "sac_recovered/episodes/00227_746034.json.gz",
+          "size": 214436,
+          "sha256": "d1f0c08a266bf13128daa4cffdfc8970a49205ba3adb7ce27043eff775acdab7"
+        },
+        {
+          "path": "sac_recovered/episodes/00228_746035.json.gz",
+          "size": 215557,
+          "sha256": "d035b9083b051f91746c5b490b55fe55bb1e466ce5e3c8921e80d443c9b793ab"
+        },
+        {
+          "path": "sac_recovered/episodes/00229_746036.json.gz",
+          "size": 182381,
+          "sha256": "77dddbbcff1b21c73419fe03c443f4808cd7cb6470c91bbf9193dff9e132317e"
+        },
+        {
+          "path": "sac_recovered/episodes/00230_746037.json.gz",
+          "size": 177491,
+          "sha256": "8b8b9953ffa459706fb9bf8703055505a16b1dba01dbbf7fc94001a761320c07"
+        },
+        {
+          "path": "sac_recovered/episodes/00231_746038.json.gz",
+          "size": 172603,
+          "sha256": "5a7d58b5397e48f992c38554cc3b331d8c83f2f6ae4333b6ab7ea6418f8613d8"
+        },
+        {
+          "path": "sac_recovered/episodes/00232_746039.json.gz",
+          "size": 192198,
+          "sha256": "c65ce5cbc388bf39c58940e57dcd6deadd0a095a21fd251457e08602d9bd3086"
+        },
+        {
+          "path": "sac_recovered/episodes/00233_746040.json.gz",
+          "size": 216890,
+          "sha256": "fbcb8579670e5fec0f67c76cc1f05cdcca983399e263d30a76fecbf64934a56e"
+        },
+        {
+          "path": "sac_recovered/episodes/00234_746041.json.gz",
+          "size": 221155,
+          "sha256": "e147162bcce1405537f6d518eee1eb0978fb51595260ecbe54c6aa6b1c4e55f7"
+        },
+        {
+          "path": "sac_recovered/episodes/00235_746042.json.gz",
+          "size": 197442,
+          "sha256": "aae326d9982db25241bc9b6c5dffd142b7148602dce4e0e7e4a728c807baa339"
+        },
+        {
+          "path": "sac_recovered/episodes/00236_746043.json.gz",
+          "size": 216295,
+          "sha256": "8b8a05474aaf0e029069e4d1628f291be6fed76c42237a00348bb036a7cd774c"
+        },
+        {
+          "path": "sac_recovered/episodes/00237_746044.json.gz",
+          "size": 222559,
+          "sha256": "bf41bef72547590fa315e84e032f8710bb7afa181a5a16c1bf26d849a3dd3d14"
+        },
+        {
+          "path": "sac_recovered/episodes/00238_746045.json.gz",
+          "size": 216905,
+          "sha256": "f96b4909c640f65b305119be9dae77ee617c46b795fbbb6f699529bd82094eee"
+        },
+        {
+          "path": "sac_recovered/episodes/00239_746046.json.gz",
+          "size": 176597,
+          "sha256": "2d27a60d81540da50a195de773a2e38899d6730ca0225210ff236854c55956e0"
+        },
+        {
+          "path": "sac_recovered/episodes/00240_746047.json.gz",
+          "size": 182574,
+          "sha256": "5a9550bafea92effcf9c00281ff9963bafb410af37e12eaf98c283063d45f308"
+        },
+        {
+          "path": "sac_recovered/episodes/00241_746048.json.gz",
+          "size": 214573,
+          "sha256": "2982baae83b259223ff4af60702d8c095c1e81de1ba32445e656e09ce12d246f"
+        },
+        {
+          "path": "sac_recovered/episodes/00242_746049.json.gz",
+          "size": 223357,
+          "sha256": "96d33ffbcd4b3d9c1deef0a94033141521cc778429a67f43875a1f499630dfcc"
+        },
+        {
+          "path": "sac_recovered/episodes/00243_746050.json.gz",
+          "size": 219544,
+          "sha256": "2800ec05af69489eb7889d92fd75c1e3a0250810e95b7239a733336861fa664d"
+        },
+        {
+          "path": "sac_recovered/episodes/00244_746051.json.gz",
+          "size": 175386,
+          "sha256": "fd30bd93c6713c66ca4834611cc6f19ee928deb46ab73face2da560db59c5158"
+        },
+        {
+          "path": "sac_recovered/episodes/00245_746052.json.gz",
+          "size": 218589,
+          "sha256": "1c7f7b1e84b4e6b05a62652255329f2eebe4677fd626c234bcc5b69168f625f5"
+        },
+        {
+          "path": "sac_recovered/episodes/00246_746053.json.gz",
+          "size": 216959,
+          "sha256": "2a156b8d9c1767126464d05f9149373d2e2dda9fb759c33041701b62de8bb6f1"
+        },
+        {
+          "path": "sac_recovered/episodes/00247_746054.json.gz",
+          "size": 216661,
+          "sha256": "6f08d1ac934a19f8c8756ab37f3f1afcfb6066d9eb72e04a41915d32d4ae47a2"
+        },
+        {
+          "path": "sac_recovered/episodes/00248_746055.json.gz",
+          "size": 214629,
+          "sha256": "e7b2e1f380353eb976f48cb68c1403ef72e6891c6d7a2c8b5671c12708c60287"
+        },
+        {
+          "path": "sac_recovered/episodes/00249_746056.json.gz",
+          "size": 215613,
+          "sha256": "fe8275a52fe1131ab00a79348c1e302bd486faa00533734efb71d86804172f8e"
+        },
+        {
+          "path": "sac_recovered/episodes/00250_746057.json.gz",
+          "size": 224221,
+          "sha256": "0a1b538cbb9813a9cb8197cc8e48c721a026e8cc747377a9883216abac545c7d"
+        },
+        {
+          "path": "sac_recovered/episodes/00251_746058.json.gz",
+          "size": 213520,
+          "sha256": "33c6f39883456069b3c4f1ec59ba856edc8c7ee74ad6e90cff42a57e80ae6b1d"
+        },
+        {
+          "path": "sac_recovered/episodes/00252_746059.json.gz",
+          "size": 221188,
+          "sha256": "0e85f1ceea50e8939fe175c02b7c1862f1ba08275c793bc661a93dd1b05a2fd3"
+        },
+        {
+          "path": "sac_recovered/episodes/00253_746060.json.gz",
+          "size": 212975,
+          "sha256": "534518a7d4cdc8b4e82b6e694f6cc06fd0a663ca6939d888f296194d0e0902e4"
+        },
+        {
+          "path": "sac_recovered/episodes/00254_746061.json.gz",
+          "size": 216177,
+          "sha256": "1c9f4f9d1893cc5a8990d7082527338482e951f75722c2d748bacba41a9cb3a6"
+        },
+        {
+          "path": "sac_recovered/episodes/00255_746062.json.gz",
+          "size": 178262,
+          "sha256": "dbe6389cafef0179a2e7fac078fe556da4a288e9418b753f1aa47c4f1090b4eb"
+        },
+        {
+          "path": "sac_recovered/episodes/00256_746063.json.gz",
+          "size": 218768,
+          "sha256": "d05485a8ee6da4d6eb472110d33a3626fd1944eae08060152cde412391c64c41"
+        },
+        {
+          "path": "sac_recovered/episodes/00257_746000.json.gz",
+          "size": 216388,
+          "sha256": "88d10ef3fa15dceab816012f0c665948967e18693eac06ffae0f6eb5d4867112"
+        },
+        {
+          "path": "sac_recovered/episodes/00258_746001.json.gz",
+          "size": 216466,
+          "sha256": "d0dc516aba1eabe7d8531969607d64df4549935176d2cb47c02254b5e38e36db"
+        },
+        {
+          "path": "sac_recovered/episodes/00259_746002.json.gz",
+          "size": 181315,
+          "sha256": "1fd15141448aacdbb70f19e1e8e5794c1e7a460278885f0a77496d6328c12a67"
+        },
+        {
+          "path": "sac_recovered/episodes/00260_746003.json.gz",
+          "size": 215243,
+          "sha256": "54f345ab267adbb65599663841f18beb38387d2443f8860478eb9177cc121fe8"
+        },
+        {
+          "path": "sac_recovered/episodes/00261_746004.json.gz",
+          "size": 183685,
+          "sha256": "111284734c2b99c431dc92260e6c918750d6ff03a013f5f14040b41588a149eb"
+        },
+        {
+          "path": "sac_recovered/episodes/00262_746005.json.gz",
+          "size": 214836,
+          "sha256": "5fa8673d8ce261515eeae4ef13093e1d017d0812ddac83c89b8e08a2d7084bf3"
+        },
+        {
+          "path": "sac_recovered/episodes/00263_746006.json.gz",
+          "size": 218802,
+          "sha256": "c883b4cb57348f78a986ce5570ab7e8498194a61c6985606b0cdccc731ce363d"
+        },
+        {
+          "path": "sac_recovered/episodes/00264_746007.json.gz",
+          "size": 215942,
+          "sha256": "72e0dba0719e4b0cadf7ee2c72d20e652660eb68e4ed544efe26064317696d02"
+        },
+        {
+          "path": "sac_recovered/episodes/00265_746008.json.gz",
+          "size": 214912,
+          "sha256": "fa9f01b4ed4f60b58c4a2c4cf3df4ad39a2bf9045ee3240845a56e865ba6a083"
+        },
+        {
+          "path": "sac_recovered/episodes/00266_746009.json.gz",
+          "size": 218753,
+          "sha256": "0288e744e7c1f4ae97e989ad872035559c8caee1dad4203d4a3ca9ad5ef4d33a"
+        },
+        {
+          "path": "sac_recovered/episodes/00267_746010.json.gz",
+          "size": 216412,
+          "sha256": "39e67679ff8313a8b0f79dad5b257c9dad48376f17f54676a38214e225762667"
+        },
+        {
+          "path": "sac_recovered/episodes/00268_746011.json.gz",
+          "size": 219347,
+          "sha256": "31f9308dddc87ecbd058326e5f346a975d18b6290ae2538a5c3b2f9c4bb35deb"
+        },
+        {
+          "path": "sac_recovered/episodes/00269_746012.json.gz",
+          "size": 193517,
+          "sha256": "16107109396b9b50181cf48cfce7e04ecefede9d1dc27cbbe32e8d67bce59517"
+        },
+        {
+          "path": "sac_recovered/episodes/00270_746013.json.gz",
+          "size": 184112,
+          "sha256": "4904ffd8884a42b95c705ff7cf0e399935d1aff81289dec73978514ab8fa9495"
+        },
+        {
+          "path": "sac_recovered/episodes/00271_746014.json.gz",
+          "size": 216616,
+          "sha256": "fa3a1c49b59e673dc8f3e668c07f7c9a04f3cd543fca1481e594e7f4e69eab47"
+        },
+        {
+          "path": "sac_recovered/episodes/00272_746015.json.gz",
+          "size": 217865,
+          "sha256": "917e06968661e178c997a50c4463cab4f880975c41e0a99ed8e08d8f0c70d356"
+        },
+        {
+          "path": "sac_recovered/episodes/00273_746016.json.gz",
+          "size": 223378,
+          "sha256": "330a202486c9379b3abeb708a27061d071abc346009031125199cf0765019365"
+        },
+        {
+          "path": "sac_recovered/episodes/00274_746017.json.gz",
+          "size": 218066,
+          "sha256": "7a03cc19f8704aa6aadf16fcc936508c82ad2afee18851079a3f92895f17dc43"
+        },
+        {
+          "path": "sac_recovered/episodes/00275_746018.json.gz",
+          "size": 217925,
+          "sha256": "78ec4038784df68c76a25e6a37ac6ce443d63fed6550c67576cc5cc7e08b6168"
+        },
+        {
+          "path": "sac_recovered/episodes/00276_746019.json.gz",
+          "size": 217545,
+          "sha256": "5a4deab6e97adb85f8a9472c0a1edf788c7e27c4b3781225bf746f7cd4a54981"
+        },
+        {
+          "path": "sac_recovered/episodes/00277_746020.json.gz",
+          "size": 216701,
+          "sha256": "f0ae57c54cf210871af1fa16c8358f8784d56dad243ae7a46700caee80645bae"
+        },
+        {
+          "path": "sac_recovered/episodes/00278_746021.json.gz",
+          "size": 214955,
+          "sha256": "285abfc38e113d091b3df3358c05d035a7005c6f70645be78bbed7c79899bd36"
+        },
+        {
+          "path": "sac_recovered/episodes/00279_746022.json.gz",
+          "size": 218935,
+          "sha256": "c625273a72d71fe81910fc9e524302f6291a1a024cdfc83e09a7d4bb44f2a9e9"
+        },
+        {
+          "path": "sac_recovered/episodes/00280_746023.json.gz",
+          "size": 218410,
+          "sha256": "95d8f4dac56d327e17bfadcdf0e119cf95e963218685f12c3d40b9ebfd3a75ed"
+        },
+        {
+          "path": "sac_recovered/episodes/00281_746024.json.gz",
+          "size": 218755,
+          "sha256": "fb8a1e16af15219d9addba5365696f62cc5ca556d7a727df9380e8901170fdd2"
+        },
+        {
+          "path": "sac_recovered/episodes/00282_746025.json.gz",
+          "size": 216118,
+          "sha256": "b08c3ae1437b73bdb4205cae753d5a7ccdf5a4ef556cc8c40e4b38b179e41123"
+        },
+        {
+          "path": "sac_recovered/episodes/00283_746026.json.gz",
+          "size": 179719,
+          "sha256": "ddf0775778ab7493ad69a35c18adec1e342be078328d7a7ec9281dc9c685c523"
+        },
+        {
+          "path": "sac_recovered/episodes/00284_746027.json.gz",
+          "size": 218160,
+          "sha256": "6d40e2f9912da6e317026a964c7882f15e2c1d5aa95ae32102b6880f4a2d0345"
+        },
+        {
+          "path": "sac_recovered/episodes/00285_746028.json.gz",
+          "size": 197798,
+          "sha256": "19f0cad1e65ef5af739cd77c2363bf67ec2511734992e79f14fef56b2d885863"
+        },
+        {
+          "path": "sac_recovered/episodes/00286_746029.json.gz",
+          "size": 219229,
+          "sha256": "b4656c1091c05f78eba49dbfe5c838caac00dca8b990a01b76ba71d2b9673e44"
+        },
+        {
+          "path": "sac_recovered/episodes/00287_746030.json.gz",
+          "size": 215060,
+          "sha256": "db6cfba8d64b89c0ab8114af84a3340d442c56c913b406947e26cec59f426c37"
+        },
+        {
+          "path": "sac_recovered/episodes/RESULTS.json",
+          "size": 171673,
+          "sha256": "bc91c7b012a47d562d43b8c7d2f0f7e589f15f20a9d21a48f6e3bffd495772a1"
+        },
+        {
+          "path": "sac_recovered/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "sac_recovered/program_multiskill_pull.py",
+          "size": 13191,
+          "sha256": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b"
+        },
+        {
+          "path": "sac_recovered/program_sac_policy.py",
+          "size": 1016,
+          "sha256": "2071a7d9bac3bb439c60a64238a825f3b70fdb3b79fd83eff6a817a02448c611"
+        },
+        {
+          "path": "sac_recovered/program_stap_learning.py",
+          "size": 12033,
+          "sha256": "9968584bff18187d09c4b427f878435f31d024ae8e59b6919bb2b3dcebd6fd77"
+        },
+        {
+          "path": "sac_recovered/program_stap_tool.py",
+          "size": 17714,
+          "sha256": "2c4bc89af59170a7231a7910027ea8731a9ff8d809c10be146e49b79918ffce9"
+        },
+        {
+          "path": "sac_recovered/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "sac_recovered/program_tool_contract_control.py",
+          "size": 3687,
+          "sha256": "2717ae3ce7c080255e4c5499704bb31b66e7e4ab5dfa49f398da624bb662cbbc"
+        },
+        {
+          "path": "sac_recovered/program_tool_effect_probe.py",
+          "size": 5490,
+          "sha256": "3e52f6c34798ad41119f8ba59d48fc437acdef0d1d809125b1d2d69f3a25210a"
+        },
+        {
+          "path": "sac_recovered/program_tool_smdp_sac.py",
+          "size": 8605,
+          "sha256": "df196c17cb44b21816b3ad5a49cdd7256d42a53bbf6b69b302725eea6ce93d28"
+        },
+        {
+          "path": "sac_recovered/pull_tool_physics.py",
+          "size": 13091,
+          "sha256": "f15e019e80aa05716dffe8895f6ef3f1b90658b955135eebe10abc7c951b09e3"
+        },
+        {
+          "path": "wide/745000_m1.0_g0.035_corrected_feedback.json.gz",
+          "size": 220653,
+          "sha256": "ca1590e41b7a3c39d4120cfd587b4f54d98bc4fa229932d733ff9084f7b5e0d0"
+        },
+        {
+          "path": "wide/745000_m1.0_g0.035_corrected_wide.json.gz",
+          "size": 218630,
+          "sha256": "65942d81b17e3127bb5db5f896efdbb6a2521fd7dacaab9f2390366349224641"
+        },
+        {
+          "path": "wide/745000_m1.0_g0.07_corrected_feedback.json.gz",
+          "size": 216969,
+          "sha256": "3ef6261e796dec20c395f1b0a3241893a99927dc263eb30447d128ae28f99ef2"
+        },
+        {
+          "path": "wide/745000_m1.0_g0.07_corrected_wide.json.gz",
+          "size": 220886,
+          "sha256": "3a40367542fb6592b842adfe0b6dcc56d4a9e1d8e25982fe93613401ae2f029f"
+        },
+        {
+          "path": "wide/745000_m1.0_g0.105_corrected_feedback.json.gz",
+          "size": 221116,
+          "sha256": "a671bc604f7d64a2ecd34c3ff9c408c0e0338db5eca197a97620dee9d51771b3"
+        },
+        {
+          "path": "wide/745000_m1.0_g0.105_corrected_wide.json.gz",
+          "size": 220567,
+          "sha256": "512a9b4599adc0b88a0f661f4d70633d651a86ab74227b39fe4c0070bded7f1f"
+        },
+        {
+          "path": "wide/746002_m1.0_g0.035_corrected_feedback.json.gz",
+          "size": 210370,
+          "sha256": "a02c1e755114c74f55151762b8744ab59049a6cf5030fd70007f0e7ac5a4aeed"
+        },
+        {
+          "path": "wide/746002_m1.0_g0.035_corrected_wide.json.gz",
+          "size": 223749,
+          "sha256": "3259f4703a82ce95d18a40022af7bbf4fbca555d35ca7c7ca9dbb3452b2bf585"
+        },
+        {
+          "path": "wide/746002_m1.0_g0.07_corrected_feedback.json.gz",
+          "size": 178595,
+          "sha256": "bc543ea02cfda306791c759c315a44826bd7421aa7f2d7c1860c0d37a89bbbe7"
+        },
+        {
+          "path": "wide/746002_m1.0_g0.07_corrected_wide.json.gz",
+          "size": 220529,
+          "sha256": "8d3f6853d4067b2e5368bcfe8f49fd432cf507f78200fccbf54fecd6dfa43fe1"
+        },
+        {
+          "path": "wide/746002_m1.0_g0.105_corrected_feedback.json.gz",
+          "size": 181854,
+          "sha256": "38da7927d4dd1f83a1d8f14410b6b07ab5f817e45796e20625ed003fe3379bbb"
+        },
+        {
+          "path": "wide/746002_m1.0_g0.105_corrected_wide.json.gz",
+          "size": 221342,
+          "sha256": "5721d58a057bbbcaaeacf976e2352608009cb238c7fe135218e0f50708b9965d"
+        },
+        {
+          "path": "wide/746204_m1.0_g0.035_corrected_feedback.json.gz",
+          "size": 195573,
+          "sha256": "4138c3f57f50a3dd79fde0ea0e8fb9ec7442c5ddd036a43523920d61432ad45c"
+        },
+        {
+          "path": "wide/746204_m1.0_g0.035_corrected_wide.json.gz",
+          "size": 204290,
+          "sha256": "834dfc638163afc45fb7a81a7fd87d9beae3bf57cde65aad18d6870d900057dd"
+        },
+        {
+          "path": "wide/746204_m1.0_g0.07_corrected_feedback.json.gz",
+          "size": 183067,
+          "sha256": "b49422e653f2d7bd7685d3e651217d4b5043c377a44d3e5310128912b520afa2"
+        },
+        {
+          "path": "wide/746204_m1.0_g0.07_corrected_wide.json.gz",
+          "size": 209147,
+          "sha256": "552a4f2bb7806fa91a1a8c6228b9f9a6d6eb3fa0714c9e612be7cf42bb804000"
+        },
+        {
+          "path": "wide/746204_m1.0_g0.105_corrected_feedback.json.gz",
+          "size": 182094,
+          "sha256": "f5674a62af68a1a48cef93a248a804e340f1e52da286ebc7fba0cfb702e91f1f"
+        },
+        {
+          "path": "wide/746204_m1.0_g0.105_corrected_wide.json.gz",
+          "size": 180925,
+          "sha256": "a263a141abb6f4e7694a128a910994ec7bc5b4bc0f36865f6233764a17c3b9cb"
+        },
+        {
+          "path": "wide/PROTOCOL.json",
+          "size": 994,
+          "sha256": "254f27ecef8799eefc54e213a333b2b32223eb226412a898456190df976a2b28"
+        },
+        {
+          "path": "wide/RESULTS.json",
+          "size": 85020,
+          "sha256": "9bb644c086c5b81dacc89d26b76200cb1b8c595ae1b1c724eef9a405b70ae18c"
+        },
+        {
+          "path": "wide/program_multiskill_contact_probe.py",
+          "size": 3142,
+          "sha256": "a040557b7ed784d1d011825446852c1ce34ba390484dd39ffaaa8cc3135c98d9"
+        },
+        {
+          "path": "wide/program_multiskill_pull.py",
+          "size": 13191,
+          "sha256": "2499cec023492862415c1b5d112b94d66ef8618df7eeebd2a8887aa93288522b"
+        },
+        {
+          "path": "wide/program_stap_tool.py",
+          "size": 18105,
+          "sha256": "f729bc7d4f348890210a9299702efc21d4e39af5ba3f5b8f6c044626d49b432c"
+        },
+        {
+          "path": "wide/program_tool_all_contacts.py",
+          "size": 1340,
+          "sha256": "3c5eda30124ea2bbc25c8c83078c89790c0c3919ed4595e0391c34abd0d892d6"
+        },
+        {
+          "path": "wide/program_tool_contract_control.py",
+          "size": 4099,
+          "sha256": "65c77cabe94ea57ce93a937e8ea52499326370a132614b31f7fc58c93e8d57e2"
+        },
+        {
+          "path": "wide/program_tool_effect_probe.py",
+          "size": 5490,
+          "sha256": "3e52f6c34798ad41119f8ba59d48fc437acdef0d1d809125b1d2d69f3a25210a"
+        },
+        {
+          "path": "wide/pull_tool_physics.py",
+          "size": 13091,
+          "sha256": "f15e019e80aa05716dffe8895f6ef3f1b90658b955135eebe10abc7c951b09e3"
+        }
+      ]
+    }
+  ],
+  "source_scope": "Public ManiSkill physical simulation only; no site data",
+  "source_copy_note": "Training/grid source snapshots copied at start; pilot/effect wrapper and evaluation entry copied at end. Later unused optional flags exist in final source; do not infer exact earlier dependency hashes where not captured. All raw scripts/logs preserved."
+}

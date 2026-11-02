@@ -42,7 +42,7 @@ def check_stability(env,p):
     env.stability=dict(pass_=streak>=3,checks=rows)
     return dict(pass_=streak>=3,**{'pass':streak>=3},checks=rows)
 
-def execute_chain(env, seed, grasp_x=None, hook_y=None, pull_distance=.27, pull_policy='fixed',transfer_height=.08,transfer_stride=1):
+def execute_chain_steps(env, seed, grasp_x=None, hook_y=None, pull_distance=.27, pull_policy='fixed',transfer_height=.08,transfer_stride=1):
     requested_grasp=grasp_x;requested_hook=hook_y
     lookahead=grasp_x is None;rule=True;feedback=True;yaw=0.
     grasp_x=.07 if grasp_x is None else float(grasp_x);hook_y=-.065 if hook_y is None else float(hook_y)
@@ -50,7 +50,7 @@ def execute_chain(env, seed, grasp_x=None, hook_y=None, pull_distance=.27, pull_
     env.reset(seed=seed);u=env.unwrapped;p=TracePlanner(env,vis=False,base_pose=u.agent.robot.pose,visualize_target_grasp_pose=False,print_env_info=False,joint_vel_limits=1.8,joint_acc_limits=env.acceleration);p.manual=True;p.stride=1
     selector=getattr(env,'parameter_selector',None)
     if selector is not None:
-        grasp_x=float(selector.choose(env,0));requested_grasp=grasp_x;lookahead=False
+        grasp_x=float((yield 0));requested_grasp=grasp_x;lookahead=False
     def move(pose,label):
         env.phase=label
         if p.move_to_pose_with_screw(pose)==-1:raise Failure('PLAN_'+label)
@@ -60,7 +60,7 @@ def execute_chain(env, seed, grasp_x=None, hook_y=None, pull_distance=.27, pull_
         if lookahead:
             trials=[];start=time.monotonic();tool=sp(u.l_shape_tool)
             for gx in getattr(env,'grasp_candidates',[.07,.105]):
-                closing=np.array([0.,1.,0.]);closing*=1 if np.dot(closing,quat2mat(sp(u.agent.tcp).q)[:,1])>=0 else -1
+                closing=np.array([0.,1.,0.]);closing*=1 if np.dot(closing,quat2mat(sp(u.agent.tcp).q)[:,1])>=0 else -1;closing*=(-1 if getattr(env,'grasp_flip',False) else 1)
                 predicted_grasp=u.agent.build_grasp_pose(np.array([0,0,-1]),closing,tool.p+[gx,0,0]);att=predicted_grasp.inv()*tool
                 quat=axangle2quat([0,0,1],cube_yaw);origin=sp(u.cube).p-quat2mat(quat)@np.array([.126,.0625,0]);origin[2]=.026;target=sapien.Pose(origin,quat)*att.inv()
                 rr=p.planner.plan_screw(np.r_[target.p,target.q],np.array(serial(u.agent.robot.get_qpos()[0])),time_step=u.control_timestep,use_point_cloud=False)
@@ -72,7 +72,7 @@ def execute_chain(env, seed, grasp_x=None, hook_y=None, pull_distance=.27, pull_
             selection=selector.method if selector is not None else ('measured_geometry_lookahead' if lookahead else 'predeclared_parameter_intervention'),
             precondition='tool on tabletop; handle grasp point within [0.035,0.105]m',
             next_skill_requirement='retain tool through lift and reach hook/pull poses within native budget'))
-        tool=sp(u.l_shape_tool);closing=np.array([0.,1.,0.]);closing*=1 if np.dot(closing,quat2mat(sp(u.agent.tcp).q)[:,1])>=0 else -1;g=u.agent.build_grasp_pose(np.array([0,0,-1]),closing,tool.p+np.array([grasp_x,0,0]));move(g*sapien.Pose([0,0,-.065]),'REACH');move(g,'DESCEND');p.close_gripper(t=6)
+        tool=sp(u.l_shape_tool);closing=np.array([0.,1.,0.]);closing*=1 if np.dot(closing,quat2mat(sp(u.agent.tcp).q)[:,1])>=0 else -1;closing*=(-1 if getattr(env,'grasp_flip',False) else 1);g=u.agent.build_grasp_pose(np.array([0,0,-1]),closing,tool.p+np.array([grasp_x,0,0]));move(g*sapien.Pose([0,0,-.065]),'REACH');move(g,'DESCEND');p.close_gripper(t=6)
         if not bool(u.agent.is_grasping(u.l_shape_tool)[0]):raise Failure('TOOL_NOT_GRASPED')
         move(sapien.Pose(sp(u.agent.tcp).p+[0,0,.055],sp(u.agent.tcp).q),'LIFT')
         if not bool(u.agent.is_grasping(u.l_shape_tool)[0]):raise Failure('TOOL_LOST_ON_LIFT')
@@ -82,8 +82,10 @@ def execute_chain(env, seed, grasp_x=None, hook_y=None, pull_distance=.27, pull_
             physical_success=True,observed_postcondition='retained grasp and measured stability',stability=stable,
             measurement=env.measure(),remaining_steps=100-len(env.records)))
         if selector is not None:
-            requested_hook=selector.choose(env,1)
+            requested_hook=(yield 1)
             if requested_hook is not None:hook_y=float(requested_hook)
+        hook_height=float(getattr(env,'hook_height',.026))
+        if getattr(env,'successor_accel',None) is not None:p.planner.joint_acc_limits=np.ones_like(p.planner.joint_acc_limits)*float(env.successor_accel)
         attached=sp(u.agent.tcp).inv()*sp(u.l_shape_tool)
         def distance_for_angle(angle):
             if env.target_y is not None:
@@ -95,7 +97,7 @@ def execute_chain(env, seed, grasp_x=None, hook_y=None, pull_distance=.27, pull_
             direction=np.array([np.cos(angle),np.sin(angle)])
             along=float(v@direction);perpendicular2=float(v@v)-along*along
             distance=along-np.sqrt(max(0.,.58**2-perpendicular2))
-            return float(np.clip(distance,.25,.29))
+            return float(np.clip(distance,.25,float(getattr(env,'pull_limit',.29))))
         # Task-conditioned bounded model-based search; no physical outcome lookup.
         tool_yaw=cube_yaw+yaw
         if rule:
@@ -104,11 +106,15 @@ def execute_chain(env, seed, grasp_x=None, hook_y=None, pull_distance=.27, pull_
             original_hook=(-.065+.01*selector.logs[0]['planned_actions'][1][0]) if guard else None
             hook_candidates=[-.055,-.065,-.075] if requested_hook is None else [float(requested_hook)]
             if guard and abs(original_hook-requested_hook)>1e-8:hook_candidates.append(original_hook)
-            for ang in [nominal_yaw-.12,nominal_yaw,nominal_yaw+.12]:
+            angles=[nominal_yaw-.12,nominal_yaw,nominal_yaw+.12]
+            if getattr(env,'expand_geometric_yaw',False):
+                radial=float(np.arctan2(*(sp(u.cube).p[:2]-sp(u.agent.robot).p[:2])[::-1]))
+                angles.extend([radial,radial-.35,radial-.7])
+            for ang in angles:
                 for hy in hook_candidates:
                     quat=axangle2quat([0,0,1],ang);R=quat2mat(quat);extent=.02*(abs(np.cos(cube_yaw-ang))+abs(np.sin(cube_yaw-ang)));origin=sp(u.cube).p-R@np.array([.15-extent-.004,-hy,0]);origin[2]=transfer_height
                     candidate_distance=distance_for_angle(ang)
-                    goals=[origin.copy(),np.r_[origin[:2],.026],np.r_[origin[:2],.026]+R@np.array([-candidate_distance,0,0])]
+                    goals=[origin.copy(),np.r_[origin[:2],hook_height],np.r_[origin[:2],hook_height]+R@np.array([-candidate_distance,0,0])]
                     qq=np.array(serial(u.agent.robot.get_qpos()[0]));cost=0;ok=True
                     for goal in goals:
                         target=sapien.Pose(goal,quat)*attached.inv();res=p.planner.plan_screw(np.r_[target.p,target.q],qq,time_step=u.control_timestep,use_point_cloud=False)
@@ -125,7 +131,7 @@ def execute_chain(env, seed, grasp_x=None, hook_y=None, pull_distance=.27, pull_
                 best=min(good,key=lambda c:(c['predicted_steps'],abs(c['angle']),abs(c['hook_y']+.065)));tool_yaw=best['angle'];hook_y=best['hook_y']
             env.plans.append(dict(phase='SEARCH',step=len(env.records),planning_wall_s=time.monotonic()-start,candidates=candidates,selected=[tool_yaw,hook_y]))
         env.decisions.append(dict(stage=1,skill='USE_TOOL',boundary_step=len(env.records),
-            parameters=dict(tool_yaw_rad=float(tool_yaw),hook_y_m=float(hook_y),pull_distance_m=distance_for_angle(tool_yaw),pull_policy=pull_policy,transfer_height_m=transfer_height,transfer_path_stride=transfer_stride),
+            parameters=dict(tool_yaw_rad=float(tool_yaw),hook_y_m=float(hook_y),hook_height_m=hook_height,pull_distance_m=distance_for_angle(tool_yaw),pull_policy=pull_policy,transfer_height_m=transfer_height,transfer_path_stride=transfer_stride),
             contact_observation_valid=True,
             observation=env.measure(),previous_skill_result=env.skill_results[-1],
             selection=selector.method if selector is not None else ('measured_attachment_geometric_search' if requested_hook is None else 'hook_parameter_intervention_with_yaw_search'),
@@ -140,8 +146,11 @@ def execute_chain(env, seed, grasp_x=None, hook_y=None, pull_distance=.27, pull_
             try:move(sapien.Pose(xyz,tool_quat)*attached.inv(),label)
             finally:p.stride=previous_stride
         cube=sp(u.cube).p;origin=cube-R@np.array([.15-extent-.004,-hook_y,0]);origin[2]=transfer_height;tool_goal(origin,'TRANSFER')
-        cube=sp(u.cube).p;origin=cube-R@np.array([.15-extent-.004,-hook_y,0]);origin[2]=.026;tool_goal(origin,'HOOK')
+        cube=sp(u.cube).p;origin=cube-R@np.array([.15-extent-.004,-hook_y,0]);origin[2]=hook_height;tool_goal(origin,'HOOK')
         selected_distance=env.decisions[-1]['parameters']['pull_distance_m']
+        if getattr(env,'recompute_pull',False):
+            selected_distance=distance_for_angle(tool_yaw)
+            env.plans.append(dict(phase='POST_CONTACT_PULL_UPDATE',step=len(env.records),actual_cube=rawpose(sp(u.cube)),selected_distance=selected_distance,uses_future_success=False))
         origin=sp(u.l_shape_tool).p.copy()+R@np.array([-selected_distance,0,0]);tool_goal(origin,'PULL')
         # Shared observed-goal correction, never native-success oracle.
         if env.target_y is not None and env.target_feedback:
@@ -153,6 +162,16 @@ def execute_chain(env, seed, grasp_x=None, hook_y=None, pull_distance=.27, pull_
                 tool_goal(xyz,'TARGET_FEEDBACK')
 
     finally:p.close()
+
+
+def execute_chain(env,*args,**kwargs):
+    """Compatibility driver; selectors see the same real physical boundaries."""
+    flow=execute_chain_steps(env,*args,**kwargs)
+    try:
+        stage=next(flow)
+        while True:stage=flow.send(env.parameter_selector.choose(env,stage))
+    except StopIteration:return
+    finally:flow.close()
 
 
 def main():

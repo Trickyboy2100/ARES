@@ -1,0 +1,102 @@
+[
+  {
+    "seed": 745000,
+    "mass": 0.75,
+    "grasp": 0.035,
+    "initial_same": true,
+    "full_record_equal": true,
+    "first_difference_step": null,
+    "different_fields": [],
+    "max_q_error": 0.0,
+    "success_same": true
+  },
+  {
+    "seed": 745000,
+    "mass": 0.75,
+    "grasp": 0.105,
+    "initial_same": true,
+    "full_record_equal": true,
+    "first_difference_step": null,
+    "different_fields": [],
+    "max_q_error": 0.0,
+    "success_same": true
+  },
+  {
+    "seed": 745010,
+    "mass": 0.75,
+    "grasp": 0.035,
+    "initial_same": true,
+    "full_record_equal": true,
+    "first_difference_step": null,
+    "different_fields": [],
+    "max_q_error": 0.0,
+    "success_same": true
+  },
+  {
+    "seed": 745010,
+    "mass": 0.75,
+    "grasp": 0.105,
+    "initial_same": true,
+    "full_record_equal": true,
+    "first_difference_step": null,
+    "different_fields": [],
+    "max_q_error": 0.0,
+    "success_same": true
+  },
+  {
+    "seed": 745000,
+    "mass": 1.25,
+    "grasp": 0.035,
+    "initial_same": true,
+    "full_record_equal": true,
+    "first_difference_step": null,
+    "different_fields": [],
+    "max_q_error": 0.0,
+    "success_same": true
+  },
+  {
+    "seed": 745000,
+    "mass": 1.25,
+    "grasp": 0.105,
+    "initial_same": true,
+    "full_record_equal": true,
+    "first_difference_step": null,
+    "different_fields": [],
+    "max_q_error": 0.0,
+    "success_same": true
+  },
+  {
+    "seed": 745010,
+    "mass": 1.25,
+    "grasp": 0.035,
+    "initial_same": true,
+    "full_record_equal": false,
+    "first_difference_step": 73,
+    "different_fields": [
+      "action",
+      "q",
+      "qvel",
+      "tcp",
+      "tool",
+      "cube",
+      "tcp_T_tool",
+      "tool_linear_velocity",
+      "tool_angular_velocity",
+      "cube_linear_velocity",
+      "physics_substep_contacts"
+    ],
+    "max_q_error": 0.156972736120224,
+    "success_same": true
+  },
+  {
+    "seed": 745010,
+    "mass": 1.25,
+    "grasp": 0.105,
+    "initial_same": true,
+    "full_record_equal": true,
+    "first_difference_step": null,
+    "different_fields": [],
+    "max_q_error": 0.0,
+    "success_same": true
+  }
+]

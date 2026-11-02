@@ -20,7 +20,7 @@ def sp(actor):return actor.pose.sp
 def rawpose(p):return np.r_[p.p,p.q].tolist()
 
 class Recorder(gym.Wrapper):
-    def __init__(self,env):super().__init__(env);self.horizon={'PullCubeTool-v1':100,'PlugCharger-v1':200,'ARES-ToolLoad-v0':100}[env.unwrapped.spec.id];self.video=None;self.phase='RESET';self.records=[];self.plans=[];self.writer=None
+    def __init__(self,env):super().__init__(env);self.horizon={'PullCubeTool-v1':100,'PlugCharger-v1':200,'ARES-ToolLoad-v0':100,'PokeCube-v1':50}[env.unwrapped.spec.id];self.video=None;self.phase='RESET';self.records=[];self.plans=[];self.writer=None
     def reset(self,**kwargs):
         r=self.env.reset(**kwargs);self.records=[];self.plans=[];self.decisions=[];self.phase='RESET';self.initial=serial(self.unwrapped.get_state_dict());self.initial_sha=hashlib.sha256(json.dumps(self.initial,sort_keys=True).encode()).hexdigest();self.initial_measure=self.measure();return r
     def measure(self):
