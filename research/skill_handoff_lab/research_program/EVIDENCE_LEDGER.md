@@ -78,3 +78,13 @@ uncertainty & limitation | exact raw path/hash | science decision`。
 ## 2026-11-02｜累计物理探索：后继朝向差异被强几何解释
 
 [关键图、同初态完整视频与原始证据](evidence/EXP-003/2026-11-02/pyramid_contract/README.md)。先执行新增机会脚本，并核对96原始工具轨迹、576旧Pyramid终态及26历史轨迹SHA。新增90真实回合/22500控制步、0优化：单代表朝向pilot0/18；最近对称姿态29/36；四等价姿态预放置/放置可行性检查36/36。后两者36组前段记录完全相同，7救回0退化，属于确定性规划改进。强控制下2初态×2真实顶块朝向合同均9/9参数成功，固定与已测上限均4/4，无排序反转。保留SkillResult、对称可行性组件、原有RL/STAP与负结果；不在饱和条件训练。后续仅在真实布局/后继净空出现强规划后的不同物理参数偏好时训练。原生成功/250步不变，追加朝向合同另列adaptation variant；stride3及未建world-cloud碰撞约束明确披露。独立方法增益仍UNVERIFIED；密封测试未动。
+
+## 2026-11-02｜历史576真实双阶段敏感案例与最新强几何的交叉复核
+
+**本项为读取已提交原始统计JSON和CSV的离线再分析，不新增物理或优化。**
+[完整理论复核及下一轮](evidence/EXP-003/2026-11-02/pyramid_contract/THEORY_REVIEW_NEXT_RESEARCH_LOOP.md)；
+[标准库可复算代码](scripts/audit_cumulative_skill_opportunities.py)（本次仅提交代码，尚需Codex在真实仓库路径运行核对）。
+
+最新Pyramid `SUMMARY.json`：pilot0/18（只1 scene，与后两组不能当严格配对）；nearest symmetry29/36；4个可行对称姿态36/36，后两者36同前段、7救回0退化；feasible版本实际记录144 candidate queries。各自四个(scene,yaw)上下文，feasible全部9/9；2独立物理scene，没有RL训练。
+
+历史Pyramid `HISTORICAL_OPPORTUNITY.json`：576条/64scene，名义52/64、强固定59/64、9动作后验成功并集62/64；前段有效参数改变后继成败的scene数9，后段同起点更改动作敏感的scene数13，二者重合6（420010、420022、420026、420036、420038、420052）。仅相对名义A/C单侧改动均无法救回而联合参数改变可成功的已测scene是420002和420023；既有开发样本不能用于新方法泛化成绩。工具train96有14/16二值终局不随六合法动作变化，但同上下文连续target距离可变化，如743043/+80mm约229–348mm，不能等同物理效果恒定。后验STAP Q退化及TwoRobot预算假阴性仍为具体OPEN_MECHANISM线索，尚未形成原创增益。
