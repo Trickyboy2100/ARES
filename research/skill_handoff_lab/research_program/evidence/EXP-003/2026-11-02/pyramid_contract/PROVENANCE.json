@@ -1,0 +1,15 @@
+{
+  "base_commit": "b9f5713a9d3f48d3149f0a9bb7eba11d6dd6af86",
+  "working_source": "per-run source snapshots in archive; subsequent probes do not overwrite earlier code",
+  "archive_sha256": "75ba21ab1b8b45b3b67a56e213db051adb2f4d0950f31b23037e696adfa66bc0",
+  "archive_bytes": 14164764,
+  "verified_files": 109,
+  "task": "ARES-PyramidOrientation-adaptation",
+  "native_task": "StackPyramid-v1",
+  "native_horizon": 250,
+  "restricted_field_data": false,
+  "hardware_commands": false,
+  "optimizer_updates": 0,
+  "maniskill_revision": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+  "limitation": "Inherited stride3 execution is not certified native timing or hardware dynamics. No claimed physical contact-force measurement, sealed test, RL novelty or simulator benchmark reproduction."
+}

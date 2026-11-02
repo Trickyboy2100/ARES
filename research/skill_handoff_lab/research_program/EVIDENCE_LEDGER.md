@@ -73,3 +73,8 @@ uncertainty & limitation | exact raw path/hash | science decision`。
 这一小网格的混合成败分别由抓点主效应和hook主效应解释；未观察到成功标签上的抓点×hook交互项或随目标变化的明确最佳参数反转。二值成功与有限2×3动作网格的分辨率不足以排除真实连续物理交互。
 
 可重复计算：python research/skill_handoff_lab/research_program/scripts/audit_skillresult_opportunity.py （只读取已提交CSV，包含96条、7/7/2分组、固定/已测oracle、阶段参数二值交互和跨目标反转的断言；新增仿真0）。
+
+
+## 2026-11-02｜累计物理探索：后继朝向差异被强几何解释
+
+[关键图、同初态完整视频与原始证据](evidence/EXP-003/2026-11-02/pyramid_contract/README.md)。先执行新增机会脚本，并核对96原始工具轨迹、576旧Pyramid终态及26历史轨迹SHA。新增90真实回合/22500控制步、0优化：单代表朝向pilot0/18；最近对称姿态29/36；四等价姿态预放置/放置可行性检查36/36。后两者36组前段记录完全相同，7救回0退化，属于确定性规划改进。强控制下2初态×2真实顶块朝向合同均9/9参数成功，固定与已测上限均4/4，无排序反转。保留SkillResult、对称可行性组件、原有RL/STAP与负结果；不在饱和条件训练。后续仅在真实布局/后继净空出现强规划后的不同物理参数偏好时训练。原生成功/250步不变，追加朝向合同另列adaptation variant；stride3及未建world-cloud碰撞约束明确披露。独立方法增益仍UNVERIFIED；密封测试未动。

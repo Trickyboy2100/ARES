@@ -1,0 +1,94 @@
+{
+  "task": "StackPyramid-v1",
+  "claim": "CONTRACT_INTERVENTION_NO_NEW_RL_CLAIM",
+  "source_kind": "MEASURED_POSE_REPLAY",
+  "physics_steps_added": 0,
+  "frames": 251,
+  "fps": 20,
+  "frame_mapping": "frame k=step k, timestamp k/20; frame0 initial",
+  "max_state_readback_error": 1.1920928955078125e-07,
+  "all_cube_corner_pixel_min": [
+    275.24846363326884,
+    281.80450049777323
+  ],
+  "all_cube_corner_pixel_max": [
+    578.2283101984485,
+    486.45389289901533
+  ],
+  "camera_intrinsic": [
+    [
+      583.3487548828125,
+      0.0,
+      400.0
+    ],
+    [
+      0.0,
+      583.3487548828125,
+      300.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_extrinsic": [
+    [
+      -0.6904756426811218,
+      0.7233555316925049,
+      2.9802318834981634e-08,
+      -0.013809587806463242
+    ],
+    [
+      0.3367804288864136,
+      0.3214721381664276,
+      -0.8850054144859314,
+      0.07753608375787735
+    ],
+    [
+      -0.6401735544204712,
+      -0.6110746264457703,
+      -0.46558067202568054,
+      0.7117566466331482
+    ]
+  ],
+  "sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/pyramid_contract_20261102/symmetry/744000_g0_y45_o0.json.gz",
+      "sha256": "eabf1b010961397451be5c8fd3a4f7b77f553f2f8ab1cefea4e226b697a2a660",
+      "execution_manifest": {
+        "missing": true,
+        "directory": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/pyramid_contract_20261102/symmetry"
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/pyramid_contract_20261102/feasible/744000_g0_y45_o0.json.gz",
+      "sha256": "071f0d990faa6a38634e4c068ec27ea73ef731001ea4cf5ce4dc6ab1e6146042",
+      "execution_manifest": {
+        "missing": true,
+        "directory": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/pyramid_contract_20261102/feasible"
+      }
+    }
+  ],
+  "native_model_source_sha256": "186605bb746ca19c4a717516b2530bbf70e9a2f897c7e3a2df89ce3b9ec4457e",
+  "render_source_sha256": "b579e8bc2fcf882308ce1d239533d21be2ee9535d44ae864b78e90f36888d162",
+  "shared_viewer_source_sha256": "52d1ee813fa2e21da67e285c476785aae73e7e1649de571c74bb3d18a18e9f67",
+  "outputs": {
+    "DATA.json": "e2db14c0737d1f8098567c680b3d6097adb4cd59c51359cdf8de15e6f15eb246",
+    "SYNC_VIEWER.html": "5cfd5c5f611b85473fd5ab425313536cb094659c07fda87bdabe030f036b5a8f",
+    "RAW.mp4": "045fd8525f662fa3a4e4650b2719c6054365fb28ad2a9567dbf0eea6191f203f",
+    "ANNOTATED.mp4": "0ececcffadea5197144965c34aeb391d1c604164ed79c9b9b96b18154bf9c0c2",
+    "RIGHT_SOURCE.json.gz": "071f0d990faa6a38634e4c068ec27ea73ef731001ea4cf5ce4dc6ab1e6146042",
+    "ANNOTATED_250.png": "a0bdb5b258b651643a0b1c631235800a20b000cf4c0b45c302f216d29f2cc2c1",
+    "RAW_000.png": "0b2206d1da7180f23ef4bf6da3d07d1d8d86ea9e2cac5428c91b4ef0ba9e94ee",
+    "ANNOTATED_100.png": "4947402a73e3b85652d13f656bd7a4bade9ef80114170e9ccf94f47021cc129d",
+    "RAW_150.png": "42449b32abd60cf9847db9292937c71fbd447d4ceba03cdf0d6cb81df4caec06",
+    "ANNOTATED_000.png": "ed323f62de38e8385b0b47acf1852a2ec43df82acff060d3620520752eed5d8d",
+    "LEFT_SOURCE.json.gz": "eabf1b010961397451be5c8fd3a4f7b77f553f2f8ab1cefea4e226b697a2a660",
+    "RAW_250.png": "561821ef07d525e22f769afc48e5199f6c2b7c2b0d944f289219d1177af30815",
+    "RAW_100.png": "5f64682776dbe3e89cadf9d73c36163fa41a1b0622c39f97e8b0b6dc23dee369",
+    "render_source.py": "b579e8bc2fcf882308ce1d239533d21be2ee9535d44ae864b78e90f36888d162",
+    "ANNOTATED_150.png": "ed7645f83a80457d0105572bd39d74ea51e75c5dc8a37dda5753705cb7287048"
+  },
+  "contract_renderer_sha256": "7fdbae4c48850d17dbfabf87f743a50f0363d21a69f95a36dced8c0f961fc162"
+}
