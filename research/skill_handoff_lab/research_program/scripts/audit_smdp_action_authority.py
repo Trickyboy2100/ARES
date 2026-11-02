@@ -45,7 +45,7 @@ def analyze(summary):
                 continue
             wins = sum(bool(r["success"]) for r in valid)
             stage1.append({
-                "scene_mass_grasp": key, "actions_executed": len(valid),
+                "scene_mass_grasp": key, "actions_selected": len(valid),
                 "unique_stage1_levels": len(levels),
                 "successes": wins, "mixed_outcome": 0 < wins < len(valid),
             })
@@ -53,11 +53,11 @@ def analyze(summary):
             "episodes": len(trials),
             "scene_clusters": len({r["seed"] for r in trials}),
             "crossed_scene_mass_contexts": len(contexts),
-            "grasp_groups_with_executed_stage1_variants": len(stage1),
+            "grasp_groups_with_selected_stage1_variants": len(stage1),
             "grasp_groups_with_mixed_binary_success": sum(x["mixed_outcome"] for x in stage1),
             "predecessor_unverified_grasp_groups": len(invalid_predecessor),
             "within_grasp_stage1_variation": stage1,
-            "scope": "Discrete native final success in the tested action grid only",
+            "scope": "Selected stage1 parameters after verified predecessor; does NOT imply downstream motion executed. Includes planning failures.",
         }
 
     dev = subset("evaluation512")
@@ -80,10 +80,10 @@ def analyze(summary):
 
     depth = crossed("depth_grid/episodes", "hook_height")
     accel = crossed("accel_grid/episodes", "successor_acceleration")
-    assert (depth["grasp_groups_with_executed_stage1_variants"],
-            depth["grasp_groups_with_mixed_binary_success"]) == (9, 0)
-    assert (accel["grasp_groups_with_executed_stage1_variants"],
-            accel["grasp_groups_with_mixed_binary_success"]) == (9, 1)
+    assert (depth["grasp_groups_with_selected_stage1_variants"],
+            depth["grasp_groups_with_mixed_binary_success"]) == (11, 0)
+    assert (accel["grasp_groups_with_selected_stage1_variants"],
+            accel["grasp_groups_with_mixed_binary_success"]) == (11, 1)
     assert len(all_win) == 7 and len(all_fail) == 1 and not mixed
     assert all_fail[0][0] == 746204
     assert len(online) == 287 and len(bytrain) == 64 and len(ambiguous) == 24
