@@ -180,10 +180,11 @@ function animate(){if(!video.paused)draw();requestAnimationFrame(animate);}anima
 
 
 def execution_manifest(path):
-    for name in ("manifest.json", "MANIFEST.json"):
-        candidate=path.parent/name
-        if candidate.exists():
-            return {"path":str(candidate),"sha256":sha(candidate),"content":json.loads(candidate.read_text())}
+    for parent in (path.parent,path.parent.parent):
+        for name in ("manifest.json", "MANIFEST.json", "PROTOCOL.json"):
+            candidate=parent/name
+            if candidate.exists():
+                return {"path":str(candidate),"sha256":sha(candidate),"content":json.loads(candidate.read_text())}
     return {"missing":True,"directory":str(path.parent)}
 
 
@@ -203,7 +204,7 @@ def main():
     ap.add_argument("--left-label",default=None)
     ap.add_argument("--right-label",default=None)
     ap.add_argument("--fps",type=int,default=20)
-    ap.add_argument("--camera-side",choices=["legacy","goal-positive-y","goal-negative-y"],default="legacy",help="Low socket-local side view; pose-derived, no geometry edits")
+    ap.add_argument("--camera-side",choices=["legacy","goal-positive-y","goal-negative-y","world-wide"],default="legacy",help="Low socket-local side view; pose-derived, no geometry edits")
     args=ap.parse_args()
     assert args.fps==20, "native PlugCharger uses 20Hz; preserve step/time alignment"
     variants=("servo_stop","servo_local_hold_stop")
@@ -226,7 +227,9 @@ def main():
     assert all(len(t["steps"])==200 for _,t in sources)
     series=[trace_series(t) for _,t in sources]
     mid=np.asarray(sources[0][1]["steps"][70]["cube"][:3],dtype=float)
-    if args.camera_side=="legacy":
+    if args.camera_side=="world-wide":
+        eye=np.array([.65,-.65,.65]);target=np.array([-.15,0.,.15])
+    elif args.camera_side=="legacy":
         eye=mid+np.array([-.14,-.30,.09]);target=mid+np.array([-.02,0,0])
     else:
         goal_rotation=rotation(sources[0][1]["steps"][70]["cube"][3:])@np.diag([-1.,-1.,1.])
@@ -237,7 +240,7 @@ def main():
     env=gym.make("PlugCharger-v1",num_envs=1,obs_mode="state",
         control_mode="pd_joint_pos",render_mode="rgb_array",
         sim_backend="physx_cuda",render_backend="gpu",
-        human_render_camera_configs=dict(mount=None,pose=pose,width=960,height=720,fov=.64))
+        human_render_camera_configs=dict(mount=None,pose=pose,width=960,height=720,fov=1.1 if args.camera_side=="world-wide" else .64))
     env.reset(seed=args.seed)
     camera=next(iter(env.unwrapped._human_render_cameras.values())).camera
     raw_mp4=pipe(args.out/"RAW.mp4",1920,720,args.fps)
@@ -293,7 +296,7 @@ def main():
                         col="#f4b34b" if key.startswith("pin_tip") else "#4fd1e7"
                         draw.ellipse((x-7,y-7,x+7,y+7),outline=col,width=3)
                 draw.text((left+16,710),
-                          "Geometry/goal truth: analysis only | guides may be occluded",
+                          "Measured geometry | projected guides may be occluded",
                           font=sub,fill="#f3f4f6")
                 a=series[i];idx=step
                 draw.rectangle((left,746,left+960,790),fill="#102030")

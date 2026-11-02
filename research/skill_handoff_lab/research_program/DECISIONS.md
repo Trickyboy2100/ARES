@@ -162,3 +162,8 @@
 实际训练冻结效果方向映射+SMDP SAC，保留普通同权限、全局方向、通用效果辅助、监督评分与STAP功能核。物理尺度特征使训练场景CV效果误差0.02530→0.001301（固定效果0.003740），但最佳方向轴仅18/22→19/22。共同500更新：普通SAC/STAP6/8，方向候选/全局/通用辅助5/8。各再256实际决策后普通与候选均6/8，固定87.5mm也6/8；固定同一物理前缀三者均6/8，候选0救回0退化。普通/候选实际在线成本14170/14275步，单训练seed，不能声称完全等物理成本或充分收敛。两个576转移缓存与早期128缓存均由真实物理复算通过。效果映射Jacobian成立于共同no-op投影之前，不声称已证明执行动作原子分布的微分熵。
 
 **决策：** 保留普通训练器、实际事件/前缀验证和所有正负权重；不将预测准确率、方向重参数化或共同控制进展认作独立RL方法。不扩当前yaw训练。下一项有价值实验必须建立最强抓持/控制后仍存在的可执行恢复收益，重点区分工具倾斜下的无效接触与真实钩入；若共享控制已覆盖，则以已有PlugCharger200成熟线研究实际抓持结果/接触条件，不降低基线、不动封存。方法继续 **UNVERIFIED**。
+
+
+## 2026-11-02 — Recovery and native charger two-boundary learning
+
+Actual continuation from 525d67e: 354 complete physical episodes / 64,400 steps plus 207 saved partial steps. Tool recovery: all six controls 6/8; early interventions all 0/4. Native charger strict-prefix factorial separates angular collision from advance/budget effects. Corrected whole-task-success SAC: 1,024 transitions / 1,792 updates, checkpoints and reconstructed buffer retained. New development: nominal and force guard 8/8, SAC256 3/8, SAC1024 7/8, same nominal grasp + SAC successor 8/8. Named mass/friction variant also covered by 15-degree nominal (8/8 conditions, two scenes). No independent algorithm gain; UNVERIFIED. Retain instrumentation and training objective correction, freeze covered recovery/pace panels. Next: genuine successor-contract constraints with residual failure after strongest shared control, not manufactured weak grasp or more old-coordinate training. [Full evidence, negative runs, videos, costs and SHA](evidence/EXP-003/2026-11-02/recovery/README.md).

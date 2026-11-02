@@ -1,0 +1,138 @@
+{
+  "scope": "Actual saved transitions; analysis of objective before multi-skill reuse. No novel algorithm claim.",
+  "equation": "R_contact=(x_before_hold-x_at_INSERT)/0.02 - 0.005*N + (5 if native_success else -1). Missing predecessor potential leaves x_at_INSERT dependent on grasp; sparse native return avoids this accidental objective.",
+  "rows": [
+    {
+      "seed": 749100,
+      "grasp_deg": 15,
+      "success": true,
+      "prefix_steps": 77,
+      "initial_insert_x_mm": -26.69132351875305,
+      "legacy_contact_return": 6.097941753864289,
+      "contact_decisions": 13,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00000_749100.json.gz",
+      "sha256": "b46d2704506c5cee386befe3a94e7e625e716236d2b114dac4e6ce2a3ee6aa07"
+    },
+    {
+      "seed": 749100,
+      "grasp_deg": 30,
+      "success": true,
+      "prefix_steps": 84,
+      "initial_insert_x_mm": -24.35692399740219,
+      "legacy_contact_return": 5.979872352480888,
+      "contact_decisions": 8,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00004_749100.json.gz",
+      "sha256": "3198eab2d22cb391858c17dbf7c950dc5df20d363fda3b14ba45ec0f7ce85a9f"
+    },
+    {
+      "seed": 749100,
+      "grasp_deg": 45,
+      "success": true,
+      "prefix_steps": 98,
+      "initial_insert_x_mm": -23.18437397480011,
+      "legacy_contact_return": 5.968669659495354,
+      "contact_decisions": 8,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00008_749100.json.gz",
+      "sha256": "4f4039f9712b5ec42361079778a94becf599310a79402d917f86a06909635a1a"
+    },
+    {
+      "seed": 749101,
+      "grasp_deg": 15,
+      "success": true,
+      "prefix_steps": 92,
+      "initial_insert_x_mm": -27.48059332370758,
+      "legacy_contact_return": 6.156198250055313,
+      "contact_decisions": 9,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00012_749101.json.gz",
+      "sha256": "d6a11c94ea299353c2d7fcea8917a2138f66a6eeeef72f7eda136f46c17f9bb3"
+    },
+    {
+      "seed": 749101,
+      "grasp_deg": 30,
+      "success": false,
+      "prefix_steps": 106,
+      "initial_insert_x_mm": -35.57153046131134,
+      "legacy_contact_return": -0.13395241096615784,
+      "contact_decisions": 9,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00016_749101.json.gz",
+      "sha256": "ab3d015a88945b66a62f8ef751bc5f14566ac3fba76cae5c7a4394c270e305f2"
+    },
+    {
+      "seed": 749101,
+      "grasp_deg": 45,
+      "success": true,
+      "prefix_steps": 131,
+      "initial_insert_x_mm": -28.104758262634277,
+      "legacy_contact_return": 6.14315016657114,
+      "contact_decisions": 17,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00020_749101.json.gz",
+      "sha256": "d9436ae68363ec6a260f7ee903f4dfd5838551ffabd0830a1c12be289cbe6179"
+    },
+    {
+      "seed": 749102,
+      "grasp_deg": 15,
+      "success": true,
+      "prefix_steps": 84,
+      "initial_insert_x_mm": -24.661748111248016,
+      "legacy_contact_return": 5.996415342241526,
+      "contact_decisions": 8,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00024_749102.json.gz",
+      "sha256": "a21512ab87fe43bab5f0467f393fe67dbed7aac07a65130065ea550903a459f2"
+    },
+    {
+      "seed": 749102,
+      "grasp_deg": 30,
+      "success": false,
+      "prefix_steps": 92,
+      "initial_insert_x_mm": -23.205944895744324,
+      "legacy_contact_return": -0.8538496403396129,
+      "contact_decisions": 27,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00028_749102.json.gz",
+      "sha256": "fbdcb5bb7c2c7d6a170795b2a0fae7bb23e5741d628108ca0a334f5e6c76fb06"
+    },
+    {
+      "seed": 749102,
+      "grasp_deg": 45,
+      "success": true,
+      "prefix_steps": 121,
+      "initial_insert_x_mm": -25.461775064468384,
+      "legacy_contact_return": 6.1104018002748495,
+      "contact_decisions": 5,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00032_749102.json.gz",
+      "sha256": "dbeb044fb4653cfc895c875c36f389d16de36ba60f4938f59e7f743015bca10a"
+    },
+    {
+      "seed": 749103,
+      "grasp_deg": 15,
+      "success": true,
+      "prefix_steps": 94,
+      "initial_insert_x_mm": -33.57655107975006,
+      "legacy_contact_return": 6.3835089614987375,
+      "contact_decisions": 18,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00036_749103.json.gz",
+      "sha256": "fec7daa6c197ee2a1b24c97e59b14f8b94b3112e16fcd6d47b4986074211d72f"
+    },
+    {
+      "seed": 749103,
+      "grasp_deg": 30,
+      "success": true,
+      "prefix_steps": 106,
+      "initial_insert_x_mm": -41.85768961906433,
+      "legacy_contact_return": 6.919100433290005,
+      "contact_decisions": 11,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00040_749103.json.gz",
+      "sha256": "dc2a8500a7080275e09ccde59cadff0079afbb2aef8ff9e998f2c56b1e32ea95"
+    },
+    {
+      "seed": 749103,
+      "grasp_deg": 45,
+      "success": true,
+      "prefix_steps": 131,
+      "initial_insert_x_mm": -25.04400908946991,
+      "legacy_contact_return": 6.071274991631508,
+      "contact_decisions": 4,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00044_749103.json.gz",
+      "sha256": "fcf2bab01c5ab5cf4cc5d62e4b075619d1ca564f082eab6ce378bee0db165bb7"
+    }
+  ]
+}

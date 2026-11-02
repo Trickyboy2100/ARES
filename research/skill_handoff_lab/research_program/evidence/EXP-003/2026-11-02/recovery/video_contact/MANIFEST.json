@@ -1,0 +1,179 @@
+{
+  "seed": 749101,
+  "physics_steps": 0,
+  "source_kind": "MEASURED_POSE_REPLAY",
+  "camera": "fixed world camera; native pin tips (+16mm x, +/-7mm y) and front-mouth guides projected from measured actor poses; NOT measured contact patches",
+  "step_to_time": "frame k represents physical step k, 20 fps; frame 0 is initial",
+  "max_pose_readback_error": 1.1920928955078125e-07,
+  "source": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00000_749101.json.gz",
+      "sha256": "d938d4ac6119c3a090aff2f91bca8afc64374a45ba09d64f15cb06a1883dd61a"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00002_749101.json.gz",
+      "sha256": "9e7572a3ab8bb0764c08cf09b46df1991fe32bef83d0de3b7327df324a2ef479"
+    }
+  ],
+  "source_script_sha256": "58d4b4bf14392fc28d89ecbc86300877f23c94fe9c69601af7b797caa149fe25",
+  "source_execution_manifests": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/PROTOCOL.json",
+      "sha256": "8f2548421ed2d8b0777d36a5363548b7890c2f913097f5592e07fda5ec520a76",
+      "content": {
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "success": "unchanged native",
+        "bias": [
+          0,
+          0
+        ],
+        "physics": "native density/friction and initialization",
+        "args": {
+          "prefix_root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design",
+          "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial",
+          "seeds": [
+            749101,
+            749102
+          ],
+          "angles": [
+            45.0
+          ],
+          "policies": [
+            "nominal",
+            "advance_fast",
+            "rotate_fast",
+            "advance_soft",
+            "rotate_soft",
+            "force_guard"
+          ]
+        },
+        "predecessor": "actual grasp pitch; no state restore",
+        "successor": "advance0.5..4mm, angular step0.01..0.08rad every4 physical steps; inherited depth preserving integration and completion",
+        "split": "NEW_DESIGN_NOT_SEALED",
+        "source_commit": "525d67ebec52530ac05bea245d2393c9fd67442a",
+        "source_sha": {
+          "program_adaptive_contact.py": "e2d41f66f06e0d43cecd3474c4d81105431341604d54d655df5b479c0002d4a9",
+          "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+          "program_native_charger_pace.py": "2a5c473cb5c274c5b395e5258ff148096bd2a0d716fab49c1ec2e36cfbbd2467",
+          "pull_tool_physics.py": "24d68fbb0b613883dfe863ccfa06e1c88fff9c10029810130c33ed60a92cf0d3",
+          "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+          "program_skill_baselines.py": "afbad8e2d45b180afe3f40973f2be0b9203885cc4e191f7ae65950fe33655f36",
+          "program_completion_contract.py": "48ceb4b9d52e4ae25fe124fbe1f824bec69c25a3359f122677b5a430bc1abd0a"
+        },
+        "optimizer_updates": 0
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/PROTOCOL.json",
+      "sha256": "8f2548421ed2d8b0777d36a5363548b7890c2f913097f5592e07fda5ec520a76",
+      "content": {
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "success": "unchanged native",
+        "bias": [
+          0,
+          0
+        ],
+        "physics": "native density/friction and initialization",
+        "args": {
+          "prefix_root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design",
+          "out": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial",
+          "seeds": [
+            749101,
+            749102
+          ],
+          "angles": [
+            45.0
+          ],
+          "policies": [
+            "nominal",
+            "advance_fast",
+            "rotate_fast",
+            "advance_soft",
+            "rotate_soft",
+            "force_guard"
+          ]
+        },
+        "predecessor": "actual grasp pitch; no state restore",
+        "successor": "advance0.5..4mm, angular step0.01..0.08rad every4 physical steps; inherited depth preserving integration and completion",
+        "split": "NEW_DESIGN_NOT_SEALED",
+        "source_commit": "525d67ebec52530ac05bea245d2393c9fd67442a",
+        "source_sha": {
+          "program_adaptive_contact.py": "e2d41f66f06e0d43cecd3474c4d81105431341604d54d655df5b479c0002d4a9",
+          "program_adaptive_task.py": "cf3c9554dd00199ceec62878d5ee0e9b034955dee1aee4591b98372e1a89da38",
+          "program_native_charger_pace.py": "2a5c473cb5c274c5b395e5258ff148096bd2a0d716fab49c1ec2e36cfbbd2467",
+          "pull_tool_physics.py": "24d68fbb0b613883dfe863ccfa06e1c88fff9c10029810130c33ed60a92cf0d3",
+          "program_charger.py": "f951b172e6d020cd7718145889323f3d32ebb8c27b78bcae206b33499050f560",
+          "program_skill_baselines.py": "afbad8e2d45b180afe3f40973f2be0b9203885cc4e191f7ae65950fe33655f36",
+          "program_completion_contract.py": "48ceb4b9d52e4ae25fe124fbe1f824bec69c25a3359f122677b5a430bc1abd0a"
+        },
+        "optimizer_updates": 0
+      }
+    }
+  ],
+  "labels": [
+    "Same 45deg grasp | angular cap 0.04rad",
+    "Same prefix | angular cap 0.08rad"
+  ],
+  "analysis_privilege": "True task pose and goal errors are offline evaluation signals, not necessarily policy inputs; see source execution manifests.",
+  "native_task_source_sha256": "6a68400b90f04c22fe8bde510a7082fc239b6f2f54552e2f3ab4bb123ed556ff",
+  "frame_count": 201,
+  "fps": 20,
+  "camera_intrinsic": [
+    [
+      1086.3353271484375,
+      0.0,
+      480.0
+    ],
+    [
+      0.0,
+      1086.3353271484375,
+      360.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_choice": "goal-negative-y",
+  "camera_eye_world": [
+    0.08447409645485768,
+    -0.38920534079924185,
+    0.1250000014901161
+  ],
+  "camera_target_world": [
+    -0.0011194782216616232,
+    -0.10031480794277198,
+    0.10000000149011612
+  ],
+  "camera_extrinsic": [
+    [
+      0.9588014483451843,
+      0.28407716751098633,
+      3.725290298461914e-09,
+      0.029570510610938072
+    ],
+    [
+      0.02348994091153145,
+      -0.07928192615509033,
+      -0.9965754151344299,
+      0.09173069894313812
+    ],
+    [
+      -0.2831043004989624,
+      0.9555179476737976,
+      -0.08268857002258301,
+      0.4061437249183655
+    ]
+  ],
+  "outputs": {
+    "RAW.mp4": "24bef1d1a8fc4fd5d2beee0d8989cecd9297d3a4f2dcfc49084d8a927bc0ca4d",
+    "ANNOTATED.mp4": "05f1668b0c6621a1b11e99d6f4f5bbb9856832823c250ad648ca228008533c2e",
+    "RAW.png": "9cf0a350552126ba4d2faa294c53f670f045a8723eae0370356aab9ad5b7840e",
+    "ANNOTATED.png": "870773f3d2894a9b2980994d4837f4d25aab5c5e2d4c4336a490a2a45344dc18",
+    "DATA.json": "176a86415d94a4224173bc052f5d9154ee0b45b06d66dfc6c9228c35b08741d6",
+    "SYNC_VIEWER.html": "b14ff3ed3af1e9f722079f519c7365f307f4290115998915337cc584476405cf"
+  }
+}

@@ -8,8 +8,8 @@
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S4",
   "active_experiment": "EXP-003",
-  "latest_evidence": "evidence/EXP-003/2026-11-02/post_contact/README.md",
-  "next_action": "EXP-003 cumulative continuation after post_contact: preserve strong corrected controller, Pyramid36/36, masked two-boundary SAC, STAP/log-Q, exact physical event/prefix audits and all negative models. Read post_contact/README and raw evidence. Do not expand unchanged lateral/yaw or effect-coordinate training: ordinary/conditional/fixed87.5mm/STAP all6/8 on development, and same87.5mm-prefix nominal/ordinary/conditional all6/8 with zero candidate rescues/regressions. Predictor CV improvement is not method gain. Native100 has real post-contact windows; do not falsely claim no executable window. New120-episode panel has3 fixed-prefix rescues but best nominal-grasp and joint oracle both8/12. First contact often precedes PULL by19.5steps; same transient correction/rejoin primitive confirms state/phase-dependent direction ranking, yet no extra coverage after stronger grasp. Next identify residual recovery after strong predecessor/control: distinguish tilted-tool cube~50mm below hook from proper~5mm hooking, and actual early-contact/remaining-budget constraints; share any reasonable control improvement with all methods. Do not spend the paper on746204 (3bounded CPU queries already done) or another fixed plan failure. If shared control removes that residual, use inherited mature PlugCharger native200 to test real grasp-result/contact-condition dependence with strong search/RLS/ordinary SAC, not saturated calibration-only or weaker controller. Only train a new independent increment after measurable benefit beyond best common control/ordinary RL; no extra auxiliary-head churn. Current8 development scenes have been examined and used for midpoint/timing diagnostics, never sealed. No cross-seed or convergence claim; no hardware/site data/ARES-R modifications.",
+  "latest_evidence": "evidence/EXP-003/2026-11-02/recovery/README.md",
+  "next_action": "Retain native-success two-boundary SAC and matched physical prefix instrumentation. Before further RL budget, identify genuine changed successor contracts or physically justified grasp constraints with repeated residual full-task failures under strongest shared control; do not expand covered tool recovery or charger pace panels.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -78,260 +78,7 @@
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
-  "latest_run_summary": {
-    "experiment": "EXP-003",
-    "component_A": {
-      "complete_episodes": 1258,
-      "physics_steps": 251600,
-      "policy_decisions": 21995,
-      "optimizer_updates": 11520,
-      "tail_hold_steps": 359,
-      "tail_episodes": 4
-    },
-    "A_scores": {
-      "controls_fast_full::search_unique_fast": "30/36",
-      "controls_fast_task::search_unique_fast": "30/36",
-      "controls_fast_y_only::search_unique_fast": "25/36",
-      "controls_full::geometry": "11/36",
-      "controls_full::search": "30/36",
-      "controls_legacy::geometry": "4/12",
-      "controls_legacy::rls": "6/12",
-      "controls_legacy::search": "11/12",
-      "controls_rls::rls": "8/12",
-      "controls_task::search": "32/36",
-      "controls_y_only::search": "24/36",
-      "eval_full::model": "31/36",
-      "eval_full_2048::model": "32/36",
-      "eval_full_legacy::model": "10/12",
-      "eval_task::model": "35/36",
-      "eval_task_2048::model": "31/36",
-      "eval_y_only::model": "33/36",
-      "eval_y_only_2048::model": "26/36"
-    },
-    "A_training_seeds": [
-      31101
-    ],
-    "A_development_scene_seeds": [
-      732000,
-      732001,
-      732002,
-      732003,
-      732004,
-      732005
-    ],
-    "A_scope": "native-derived calibration-bias component; one scene reused for stop engineering; not sealed, not multistage RL",
-    "component_B": {
-      "episodes": 77,
-      "control_steps": 9200,
-      "unique_native_scene_seeds": 14,
-      "optimizer_updates": 0,
-      "strong_two_robot_fullsuffix": "8/8, 4 scenes x 2 endpoints",
-      "paired_orthogonal_suffix": "2/4"
-    },
-    "claim": "NO_INDEPENDENT_METHOD_GAIN_ESTABLISHED",
-    "sources": "evidence/EXP-003/2026-11-01/README.md",
-    "unfinished_runs": [],
-    "independent_review_2026_11_01": {
-      "source": "evidence/EXP-003/2026-11-01/component_A/EVAL_EPISODES.csv",
-      "method": "casewise paired from raw CSV + exhaustive 6^6 scene-cluster bootstrap, not internal PAIRS.json",
-      "task_sac_vs_search": {
-        "success": "35/36 vs 32/36",
-        "rescue": 4,
-        "regression": 1,
-        "p_mcnemar": 0.375,
-        "net_gain_pp": 8.3333,
-        "scene_bootstrap_95pp": [
-          -5.5556,
-          22.2222
-        ]
-      },
-      "task_sac_vs_full": {
-        "success": "35/36 vs 31/36",
-        "rescue": 5,
-        "regression": 1,
-        "p_mcnemar": 0.21875
-      },
-      "task_sac_vs_yonly": {
-        "success": "35/36 vs 33/36",
-        "rescue": 3,
-        "regression": 1,
-        "p_mcnemar": 0.625
-      },
-      "caveat": "single training seed, six scene clusters, one used stop engineering; masks are environment projections on 3D SAC actor; no new physics"
-    },
-    "stap_followup": {
-      "episodes": 224,
-      "control_steps": 22400,
-      "optimizer_updates": 5600,
-      "training_seeds": [
-        31103
-      ],
-      "training_scene_seeds": [
-        743010,
-        743011
-      ],
-      "development_scene_seeds": [
-        743020,
-        743021
-      ],
-      "official_kernel_fixtures": 12,
-      "official_full_benchmark": "NOT_REPRODUCED_LEGACY_GYM_MISSING",
-      "paired_absolute_stap_open": "6/8",
-      "paired_absolute_stap_replan": "3/8",
-      "budget_guard": "4/8",
-      "strongest_tested_fixed": "4/8",
-      "ordinary_fitted_q": "3/8",
-      "foresight_state_analogue": "3/8",
-      "paired_residual_open": "4/8",
-      "paired_residual_replan": "3/8",
-      "claim": "NO_INDEPENDENT_METHOD_GAIN_ESTABLISHED",
-      "scope": "real offline physical task variant; one trained seed; paired prefix exact; no sealed test; not converged RL proof"
-    },
-    "skillresult_20261102": {
-      "episodes": 320,
-      "control_steps": 32000,
-      "optimizer_updates": 13600,
-      "training_episodes": 136,
-      "calibration_episodes": 24,
-      "training_seed": 31110,
-      "new_training_scene_seeds": [
-        743040,
-        743041,
-        743042,
-        743043,
-        743044,
-        743045
-      ],
-      "calibration_scene_seeds": [
-        743046,
-        743047
-      ],
-      "development_scene_seeds": [
-        743050,
-        743051
-      ],
-      "intervention_success": "49/96",
-      "panel_oracle": "9/16",
-      "panel_fixed": "8/16",
-      "strict_goal_ranking_reversals": 0,
-      "corrected_scores": {
-        "contract": "2/8",
-        "fixed": "3/8",
-        "fixed90": "2/8",
-        "foresight": "2/8",
-        "generic": "2/8",
-        "geometry": "2/8",
-        "geometry_fixed": "3/8",
-        "ordinary": "1/8",
-        "relative": "2/8",
-        "relative_contract": "2/8",
-        "stap": "2/8",
-        "stap_guard": "2/8",
-        "stap_open": "3/8",
-        "stap_uq": "3/8"
-      },
-      "numeric_diagnostic_episodes": 112,
-      "claim": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN"
-    },
-    "pyramid_contract_20261102": {
-      "episodes": 90,
-      "control_steps": 22500,
-      "optimizer_updates": 0,
-      "new_design_scene_seeds": [
-        744000,
-        744001
-      ],
-      "pilot": "0/18 one scene",
-      "nearest_symmetry": "29/36",
-      "feasible_symmetry": "36/36",
-      "paired_rescues": 7,
-      "paired_regressions": 0,
-      "exact_support_prefixes": 36,
-      "strong_fixed": "4/4 contexts",
-      "measured_oracle": "4/4 contexts",
-      "ranking_reversals": 0,
-      "claim": "DETERMINISTIC_PLANNING_GAIN_NOT_RL; LOCAL_NEGATIVE_LEARNING_OPPORTUNITY"
-    },
-    "contact_duration_20261102": {
-      "valid_episodes": 312,
-      "valid_control_steps": 44700,
-      "invalid_logger_episodes": 8,
-      "invalid_terminal_hold_steps": 800,
-      "optimizer_updates": 11000,
-      "train_scene_seeds": [
-        745010,
-        745011,
-        745012,
-        745013
-      ],
-      "calibration_scene_seeds": [
-        745014,
-        745015
-      ],
-      "development_scene_seeds": [
-        745020,
-        745021
-      ],
-      "training_seed": 31132,
-      "calibration_q1_Brier": 0.4248647705256052,
-      "finite_panel_best_fixed": "6/12",
-      "finite_panel_oracle": "7/12",
-      "fresh_physical_scores": {
-        "fixed": {
-          "n": 4,
-          "success": 2
-        },
-        "geometry_baseline": {
-          "n": 4,
-          "success": 0
-        },
-        "geometry_frozen12": {
-          "n": 4,
-          "success": 0
-        },
-        "geometry_slow3": {
-          "n": 4,
-          "success": 0
-        },
-        "ordinary": {
-          "n": 4,
-          "success": 2
-        },
-        "supervised": {
-          "n": 4,
-          "success": 2
-        },
-        "stap_open": {
-          "n": 4,
-          "success": 2
-        },
-        "stap_replan": {
-          "n": 4,
-          "success": 2
-        },
-        "foresight": {
-          "n": 4,
-          "success": 2
-        }
-      },
-      "strong100mm_reference": {
-        "baseline": {
-          "n": 4,
-          "success": 2
-        },
-        "frozen12": {
-          "n": 4,
-          "success": 2
-        },
-        "slow3": {
-          "n": 4,
-          "success": 2
-        }
-      },
-      "claim": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
-      "source": "evidence/EXP-003/2026-11-02/contact_duration/README.md"
-    }
-  },
+  "latest_run_summary": "Recovery continuation: 354 full physical episodes, 64400 control steps plus207 partial; strongest native charger8/8, ordinary SAC1024 7/8, same-grasp successor8/8. No independent method gain. See recovery_20261102 and latest_evidence.",
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
   "research_review_20261102": {
     "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
@@ -448,5 +195,20 @@
     ],
     "effect_direction_status": "NEGATIVE_METHOD_RESULT; physical effects exist but no independent gain",
     "claim": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN"
+  },
+  "recovery_20261102": {
+    "base": "525d67e",
+    "complete_episodes": 354,
+    "complete_control_steps": 64400,
+    "partial_steps": 207,
+    "native_charger_development": {
+      "nominal": "8/8",
+      "force_guard": "8/8",
+      "SAC256": "3/8",
+      "SAC1024": "7/8",
+      "same_grasp_SAC1024": "8/8"
+    },
+    "claim": "UNVERIFIED",
+    "evidence": "evidence/EXP-003/2026-11-02/recovery/README.md"
   }
 }

@@ -1,0 +1,3523 @@
+{
+  "groups": {
+    "charger_design": {
+      "methods": {
+        "fast": {
+          "success": 7,
+          "n": 12,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "feedback": {
+          "success": 8,
+          "n": 12,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "nominal": {
+          "success": 10,
+          "n": 12,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "soft": {
+          "success": 9,
+          "n": 12,
+          "rescues": 0,
+          "regressions": 0
+        }
+      },
+      "episodes": 48,
+      "physics_steps": 9600,
+      "planner_queries": 2312,
+      "planning_wall_s": 2.3633900079876184,
+      "wall_s": 243.95100179838482,
+      "checks": [
+        {
+          "context": [
+            749100,
+            15
+          ],
+          "method": "nominal",
+          "boundary": 77,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00000_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            15
+          ],
+          "method": "fast",
+          "boundary": 77,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00001_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            15
+          ],
+          "method": "soft",
+          "boundary": 77,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00002_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            15
+          ],
+          "method": "feedback",
+          "boundary": 77,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00003_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            30
+          ],
+          "method": "nominal",
+          "boundary": 84,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00004_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            30
+          ],
+          "method": "fast",
+          "boundary": 84,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00005_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            30
+          ],
+          "method": "soft",
+          "boundary": 84,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00006_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            30
+          ],
+          "method": "feedback",
+          "boundary": 84,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00007_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            45
+          ],
+          "method": "nominal",
+          "boundary": 98,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00008_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            45
+          ],
+          "method": "fast",
+          "boundary": 98,
+          "prefix_max_error": 5.3983118534088135,
+          "paired": false,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00009_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            45
+          ],
+          "method": "soft",
+          "boundary": 98,
+          "prefix_max_error": 5.518919944763184,
+          "paired": false,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00010_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            45
+          ],
+          "method": "feedback",
+          "boundary": 98,
+          "prefix_max_error": 5.772241115570068,
+          "paired": false,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00011_749100.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            15
+          ],
+          "method": "nominal",
+          "boundary": 92,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00012_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            15
+          ],
+          "method": "fast",
+          "boundary": 92,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00013_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            15
+          ],
+          "method": "soft",
+          "boundary": 92,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00014_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            15
+          ],
+          "method": "feedback",
+          "boundary": 92,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00015_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            30
+          ],
+          "method": "nominal",
+          "boundary": 106,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00016_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            30
+          ],
+          "method": "fast",
+          "boundary": 106,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00017_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            30
+          ],
+          "method": "soft",
+          "boundary": 106,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00018_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            30
+          ],
+          "method": "feedback",
+          "boundary": 106,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00019_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45
+          ],
+          "method": "nominal",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00020_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45
+          ],
+          "method": "fast",
+          "boundary": 131,
+          "prefix_max_error": 10.236587345600128,
+          "paired": false,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00021_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45
+          ],
+          "method": "soft",
+          "boundary": 131,
+          "prefix_max_error": 4.142895033798456,
+          "paired": false,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00022_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45
+          ],
+          "method": "feedback",
+          "boundary": 131,
+          "prefix_max_error": 4.349688715747986,
+          "paired": false,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00023_749101.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            15
+          ],
+          "method": "nominal",
+          "boundary": 84,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00024_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            15
+          ],
+          "method": "fast",
+          "boundary": 84,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00025_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            15
+          ],
+          "method": "soft",
+          "boundary": 84,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00026_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            15
+          ],
+          "method": "feedback",
+          "boundary": 84,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00027_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            30
+          ],
+          "method": "nominal",
+          "boundary": 92,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00028_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            30
+          ],
+          "method": "fast",
+          "boundary": 92,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00029_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            30
+          ],
+          "method": "soft",
+          "boundary": 92,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00030_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            30
+          ],
+          "method": "feedback",
+          "boundary": 92,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00031_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45
+          ],
+          "method": "nominal",
+          "boundary": 121,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00032_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45
+          ],
+          "method": "fast",
+          "boundary": 121,
+          "prefix_max_error": 6.919724241830409,
+          "paired": false,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00033_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45
+          ],
+          "method": "soft",
+          "boundary": 121,
+          "prefix_max_error": 5.632828802801669,
+          "paired": false,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00034_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45
+          ],
+          "method": "feedback",
+          "boundary": 121,
+          "prefix_max_error": 4.785897081759458,
+          "paired": false,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00035_749102.json.gz"
+        },
+        {
+          "context": [
+            749103,
+            15
+          ],
+          "method": "nominal",
+          "boundary": 94,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00036_749103.json.gz"
+        },
+        {
+          "context": [
+            749103,
+            15
+          ],
+          "method": "fast",
+          "boundary": 94,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00037_749103.json.gz"
+        },
+        {
+          "context": [
+            749103,
+            15
+          ],
+          "method": "soft",
+          "boundary": 94,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00038_749103.json.gz"
+        },
+        {
+          "context": [
+            749103,
+            15
+          ],
+          "method": "feedback",
+          "boundary": 94,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00039_749103.json.gz"
+        },
+        {
+          "context": [
+            749103,
+            30
+          ],
+          "method": "nominal",
+          "boundary": 106,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00040_749103.json.gz"
+        },
+        {
+          "context": [
+            749103,
+            30
+          ],
+          "method": "fast",
+          "boundary": 106,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00041_749103.json.gz"
+        },
+        {
+          "context": [
+            749103,
+            30
+          ],
+          "method": "soft",
+          "boundary": 106,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00042_749103.json.gz"
+        },
+        {
+          "context": [
+            749103,
+            30
+          ],
+          "method": "feedback",
+          "boundary": 106,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00043_749103.json.gz"
+        },
+        {
+          "context": [
+            749103,
+            45
+          ],
+          "method": "nominal",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00044_749103.json.gz"
+        },
+        {
+          "context": [
+            749103,
+            45
+          ],
+          "method": "fast",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00045_749103.json.gz"
+        },
+        {
+          "context": [
+            749103,
+            45
+          ],
+          "method": "soft",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00046_749103.json.gz"
+        },
+        {
+          "context": [
+            749103,
+            45
+          ],
+          "method": "feedback",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_design/00047_749103.json.gz"
+        }
+      ]
+    },
+    "charger_eval": {
+      "methods": {
+        "dense_256": {
+          "success": 4,
+          "n": 8,
+          "rescues": 0,
+          "regressions": 4
+        },
+        "force_guard": {
+          "success": 8,
+          "n": 8,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "matched_sparse_1024": {
+          "success": 8,
+          "n": 8,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "nominal": {
+          "success": 8,
+          "n": 8,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "sparse_1024": {
+          "success": 7,
+          "n": 8,
+          "rescues": 0,
+          "regressions": 1
+        },
+        "sparse_256": {
+          "success": 3,
+          "n": 8,
+          "rescues": 0,
+          "regressions": 5
+        }
+      },
+      "episodes": 48,
+      "physics_steps": 9600,
+      "planner_queries": 1991,
+      "planning_wall_s": 1.9209782161051407,
+      "wall_s": 252.6247104393551,
+      "checks": [
+        {
+          "context": [
+            749140,
+            null
+          ],
+          "method": "nominal",
+          "boundary": 91,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/nominal/00001_749140.json.gz"
+        },
+        {
+          "context": [
+            749140,
+            null
+          ],
+          "method": "force_guard",
+          "boundary": 91,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/force_guard/00001_749140.json.gz"
+        },
+        {
+          "context": [
+            749140,
+            null
+          ],
+          "method": "dense_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/dense_256/00001_749140.json.gz"
+        },
+        {
+          "context": [
+            749140,
+            null
+          ],
+          "method": "sparse_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_256/00001_749140.json.gz"
+        },
+        {
+          "context": [
+            749140,
+            null
+          ],
+          "method": "sparse_1024",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_1024/00001_749140.json.gz"
+        },
+        {
+          "context": [
+            749140,
+            null
+          ],
+          "method": "matched_sparse_1024",
+          "boundary": 91,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/matched_sparse_1024/00001_749140.json.gz"
+        },
+        {
+          "context": [
+            749141,
+            null
+          ],
+          "method": "nominal",
+          "boundary": 84,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/nominal/00002_749141.json.gz"
+        },
+        {
+          "context": [
+            749141,
+            null
+          ],
+          "method": "force_guard",
+          "boundary": 84,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/force_guard/00002_749141.json.gz"
+        },
+        {
+          "context": [
+            749141,
+            null
+          ],
+          "method": "dense_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/dense_256/00002_749141.json.gz"
+        },
+        {
+          "context": [
+            749141,
+            null
+          ],
+          "method": "sparse_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_256/00002_749141.json.gz"
+        },
+        {
+          "context": [
+            749141,
+            null
+          ],
+          "method": "sparse_1024",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_1024/00002_749141.json.gz"
+        },
+        {
+          "context": [
+            749141,
+            null
+          ],
+          "method": "matched_sparse_1024",
+          "boundary": 84,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/matched_sparse_1024/00002_749141.json.gz"
+        },
+        {
+          "context": [
+            749142,
+            null
+          ],
+          "method": "nominal",
+          "boundary": 95,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/nominal/00003_749142.json.gz"
+        },
+        {
+          "context": [
+            749142,
+            null
+          ],
+          "method": "force_guard",
+          "boundary": 95,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/force_guard/00003_749142.json.gz"
+        },
+        {
+          "context": [
+            749142,
+            null
+          ],
+          "method": "dense_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/dense_256/00003_749142.json.gz"
+        },
+        {
+          "context": [
+            749142,
+            null
+          ],
+          "method": "sparse_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_256/00003_749142.json.gz"
+        },
+        {
+          "context": [
+            749142,
+            null
+          ],
+          "method": "sparse_1024",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_1024/00003_749142.json.gz"
+        },
+        {
+          "context": [
+            749142,
+            null
+          ],
+          "method": "matched_sparse_1024",
+          "boundary": 95,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/matched_sparse_1024/00003_749142.json.gz"
+        },
+        {
+          "context": [
+            749143,
+            null
+          ],
+          "method": "nominal",
+          "boundary": 80,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/nominal/00004_749143.json.gz"
+        },
+        {
+          "context": [
+            749143,
+            null
+          ],
+          "method": "force_guard",
+          "boundary": 80,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/force_guard/00004_749143.json.gz"
+        },
+        {
+          "context": [
+            749143,
+            null
+          ],
+          "method": "dense_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/dense_256/00004_749143.json.gz"
+        },
+        {
+          "context": [
+            749143,
+            null
+          ],
+          "method": "sparse_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_256/00004_749143.json.gz"
+        },
+        {
+          "context": [
+            749143,
+            null
+          ],
+          "method": "sparse_1024",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_1024/00004_749143.json.gz"
+        },
+        {
+          "context": [
+            749143,
+            null
+          ],
+          "method": "matched_sparse_1024",
+          "boundary": 80,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/matched_sparse_1024/00004_749143.json.gz"
+        },
+        {
+          "context": [
+            749144,
+            null
+          ],
+          "method": "nominal",
+          "boundary": 86,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/nominal/00005_749144.json.gz"
+        },
+        {
+          "context": [
+            749144,
+            null
+          ],
+          "method": "force_guard",
+          "boundary": 86,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/force_guard/00005_749144.json.gz"
+        },
+        {
+          "context": [
+            749144,
+            null
+          ],
+          "method": "dense_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/dense_256/00005_749144.json.gz"
+        },
+        {
+          "context": [
+            749144,
+            null
+          ],
+          "method": "sparse_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_256/00005_749144.json.gz"
+        },
+        {
+          "context": [
+            749144,
+            null
+          ],
+          "method": "sparse_1024",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_1024/00005_749144.json.gz"
+        },
+        {
+          "context": [
+            749144,
+            null
+          ],
+          "method": "matched_sparse_1024",
+          "boundary": 86,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/matched_sparse_1024/00005_749144.json.gz"
+        },
+        {
+          "context": [
+            749145,
+            null
+          ],
+          "method": "nominal",
+          "boundary": 96,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/nominal/00006_749145.json.gz"
+        },
+        {
+          "context": [
+            749145,
+            null
+          ],
+          "method": "force_guard",
+          "boundary": 96,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/force_guard/00006_749145.json.gz"
+        },
+        {
+          "context": [
+            749145,
+            null
+          ],
+          "method": "dense_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/dense_256/00006_749145.json.gz"
+        },
+        {
+          "context": [
+            749145,
+            null
+          ],
+          "method": "sparse_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_256/00006_749145.json.gz"
+        },
+        {
+          "context": [
+            749145,
+            null
+          ],
+          "method": "sparse_1024",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_1024/00006_749145.json.gz"
+        },
+        {
+          "context": [
+            749145,
+            null
+          ],
+          "method": "matched_sparse_1024",
+          "boundary": 96,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/matched_sparse_1024/00006_749145.json.gz"
+        },
+        {
+          "context": [
+            749146,
+            null
+          ],
+          "method": "nominal",
+          "boundary": 80,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/nominal/00007_749146.json.gz"
+        },
+        {
+          "context": [
+            749146,
+            null
+          ],
+          "method": "force_guard",
+          "boundary": 80,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/force_guard/00007_749146.json.gz"
+        },
+        {
+          "context": [
+            749146,
+            null
+          ],
+          "method": "dense_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/dense_256/00007_749146.json.gz"
+        },
+        {
+          "context": [
+            749146,
+            null
+          ],
+          "method": "sparse_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_256/00007_749146.json.gz"
+        },
+        {
+          "context": [
+            749146,
+            null
+          ],
+          "method": "sparse_1024",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_1024/00007_749146.json.gz"
+        },
+        {
+          "context": [
+            749146,
+            null
+          ],
+          "method": "matched_sparse_1024",
+          "boundary": 80,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/matched_sparse_1024/00007_749146.json.gz"
+        },
+        {
+          "context": [
+            749147,
+            null
+          ],
+          "method": "nominal",
+          "boundary": 83,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/nominal/00008_749147.json.gz"
+        },
+        {
+          "context": [
+            749147,
+            null
+          ],
+          "method": "force_guard",
+          "boundary": 83,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/force_guard/00008_749147.json.gz"
+        },
+        {
+          "context": [
+            749147,
+            null
+          ],
+          "method": "dense_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/dense_256/00008_749147.json.gz"
+        },
+        {
+          "context": [
+            749147,
+            null
+          ],
+          "method": "sparse_256",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_256/00008_749147.json.gz"
+        },
+        {
+          "context": [
+            749147,
+            null
+          ],
+          "method": "sparse_1024",
+          "boundary": 0,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "FULL_TASK_SAME_INITIAL",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_1024/00008_749147.json.gz"
+        },
+        {
+          "context": [
+            749147,
+            null
+          ],
+          "method": "matched_sparse_1024",
+          "boundary": 83,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/matched_sparse_1024/00008_749147.json.gz"
+        }
+      ]
+    },
+    "charger_factorial": {
+      "methods": {
+        "advance_fast": {
+          "success": 2,
+          "n": 2,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "advance_soft": {
+          "success": 1,
+          "n": 2,
+          "rescues": 0,
+          "regressions": 1
+        },
+        "force_guard": {
+          "success": 2,
+          "n": 2,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "nominal": {
+          "success": 2,
+          "n": 2,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "rotate_fast": {
+          "success": 1,
+          "n": 2,
+          "rescues": 0,
+          "regressions": 1
+        },
+        "rotate_soft": {
+          "success": 1,
+          "n": 2,
+          "rescues": 0,
+          "regressions": 1
+        }
+      },
+      "episodes": 12,
+      "physics_steps": 2400,
+      "planner_queries": 536,
+      "planning_wall_s": 0.1234830777393654,
+      "wall_s": 59.543334499932826,
+      "checks": [
+        {
+          "context": [
+            749101,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00000_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45.0
+          ],
+          "method": "advance_fast",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00001_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45.0
+          ],
+          "method": "rotate_fast",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00002_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45.0
+          ],
+          "method": "advance_soft",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00003_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45.0
+          ],
+          "method": "rotate_soft",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00004_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45.0
+          ],
+          "method": "force_guard",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00005_749101.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 121,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00006_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45.0
+          ],
+          "method": "advance_fast",
+          "boundary": 121,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00007_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45.0
+          ],
+          "method": "rotate_fast",
+          "boundary": 121,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00008_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45.0
+          ],
+          "method": "advance_soft",
+          "boundary": 121,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00009_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45.0
+          ],
+          "method": "rotate_soft",
+          "boundary": 121,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00010_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45.0
+          ],
+          "method": "force_guard",
+          "boundary": 121,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_factorial/00011_749102.json.gz"
+        }
+      ]
+    },
+    "charger_matched": {
+      "methods": {
+        "fast": {
+          "success": 2,
+          "n": 3,
+          "rescues": 0,
+          "regressions": 1
+        },
+        "feedback": {
+          "success": 2,
+          "n": 3,
+          "rescues": 0,
+          "regressions": 1
+        },
+        "nominal": {
+          "success": 3,
+          "n": 3,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "soft": {
+          "success": 2,
+          "n": 3,
+          "rescues": 0,
+          "regressions": 1
+        }
+      },
+      "episodes": 12,
+      "physics_steps": 2400,
+      "planner_queries": 493,
+      "planning_wall_s": 0.11173696466721594,
+      "wall_s": 60.63983236870263,
+      "checks": [
+        {
+          "context": [
+            749100,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 98,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_matched/00000_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            45.0
+          ],
+          "method": "fast",
+          "boundary": 98,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_matched/00001_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            45.0
+          ],
+          "method": "soft",
+          "boundary": 98,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_matched/00002_749100.json.gz"
+        },
+        {
+          "context": [
+            749100,
+            45.0
+          ],
+          "method": "feedback",
+          "boundary": 98,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_matched/00003_749100.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_matched/00004_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45.0
+          ],
+          "method": "fast",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_matched/00005_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45.0
+          ],
+          "method": "soft",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_matched/00006_749101.json.gz"
+        },
+        {
+          "context": [
+            749101,
+            45.0
+          ],
+          "method": "feedback",
+          "boundary": 131,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": true,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_matched/00007_749101.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 121,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_matched/00008_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45.0
+          ],
+          "method": "fast",
+          "boundary": 121,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_matched/00009_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45.0
+          ],
+          "method": "soft",
+          "boundary": 121,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_matched/00010_749102.json.gz"
+        },
+        {
+          "context": [
+            749102,
+            45.0
+          ],
+          "method": "feedback",
+          "boundary": 121,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_matched/00011_749102.json.gz"
+        }
+      ]
+    },
+    "charger_physics_m0.5_f0.2": {
+      "methods": {
+        "nominal": {
+          "success": 2,
+          "n": 4,
+          "rescues": 0,
+          "regressions": 0
+        }
+      },
+      "episodes": 4,
+      "physics_steps": 800,
+      "planner_queries": 121,
+      "planning_wall_s": 0.2676016972400248,
+      "wall_s": 19.580162943108007,
+      "checks": [
+        {
+          "context": [
+            749160,
+            15.0
+          ],
+          "method": "nominal",
+          "boundary": 85,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m0.5_f0.2/00000_749160.json.gz"
+        },
+        {
+          "context": [
+            749160,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 196,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m0.5_f0.2/00001_749160.json.gz"
+        },
+        {
+          "context": [
+            749161,
+            15.0
+          ],
+          "method": "nominal",
+          "boundary": 93,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m0.5_f0.2/00002_749161.json.gz"
+        },
+        {
+          "context": [
+            749161,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 110,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m0.5_f0.2/00003_749161.json.gz"
+        }
+      ]
+    },
+    "charger_physics_m0.5_f1.0": {
+      "methods": {
+        "nominal": {
+          "success": 2,
+          "n": 4,
+          "rescues": 0,
+          "regressions": 0
+        }
+      },
+      "episodes": 4,
+      "physics_steps": 800,
+      "planner_queries": 121,
+      "planning_wall_s": 0.27374607033561915,
+      "wall_s": 19.588114214944653,
+      "checks": [
+        {
+          "context": [
+            749160,
+            15.0
+          ],
+          "method": "nominal",
+          "boundary": 85,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m0.5_f1.0/00000_749160.json.gz"
+        },
+        {
+          "context": [
+            749160,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 196,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m0.5_f1.0/00001_749160.json.gz"
+        },
+        {
+          "context": [
+            749161,
+            15.0
+          ],
+          "method": "nominal",
+          "boundary": 93,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m0.5_f1.0/00002_749161.json.gz"
+        },
+        {
+          "context": [
+            749161,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 110,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m0.5_f1.0/00003_749161.json.gz"
+        }
+      ]
+    },
+    "charger_physics_m2.0_f0.2": {
+      "methods": {
+        "nominal": {
+          "success": 3,
+          "n": 4,
+          "rescues": 0,
+          "regressions": 0
+        }
+      },
+      "episodes": 4,
+      "physics_steps": 800,
+      "planner_queries": 169,
+      "planning_wall_s": 0.21467219933401793,
+      "wall_s": 20.380380048882216,
+      "checks": [
+        {
+          "context": [
+            749160,
+            15.0
+          ],
+          "method": "nominal",
+          "boundary": 83,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m2.0_f0.2/00000_749160.json.gz"
+        },
+        {
+          "context": [
+            749160,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 101,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m2.0_f0.2/00001_749160.json.gz"
+        },
+        {
+          "context": [
+            749161,
+            15.0
+          ],
+          "method": "nominal",
+          "boundary": 91,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m2.0_f0.2/00002_749161.json.gz"
+        },
+        {
+          "context": [
+            749161,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 116,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m2.0_f0.2/00003_749161.json.gz"
+        }
+      ]
+    },
+    "charger_physics_m2.0_f1.0": {
+      "methods": {
+        "nominal": {
+          "success": 3,
+          "n": 4,
+          "rescues": 0,
+          "regressions": 0
+        }
+      },
+      "episodes": 4,
+      "physics_steps": 800,
+      "planner_queries": 169,
+      "planning_wall_s": 0.20193465030752122,
+      "wall_s": 20.32954241114203,
+      "checks": [
+        {
+          "context": [
+            749160,
+            15.0
+          ],
+          "method": "nominal",
+          "boundary": 83,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m2.0_f1.0/00000_749160.json.gz"
+        },
+        {
+          "context": [
+            749160,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 101,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m2.0_f1.0/00001_749160.json.gz"
+        },
+        {
+          "context": [
+            749161,
+            15.0
+          ],
+          "method": "nominal",
+          "boundary": 91,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m2.0_f1.0/00002_749161.json.gz"
+        },
+        {
+          "context": [
+            749161,
+            45.0
+          ],
+          "method": "nominal",
+          "boundary": 116,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_physics_m2.0_f1.0/00003_749161.json.gz"
+        }
+      ]
+    },
+    "tool_early": {
+      "methods": {
+        "none": {
+          "success": 0,
+          "n": 4,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "press": {
+          "success": 0,
+          "n": 4,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "rehook": {
+          "success": 0,
+          "n": 4,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "retract": {
+          "success": 0,
+          "n": 4,
+          "rescues": 0,
+          "regressions": 0
+        }
+      },
+      "episodes": 16,
+      "physics_steps": 1600,
+      "planner_queries": 539,
+      "planning_wall_s": 3.113783460110426,
+      "wall_s": 59.99541056109592,
+      "checks": [
+        {
+          "context": [
+            748052,
+            0.0875
+          ],
+          "method": "none",
+          "boundary": 49,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 49,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00000_748052.json.gz"
+        },
+        {
+          "context": [
+            748052,
+            0.0875
+          ],
+          "method": "rehook",
+          "boundary": 49,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 49,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00001_748052.json.gz"
+        },
+        {
+          "context": [
+            748052,
+            0.0875
+          ],
+          "method": "retract",
+          "boundary": 49,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 49,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00002_748052.json.gz"
+        },
+        {
+          "context": [
+            748052,
+            0.0875
+          ],
+          "method": "press",
+          "boundary": 49,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 49,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00003_748052.json.gz"
+        },
+        {
+          "context": [
+            748053,
+            0.0875
+          ],
+          "method": "none",
+          "boundary": 43,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 43,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00004_748053.json.gz"
+        },
+        {
+          "context": [
+            748053,
+            0.0875
+          ],
+          "method": "rehook",
+          "boundary": 43,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 43,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00005_748053.json.gz"
+        },
+        {
+          "context": [
+            748053,
+            0.0875
+          ],
+          "method": "retract",
+          "boundary": 43,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 43,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00006_748053.json.gz"
+        },
+        {
+          "context": [
+            748053,
+            0.0875
+          ],
+          "method": "press",
+          "boundary": 43,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 43,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00007_748053.json.gz"
+        },
+        {
+          "context": [
+            748061,
+            0.0875
+          ],
+          "method": "none",
+          "boundary": 44,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 44,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00008_748061.json.gz"
+        },
+        {
+          "context": [
+            748061,
+            0.0875
+          ],
+          "method": "rehook",
+          "boundary": 44,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 44,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00009_748061.json.gz"
+        },
+        {
+          "context": [
+            748061,
+            0.0875
+          ],
+          "method": "retract",
+          "boundary": 44,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 44,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00010_748061.json.gz"
+        },
+        {
+          "context": [
+            748061,
+            0.0875
+          ],
+          "method": "press",
+          "boundary": 44,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 44,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00011_748061.json.gz"
+        },
+        {
+          "context": [
+            748105,
+            0.0875
+          ],
+          "method": "none",
+          "boundary": 42,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 42,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00012_748105.json.gz"
+        },
+        {
+          "context": [
+            748105,
+            0.0875
+          ],
+          "method": "rehook",
+          "boundary": 42,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 42,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00013_748105.json.gz"
+        },
+        {
+          "context": [
+            748105,
+            0.0875
+          ],
+          "method": "retract",
+          "boundary": 42,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 42,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00014_748105.json.gz"
+        },
+        {
+          "context": [
+            748105,
+            0.0875
+          ],
+          "method": "press",
+          "boundary": 42,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 42,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_early/00015_748105.json.gz"
+        }
+      ]
+    },
+    "tool_pilot": {
+      "methods": {
+        "feedback": {
+          "success": 6,
+          "n": 8,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "hold": {
+          "success": 6,
+          "n": 8,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "none": {
+          "success": 6,
+          "n": 8,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "press": {
+          "success": 6,
+          "n": 8,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "rehook": {
+          "success": 6,
+          "n": 8,
+          "rescues": 0,
+          "regressions": 0
+        },
+        "retract": {
+          "success": 6,
+          "n": 8,
+          "rescues": 0,
+          "regressions": 0
+        }
+      },
+      "episodes": 48,
+      "physics_steps": 4800,
+      "planner_queries": 1598,
+      "planning_wall_s": 10.365040464210324,
+      "wall_s": 178.0579333830392,
+      "checks": [
+        {
+          "context": [
+            748100,
+            0.0875
+          ],
+          "method": "none",
+          "boundary": 60,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 65,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00000_748100.json.gz"
+        },
+        {
+          "context": [
+            748100,
+            0.0875
+          ],
+          "method": "rehook",
+          "boundary": 60,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 66,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00001_748100.json.gz"
+        },
+        {
+          "context": [
+            748100,
+            0.0875
+          ],
+          "method": "retract",
+          "boundary": 60,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 78,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00002_748100.json.gz"
+        },
+        {
+          "context": [
+            748100,
+            0.0875
+          ],
+          "method": "press",
+          "boundary": 60,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 70,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00003_748100.json.gz"
+        },
+        {
+          "context": [
+            748100,
+            0.0875
+          ],
+          "method": "hold",
+          "boundary": 60,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 68,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00004_748100.json.gz"
+        },
+        {
+          "context": [
+            748100,
+            0.0875
+          ],
+          "method": "feedback",
+          "boundary": 60,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 65,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00005_748100.json.gz"
+        },
+        {
+          "context": [
+            748101,
+            0.0875
+          ],
+          "method": "none",
+          "boundary": 61,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 66,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00006_748101.json.gz"
+        },
+        {
+          "context": [
+            748101,
+            0.0875
+          ],
+          "method": "rehook",
+          "boundary": 61,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 67,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00007_748101.json.gz"
+        },
+        {
+          "context": [
+            748101,
+            0.0875
+          ],
+          "method": "retract",
+          "boundary": 61,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 79,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00008_748101.json.gz"
+        },
+        {
+          "context": [
+            748101,
+            0.0875
+          ],
+          "method": "press",
+          "boundary": 61,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 71,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00009_748101.json.gz"
+        },
+        {
+          "context": [
+            748101,
+            0.0875
+          ],
+          "method": "hold",
+          "boundary": 61,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 70,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00010_748101.json.gz"
+        },
+        {
+          "context": [
+            748101,
+            0.0875
+          ],
+          "method": "feedback",
+          "boundary": 61,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 66,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00011_748101.json.gz"
+        },
+        {
+          "context": [
+            748102,
+            0.0875
+          ],
+          "method": "none",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 72,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00012_748102.json.gz"
+        },
+        {
+          "context": [
+            748102,
+            0.0875
+          ],
+          "method": "rehook",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 73,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00013_748102.json.gz"
+        },
+        {
+          "context": [
+            748102,
+            0.0875
+          ],
+          "method": "retract",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 71,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00014_748102.json.gz"
+        },
+        {
+          "context": [
+            748102,
+            0.0875
+          ],
+          "method": "press",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 78,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00015_748102.json.gz"
+        },
+        {
+          "context": [
+            748102,
+            0.0875
+          ],
+          "method": "hold",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 75,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00016_748102.json.gz"
+        },
+        {
+          "context": [
+            748102,
+            0.0875
+          ],
+          "method": "feedback",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 72,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00017_748102.json.gz"
+        },
+        {
+          "context": [
+            748103,
+            0.0875
+          ],
+          "method": "none",
+          "boundary": null,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00018_748103.json.gz"
+        },
+        {
+          "context": [
+            748103,
+            0.0875
+          ],
+          "method": "rehook",
+          "boundary": null,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00019_748103.json.gz"
+        },
+        {
+          "context": [
+            748103,
+            0.0875
+          ],
+          "method": "retract",
+          "boundary": null,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00020_748103.json.gz"
+        },
+        {
+          "context": [
+            748103,
+            0.0875
+          ],
+          "method": "press",
+          "boundary": null,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00021_748103.json.gz"
+        },
+        {
+          "context": [
+            748103,
+            0.0875
+          ],
+          "method": "hold",
+          "boundary": null,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00022_748103.json.gz"
+        },
+        {
+          "context": [
+            748103,
+            0.0875
+          ],
+          "method": "feedback",
+          "boundary": null,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": null,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00023_748103.json.gz"
+        },
+        {
+          "context": [
+            748104,
+            0.0875
+          ],
+          "method": "none",
+          "boundary": 67,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 72,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00024_748104.json.gz"
+        },
+        {
+          "context": [
+            748104,
+            0.0875
+          ],
+          "method": "rehook",
+          "boundary": 67,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 75,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00025_748104.json.gz"
+        },
+        {
+          "context": [
+            748104,
+            0.0875
+          ],
+          "method": "retract",
+          "boundary": 67,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 85,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00026_748104.json.gz"
+        },
+        {
+          "context": [
+            748104,
+            0.0875
+          ],
+          "method": "press",
+          "boundary": 67,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 78,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00027_748104.json.gz"
+        },
+        {
+          "context": [
+            748104,
+            0.0875
+          ],
+          "method": "hold",
+          "boundary": 67,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 76,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00028_748104.json.gz"
+        },
+        {
+          "context": [
+            748104,
+            0.0875
+          ],
+          "method": "feedback",
+          "boundary": 67,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 72,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00029_748104.json.gz"
+        },
+        {
+          "context": [
+            748105,
+            0.0875
+          ],
+          "method": "none",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 42,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00030_748105.json.gz"
+        },
+        {
+          "context": [
+            748105,
+            0.0875
+          ],
+          "method": "rehook",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 42,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00031_748105.json.gz"
+        },
+        {
+          "context": [
+            748105,
+            0.0875
+          ],
+          "method": "retract",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 42,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00032_748105.json.gz"
+        },
+        {
+          "context": [
+            748105,
+            0.0875
+          ],
+          "method": "press",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 42,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00033_748105.json.gz"
+        },
+        {
+          "context": [
+            748105,
+            0.0875
+          ],
+          "method": "hold",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 42,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00034_748105.json.gz"
+        },
+        {
+          "context": [
+            748105,
+            0.0875
+          ],
+          "method": "feedback",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": false,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 42,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00035_748105.json.gz"
+        },
+        {
+          "context": [
+            748106,
+            0.0875
+          ],
+          "method": "none",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 74,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00036_748106.json.gz"
+        },
+        {
+          "context": [
+            748106,
+            0.0875
+          ],
+          "method": "rehook",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 77,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00037_748106.json.gz"
+        },
+        {
+          "context": [
+            748106,
+            0.0875
+          ],
+          "method": "retract",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 88,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00038_748106.json.gz"
+        },
+        {
+          "context": [
+            748106,
+            0.0875
+          ],
+          "method": "press",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 81,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00039_748106.json.gz"
+        },
+        {
+          "context": [
+            748106,
+            0.0875
+          ],
+          "method": "hold",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 78,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00040_748106.json.gz"
+        },
+        {
+          "context": [
+            748106,
+            0.0875
+          ],
+          "method": "feedback",
+          "boundary": 68,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 74,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00041_748106.json.gz"
+        },
+        {
+          "context": [
+            748107,
+            0.0875
+          ],
+          "method": "none",
+          "boundary": 65,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 68,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00042_748107.json.gz"
+        },
+        {
+          "context": [
+            748107,
+            0.0875
+          ],
+          "method": "rehook",
+          "boundary": 65,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 70,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00043_748107.json.gz"
+        },
+        {
+          "context": [
+            748107,
+            0.0875
+          ],
+          "method": "retract",
+          "boundary": 65,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 68,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00044_748107.json.gz"
+        },
+        {
+          "context": [
+            748107,
+            0.0875
+          ],
+          "method": "press",
+          "boundary": 65,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 75,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00045_748107.json.gz"
+        },
+        {
+          "context": [
+            748107,
+            0.0875
+          ],
+          "method": "hold",
+          "boundary": 65,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 72,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00046_748107.json.gz"
+        },
+        {
+          "context": [
+            748107,
+            0.0875
+          ],
+          "method": "feedback",
+          "boundary": 65,
+          "prefix_max_error": 0.0,
+          "paired": true,
+          "comparison": "SAME_PHYSICAL_PREFIX",
+          "success": true,
+          "rescue": false,
+          "regression": false,
+          "first_contact_step": 68,
+          "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/tool_pilot/00047_748107.json.gz"
+        }
+      ]
+    }
+  },
+  "method_status": "UNVERIFIED",
+  "zero_nominal_source": "525d67e",
+  "early_event_note": "Original early none logger overwrote first event inside path; raw retained. first_contact_step is recomputed from actual interval motion/force for EVERY trace; corrected future logger guards event is None.",
+  "episodes": 200,
+  "physical_steps": 33600
+}

@@ -1,0 +1,2613 @@
+{
+  "method_claim": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
+  "groups": {
+    "charger_design/nominal": {
+      "episodes": 12,
+      "success": 10,
+      "steps": 2400,
+      "planner_queries": 598,
+      "planning_wall_s": 0.5934323100373149,
+      "wall_s": 61.639106912887655,
+      "scene_seeds": [
+        749100,
+        749101,
+        749102,
+        749103
+      ],
+      "errors": {
+        "None": 11,
+        "SERVO_IK_FAILED": 1
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_design/fast": {
+      "episodes": 12,
+      "success": 7,
+      "steps": 2400,
+      "planner_queries": 501,
+      "planning_wall_s": 0.5538283052155748,
+      "wall_s": 61.37832472578157,
+      "scene_seeds": [
+        749100,
+        749101,
+        749102,
+        749103
+      ],
+      "errors": {
+        "None": 9,
+        "CHARGER_NOT_GRASPED": 1,
+        "SERVO_IK_FAILED": 2
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_design/soft": {
+      "episodes": 12,
+      "success": 9,
+      "steps": 2400,
+      "planner_queries": 693,
+      "planning_wall_s": 0.5916973499115556,
+      "wall_s": 60.2921649167547,
+      "scene_seeds": [
+        749100,
+        749101,
+        749102,
+        749103
+      ],
+      "errors": {
+        "None": 11,
+        "SERVO_IK_FAILED": 1
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_design/feedback": {
+      "episodes": 12,
+      "success": 8,
+      "steps": 2400,
+      "planner_queries": 520,
+      "planning_wall_s": 0.6244320428231731,
+      "wall_s": 60.6414052429609,
+      "scene_seeds": [
+        749100,
+        749101,
+        749102,
+        749103
+      ],
+      "errors": {
+        "None": 10,
+        "CHARGER_NOT_GRASPED": 1,
+        "SERVO_IK_FAILED": 1
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_eval/nominal": {
+      "episodes": 8,
+      "success": 8,
+      "steps": 1600,
+      "planner_queries": 277,
+      "planning_wall_s": 0.21689511463046074,
+      "wall_s": 43.93725091707893,
+      "scene_seeds": [
+        749140,
+        749141,
+        749142,
+        749143,
+        749144,
+        749145,
+        749146,
+        749147
+      ],
+      "errors": {
+        "None": 8
+      },
+      "selected_rl_decisions": 73
+    },
+    "charger_eval/force_guard": {
+      "episodes": 8,
+      "success": 8,
+      "steps": 1600,
+      "planner_queries": 274,
+      "planning_wall_s": 0.2261688526486978,
+      "wall_s": 44.291321200085804,
+      "scene_seeds": [
+        749140,
+        749141,
+        749142,
+        749143,
+        749144,
+        749145,
+        749146,
+        749147
+      ],
+      "errors": {
+        "None": 8
+      },
+      "selected_rl_decisions": 72
+    },
+    "charger_eval/dense_256": {
+      "episodes": 8,
+      "success": 4,
+      "steps": 1600,
+      "planner_queries": 409,
+      "planning_wall_s": 0.46106073481496423,
+      "wall_s": 40.53693001915235,
+      "scene_seeds": [
+        749140,
+        749141,
+        749142,
+        749143,
+        749144,
+        749145,
+        749146,
+        749147
+      ],
+      "errors": {
+        "None": 7,
+        "CHARGER_NOT_GRASPED": 1
+      },
+      "selected_rl_decisions": 100
+    },
+    "charger_eval/sparse_256": {
+      "episodes": 8,
+      "success": 3,
+      "steps": 1600,
+      "planner_queries": 396,
+      "planning_wall_s": 0.45609144878108054,
+      "wall_s": 36.48071702790912,
+      "scene_seeds": [
+        749140,
+        749141,
+        749142,
+        749143,
+        749144,
+        749145,
+        749146,
+        749147
+      ],
+      "errors": {
+        "None": 5,
+        "CHARGER_NOT_GRASPED": 2,
+        "SERVO_IK_FAILED": 1
+      },
+      "selected_rl_decisions": 97
+    },
+    "charger_eval/sparse_1024": {
+      "episodes": 8,
+      "success": 7,
+      "steps": 1600,
+      "planner_queries": 312,
+      "planning_wall_s": 0.33370695589110255,
+      "wall_s": 42.38181253313087,
+      "scene_seeds": [
+        749140,
+        749141,
+        749142,
+        749143,
+        749144,
+        749145,
+        749146,
+        749147
+      ],
+      "errors": {
+        "None": 7,
+        "CHARGER_NOT_GRASPED": 1
+      },
+      "selected_rl_decisions": 80
+    },
+    "charger_eval/matched_sparse_1024": {
+      "episodes": 8,
+      "success": 8,
+      "steps": 1600,
+      "planner_queries": 323,
+      "planning_wall_s": 0.22705510933883488,
+      "wall_s": 44.99667874199804,
+      "scene_seeds": [
+        749140,
+        749141,
+        749142,
+        749143,
+        749144,
+        749145,
+        749146,
+        749147
+      ],
+      "errors": {
+        "None": 8
+      },
+      "selected_rl_decisions": 84
+    },
+    "charger_factorial/nominal": {
+      "episodes": 2,
+      "success": 2,
+      "steps": 400,
+      "planner_queries": 86,
+      "planning_wall_s": 0.020162739092484117,
+      "wall_s": 10.105389561969787,
+      "scene_seeds": [
+        749101,
+        749102
+      ],
+      "errors": {
+        "None": 2
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_factorial/advance_fast": {
+      "episodes": 2,
+      "success": 2,
+      "steps": 400,
+      "planner_queries": 86,
+      "planning_wall_s": 0.019965204410254955,
+      "wall_s": 9.961077671847306,
+      "scene_seeds": [
+        749101,
+        749102
+      ],
+      "errors": {
+        "None": 2
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_factorial/rotate_fast": {
+      "episodes": 2,
+      "success": 1,
+      "steps": 400,
+      "planner_queries": 88,
+      "planning_wall_s": 0.020391832455061376,
+      "wall_s": 9.984054772998206,
+      "scene_seeds": [
+        749101,
+        749102
+      ],
+      "errors": {
+        "None": 2
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_factorial/advance_soft": {
+      "episodes": 2,
+      "success": 1,
+      "steps": 400,
+      "planner_queries": 102,
+      "planning_wall_s": 0.02283127512782812,
+      "wall_s": 9.792718381155282,
+      "scene_seeds": [
+        749101,
+        749102
+      ],
+      "errors": {
+        "None": 2
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_factorial/rotate_soft": {
+      "episodes": 2,
+      "success": 1,
+      "steps": 400,
+      "planner_queries": 88,
+      "planning_wall_s": 0.02029187884181738,
+      "wall_s": 9.785880242940038,
+      "scene_seeds": [
+        749101,
+        749102
+      ],
+      "errors": {
+        "None": 2
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_factorial/force_guard": {
+      "episodes": 2,
+      "success": 2,
+      "steps": 400,
+      "planner_queries": 86,
+      "planning_wall_s": 0.01984014781191945,
+      "wall_s": 9.914213869022205,
+      "scene_seeds": [
+        749101,
+        749102
+      ],
+      "errors": {
+        "None": 2
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_matched/nominal": {
+      "episodes": 3,
+      "success": 3,
+      "steps": 600,
+      "planner_queries": 116,
+      "planning_wall_s": 0.02617609198205173,
+      "wall_s": 15.297738010878675,
+      "scene_seeds": [
+        749100,
+        749101,
+        749102
+      ],
+      "errors": {
+        "None": 3
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_matched/fast": {
+      "episodes": 3,
+      "success": 2,
+      "steps": 600,
+      "planner_queries": 116,
+      "planning_wall_s": 0.026689991704188287,
+      "wall_s": 15.188396780984476,
+      "scene_seeds": [
+        749100,
+        749101,
+        749102
+      ],
+      "errors": {
+        "None": 3
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_matched/soft": {
+      "episodes": 3,
+      "success": 2,
+      "steps": 600,
+      "planner_queries": 145,
+      "planning_wall_s": 0.032039926620200276,
+      "wall_s": 14.82922053092625,
+      "scene_seeds": [
+        749100,
+        749101,
+        749102
+      ],
+      "errors": {
+        "None": 3
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_matched/feedback": {
+      "episodes": 3,
+      "success": 2,
+      "steps": 600,
+      "planner_queries": 116,
+      "planning_wall_s": 0.02683095436077565,
+      "wall_s": 15.324477045913227,
+      "scene_seeds": [
+        749100,
+        749101,
+        749102
+      ],
+      "errors": {
+        "None": 3
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_physics_m0.5_f0.2/nominal": {
+      "episodes": 4,
+      "success": 2,
+      "steps": 800,
+      "planner_queries": 121,
+      "planning_wall_s": 0.2676016972400248,
+      "wall_s": 19.580162943108007,
+      "scene_seeds": [
+        749160,
+        749161
+      ],
+      "errors": {
+        "None": 3,
+        "SERVO_IK_FAILED": 1
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_physics_m0.5_f1.0/nominal": {
+      "episodes": 4,
+      "success": 2,
+      "steps": 800,
+      "planner_queries": 121,
+      "planning_wall_s": 0.27374607033561915,
+      "wall_s": 19.588114214944653,
+      "scene_seeds": [
+        749160,
+        749161
+      ],
+      "errors": {
+        "None": 3,
+        "SERVO_IK_FAILED": 1
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_physics_m2.0_f0.2/nominal": {
+      "episodes": 4,
+      "success": 3,
+      "steps": 800,
+      "planner_queries": 169,
+      "planning_wall_s": 0.21467219933401793,
+      "wall_s": 20.380380048882216,
+      "scene_seeds": [
+        749160,
+        749161
+      ],
+      "errors": {
+        "None": 3,
+        "SERVO_IK_FAILED": 1
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_physics_m2.0_f1.0/nominal": {
+      "episodes": 4,
+      "success": 3,
+      "steps": 800,
+      "planner_queries": 169,
+      "planning_wall_s": 0.20193465030752122,
+      "wall_s": 20.32954241114203,
+      "scene_seeds": [
+        749160,
+        749161
+      ],
+      "errors": {
+        "None": 3,
+        "SERVO_IK_FAILED": 1
+      },
+      "selected_rl_decisions": 0
+    },
+    "charger_sac/ordinary_sac": {
+      "episodes": 9,
+      "success": 7,
+      "steps": 1800,
+      "planner_queries": 385,
+      "planning_wall_s": 0.39628184179309756,
+      "wall_s": 44.611947656958364,
+      "scene_seeds": [
+        749120,
+        749121,
+        749122,
+        749123,
+        749124,
+        749125,
+        749126,
+        749127,
+        749128
+      ],
+      "errors": {
+        "None": 8,
+        "CHARGER_NOT_GRASPED": 1
+      },
+      "selected_rl_decisions": 98
+    },
+    "charger_sac_corrected/ordinary_sac": {
+      "episodes": 45,
+      "success": 29,
+      "steps": 9000,
+      "planner_queries": 1768,
+      "planning_wall_s": 2.3751693833619356,
+      "wall_s": 222.62092436815146,
+      "scene_seeds": [
+        749120,
+        749121,
+        749122,
+        749123,
+        749124,
+        749125,
+        749126,
+        749127,
+        749128,
+        749129,
+        749130,
+        749131,
+        749132,
+        749133,
+        749134,
+        749135
+      ],
+      "errors": {
+        "None": 33,
+        "CHARGER_NOT_GRASPED": 5,
+        "SERVO_IK_FAILED": 7
+      },
+      "selected_rl_decisions": 440
+    },
+    "charger_sac_sparse/ordinary_sac": {
+      "episodes": 100,
+      "success": 76,
+      "steps": 20000,
+      "planner_queries": 4087,
+      "planning_wall_s": 4.894763532211073,
+      "wall_s": 516.5062072905712,
+      "scene_seeds": [
+        749120,
+        749121,
+        749122,
+        749123,
+        749124,
+        749125,
+        749126,
+        749127,
+        749128,
+        749129,
+        749130,
+        749131,
+        749132,
+        749133,
+        749134,
+        749135
+      ],
+      "errors": {
+        "None": 90,
+        "CHARGER_NOT_GRASPED": 6,
+        "SERVO_IK_FAILED": 3,
+        "CHARGER_LOST_ON_LIFT": 1
+      },
+      "selected_rl_decisions": 1020
+    },
+    "tool_early/none": {
+      "episodes": 4,
+      "success": 0,
+      "steps": 400,
+      "planner_queries": 133,
+      "planning_wall_s": 0.742558897472918,
+      "wall_s": 15.098852546070702,
+      "scene_seeds": [
+        748052,
+        748053,
+        748061,
+        748105
+      ],
+      "errors": {
+        "Failure('PLAN_HOOK')": 2,
+        "None": 2
+      },
+      "selected_rl_decisions": 0
+    },
+    "tool_early/rehook": {
+      "episodes": 4,
+      "success": 0,
+      "steps": 400,
+      "planner_queries": 136,
+      "planning_wall_s": 0.8586034122854471,
+      "wall_s": 15.06380599597469,
+      "scene_seeds": [
+        748052,
+        748053,
+        748061,
+        748105
+      ],
+      "errors": {
+        "None": 4
+      },
+      "selected_rl_decisions": 0
+    },
+    "tool_early/retract": {
+      "episodes": 4,
+      "success": 0,
+      "steps": 400,
+      "planner_queries": 137,
+      "planning_wall_s": 0.7674088287167251,
+      "wall_s": 15.108454273082316,
+      "scene_seeds": [
+        748052,
+        748053,
+        748061,
+        748105
+      ],
+      "errors": {
+        "Failure('RECOVERY_LEVEL_REHOOK_PLAN')": 1,
+        "None": 3
+      },
+      "selected_rl_decisions": 0
+    },
+    "tool_early/press": {
+      "episodes": 4,
+      "success": 0,
+      "steps": 400,
+      "planner_queries": 133,
+      "planning_wall_s": 0.7452123216353357,
+      "wall_s": 14.724297745968215,
+      "scene_seeds": [
+        748052,
+        748053,
+        748061,
+        748105
+      ],
+      "errors": {
+        "None": 4
+      },
+      "selected_rl_decisions": 0
+    },
+    "tool_pilot/none": {
+      "episodes": 8,
+      "success": 6,
+      "steps": 800,
+      "planner_queries": 261,
+      "planning_wall_s": 1.631539121386595,
+      "wall_s": 29.526754490099847,
+      "scene_seeds": [
+        748100,
+        748101,
+        748102,
+        748103,
+        748104,
+        748105,
+        748106,
+        748107
+      ],
+      "errors": {
+        "None": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      },
+      "selected_rl_decisions": 0
+    },
+    "tool_pilot/rehook": {
+      "episodes": 8,
+      "success": 6,
+      "steps": 800,
+      "planner_queries": 272,
+      "planning_wall_s": 1.8008652746211737,
+      "wall_s": 29.815593396895565,
+      "scene_seeds": [
+        748100,
+        748101,
+        748102,
+        748103,
+        748104,
+        748105,
+        748106,
+        748107
+      ],
+      "errors": {
+        "None": 6,
+        "Failure('PLAN_TRANSFER')": 1,
+        "Failure('RECOVERY_LEVEL_REHOOK_PLAN')": 1
+      },
+      "selected_rl_decisions": 0
+    },
+    "tool_pilot/retract": {
+      "episodes": 8,
+      "success": 6,
+      "steps": 800,
+      "planner_queries": 275,
+      "planning_wall_s": 1.7077882444718853,
+      "wall_s": 29.73676912812516,
+      "scene_seeds": [
+        748100,
+        748101,
+        748102,
+        748103,
+        748104,
+        748105,
+        748106,
+        748107
+      ],
+      "errors": {
+        "None": 4,
+        "Horizon('NATIVE_HORIZON')": 2,
+        "Failure('PLAN_TRANSFER')": 1,
+        "Failure('RECOVERY_LEVEL_REHOOK_PLAN')": 1
+      },
+      "selected_rl_decisions": 0
+    },
+    "tool_pilot/press": {
+      "episodes": 8,
+      "success": 6,
+      "steps": 800,
+      "planner_queries": 267,
+      "planning_wall_s": 1.9038209571735933,
+      "wall_s": 29.929658242152072,
+      "scene_seeds": [
+        748100,
+        748101,
+        748102,
+        748103,
+        748104,
+        748105,
+        748106,
+        748107
+      ],
+      "errors": {
+        "None": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      },
+      "selected_rl_decisions": 0
+    },
+    "tool_pilot/hold": {
+      "episodes": 8,
+      "success": 6,
+      "steps": 800,
+      "planner_queries": 261,
+      "planning_wall_s": 1.6571846884908155,
+      "wall_s": 29.496413732878864,
+      "scene_seeds": [
+        748100,
+        748101,
+        748102,
+        748103,
+        748104,
+        748105,
+        748106,
+        748107
+      ],
+      "errors": {
+        "None": 7,
+        "Failure('PLAN_TRANSFER')": 1
+      },
+      "selected_rl_decisions": 0
+    },
+    "tool_pilot/feedback": {
+      "episodes": 8,
+      "success": 6,
+      "steps": 800,
+      "planner_queries": 262,
+      "planning_wall_s": 1.6638421780662611,
+      "wall_s": 29.55274439288769,
+      "scene_seeds": [
+        748100,
+        748101,
+        748102,
+        748103,
+        748104,
+        748105,
+        748106,
+        748107
+      ],
+      "errors": {
+        "None": 6,
+        "Failure('PLAN_TRANSFER')": 1,
+        "Failure('RECOVERY_LEVEL_REHOOK_PLAN')": 1
+      },
+      "selected_rl_decisions": 0
+    }
+  },
+  "complete_episodes": 354,
+  "complete_control_steps": 64400,
+  "partial": [
+    {
+      "file": "charger_sac_corrected/PARTIAL.json.gz",
+      "sha256": "d28b750ba90048b79ba90c362cf7e09969d1179d752d61e8f3c9f3459676d205",
+      "steps": 116,
+      "planning_queries": 20
+    },
+    {
+      "file": "charger_sac_sparse/PARTIAL.json.gz",
+      "sha256": "b70786df34c6b765cf1984aa29b232defdc118fd557869a76df89618cfd8fc80",
+      "steps": 91,
+      "planning_queries": 16
+    }
+  ],
+  "training": {
+    "charger_sac": [
+      {
+        "file": "charger_sac/INITIAL.zip",
+        "sha256": "55a8798e62f97543ca1eea295e5f8efecc9e22dd7eddcbc0da350de15df9ab6f",
+        "decisions": 0,
+        "updates": 0
+      },
+      {
+        "file": "charger_sac/INTERRUPTED.zip",
+        "sha256": "930794a67e2a995f285cbba19f70dfc15c707c6e179f63c85854d28dc7be089b",
+        "decisions": 97,
+        "updates": 0
+      }
+    ],
+    "charger_sac_corrected": [
+      {
+        "file": "charger_sac_corrected/INITIAL.zip",
+        "sha256": "d751758c43b50454def99950e913f374ce2eebb20a522cb252ed46b51a151a39",
+        "decisions": 0,
+        "updates": 0
+      },
+      {
+        "file": "charger_sac_corrected/INTERRUPTED.zip",
+        "sha256": "5f4697edb21f7d0c8826dc88ef19b373c85804111df8f2a0bd559ed4635f332d",
+        "decisions": 444,
+        "updates": 632
+      },
+      {
+        "file": "charger_sac_corrected/SAC_256.zip",
+        "sha256": "1521814936bfaf3d38dd69d1555710cd3770c26c8c6349b11f3f96893fe29c81",
+        "decisions": 256,
+        "updates": 256
+      }
+    ],
+    "charger_sac_sparse": [
+      {
+        "file": "charger_sac_sparse/INITIAL.zip",
+        "sha256": "f3bc367132820ed47ec6ba253d89591ded6d99b241d6cea4a6e074396d4902b6",
+        "decisions": 0,
+        "updates": 0
+      },
+      {
+        "file": "charger_sac_sparse/SAC_1024.zip",
+        "sha256": "db7b883e28e96cb331ea0c8250c368ff738d211967adf0214335f5e6b7f87cf6",
+        "decisions": 1024,
+        "updates": 1792
+      },
+      {
+        "file": "charger_sac_sparse/SAC_256.zip",
+        "sha256": "28b0e2ca077d23353d33b0ce0584a6c3b1414a97c7af8af40e6f693f12f38abd",
+        "decisions": 256,
+        "updates": 256
+      },
+      {
+        "file": "charger_sac_sparse/SAC_512.zip",
+        "sha256": "884c7a6a4e31773a4fc23a4e643a8fe1939ce38f31ac358be43dbc71e5a5cb21",
+        "decisions": 512,
+        "updates": 768
+      },
+      {
+        "file": "charger_sac_sparse/SAC_768.zip",
+        "sha256": "1bf8752825ba32b01bba650bac823e44ac20f73e8d9dbfb533062ac53e908bf1",
+        "decisions": 768,
+        "updates": 1280
+      }
+    ]
+  },
+  "sources": [
+    {
+      "path": "charger_design/00000_749100.json.gz",
+      "sha256": "b46d2704506c5cee386befe3a94e7e625e716236d2b114dac4e6ce2a3ee6aa07",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00001_749100.json.gz",
+      "sha256": "d608beddbb8fbd72fd9a8796a68b46e53c34d85450744e530bd12e294eedf5ba",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00002_749100.json.gz",
+      "sha256": "5b6e6cf9d4164e037ae2960d1330c476599fff64831749ce4a046128b049a7fb",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00003_749100.json.gz",
+      "sha256": "cb0b455bbf5be5329bc3c474bddbaed1ef5e4315d00e13e50b8600e882188514",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00004_749100.json.gz",
+      "sha256": "3198eab2d22cb391858c17dbf7c950dc5df20d363fda3b14ba45ec0f7ce85a9f",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00005_749100.json.gz",
+      "sha256": "e0d4085a4f4796202f0a482ee818b10008031c133b89834cbfd1d34f5e0848d8",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00006_749100.json.gz",
+      "sha256": "2e8526d5ea5edc8b9c4370788175dc6c2bbc7b3083e21267d07a88da299d8cb8",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00007_749100.json.gz",
+      "sha256": "cdc2571792bd65c6340975e477968b02526b7e1497dbff404d9e2d1bf24d190d",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00008_749100.json.gz",
+      "sha256": "4f4039f9712b5ec42361079778a94becf599310a79402d917f86a06909635a1a",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00009_749100.json.gz",
+      "sha256": "fe5bee3f6a4207cb02bb7701d50003293bf2986b68d301655874a032eadd9158",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00010_749100.json.gz",
+      "sha256": "20df7f4033e23a39897489a2ea59bdb674ea5631109ea65a65844ea28b0b0cff",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00011_749100.json.gz",
+      "sha256": "d0486a0e771c28c463fdc914c4c4ec1e913f9b483ff8c483c8d187cac5df8690",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00012_749101.json.gz",
+      "sha256": "d6a11c94ea299353c2d7fcea8917a2138f66a6eeeef72f7eda136f46c17f9bb3",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00013_749101.json.gz",
+      "sha256": "14c2f658ec8fe359dc9b0aa9984e088b5837796b95be4063452ef3738e075021",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00014_749101.json.gz",
+      "sha256": "8d98f5624b3d05b847fbbbf4218afab8e7d481d3fbf4d8512528e737fd4a4114",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00015_749101.json.gz",
+      "sha256": "cfa33aea4a5b99de345d27173921628d01294d2cbe2bb4a2681d5b2688c7f924",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00016_749101.json.gz",
+      "sha256": "ab3d015a88945b66a62f8ef751bc5f14566ac3fba76cae5c7a4394c270e305f2",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00017_749101.json.gz",
+      "sha256": "1537386ce937e5f2597390ce58052d81d633df892d228aa6614c87c9b1eb9c93",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00018_749101.json.gz",
+      "sha256": "37e37aa46d26e23c883b0387a1b3d7cfb14b07979a5e07e2447cae0e3b8078f5",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00019_749101.json.gz",
+      "sha256": "5a986e6d5f89f4b546a89b126b12f0cf31b90eab4a5738b474a7e51998eb5565",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00020_749101.json.gz",
+      "sha256": "d9436ae68363ec6a260f7ee903f4dfd5838551ffabd0830a1c12be289cbe6179",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00021_749101.json.gz",
+      "sha256": "5f1d25f952f864bcf8da1b4d758b02e4048f75a214fe444e8be511e36d6b4e32",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00022_749101.json.gz",
+      "sha256": "0bae31f6cc0264e22fb9ce2b409774d849d4e69ecc1ec3e5d21bb9a477c43942",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00023_749101.json.gz",
+      "sha256": "2737c2a7f509bcfddb33f13bf780477215c4547d9a230bc63454fafd3887d28c",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00024_749102.json.gz",
+      "sha256": "a21512ab87fe43bab5f0467f393fe67dbed7aac07a65130065ea550903a459f2",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00025_749102.json.gz",
+      "sha256": "caff52a2f9f4c634ce91197fa1d4fdf4a4914f7639b49f1d19e9714d643de605",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00026_749102.json.gz",
+      "sha256": "4e257a090d30fe783e3696b1e6ccded32601997bf59551d849066b897c9082a8",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00027_749102.json.gz",
+      "sha256": "c9a41abf2941169a3e9b0d7fc72a5eea30b96fb606f1ecadd58fb01bc72336d8",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00028_749102.json.gz",
+      "sha256": "fbdcb5bb7c2c7d6a170795b2a0fae7bb23e5741d628108ca0a334f5e6c76fb06",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00029_749102.json.gz",
+      "sha256": "8c4bbc88d8b51933d8e8779174851017ffaa487bd21699c83c15f809a696eab0",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00030_749102.json.gz",
+      "sha256": "f75bb5ff55416565d2b14988164cf8e14135ae86d00c9707cd4933cd8fe948ca",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00031_749102.json.gz",
+      "sha256": "7d59f7e798b00f0e0999975c172391f20acbefd0f5b195f33c8ca131dfa3d891",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00032_749102.json.gz",
+      "sha256": "dbeb044fb4653cfc895c875c36f389d16de36ba60f4938f59e7f743015bca10a",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00033_749102.json.gz",
+      "sha256": "01ea5bfa34ff8e31884c9cda2d48ad5ed59f0b973cda46efc61385233b48f3e2",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00034_749102.json.gz",
+      "sha256": "7ed94cb193f2bbff18947a9ce6e34f038df928ab9a1115367541b9987c881be8",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00035_749102.json.gz",
+      "sha256": "84606dc883ad72bc8381e1a451364753895367a39b78d21c1e6687ba7a98bc7d",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00036_749103.json.gz",
+      "sha256": "fec7daa6c197ee2a1b24c97e59b14f8b94b3112e16fcd6d47b4986074211d72f",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00037_749103.json.gz",
+      "sha256": "30b5c88d5284250fcf27b022e1959bdbd8e7b4acb9c19e093b57c8e63daf40e3",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00038_749103.json.gz",
+      "sha256": "73dfc8ee4766bcd5952eb62fc30f7c6ebb58a6d7a69fb142f4ec593b84f632ac",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00039_749103.json.gz",
+      "sha256": "fa7b130df5ab0728560a10914642080f927c84b7385f2d756255676f11caff1a",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00040_749103.json.gz",
+      "sha256": "dc2a8500a7080275e09ccde59cadff0079afbb2aef8ff9e998f2c56b1e32ea95",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00041_749103.json.gz",
+      "sha256": "b9a00491cbb3d3380c9da4cc3bb2a3fea44855e66d39cf786213ac238777840b",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00042_749103.json.gz",
+      "sha256": "c210ed4f9b05e2ef7ec747736404b4e2feb1579a8f9b144f2bfaf0a9e54d4a38",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00043_749103.json.gz",
+      "sha256": "c10fd20c2b7612d02206de27589e30f73feb1c9290b6ffe9662591def44f1d4d",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00044_749103.json.gz",
+      "sha256": "fcf2bab01c5ab5cf4cc5d62e4b075619d1ca564f082eab6ce378bee0db165bb7",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00045_749103.json.gz",
+      "sha256": "94a4b035c74a945e3b47f2e886dd1e2d0270b4b4cb4678642ca9d304cf4e21f8",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00046_749103.json.gz",
+      "sha256": "c9569c47c92d9d193b0fb6715abfd6db627e3c1d2cb04c1d8136f7352ac24354",
+      "steps": 200
+    },
+    {
+      "path": "charger_design/00047_749103.json.gz",
+      "sha256": "6fcb13b527d449fe2b35d286d1b9940328c6c65b0f23816448fef678043a38fb",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/nominal/00001_749140.json.gz",
+      "sha256": "d2760102d7dc46f2415b3b9ce28c3b01c7827f41385b9934ad6e4a892b0e87e4",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/nominal/00002_749141.json.gz",
+      "sha256": "56aee9c336c7ce9167daefb642957b5b76bff29189afb30fed160e4e1f0603b6",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/nominal/00003_749142.json.gz",
+      "sha256": "aa410ff1acc79cca9b82120d63bf9d6f9b5f0e59ad23e29867906fb2e6d0e915",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/nominal/00004_749143.json.gz",
+      "sha256": "744a64433243b226f8f798e6d6d79cc262e6a3dc531a344c79eebb0ae646e40f",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/nominal/00005_749144.json.gz",
+      "sha256": "8faa19d7d11c548ae8187047b5fecdd4ee4a1f36de89cf49a9420864ad58fce1",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/nominal/00006_749145.json.gz",
+      "sha256": "237e13a3cdb1d47e9ebbdd3b8aa37ed9907df5f874e401ae9ba4fa7c52688839",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/nominal/00007_749146.json.gz",
+      "sha256": "b4046668563b971812b6f57262508db8bf3dc55b51a0127350471477caed8e19",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/nominal/00008_749147.json.gz",
+      "sha256": "31bb61dabf88feafcdba4fdb32bd7a6ebdaa1cd0a6e12cdfa7fd59549e85b8f8",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/force_guard/00001_749140.json.gz",
+      "sha256": "f2a1f40e0f3d542414d1ca4a00fe0d9384c2f9860efa429049a1c4ba2fd979ff",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/force_guard/00002_749141.json.gz",
+      "sha256": "213c713630a109feaef6a1bc97e872f8d0a9892acc926f5cd118d08c4d74bba3",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/force_guard/00003_749142.json.gz",
+      "sha256": "0ec4303657e0012c774ca34163ced603255283372f0a9d32b3714d5c00d656e6",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/force_guard/00004_749143.json.gz",
+      "sha256": "0507e19e0c93b982f0c0979d7742fb993a4e3733e4b6d588e040f2f8f52d042e",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/force_guard/00005_749144.json.gz",
+      "sha256": "718c219aa973dfe88ae5ef44e207c6229c1547813158160a946793f2166a1297",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/force_guard/00006_749145.json.gz",
+      "sha256": "01e7fb3c4f30e68a99ce36236b22402636a88d4d57ac84f76a184253cb0a3297",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/force_guard/00007_749146.json.gz",
+      "sha256": "5a0a5c076de8b9d3d735c7c9196ca3465f48bf797605b68d3f7e95e9d2f93c4f",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/force_guard/00008_749147.json.gz",
+      "sha256": "d4fcd39174a5aed71f5f23d063f81ecc3ecc6c693b91e8af6093107c83795fe2",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/dense_256/00001_749140.json.gz",
+      "sha256": "052f6c7dab5fe386ec30cbc77586ee31612001c49c0920e0481d41f1ee28482a",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/dense_256/00002_749141.json.gz",
+      "sha256": "8c34c04ff54a0227bf3c4c4d4f76a76e7da97c538b722fd009b61c5dbe501c0e",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/dense_256/00003_749142.json.gz",
+      "sha256": "905daa783c259b9bdc434734a64becf4bacb46b3875b7ed291a595532e80bc32",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/dense_256/00004_749143.json.gz",
+      "sha256": "0d5d8f59ec7bdb0f8d6225bc1241072da9cb678715da21494a4e4a259f4005b5",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/dense_256/00005_749144.json.gz",
+      "sha256": "d4f5965d2170c2b4bc263b98a31a4c67fd807ab21cc6e50be69cee467079d4ac",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/dense_256/00006_749145.json.gz",
+      "sha256": "548c9bbcca5a2affd44cdb40599cacc2c6d5f3e3a378cf58f08c1f52b522af13",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/dense_256/00007_749146.json.gz",
+      "sha256": "c42c1be784c76f01586b75446d2d51a20c0b41b6ac1348019ffac4a17b1b364d",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/dense_256/00008_749147.json.gz",
+      "sha256": "6efa5eaeab97bd49f653cb9f197e3d81aa7d30e6116bd3f8a4bed3bf33d7921f",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_256/00001_749140.json.gz",
+      "sha256": "8d49976501f3aa3bf7ad7d523a3bf17ee6d441a251b4645dc9e73c06477a1ac1",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_256/00002_749141.json.gz",
+      "sha256": "763d6c8738720cf70c64ff3cbb1a66a99c027a0b6b2c00b194f24c9fff36c5c7",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_256/00003_749142.json.gz",
+      "sha256": "0da9d088d65317689960cb4ffd0b4240017218ab2e9637da6634e41d0967a47c",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_256/00004_749143.json.gz",
+      "sha256": "46ae5c45a9353555b5a27abc384df6c8ddb089bd034f7150488c6990d9eb20a8",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_256/00005_749144.json.gz",
+      "sha256": "692e53a2303d24fa1098c7742b9fa6488d9684515ef111f3bbe507b2cd7cbbd2",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_256/00006_749145.json.gz",
+      "sha256": "e4d22870a4261d22efde9fecb089ef2a14be8550a1bf314b106f67785ded65e1",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_256/00007_749146.json.gz",
+      "sha256": "738e35a4400a9fc2925b976e99bdd5eb544c0fe281b74704a0f085906426a734",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_256/00008_749147.json.gz",
+      "sha256": "fce24676d50356e62d94683b05da7b0a5c55b30754efa52b0827fcf82625a2e3",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_1024/00001_749140.json.gz",
+      "sha256": "2e87ba1c93c5e6f259aee6cb71f3cf18d7443c923e7d0d5b5fea0e130bb2e0bd",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_1024/00002_749141.json.gz",
+      "sha256": "081e69914be4cb9b46630b633e57f87e8e3f6c8a886e673e4f6b21a93eb35005",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_1024/00003_749142.json.gz",
+      "sha256": "ebfd531049851ddf251562944a287fe8c6e6b4058cb0cf2741d6078716915427",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_1024/00004_749143.json.gz",
+      "sha256": "c848a2cfe9ece75b239dab43cb032eccdf1d28cf72f21dbde0907607405195b0",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_1024/00005_749144.json.gz",
+      "sha256": "e97c66d863e5bbffc1ba229bf0ffe6237a8bf70921fb4e6a3c28a7e9924dc220",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_1024/00006_749145.json.gz",
+      "sha256": "8ffe378a8132f4c8be0b50cd91ad6791f750c794c7993000b30fe1431c613b1c",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_1024/00007_749146.json.gz",
+      "sha256": "95a5a203745a3dcf986124b61deccdd81683947f685b6caf525e261a6d3176d5",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/sparse_1024/00008_749147.json.gz",
+      "sha256": "de53c33752122332da9ef748aab306d1aebedea8ec374b28a162d3b0be0942c8",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/matched_sparse_1024/00001_749140.json.gz",
+      "sha256": "390b31d230cb1820a715366df68b2be09fea84bf0e41b70e61fb95b3e0f85ce4",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/matched_sparse_1024/00002_749141.json.gz",
+      "sha256": "129faa439e0ea7cb7cc1d5c62b666174b5b62bac027f701af3b7d8d25f92cc58",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/matched_sparse_1024/00003_749142.json.gz",
+      "sha256": "064d140495e31755b665c473f3f65140b857d23dff9072cfca1120c085e16837",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/matched_sparse_1024/00004_749143.json.gz",
+      "sha256": "f3819320cc51310c48bd83072d8c353f9f5a1772fae1a6b175e4dadef4f0256d",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/matched_sparse_1024/00005_749144.json.gz",
+      "sha256": "e6358514a79323b023f127a6bf2518979b48fe67d964bcc0033e71126451d5b6",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/matched_sparse_1024/00006_749145.json.gz",
+      "sha256": "fb48817e679c0c91b8ce9724561179b8d95c7d4cd9aec7a5400a7f3e38350bd9",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/matched_sparse_1024/00007_749146.json.gz",
+      "sha256": "cd5b7091262924ff464df0a06df9eb927879fba3823465b281495ed31a7a58f1",
+      "steps": 200
+    },
+    {
+      "path": "charger_eval/matched_sparse_1024/00008_749147.json.gz",
+      "sha256": "a07497095787dd5f7c7c32b0c1b8770b705ee681c70df39c580da94c6c598f22",
+      "steps": 200
+    },
+    {
+      "path": "charger_factorial/00000_749101.json.gz",
+      "sha256": "d938d4ac6119c3a090aff2f91bca8afc64374a45ba09d64f15cb06a1883dd61a",
+      "steps": 200
+    },
+    {
+      "path": "charger_factorial/00001_749101.json.gz",
+      "sha256": "8f54b2f1e4feceb2b987da1c356f1a17600908998c9f814b2542a6f162a71335",
+      "steps": 200
+    },
+    {
+      "path": "charger_factorial/00002_749101.json.gz",
+      "sha256": "9e7572a3ab8bb0764c08cf09b46df1991fe32bef83d0de3b7327df324a2ef479",
+      "steps": 200
+    },
+    {
+      "path": "charger_factorial/00003_749101.json.gz",
+      "sha256": "551d6dc1b32530caffbd9ed278b6082ddd237437b8ed62c67d088c1f50aa53ab",
+      "steps": 200
+    },
+    {
+      "path": "charger_factorial/00004_749101.json.gz",
+      "sha256": "b78580bb8eaed9fc99e6a8fc775d639b7910b1c15f5674d2b8a7e60ef2579bdc",
+      "steps": 200
+    },
+    {
+      "path": "charger_factorial/00005_749101.json.gz",
+      "sha256": "3bafaeed6d51c428ffef26c0eba3ef0ffd091959fd6ae849abbcfbad67bb8883",
+      "steps": 200
+    },
+    {
+      "path": "charger_factorial/00006_749102.json.gz",
+      "sha256": "acf588d77a9377dd624e3f3880127fea727222fcda6900bd0165a25cf8aa223b",
+      "steps": 200
+    },
+    {
+      "path": "charger_factorial/00007_749102.json.gz",
+      "sha256": "a4822401870635bf58074d834efa1c2aa348b6e19721a26377c8f3eecffc46d2",
+      "steps": 200
+    },
+    {
+      "path": "charger_factorial/00008_749102.json.gz",
+      "sha256": "a1c39907414ecbd78980ac5a76ac7b32de87f5006fa71004b2eca06b89b43587",
+      "steps": 200
+    },
+    {
+      "path": "charger_factorial/00009_749102.json.gz",
+      "sha256": "99f8e4972be2c25b25bf89afbaf1722393ba7fd99f837dc2a0f88d868c2bb23c",
+      "steps": 200
+    },
+    {
+      "path": "charger_factorial/00010_749102.json.gz",
+      "sha256": "4c266d74d8b320247328f8ba27bcdceef9ea1f2eb80dca3ec388bcd9d67a0620",
+      "steps": 200
+    },
+    {
+      "path": "charger_factorial/00011_749102.json.gz",
+      "sha256": "3e4c9fec822cbb540c0f8211d32304d81cd7874065074c2f7ddd1ff9a22b5661",
+      "steps": 200
+    },
+    {
+      "path": "charger_matched/00000_749100.json.gz",
+      "sha256": "6ce30e66ad91007f409fe1505ee6b1a8149a5366acc237aaa57e8968236d21a4",
+      "steps": 200
+    },
+    {
+      "path": "charger_matched/00001_749100.json.gz",
+      "sha256": "57e2837e90f40cf3b897bb151c8a71acd2d10ecd680d38449250f40564bc0dea",
+      "steps": 200
+    },
+    {
+      "path": "charger_matched/00002_749100.json.gz",
+      "sha256": "7c769c140703f30a12640a9eac25ccb42cede864f5d31e9cccfdef9961998062",
+      "steps": 200
+    },
+    {
+      "path": "charger_matched/00003_749100.json.gz",
+      "sha256": "952a4e75e610d0d26ddee65919902539ce3c132fb4a72cb3514016e2bd63df1a",
+      "steps": 200
+    },
+    {
+      "path": "charger_matched/00004_749101.json.gz",
+      "sha256": "487ae4a41ac2e13e3a2793a8d6d1f3f4af0c2c72ab0962162dd4e34af5c12805",
+      "steps": 200
+    },
+    {
+      "path": "charger_matched/00005_749101.json.gz",
+      "sha256": "34d8ac7ac5d58469ba1b3050a389e786295f1fff02925515dd1b32c2bf71e49a",
+      "steps": 200
+    },
+    {
+      "path": "charger_matched/00006_749101.json.gz",
+      "sha256": "c7f91df8e40546d7c4be6a578ad403683edff09f835d526e88df2ec4efc99e78",
+      "steps": 200
+    },
+    {
+      "path": "charger_matched/00007_749101.json.gz",
+      "sha256": "f7d1689044672ae3b6fb8e99f8efbae30bb6027a71d83ea2fa2325568c1bcd6e",
+      "steps": 200
+    },
+    {
+      "path": "charger_matched/00008_749102.json.gz",
+      "sha256": "1ed748857f19edc75127d9ab8aa12e032fce640b5ffcd424918b52b748d42058",
+      "steps": 200
+    },
+    {
+      "path": "charger_matched/00009_749102.json.gz",
+      "sha256": "612b9cb592f2f6dab27cd34e0b7a4b0d619a022b4020e8e7c3dc74feeb1ab0ce",
+      "steps": 200
+    },
+    {
+      "path": "charger_matched/00010_749102.json.gz",
+      "sha256": "1166a3a8d93fb6a3e9454e07e813e884ba48c91a6d5929a5ed489b8c59474902",
+      "steps": 200
+    },
+    {
+      "path": "charger_matched/00011_749102.json.gz",
+      "sha256": "8c03967b9851fc65bee05bc201f0ef4f9eefaddbc3ac2c2a59df4b901a0e186a",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m0.5_f0.2/00000_749160.json.gz",
+      "sha256": "d50e0a6b86debc3b1f4dbf1087b4639e5b02ce4bf6f4102ed13aa20ffcb2a00a",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m0.5_f0.2/00001_749160.json.gz",
+      "sha256": "b5c161627fd12b26dbf39c9c8db40fb307311381a9ee201136c09ce20308f835",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m0.5_f0.2/00002_749161.json.gz",
+      "sha256": "f9507725bfbdc0daffc92c89416143c442c93a28759eb761bb6bc2c95ad71831",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m0.5_f0.2/00003_749161.json.gz",
+      "sha256": "a55f884b4dc858d01006f3e121ed2281b0c23c6f774cf97c8c334f5652bb2f58",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m0.5_f1.0/00000_749160.json.gz",
+      "sha256": "775aea4593feb34fc8b2b3e9b1d6423d30d1df086130da16cde4c4c5349e2cbc",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m0.5_f1.0/00001_749160.json.gz",
+      "sha256": "7aac343c50400d46023979fe8d02fe7a20fb19e7aac59749690c84717bb8782c",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m0.5_f1.0/00002_749161.json.gz",
+      "sha256": "28d6878077a892d8edc4218bbbf9e694850fff2c743bf5a6778e3f83ec082e17",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m0.5_f1.0/00003_749161.json.gz",
+      "sha256": "1b627ca58816216757259d1d46fd0f54b0ea9d5b1ac7a84deba607d78d30f089",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m2.0_f0.2/00000_749160.json.gz",
+      "sha256": "ba739fd0c11aa8df4d840046c580497ebe8e56bda4133328e777701e71c5ef51",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m2.0_f0.2/00001_749160.json.gz",
+      "sha256": "97bbd715b7ffb65fe266a46888b58827d98526b0c88963b856669510c0cbf818",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m2.0_f0.2/00002_749161.json.gz",
+      "sha256": "bb086470373b227ca4307b7622b56887d3183ef2cd1d203f13d2e4cb81b9e7ec",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m2.0_f0.2/00003_749161.json.gz",
+      "sha256": "e433d6a8f55d5b1eaa2ad6ed0d44a3cb7405a59c55eb24e4ce2eb6b9c567935c",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m2.0_f1.0/00000_749160.json.gz",
+      "sha256": "73f7dc46b566e13b627137b74d8a12d7ade2dfa0871918fb5635b3c75838541a",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m2.0_f1.0/00001_749160.json.gz",
+      "sha256": "f76ba2cb43159b4d4287d4ca03467685749905737818571b59331bbee3a22cbc",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m2.0_f1.0/00002_749161.json.gz",
+      "sha256": "bb02f83527dbfe49d9ca9538bb96c1eaff49d3118bc298837d0053dfb0492b4f",
+      "steps": 200
+    },
+    {
+      "path": "charger_physics_m2.0_f1.0/00003_749161.json.gz",
+      "sha256": "7283983bedd00ae320bc02cc594d4e559d2cf7fd8e6a61c782c84d982733a586",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac/episodes/00001_749120.json.gz",
+      "sha256": "d1f22c2a4f8675c39972fc78dbf204f359207bd412d4762e07a058aee38ad5c7",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac/episodes/00002_749121.json.gz",
+      "sha256": "74656fa68aed3c789090d9ac226ee555b82d328ee11411d165cbebbf3ac0acd1",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac/episodes/00003_749122.json.gz",
+      "sha256": "456b0a7aee9914b8a310d2f54d03f094865fc82020954664496b8588ecd6ccdc",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac/episodes/00004_749123.json.gz",
+      "sha256": "0e086dc126265a2d81864eb1f012753714de7734c336502dc39dc55adae016aa",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac/episodes/00005_749124.json.gz",
+      "sha256": "b261466de9622d69517a6b265611c27fbbb9abd5ecfdd4e611a7215d38cad386",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac/episodes/00006_749125.json.gz",
+      "sha256": "99902b4b09f9877cbbd22675daf61e6076c0b6abb4c95322f9bbb5c8f35bcf06",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac/episodes/00007_749126.json.gz",
+      "sha256": "7a8b71ee303cddbade476ed1cb088b2a35a9aac549ad93d164ffa60d3161e693",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac/episodes/00008_749127.json.gz",
+      "sha256": "6d856ad90799aa0da2fd5f0d8dadf0a3f14c874b090c439b05b68614c01e133e",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac/episodes/00009_749128.json.gz",
+      "sha256": "dd8ccd9a9c6c070f1786d3aadd0b5d15429304a7015b3b0ddc299b0845cc344b",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00001_749120.json.gz",
+      "sha256": "d8e408474d69b12e07d859b3e66718fa2ecc4a7aca212046ed7e4e5087b4a4f9",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00002_749121.json.gz",
+      "sha256": "b1b6e8c0a046baba7505f10209f3d6ef132080fe904c8074dea048aa27297f2b",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00003_749122.json.gz",
+      "sha256": "5a925cc05f84ce727312f637483828dc52cac8025c5bf8bd1938b469dfdcaa2b",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00004_749123.json.gz",
+      "sha256": "3a1fe142c72b5e44bd6d46358538c39f6590edeee7aec6932c7b939e1eebc959",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00005_749124.json.gz",
+      "sha256": "8b572081d6573ee33f8a3bd5f67e2bdb78c415e6a4e5949bdb04489aec3e5d3a",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00006_749125.json.gz",
+      "sha256": "7a0332717fef800a58ede6cbbb9d4821eccd37d4e498b9eec1d3e0448895cbe8",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00007_749126.json.gz",
+      "sha256": "6b7b8a8d6fe98895ff5c31d91fdf1fc89daabf8279b6b153fdc1cf2b2b41ae96",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00008_749127.json.gz",
+      "sha256": "5084f8f7c0d1ce14d4b505058ab2cecac0a95f06e59b32ddc34b23f08665364f",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00009_749128.json.gz",
+      "sha256": "3e90345607fbcf8c1fcbbd35f7430b347358bcd1e6201ab3983780f876b59e56",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00010_749129.json.gz",
+      "sha256": "8f02cbd74096ba61b99144a8ada94f2c5ef49d0ff97971ff49c2cc4a9ed3c29e",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00011_749130.json.gz",
+      "sha256": "6afd4d8754add353e5d845413f88d1b2870cf7723953286092342de7a7c372a1",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00012_749131.json.gz",
+      "sha256": "b5e520ee0f1313bdac82d4040f592b110b77968f4c73c9450d257d8fb55e08d7",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00013_749132.json.gz",
+      "sha256": "a2e0a07bb59c0cba17e2ec7cb71cefaec9d84864f59b0bab4fea4061f8f69548",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00014_749133.json.gz",
+      "sha256": "43a6f392ac302e7494fb39ebbdeed6c864241336c35c46ee71342919c5991278",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00015_749134.json.gz",
+      "sha256": "fed51f8419eb6b49ba747985465d99cbfe0f450bdd328364fb3ed68358c241cb",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00016_749135.json.gz",
+      "sha256": "ae6bd48cef15d45a357fb0c7025630615306b937771cccc151087d22ba84690d",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00017_749120.json.gz",
+      "sha256": "d59261e0f0958e8d4e4326d59d30a924165bf50fa5d67bdb1e6dc8234e618e05",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00018_749121.json.gz",
+      "sha256": "5ba5185d0412254b78a4d78f7d9d8b88ac050c9da2c6af940038fdaef162acbf",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00019_749122.json.gz",
+      "sha256": "94d87fd7b79468a58d5f6cde224c1043d9474978cfb8e0d5998a376b886bfcfd",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00020_749123.json.gz",
+      "sha256": "d4eb2079844c15b449a83f63311e89c3d9dd0c1ac760cf8460180cd8b3bca8eb",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00021_749124.json.gz",
+      "sha256": "80b8e4cb5b56a6eb050bcd6e3c4ea3d657fbfe606c6956a2b0927d7231077a21",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00022_749125.json.gz",
+      "sha256": "dd49338bc8d8f1169d8e15d323edd9f200618f369ae021b837b7fc43de11d737",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00023_749126.json.gz",
+      "sha256": "bbbc5413e5c1be192d71e4d872b7ad398bca2e5370d1f70dd3253ead2fb6b66c",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00024_749127.json.gz",
+      "sha256": "21da08795aab850ba5b430a85bda9a1ef5353773f9ed2853ae9d1dabaeb2f342",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00025_749128.json.gz",
+      "sha256": "51883f98f6c267b77151f040f44bc82bc941928ce9f41737e6e6b8eb3849b3be",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00026_749129.json.gz",
+      "sha256": "37f576ebcbef50a6ba62030339144c739f2473bbd8ea19631d5bd0e7775cbdef",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00027_749130.json.gz",
+      "sha256": "f421a7aa15a73c8b1405670757042b48ddeec131cd5e26aaa229ef365214c769",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00028_749131.json.gz",
+      "sha256": "f35c0c9ca39c850591186501ceeb22169353972f1f896d45e2d1244a6c6c68fc",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00029_749132.json.gz",
+      "sha256": "605b1bebbffb504cb0dd87e8194b1cd16b075f5941de42dc177ffa5b4e27405a",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00030_749133.json.gz",
+      "sha256": "d79a1728bd14ffbfa2a5e252efd6ffdc34b2281b32509a4f5f427d742ffdca15",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00031_749134.json.gz",
+      "sha256": "a0977027426d1ef94ae6b7ec69a4d8906fe4000847a5cca56be4911833b9c6ee",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00032_749135.json.gz",
+      "sha256": "3329ce44f16603432ab652cfaa92c5830ebe01a4d4b72733359300a0506b9ca8",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00033_749120.json.gz",
+      "sha256": "f361056d6b603ba624cb15343c40387db0db3f94f561e8ea93c161ee3c7b24ee",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00034_749121.json.gz",
+      "sha256": "616937b84a9e6a6bdfcf508adc85955f05606217c2cff3f0e56d980c8816b32f",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00035_749122.json.gz",
+      "sha256": "16404ee5a7cc27ad36ab5e390aefcdd95d1def51d1a2bdee0777a5931dd60b92",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00036_749123.json.gz",
+      "sha256": "6ee9d7d076ea4ace8e897d043ac2b91803c47e5cefe09c2a33c0e4cb5b358693",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00037_749124.json.gz",
+      "sha256": "5aa0af79f47bc26659020465604cd18b1ce5122942e1108d1cd869436fb85842",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00038_749125.json.gz",
+      "sha256": "055d076256d931eda4bafd7910aa70c9616e82f819f48cdb64912df8f772ac3f",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00039_749126.json.gz",
+      "sha256": "a47f4d448f3b0b074338c307129c2bab73d416728029be26fca8a5764c04e19e",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00040_749127.json.gz",
+      "sha256": "f429a5de3dcc116d079ca4c666e7aec77d0a943cd1a7c3d0cf43478cf723c5ff",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00041_749128.json.gz",
+      "sha256": "9e1f7bf2c1e3847ec0fba7b7a840d59092015dbe9fc35dd233916cea1b02f74e",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00042_749129.json.gz",
+      "sha256": "d97611049f7c7b4055a81f9b125240d36a0157345213618d0cc4668d35625e51",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00043_749130.json.gz",
+      "sha256": "dc5c9d992406cd5d0758d433ee519efb2ea201b2d8c3b72ea40db55018c60010",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00044_749131.json.gz",
+      "sha256": "6684bde69644b414c26eef2c1854224496fd72763dd5efb0383fae491129c82b",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_corrected/episodes/00045_749132.json.gz",
+      "sha256": "2827bd8a659d1d6457b655ff1b92d5af34ed5b2deb20a5157802e86b444fc822",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00001_749120.json.gz",
+      "sha256": "3f19a8cb001927803fa417e41a7e62717fe8e2a647ae11ba1ba23a63bdf2528b",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00002_749121.json.gz",
+      "sha256": "22b1acd3dbc5edae98eacd121152aaa6247224b8bbf25960007fdf10610dcf90",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00003_749122.json.gz",
+      "sha256": "cb62c5ea48662248752ea0451f5ba30927a20e1b7525c24d251865c418f4ca19",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00004_749123.json.gz",
+      "sha256": "c82b28f40f941e1b8faa0fa8156df361d85e873e6ee6dcb647652757cfbea032",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00005_749124.json.gz",
+      "sha256": "2af7a8401ea21a29e40c62fa9aa3b9b179dd8932601b90d3c42acf9b799effc4",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00006_749125.json.gz",
+      "sha256": "0b6e6d9512134b133e2f3d4728483aa1091c50a51b50f2a69d5d56e1f80de5f2",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00007_749126.json.gz",
+      "sha256": "69b4300dd680686388962d94c024c4ed8fcc878c9c9c4837365a665f6472f22f",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00008_749127.json.gz",
+      "sha256": "b19d8389e1c9be00021bfb9ec9bb5ff41c4b23c0bc4a35130a5a6e80463bfb25",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00009_749128.json.gz",
+      "sha256": "083e1fc198f4a30e3c9193caeaa1aab12b9faf4873213338533ae414b5f16dca",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00010_749129.json.gz",
+      "sha256": "5a2f5a2fa15e78bd814198fff71ca3afe8f15ade3197d0843a687858bddc8b00",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00011_749130.json.gz",
+      "sha256": "7b3427ca8a410d25df86c95def11337987077a176df9cc743f82c3da16fe4662",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00012_749131.json.gz",
+      "sha256": "6d8c8275ec68d4a04fdd20328940fdf394ab481a894ce33bd31c6c9ed3f5091e",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00013_749132.json.gz",
+      "sha256": "fc420f27e2b70416f6134cd2a223baa8245f494194b74333ac698de0baf86ca3",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00014_749133.json.gz",
+      "sha256": "236cdd5a754d689847b773be05c06640ef1019cfa955c5cafa5512e954d7b74b",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00015_749134.json.gz",
+      "sha256": "31719a2827b23e04b9bc7b47a357b230309020203bc0ce527040fbb0fbc1a90d",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00016_749135.json.gz",
+      "sha256": "a463bc6ec358e60ef5c05a6aa1286a739a3d625a60349f863bfb76c7dc0d419f",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00017_749120.json.gz",
+      "sha256": "9a2977ed29e4425413b5952dab63a504e83ae1210dd90c348b23c09fd68f451f",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00018_749121.json.gz",
+      "sha256": "8fc349ddeca306ff56516e7b3b2b4bbe56aecda293eec74be9469488a4b7fa38",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00019_749122.json.gz",
+      "sha256": "21dbe1bf121db163da8085b073e72142c8101cc33b08147dff649cfdd9d96e92",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00020_749123.json.gz",
+      "sha256": "89e359536f3a4a29163627b53577ebecf67a38e64ff51ad3f595baec0f6eaf57",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00021_749124.json.gz",
+      "sha256": "7e946133bbd694acf8518678c3da1ee10e333f4c1f4c85ce76dc88cff2928622",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00022_749125.json.gz",
+      "sha256": "9e282cb442a92431a7febed2bb7f24d4396159a5d4830dc7db04e913d586caaf",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00023_749126.json.gz",
+      "sha256": "30fb62fe71ecf8738591dc96c46cee804939aeed278a4d809311e7cc88caac85",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00024_749127.json.gz",
+      "sha256": "4086571ecfae50274778983e2996599e7829677b958e0c14d3cb2db33481f292",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00025_749128.json.gz",
+      "sha256": "cbe94e8cdcac1de68f6e416e78c5e24d2cbd3a03ac801dd4a4ef0a2b79d8bf04",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00026_749129.json.gz",
+      "sha256": "9c0cef8794ebc8e2b34a3744634c660443667f560b9ea11ce1841b039f075e52",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00027_749130.json.gz",
+      "sha256": "f8e6893cea05ecd10cdbd25073c09ce398c90fadc15bb7f9468d0933da6c16e6",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00028_749131.json.gz",
+      "sha256": "0e8e2af041c1450f0ec8cc9a5be4d2d0c75eec135706dff7ca892bbfdbb8ec44",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00029_749132.json.gz",
+      "sha256": "13a1f9a9c442901d697fbefe43006fab53bd90b34d7c8737289634ff856ef0b6",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00030_749133.json.gz",
+      "sha256": "1264f759cd4c842d27cc1f19ee58a1bf204091237c7da0331b433f7409ea9a00",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00031_749134.json.gz",
+      "sha256": "b7b6b7a8d45e749ec76c3cc8a6edb81395fcf4e1590643d536cc8901f1cafa37",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00032_749135.json.gz",
+      "sha256": "371052a331bcbef4c543476734c86e4d5b1629de96179ef953ca45f5214c7d2e",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00033_749120.json.gz",
+      "sha256": "8c46b7793a23a2bbc0c03be76e634cb15810a3ad9ab8f94abf12e4d2b6b12157",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00034_749121.json.gz",
+      "sha256": "ab415d4e041e2b41b5b6126ef17b1500dc850bc5993dfff51d6ba4d55dd12a1f",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00035_749122.json.gz",
+      "sha256": "b38da9c3958aa8cf897bf1721a3b86d07b39923ea592adc3e83d449e5f7f6935",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00036_749123.json.gz",
+      "sha256": "409036ecacaa68f238126ac72b2967a88950efc04b592aae0c6d1bf7d6769ae9",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00037_749124.json.gz",
+      "sha256": "37c75d8ac08771e05b91c1aeeef61067196b079274d25639949ba2fd07f8a01d",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00038_749125.json.gz",
+      "sha256": "5742eb7765221a669369bfd57eae3cea8d23507db33d723af4390c7ca9e1915e",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00039_749126.json.gz",
+      "sha256": "6610d46711a95877e8568b83b4e1e7795b5aeb8f21057c3a63c01a5e96a3986e",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00040_749127.json.gz",
+      "sha256": "a5bac13ea41f87ba59e7bfb24d546f97cce8abccc275fb453d543e7e13012a33",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00041_749128.json.gz",
+      "sha256": "13f2110efa1173c3620ed51890315bdaa6449e75a93ed250bda3672949e16568",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00042_749129.json.gz",
+      "sha256": "adb3e42536f15003ef0410d0233970b18e950c229b2f4237586c2914d90f75ba",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00043_749130.json.gz",
+      "sha256": "57646564e2c19592230d14e0c73e2d8350b983954e7c6ac495f7c6a261bc5a1e",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00044_749131.json.gz",
+      "sha256": "e4ad13901bcfd7561d57482ef5f2f0dd083c06b3d173e0b8393f12d61675b1e8",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00045_749132.json.gz",
+      "sha256": "48ef5ce8ee1ffb9763801dc0d0344bb7ad32d20fc6fc15828b2f70778ddc78d6",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00046_749133.json.gz",
+      "sha256": "67ad460d9243dc64b18ec7b6a0e08395d6402b0f32d0875699e70f3500e27002",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00047_749134.json.gz",
+      "sha256": "ed2fceecf835d264e56d80304ed8b1d4bde53b63b5e6ace6ca7436fe0446191a",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00048_749135.json.gz",
+      "sha256": "65f83629dfba990f0ffa8dd3e7e7e620f2b0dd52a8a6926a4eb54f7d7a30315d",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00049_749120.json.gz",
+      "sha256": "e466ab858442b5d406ed4b28f4398f288f0bf45d571e1280986d8a50ba60fdaa",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00050_749121.json.gz",
+      "sha256": "ec43e5e6ee61454ad09b842eb5ee2d2ab1757862133b56a2a5a196173502a11d",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00051_749122.json.gz",
+      "sha256": "dc2503fb93bb5a4e968e94aa5f2383cd4e5fa9f010c45824f5e52de607b2f8f6",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00052_749123.json.gz",
+      "sha256": "130e6688a8a35970a8814f297aee6053576da67ae86a40ee16e04ecaecd397c7",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00053_749124.json.gz",
+      "sha256": "1593e57184fbfa991104a3bc914ffec9d7bc3556926236fb46171cdbb7d107fd",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00054_749125.json.gz",
+      "sha256": "7309f5d1700a5f69b6daa11d3b94675f93e9e497aab5e39c42a4b5f15522791b",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00055_749126.json.gz",
+      "sha256": "592de8ac4687f8ca7fa7cb8a31cee3195050fbf236ba4b77986d0ab0b6b5ea71",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00056_749127.json.gz",
+      "sha256": "090e7a9cfa9d6fd2da2327305139bbf0e0ed068086b06dff49bd67dcfb5b0573",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00057_749128.json.gz",
+      "sha256": "3caccc7073261a466cb260acf7f5f24ed188379a16e180b58ae1912987437bee",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00058_749129.json.gz",
+      "sha256": "a3f0fe598d7e0b812a8ebfd4b23da37fe5a5c0403f638da3070a931d0ba8169f",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00059_749130.json.gz",
+      "sha256": "d0592d14f8ad3dabd36272879f23fd1991167affd5107e96fdecde22647fe6d8",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00060_749131.json.gz",
+      "sha256": "d897437fbe1a31adb9769837d4f468b2bcccce8af25cf3ab55cdbe48bbcf0966",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00061_749132.json.gz",
+      "sha256": "e087972d0f1b8c3c917618dc9d55c7e6da366f8301f8157375c759e1635df6a6",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00062_749133.json.gz",
+      "sha256": "9bae01f7188a80f69cc0aad11270f5dfe91961198a2fd26663456f0aa8df1bad",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00063_749134.json.gz",
+      "sha256": "a1788d8414d0dc584ff6f11093e8af99fef6bdf2f7699ecb8c947f1f0d4c6a21",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00064_749135.json.gz",
+      "sha256": "73fbb90a0754c17e45f18a33b7d21e057b34e4ef0c347071343f6f654fdef792",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00065_749120.json.gz",
+      "sha256": "8a3d0d117cd794ae3c6641931233aacec32792480c1d8cfc7d9634b82af12989",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00066_749121.json.gz",
+      "sha256": "2fc1c0d0117f9305724e43846f8d3a976bbb2471c88f01bccf0e4520e79e49fc",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00067_749122.json.gz",
+      "sha256": "2f94ec125dce055352cd5433cd0769d3ae4f14cbddaf99ba7e118257f6c6bfeb",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00068_749123.json.gz",
+      "sha256": "5116180c2b16e28c60acbfd2a31f9875f21bafb7e3387e5ca84610f7b26c9727",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00069_749124.json.gz",
+      "sha256": "81ca8c7ad4711515991d87c617415bd3c13f59f961e3002f2b9a37c3a6b6f94d",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00070_749125.json.gz",
+      "sha256": "b0ae0e1c04de005e758946280fdc58bc82029ed810e4d3d3f6ed255bfa3fa6af",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00071_749126.json.gz",
+      "sha256": "9b541f413d013d6691ecb33e89fb3d8f96bb9760120031ba9a11d54bc39a4f1a",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00072_749127.json.gz",
+      "sha256": "1efb7f81dafea53463852aac75d238998cd1604d3e60382e8b0ec17adf076bd5",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00073_749128.json.gz",
+      "sha256": "4101f65866c9ac1f40e1ad0b419ad9600356b77ea1cb7c2916e48eb58448f934",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00074_749129.json.gz",
+      "sha256": "708d77d1ce535e25c85d88b49944e6ed69430e5831c66b455ee3627b5d1a7a5e",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00075_749130.json.gz",
+      "sha256": "662587e46b08867a335625336c1a561f5feb967e582a258adc20d127d7ce6d4b",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00076_749131.json.gz",
+      "sha256": "c9d8616e0474d2c7c78c1d2c0aab16d53bffe12521b042f343d9393c95904dfe",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00077_749132.json.gz",
+      "sha256": "2f5721d60c03ca9b96489d6225a08a19ab438707769922c9c816b915215bdc57",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00078_749133.json.gz",
+      "sha256": "7cf4e9fc864b2ef94d556e185f62dab919d3a7fd570d1f5208abbab0e5fa8fea",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00079_749134.json.gz",
+      "sha256": "0a9a4d4e4d5d86acc9cd20f5eec84bf07933f8566ab0ac6b8e94d6f627775e7a",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00080_749135.json.gz",
+      "sha256": "1849409cb0b9244aa82d8e77f4889ac5d4b038079004f241fda6d70258adc55b",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00081_749120.json.gz",
+      "sha256": "77ec39652253cdd397011726f681870b68a427824d0d42ec91fec6c37f9378e2",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00082_749121.json.gz",
+      "sha256": "6565a6d5d430abe0bc479ddcffee71d4be8f451f393d8e7886dbefa0cbca2109",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00083_749122.json.gz",
+      "sha256": "a536307e708d72274c5c691ba2cf369c9229d7d23093b66efc745d6bd5a3a851",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00084_749123.json.gz",
+      "sha256": "51745041370f2732f03d3f51c8ebae1d4076dadda76411dcc415298a26a18ca4",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00085_749124.json.gz",
+      "sha256": "5ea0d5d8bab812dafeecae397880d0ff24f14f127a21c7e4b83a3003ef788a75",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00086_749125.json.gz",
+      "sha256": "d5ada1c4b89fcaa6dec1468523322cbdbb147fb4c2b2475378ecbda301b4c9f8",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00087_749126.json.gz",
+      "sha256": "ae369ade9aa0312a49925fee734735097cf719deea1faf17a7a781e20a57d881",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00088_749127.json.gz",
+      "sha256": "062073e64983aec2d1060f5989c013c209e99ce76fb3935870f52810816d0609",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00089_749128.json.gz",
+      "sha256": "62a6cf58d271c05e5c85ae9ff5a37facba1a71309156dc9795295c2ba660f078",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00090_749129.json.gz",
+      "sha256": "29433bbf87497bad3bb52be195a397db1f47e2bffa10df6e4448be824da4bb3f",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00091_749130.json.gz",
+      "sha256": "9de6ae4b1534d2e0c6bd910234cc3472a78867b298cd59fcd4d00b6831b1306c",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00092_749131.json.gz",
+      "sha256": "0590994e8c64a4278fcad7fb9bb323d15fcbc47cf875bc36577e4993afab2cd8",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00093_749132.json.gz",
+      "sha256": "aae892e9816f86568c3d195ff0c21f6fc04b69cd99f1c2c31ce83b6089201f50",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00094_749133.json.gz",
+      "sha256": "88ac7c185dea35bedab572dc2f268fe6c30d0d14ddc1761ea68764cfab30b457",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00095_749134.json.gz",
+      "sha256": "c80a9ad4a33e3c23f5c1c128c81bb741bb46923e1ca6a78cfd4484d39191dce3",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00096_749135.json.gz",
+      "sha256": "682299d8d2ae3f6e5b1452c75be96156518491fc7f9200cb665fa836e7a1d1ca",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00097_749120.json.gz",
+      "sha256": "512ce910ed89644ce16bb156479b8204991552aa253df709f0a405009aa2d147",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00098_749121.json.gz",
+      "sha256": "767aaa962bc92d47ff98516bf32710e49fbbfc9a2e5acb515f46e940ac7a6680",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00099_749122.json.gz",
+      "sha256": "8688db2845f1df4db3092b5c4ed5090e918aa95f87c53291cac99c19f0683b47",
+      "steps": 200
+    },
+    {
+      "path": "charger_sac_sparse/episodes/00100_749123.json.gz",
+      "sha256": "f639a0e70135278b6f7b426408c8b5ccd2a62dd81afeda47a462c6eec18eb4e9",
+      "steps": 200
+    },
+    {
+      "path": "tool_early/00000_748052.json.gz",
+      "sha256": "e2abbae940e3e0ab1747f897bc1ec0831a2fa5c34b0d45066f0a86e4c23399ee",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00001_748052.json.gz",
+      "sha256": "893fa52134594e78a038269df344deac4f56c8a6d8a2fef3dcdf66e6a553d71f",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00002_748052.json.gz",
+      "sha256": "5755efcfd13a43ae8282af723d021601241c843730253dcd9a91321f936f6205",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00003_748052.json.gz",
+      "sha256": "598748aad7aa53278763b5f97a54c37a072f203a068c8eceb27ed2d5d36bdb6b",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00004_748053.json.gz",
+      "sha256": "7dba4a62704c3372457d0851c2b3ed0bb43f237adf322ef94670fe250f720120",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00005_748053.json.gz",
+      "sha256": "8914f20e6b85a8dfc364b55c709cf71cc4da49dfd4f454bd0d79b97290fa15b2",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00006_748053.json.gz",
+      "sha256": "62bae527aed9684bd121ed5fb8c55d817ddbfa6094636c054172916e4cd033be",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00007_748053.json.gz",
+      "sha256": "940c07841ab2df602d36f54560a9f13d48738b8a621f78785bbaf4696de94118",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00008_748061.json.gz",
+      "sha256": "dda294f2014c9382177eaca96c5f7e5750607942d7f84382e20052d79dcb6add",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00009_748061.json.gz",
+      "sha256": "9c5745d2c0a630489d43c51072e76149ab7cf14450c7aaf33929c556a5660b4a",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00010_748061.json.gz",
+      "sha256": "5d6b89b8169bc6888baec6aaf94ec77443de9601571652bac840e93de7e24b2a",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00011_748061.json.gz",
+      "sha256": "76654dfbac8d2708600712c9395c36d0fa82b74d7dbf251dcc403e25cdac7c8c",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00012_748105.json.gz",
+      "sha256": "be97f67ff585a83d6c9859726816e90206f414dc25b79ddf1edb68709a077f7f",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00013_748105.json.gz",
+      "sha256": "92debd6d061cab19f83a740ebbb1efd5804558ec349ce51496eb426805652261",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00014_748105.json.gz",
+      "sha256": "33719cb986d719a64cfa14ea903654481864cbf6b0b0bbedba2646e90274bddb",
+      "steps": 100
+    },
+    {
+      "path": "tool_early/00015_748105.json.gz",
+      "sha256": "229a8a2932cb07f0e43e7096fed35666b933b812ca0942f39a459e75f6ff23aa",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00000_748100.json.gz",
+      "sha256": "02f6f83a314f516c26572c80ceb3cfe95192b314af5a930726295044cec230e4",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00001_748100.json.gz",
+      "sha256": "f78f5ebf4c296bc82288280f5366a360df2998f525bd95d83a5a20c59cc037c2",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00002_748100.json.gz",
+      "sha256": "c088eccd042f4158759b485a212a578cd342f84c6b7fe6ecdeade39795e0131f",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00003_748100.json.gz",
+      "sha256": "0c5a147279153d6b76a20739cc47ac1f3271c8656e102fac872bdf5d4766d681",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00004_748100.json.gz",
+      "sha256": "a8b5fad177254718720ef50c829451fd9ebc2dd843f3de6ce76bd6a5f66f724e",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00005_748100.json.gz",
+      "sha256": "9a5e4a71846ca06d3fede423ec6709a170298222dbe9275a5a4e76776506d43f",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00006_748101.json.gz",
+      "sha256": "0132b6d6daa2a3d88a78a10e199fa49e74f13161650c30fcff2d418823d1a6c7",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00007_748101.json.gz",
+      "sha256": "d5d34050f3ff55420ac715255aa604a51a7ed7f6423d5d10cfc1c437c979f78f",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00008_748101.json.gz",
+      "sha256": "1ce0af7a95e5c466e413f624c4087f0b007e7e56d0920f09be38c5508bfb9857",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00009_748101.json.gz",
+      "sha256": "0a280c6010b5d995841c153b8fdd81f4c4f583d32a4d8168bb4f99cc7aef6442",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00010_748101.json.gz",
+      "sha256": "87ddeee97709cc3f907425b5710029b79ae4bff66248a4dcd96df5ae85585f89",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00011_748101.json.gz",
+      "sha256": "e5754c6a4d1f4be228f25718883846fe29e226cc413ce7abf1c0b3643d225985",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00012_748102.json.gz",
+      "sha256": "68df67522199ca2c0f9aa069c80e4c7473dd1ae7f25f2e48e63a3cd18c01d48e",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00013_748102.json.gz",
+      "sha256": "78131f60f802b827193cd7a8760726ca44685063bd508e53ebc0da9ca7f862ad",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00014_748102.json.gz",
+      "sha256": "2f27883714de21459e92297c79bfe61620f67f7b61d1fdee0cc2feb2e7aae27c",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00015_748102.json.gz",
+      "sha256": "4255839c196a66a8f936abb949876a20fe66fb88000ed866408bb77891926568",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00016_748102.json.gz",
+      "sha256": "e13b65806c74e8d386e910a39073bea2e8b4ff4c9dea808df0fc8708b1bbc041",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00017_748102.json.gz",
+      "sha256": "5575c931f210461b02589474c7611cc79007b245f693a501ba2e204b4a026472",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00018_748103.json.gz",
+      "sha256": "244df275f4ceec15f8aef48d3030e5b9f5410d32766d9e5e5a716b9f9acd45a0",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00019_748103.json.gz",
+      "sha256": "82cb49cfcdce0fe2a0515cba183d4a482586ab4a77e7589dc9aac79b6422a7cf",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00020_748103.json.gz",
+      "sha256": "183fcc1c1924576c87426e74482f85150216dc876f3340c044902c26368873c7",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00021_748103.json.gz",
+      "sha256": "753cb3b0685933eb0f66b7d6382dde8e5bdfabd0b6f38226fb4ff4a6a3b1e95f",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00022_748103.json.gz",
+      "sha256": "58dcc62f267e4991e4cfec9c6040edea084caec25f1752f641f7ea348ece2e3c",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00023_748103.json.gz",
+      "sha256": "5843acca0f70e242f85941594e31183efe2f4c128bb53d50f30a7caecfc815b6",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00024_748104.json.gz",
+      "sha256": "79cba1a6a7a451e3cb25a35551e443be70d2ba2611a79fe43c14f960d6e8b2e5",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00025_748104.json.gz",
+      "sha256": "e695e8000b51c6a93a1ba21daf3ab9b6b5cd90b041411addfa41d9246f515d1f",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00026_748104.json.gz",
+      "sha256": "b02c12f3b273defa77f011a7ad35f5921571b5a8efad45e9be1d9605c3a91cec",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00027_748104.json.gz",
+      "sha256": "c6589919799994d0437405982c66abee45327581adf9cddc2bfa726ef968d3ba",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00028_748104.json.gz",
+      "sha256": "d1dc17634e8ac0b10e62bac40773bf499e4d6277ed51049176e6e47f0767cd28",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00029_748104.json.gz",
+      "sha256": "b31e643d38890e6025767db465ea264c3651d8493ef9340638411f474a723842",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00030_748105.json.gz",
+      "sha256": "579f1a3dbebaed55aaad95f51ba1de2b54f3e09e7ba1dfb74c855849b22dfa93",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00031_748105.json.gz",
+      "sha256": "b8d5b150a3dc09f6849e6097ec5e7c506ce1569aeb5784e35d812df18650ec1c",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00032_748105.json.gz",
+      "sha256": "50c85aa52d01fd9819501c234a457a758704f7b3f6a2d0e6406dfa87e63b49c8",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00033_748105.json.gz",
+      "sha256": "67c2a4bacd7ecb5d147968ddb3fa2f8b1c117eee4f10d9faa58af0d1370bed42",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00034_748105.json.gz",
+      "sha256": "b5abebb55290ecedfcea79871d5f70f6033478ae2eff1a37a942a8971b32043b",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00035_748105.json.gz",
+      "sha256": "8e9302b4ca4e330ca2d5d93b8e505c9980b9dc8a486d6e7e519607f9b2fbdd6d",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00036_748106.json.gz",
+      "sha256": "db220e466ecd7a756519055d261d36cd14dfd75d31bbef7b29ae60520e08a4b2",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00037_748106.json.gz",
+      "sha256": "e4c992b2a8dc393c2523841ce38c46c6cd3040e5a9033718b1121600f07a19e4",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00038_748106.json.gz",
+      "sha256": "caa8faa09814dcc1f49c0769a32d1d500a8919f50d18df646e3073d0e6eb8aac",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00039_748106.json.gz",
+      "sha256": "03c2a8bf3cfcff42af62afc72d057f959606107642971d06a2c65284e260b641",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00040_748106.json.gz",
+      "sha256": "98390268e6230b69c417d28131b466f3f47a0d5d9ee67bb6b72ff8e371014af2",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00041_748106.json.gz",
+      "sha256": "b2d94245e1ea32059dc3ccecfe8e6180106f4f5c1bc0c1e1b8f9c21046c9adc7",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00042_748107.json.gz",
+      "sha256": "9dd4ab0f0b9d578d375f662a477394d58f7171c267cc70f642efc85fe3aa8752",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00043_748107.json.gz",
+      "sha256": "7e79ef52023bb0a090c4369856cd5ea079740f710e1e484c0d85c217c6b069bc",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00044_748107.json.gz",
+      "sha256": "7ee0e5de27be63d426f58e68b1aa8af1967f9e9351ede9ac8fed4ddd2af10f17",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00045_748107.json.gz",
+      "sha256": "0b7e29f9c7db5b906fc26af0378581e1dd85cde5fd3b1de272eebf89ca8192c4",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00046_748107.json.gz",
+      "sha256": "ee7ebcbe2b230ba9eda1aff8928661e22c7aa0f29a541188c1a8df15d3dbd40a",
+      "steps": 100
+    },
+    {
+      "path": "tool_pilot/00047_748107.json.gz",
+      "sha256": "8a677e7b82888e5ee3e37a64deb7ed7623242b4fe6b806f84feabd4dd24c15b3",
+      "steps": 100
+    }
+  ],
+  "scope": "Public PhysX: native tasks and explicitly named construction-time variant; no hardware, sealed data or ARES-R edits. Development, diagnostic and training episodes are not independent tests."
+}

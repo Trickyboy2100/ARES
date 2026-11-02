@@ -1,0 +1,153 @@
+{
+  "seed": 749143,
+  "physics_steps": 0,
+  "source_kind": "MEASURED_POSE_REPLAY",
+  "camera": "fixed world camera; native pin tips (+16mm x, +/-7mm y) and front-mouth guides projected from measured actor poses; NOT measured contact patches",
+  "step_to_time": "frame k represents physical step k, 20 fps; frame 0 is initial",
+  "max_pose_readback_error": 1.1920928955078125e-07,
+  "source": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/nominal/00004_749143.json.gz",
+      "sha256": "744a64433243b226f8f798e6d6d79cc262e6a3dc531a344c79eebb0ae646e40f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/sparse_1024/00004_749143.json.gz",
+      "sha256": "c848a2cfe9ece75b239dab43cb032eccdf1d28cf72f21dbde0907607405195b0"
+    }
+  ],
+  "source_script_sha256": "58d4b4bf14392fc28d89ecbc86300877f23c94fe9c69601af7b797caa149fe25",
+  "source_execution_manifests": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/PROTOCOL.json",
+      "sha256": "fe5f683a0da91df33a328ebba23a62d0a1b61806b97a9b780f4ecfbaba4d3ef4",
+      "content": {
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": [
+          749140,
+          749141,
+          749142,
+          749143,
+          749144,
+          749145,
+          749146,
+          749147
+        ],
+        "split": "NEW_DEVELOPMENT_NOT_SEALED",
+        "methods": [
+          "nominal",
+          "force_guard",
+          "dense_256",
+          "sparse_256",
+          "sparse_1024",
+          "matched_sparse_1024"
+        ],
+        "models": {
+          "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_sac_corrected/SAC_256.zip": "1521814936bfaf3d38dd69d1555710cd3770c26c8c6349b11f3f96893fe29c81",
+          "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_sac_sparse/SAC_256.zip": "28b0e2ca077d23353d33b0ce0584a6c3b1414a97c7af8af40e6f693f12f38abd",
+          "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_sac_sparse/SAC_1024.zip": "db7b883e28e96cb331ea0c8250c368ff738d211967adf0214335f5e6b7f87cf6"
+        },
+        "matched": "force same15deg grasp, then trained successor policy; verify actual prefix; full policy learns15..45deg grasp and pace",
+        "source_sha": "47c3646263aa989df38c0771e4307970468721b671b40b64390473e4efd35b24"
+      }
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_eval/PROTOCOL.json",
+      "sha256": "fe5f683a0da91df33a328ebba23a62d0a1b61806b97a9b780f4ecfbaba4d3ef4",
+      "content": {
+        "task": "PlugCharger-v1",
+        "horizon": 200,
+        "seeds": [
+          749140,
+          749141,
+          749142,
+          749143,
+          749144,
+          749145,
+          749146,
+          749147
+        ],
+        "split": "NEW_DEVELOPMENT_NOT_SEALED",
+        "methods": [
+          "nominal",
+          "force_guard",
+          "dense_256",
+          "sparse_256",
+          "sparse_1024",
+          "matched_sparse_1024"
+        ],
+        "models": {
+          "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_sac_corrected/SAC_256.zip": "1521814936bfaf3d38dd69d1555710cd3770c26c8c6349b11f3f96893fe29c81",
+          "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_sac_sparse/SAC_256.zip": "28b0e2ca077d23353d33b0ce0584a6c3b1414a97c7af8af40e6f693f12f38abd",
+          "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-003/recovery_20261102/charger_sac_sparse/SAC_1024.zip": "db7b883e28e96cb331ea0c8250c368ff738d211967adf0214335f5e6b7f87cf6"
+        },
+        "matched": "force same15deg grasp, then trained successor policy; verify actual prefix; full policy learns15..45deg grasp and pace",
+        "source_sha": "47c3646263aa989df38c0771e4307970468721b671b40b64390473e4efd35b24"
+      }
+    }
+  ],
+  "labels": [
+    "Strong nominal | grasp 15deg",
+    "Ordinary SAC1024 | grasp 18.38deg"
+  ],
+  "analysis_privilege": "True task pose and goal errors are offline evaluation signals, not necessarily policy inputs; see source execution manifests.",
+  "native_task_source_sha256": "6a68400b90f04c22fe8bde510a7082fc239b6f2f54552e2f3ab4bb123ed556ff",
+  "frame_count": 201,
+  "fps": 20,
+  "camera_intrinsic": [
+    [
+      587.1748657226562,
+      0.0,
+      480.0
+    ],
+    [
+      0.0,
+      587.1748657226562,
+      360.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_choice": "world-wide",
+  "camera_eye_world": [
+    0.65,
+    -0.65,
+    0.65
+  ],
+  "camera_target_world": [
+    -0.15,
+    0.0,
+    0.15
+  ],
+  "camera_extrinsic": [
+    [
+      0.6305926442146301,
+      0.7761141061782837,
+      -1.4901161193847656e-08,
+      0.09458890557289124
+    ],
+    [
+      0.33872392773628235,
+      -0.27521318197250366,
+      -0.8997354507446289,
+      0.18576890230178833
+    ],
+    [
+      -0.698297381401062,
+      0.5673665404319763,
+      -0.4364357888698578,
+      1.1063646078109741
+    ]
+  ],
+  "outputs": {
+    "RAW.mp4": "5cc18eda5dc55928225fbf8040d688e906fd3e1422cdfccc869b8382489437a8",
+    "ANNOTATED.mp4": "22dabb45cb1ab4139ae3dadc60b57428373bb56afcdf1d6ea02c2fb254a47f26",
+    "RAW.png": "283c07a1b5e795026019e926399952381015b187f28a6893e983143a7cd389c9",
+    "ANNOTATED.png": "025afd138885e6f29442bceb69f2f9b23c5a5a4e9648476756df07187f5dd6ad",
+    "DATA.json": "ed8ac101a43d615429ee0cd87f3509f4977c8f968c53d6846baf1b5f9b62d029",
+    "SYNC_VIEWER.html": "126ab58d5ba9a3dac62059e166a63e00c29e7da6f26b7cc57611d8d95eda0da8"
+  }
+}

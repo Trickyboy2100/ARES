@@ -1,0 +1,18 @@
+{
+  "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+  "packages": {
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.4",
+    "sapien": "3.0.3",
+    "gymnasium": "1.4.0",
+    "mplib": "0.1.1"
+  },
+  "source_base_commit": "525d67ebec52530ac05bea245d2393c9fd67442a",
+  "hardware": "single RTX3080 GPU0; network-isolated physical runs via handoff_offline.sh",
+  "site_data": false,
+  "ManiSkill": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+  "SB3": {
+    "path": "/home/andyee/robot-research/ARES-Skilllab/external/sb3-2.7.0",
+    "git_head": "not a git checkout"
+  }
+}
