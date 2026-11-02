@@ -65,3 +65,7 @@ uncertainty & limitation | exact raw path/hash | science decision`。
 ## 2026-11-02｜真实SkillResult配对、数值修复与最小机制否证
 
 [结果/关键图/同步视频](evidence/EXP-003/2026-11-02/skillresult/README.md)。保留历史，新增320真实物理回合/32000控制步、13600优化更新。96干预面板固定8/16、事后上限9/16，无严格目标排序反转。复算三例退化，区分低Q强制改参、预算与双成功合同。发现概率饱和选参并列，保留112诊断并以logits/log-Q另跑112确认。修正后ordinary1/8，generic/contract/relative/relative+contract均2/8；固定、强几何、STAP-open和3critic-UQ均3/8。组合机制没有独立增益；2个新测试初态已作开发诊断，未使用743052/53。公开模型/真实数据/四个完整视频及同帧曲线已归档。下一步优先原生多技能后继合同冲突的物理机会，不扩大窄hook网格或网络模块；保持UNVERIFIED。
+
+## 2026-11-02｜96条原始干预的独立上下文分层（既有数据复算）
+来源：evidence/EXP-003/2026-11-02/skillresult/EPISODES.csv中group=train96。
+按(seed,mass,target)的16组，每组6个(grasp,hook)执行结果；成功数量分布0/6×7、3/6×1、4/6×1、6/6×7，总成功49/96。两个混合条件：743041,mass1.25,target+0.08m时grasp90mm 3/3、100mm 0/3；743046,mass0.75,target+0.08m时hook−55mm 0/2、−65mm 2/2、−75mm 2/2。其余14组所测参数的完整成败全相同。强固定8/16、已测有限动作事后oracle9/16；未显示按正负目标反转的最优参数排序。8个物理初态各2目标，质量在初态之间平衡，不能当作16个独立场景或同场景质量实验。该分析只描述所测参数对终局成功标签的辨识度，不证明物理轨迹不变或合同学习普遍无效；新增物理0、优化0。见DECISIONS D-013。
