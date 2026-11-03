@@ -11,7 +11,7 @@ def archive(name,files):
    rel=str(x.relative_to(a.root));b=x.read_bytes();t.add(x,arcname=rel,recursive=False);entries.append(dict(path=rel,size=len(b),sha256=sha(b)))
  assert arc.stat().st_size<95_000_000,(arc,arc.stat().st_size)
  archives.append(dict(archive=arc.name,size=arc.stat().st_size,sha256=sha(arc.read_bytes()),entries=entries))
-for folder in sorted(x for x in a.root.iterdir()if x.is_dir()and x.name not in ['figures','video_learning','video_handoff']):
+for folder in sorted(x for x in a.root.iterdir()if x.is_dir()and x.name not in ['figures','video_learning','video_handoff','video_policy_extraction']):
  files=sorted(x for x in folder.rglob('*')if x.is_file()and '__pycache__' not in x.parts and (folder.name!='prior_code'or x.name=='INDEX.json'))
  # Split by uncompressed payload, conservatively below GitHub's file limit.
  chunk=[];size=0;part=0
@@ -20,9 +20,9 @@ for folder in sorted(x for x in a.root.iterdir()if x.is_dir()and x.name not in [
   chunk.append(f);size+=f.stat().st_size
  if chunk:archive(f'{folder.name}_{part:02d}',chunk)
 archive('metadata',sorted(x for x in a.root.iterdir()if x.is_file()))
-for name in ['figures','video_learning','video_handoff']:
+for name in ['figures','video_learning','video_handoff','video_policy_extraction']:
  if (a.root/name).exists():shutil.copytree(a.root/name,a.out/name,dirs_exist_ok=True)
-for name in ['README.md','REVIEW.html','ANALYSIS.json','FINAL_RESULTS.json','DECISION_ATTRIBUTION.json','SHARED_CONTROL_AUDIT.json','PRIOR_ART.md','SEMANTICS_AUDIT.json','JOINT_OUTCOME_AUDIT.json','TRAINING_REPLAY_AUDIT.json','ENVIRONMENT.json','THIRD_PARTY_NOTICES.md','MANISKILL_APACHE_LICENSE.txt']:
+for name in ['README.md','REVIEW.html','ANALYSIS.json','FINAL_RESULTS.json','DECISION_ATTRIBUTION.json','SHARED_CONTROL_AUDIT.json','PRIOR_FIXED_SELECTION.json','DISTRIBUTION_REVISION_PROTOCOL.json','POLICY_EXTRACTION_AUDIT.json','EXTRACTION_COMPARISON.json','PRIOR_ART.md','SEMANTICS_AUDIT.json','JOINT_OUTCOME_AUDIT.json','TRAINING_REPLAY_AUDIT.json','ENVIRONMENT.json','THIRD_PARTY_NOTICES.md','MANISKILL_APACHE_LICENSE.txt']:
  if (a.root/name).exists():shutil.copy2(a.root/name,a.out/name)
 for ar in archives:
  with tarfile.open(a.out/ar['archive'])as t:
