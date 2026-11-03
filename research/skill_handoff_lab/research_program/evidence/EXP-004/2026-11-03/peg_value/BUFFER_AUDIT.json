@@ -1,0 +1,523 @@
+{
+  "status": "PASS",
+  "buffers": 43,
+  "rows": [
+    {
+      "file": "full_absolute/BUFFER_f-1s31201.pkl",
+      "sha256": "49429d3873c0704b6d16235ed6cb50b777e2c80428561ba1be528e9377867c5c",
+      "transitions": 320,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "full_none/BUFFER_f-1s31201.pkl",
+      "sha256": "49429d3873c0704b6d16235ed6cb50b777e2c80428561ba1be528e9377867c5c",
+      "transitions": 320,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "full_paired/BUFFER_f-1s31201.pkl",
+      "sha256": "49429d3873c0704b6d16235ed6cb50b777e2c80428561ba1be528e9377867c5c",
+      "transitions": 320,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "full_shuffled/BUFFER_f-1s31201.pkl",
+      "sha256": "49429d3873c0704b6d16235ed6cb50b777e2c80428561ba1be528e9377867c5c",
+      "transitions": 320,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "ordinary_sac/BUFFER_f0s31201.pkl",
+      "sha256": "127b08c4da5e5a39ba84868892e6e5e90e47c6418c46562ee6644346fbb4a3af",
+      "transitions": 205,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "ordinary_sac/BUFFER_f0s31202.pkl",
+      "sha256": "64efe0c5b55a3d9195407d504ae37096265d77f16d245c01e2cb76d1c9f9e9c5",
+      "transitions": 205,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "ordinary_sac/BUFFER_f0s31203.pkl",
+      "sha256": "077b0b7887df5a7e6c75e9576ea73183a1645962aba0bc12782df1502e2aa860",
+      "transitions": 205,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "ordinary_sac/BUFFER_f1s31201.pkl",
+      "sha256": "a9bc4f2287a42ae0ce6bc5f1bbb86a7c410d3e2771bea32c430cf70f3b4b861f",
+      "transitions": 215,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "ordinary_sac/BUFFER_f1s31202.pkl",
+      "sha256": "0b3d440f53d6a1f0fcf1353bdfe9e85e726a6d5ca35ac876134c6159a4740118",
+      "transitions": 215,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "ordinary_sac/BUFFER_f1s31203.pkl",
+      "sha256": "5b70eabaf81ebd020bb7b5218d6417d2169d8710f36c40de71c4cf8dbd8df858",
+      "transitions": 215,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "ordinary_sac/BUFFER_f2s31201.pkl",
+      "sha256": "837d7658aeac8b79ad6181f50fdd4b6fb4b76850aa89cb1af17ae33c4b52c671",
+      "transitions": 220,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "ordinary_sac/BUFFER_f2s31202.pkl",
+      "sha256": "f3d918915553507f02228d0c2ed98e05fb5b189433f6c3c92bae45fc43e6f092",
+      "transitions": 220,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "ordinary_sac/BUFFER_f2s31203.pkl",
+      "sha256": "008dc9c0227b7298c44d68a9bb7e611a4cd2cdd557a18e10cabd87cd56468ea3",
+      "transitions": 220,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "peg_full_absolute/BUFFER_f-1s31201.pkl",
+      "sha256": "79ab5f3b81579fe56a3c3643d458f24e0ffe1ad74d088b25b83c5cc97811f169",
+      "transitions": 118,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "peg_full_none/BUFFER_f-1s31201.pkl",
+      "sha256": "79ab5f3b81579fe56a3c3643d458f24e0ffe1ad74d088b25b83c5cc97811f169",
+      "transitions": 118,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "peg_full_paired/BUFFER_f-1s31201.pkl",
+      "sha256": "79ab5f3b81579fe56a3c3643d458f24e0ffe1ad74d088b25b83c5cc97811f169",
+      "transitions": 118,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_absolute/BUFFER_f0s31201.pkl",
+      "sha256": "127b08c4da5e5a39ba84868892e6e5e90e47c6418c46562ee6644346fbb4a3af",
+      "transitions": 205,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_absolute/BUFFER_f0s31202.pkl",
+      "sha256": "64efe0c5b55a3d9195407d504ae37096265d77f16d245c01e2cb76d1c9f9e9c5",
+      "transitions": 205,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_absolute/BUFFER_f0s31203.pkl",
+      "sha256": "077b0b7887df5a7e6c75e9576ea73183a1645962aba0bc12782df1502e2aa860",
+      "transitions": 205,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_absolute/BUFFER_f1s31201.pkl",
+      "sha256": "a9bc4f2287a42ae0ce6bc5f1bbb86a7c410d3e2771bea32c430cf70f3b4b861f",
+      "transitions": 215,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_absolute/BUFFER_f1s31202.pkl",
+      "sha256": "0b3d440f53d6a1f0fcf1353bdfe9e85e726a6d5ca35ac876134c6159a4740118",
+      "transitions": 215,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_absolute/BUFFER_f1s31203.pkl",
+      "sha256": "5b70eabaf81ebd020bb7b5218d6417d2169d8710f36c40de71c4cf8dbd8df858",
+      "transitions": 215,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_absolute/BUFFER_f2s31201.pkl",
+      "sha256": "837d7658aeac8b79ad6181f50fdd4b6fb4b76850aa89cb1af17ae33c4b52c671",
+      "transitions": 220,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_absolute/BUFFER_f2s31202.pkl",
+      "sha256": "f3d918915553507f02228d0c2ed98e05fb5b189433f6c3c92bae45fc43e6f092",
+      "transitions": 220,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_absolute/BUFFER_f2s31203.pkl",
+      "sha256": "008dc9c0227b7298c44d68a9bb7e611a4cd2cdd557a18e10cabd87cd56468ea3",
+      "transitions": 220,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_paired/BUFFER_f0s31201.pkl",
+      "sha256": "127b08c4da5e5a39ba84868892e6e5e90e47c6418c46562ee6644346fbb4a3af",
+      "transitions": 205,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_paired/BUFFER_f0s31202.pkl",
+      "sha256": "64efe0c5b55a3d9195407d504ae37096265d77f16d245c01e2cb76d1c9f9e9c5",
+      "transitions": 205,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_paired/BUFFER_f0s31203.pkl",
+      "sha256": "077b0b7887df5a7e6c75e9576ea73183a1645962aba0bc12782df1502e2aa860",
+      "transitions": 205,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_paired/BUFFER_f1s31201.pkl",
+      "sha256": "a9bc4f2287a42ae0ce6bc5f1bbb86a7c410d3e2771bea32c430cf70f3b4b861f",
+      "transitions": 215,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_paired/BUFFER_f1s31202.pkl",
+      "sha256": "0b3d440f53d6a1f0fcf1353bdfe9e85e726a6d5ca35ac876134c6159a4740118",
+      "transitions": 215,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_paired/BUFFER_f1s31203.pkl",
+      "sha256": "5b70eabaf81ebd020bb7b5218d6417d2169d8710f36c40de71c4cf8dbd8df858",
+      "transitions": 215,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_paired/BUFFER_f2s31201.pkl",
+      "sha256": "837d7658aeac8b79ad6181f50fdd4b6fb4b76850aa89cb1af17ae33c4b52c671",
+      "transitions": 220,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_paired/BUFFER_f2s31202.pkl",
+      "sha256": "f3d918915553507f02228d0c2ed98e05fb5b189433f6c3c92bae45fc43e6f092",
+      "transitions": 220,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_paired/BUFFER_f2s31203.pkl",
+      "sha256": "008dc9c0227b7298c44d68a9bb7e611a4cd2cdd557a18e10cabd87cd56468ea3",
+      "transitions": 220,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_shuffled/BUFFER_f0s31201.pkl",
+      "sha256": "127b08c4da5e5a39ba84868892e6e5e90e47c6418c46562ee6644346fbb4a3af",
+      "transitions": 205,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_shuffled/BUFFER_f0s31202.pkl",
+      "sha256": "64efe0c5b55a3d9195407d504ae37096265d77f16d245c01e2cb76d1c9f9e9c5",
+      "transitions": 205,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_shuffled/BUFFER_f0s31203.pkl",
+      "sha256": "077b0b7887df5a7e6c75e9576ea73183a1645962aba0bc12782df1502e2aa860",
+      "transitions": 205,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_shuffled/BUFFER_f1s31201.pkl",
+      "sha256": "a9bc4f2287a42ae0ce6bc5f1bbb86a7c410d3e2771bea32c430cf70f3b4b861f",
+      "transitions": 215,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_shuffled/BUFFER_f1s31202.pkl",
+      "sha256": "0b3d440f53d6a1f0fcf1353bdfe9e85e726a6d5ca35ac876134c6159a4740118",
+      "transitions": 215,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_shuffled/BUFFER_f1s31203.pkl",
+      "sha256": "5b70eabaf81ebd020bb7b5218d6417d2169d8710f36c40de71c4cf8dbd8df858",
+      "transitions": 215,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_shuffled/BUFFER_f2s31201.pkl",
+      "sha256": "837d7658aeac8b79ad6181f50fdd4b6fb4b76850aa89cb1af17ae33c4b52c671",
+      "transitions": 220,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_shuffled/BUFFER_f2s31202.pkl",
+      "sha256": "f3d918915553507f02228d0c2ed98e05fb5b189433f6c3c92bae45fc43e6f092",
+      "transitions": 220,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    },
+    {
+      "file": "sac_shuffled/BUFFER_f2s31203.pkl",
+      "sha256": "008dc9c0227b7298c44d68a9bb7e611a4cd2cdd557a18e10cabd87cd56468ea3",
+      "transitions": 220,
+      "max_errors": {
+        "observations": 0.0,
+        "next_observations": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "dones": 0.0
+      }
+    }
+  ],
+  "scope": "Stored SAC transitions independently reconstructed from source physics; no new simulation"
+}

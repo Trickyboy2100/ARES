@@ -1,6 +1,6 @@
 # EXP-004｜从多阶段技能实际物理证据中选择一项原创RL机制
 
-**状态：QUEUED；研究阶段S5；依赖EXP-003完成强学习基础与多阶段机会。**
+**状态：RUNNING；研究阶段S5；与EXP-003共享执行基线并行推进。2026-11-03已训练与物理验证候选，独立增益UNVERIFIED。**
 
 ## 不锁死为之前已失败的效果特征
 
@@ -55,3 +55,8 @@ Foresight后续成功预测及监督ranker。同一条件下必须证明超出
 若隐藏状态并不可辨识，退出POMDP方向；
 若强搜索解决所有局部案例，转向真实跨技能依赖；
 保留所有负结果并自主迭代，不通过降低名义基线制造“论文正结果”。
+
+
+## 2026-11-03 — Parallel native Peg physics and trainable skill-value mechanism
+
+[Complete evidence and code](../evidence/EXP-004/2026-11-03/peg_value/README.md). Active EXP-004 now runs alongside EXP-003 common execution. Official GPU Peg OBB helper used stale CPU world pose; preserve literal baseline and adapt local collision geometry to actual GPU pose. Corrected official timing1/6, explicit shared retiming3/6. Frozen-control two-boundary panel:60 trials /10 natural scenes, strongest fixed6/10, measured union8/10; same-prefix rescues and regressions are real. Prototype: paired return-difference loss, same-data FQI/absolute/suffix-value/STAP-style enumeration, discordant sampling ablation, then ordinary masked LN-SAC with paired/absolute/shuffled critic gradients. Historical early closed-selection40/69 vs ordinary32/69 largely matched generic labels; later43/69 vs44/69. Fresh actual Tool all3/6; Peg all2/4. Independent algorithm gain UNVERIFIED. Retain actual models, all failed trials, source/hash/buffer evidence and exact-frame video. Costs:160 complete100-step episodes including6 invalid instrumentation terminal holds;75600 joint value updates and51600 actor/critic updates EACH. Native horizons and success unchanged; no sealed data or ARES-R edits. Next causal question is executable contact tracking/budget under the shared Peg controller; reconstructed target is correctly +50mm along goal x, so do not re-debug a presumed reversed frame or merely train another grasp score.

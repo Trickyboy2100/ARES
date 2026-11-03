@@ -1,0 +1,46 @@
+[
+  {
+    "seed": 750103,
+    "source": "gpu_refresh/750103.json.gz",
+    "commanded_peg_goal_offset_m": [
+      0.04999194045130524,
+      0.0007566521504313514,
+      0.0004828158127768156
+    ],
+    "native_success": false,
+    "interpretation": "Target is approximately +50mm along goal x; not a reversed-frame command. Does not establish actual contact-force cause."
+  },
+  {
+    "seed": 750122,
+    "source": "new_0_refresh/750122.json.gz",
+    "commanded_peg_goal_offset_m": [
+      0.04999045093742532,
+      0.0009768714714733576,
+      6.863196767251112e-06
+    ],
+    "native_success": false,
+    "interpretation": "Target is approximately +50mm along goal x; not a reversed-frame command. Does not establish actual contact-force cause."
+  },
+  {
+    "seed": 750140,
+    "source": "peg_eval_fixed_0/750140.json.gz",
+    "commanded_peg_goal_offset_m": [
+      0.049997721664885156,
+      0.00043390926653215367,
+      0.00020162962486122704
+    ],
+    "native_success": false,
+    "interpretation": "Target is approximately +50mm along goal x; not a reversed-frame command. Does not establish actual contact-force cause."
+  },
+  {
+    "seed": 750100,
+    "source": "gpu_refresh/750100.json.gz",
+    "commanded_peg_goal_offset_m": [
+      0.049999749557861205,
+      7.643220337832934e-05,
+      -0.00013522153867008557
+    ],
+    "native_success": true,
+    "interpretation": "Target is approximately +50mm along goal x; not a reversed-frame command. Does not establish actual contact-force cause."
+  }
+]
