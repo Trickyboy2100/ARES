@@ -46,7 +46,7 @@ All models see the same privileged simulator state; this is not a sensor-only de
 
 ## Real cost
 
-Audited completed native episodes: {audit['total_complete_episodes']}; physics control steps: {audit['total_physics_steps']}. This includes training, fixtures and evaluation; the table separates training. Each full physical rollout is100 steps. Planner counts are actual plan_screw queries; internal IK iterations are not separately measured. Concurrent GPU wall times are not isolated speed benchmarks. Virtual acquisition compute, training time and optimizer steps are retained in ACQUIRE/HISTORY/checkpoints. Optimizer reconstruction is audit work and is excluded from training budgets.
+Audited completed native episodes: {audit['total_complete_episodes']}; physics control steps: {audit['total_physics_steps']}. Primary critic optimizer iterations across real experiment models: {z['training_cost']['total_primary_critic_optimizer_iterations']} (audit reconstruction and analytic fixtures excluded). This includes training, fixtures and evaluation; the table separates training. Each full physical rollout is100 steps. Planner counts are actual plan_screw queries; internal IK iterations are not separately measured. Concurrent GPU wall times are not isolated speed benchmarks. Virtual acquisition compute, training time and optimizer steps are retained in ACQUIRE/HISTORY/checkpoints. Optimizer reconstruction is audit work and is excluded from training budgets.
 
 {budget}
 

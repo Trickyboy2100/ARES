@@ -33,7 +33,14 @@ for i,name in enumerate(selected):
 ax.set(yticks=range(len(selected)),yticklabels=selected,xlim=(-.03,1.03),xlabel='Native task success / 8 predeclared fresh development scenes',title='Frozen final policies | dots = training seeds 31301 / 31302');ax.invert_yaxis();ax.grid(axis='x',alpha=.2);fig.tight_layout();fig.savefig(out/'02_frozen_expansion.png',dpi=180);fig.savefig(out/'02_frozen_expansion.svg');plt.close(fig)
 j=read(r/'JOINT_OUTCOME_AUDIT.json')['summary'];fig,ax=plt.subplots(figsize=(7,4));ax.bar(['Observed','Independent','Joint'],[j['actual_discordance_rate'],j['independent']['discordance_probability'],j['joint']['discordance_probability']],color=['#34495e','#e67e22','#2980b9']);ax.set(ylabel='P(two suffix outcomes disagree)',ylim=(0,.5),title='29 handoffs / 10 old training scenes\nLeave-one-scene-out; prediction diagnostic, NOT RL gain');fig.tight_layout();fig.savefig(out/'03_outcome_dependence.png',dpi=180);fig.savefig(out/'03_outcome_dependence.svg');plt.close(fig)
 # Scope labels preserve logged finite-branch evaluation vs directly executed models.
-result=dict(claim='UNVERIFIED',scores=scores,pairwise=comparisons,curves=curves,scene_unit='Eight shared scene clusters; two optimization seeds are not sixteen independent scenes',monitor_scope='six development scenes observed during training; fixed10 succeeds6/6',expansion_scope='eight predeclared development scenes, no training, never sealed; all final policies frozen before physics',physical_audit=read(r/'ANALYSIS.json'),training_replay_audit=read(r/'TRAINING_REPLAY_AUDIT.json'))
+main_iterations=sum(x.get('optimizer_iterations',0)for x in read(r/'ANALYSIS.json')['runs'].values())
+offline=read(r/'offline/TRAINING.json');offmax={}
+for x in offline:offmax[x['method'],x['seed']]=max(offmax.get((x['method'],x['seed']),0),x['updates'])
+matched=read(r/'expansion_eval/MATCHED_TRAINING.json');projected=read(r/'projected_control/TRAINING.json');projmax={}
+for x in projected:projmax[x['seed']]=max(projmax.get(x['seed'],0),x['updates'])
+cost=dict(main_online_iterations=main_iterations,offline_comparator_iterations=sum(offmax.values()),matched_data_comparator_iterations=sum(x['updates']for x in matched),projected_control_iterations=sum(projmax.values()),audit_optimizer_reconstruction_excluded=True,fixture_updates_excluded=True)
+cost['total_primary_critic_optimizer_iterations']=sum(v for k,v in cost.items()if k.endswith('_iterations'))
+result=dict(claim='UNVERIFIED',training_cost=cost,scores=scores,pairwise=comparisons,curves=curves,scene_unit='Eight shared scene clusters; two optimization seeds are not sixteen independent scenes',monitor_scope='six development scenes observed during training; fixed10 succeeds6/6',expansion_scope='eight predeclared development scenes, no training, never sealed; all final policies frozen before physics',physical_audit=read(r/'ANALYSIS.json'),training_replay_audit=read(r/'TRAINING_REPLAY_AUDIT.json'))
 (r/'FINAL_RESULTS.json').write_text(json.dumps(result,indent=2));print('Final model hashes verified:',len(models),'scores',len(scores))
 fig,ax=plt.subplots(figsize=(8,4))
 for seed,color in [(31301,'#2980b9'),(31302,'#d35400')]:

@@ -11,7 +11,11 @@ def main():
   for row in rows:
    path=Path(row['path']);assert hashlib.sha256(path.read_bytes()).hexdigest()==row['sha256'];d=json.load(gzip.open(path,'rt'));assert len(d['steps'])==row['steps']==100;assert bool(d['steps'][-1]['evaluation']['success'][0])==row['success'];assert row['error']in [None,'HORIZON','PLAN_FAILED'];raws[str(path)]=d
   allrows+=rows;training=[r for r in rows if r['tag'].startswith(('train','warmup','pair'))];evals=[r for r in rows if r['tag'].startswith('dev')]
-  run=dict(episodes=len(rows),physical_steps=sum(r['steps']for r in rows),training_episodes=len(training),training_steps=sum(r['steps']for r in training),training_decisions=sum(len(r['decisions'])for r in training),eval_steps=sum(r['steps']for r in evals),planner_queries=sum(len(r['queries'])for r in rows),planning_s=sum(q['wall_s']for r in rows for q in r['queries']),wall_s=sum(r['wall_s']for r in rows),first_actions=dict(collections.Counter(r['decisions'][0]['id']for r in training)),second_actions=dict(collections.Counter(r['decisions'][1]['id']for r in training if len(r['decisions'])>1)))
+  run=dict(episodes=len(rows),physical_steps=sum(r['steps']for r in rows),training_episodes=len(training),training_steps=sum(r['steps']for r in training),training_decisions=sum(len(r['decisions'])for r in training),eval_steps=sum(r['steps']for r in rows if not r['tag'].startswith(('train','warmup','pair'))),eval_scope='includes fixtures and fixed-branch assessment; separate from training',planner_queries=sum(len(r['queries'])for r in rows),planning_s=sum(q['wall_s']for r in rows for q in r['queries']),wall_s=sum(r['wall_s']for r in rows),first_actions=dict(collections.Counter(r['decisions'][0]['id']for r in training)),second_actions=dict(collections.Counter(r['decisions'][1]['id']for r in training if len(r['decisions'])>1)))
+  hfile=res.parent.parent/'HISTORY.json'
+  if hfile.exists():
+   hh=json.loads(hfile.read_text());run['optimizer_iterations']=hh[-1]['update'];run['training_compute_s']=sum(x['wall_s']for x in hh)
+  acqs=[json.loads(x.read_text())for x in res.parent.parent.glob('ACQUIRE_*.json')];run['acquisition_compute_s']=sum(x.get('virtual_wall_s',x.get('wall_s',0.))for x in acqs if isinstance(x,dict))
   cf=res.parent.parent/'CURVE.json'
   if cf.exists():
    curve=json.loads(cf.read_text());run['curve']=curve;initial={r['seed']:r['success']for r in evals if r['tag']=='dev0'};changes=[]
