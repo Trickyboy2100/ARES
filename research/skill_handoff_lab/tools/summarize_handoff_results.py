@@ -7,8 +7,8 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);a=p.parse_args();r=a.root;out=r/'figures';out.mkdir(exist_ok=True)
 def read(p):return json.loads(p.read_text())
-scores=read(r/'expansion/SCORES.json');models=read(r/'expansion/FROZEN_MODELS.json')['models'];assert len(scores)==len(models)+6
-pred=read(r/'expansion/BRANCH_PREDICTIONS.json');assert len(pred)==len(models)*8
+scores=read(r/'expansion_eval/SCORES.json');models=read(r/'expansion_eval/FROZEN_MODELS.json')['models'];assert len(scores)==len(models)+6
+pred=read(r/'expansion_eval/BRANCH_PREDICTIONS.json');assert len(pred)==len(models)*8
 for m in models:assert hashlib.sha256(Path(m['path']).read_bytes()).hexdigest()==m['sha256']
 by=collections.defaultdict(dict)
 for z in pred:by[(z['method'],z['seed'])][z['scene']]=z
@@ -35,3 +35,15 @@ j=read(r/'JOINT_OUTCOME_AUDIT.json')['summary'];fig,ax=plt.subplots(figsize=(7,4
 # Scope labels preserve logged finite-branch evaluation vs directly executed models.
 result=dict(claim='UNVERIFIED',scores=scores,pairwise=comparisons,curves=curves,scene_unit='Eight shared scene clusters; two optimization seeds are not sixteen independent scenes',monitor_scope='six development scenes observed during training; fixed10 succeeds6/6',expansion_scope='eight predeclared development scenes, no training, never sealed; all final policies frozen before physics',physical_audit=read(r/'ANALYSIS.json'),training_replay_audit=read(r/'TRAINING_REPLAY_AUDIT.json'))
 (r/'FINAL_RESULTS.json').write_text(json.dumps(result,indent=2));print('Final model hashes verified:',len(models),'scores',len(scores))
+fig,ax=plt.subplots(figsize=(8,4))
+for seed,color in [(31301,'#2980b9'),(31302,'#d35400')]:
+ cs=curves[f'mature_policy_{seed}'];ax.plot([x['episodes']*100 for x in cs],[x['success']/6 for x in cs],'-o',color=color,label=f'seed {seed}')
+ax.axhline(1,color='#34495e',ls='--',label='fixed 0mm/original');ax.set(xlabel='New training physics steps',ylabel='Success / 6 monitor scenes',ylim=(0,1.05),title='Ordinary discrete SAC | 128 episodes / 64 train scenes');ax.legend();ax.grid(alpha=.2);fig.tight_layout();fig.savefig(out/'04_ordinary_extended.png',dpi=180);fig.savefig(out/'04_ordinary_extended.svg');plt.close(fig)
+c=read(r/'ACTION_SUPPORT_CURVE.json');fig,ax=plt.subplots(figsize=(8,4));ax.plot(c['continuous_requested'],c['critic'],label='Q at requested continuous action',color='#c0392b');ax.plot(c['continuous_requested'],c['critic_at_executed_option'],label='Q at executed finite option',color='#2980b9');ax.axvline(c['actor_request'][0],ls=':',color='#777777',label='Actor request');ax.set(xlabel='Continuous requested action',ylabel='Saved critic output (not success probability)',title='V0 action-support mismatch | actual saved handoff750103');ax.legend(fontsize=9);fig.tight_layout();fig.savefig(out/'05_action_support.png',dpi=180);fig.savefig(out/'05_action_support.svg');plt.close(fig)
+a=read(r/'DECISION_ATTRIBUTION.json')['models'];pick=['dsac','frontier_policy','frontier_ees','frontier_joint','matched_joint_supervised','mature_policy128'];fig,axs=plt.subplots(1,2,figsize=(12,5),sharey=True);cats=['SUCCESS','NO_MEASURED_LEGAL_SOLUTION','PREDECESSOR_OPTION_SELECTION','SUCCESSOR_OPTION_SELECTION'];palette=['#2a9d8f','#aaaaaa','#e9c46a','#e76f51']
+for ax,seed in zip(axs,[31301,31302]):
+ bottom=np.zeros(len(pick))
+ for cat,col in zip(cats,palette):
+  vals=np.array([next(x for x in a if x['method']==n and x['seed']==seed)['counts'][cat]for n in pick]);ax.barh(range(len(pick)),vals,left=bottom,color=col,label=cat);bottom+=vals
+ ax.set(title=f'Seed {seed}',yticks=range(len(pick)),yticklabels=pick,xlim=(0,8),xlabel='Eight shared development scenes');ax.invert_yaxis()
+axs[1].legend(fontsize=7,loc='lower right');fig.suptitle('Failure attribution from all six actually executed physical branches');fig.tight_layout();fig.savefig(out/'06_decision_attribution.png',dpi=180);fig.savefig(out/'06_decision_attribution.svg');plt.close(fig)

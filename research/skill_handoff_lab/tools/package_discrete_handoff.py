@@ -22,7 +22,7 @@ for folder in sorted(x for x in a.root.iterdir()if x.is_dir()and x.name not in [
 archive('metadata',sorted(x for x in a.root.iterdir()if x.is_file()))
 for name in ['figures','video_learning','video_handoff']:
  if (a.root/name).exists():shutil.copytree(a.root/name,a.out/name,dirs_exist_ok=True)
-for name in ['README.md','REVIEW.html','ANALYSIS.json','FINAL_RESULTS.json','PRIOR_ART.md','SEMANTICS_AUDIT.json','JOINT_OUTCOME_AUDIT.json','TRAINING_REPLAY_AUDIT.json','ENVIRONMENT.json','THIRD_PARTY_NOTICES.md','MANISKILL_APACHE_LICENSE.txt']:
+for name in ['README.md','REVIEW.html','ANALYSIS.json','FINAL_RESULTS.json','DECISION_ATTRIBUTION.json','SHARED_CONTROL_AUDIT.json','PRIOR_ART.md','SEMANTICS_AUDIT.json','JOINT_OUTCOME_AUDIT.json','TRAINING_REPLAY_AUDIT.json','ENVIRONMENT.json','THIRD_PARTY_NOTICES.md','MANISKILL_APACHE_LICENSE.txt']:
  if (a.root/name).exists():shutil.copy2(a.root/name,a.out/name)
 for ar in archives:
  with tarfile.open(a.out/ar['archive'])as t:
