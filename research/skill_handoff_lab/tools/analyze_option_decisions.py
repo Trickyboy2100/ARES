@@ -4,6 +4,7 @@ from pathlib import Path
 import numpy as np
 from program_discrete_options import Learner,episode_transitions
 p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);a=p.parse_args();root=a.root;e=root/'expansion_eval';pred=json.loads((e/'BRANCH_PREDICTIONS.json').read_text());manifest=json.loads((e/'FROZEN_MODELS.json').read_text());rows=json.loads((e/'physics/RESULTS.json').read_text());panel={}
+extra=root/'anchor_eval';pred+=json.loads((extra/'BRANCH_PREDICTIONS.json').read_text());manifest['models']+=json.loads((extra/'FROZEN_MODELS.json').read_text())['models']
 for row in rows:
  if not row['tag'].startswith('fixed'):continue
  aa,bb=map(int,row['tag'][-2:]);d=json.load(gzip.open(row['path'],'rt'));ts=episode_transitions(d,[-.01,0,.01][aa],bb,row['path']);panel[row['seed'],aa,bb]=(row,ts)

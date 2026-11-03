@@ -9,12 +9,13 @@ p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);a=p
 def read(p):return json.loads(p.read_text())
 scores=read(r/'expansion_eval/SCORES.json');models=read(r/'expansion_eval/FROZEN_MODELS.json')['models'];assert len(scores)==len(models)+6
 pred=read(r/'expansion_eval/BRANCH_PREDICTIONS.json');assert len(pred)==len(models)*8
+extra=read(r/'anchor_eval/SCORES.json');assert len(extra)==14;scores+=extra;models+=read(r/'anchor_eval/FROZEN_MODELS.json')['models'];pred+=read(r/'anchor_eval/BRANCH_PREDICTIONS.json')
 for m in models:assert hashlib.sha256(Path(m['path']).read_bytes()).hexdigest()==m['sha256']
 by=collections.defaultdict(dict)
 for z in pred:by[(z['method'],z['seed'])][z['scene']]=z
 comparisons=[]
 for seed in [31301,31302]:
- for candidate in ['frontier_joint','frontier_handoff','mature_policy128']:
+ for candidate in ['frontier_current_joint','frontier_joint','frontier_handoff','mature_policy128']:
   for control in ['frontier_policy','frontier_ees','frontier_independent_kernel','frontier_local','dsac','projected','matched_joint_supervised','matched_joint_iql']:
    aa=by[candidate,seed];bb=by[control,seed];comparisons.append(dict(candidate=candidate,control=control,seed=seed,n=len(aa),rescues=sum(aa[s]['success']and not bb[s]['success']for s in aa),regressions=sum(not aa[s]['success']and bb[s]['success']for s in aa),first_action_differences=sum(aa[s]['actions'][0]!=bb[s]['actions'][0]for s in aa),scope='same natural initial scene; not necessarily same executed prefix'))
 curves={x.parent.name:read(x)for x in sorted(r.glob('*/CURVE.json'))}
@@ -25,8 +26,8 @@ for ax,seed in zip(axs,[31301,31302]):
   cs=curves[f'frontier_{mode}_{seed}'];ax.plot([x['episodes']*100 for x in cs],[x['success']/6 for x in cs],'-o',label=mode,color=color,alpha=.85)
  ax.set(title=f'Training seed {seed}',xlabel='New training physics steps (prefixes charged)',ylim=(0,1.05),xticks=[0,800,1600,2400]);ax.grid(alpha=.2)
 axs[0].set_ylabel('Native success / 6 monitor scenes');axs[1].legend(fontsize=8);fig.suptitle('Matched 24-episode acquisition | final checkpoint, no best-checkpoint selection');fig.tight_layout();fig.savefig(out/'01_matched_learning.png',dpi=180);fig.savefig(out/'01_matched_learning.svg');plt.close(fig)
-selected=['fixed10','dsac','projected','frontier_policy','frontier_ees','frontier_handoff','frontier_local','frontier_independent_kernel','frontier_joint','matched_joint_supervised','matched_joint_iql','mature_policy128']
-fig,ax=plt.subplots(figsize=(11,6))
+selected=['fixed10','dsac','projected','frontier_policy','frontier_ees','frontier_handoff','frontier_local','frontier_independent_kernel','frontier_joint','matched_joint_supervised','matched_joint_iql','frontier_current_joint','frontier_current_independent_kernel','matched_current_joint_supervised','matched_current_joint_iql','mature_policy128']
+fig,ax=plt.subplots(figsize=(12,8))
 for i,name in enumerate(selected):
  zz=[z for z in scores if z['method']==name]
  for k,z in enumerate(zz):ax.scatter(z['success']/8,i+(k-.5)*.16 if len(zz)>1 else i,s=65,c=['#2980b9','#d35400'][k],marker='o'if z['seed']else'D')
@@ -36,7 +37,7 @@ j=read(r/'JOINT_OUTCOME_AUDIT.json')['summary'];fig,ax=plt.subplots(figsize=(7,4
 main_iterations=sum(x.get('optimizer_iterations',0)for x in read(r/'ANALYSIS.json')['runs'].values())
 offline=read(r/'offline/TRAINING.json');offmax={}
 for x in offline:offmax[x['method'],x['seed']]=max(offmax.get((x['method'],x['seed']),0),x['updates'])
-matched=read(r/'expansion_eval/MATCHED_TRAINING.json');projected=read(r/'projected_control/TRAINING.json');projmax={}
+matched=read(r/'expansion_eval/MATCHED_TRAINING.json')+read(r/'anchor_eval/MATCHED_TRAINING.json');projected=read(r/'projected_control/TRAINING.json');projmax={}
 for x in projected:projmax[x['seed']]=max(projmax.get(x['seed'],0),x['updates'])
 cost=dict(main_online_iterations=main_iterations,offline_comparator_iterations=sum(offmax.values()),matched_data_comparator_iterations=sum(x['updates']for x in matched),projected_control_iterations=sum(projmax.values()),audit_optimizer_reconstruction_excluded=True,fixture_updates_excluded=True)
 cost['total_primary_critic_optimizer_iterations']=sum(v for k,v in cost.items()if k.endswith('_iterations'))
@@ -54,3 +55,9 @@ for ax,seed in zip(axs,[31301,31302]):
   vals=np.array([next(x for x in a if x['method']==n and x['seed']==seed)['counts'][cat]for n in pick]);ax.barh(range(len(pick)),vals,left=bottom,color=col,label=cat);bottom+=vals
  ax.set(title=f'Seed {seed}',yticks=range(len(pick)),yticklabels=pick,xlim=(0,8),xlabel='Eight shared development scenes');ax.invert_yaxis()
 axs[1].legend(fontsize=7,loc='lower right');fig.suptitle('Failure attribution from all six actually executed physical branches');fig.tight_layout();fig.savefig(out/'06_decision_attribution.png',dpi=180);fig.savefig(out/'06_decision_attribution.svg');plt.close(fig)
+fig,axs=plt.subplots(1,2,figsize=(12,4),sharey=True)
+for ax,seed in zip(axs,[31301,31302]):
+ for mode,color in [('joint','#777777'),('current_joint','#c0392b'),('current_independent_kernel','#2980b9'),('ees','#27ae60')]:
+  cs=curves[f'frontier_{mode}_{seed}'];ax.plot([x['episodes']*100 for x in cs],[x['success']/6 for x in cs],'-o',label=mode,color=color)
+ ax.set(title=f'Seed {seed}',xlabel='Training physics steps',ylim=(0,1.05));ax.grid(alpha=.2)
+axs[0].set_ylabel('Native success / 6 monitor scenes');axs[1].legend(fontsize=8);fig.suptitle('Single-factor revision: acquisition anchors from current training distribution');fig.tight_layout();fig.savefig(out/'07_anchor_distribution.png',dpi=180);fig.savefig(out/'07_anchor_distribution.svg');plt.close(fig)

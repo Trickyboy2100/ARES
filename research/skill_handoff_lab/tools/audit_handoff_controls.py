@@ -4,7 +4,7 @@ from pathlib import Path
 import torch
 p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);a=p.parse_args();report=[]
 for seed in [31301,31302]:
- folders=[x for x in sorted(a.root.glob(f'frontier_*_{seed}'))if(x/'FINAL.pt').exists()];assert len(folders)==7
+ folders=[x for x in sorted(a.root.glob(f'frontier_*_{seed}'))if(x/'FINAL.pt').exists()];assert len(folders)==(9 if(a.root/'DISTRIBUTION_REVISION_PROTOCOL.json').exists()else 7)
  reference=None
  for folder in folders:
   rows=json.loads((folder/'physics/RESULTS.json').read_text());warmup=[x for x in rows if x['tag'].startswith('warmup')];assert len(warmup)==8

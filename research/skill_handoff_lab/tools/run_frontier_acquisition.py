@@ -10,9 +10,9 @@ from program_handoff_acquisition import update_score,frontier_score,JointOutcome
 
 def write(p,d):p.write_text(json.dumps(d,indent=2))
 def main():
- p=argparse.ArgumentParser();p.add_argument('--prior',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--mode',required=True,choices=['uniform','ees','handoff','local','policy','joint','independent_kernel']);p.add_argument('--seed',type=int,default=31301);a=p.parse_args();a.out.mkdir(exist_ok=False);torch.set_num_threads(2);data,groups=prior(a.prior);kernel=JointOutcomeKernel(groups);model=Learner('dsac',a.seed,normalizer(data));model.train(data,steps=800);rng=np.random.default_rng(a.seed);online=[];pool={};history={};curves=[];rt=Runtime(a.out/'physics')
+ p=argparse.ArgumentParser();p.add_argument('--prior',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--mode',required=True,choices=['uniform','ees','handoff','local','policy','joint','independent_kernel']);p.add_argument('--seed',type=int,default=31301);p.add_argument('--anchors',choices=['prior_and_current','current_only'],default='prior_and_current');a=p.parse_args();a.out.mkdir(exist_ok=False);torch.set_num_threads(2);data,groups=prior(a.prior);kernel=JointOutcomeKernel(groups);model=Learner('dsac',a.seed,normalizer(data));model.train(data,steps=800);rng=np.random.default_rng(a.seed);online=[];pool={};history={};curves=[];rt=Runtime(a.out/'physics')
  for name in ['program_discrete_options.py','program_peg_option_runtime.py','program_handoff_acquisition.py','run_frontier_acquisition.py']:shutil.copy2(Path(__file__).with_name(name),a.out/name)
- write(a.out/'PROTOCOL.json',dict(mode=a.mode,seed=a.seed,revision='coverage shared; expand actual first-option frontier',training_scenes=list(range(751000,751008)),dev_scenes=list(range(751200,751206)),warmup=8,pairs=8,cost_per_pair=200,steps_per_episode=100,prior_source=str(a.prior),optimizer_steps_per_pair=100,claim='UNVERIFIED; active expected-update heuristic, no new value loss'))
+ write(a.out/'PROTOCOL.json',dict(mode=a.mode,seed=a.seed,anchor_distribution=a.anchors,revision='coverage shared; expand actual first-option frontier',training_scenes=list(range(751000,751008)),dev_scenes=list(range(751200,751206)),warmup=8,pairs=8,cost_per_pair=200,steps_per_episode=100,prior_source=str(a.prior),optimizer_steps_per_pair=100,claim='UNVERIFIED; active expected-update heuristic, no new value loss'))
  def evaluate(k):
   model.save(a.out/f'MODEL_{k}.pt');rows=[rt.run(s,model.choose,f'dev{k}')[0]for s in range(751200,751206)];curves.append(dict(episodes=k,updates=model.updates,success=sum(r['success']for r in rows),n=len(rows),sources=[r['path']for r in rows]));write(a.out/'CURVE.json',curves)
  try:
@@ -22,7 +22,7 @@ def main():
    for aa in range(3):pool[(s,aa)]=dict(scene=s,grasp=aa,prefix=dict(ts[0],a=aa),suffix=None,known={},complete=False)
    entry=pool[(s,act0)];entry['known'][act1]=int(row['success']);entry['suffix']=ts[1]if len(ts)==2 else None
    if len(ts)==1:entry['complete']=True
-  evaluate(8);anchors=[t['s']for t in data+online if t['stage']==0]
+  evaluate(8);anchors=[t['s']for t in (data+online if a.anchors=='prior_and_current'else online) if t['stage']==0]
   if a.mode=='policy':
    for j in range(16):
     def collect(obs):
