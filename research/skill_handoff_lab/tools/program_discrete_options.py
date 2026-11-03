@@ -52,12 +52,12 @@ class Learner:
             if self.kind=='stap':
                 # Functional Q-product analogue: separate predecessor reach and
                 # actual successor-state model, exact finite enumeration.
-                vals=qs.mean(0).sigmoid();stage=x[:,44]<.5
+                vals=nn.functional.logsigmoid(qs.mean(0));stage=x[:,44]<.5
                 for a in range(3):
                     inp=x.clone();inp[:,-3:]=0;inp[:,-3+a]=1
                     z=self.dyn(inp);z[:,44]=1
-                    suf=torch.stack([q(z) for q in self.q]).mean(0)[:,:2].sigmoid().max(1).values
-                    vals[stage,a]*=suf[stage]
+                    suf=nn.functional.logsigmoid(torch.stack([q(z) for q in self.q]).mean(0)[:,:2]).max(1).values
+                    vals[stage,a]+=suf[stage]
                 return vals.numpy(),qs.numpy()
             if self.kind=='iql':return self.probs(x).numpy(),qs.numpy()
             if self.kind=='dsac':return self.probs(x).numpy(),qs.numpy()
@@ -107,7 +107,7 @@ class Learner:
         torch.save(dict(kind=self.kind,seed=self.seed,updates=self.updates,q=self.q.state_dict(),target=self.target.state_dict(),actor=self.actor.state_dict(),v=self.v.state_dict(),dyn=self.dyn.state_dict(),qopt=self.qopt.state_dict(),aopt=self.aopt.state_dict(),vopt=self.vopt.state_dict(),dopt=self.dopt.state_dict(),mu=self.mu,sd=self.sd,rng=self.rng.bit_generator.state,history=self.history,controller=CONTROLLER),path)
     @classmethod
     def load(cls,path):
-        d=torch.load(path,weights_only=False,map_location='cpu');m=cls(d['kind'],d['seed'],(d['mu'],d['sd']))
+        d=torch.load(path,weights_only=False,map_location='cpu');assert d.get('controller')==CONTROLLER,'INCOMPATIBLE_MODEL_CONTRACT';m=cls(d['kind'],d['seed'],(d['mu'],d['sd']))
         for k in ['q','target','actor','v','dyn','qopt','aopt','vopt','dopt']:getattr(m,k).load_state_dict(d[k])
         m.updates=d['updates'];m.history=d['history'];m.rng.bit_generator.state=d['rng'];return m
 
