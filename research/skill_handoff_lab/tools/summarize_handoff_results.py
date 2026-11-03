@@ -71,3 +71,6 @@ for d in direct:
 (r/'EXTRACTION_COMPARISON.json').write_text(json.dumps(comparison,indent=2));fig,ax=plt.subplots(figsize=(11,5));xx=np.arange(len(ex))
 for j,(mode,col)in enumerate([('actor','#34495e'),('min','#e9c46a'),('mean','#2a9d8f')]):ax.bar(xx+(j-1)*.24,[x['policies'][mode]['success']for x in ex],.24,label=mode,color=col)
 ax.set(xticks=xx,xticklabels=[x['run'].replace('frontier_','').replace('_313','\nseed313')for x in ex],ylabel='Native success / 8 scenes',ylim=(0,8),title='Frozen weights: policy extraction, not a new learning algorithm\nLogged complete real branch panel; six conditions physically reconfirmed');ax.legend();fig.tight_layout();fig.savefig(out/'08_policy_extraction.png',dpi=180);fig.savefig(out/'08_policy_extraction.svg');plt.close(fig)
+# Normalize exporter-only whitespace; scientific values and SVG geometry unchanged.
+for svg in out.glob('*.svg'):
+ svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
