@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
-  "last_review": "2026-11-03",
-  "baseline_commit": "99c43b98feb0ffa22b05716be1829157771f2201",
+  "last_review": "2026-11-04",
+  "baseline_commit": "1ea09657bed0de329b2e6bd0ec676ce27d901774",
   "branch": "research-sci-program",
   "scientific_goal": "One SCI paper: task-conditioned executable parameter adaptation ACROSS REAL MULTI-STAGE ROBOT SKILLS using nominal skill primitives and measured SkillResult to improve successor feasibility, whole-task success and transfer; contact servo and SAC are component baselines",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
-  "latest_evidence": "evidence/EXP-004/2026-11-03/peg_value/README.md",
-  "next_action": "Continue EXP-004 trainable skill-value prototype jointly with EXP-003 common Peg native100 execution. Preserve paired/SAC/absolute/shuffled negative models. First measure Peg contact progression and actual tracking/budget after correct goal-frame target; identify executable reapproach/hold authority under shared strong feedback before further RL. Best fixed6/10 vs measured union8/10 is opportunity only; new physical Peg all2/4 and Tool all3/6. Do not claim early logged-selection improvement as method gain or restart auxiliary-head search.",
+  "latest_evidence": "evidence/EXP-004/2026-11-03/discrete_handoff/README.md",
+  "next_action": "Continue one-paper skill-parameter RL from verified finite physical Options. Do not expand the failed acquisition surrogate unchanged. First inherit categorical DSAC/IQL/FQI/CQL and the frozen-model extraction diagnostics; separate Actor approximation from clipped-Q aggregation under an explicitly shared deployment rule. Any acquisition revision must score that actual deployed rule and demonstrate benefit beyond same-history supervised/FQI and EES-style/independent-kernel controls. Use genuinely new development conditions for subsequent validation;751200-205 and751220-227 are now seen. Preserve native100, full prefixes and all existing negative models; sealed tests remain closed.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
     "S3": "initial_action_authority_confirmed_identification_incomplete",
     "S4": "active_STAP_replication_and_multi_skill_credible_method",
-    "S5": "active_paired_skill_value_negative_physical_validation",
+    "S5": "active_finite_option_RL_and_acquisition_negative_with_policy_extraction_mechanism",
     "S6": "not_started",
     "S7": "not_started"
   },
@@ -80,7 +80,7 @@
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
-  "latest_run_summary": "Parallel physics and algorithm work:160 full native100 episodes including6 instrumentation-error terminal holds;75600 value optimizer iterations;51600 actor and51600 critic steps. Peg OBB GPU adaptation retained. Three candidate/ablation loops and new physical execution in both tasks show no independent gain.",
+  "latest_run_summary": "Finite physical action semantics verified;38 online model histories reconstructed exactly. Four acquisition revisions and two-seed128-episode ordinary SAC completed. Independent gain remains UNVERIFIED. Posthoc native confirmation distinguishes Actor approximation and critic aggregation; it is baseline diagnosis, not a new algorithm.",
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
   "research_review_20261102": {
     "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
@@ -230,5 +230,53 @@
     ],
     "training_seed_fresh_physics": 31201,
     "evidence": "evidence/EXP-004/2026-11-03/peg_value/README.md"
+  },
+  "discrete_handoff_20261103": {
+    "source": "evidence/EXP-004/2026-11-03/discrete_handoff/README.md",
+    "code_commit": "2ac433e",
+    "complete_native_episodes": 2458,
+    "physics_steps": 245800,
+    "primary_critic_optimizer_iterations": 250400,
+    "exact_online_optimizer_reconstructions": 38,
+    "strict_full_prefix_pairs": 192,
+    "training_seeds": [
+      31301,
+      31302
+    ],
+    "fresh_development_at_start": [
+      751220,
+      751221,
+      751222,
+      751223,
+      751224,
+      751225,
+      751226,
+      751227
+    ],
+    "development_status": "all now seen; no sealed tests",
+    "mature_sac_final": [
+      "5/8",
+      "3/8"
+    ],
+    "joint_acquisition_final": [
+      "4/8",
+      "4/8"
+    ],
+    "ees_style_final": [
+      "4/8",
+      "4/8"
+    ],
+    "current_anchor_revision": [
+      "2/8",
+      "4/8"
+    ],
+    "matched_mature_supervised": [
+      "5/8",
+      "5/8"
+    ],
+    "best_fixed_fresh": "6/8 hindsight, equals measured finite union",
+    "combined_development": "best fixed10/14 vs measured union12/14",
+    "posthoc_extraction": "current-joint seed31301 Actor2/minQ4/meanQ5; mature seed31302 Actor3/minQ2/meanQ5;48 actual native episodes; no independent-test claim",
+    "claim": "UNVERIFIED"
   }
 }

@@ -1,0 +1,4666 @@
+[
+  {
+    "run": "frontier_current_independent_kernel_31301",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.3271678499877453,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.22438636591239458,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.24520038099338612,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 4,
+          "rescues": 1,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.22337898751720786,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.17224113441286182,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.16759429344286517,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.13409139488893018,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 2,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.14554480807618742,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 2,
+          "after": 3,
+          "rescues": 1,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.241487200022675
+  },
+  {
+    "run": "frontier_current_independent_kernel_31302",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.1469413836069613,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.1483827627823988,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.33212531039801735,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.13586623314768076,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.12525664992170604,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.292056854814291,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.21165584292576156,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 4,
+          "rescues": 1,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.15730407105093747,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.1193616540404037
+  },
+  {
+    "run": "frontier_current_joint_31301",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.2868369445204735,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.22438636591239458,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.2115341704338789,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 4,
+          "rescues": 1,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.21210473248114187,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.18586510481933752,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.15894945308146013,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.1247090720807904,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.12721310389677742,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 2,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.1382978960173205
+  },
+  {
+    "run": "frontier_current_joint_31302",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.1469413836069613,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.1483827627823988,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.28722392503793037,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.1356805507093668,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.12525664992170604,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.2363748823602994,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.21165584292576156,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 4,
+          "rescues": 1,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.15730407105093747,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.084131067036651
+  },
+  {
+    "run": "frontier_ees_31301",
+    "episodes": 24,
+    "transitions": 43,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.11000000000000008,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.11000000000000008,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 4,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.11000000000000008,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.11000000000000008,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.10999999999999997,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 4,
+          "rescues": 1,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.10999999999999997,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.1050000000000001,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.1050000000000001,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.114929246949032
+  },
+  {
+    "run": "frontier_ees_31302",
+    "episodes": 24,
+    "transitions": 43,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.11000000000000008,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.11000000000000008,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.11000000000000008,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.10999999999999997,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.10999999999999997,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.11000000000000008,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.10999999999999997,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.1050000000000001,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.045029398985207
+  },
+  {
+    "run": "frontier_handoff_31301",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.1586949704981948,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.20800294578643375,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.1656832902223071,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.15236871154184173,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.1475893526868184,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.13946227193074479,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.13296613005064906,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.1776828504185481,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.1004067490575835
+  },
+  {
+    "run": "frontier_handoff_31302",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.12425408373054658,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.11692008238044993,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.13095897063144812,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.1495204640927552,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.17974004754280168,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.17798310415861884,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.13270497293079736,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.1512719646920413,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.2360565660055727
+  },
+  {
+    "run": "frontier_independent_kernel_31301",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.4322831636915604,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.21062448756939212,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.1604302169150842,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.14898017421849846,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 4,
+          "rescues": 1,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.1466979451802083,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.14897709893374,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 4,
+          "rescues": 1,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.14228988026217038,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.14299266813631917,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.146533318911679
+  },
+  {
+    "run": "frontier_independent_kernel_31302",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.12425408373054658,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.12354184066255888,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.17279907168510056,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.12921854187866044,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.16659988083605035,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.16414997881592447,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.14572841306225914,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.14235927523877123,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.123693950008601
+  },
+  {
+    "run": "frontier_joint_31301",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.378510029365619,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.21062448756939212,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.1604302169150842,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 3,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.17457406606020714,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 3,
+          "after": 4,
+          "rescues": 1,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.16955889101761082,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.1483078400293986,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.14266964200711219,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.14738363678152844,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.086966166039929
+  },
+  {
+    "run": "frontier_joint_31302",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.12425408373054658,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.11692008238044993,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.13505257650588948,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.15681192024948837,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.16597506579571797,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.14147080046435195,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 5,
+          "rescues": 1,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.14781417612156744,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 5,
+          "after": 5,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.14632413101692995,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 5,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 1,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.1316375749884173
+  },
+  {
+    "run": "frontier_local_31301",
+    "episodes": 24,
+    "transitions": 45,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.1586949704981948,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.20800294578643375,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.1656832902223071,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.15236871154184173,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.1475893526868184,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.13946227193074479,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.13296613005064906,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.12500088541983434,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.1095537659712136
+  },
+  {
+    "run": "frontier_local_31302",
+    "episodes": 24,
+    "transitions": 45,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.12425408373054658,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.11692008238044993,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.13095897063144812,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.1495204640927552,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.16511864930930908,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.13042864485633743,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.09383447044693369,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.08455517875414198,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.0903340320801362
+  },
+  {
+    "run": "frontier_policy_31301",
+    "episodes": 24,
+    "transitions": 45,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 3.0086922580376267
+  },
+  {
+    "run": "frontier_policy_31302",
+    "episodes": 24,
+    "transitions": 45,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 3.0229347829008475
+  },
+  {
+    "run": "frontier_uniform_31301",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.9686617338351069,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.9773972950113435,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.9923852937025966,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.9502862154725749,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.8003441645721373,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.9965714954456574,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.954967994220873,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.9562855202288595,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.115725096897222
+  },
+  {
+    "run": "frontier_uniform_31302",
+    "episodes": 24,
+    "transitions": 45,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.8723313734693502,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.9749107683304417,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.9931679772586065,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.9523558172819663,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.8772121878365061,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.9616082518973569,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.9817666129749983,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.9741597910567711,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.0959890270605683
+  },
+  {
+    "run": "mature_policy_31301",
+    "episodes": 128,
+    "transitions": 240,
+    "optimizer_updates": 7200,
+    "additional_updates": 6400,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 17.241758115007542
+  },
+  {
+    "run": "mature_policy_31302",
+    "episodes": 128,
+    "transitions": 245,
+    "optimizer_updates": 7200,
+    "additional_updates": 6400,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 16.619554886012338
+  },
+  {
+    "run": "online_handoff_31301",
+    "episodes": 32,
+    "transitions": 62,
+    "optimizer_updates": 2400,
+    "additional_updates": 1600,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 4.028687825077213
+  },
+  {
+    "run": "online_handoff_31302",
+    "episodes": 32,
+    "transitions": 61,
+    "optimizer_updates": 2400,
+    "additional_updates": 1600,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 4.105151968076825
+  },
+  {
+    "run": "online_policy_31301",
+    "episodes": 32,
+    "transitions": 62,
+    "optimizer_updates": 2400,
+    "additional_updates": 1600,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 4.063973577925935
+  },
+  {
+    "run": "online_policy_31302",
+    "episodes": 32,
+    "transitions": 62,
+    "optimizer_updates": 2400,
+    "additional_updates": 1600,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 4.144121475983411
+  },
+  {
+    "run": "online_practice_31301",
+    "episodes": 32,
+    "transitions": 62,
+    "optimizer_updates": 2400,
+    "additional_updates": 1600,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 4.026644848054275
+  },
+  {
+    "run": "online_practice_31302",
+    "episodes": 32,
+    "transitions": 62,
+    "optimizer_updates": 2400,
+    "additional_updates": 1600,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 4.047867869026959
+  },
+  {
+    "run": "online_uncertainty_31301",
+    "episodes": 32,
+    "transitions": 61,
+    "optimizer_updates": 2400,
+    "additional_updates": 1600,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 4.458458612905815
+  },
+  {
+    "run": "online_uncertainty_31302",
+    "episodes": 32,
+    "transitions": 61,
+    "optimizer_updates": 2400,
+    "additional_updates": 1600,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 4.042359279934317
+  },
+  {
+    "run": "online_uniform_31301",
+    "episodes": 32,
+    "transitions": 61,
+    "optimizer_updates": 2400,
+    "additional_updates": 1600,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 3.926892249030061
+  },
+  {
+    "run": "online_uniform_31302",
+    "episodes": 32,
+    "transitions": 62,
+    "optimizer_updates": 2400,
+    "additional_updates": 1600,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [],
+    "replay_audit_wall_s": 4.007517530000769
+  },
+  {
+    "run": "pairs_ees_pair_31301",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.1050000000000001,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.4024999999999999,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.43023809523809525,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.4456944444444444,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.4555454545454546,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.462371794871795,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.4673809523809525,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.47121323529411774,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.104567460017279
+  },
+  {
+    "run": "pairs_ees_pair_31302",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.1050000000000001,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.1050000000000001,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.1050000000000001,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.1050000000000001,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.005,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.48134002923965463,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.5314363597688221,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.5458442017767164,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.0989484259625897
+  },
+  {
+    "run": "pairs_handoff_update_31301",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.10176561459442668,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.1057286225401346,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.09121512885813365,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.04699946276545506,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.04861066530187186,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.027045410067108203,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.023387931597032688,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.02477403207942854,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.1222880959976465
+  },
+  {
+    "run": "pairs_handoff_update_31302",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.08181386001919479,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.09433666392445392,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.09598053698763764,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.09766215490128884,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.051460577407160264,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.03711170933581154,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.026242611126928366,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.017659185439515567,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.2148071390111
+  },
+  {
+    "run": "pairs_local_update_31301",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.020740876669856686,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.022922146140077784,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.020729810735188738,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.008272325655931466,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.007947915248984421,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.0039633782515853784,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.0030739542601787642,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.0031767797473604155,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.1540278469910845
+  },
+  {
+    "run": "pairs_local_update_31302",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.03419712860691104,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.02220720732276003,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.017519856153276323,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.010180404458657843,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.019845327859298403,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.009512885891139796,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 4,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.013069484324180826,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.004074257060377912,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.257010620087385
+  },
+  {
+    "run": "pairs_random_pair_31301",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.9686617338351069,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.688600250184347,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.9027659334307278,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.9096115079926202,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.9773972950113435,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.9605642348543059,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.9561402328417724,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.882526336351496,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.142356314929202
+  },
+  {
+    "run": "pairs_random_pair_31302",
+    "episodes": 24,
+    "transitions": 47,
+    "optimizer_updates": 2000,
+    "additional_updates": 1200,
+    "max_parameter_error": {
+      "q": 0.0,
+      "target": 0.0,
+      "actor": 0.0,
+      "v": 0.0,
+      "dyn": 0.0
+    },
+    "acquisition_effects": [
+      {
+        "pair": 0,
+        "acquisition_score": 0.8723313734693502,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 0,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 1,
+        "acquisition_score": 0.753240883039385,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 2,
+        "acquisition_score": 0.8675659479899522,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 3,
+        "acquisition_score": 0.9749107683304417,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 2,
+        "actual_pair_outcomes": [
+          0,
+          0
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 4,
+        "acquisition_score": 0.8049685574865242,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 5,
+        "acquisition_score": 0.9395939275365719,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 3,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 6,
+        "acquisition_score": 0.9410907811420551,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 4,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      },
+      {
+        "pair": 7,
+        "acquisition_score": 0.9931679772586065,
+        "old_training_panel_before": 8,
+        "old_training_panel_after": 8,
+        "rescues": 0,
+        "regressions": 0,
+        "first_policy_changes": 1,
+        "actual_pair_outcomes": [
+          1,
+          1
+        ],
+        "scope": "old training panel diagnostic, not generalization",
+        "fresh_panel_posthoc": {
+          "before": 4,
+          "after": 4,
+          "rescues": 0,
+          "regressions": 0,
+          "scope": "retrospective logged-policy mechanism diagnostic after every model was frozen; not extra physics or checkpoint selection"
+        }
+      }
+    ],
+    "replay_audit_wall_s": 3.147177916020155
+  }
+]

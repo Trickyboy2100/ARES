@@ -1,0 +1,48 @@
+{
+  "declared_at": "2026-11-03T23:19:17.426839",
+  "hypothesis": "Acquisition objective overweights duplicated historical initial states:60/68 versus8/68 current. Change ONLY acquisition anchors to eight actually observed current training initials.",
+  "variants": [
+    "joint",
+    "independent_kernel"
+  ],
+  "seeds": [
+    31301,
+    31302
+  ],
+  "same_physics": true,
+  "train_episodes": 24,
+  "common_warmup": 8,
+  "prior_learning_unchanged": true,
+  "initial_observations_extra": 0,
+  "training_scenes": [
+    751000,
+    751001,
+    751002,
+    751003,
+    751004,
+    751005,
+    751006,
+    751007
+  ],
+  "development_monitor": [
+    751200,
+    751201,
+    751202,
+    751203,
+    751204,
+    751205
+  ],
+  "additional_evaluation": [
+    751220,
+    751221,
+    751222,
+    751223,
+    751224,
+    751225,
+    751226,
+    751227
+  ],
+  "evaluation_scope": "additional pre-scoring declared development revision; distinct from original frozen54-model protocol; model hashes frozen before reading finite branch results",
+  "human_has_read_new_expansion_outcomes": false,
+  "claim": "UNVERIFIED"
+}

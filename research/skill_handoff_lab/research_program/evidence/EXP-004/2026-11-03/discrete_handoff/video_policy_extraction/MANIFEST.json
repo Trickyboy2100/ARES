@@ -1,0 +1,18 @@
+{
+  "seed": 751223,
+  "physics_steps": 0,
+  "frames": 101,
+  "fps": 20,
+  "max_state_readback_error": 1.1920928955078125e-07,
+  "source_kind": "MEASURED_STATE_REPLAY",
+  "sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/discrete_handoff_20261103/anchor_eval/physics/00004_751223_frontier_current_joint_31301.json.gz",
+      "sha256": "c11791616d60f93051577c1ff609eaa24532cbbcead15e6941f22ed6a2a11910"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/discrete_handoff_20261103/extraction_eval/physics/00004_751223_frontier_current_joint_31301_mean.json.gz",
+      "sha256": "163dea0e64545504b2f404faa172fceae41f1bcbb58022b0e81107c021099dc4"
+    }
+  ]
+}

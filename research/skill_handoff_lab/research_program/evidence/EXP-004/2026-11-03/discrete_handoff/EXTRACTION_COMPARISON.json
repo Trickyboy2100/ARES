@@ -1,0 +1,56 @@
+[
+  {
+    "run": "frontier_current_joint_31301",
+    "extraction": "mean",
+    "actor_success": 2,
+    "direct_success": 5,
+    "rescues": 3,
+    "regressions": 0,
+    "scope": "same initial conditions, posthoc direct physical confirmation; no training"
+  },
+  {
+    "run": "frontier_current_joint_31302",
+    "extraction": "mean",
+    "actor_success": 4,
+    "direct_success": 4,
+    "rescues": 0,
+    "regressions": 0,
+    "scope": "same initial conditions, posthoc direct physical confirmation; no training"
+  },
+  {
+    "run": "mature_policy_31301",
+    "extraction": "mean",
+    "actor_success": 5,
+    "direct_success": 5,
+    "rescues": 0,
+    "regressions": 0,
+    "scope": "same initial conditions, posthoc direct physical confirmation; no training"
+  },
+  {
+    "run": "mature_policy_31302",
+    "extraction": "mean",
+    "actor_success": 3,
+    "direct_success": 5,
+    "rescues": 2,
+    "regressions": 0,
+    "scope": "same initial conditions, posthoc direct physical confirmation; no training"
+  },
+  {
+    "run": "frontier_current_joint_31301",
+    "extraction": "min",
+    "actor_success": 2,
+    "direct_success": 4,
+    "rescues": 2,
+    "regressions": 0,
+    "scope": "same initial conditions, posthoc direct physical confirmation; no training"
+  },
+  {
+    "run": "mature_policy_31302",
+    "extraction": "min",
+    "actor_success": 3,
+    "direct_success": 2,
+    "rescues": 0,
+    "regressions": 1,
+    "scope": "same initial conditions, posthoc direct physical confirmation; no training"
+  }
+]

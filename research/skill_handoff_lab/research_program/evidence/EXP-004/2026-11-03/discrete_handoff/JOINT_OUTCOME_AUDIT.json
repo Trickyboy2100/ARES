@@ -1,0 +1,1270 @@
+{
+  "summary": {
+    "joint": {
+      "nll": 1.35411145483864,
+      "brier": 0.7009099616858239,
+      "discordance_probability": 0.15229885057471265,
+      "conditional_brier": 0.1819433503640102
+    },
+    "independent": {
+      "nll": 1.7360195560481704,
+      "brier": 0.7466275542784164,
+      "discordance_probability": 0.3577586206896552,
+      "conditional_brier": 0.3134578544061303
+    },
+    "actual_discordance_rate": 0.13793103448275862,
+    "contexts": 29,
+    "scenes": 10,
+    "scope": "leave-one-SCENE-out diagnostic; no physical or policy gain; no dev/sealed labels",
+    "matched_information": "same five neighbors, same marginal probabilities, same Dirichlet smoothing; covariance only"
+  },
+  "rows": [
+    {
+      "scene": 750100,
+      "grasp": 0.0,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750104,
+        750104,
+        750104,
+        750121,
+        750121
+      ],
+      "joint": [
+        [
+          0.041666666666666664,
+          0.20833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.7083333333333334
+        ]
+      ],
+      "independent": [
+        [
+          0.020833333333333332,
+          0.22916666666666669
+        ],
+        [
+          0.0625,
+          0.6875
+        ]
+      ],
+      "joint_nll": 0.3448404862917295,
+      "joint_brier": 0.13194444444444442,
+      "joint_discordance_probability": 0.25,
+      "joint_conditional_brier": 0.00308641975308641,
+      "independent_nll": 0.3746934494414107,
+      "independent_brier": 0.1545138888888889,
+      "independent_discordance_probability": 0.2916666666666667,
+      "independent_conditional_brier": 0.006944444444444451
+    },
+    {
+      "scene": 750101,
+      "grasp": 0.0,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750104,
+        750104,
+        750104,
+        750102,
+        750102
+      ],
+      "joint": [
+        [
+          0.375,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.5416666666666666
+        ]
+      ],
+      "independent": [
+        [
+          0.17361111111111113,
+          0.24305555555555552
+        ],
+        [
+          0.24305555555555552,
+          0.3402777777777777
+        ]
+      ],
+      "joint_nll": 0.6131044728864089,
+      "joint_brier": 0.3541666666666667,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.005102040816326526,
+      "independent_nll": 1.0779930014653742,
+      "independent_brier": 0.5835262345679013,
+      "independent_discordance_probability": 0.48611111111111105,
+      "independent_conditional_brier": 0.17361111111111116
+    },
+    {
+      "scene": 750102,
+      "grasp": 0.0,
+      "outcomes": [
+        0,
+        0
+      ],
+      "neighbor_scenes": [
+        750101,
+        750101,
+        750105,
+        750101,
+        750105
+      ],
+      "joint": [
+        [
+          0.041666666666666664,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.875
+        ]
+      ],
+      "independent": [
+        [
+          0.006944444444444444,
+          0.07638888888888888
+        ],
+        [
+          0.07638888888888888,
+          0.8402777777777777
+        ]
+      ],
+      "joint_nll": 3.1780538303479458,
+      "joint_brier": 1.6875000000000002,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.25,
+      "independent_nll": 4.969813299576001,
+      "independent_brier": 1.7038966049382713,
+      "independent_discordance_probability": 0.15277777777777776,
+      "independent_conditional_brier": 0.8402777777777777
+    },
+    {
+      "scene": 750103,
+      "grasp": 0.0,
+      "outcomes": [
+        0,
+        0
+      ],
+      "neighbor_scenes": [
+        750123,
+        750123,
+        750123,
+        750105,
+        750105
+      ],
+      "joint": [
+        [
+          0.375,
+          0.20833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.375
+        ]
+      ],
+      "independent": [
+        [
+          0.24305555555555558,
+          0.34027777777777785
+        ],
+        [
+          0.17361111111111113,
+          0.24305555555555558
+        ]
+      ],
+      "joint_nll": 0.9808292530117262,
+      "joint_brier": 0.5763888888888888,
+      "joint_discordance_probability": 0.25,
+      "joint_conditional_brier": 0.12755102040816327,
+      "independent_nll": 1.4144652380865868,
+      "independent_brier": 0.7779706790123458,
+      "independent_discordance_probability": 0.513888888888889,
+      "independent_conditional_brier": 0.3402777777777777
+    },
+    {
+      "scene": 750104,
+      "grasp": 0.0,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750100,
+        750100,
+        750100,
+        750121,
+        750121
+      ],
+      "joint": [
+        [
+          0.20833333333333334,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.7083333333333334
+        ]
+      ],
+      "independent": [
+        [
+          0.0625,
+          0.1875
+        ],
+        [
+          0.1875,
+          0.5625
+        ]
+      ],
+      "joint_nll": 0.3448404862917295,
+      "joint_brier": 0.13194444444444442,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.00308641975308641,
+      "independent_nll": 0.5753641449035618,
+      "independent_brier": 0.265625,
+      "independent_discordance_probability": 0.375,
+      "independent_conditional_brier": 0.0625
+    },
+    {
+      "scene": 750100,
+      "grasp": -0.01,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750104,
+        750104,
+        750104,
+        750121,
+        750121
+      ],
+      "joint": [
+        [
+          0.041666666666666664,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.875
+        ]
+      ],
+      "independent": [
+        [
+          0.006944444444444444,
+          0.07638888888888888
+        ],
+        [
+          0.07638888888888888,
+          0.8402777777777777
+        ]
+      ],
+      "joint_nll": 0.13353139262452263,
+      "joint_brier": 0.020833333333333332,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.002066115702479335,
+      "independent_nll": 0.17402275397925965,
+      "independent_brier": 0.037229938271604965,
+      "independent_discordance_probability": 0.15277777777777776,
+      "independent_conditional_brier": 0.006944444444444432
+    },
+    {
+      "scene": 750101,
+      "grasp": -0.01,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750104,
+        750104,
+        750104,
+        750102,
+        750102
+      ],
+      "joint": [
+        [
+          0.375,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.5416666666666666
+        ]
+      ],
+      "independent": [
+        [
+          0.17361111111111113,
+          0.24305555555555552
+        ],
+        [
+          0.24305555555555552,
+          0.3402777777777777
+        ]
+      ],
+      "joint_nll": 0.6131044728864089,
+      "joint_brier": 0.3541666666666667,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.005102040816326526,
+      "independent_nll": 1.0779930014653742,
+      "independent_brier": 0.5835262345679013,
+      "independent_discordance_probability": 0.48611111111111105,
+      "independent_conditional_brier": 0.17361111111111116
+    },
+    {
+      "scene": 750102,
+      "grasp": -0.01,
+      "outcomes": [
+        0,
+        0
+      ],
+      "neighbor_scenes": [
+        750101,
+        750101,
+        750105,
+        750105,
+        750101
+      ],
+      "joint": [
+        [
+          0.041666666666666664,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.875
+        ]
+      ],
+      "independent": [
+        [
+          0.006944444444444444,
+          0.07638888888888888
+        ],
+        [
+          0.07638888888888888,
+          0.8402777777777777
+        ]
+      ],
+      "joint_nll": 3.1780538303479458,
+      "joint_brier": 1.6875000000000002,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.25,
+      "independent_nll": 4.969813299576001,
+      "independent_brier": 1.7038966049382713,
+      "independent_discordance_probability": 0.15277777777777776,
+      "independent_conditional_brier": 0.8402777777777777
+    },
+    {
+      "scene": 750103,
+      "grasp": -0.01,
+      "outcomes": [
+        0,
+        1
+      ],
+      "neighbor_scenes": [
+        750123,
+        750123,
+        750123,
+        750105,
+        750105
+      ],
+      "joint": [
+        [
+          0.375,
+          0.20833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.375
+        ]
+      ],
+      "independent": [
+        [
+          0.24305555555555558,
+          0.34027777777777785
+        ],
+        [
+          0.17361111111111113,
+          0.24305555555555558
+        ]
+      ],
+      "joint_nll": 1.5686159179138452,
+      "joint_brier": 0.9097222222222222,
+      "joint_discordance_probability": 0.25,
+      "joint_conditional_brier": 0.4132653061224489,
+      "independent_nll": 1.0779930014653738,
+      "independent_brier": 0.5835262345679012,
+      "independent_discordance_probability": 0.513888888888889,
+      "independent_conditional_brier": 0.17361111111111116
+    },
+    {
+      "scene": 750104,
+      "grasp": -0.01,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750100,
+        750100,
+        750121,
+        750100,
+        750121
+      ],
+      "joint": [
+        [
+          0.20833333333333334,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.7083333333333334
+        ]
+      ],
+      "independent": [
+        [
+          0.0625,
+          0.1875
+        ],
+        [
+          0.1875,
+          0.5625
+        ]
+      ],
+      "joint_nll": 0.3448404862917295,
+      "joint_brier": 0.13194444444444442,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.00308641975308641,
+      "independent_nll": 0.5753641449035618,
+      "independent_brier": 0.265625,
+      "independent_discordance_probability": 0.375,
+      "independent_conditional_brier": 0.0625
+    },
+    {
+      "scene": 750105,
+      "grasp": -0.01,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750122,
+        750122,
+        750122,
+        750102,
+        750102
+      ],
+      "joint": [
+        [
+          0.875,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.041666666666666664
+        ]
+      ],
+      "independent": [
+        [
+          0.8402777777777777,
+          0.07638888888888888
+        ],
+        [
+          0.07638888888888888,
+          0.006944444444444444
+        ]
+      ],
+      "joint_nll": 3.1780538303479458,
+      "joint_brier": 1.6875000000000002,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.25,
+      "independent_nll": 4.969813299576001,
+      "independent_brier": 1.7038966049382713,
+      "independent_discordance_probability": 0.15277777777777776,
+      "independent_conditional_brier": 0.8402777777777777
+    },
+    {
+      "scene": 750100,
+      "grasp": 0.01,
+      "outcomes": [
+        0,
+        0
+      ],
+      "neighbor_scenes": [
+        750104,
+        750104,
+        750104,
+        750121,
+        750121
+      ],
+      "joint": [
+        [
+          0.041666666666666664,
+          0.20833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.7083333333333334
+        ]
+      ],
+      "independent": [
+        [
+          0.020833333333333332,
+          0.22916666666666669
+        ],
+        [
+          0.0625,
+          0.6875
+        ]
+      ],
+      "joint_nll": 3.1780538303479458,
+      "joint_brier": 1.4652777777777781,
+      "joint_discordance_probability": 0.25,
+      "joint_conditional_brier": 0.6944444444444445,
+      "independent_nll": 3.871201010907891,
+      "independent_brier": 1.487847222222222,
+      "independent_discordance_probability": 0.2916666666666667,
+      "independent_conditional_brier": 0.8402777777777779
+    },
+    {
+      "scene": 750101,
+      "grasp": 0.01,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750104,
+        750104,
+        750104,
+        750100,
+        750100
+      ],
+      "joint": [
+        [
+          0.20833333333333334,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.7083333333333334
+        ]
+      ],
+      "independent": [
+        [
+          0.0625,
+          0.1875
+        ],
+        [
+          0.1875,
+          0.5625
+        ]
+      ],
+      "joint_nll": 0.3448404862917295,
+      "joint_brier": 0.13194444444444442,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.00308641975308641,
+      "independent_nll": 0.5753641449035618,
+      "independent_brier": 0.265625,
+      "independent_discordance_probability": 0.375,
+      "independent_conditional_brier": 0.0625
+    },
+    {
+      "scene": 750102,
+      "grasp": 0.01,
+      "outcomes": [
+        0,
+        0
+      ],
+      "neighbor_scenes": [
+        750101,
+        750101,
+        750101,
+        750105,
+        750105
+      ],
+      "joint": [
+        [
+          0.041666666666666664,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.875
+        ]
+      ],
+      "independent": [
+        [
+          0.006944444444444444,
+          0.07638888888888888
+        ],
+        [
+          0.07638888888888888,
+          0.8402777777777777
+        ]
+      ],
+      "joint_nll": 3.1780538303479458,
+      "joint_brier": 1.6875000000000002,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.25,
+      "independent_nll": 4.969813299576001,
+      "independent_brier": 1.7038966049382713,
+      "independent_discordance_probability": 0.15277777777777776,
+      "independent_conditional_brier": 0.8402777777777777
+    },
+    {
+      "scene": 750103,
+      "grasp": 0.01,
+      "outcomes": [
+        0,
+        0
+      ],
+      "neighbor_scenes": [
+        750123,
+        750123,
+        750123,
+        750105,
+        750105
+      ],
+      "joint": [
+        [
+          0.375,
+          0.20833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.375
+        ]
+      ],
+      "independent": [
+        [
+          0.24305555555555558,
+          0.34027777777777785
+        ],
+        [
+          0.17361111111111113,
+          0.24305555555555558
+        ]
+      ],
+      "joint_nll": 0.9808292530117262,
+      "joint_brier": 0.5763888888888888,
+      "joint_discordance_probability": 0.25,
+      "joint_conditional_brier": 0.12755102040816327,
+      "independent_nll": 1.4144652380865868,
+      "independent_brier": 0.7779706790123458,
+      "independent_discordance_probability": 0.513888888888889,
+      "independent_conditional_brier": 0.3402777777777777
+    },
+    {
+      "scene": 750104,
+      "grasp": 0.01,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750100,
+        750100,
+        750100,
+        750121,
+        750121
+      ],
+      "joint": [
+        [
+          0.20833333333333334,
+          0.20833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.5416666666666666
+        ]
+      ],
+      "independent": [
+        [
+          0.10416666666666667,
+          0.3125
+        ],
+        [
+          0.14583333333333331,
+          0.43749999999999994
+        ]
+      ],
+      "joint_nll": 0.6131044728864089,
+      "joint_brier": 0.29861111111111116,
+      "joint_discordance_probability": 0.25,
+      "joint_conditional_brier": 0.005102040816326526,
+      "independent_nll": 0.826678573184468,
+      "independent_brier": 0.4461805555555556,
+      "independent_discordance_probability": 0.4583333333333333,
+      "independent_conditional_brier": 0.0625
+    },
+    {
+      "scene": 750105,
+      "grasp": 0.01,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750102,
+        750102,
+        750122,
+        750122,
+        750122
+      ],
+      "joint": [
+        [
+          0.875,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.041666666666666664
+        ]
+      ],
+      "independent": [
+        [
+          0.8402777777777777,
+          0.07638888888888888
+        ],
+        [
+          0.07638888888888888,
+          0.006944444444444444
+        ]
+      ],
+      "joint_nll": 3.1780538303479458,
+      "joint_brier": 1.6875000000000002,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.25,
+      "independent_nll": 4.969813299576001,
+      "independent_brier": 1.7038966049382713,
+      "independent_discordance_probability": 0.15277777777777776,
+      "independent_conditional_brier": 0.8402777777777777
+    },
+    {
+      "scene": 750120,
+      "grasp": -0.01,
+      "outcomes": [
+        1,
+        0
+      ],
+      "neighbor_scenes": [
+        750101,
+        750101,
+        750101,
+        750102,
+        750104
+      ],
+      "joint": [
+        [
+          0.20833333333333334,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.7083333333333334
+        ]
+      ],
+      "independent": [
+        [
+          0.0625,
+          0.1875
+        ],
+        [
+          0.1875,
+          0.5625
+        ]
+      ],
+      "joint_nll": 3.1780538303479458,
+      "joint_brier": 1.465277777777778,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.8919753086419755,
+      "independent_nll": 1.6739764335716716,
+      "independent_brier": 1.015625,
+      "independent_discordance_probability": 0.375,
+      "independent_conditional_brier": 0.5625
+    },
+    {
+      "scene": 750121,
+      "grasp": -0.01,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750104,
+        750104,
+        750104,
+        750100,
+        750100
+      ],
+      "joint": [
+        [
+          0.041666666666666664,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.875
+        ]
+      ],
+      "independent": [
+        [
+          0.006944444444444444,
+          0.07638888888888888
+        ],
+        [
+          0.07638888888888888,
+          0.8402777777777777
+        ]
+      ],
+      "joint_nll": 0.13353139262452263,
+      "joint_brier": 0.020833333333333332,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.002066115702479335,
+      "independent_nll": 0.17402275397925965,
+      "independent_brier": 0.037229938271604965,
+      "independent_discordance_probability": 0.15277777777777776,
+      "independent_conditional_brier": 0.006944444444444432
+    },
+    {
+      "scene": 750122,
+      "grasp": -0.01,
+      "outcomes": [
+        0,
+        0
+      ],
+      "neighbor_scenes": [
+        750105,
+        750105,
+        750123,
+        750123,
+        750123
+      ],
+      "joint": [
+        [
+          0.375,
+          0.20833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.375
+        ]
+      ],
+      "independent": [
+        [
+          0.24305555555555558,
+          0.34027777777777785
+        ],
+        [
+          0.17361111111111113,
+          0.24305555555555558
+        ]
+      ],
+      "joint_nll": 0.9808292530117262,
+      "joint_brier": 0.5763888888888888,
+      "joint_discordance_probability": 0.25,
+      "joint_conditional_brier": 0.12755102040816327,
+      "independent_nll": 1.4144652380865868,
+      "independent_brier": 0.7779706790123458,
+      "independent_discordance_probability": 0.513888888888889,
+      "independent_conditional_brier": 0.3402777777777777
+    },
+    {
+      "scene": 750123,
+      "grasp": -0.01,
+      "outcomes": [
+        0,
+        0
+      ],
+      "neighbor_scenes": [
+        750103,
+        750103,
+        750103,
+        750122,
+        750122
+      ],
+      "joint": [
+        [
+          0.7083333333333334,
+          0.20833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.041666666666666664
+        ]
+      ],
+      "independent": [
+        [
+          0.6875,
+          0.22916666666666669
+        ],
+        [
+          0.0625,
+          0.020833333333333332
+        ]
+      ],
+      "joint_nll": 0.3448404862917295,
+      "joint_brier": 0.13194444444444442,
+      "joint_discordance_probability": 0.25,
+      "joint_conditional_brier": 0.051652892561983466,
+      "independent_nll": 0.3746934494414107,
+      "independent_brier": 0.1545138888888889,
+      "independent_discordance_probability": 0.2916666666666667,
+      "independent_conditional_brier": 0.0625
+    },
+    {
+      "scene": 750120,
+      "grasp": 0.0,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750101,
+        750101,
+        750101,
+        750102,
+        750102
+      ],
+      "joint": [
+        [
+          0.375,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.5416666666666666
+        ]
+      ],
+      "independent": [
+        [
+          0.17361111111111113,
+          0.24305555555555552
+        ],
+        [
+          0.24305555555555552,
+          0.3402777777777777
+        ]
+      ],
+      "joint_nll": 0.6131044728864089,
+      "joint_brier": 0.3541666666666667,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.005102040816326526,
+      "independent_nll": 1.0779930014653742,
+      "independent_brier": 0.5835262345679013,
+      "independent_discordance_probability": 0.48611111111111105,
+      "independent_conditional_brier": 0.17361111111111116
+    },
+    {
+      "scene": 750121,
+      "grasp": 0.0,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750104,
+        750104,
+        750104,
+        750100,
+        750100
+      ],
+      "joint": [
+        [
+          0.041666666666666664,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.875
+        ]
+      ],
+      "independent": [
+        [
+          0.006944444444444444,
+          0.07638888888888888
+        ],
+        [
+          0.07638888888888888,
+          0.8402777777777777
+        ]
+      ],
+      "joint_nll": 0.13353139262452263,
+      "joint_brier": 0.020833333333333332,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.002066115702479335,
+      "independent_nll": 0.17402275397925965,
+      "independent_brier": 0.037229938271604965,
+      "independent_discordance_probability": 0.15277777777777776,
+      "independent_conditional_brier": 0.006944444444444432
+    },
+    {
+      "scene": 750122,
+      "grasp": 0.0,
+      "outcomes": [
+        0,
+        0
+      ],
+      "neighbor_scenes": [
+        750105,
+        750105,
+        750123,
+        750123,
+        750123
+      ],
+      "joint": [
+        [
+          0.375,
+          0.20833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.375
+        ]
+      ],
+      "independent": [
+        [
+          0.24305555555555558,
+          0.34027777777777785
+        ],
+        [
+          0.17361111111111113,
+          0.24305555555555558
+        ]
+      ],
+      "joint_nll": 0.9808292530117262,
+      "joint_brier": 0.5763888888888888,
+      "joint_discordance_probability": 0.25,
+      "joint_conditional_brier": 0.12755102040816327,
+      "independent_nll": 1.4144652380865868,
+      "independent_brier": 0.7779706790123458,
+      "independent_discordance_probability": 0.513888888888889,
+      "independent_conditional_brier": 0.3402777777777777
+    },
+    {
+      "scene": 750123,
+      "grasp": 0.0,
+      "outcomes": [
+        0,
+        1
+      ],
+      "neighbor_scenes": [
+        750103,
+        750103,
+        750103,
+        750105,
+        750122
+      ],
+      "joint": [
+        [
+          0.5416666666666666,
+          0.20833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.20833333333333334
+        ]
+      ],
+      "independent": [
+        [
+          0.43749999999999994,
+          0.3125
+        ],
+        [
+          0.14583333333333331,
+          0.10416666666666667
+        ]
+      ],
+      "joint_nll": 1.5686159179138452,
+      "joint_brier": 0.9652777777777778,
+      "joint_discordance_probability": 0.25,
+      "joint_conditional_brier": 0.5216049382716049,
+      "independent_nll": 1.1631508098056809,
+      "independent_brier": 0.6961805555555556,
+      "independent_discordance_probability": 0.4583333333333333,
+      "independent_conditional_brier": 0.3402777777777777
+    },
+    {
+      "scene": 750120,
+      "grasp": 0.01,
+      "outcomes": [
+        1,
+        1
+      ],
+      "neighbor_scenes": [
+        750101,
+        750101,
+        750101,
+        750102,
+        750102
+      ],
+      "joint": [
+        [
+          0.375,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.5416666666666666
+        ]
+      ],
+      "independent": [
+        [
+          0.17361111111111113,
+          0.24305555555555552
+        ],
+        [
+          0.24305555555555552,
+          0.3402777777777777
+        ]
+      ],
+      "joint_nll": 0.6131044728864089,
+      "joint_brier": 0.3541666666666667,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.005102040816326526,
+      "independent_nll": 1.0779930014653742,
+      "independent_brier": 0.5835262345679013,
+      "independent_discordance_probability": 0.48611111111111105,
+      "independent_conditional_brier": 0.17361111111111116
+    },
+    {
+      "scene": 750121,
+      "grasp": 0.01,
+      "outcomes": [
+        0,
+        1
+      ],
+      "neighbor_scenes": [
+        750104,
+        750104,
+        750104,
+        750100,
+        750100
+      ],
+      "joint": [
+        [
+          0.20833333333333334,
+          0.041666666666666664
+        ],
+        [
+          0.041666666666666664,
+          0.7083333333333334
+        ]
+      ],
+      "independent": [
+        [
+          0.0625,
+          0.1875
+        ],
+        [
+          0.1875,
+          0.5625
+        ]
+      ],
+      "joint_nll": 3.1780538303479458,
+      "joint_brier": 1.4652777777777781,
+      "joint_discordance_probability": 0.08333333333333333,
+      "joint_conditional_brier": 0.6944444444444445,
+      "independent_nll": 1.6739764335716716,
+      "independent_brier": 1.015625,
+      "independent_discordance_probability": 0.375,
+      "independent_conditional_brier": 0.0625
+    },
+    {
+      "scene": 750122,
+      "grasp": 0.01,
+      "outcomes": [
+        0,
+        0
+      ],
+      "neighbor_scenes": [
+        750105,
+        750105,
+        750123,
+        750123,
+        750123
+      ],
+      "joint": [
+        [
+          0.375,
+          0.20833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.375
+        ]
+      ],
+      "independent": [
+        [
+          0.24305555555555558,
+          0.34027777777777785
+        ],
+        [
+          0.17361111111111113,
+          0.24305555555555558
+        ]
+      ],
+      "joint_nll": 0.9808292530117262,
+      "joint_brier": 0.5763888888888888,
+      "joint_discordance_probability": 0.25,
+      "joint_conditional_brier": 0.12755102040816327,
+      "independent_nll": 1.4144652380865868,
+      "independent_brier": 0.7779706790123458,
+      "independent_discordance_probability": 0.513888888888889,
+      "independent_conditional_brier": 0.3402777777777777
+    },
+    {
+      "scene": 750123,
+      "grasp": 0.01,
+      "outcomes": [
+        0,
+        0
+      ],
+      "neighbor_scenes": [
+        750103,
+        750103,
+        750103,
+        750105,
+        750122
+      ],
+      "joint": [
+        [
+          0.5416666666666666,
+          0.20833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.20833333333333334
+        ]
+      ],
+      "independent": [
+        [
+          0.43749999999999994,
+          0.3125
+        ],
+        [
+          0.14583333333333331,
+          0.10416666666666667
+        ]
+      ],
+      "joint_nll": 0.6131044728864089,
+      "joint_brier": 0.29861111111111116,
+      "joint_discordance_probability": 0.25,
+      "joint_conditional_brier": 0.0771604938271605,
+      "independent_nll": 0.826678573184468,
+      "independent_brier": 0.4461805555555555,
+      "independent_discordance_probability": 0.4583333333333333,
+      "independent_conditional_brier": 0.17361111111111113
+    }
+  ]
+}
