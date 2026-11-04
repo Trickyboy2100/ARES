@@ -32,13 +32,16 @@ class FeedbackSAC:
   if self.mode=='budget_blind':z[:,41]=0
   hazards=self.completion(z).sigmoid();n=torch.ceil(budget/4).long().clamp(0,25);j=torch.arange(25)[None];survival=torch.where(j<n[:,None],1-hazards,torch.ones_like(hazards)).prod(1)
   return 1-survival
- def train(self,data,labels,steps,bc=False):
+ def train(self,data,labels,steps,bc=False,*,success_bc=None,cql=None,successor_only=False):
+  # Independent controls retain the historical bc=True/False behavior by default.
+  bc_weight=(.2 if bc else 0.) if success_bc is None else float(success_bc)
+  cql_weight=(.1 if bc and self.recipe=='cql_warm' else 0.) if cql is None else float(cql)
   tic=time.monotonic();hist={}
   for _ in range(steps):
    # Equal front/rear sampling prevents long suffixes drowning predecessor RL.
    front=[t for t in data if t['stage']==0];rear=[t for t in data if t['stage']==1]
-   rows=[front[i]for i in self.rng.integers(len(front),size=16)]
-   pool=rear or front;rows +=[pool[i]for i in self.rng.integers(len(pool),size=48)]
+   rows=[] if successor_only else [front[i]for i in self.rng.integers(len(front),size=16)]
+   pool=rear or front;rows +=[pool[i]for i in self.rng.integers(len(pool),size=64 if successor_only else 48)]
    x=self.x([t['s']for t in rows]);z=self.x([t['next']for t in rows]);a=torch.tensor([t['a']for t in rows]);r=torch.tensor([t['r']for t in rows]);done=torch.tensor([t['done']for t in rows]);idx=torch.arange(len(rows));frontmask=(x[:,44]<.5)&~done
    # Both maturity controls also fit the same auxiliary networks: same capacity,
    # labels and updates; ordinary never uses them to select/deploy actions.
@@ -58,14 +61,14 @@ class FeedbackSAC:
      nv=torch.where(frontmask,prob-phi,nv)
     targetq=r+(~done).float()*nv
    qs=[q(x)for q in self.q];ql=sum((q[idx,a]-targetq).square().mean()for q in qs)/2
-   if bc and self.recipe=='cql_warm':
-    mask=self.mask(x);ql=ql+.1*sum((q.masked_fill(~mask,-1e9).logsumexp(1)-q[idx,a]).mean()for q in qs)/2
+   if cql_weight:
+    mask=self.mask(x);ql=ql+cql_weight*sum((q.masked_fill(~mask,-1e9).logsumexp(1)-q[idx,a]).mean()for q in qs)/2
    self.qopt.zero_grad();ql.backward();nn.utils.clip_grad_norm_(self.q.parameters(),10);self.qopt.step()
    with torch.no_grad():av=torch.stack([q(x)for q in self.q]).mean(0)
    p=self.probs(x);al=(p*(self.alpha*p.clamp_min(1e-9).log()-av)).sum(1).mean()
-   if bc:
+   if bc_weight:
     successful=torch.tensor([t['outcome']for t in rows],dtype=torch.float32)
-    al=al-.2*(successful*p[idx,a].clamp_min(1e-9).log()).sum()/successful.sum().clamp_min(1)
+    al=al-bc_weight*(successful*p[idx,a].clamp_min(1e-9).log()).sum()/successful.sum().clamp_min(1)
    self.aopt.zero_grad();al.backward();nn.utils.clip_grad_norm_(self.actor.parameters(),10);self.aopt.step()
    with torch.no_grad():
     for param,t in zip(self.q.parameters(),self.target.parameters()):t.lerp_(param,.005)
