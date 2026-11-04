@@ -33,8 +33,8 @@ def main():
  manifest=[dict(path=str(f),sha=hashlib.sha256(f.read_bytes()).hexdigest())for f in files];(a.out/'FROZEN_MODELS.json').write_text(json.dumps(manifest,indent=2))
  pp=panel(a.panel);nb=1+max(b for s,aa,b in pp);scenes=sorted({s for s,aa,b in pp});scores=[];pred=[];errors=[]
  for f in files:
-  kind,k=f.stem.rsplit('_',1);cls=Learner if kind in ('fqi','iql','supervised','stap')else Improved;m=cls.load(f)
-  for rule in ['deployed']+(['mean','min']if kind in ('sac_min','sac_mean','usac','vi_expectile','iql','bee')else ['actor']if kind in ('vi_mean','handoff','lower_bound')else[]):
+  kind,k=f.stem.rsplit('_',1);cls=Learner if kind in ('fqi','iql','cql','supervised','stap')else Improved;m=cls.load(f)
+  for rule in ['deployed']+(['mean','min']if kind in ('sac_min','sac_mean','usac','vi_expectile','iql','bee')else ['actor']if kind in ('vi_mean','handoff','handoff_complete','lower_bound')else[]):
    rr=evaluate(m,pp,rule);scores.append(dict(method=kind,seed=m.seed,checkpoint=int(k),rule=rule,success=sum(r['success']for r in rr),n=len(rr),model=str(f),evaluation='FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS'));pred.append(dict(method=kind,seed=m.seed,checkpoint=int(k),rule=rule,rows=rr))
   if int(k)in (192,288) and kind!='stap':
    for s in scenes:

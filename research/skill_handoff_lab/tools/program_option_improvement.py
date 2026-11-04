@@ -70,13 +70,14 @@ class Improved(Learner):
                 if self.kind in ('sac_min','sac_mean','usac','vi_expectile','bee'):nxt=(p*(agg-self.alpha*p.clamp_min(1e-9).log())).sum(1)
                 else:
                     nxt=self.alpha*torch.logsumexp(agg/self.alpha,1)
-                    if self.kind in ('handoff','lower_bound'):
+                    if self.kind in ('handoff','handoff_complete','lower_bound'):
                         for i,t in enumerate(rows):
                             if t['done']:continue
                             known=support.get(state_key(t['next']),{})
                             if not known:continue
+                            if self.kind=='handoff_complete'and len(known)!=self.successor_actions:continue
                             original=nxt[i].clone();v=agg[i,:self.successor_actions].clone()
-                            if self.kind=='handoff':
+                            if self.kind in ('handoff','handoff_complete'):
                                 # Replace only physically sampled terminal action values.
                                 # No oracle labels, approximate-neighbor merge or reward shaping.
                                 for act,y in known.items():v[act]=y
