@@ -2,14 +2,14 @@
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
   "last_review": "2026-11-05",
-  "baseline_commit": "a8418f9da0f048f4f57c436992153b61623957f9",
+  "baseline_commit": "cc0a0ff",
   "branch": "research-sci-program",
   "scientific_goal": "One SCI paper: task-conditioned executable parameter adaptation ACROSS REAL MULTI-STAGE ROBOT SKILLS using nominal skill primitives and measured SkillResult to improve successor feasibility, whole-task success and transfer; contact servo and SAC are component baselines",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
-  "latest_evidence": "evidence/EXP-004/2026-11-05/online_integrity/README.md",
-  "next_action": "Continue inherited own-policy Option training and all negative models/replay. First obtain missing ARES_SCI_RESEARCH_TASKBOOK.md path (not present at synchronized a8418f9); do not claim it was read. New measured mechanism: refreshing attachment alone destroys5/12nominal successes, requested3mm becomes5.74–21.98mm target change; relative requested-target correction reduces disruption but no new rescue. Freeze this as a separate action-interface study; never retroactively mix frames in the completed online comparison. Next compare ordinary SAC under shared remaining-target interface against its same-interface success-retention control with fresh training data and explicit lineage, then test a concrete policy-improvement mechanism only if residual learning opportunity remains. Preserve learned predecessor3-grasp decisions, native100 and real SkillResult; do not reset to fixed-branch scoring, expand failed preference losses or call target coordinates/BC novel. Exact resume is durable episode/update-boundary, not arbitrary PhysX mid-step restoration. Keep sealed tests/hardware/ARES-R untouched.",
+  "latest_evidence": "evidence/EXP-004/2026-11-05/decoupled_interface/README.md",
+  "next_action": "Implement and physically validate a shared progress-preserving local residual on the unexecuted queue, with IK/collision/dynamic checks and unchanged native100 budget; compare against current active-target replanning before matched online learning. Retain all current models and frozen32-condition results. Do not expand probability heads or reinterpret standard residuals as new SAC. Prepare nativeCharger200 transfer using existing servo without mixing incompatible replay.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -68,7 +68,7 @@
       "depends_on": [
         "EXP-004"
       ],
-      "primary_claim": "After a reliable independent gain, test novel conditions, another contact mechanism and industrial adapter."
+      "primary_claim": "Confirm stable claim-specific gains on new conditions and a second contact task; preparation proceeds alongside method development."
     }
   ],
   "unresolved_questions": [
@@ -79,8 +79,8 @@
     "If a concrete method gain appears, does it survive independent training seeds, new scene groups, a second distinct task, and actual physical/query accounting?"
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
-  "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
-  "latest_run_summary": "344 native100 episodes/34400steps;128 own-policy training episodes,958 effective decisions,10240 main Actor/Critic updates each. New16dev nominal9,frozen rule8, ordinary Option-SAC final6, persistent successBC9. Intermediate ordinary10 not selected. Exact durable-collection resume matches all weights/RNG and200physicalsteps; no cross-arm/dev replay. Relative remaining-target minus3mm retains5/12 but adds0rescues; zero-offset attachment refresh destroys all5nominal successes. No independent method gain.",
+  "completion_protocol": "Update existing cards, DECISIONS, EVIDENCE_LEDGER and STATE after evidence; develop paper concurrently with claim-specific limitations. Independent algorithm superiority requires actual comparative evidence, not a prerequisite for writing or second-task preparation.",
+  "latest_run_summary": "512 new own-policy training episodes;1067 complete native episodes/106700steps;8764 planning queries. Initial factorial no seen-dev advantage. Equal128episode budgets with frozen64checkpoints: on32 new natural conditions measuredBC14/12 versus relativeBC17/18 across two stochastic repeats, nominal19. Regressions5->2 and7->1, zero rescues. Shared neural initialization and adaptive16+16confirmation extension disclosed. Zero-offset replan can destroy known success with only6native steps remaining. Preliminary representation-retention evidence, no independent newRL or nominal superiority.",
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
   "research_review_20261102": {
     "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
@@ -735,7 +735,87 @@
     "dev_count": 16,
     "init": "same inherited31501; optimizer/exploration31601; not independent neural seeds",
     "resume": "PASS exact durable-collection comparison and mismatch guard; mid-PhysX unsupported",
-    "taskbook": "MISSING_PATH_REQUESTED",
+    "taskbook": "Latest explicit user task supersedes missing historical file",
     "method_gain": "UNVERIFIED"
+  },
+  "decoupled_interface_20261105": {
+    "status": "COMPLETE",
+    "root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105",
+    "protocol": "STUDY_PROTOCOL.json",
+    "claim_scope": "execution representation and its learning interaction; no new SAC claim",
+    "writing": "paper/MANUSCRIPT.md",
+    "initial_eval_each": "9/16 seen dev; not training benefit",
+    "factorial_final64": {
+      "measured_sac": 6,
+      "measured_success_bc": 9,
+      "remaining_sac": 6,
+      "remaining_success_bc": 8,
+      "n_seen_dev": 16
+    },
+    "continuation_64_96_128": {
+      "measured_bc": [
+        9,
+        8,
+        8
+      ],
+      "remaining_bc": [
+        8,
+        7,
+        7
+      ]
+    },
+    "frozen_rule_remaining": "9/16; same nominal outcomes",
+    "mechanism": "759205/grasp1: identical94-step recorded prefix; continue succeeds, zero-offset replan and3mm replan fail. Four additional natural probe conditions unchanged. This isolates replanning without target displacement, not geometry versus retiming uniquely.",
+    "scope": "PRELIMINARY_REPRESENTATION_RETENTION; no rescue or superiority over nominal",
+    "evidence": "evidence/EXP-004/2026-11-05/decoupled_interface/README.md",
+    "repeat_dev_0_64_128": {
+      "measured": [
+        9,
+        8,
+        7
+      ],
+      "relative": [
+        9,
+        7,
+        6
+      ]
+    },
+    "fresh_confirmation": {
+      "conditions": 32,
+      "measured": [
+        14,
+        12
+      ],
+      "relative": [
+        17,
+        18
+      ],
+      "nominal": 19,
+      "measured_rule": 17,
+      "relative_rule": 16,
+      "rescues": [
+        0,
+        0
+      ],
+      "regression_measured": [
+        5,
+        7
+      ],
+      "regression_relative": [
+        2,
+        1
+      ],
+      "selection": "all64; equal128episode training budgets",
+      "limitation": "two exploration/replay seeds share inherited neural initialization; adaptive second16 cohort, no sealed test"
+    },
+    "cost": {
+      "new_training_episodes": 512,
+      "complete_native_episodes": 1067,
+      "physical_steps": 106700,
+      "planning_queries": 8764,
+      "actor_updates": 40960,
+      "critic_updates": 40960,
+      "unused_aux_updates": 40960
+    }
   }
 }

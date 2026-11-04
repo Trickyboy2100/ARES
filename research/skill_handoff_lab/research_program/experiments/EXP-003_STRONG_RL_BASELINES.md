@@ -266,3 +266,6 @@ Retain both nominal-retention and learned-recovery endpoints, stronger feedback 
 ## 2026-11-05 — Own-policy ordinary RL mainline
 
 [Native results and integrity evidence](../evidence/EXP-004/2026-11-05/online_integrity/README.md). Two64-episode own-policy arms with genuine predecessor learning, isolated train/development and exact resume. Ordinary9→10→6/16; mature retention9→8→9/16. Final endpoint predeclared. These are functioning mature baseline implementations, not evidence of convergence or original method gain. See EXP-004/STATE for target-origin mechanism and next separately frozen comparison.
+
+
+2026-11-05: matched online SAC/BC execution-interface study completed; see [EXP-004 evidence](../evidence/EXP-004/2026-11-05/decoupled_interface/README.md).512new training episodes; standard SAC/BC retained as mature shared learners. Frozen32-condition retention improvement does not exceed nominal19/32 and adds no rescues. Historical final64 unchanged.

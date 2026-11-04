@@ -1,0 +1,367 @@
+{
+  "online_integrity_20261105/online_success_bc": [
+    {
+      "seed": 759200,
+      "success": false,
+      "actor_rear": {
+        "0": 6
+      },
+      "reference": {},
+      "boundaries": 7
+    },
+    {
+      "seed": 759201,
+      "success": false,
+      "actor_rear": {
+        "0": 6,
+        "2": 1,
+        "7": 1
+      },
+      "reference": {
+        "0": 4
+      },
+      "boundaries": 9
+    },
+    {
+      "seed": 759202,
+      "success": true,
+      "actor_rear": {
+        "0": 4,
+        "2": 2
+      },
+      "reference": {
+        "0": 6
+      },
+      "boundaries": 7
+    },
+    {
+      "seed": 759203,
+      "success": true,
+      "actor_rear": {
+        "0": 4,
+        "7": 1
+      },
+      "reference": {
+        "0": 7
+      },
+      "boundaries": 6
+    },
+    {
+      "seed": 759204,
+      "success": true,
+      "actor_rear": {
+        "0": 10,
+        "2": 1
+      },
+      "reference": {
+        "0": 3
+      },
+      "boundaries": 12
+    },
+    {
+      "seed": 759205,
+      "success": true,
+      "actor_rear": {
+        "0": 8
+      },
+      "reference": {},
+      "boundaries": 9
+    },
+    {
+      "seed": 759206,
+      "success": true,
+      "actor_rear": {
+        "0": 7,
+        "2": 2
+      },
+      "reference": {
+        "0": 3,
+        "7": 1
+      },
+      "boundaries": 10
+    },
+    {
+      "seed": 759207,
+      "success": true,
+      "actor_rear": {
+        "0": 10
+      },
+      "reference": {},
+      "boundaries": 11
+    },
+    {
+      "seed": 759208,
+      "success": true,
+      "actor_rear": {
+        "0": 12,
+        "5": 1
+      },
+      "reference": {},
+      "boundaries": 14
+    },
+    {
+      "seed": 759209,
+      "success": false,
+      "actor_rear": {
+        "0": 11,
+        "2": 1
+      },
+      "reference": {
+        "0": 3
+      },
+      "boundaries": 13
+    },
+    {
+      "seed": 759210,
+      "success": false,
+      "actor_rear": {
+        "0": 6
+      },
+      "reference": {},
+      "boundaries": 7
+    },
+    {
+      "seed": 759211,
+      "success": false,
+      "actor_rear": {
+        "0": 3,
+        "6": 1
+      },
+      "reference": {
+        "0": 4
+      },
+      "boundaries": 5
+    },
+    {
+      "seed": 759212,
+      "success": true,
+      "actor_rear": {
+        "0": 15
+      },
+      "reference": {},
+      "boundaries": 16
+    },
+    {
+      "seed": 759213,
+      "success": false,
+      "actor_rear": {
+        "0": 8,
+        "2": 1,
+        "7": 1
+      },
+      "reference": {
+        "0": 3
+      },
+      "boundaries": 11
+    },
+    {
+      "seed": 759214,
+      "success": true,
+      "actor_rear": {
+        "0": 12
+      },
+      "reference": {},
+      "boundaries": 13
+    },
+    {
+      "seed": 759215,
+      "success": false,
+      "actor_rear": {
+        "0": 7,
+        "2": 1,
+        "7": 3
+      },
+      "reference": {
+        "0": 3
+      },
+      "boundaries": 12
+    }
+  ],
+  "decoupled_interface_20261105/relative_bc64": [
+    {
+      "seed": 759200,
+      "success": false,
+      "actor_rear": {
+        "0": 6
+      },
+      "reference": {},
+      "boundaries": 7
+    },
+    {
+      "seed": 759201,
+      "success": false,
+      "actor_rear": {
+        "0": 8,
+        "5": 1,
+        "2": 1
+      },
+      "reference": {
+        "0": 2
+      },
+      "boundaries": 11
+    },
+    {
+      "seed": 759202,
+      "success": false,
+      "actor_rear": {},
+      "reference": {},
+      "boundaries": 1
+    },
+    {
+      "seed": 759203,
+      "success": true,
+      "actor_rear": {
+        "0": 2,
+        "5": 1
+      },
+      "reference": {
+        "0": 9
+      },
+      "boundaries": 4
+    },
+    {
+      "seed": 759204,
+      "success": true,
+      "actor_rear": {
+        "0": 12,
+        "7": 1
+      },
+      "reference": {},
+      "boundaries": 14
+    },
+    {
+      "seed": 759205,
+      "success": false,
+      "actor_rear": {
+        "0": 6,
+        "2": 1
+      },
+      "reference": {
+        "0": 1
+      },
+      "boundaries": 8
+    },
+    {
+      "seed": 759206,
+      "success": true,
+      "actor_rear": {
+        "0": 5,
+        "7": 2
+      },
+      "reference": {
+        "0": 7
+      },
+      "boundaries": 8
+    },
+    {
+      "seed": 759207,
+      "success": true,
+      "actor_rear": {
+        "0": 10
+      },
+      "reference": {},
+      "boundaries": 11
+    },
+    {
+      "seed": 759208,
+      "success": true,
+      "actor_rear": {
+        "0": 7,
+        "2": 1,
+        "7": 1
+      },
+      "reference": {
+        "0": 4
+      },
+      "boundaries": 10
+    },
+    {
+      "seed": 759209,
+      "success": true,
+      "actor_rear": {
+        "0": 3,
+        "5": 2,
+        "7": 1
+      },
+      "reference": {
+        "0": 8
+      },
+      "boundaries": 7
+    },
+    {
+      "seed": 759210,
+      "success": false,
+      "actor_rear": {
+        "0": 3,
+        "2": 1
+      },
+      "reference": {
+        "0": 2
+      },
+      "boundaries": 5
+    },
+    {
+      "seed": 759211,
+      "success": false,
+      "actor_rear": {
+        "0": 6,
+        "7": 1
+      },
+      "reference": {
+        "0": 2
+      },
+      "boundaries": 8
+    },
+    {
+      "seed": 759212,
+      "success": true,
+      "actor_rear": {
+        "0": 7,
+        "4": 2,
+        "6": 1,
+        "1": 1
+      },
+      "reference": {
+        "0": 4
+      },
+      "boundaries": 12
+    },
+    {
+      "seed": 759213,
+      "success": false,
+      "actor_rear": {
+        "0": 7,
+        "2": 3
+      },
+      "reference": {
+        "0": 4
+      },
+      "boundaries": 11
+    },
+    {
+      "seed": 759214,
+      "success": true,
+      "actor_rear": {
+        "0": 9,
+        "3": 1
+      },
+      "reference": {
+        "0": 2
+      },
+      "boundaries": 11
+    },
+    {
+      "seed": 759215,
+      "success": false,
+      "actor_rear": {
+        "0": 8,
+        "5": 1,
+        "2": 2
+      },
+      "reference": {
+        "0": 3
+      },
+      "boundaries": 12
+    }
+  ]
+}

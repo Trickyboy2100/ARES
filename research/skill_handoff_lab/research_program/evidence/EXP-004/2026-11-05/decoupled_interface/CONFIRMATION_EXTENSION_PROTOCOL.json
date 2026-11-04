@@ -1,0 +1,38 @@
+{
+  "reason": "First fresh cohort: both active-target models7/16 vs measured5/16 and4/16; nominal7/16. Investigate retention, not new rescue.",
+  "adaptive": true,
+  "models_unchanged": true,
+  "selection_files": [
+    "FROZEN_SELECTION_31601.json",
+    "FROZEN_SELECTION_31602.json"
+  ],
+  "new_seeds": [
+    760216,
+    760217,
+    760218,
+    760219,
+    760220,
+    760221,
+    760222,
+    760223,
+    760224,
+    760225,
+    760226,
+    760227,
+    760228,
+    760229,
+    760230,
+    760231
+  ],
+  "same_arms": [
+    "measured31601",
+    "measured31602",
+    "remaining31601",
+    "remaining31602",
+    "measured_rule",
+    "remaining_rule",
+    "nominal"
+  ],
+  "report": "Separate cohorts and pooled32 descriptive results. Adaptive extension; no fixed-sample significance claim.",
+  "sealed": false
+}

@@ -1,0 +1,69 @@
+{
+  "seed": 31602,
+  "selection": {
+    "measured": {
+      "candidates": [
+        {
+          "cumulative": 64,
+          "success": 8,
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/measured_bc_repeat128/CHECKPOINT_64.pt",
+          "sha256": "f4588571e106adc5b082b5bcf3b33cc107f9092aefe9b3da08b7da41a762040c"
+        },
+        {
+          "cumulative": 128,
+          "success": 7,
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/measured_bc_repeat128/CHECKPOINT_128.pt",
+          "sha256": "b8c34b593b9d69db6af7409a9842ccd8e09a80392ab04b62372d98fe35f62e50"
+        }
+      ],
+      "chosen": {
+        "cumulative": 64,
+        "success": 8,
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/measured_bc_repeat128/CHECKPOINT_64.pt",
+        "sha256": "f4588571e106adc5b082b5bcf3b33cc107f9092aefe9b3da08b7da41a762040c"
+      }
+    },
+    "remaining_target": {
+      "candidates": [
+        {
+          "cumulative": 64,
+          "success": 7,
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/relative_bc_repeat128/CHECKPOINT_64.pt",
+          "sha256": "13643c5d09ccb39cc9734d215572b6a80260fe3175893cafaaec34cf2d7fa0bf"
+        },
+        {
+          "cumulative": 128,
+          "success": 6,
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/relative_bc_repeat128/CHECKPOINT_128.pt",
+          "sha256": "d1d2c77c9252cedcc6dbc4dc76bd6217ac48c8f37e708ba933174201a7532cc9"
+        }
+      ],
+      "chosen": {
+        "cumulative": 64,
+        "success": 7,
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/relative_bc_repeat128/CHECKPOINT_64.pt",
+        "sha256": "13643c5d09ccb39cc9734d215572b6a80260fe3175893cafaaec34cf2d7fa0bf"
+      }
+    }
+  },
+  "confirmation_seeds": [
+    760200,
+    760201,
+    760202,
+    760203,
+    760204,
+    760205,
+    760206,
+    760207,
+    760208,
+    760209,
+    760210,
+    760211,
+    760212,
+    760213,
+    760214,
+    760215
+  ],
+  "rule": "highest dev success, earliest tie; frozen before new outcomes",
+  "scope": "common inherited initialization; independent exploration/replay seed"
+}

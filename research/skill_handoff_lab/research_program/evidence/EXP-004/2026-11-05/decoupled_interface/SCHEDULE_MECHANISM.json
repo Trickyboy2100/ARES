@@ -1,0 +1,27 @@
+{
+  "seed": 759205,
+  "grasp": 1,
+  "prefix": 94,
+  "remaining": 6,
+  "old_queue_cursor": 8,
+  "old_queue_length": 16,
+  "new_queue_length": 15,
+  "requested_delta_mm": 3.000000724568963,
+  "old_success": true,
+  "new_success": false,
+  "scope": "seen diagnostic; no causal attribution to target magnitude alone; complete100step reexecution",
+  "sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/diag_measured_g1/physics/00002_759205_frozen_model.json.gz",
+      "sha256": "2dbb783de9665785c42f58f6eea57ea35a03fbe18d57d293cdda73b6cea7fe24"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/diag_relative_g1/physics/00002_759205_frozen_model.json.gz",
+      "sha256": "37b82a0f0ab468348f1b8a1d60f5cb4bbf1aa7fc8ce8ee6d53f77bc07b4ad81f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/clock_probe/zero_offset_replan/00001_759205_zero_offset_replan.json.gz",
+      "sha256": "2ffcaf4a8f861e8f1ab271d27e20f5c69556162c012fa0d3f41ce418f9e836b8"
+    }
+  ]
+}

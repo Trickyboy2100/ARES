@@ -1,0 +1,81 @@
+{
+  "seed": 31601,
+  "selection": {
+    "measured": {
+      "candidates": [
+        {
+          "cumulative": 64,
+          "success": 9,
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/online_integrity_20261105/online_success_bc/FINAL.pt",
+          "sha256": "38332007422dec3af00b96bb7aad01a9b3bd2a6f4be9cc08bfb7e0d2b7b51a29"
+        },
+        {
+          "cumulative": 96,
+          "success": 8,
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/measured_bc_extend64/CHECKPOINT_32.pt",
+          "sha256": "c1a10e306f6ecd44ad380d00cc93774e19d1a03d50be9a2ca0d2a83febca8d84"
+        },
+        {
+          "cumulative": 128,
+          "success": 8,
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/measured_bc_extend64/CHECKPOINT_64.pt",
+          "sha256": "69f1f9385826e2ae4802e18505a01828f2e782566ef81cf8be9cfd07c8c15fdb"
+        }
+      ],
+      "chosen": {
+        "cumulative": 64,
+        "success": 9,
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/online_integrity_20261105/online_success_bc/FINAL.pt",
+        "sha256": "38332007422dec3af00b96bb7aad01a9b3bd2a6f4be9cc08bfb7e0d2b7b51a29"
+      }
+    },
+    "remaining_target": {
+      "candidates": [
+        {
+          "cumulative": 64,
+          "success": 8,
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/relative_bc64/FINAL.pt",
+          "sha256": "93d4990d22267dd87a2d08bd90723fa5dfc6cc424ddc08ea1f90d950245d9d6d"
+        },
+        {
+          "cumulative": 96,
+          "success": 7,
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/relative_bc_extend64/CHECKPOINT_32.pt",
+          "sha256": "ed69e2863979bf620b3d2985bcc337cc85592db1f1d54d76c0d9f2a21d754675"
+        },
+        {
+          "cumulative": 128,
+          "success": 7,
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/relative_bc_extend64/CHECKPOINT_64.pt",
+          "sha256": "d71c7fa19526dde60d8e6a92e065fa6d1b4deeede0c30fa61711051ef1924538"
+        }
+      ],
+      "chosen": {
+        "cumulative": 64,
+        "success": 8,
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/decoupled_interface_20261105/relative_bc64/FINAL.pt",
+        "sha256": "93d4990d22267dd87a2d08bd90723fa5dfc6cc424ddc08ea1f90d950245d9d6d"
+      }
+    }
+  },
+  "confirmation_seeds": [
+    760200,
+    760201,
+    760202,
+    760203,
+    760204,
+    760205,
+    760206,
+    760207,
+    760208,
+    760209,
+    760210,
+    760211,
+    760212,
+    760213,
+    760214,
+    760215
+  ],
+  "rule": "highest dev success, earliest tie; frozen before new outcomes",
+  "scope": "common inherited initialization; independent exploration/replay seed"
+}

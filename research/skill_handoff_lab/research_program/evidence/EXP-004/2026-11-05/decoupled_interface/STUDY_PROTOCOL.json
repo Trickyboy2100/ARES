@@ -1,0 +1,31 @@
+{
+  "base": "cc0a0ff",
+  "first_factorial": {
+    "historical_measured": "online_integrity_20261105",
+    "new_frame": "remaining_target",
+    "arms": [
+      "sac",
+      "success_bc"
+    ],
+    "episodes": 64,
+    "train": [
+      759000,
+      759063
+    ],
+    "dev": [
+      759200,
+      759215
+    ],
+    "seed": 31601,
+    "checkpoints": [
+      0,
+      32,
+      64
+    ],
+    "main_endpoint": "final64; historical scores immutable"
+  },
+  "next_iteration": "After factorial: matched64-episode extension of best-supported new-interface arm and same-learning-rule measured counterpart; fresh online data759064..127, preserve own replay and optimizer",
+  "selection": "Extension: best dev success among cumulative64,96,128; ties earliest checkpoint. Same rule and evaluation queries per arm. Repeat seed31602 with same128episode budget; compare its0,64,128 equally. No sealed tests.",
+  "confirmation": "Freeze selected policy and evaluate fresh natural760200..760215 without retuning; label independent confirmation, not sealed benchmark.",
+  "claim_scope": "Action/execution representation and learning interaction; no automatic new-SAC claim;3mm vs21.98mm is reference refresh plus offset, not sevenfold scalar amplification"
+}

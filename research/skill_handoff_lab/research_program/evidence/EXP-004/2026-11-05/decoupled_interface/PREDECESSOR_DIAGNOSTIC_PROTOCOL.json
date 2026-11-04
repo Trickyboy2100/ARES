@@ -1,0 +1,20 @@
+{
+  "seeds": [
+    759202,
+    759205
+  ],
+  "reason": "Seen final64 discrepancies: old BC success and new BC failure; diagnostic not fresh evaluation",
+  "grasp": [
+    0,
+    1,
+    2
+  ],
+  "models": [
+    "historical measured success_bc FINAL",
+    "remaining_target success_bc FINAL64"
+  ],
+  "controller": "identical frozen shared planner; only interface differs",
+  "native_full_horizon": 100,
+  "reexecute_prefix": true,
+  "claim": "isolate predecessor mediation; no generalized advantage claim"
+}

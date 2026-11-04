@@ -1,0 +1,272 @@
+{
+  "cohorts": {
+    "batch1": {
+      "measured_31601": {
+        "success": 5,
+        "n": 16,
+        "rescue": [],
+        "regression": [
+          760208,
+          760212
+        ]
+      },
+      "measured_31602": {
+        "success": 4,
+        "n": 16,
+        "rescue": [],
+        "regression": [
+          760208,
+          760212,
+          760215
+        ]
+      },
+      "remaining_target_31601": {
+        "success": 7,
+        "n": 16,
+        "rescue": [],
+        "regression": []
+      },
+      "remaining_target_31602": {
+        "success": 7,
+        "n": 16,
+        "rescue": [],
+        "regression": []
+      },
+      "measured_frozen_rule": {
+        "success": 6,
+        "n": 16,
+        "rescue": [
+          760213
+        ],
+        "regression": [
+          760206,
+          760215
+        ]
+      },
+      "remaining_target_frozen_rule": {
+        "success": 5,
+        "n": 16,
+        "rescue": [],
+        "regression": [
+          760208,
+          760215
+        ]
+      },
+      "measured_nominal": {
+        "success": 7,
+        "n": 16,
+        "rescue": [],
+        "regression": []
+      }
+    },
+    "_batch2": {
+      "measured_31601": {
+        "success": 9,
+        "n": 16,
+        "rescue": [],
+        "regression": [
+          760217,
+          760220,
+          760229
+        ]
+      },
+      "measured_31602": {
+        "success": 8,
+        "n": 16,
+        "rescue": [],
+        "regression": [
+          760216,
+          760220,
+          760228,
+          760229
+        ]
+      },
+      "remaining_target_31601": {
+        "success": 10,
+        "n": 16,
+        "rescue": [],
+        "regression": [
+          760216,
+          760229
+        ]
+      },
+      "remaining_target_31602": {
+        "success": 11,
+        "n": 16,
+        "rescue": [],
+        "regression": [
+          760229
+        ]
+      },
+      "measured_frozen_rule": {
+        "success": 11,
+        "n": 16,
+        "rescue": [],
+        "regression": [
+          760228
+        ]
+      },
+      "remaining_target_frozen_rule": {
+        "success": 11,
+        "n": 16,
+        "rescue": [],
+        "regression": [
+          760229
+        ]
+      },
+      "measured_nominal": {
+        "success": 12,
+        "n": 16,
+        "rescue": [],
+        "regression": []
+      }
+    }
+  },
+  "pooled": {
+    "measured_31601": {
+      "success": 14,
+      "n": 32,
+      "rescue": [],
+      "regression": [
+        760208,
+        760212,
+        760217,
+        760220,
+        760229
+      ],
+      "planning_queries": 250,
+      "physical_steps": 3200,
+      "front_counts": {
+        "0": 14,
+        "1": 11,
+        "2": 7
+      }
+    },
+    "measured_31602": {
+      "success": 12,
+      "n": 32,
+      "rescue": [],
+      "regression": [
+        760208,
+        760212,
+        760215,
+        760216,
+        760220,
+        760228,
+        760229
+      ],
+      "planning_queries": 262,
+      "physical_steps": 3200,
+      "front_counts": {
+        "0": 8,
+        "1": 24,
+        "2": 0
+      }
+    },
+    "remaining_target_31601": {
+      "success": 17,
+      "n": 32,
+      "rescue": [],
+      "regression": [
+        760216,
+        760229
+      ],
+      "planning_queries": 269,
+      "physical_steps": 3200,
+      "front_counts": {
+        "0": 7,
+        "1": 19,
+        "2": 6
+      }
+    },
+    "remaining_target_31602": {
+      "success": 18,
+      "n": 32,
+      "rescue": [],
+      "regression": [
+        760229
+      ],
+      "planning_queries": 260,
+      "physical_steps": 3200,
+      "front_counts": {
+        "0": 9,
+        "1": 22,
+        "2": 1
+      }
+    },
+    "measured_frozen_rule": {
+      "success": 17,
+      "n": 32,
+      "rescue": [
+        760213
+      ],
+      "regression": [
+        760206,
+        760215,
+        760228
+      ],
+      "planning_queries": 262,
+      "physical_steps": 3200,
+      "front_counts": {
+        "0": 0,
+        "1": 32,
+        "2": 0
+      }
+    },
+    "remaining_target_frozen_rule": {
+      "success": 16,
+      "n": 32,
+      "rescue": [],
+      "regression": [
+        760208,
+        760215,
+        760229
+      ],
+      "planning_queries": 256,
+      "physical_steps": 3200,
+      "front_counts": {
+        "0": 0,
+        "1": 32,
+        "2": 0
+      }
+    },
+    "measured_nominal": {
+      "success": 19,
+      "n": 32,
+      "rescue": [],
+      "regression": [],
+      "planning_queries": 221,
+      "physical_steps": 3200,
+      "front_counts": {
+        "0": 0,
+        "1": 32,
+        "2": 0
+      }
+    }
+  },
+  "interface_pairs": {
+    "31601": {
+      "new_only": [
+        760208,
+        760212,
+        760217,
+        760220
+      ],
+      "old_only": [
+        760216
+      ]
+    },
+    "31602": {
+      "new_only": [
+        760208,
+        760212,
+        760215,
+        760216,
+        760220,
+        760228
+      ],
+      "old_only": []
+    }
+  },
+  "scope": "32 new natural initial states; second cohort adaptively added after first; frozen models/rules unchanged; descriptive, not sealed or fixed-sample significance evidence; seeds share inherited neural weights"
+}
