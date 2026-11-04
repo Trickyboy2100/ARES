@@ -22,7 +22,7 @@ def potential(m):
 
 class FeedbackRuntime(Runtime):
     def __init__(self,out,chunk=4,feedback_start=3):
-        self.chunk=chunk;super().__init__(out,feedback=self.execute_feedback,feedback_start=feedback_start);self.controller_id+=f'__feedback_v4_persistent_start{feedback_start}'
+        self.chunk=chunk;super().__init__(out,feedback=self.execute_feedback,feedback_start=feedback_start);self.controller_id+=f'__feedback_v4_persistent_start{feedback_start}__empty_success_hold_v1'
         (self.out/'FEEDBACK_CONTRACT.json').write_text(json.dumps(dict(id=self.controller_id,actions=ACTIONS,chunk=chunk,feedback_start=feedback_start,horizon=100,observation='shared privileged physical state plus active joint queue',zero='continue current active queue, including prior corrections; never restore nominal path',dense='0.2 potential difference; terminal potential zero; terminal native success',no_pose_reset=True,hold_semantics='ID7 replaces queue by current q: refinement ends after one step; INSERT holds up to4steps. Durations are measured, not assumed.',parameter_hold='IDs1..5 repeated while active continue queue; change or exhausted queue triggers measured replan'),indent=2))
     def decide(self,obs):
         if len(obs)==54:obs=np.r_[obs,np.zeros(10)].astype(np.float32)
@@ -35,7 +35,15 @@ class FeedbackRuntime(Runtime):
         def plan(target):
             for _ in range(2):
                 result=planner.planner.plan_screw(np.r_[target.p,target.q],u.agent.robot.get_qpos().cpu().numpy()[0],time_step=u.control_timestep,use_point_cloud=planner.use_point_cloud)
-                if result['status']=='Success':return np.array(result['position'])
+                if result['status']=='Success':
+                    positions=np.array(result['position'])
+                    if len(positions):return positions
+                    # A successful zero-length planner result has no next joint
+                    # command. Measure and execute one hold step, preserving the
+                    # native budget, rather than indexing queue[-1] or inventing
+                    # a target configuration. Recorded separately from RL gain.
+                    call['empty_success_holds']=call.get('empty_success_holds',0)+1
+                    return np.array([val(u.agent.robot.get_qpos()[0,:7])])
             return None
         queue=plan(pose);nominal_failed=queue is None;cursor=0;last=0;holdq=None
         if queue is None:queue=np.array([val(u.agent.robot.get_qpos()[0,:7])])
