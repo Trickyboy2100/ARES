@@ -1,0 +1,587 @@
+{
+  "anchor_all": {
+    "evaluations": {
+      "EVAL_4000": {
+        "success": 8,
+        "n": 16,
+        "rescues": [],
+        "regressions": [
+          753209
+        ],
+        "successor_actions": {
+          "0": 127,
+          "4": 11,
+          "2": 2,
+          "7": 22,
+          "1": 3,
+          "3": 3,
+          "5": 1
+        },
+        "replans": 20
+      }
+    },
+    "full_episodes": 16,
+    "physical_steps": 1600,
+    "training_success": 0,
+    "training_episodes": 0,
+    "training_steps": 0,
+    "training_successor_decisions": 0,
+    "optimizer_iterations": 4000,
+    "prefix_max_error": 0.0,
+    "planning_queries": 132,
+    "planning_wall_s": 0.650774949346669
+  },
+  "anchor_nominal": {
+    "evaluations": {
+      "EVAL_4000": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 158,
+          "2": 2,
+          "7": 10,
+          "5": 2
+        },
+        "replans": 4
+      }
+    },
+    "full_episodes": 16,
+    "physical_steps": 1600,
+    "training_success": 0,
+    "training_episodes": 0,
+    "training_steps": 0,
+    "training_successor_decisions": 0,
+    "optimizer_iterations": 4000,
+    "prefix_max_error": 0.0,
+    "planning_queries": 116,
+    "planning_wall_s": 0.5494618595112115
+  },
+  "baseline": {
+    "evaluations": {
+      "EVAL_0": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 172
+        },
+        "replans": 0
+      }
+    },
+    "full_episodes": 16,
+    "physical_steps": 1600,
+    "training_success": 0,
+    "training_episodes": 0,
+    "training_steps": 0,
+    "training_successor_decisions": 0,
+    "optimizer_iterations": 0,
+    "prefix_max_error": 0.0,
+    "planning_queries": 112,
+    "planning_wall_s": 0.5579281134996563
+  },
+  "controlled": {
+    "evaluations": {
+      "EVAL_0": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 156,
+          "7": 16
+        },
+        "replans": 0
+      },
+      "EVAL_16": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 163,
+          "7": 9
+        },
+        "replans": 0
+      },
+      "EVAL_32": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 165,
+          "2": 1,
+          "7": 6
+        },
+        "replans": 1
+      }
+    },
+    "full_episodes": 80,
+    "physical_steps": 8000,
+    "training_success": 16,
+    "training_episodes": 32,
+    "training_steps": 3200,
+    "training_successor_decisions": 334,
+    "optimizer_iterations": 1280,
+    "prefix_max_error": 0.0,
+    "planning_queries": 580,
+    "planning_wall_s": 2.84465261711739
+  },
+  "controlled_anchor_005": {
+    "evaluations": {
+      "EVAL_4000": {
+        "success": 9,
+        "n": 16,
+        "rescues": [
+          753204
+        ],
+        "regressions": [
+          753209
+        ],
+        "successor_actions": {
+          "0": 124,
+          "4": 29,
+          "2": 8,
+          "7": 5,
+          "5": 4
+        },
+        "replans": 35
+      }
+    },
+    "full_episodes": 16,
+    "physical_steps": 1600,
+    "training_success": 0,
+    "training_episodes": 0,
+    "training_steps": 0,
+    "training_successor_decisions": 0,
+    "optimizer_iterations": 4000,
+    "prefix_max_error": 0.0,
+    "planning_queries": 147,
+    "planning_wall_s": 0.6985813359497115
+  },
+  "controlled_anchor_all": {
+    "evaluations": {
+      "EVAL_4000": {
+        "success": 10,
+        "n": 16,
+        "rescues": [
+          753204,
+          753213
+        ],
+        "regressions": [
+          753209
+        ],
+        "successor_actions": {
+          "0": 131,
+          "1": 4,
+          "2": 2,
+          "7": 19,
+          "4": 9,
+          "3": 3,
+          "5": 1
+        },
+        "replans": 19
+      }
+    },
+    "full_episodes": 16,
+    "physical_steps": 1600,
+    "training_success": 0,
+    "training_episodes": 0,
+    "training_steps": 0,
+    "training_successor_decisions": 0,
+    "optimizer_iterations": 4000,
+    "prefix_max_error": 0.0,
+    "planning_queries": 131,
+    "planning_wall_s": 0.6229777474654838
+  },
+  "controlled_anchor_nominal": {
+    "evaluations": {
+      "EVAL_4000": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 131,
+          "7": 26,
+          "2": 13,
+          "1": 1
+        },
+        "replans": 14
+      }
+    },
+    "full_episodes": 16,
+    "physical_steps": 1600,
+    "training_success": 0,
+    "training_episodes": 0,
+    "training_steps": 0,
+    "training_successor_decisions": 0,
+    "optimizer_iterations": 4000,
+    "prefix_max_error": 0.0,
+    "planning_queries": 126,
+    "planning_wall_s": 0.6276527321897447
+  },
+  "controlled_consolidated": {
+    "evaluations": {
+      "EVAL_4000": {
+        "success": 10,
+        "n": 16,
+        "rescues": [
+          753204,
+          753212
+        ],
+        "regressions": [
+          753209
+        ],
+        "successor_actions": {
+          "0": 110,
+          "7": 15,
+          "4": 31,
+          "5": 5,
+          "2": 10
+        },
+        "replans": 38
+      }
+    },
+    "full_episodes": 16,
+    "physical_steps": 1600,
+    "training_success": 0,
+    "training_episodes": 0,
+    "training_steps": 0,
+    "training_successor_decisions": 0,
+    "optimizer_iterations": 4000,
+    "prefix_max_error": 0.0,
+    "planning_queries": 149,
+    "planning_wall_s": 0.7276908305939287
+  },
+  "persistent": {
+    "evaluations": {
+      "EVAL_0": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 156,
+          "7": 16
+        },
+        "replans": 0
+      },
+      "EVAL_16": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 141,
+          "7": 31
+        },
+        "replans": 0
+      },
+      "EVAL_32": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 147,
+          "2": 1,
+          "7": 22,
+          "3": 1,
+          "5": 1
+        },
+        "replans": 3
+      }
+    },
+    "full_episodes": 80,
+    "physical_steps": 8000,
+    "training_success": 16,
+    "training_episodes": 32,
+    "training_steps": 3200,
+    "training_successor_decisions": 334,
+    "optimizer_iterations": 1280,
+    "prefix_max_error": 0.0,
+    "planning_queries": 586,
+    "planning_wall_s": 2.8781059242319316
+  },
+  "persistent_consolidated": {
+    "evaluations": {
+      "EVAL_4000": {
+        "success": 9,
+        "n": 16,
+        "rescues": [
+          753204
+        ],
+        "regressions": [
+          753209
+        ],
+        "successor_actions": {
+          "0": 134,
+          "2": 3,
+          "7": 22,
+          "4": 6,
+          "3": 3,
+          "6": 1,
+          "5": 2
+        },
+        "replans": 14
+      }
+    },
+    "full_episodes": 16,
+    "physical_steps": 1600,
+    "training_success": 0,
+    "training_episodes": 0,
+    "training_steps": 0,
+    "training_successor_decisions": 0,
+    "optimizer_iterations": 4000,
+    "prefix_max_error": 0.0,
+    "planning_queries": 126,
+    "planning_wall_s": 0.6374332587001845
+  },
+  "persistent_controlled": {
+    "evaluations": {
+      "EVAL_0": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 156,
+          "7": 16
+        },
+        "replans": 0
+      },
+      "EVAL_16": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 144,
+          "7": 28
+        },
+        "replans": 0
+      },
+      "EVAL_32": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 140,
+          "2": 1,
+          "7": 31
+        },
+        "replans": 1
+      }
+    },
+    "full_episodes": 80,
+    "physical_steps": 8000,
+    "training_success": 16,
+    "training_episodes": 32,
+    "training_steps": 3200,
+    "training_successor_decisions": 334,
+    "optimizer_iterations": 1280,
+    "prefix_max_error": 0.0,
+    "planning_queries": 582,
+    "planning_wall_s": 2.804295243928209
+  },
+  "persistent_controlled_consolidated": {
+    "evaluations": {
+      "EVAL_4000": {
+        "success": 9,
+        "n": 16,
+        "rescues": [
+          753213
+        ],
+        "regressions": [
+          753209
+        ],
+        "successor_actions": {
+          "0": 121,
+          "3": 4,
+          "1": 4,
+          "2": 2,
+          "7": 25,
+          "4": 11,
+          "5": 2
+        },
+        "replans": 23
+      }
+    },
+    "full_episodes": 16,
+    "physical_steps": 1600,
+    "training_success": 0,
+    "training_episodes": 0,
+    "training_steps": 0,
+    "training_successor_decisions": 0,
+    "optimizer_iterations": 4000,
+    "prefix_max_error": 0.0,
+    "planning_queries": 135,
+    "planning_wall_s": 0.6334824240766466
+  },
+  "removed": {
+    "evaluations": {
+      "EVAL_0": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 156,
+          "7": 16
+        },
+        "replans": 0
+      },
+      "EVAL_16": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 157,
+          "7": 13,
+          "1": 2
+        },
+        "replans": 2
+      },
+      "EVAL_32": {
+        "success": 9,
+        "n": 16,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 167,
+          "7": 5
+        },
+        "replans": 0
+      }
+    },
+    "full_episodes": 80,
+    "physical_steps": 8000,
+    "training_success": 16,
+    "training_episodes": 32,
+    "training_steps": 3200,
+    "training_successor_decisions": 334,
+    "optimizer_iterations": 1280,
+    "prefix_max_error": 0.0,
+    "planning_queries": 582,
+    "planning_wall_s": 2.8910187332658097
+  },
+  "removed_consolidated": {
+    "evaluations": {
+      "EVAL_4000": {
+        "success": 8,
+        "n": 16,
+        "rescues": [],
+        "regressions": [
+          753209
+        ],
+        "successor_actions": {
+          "0": 149,
+          "2": 5,
+          "7": 15,
+          "5": 3,
+          "1": 2
+        },
+        "replans": 10
+      }
+    },
+    "full_episodes": 16,
+    "physical_steps": 1600,
+    "training_success": 0,
+    "training_episodes": 0,
+    "training_steps": 0,
+    "training_successor_decisions": 0,
+    "optimizer_iterations": 4000,
+    "prefix_max_error": 0.0,
+    "planning_queries": 122,
+    "planning_wall_s": 0.5937888351036236
+  },
+  "strong_rule": {
+    "evaluations": {
+      "budget_refine_zplus": {
+        "success": 12,
+        "n": 16,
+        "rescues": [
+          753201,
+          753212,
+          753213
+        ],
+        "regressions": [],
+        "successor_actions": {
+          "0": 140,
+          "4": 28
+        },
+        "replans": 21
+      }
+    },
+    "full_episodes": 16,
+    "physical_steps": 1600,
+    "training_success": 0,
+    "training_episodes": 0,
+    "training_steps": 0,
+    "training_successor_decisions": 0,
+    "optimizer_iterations": 0,
+    "prefix_max_error": 0.0,
+    "planning_queries": 133,
+    "planning_wall_s": 0.6450847967062145
+  },
+  "verify": {
+    "evaluations": {
+      "full": {
+        "success": 2,
+        "n": 3,
+        "rescues": [
+          753204,
+          753212
+        ],
+        "regressions": [
+          753209
+        ],
+        "successor_actions": {
+          "0": 11,
+          "4": 16,
+          "2": 1
+        },
+        "replans": 13
+      },
+      "zero_suffix": {
+        "success": 1,
+        "n": 3,
+        "rescues": [],
+        "regressions": [],
+        "successor_actions": {
+          "0": 29
+        },
+        "replans": 0
+      },
+      "budget_refine_zplus": {
+        "success": 2,
+        "n": 3,
+        "rescues": [
+          753212
+        ],
+        "regressions": [],
+        "successor_actions": {
+          "4": 8,
+          "0": 19
+        },
+        "replans": 6
+      }
+    },
+    "full_episodes": 9,
+    "physical_steps": 900,
+    "training_success": 0,
+    "training_episodes": 0,
+    "training_steps": 0,
+    "training_successor_decisions": 0,
+    "optimizer_iterations": 0,
+    "prefix_max_error": 0.0,
+    "planning_queries": 82,
+    "planning_wall_s": 0.39878088783007115
+  }
+}

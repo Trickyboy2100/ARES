@@ -1,0 +1,5 @@
+/home/andyee/miniconda3/envs/jnl263_round42_maniskill/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+PASS exact historical default updates, bc false and true
+PASS single update: only actor changed by success BC; Q unchanged
+PASS real successful anchor-source ablation changes actor, not first critic update

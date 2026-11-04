@@ -1,0 +1,110 @@
+[
+  {
+    "scene": 753204,
+    "policy": "full",
+    "success": true,
+    "repeat_max_errors": {
+      "action": 0.0,
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "peg": 0.0
+    }
+  },
+  {
+    "scene": 753204,
+    "policy": "zero_suffix",
+    "success": false,
+    "repeat_max_errors": {
+      "action": 0.0,
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "peg": 0.0
+    }
+  },
+  {
+    "scene": 753204,
+    "policy": "budget_refine_zplus",
+    "success": false,
+    "repeat_max_errors": {
+      "action": 0.0,
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "peg": 0.0
+    }
+  },
+  {
+    "scene": 753212,
+    "policy": "full",
+    "success": true,
+    "repeat_max_errors": {
+      "action": 0.0,
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "peg": 0.0
+    }
+  },
+  {
+    "scene": 753212,
+    "policy": "zero_suffix",
+    "success": false,
+    "repeat_max_errors": {
+      "action": 0.0,
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "peg": 0.0
+    }
+  },
+  {
+    "scene": 753212,
+    "policy": "budget_refine_zplus",
+    "success": true,
+    "repeat_max_errors": {
+      "action": 0.0,
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "peg": 0.0
+    }
+  },
+  {
+    "scene": 753209,
+    "policy": "full",
+    "success": false,
+    "repeat_max_errors": {
+      "action": 0.0,
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "peg": 0.0
+    }
+  },
+  {
+    "scene": 753209,
+    "policy": "zero_suffix",
+    "success": true,
+    "repeat_max_errors": {
+      "action": 0.0,
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "peg": 0.0
+    }
+  },
+  {
+    "scene": 753209,
+    "policy": "budget_refine_zplus",
+    "success": true,
+    "repeat_max_errors": {
+      "action": 0.0,
+      "q": 0.0,
+      "qvel": 0.0,
+      "tcp": 0.0,
+      "peg": 0.0
+    }
+  }
+]

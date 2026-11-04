@@ -14,3 +14,15 @@ a=FeedbackSAC.load(root/'FINAL.pt');b=FeedbackSAC.load(root/'FINAL.pt');a.train(
 assert all(torch.equal(x,y) for x,y in zip(a.q.parameters(),b.q.parameters()))
 assert any(not torch.equal(x,y) for x,y in zip(a.actor.parameters(),b.actor.parameters()))
 print('PASS single update: only actor changed by success BC; Q unchanged')
+# Constraint-source ablation uses identical critic data and no fake zero labels.
+import collections
+groups=collections.defaultdict(list)
+for t in d:groups[t['source']].append(t)
+all_success=[t for t in d if t['stage']==1 and t['outcome']]
+nominal=[t for ts in groups.values() if ts[0]['outcome'] and all(z['a']==0 for z in ts if z['stage']==1) for t in ts if t['stage']==1]
+a=FeedbackSAC.load(root/'FINAL.pt');b=FeedbackSAC.load(root/'FINAL.pt')
+a.train(d,l,1,success_bc=.2,cql=0,successor_only=True,bc_anchor=all_success)
+b.train(d,l,1,success_bc=.2,cql=0,successor_only=True,bc_anchor=nominal)
+assert all(torch.equal(x,y) for x,y in zip(a.q.parameters(),b.q.parameters()))
+assert any(not torch.equal(x,y) for x,y in zip(a.actor.parameters(),b.actor.parameters()))
+print('PASS real successful anchor-source ablation changes actor, not first critic update')

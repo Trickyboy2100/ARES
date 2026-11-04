@@ -154,3 +154,10 @@ RETAIN strong shared controller, explicit action-schema compatibility, finite RL
 ## 2026-11-04 — Closed-loop feedback and budget-conditioned joint training
 
 [Full evidence](evidence/EXP-004/2026-11-04/closed_loop/README.md) · [Review](evidence/EXP-004/2026-11-04/closed_loop/REVIEW.html) · [Metrics](evidence/EXP-004/2026-11-04/closed_loop/RESULTS_SUMMARY.json). Native100 physical curves, actual8-action successor execution, matched SAC/scalar/budget training, initialized-training costs, strict native-prefix falsification, deployment-label ablation, all model/source/raw archives and failure records. New operation benefit and independent algorithm gain bothUNVERIFIED.
+
+
+## 2026-11-04 — Successful-behavior retention and controlled exploration
+
+[Complete real evidence and reproducible artifacts](evidence/EXP-004/2026-11-04/success_retention/README.md). Fixed actual predecessor, same Peg100/feedback actions. Four32-episode SAC branches followed by4000 replay updates:8/16,9/16,10/16,9/16; nominal9/16. Controlled SAC2 rescues/1 regression. Same-replay whole-episode nominal-success anchoring restores9/16 with0/0 on both behavior datasets; weight0.05 returns1/1. Posthoc strong phase/budget feedback12/16,3/0 is control progress, not RL originality. All trajectories/models/source SHA retained.505 full episodes/50500steps,41120 primary update iterations,1336 training successor decisions,3841 planner queries;9 exact native repeat trajectories.
+
+Retain both nominal-retention and learned-recovery endpoints, stronger feedback reference and all negative variants. No task/runtime/horizon change or sealed-test expansion. Next test stronger-reference real training data as a shared learning anchor; do not expand probability heads or repeat the same coefficient search. See DECISIONS and STATE for the continuing experiment. **UNVERIFIED independent method gain.**

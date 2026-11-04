@@ -1,0 +1,31 @@
+{
+  "static_html_links": 30,
+  "videos": {
+    "video_rescue/RAW.mp4": {
+      "width": 1600,
+      "height": 600,
+      "nb_read_frames": "101"
+    },
+    "video_rescue/ANNOTATED.mp4": {
+      "width": 1600,
+      "height": 840,
+      "nb_read_frames": "101"
+    },
+    "video_regression/RAW.mp4": {
+      "width": 1600,
+      "height": 600,
+      "nb_read_frames": "101"
+    },
+    "video_regression/ANNOTATED.mp4": {
+      "width": 1600,
+      "height": 840,
+      "nb_read_frames": "101"
+    }
+  },
+  "archived_members": 777,
+  "model_files": 64,
+  "archive_member_sha_verification": true,
+  "measured_pose_replay": true,
+  "interactive_browser_qa": "NOT_PERFORMED; local static links, decoded frame counts and rendered PNGs inspected",
+  "no_new_physics_from_rendering": true
+}

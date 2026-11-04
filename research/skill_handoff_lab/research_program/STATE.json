@@ -2,14 +2,14 @@
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
   "last_review": "2026-11-04",
-  "baseline_commit": "616099e56adf4151546f1c33c9835f0d4db8ac59",
+  "baseline_commit": "a2fa4a6cb26d0dd5f665eddf430cd583aa1228f9",
   "branch": "research-sci-program",
   "scientific_goal": "One SCI paper: task-conditioned executable parameter adaptation ACROSS REAL MULTI-STAGE ROBOT SKILLS using nominal skill primitives and measured SkillResult to improve successor feasibility, whole-task success and transfer; contact servo and SAC are component baselines",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
-  "latest_evidence": "evidence/EXP-004/2026-11-04/closed_loop/README.md",
-  "next_action": "Continue the actual repeated-feedback Peg successor and task-conditioned predecessor, not fixed-branch scoring or a larger grasp grid. Retain strongest nominal/retained SAC and all feedback/CQL checkpoints. Current feedback training activates corrections but regresses; six training-mined native recovery checks are already covered by nominal6/6, and removing only learned suffix corrections rescues targeted regressions. Budget-resolved handoff and scalar downstream-value targets do not beat ordinary SAC; deterministic deployment-label revision also fails to establish gain. Next develop stable same-authority successor learning around measured slip/contact/phase progress, with a controlled observation/feedback or successful-trace regularization experiment rather than expanding the hazard head. First establish benefit beyond the strongest nominal continuation in full native100 tasks, while preserving the two-boundary interface. Current64 features omit full object twist/contact forces; any aliasing explanation needs a real controlled test. Keep local initialized training separate from continuous full evaluations and explicitly cost every prefix/suffix.753200-215 and all755xxx curriculum cases are seen development/training, not sealed tests. No ARES-R/hardware access.",
+  "latest_evidence": "evidence/EXP-004/2026-11-04/success_retention/README.md",
+  "next_action": "Continue the same closed-loop Peg successor with common actual predecessor until learned retention plus gain is stable; do not expand the budget head, return to fixed branch scoring or weaken the planner. Preserve all a2fa4a6 and success_retention assets. Next concrete learning experiment: collect the new phase/budget reference policy on the existing32 training starts756000-031 (charge each native prefix), share those real transitions with ordinary SAC and anchoring controls, and continue from the retained controlled-sampling and nominal-anchor checkpoints. The reference12/16 is posthoc seen-development CONTROL, not RL novelty. Test whether reference-data grounding can preserve its successes while learning the actual alternative timing/parameter choice seen at753204; never train on development labels. Separate source of successful constraints from their strength: both nominal-anchor0.2 variants suppress rescue;0.05 again regresses. Do not merely repeat this scalar-weight search. Geometry vs duration effects are not yet isolated. Keep all methods same actions/state/native100. Only expand evaluation conditions/seeds after sustained learned improvement beyond the stronger shared reference; no sealed tests or hardware. No independent method claim yet.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -80,7 +80,7 @@
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
-  "latest_run_summary": "Closed-loop3x8 parameter interface, persistent queues, shared finite SAC/CQL warmstart, actual local reachable-handoff curriculum and budget-CDF predecessor backups implemented. Full96-episode training ordinary9/16, scalar10/16, budget8/16; retained old SAC10/16. Additional~10k physical local steps end5/16,4/16,6/16. Deployment-label branch~2840steps:9/16,7/16,7/16. Six native paired recovery candidates: nominal6/6,rule6/6,mined4/6; no new capability proved. Targeted zero-suffix ablation ordinary1/5->5/5,budget2/5->5/5. All checkpoints/failures retained; independent gain UNVERIFIED.",
+  "latest_run_summary": "Fixed actual grasp1; unchanged Peg100 feedback runtime. Four32-episode ordinary-SAC branches all9/16 initially. After4000 extra real-replay updates: BC removed8, persistent9, controlled10, combined9; controlled2 rescues/1 regression. Same-replay nominal-success anchors restore9/16 with0/0 on both behavior datasets; weight0.05 reintroduces1/1. Posthoc same-authority phase/budget rule12/16,3rescues/0regressions.505 complete episodes/50500steps,41120 primary iterations;9 native full-trace repeats exact. Independent method gain UNVERIFIED.",
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
   "research_review_20261102": {
     "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
@@ -373,5 +373,46 @@
     "local_restore": "training only; contact caches not bit-exact",
     "shared_action_semantics": "3 predecessor grasps,8 phase-bounded successor actions; ID7 refinement hold1step vs insertion up to4 measured steps",
     "no_sealed_test": true
+  },
+  "success_retention_20261104": {
+    "source": "evidence/EXP-004/2026-11-04/success_retention/README.md",
+    "base": "a2fa4a6",
+    "neural_initialization_seed": 31501,
+    "behavior_seed": 31601,
+    "unique_training_scenes": 32,
+    "seen_development_scenes": 16,
+    "complete_native_episodes": 505,
+    "physical_steps": 50500,
+    "new_training_steps": 12800,
+    "new_successor_training_decisions": 1336,
+    "primary_optimizer_iterations": 41120,
+    "planning_queries": 3841,
+    "four_factorial_final": [
+      8,
+      9,
+      10,
+      9
+    ],
+    "factorial_order": [
+      "removed",
+      "persistent",
+      "controlled",
+      "persistent_controlled"
+    ],
+    "nominal_anchor_final": [
+      9,
+      9
+    ],
+    "weak_anchor_final": 9,
+    "strong_feedback_rule": {
+      "score": "12/16",
+      "rescue": 3,
+      "regression": 0,
+      "scope": "posthoc seen development; not RL"
+    },
+    "native_repeat_count": 9,
+    "native_repeat_full_trace_max_error": 0,
+    "learned_retention_plus_gain": "UNVERIFIED",
+    "independent_algorithm_gain": "UNVERIFIED"
   }
 }

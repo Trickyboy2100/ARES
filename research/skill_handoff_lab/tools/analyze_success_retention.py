@@ -21,14 +21,16 @@ for directory in sorted(a.root.iterdir()):
  base_files={json.loads(gzip.decompress(p.read_bytes()))['summary']['seed']:p for p in (a.root/'baseline/physics').glob('*.json.gz')}
  for f in raw:
   d=json.loads(gzip.decompress(f.read_bytes()));steps+=len(d['steps']);assert len(d['steps'])==100
+  assert bool(d['summary']['success'])==bool(d['steps'][-1]['evaluation']['success'][0])
   # Inspect only actual planner entries; no inferred successful-query costs.
   queries+=len(d['summary']['queries'])
   planning_s+=sum(x.get('wall_s',0) for x in d['summary']['queries'])
   if d['summary']['seed'] in base_files:
    ref=json.loads(gzip.decompress(base_files[d['summary']['seed']].read_bytes()));rear=[x for x in d['summary']['decisions'] if x['stage']==1];br=[x for x in ref['summary']['decisions'] if x['stage']==1]
+   assert d['initial']==ref['initial']
    if rear and br:
     assert rear[0]['step']==br[0]['step'];end=rear[0]['step']
-    for field in ['q','qvel','tcp','peg']:
+    for field in ['action','q','qvel','tcp','peg']:
      err=max((float(np.max(np.abs(np.asarray(x[field])-np.asarray(y[field])))) for x,y in zip(d['steps'][:end],ref['steps'][:end])),default=0.)
      prefix_errors.append(err)
  train=json.loads((directory/'TRAIN.json').read_text()) if (directory/'TRAIN.json').exists() else []
