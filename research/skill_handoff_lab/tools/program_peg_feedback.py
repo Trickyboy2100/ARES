@@ -21,8 +21,11 @@ def potential(m):
     return float(-np.clip(np.linalg.norm(x[45:48])/.15,0,3)-.2*x[48])
 
 class FeedbackRuntime(Runtime):
-    def __init__(self,out,chunk=4,feedback_start=3):
+    def __init__(self,out,chunk=4,feedback_start=3,correction_frame='measured'):
+        assert correction_frame in ('measured','remaining_target')
+        self.correction_frame=correction_frame
         self.chunk=chunk;super().__init__(out,feedback=self.execute_feedback,feedback_start=feedback_start);self.controller_id+=f'__feedback_v4_persistent_start{feedback_start}__empty_success_hold_v1'
+        if correction_frame!='measured':self.controller_id+='__remaining_target_v1'
         (self.out/'FEEDBACK_CONTRACT.json').write_text(json.dumps(dict(id=self.controller_id,actions=ACTIONS,chunk=chunk,feedback_start=feedback_start,horizon=100,observation='shared privileged physical state plus active joint queue',zero='continue current active queue, including prior corrections; never restore nominal path',dense='0.2 potential difference; terminal potential zero; terminal native success',no_pose_reset=True,hold_semantics='ID7 replaces queue by current q: refinement ends after one step; INSERT holds up to4steps. Durations are measured, not assumed.',parameter_hold='IDs1..5 repeated while active continue queue; change or exhausted queue triggers measured replan'),indent=2))
     def decide(self,obs):
         if len(obs)==54:obs=np.r_[obs,np.zeros(10)].astype(np.float32)
@@ -46,6 +49,7 @@ class FeedbackRuntime(Runtime):
                     return np.array([val(u.agent.robot.get_qpos()[0,:7])])
             return None
         queue=plan(pose);nominal_failed=queue is None;cursor=0;last=0;holdq=None
+        active_target=pose
         if queue is None:queue=np.array([val(u.agent.robot.get_qpos()[0,:7])])
         while len(e.records)<100:
             obs=features(e.measure(),100-len(e.records),1,queue,cursor,last);obs[49]=min(len(e.calls),7)/7
@@ -56,6 +60,7 @@ class FeedbackRuntime(Runtime):
                         holdq=None if holdq is None else holdq.tolist(),phase=phase)
             action=self.decide(obs);record=self.actions[-1];record['plan_failed']=False;record['replanned']=False
             record['queue_before']=before
+            record['active_target_before']=np.r_[active_target.p,active_target.q].tolist()
             if nominal_failed and action==0:
                 call.update(end=len(e.records),failed=True);return -1
             nominal_failed=False
@@ -70,8 +75,16 @@ class FeedbackRuntime(Runtime):
                     target=u.goal_pose.sp*sapien.Pose(shift)*u.peg.pose.sp.inv()*u.agent.tcp.pose.sp
                 if action==6:
                     world=Rotation.from_quat(np.r_[u.goal_pose.sp.q[1:],u.goal_pose.sp.q[0]]).apply([-.006,0,0]);target=sapien.Pose(u.agent.tcp.pose.sp.p+world,u.agent.tcp.pose.sp.q)
+                if self.correction_frame=='remaining_target' and action in (2,3,4,5):
+                    # Translate the existing queue's requested terminal pose in
+                    # the goal frame. Preserve its orientation. Still a full
+                    # replan, NOT a bounded joint/control residual or FK claim.
+                    shift[0]=0
+                    world=Rotation.from_quat(np.r_[u.goal_pose.sp.q[1:],u.goal_pose.sp.q[0]]).apply(shift)
+                    target=sapien.Pose(active_target.p+world,active_target.q)
                 record['replanned']=True;new=plan(target);record['target']=np.r_[target.p,target.q].tolist()
-                if new is not None:queue=new;cursor=0;holdq=None
+                record['requested_target_delta_m']=float(np.linalg.norm(target.p-active_target.p))
+                if new is not None:queue=new;cursor=0;holdq=None;active_target=target
                 else:record['plan_failed']=True
             record['queue_length']=len(queue);record['queue_cursor']=cursor
             for _ in range(min(self.chunk,100-len(e.records),len(queue)-cursor if phase!='INSERT' else 100)):
