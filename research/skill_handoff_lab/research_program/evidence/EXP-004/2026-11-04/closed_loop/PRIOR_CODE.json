@@ -1,0 +1,21 @@
+{
+  "Fabrica": {
+    "url": "https://github.com/yunshengtian/Fabrica",
+    "commit": "215a30fe51e59299588a5b5e417a9cb934fb393e",
+    "files": {
+      "learning/README.md": "37c65d14c048b4285ef2a7a5b177786a3cd08e30a0d4cd551b33c07e9ad5e89a",
+      "learning/isaacgymenvs/tasks/fabrica/fabrica_task_assemble.py": "29837c8a138649cd19f05e63ae89e3f0da0b28e11455874fa9fb37b7feb16200",
+      "learning/isaacgymenvs/tasks/fabrica/fabrica_algo_utils.py": "c4001f774d3777373ebf73d9f041faeb7bb011939541453d7ddab295abb8aa27",
+      "learning/isaacgymenvs/cfg/task/FabricaFixPlugTaskAssemble.yaml": "cdf5a758ffd54ad20c36cc72af272cb27dde9bd48316616b5ba1222138bbbb1a",
+      "learning/LICENSE.txt": "68f7ce6ed43e93e5d6404a9b05f97c0864a32b373548dba93a2c262e81561931"
+    }
+  },
+  "SeqDex": {
+    "source": "inherited peg_value_20261103/prior_code; bi_optimization and transition_value_trainer",
+    "url": "https://github.com/sequential-dexterity/SeqDex"
+  },
+  "SPIRE": {
+    "source": "paper only; no official code reproduction",
+    "url": "https://arxiv.org/html/2410.18065v1"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "base": "616099e",
+  "head_at_snapshot": "e78a5acd472efe5e5fb10d4ee7870ad78370c5e9",
+  "note": "Per-run source snapshots control the historical experiments; final sources include explicitly documented accounting and deadline fixes.",
+  "files": [
+    {
+      "path": "research/skill_handoff_lab/tools/adapt_feedback_replay.py",
+      "sha256": "91b67bf8db67075d2a9230d3d135e51510b0ddc9d83b5f06e1b20af906b1e29f"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/analyze_feedback_calibration.py",
+      "sha256": "70bb3926ffb2eac41aef2485cba9e1e1bc18116c158b743027571e17ac03b962"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/audit_feedback_ablation.py",
+      "sha256": "43ccd19938c75c91de8e2d97d150fb71faa0927ef8d8ae74319d304a66a80b81"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/audit_reachable_feedback.py",
+      "sha256": "bd160e21445c3972c81e331f31daec6685b10333edcfa21483fe6f1e912a242b"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/check_budget_feedback.py",
+      "sha256": "e18ff7a1ad3919b9a89163b90d5085a04c54eefba1c4d06130b4aade009033d4"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/check_feedback_replay_compatibility.py",
+      "sha256": "34ce1abc61e72d46d0202a3568f6e222c6a8412af3d634ae2840cd49f85f6ccd"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/eval_budget_feedback_interventions.py",
+      "sha256": "e90807e3cd55046f92d01786df61c7304cf4f0aa6380221e17583fdbd7d993c8"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/eval_feedback_legacy.py",
+      "sha256": "a58348333afcddc3f382b5796a9426823ada0f4c9894f78b3e23a8af277c46e5"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/handoff_offline.sh",
+      "sha256": "e2331654bae85eda751117d2634efb106cd93b752e038fb4f9773e705db9696f"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/package_closed_feedback.py",
+      "sha256": "cc893f62424bccc85884cdaf27cc2925bee625d1f0cb0579f3452edea3f54910"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/plot_feedback_mechanism.py",
+      "sha256": "11cceb165a2d05127a48526781dc27969bb3048495272c32077c871a7288c921"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/program_budget_feedback_sac.py",
+      "sha256": "fb79dd50fcbf281e2ffbdb45e79e4f2418e18b2479e22bf9149871eff6ed7b4c"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/program_peg_feedback.py",
+      "sha256": "e942153a678509e0656618584d7df6033571b157fc86776efb945841efa06d44"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/program_peg_option_runtime.py",
+      "sha256": "9331ddbcb5a9f7cfdcdc4e8b1435c37d376a2cadf410fa1fe53e3f8df901979e"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/recover_local_feedback.py",
+      "sha256": "f3bbd55dbddc9df81e6ac1c29cd70d5eebcd803cb6a86811b879a5ab716fe662"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/render_peg_skill_pair.py",
+      "sha256": "aed1a0c5205df8473a57b38ad0106fa093e8fc0c53d4359de50e0699da0216b4"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/run_budget_feedback.py",
+      "sha256": "1f7ece89cb15787697b38043e104ae8481721c6a9dacbb7775fd7785b6b522e6"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/summarize_closed_feedback.py",
+      "sha256": "bca9254a0f5e3ba13925435261645fcd0e7d1d69ec6a2e1d24c4a39243364a9e"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/train_reachable_feedback.py",
+      "sha256": "44ea71e93e7159db257678106f2adb29cc87a3fe40dad608813f1e42d49d66c1"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/verify_feedback_recoveries.py",
+      "sha256": "02ddf75c4cbc93474d63b4050ae5aac6f408f8e8fe9a4eb2c851db0dac4aeba0"
+    },
+    {
+      "path": "research/skill_handoff_lab/tools/write_closed_feedback_review.py",
+      "sha256": "a8859465e70b4d44d18dbc9a58d1634cb8c3d9ae83aad2463229681c49767425"
+    }
+  ]
+}

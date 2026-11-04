@@ -1,0 +1,17 @@
+[
+  {
+    "run": "local_suffix_31501",
+    "error": "PhysX CUDA700 during full evaluation after saved 2837-step checkpoint",
+    "root_cause": "UNRESOLVED; concurrency reduced from3to2",
+    "recovery": "local_suffix_recovered -> local_suffix_resume_31501",
+    "unarchived_partial_physics": "unknown"
+  },
+  {
+    "run": "deployment_labels_ordinary",
+    "error": "Process exit143/SIGTERM without Python traceback",
+    "root_cause": "UNRESOLVED",
+    "archived_completed_training_steps": 534,
+    "retry": "deployment_labels_ordinary_retry",
+    "unarchived_partial_physics": "unknown"
+  }
+]

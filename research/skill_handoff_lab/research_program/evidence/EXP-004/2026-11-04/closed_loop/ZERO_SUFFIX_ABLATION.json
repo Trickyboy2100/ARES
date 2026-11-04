@@ -1,0 +1,98 @@
+{
+  "ordinary": {
+    "scope": "Targeted seen regression cases; not an overall success estimate.",
+    "pairs": [
+      {
+        "seed": 753200,
+        "grasp": 2,
+        "prefix_steps": 49,
+        "prefix_max_difference": 0.0,
+        "full_success": false,
+        "zero_suffix_success": true
+      },
+      {
+        "seed": 753208,
+        "grasp": 2,
+        "prefix_steps": 54,
+        "prefix_max_difference": 0.0,
+        "full_success": true,
+        "zero_suffix_success": true
+      },
+      {
+        "seed": 753209,
+        "grasp": 2,
+        "prefix_steps": 57,
+        "prefix_max_difference": 0.0,
+        "full_success": false,
+        "zero_suffix_success": true
+      },
+      {
+        "seed": 753211,
+        "grasp": 0,
+        "prefix_steps": 46,
+        "prefix_max_difference": 0.0,
+        "full_success": false,
+        "zero_suffix_success": true
+      },
+      {
+        "seed": 753215,
+        "grasp": 2,
+        "prefix_steps": 62,
+        "prefix_max_difference": 0.0,
+        "full_success": false,
+        "zero_suffix_success": true
+      }
+    ],
+    "full_success": 1,
+    "zero_suffix_success": 5,
+    "n": 5
+  },
+  "budget": {
+    "scope": "Targeted seen regression cases; not an overall success estimate.",
+    "pairs": [
+      {
+        "seed": 753200,
+        "grasp": 2,
+        "prefix_steps": 49,
+        "prefix_max_difference": 0.0,
+        "full_success": false,
+        "zero_suffix_success": true
+      },
+      {
+        "seed": 753208,
+        "grasp": 2,
+        "prefix_steps": 54,
+        "prefix_max_difference": 0.0,
+        "full_success": false,
+        "zero_suffix_success": true
+      },
+      {
+        "seed": 753209,
+        "grasp": 2,
+        "prefix_steps": 57,
+        "prefix_max_difference": 0.0,
+        "full_success": false,
+        "zero_suffix_success": true
+      },
+      {
+        "seed": 753211,
+        "grasp": 2,
+        "prefix_steps": 49,
+        "prefix_max_difference": 0.0,
+        "full_success": true,
+        "zero_suffix_success": true
+      },
+      {
+        "seed": 753215,
+        "grasp": 0,
+        "prefix_steps": 61,
+        "prefix_max_difference": 0.0,
+        "full_success": true,
+        "zero_suffix_success": true
+      }
+    ],
+    "full_success": 2,
+    "zero_suffix_success": 5,
+    "n": 5
+  }
+}

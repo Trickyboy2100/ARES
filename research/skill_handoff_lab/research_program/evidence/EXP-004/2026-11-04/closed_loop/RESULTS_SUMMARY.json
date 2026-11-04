@@ -1,0 +1,2428 @@
+{
+  "status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
+  "methods": {
+    "ordinary": {
+      "full_native_training_evaluations": {
+        "0": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 0,
+            "753201": 0,
+            "753202": 0,
+            "753203": 0,
+            "753204": 0,
+            "753205": 1,
+            "753206": 0,
+            "753207": 2,
+            "753208": 0,
+            "753209": 2,
+            "753210": 1,
+            "753211": 0,
+            "753212": 2,
+            "753213": 1,
+            "753214": 1,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 151,
+            "7": 23
+          },
+          "active_correction_scenes": [],
+          "physical_steps": 1600,
+          "planning_queries": 112,
+          "planning_wall_s": 0.6267556400271133
+        },
+        "32": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 0,
+            "753201": 0,
+            "753202": 0,
+            "753203": 0,
+            "753204": 0,
+            "753205": 1,
+            "753206": 0,
+            "753207": 2,
+            "753208": 0,
+            "753209": 2,
+            "753210": 1,
+            "753211": 0,
+            "753212": 2,
+            "753213": 1,
+            "753214": 0,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 138,
+            "7": 34
+          },
+          "active_correction_scenes": [],
+          "physical_steps": 1600,
+          "planning_queries": 111,
+          "planning_wall_s": 0.5169631851604208
+        },
+        "64": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 0,
+            "753201": 0,
+            "753202": 0,
+            "753203": 0,
+            "753204": 0,
+            "753205": 1,
+            "753206": 0,
+            "753207": 2,
+            "753208": 0,
+            "753209": 2,
+            "753210": 1,
+            "753211": 0,
+            "753212": 2,
+            "753213": 1,
+            "753214": 0,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 152,
+            "7": 20
+          },
+          "active_correction_scenes": [],
+          "physical_steps": 1600,
+          "planning_queries": 111,
+          "planning_wall_s": 0.590769357397221
+        },
+        "96": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 0,
+            "753201": 0,
+            "753202": 2,
+            "753203": 0,
+            "753204": 0,
+            "753205": 1,
+            "753206": 0,
+            "753207": 2,
+            "753208": 0,
+            "753209": 2,
+            "753210": 1,
+            "753211": 0,
+            "753212": 2,
+            "753213": 1,
+            "753214": 1,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 166,
+            "7": 8
+          },
+          "active_correction_scenes": [],
+          "physical_steps": 1600,
+          "planning_queries": 112,
+          "planning_wall_s": 0.5966201759874821
+        }
+      },
+      "local_training_native_evaluations": {
+        "2837": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 0,
+            "753201": 0,
+            "753202": 2,
+            "753203": 0,
+            "753204": 1,
+            "753205": 1,
+            "753206": 0,
+            "753207": 2,
+            "753208": 0,
+            "753209": 2,
+            "753210": 1,
+            "753211": 0,
+            "753212": 2,
+            "753213": 1,
+            "753214": 0,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 160,
+            "1": 3,
+            "4": 3,
+            "2": 2,
+            "7": 5
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753204,
+            753205,
+            753206,
+            753208
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 119,
+          "planning_wall_s": 0.5896834477316588
+        },
+        "6003": {
+          "n": 16,
+          "success": 6,
+          "success_scenes": [
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753211
+          ],
+          "front_actions": {
+            "753200": 0,
+            "753201": 0,
+            "753202": 2,
+            "753203": 2,
+            "753204": 1,
+            "753205": 0,
+            "753206": 0,
+            "753207": 2,
+            "753208": 0,
+            "753209": 2,
+            "753210": 1,
+            "753211": 0,
+            "753212": 0,
+            "753213": 1,
+            "753214": 0,
+            "753215": 0
+          },
+          "rear_actions": {
+            "3": 12,
+            "0": 96,
+            "1": 13,
+            "4": 26,
+            "2": 9,
+            "7": 13,
+            "5": 4
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753202,
+            753203,
+            753204,
+            753205,
+            753206,
+            753207,
+            753208,
+            753209,
+            753210,
+            753211,
+            753212,
+            753213,
+            753214,
+            753215
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 164,
+          "planning_wall_s": 0.7979887010296807
+        },
+        "8700": {
+          "n": 16,
+          "success": 6,
+          "success_scenes": [
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209
+          ],
+          "front_actions": {
+            "753200": 2,
+            "753201": 0,
+            "753202": 2,
+            "753203": 2,
+            "753204": 1,
+            "753205": 1,
+            "753206": 2,
+            "753207": 2,
+            "753208": 2,
+            "753209": 2,
+            "753210": 1,
+            "753211": 0,
+            "753212": 0,
+            "753213": 1,
+            "753214": 0,
+            "753215": 1
+          },
+          "rear_actions": {
+            "0": 90,
+            "1": 24,
+            "4": 24,
+            "5": 10,
+            "3": 8,
+            "7": 11,
+            "2": 6
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753202,
+            753203,
+            753204,
+            753205,
+            753206,
+            753207,
+            753208,
+            753209,
+            753210,
+            753211,
+            753212,
+            753213,
+            753214,
+            753215
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 167,
+          "planning_wall_s": 0.8223894853144884
+        },
+        "FINAL": {
+          "n": 16,
+          "success": 5,
+          "success_scenes": [
+            753202,
+            753203,
+            753205,
+            753206,
+            753208
+          ],
+          "front_actions": {
+            "753200": 2,
+            "753201": 0,
+            "753202": 2,
+            "753203": 2,
+            "753204": 1,
+            "753205": 1,
+            "753206": 2,
+            "753207": 0,
+            "753208": 2,
+            "753209": 2,
+            "753210": 1,
+            "753211": 0,
+            "753212": 0,
+            "753213": 0,
+            "753214": 0,
+            "753215": 2
+          },
+          "rear_actions": {
+            "0": 72,
+            "2": 8,
+            "1": 17,
+            "4": 30,
+            "5": 21,
+            "7": 9,
+            "3": 12
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753202,
+            753203,
+            753204,
+            753205,
+            753206,
+            753207,
+            753208,
+            753209,
+            753210,
+            753211,
+            753212,
+            753213,
+            753214,
+            753215
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 180,
+          "planning_wall_s": 0.8737424544524401
+        }
+      },
+      "local_training_cost": {
+        "actual_training_steps": 9982,
+        "planner_queries": 1476,
+        "local_rollouts": 220,
+        "captures": [
+          {
+            "seed": 755000,
+            "actual_steps": 64,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755001,
+            "actual_steps": 59,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755002,
+            "actual_steps": 60,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755003,
+            "actual_steps": 73,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755004,
+            "actual_steps": 79,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755005,
+            "actual_steps": 58,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755006,
+            "actual_steps": 60,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755007,
+            "actual_steps": 56,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755008,
+            "actual_steps": 59,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755009,
+            "actual_steps": 57,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755010,
+            "actual_steps": 57,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755011,
+            "actual_steps": 48,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755012,
+            "actual_steps": 68,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755013,
+            "actual_steps": 58,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755014,
+            "actual_steps": 48,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755015,
+            "actual_steps": 67,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755016,
+            "actual_steps": 70,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755017,
+            "actual_steps": 60,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755018,
+            "actual_steps": 43,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755019,
+            "actual_steps": 86,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755020,
+            "actual_steps": 77,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755021,
+            "actual_steps": 55,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755022,
+            "actual_steps": 54,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755023,
+            "actual_steps": 84,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755024,
+            "actual_steps": 76,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755025,
+            "actual_steps": 49,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755026,
+            "actual_steps": 67,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755027,
+            "actual_steps": 58,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          }
+        ],
+        "optimizer_updates": 8800
+      },
+      "native_training_cost": {
+        "episodes": 96,
+        "physical_steps": 9600,
+        "decisions": 1106,
+        "planning_queries": 731,
+        "planning_wall_s": 3.703259648522362,
+        "optimizer_updates": 4840,
+        "optimizer_wall_s": 23.938768371008337,
+        "shared_warm_replay": "61 compatible physical episodes; charged separately, reused identically"
+      },
+      "local_training_success": {
+        "n": 220,
+        "success": 73,
+        "note": "Training initialized suffixes; NOT full-task benchmark success."
+      },
+      "deployment_label_ablation": {
+        "2837": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 0,
+            "753201": 0,
+            "753202": 2,
+            "753203": 0,
+            "753204": 0,
+            "753205": 1,
+            "753206": 0,
+            "753207": 2,
+            "753208": 0,
+            "753209": 2,
+            "753210": 1,
+            "753211": 0,
+            "753212": 2,
+            "753213": 1,
+            "753214": 1,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 161,
+            "2": 2,
+            "7": 7,
+            "1": 4
+          },
+          "active_correction_scenes": [
+            753201,
+            753214
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 117,
+          "planning_wall_s": 0.5763166164979339
+        },
+        "FINAL": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 0,
+            "753201": 0,
+            "753202": 2,
+            "753203": 0,
+            "753204": 0,
+            "753205": 1,
+            "753206": 0,
+            "753207": 2,
+            "753208": 0,
+            "753209": 2,
+            "753210": 1,
+            "753211": 0,
+            "753212": 2,
+            "753213": 1,
+            "753214": 1,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 161,
+            "2": 2,
+            "7": 7,
+            "1": 4
+          },
+          "active_correction_scenes": [
+            753201,
+            753214
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 117,
+          "planning_wall_s": 0.5687777231214568
+        }
+      },
+      "deployment_label_cost": {
+        "actual_training_steps": 2837,
+        "planner_queries": 338,
+        "local_rollouts": 64,
+        "captures": [
+          {
+            "seed": 755000,
+            "actual_steps": 64,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755001,
+            "actual_steps": 59,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755002,
+            "actual_steps": 60,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755003,
+            "actual_steps": 73,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755004,
+            "actual_steps": 79,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755005,
+            "actual_steps": 58,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755006,
+            "actual_steps": 60,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755007,
+            "actual_steps": 56,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          }
+        ],
+        "optimizer_updates": 2560
+      }
+    },
+    "suffix": {
+      "full_native_training_evaluations": {
+        "0": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 0,
+            "753201": 0,
+            "753202": 0,
+            "753203": 0,
+            "753204": 1,
+            "753205": 1,
+            "753206": 0,
+            "753207": 0,
+            "753208": 0,
+            "753209": 2,
+            "753210": 1,
+            "753211": 1,
+            "753212": 2,
+            "753213": 1,
+            "753214": 1,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 148,
+            "7": 24
+          },
+          "active_correction_scenes": [],
+          "physical_steps": 1600,
+          "planning_queries": 112,
+          "planning_wall_s": 0.5851127058267593
+        },
+        "32": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 0,
+            "753201": 0,
+            "753202": 0,
+            "753203": 0,
+            "753204": 0,
+            "753205": 1,
+            "753206": 0,
+            "753207": 0,
+            "753208": 0,
+            "753209": 2,
+            "753210": 1,
+            "753211": 0,
+            "753212": 0,
+            "753213": 1,
+            "753214": 0,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 141,
+            "7": 27
+          },
+          "active_correction_scenes": [],
+          "physical_steps": 1600,
+          "planning_queries": 111,
+          "planning_wall_s": 0.5591106658102944
+        },
+        "64": {
+          "n": 16,
+          "success": 10,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753213,
+            753215
+          ],
+          "front_actions": {
+            "753200": 1,
+            "753201": 0,
+            "753202": 0,
+            "753203": 1,
+            "753204": 1,
+            "753205": 1,
+            "753206": 1,
+            "753207": 2,
+            "753208": 1,
+            "753209": 2,
+            "753210": 2,
+            "753211": 1,
+            "753212": 2,
+            "753213": 0,
+            "753214": 0,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 152,
+            "7": 23
+          },
+          "active_correction_scenes": [],
+          "physical_steps": 1600,
+          "planning_queries": 111,
+          "planning_wall_s": 0.5841004842659459
+        },
+        "96": {
+          "n": 16,
+          "success": 10,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753213,
+            753215
+          ],
+          "front_actions": {
+            "753200": 1,
+            "753201": 0,
+            "753202": 0,
+            "753203": 1,
+            "753204": 1,
+            "753205": 1,
+            "753206": 1,
+            "753207": 2,
+            "753208": 1,
+            "753209": 2,
+            "753210": 1,
+            "753211": 1,
+            "753212": 2,
+            "753213": 0,
+            "753214": 2,
+            "753215": 1
+          },
+          "rear_actions": {
+            "0": 150,
+            "7": 25
+          },
+          "active_correction_scenes": [],
+          "physical_steps": 1600,
+          "planning_queries": 112,
+          "planning_wall_s": 0.5900101648876444
+        }
+      },
+      "local_training_native_evaluations": {
+        "5961": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753211,
+            753213,
+            753215
+          ],
+          "front_actions": {
+            "753200": 1,
+            "753201": 1,
+            "753202": 0,
+            "753203": 1,
+            "753204": 0,
+            "753205": 0,
+            "753206": 1,
+            "753207": 1,
+            "753208": 1,
+            "753209": 2,
+            "753210": 0,
+            "753211": 0,
+            "753212": 2,
+            "753213": 0,
+            "753214": 0,
+            "753215": 1
+          },
+          "rear_actions": {
+            "0": 93,
+            "1": 33,
+            "7": 22,
+            "4": 16,
+            "2": 2,
+            "5": 2
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753204,
+            753206,
+            753207,
+            753208,
+            753209,
+            753210,
+            753211,
+            753212,
+            753213
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 152,
+          "planning_wall_s": 0.7309445491991937
+        },
+        "8700": {
+          "n": 16,
+          "success": 8,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 1,
+            "753201": 1,
+            "753202": 1,
+            "753203": 1,
+            "753204": 1,
+            "753205": 1,
+            "753206": 1,
+            "753207": 0,
+            "753208": 1,
+            "753209": 1,
+            "753210": 1,
+            "753211": 1,
+            "753212": 0,
+            "753213": 2,
+            "753214": 2,
+            "753215": 1
+          },
+          "rear_actions": {
+            "0": 82,
+            "1": 38,
+            "7": 26,
+            "2": 19,
+            "6": 1,
+            "4": 8,
+            "5": 2
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753202,
+            753203,
+            753204,
+            753205,
+            753206,
+            753207,
+            753208,
+            753209,
+            753210,
+            753211,
+            753212,
+            753213,
+            753214
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 164,
+          "planning_wall_s": 0.7520972355268896
+        },
+        "FINAL": {
+          "n": 16,
+          "success": 4,
+          "success_scenes": [
+            753201,
+            753203,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 1,
+            "753201": 1,
+            "753202": 1,
+            "753203": 1,
+            "753204": 1,
+            "753205": 1,
+            "753206": 2,
+            "753207": 2,
+            "753208": 2,
+            "753209": 1,
+            "753210": 1,
+            "753211": 1,
+            "753212": 2,
+            "753213": 1,
+            "753214": 2,
+            "753215": 2
+          },
+          "rear_actions": {
+            "0": 71,
+            "1": 26,
+            "6": 8,
+            "2": 26,
+            "3": 14,
+            "7": 12,
+            "4": 18,
+            "5": 2
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753202,
+            753203,
+            753204,
+            753205,
+            753206,
+            753207,
+            753208,
+            753209,
+            753210,
+            753211,
+            753212,
+            753213,
+            753214
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 193,
+          "planning_wall_s": 0.9614524998469278
+        }
+      },
+      "local_training_cost": {
+        "actual_training_steps": 9990,
+        "planner_queries": 1407,
+        "local_rollouts": 156,
+        "captures": [
+          {
+            "seed": 755008,
+            "actual_steps": 59,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755009,
+            "actual_steps": 57,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755010,
+            "actual_steps": 61,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755011,
+            "actual_steps": 49,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755012,
+            "actual_steps": 65,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755013,
+            "actual_steps": 58,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755014,
+            "actual_steps": 49,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755015,
+            "actual_steps": 70,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755016,
+            "actual_steps": 76,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755017,
+            "actual_steps": 60,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755018,
+            "actual_steps": 43,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755019,
+            "actual_steps": 86,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755020,
+            "actual_steps": 75,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755021,
+            "actual_steps": 51,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755022,
+            "actual_steps": 53,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755023,
+            "actual_steps": 79,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755024,
+            "actual_steps": 76,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755025,
+            "actual_steps": 45,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755026,
+            "actual_steps": 69,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755027,
+            "actual_steps": 60,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          }
+        ],
+        "optimizer_updates": 8800,
+        "resumed_segment_steps": 7153,
+        "recovery": {
+          "checkpoint": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/closed_loop_20261104/local_suffix_31501/CHECKPOINT_2837.pt",
+          "sha256": "e8b397d604dbe1600fda43ce6ff4190acf06c4d3655c5ac5431c18bb4d8aff59",
+          "actual_training_steps": 2837,
+          "recovered_rollouts": 64,
+          "recovered_transitions": 2413,
+          "model_optimizer_and_model_rng": "exact saved checkpoint",
+          "exploration_rng": "explicit fresh local-script seed at restart; NOT bit-identical continuation",
+          "note": "Terminal UnboundLocalError occurred only in attempted zero-step phase after native step100; actual archived100-step outcomes preserved."
+        }
+      },
+      "native_training_cost": {
+        "episodes": 96,
+        "physical_steps": 9600,
+        "decisions": 1103,
+        "planning_queries": 736,
+        "planning_wall_s": 3.7612921750405803,
+        "optimizer_updates": 4840,
+        "optimizer_wall_s": 25.471163346082903,
+        "shared_warm_replay": "61 compatible physical episodes; charged separately, reused identically"
+      },
+      "deployment_label_ablation": {
+        "2815": {
+          "n": 16,
+          "success": 7,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 2,
+            "753201": 2,
+            "753202": 1,
+            "753203": 1,
+            "753204": 0,
+            "753205": 2,
+            "753206": 1,
+            "753207": 0,
+            "753208": 1,
+            "753209": 0,
+            "753210": 0,
+            "753211": 1,
+            "753212": 0,
+            "753213": 0,
+            "753214": 0,
+            "753215": 1
+          },
+          "rear_actions": {
+            "0": 94,
+            "1": 16,
+            "7": 36,
+            "2": 26
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753202,
+            753203,
+            753204,
+            753205,
+            753206,
+            753207,
+            753208,
+            753209,
+            753210,
+            753212,
+            753213,
+            753215
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 142,
+          "planning_wall_s": 0.7308410896221176
+        },
+        "FINAL": {
+          "n": 16,
+          "success": 7,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 2,
+            "753201": 2,
+            "753202": 1,
+            "753203": 1,
+            "753204": 0,
+            "753205": 2,
+            "753206": 1,
+            "753207": 0,
+            "753208": 1,
+            "753209": 0,
+            "753210": 0,
+            "753211": 1,
+            "753212": 0,
+            "753213": 0,
+            "753214": 0,
+            "753215": 1
+          },
+          "rear_actions": {
+            "0": 94,
+            "1": 16,
+            "7": 36,
+            "2": 26
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753202,
+            753203,
+            753204,
+            753205,
+            753206,
+            753207,
+            753208,
+            753209,
+            753210,
+            753212,
+            753213,
+            753215
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 142,
+          "planning_wall_s": 0.7308410896221176
+        }
+      },
+      "deployment_label_cost": {
+        "actual_training_steps": 2815,
+        "planner_queries": 334,
+        "local_rollouts": 63,
+        "captures": [
+          {
+            "seed": 755000,
+            "actual_steps": 64,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755001,
+            "actual_steps": 58,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755002,
+            "actual_steps": 60,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755003,
+            "actual_steps": 73,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755004,
+            "actual_steps": 83,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755005,
+            "actual_steps": 58,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755006,
+            "actual_steps": 53,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755007,
+            "actual_steps": 57,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          }
+        ],
+        "optimizer_updates": 2520
+      }
+    },
+    "budget": {
+      "full_native_training_evaluations": {
+        "0": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 0,
+            "753201": 0,
+            "753202": 0,
+            "753203": 0,
+            "753204": 1,
+            "753205": 1,
+            "753206": 0,
+            "753207": 0,
+            "753208": 0,
+            "753209": 2,
+            "753210": 1,
+            "753211": 1,
+            "753212": 0,
+            "753213": 1,
+            "753214": 1,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 148,
+            "7": 23
+          },
+          "active_correction_scenes": [],
+          "physical_steps": 1600,
+          "planning_queries": 112,
+          "planning_wall_s": 0.5812617876799777
+        },
+        "32": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 0,
+            "753201": 0,
+            "753202": 0,
+            "753203": 0,
+            "753204": 0,
+            "753205": 1,
+            "753206": 0,
+            "753207": 0,
+            "753208": 1,
+            "753209": 0,
+            "753210": 1,
+            "753211": 0,
+            "753212": 0,
+            "753213": 1,
+            "753214": 1,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 142,
+            "7": 26
+          },
+          "active_correction_scenes": [],
+          "physical_steps": 1600,
+          "planning_queries": 112,
+          "planning_wall_s": 0.5716586470371112
+        },
+        "64": {
+          "n": 16,
+          "success": 9,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753209,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 2,
+            "753201": 0,
+            "753202": 0,
+            "753203": 0,
+            "753204": 1,
+            "753205": 1,
+            "753206": 0,
+            "753207": 0,
+            "753208": 1,
+            "753209": 2,
+            "753210": 1,
+            "753211": 0,
+            "753212": 0,
+            "753213": 1,
+            "753214": 1,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 144,
+            "7": 26
+          },
+          "active_correction_scenes": [],
+          "physical_steps": 1600,
+          "planning_queries": 112,
+          "planning_wall_s": 0.5592186418361962
+        },
+        "96": {
+          "n": 16,
+          "success": 8,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 2,
+            "753201": 0,
+            "753202": 0,
+            "753203": 0,
+            "753204": 2,
+            "753205": 2,
+            "753206": 0,
+            "753207": 0,
+            "753208": 1,
+            "753209": 0,
+            "753210": 2,
+            "753211": 0,
+            "753212": 0,
+            "753213": 0,
+            "753214": 2,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 135,
+            "7": 38,
+            "2": 1,
+            "1": 4
+          },
+          "active_correction_scenes": [
+            753201,
+            753214
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 117,
+          "planning_wall_s": 0.6214191443286836
+        }
+      },
+      "local_training_native_evaluations": {
+        "2837": {
+          "n": 16,
+          "success": 5,
+          "success_scenes": [
+            753203,
+            753205,
+            753206,
+            753208,
+            753211
+          ],
+          "front_actions": {
+            "753200": 2,
+            "753201": 2,
+            "753202": 0,
+            "753203": 0,
+            "753204": 2,
+            "753205": 0,
+            "753206": 1,
+            "753207": 0,
+            "753208": 1,
+            "753209": 0,
+            "753210": 2,
+            "753211": 0,
+            "753212": 0,
+            "753213": 0,
+            "753214": 2,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 77,
+            "1": 15,
+            "2": 31,
+            "7": 16,
+            "5": 10,
+            "4": 17
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753202,
+            753203,
+            753204,
+            753205,
+            753206,
+            753207,
+            753208,
+            753209,
+            753210,
+            753212,
+            753213,
+            753214,
+            753215
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 164,
+          "planning_wall_s": 0.8321498670848086
+        },
+        "5975": {
+          "n": 16,
+          "success": 4,
+          "success_scenes": [
+            753203,
+            753205,
+            753206,
+            753211
+          ],
+          "front_actions": {
+            "753200": 2,
+            "753201": 2,
+            "753202": 0,
+            "753203": 2,
+            "753204": 1,
+            "753205": 0,
+            "753206": 1,
+            "753207": 0,
+            "753208": 1,
+            "753209": 2,
+            "753210": 0,
+            "753211": 0,
+            "753212": 0,
+            "753213": 0,
+            "753214": 2,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 68,
+            "1": 5,
+            "5": 15,
+            "2": 21,
+            "7": 28,
+            "4": 7,
+            "3": 29
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753203,
+            753204,
+            753205,
+            753206,
+            753207,
+            753208,
+            753209,
+            753210,
+            753211,
+            753212,
+            753213,
+            753214,
+            753215
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 172,
+          "planning_wall_s": 0.8605894544161856
+        },
+        "8735": {
+          "n": 16,
+          "success": 5,
+          "success_scenes": [
+            753202,
+            753203,
+            753205,
+            753206,
+            753208
+          ],
+          "front_actions": {
+            "753200": 1,
+            "753201": 2,
+            "753202": 2,
+            "753203": 2,
+            "753204": 1,
+            "753205": 1,
+            "753206": 1,
+            "753207": 1,
+            "753208": 1,
+            "753209": 1,
+            "753210": 0,
+            "753211": 0,
+            "753212": 1,
+            "753213": 0,
+            "753214": 0,
+            "753215": 0
+          },
+          "rear_actions": {
+            "0": 83,
+            "5": 6,
+            "1": 26,
+            "2": 18,
+            "4": 13,
+            "7": 13,
+            "3": 10
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753202,
+            753203,
+            753204,
+            753205,
+            753206,
+            753207,
+            753208,
+            753209,
+            753210,
+            753211,
+            753212,
+            753213,
+            753214,
+            753215
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 168,
+          "planning_wall_s": 0.8238642920041457
+        },
+        "FINAL": {
+          "n": 16,
+          "success": 6,
+          "success_scenes": [
+            753202,
+            753203,
+            753205,
+            753206,
+            753211,
+            753215
+          ],
+          "front_actions": {
+            "753200": 2,
+            "753201": 1,
+            "753202": 2,
+            "753203": 2,
+            "753204": 1,
+            "753205": 2,
+            "753206": 2,
+            "753207": 1,
+            "753208": 2,
+            "753209": 2,
+            "753210": 2,
+            "753211": 2,
+            "753212": 1,
+            "753213": 0,
+            "753214": 0,
+            "753215": 0
+          },
+          "rear_actions": {
+            "7": 17,
+            "5": 16,
+            "0": 81,
+            "1": 27,
+            "2": 20,
+            "4": 5,
+            "3": 9
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753202,
+            753203,
+            753204,
+            753205,
+            753206,
+            753207,
+            753208,
+            753209,
+            753210,
+            753212,
+            753213,
+            753214,
+            753215
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 175,
+          "planning_wall_s": 0.8513644207268953
+        }
+      },
+      "local_training_cost": {
+        "actual_training_steps": 9996,
+        "planner_queries": 1763,
+        "local_rollouts": 219,
+        "captures": [
+          {
+            "seed": 755000,
+            "actual_steps": 65,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755001,
+            "actual_steps": 55,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755002,
+            "actual_steps": 60,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755003,
+            "actual_steps": 73,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755004,
+            "actual_steps": 79,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755005,
+            "actual_steps": 61,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755006,
+            "actual_steps": 60,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755007,
+            "actual_steps": 56,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755008,
+            "actual_steps": 59,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755009,
+            "actual_steps": 57,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755010,
+            "actual_steps": 57,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755011,
+            "actual_steps": 49,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755012,
+            "actual_steps": 68,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755013,
+            "actual_steps": 58,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755014,
+            "actual_steps": 48,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755015,
+            "actual_steps": 70,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755016,
+            "actual_steps": 70,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755017,
+            "actual_steps": 57,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755018,
+            "actual_steps": 43,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755019,
+            "actual_steps": 86,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755020,
+            "actual_steps": 75,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755021,
+            "actual_steps": 51,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755022,
+            "actual_steps": 54,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755023,
+            "actual_steps": 84,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755024,
+            "actual_steps": 72,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755025,
+            "actual_steps": 48,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755026,
+            "actual_steps": 69,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755027,
+            "actual_steps": 58,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          }
+        ],
+        "optimizer_updates": 8760
+      },
+      "native_training_cost": {
+        "episodes": 96,
+        "physical_steps": 9600,
+        "decisions": 1098,
+        "planning_queries": 728,
+        "planning_wall_s": 3.6119131004670635,
+        "optimizer_updates": 4840,
+        "optimizer_wall_s": 25.647969055338763,
+        "shared_warm_replay": "61 compatible physical episodes; charged separately, reused identically"
+      },
+      "local_training_success": {
+        "n": 219,
+        "success": 48,
+        "note": "Training initialized suffixes; NOT full-task benchmark success."
+      },
+      "deployment_label_ablation": {
+        "FINAL": {
+          "n": 16,
+          "success": 7,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753211
+          ],
+          "front_actions": {
+            "753200": 1,
+            "753201": 1,
+            "753202": 0,
+            "753203": 1,
+            "753204": 1,
+            "753205": 1,
+            "753206": 1,
+            "753207": 0,
+            "753208": 1,
+            "753209": 0,
+            "753210": 1,
+            "753211": 1,
+            "753212": 0,
+            "753213": 0,
+            "753214": 0,
+            "753215": 1
+          },
+          "rear_actions": {
+            "0": 87,
+            "1": 20,
+            "7": 25,
+            "2": 9,
+            "3": 14,
+            "4": 13
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753203,
+            753204,
+            753205,
+            753207,
+            753208,
+            753209,
+            753210,
+            753212,
+            753213,
+            753214,
+            753215
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 156,
+          "planning_wall_s": 0.7092354609631002
+        },
+        "2830": {
+          "n": 16,
+          "success": 7,
+          "success_scenes": [
+            753200,
+            753202,
+            753203,
+            753205,
+            753206,
+            753208,
+            753211
+          ],
+          "front_actions": {
+            "753200": 1,
+            "753201": 1,
+            "753202": 0,
+            "753203": 1,
+            "753204": 1,
+            "753205": 1,
+            "753206": 1,
+            "753207": 0,
+            "753208": 1,
+            "753209": 0,
+            "753210": 1,
+            "753211": 1,
+            "753212": 0,
+            "753213": 0,
+            "753214": 0,
+            "753215": 1
+          },
+          "rear_actions": {
+            "0": 87,
+            "1": 20,
+            "7": 25,
+            "2": 9,
+            "3": 14,
+            "4": 13
+          },
+          "active_correction_scenes": [
+            753200,
+            753201,
+            753203,
+            753204,
+            753205,
+            753207,
+            753208,
+            753209,
+            753210,
+            753212,
+            753213,
+            753214,
+            753215
+          ],
+          "physical_steps": 1600,
+          "planning_queries": 156,
+          "planning_wall_s": 0.7092354609631002
+        }
+      },
+      "deployment_label_cost": {
+        "actual_training_steps": 2830,
+        "planner_queries": 442,
+        "local_rollouts": 64,
+        "captures": [
+          {
+            "seed": 755000,
+            "actual_steps": 65,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755001,
+            "actual_steps": 58,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755002,
+            "actual_steps": 61,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755003,
+            "actual_steps": 73,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755004,
+            "actual_steps": 79,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755005,
+            "actual_steps": 58,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755006,
+            "actual_steps": 60,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          },
+          {
+            "seed": 755007,
+            "actual_steps": 56,
+            "planner_queries": 3,
+            "scope": "ACTUAL_REACHABLE_PREFIX"
+          }
+        ],
+        "optimizer_updates": 2560
+      }
+    }
+  },
+  "paired": {
+    "suffix_96": {
+      "rescued": [
+        753213
+      ],
+      "regressed": [],
+      "note": "Same native initial states; different predecessors/policies, not identical handoffs."
+    },
+    "budget_96": {
+      "rescued": [],
+      "regressed": [
+        753209
+      ],
+      "note": "Same native initial states; different predecessors/policies, not identical handoffs."
+    },
+    "suffix_local_FINAL": {
+      "rescued": [
+        753201,
+        753211,
+        753215
+      ],
+      "regressed": [
+        753202,
+        753205,
+        753206,
+        753208
+      ],
+      "note": "Same native initial states; different predecessors/policies, not identical handoffs."
+    },
+    "budget_local_FINAL": {
+      "rescued": [
+        753211,
+        753215
+      ],
+      "regressed": [
+        753208
+      ],
+      "note": "Same native initial states; different predecessors/policies, not identical handoffs."
+    }
+  },
+  "actual_physics_by_scope": {
+    "FULL_NATIVE": {
+      "recorded_episode_wall_s": 9757.218992448878,
+      "files": 1431,
+      "physical_steps": 143100,
+      "decisions": 15491,
+      "planning_queries": 13381,
+      "planning_wall_s": 66.62898519122973
+    },
+    "ACTUAL_REACHABLE_PREFIX": {
+      "recorded_episode_wall_s": 0,
+      "files": 116,
+      "physical_steps": 7256,
+      "decisions": 116,
+      "planning_queries": 348,
+      "planning_wall_s": 2.0101879857247695
+    },
+    "LOCAL_REACHABLE_HANDOFF": {
+      "recorded_episode_wall_s": 0,
+      "files": 875,
+      "physical_steps": 32640,
+      "decisions": 9294,
+      "planning_queries": 5934,
+      "planning_wall_s": 28.189237899612635
+    }
+  },
+  "cost_completeness": "Archived steps exactly counted; failed CUDA evaluation contains an unarchived partial attempt, so total attempted physical steps are a lower bound.",
+  "exceptions_preserved": [
+    {
+      "path": "local_budget_31501/capture_755004/suffix_0.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755004/suffix_1.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755004/suffix_2.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755004/suffix_4.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755004/suffix_5.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755019/suffix_0.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755019/suffix_1.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755019/suffix_2.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755019/suffix_3.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755019/suffix_4.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755019/suffix_5.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755019/suffix_6.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755019/suffix_7.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755023/suffix_0.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755023/suffix_1.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755023/suffix_2.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755023/suffix_3.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755023/suffix_4.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_budget_31501/capture_755023/suffix_6.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755004/suffix_0.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755016/suffix_3.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755016/suffix_4.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755016/suffix_6.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755016/suffix_7.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755019/suffix_0.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755019/suffix_1.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755019/suffix_2.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755019/suffix_3.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755019/suffix_4.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755019/suffix_5.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755019/suffix_6.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755019/suffix_7.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755023/suffix_2.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755023/suffix_4.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755023/suffix_6.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755023/suffix_7.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755024/suffix_0.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755024/suffix_1.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755024/suffix_3.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755024/suffix_5.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_ordinary_31501/capture_755024/suffix_7.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "local_suffix_31501/capture_755004/suffix_0.json.gz",
+      "error": "UnboundLocalError:cannot access local variable 'out' where it is not associated with a value"
+    },
+    {
+      "path": "pilot/feedback/00001_753000_zero.json.gz",
+      "error": "TypeError:can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first."
+    },
+    {
+      "path": "train_budget_v4_31501/physics/00077_754144_online_44.json.gz",
+      "error": "IndexError:index -1 is out of bounds for axis 0 with size 0"
+    }
+  ],
+  "note": "Local initialization is training only, charged prefix once and every actual suffix step. Full evaluation has no handoff reset. Seen development scenes, one training seed; no sealed tests."
+}

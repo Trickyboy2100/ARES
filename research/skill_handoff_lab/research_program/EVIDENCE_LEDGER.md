@@ -149,3 +149,8 @@ Candidate substitutes physically measured suffix values at exact SkillResult int
 New diagnosis: legal newly introduced actions lack historical execution support. Ordinary SAC terminal new-action Q exceeds1 on7/29 distinct old handoffs per seed; CQL removes this audited overflow. Same-data FQI15/32,18/32 versus CQL18/32,18/32, still not an independent method. IQL18/32,19/32. Neither calibration nor an isolated control rescue proves a paper contribution. Development now seen; complete-coverage/CQL are disclosed iterative revisions, not sealed validation.
 
 RETAIN strong shared controller, explicit action-schema compatibility, finite RL controls, all real data/weights and shared split primitive. LOCAL_NEGATIVE measured-backup/coverage revision. Next investigate a physically legal broader predecessor parameter domain with explicit grip margins and the nominal option retained; require opportunity beyond strongest fixed/search control, keep conservative/support-aware baselines, and do not expand this failed backup unchanged. Method status remains UNVERIFIED. ARES-R/read-only and hardware/network isolation preserved.
+
+
+## 2026-11-04 — Closed-loop feedback and budget-conditioned joint training
+
+[Full evidence](evidence/EXP-004/2026-11-04/closed_loop/README.md) · [Review](evidence/EXP-004/2026-11-04/closed_loop/REVIEW.html) · [Metrics](evidence/EXP-004/2026-11-04/closed_loop/RESULTS_SUMMARY.json). Native100 physical curves, actual8-action successor execution, matched SAC/scalar/budget training, initialized-training costs, strict native-prefix falsification, deployment-label ablation, all model/source/raw archives and failure records. New operation benefit and independent algorithm gain bothUNVERIFIED.

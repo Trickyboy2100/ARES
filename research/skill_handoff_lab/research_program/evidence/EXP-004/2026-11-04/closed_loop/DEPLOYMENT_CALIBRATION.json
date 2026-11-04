@@ -1,0 +1,659 @@
+{
+  "ordinary": {
+    "rows": [
+      {
+        "scene": 753200,
+        "success": true,
+        "grasp": 0,
+        "handoff_step": 52,
+        "remaining": 47.999998927116394,
+        "hazard_probability": 0.9569031000137329,
+        "scalar_probability": 0.9920464754104614,
+        "rear_actions": {
+          "0": 13
+        }
+      },
+      {
+        "scene": 753201,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 75,
+        "remaining": 25.0,
+        "hazard_probability": 0.008172392845153809,
+        "scalar_probability": 0.00577792851254344,
+        "rear_actions": {
+          "0": 6,
+          "2": 2
+        }
+      },
+      {
+        "scene": 753202,
+        "success": true,
+        "grasp": 2,
+        "handoff_step": 48,
+        "remaining": 51.99999809265137,
+        "hazard_probability": 0.9998466372489929,
+        "scalar_probability": 0.9999176263809204,
+        "rear_actions": {
+          "0": 14
+        }
+      },
+      {
+        "scene": 753203,
+        "success": true,
+        "grasp": 0,
+        "handoff_step": 49,
+        "remaining": 50.999999046325684,
+        "hazard_probability": 0.9985984563827515,
+        "scalar_probability": 0.999915361404419,
+        "rear_actions": {
+          "0": 11,
+          "7": 3
+        }
+      },
+      {
+        "scene": 753204,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 75,
+        "remaining": 25.0,
+        "hazard_probability": 0.0016513466835021973,
+        "scalar_probability": 0.0007601630059070885,
+        "rear_actions": {
+          "0": 8
+        }
+      },
+      {
+        "scene": 753205,
+        "success": true,
+        "grasp": 1,
+        "handoff_step": 58,
+        "remaining": 41.999998688697815,
+        "hazard_probability": 0.9948093891143799,
+        "scalar_probability": 0.22710278630256653,
+        "rear_actions": {
+          "0": 10,
+          "7": 2
+        }
+      },
+      {
+        "scene": 753206,
+        "success": true,
+        "grasp": 0,
+        "handoff_step": 47,
+        "remaining": 52.99999713897705,
+        "hazard_probability": 0.9962992668151855,
+        "scalar_probability": 0.9996441602706909,
+        "rear_actions": {
+          "0": 15
+        }
+      },
+      {
+        "scene": 753207,
+        "success": false,
+        "grasp": 2,
+        "handoff_step": 74,
+        "remaining": 25.999999046325684,
+        "hazard_probability": 0.0005548596382141113,
+        "scalar_probability": 0.0003103089111391455,
+        "rear_actions": {
+          "0": 9
+        }
+      },
+      {
+        "scene": 753208,
+        "success": true,
+        "grasp": 0,
+        "handoff_step": 52,
+        "remaining": 47.999998927116394,
+        "hazard_probability": 0.991905689239502,
+        "scalar_probability": 0.9991870522499084,
+        "rear_actions": {
+          "0": 14
+        }
+      },
+      {
+        "scene": 753209,
+        "success": true,
+        "grasp": 2,
+        "handoff_step": 57,
+        "remaining": 43.00000071525574,
+        "hazard_probability": 0.011983335018157959,
+        "scalar_probability": 0.006074360106140375,
+        "rear_actions": {
+          "0": 11,
+          "7": 1
+        }
+      },
+      {
+        "scene": 753210,
+        "success": false,
+        "grasp": 1,
+        "handoff_step": 86,
+        "remaining": 14.000000059604645,
+        "hazard_probability": 1.7523765563964844e-05,
+        "scalar_probability": 0.0030493319500237703,
+        "rear_actions": {
+          "0": 5
+        }
+      },
+      {
+        "scene": 753211,
+        "success": true,
+        "grasp": 0,
+        "handoff_step": 46,
+        "remaining": 54.00000214576721,
+        "hazard_probability": 0.9969014525413513,
+        "scalar_probability": 0.9988831877708435,
+        "rear_actions": {
+          "0": 15
+        }
+      },
+      {
+        "scene": 753212,
+        "success": false,
+        "grasp": 2,
+        "handoff_step": 73,
+        "remaining": 27.000001072883606,
+        "hazard_probability": 0.0004950761795043945,
+        "scalar_probability": 0.000831824610941112,
+        "rear_actions": {
+          "0": 9
+        }
+      },
+      {
+        "scene": 753213,
+        "success": false,
+        "grasp": 1,
+        "handoff_step": 73,
+        "remaining": 27.000001072883606,
+        "hazard_probability": 0.0021857023239135742,
+        "scalar_probability": 0.15616348385810852,
+        "rear_actions": {
+          "0": 9
+        }
+      },
+      {
+        "scene": 753214,
+        "success": false,
+        "grasp": 1,
+        "handoff_step": 80,
+        "remaining": 20.000000298023224,
+        "hazard_probability": 5.0187110900878906e-05,
+        "scalar_probability": 0.9790148138999939,
+        "rear_actions": {
+          "0": 2,
+          "1": 4
+        }
+      },
+      {
+        "scene": 753215,
+        "success": true,
+        "grasp": 0,
+        "handoff_step": 61,
+        "remaining": 38.999998569488525,
+        "hazard_probability": 0.3310815691947937,
+        "scalar_probability": 0.9986963868141174,
+        "rear_actions": {
+          "0": 10,
+          "7": 1
+        }
+      }
+    ],
+    "hazard_brier": 0.08910492079732046,
+    "scalar_brier": 0.1605141484841378
+  },
+  "suffix": {
+    "rows": [
+      {
+        "scene": 753200,
+        "success": true,
+        "grasp": 2,
+        "handoff_step": 49,
+        "remaining": 50.999999046325684,
+        "hazard_probability": 0.8469487428665161,
+        "scalar_probability": 0.9886919260025024,
+        "rear_actions": {
+          "0": 8,
+          "1": 1,
+          "7": 5
+        }
+      },
+      {
+        "scene": 753201,
+        "success": false,
+        "grasp": 2,
+        "handoff_step": 80,
+        "remaining": 20.000000298023224,
+        "hazard_probability": 0.0006282925605773926,
+        "scalar_probability": 0.0013527142582461238,
+        "rear_actions": {
+          "0": 4,
+          "7": 2,
+          "2": 1
+        }
+      },
+      {
+        "scene": 753202,
+        "success": true,
+        "grasp": 1,
+        "handoff_step": 48,
+        "remaining": 51.99999809265137,
+        "hazard_probability": 0.9999697208404541,
+        "scalar_probability": 0.9999569654464722,
+        "rear_actions": {
+          "0": 13,
+          "2": 1
+        }
+      },
+      {
+        "scene": 753203,
+        "success": true,
+        "grasp": 1,
+        "handoff_step": 49,
+        "remaining": 50.999999046325684,
+        "hazard_probability": 0.997187614440918,
+        "scalar_probability": 0.9998483657836914,
+        "rear_actions": {
+          "0": 10,
+          "2": 2,
+          "7": 3
+        }
+      },
+      {
+        "scene": 753204,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 75,
+        "remaining": 25.0,
+        "hazard_probability": 0.0013819336891174316,
+        "scalar_probability": 0.0018996006110683084,
+        "rear_actions": {
+          "0": 5,
+          "7": 3,
+          "1": 1
+        }
+      },
+      {
+        "scene": 753205,
+        "success": true,
+        "grasp": 2,
+        "handoff_step": 58,
+        "remaining": 41.999998688697815,
+        "hazard_probability": 0.999011218547821,
+        "scalar_probability": 0.2726941406726837,
+        "rear_actions": {
+          "0": 9,
+          "2": 1,
+          "1": 1,
+          "7": 1
+        }
+      },
+      {
+        "scene": 753206,
+        "success": true,
+        "grasp": 1,
+        "handoff_step": 47,
+        "remaining": 52.99999713897705,
+        "hazard_probability": 0.9981951713562012,
+        "scalar_probability": 0.9998950958251953,
+        "rear_actions": {
+          "2": 2,
+          "0": 7,
+          "7": 5
+        }
+      },
+      {
+        "scene": 753207,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 80,
+        "remaining": 20.000000298023224,
+        "hazard_probability": 2.0802021026611328e-05,
+        "scalar_probability": 4.006059680250473e-05,
+        "rear_actions": {
+          "1": 5,
+          "0": 2
+        }
+      },
+      {
+        "scene": 753208,
+        "success": false,
+        "grasp": 1,
+        "handoff_step": 55,
+        "remaining": 44.999998807907104,
+        "hazard_probability": 0.9470572471618652,
+        "scalar_probability": 0.9846619367599487,
+        "rear_actions": {
+          "2": 10,
+          "0": 3
+        }
+      },
+      {
+        "scene": 753209,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 57,
+        "remaining": 43.00000071525574,
+        "hazard_probability": 0.001987457275390625,
+        "scalar_probability": 0.003432132536545396,
+        "rear_actions": {
+          "0": 2,
+          "7": 2,
+          "1": 3,
+          "2": 6
+        }
+      },
+      {
+        "scene": 753210,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 86,
+        "remaining": 14.000000059604645,
+        "hazard_probability": 4.988908767700195e-05,
+        "scalar_probability": 0.004403260070830584,
+        "rear_actions": {
+          "0": 2,
+          "7": 2,
+          "1": 1
+        }
+      },
+      {
+        "scene": 753211,
+        "success": true,
+        "grasp": 1,
+        "handoff_step": 46,
+        "remaining": 54.00000214576721,
+        "hazard_probability": 0.9951404333114624,
+        "scalar_probability": 0.999916672706604,
+        "rear_actions": {
+          "0": 9,
+          "7": 6
+        }
+      },
+      {
+        "scene": 753212,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 76,
+        "remaining": 23.999999463558197,
+        "hazard_probability": 0.0017908215522766113,
+        "scalar_probability": 0.0004452803696040064,
+        "rear_actions": {
+          "0": 2,
+          "7": 2,
+          "1": 4
+        }
+      },
+      {
+        "scene": 753213,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 69,
+        "remaining": 31.00000023841858,
+        "hazard_probability": 0.008098065853118896,
+        "scalar_probability": 0.017851874232292175,
+        "rear_actions": {
+          "0": 6,
+          "7": 3,
+          "2": 1
+        }
+      },
+      {
+        "scene": 753214,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 86,
+        "remaining": 14.000000059604645,
+        "hazard_probability": 1.6033649444580078e-05,
+        "scalar_probability": 0.8847537040710449,
+        "rear_actions": {
+          "0": 3,
+          "7": 2
+        }
+      },
+      {
+        "scene": 753215,
+        "success": true,
+        "grasp": 1,
+        "handoff_step": 62,
+        "remaining": 37.99999952316284,
+        "hazard_probability": 0.8855704069137573,
+        "scalar_probability": 0.999811589717865,
+        "rear_actions": {
+          "0": 9,
+          "2": 2
+        }
+      }
+    ],
+    "hazard_brier": 0.05834669079803678,
+    "scalar_brier": 0.14261284414104644
+  },
+  "budget": {
+    "rows": [
+      {
+        "scene": 753200,
+        "success": true,
+        "grasp": 1,
+        "handoff_step": 50,
+        "remaining": 50.0,
+        "hazard_probability": 0.9964004755020142,
+        "scalar_probability": 0.8989772796630859,
+        "rear_actions": {
+          "0": 8,
+          "1": 5,
+          "7": 1
+        }
+      },
+      {
+        "scene": 753201,
+        "success": false,
+        "grasp": 1,
+        "handoff_step": 77,
+        "remaining": 23.000000417232513,
+        "hazard_probability": 0.0022904276847839355,
+        "scalar_probability": 0.0009530068491585553,
+        "rear_actions": {
+          "2": 3,
+          "0": 4
+        }
+      },
+      {
+        "scene": 753202,
+        "success": true,
+        "grasp": 0,
+        "handoff_step": 49,
+        "remaining": 50.999999046325684,
+        "hazard_probability": 0.9302904605865479,
+        "scalar_probability": 0.9975766539573669,
+        "rear_actions": {
+          "0": 9,
+          "7": 5
+        }
+      },
+      {
+        "scene": 753203,
+        "success": true,
+        "grasp": 1,
+        "handoff_step": 49,
+        "remaining": 50.999999046325684,
+        "hazard_probability": 0.9999998807907104,
+        "scalar_probability": 0.9993218183517456,
+        "rear_actions": {
+          "0": 7,
+          "2": 1,
+          "7": 6
+        }
+      },
+      {
+        "scene": 753204,
+        "success": false,
+        "grasp": 1,
+        "handoff_step": 73,
+        "remaining": 27.000001072883606,
+        "hazard_probability": 0.004380464553833008,
+        "scalar_probability": 0.0005044419667683542,
+        "rear_actions": {
+          "1": 7,
+          "0": 2
+        }
+      },
+      {
+        "scene": 753205,
+        "success": true,
+        "grasp": 1,
+        "handoff_step": 58,
+        "remaining": 41.999998688697815,
+        "hazard_probability": 0.8053695559501648,
+        "scalar_probability": 0.0018755195196717978,
+        "rear_actions": {
+          "0": 10,
+          "1": 1,
+          "7": 1
+        }
+      },
+      {
+        "scene": 753206,
+        "success": true,
+        "grasp": 1,
+        "handoff_step": 47,
+        "remaining": 52.99999713897705,
+        "hazard_probability": 0.9999934434890747,
+        "scalar_probability": 0.9999363422393799,
+        "rear_actions": {
+          "0": 13,
+          "7": 1
+        }
+      },
+      {
+        "scene": 753207,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 80,
+        "remaining": 20.000000298023224,
+        "hazard_probability": 4.476308822631836e-05,
+        "scalar_probability": 0.00010039767221314833,
+        "rear_actions": {
+          "3": 2,
+          "7": 1,
+          "4": 4
+        }
+      },
+      {
+        "scene": 753208,
+        "success": true,
+        "grasp": 1,
+        "handoff_step": 55,
+        "remaining": 44.999998807907104,
+        "hazard_probability": 0.9997400045394897,
+        "scalar_probability": 0.9921627640724182,
+        "rear_actions": {
+          "0": 10,
+          "1": 1,
+          "7": 1
+        }
+      },
+      {
+        "scene": 753209,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 57,
+        "remaining": 43.00000071525574,
+        "hazard_probability": 0.001402735710144043,
+        "scalar_probability": 0.0002827043936122209,
+        "rear_actions": {
+          "3": 5,
+          "1": 1,
+          "4": 4,
+          "7": 2
+        }
+      },
+      {
+        "scene": 753210,
+        "success": false,
+        "grasp": 1,
+        "handoff_step": 86,
+        "remaining": 14.000000059604645,
+        "hazard_probability": 1.2874603271484375e-05,
+        "scalar_probability": 0.00019633947522379458,
+        "rear_actions": {
+          "3": 3,
+          "0": 1,
+          "1": 1
+        }
+      },
+      {
+        "scene": 753211,
+        "success": true,
+        "grasp": 1,
+        "handoff_step": 46,
+        "remaining": 54.00000214576721,
+        "hazard_probability": 0.9952831864356995,
+        "scalar_probability": 0.5210632085800171,
+        "rear_actions": {
+          "0": 14,
+          "7": 1
+        }
+      },
+      {
+        "scene": 753212,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 76,
+        "remaining": 23.999999463558197,
+        "hazard_probability": 4.416704177856445e-05,
+        "scalar_probability": 0.00040145483217202127,
+        "rear_actions": {
+          "1": 4,
+          "4": 2,
+          "0": 1,
+          "3": 1
+        }
+      },
+      {
+        "scene": 753213,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 69,
+        "remaining": 31.00000023841858,
+        "hazard_probability": 0.0009565353393554688,
+        "scalar_probability": 0.002265354385599494,
+        "rear_actions": {
+          "0": 1,
+          "7": 5,
+          "3": 3,
+          "4": 1
+        }
+      },
+      {
+        "scene": 753214,
+        "success": false,
+        "grasp": 0,
+        "handoff_step": 86,
+        "remaining": 14.000000059604645,
+        "hazard_probability": 8.165836334228516e-06,
+        "scalar_probability": 0.997847318649292,
+        "rear_actions": {
+          "0": 2,
+          "4": 2
+        }
+      },
+      {
+        "scene": 753215,
+        "success": false,
+        "grasp": 1,
+        "handoff_step": 62,
+        "remaining": 37.99999952316284,
+        "hazard_probability": 0.9820863008499146,
+        "scalar_probability": 0.5777196884155273,
+        "rear_actions": {
+          "0": 5,
+          "2": 5,
+          "7": 1
+        }
+      }
+    ],
+    "hazard_brier": 0.06295603286523166,
+    "scalar_brier": 0.16033576072119676
+  }
+}
