@@ -23,6 +23,17 @@ for mode in ['ordinary','suffix','budget']:
  methods[mode]=dict(full_native_training_evaluations=ss,local_training_native_evaluations=loc,local_training_cost=json.loads((local/'COST.json').read_text())if(local/'COST.json').exists()else None)
  if (local/'LOCAL_ROWS.json').exists():
   rr=json.loads((local/'LOCAL_ROWS.json').read_text());methods[mode]['local_training_success']=dict(n=len(rr),success=sum(x['success']for x in rr),note='Training initialized suffixes; NOT full-task benchmark success.')
+# Failed evaluation interrupted suffix training after a valid checkpoint.
+resume=r/'local_suffix_resume_31501'
+if resume.exists():
+ v=methods['suffix'];recovery=json.loads((r/'local_suffix_recovered/RECOVERY.json').read_text());offset=recovery['actual_training_steps']
+ for f in sorted(resume.glob('EVAL_*.json')):
+  k=f.stem[5:];v['local_training_native_evaluations'][str(int(k)+offset)if k!='FINAL'else k]=score(json.loads(f.read_text()))
+ if (resume/'COST.json').exists():
+  c=json.loads((resume/'COST.json').read_text());c['resumed_segment_steps']=c['actual_training_steps'];c['actual_training_steps']+=offset;c['optimizer_updates']+=2560;c['recovery']=recovery;v['local_training_cost']=c
+for mode in methods:
+ d=r/f'deployment_labels_{mode}';methods[mode]['deployment_label_ablation']={f.stem[5:]:score(json.loads(f.read_text()))for f in d.glob('EVAL_*.json')}
+ if (d/'COST.json').exists():methods[mode]['deployment_label_cost']=json.loads((d/'COST.json').read_text())
 for name in ['96','local_FINAL']:
  base=methods['ordinary']['full_native_training_evaluations'].get(name)if not name.startswith('local')else methods['ordinary']['local_training_native_evaluations'].get('FINAL')
  if base:
@@ -30,7 +41,7 @@ for name in ['96','local_FINAL']:
    z=methods[mode]['full_native_training_evaluations'].get(name)if not name.startswith('local')else methods[mode]['local_training_native_evaluations'].get('FINAL')
    if z:
     aa=set(base['success_scenes']);bb=set(z['success_scenes']);comparisons[mode+'_'+name]=dict(rescued=sorted(bb-aa),regressed=sorted(aa-bb),note='Same native initial states; different predecessors/policies, not identical handoffs.')
-result=dict(status='UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN',methods=methods,paired= comparisons,actual_physics_by_scope={k:dict(v)for k,v in allcost.items()},exceptions_preserved=errors,note='Local initialization is training only, charged prefix once and every actual suffix step. Full evaluation has no handoff reset. Seen development scenes, one training seed; no sealed tests.')
+result=dict(status='UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN',methods=methods,paired= comparisons,actual_physics_by_scope={k:dict(v)for k,v in allcost.items()},cost_completeness='Archived steps exactly counted; failed CUDA evaluation contains an unarchived partial attempt, so total attempted physical steps are a lower bound.',exceptions_preserved=errors,note='Local initialization is training only, charged prefix once and every actual suffix step. Full evaluation has no handoff reset. Seen development scenes, one training seed; no sealed tests.')
 (r/'RESULTS_SUMMARY.json').write_text(json.dumps(result,indent=2));print(json.dumps({k:{'native':{n:z['success']for n,z in v['full_native_training_evaluations'].items()},'local':{n:z['success']for n,z in v['local_training_native_evaluations'].items()}}for k,v in methods.items()},indent=2))
 import matplotlib;matplotlib.use('Agg');import matplotlib.pyplot as plt
 (r/'figures').mkdir(exist_ok=True);fig,axs=plt.subplots(1,2,figsize=(11,4.2),sharey=True)

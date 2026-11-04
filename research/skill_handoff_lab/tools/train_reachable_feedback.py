@@ -37,7 +37,7 @@ class LocalRuntime(FeedbackRuntime):
   if self.cap is not None:
    self.cap.update(initial=initial,seed=seed,source=str(source));torch.save(self.cap['state'],directory/'REACHABLE_STATE.pt')
   return len(prefix),len(self.queries),scope
- def local(self,policy,path,restore=True):
+ def local(self,policy,path,restore=True,label_policy="exploratory_behavior"):
   c=self.cap;e=self.env;u=e.unwrapped;start=len(c['records']);planner=c['planner']
   if restore:
    u.set_state_dict(copy.deepcopy(c['state']))
@@ -72,7 +72,7 @@ class LocalRuntime(FeedbackRuntime):
   # Training labels use the actual suffix; prefix is a reference, NOT copied
   # into archived new physical steps or charged for every local rollout.
   full=dict(summary=dict(success=y),steps=e.records);labels=completion_labels(full,ts)
-  row=dict(scope='LOCAL_REACHABLE_HANDOFF',seed=c['seed'],success=y,actual_steps=100-start,start_step=start,native_deadline=100,state_reset=restore,initialization_steps=int(restore),error=error,prefix_source=c['source'],decisions=self.actions,queries=self.queries)
+  row=dict(label_policy=label_policy,scope='LOCAL_REACHABLE_HANDOFF',seed=c['seed'],success=y,actual_steps=100-start,start_step=start,native_deadline=100,state_reset=restore,initialization_steps=int(restore),error=error,prefix_source=c['source'],decisions=self.actions,queries=self.queries)
   with gzip.open(path,'wt')as f:json.dump(dict(summary=row,steps=e.records[start:]),f)
   front=None
   if not restore:
@@ -98,7 +98,7 @@ for scene in range(a.start,a.start+1000):
  for j in range(a.rollouts):
   if a.budget-cost<100-n:break
   deterministic_head=(a.head_label_policy=='deterministic'and j%4==0)
-  row,t,l,front=rt.local((lambda s:m.choose(s))if deterministic_head else exploratory,d/f'suffix_{j}.json.gz',restore=j>0)
+  row,t,l,front=rt.local((lambda s:m.choose(s))if deterministic_head else exploratory,d/f'suffix_{j}.json.gz',restore=j>0,label_policy='deterministic_deployment'if deterministic_head else 'exploratory_behavior')
   row['label_policy']='deterministic_deployment'if deterministic_head else 'exploratory_behavior';rows.append(row);cost+=row['actual_steps'];queries+=len(row['queries']);data+=t
   if a.head_label_policy=='behavior'or deterministic_head:recent.append(l)
   if front:data.append(front)
