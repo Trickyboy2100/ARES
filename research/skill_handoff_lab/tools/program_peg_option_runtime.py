@@ -9,7 +9,8 @@ from program_discrete_options import OFFSETS,CONTROLLER,episode_transitions
 from program_paired_skill_value import peg_features
 
 class Runtime:
-    def __init__(self,out,successor_mode="single"):
+    def __init__(self,out,successor_mode="single",feedback=None):
+        self.feedback=feedback
         assert successor_mode in ("single", "split_refresh")
         self.successor_mode=successor_mode
         self.controller_id=CONTROLLER if successor_mode=="single" else CONTROLLER+"_split_refresh_option_v1"
@@ -32,6 +33,7 @@ class Runtime:
                 self.planner.plan_screw=measured
             def move_to_pose_with_screw(self,pose,*a,**kw):
                 if len(self.env.calls)==6 and len(self.env.records)<100:
+                    if owner.feedback is not None:return owner.feedback(self,pose,*a,**kw)
                     obs=peg_features(self.env.measure(),100-len(self.env.records),1);action=owner.decide(obs);self.refresh_terminal=bool(action)
                     if action==2:
                         # Experimental additional option, shared authority for all
@@ -65,6 +67,7 @@ class Runtime:
             with gzip.open(f,'wt')as h:json.dump(d,h)
             row=dict(row,path=str(f),sha256=hashlib.sha256(f.read_bytes()).hexdigest());self.rows.append(row);(self.out/'RESULTS.json').write_text(json.dumps(self.rows,indent=2))
             if not self.actions:raise RuntimeError('No option decision; inspect saved invalid episode '+str(f))
+            if self.feedback is not None:return row,self.feedback_transitions(d,str(f)),d
             ts=episode_transitions(d,OFFSETS[self.actions[0]['id']],self.actions[-1]['id']if len(self.actions)>1 else 0,str(f))
             if self.successor_mode=='split_refresh':
                 for t in ts:t['controller']=self.controller_id
