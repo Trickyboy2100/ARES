@@ -19,7 +19,7 @@ for f in files:
  chunk.append(f);size+=f.stat().st_size
 if chunk:flush(chunk)
 for folder in ['figures','video_regression']:shutil.copytree(a.root/folder,a.out/folder)
-for name in ['README.md','REVIEW.html','RESULTS_SUMMARY.json','PARENT_CALIBRATION.json','DEPLOYMENT_CALIBRATION.json','INTERRUPTIONS.json','FINAL_SOURCE_MANIFEST.json','PRIOR_ART.md','PRIOR_CODE.json','ENVIRONMENT.json','MANISKILL_APACHE_LICENSE.txt','THIRD_PARTY_NOTICES.md','REPRODUCE.sh']:
+for name in ['README.md','REVIEW.html','RESULTS_SUMMARY.json','ZERO_SUFFIX_ABLATION.json','PARENT_CALIBRATION.json','DEPLOYMENT_CALIBRATION.json','INTERRUPTIONS.json','FINAL_SOURCE_MANIFEST.json','PRIOR_ART.md','PRIOR_CODE.json','ENVIRONMENT.json','MANISKILL_APACHE_LICENSE.txt','THIRD_PARTY_NOTICES.md','REPRODUCE.sh']:
  if (a.root/name).exists():shutil.copy2(a.root/name,a.out/name)
 assets=[dict(path=str(f.relative_to(a.out)),size=f.stat().st_size,sha256=sha(f.read_bytes()))for f in sorted(a.out.rglob('*'))if f.is_file()and not f.name.startswith('RAW_')]
 (a.out/'RAW_MANIFEST.json').write_text(json.dumps(dict(original_root=str(a.root),archives=archives,visible_assets=assets,scope='Public ManiSkill simulation only; all run-specific trajectories, models and source snapshots included; downloaded foreign repositories excluded',verification='Every archive member decompressed and SHA verified'),indent=2));print(dict(raw_members=sum(len(x['entries'])for x in archives),compressed_bytes=sum(x['size']for x in archives),visible_assets=len(assets)))

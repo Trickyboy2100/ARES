@@ -9,7 +9,7 @@ for f in sorted(r.rglob('*.json.gz')):
  try:d=json.load(gzip.open(f,'rt'))
  except Exception as ex:errors.append(dict(path=str(f),error=str(ex)));continue
  if 'steps'not in d:continue
- s=d.get('summary',d);scope=s.get('scope','FULL_NATIVE');cc=allcost[scope];cc['files']+=1;cc['physical_steps']+=len(d['steps']);cc['decisions']+=len(s.get('decisions',[]));cc['planning_queries']+=len(s.get('queries',[]));cc['planning_wall_s']+=sum(q.get('wall_s',0)for q in s.get('queries',[]))
+ s=d.get('summary',d);scope=s.get('scope','FULL_NATIVE');cc=allcost[scope];cc['recorded_episode_wall_s']+=s.get('wall_s',0);cc['files']+=1;cc['physical_steps']+=len(d['steps']);cc['decisions']+=len(s.get('decisions',[]));cc['planning_queries']+=len(s.get('queries',[]));cc['planning_wall_s']+=sum(q.get('wall_s',0)for q in s.get('queries',[]))
  if s.get('error')and s['error']not in ['HORIZON','PLAN_FAILED']:errors.append(dict(path=str(f.relative_to(r)),error=s['error']))
 def score(rows):
  rear=[z for x in rows for z in x['decisions']if z['stage']==1]
