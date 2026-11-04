@@ -2,14 +2,14 @@
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
   "last_review": "2026-11-04",
-  "baseline_commit": "a2fa4a6cb26d0dd5f665eddf430cd583aa1228f9",
+  "baseline_commit": "cc6774cf537a188396ef7c34713a7cf68dda3ecc",
   "branch": "research-sci-program",
   "scientific_goal": "One SCI paper: task-conditioned executable parameter adaptation ACROSS REAL MULTI-STAGE ROBOT SKILLS using nominal skill primitives and measured SkillResult to improve successor feasibility, whole-task success and transfer; contact servo and SAC are component baselines",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
-  "latest_evidence": "evidence/EXP-004/2026-11-04/success_retention/README.md",
-  "next_action": "Continue the same closed-loop Peg successor with common actual predecessor until learned retention plus gain is stable; do not expand the budget head, return to fixed branch scoring or weaken the planner. Preserve all a2fa4a6 and success_retention assets. Next concrete learning experiment: collect the new phase/budget reference policy on the existing32 training starts756000-031 (charge each native prefix), share those real transitions with ordinary SAC and anchoring controls, and continue from the retained controlled-sampling and nominal-anchor checkpoints. The reference12/16 is posthoc seen-development CONTROL, not RL novelty. Test whether reference-data grounding can preserve its successes while learning the actual alternative timing/parameter choice seen at753204; never train on development labels. Separate source of successful constraints from their strength: both nominal-anchor0.2 variants suppress rescue;0.05 again regresses. Do not merely repeat this scalar-weight search. Geometry vs duration effects are not yet isolated. Keep all methods same actions/state/native100. Only expand evaluation conditions/seeds after sustained learned improvement beyond the stronger shared reference; no sealed tests or hardware. No independent method claim yet.",
+  "latest_evidence": "evidence/EXP-004/2026-11-04/intervention_credit/README.md",
+  "next_action": "Continue same Peg closed-loop skill and inherited models. Keep frozen rule18/24 on757200-223, now seen development; do not retune it or expand globalBC/budget heads. Main concrete learning defect: direct intervention preference already learns action1 at757300 step59, but updates the continuation and loses success after69 identical physical steps. Gap expected-gradient probability was1.8e-6; log-odds fixes selection, not whole-task performance. Next actual algorithm comparison should control continuation-policy drift during intervention credit updates, versus same-data successful-witness imitation and mature policy trust-region/KL controls; no novel claim for these mature mechanisms. Use stored true paired traces/checkpoints and shared query budgets, preserve all negatives. Do not simply retrain local gap/preference unchanged. Retain actual predecessor1 for attribution until successor gain; then restore task-conditioned predecessor. No sealed tests/hardware; independent contribution remainsUNVERIFIED.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -80,7 +80,7 @@
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
-  "latest_run_summary": "Fixed actual grasp1; unchanged Peg100 feedback runtime. Four32-episode ordinary-SAC branches all9/16 initially. After4000 extra real-replay updates: BC removed8, persistent9, controlled10, combined9; controlled2 rescues/1 regression. Same-replay nominal-success anchors restore9/16 with0/0 on both behavior datasets; weight0.05 reintroduces1/1. Posthoc same-authority phase/budget rule12/16,3rescues/0regressions.505 complete episodes/50500steps,41120 primary iterations;9 native full-trace repeats exact. Independent method gain UNVERIFIED.",
+  "latest_run_summary": "616 native100 episodes/61600steps;9480 actor-critic iterations; new24dev nominal17, frozen rule18. Fixed-pair SAC10/AWAC-style17/measured-gap16; current-policy pair SAC/AWAC/gap/preference all17; replay consolidation both17. Direct preference learns beneficial first action on757300 but later replans lose success;69 measured physical steps match successful witness. No independent gain.",
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
   "research_review_20261102": {
     "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
@@ -414,5 +414,35 @@
     "native_repeat_full_trace_max_error": 0,
     "learned_retention_plus_gain": "UNVERIFIED",
     "independent_algorithm_gain": "UNVERIFIED"
+  },
+  "intervention_credit_20261104": {
+    "source": "evidence/EXP-004/2026-11-04/intervention_credit/README.md",
+    "complete_native_episodes": 616,
+    "physical_steps": 61600,
+    "primary_optimizer_iterations": 9480,
+    "planner_queries": 4543,
+    "new_development_scenes": 24,
+    "learning_initial_states": 32,
+    "additional_design_probe_states": 8,
+    "training_initialization_seed": 31501,
+    "independent_gain": "UNVERIFIED",
+    "nominal": 17,
+    "frozen_rule": 18,
+    "fixed_pair_scores": [
+      10,
+      17,
+      16
+    ],
+    "current_policy_scores": [
+      17,
+      17,
+      17,
+      17
+    ],
+    "memory_scores": [
+      17,
+      17
+    ],
+    "learned_intervention_witness_common_steps": 69
   }
 }

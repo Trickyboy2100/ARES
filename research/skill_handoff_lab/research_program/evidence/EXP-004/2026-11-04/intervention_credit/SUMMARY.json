@@ -1,0 +1,188 @@
+{
+  "results": [
+    {
+      "method": "zero_suffix",
+      "n": 24,
+      "success": 17,
+      "rescue": 0,
+      "regression": 0,
+      "actions": {
+        "0": 272
+      }
+    },
+    {
+      "method": "budget_refine_zplus",
+      "n": 24,
+      "success": 18,
+      "rescue": 1,
+      "regression": 0,
+      "actions": {
+        "0": 244,
+        "4": 28
+      }
+    },
+    {
+      "method": "awac/offline_eval",
+      "n": 24,
+      "success": 16,
+      "rescue": 0,
+      "regression": 1,
+      "actions": {
+        "0": 243,
+        "7": 27,
+        "5": 3
+      }
+    },
+    {
+      "method": "awac/final_eval",
+      "n": 24,
+      "success": 17,
+      "rescue": 0,
+      "regression": 0,
+      "actions": {
+        "0": 239,
+        "7": 26,
+        "5": 4,
+        "4": 4
+      }
+    },
+    {
+      "method": "current_awac/final_eval",
+      "n": 24,
+      "success": 17,
+      "rescue": 0,
+      "regression": 0,
+      "actions": {
+        "0": 243,
+        "7": 29
+      }
+    },
+    {
+      "method": "current_measured_gap/final_eval",
+      "n": 24,
+      "success": 17,
+      "rescue": 0,
+      "regression": 0,
+      "actions": {
+        "0": 248,
+        "3": 1,
+        "7": 20,
+        "1": 2,
+        "5": 1
+      }
+    },
+    {
+      "method": "current_measured_preference/final_eval",
+      "n": 24,
+      "success": 17,
+      "rescue": 0,
+      "regression": 0,
+      "actions": {
+        "0": 247,
+        "3": 4,
+        "7": 21,
+        "1": 1
+      }
+    },
+    {
+      "method": "current_sac/final_eval",
+      "n": 24,
+      "success": 17,
+      "rescue": 0,
+      "regression": 0,
+      "actions": {
+        "0": 251,
+        "3": 1,
+        "7": 18,
+        "1": 2
+      }
+    },
+    {
+      "method": "measured_gap/offline_eval",
+      "n": 24,
+      "success": 16,
+      "rescue": 0,
+      "regression": 1,
+      "actions": {
+        "0": 254,
+        "7": 16,
+        "5": 3
+      }
+    },
+    {
+      "method": "measured_gap/final_eval",
+      "n": 24,
+      "success": 16,
+      "rescue": 0,
+      "regression": 1,
+      "actions": {
+        "0": 233,
+        "7": 27,
+        "2": 1,
+        "1": 3,
+        "5": 10
+      }
+    },
+    {
+      "method": "memory_awac/final_eval",
+      "n": 24,
+      "success": 17,
+      "rescue": 0,
+      "regression": 0,
+      "actions": {
+        "0": 255,
+        "7": 17
+      }
+    },
+    {
+      "method": "memory_measured_preference/final_eval",
+      "n": 24,
+      "success": 17,
+      "rescue": 0,
+      "regression": 0,
+      "actions": {
+        "0": 246,
+        "3": 1,
+        "7": 22,
+        "1": 3
+      }
+    },
+    {
+      "method": "sac/offline_eval",
+      "n": 24,
+      "success": 15,
+      "rescue": 0,
+      "regression": 2,
+      "actions": {
+        "0": 238,
+        "7": 17,
+        "5": 3,
+        "2": 5,
+        "1": 1
+      }
+    },
+    {
+      "method": "sac/final_eval",
+      "n": 24,
+      "success": 10,
+      "rescue": 0,
+      "regression": 7,
+      "actions": {
+        "0": 209,
+        "2": 13,
+        "5": 23,
+        "3": 2,
+        "7": 17,
+        "1": 2
+      }
+    }
+  ],
+  "cost": {
+    "episodes": 616,
+    "physical_steps": 61600,
+    "planner_queries": 4543,
+    "planner_wall_s": 21.62725955899805,
+    "decisions": 7576
+  },
+  "claim": "UNVERIFIED"
+}
