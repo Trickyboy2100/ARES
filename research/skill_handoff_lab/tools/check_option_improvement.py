@@ -19,5 +19,13 @@ def main():
    f=Path(d)/'m.pt';m.save(f);n=Improved.load(f);assert np.array_equal(m.values(z)[0],n.values(z)[0]);m.train(rows,steps=1);n.train(rows,steps=1)
    assert all(torch.equal(v,n.q.state_dict()[k])for k,v in m.q.state_dict().items())
   out.append(dict(method=kind,legal_action=m.choose(z),updates=m.updates))
+ three=[dict(t)for t in rows];three[2]['r']=0.;three[2]['outcome']=0.;third=dict(three[2],a=2,r=1.,outcome=1.);three.append(third)
+ for cls in [Improved]:
+  m=cls('handoff',31401,successor_actions=3);m.train(three,steps=400);assert m.choose(z)==2
+  with tempfile.TemporaryDirectory()as d:
+   f=Path(d)/'three.pt';m.save(f);n=cls.load(f);assert n.successor_actions==3 and n.choose(z)==2
+  try:cls('handoff',31401).train(three,steps=1)
+  except AssertionError:pass
+  else:raise AssertionError('three-action data accepted by two-action contract')
  print(json.dumps(dict(status='PASS',checks=['legal terminal support','budget-sensitive exact key','USAC min equivalence','save/load optimizer continuation'],fixtures=out),indent=2))
 if __name__=='__main__':main()

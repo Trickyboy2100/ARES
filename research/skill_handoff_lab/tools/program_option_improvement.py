@@ -39,16 +39,16 @@ def verify_physical_support(rows):
     return dict(prefixes=checked,unique_handoffs=len(seen),exact_full_prefix=True)
 
 class Improved(Learner):
-    def __init__(self,kind='vi_mean',seed=31401,normalizer=None):
-        super().__init__(kind,seed,normalizer)
+    def __init__(self,kind='vi_mean',seed=31401,normalizer=None,successor_actions=2):
+        super().__init__(kind,seed,normalizer,successor_actions=successor_actions)
     def values(self,obs):
         with torch.no_grad():
-            x=self.x(np.atleast_2d(obs));q=torch.stack([m(x) for m in self.q]);q=q.masked_fill(~legal(x)[None],-1e9)
+            x=self.x(np.atleast_2d(obs));q=torch.stack([m(x) for m in self.q]);q=q.masked_fill(~self.mask(x)[None],-1e9)
             if self.kind in ('sac_min','sac_mean','vi_expectile','usac'):v=self.probs(x)
             else:v=q.mean(0)
             return v.numpy(),q.numpy()
     def choose(self,obs,stochastic=False):
-        v,_=self.values(obs);n=3 if obs[44]<.5 else 2
+        v,_=self.values(obs);n=3 if obs[44]<.5 else self.successor_actions
         if stochastic:
             p=v[0,:n] if self.kind in ('sac_min','sac_mean','vi_expectile','usac') else np.exp((v[0,:n]-max(v[0,:n]))/self.alpha)
             return int(self.rng.choice(n,p=p/p.sum()))
@@ -59,10 +59,11 @@ class Improved(Learner):
             rows=[offline[i]for i in self.rng.integers(len(offline),size=32 if online else 64)]
             if online:rows +=[online[i]for i in self.rng.integers(len(online),size=32)]
             x=self.x([t['s']for t in rows]);z=self.x([t['next']for t in rows]);a=torch.tensor([t['a']for t in rows]);r=torch.tensor([t['r']for t in rows]);done=torch.tensor([t['done']for t in rows]);idx=torch.arange(len(rows));matched=0;delta=0.
+            assert bool(self.mask(x)[idx,a].all()),'ACTION_OUTSIDE_MODEL_CONTRACT'
             with torch.no_grad():
                 tq=torch.stack([q(z)for q in self.target]);mu=tq.mean(0)
                 agg=tq.min(0).values if self.kind in ('sac_min','vi_expectile') else utility(tq,-.831559) if self.kind=='usac' else mu
-                agg=agg.masked_fill(~legal(z),-1e9)
+                agg=agg.masked_fill(~self.mask(z),-1e9)
                 p=self.probs(z)
                 if self.kind in ('sac_min','sac_mean','usac','vi_expectile'):nxt=(p*(agg-self.alpha*p.clamp_min(1e-9).log())).sum(1)
                 else:
@@ -72,7 +73,7 @@ class Improved(Learner):
                             if t['done']:continue
                             known=support.get(state_key(t['next']),{})
                             if not known:continue
-                            original=nxt[i].clone();v=agg[i,:2].clone()
+                            original=nxt[i].clone();v=agg[i,:self.successor_actions].clone()
                             if self.kind=='handoff':
                                 # Replace only physically sampled terminal action values.
                                 # No oracle labels, approximate-neighbor merge or reward shaping.
@@ -84,7 +85,7 @@ class Improved(Learner):
                             delta+=float(abs(nxt[i]-original));matched+=1
                 target=r+(~done).float()*nxt
             qs=[q(x)for q in self.q];errors=[target-q[idx,a]for q in qs]
-            if self.kind=='vi_expectile':ql=sum((2*torch.where(e>0,.75,.25)*e.square()).mean()for e in errors)/2
+            if self.kind=='vi_expectile':ql=sum((torch.where(e>0,.75,.25)*e.square()).mean()for e in errors)/2
             else:ql=sum(e.square().mean()for e in errors)/2
             self.qopt.zero_grad();ql.backward();self.qopt.step()
             with torch.no_grad():

@@ -36,7 +36,8 @@ def prior(root):
             data+=episode_transitions(d,g['grasp'],bool(r['action'][0]),r['path'])
     return data,groups
 class Learner:
-    def __init__(self,kind='dsac',seed=31301,normalizer=None):
+    def __init__(self,kind='dsac',seed=31301,normalizer=None,successor_actions=2):
+        assert successor_actions in (2,3);self.successor_actions=successor_actions
         torch.manual_seed(seed);self.rng=np.random.default_rng(seed);self.kind=kind;self.seed=seed;self.updates=0;self.gamma=1.;self.alpha=.02
         self.q=nn.ModuleList([Net(),Net()]);self.target=copy.deepcopy(self.q);self.actor=Net();self.v=Net(1);self.dyn=Net(54)
         self.qopt=torch.optim.Adam(self.q.parameters(),lr=3e-4);self.aopt=torch.optim.Adam(self.actor.parameters(),lr=3e-4);self.vopt=torch.optim.Adam(self.v.parameters(),lr=3e-4);self.dopt=torch.optim.Adam(self.dyn.parameters(),lr=3e-4)
@@ -45,10 +46,11 @@ class Learner:
         self.history=[]
     def x(self,a):
         t=torch.as_tensor(np.asarray(a),dtype=torch.float32);mu=torch.as_tensor(self.mu);sd=torch.as_tensor(self.sd);return (t-mu)/sd
-    def probs(self,x):return self.actor(x).masked_fill(~legal(x),-1e9).softmax(-1)
+    def mask(self,x):return legal(x) if self.successor_actions==2 else torch.ones((len(x),3),dtype=torch.bool,device=x.device)
+    def probs(self,x):return self.actor(x).masked_fill(~self.mask(x),-1e9).softmax(-1)
     def values(self,obs):
         with torch.no_grad():
-            x=self.x(np.atleast_2d(obs));qs=torch.stack([q(x) for q in self.q]);qs=qs.masked_fill(~legal(x)[None],-1e9)
+            x=self.x(np.atleast_2d(obs));qs=torch.stack([q(x) for q in self.q]);qs=qs.masked_fill(~self.mask(x)[None],-1e9)
             if self.kind=='stap':
                 # Functional Q-product analogue: separate predecessor reach and
                 # actual successor-state model, exact finite enumeration.
@@ -56,14 +58,14 @@ class Learner:
                 for a in range(3):
                     inp=x.clone();inp[:,-3:]=0;inp[:,-3+a]=1
                     z=self.dyn(inp);z[:,44]=1
-                    suf=nn.functional.logsigmoid(torch.stack([q(z) for q in self.q]).mean(0)[:,:2]).max(1).values
+                    suf=nn.functional.logsigmoid(torch.stack([q(z) for q in self.q]).mean(0)[:,:self.successor_actions]).max(1).values
                     vals[stage,a]+=suf[stage]
                 return vals.numpy(),qs.numpy()
             if self.kind=='iql':return self.probs(x).numpy(),qs.numpy()
             if self.kind=='dsac':return self.probs(x).numpy(),qs.numpy()
             return qs.mean(0).numpy(),qs.numpy()
     def choose(self,obs,stochastic=False):
-        vals,_=self.values(obs);v=vals[0];n=3 if obs[44]<.5 else 2
+        vals,_=self.values(obs);v=vals[0];n=3 if obs[44]<.5 else self.successor_actions
         if stochastic:
             p=v[:n] if self.kind in ('dsac','iql') else np.exp((v[:n]-max(v[:n]))/.1)
             p=p/p.sum();return int(self.rng.choice(n,p=p))
@@ -73,9 +75,10 @@ class Learner:
         for _ in range(steps):
             rows=[offline[i] for i in self.rng.integers(len(offline),size=32 if online else 64)]
             if online:rows +=[online[i] for i in self.rng.integers(len(online),size=32)]
-            x=self.x([t['s'] for t in rows]);z=self.x([t['next']for t in rows]);a=torch.tensor([t['a']for t in rows]);r=torch.tensor([t['r']for t in rows]);done=torch.tensor([t['done']for t in rows]);dur=torch.tensor([t['duration']for t in rows]);y=torch.tensor([t['outcome']for t in rows]);idx=torch.arange(len(rows));mask=legal(x)
+            x=self.x([t['s'] for t in rows]);z=self.x([t['next']for t in rows]);a=torch.tensor([t['a']for t in rows]);r=torch.tensor([t['r']for t in rows]);done=torch.tensor([t['done']for t in rows]);dur=torch.tensor([t['duration']for t in rows]);y=torch.tensor([t['outcome']for t in rows]);idx=torch.arange(len(rows));mask=self.mask(x)
+            assert bool(mask[idx,a].all()),'ACTION_OUTSIDE_MODEL_CONTRACT'
             with torch.no_grad():
-                tq=torch.stack([q(z) for q in self.target]).min(0).values.masked_fill(~legal(z),-1e9)
+                tq=torch.stack([q(z) for q in self.target]).min(0).values.masked_fill(~self.mask(z),-1e9)
                 if self.kind=='dsac':
                     p=self.probs(z);nxt=(p*(tq-self.alpha*p.clamp_min(1e-9).log())).sum(1)
                 elif self.kind=='iql':nxt=self.v(z)[:,0]
@@ -104,10 +107,10 @@ class Learner:
             self.updates+=1;last=dict(update=self.updates,q_loss=float(ql),actor_loss=float(al),v_loss=float(vl),dynamics_loss=float(dl),target_min=float(target.min()),target_max=float(target.max()),n_offline=len(offline),n_online=len(online))
         last['wall_s']=time.monotonic()-start;self.history.append(last);return last
     def save(self,path):
-        torch.save(dict(kind=self.kind,seed=self.seed,updates=self.updates,q=self.q.state_dict(),target=self.target.state_dict(),actor=self.actor.state_dict(),v=self.v.state_dict(),dyn=self.dyn.state_dict(),qopt=self.qopt.state_dict(),aopt=self.aopt.state_dict(),vopt=self.vopt.state_dict(),dopt=self.dopt.state_dict(),mu=self.mu,sd=self.sd,rng=self.rng.bit_generator.state,history=self.history,controller=CONTROLLER),path)
+        torch.save(dict(kind=self.kind,seed=self.seed,updates=self.updates,q=self.q.state_dict(),target=self.target.state_dict(),actor=self.actor.state_dict(),v=self.v.state_dict(),dyn=self.dyn.state_dict(),qopt=self.qopt.state_dict(),aopt=self.aopt.state_dict(),vopt=self.vopt.state_dict(),dopt=self.dopt.state_dict(),mu=self.mu,sd=self.sd,rng=self.rng.bit_generator.state,history=self.history,controller=CONTROLLER,successor_actions=self.successor_actions),path)
     @classmethod
     def load(cls,path):
-        d=torch.load(path,weights_only=False,map_location='cpu');assert d.get('controller')==CONTROLLER,'INCOMPATIBLE_MODEL_CONTRACT';m=cls(d['kind'],d['seed'],(d['mu'],d['sd']))
+        d=torch.load(path,weights_only=False,map_location='cpu');assert d.get('controller')==CONTROLLER,'INCOMPATIBLE_MODEL_CONTRACT';m=cls(d['kind'],d['seed'],(d['mu'],d['sd']),successor_actions=d.get('successor_actions',2))
         for k in ['q','target','actor','v','dyn','qopt','aopt','vopt','dopt']:getattr(m,k).load_state_dict(d[k])
         m.updates=d['updates'];m.history=d['history'];m.rng.bit_generator.state=d['rng'];return m
 
