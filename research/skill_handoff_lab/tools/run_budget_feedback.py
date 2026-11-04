@@ -30,6 +30,7 @@ elif a.mode=='baselines':
    row,t,d=rt.run(a.dev_start+i,policy,name);store(row,t,d);print('BASELINE',i,name,row['success'],flush=True)
 else:
  data=json.loads((a.warm/'TRANSITIONS.json').read_text());labels=json.loads((a.warm/'LABELS.json').read_text());initial_data=list(data);initial_labels=list(labels)
+ assert all(t['controller']==rt.controller_id and len(t['s'])==64 for t in data),'INCOMPATIBLE_FEEDBACK_REPLAY'
  m=FeedbackSAC(a.mode,a.seed,*normalization(data));m.save(a.out/'INITIAL.pt');m.train(data,labels,1000,bc=True);m.save(a.out/'PRETRAIN.pt')
  def evaluate(checkpoint):
   rows=[]

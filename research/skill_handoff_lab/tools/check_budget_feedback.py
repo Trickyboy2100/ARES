@@ -13,7 +13,7 @@ mu,sd=normalization(data);torch.set_num_threads(2);out={}
 for mode in ['ordinary','suffix','budget','budget_blind']:
  m=FeedbackSAC(mode,31501,mu,sd);m.train(data,labels,4)
  x=m.x([t['s']for t in data]);p=m.probs(x);assert bool((p[x[:,44]<.5,3:]==0).all())
- vals=[m.probability(x,torch.ones(len(x))*b).detach().numpy()for b in [4,12,32,100]];assert all(np.all(v<=w+1e-7)for v,w in zip(vals,vals[1:]))
+ vals=[m.probability(x,torch.ones(len(x))*b).detach().numpy()for b in [0,4,12,32,100]];assert all(np.all(v<=w+1e-7)for v,w in zip(vals,vals[1:]))
  with tempfile.TemporaryDirectory()as tmp:
   m.save(Path(tmp)/'m.pt');n=FeedbackSAC.load(Path(tmp)/'m.pt');m.train(data,labels,2);n.train(data,labels,2)
   assert all(torch.equal(v,n.q.state_dict()[k])for k,v in m.q.state_dict().items())

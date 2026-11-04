@@ -23,7 +23,7 @@ def potential(m):
 class FeedbackRuntime(Runtime):
     def __init__(self,out,chunk=4,feedback_start=3):
         self.chunk=chunk;super().__init__(out,feedback=self.execute_feedback,feedback_start=feedback_start);self.controller_id+=f'__feedback_v3_start{feedback_start}'
-        (self.out/'FEEDBACK_CONTRACT.json').write_text(json.dumps(dict(id=self.controller_id,actions=ACTIONS,chunk=chunk,feedback_start=feedback_start,horizon=100,observation='shared privileged physical state plus active joint queue',zero='original insertion queue then actual final-joint hold',dense='0.2 potential difference; terminal potential zero; terminal native success',no_pose_reset=True),indent=2))
+        (self.out/'FEEDBACK_CONTRACT.json').write_text(json.dumps(dict(id=self.controller_id,actions=ACTIONS,chunk=chunk,feedback_start=feedback_start,horizon=100,observation='shared privileged physical state plus active joint queue',zero='original refinement and insertion queues then actual final-joint hold',dense='0.2 potential difference; terminal potential zero; terminal native success',no_pose_reset=True),indent=2))
     def decide(self,obs):
         if len(obs)==54:obs=np.r_[obs,np.zeros(10)].astype(np.float32)
         start=time.monotonic();a=int(self.callback(obs));stage=int(obs[44]);assert 0<=a<(3 if stage==0 else len(ACTIONS))

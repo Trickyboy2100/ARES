@@ -29,7 +29,7 @@ class FeedbackSAC:
  def probability(self,x,budget):
   z=x.clone()
   if self.mode=='budget_blind':z[:,41]=0
-  hazards=self.completion(z).sigmoid();n=torch.ceil(budget/4).long().clamp(1,25);j=torch.arange(25)[None];survival=torch.where(j<n[:,None],1-hazards,torch.ones_like(hazards)).prod(1)
+  hazards=self.completion(z).sigmoid();n=torch.ceil(budget/4).long().clamp(0,25);j=torch.arange(25)[None];survival=torch.where(j<n[:,None],1-hazards,torch.ones_like(hazards)).prod(1)
   return 1-survival
  def train(self,data,labels,steps,bc=False):
   tic=time.monotonic();hist={}

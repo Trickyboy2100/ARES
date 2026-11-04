@@ -1,0 +1,20 @@
+"""Full native-prefix controlled deployment ablations of one frozen learner."""
+import argparse,json,shutil
+from pathlib import Path
+from program_budget_feedback_sac import FeedbackSAC
+from program_peg_feedback import FeedbackRuntime,rule
+p=argparse.ArgumentParser();p.add_argument('--model',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--start',type=int,default=753200);p.add_argument('--count',type=int,default=16);p.add_argument('--modes',nargs='+',default=['zero_suffix','one_update','rule_suffix']);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=False);m=FeedbackSAC.load(a.model);rt=FeedbackRuntime(a.out/'physics');rows=[]
+for seed in range(a.start,a.start+a.count):
+ for mode in a.modes:
+  seen=[False]
+  def policy(s):
+   if s[44]<.5:return m.choose(s)
+   if mode=='zero_suffix':return 0
+   if mode=='rule_suffix':return rule(s)
+   if mode=='one_update':
+    if seen[0]:return 0
+    seen[0]=True;return m.choose(s)
+   if mode=='full':return m.choose(s)
+   raise ValueError(mode)
+  row,t,d=rt.run(seed,policy,mode);rows.append(row);print(mode,seed,row['success'],flush=True)
+rt.close();(a.out/'RESULTS.json').write_text(json.dumps(rows,indent=2))
