@@ -13,7 +13,7 @@ from program_continuation_option import ContinuationOption
 ROOT=Path('/home/andyee/robot-research/ARES-Skilllab')
 PARENT=ROOT/'runs/research_program/EXP-004/success_retention_20261104/controlled/FINAL.pt'
 # V1->V2 changes only resume provenance checking/idempotent completion.
-LEGACY_RESUME_TRAINERS={'2df918c72b83beaef3e4f130da97ed7ff35e092753acedfa24eebea97d888627'}
+LEGACY_RESUME_TRAINERS={'0ca5ef01b340e25841758c65f0a6f80c80148362dbe0d47c52a7455e1825f7c0','2df918c72b83beaef3e4f130da97ed7ff35e092753acedfa24eebea97d888627'}
 KEYS=['q','target','actor','completion','scalar','qopt','aopt','hopt']
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def atomic_json(p,obj):
@@ -30,12 +30,19 @@ def main():
  p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--arm',choices=['sac','success_bc'],required=True)
  p.add_argument('--episodes',type=int,default=64);p.add_argument('--train-start',type=int,default=759000);p.add_argument('--dev-start',type=int,default=759200);p.add_argument('--dev-count',type=int,default=16)
  p.add_argument('--seed',type=int,default=31601);p.add_argument('--updates',type=int,default=80);p.add_argument('--resume',action='store_true');p.add_argument('--stop-after',type=int);p.add_argument('--pause-after-collection',type=int)
+ p.add_argument('--frame',choices=['measured','remaining_target'],default='measured');p.add_argument('--initialize-run',type=Path)
  a=p.parse_args();torch.set_num_threads(2);a.out.mkdir(parents=True,exist_ok=True)
  lock=open(a.out/'LOCK','w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
  sources={f.name:sha(f) for f in Path(__file__).parent.glob('program_*.py')}
  sources[Path(__file__).name]=sha(__file__)
  train=list(range(a.train_start,a.train_start+a.episodes));dev=list(range(a.dev_start,a.dev_start+a.dev_count));assert not set(train)&set(dev)
- manifest=dict(schema=1,arm=a.arm,train=train,development=dev,environment='PegInsertionSide-v1',horizon=100,success='official terminal evaluate',parent=str(PARENT),parent_sha=sha(PARENT),sources=sources,source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),initialization='same inherited neural weights31501; seed below controls replay/exploration, NOT independent neural initialization',optimizer_rng_seed=a.seed,updates_per_episode=a.updates,termination='insertion_queue',frame='measured',predecessor='learned real3 grasp offsets',data_scope='own policy online; no other arm replay',checkpoint_rule='0, half, final; final is main endpoint; no best-dev selection',epsilon='0.15 uniform legal actions at reopened Option boundaries',sealed_used=False)
+ manifest=dict(schema=1,arm=a.arm,train=train,development=dev,environment='PegInsertionSide-v1',horizon=100,success='official terminal evaluate',parent=str(PARENT),parent_sha=sha(PARENT),sources=sources,source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),initialization='same inherited neural weights31501; seed below controls replay/exploration, NOT independent neural initialization',optimizer_rng_seed=a.seed,updates_per_episode=a.updates,termination='insertion_queue',frame=a.frame,predecessor='learned real3 grasp offsets',data_scope='own policy online; no other arm replay',checkpoint_rule='0, half, final; final is main endpoint; no best-dev selection',epsilon='0.15 uniform legal actions at reopened Option boundaries',sealed_used=False)
+ if a.initialize_run:
+  origin=json.loads((a.initialize_run/'MANIFEST.json').read_text());pointer=json.loads((a.initialize_run/'CURRENT.json').read_text());parent_state=a.initialize_run/pointer['checkpoint']
+  assert origin['frame']==a.frame and origin['arm']==a.arm and origin['optimizer_rng_seed']==a.seed
+  assert not set(origin['train'])&set(train) and origin['development']==dev
+  assert sha(parent_state)==pointer['sha256']
+  manifest['initialize_run']=dict(path=str(a.initialize_run),state_sha=sha(parent_state),manifest_sha=sha(a.initialize_run/'MANIFEST.json'),preserve='model, optimizers, own replay, labels, RNG; no cross-interface reuse')
  mf=a.out/'MANIFEST.json'
  if a.resume:
   recorded=json.loads(mf.read_text())
@@ -57,6 +64,9 @@ def main():
    for seed in dev:jobs.append(dict(kind='eval',checkpoint=i,seed=seed))
   if i<a.episodes:jobs.append(dict(kind='train',checkpoint=i,seed=train[i]))
  data=[];labels=[];records=[];cursor=0
+ if a.initialize_run:
+  inherited=torch.load(parent_state,weights_only=False);load(m,inherited['model']);restore(inherited['global_rng']);data=inherited['data'];labels=inherited['labels']
+  assert all(t['controller'].endswith('__remaining_target_v1')==(a.frame=='remaining_target') for t in data)
  current=a.out/'CURRENT.json'
  if a.resume:
   pointer=json.loads(current.read_text());cp=a.out/pointer['checkpoint'];assert sha(cp)==pointer['sha256']
@@ -71,7 +81,7 @@ def main():
  if cursor==len(jobs):
   if not (a.out/'FINAL.pt').exists():m.save(a.out/'FINAL.pt')
   print('ALREADY_COMPLETE_NO_PHYSICS',cursor,flush=True);return
- rt=FeedbackRuntime(a.out/'physics')
+ rt=FeedbackRuntime(a.out/'physics',correction_frame=a.frame)
  # Restore bookkeeping; append raw files, never overwrite after restart.
  rt.rows=[r['row'] for r in records];rt.counter=max([0]+[int(f.name.split('_')[0]) for f in (a.out/'physics').glob('*.json.gz')])
  try:

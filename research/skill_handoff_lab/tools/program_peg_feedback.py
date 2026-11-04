@@ -50,6 +50,8 @@ class FeedbackRuntime(Runtime):
             return None
         queue=plan(pose);nominal_failed=queue is None;cursor=0;last=0;holdq=None
         active_target=pose
+        if nominal_failed and self.correction_frame=='remaining_target':
+            active_target=u.agent.tcp.pose.sp
         if queue is None:queue=np.array([val(u.agent.robot.get_qpos()[0,:7])])
         while len(e.records)<100:
             obs=features(e.measure(),100-len(e.records),1,queue,cursor,last);obs[49]=min(len(e.calls),7)/7
@@ -64,7 +66,9 @@ class FeedbackRuntime(Runtime):
             if nominal_failed and action==0:
                 call.update(end=len(e.records),failed=True);return -1
             nominal_failed=False
-            if action==7:queue=np.array([val(u.agent.robot.get_qpos()[0,:7])]);cursor=0;holdq=None
+            if action==7:
+                queue=np.array([val(u.agent.robot.get_qpos()[0,:7])]);cursor=0;holdq=None
+                active_target=u.agent.tcp.pose.sp
             elif action!=0 and not(action in (1,2,3,4,5) and action==last and cursor<len(queue)):
                 shift=np.zeros(3)
                 if action in (2,3):shift[1]=.003*(1 if action==2 else -1)
