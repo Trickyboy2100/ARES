@@ -19,6 +19,7 @@ class Runtime:
         self.env=old.Measure(gym.make('PegInsertionSide-v1',num_envs=1,obs_mode='state',control_mode='pd_joint_pos',sim_backend='physx_cuda',render_backend='gpu',reconfiguration_freq=1))
         source=Path(inspect.getfile(old.official));code=source.read_text();self.source_sha=hashlib.sha256(code.encode()).hexdigest()
         code=code.replace('-max(0.05, env.peg_half_sizes[0, 0].item() / 2 + 0.01)','(-max(0.05, env.peg_half_sizes[0, 0].item() / 2 + 0.01)+choose_grasp(env))')
+        code=code.replace('insert_pose = env.goal_pose * peg_init_pose.inv() * grasp_pose', 'insert_pose = env.goal_pose * peg_init_pose.inv() * grasp_pose\n    planner.original_insert_pose = insert_pose')
         mod=types.ModuleType('frozen_peg_options');exec(compile(code,str(source),'exec'),mod.__dict__);base_obb=mod.get_actor_obb
         def obb(actor,*args,**kw):
             box=base_obb(actor,to_world_frame=False);p=np.array(old.val(actor.pose.raw_pose[0]));T=np.eye(4);T[:3,:3]=Rotation.from_quat(np.r_[p[4:],p[3]]).as_matrix();T[:3,3]=p[:3]
