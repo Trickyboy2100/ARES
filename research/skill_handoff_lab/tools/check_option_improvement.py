@@ -12,7 +12,7 @@ def main():
  q=torch.tensor([[[.2,.8,.4]],[[.4,.4,.9]]]);assert torch.allclose(utility(q,0),q.mean(0));assert torch.allclose(utility(q,-.831559),q.min(0).values,atol=2e-6)
  changed=z.copy();changed[41]=.19;assert state_key(changed)not in support
  out=[]
- for kind in ['sac_min','sac_mean','vi_mean','vi_expectile','usac','handoff','lower_bound']:
+ for kind in ['sac_min','sac_mean','vi_mean','vi_expectile','usac','handoff','lower_bound','bee']:
   m=Improved(kind,31401);m.train(rows,steps=200)
   assert m.choose(z)<2 and np.isfinite(list(m.history[-1].values())).all()
   with tempfile.TemporaryDirectory()as d:
