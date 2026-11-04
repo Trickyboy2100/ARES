@@ -15155,8 +15155,8 @@
     },
     {
       "path": "README.md",
-      "size": 7618,
-      "sha256": "f928737c358a5a197b855a9b17bdf5ff9d574edb66af830c0fe3a8bca9f1f06a"
+      "size": 7995,
+      "sha256": "3edc57f9dad8e71538ce269efd1e29099d43b0835bd760eb27ac922a05e67c1c"
     },
     {
       "path": "REPRODUCE.sh",
@@ -15260,5 +15260,6 @@
     }
   ],
   "scope": "Public ManiSkill simulation only; all run-specific trajectories, models and source snapshots included; downloaded foreign repositories excluded",
-  "verification": "Every archive member decompressed and SHA verified"
+  "verification": "Every archive member decompressed and SHA verified",
+  "post_pack_documentation": "Public README clarifies four-step hazard quantization; archived raw/model/source bytes remain unchanged."
 }
