@@ -6,7 +6,7 @@ from scipy.spatial.transform import Rotation
 from program_peg_option_runtime import Runtime
 from program_peg_native import val
 from program_paired_skill_value import peg_features
-ACTIONS=['continue_plan','measured_target','target_y_plus3mm','target_y_minus3mm','target_z_plus3mm','target_z_minus3mm','withdraw6mm','hold4steps']
+ACTIONS=['continue_plan','measured_target','target_y_plus3mm','target_y_minus3mm','target_z_plus3mm','target_z_minus3mm','withdraw6mm','hold_phase_bounded']
 NOBS=64
 
 def features(m,remaining,stage,queue=None,cursor=0,last=0):
@@ -23,7 +23,7 @@ def potential(m):
 class FeedbackRuntime(Runtime):
     def __init__(self,out,chunk=4,feedback_start=3):
         self.chunk=chunk;super().__init__(out,feedback=self.execute_feedback,feedback_start=feedback_start);self.controller_id+=f'__feedback_v4_persistent_start{feedback_start}'
-        (self.out/'FEEDBACK_CONTRACT.json').write_text(json.dumps(dict(id=self.controller_id,actions=ACTIONS,chunk=chunk,feedback_start=feedback_start,horizon=100,observation='shared privileged physical state plus active joint queue',zero='original refinement and insertion queues then actual final-joint hold',dense='0.2 potential difference; terminal potential zero; terminal native success',no_pose_reset=True,parameter_hold='IDs1..5 repeated while active continue queue; change or exhausted queue triggers measured replan'),indent=2))
+        (self.out/'FEEDBACK_CONTRACT.json').write_text(json.dumps(dict(id=self.controller_id,actions=ACTIONS,chunk=chunk,feedback_start=feedback_start,horizon=100,observation='shared privileged physical state plus active joint queue',zero='original refinement and insertion queues then actual final-joint hold',dense='0.2 potential difference; terminal potential zero; terminal native success',no_pose_reset=True,hold_semantics='ID7 replaces queue by current q: refinement ends after one step; INSERT holds up to4steps. Durations are measured, not assumed.',parameter_hold='IDs1..5 repeated while active continue queue; change or exhausted queue triggers measured replan'),indent=2))
     def decide(self,obs):
         if len(obs)==54:obs=np.r_[obs,np.zeros(10)].astype(np.float32)
         start=time.monotonic();a=int(self.callback(obs));stage=int(obs[44]);assert 0<=a<(3 if stage==0 else len(ACTIONS))
