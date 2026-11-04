@@ -41,7 +41,13 @@ class FeedbackRuntime(Runtime):
         if queue is None:queue=np.array([val(u.agent.robot.get_qpos()[0,:7])])
         while len(e.records)<100:
             obs=features(e.measure(),100-len(e.records),1,queue,cursor,last);obs[49]=min(len(e.calls),7)/7
+            # Read-only evidence captured BEFORE the intervention; not a PhysX
+            # checkpoint and never used to reset or alter the execution.
+            before=dict(queue=np.asarray(queue).tolist(),cursor=cursor,last=last,
+                        nominal_failed=nominal_failed,
+                        holdq=None if holdq is None else holdq.tolist(),phase=phase)
             action=self.decide(obs);record=self.actions[-1];record['plan_failed']=False;record['replanned']=False
+            record['queue_before']=before
             if nominal_failed and action==0:
                 call.update(end=len(e.records),failed=True);return -1
             nominal_failed=False

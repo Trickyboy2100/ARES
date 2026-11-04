@@ -32,7 +32,8 @@ class FeedbackSAC:
   if self.mode=='budget_blind':z[:,41]=0
   hazards=self.completion(z).sigmoid();n=torch.ceil(budget/4).long().clamp(0,25);j=torch.arange(25)[None];survival=torch.where(j<n[:,None],1-hazards,torch.ones_like(hazards)).prod(1)
   return 1-survival
- def train(self,data,labels,steps,bc=False,*,success_bc=None,cql=None,successor_only=False,bc_anchor=None):
+ def train(self,data,labels,steps,bc=False,*,success_bc=None,cql=None,successor_only=False,bc_anchor=None,intervention_pairs=None,actor_rule="sac"):
+  assert actor_rule in ("sac", "awac", "measured_gap", "measured_preference")
   # Independent controls retain the historical bc=True/False behavior by default.
   bc_weight=(.2 if bc else 0.) if success_bc is None else float(success_bc)
   cql_weight=(.1 if bc and self.recipe=='cql_warm' else 0.) if cql is None else float(cql)
@@ -75,6 +76,31 @@ class FeedbackSAC:
      anchors=[bc_anchor[i] for i in self.rng.integers(len(bc_anchor),size=64)]
      ap=self.probs(self.x([t['s'] for t in anchors]));aa=torch.tensor([t['a'] for t in anchors])
      al=al-bc_weight*ap[torch.arange(64),aa].clamp_min(1e-9).log().mean()
+   if intervention_pairs:
+    # Same extra decision-state batch for all comparators. Outcomes are training
+    # supervision only, never consulted by choose(). Prefixes are reexecuted.
+    pr=[intervention_pairs[i] for i in self.rng.integers(len(intervention_pairs),size=64)]
+    px=self.x([v['s'] for v in pr]);pa=torch.tensor([v['a'] for v in pr]);ii=torch.arange(64)
+    pp=self.probs(px)
+    with torch.no_grad():
+     pq=torch.stack([q(px) for q in self.q]).mean(0)
+     if actor_rule=='measured_gap':
+      # Local policy-improvement target under the declared common continuation.
+      # No claim that this rollout advantage equals Q of the current actor.
+      pq[ii,pa]=pq[:,0]+torch.tensor([v['delta'] for v in pr],dtype=torch.float32)
+    if actor_rule=='measured_preference':
+     delta=torch.tensor([v['delta'] for v in pr],dtype=torch.float32)
+     # Zero differences provide no direction: do not label every successful
+     # intervention desirable. Direct conditional log-odds avoids p(a) scaling.
+     logits=self.actor(px);odds=logits[ii,pa]-logits[:,0]
+     extra=(delta.abs()*nn.functional.softplus(-delta.sign()*odds)).mean()
+    elif actor_rule=='awac':
+     with torch.no_grad():
+      observed_a=torch.where(ii%2==0,torch.zeros_like(pa),pa)
+      adv=pq[ii,observed_a]-(pp.detach()*pq).sum(1);weight=(adv/.1).exp().clamp(max=20)
+     extra=-(weight*pp[ii,observed_a].clamp_min(1e-9).log()).mean()
+    else:extra=(pp*(self.alpha*pp.clamp_min(1e-9).log()-pq)).sum(1).mean()
+    al=(al+extra)/2
    self.aopt.zero_grad();al.backward();nn.utils.clip_grad_norm_(self.actor.parameters(),10);self.aopt.step()
    with torch.no_grad():
     for param,t in zip(self.q.parameters(),self.target.parameters()):t.lerp_(param,.005)
