@@ -46,6 +46,11 @@ class LocalRuntime(FeedbackRuntime):
    for w,n in c['wrapper_elapsed']:w._elapsed_steps=copy.deepcopy(n)
   e.records=copy.deepcopy(c['records']);e.calls=copy.deepcopy(c['calls']);e.initial=copy.deepcopy(c['initial']);self.actions=[];self.queries=[];self.callback=policy;planner.elapsed_steps=start;planner.gripper_state=-1;error=None
   pose=copy.deepcopy(c['pose'])
+  # A state restore does not restore PhysX contact-force caches. Refresh them
+  # with ONE charged physical hold step before observing grasp/contact state.
+  # This is local-training initialization only, never benchmark execution.
+  if restore:
+   e.phase='LOCAL_INITIAL_SETTLE';e.step(np.r_[val(u.agent.robot.get_qpos()[0,:7]),-1])
   try:
    for i in range(3):
     if i:
@@ -61,11 +66,11 @@ class LocalRuntime(FeedbackRuntime):
   for i,z in enumerate(self.actions):
    end=self.actions[i+1]['step']if i+1<len(self.actions)else 100;done=i+1==len(self.actions);nxt=self.actions[i+1]['obs']if not done else features(e.records[-1],0,1).tolist();m=e.records[z['step']-1];n=e.records[end-1]
    ts.append(dict(s=z['obs'],next=nxt,a=z['id'],r=(float(y)if done else 0)+.2*((0 if done else potential(n))-potential(m)),done=done,duration=end-z['step'],stage=1,outcome=float(y),scene=c['seed'],source=str(path),controller=self.controller_id,step=z['step'],scope='LOCAL_REACHABLE_HANDOFF'))
-  assert sum(t['duration']for t in ts)==100-start
+  assert sum(t['duration']for t in ts)==100-start-int(restore)
   # Training labels use the actual suffix; prefix is a reference, NOT copied
   # into archived new physical steps or charged for every local rollout.
   full=dict(summary=dict(success=y),steps=e.records);labels=completion_labels(full,ts)
-  row=dict(scope='LOCAL_REACHABLE_HANDOFF',seed=c['seed'],success=y,actual_steps=100-start,start_step=start,native_deadline=100,state_reset=restore,error=error,prefix_source=c['source'],decisions=self.actions,queries=self.queries)
+  row=dict(scope='LOCAL_REACHABLE_HANDOFF',seed=c['seed'],success=y,actual_steps=100-start,start_step=start,native_deadline=100,state_reset=restore,initialization_steps=int(restore),error=error,prefix_source=c['source'],decisions=self.actions,queries=self.queries)
   with gzip.open(path,'wt')as f:json.dump(dict(summary=row,steps=e.records[start:]),f)
   front=None
   if not restore:
@@ -73,6 +78,7 @@ class LocalRuntime(FeedbackRuntime):
   return row,ts,labels,front
 
 p=argparse.ArgumentParser();p.add_argument('--parent',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--budget',type=int,default=10000);p.add_argument('--start',type=int,default=755000);p.add_argument('--dev-count',type=int,default=16);p.add_argument('--fidelity-only',action='store_true');p.add_argument('--rollouts',type=int,default=8);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=False);torch.set_num_threads(2);m=FeedbackSAC.load(a.parent/'FINAL.pt');data=json.loads((a.parent/'TRANSITIONS.json').read_text());oldlabels=json.loads((a.parent/'LABELS.json').read_text());rt=LocalRuntime(a.out/'full_evaluation');cost=0;queries=0;rows=[];captures=[];recent=[];updates_start=m.updates;rng=np.random.default_rng(m.seed+900);m.save(a.out/'INITIAL.pt');shutil.copy2(__file__,a.out/'SOURCE.py')
+(a.out/'PROTOCOL.json').write_text(json.dumps(dict(arguments={k:str(v)if isinstance(v,Path)else v for k,v in vars(a).items()},parent_sha256=hashlib.sha256((a.parent/'FINAL.pt').read_bytes()).hexdigest(),controller=rt.controller_id,training_only_state_initialization=True,restored_contact_refresh_steps=1,full_evaluation_resets_at_handoff=False,restore_exactness='NOT_CLAIMED: serialized state omits PhysX contact caches; restored rollouts are local training, not exact counterfactual pairs'),indent=2))
 def exploratory(s):
  if a.fidelity_only:return m.choose(s)
  if rng.random()<.1:return int(rng.integers(3 if s[44]<.5 else 8))
@@ -96,4 +102,4 @@ for scene in range(a.start,a.start+1000):
  if len(captures)%8==0:m.save(a.out/f'CHECKPOINT_{cost}.pt');evaluate(cost)
  (a.out/'COST.json').write_text(json.dumps(dict(actual_training_steps=cost,planner_queries=queries,local_rollouts=len(rows),captures=captures,optimizer_updates=m.updates-updates_start),indent=2))
 (a.out/'COST.json').write_text(json.dumps(dict(actual_training_steps=cost,planner_queries=queries,local_rollouts=len(rows),captures=captures,optimizer_updates=m.updates-updates_start),indent=2))
-m.save(a.out/'FINAL.pt');evaluate('FINAL');rt.close();(a.out/'LOCAL_ROWS.json').write_text(json.dumps(rows,indent=2));(a.out/'TRANSITIONS.json').write_text(json.dumps(data));(a.out/'TRAINING.json').write_text(json.dumps(m.history,indent=2));print('LOCAL_DONE',flush=True)
+(a.out/'LABELS.json').write_text(json.dumps([z for ll in recent[-48:]for z in ll]or oldlabels));m.save(a.out/'FINAL.pt');evaluate('FINAL');rt.close();(a.out/'LOCAL_ROWS.json').write_text(json.dumps(rows,indent=2));(a.out/'TRANSITIONS.json').write_text(json.dumps(data));(a.out/'TRAINING.json').write_text(json.dumps(m.history,indent=2));print('LOCAL_DONE',flush=True)
