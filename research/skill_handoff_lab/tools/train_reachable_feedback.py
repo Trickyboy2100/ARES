@@ -53,11 +53,13 @@ class LocalRuntime(FeedbackRuntime):
    e.phase='LOCAL_INITIAL_SETTLE';e.step(np.r_[val(u.agent.robot.get_qpos()[0,:7]),-1])
   try:
    for i in range(3):
+    if len(e.records)>=100:break
     if i:
      offset=sapien.Pose([-float(u.peg_half_sizes[0,0])-.01,0,0]);pose=u.goal_pose*offset*u.peg.pose.inv()*pose
     ret=super().execute_feedback(planner,pose)
     if isinstance(ret,int)and ret==-1:break
-   else:ret=super().execute_feedback(planner,c['insert_pose']*sapien.Pose([.05,0,0]))
+   else:
+    if len(e.records)<100:ret=super().execute_feedback(planner,c['insert_pose']*sapien.Pose([.05,0,0]))
   except Horizon:error='HORIZON'
   except Exception as ex:error=type(ex).__name__+':'+str(ex)
   q=np.array(val(u.agent.robot.get_qpos()[0,:7]));e.phase='LOCAL_TERMINAL_HOLD'
@@ -99,7 +101,11 @@ for scene in range(a.start,a.start+1000):
   if front:data.append(front)
   labels=[z for ll in recent[-48:]for z in ll]or oldlabels;m.train(data,labels,0 if a.fidelity_only else 40)
   print('LOCAL_TRAIN',m.mode,scene,j,row['success'],cost,m.updates,row['error'],flush=True)
- if len(captures)%8==0:m.save(a.out/f'CHECKPOINT_{cost}.pt');evaluate(cost)
+ rt.cap['planner'].close();rt.cap=None
+ if len(captures)%8==0:
+  m.save(a.out/f'CHECKPOINT_{cost}.pt')
+  (a.out/'TRANSITIONS.json').write_text(json.dumps(data));(a.out/'LABELS.json').write_text(json.dumps(labels));(a.out/'LOCAL_ROWS.json').write_text(json.dumps(rows))
+  evaluate(cost)
  (a.out/'COST.json').write_text(json.dumps(dict(actual_training_steps=cost,planner_queries=queries,local_rollouts=len(rows),captures=captures,optimizer_updates=m.updates-updates_start),indent=2))
 (a.out/'COST.json').write_text(json.dumps(dict(actual_training_steps=cost,planner_queries=queries,local_rollouts=len(rows),captures=captures,optimizer_updates=m.updates-updates_start),indent=2))
 (a.out/'LABELS.json').write_text(json.dumps([z for ll in recent[-48:]for z in ll]or oldlabels));m.save(a.out/'FINAL.pt');evaluate('FINAL');rt.close();(a.out/'LOCAL_ROWS.json').write_text(json.dumps(rows,indent=2));(a.out/'TRANSITIONS.json').write_text(json.dumps(data));(a.out/'TRAINING.json').write_text(json.dumps(m.history,indent=2));print('LOCAL_DONE',flush=True)
