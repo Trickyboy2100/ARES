@@ -79,7 +79,7 @@ class LocalRuntime(FeedbackRuntime):
    z=c['actions'][0];b=self.actions[0];front=dict(s=z['obs'],next=b['obs'],a=z['id'],r=.2*(potential(c['records'][-1])-potential(c['initial'])),done=False,duration=start,stage=0,outcome=float(y),scene=c['seed'],source=c['source'],controller=self.controller_id,step=0,scope='ONCE_EXECUTED_PREFIX')
   return row,ts,labels,front
 
-p=argparse.ArgumentParser();p.add_argument('--parent',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--budget',type=int,default=10000);p.add_argument('--start',type=int,default=755000);p.add_argument('--dev-count',type=int,default=16);p.add_argument('--fidelity-only',action='store_true');p.add_argument('--rollouts',type=int,default=8);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=False);torch.set_num_threads(2);m=FeedbackSAC.load(a.parent/'FINAL.pt');data=json.loads((a.parent/'TRANSITIONS.json').read_text());oldlabels=json.loads((a.parent/'LABELS.json').read_text());rt=LocalRuntime(a.out/'full_evaluation');cost=0;queries=0;rows=[];captures=[];recent=[];updates_start=m.updates;rng=np.random.default_rng(m.seed+900);m.save(a.out/'INITIAL.pt');shutil.copy2(__file__,a.out/'SOURCE.py')
+p=argparse.ArgumentParser();p.add_argument('--parent',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--budget',type=int,default=10000);p.add_argument('--start',type=int,default=755000);p.add_argument('--dev-count',type=int,default=16);p.add_argument('--fidelity-only',action='store_true');p.add_argument('--head-label-policy',choices=['behavior','deterministic'],default='behavior');p.add_argument('--rollouts',type=int,default=8);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=False);torch.set_num_threads(2);m=FeedbackSAC.load(a.parent/'FINAL.pt');data=json.loads((a.parent/'TRANSITIONS.json').read_text());oldlabels=json.loads((a.parent/'LABELS.json').read_text());rt=LocalRuntime(a.out/'full_evaluation');cost=0;queries=0;rows=[];captures=[];recent=[];updates_start=m.updates;rng=np.random.default_rng(m.seed+900);m.save(a.out/'INITIAL.pt');shutil.copy2(__file__,a.out/'SOURCE.py')
 (a.out/'PROTOCOL.json').write_text(json.dumps(dict(arguments={k:str(v)if isinstance(v,Path)else v for k,v in vars(a).items()},parent_sha256=hashlib.sha256((a.parent/'FINAL.pt').read_bytes()).hexdigest(),controller=rt.controller_id,training_only_state_initialization=True,restored_contact_refresh_steps=1,full_evaluation_resets_at_handoff=False,restore_exactness='NOT_CLAIMED: serialized state omits PhysX contact caches; restored rollouts are local training, not exact counterfactual pairs'),indent=2))
 def exploratory(s):
  if a.fidelity_only:return m.choose(s)
@@ -97,7 +97,10 @@ for scene in range(a.start,a.start+1000):
   labels=[z for ll in recent[-48:]for z in ll]or oldlabels;m.train(data,labels,0 if a.fidelity_only else 40);continue
  for j in range(a.rollouts):
   if a.budget-cost<100-n:break
-  row,t,l,front=rt.local(exploratory,d/f'suffix_{j}.json.gz',restore=j>0);rows.append(row);cost+=row['actual_steps'];queries+=len(row['queries']);data+=t;recent.append(l)
+  deterministic_head=(a.head_label_policy=='deterministic'and j%4==0)
+  row,t,l,front=rt.local((lambda s:m.choose(s))if deterministic_head else exploratory,d/f'suffix_{j}.json.gz',restore=j>0)
+  row['label_policy']='deterministic_deployment'if deterministic_head else 'exploratory_behavior';rows.append(row);cost+=row['actual_steps'];queries+=len(row['queries']);data+=t
+  if a.head_label_policy=='behavior'or deterministic_head:recent.append(l)
   if front:data.append(front)
   labels=[z for ll in recent[-48:]for z in ll]or oldlabels;m.train(data,labels,0 if a.fidelity_only else 40)
   print('LOCAL_TRAIN',m.mode,scene,j,row['success'],cost,m.updates,row['error'],flush=True)
