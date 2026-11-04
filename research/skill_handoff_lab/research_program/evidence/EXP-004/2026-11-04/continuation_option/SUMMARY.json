@@ -1,0 +1,299 @@
+{
+  "table": [
+    {
+      "method": "frozen_rule",
+      "success": 8,
+      "n": 16,
+      "rescue": [
+        758211
+      ],
+      "regression": []
+    },
+    {
+      "method": "option_parent",
+      "success": 7,
+      "n": 16,
+      "rescue": [],
+      "regression": []
+    },
+    {
+      "method": "option_rule",
+      "success": 7,
+      "n": 16,
+      "rescue": [],
+      "regression": []
+    },
+    {
+      "method": "primitive_sac",
+      "success": 7,
+      "n": 16,
+      "rescue": [],
+      "regression": []
+    },
+    {
+      "method": "zero",
+      "success": 7,
+      "n": 16,
+      "rescue": [],
+      "regression": []
+    },
+    {
+      "method": "shared_train/consistent/4",
+      "success": 2,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758203,
+        758204,
+        758205,
+        758208,
+        758215
+      ]
+    },
+    {
+      "method": "shared_train/option_sac/4",
+      "success": 7,
+      "n": 16,
+      "rescue": [],
+      "regression": []
+    },
+    {
+      "method": "shared_train/witness_bc/4",
+      "success": 7,
+      "n": 16,
+      "rescue": [],
+      "regression": []
+    },
+    {
+      "method": "shared_train/consistent/8",
+      "success": 4,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758204,
+        758205,
+        758214
+      ]
+    },
+    {
+      "method": "shared_train/option_sac/8",
+      "success": 7,
+      "n": 16,
+      "rescue": [],
+      "regression": []
+    },
+    {
+      "method": "shared_train/witness_bc/8",
+      "success": 6,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758205
+      ]
+    },
+    {
+      "method": "joint_train/consistent/4",
+      "success": 6,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758207
+      ]
+    },
+    {
+      "method": "joint_train/consistent_joint/4",
+      "success": 3,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758204,
+        758205,
+        758207,
+        758214
+      ]
+    },
+    {
+      "method": "joint_train/option_sac/4",
+      "success": 7,
+      "n": 16,
+      "rescue": [],
+      "regression": []
+    },
+    {
+      "method": "joint_train/witness_bc/4",
+      "success": 4,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758204,
+        758205,
+        758207
+      ]
+    },
+    {
+      "method": "joint_train/consistent/8",
+      "success": 4,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758204,
+        758205,
+        758207
+      ]
+    },
+    {
+      "method": "joint_train/consistent_joint/8",
+      "success": 3,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758204,
+        758205,
+        758207,
+        758214
+      ]
+    },
+    {
+      "method": "joint_train/option_sac/8",
+      "success": 7,
+      "n": 16,
+      "rescue": [],
+      "regression": []
+    },
+    {
+      "method": "joint_train/witness_bc/8",
+      "success": 6,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758205
+      ]
+    },
+    {
+      "method": "smdp_train/consistent/4",
+      "success": 5,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758205,
+        758214
+      ]
+    },
+    {
+      "method": "smdp_train/consistent_smdp/4",
+      "success": 3,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758204,
+        758205,
+        758207,
+        758214
+      ]
+    },
+    {
+      "method": "smdp_train/option_sac/4",
+      "success": 4,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758204,
+        758205,
+        758214
+      ]
+    },
+    {
+      "method": "smdp_train/consistent/8",
+      "success": 6,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758205
+      ]
+    },
+    {
+      "method": "smdp_train/consistent_smdp/8",
+      "success": 4,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758205,
+        758214,
+        758215
+      ]
+    },
+    {
+      "method": "smdp_train/option_sac/8",
+      "success": 6,
+      "n": 16,
+      "rescue": [],
+      "regression": [
+        758205
+      ]
+    }
+  ],
+  "cost": {
+    "episodes": 484,
+    "physical_steps": 48400,
+    "planner_queries": 3847,
+    "planner_wall_s": 18.058021679054946,
+    "episode_wall_s": 2304.697603327455,
+    "critic_updates": 6400,
+    "actor_updates": 9600,
+    "legacy_auxiliary_updates": 6400,
+    "saved_models": 90
+  },
+  "physical_groups": {
+    "event_pilot": {
+      "episodes": 6,
+      "physical_steps": 600,
+      "planner_queries": 44,
+      "planner_wall_s": 0.20370507170446217,
+      "episode_wall_s": 22.43307018117048
+    },
+    "pilot": {
+      "episodes": 15,
+      "physical_steps": 1500,
+      "planner_queries": 120,
+      "planner_wall_s": 0.5587816067272797,
+      "episode_wall_s": 56.33597061003093
+    },
+    "controls": {
+      "episodes": 80,
+      "physical_steps": 8000,
+      "planner_queries": 592,
+      "planner_wall_s": 2.873761079623364,
+      "episode_wall_s": 497.6016225562198
+    },
+    "joint_train": {
+      "episodes": 144,
+      "physical_steps": 14400,
+      "planner_queries": 1165,
+      "planner_wall_s": 5.470401933300309,
+      "episode_wall_s": 586.8431935256813
+    },
+    "shared_train": {
+      "episodes": 112,
+      "physical_steps": 11200,
+      "planner_queries": 873,
+      "planner_wall_s": 4.118663515546359,
+      "episode_wall_s": 621.5242369305342
+    },
+    "smdp_train": {
+      "episodes": 112,
+      "physical_steps": 11200,
+      "planner_queries": 935,
+      "planner_wall_s": 4.2961984215071425,
+      "episode_wall_s": 426.7511624256149
+    },
+    "retakes": {
+      "episodes": 15,
+      "physical_steps": 1500,
+      "planner_queries": 118,
+      "planner_wall_s": 0.5365100506460294,
+      "episode_wall_s": 93.20834709820338
+    }
+  },
+  "scope": "758200..758215 natural development, now seen; no sealed data; one inherited neural seed",
+  "independent_gain": "UNVERIFIED"
+}

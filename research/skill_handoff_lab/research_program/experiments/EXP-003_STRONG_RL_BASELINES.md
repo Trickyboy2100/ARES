@@ -256,3 +256,8 @@ Retain both nominal-retention and learned-recovery endpoints, stronger feedback 
 ### 2026-11-04 — Shared successor learning comparison
 
 [Intervention-credit evidence](../evidence/EXP-004/2026-11-04/intervention_credit/README.md). Same-controller AWAC-style control retains17/24 where fixed-pair SAC finishes10/24; current-policy-pair SAC andAWAC both17/24. Frozen strong rule18/24 onnew natural development. These short continuation studies inherit mature weights but do not establish full RL convergence or a new method. All physical budgets, checkpoints and negative results retained.
+
+
+### 2026-11-04 — Shared continuation Option baseline
+
+[Continuation evidence](../evidence/EXP-004/2026-11-04/continuation_option/README.md): standard same-interface Option-SAC and successBC were actually trained over48 shared native paired episodes. Ordinary fixed checkpoints7/16,7/16,6/16; frozen originalrule8/16. No candidate independent gain. Retain exact physical continuation and actual-duration SMDP infrastructure; inherited initialization is mature, but these new-interface runs do not establish convergence.
