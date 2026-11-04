@@ -261,3 +261,8 @@ Retain both nominal-retention and learned-recovery endpoints, stronger feedback 
 ### 2026-11-04 — Shared continuation Option baseline
 
 [Continuation evidence](../evidence/EXP-004/2026-11-04/continuation_option/README.md): standard same-interface Option-SAC and successBC were actually trained over48 shared native paired episodes. Ordinary fixed checkpoints7/16,7/16,6/16; frozen originalrule8/16. No candidate independent gain. Retain exact physical continuation and actual-duration SMDP infrastructure; inherited initialization is mature, but these new-interface runs do not establish convergence.
+
+
+## 2026-11-05 — Own-policy ordinary RL mainline
+
+[Native results and integrity evidence](../evidence/EXP-004/2026-11-05/online_integrity/README.md). Two64-episode own-policy arms with genuine predecessor learning, isolated train/development and exact resume. Ordinary9→10→6/16; mature retention9→8→9/16. Final endpoint predeclared. These are functioning mature baseline implementations, not evidence of convergence or original method gain. See EXP-004/STATE for target-origin mechanism and next separately frozen comparison.

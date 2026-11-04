@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
-  "last_review": "2026-11-04",
-  "baseline_commit": "c4219f2249141dd34c443aaf428bf4859fd14457",
+  "last_review": "2026-11-05",
+  "baseline_commit": "a8418f9da0f048f4f57c436992153b61623957f9",
   "branch": "research-sci-program",
   "scientific_goal": "One SCI paper: task-conditioned executable parameter adaptation ACROSS REAL MULTI-STAGE ROBOT SKILLS using nominal skill primitives and measured SkillResult to improve successor feasibility, whole-task success and transfer; contact servo and SAC are component baselines",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
-  "latest_evidence": "evidence/EXP-004/2026-11-04/continuation_option/README.md",
-  "next_action": "Continue the same Peg100 multi-skill research with inherited continuation Options, immutable reference actor, actual SMDP boundaries and all checkpoints. Known757300 continuation mismatch is resolved with100 exactly reproduced native steps, but not a new method. Three real update iterations fail independent development: frozen rule8/16, ordinary Option-SAC7/16 then6/16, local preference4/16 then6/16, joint suffix3/16, SMDP credit4/16. Preserve these negatives; do not expand those losses unchanged. Actual local rescue learning exists (758002/004), including candidate5/5 selected training retakes versusBC4/5, but broad action5 intervention generalizes destructively. Next physical/learning experiment should compare intervention timing at reachable feedback boundaries (not only first rear decisions), balance actual nominal-success and failure experience without selecting favorable evaluation states, and validate current-policy tail estimates by native continuations. Inherit strongest standard Option and frozen-rule controls; keep same action/observation/physical budget. No new predictor head or task swap. Restore predecessor learning only after stable successor gains; independent gain UNVERIFIED. No sealed tests/hardware/ARES-R edits. Also inherit the separately verified successful-empty-path measured hold fix (758204 success,100steps); its extra1episode is not an RL gain or a rewritten historical score.",
+  "latest_evidence": "evidence/EXP-004/2026-11-05/online_integrity/README.md",
+  "next_action": "Continue inherited own-policy Option training and all negative models/replay. First obtain missing ARES_SCI_RESEARCH_TASKBOOK.md path (not present at synchronized a8418f9); do not claim it was read. New measured mechanism: refreshing attachment alone destroys5/12nominal successes, requested3mm becomes5.74–21.98mm target change; relative requested-target correction reduces disruption but no new rescue. Freeze this as a separate action-interface study; never retroactively mix frames in the completed online comparison. Next compare ordinary SAC under shared remaining-target interface against its same-interface success-retention control with fresh training data and explicit lineage, then test a concrete policy-improvement mechanism only if residual learning opportunity remains. Preserve learned predecessor3-grasp decisions, native100 and real SkillResult; do not reset to fixed-branch scoring, expand failed preference losses or call target coordinates/BC novel. Exact resume is durable episode/update-boundary, not arbitrary PhysX mid-step restoration. Keep sealed tests/hardware/ARES-R untouched.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -80,7 +80,7 @@
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
-  "latest_run_summary": "616 native100 episodes/61600steps;9480 actor-critic iterations; new24dev nominal17, frozen rule18. Fixed-pair SAC10/AWAC-style17/measured-gap16; current-policy pair SAC/AWAC/gap/preference all17; replay consolidation both17. Direct preference learns beneficial first action on757300 but later replans lose success;69 measured physical steps match successful witness. No independent gain.",
+  "latest_run_summary": "344 native100 episodes/34400steps;128 own-policy training episodes,958 effective decisions,10240 main Actor/Critic updates each. New16dev nominal9,frozen rule8, ordinary Option-SAC final6, persistent successBC9. Intermediate ordinary10 not selected. Exact durable-collection resume matches all weights/RNG and200physicalsteps; no cross-arm/dev replay. Relative remaining-target minus3mm retains5/12 but adds0rescues; zero-offset attachment refresh destroys all5nominal successes. No independent method gain.",
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
   "research_review_20261102": {
     "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
@@ -711,5 +711,31 @@
       "planner_wall_s": 0.03580542979761958,
       "claim": "shared runtime fix only; historical final scores unchanged"
     }
+  },
+  "online_integrity_20261105": {
+    "evidence": "evidence/EXP-004/2026-11-05/online_integrity/README.md",
+    "training_episodes_per_arm": 64,
+    "main_effective_decisions": 958,
+    "main_updates_per_arm": 5120,
+    "full_native_episodes": 344,
+    "physical_steps": 34400,
+    "planning_queries": 2501,
+    "ordinary_curve": [
+      9,
+      10,
+      6
+    ],
+    "success_bc_curve": [
+      9,
+      8,
+      9
+    ],
+    "nominal": 9,
+    "frozen_rule": 8,
+    "dev_count": 16,
+    "init": "same inherited31501; optimizer/exploration31601; not independent neural seeds",
+    "resume": "PASS exact durable-collection comparison and mismatch guard; mid-PhysX unsupported",
+    "taskbook": "MISSING_PATH_REQUESTED",
+    "method_gain": "UNVERIFIED"
   }
 }

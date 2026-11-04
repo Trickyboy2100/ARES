@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "two native100 episodes; interruption after durable collection before update",
+  "all_network_and_optimizer_tensors_equal": true,
+  "global_and_replay_rng_equal": true,
+  "physical_steps_exactly_equal": 200,
+  "transitions_equal_except_source_path": true,
+  "duplicate_reexecutions": 0,
+  "limits": "Mid-PhysX crashes are not restored; uncommitted START is explicitly blocked for cost recovery."
+}

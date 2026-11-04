@@ -1,0 +1,23 @@
+{
+  "training": [
+    759000,
+    759063
+  ],
+  "development": [
+    759200,
+    759215
+  ],
+  "mechanism": [
+    759500,
+    759503
+  ],
+  "resume_check": [
+    758900,
+    758901
+  ],
+  "sets_disjoint": true,
+  "historical_filename_collisions": [],
+  "scope": "existing EXP003/004 per-run physics filenames; sealed-test contents not read; inherited weights retain historical experience",
+  "optimizer_seed": 31601,
+  "neural_initialization": "inherited31501; not multiple independent neural seeds"
+}

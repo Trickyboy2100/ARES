@@ -1,0 +1,24 @@
+{
+  "online_sac": {
+    "native_training_episodes": 64,
+    "steps": 6400,
+    "transitions": 512,
+    "labels": 448,
+    "no_dev_replay": true,
+    "no_other_arm_replay": true,
+    "legal_actions": true,
+    "checkpoint_sha": "353e5c4e5ad8d920c78a8e7a19ff806f9ceba8d1a0d1f69f5f56e40f78980233"
+  },
+  "online_success_bc": {
+    "native_training_episodes": 64,
+    "steps": 6400,
+    "transitions": 446,
+    "labels": 382,
+    "no_dev_replay": true,
+    "no_other_arm_replay": true,
+    "legal_actions": true,
+    "checkpoint_sha": "a4caa73a070d290b38463e79ea38117bfbff228dfa8e1aadcf30873558271813"
+  },
+  "nominal_repeats_exact": 12,
+  "nominal_repeat_physical_steps": 1200
+}
