@@ -9,7 +9,8 @@ from program_discrete_options import OFFSETS,CONTROLLER,episode_transitions
 from program_paired_skill_value import peg_features
 
 class Runtime:
-    def __init__(self,out,successor_mode="single",feedback=None):
+    def __init__(self,out,successor_mode="single",feedback=None,feedback_start=6):
+        self.feedback_start=feedback_start
         self.feedback=feedback
         assert successor_mode in ("single", "split_refresh")
         self.successor_mode=successor_mode
@@ -32,8 +33,8 @@ class Runtime:
                     st=time.monotonic();ret=original(*aa,**kk);owner.queries.append(dict(kind='plan_screw',wall_s=time.monotonic()-st,status=ret.get('status')if isinstance(ret,dict)else str(type(ret))));return ret
                 self.planner.plan_screw=measured
             def move_to_pose_with_screw(self,pose,*a,**kw):
+                if owner.feedback is not None and len(self.env.calls)>=owner.feedback_start and len(self.env.records)<100:return owner.feedback(self,pose,*a,**kw)
                 if len(self.env.calls)==6 and len(self.env.records)<100:
-                    if owner.feedback is not None:return owner.feedback(self,pose,*a,**kw)
                     obs=peg_features(self.env.measure(),100-len(self.env.records),1);action=owner.decide(obs);self.refresh_terminal=bool(action)
                     if action==2:
                         # Experimental additional option, shared authority for all

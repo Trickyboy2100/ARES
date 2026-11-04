@@ -21,9 +21,9 @@ def potential(m):
     return float(-np.clip(np.linalg.norm(x[45:48])/.15,0,3)-.2*x[48])
 
 class FeedbackRuntime(Runtime):
-    def __init__(self,out,chunk=4):
-        self.chunk=chunk;super().__init__(out,feedback=self.execute_feedback);self.controller_id+='__feedback_v1'
-        (self.out/'FEEDBACK_CONTRACT.json').write_text(json.dumps(dict(id=self.controller_id,actions=ACTIONS,chunk=chunk,horizon=100,observation='shared privileged physical state plus active joint queue',zero='original insertion queue then actual final-joint hold',dense='0.2 potential difference; terminal potential zero; terminal native success',no_pose_reset=True),indent=2))
+    def __init__(self,out,chunk=4,feedback_start=3):
+        self.chunk=chunk;super().__init__(out,feedback=self.execute_feedback,feedback_start=feedback_start);self.controller_id+=f'__feedback_v3_start{feedback_start}'
+        (self.out/'FEEDBACK_CONTRACT.json').write_text(json.dumps(dict(id=self.controller_id,actions=ACTIONS,chunk=chunk,feedback_start=feedback_start,horizon=100,observation='shared privileged physical state plus active joint queue',zero='original insertion queue then actual final-joint hold',dense='0.2 potential difference; terminal potential zero; terminal native success',no_pose_reset=True),indent=2))
     def decide(self,obs):
         if len(obs)==54:obs=np.r_[obs,np.zeros(10)].astype(np.float32)
         start=time.monotonic();a=int(self.callback(obs));stage=int(obs[44]);assert 0<=a<(3 if stage==0 else len(ACTIONS))
@@ -31,35 +31,43 @@ class FeedbackRuntime(Runtime):
     def execute_feedback(self,planner,pose,*args,**kw):
         from mani_skill.utils.structs.pose import to_sapien_pose
         pose=to_sapien_pose(pose)
-        e=self.env;u=e.unwrapped;e.phase='INSERT';call=dict(phase='INSERT',start=len(e.records),target=np.r_[pose.p,pose.q].tolist());e.calls.append(call)
+        e=self.env;u=e.unwrapped;phase=['REACH','GRASP','ALIGN','REFINE1','REFINE2','REFINE3','INSERT'][min(len(e.calls),6)];e.phase=phase;call=dict(phase=phase,start=len(e.records),target=np.r_[pose.p,pose.q].tolist());e.calls.append(call)
         def plan(target):
             for _ in range(2):
                 result=planner.planner.plan_screw(np.r_[target.p,target.q],u.agent.robot.get_qpos().cpu().numpy()[0],time_step=u.control_timestep,use_point_cloud=planner.use_point_cloud)
                 if result['status']=='Success':return np.array(result['position'])
             return None
-        queue=plan(pose);cursor=0;last=0;holdq=None
+        queue=plan(pose);nominal_failed=queue is None;cursor=0;last=0;holdq=None
         if queue is None:queue=np.array([val(u.agent.robot.get_qpos()[0,:7])])
         while len(e.records)<100:
-            action=self.decide(features(e.measure(),100-len(e.records),1,queue,cursor,last));record=self.actions[-1];record['plan_failed']=False
+            obs=features(e.measure(),100-len(e.records),1,queue,cursor,last);obs[49]=min(len(e.calls),7)/7
+            action=self.decide(obs);record=self.actions[-1];record['plan_failed']=False
+            if nominal_failed and action==0:
+                call.update(end=len(e.records),failed=True);return -1
+            nominal_failed=False
             if action==7:queue=np.array([val(u.agent.robot.get_qpos()[0,:7])]);cursor=0;holdq=None
             elif action!=0:
                 shift=np.zeros(3)
                 if action in (2,3):shift[1]=.003*(1 if action==2 else -1)
                 if action in (4,5):shift[2]=.003*(1 if action==4 else -1)
-                target=u.goal_pose.sp*sapien.Pose(shift)*u.peg.pose.sp.inv()*u.agent.tcp.pose.sp*sapien.Pose([.05,0,0])
+                if phase=='INSERT':target=u.goal_pose.sp*sapien.Pose(shift)*u.peg.pose.sp.inv()*u.agent.tcp.pose.sp*sapien.Pose([.05,0,0])
+                else:
+                    shift[0]=-float(u.peg_half_sizes[0,0])-.01
+                    target=u.goal_pose.sp*sapien.Pose(shift)*u.peg.pose.sp.inv()*u.agent.tcp.pose.sp
                 if action==6:
                     world=Rotation.from_quat(np.r_[u.goal_pose.sp.q[1:],u.goal_pose.sp.q[0]]).apply([-.006,0,0]);target=sapien.Pose(u.agent.tcp.pose.sp.p+world,u.agent.tcp.pose.sp.q)
                 new=plan(target);record['target']=np.r_[target.p,target.q].tolist()
                 if new is not None:queue=new;cursor=0;holdq=None
                 else:record['plan_failed']=True
             record['queue_length']=len(queue);record['queue_cursor']=cursor
-            for _ in range(min(self.chunk,100-len(e.records))):
+            for _ in range(min(self.chunk,100-len(e.records),len(queue)-cursor if phase!='INSERT' else 100)):
                 if cursor<len(queue):q=queue[cursor];cursor+=1
                 else:
                     if holdq is None:holdq=np.array(val(u.agent.robot.get_qpos()[0,:7]))
                     q=holdq
-                e.phase='INSERT_FEEDBACK';out=e.step(np.r_[q,-1]);planner.elapsed_steps+=1
+                e.phase=phase+'_FEEDBACK';out=e.step(np.r_[q,-1]);planner.elapsed_steps+=1
             last=action
+            if phase!='INSERT' and cursor>=len(queue):break
         call['end']=len(e.records);call['failed']=False
         return out
     def feedback_transitions(self,d,source):

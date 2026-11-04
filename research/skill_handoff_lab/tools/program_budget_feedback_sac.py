@@ -60,7 +60,9 @@ class FeedbackSAC:
    self.qopt.zero_grad();ql.backward();nn.utils.clip_grad_norm_(self.q.parameters(),10);self.qopt.step()
    with torch.no_grad():av=torch.stack([q(x)for q in self.q]).mean(0)
    p=self.probs(x);al=(p*(self.alpha*p.clamp_min(1e-9).log()-av)).sum(1).mean()
-   if bc:al=al-.2*p[idx,a].clamp_min(1e-9).log().mean()
+   if bc:
+    successful=torch.tensor([t['outcome']for t in rows],dtype=torch.float32)
+    al=al-.2*(successful*p[idx,a].clamp_min(1e-9).log()).sum()/successful.sum().clamp_min(1)
    self.aopt.zero_grad();al.backward();nn.utils.clip_grad_norm_(self.actor.parameters(),10);self.aopt.step()
    with torch.no_grad():
     for param,t in zip(self.q.parameters(),self.target.parameters()):t.lerp_(param,.005)
