@@ -2,20 +2,20 @@
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
   "last_review": "2026-11-04",
-  "baseline_commit": "1ea09657bed0de329b2e6bd0ec676ce27d901774",
+  "baseline_commit": "60760b8a855ae5212d26019dd4a45f1e6f0aae46",
   "branch": "research-sci-program",
   "scientific_goal": "One SCI paper: task-conditioned executable parameter adaptation ACROSS REAL MULTI-STAGE ROBOT SKILLS using nominal skill primitives and measured SkillResult to improve successor feasibility, whole-task success and transfer; contact servo and SAC are component baselines",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
-  "latest_evidence": "evidence/EXP-004/2026-11-03/discrete_handoff/README.md",
-  "next_action": "Continue one-paper skill-parameter RL from verified finite physical Options. Do not expand the failed acquisition surrogate unchanged. First inherit categorical DSAC/IQL/FQI/CQL and the frozen-model extraction diagnostics; separate Actor approximation from clipped-Q aggregation under an explicitly shared deployment rule. Any acquisition revision must score that actual deployed rule and demonstrate benefit beyond same-history supervised/FQI and EES-style/independent-kernel controls. Use genuinely new development conditions for subsequent validation;751200-205 and751220-227 are now seen. Preserve native100, full prefixes and all existing negative models; sealed tests remain closed.",
+  "latest_evidence": "evidence/EXP-004/2026-11-04/value_improvement/README.md",
+  "next_action": "Inherit the strong controller, finite Option/SMDP runtime, SAC/IQL/CQL, VIAC/USAC/BEE/STAP controls and all value_improvement evidence. Do not expand measured-backup substitution/coverage gating unchanged: neither beats ordinary SAC. Original and split-insertion development union remains21/32 versus hindsight fixed19/32; all32 development scenes have a weakly dominant grasp among measured rows. Next physically grounded study should retain nominal control and test a bounded body-length-normalized legal grasp domain with explicit jaw-edge margins on genuinely new natural training scenes, looking for additional success beyond strongest shared fixed/search control and real cross-boundary dependence. Keep action legality distinct from replay support; unsupported new actions already caused terminal Q>1 and CQL is a required known control. Only after a useful decision window is demonstrated pursue a mechanism beyond empirical/Q-graph backups or standard conservatism.752000-031,752100-131 and752200-231 are now seen; no sealed tests.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
     "S3": "initial_action_authority_confirmed_identification_incomplete",
     "S4": "active_STAP_replication_and_multi_skill_credible_method",
-    "S5": "active_finite_option_RL_and_acquisition_negative_with_policy_extraction_mechanism",
+    "S5": "active_physical_authority_and_value_learning; measured_handoff_backup_negative; independent_gain_unverified",
     "S6": "not_started",
     "S7": "not_started"
   },
@@ -80,7 +80,7 @@
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update experiments/<card>, DECISIONS.md, EVIDENCE_LEDGER.md and this STATE.json together after material experimental evidence; keep paper claims unverified until independent gain+mechanism ablation.",
-  "latest_run_summary": "Finite physical action semantics verified;38 online model histories reconstructed exactly. Four acquisition revisions and two-seed128-episode ordinary SAC completed. Independent gain remains UNVERIFIED. Posthoc native confirmation distinguishes Actor approximation and critic aggregation; it is baseline diagnosis, not a new algorithm.",
+  "latest_run_summary": "822 native Peg100 episodes across96 new natural initial states; finite3x2/3x3 matrices,14 shared learning controls,54 pretraining histories and6 true online runs. Complete-handoff backup catches up to ordinary mean-critic SAC19/32 for both seeds, no independent gain. CQL removes audited unsupported terminal-Q overflow. All positives/negatives and268 checkpoints preserved.",
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
   "research_review_20261102": {
     "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
@@ -277,6 +277,71 @@
     "best_fixed_fresh": "6/8 hindsight, equals measured finite union",
     "combined_development": "best fixed10/14 vs measured union12/14",
     "posthoc_extraction": "current-joint seed31301 Actor2/minQ4/meanQ5; mature seed31302 Actor3/minQ2/meanQ5;48 actual native episodes; no independent-test claim",
+    "claim": "UNVERIFIED"
+  },
+  "value_improvement_20261104": {
+    "source": "evidence/EXP-004/2026-11-04/value_improvement/README.md",
+    "base": "60760b8",
+    "algorithm_code": "800d9db",
+    "new_natural_initial_states": 96,
+    "complete_native_episodes": 822,
+    "control_steps": 82200,
+    "effective_option_decisions": 1575,
+    "planner_queries": 5846,
+    "primary_critic_updates": 374400,
+    "checkpoints": 268,
+    "training_seeds": [
+      31401,
+      31402
+    ],
+    "design_scenes": [
+      752000,
+      752031
+    ],
+    "online_training_scenes": [
+      752100,
+      752131
+    ],
+    "development_scenes": [
+      752200,
+      752231
+    ],
+    "development_scope": "iterative development, never sealed",
+    "two_option_design": "fixed24/32 vs union25/32",
+    "three_option_design": "fixed24/32 vs union26/32",
+    "development_both_sets": "fixed19/32 hindsight vs union21/32; training-selected fixed18/32",
+    "online_ordinary_sac": [
+      "19/32",
+      "19/32"
+    ],
+    "online_complete_handoff": [
+      "19/32",
+      "19/32"
+    ],
+    "online_value_improvement": [
+      "18/32",
+      "19/32"
+    ],
+    "candidate_vs_sac_rescue_regression": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "shared_CQL": [
+      "18/32",
+      "18/32"
+    ],
+    "shared_IQL": [
+      "18/32",
+      "19/32"
+    ],
+    "direct_policy_validation": "six final policies x first8 consecutive development scenes; exact100-step equality",
+    "repeat_physical_rescue": "752002,-10mm,split insertion;2 repeats exact100; shared control NOT RL",
     "claim": "UNVERIFIED"
   }
 }

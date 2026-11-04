@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "archive_restore": {
+    "raw_entries_verified": 1407,
+    "visible_assets_verified_before_qa": 32,
+    "portable_metadata_files": 82,
+    "physical_gzip_and_weights": "unchanged; SHA verified"
+  },
+  "html_local_links": "PASS",
+  "videos": {
+    "RAW.mp4": {
+      "frames": 101,
+      "fps": 20
+    },
+    "ANNOTATED.mp4": {
+      "frames": 101,
+      "fps": 20
+    }
+  },
+  "program_status": "PASS",
+  "git_diff_check": "PASS",
+  "visual_inspection": [
+    "unsupported_value_extrapolation.png",
+    "online_physical_learning.png",
+    "video_shared_option/FINAL.png"
+  ],
+  "browser_render": "NOT_PERFORMED; local-file browser access unavailable"
+}

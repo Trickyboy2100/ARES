@@ -1,0 +1,1352 @@
+{
+  "claim": "UNVERIFIED",
+  "opportunity": {
+    "design": {
+      "n_scenes": 32,
+      "fixed": [
+        17,
+        22,
+        24,
+        24,
+        17,
+        19
+      ],
+      "best_fixed": 24,
+      "measured_union": 25,
+      "all_success": 12,
+      "all_fail": 7,
+      "mixed": 13,
+      "fixed_selection": "hindsight bound, not train-selected deployment"
+    },
+    "development": {
+      "n_scenes": 32,
+      "fixed": [
+        16,
+        17,
+        18,
+        19,
+        14,
+        15
+      ],
+      "best_fixed": 19,
+      "measured_union": 21,
+      "all_success": 10,
+      "all_fail": 11,
+      "mixed": 11,
+      "fixed_selection": "hindsight bound, not train-selected deployment"
+    },
+    "extended_design": {
+      "n_scenes": 32,
+      "fixed": [
+        17,
+        22,
+        19,
+        24,
+        24,
+        19,
+        17,
+        19,
+        15
+      ],
+      "best_fixed": 24,
+      "measured_union": 26,
+      "all_success": 11,
+      "all_fail": 6,
+      "mixed": 15,
+      "fixed_selection": "hindsight bound, not train-selected deployment"
+    },
+    "extended_development": {
+      "n_scenes": 32,
+      "fixed": [
+        16,
+        17,
+        13,
+        18,
+        19,
+        13,
+        14,
+        15,
+        10
+      ],
+      "best_fixed": 19,
+      "measured_union": 21,
+      "all_success": 7,
+      "all_fail": 11,
+      "mixed": 14,
+      "fixed_selection": "hindsight bound, not train-selected deployment"
+    }
+  },
+  "final_tables": {
+    "two_options": [
+      {
+        "method": "fqi",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31401/fqi_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "handoff",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31401/handoff_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "iql",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31401/iql_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "lower_bound",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31401/lower_bound_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "sac_mean",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31401/sac_mean_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "sac_min",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31401/sac_min_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "stap",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31401/stap_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "supervised",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 20,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31401/supervised_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "usac",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31401/usac_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "vi_expectile",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31401/vi_expectile_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "vi_mean",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31401/vi_mean_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "fqi",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31402/fqi_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "handoff",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 16,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31402/handoff_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "iql",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31402/iql_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "lower_bound",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31402/lower_bound_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "sac_mean",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31402/sac_mean_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "sac_min",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31402/sac_min_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "stap",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31402/stap_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "supervised",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31402/supervised_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "usac",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31402/usac_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "vi_expectile",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31402/vi_expectile_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "vi_mean",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_31402/vi_mean_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "bee",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_bee_31401/bee_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "bee",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_bee_31402/bee_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "handoff_complete",
+        "seed": 31401,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_complete_31401/handoff_complete_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "handoff_complete",
+        "seed": 31402,
+        "checkpoint": 192,
+        "rule": "deployed",
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/train_complete_31402/handoff_complete_192.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      }
+    ],
+    "three_options": [
+      {
+        "method": "fqi",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 15,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31401/fqi_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "handoff",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 14,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31401/handoff_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "iql",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31401/iql_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "lower_bound",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31401/lower_bound_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "sac_mean",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31401/sac_mean_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "sac_min",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 15,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31401/sac_min_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "stap",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31401/stap_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "supervised",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 16,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31401/supervised_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "usac",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 14,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31401/usac_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "vi_expectile",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 16,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31401/vi_expectile_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "vi_mean",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 16,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31401/vi_mean_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "fqi",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31402/fqi_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "handoff",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 13,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31402/handoff_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "iql",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31402/iql_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "lower_bound",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 16,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31402/lower_bound_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "sac_mean",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31402/sac_mean_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "sac_min",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31402/sac_min_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "stap",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31402/stap_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "supervised",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 16,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31402/supervised_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "usac",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31402/usac_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "vi_expectile",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 16,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31402/vi_expectile_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "vi_mean",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_31402/vi_mean_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "bee",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_bee_31401/bee_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "bee",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_bee_31402/bee_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "handoff_complete",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 15,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_complete_31401/handoff_complete_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "handoff_complete",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_complete_31402/handoff_complete_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "cql",
+        "seed": 31401,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_cql_31401/cql_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "cql",
+        "seed": 31402,
+        "checkpoint": 288,
+        "rule": "deployed",
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/train_cql_31402/cql_288.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      }
+    ]
+  },
+  "paired": {
+    "two_options:31401:sac_min": {
+      "rescues": 1,
+      "regressions": 1,
+      "paired_difference": 0.0,
+      "scene_bootstrap_95": [
+        -0.09375,
+        0.09375
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31401:sac_mean": {
+      "rescues": 1,
+      "regressions": 1,
+      "paired_difference": 0.0,
+      "scene_bootstrap_95": [
+        -0.09375,
+        0.09375
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31401:vi_mean": {
+      "rescues": 0,
+      "regressions": 0,
+      "paired_difference": 0.0,
+      "scene_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31401:vi_expectile": {
+      "rescues": 2,
+      "regressions": 1,
+      "paired_difference": 0.03125,
+      "scene_bootstrap_95": [
+        -0.0625,
+        0.125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31401:usac": {
+      "rescues": 1,
+      "regressions": 1,
+      "paired_difference": 0.0,
+      "scene_bootstrap_95": [
+        -0.09375,
+        0.09375
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31401:lower_bound": {
+      "rescues": 1,
+      "regressions": 0,
+      "paired_difference": 0.03125,
+      "scene_bootstrap_95": [
+        0.0,
+        0.09375
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31401:handoff_complete": {
+      "rescues": 1,
+      "regressions": 0,
+      "paired_difference": 0.03125,
+      "scene_bootstrap_95": [
+        0.0,
+        0.09375
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31401:bee": {
+      "rescues": 2,
+      "regressions": 1,
+      "paired_difference": 0.03125,
+      "scene_bootstrap_95": [
+        -0.0625,
+        0.125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31401:fqi": {
+      "rescues": 1,
+      "regressions": 0,
+      "paired_difference": 0.03125,
+      "scene_bootstrap_95": [
+        0.0,
+        0.09375
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31401:iql": {
+      "rescues": 2,
+      "regressions": 1,
+      "paired_difference": 0.03125,
+      "scene_bootstrap_95": [
+        -0.0625,
+        0.125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31401:supervised": {
+      "rescues": 0,
+      "regressions": 1,
+      "paired_difference": -0.03125,
+      "scene_bootstrap_95": [
+        -0.09375,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31401:stap": {
+      "rescues": 1,
+      "regressions": 0,
+      "paired_difference": 0.03125,
+      "scene_bootstrap_95": [
+        0.0,
+        0.09375
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31402:sac_min": {
+      "rescues": 1,
+      "regressions": 3,
+      "paired_difference": -0.0625,
+      "scene_bootstrap_95": [
+        -0.1875,
+        0.0625
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31402:sac_mean": {
+      "rescues": 1,
+      "regressions": 3,
+      "paired_difference": -0.0625,
+      "scene_bootstrap_95": [
+        -0.1875,
+        0.0625
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31402:vi_mean": {
+      "rescues": 1,
+      "regressions": 2,
+      "paired_difference": -0.03125,
+      "scene_bootstrap_95": [
+        -0.125,
+        0.0625
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31402:vi_expectile": {
+      "rescues": 1,
+      "regressions": 3,
+      "paired_difference": -0.0625,
+      "scene_bootstrap_95": [
+        -0.1875,
+        0.0625
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31402:usac": {
+      "rescues": 1,
+      "regressions": 3,
+      "paired_difference": -0.0625,
+      "scene_bootstrap_95": [
+        -0.1875,
+        0.0625
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31402:lower_bound": {
+      "rescues": 0,
+      "regressions": 1,
+      "paired_difference": -0.03125,
+      "scene_bootstrap_95": [
+        -0.09375,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31402:handoff_complete": {
+      "rescues": 0,
+      "regressions": 1,
+      "paired_difference": -0.03125,
+      "scene_bootstrap_95": [
+        -0.09375,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31402:bee": {
+      "rescues": 0,
+      "regressions": 3,
+      "paired_difference": -0.09375,
+      "scene_bootstrap_95": [
+        -0.21875,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31402:fqi": {
+      "rescues": 1,
+      "regressions": 2,
+      "paired_difference": -0.03125,
+      "scene_bootstrap_95": [
+        -0.125,
+        0.0625
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31402:iql": {
+      "rescues": 1,
+      "regressions": 3,
+      "paired_difference": -0.0625,
+      "scene_bootstrap_95": [
+        -0.1875,
+        0.0625
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31402:supervised": {
+      "rescues": 0,
+      "regressions": 2,
+      "paired_difference": -0.0625,
+      "scene_bootstrap_95": [
+        -0.15625,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "two_options:31402:stap": {
+      "rescues": 1,
+      "regressions": 3,
+      "paired_difference": -0.0625,
+      "scene_bootstrap_95": [
+        -0.1875,
+        0.0625
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:sac_min": {
+      "rescues": 1,
+      "regressions": 2,
+      "paired_difference": -0.03125,
+      "scene_bootstrap_95": [
+        -0.125,
+        0.0625
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:sac_mean": {
+      "rescues": 1,
+      "regressions": 5,
+      "paired_difference": -0.125,
+      "scene_bootstrap_95": [
+        -0.28125,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:vi_mean": {
+      "rescues": 0,
+      "regressions": 2,
+      "paired_difference": -0.0625,
+      "scene_bootstrap_95": [
+        -0.15625,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:vi_expectile": {
+      "rescues": 1,
+      "regressions": 3,
+      "paired_difference": -0.0625,
+      "scene_bootstrap_95": [
+        -0.1875,
+        0.0625
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:usac": {
+      "rescues": 2,
+      "regressions": 2,
+      "paired_difference": 0.0,
+      "scene_bootstrap_95": [
+        -0.125,
+        0.125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:lower_bound": {
+      "rescues": 0,
+      "regressions": 3,
+      "paired_difference": -0.09375,
+      "scene_bootstrap_95": [
+        -0.21875,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:handoff_complete": {
+      "rescues": 0,
+      "regressions": 1,
+      "paired_difference": -0.03125,
+      "scene_bootstrap_95": [
+        -0.09375,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:bee": {
+      "rescues": 0,
+      "regressions": 3,
+      "paired_difference": -0.09375,
+      "scene_bootstrap_95": [
+        -0.21875,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:fqi": {
+      "rescues": 0,
+      "regressions": 1,
+      "paired_difference": -0.03125,
+      "scene_bootstrap_95": [
+        -0.09375,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:iql": {
+      "rescues": 0,
+      "regressions": 4,
+      "paired_difference": -0.125,
+      "scene_bootstrap_95": [
+        -0.25,
+        -0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:cql": {
+      "rescues": 0,
+      "regressions": 4,
+      "paired_difference": -0.125,
+      "scene_bootstrap_95": [
+        -0.25,
+        -0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:supervised": {
+      "rescues": 0,
+      "regressions": 2,
+      "paired_difference": -0.0625,
+      "scene_bootstrap_95": [
+        -0.15625,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31401:stap": {
+      "rescues": 1,
+      "regressions": 4,
+      "paired_difference": -0.09375,
+      "scene_bootstrap_95": [
+        -0.21875,
+        0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:sac_min": {
+      "rescues": 0,
+      "regressions": 5,
+      "paired_difference": -0.15625,
+      "scene_bootstrap_95": [
+        -0.28125,
+        -0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:sac_mean": {
+      "rescues": 0,
+      "regressions": 4,
+      "paired_difference": -0.125,
+      "scene_bootstrap_95": [
+        -0.25,
+        -0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:vi_mean": {
+      "rescues": 0,
+      "regressions": 5,
+      "paired_difference": -0.15625,
+      "scene_bootstrap_95": [
+        -0.28125,
+        -0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:vi_expectile": {
+      "rescues": 1,
+      "regressions": 4,
+      "paired_difference": -0.09375,
+      "scene_bootstrap_95": [
+        -0.21875,
+        0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:usac": {
+      "rescues": 0,
+      "regressions": 5,
+      "paired_difference": -0.15625,
+      "scene_bootstrap_95": [
+        -0.28125,
+        -0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:lower_bound": {
+      "rescues": 0,
+      "regressions": 3,
+      "paired_difference": -0.09375,
+      "scene_bootstrap_95": [
+        -0.21875,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:handoff_complete": {
+      "rescues": 0,
+      "regressions": 4,
+      "paired_difference": -0.125,
+      "scene_bootstrap_95": [
+        -0.25,
+        -0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:bee": {
+      "rescues": 0,
+      "regressions": 4,
+      "paired_difference": -0.125,
+      "scene_bootstrap_95": [
+        -0.25,
+        -0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:fqi": {
+      "rescues": 0,
+      "regressions": 5,
+      "paired_difference": -0.15625,
+      "scene_bootstrap_95": [
+        -0.28125,
+        -0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:iql": {
+      "rescues": 0,
+      "regressions": 6,
+      "paired_difference": -0.1875,
+      "scene_bootstrap_95": [
+        -0.34375,
+        -0.0625
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:cql": {
+      "rescues": 0,
+      "regressions": 5,
+      "paired_difference": -0.15625,
+      "scene_bootstrap_95": [
+        -0.28125,
+        -0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:supervised": {
+      "rescues": 0,
+      "regressions": 3,
+      "paired_difference": -0.09375,
+      "scene_bootstrap_95": [
+        -0.21875,
+        0.0
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    },
+    "three_options:31402:stap": {
+      "rescues": 0,
+      "regressions": 4,
+      "paired_difference": -0.125,
+      "scene_bootstrap_95": [
+        -0.25,
+        -0.03125
+      ],
+      "note": "exploratory development, no multiplicity-adjusted superiority claim"
+    }
+  },
+  "online": {
+    "scores": [
+      {
+        "method": "handoff_complete",
+        "seed": 31401,
+        "checkpoint": 0,
+        "updates": 8000,
+        "success": 15,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_handoff_complete_31401/MODEL_0.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "handoff_complete",
+        "seed": 31401,
+        "checkpoint": 16,
+        "updates": 8400,
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_handoff_complete_31401/MODEL_16.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "handoff_complete",
+        "seed": 31401,
+        "checkpoint": 32,
+        "updates": 8800,
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_handoff_complete_31401/MODEL_32.pt",
+        "evaluation": "LOGGED_PANEL_WITH_DIRECT_PREFIX_SCENES_EXACT100_CHECK",
+        "direct_scenes": 8
+      },
+      {
+        "method": "handoff_complete",
+        "seed": 31402,
+        "checkpoint": 0,
+        "updates": 8000,
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_handoff_complete_31402/MODEL_0.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "handoff_complete",
+        "seed": 31402,
+        "checkpoint": 16,
+        "updates": 8400,
+        "success": 15,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_handoff_complete_31402/MODEL_16.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "handoff_complete",
+        "seed": 31402,
+        "checkpoint": 32,
+        "updates": 8800,
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_handoff_complete_31402/MODEL_32.pt",
+        "evaluation": "LOGGED_PANEL_WITH_DIRECT_PREFIX_SCENES_EXACT100_CHECK",
+        "direct_scenes": 8
+      },
+      {
+        "method": "sac_mean",
+        "seed": 31401,
+        "checkpoint": 0,
+        "updates": 8000,
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_sac_mean_31401/MODEL_0.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "sac_mean",
+        "seed": 31401,
+        "checkpoint": 16,
+        "updates": 8400,
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_sac_mean_31401/MODEL_16.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "sac_mean",
+        "seed": 31401,
+        "checkpoint": 32,
+        "updates": 8800,
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_sac_mean_31401/MODEL_32.pt",
+        "evaluation": "LOGGED_PANEL_WITH_DIRECT_PREFIX_SCENES_EXACT100_CHECK",
+        "direct_scenes": 8
+      },
+      {
+        "method": "sac_mean",
+        "seed": 31402,
+        "checkpoint": 0,
+        "updates": 8000,
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_sac_mean_31402/MODEL_0.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "sac_mean",
+        "seed": 31402,
+        "checkpoint": 16,
+        "updates": 8400,
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_sac_mean_31402/MODEL_16.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "sac_mean",
+        "seed": 31402,
+        "checkpoint": 32,
+        "updates": 8800,
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_sac_mean_31402/MODEL_32.pt",
+        "evaluation": "LOGGED_PANEL_WITH_DIRECT_PREFIX_SCENES_EXACT100_CHECK",
+        "direct_scenes": 8
+      },
+      {
+        "method": "vi_mean",
+        "seed": 31401,
+        "checkpoint": 0,
+        "updates": 8000,
+        "success": 16,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_vi_mean_31401/MODEL_0.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "vi_mean",
+        "seed": 31401,
+        "checkpoint": 16,
+        "updates": 8400,
+        "success": 17,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_vi_mean_31401/MODEL_16.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "vi_mean",
+        "seed": 31401,
+        "checkpoint": 32,
+        "updates": 8800,
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_vi_mean_31401/MODEL_32.pt",
+        "evaluation": "LOGGED_PANEL_WITH_DIRECT_PREFIX_SCENES_EXACT100_CHECK",
+        "direct_scenes": 8
+      },
+      {
+        "method": "vi_mean",
+        "seed": 31402,
+        "checkpoint": 0,
+        "updates": 8000,
+        "success": 18,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_vi_mean_31402/MODEL_0.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "vi_mean",
+        "seed": 31402,
+        "checkpoint": 16,
+        "updates": 8400,
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_vi_mean_31402/MODEL_16.pt",
+        "evaluation": "FROZEN_POLICY_ON_REAL_BRANCHES_NOT_ADDITIONAL_PHYSICS"
+      },
+      {
+        "method": "vi_mean",
+        "seed": 31402,
+        "checkpoint": 32,
+        "updates": 8800,
+        "success": 19,
+        "n": 32,
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/value_improvement_20261104/threeway/online_vi_mean_31402/MODEL_32.pt",
+        "evaluation": "LOGGED_PANEL_WITH_DIRECT_PREFIX_SCENES_EXACT100_CHECK",
+        "direct_scenes": 8
+      }
+    ],
+    "pairs": {
+      "31401:sac_mean": {
+        "rescues": 1,
+        "regressions": 1,
+        "difference": 0.0
+      },
+      "31401:vi_mean": {
+        "rescues": 1,
+        "regressions": 0,
+        "difference": 0.03125
+      },
+      "31402:sac_mean": {
+        "rescues": 0,
+        "regressions": 0,
+        "difference": 0.0
+      },
+      "31402:vi_mean": {
+        "rescues": 1,
+        "regressions": 1,
+        "difference": 0.0
+      }
+    }
+  },
+  "cost": {
+    "actual_episodes": 822,
+    "control_steps": 82200,
+    "planner_queries": 5846,
+    "planner_wall_s": 29.426441132556647,
+    "effective_option_decisions": 1575,
+    "errors": [],
+    "wall_note": "concurrent single-GPU processes; timings are not isolated latency benchmarks",
+    "shared_data_primary_critic_updates": 369600,
+    "own_policy_additional_critic_updates": 4800,
+    "total_primary_critic_updates": 374400,
+    "fixture_and_audit_updates_excluded": true
+  }
+}
