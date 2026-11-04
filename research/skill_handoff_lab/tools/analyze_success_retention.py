@@ -11,6 +11,11 @@ for directory in sorted(a.root.iterdir()):
   rows=json.loads(f.read_text());rescue=[r['seed'] for r in rows if r['success'] and not b[r['seed']]['success']];regress=[r['seed'] for r in rows if not r['success'] and b[r['seed']]['success']]
   acts=collections.Counter(d['id'] for r in rows for d in r['decisions'] if d['stage']==1)
   evals[f.stem]=dict(success=sum(r['success'] for r in rows),n=len(rows),rescues=rescue,regressions=regress,successor_actions=dict(acts),replans=sum(d.get('replanned',False) for r in rows for d in r['decisions']))
+ if not evals and (directory/'RESULTS.json').exists():
+  grouped=collections.defaultdict(list)
+  for row in json.loads((directory/'RESULTS.json').read_text()):grouped[row['tag']].append(row)
+  for tag,rows in grouped.items():
+   evals[tag]=dict(success=sum(r['success']for r in rows),n=len(rows),rescues=[r['seed']for r in rows if r['success']and not b[r['seed']]['success']],regressions=[r['seed']for r in rows if not r['success']and b[r['seed']]['success']],successor_actions=dict(collections.Counter(z['id']for r in rows for z in r['decisions']if z['stage']==1)),replans=sum(z.get('replanned',False)for r in rows for z in r['decisions']))
  if not evals:continue
  raw=list((directory/'physics').glob('*.json.gz'));steps=0;queries=0;planning_s=0;prefix_errors=[]
  base_files={json.loads(gzip.decompress(p.read_bytes()))['summary']['seed']:p for p in (a.root/'baseline/physics').glob('*.json.gz')}
@@ -28,5 +33,5 @@ for directory in sorted(a.root.iterdir()):
      prefix_errors.append(err)
  train=json.loads((directory/'TRAIN.json').read_text()) if (directory/'TRAIN.json').exists() else []
  protocol=json.loads((directory/'PROTOCOL.json').read_text()) if (directory/'PROTOCOL.json').exists() else {}
- result[directory.name]=dict(evaluations=evals,full_episodes=len(raw),physical_steps=steps,training_success=sum(r['success']for r in train),training_episodes=len(train),training_steps=len(train)*100,optimizer_iterations=protocol.get('updates',len(train)*40),prefix_max_error=max(prefix_errors,default=0),planning_queries=queries,planning_wall_s=planning_s)
+ result[directory.name]=dict(evaluations=evals,full_episodes=len(raw),physical_steps=steps,training_success=sum(r['success']for r in train),training_episodes=len(train),training_steps=len(train)*100,training_successor_decisions=sum(z['stage']==1 for r in train for z in r['decisions']),optimizer_iterations=protocol.get('updates',len(train)*40),prefix_max_error=max(prefix_errors,default=0),planning_queries=queries,planning_wall_s=planning_s)
 a.out.parent.mkdir(parents=True,exist_ok=True);a.out.write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))

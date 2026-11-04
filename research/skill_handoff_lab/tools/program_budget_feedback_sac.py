@@ -32,7 +32,7 @@ class FeedbackSAC:
   if self.mode=='budget_blind':z[:,41]=0
   hazards=self.completion(z).sigmoid();n=torch.ceil(budget/4).long().clamp(0,25);j=torch.arange(25)[None];survival=torch.where(j<n[:,None],1-hazards,torch.ones_like(hazards)).prod(1)
   return 1-survival
- def train(self,data,labels,steps,bc=False,*,success_bc=None,cql=None,successor_only=False):
+ def train(self,data,labels,steps,bc=False,*,success_bc=None,cql=None,successor_only=False,bc_anchor=None):
   # Independent controls retain the historical bc=True/False behavior by default.
   bc_weight=(.2 if bc else 0.) if success_bc is None else float(success_bc)
   cql_weight=(.1 if bc and self.recipe=='cql_warm' else 0.) if cql is None else float(cql)
@@ -67,8 +67,14 @@ class FeedbackSAC:
    with torch.no_grad():av=torch.stack([q(x)for q in self.q]).mean(0)
    p=self.probs(x);al=(p*(self.alpha*p.clamp_min(1e-9).log()-av)).sum(1).mean()
    if bc_weight:
-    successful=torch.tensor([t['outcome']for t in rows],dtype=torch.float32)
-    al=al-bc_weight*(successful*p[idx,a].clamp_min(1e-9).log()).sum()/successful.sum().clamp_min(1)
+    if bc_anchor is None:
+     successful=torch.tensor([t['outcome']for t in rows],dtype=torch.float32)
+     al=al-bc_weight*(successful*p[idx,a].clamp_min(1e-9).log()).sum()/successful.sum().clamp_min(1)
+    else:
+     assert bc_anchor and all(t['outcome'] and t['stage']==1 for t in bc_anchor)
+     anchors=[bc_anchor[i] for i in self.rng.integers(len(bc_anchor),size=64)]
+     ap=self.probs(self.x([t['s'] for t in anchors]));aa=torch.tensor([t['a'] for t in anchors])
+     al=al-bc_weight*ap[torch.arange(64),aa].clamp_min(1e-9).log().mean()
    self.aopt.zero_grad();al.backward();nn.utils.clip_grad_norm_(self.actor.parameters(),10);self.aopt.step()
    with torch.no_grad():
     for param,t in zip(self.q.parameters(),self.target.parameters()):t.lerp_(param,.005)
