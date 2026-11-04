@@ -22,8 +22,8 @@ def potential(m):
 
 class FeedbackRuntime(Runtime):
     def __init__(self,out,chunk=4,feedback_start=3):
-        self.chunk=chunk;super().__init__(out,feedback=self.execute_feedback,feedback_start=feedback_start);self.controller_id+=f'__feedback_v3_start{feedback_start}'
-        (self.out/'FEEDBACK_CONTRACT.json').write_text(json.dumps(dict(id=self.controller_id,actions=ACTIONS,chunk=chunk,feedback_start=feedback_start,horizon=100,observation='shared privileged physical state plus active joint queue',zero='original refinement and insertion queues then actual final-joint hold',dense='0.2 potential difference; terminal potential zero; terminal native success',no_pose_reset=True),indent=2))
+        self.chunk=chunk;super().__init__(out,feedback=self.execute_feedback,feedback_start=feedback_start);self.controller_id+=f'__feedback_v4_persistent_start{feedback_start}'
+        (self.out/'FEEDBACK_CONTRACT.json').write_text(json.dumps(dict(id=self.controller_id,actions=ACTIONS,chunk=chunk,feedback_start=feedback_start,horizon=100,observation='shared privileged physical state plus active joint queue',zero='original refinement and insertion queues then actual final-joint hold',dense='0.2 potential difference; terminal potential zero; terminal native success',no_pose_reset=True,parameter_hold='IDs1..5 repeated while active continue queue; change or exhausted queue triggers measured replan'),indent=2))
     def decide(self,obs):
         if len(obs)==54:obs=np.r_[obs,np.zeros(10)].astype(np.float32)
         start=time.monotonic();a=int(self.callback(obs));stage=int(obs[44]);assert 0<=a<(3 if stage==0 else len(ACTIONS))
@@ -41,12 +41,12 @@ class FeedbackRuntime(Runtime):
         if queue is None:queue=np.array([val(u.agent.robot.get_qpos()[0,:7])])
         while len(e.records)<100:
             obs=features(e.measure(),100-len(e.records),1,queue,cursor,last);obs[49]=min(len(e.calls),7)/7
-            action=self.decide(obs);record=self.actions[-1];record['plan_failed']=False
+            action=self.decide(obs);record=self.actions[-1];record['plan_failed']=False;record['replanned']=False
             if nominal_failed and action==0:
                 call.update(end=len(e.records),failed=True);return -1
             nominal_failed=False
             if action==7:queue=np.array([val(u.agent.robot.get_qpos()[0,:7])]);cursor=0;holdq=None
-            elif action!=0:
+            elif action!=0 and not(action in (1,2,3,4,5) and action==last and cursor<len(queue)):
                 shift=np.zeros(3)
                 if action in (2,3):shift[1]=.003*(1 if action==2 else -1)
                 if action in (4,5):shift[2]=.003*(1 if action==4 else -1)
@@ -56,7 +56,7 @@ class FeedbackRuntime(Runtime):
                     target=u.goal_pose.sp*sapien.Pose(shift)*u.peg.pose.sp.inv()*u.agent.tcp.pose.sp
                 if action==6:
                     world=Rotation.from_quat(np.r_[u.goal_pose.sp.q[1:],u.goal_pose.sp.q[0]]).apply([-.006,0,0]);target=sapien.Pose(u.agent.tcp.pose.sp.p+world,u.agent.tcp.pose.sp.q)
-                new=plan(target);record['target']=np.r_[target.p,target.q].tolist()
+                record['replanned']=True;new=plan(target);record['target']=np.r_[target.p,target.q].tolist()
                 if new is not None:queue=new;cursor=0;holdq=None
                 else:record['plan_failed']=True
             record['queue_length']=len(queue);record['queue_cursor']=cursor

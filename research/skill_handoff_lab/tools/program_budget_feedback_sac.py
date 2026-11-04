@@ -14,7 +14,8 @@ class Net(nn.Module):
  def forward(self,x):return self.net(x)
 
 class FeedbackSAC:
- def __init__(self,mode,seed,mu,sd):
+ def __init__(self,mode,seed,mu,sd,recipe="original"):
+  self.recipe=recipe
   assert mode in ['ordinary','suffix','budget','budget_blind'];self.mode=mode;self.seed=seed;torch.manual_seed(seed);self.rng=np.random.default_rng(seed)
   self.mu=mu;self.sd=sd;self.q=nn.ModuleList([Net(8),Net(8)]);self.target=copy.deepcopy(self.q);self.actor=Net(8);self.completion=Net(25);self.scalar=Net(1)
   self.qopt=torch.optim.Adam(self.q.parameters(),lr=3e-4);self.aopt=torch.optim.Adam(self.actor.parameters(),lr=3e-4);self.hopt=torch.optim.Adam(list(self.completion.parameters())+list(self.scalar.parameters()),lr=3e-4)
@@ -57,6 +58,8 @@ class FeedbackSAC:
      nv=torch.where(frontmask,prob-phi,nv)
     targetq=r+(~done).float()*nv
    qs=[q(x)for q in self.q];ql=sum((q[idx,a]-targetq).square().mean()for q in qs)/2
+   if bc and self.recipe=='cql_warm':
+    mask=self.mask(x);ql=ql+.1*sum((q.masked_fill(~mask,-1e9).logsumexp(1)-q[idx,a]).mean()for q in qs)/2
    self.qopt.zero_grad();ql.backward();nn.utils.clip_grad_norm_(self.q.parameters(),10);self.qopt.step()
    with torch.no_grad():av=torch.stack([q(x)for q in self.q]).mean(0)
    p=self.probs(x);al=(p*(self.alpha*p.clamp_min(1e-9).log()-av)).sum(1).mean()
@@ -69,10 +72,10 @@ class FeedbackSAC:
    self.updates+=1;hist=dict(update=self.updates,q_loss=float(ql),actor_loss=float(al),hazard_loss=float(loss),suffix_loss=float(sl),front_target=float(targetq[:16].mean()),n=len(data),labels=len(labels))
   hist['wall_s']=time.monotonic()-tic;self.history.append(hist);return hist
  def save(self,path):
-  keys=['q','target','actor','completion','scalar','qopt','aopt','hopt'];torch.save(dict(mode=self.mode,seed=self.seed,mu=self.mu,sd=self.sd,updates=self.updates,history=self.history,rng=self.rng.bit_generator.state,weights={k:getattr(self,k).state_dict()for k in keys}),path)
+  keys=['q','target','actor','completion','scalar','qopt','aopt','hopt'];torch.save(dict(mode=self.mode,recipe=self.recipe,seed=self.seed,mu=self.mu,sd=self.sd,updates=self.updates,history=self.history,rng=self.rng.bit_generator.state,weights={k:getattr(self,k).state_dict()for k in keys}),path)
  @classmethod
  def load(cls,path):
-  d=torch.load(path,map_location='cpu',weights_only=False);m=cls(d['mode'],d['seed'],d['mu'],d['sd'])
+  d=torch.load(path,map_location='cpu',weights_only=False);m=cls(d['mode'],d['seed'],d['mu'],d['sd'],d.get('recipe','original'))
   for k,v in d['weights'].items():getattr(m,k).load_state_dict(v)
   m.updates=d['updates'];m.history=d['history'];m.rng.bit_generator.state=d['rng'];return m
 

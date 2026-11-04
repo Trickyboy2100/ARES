@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np,torch
 from program_peg_feedback import FeedbackRuntime,rule
 from program_budget_feedback_sac import FeedbackSAC,completion_labels,normalization
-p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--warm',type=Path);p.add_argument('--mode',choices=['collect','ordinary','suffix','budget','budget_blind','baselines'],required=True);p.add_argument('--seed',type=int,default=31501);p.add_argument('--episodes',type=int,default=96);p.add_argument('--start',type=int,default=753100);p.add_argument('--dev-start',type=int,default=753200);p.add_argument('--dev-count',type=int,default=16);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=False);torch.set_num_threads(2)
+p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--warm',type=Path);p.add_argument('--mode',choices=['collect','ordinary','suffix','budget','budget_blind','baselines'],required=True);p.add_argument('--seed',type=int,default=31501);p.add_argument('--recipe',choices=['original','cql_warm'],default='original');p.add_argument('--episodes',type=int,default=96);p.add_argument('--start',type=int,default=753100);p.add_argument('--dev-start',type=int,default=753200);p.add_argument('--dev-count',type=int,default=16);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=False);torch.set_num_threads(2)
 (a.out/'PROTOCOL.json').write_text(json.dumps(dict(args={k:str(v)if isinstance(v,Path)else v for k,v in vars(a).items()},base=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),native_horizon=100,full_prefix=True,dense_shaping='same potential telescope',history_current_window=48,updates_per_episode=40,pretraining_updates=1000),indent=2))
 source=a.out/'source';source.mkdir()
 for name in ['program_peg_feedback.py','program_budget_feedback_sac.py','program_peg_option_runtime.py',Path(__file__).name]:shutil.copy2(Path(__file__).parent/name,source/name)
@@ -31,7 +31,7 @@ elif a.mode=='baselines':
 else:
  data=json.loads((a.warm/'TRANSITIONS.json').read_text());labels=json.loads((a.warm/'LABELS.json').read_text());initial_data=list(data);initial_labels=list(labels)
  assert all(t['controller']==rt.controller_id and len(t['s'])==64 for t in data),'INCOMPATIBLE_FEEDBACK_REPLAY'
- m=FeedbackSAC(a.mode,a.seed,*normalization(data));m.save(a.out/'INITIAL.pt');m.train(data,labels,1000,bc=True);m.save(a.out/'PRETRAIN.pt')
+ m=FeedbackSAC(a.mode,a.seed,*normalization(data),recipe=a.recipe);m.save(a.out/'INITIAL.pt');m.train(data,labels,1000,bc=True);m.save(a.out/'PRETRAIN.pt')
  def evaluate(checkpoint):
   rows=[]
   for j in range(a.dev_count):
