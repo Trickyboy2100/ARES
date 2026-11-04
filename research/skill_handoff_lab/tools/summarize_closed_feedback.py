@@ -21,6 +21,8 @@ for mode in ['ordinary','suffix','budget']:
  loc={}
  for f in sorted(local.glob('EVAL_*.json')):loc[f.stem[5:]]=score(json.loads(f.read_text()))
  methods[mode]=dict(full_native_training_evaluations=ss,local_training_native_evaluations=loc,local_training_cost=json.loads((local/'COST.json').read_text())if(local/'COST.json').exists()else None)
+ fullrows=json.loads((d/'physics/RESULTS.json').read_text());online=[z for z in fullrows if z['tag'].startswith('online_')];h=json.loads((d/'TRAINING.json').read_text())
+ methods[mode]['native_training_cost']=dict(episodes=len(online),physical_steps=sum(z['steps']for z in online),decisions=sum(len(z['decisions'])for z in online),planning_queries=sum(len(z['queries'])for z in online),planning_wall_s=sum(q['wall_s']for z in online for q in z['queries']),optimizer_updates=h[-1]['update'],optimizer_wall_s=sum(z['wall_s']for z in h),shared_warm_replay='61 compatible physical episodes; charged separately, reused identically')
  if (local/'LOCAL_ROWS.json').exists():
   rr=json.loads((local/'LOCAL_ROWS.json').read_text());methods[mode]['local_training_success']=dict(n=len(rr),success=sum(x['success']for x in rr),note='Training initialized suffixes; NOT full-task benchmark success.')
 # Failed evaluation interrupted suffix training after a valid checkpoint.
@@ -32,7 +34,9 @@ if resume.exists():
  if (resume/'COST.json').exists():
   c=json.loads((resume/'COST.json').read_text());c['resumed_segment_steps']=c['actual_training_steps'];c['actual_training_steps']+=offset;c['optimizer_updates']+=2560;c['recovery']=recovery;v['local_training_cost']=c
 for mode in methods:
- d=r/f'deployment_labels_{mode}';methods[mode]['deployment_label_ablation']={f.stem[5:]:score(json.loads(f.read_text()))for f in d.glob('EVAL_*.json')}
+ d=r/f'deployment_labels_{mode}'
+ if mode=='ordinary'and(r/'deployment_labels_ordinary_retry').exists():d=r/'deployment_labels_ordinary_retry'
+ methods[mode]['deployment_label_ablation']={f.stem[5:]:score(json.loads(f.read_text()))for f in d.glob('EVAL_*.json')}
  if (d/'COST.json').exists():methods[mode]['deployment_label_cost']=json.loads((d/'COST.json').read_text())
 for name in ['96','local_FINAL']:
  base=methods['ordinary']['full_native_training_evaluations'].get(name)if not name.startswith('local')else methods['ordinary']['local_training_native_evaluations'].get('FINAL')

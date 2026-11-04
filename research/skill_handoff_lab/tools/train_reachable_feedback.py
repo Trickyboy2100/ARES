@@ -111,4 +111,8 @@ for scene in range(a.start,a.start+1000):
   evaluate(cost)
  (a.out/'COST.json').write_text(json.dumps(dict(actual_training_steps=cost,planner_queries=queries,local_rollouts=len(rows),captures=captures,optimizer_updates=m.updates-updates_start),indent=2))
 (a.out/'COST.json').write_text(json.dumps(dict(actual_training_steps=cost,planner_queries=queries,local_rollouts=len(rows),captures=captures,optimizer_updates=m.updates-updates_start),indent=2))
-(a.out/'LABELS.json').write_text(json.dumps([z for ll in recent[-48:]for z in ll]or oldlabels));m.save(a.out/'FINAL.pt');evaluate('FINAL');rt.close();(a.out/'LOCAL_ROWS.json').write_text(json.dumps(rows,indent=2));(a.out/'TRANSITIONS.json').write_text(json.dumps(data));(a.out/'TRAINING.json').write_text(json.dumps(m.history,indent=2));print('LOCAL_DONE',flush=True)
+(a.out/'LABELS.json').write_text(json.dumps([z for ll in recent[-48:]for z in ll]or oldlabels));m.save(a.out/'FINAL.pt')
+if (a.out/f'EVAL_{cost}.json').exists():
+ shutil.copy2(a.out/f'EVAL_{cost}.json',a.out/'EVAL_FINAL.json');print('LOCAL_EVAL FINAL reused identical final checkpoint',flush=True)
+else:evaluate('FINAL')
+rt.close();(a.out/'LOCAL_ROWS.json').write_text(json.dumps(rows,indent=2));(a.out/'TRANSITIONS.json').write_text(json.dumps(data));(a.out/'TRAINING.json').write_text(json.dumps(m.history,indent=2));print('LOCAL_DONE',flush=True)
