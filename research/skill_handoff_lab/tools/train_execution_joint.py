@@ -3,7 +3,7 @@ Both see exactly the same deterministic proposal/execution identities. Shared
 Q enforces equality for executable aliases; parameterized Q is prior art.
 This is a new bounded representation experiment, not an originality assertion.
 """
-import argparse, copy, hashlib, json, time, shutil
+import argparse, copy, hashlib, json, time, shutil, gzip
 from pathlib import Path
 import numpy as np
 import torch
@@ -16,6 +16,7 @@ from train_option_online import atomic_json, atomic_torch
 
 ROOT=Path('/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004')
 WARM=ROOT/'rule_option_20261105/v2_stopping_rl_31801/INITIAL.pt'
+SHARED=ROOT/'joint_continuation_20261106/SHARED_DESIGN_REPLAY.pt'
 
 def sha(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 class Joint:
@@ -124,18 +125,35 @@ class Learner:
   for k in ['actor','q','target','ao','qo']:getattr(self,k).load_state_dict(d[k])
   self.rng.bit_generator.state=d['rng'];self.updates=d['updates']
 
+def verify_design(out,assets):
+ refs=torch.load(SHARED,weights_only=False)['episodes'];chosen=[next(v for v in refs if v['row']['seed']==764008 and v['events'][0]['a']==2 and 'design_warm_g2' in v['row']['path']),next(v for v in refs if v['row']['seed']==764004 and v['events'][0]['a']==1 and 'design_warm_g1' in v['row']['path'])]
+ if (out/'COMPATIBILITY.json').exists():return
+ rt=AtomicRuntime(out/'compatibility_physics');checks=[]
+ try:
+  for i,ref in enumerate(chosen):
+   result=out/f'COMPATIBILITY_{i}.json'
+   if result.exists():checks.append(json.loads(result.read_text()));continue
+   start=out/f'COMPATIBILITY_START_{i}.json';assert not start.exists(),'Inspect incomplete compatibility physics';atomic_json(start,dict(source=ref['row']['path']))
+   schedule={e['step']:e['a']for e in ref['events']if e['boundary']}
+   pol=Joint(assets,lambda s:schedule[len(rt.env.records)],lambda:len(rt.env.records));row,ts,d=rt.run(ref['row']['seed'],pol,'compatibility')
+   old=json.load(gzip.open(ref['row']['path'],'rt'));keys=['q','qvel','tcp','peg','action'];equal=all(all(x[k]==y[k]for k in keys)for x,y in zip(old['steps'],d['steps']))
+   check=dict(row=row,source=ref['row']['path'],all100physical_steps_equal=equal);atomic_json(result,check);assert equal,'Not a compatible physical execution';checks.append(check)
+  atomic_json(out/'COMPATIBILITY.json',checks)
+ finally:rt.close()
+
 def main():
  p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--arm',choices=['sac','return_mix'],default='sac');p.add_argument('--seed',type=int,default=31901);p.add_argument('--episodes',type=int,default=64);p.add_argument('--train-start',type=int,default=764100);p.add_argument('--dev-start',type=int,default=764300);p.add_argument('--dev-count',type=int,default=16);p.add_argument('--updates',type=int,default=40);p.add_argument('--resume',action='store_true');p.add_argument('--layout',choices=['flat','semantic'],required=True);a=p.parse_args();assert a.arm=='sac';torch.set_num_threads(2)
  a.out.mkdir(parents=True,exist_ok=True);manifest={k:str(v)if isinstance(v,Path)else v for k,v in vars(a).items()if k!='resume'}
- manifest.update(source_sha=sha(__file__),dependencies={p.name:sha(p)for p in Path(__file__).parent.glob('program_*.py')},macro_sha=sha(Path(__file__).with_name('peg_atomic_macro.py')),warm_sha=sha(WARM),native100=True,gamma=1,scope='three real grasps and recurrent completed Options; nominal rule is action0 at rear',checkpoint_selection='fixed final; no best dev',candidate='shared executable-action Q versus same-information flat Q; ordinary SAC only, standard parameterized-Q foundation',train=list(range(a.train_start,a.train_start+a.episodes)),dev=list(range(a.dev_start,a.dev_start+a.dev_count)))
+ manifest.update(source_sha=sha(__file__),dependencies={p.name:sha(p)for p in Path(__file__).parent.glob('program_*.py')},macro_sha=sha(Path(__file__).with_name('peg_atomic_macro.py')),warm_sha=sha(WARM),shared_replay_sha=sha(SHARED),shared_design_episodes=96,native100=True,gamma=1,scope='three real grasps and recurrent completed Options; nominal rule is action0 at rear',checkpoint_selection='fixed final; no best dev',candidate='shared executable-action Q versus same-information flat Q; ordinary SAC only, standard parameterized-Q foundation',train=list(range(a.train_start,a.train_start+a.episodes)),dev=list(range(a.dev_start,a.dev_start+a.dev_count)))
  assert not set(manifest['train'])&set(manifest['dev'])
- assets=Assets();m=Learner(assets,a.seed,a.layout);data=[];history=[];cursor=0
+ assets=Assets();m=Learner(assets,a.seed,a.layout);data=torch.load(SHARED,weights_only=False)['data'];history=[];cursor=0
  if a.resume:
   assert json.loads((a.out/'MANIFEST.json').read_text())==manifest
   saved=torch.load(a.out/'CURRENT.pt',weights_only=False);m.load(saved['model']);data=saved['data'];history=saved['history'];cursor=saved['cursor']
  else:
   assert not(a.out/'MANIFEST.json').exists();atomic_json(a.out/'MANIFEST.json',manifest);shutil.copy2(__file__,a.out/Path(__file__).name)
   atomic_torch(a.out/'INITIAL.pt',m.state());atomic_torch(a.out/'CURRENT.pt',dict(model=m.state(),data=data,history=history,cursor=0))
+ verify_design(a.out,assets)
  rt=AtomicRuntime(a.out/'physics');rt.counter=max([0]+[int(f.name.split('_')[0])for f in rt.out.glob('*.json.gz')]);rt.rows=[h['row']for h in history]
  jobs=[]
  for i in range(a.episodes+1):
