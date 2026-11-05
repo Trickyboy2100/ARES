@@ -29,10 +29,19 @@ for ax,version in zip(axes,['v1','v2']):
         if (name.startswith('v2_')) != (version=='v2'):continue
         if 'entry' in name:continue
         c=t['curve'];xs=[int(x)for x in c if c[x]['n']==16];ys=[c[str(x)]['success']for x in xs]
-        rl='stopping' in name;seed=name.rsplit('_',1)[-1]
-        ax.plot(xs,ys,marker='o',color='#226bb1'if rl else '#c27224',linestyle='-'if seed=='31801'else '--',label=('Sequence RL'if rl else 'Supervised')+' '+seed)
+        rl='stopping' in name;replay='replay' in name;seed=name.rsplit('_',1)[-1]
+        ax.plot(xs,ys,marker='s'if replay else 'o',color='#16856b'if replay else '#226bb1'if rl else '#c27224',linestyle='-'if seed=='31801'else '--',label=('Supervised + replay'if replay else 'Sequence RL'if rl else 'Supervised')+' '+seed)
     if 'dev_rule'in s['controls']:ax.axhline(s['controls']['dev_rule']['success'],color='#555',ls=':',label='Frozen rule')
     ax.set(xticks=[0,32,64],ylim=(0,16),xlabel='Own-policy training episodes',title=version+(' | warm 500 updates'if version=='v1'else ' | warm 2000 updates'));ax.legend(fontsize=8);ax.grid(axis='y',alpha=.2)
 axes[0].set_ylabel('Complete native successes / 16 dev scenes');fig.suptitle('Fixed final64; common data and equal online budgets',y=1.04);save(fig,'learning_curves')
 fig,ax=plt.subplots(figsize=(8,4));names=list(s['training']);x=np.arange(len(names));resc=[len(s['training'][n]['rescue'])for n in names];harm=[len(s['training'][n]['regression'])for n in names]
 ax.bar(x-.18,resc,.36,color='#16856b',label='Rescued vs same-initial rule');ax.bar(x+.18,harm,.36,color='#c44848',label='Regressed vs same-initial rule');ax.set_xticks(x,[n.replace('stopping_rl','RL').replace('stopping','RL').replace('supervised','SUP').replace('_','\n')for n in names]);ax.set(ylabel='Online training episodes',title='Exploratory training outcomes, not deployed-policy gains');ax.legend(fontsize=9);save(fig,'online_rescue_regression')
+if s.get('confirmation'):
+    labels={'confirm_rule':'Frozen rule / shared predecessor','confirm_rule_fixed1':'Frozen rule / fixed grasp1','confirm_first1':'First disagreement / fixed proposal1',
+    'confirm_initial_31801':'Shared initialization / 31801','confirm_initial_31802':'Shared initialization / 31802',
+    'confirm_v2_supervised_31801':'Supervised online / 31801','confirm_v2_supervised_31802':'Supervised online / 31802',
+    'confirm_v2_supervised_replay_31801':'Supervised + rehearsal / 31801',
+    'confirm_v2_stopping_rl_31801':'Sequence RL / 31801','confirm_v2_stopping_rl_31802':'Sequence RL / 31802','confirm_v2_entry_rl_31801':'Entry-only RL / 31801'}
+    names=[n for n in labels if n in s['confirmation'] and s['confirmation'][n]['n']==24];y=np.arange(len(names))
+    fig,ax=plt.subplots(figsize=(8,6));bars=ax.barh(y,[s['confirmation'][n]['success']for n in names],color=['#226bb1'if 'stopping'in n else '#16856b'if 'initial'in n else '#8795a3'for n in names]);ax.bar_label(bars,padding=3);ax.set_yticks(y,[labels[n]for n in names]);ax.invert_yaxis();ax.set(xlim=(0,25.5),xticks=[0,4,8,12,16,20,24],xlabel='Complete native successes / 24 natural initial states',title='Frozen final64 confirmation; no best-checkpoint selection');save(fig,'confirmation_success')
+    fig,ax=plt.subplots(figsize=(8,6));ax.barh(y,[-len(s['confirmation'][n]['regression'])for n in names],color='#c44848',label='Regression');ax.barh(y,[len(s['confirmation'][n]['rescue'])for n in names],color='#16856b',label='Rescue');ax.axvline(0,color='black',lw=.8);ax.set_yticks(y,[labels[n]for n in names]);ax.invert_yaxis();ax.set(xlabel='Paired changes relative to the shared-predecessor rule',title='Same-initial complete-task changes; 24 scene clusters');ax.legend();save(fig,'confirmation_rescue_regression')

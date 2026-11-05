@@ -280,3 +280,8 @@ H1单次atomic不足，H2重复阶段刷新可复现760213完整100步成功；�
 不将更多决策、标准参数化Option、83维状态增广或动作字典本身称为新算法。H3拼接10次全拒绝，尚无操作能力；第二任务Charger20016/16饱和，无迁移增益。
 保留全部模型、失败、完整事务resume和历史分数。重点转为真实可执行续接下的干预价值校准与保持；当前确认集已看，不能复用为新测试。
 证据：[atomic_handoff](../evidence/EXP-004/2026-11-05/atomic_handoff/README.md)。完整成本、SHA、RAW/英文同步视频与论文表已归档。
+
+
+## 2026-11-05 shared baseline update
+
+[rule_option](../evidence/EXP-004/2026-11-05/rule_option/README.md) adds complete own-policy training and matched cost-sensitive supervision/rehearsal to the preserved SAC assets. New24:shared paired-data initialization19/18, online policy-gradient19/18, supervision18/19, rehearsal19, versus rule16. Retain these learned references; historical SAC/Q cannot be treated as calibrated for a changed one-deviation continuation. No independent RL superiority. Tool early continuation is repaired in `program_tool_recovery_v2.py`; old negative early-mode results remain diagnostic and are not a fair learned-method comparison.

@@ -1,0 +1,992 @@
+[
+  {
+    "seed": 763000,
+    "delta": 1,
+    "a_b": 0,
+    "a_c": 10,
+    "front_grasp": 1,
+    "option_duration": 27,
+    "budget": 36,
+    "branches": {
+      "baseline": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            18
+          ],
+          "GRASP": [
+            19,
+            28
+          ],
+          "CLOSE": [
+            29,
+            34
+          ],
+          "ALIGN": [
+            35,
+            64
+          ],
+          "REFINE1_FEEDBACK": [
+            65,
+            73
+          ],
+          "REFINE2_FEEDBACK": [
+            74,
+            78
+          ],
+          "REFINE3_FEEDBACK": [
+            79,
+            81
+          ],
+          "INSERT_FEEDBACK": [
+            82,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.09947624802589417,
+          -0.015455931425094604,
+          -0.00058785080909729
+        ],
+        "grasped": true,
+        "success": false,
+        "queries": 9
+      },
+      "candidate": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            18
+          ],
+          "GRASP": [
+            19,
+            28
+          ],
+          "CLOSE": [
+            29,
+            34
+          ],
+          "ALIGN": [
+            35,
+            64
+          ],
+          "REFINE1_FEEDBACK": [
+            65,
+            70
+          ],
+          "REFINE2_FEEDBACK": [
+            71,
+            73
+          ],
+          "REFINE3_FEEDBACK": [
+            74,
+            75
+          ],
+          "INSERT_FEEDBACK": [
+            76,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.00550118088722229,
+          0.0029670298099517822,
+          0.0030850544571876526
+        ],
+        "grasped": false,
+        "success": true,
+        "queries": 10
+      }
+    }
+  },
+  {
+    "seed": 763003,
+    "delta": -1,
+    "a_b": 0,
+    "a_c": 11,
+    "front_grasp": 1,
+    "option_duration": 21,
+    "budget": 38,
+    "branches": {
+      "baseline": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            17
+          ],
+          "GRASP": [
+            18,
+            27
+          ],
+          "CLOSE": [
+            28,
+            33
+          ],
+          "ALIGN": [
+            34,
+            55
+          ],
+          "REFINE1_FEEDBACK": [
+            56,
+            62
+          ],
+          "REFINE2_FEEDBACK": [
+            63,
+            64
+          ],
+          "REFINE3_FEEDBACK": [
+            65,
+            68
+          ],
+          "INSERT_FEEDBACK": [
+            69,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.007169187068939209,
+          0.002997472882270813,
+          0.0030126050114631653
+        ],
+        "grasped": false,
+        "success": true,
+        "queries": 7
+      },
+      "candidate": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            17
+          ],
+          "GRASP": [
+            18,
+            27
+          ],
+          "CLOSE": [
+            28,
+            33
+          ],
+          "ALIGN": [
+            34,
+            55
+          ],
+          "REFINE1_FEEDBACK": [
+            56,
+            62
+          ],
+          "REFINE2_FEEDBACK": [
+            63,
+            65
+          ],
+          "REFINE3_FEEDBACK": [
+            66,
+            67
+          ],
+          "INSERT_FEEDBACK": [
+            68,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.09525537490844727,
+          -0.010363049805164337,
+          -0.007401987910270691
+        ],
+        "grasped": true,
+        "success": false,
+        "queries": 9
+      }
+    }
+  },
+  {
+    "seed": 763010,
+    "delta": -1,
+    "a_b": 10,
+    "a_c": 5,
+    "front_grasp": 1,
+    "option_duration": 22,
+    "budget": 22,
+    "branches": {
+      "baseline": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            26
+          ],
+          "GRASP": [
+            27,
+            35
+          ],
+          "CLOSE": [
+            36,
+            41
+          ],
+          "ALIGN": [
+            42,
+            70
+          ],
+          "REFINE1_FEEDBACK": [
+            71,
+            78
+          ],
+          "REFINE2_FEEDBACK": [
+            79,
+            80
+          ],
+          "REFINE3_FEEDBACK": [
+            81,
+            82
+          ],
+          "INSERT_FEEDBACK": [
+            83,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          0.03646686673164368,
+          -0.003007158637046814,
+          -0.0029315948486328125
+        ],
+        "grasped": true,
+        "success": true,
+        "queries": 10
+      },
+      "candidate": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            26
+          ],
+          "GRASP": [
+            27,
+            35
+          ],
+          "CLOSE": [
+            36,
+            41
+          ],
+          "ALIGN": [
+            42,
+            70
+          ],
+          "REFINE1_FEEDBACK": [
+            71,
+            78
+          ],
+          "REFINE2_FEEDBACK": [
+            79,
+            83
+          ],
+          "REFINE3_FEEDBACK": [
+            84,
+            86
+          ],
+          "INSERT_FEEDBACK": [
+            87,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.1065913736820221,
+          -0.003771476447582245,
+          -0.0006089955568313599
+        ],
+        "grasped": true,
+        "success": false,
+        "queries": 9
+      }
+    }
+  },
+  {
+    "seed": 763019,
+    "delta": 1,
+    "a_b": 0,
+    "a_c": 5,
+    "front_grasp": 1,
+    "option_duration": 35,
+    "budget": 36,
+    "branches": {
+      "baseline": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            22
+          ],
+          "GRASP": [
+            23,
+            31
+          ],
+          "CLOSE": [
+            32,
+            37
+          ],
+          "ALIGN": [
+            38,
+            60
+          ],
+          "REFINE1_FEEDBACK": [
+            61,
+            69
+          ],
+          "REFINE2_FEEDBACK": [
+            70,
+            73
+          ],
+          "REFINE3_FEEDBACK": [
+            74,
+            77
+          ],
+          "INSERT_FEEDBACK": [
+            78,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.09820303320884705,
+          0.004198476672172546,
+          -0.006643831729888916
+        ],
+        "grasped": true,
+        "success": false,
+        "queries": 8
+      },
+      "candidate": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            22
+          ],
+          "GRASP": [
+            23,
+            31
+          ],
+          "CLOSE": [
+            32,
+            37
+          ],
+          "ALIGN": [
+            38,
+            60
+          ],
+          "REFINE1_FEEDBACK": [
+            61,
+            73
+          ],
+          "REFINE2_FEEDBACK": [
+            74,
+            78
+          ],
+          "REFINE3_FEEDBACK": [
+            79,
+            83
+          ],
+          "INSERT_FEEDBACK": [
+            84,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.00016421079635620117,
+          -0.0030089691281318665,
+          -0.0029978975653648376
+        ],
+        "grasped": true,
+        "success": true,
+        "queries": 8
+      }
+    }
+  },
+  {
+    "seed": 763023,
+    "delta": -1,
+    "a_b": 0,
+    "a_c": 9,
+    "front_grasp": 1,
+    "option_duration": 25,
+    "budget": 32,
+    "branches": {
+      "baseline": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            19
+          ],
+          "GRASP": [
+            20,
+            28
+          ],
+          "CLOSE": [
+            29,
+            34
+          ],
+          "ALIGN": [
+            35,
+            54
+          ],
+          "REFINE1_FEEDBACK": [
+            55,
+            64
+          ],
+          "REFINE2_FEEDBACK": [
+            65,
+            69
+          ],
+          "REFINE3_FEEDBACK": [
+            70,
+            75
+          ],
+          "INSERT_FEEDBACK": [
+            76,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.00624576210975647,
+          -0.0029499605298042297,
+          -0.0029486455023288727
+        ],
+        "grasped": true,
+        "success": true,
+        "queries": 8
+      },
+      "candidate": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            19
+          ],
+          "GRASP": [
+            20,
+            28
+          ],
+          "CLOSE": [
+            29,
+            34
+          ],
+          "ALIGN": [
+            35,
+            54
+          ],
+          "REFINE1_FEEDBACK": [
+            55,
+            64
+          ],
+          "REFINE2_FEEDBACK": [
+            65,
+            74
+          ],
+          "REFINE3_FEEDBACK": [
+            75,
+            77
+          ],
+          "INSERT_FEEDBACK": [
+            78,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.08287250995635986,
+          -0.0026334449648857117,
+          -0.005059923976659775
+        ],
+        "grasped": true,
+        "success": false,
+        "queries": 9
+      }
+    }
+  },
+  {
+    "seed": 763039,
+    "delta": -1,
+    "a_b": 10,
+    "a_c": 0,
+    "front_grasp": 1,
+    "option_duration": 4,
+    "budget": 21,
+    "branches": {
+      "baseline": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            21
+          ],
+          "GRASP": [
+            22,
+            30
+          ],
+          "CLOSE": [
+            31,
+            36
+          ],
+          "ALIGN": [
+            37,
+            67
+          ],
+          "REFINE1_FEEDBACK": [
+            68,
+            79
+          ],
+          "REFINE2_FEEDBACK": [
+            80,
+            81
+          ],
+          "REFINE3_FEEDBACK": [
+            82,
+            83
+          ],
+          "INSERT_FEEDBACK": [
+            84,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          0.035322725772857666,
+          -0.002999603748321533,
+          -0.002847611904144287
+        ],
+        "grasped": true,
+        "success": true,
+        "queries": 10
+      },
+      "candidate": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            21
+          ],
+          "GRASP": [
+            22,
+            30
+          ],
+          "CLOSE": [
+            31,
+            36
+          ],
+          "ALIGN": [
+            37,
+            67
+          ],
+          "REFINE1_FEEDBACK": [
+            68,
+            79
+          ],
+          "REFINE2_FEEDBACK": [
+            80,
+            83
+          ],
+          "REFINE3_FEEDBACK": [
+            84,
+            87
+          ],
+          "INSERT_FEEDBACK": [
+            88,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.09827999770641327,
+          -0.00400620698928833,
+          9.161233901977539e-05
+        ],
+        "grasped": true,
+        "success": false,
+        "queries": 9
+      }
+    }
+  },
+  {
+    "seed": 763048,
+    "delta": -1,
+    "a_b": 10,
+    "a_c": 9,
+    "front_grasp": 1,
+    "option_duration": 26,
+    "budget": 26,
+    "branches": {
+      "baseline": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            24
+          ],
+          "GRASP": [
+            25,
+            34
+          ],
+          "CLOSE": [
+            35,
+            40
+          ],
+          "ALIGN": [
+            41,
+            70
+          ],
+          "REFINE1_FEEDBACK": [
+            71,
+            80
+          ],
+          "REFINE2_FEEDBACK": [
+            81,
+            83
+          ],
+          "REFINE3_FEEDBACK": [
+            84,
+            85
+          ],
+          "INSERT_FEEDBACK": [
+            86,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          0.008833646774291992,
+          -0.0029988139867782593,
+          0.0011414438486099243
+        ],
+        "grasped": true,
+        "success": true,
+        "queries": 10
+      },
+      "candidate": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            24
+          ],
+          "GRASP": [
+            25,
+            34
+          ],
+          "CLOSE": [
+            35,
+            40
+          ],
+          "ALIGN": [
+            41,
+            70
+          ],
+          "REFINE1_FEEDBACK": [
+            71,
+            80
+          ],
+          "REFINE2_FEEDBACK": [
+            81,
+            83
+          ],
+          "REFINE3_FEEDBACK": [
+            84,
+            85
+          ],
+          "INSERT_FEEDBACK": [
+            86,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.12408538162708282,
+          -0.0034870654344558716,
+          -0.0065078288316726685
+        ],
+        "grasped": true,
+        "success": false,
+        "queries": 10
+      }
+    }
+  },
+  {
+    "seed": 763050,
+    "delta": 1,
+    "a_b": 0,
+    "a_c": 2,
+    "front_grasp": 1,
+    "option_duration": 31,
+    "budget": 32,
+    "branches": {
+      "baseline": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            20
+          ],
+          "GRASP": [
+            21,
+            29
+          ],
+          "CLOSE": [
+            30,
+            35
+          ],
+          "ALIGN": [
+            36,
+            64
+          ],
+          "REFINE1_FEEDBACK": [
+            65,
+            70
+          ],
+          "REFINE2_FEEDBACK": [
+            71,
+            72
+          ],
+          "REFINE3_FEEDBACK": [
+            73,
+            76
+          ],
+          "INSERT_FEEDBACK": [
+            77,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.125544935464859,
+          0.0061597079038619995,
+          -0.006082668900489807
+        ],
+        "grasped": true,
+        "success": false,
+        "queries": 7
+      },
+      "candidate": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            20
+          ],
+          "GRASP": [
+            21,
+            29
+          ],
+          "CLOSE": [
+            30,
+            35
+          ],
+          "ALIGN": [
+            36,
+            64
+          ],
+          "REFINE1_FEEDBACK": [
+            65,
+            74
+          ],
+          "REFINE2_FEEDBACK": [
+            75,
+            79
+          ],
+          "REFINE3_FEEDBACK": [
+            80,
+            83
+          ],
+          "INSERT_FEEDBACK": [
+            84,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          0.009156942367553711,
+          -0.002248421311378479,
+          -0.0029602572321891785
+        ],
+        "grasped": true,
+        "success": true,
+        "queries": 8
+      }
+    }
+  },
+  {
+    "seed": 763059,
+    "delta": -1,
+    "a_b": 10,
+    "a_c": 9,
+    "front_grasp": 1,
+    "option_duration": 26,
+    "budget": 26,
+    "branches": {
+      "baseline": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            26
+          ],
+          "GRASP": [
+            27,
+            36
+          ],
+          "CLOSE": [
+            37,
+            42
+          ],
+          "ALIGN": [
+            43,
+            70
+          ],
+          "REFINE1_FEEDBACK": [
+            71,
+            78
+          ],
+          "REFINE2_FEEDBACK": [
+            79,
+            80
+          ],
+          "REFINE3_FEEDBACK": [
+            81,
+            82
+          ],
+          "INSERT_FEEDBACK": [
+            83,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.007184088230133057,
+          -0.0029928386211395264,
+          -0.0006179139018058777
+        ],
+        "grasped": true,
+        "success": true,
+        "queries": 10
+      },
+      "candidate": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            26
+          ],
+          "GRASP": [
+            27,
+            36
+          ],
+          "CLOSE": [
+            37,
+            42
+          ],
+          "ALIGN": [
+            43,
+            70
+          ],
+          "REFINE1_FEEDBACK": [
+            71,
+            79
+          ],
+          "REFINE2_FEEDBACK": [
+            80,
+            82
+          ],
+          "REFINE3_FEEDBACK": [
+            83,
+            85
+          ],
+          "INSERT_FEEDBACK": [
+            86,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.09530410170555115,
+          -0.004131916910409927,
+          -0.007288403809070587
+        ],
+        "grasped": true,
+        "success": false,
+        "queries": 10
+      }
+    }
+  },
+  {
+    "seed": 763063,
+    "delta": -1,
+    "a_b": 0,
+    "a_c": 9,
+    "front_grasp": 1,
+    "option_duration": 12,
+    "budget": 29,
+    "branches": {
+      "baseline": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            17
+          ],
+          "GRASP": [
+            18,
+            27
+          ],
+          "CLOSE": [
+            28,
+            33
+          ],
+          "ALIGN": [
+            34,
+            53
+          ],
+          "REFINE1_FEEDBACK": [
+            54,
+            58
+          ],
+          "REFINE2_FEEDBACK": [
+            59,
+            61
+          ],
+          "REFINE3_FEEDBACK": [
+            62,
+            63
+          ],
+          "INSERT_FEEDBACK": [
+            64,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.003468126058578491,
+          -0.002359949052333832,
+          -0.0029881522059440613
+        ],
+        "grasped": true,
+        "success": true,
+        "queries": 7
+      },
+      "candidate": {
+        "phase_spans": {
+          "REACH": [
+            1,
+            17
+          ],
+          "GRASP": [
+            18,
+            27
+          ],
+          "CLOSE": [
+            28,
+            33
+          ],
+          "ALIGN": [
+            34,
+            53
+          ],
+          "REFINE1_FEEDBACK": [
+            54,
+            58
+          ],
+          "REFINE2_FEEDBACK": [
+            59,
+            61
+          ],
+          "REFINE3_FEEDBACK": [
+            62,
+            63
+          ],
+          "INSERT_FEEDBACK": [
+            64,
+            100
+          ]
+        },
+        "final_head_in_hole": [
+          -0.11086888611316681,
+          -0.0015262886881828308,
+          -0.010798424482345581
+        ],
+        "grasped": true,
+        "success": false,
+        "queries": 8
+      }
+    }
+  }
+]

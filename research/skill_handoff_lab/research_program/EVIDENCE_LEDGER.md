@@ -218,3 +218,13 @@ H1单次atomic不足，H2重复阶段刷新可复现760213完整100步成功；�
 不将更多决策、标准参数化Option、83维状态增广或动作字典本身称为新算法。H3拼接10次全拒绝，尚无操作能力；第二任务Charger20016/16饱和，无迁移增益。
 保留全部模型、失败、完整事务resume和历史分数。重点转为真实可执行续接下的干预价值校准与保持；当前确认集已看，不能复用为新测试。
 证据：[atomic_handoff](evidence/EXP-004/2026-11-05/atomic_handoff/README.md)。完整成本、SHA、RAW/英文同步视频与论文表已归档。
+
+
+## 2026-11-05 rule_option — actual online learning and counterevidence
+
+- Source/base:9a30507; initial implementation680a88a; final executed-source SHA and archive inventory in [evidence](evidence/EXP-004/2026-11-05/rule_option/README.md).
+-1528 complete native episodes /152800steps /14644planner queries;512 own-policy episodes;13000warm and2336online optimizer steps;40named weight checkpoints. Shared counterfactual costs explicitly charged per arm.
+-64 original-reset pairs:3+/7−/54equal.310 full queue/reference adoption checks plus original physical-prefix checks; no PhysX causal restore.
+- Frozen new24:rule16; fixed-first16; initialization19/18; onlineRL19/18; supervision18/19; rehearsal19. Independent online gain NOT_SUPPORTED; no pooled48-scene claim.
+- Waiting-credit ablation:112 identical full trajectories, because all nonzero updates have one gate decision. Tool early-mode repair verified on8 unchanged nominal and3 declined-correction full traces; no new recovery capability.
+- Two complete RAW/English measured-state videos with frame-linked curves; no extra physical evidence attributed to rendering. Private taskbook retained locally and excluded from public archive.

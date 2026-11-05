@@ -1,0 +1,8 @@
+{
+  "reason": "Supervised own-only updates lose a warm-initialization rescue by dev32. Test ordinary rehearsal before attributing retention to sequence RL.",
+  "single_change": "supervised minibatches from shared pairs plus own entered Option data; all previous parameters unchanged",
+  "seed": 31801,
+  "episodes": 64,
+  "no_extra_physics_data": true,
+  "selection": "fixed final64; same dev and frozen confirmation"
+}

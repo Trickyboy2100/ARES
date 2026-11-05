@@ -108,3 +108,8 @@ POMDP只有在真实隐藏接触/工具状态造成观测别名、历史动作
 已证实的七倍数值放大。当前比较保持三种真实抓持前驱决策与Peg原生100步。
 
 2026-11-05 atomic_handoff：将**执行参考、时间权限、实际学习救回、稳定净收益**分开评价。新24确认支持可学真实救回，不支持超过冻结强规则；阶段重开与参数化Option为成熟构件。三抓持继续训练但当前未证明新增跨技能协同，Charger小型全成功研究不是方法迁移。保持单篇多阶段技能参数RL问题与原生主评价不变。
+
+
+## 2026-11-05 claim-specific update: rule-relative executable adoption
+
+The stable problem remains task-conditioned, physically executable multi-stage skill adaptation. New paired-data initialization supports conditional adoption above a strong rule (19/18 versus16 on24 new natural conditions), but explains all confirmed online-RL success outcomes. Full waiting-credit and entry-only updates were equivalent on every nonzero training event in the ablation seed. Therefore neither waiting credit, baseline gating, Monte Carlo labels nor standard clipped policy gradients are claimed independently novel. Preserve this learned baseline and the complete execution contract; future joint learning must beat it rather than recounting the same initialization benefit. Predecessor weights were frozen this cycle; new cross-stage RL advantage and second-task learned transfer remain unresolved. These are substantive Method/Experiments materials with explicit limitations, not a publication-readiness claim.

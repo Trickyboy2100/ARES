@@ -65,7 +65,7 @@ controls={f.parent.name:compare(json.loads(f.read_text())) for f in sorted(a.roo
 cf=a.root/'confirm_rule/RESULTS.json';cb={v['seed']:v['success']for v in json.loads(cf.read_text())}if cf.exists()else{}
 confirmation={f.parent.name:compare(json.loads(f.read_text()),cb)for f in sorted(a.root.glob('confirm_*/RESULTS.json'))}
 tool={}
-for name in ['tool_scout','tool_early']:
+for name in ['tool_scout','tool_early','tool_early_v2']:
     f=a.root/name/'RESULTS.json'
     if not f.exists():continue
     rows=json.loads(f.read_text());by={(r['seed'],r['grasp']):r['success']for r in rows if r['mode']=='none'}
@@ -75,4 +75,18 @@ summary=dict(groups=groups, total={k:sum(g[k] for g in groups.values()) for k in
     scope='Complete native100 trajectories, actual terminal predicate. Unique executed cost; shared pair and baseline costs must also be charged per comparison arm. Summed episode time is not elapsed wall clock.')
 (a.root/'SUMMARY.json').write_text(json.dumps(summary,indent=2))
 (a.root/'RAW_INDEX.json').write_text(json.dumps(index,indent=2))
+cost=dict(own_training_episodes=sum(v['own_episodes']for v in training.values()),online_optimizer_steps=sum(v['optimizer_updates']for v in training.values()),warm_optimizer_steps=sum(v['warm_updates']for v in training.values()),new_named_weight_checkpoints=sum(1 for f in a.root.glob('*/*.pt')if f.name.startswith('CHECKPOINT_')or f.name in ['CURRENT.pt','INITIAL.pt']),shared_training_physics_episodes=192,shared_training_physics_steps=19200,training_cost_per_online_arm='128 paired collection +64 separately executed rule baselines +64 own episodes =256 complete native episodes/25600steps before development/confirmation. Shared costs charged to each arm; unique execution counted separately.',total_unique=summary['total'],optimizer_wall_time='NOT_SEPARATELY_RECORDED',elapsed_wall_time_note='episode_wall_s sums episode timings across concurrent jobs; not elapsed clock')
+(a.root/'COST.json').write_text(json.dumps(cost,indent=2))
+paths=[a.root/n/'HISTORY.json'for n in ['v2_stopping_rl_31801','v2_entry_rl_31801']]
+if all(f.exists()for f in paths):
+    hh=[{(v['kind'],v['checkpoint'],v['row']['seed']):v for v in json.loads(f.read_text())}for f in paths];ablation=[]
+    for k in sorted(hh[0].keys()&hh[1].keys()):
+        ds=[json.load(gzip.open(h[k]['row']['path'],'rt'))for h in hh];n=0
+        for u,v in zip(ds[0]['steps'],ds[1]['steps']):
+            if any(u[j]!=v[j]for j in ['q','qvel','tcp','peg','action']):break
+            n+=1
+        ablation.append(dict(kind=k[0],checkpoint=k[1],seed=k[2],identical_physical_prefix=n,success=[d['summary']['success']for d in ds]))
+    (a.root/'CREDIT_ABLATION.json').write_text(json.dumps(ablation,indent=2))
+    updates=[dict(seed=v['row']['seed'],delta=v['delta'],gate_decisions=len(v['gate_decisions']),actions=[q['act']for q in v['gate_decisions']])for v in hh[0].values()if v['optimizer_updates']]
+    (a.root/'NONZERO_UPDATE_SUPPORT.json').write_text(json.dumps(updates,indent=2))
 print(json.dumps(summary,indent=2))

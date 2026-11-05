@@ -1,0 +1,1054 @@
+{
+  "groups": {
+    "confirm_first1": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 16,
+      "planner_queries": 201,
+      "planner_wall_s": 0.9389820385258645,
+      "episode_wall_s": 96.15117067517713
+    },
+    "confirm_initial_31801": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 19,
+      "planner_queries": 199,
+      "planner_wall_s": 0.9736497006379068,
+      "episode_wall_s": 156.30188255093526
+    },
+    "confirm_initial_31802": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 18,
+      "planner_queries": 203,
+      "planner_wall_s": 0.9893136838218197,
+      "episode_wall_s": 155.63844400306698
+    },
+    "confirm_rule": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 16,
+      "planner_queries": 192,
+      "planner_wall_s": 0.9497458406258374,
+      "episode_wall_s": 154.6682636247715
+    },
+    "confirm_rule_fixed1": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 16,
+      "planner_queries": 192,
+      "planner_wall_s": 0.9149274105438963,
+      "episode_wall_s": 132.60234394005965
+    },
+    "confirm_v2_entry_rl_31801": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 19,
+      "planner_queries": 201,
+      "planner_wall_s": 0.9418059831950814,
+      "episode_wall_s": 155.71266375598498
+    },
+    "confirm_v2_stopping_rl_31801": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 19,
+      "planner_queries": 201,
+      "planner_wall_s": 0.9534578503808007,
+      "episode_wall_s": 151.61678485188168
+    },
+    "confirm_v2_stopping_rl_31802": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 18,
+      "planner_queries": 204,
+      "planner_wall_s": 0.9695139507530257,
+      "episode_wall_s": 149.48483380686957
+    },
+    "confirm_v2_supervised_31801": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 18,
+      "planner_queries": 194,
+      "planner_wall_s": 0.9174084350233898,
+      "episode_wall_s": 154.9640830408316
+    },
+    "confirm_v2_supervised_31802": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 19,
+      "planner_queries": 194,
+      "planner_wall_s": 0.9272764452034608,
+      "episode_wall_s": 155.63612442743033
+    },
+    "confirm_v2_supervised_replay_31801": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 19,
+      "planner_queries": 198,
+      "planner_wall_s": 0.9430841496214271,
+      "episode_wall_s": 154.60384909878485
+    },
+    "dev_first1": {
+      "episodes": 16,
+      "physical_steps": 1600,
+      "successes": 11,
+      "planner_queries": 137,
+      "planner_wall_s": 0.6263261447893456,
+      "episode_wall_s": 72.08587578276638
+    },
+    "dev_macro0": {
+      "episodes": 16,
+      "physical_steps": 1600,
+      "successes": 7,
+      "planner_queries": 155,
+      "planner_wall_s": 0.747507875552401,
+      "episode_wall_s": 105.30620488419663
+    },
+    "dev_macro1": {
+      "episodes": 16,
+      "physical_steps": 1600,
+      "successes": 10,
+      "planner_queries": 144,
+      "planner_wall_s": 0.7079666482750326,
+      "episode_wall_s": 102.43974003195763
+    },
+    "dev_qgate": {
+      "episodes": 16,
+      "physical_steps": 1600,
+      "successes": 8,
+      "planner_queries": 144,
+      "planner_wall_s": 0.6830903277732432,
+      "episode_wall_s": 102.67203893524129
+    },
+    "dev_rule": {
+      "episodes": 16,
+      "physical_steps": 1600,
+      "successes": 9,
+      "planner_queries": 137,
+      "planner_wall_s": 0.6258993271039799,
+      "episode_wall_s": 104.86567488824949
+    },
+    "dev_rule_fixed1": {
+      "episodes": 16,
+      "physical_steps": 1600,
+      "successes": 9,
+      "planner_queries": 138,
+      "planner_wall_s": 0.6966989716747776,
+      "episode_wall_s": 104.6326005619485
+    },
+    "front_rl_763101_0": {
+      "episodes": 1,
+      "physical_steps": 100,
+      "successes": 0,
+      "planner_queries": 10,
+      "planner_wall_s": 0.04516299918759614,
+      "episode_wall_s": 3.934087831992656
+    },
+    "front_rl_763101_1": {
+      "episodes": 1,
+      "physical_steps": 100,
+      "successes": 0,
+      "planner_queries": 10,
+      "planner_wall_s": 0.056243294035084546,
+      "episode_wall_s": 4.162192979012616
+    },
+    "front_rl_763109_0": {
+      "episodes": 1,
+      "physical_steps": 100,
+      "successes": 1,
+      "planner_queries": 8,
+      "planner_wall_s": 0.0390459488844499,
+      "episode_wall_s": 6.328166536055505
+    },
+    "front_rl_763109_1": {
+      "episodes": 1,
+      "physical_steps": 100,
+      "successes": 1,
+      "planner_queries": 8,
+      "planner_wall_s": 0.03593757899943739,
+      "episode_wall_s": 6.72982108197175
+    },
+    "front_rule_763101_0": {
+      "episodes": 1,
+      "physical_steps": 100,
+      "successes": 0,
+      "planner_queries": 10,
+      "planner_wall_s": 0.05346535018179566,
+      "episode_wall_s": 3.951310792006552
+    },
+    "front_rule_763101_1": {
+      "episodes": 1,
+      "physical_steps": 100,
+      "successes": 0,
+      "planner_queries": 10,
+      "planner_wall_s": 0.043666243785992265,
+      "episode_wall_s": 3.973464710987173
+    },
+    "front_rule_763109_0": {
+      "episodes": 1,
+      "physical_steps": 100,
+      "successes": 1,
+      "planner_queries": 7,
+      "planner_wall_s": 0.036096622119657695,
+      "episode_wall_s": 4.0868993969634175
+    },
+    "front_rule_763109_1": {
+      "episodes": 1,
+      "physical_steps": 100,
+      "successes": 1,
+      "planner_queries": 7,
+      "planner_wall_s": 0.032069891691207886,
+      "episode_wall_s": 6.831169844954275
+    },
+    "online_baseline": {
+      "episodes": 64,
+      "physical_steps": 6400,
+      "successes": 35,
+      "planner_queries": 503,
+      "planner_wall_s": 2.4861304027726874,
+      "episode_wall_s": 397.07361158251297
+    },
+    "pairs": {
+      "episodes": 128,
+      "physical_steps": 12800,
+      "successes": 60,
+      "planner_queries": 1101,
+      "planner_wall_s": 5.157892372342758,
+      "episode_wall_s": 679.8073865085607
+    },
+    "stopping_31801": {
+      "episodes": 112,
+      "physical_steps": 11200,
+      "successes": 63,
+      "planner_queries": 962,
+      "planner_wall_s": 4.655869594425894,
+      "episode_wall_s": 608.8334708673647
+    },
+    "supervised_31801": {
+      "episodes": 112,
+      "physical_steps": 11200,
+      "successes": 63,
+      "planner_queries": 948,
+      "planner_wall_s": 4.587315354612656,
+      "episode_wall_s": 700.7503395018866
+    },
+    "tool_early": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 3,
+      "planner_queries": 754,
+      "planner_wall_s": 9.027841112576425,
+      "episode_wall_s": 189.95306595147122
+    },
+    "tool_early_v2": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 8,
+      "planner_queries": 744,
+      "planner_wall_s": 8.612632623757236,
+      "episode_wall_s": 98.04670812899712
+    },
+    "tool_scout": {
+      "episodes": 24,
+      "physical_steps": 2400,
+      "successes": 12,
+      "planner_queries": 792,
+      "planner_wall_s": 7.572570362943225,
+      "episode_wall_s": 283.73496079701
+    },
+    "v2_entry_rl_31801": {
+      "episodes": 112,
+      "physical_steps": 11200,
+      "successes": 79,
+      "planner_queries": 963,
+      "planner_wall_s": 4.5651643867604434,
+      "episode_wall_s": 563.5917661157437
+    },
+    "v2_stopping_rl_31801": {
+      "episodes": 112,
+      "physical_steps": 11200,
+      "successes": 79,
+      "planner_queries": 963,
+      "planner_wall_s": 4.696917711291462,
+      "episode_wall_s": 681.1404165375279
+    },
+    "v2_stopping_rl_31802": {
+      "episodes": 112,
+      "physical_steps": 11200,
+      "successes": 77,
+      "planner_queries": 960,
+      "planner_wall_s": 4.687624209560454,
+      "episode_wall_s": 720.5183973496314
+    },
+    "v2_supervised_31801": {
+      "episodes": 112,
+      "physical_steps": 11200,
+      "successes": 75,
+      "planner_queries": 953,
+      "planner_wall_s": 4.690929145319387,
+      "episode_wall_s": 713.5176501343958
+    },
+    "v2_supervised_31802": {
+      "episodes": 112,
+      "physical_steps": 11200,
+      "successes": 72,
+      "planner_queries": 948,
+      "planner_wall_s": 4.4557785271899775,
+      "episode_wall_s": 621.4271345505258
+    },
+    "v2_supervised_replay_31801": {
+      "episodes": 112,
+      "physical_steps": 11200,
+      "successes": 77,
+      "planner_queries": 949,
+      "planner_wall_s": 4.672275734250434,
+      "episode_wall_s": 720.9709287029691
+    }
+  },
+  "total": {
+    "episodes": 1528,
+    "physical_steps": 152800,
+    "planner_queries": 14644,
+    "planner_wall_s": 84.71728425018955,
+    "episode_wall_s": 9228.745528762694
+  },
+  "training": {
+    "stopping_31801": {
+      "own_episodes": 64,
+      "own_success": 36,
+      "rescue": [
+        763137,
+        763147,
+        763148,
+        763152,
+        763162
+      ],
+      "regression": [
+        763113,
+        763126,
+        763135,
+        763160
+      ],
+      "own_gate_decisions": 250,
+      "own_adoptions": 41,
+      "optimizer_updates": 72,
+      "warm_updates": 500,
+      "curve": {
+        "0": {
+          "n": 16,
+          "success": 9,
+          "rescue": [],
+          "regression": [],
+          "adopted_episodes": 0
+        },
+        "32": {
+          "n": 16,
+          "success": 9,
+          "rescue": [],
+          "regression": [],
+          "adopted_episodes": 0
+        },
+        "64": {
+          "n": 16,
+          "success": 9,
+          "rescue": [],
+          "regression": [],
+          "adopted_episodes": 2
+        }
+      }
+    },
+    "supervised_31801": {
+      "own_episodes": 64,
+      "own_success": 35,
+      "rescue": [
+        763144,
+        763162
+      ],
+      "regression": [
+        763113,
+        763114
+      ],
+      "own_gate_decisions": 400,
+      "own_adoptions": 23,
+      "optimizer_updates": 504,
+      "warm_updates": 500,
+      "curve": {
+        "0": {
+          "n": 16,
+          "success": 9,
+          "rescue": [],
+          "regression": [],
+          "adopted_episodes": 0
+        },
+        "32": {
+          "n": 16,
+          "success": 9,
+          "rescue": [],
+          "regression": [],
+          "adopted_episodes": 0
+        },
+        "64": {
+          "n": 16,
+          "success": 10,
+          "rescue": [
+            763305
+          ],
+          "regression": [],
+          "adopted_episodes": 4
+        }
+      }
+    },
+    "v2_entry_rl_31801": {
+      "own_episodes": 64,
+      "own_success": 45,
+      "rescue": [
+        763104,
+        763128,
+        763131,
+        763137,
+        763139,
+        763144,
+        763147,
+        763148,
+        763152,
+        763162
+      ],
+      "regression": [],
+      "own_gate_decisions": 257,
+      "own_adoptions": 34,
+      "optimizer_updates": 80,
+      "warm_updates": 2000,
+      "curve": {
+        "0": {
+          "n": 16,
+          "success": 11,
+          "rescue": [
+            763305,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 6
+        },
+        "32": {
+          "n": 16,
+          "success": 11,
+          "rescue": [
+            763305,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 6
+        },
+        "64": {
+          "n": 16,
+          "success": 12,
+          "rescue": [
+            763305,
+            763306,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 8
+        }
+      }
+    },
+    "v2_stopping_rl_31801": {
+      "own_episodes": 64,
+      "own_success": 45,
+      "rescue": [
+        763104,
+        763128,
+        763131,
+        763137,
+        763139,
+        763144,
+        763147,
+        763148,
+        763152,
+        763162
+      ],
+      "regression": [],
+      "own_gate_decisions": 257,
+      "own_adoptions": 34,
+      "optimizer_updates": 80,
+      "warm_updates": 2000,
+      "curve": {
+        "0": {
+          "n": 16,
+          "success": 11,
+          "rescue": [
+            763305,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 6
+        },
+        "32": {
+          "n": 16,
+          "success": 11,
+          "rescue": [
+            763305,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 6
+        },
+        "64": {
+          "n": 16,
+          "success": 12,
+          "rescue": [
+            763305,
+            763306,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 8
+        }
+      }
+    },
+    "v2_stopping_rl_31802": {
+      "own_episodes": 64,
+      "own_success": 43,
+      "rescue": [
+        763104,
+        763128,
+        763131,
+        763137,
+        763139,
+        763147,
+        763148,
+        763152
+      ],
+      "regression": [],
+      "own_gate_decisions": 258,
+      "own_adoptions": 33,
+      "optimizer_updates": 64,
+      "warm_updates": 2000,
+      "curve": {
+        "0": {
+          "n": 16,
+          "success": 11,
+          "rescue": [
+            763305,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 6
+        },
+        "32": {
+          "n": 16,
+          "success": 11,
+          "rescue": [
+            763305,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 6
+        },
+        "64": {
+          "n": 16,
+          "success": 12,
+          "rescue": [
+            763305,
+            763306,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 7
+        }
+      }
+    },
+    "v2_supervised_31801": {
+      "own_episodes": 64,
+      "own_success": 44,
+      "rescue": [
+        763104,
+        763128,
+        763131,
+        763137,
+        763139,
+        763147,
+        763148,
+        763152,
+        763162
+      ],
+      "regression": [],
+      "own_gate_decisions": 351,
+      "own_adoptions": 27,
+      "optimizer_updates": 512,
+      "warm_updates": 2000,
+      "curve": {
+        "0": {
+          "n": 16,
+          "success": 11,
+          "rescue": [
+            763305,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 6
+        },
+        "32": {
+          "n": 16,
+          "success": 10,
+          "rescue": [
+            763305
+          ],
+          "regression": [],
+          "adopted_episodes": 4
+        },
+        "64": {
+          "n": 16,
+          "success": 10,
+          "rescue": [
+            763305
+          ],
+          "regression": [],
+          "adopted_episodes": 6
+        }
+      }
+    },
+    "v2_supervised_31802": {
+      "own_episodes": 64,
+      "own_success": 42,
+      "rescue": [
+        763104,
+        763131,
+        763137,
+        763139,
+        763148,
+        763152,
+        763162
+      ],
+      "regression": [],
+      "own_gate_decisions": 337,
+      "own_adoptions": 26,
+      "optimizer_updates": 512,
+      "warm_updates": 2000,
+      "curve": {
+        "0": {
+          "n": 16,
+          "success": 11,
+          "rescue": [
+            763305,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 6
+        },
+        "32": {
+          "n": 16,
+          "success": 9,
+          "rescue": [],
+          "regression": [],
+          "adopted_episodes": 2
+        },
+        "64": {
+          "n": 16,
+          "success": 10,
+          "rescue": [
+            763305
+          ],
+          "regression": [],
+          "adopted_episodes": 5
+        }
+      }
+    },
+    "v2_supervised_replay_31801": {
+      "own_episodes": 64,
+      "own_success": 44,
+      "rescue": [
+        763104,
+        763128,
+        763131,
+        763137,
+        763139,
+        763144,
+        763148,
+        763152,
+        763162
+      ],
+      "regression": [],
+      "own_gate_decisions": 333,
+      "own_adoptions": 28,
+      "optimizer_updates": 512,
+      "warm_updates": 2000,
+      "curve": {
+        "0": {
+          "n": 16,
+          "success": 11,
+          "rescue": [
+            763305,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 6
+        },
+        "32": {
+          "n": 16,
+          "success": 11,
+          "rescue": [
+            763305,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 5
+        },
+        "64": {
+          "n": 16,
+          "success": 11,
+          "rescue": [
+            763305,
+            763311
+          ],
+          "regression": [],
+          "adopted_episodes": 7
+        }
+      }
+    }
+  },
+  "controls": {
+    "dev_first1": {
+      "n": 16,
+      "success": 11,
+      "rescue": [
+        763302,
+        763305,
+        763306,
+        763311
+      ],
+      "regression": [
+        763313,
+        763314
+      ]
+    },
+    "dev_macro0": {
+      "n": 16,
+      "success": 7,
+      "rescue": [
+        763300,
+        763305
+      ],
+      "regression": [
+        763304,
+        763307,
+        763308,
+        763314
+      ]
+    },
+    "dev_macro1": {
+      "n": 16,
+      "success": 10,
+      "rescue": [
+        763302,
+        763305,
+        763306,
+        763311
+      ],
+      "regression": [
+        763307,
+        763313,
+        763314
+      ]
+    },
+    "dev_qgate": {
+      "n": 16,
+      "success": 8,
+      "rescue": [
+        763300,
+        763305,
+        763306,
+        763311
+      ],
+      "regression": [
+        763304,
+        763307,
+        763308,
+        763313,
+        763314
+      ]
+    },
+    "dev_rule": {
+      "n": 16,
+      "success": 9,
+      "rescue": [],
+      "regression": []
+    },
+    "dev_rule_fixed1": {
+      "n": 16,
+      "success": 9,
+      "rescue": [
+        763300
+      ],
+      "regression": [
+        763313
+      ]
+    }
+  },
+  "confirmation": {
+    "confirm_first1": {
+      "n": 24,
+      "success": 16,
+      "rescue": [
+        763410,
+        763411,
+        763413,
+        763416
+      ],
+      "regression": [
+        763408,
+        763409,
+        763414,
+        763420
+      ]
+    },
+    "confirm_initial_31801": {
+      "n": 24,
+      "success": 19,
+      "rescue": [
+        763410,
+        763411,
+        763416
+      ],
+      "regression": []
+    },
+    "confirm_initial_31802": {
+      "n": 24,
+      "success": 18,
+      "rescue": [
+        763410,
+        763411,
+        763416
+      ],
+      "regression": [
+        763414
+      ]
+    },
+    "confirm_rule": {
+      "n": 24,
+      "success": 16,
+      "rescue": [],
+      "regression": []
+    },
+    "confirm_rule_fixed1": {
+      "n": 24,
+      "success": 16,
+      "rescue": [
+        763404
+      ],
+      "regression": [
+        763412
+      ]
+    },
+    "confirm_v2_entry_rl_31801": {
+      "n": 24,
+      "success": 19,
+      "rescue": [
+        763410,
+        763411,
+        763416
+      ],
+      "regression": []
+    },
+    "confirm_v2_stopping_rl_31801": {
+      "n": 24,
+      "success": 19,
+      "rescue": [
+        763410,
+        763411,
+        763416
+      ],
+      "regression": []
+    },
+    "confirm_v2_stopping_rl_31802": {
+      "n": 24,
+      "success": 18,
+      "rescue": [
+        763410,
+        763411,
+        763416
+      ],
+      "regression": [
+        763414
+      ]
+    },
+    "confirm_v2_supervised_31801": {
+      "n": 24,
+      "success": 18,
+      "rescue": [
+        763411,
+        763416
+      ],
+      "regression": []
+    },
+    "confirm_v2_supervised_31802": {
+      "n": 24,
+      "success": 19,
+      "rescue": [
+        763410,
+        763411,
+        763416
+      ],
+      "regression": []
+    },
+    "confirm_v2_supervised_replay_31801": {
+      "n": 24,
+      "success": 19,
+      "rescue": [
+        763410,
+        763411,
+        763416
+      ],
+      "regression": []
+    }
+  },
+  "tool": {
+    "tool_scout": {
+      "feedback": {
+        "n": 8,
+        "success": 4,
+        "rescue": [],
+        "regression": [],
+        "errors": {
+          "Horizon('NATIVE_HORIZON')": 1,
+          "Failure('RECOVERY_LEVEL_REHOOK_PLAN')": 1,
+          "Failure('PLAN_TRANSFER')": 2,
+          "None": 4
+        }
+      },
+      "none": {
+        "n": 8,
+        "success": 4,
+        "rescue": [],
+        "regression": [],
+        "errors": {
+          "None": 6,
+          "Failure('PLAN_TRANSFER')": 2
+        }
+      },
+      "rehook": {
+        "n": 8,
+        "success": 4,
+        "rescue": [],
+        "regression": [],
+        "errors": {
+          "Horizon('NATIVE_HORIZON')": 1,
+          "Failure('RECOVERY_LEVEL_REHOOK_PLAN')": 1,
+          "Failure('PLAN_TRANSFER')": 2,
+          "None": 4
+        }
+      }
+    },
+    "tool_early": {
+      "feedback": {
+        "n": 8,
+        "success": 0,
+        "rescue": [],
+        "regression": [
+          [
+            763604,
+            0.075
+          ],
+          [
+            763607,
+            0.075
+          ],
+          [
+            763607,
+            0.0875
+          ]
+        ],
+        "errors": {
+          "None": 3,
+          "Failure('RECOVERY_LEVEL_REHOOK_PLAN')": 1,
+          "Failure('PLAN_TRANSFER')": 4
+        }
+      },
+      "none": {
+        "n": 8,
+        "success": 3,
+        "rescue": [],
+        "regression": [],
+        "errors": {
+          "None": 3,
+          "Failure('PLAN_HOOK')": 1,
+          "Failure('PLAN_TRANSFER')": 4
+        }
+      },
+      "press": {
+        "n": 8,
+        "success": 0,
+        "rescue": [],
+        "regression": [
+          [
+            763604,
+            0.075
+          ],
+          [
+            763607,
+            0.075
+          ],
+          [
+            763607,
+            0.0875
+          ]
+        ],
+        "errors": {
+          "None": 4,
+          "Failure('PLAN_TRANSFER')": 4
+        }
+      }
+    },
+    "tool_early_v2": {
+      "feedback": {
+        "n": 8,
+        "success": 3,
+        "rescue": [],
+        "regression": [],
+        "errors": {
+          "None": 3,
+          "Failure('RECOVERY_LEVEL_REHOOK_PLAN')": 1,
+          "Failure('PLAN_TRANSFER')": 4
+        }
+      },
+      "none": {
+        "n": 8,
+        "success": 3,
+        "rescue": [],
+        "regression": [],
+        "errors": {
+          "None": 3,
+          "Failure('PLAN_HOOK')": 1,
+          "Failure('PLAN_TRANSFER')": 4
+        }
+      },
+      "press": {
+        "n": 8,
+        "success": 2,
+        "rescue": [],
+        "regression": [
+          [
+            763604,
+            0.075
+          ]
+        ],
+        "errors": {
+          "Horizon('NATIVE_HORIZON')": 1,
+          "None": 3,
+          "Failure('PLAN_TRANSFER')": 4
+        }
+      }
+    }
+  },
+  "pairs": {
+    "n": 64,
+    "baseline_success": 32,
+    "candidate_success": 28,
+    "effects": {
+      "1": 3,
+      "0": 54,
+      "-1": 7
+    }
+  },
+  "scope": "Complete native100 trajectories, actual terminal predicate. Unique executed cost; shared pair and baseline costs must also be charged per comparison arm. Summed episode time is not elapsed wall clock."
+}

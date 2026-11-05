@@ -1,0 +1,9 @@
+{
+  "reason": "First warm2000 sequence-RL checkpoint64 obtains a new development rescue763306 beyond shared initialization; test whether wait-decision credit is necessary, not just entry reinforcement.",
+  "arm": "entry_rl",
+  "seed": 31801,
+  "episodes": 64,
+  "shared_data": "same pairs and baseline files",
+  "change_only": "likelihood-ratio gradient uses adoption decision only instead of complete wait/adopt sequence",
+  "selection": "fixed final64; dev763300:315 only; add frozen final64 to predeclared763400:423 confirmation without selecting by those outcomes"
+}

@@ -1,0 +1,107 @@
+{
+  "checks": [
+    {
+      "seed": 763604,
+      "grasp": 0.075,
+      "kind": "original_nominal_preserved",
+      "identical_steps": 100
+    },
+    {
+      "seed": 763604,
+      "grasp": 0.075,
+      "kind": "declined_intervention_preserves_full_nominal",
+      "identical_steps": 100
+    },
+    {
+      "seed": 763604,
+      "grasp": 0.075,
+      "kind": "correction_only_after_measured_event",
+      "identical_steps": 76,
+      "event_step": 76
+    },
+    {
+      "seed": 763604,
+      "grasp": 0.0875,
+      "kind": "original_nominal_preserved",
+      "identical_steps": 100
+    },
+    {
+      "seed": 763604,
+      "grasp": 0.0875,
+      "kind": "correction_only_after_measured_event",
+      "identical_steps": 54,
+      "event_step": 54
+    },
+    {
+      "seed": 763604,
+      "grasp": 0.0875,
+      "kind": "correction_only_after_measured_event",
+      "identical_steps": 54,
+      "event_step": 54
+    },
+    {
+      "seed": 763605,
+      "grasp": 0.075,
+      "kind": "original_nominal_preserved",
+      "identical_steps": 100
+    },
+    {
+      "seed": 763605,
+      "grasp": 0.0875,
+      "kind": "original_nominal_preserved",
+      "identical_steps": 100
+    },
+    {
+      "seed": 763606,
+      "grasp": 0.075,
+      "kind": "original_nominal_preserved",
+      "identical_steps": 100
+    },
+    {
+      "seed": 763606,
+      "grasp": 0.0875,
+      "kind": "original_nominal_preserved",
+      "identical_steps": 100
+    },
+    {
+      "seed": 763607,
+      "grasp": 0.075,
+      "kind": "original_nominal_preserved",
+      "identical_steps": 100
+    },
+    {
+      "seed": 763607,
+      "grasp": 0.075,
+      "kind": "declined_intervention_preserves_full_nominal",
+      "identical_steps": 100
+    },
+    {
+      "seed": 763607,
+      "grasp": 0.075,
+      "kind": "correction_only_after_measured_event",
+      "identical_steps": 73,
+      "event_step": 73
+    },
+    {
+      "seed": 763607,
+      "grasp": 0.0875,
+      "kind": "original_nominal_preserved",
+      "identical_steps": 100
+    },
+    {
+      "seed": 763607,
+      "grasp": 0.0875,
+      "kind": "declined_intervention_preserves_full_nominal",
+      "identical_steps": 100
+    },
+    {
+      "seed": 763607,
+      "grasp": 0.0875,
+      "kind": "correction_only_after_measured_event",
+      "identical_steps": 73,
+      "event_step": 73
+    }
+  ],
+  "passed": true,
+  "scope": "actual complete original-reset executions; no mid-episode state restore; shared runtime repair, not RL gain"
+}

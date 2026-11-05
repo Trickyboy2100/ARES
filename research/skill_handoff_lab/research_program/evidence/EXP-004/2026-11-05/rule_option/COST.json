@@ -1,0 +1,18 @@
+{
+  "own_training_episodes": 512,
+  "online_optimizer_steps": 2336,
+  "warm_optimizer_steps": 13000,
+  "new_named_weight_checkpoints": 40,
+  "shared_training_physics_episodes": 192,
+  "shared_training_physics_steps": 19200,
+  "training_cost_per_online_arm": "128 paired collection +64 separately executed rule baselines +64 own episodes =256 complete native episodes/25600steps before development/confirmation. Shared costs charged to each arm; unique execution counted separately.",
+  "total_unique": {
+    "episodes": 1528,
+    "physical_steps": 152800,
+    "planner_queries": 14644,
+    "planner_wall_s": 84.71728425018955,
+    "episode_wall_s": 9228.745528762694
+  },
+  "optimizer_wall_time": "NOT_SEPARATELY_RECORDED",
+  "elapsed_wall_time_note": "episode_wall_s sums episode timings across concurrent jobs; not elapsed clock"
+}

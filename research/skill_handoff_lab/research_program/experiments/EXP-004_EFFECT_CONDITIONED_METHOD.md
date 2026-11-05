@@ -152,3 +152,14 @@ H1单次atomic不足，H2重复阶段刷新可复现760213完整100步成功；�
 不将更多决策、标准参数化Option、83维状态增广或动作字典本身称为新算法。H3拼接10次全拒绝，尚无操作能力；第二任务Charger20016/16饱和，无迁移增益。
 保留全部模型、失败、完整事务resume和历史分数。重点转为真实可执行续接下的干预价值校准与保持；当前确认集已看，不能复用为新测试。
 证据：[atomic_handoff](../evidence/EXP-004/2026-11-05/atomic_handoff/README.md)。完整成本、SHA、RAW/英文同步视频与论文表已归档。
+
+
+## Current cycle 2026-11-05 — rule_option: learned adoption retained; waiting-credit hypothesis not engaged
+
+From9a30507, implemented and ran single-complete-Option deviation then frozen strong rule. New64 paired training conditions give3rescues/7regressions; all7 harmful outcomes have positive old behavior-Q gaps. Completed512 own-policy training episodes across two iterations, two independent initializations and actual entry-credit/rehearsal controls. Shared500-update pretraining underfit the three positive training examples; common2000-update initialization was corrected before further matched training.
+
+New24 fixed-final64 confirmation: rule16, fixed first proposal16 (4rescues/4regressions), shared initialization19/18, sequenceRL19/18, supervision18/19, ordinary rehearsal19. Each RL model has exactly its initializer's per-scene success outcomes. Thus paired-data conditional adoption is retained as an effective learned baseline; independent online-RL gain is not supported. All nonzero updates in the ablation seed occur at the first gate decision, so full waiting credit and entry-only credit produce identical112 complete training/development trajectories. Do not claim a new stopping-time algorithm from this comparison.
+
+Tool's early-contact adapter had a real continuation defect: declined intervention discarded the live nominal caller, and early modes could intervene before the event. Fixed in a new version without overwriting history. Eight nominal100-step traces and three declined-intervention traces are exactly retained. Corrected early none/feedback/press=3/3/2 of8,0rescues; no second-task RL gain or blind transfer training. Whole cycle:1528 native episodes,152800physical steps,14644planner queries,40named weight checkpoints. Detailed evidence, actual scripts, all models and rawSHA: [rule_option](../evidence/EXP-004/2026-11-05/rule_option/README.md).
+
+Decision: retain the stronger learned initializer and rehearsal controls, execution contracts, own-policy data and Tool repair. Stop expanding the inactive waiting-credit mechanism. Next investigate real predecessor–successor ordering on NEW training initial conditions with this retained learned successor, then a matched ordinary two-stage learner; never reuse the current confirmation as unseen data. No independent algorithm or formal safety claim.

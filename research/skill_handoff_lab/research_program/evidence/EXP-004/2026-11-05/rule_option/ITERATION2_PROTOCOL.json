@@ -1,0 +1,24 @@
+{
+  "reason": "500 common supervised warm updates leave all three measured positive training examples below adoption threshold. Training-only convergence probe reaches positive margins and retains negative rejection. Correct common foundation, not candidate-specific gain.",
+  "change": "warm2000 for both arms; no controller/observation/return/update change",
+  "arms": [
+    "supervised",
+    "stopping_rl"
+  ],
+  "seeds": [
+    31801,
+    31802
+  ],
+  "online_episodes": 64,
+  "train_scenes": [
+    763100,
+    763163
+  ],
+  "dev_scenes": [
+    763300,
+    763315
+  ],
+  "selection": "primary final64; no best checkpoint selection; same seen dev; no sealed",
+  "comparison": "all warm/data/physical budgets equal within iteration2; iteration1 preserved",
+  "limitation": "supervised fit on3 rescue examples is not evidence of generalization"
+}

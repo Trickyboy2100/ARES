@@ -2,20 +2,20 @@
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
   "last_review": "2026-11-05",
-  "baseline_commit": "9a66e94",
+  "baseline_commit": "9a30507",
   "branch": "research-sci-program",
   "scientific_goal": "One SCI paper: task-conditioned executable parameter adaptation ACROSS REAL MULTI-STAGE ROBOT SKILLS using nominal skill primitives and measured SkillResult to improve successor feasibility, whole-task success and transfer; contact servo and SAC are component baselines",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
-  "latest_evidence": "evidence/EXP-004/2026-11-05/atomic_handoff/README.md",
-  "next_action": "Retain atomic83 and parameterized Option checkpoints, own-policy resume and all counterexamples. Focus on deployment intervention-value calibration and success retention under genuine continuation semantics: frozen-confirmation762206 has harmful first interventions despite positive Q gaps;762214 has a verified useful local correction,762213 permits a later rescue window. Use new training-only intervention evidence and same-authority mature policy-improvement controls, not more phase reopening, budget heads or treating standard Options as novel. Current new24 are now seen; preserve old final64 scores. Fixed-clock splice remains rejected/partial, not a trained capability; Charger native small cohort saturated, no transfer gain claim.",
+  "latest_evidence": "evidence/EXP-004/2026-11-05/rule_option/README.md",
+  "next_action": "Retain trained conditional Option adoption, shared paired-data initializers and supervision+rehearsal as stronger learned references. Do not expand the wait-credit mechanism: its distinguishing terms were absent in nonzero updates, and final RL has the same confirmation outcomes as initialization. In NEW training-only natural states, test real predecessor changes with this frozen learned successor for reproducible cross-stage ordering differences beyond the best fixed grasp; then compare ordinary joint skill RL and a concrete successor-conditioned increment at matched cost. Current763300–315 and763400–423 are seen development, never fresh confirmation or gate-training data. Use corrected program_tool_recovery_v2 for early-contact experiments; no Tool RL claim from unchanged recovery capability.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
     "S3": "initial_action_authority_confirmed_identification_incomplete",
     "S4": "active_STAP_replication_and_multi_skill_credible_method",
-    "S5": "active_continuation_runtime_verified; independent_method_gain_unverified",
+    "S5": "active_trained_rule_relative_option_adoption; independent_online_method_gain_unverified",
     "S6": "not_started",
     "S7": "not_started"
   },
@@ -80,7 +80,7 @@
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update existing cards, DECISIONS, EVIDENCE_LEDGER and STATE after evidence; develop paper concurrently with claim-specific limitations. Independent algorithm superiority requires actual comparative evidence, not a prerequisite for writing or second-task preparation.",
-  "latest_run_summary": "1002 complete native episodes /101800 physical steps, 8934 planner queries;320 own-policy training episodes across5 arms,2 independent neural initializations. Expanded shared execution observation/action interface and parameterized closed-loop Option learn verified rescues. Frozen new24: nominal12, rule15, queue12/12, macro10/12 with1rescue+3regressions and1rescue+1regression. No stable aggregate advantage. Charger200 native16/16 saturated; no learned transfer claim.",
+  "latest_run_summary": "1528 complete native episodes /152800steps /14644 planner queries;512 own-policy training episodes,2 independent neural initializations. Fresh24: rule16, fixed first proposal16, supervised initialization19/18, online sequenceRL19/18, online supervision18/19, supervision+rehearsal19. No additional RL confirmation gain; all nonzero seed31801 updates occur at first disagreement, making wait-credit ablation physically identical. Tool early-contact continuation repaired and verified; no recovery-learning gain.",
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
   "research_review_20261102": {
     "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
@@ -950,5 +950,557 @@
     },
     "second_task": "native PlugCharger20016/16 across4scenes,2realgrasp pitches,2controllers; saturated capability only",
     "archive": "evidence/EXP-004/2026-11-05/atomic_handoff/RAW_MANIFEST.json"
+  },
+  "rule_option_20261105": {
+    "base": "9a30507",
+    "implementation": "680a88a plus final source SHA in evidence",
+    "evidence": "evidence/EXP-004/2026-11-05/rule_option/README.md",
+    "root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/rule_option_20261105",
+    "cost": {
+      "own_training_episodes": 512,
+      "online_optimizer_steps": 2336,
+      "warm_optimizer_steps": 13000,
+      "new_named_weight_checkpoints": 40,
+      "shared_training_physics_episodes": 192,
+      "shared_training_physics_steps": 19200,
+      "training_cost_per_online_arm": "128 paired collection +64 separately executed rule baselines +64 own episodes =256 complete native episodes/25600steps before development/confirmation. Shared costs charged to each arm; unique execution counted separately.",
+      "total_unique": {
+        "episodes": 1528,
+        "physical_steps": 152800,
+        "planner_queries": 14644,
+        "planner_wall_s": 84.71728425018955,
+        "episode_wall_s": 9228.745528762694
+      },
+      "optimizer_wall_time": "NOT_SEPARATELY_RECORDED",
+      "elapsed_wall_time_note": "episode_wall_s sums episode timings across concurrent jobs; not elapsed clock"
+    },
+    "confirmation": {
+      "confirm_first1": {
+        "n": 24,
+        "success": 16,
+        "rescue": [
+          763410,
+          763411,
+          763413,
+          763416
+        ],
+        "regression": [
+          763408,
+          763409,
+          763414,
+          763420
+        ]
+      },
+      "confirm_initial_31801": {
+        "n": 24,
+        "success": 19,
+        "rescue": [
+          763410,
+          763411,
+          763416
+        ],
+        "regression": []
+      },
+      "confirm_initial_31802": {
+        "n": 24,
+        "success": 18,
+        "rescue": [
+          763410,
+          763411,
+          763416
+        ],
+        "regression": [
+          763414
+        ]
+      },
+      "confirm_rule": {
+        "n": 24,
+        "success": 16,
+        "rescue": [],
+        "regression": []
+      },
+      "confirm_rule_fixed1": {
+        "n": 24,
+        "success": 16,
+        "rescue": [
+          763404
+        ],
+        "regression": [
+          763412
+        ]
+      },
+      "confirm_v2_entry_rl_31801": {
+        "n": 24,
+        "success": 19,
+        "rescue": [
+          763410,
+          763411,
+          763416
+        ],
+        "regression": []
+      },
+      "confirm_v2_stopping_rl_31801": {
+        "n": 24,
+        "success": 19,
+        "rescue": [
+          763410,
+          763411,
+          763416
+        ],
+        "regression": []
+      },
+      "confirm_v2_stopping_rl_31802": {
+        "n": 24,
+        "success": 18,
+        "rescue": [
+          763410,
+          763411,
+          763416
+        ],
+        "regression": [
+          763414
+        ]
+      },
+      "confirm_v2_supervised_31801": {
+        "n": 24,
+        "success": 18,
+        "rescue": [
+          763411,
+          763416
+        ],
+        "regression": []
+      },
+      "confirm_v2_supervised_31802": {
+        "n": 24,
+        "success": 19,
+        "rescue": [
+          763410,
+          763411,
+          763416
+        ],
+        "regression": []
+      },
+      "confirm_v2_supervised_replay_31801": {
+        "n": 24,
+        "success": 19,
+        "rescue": [
+          763410,
+          763411,
+          763416
+        ],
+        "regression": []
+      }
+    },
+    "training": {
+      "stopping_31801": {
+        "own_episodes": 64,
+        "own_success": 36,
+        "rescue": [
+          763137,
+          763147,
+          763148,
+          763152,
+          763162
+        ],
+        "regression": [
+          763113,
+          763126,
+          763135,
+          763160
+        ],
+        "own_gate_decisions": 250,
+        "own_adoptions": 41,
+        "optimizer_updates": 72,
+        "warm_updates": 500,
+        "curve": {
+          "0": {
+            "n": 16,
+            "success": 9,
+            "rescue": [],
+            "regression": [],
+            "adopted_episodes": 0
+          },
+          "32": {
+            "n": 16,
+            "success": 9,
+            "rescue": [],
+            "regression": [],
+            "adopted_episodes": 0
+          },
+          "64": {
+            "n": 16,
+            "success": 9,
+            "rescue": [],
+            "regression": [],
+            "adopted_episodes": 2
+          }
+        }
+      },
+      "supervised_31801": {
+        "own_episodes": 64,
+        "own_success": 35,
+        "rescue": [
+          763144,
+          763162
+        ],
+        "regression": [
+          763113,
+          763114
+        ],
+        "own_gate_decisions": 400,
+        "own_adoptions": 23,
+        "optimizer_updates": 504,
+        "warm_updates": 500,
+        "curve": {
+          "0": {
+            "n": 16,
+            "success": 9,
+            "rescue": [],
+            "regression": [],
+            "adopted_episodes": 0
+          },
+          "32": {
+            "n": 16,
+            "success": 9,
+            "rescue": [],
+            "regression": [],
+            "adopted_episodes": 0
+          },
+          "64": {
+            "n": 16,
+            "success": 10,
+            "rescue": [
+              763305
+            ],
+            "regression": [],
+            "adopted_episodes": 4
+          }
+        }
+      },
+      "v2_entry_rl_31801": {
+        "own_episodes": 64,
+        "own_success": 45,
+        "rescue": [
+          763104,
+          763128,
+          763131,
+          763137,
+          763139,
+          763144,
+          763147,
+          763148,
+          763152,
+          763162
+        ],
+        "regression": [],
+        "own_gate_decisions": 257,
+        "own_adoptions": 34,
+        "optimizer_updates": 80,
+        "warm_updates": 2000,
+        "curve": {
+          "0": {
+            "n": 16,
+            "success": 11,
+            "rescue": [
+              763305,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 6
+          },
+          "32": {
+            "n": 16,
+            "success": 11,
+            "rescue": [
+              763305,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 6
+          },
+          "64": {
+            "n": 16,
+            "success": 12,
+            "rescue": [
+              763305,
+              763306,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 8
+          }
+        }
+      },
+      "v2_stopping_rl_31801": {
+        "own_episodes": 64,
+        "own_success": 45,
+        "rescue": [
+          763104,
+          763128,
+          763131,
+          763137,
+          763139,
+          763144,
+          763147,
+          763148,
+          763152,
+          763162
+        ],
+        "regression": [],
+        "own_gate_decisions": 257,
+        "own_adoptions": 34,
+        "optimizer_updates": 80,
+        "warm_updates": 2000,
+        "curve": {
+          "0": {
+            "n": 16,
+            "success": 11,
+            "rescue": [
+              763305,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 6
+          },
+          "32": {
+            "n": 16,
+            "success": 11,
+            "rescue": [
+              763305,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 6
+          },
+          "64": {
+            "n": 16,
+            "success": 12,
+            "rescue": [
+              763305,
+              763306,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 8
+          }
+        }
+      },
+      "v2_stopping_rl_31802": {
+        "own_episodes": 64,
+        "own_success": 43,
+        "rescue": [
+          763104,
+          763128,
+          763131,
+          763137,
+          763139,
+          763147,
+          763148,
+          763152
+        ],
+        "regression": [],
+        "own_gate_decisions": 258,
+        "own_adoptions": 33,
+        "optimizer_updates": 64,
+        "warm_updates": 2000,
+        "curve": {
+          "0": {
+            "n": 16,
+            "success": 11,
+            "rescue": [
+              763305,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 6
+          },
+          "32": {
+            "n": 16,
+            "success": 11,
+            "rescue": [
+              763305,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 6
+          },
+          "64": {
+            "n": 16,
+            "success": 12,
+            "rescue": [
+              763305,
+              763306,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 7
+          }
+        }
+      },
+      "v2_supervised_31801": {
+        "own_episodes": 64,
+        "own_success": 44,
+        "rescue": [
+          763104,
+          763128,
+          763131,
+          763137,
+          763139,
+          763147,
+          763148,
+          763152,
+          763162
+        ],
+        "regression": [],
+        "own_gate_decisions": 351,
+        "own_adoptions": 27,
+        "optimizer_updates": 512,
+        "warm_updates": 2000,
+        "curve": {
+          "0": {
+            "n": 16,
+            "success": 11,
+            "rescue": [
+              763305,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 6
+          },
+          "32": {
+            "n": 16,
+            "success": 10,
+            "rescue": [
+              763305
+            ],
+            "regression": [],
+            "adopted_episodes": 4
+          },
+          "64": {
+            "n": 16,
+            "success": 10,
+            "rescue": [
+              763305
+            ],
+            "regression": [],
+            "adopted_episodes": 6
+          }
+        }
+      },
+      "v2_supervised_31802": {
+        "own_episodes": 64,
+        "own_success": 42,
+        "rescue": [
+          763104,
+          763131,
+          763137,
+          763139,
+          763148,
+          763152,
+          763162
+        ],
+        "regression": [],
+        "own_gate_decisions": 337,
+        "own_adoptions": 26,
+        "optimizer_updates": 512,
+        "warm_updates": 2000,
+        "curve": {
+          "0": {
+            "n": 16,
+            "success": 11,
+            "rescue": [
+              763305,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 6
+          },
+          "32": {
+            "n": 16,
+            "success": 9,
+            "rescue": [],
+            "regression": [],
+            "adopted_episodes": 2
+          },
+          "64": {
+            "n": 16,
+            "success": 10,
+            "rescue": [
+              763305
+            ],
+            "regression": [],
+            "adopted_episodes": 5
+          }
+        }
+      },
+      "v2_supervised_replay_31801": {
+        "own_episodes": 64,
+        "own_success": 44,
+        "rescue": [
+          763104,
+          763128,
+          763131,
+          763137,
+          763139,
+          763144,
+          763148,
+          763152,
+          763162
+        ],
+        "regression": [],
+        "own_gate_decisions": 333,
+        "own_adoptions": 28,
+        "optimizer_updates": 512,
+        "warm_updates": 2000,
+        "curve": {
+          "0": {
+            "n": 16,
+            "success": 11,
+            "rescue": [
+              763305,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 6
+          },
+          "32": {
+            "n": 16,
+            "success": 11,
+            "rescue": [
+              763305,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 5
+          },
+          "64": {
+            "n": 16,
+            "success": 11,
+            "rescue": [
+              763305,
+              763311
+            ],
+            "regression": [],
+            "adopted_episodes": 7
+          }
+        }
+      }
+    },
+    "pair_effects": {
+      "n": 64,
+      "baseline_success": 32,
+      "candidate_success": 28,
+      "effects": {
+        "1": 3,
+        "0": 54,
+        "-1": 7
+      }
+    },
+    "strict_execution_prefix_checks": 310,
+    "waiting_credit": "NOT_ENGAGED: all10 nonzero updates seed31801 adopt at first disagreement;112 complete training/dev trajectories identical to entry-only ablation",
+    "retained_claim": "PRELIMINARY_CONDITIONAL_ADOPTION_BENEFIT; already present after supervised paired-data initialization",
+    "independent_method_gain": "UNVERIFIED",
+    "second_task": "72 Tool native episodes; corrected early adapter preserves all8 nominal traces and3 declined-intervention traces; corrected none3/8 feedback3/8 press2/8, no recovery gain; no new Tool RL trained",
+    "predecessor": "Inherited learned3-grasp policy frozen this cycle; fixed-grasp1 rescues763404 and breaks763412 on confirmation, net unchanged16/24. No newly learned joint benefit."
   }
 }

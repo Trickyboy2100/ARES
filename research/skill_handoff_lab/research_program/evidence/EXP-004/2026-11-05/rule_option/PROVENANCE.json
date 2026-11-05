@@ -1,0 +1,21 @@
+{
+  "base": "9a305072f73b15e60ae4f3db7767adbf348c7a40",
+  "source_sha": {
+    "program_rule_option.py": "7a119393ddf759c97db96e9040e04c02e65028f97351e9940d47a79e1c89c123",
+    "collect_rule_pairs.py": "03f26babb97c57df99417326889ac9e66a73e0227ebcc11f0f07cedb1c0cf814",
+    "train_rule_gate.py": "6adde1d998348520a25c473ec81dc9f28da5c38fcd0225f2f325e6add0ccc1b5",
+    "train_rule_gate_v2.py": "797e08ba8b1b809c117cc95b5d75ea9a9885f83e0a9a0c7bf816c81d671cb9a2",
+    "run_rule_controls.py": "b14ebec6a94cc07b816f11b4ec88946c4f3732dacd9a5f9cc4a6e8c5fb10db76",
+    "program_atomic_feedback.py": "0885a6555173fafb6146468aa070be9d90171f9bd367b08caa3de85705832137",
+    "peg_atomic_macro.py": "4c8ab569fe889f3bab16db9c4566f0dd7cc1fe378d98a00a0c9a655f80bd101a",
+    "program_peg_feedback.py": "9836620ca9e6d114725691e2e6f6b411f23d2016df4da5c6b8061cfe9b95d4c3",
+    "program_budget_feedback_sac.py": "f11d029563a47cc62d2d911ac3f7e2001030f9da6e1029b404b69e6f14a7db68",
+    "train_option_online.py": "92670ab3ea037db696d62a5f8a7613f9c5c6466a1f5de25c5111fa8493302f0f"
+  },
+  "frozen_models": {
+    "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/atomic_handoff_20261105/macro_bc64/CHECKPOINT_32.pt": "457ce5bf35f2a8372614143011f3700979b9dbc52f4e85f341d9e3884d1bdf7f",
+    "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/atomic_handoff_20261105/macro_seed31702/CHECKPOINT_64.pt": "88251f58fd845e684c34537c6b6fdca28096d701d511d9ab15fafba21338f830"
+  },
+  "pair_dataset_sha": "1755bb5ae0fa5ee101f3329a73100475407942c404f56084bb072ab4ecd98172",
+  "note": "Paired source snapshots captured before pair execution; global final snapshots additionally recorded. Controller code inherited; no hardware or sealed fixtures."
+}

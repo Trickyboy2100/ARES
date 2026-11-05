@@ -1,6 +1,6 @@
-# Execution-reference separation for task-conditioned skill-parameter reinforcement learning
+# Executable skill adaptation above strong manipulation controllers
 
-Working manuscript, 2026-11-05. This title describes a candidate representation contribution, not a proven new SAC algorithm. Native simulation evidence only; no hardware or sealed-test claims.
+Working manuscript, 2026-11-05. The current study combines explicit skill execution semantics with baseline-relative learning of complete Option interventions. Historical representation experiments remain below. Independent algorithm superiority is not assumed. Native simulation evidence only; no hardware or sealed-test claims.
 
 ## Problem
 
@@ -202,3 +202,55 @@ The current paper can support an executable-reference/temporal-authority formula
 its concrete learned implementation, causal rescue cases, and a reproducible account
 of generalization failures. It cannot yet claim stable superiority over mature
 control, independently novel SAC, cross-stage synergy, or learned second-task transfer.
+
+
+## Rule-relative, continuation-bound skill adaptation (current cycle)
+
+### Problem and executable policy class
+
+A useful intervention is conditional on its subsequent execution. The present experiment fixes the strongest inherited geometric controller, the native Peg100 predicate, the learned three-grasp predecessor, and two previously trained successor proposals. At a real successor decision, a policy chooses either the frozen rule or one complete proposal Option. After the chosen Option terminates, control returns to the frozen rule for the remainder of the same native episode. Choosing zero continues the currently active queue; it does not restore the original plan. Atomic offsets maintain their selected parameter across refinement boundaries, whereas non-atomic proposals retain their inherited continuation contract. Actual release, physical duration and command origin are logged.
+
+The actor sees 83 execution features plus one-hot identities of the rule and candidate actions (107 inputs). A shared 107–32–1 tanh network scores each of the two proposals; a fixed zero logit represents waiting. Proposals equal to the rule action are masked. The physical predecessor remains present and can select three grasps, but its weights are frozen in this cycle. Consequently these experiments do not establish newly learned cross-stage coordination.
+
+### Measured evidence and policy update
+
+For each training initial condition, we physically execute the frozen-rule baseline from the original reset. A separate branch executes the candidate policy from that same original reset. Before its first deviation, robot/object states and physical commands are compared by exact serialized-prefix hashes. No contact-state restoration is used. The terminal label is delta = G(candidate Option then rule) − G(rule), with the original binary success predicate. This is an initial-condition-matched experimental label, not privileged information supplied to the deployed actor.
+
+Let H be the observed waiting/adoption decision sequence, and let p_theta(H) be its probability. The online candidate uses a clipped likelihood-ratio policy update with advantage delta for rescues, 2*delta for regressions, and zero otherwise. The ratio is the product over all decisions in H, evaluated stably as an exponentiated difference of summed log probabilities. Eight gradient steps follow each nonzero outcome; no extra success-value head is introduced. Gamma=1 is appropriate to the terminal, finite native-horizon objective. The regression weight changes the optimization criterion and is shared with the cost-sensitive supervision comparator.
+
+The significance of the full sequence is explicit: waiting choices determine which later intervention state is reached. An entry-only update omits their score-function terms and is a mechanistic ablation. The temporal likelihood ratio, clipping and measured baseline are mature policy-gradient ingredients. Neither the algorithm nor its safety is established by naming this combination. SPIBB's support constraints and theorem do not apply to this neural gate.
+
+A shared cost-sensitive supervised initialization is followed by either this real online policy update or ordinary supervision on that arm's own adopted Option outcomes. Both arms explore with the same bounded categorical mixture and use the same observations, frozen proposals and physical budget. Greedy deployment is evaluated separately from stochastic exploratory training. A rehearsal control retains the common paired data during supervised online updates to test whether any apparent RL benefit is merely avoidance of ordinary forgetting.
+
+### Experimental design and limitations
+
+The first common dataset contains 64 new natural training initial conditions and 128 complete native executions. Each initial condition contributes one randomly selected reachable disagreement, rather than being counted multiple times as independent evidence. It contains three rescues, seven regressions and 54 unchanged outcomes. All seven harmful examples have positive historical mean-Q differences, while only two of the three rescues do. This directly rejects using the old behavior Critic as a calibrated rule-relative Option-value oracle.
+
+Each online arm uses 64 different natural initial conditions and its own sampled physical data. The 16 development conditions are disjoint from both training groups; once examined they are development data, not unseen tests. Fixed final64, common-initialization checks and fresh confirmation conditions are declared before confirmation execution. Shared paired physics and counterfactual baseline episodes are charged to every comparison arm, while unique executed costs are additionally reported. No sealed data are accessed.
+
+A first 500-update shared initialization did not even adopt the three positive training examples. A training-only convergence check motivated 2000 shared updates for both arms, retaining the earlier run as a negative result. The resulting initial model already rescues two development failures. Any benefit present at this checkpoint is supervised initialization, not online RL. The final tables distinguish that foundation from subsequent policy improvement.
+
+The one-deviation restriction intentionally resolves one source of continuation mismatch but restricts recovery capacity. The observation summarizes rather than exposes the full future queue. Effects can be rare, initial-condition-correlated and time-sensitive. Current success retention is empirical, not a safety guarantee; a second contact mechanism and stable multi-stage learning remain necessary for a broader paper claim.
+
+
+### Completed rule-relative results
+
+| Method | Dev /16 | Frozen confirmation /24 | Rescue / regression vs shared rule |
+|---|---:|---:|---|
+| Frozen rule, shared predecessor | 9 | 16 | 0 / 0 |
+| Frozen rule, fixed grasp1 | 9 | 16 | 1 / 1 |
+| Frozen complete macro 31701 | 7 | — | — |
+| Frozen complete macro 31702 | 10 | — | — |
+| Historical Q gate | 8 | — | — |
+| Fixed first proposal1 | 11 | 16 | 4 / 4 |
+| Shared supervised initialization | 11 / 11 | 19 / 18 | 3/0 ; 3/1 |
+| Online supervision | 10 / 10 | 18 / 19 | 2/0 ; 3/0 |
+| Supervision + shared-data rehearsal | 11 | 19 | 3 / 0 |
+| Online sequence RL | 12 / 12 | 19 / 18 | 3/0 ; 3/1 |
+| Entry-only RL ablation | 12 | 19 | 3 / 0 |
+
+The24-scene frozen confirmation separates a useful learned interface from an unproven online algorithm increment. Both final RL models exactly match their respective supervised initializers in per-scene task success. Simple online supervision swaps the19/18 ordering to18/19, and retaining the common paired data reaches19/24. The sequence-credit and entry-only ablation have identical64 training and48 development trajectories: every nonzero update in that seed occurs at the first disagreement, making their gradients equivalent on the observed updates. The proposed distinguishing mechanism was therefore not exercised, rather than merely statistically underpowered.
+
+Fixed first-proposal adoption achieves16/24 with four rescues and four regressions. Conditional adoption retains three of those rescues with zero or one regression. This supports a role for state-dependent selection, already obtained from supervised actual Option effects; it does not establish a new RL algorithm. The512 own-policy episodes,13000 warm optimizer steps,2336 online optimizer steps and all40 named weight checkpoints are preserved. Unique physical cost is1528 native episodes/152800 control steps/14644 planner queries, including all controls, both iterations, Tool experiments and the continuation repair.
+
+Tool provides a second execution-semantics counterexample rather than a learned-transfer result. Its inherited early-contact path discarded the nominal continuation even when feedback declined intervention, and could apply a correction before the requested event. A corrected version preserves all eight nominal trajectories and three declined-intervention trajectories exactly for100 steps. Corrected early nominal/feedback/press performance is3/3/2 of8, with no rescue. The original0/8 feedback result is retained but excluded from fair algorithm comparison. New joint predecessor/successor training and independently confirmed online improvement remain open.

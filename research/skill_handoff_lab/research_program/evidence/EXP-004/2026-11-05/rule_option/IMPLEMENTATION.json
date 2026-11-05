@@ -1,0 +1,23 @@
+{
+  "base": "9a30507",
+  "implementation_commit": "680a88a",
+  "final_source_sha": {
+    "program_rule_option.py": "7a119393ddf759c97db96e9040e04c02e65028f97351e9940d47a79e1c89c123",
+    "train_rule_gate.py": "6adde1d998348520a25c473ec81dc9f28da5c38fcd0225f2f325e6add0ccc1b5",
+    "train_rule_gate_v2.py": "797e08ba8b1b809c117cc95b5d75ea9a9885f83e0a9a0c7bf816c81d671cb9a2",
+    "train_rule_gate_replay.py": "5bea964aeb9837fb92f5036f5400aee54ce248bff37eceaf7bad77ceedb5805d",
+    "collect_rule_pairs.py": "03f26babb97c57df99417326889ac9e66a73e0227ebcc11f0f07cedb1c0cf814",
+    "run_rule_controls.py": "7a59afbd5f5eb9c82e1a039c36c10d227ba92551af0b3c06c18704370875e3a4",
+    "run_fixed_rule_option.py": "de798c4daed734e3248c5b6a76bc76d7ed897867954a72063eb393b62e718490",
+    "evaluate_rule_gate.py": "4b5f486c7d8702b4abb8344f0f11e3d5fa966325f338391248cbdf2d1e616ce5",
+    "analyze_rule_option.py": "162c124a0e8ab4a0046f218b0a7044c1761c618878ce51eccb8853aab69cde06",
+    "audit_rule_option_values.py": "de23776edfe9e854efcd4dbb3cf8b7f7bbc201bb7cdeec2d0dcbd166ea4316e6",
+    "plot_rule_option.py": "0b710f0ebd57499c0241356f2e5570033ad0d1b3500b4d593f9646a480a7d82c",
+    "program_tool_recovery_v2.py": "2589802608a0bb8900dbb4783e293f92fe259e5b63b242f45a9ee63a2afc4640",
+    "audit_tool_rule_continuation.py": "99fd3486ae606f4bf0da1c2bc7d1375262c0c089ef1b7371766b246b58a7d8b7",
+    "test_rule_option.py": "fcbc3d5e9a6b0c47e94623f19fa575f250b2b1f45518e39f9db7e9381424dc92"
+  },
+  "additional_tool_fix": "program_tool_recovery_v2.py; source SHA authoritative until final evidence commit",
+  "no_hardware": true,
+  "no_sealed": true
+}

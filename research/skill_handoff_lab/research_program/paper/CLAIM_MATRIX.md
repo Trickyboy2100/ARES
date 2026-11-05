@@ -49,3 +49,18 @@ for Adaptive Contact-Rich Robotic Manipulation**。
 | 第二任务学习迁移 | 原生Charger16/16成熟控制，小样本饱和，未训练候选 | NOT_TESTED_TRANSFER |
 
 旧分数、旧结论及固定final64终点均保留。当前贡献材料是可复现执行语义、因果物理机制、真实学习救回与泛化限制，不宣称新SAC损失。
+
+
+## 2026-11-05 rule_option
+
+| Claim | Actual evidence | Status |
+|---|---|---|
+| Conditional complete-Option adoption improves on the frozen rule in the new cohort |24 natural conditions:19/18 vs16; fixed-first16 with4rescues/4regressions; improvement already in supervised initialization | PRELIMINARY_LEARNED_INTERFACE |
+| Online relative policy-gradient adds independent benefit |Same per-scene confirmation outcomes as initialization; supervision18/19 and rehearsal19 | NOT_SUPPORTED |
+| Waiting-decision credit causes the gain |All nonzero ablation updates have one decision;112 training/dev trajectories identical | MECHANISM_NOT_ENGAGED |
+| Old behavior Q is reliable for the new continuation |All7 observed harmful Options have positive old Q gaps; Q gate8/16 dev | REJECTED_TRANSFER_OF_VALUE |
+| Rule rejection is equivalent to queue continuation |763039:exact79-step prefix; four-step zero-action deviation changes success to failure | FALSE_EXECUTION_ASSUMPTION |
+| Learned front–rear cooperation improves |Frontend frozen; fixed grasp1 flips2 confirmation outcomes, net equal | UNVERIFIED_JOINT_GAIN |
+| Tool recovery transfers |Corrected continuation retains nominal; none3/8 feedback3/8 press2/8 | CONTROL_FIX_ONLY |
+
+No population-level safety or SCI-level superiority follows from these small exploratory cohorts. All positive/negative models and natural scene groups remain visible.
