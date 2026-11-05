@@ -1,0 +1,18 @@
+{
+  "seed": 764712,
+  "physics_steps": 0,
+  "frames": 101,
+  "fps": 20,
+  "max_state_readback_error": 1.7881393432617188e-07,
+  "source_kind": "MEASURED_STATE_REPLAY",
+  "sources": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/joint_continuation_20261106/paired_reference/physics/00013_764712_frozen.json.gz",
+      "sha256": "0f05e5d532690870a42bec0e5e976037abed2b54bd37c42193d50bb6bb416fef"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/joint_continuation_20261106/paired_pg_32101/physics/00029_764712_train_12.json.gz",
+      "sha256": "9d5ae2c994a2555e65b672594ddc3a8c953f9703eace90b0a7d3b4b5dc5feeaa"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "checkpoint": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/joint_continuation_20261106/sac_31901/CHECKPOINT_64.pt",
+  "sha": "bbac3e17f5e21362b5489f638c611a386806f81075068ceafa49ddbd8f26adbe",
+  "proposal_physical_frequencies": {
+    "1": {
+      "0": 217,
+      "9": 109,
+      "5": 19,
+      "11": 16,
+      "6": 4
+    },
+    "2": {
+      "2": 78,
+      "6": 19,
+      "1": 55,
+      "0": 146,
+      "11": 10,
+      "10": 50,
+      "9": 7
+    }
+  },
+  "actual_equivalent_proposal_states": [
+    {
+      "scene": 764124,
+      "step": 86,
+      "physical": 9,
+      "q_gap": 0.26149946451187134
+    },
+    {
+      "scene": 764126,
+      "step": 78,
+      "physical": 0,
+      "q_gap": 0.24591881036758423
+    },
+    {
+      "scene": 764155,
+      "step": 98,
+      "physical": 0,
+      "q_gap": 0.2165364921092987
+    },
+    {
+      "scene": 764160,
+      "step": 97,
+      "physical": 9,
+      "q_gap": 0.018230438232421875
+    }
+  ],
+  "interpretation": "A representation consistency issue; not proof of task-level improvement or cause of all failures"
+}

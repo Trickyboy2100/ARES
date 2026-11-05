@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
-  "last_review": "2026-11-05",
-  "baseline_commit": "9a30507",
+  "last_review": "2026-11-06",
+  "baseline_commit": "adc86dc",
   "branch": "research-sci-program",
   "scientific_goal": "One SCI paper: task-conditioned executable parameter adaptation ACROSS REAL MULTI-STAGE ROBOT SKILLS using nominal skill primitives and measured SkillResult to improve successor feasibility, whole-task success and transfer; contact servo and SAC are component baselines",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
-  "latest_evidence": "evidence/EXP-004/2026-11-05/rule_option/README.md",
-  "next_action": "Retain trained conditional Option adoption, shared paired-data initializers and supervision+rehearsal as stronger learned references. Do not expand the wait-credit mechanism: its distinguishing terms were absent in nonzero updates, and final RL has the same confirmation outcomes as initialization. In NEW training-only natural states, test real predecessor changes with this frozen learned successor for reproducible cross-stage ordering differences beyond the best fixed grasp; then compare ordinary joint skill RL and a concrete successor-conditioned increment at matched cost. Current763300–315 and763400–423 are seen development, never fresh confirmation or gate-training data. Use corrected program_tool_recovery_v2 for early-contact experiments; no Tool RL claim from unchanged recovery capability.",
+  "latest_evidence": "evidence/EXP-004/2026-11-06/joint_continuation/README.md",
+  "next_action": "Test omitted legal physical Options at real handoffs to determine whether the frozen two-proposal interface leaves repeatable recovery opportunity. Share any expanded authority across warm baseline and ordinary joint RL; do not expand unsupported MC-mix, alias-critic or paired-PG mechanisms. Preserve native Peg100 and sealed isolation.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
     "S3": "initial_action_authority_confirmed_identification_incomplete",
     "S4": "active_STAP_replication_and_multi_skill_credible_method",
-    "S5": "active_trained_rule_relative_option_adoption; independent_online_method_gain_unverified",
+    "S5": "active_joint_predecessor_recurrent_successor_learning; three actual revisions completed; independent gain unverified",
     "S6": "not_started",
     "S7": "not_started"
   },
@@ -80,7 +80,7 @@
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update existing cards, DECISIONS, EVIDENCE_LEDGER and STATE after evidence; develop paper concurrently with claim-specific limitations. Independent algorithm superiority requires actual comparative evidence, not a prerequisite for writing or second-task preparation.",
-  "latest_run_summary": "1528 complete native episodes /152800steps /14644 planner queries;512 own-policy training episodes,2 independent neural initializations. Fresh24: rule16, fixed first proposal16, supervised initialization19/18, online sequenceRL19/18, online supervision18/19, supervision+rehearsal19. No additional RL confirmation gain; all nonzero seed31801 updates occur at first disagreement, making wait-credit ablation physically identical. Tool early-contact continuation repaired and verified; no recovery-learning gain.",
+  "latest_run_summary": "Three joint learning iterations;448 own episodes;1163 total native episodes/116300steps/9857queries. MC mixing did not preserve13/16; shared execution critic7/16 vs flat9/16; paired whole-return PG and SAC both9/16. Frozen prior RL21/32 vs initializer20/rule19 is preliminary, not independent robust gain.",
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
   "research_review_20261102": {
     "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
@@ -1502,5 +1502,25 @@
     "independent_method_gain": "UNVERIFIED",
     "second_task": "72 Tool native episodes; corrected early adapter preserves all8 nominal traces and3 declined-intervention traces; corrected none3/8 feedback3/8 press2/8, no recovery gain; no new Tool RL trained",
     "predecessor": "Inherited learned3-grasp policy frozen this cycle; fixed-grasp1 rescues763404 and breaks763412 on confirmation, net unchanged16/24. No newly learned joint benefit."
+  },
+  "joint_continuation_20261106": {
+    "evidence": "evidence/EXP-004/2026-11-06/joint_continuation/README.md",
+    "cost": {
+      "episodes": 1163,
+      "steps": 116300,
+      "queries": 9857,
+      "planner_wall_s": 50.113133079139516,
+      "summed_episode_wall_s": 7346.062050388777,
+      "own_training_episodes": 448,
+      "actor_optimizer_steps": 16880,
+      "critic_optimizer_steps": 16640,
+      "optimizer_wall_s": "NOT_SEPARATELY_MEASURED",
+      "gpu_peak": "NOT_MEASURED; GPU_OBSERVATION is a snapshot, not peak",
+      "elapsed_wall_s": "NOT_INFERRED_FROM_SUMMED_EPISODE_TIME",
+      "cost_per_arm": "Iteration1:64 own. Iteration2:96 shared design +2 compatibility +64 own. Iteration3:96 shared design +32 reference +32 own. Development evaluations are additional; shared collection charged to every consuming arm, counted once in unique total."
+    },
+    "method_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
+    "retained": "True learned three-grasp predecessor and recurrent successor, exact executed identity controls, transaction checkpoints, current-policy joint trajectories",
+    "next_decision": "Test omitted legal physical Options at real handoffs to determine whether the frozen two-proposal interface leaves repeatable recovery opportunity. Share any expanded authority across warm baseline and ordinary joint RL; do not expand unsupported MC-mix, alias-critic or paired-PG mechanisms. Preserve native Peg100 and sealed isolation."
   }
 }

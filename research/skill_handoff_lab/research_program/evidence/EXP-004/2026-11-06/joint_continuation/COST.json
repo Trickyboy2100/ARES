@@ -1,0 +1,14 @@
+{
+  "episodes": 1163,
+  "steps": 116300,
+  "queries": 9857,
+  "planner_wall_s": 50.113133079139516,
+  "summed_episode_wall_s": 7346.062050388777,
+  "own_training_episodes": 448,
+  "actor_optimizer_steps": 16880,
+  "critic_optimizer_steps": 16640,
+  "optimizer_wall_s": "NOT_SEPARATELY_MEASURED",
+  "gpu_peak": "NOT_MEASURED; GPU_OBSERVATION is a snapshot, not peak",
+  "elapsed_wall_s": "NOT_INFERRED_FROM_SUMMED_EPISODE_TIME",
+  "cost_per_arm": "Iteration1:64 own. Iteration2:96 shared design +2 compatibility +64 own. Iteration3:96 shared design +32 reference +32 own. Development evaluations are additional; shared collection charged to every consuming arm, counted once in unique total."
+}

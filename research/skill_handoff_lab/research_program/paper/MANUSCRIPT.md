@@ -254,3 +254,74 @@ The24-scene frozen confirmation separates a useful learned interface from an unp
 Fixed first-proposal adoption achieves16/24 with four rescues and four regressions. Conditional adoption retains three of those rescues with zero or one regression. This supports a role for state-dependent selection, already obtained from supervised actual Option effects; it does not establish a new RL algorithm. The512 own-policy episodes,13000 warm optimizer steps,2336 online optimizer steps and all40 named weight checkpoints are preserved. Unique physical cost is1528 native episodes/152800 control steps/14644 planner queries, including all controls, both iterations, Tool experiments and the continuation repair.
 
 Tool provides a second execution-semantics counterexample rather than a learned-transfer result. Its inherited early-contact path discarded the nominal continuation even when feedback declined intervention, and could apply a correction before the requested event. A corrected version preserves all eight nominal trajectories and three declined-intervention trajectories exactly for100 steps. Corrected early nominal/feedback/press performance is3/3/2 of8, with no rescue. The original0/8 feedback result is retained but excluded from fair algorithm comparison. New joint predecessor/successor training and independently confirmed online improvement remain open.
+
+## Joint-continuation development and executed results (2026-11-06)
+
+### Problem and executable policy class
+
+The previous learned one-deviation policy is a useful strong reference: paired
+physical supervision explains its confirmed advantage over the rule. We now
+study a different, explicitly sequential question. A trainable predecessor
+chooses one of three real grasp offsets; continuous physical execution yields
+an observed handoff. A successor chooses either a chunk of strong feedback or a
+complete frozen parameterized Option. Control can reopen after that Option's
+actual release. Thus the predecessor's best choice can depend on the learned
+successor, and the successor's value can depend on later decisions. A single
+fixed-suffix pair classifier does not in general estimate this current-policy
+value. No object reset occurs at the handoff.
+
+A simple counterexample separates these claims: suppose two legal grasps reach
+states with fixed-suffix success probabilities0.8/0.6. If an improved successor
+changes those probabilities to0.8/0.9, the optimal predecessor reverses. These
+numbers are an illustrative counterexample, **not measured experiment data**.
+The existence of such a possibility is not evidence that our physical task or
+trained policy realizes it; measured cross-stage comparisons are required.
+
+### Shared training foundation and minimal probe
+
+The existing paired-data scorer and pretrained grasp policy provide common
+initial logits. A zero-output residual network learns the three categorical
+choices at both boundaries. Two newly initialized critics learn actual complete
+Option transitions. We do not transplant a Critic trained for a different
+continuation contract. Discrete SAC, successful experience replay and bounded
+categorical exploration are mature shared ingredients. Proposal models and
+intra-Option execution are frozen, as is the strong controller. Rear choice0
+means executing that controller, which may physically issue a nonzero action;
+physical action0 continues the current queue.
+
+For native finite-horizon gamma=1, the actual aggregated transition target is
+R_option+(1-done)V(next). We retain measured duration and remaining budget;
+no additional native steps are granted. The minimal comparison changes only
+predecessor target estimation: half of the TD target is mixed with a recent
+actual suffix return. This is a standard empirical multistep ingredient and
+not claimed independently novel. Behavior-policy suffix returns may still
+differ from current-policy returns; the experiment tests practical value
+propagation, not a policy-consistency guarantee. Both arms collect own-policy
+physical experience and share equal update and interaction budgets. Existing
+one-shot initialization remains a strong separate learned reference.
+
+STAP models downstream skill feasibility for planning; RecoveryChaining learns
+recovery and handback; Policy Decorator protects/refines a base policy; SPIBB
+constrains unsupported policy changes. Our executable joint interface draws on
+these foundations. No new safe-improvement theorem, learned termination
+algorithm or motor-level residual controller is asserted.
+
+
+### Executed revisions and preliminary results (2026-11-06)
+
+| Arm | Own episodes | Initial → middle → final |
+|---|---:|---|
+| identity_flat_32001 | 64 | 9 → 8 → 9 /16 |
+| identity_semantic_32001 | 64 | 9 → 7 → 7 /16 |
+| paired_pg_32101 | 32 | 9 → 9 → 9 /16 |
+| paired_sac_32101 | 32 | 9 → 9 → 9 /16 |
+| return_mix_31901 | 64 | 13 → 12 → 11 /16 |
+| return_mix_31902 | 64 | 13 → 12 → 11 /16 |
+| sac_31901 | 64 | 13 → 11 → 11 /16 |
+| sac_31902 | 64 | 13 → 12 → 10 /16 |
+
+The later execution-conditioned revision gives identical executed proposals equal scalar values while granting the flat comparator identical identity observations. Four native alias trajectories verify execution equivalence, but success falls from9/16 to7/16; numerical consistency does not imply improved policy. The third revision uses an action-independent root reference return to train full sampled joint trajectories with clipped episodic policy gradients. The matched SAC receives identical physical reference data. Both finish9/16, with no new deployment success. A training rescue is explained by either predecessor or successor change alone in a subsequent native factorial, so synergy is not established. These are executed negative controls, not new algorithm superiority.
+
+Frozen historical policies on32 new natural scenes score19(rule),20(supervised initialization),21(prior online RL),20(supervised replay). Small paired gains do not establish robust online advantage. The first revision uses two new-network/exploration seeds with shared pretraining; later revisions one. Fixed-final model selection and cohort separation are retained. The run costs1163 full native episodes/116300steps/9857planner calls, including448 own-policy training episodes. All models, actual support, failures and costs are retained in [the evidence](../evidence/EXP-004/2026-11-06/joint_continuation/README.md).
+
+The paper can now describe a genuinely sequential executable interface, current-policy physical collection, the limits of fixed-suffix credit, and controlled failed learning mechanisms. It cannot yet claim independent joint RL improvement, safe policy improvement, unrestricted action coverage, convergence, or second-task transfer. The next discriminating experiment concerns useful legal physical Options omitted by the frozen proposal catalogue.

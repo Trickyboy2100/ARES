@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><title>ARES joint continuation research</title><style>body{max-width:1150px;margin:40px auto;background:#101926;color:#e5edf7;font:17px/1.6 system-ui;padding:20px}a{color:#6ddbd7}img,video{width:100%;border-radius:8px}pre{white-space:pre-wrap}section{padding:20px;background:#192536;margin:24px 0;border-radius:12px}h1,h2{line-height:1.2}</style><h1>Joint skill learning: what changed, what failed</h1><p>Native Peg100 · real simulated grasp · 448 own-policy training episodes · no independent method gain</p><p><a href="README.md">Full evidence / limitations</a> · <a href="SUMMARY.json">Raw-derived results</a> · <a href="COST.json">Cost</a> · <a href="RAW_MANIFEST.json">Archives / SHA</a> · <a href="PRIOR_ART.md">Theory & prior art</a></p>
+<section><h2>Three actual learning revisions</h2><pre>| Arm | Own episodes | Initial → middle → final |
+|---|---:|---|
+| identity_flat_32001 | 64 | 9 → 8 → 9 /16 |
+| identity_semantic_32001 | 64 | 9 → 7 → 7 /16 |
+| paired_pg_32101 | 32 | 9 → 9 → 9 /16 |
+| paired_sac_32101 | 32 | 9 → 9 → 9 /16 |
+| return_mix_31901 | 64 | 13 → 12 → 11 /16 |
+| return_mix_31902 | 64 | 13 → 12 → 11 /16 |
+| sac_31901 | 64 | 13 → 11 → 11 /16 |
+| sac_31902 | 64 | 13 → 12 → 10 /16 |</pre><p>Different cohorts across iterations; compare arms only within each panel. Fixed final models, no best-checkpoint selection.</p></section>
+<section><a href="figures/learning_curves_joint.pdf">Independent PDF</a><img src="figures/learning_curves_joint.png"></section>
+<section><a href="figures/learning_curves_identity.pdf">Independent PDF</a><img src="figures/learning_curves_identity.png"></section>
+<section><a href="figures/learning_curves_paired.pdf">Independent PDF</a><img src="figures/learning_curves_paired.png"></section>
+<section><a href="figures/grasp_rule_matrix.pdf">Independent PDF</a><img src="figures/grasp_rule_matrix.png"></section>
+<section><a href="figures/grasp_warm_matrix.pdf">Independent PDF</a><img src="figures/grasp_warm_matrix.png"></section>
+<section><a href="figures/frozen_confirmation.pdf">Independent PDF</a><img src="figures/frozen_confirmation.png"></section>
+<section><h2>training 764712</h2><p>Sampled training rescue, not deployed learned improvement. Native factorial follow-up shows either grasp change or rear correction alone succeeds; no joint necessity claim.
+Measured-state visualization only; full native source trajectories and SHA are in MANIFEST.json and RAW archives.
+</p><video controls preload="metadata" poster="videos/training_764712/ANNOTATED.png" src="videos/training_764712/ANNOTATED.mp4"></video><p><a href="videos/training_764712/RAW.mp4">Complete RAW</a> · <a href="videos/training_764712/SYNC_VIEWER.html">Clickable synchronized curves</a> · <a href="videos/training_764712/MANIFEST.json">Frame/source manifest</a></p></section>
+<section><h2>regression 764606</h2><p>Warm initializer succeeds; execution-shared critic final fails. Front and rear behaviors change together; no single-factor causal claim.
+Measured-state visualization only; full native source trajectories and SHA are in MANIFEST.json and RAW archives.
+</p><video controls preload="metadata" poster="videos/regression_764606/ANNOTATED.png" src="videos/regression_764606/ANNOTATED.mp4"></video><p><a href="videos/regression_764606/RAW.mp4">Complete RAW</a> · <a href="videos/regression_764606/SYNC_VIEWER.html">Clickable synchronized curves</a> · <a href="videos/regression_764606/MANIFEST.json">Frame/source manifest</a></p></section>
+<section><h2>Scientific decision</h2><p>No candidate beats matched ordinary learning and its warm start. Retain the strong baseline and joint runtime. Next isolate opportunity omitted by frozen proposal policies before further training. No sealed test, hardware operation, changed native criterion or transfer claim.</p></section>

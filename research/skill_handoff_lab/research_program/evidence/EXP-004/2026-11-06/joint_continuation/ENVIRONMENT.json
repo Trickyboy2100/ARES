@@ -1,0 +1,16 @@
+{
+  "packages": {
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.4",
+    "sapien": "3.0.3",
+    "mani_skill": "3.0.0b21",
+    "gymnasium": "1.4.0",
+    "mplib": "0.1.1",
+    "scipy": "1.17.1"
+  },
+  "python": "/home/andyee/miniconda3/envs/jnl263_round42_maniskill/bin/python3.11",
+  "maniskill_sha": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+  "maniskill_dirty": "",
+  "physics": "native Peg100 PhysX CUDA, actual continuous grasp and feedback; no pose restore",
+  "device": "CUDA_VISIBLE_DEVICES=0 RTX3080"
+}

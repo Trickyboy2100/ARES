@@ -291,3 +291,23 @@ New24 fixed-final64 confirmation: rule16, fixed first proposal16 (4rescues/4regr
 Tool's early-contact adapter had a real continuation defect: declined intervention discarded the live nominal caller, and early modes could intervene before the event. Fixed in a new version without overwriting history. Eight nominal100-step traces and three declined-intervention traces are exactly retained. Corrected early none/feedback/press=3/3/2 of8,0rescues; no second-task RL gain or blind transfer training. Whole cycle:1528 native episodes,152800physical steps,14644planner queries,40named weight checkpoints. Detailed evidence, actual scripts, all models and rawSHA: [rule_option](evidence/EXP-004/2026-11-05/rule_option/README.md).
 
 Decision: retain the stronger learned initializer and rehearsal controls, execution contracts, own-policy data and Tool repair. Stop expanding the inactive waiting-credit mechanism. Next investigate real predecessor–successor ordering on NEW training initial conditions with this retained learned successor, then a matched ordinary two-stage learner; never reuse the current confirmation as unseen data. No independent algorithm or formal safety claim.
+
+
+## 2026-11-06 — actual joint continuation learning (adc86dc continuation)
+
+Three joint learning iterations;448 own episodes;1163 total native episodes/116300steps/9857queries. MC mixing did not preserve13/16; shared execution critic7/16 vs flat9/16; paired whole-return PG and SAC both9/16. Frozen prior RL21/32 vs initializer20/rule19 is preliminary, not independent robust gain.
+
+| Arm | Own episodes | Initial → middle → final |
+|---|---:|---|
+| identity_flat_32001 | 64 | 9 → 8 → 9 /16 |
+| identity_semantic_32001 | 64 | 9 → 7 → 7 /16 |
+| paired_pg_32101 | 32 | 9 → 9 → 9 /16 |
+| paired_sac_32101 | 32 | 9 → 9 → 9 /16 |
+| return_mix_31901 | 64 | 13 → 12 → 11 /16 |
+| return_mix_31902 | 64 | 13 → 12 → 11 /16 |
+| sac_31901 | 64 | 13 → 11 → 11 /16 |
+| sac_31902 | 64 | 13 → 12 → 10 /16 |
+
+Shared physical authority and frozen-final selection within each comparison. First revision has two new-network/exploration seeds sharing pretrained weights; later revisions single seed. New data are development/confirmation, not sealed tests. No pooled cross-cohort gain. Actual two-component rescue764712 is reproduced by either component alone. Action alias equivalence is physically verified but enforcing it does not improve policy. Whole-return PG avoids injecting fixed-suffix credit into changed continuation, yet matches ordinary SAC and mostly preserves initial behavior. No convergence or independent novelty claim.
+
+Evidence: [evidence/EXP-004/2026-11-06/joint_continuation/README.md](evidence/EXP-004/2026-11-06/joint_continuation/README.md). Next: Test omitted legal physical Options at real handoffs to determine whether the frozen two-proposal interface leaves repeatable recovery opportunity. Share any expanded authority across warm baseline and ordinary joint RL; do not expand unsupported MC-mix, alias-critic or paired-PG mechanisms. Preserve native Peg100 and sealed isolation.

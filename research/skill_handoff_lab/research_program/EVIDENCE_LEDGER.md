@@ -228,3 +228,23 @@ H1单次atomic不足，H2重复阶段刷新可复现760213完整100步成功；�
 - Frozen new24:rule16; fixed-first16; initialization19/18; onlineRL19/18; supervision18/19; rehearsal19. Independent online gain NOT_SUPPORTED; no pooled48-scene claim.
 - Waiting-credit ablation:112 identical full trajectories, because all nonzero updates have one gate decision. Tool early-mode repair verified on8 unchanged nominal and3 declined-correction full traces; no new recovery capability.
 - Two complete RAW/English measured-state videos with frame-linked curves; no extra physical evidence attributed to rendering. Private taskbook retained locally and excluded from public archive.
+
+
+## 2026-11-06 — actual joint continuation learning (adc86dc continuation)
+
+Three joint learning iterations;448 own episodes;1163 total native episodes/116300steps/9857queries. MC mixing did not preserve13/16; shared execution critic7/16 vs flat9/16; paired whole-return PG and SAC both9/16. Frozen prior RL21/32 vs initializer20/rule19 is preliminary, not independent robust gain.
+
+| Arm | Own episodes | Initial → middle → final |
+|---|---:|---|
+| identity_flat_32001 | 64 | 9 → 8 → 9 /16 |
+| identity_semantic_32001 | 64 | 9 → 7 → 7 /16 |
+| paired_pg_32101 | 32 | 9 → 9 → 9 /16 |
+| paired_sac_32101 | 32 | 9 → 9 → 9 /16 |
+| return_mix_31901 | 64 | 13 → 12 → 11 /16 |
+| return_mix_31902 | 64 | 13 → 12 → 11 /16 |
+| sac_31901 | 64 | 13 → 11 → 11 /16 |
+| sac_31902 | 64 | 13 → 12 → 10 /16 |
+
+Shared physical authority and frozen-final selection within each comparison. First revision has two new-network/exploration seeds sharing pretrained weights; later revisions single seed. New data are development/confirmation, not sealed tests. No pooled cross-cohort gain. Actual two-component rescue764712 is reproduced by either component alone. Action alias equivalence is physically verified but enforcing it does not improve policy. Whole-return PG avoids injecting fixed-suffix credit into changed continuation, yet matches ordinary SAC and mostly preserves initial behavior. No convergence or independent novelty claim.
+
+Evidence: [evidence/EXP-004/2026-11-06/joint_continuation/README.md](evidence/EXP-004/2026-11-06/joint_continuation/README.md). Next: Test omitted legal physical Options at real handoffs to determine whether the frozen two-proposal interface leaves repeatable recovery opportunity. Share any expanded authority across warm baseline and ordinary joint RL; do not expand unsupported MC-mix, alias-critic or paired-PG mechanisms. Preserve native Peg100 and sealed isolation.

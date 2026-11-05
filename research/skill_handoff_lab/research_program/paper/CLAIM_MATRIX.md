@@ -64,3 +64,17 @@ for Adaptive Contact-Rich Robotic Manipulation**。
 | Tool recovery transfers |Corrected continuation retains nominal; none3/8 feedback3/8 press2/8 | CONTROL_FIX_ONLY |
 
 No population-level safety or SCI-level superiority follows from these small exploratory cohorts. All positive/negative models and natural scene groups remain visible.
+
+
+## 2026-11-06 claim-specific update
+
+| Claim | Status | Evidence boundary |
+|---|---|---|
+| Real learned predecessor + recurrent successor | IMPLEMENTED / TRAINED |448 own episodes, current SkillResult, no object reset|
+| Conditional physical grasp effect | OBSERVED |16 design scenes; stronger successor reduces opportunity|
+| Alias Q inconsistency | VERIFIED LOCAL |four values, two full physical alias pairs; correction has no gain|
+| Joint online independent advantage | UNVERIFIED |three revisions do not improve warm initialization|
+| Old learned baseline generalization | PRELIMINARY |32 fresh natural scenes;19/20/21 rule/init/oldRL, small effects|
+| Second-task transfer | NOT RUN |historical Tool/Charger review only|
+
+[Complete evidence](../evidence/EXP-004/2026-11-06/joint_continuation/README.md).

@@ -113,3 +113,23 @@ POMDP只有在真实隐藏接触/工具状态造成观测别名、历史动作
 ## 2026-11-05 claim-specific update: rule-relative executable adoption
 
 The stable problem remains task-conditioned, physically executable multi-stage skill adaptation. New paired-data initialization supports conditional adoption above a strong rule (19/18 versus16 on24 new natural conditions), but explains all confirmed online-RL success outcomes. Full waiting-credit and entry-only updates were equivalent on every nonzero training event in the ablation seed. Therefore neither waiting credit, baseline gating, Monte Carlo labels nor standard clipped policy gradients are claimed independently novel. Preserve this learned baseline and the complete execution contract; future joint learning must beat it rather than recounting the same initialization benefit. Predecessor weights were frozen this cycle; new cross-stage RL advantage and second-task learned transfer remain unresolved. These are substantive Method/Experiments materials with explicit limitations, not a publication-readiness claim.
+
+
+## 2026-11-06 — actual joint continuation learning (adc86dc continuation)
+
+Three joint learning iterations;448 own episodes;1163 total native episodes/116300steps/9857queries. MC mixing did not preserve13/16; shared execution critic7/16 vs flat9/16; paired whole-return PG and SAC both9/16. Frozen prior RL21/32 vs initializer20/rule19 is preliminary, not independent robust gain.
+
+| Arm | Own episodes | Initial → middle → final |
+|---|---:|---|
+| identity_flat_32001 | 64 | 9 → 8 → 9 /16 |
+| identity_semantic_32001 | 64 | 9 → 7 → 7 /16 |
+| paired_pg_32101 | 32 | 9 → 9 → 9 /16 |
+| paired_sac_32101 | 32 | 9 → 9 → 9 /16 |
+| return_mix_31901 | 64 | 13 → 12 → 11 /16 |
+| return_mix_31902 | 64 | 13 → 12 → 11 /16 |
+| sac_31901 | 64 | 13 → 11 → 11 /16 |
+| sac_31902 | 64 | 13 → 12 → 10 /16 |
+
+Shared physical authority and frozen-final selection within each comparison. First revision has two new-network/exploration seeds sharing pretrained weights; later revisions single seed. New data are development/confirmation, not sealed tests. No pooled cross-cohort gain. Actual two-component rescue764712 is reproduced by either component alone. Action alias equivalence is physically verified but enforcing it does not improve policy. Whole-return PG avoids injecting fixed-suffix credit into changed continuation, yet matches ordinary SAC and mostly preserves initial behavior. No convergence or independent novelty claim.
+
+Evidence: [evidence/EXP-004/2026-11-06/joint_continuation/README.md](evidence/EXP-004/2026-11-06/joint_continuation/README.md). Next: Test omitted legal physical Options at real handoffs to determine whether the frozen two-proposal interface leaves repeatable recovery opportunity. Share any expanded authority across warm baseline and ordinary joint RL; do not expand unsupported MC-mix, alias-critic or paired-PG mechanisms. Preserve native Peg100 and sealed isolation.
