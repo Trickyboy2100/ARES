@@ -9,24 +9,25 @@ from torch import nn
 from program_peg_feedback import NOBS,ACTIONS,features,potential
 
 class Net(nn.Module):
- def __init__(self,out):
-  super().__init__();self.net=nn.Sequential(nn.Linear(NOBS,96),nn.LayerNorm(96),nn.ReLU(),nn.Linear(96,96),nn.LayerNorm(96),nn.ReLU(),nn.Linear(96,out))
+ def __init__(self,out,nobs=NOBS):
+  super().__init__();self.net=nn.Sequential(nn.Linear(nobs,96),nn.LayerNorm(96),nn.ReLU(),nn.Linear(96,96),nn.LayerNorm(96),nn.ReLU(),nn.Linear(96,out))
  def forward(self,x):return self.net(x)
 
 class FeedbackSAC:
- def __init__(self,mode,seed,mu,sd,recipe="original"):
+ def __init__(self,mode,seed,mu,sd,recipe="original",nobs=NOBS,nactions=8):
+  self.nobs=nobs;self.nactions=nactions
   self.recipe=recipe
   assert mode in ['ordinary','suffix','budget','budget_blind'];self.mode=mode;self.seed=seed;torch.manual_seed(seed);self.rng=np.random.default_rng(seed)
-  self.mu=mu;self.sd=sd;self.q=nn.ModuleList([Net(8),Net(8)]);self.target=copy.deepcopy(self.q);self.actor=Net(8);self.completion=Net(25);self.scalar=Net(1)
+  self.mu=mu;self.sd=sd;self.q=nn.ModuleList([Net(nactions,nobs),Net(nactions,nobs)]);self.target=copy.deepcopy(self.q);self.actor=Net(nactions,nobs);self.completion=Net(25,nobs);self.scalar=Net(1,nobs)
   self.qopt=torch.optim.Adam(self.q.parameters(),lr=3e-4);self.aopt=torch.optim.Adam(self.actor.parameters(),lr=3e-4);self.hopt=torch.optim.Adam(list(self.completion.parameters())+list(self.scalar.parameters()),lr=3e-4)
   self.updates=0;self.history=[];self.alpha=.01
  def x(self,rows):return(torch.tensor(np.asarray(rows),dtype=torch.float32)-torch.tensor(self.mu))/torch.tensor(self.sd)
  def mask(self,x):
-  m=torch.ones((len(x),8),dtype=torch.bool);m[x[:,44]<.5,3:]=False;return m
+  m=torch.ones((len(x),self.nactions),dtype=torch.bool);m[x[:,44]<.5,3:]=False;return m
  def probs(self,x):return self.actor(x).masked_fill(~self.mask(x),-1e9).softmax(-1)
  def choose(self,s,stochastic=False):
   with torch.no_grad():p=self.probs(self.x([s]))[0].numpy()
-  return int(self.rng.choice(8,p=p/p.sum()))if stochastic else int(p.argmax())
+  return int(self.rng.choice(self.nactions,p=p/p.sum()))if stochastic else int(p.argmax())
  def probability(self,x,budget):
   z=x.clone()
   if self.mode=='budget_blind':z[:,41]=0
@@ -107,10 +108,10 @@ class FeedbackSAC:
    self.updates+=1;hist=dict(update=self.updates,q_loss=float(ql),actor_loss=float(al),hazard_loss=float(loss),suffix_loss=float(sl),front_target=float(targetq[:16].mean()),n=len(data),labels=len(labels))
   hist['wall_s']=time.monotonic()-tic;self.history.append(hist);return hist
  def save(self,path):
-  keys=['q','target','actor','completion','scalar','qopt','aopt','hopt'];torch.save(dict(mode=self.mode,recipe=self.recipe,seed=self.seed,mu=self.mu,sd=self.sd,updates=self.updates,history=self.history,rng=self.rng.bit_generator.state,weights={k:getattr(self,k).state_dict()for k in keys}),path)
+  keys=['q','target','actor','completion','scalar','qopt','aopt','hopt'];torch.save(dict(nobs=self.nobs,nactions=self.nactions,mode=self.mode,recipe=self.recipe,seed=self.seed,mu=self.mu,sd=self.sd,updates=self.updates,history=self.history,rng=self.rng.bit_generator.state,weights={k:getattr(self,k).state_dict()for k in keys}),path)
  @classmethod
  def load(cls,path):
-  d=torch.load(path,map_location='cpu',weights_only=False);m=cls(d['mode'],d['seed'],d['mu'],d['sd'],d.get('recipe','original'))
+  d=torch.load(path,map_location='cpu',weights_only=False);m=cls(d['mode'],d['seed'],d['mu'],d['sd'],d.get('recipe','original'),d.get('nobs',NOBS),d.get('nactions',8))
   for k,v in d['weights'].items():getattr(m,k).load_state_dict(v)
   m.updates=d['updates'];m.history=d['history'];m.rng.bit_generator.state=d['rng'];return m
 

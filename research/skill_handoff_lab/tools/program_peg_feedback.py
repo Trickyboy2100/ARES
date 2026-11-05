@@ -27,6 +27,10 @@ class FeedbackRuntime(Runtime):
         self.chunk=chunk;super().__init__(out,feedback=self.execute_feedback,feedback_start=feedback_start);self.controller_id+=f'__feedback_v4_persistent_start{feedback_start}__empty_success_hold_v1'
         if correction_frame!='measured':self.controller_id+='__remaining_target_v1'
         (self.out/'FEEDBACK_CONTRACT.json').write_text(json.dumps(dict(id=self.controller_id,actions=ACTIONS,chunk=chunk,feedback_start=feedback_start,horizon=100,observation='shared privileged physical state plus active joint queue',zero='continue current active queue, including prior corrections; never restore nominal path',dense='0.2 potential difference; terminal potential zero; terminal native success',no_pose_reset=True,hold_semantics='ID7 replaces queue by current q: refinement ends after one step; INSERT holds up to4steps. Durations are measured, not assumed.',parameter_hold='IDs1..5 repeated while active continue queue; change or exhausted queue triggers measured replan'),indent=2))
+    def execution_observation(self,obs,phase,active_target,u):
+        return obs
+    def execution_action(self,action):
+        return action,False
     def decide(self,obs):
         if len(obs)==54:obs=np.r_[obs,np.zeros(10)].astype(np.float32)
         start=time.monotonic();a=int(self.callback(obs));stage=int(obs[44]);assert 0<=a<(3 if stage==0 else len(ACTIONS))
@@ -60,7 +64,8 @@ class FeedbackRuntime(Runtime):
             before=dict(queue=np.asarray(queue).tolist(),cursor=cursor,last=last,
                         nominal_failed=nominal_failed,
                         holdq=None if holdq is None else holdq.tolist(),phase=phase)
-            action=self.decide(obs);record=self.actions[-1];record['plan_failed']=False;record['replanned']=False
+            obs=self.execution_observation(obs,phase,active_target,u)
+            selected_action=self.decide(obs);action,atomic_refresh=self.execution_action(selected_action);record=self.actions[-1];record['plan_failed']=False;record['replanned']=False
             record['queue_before']=before
             record['active_target_before']=np.r_[active_target.p,active_target.q].tolist()
             if nominal_failed and action==0:
@@ -69,7 +74,7 @@ class FeedbackRuntime(Runtime):
             if action==7:
                 queue=np.array([val(u.agent.robot.get_qpos()[0,:7])]);cursor=0;holdq=None
                 active_target=u.agent.tcp.pose.sp
-            elif action!=0 and not(action in (1,2,3,4,5) and action==last and cursor<len(queue)):
+            elif action!=0 and not(action in (1,2,3,4,5) and selected_action==last and cursor<len(queue)):
                 shift=np.zeros(3)
                 if action in (2,3):shift[1]=.003*(1 if action==2 else -1)
                 if action in (4,5):shift[2]=.003*(1 if action==4 else -1)
@@ -79,7 +84,7 @@ class FeedbackRuntime(Runtime):
                     target=u.goal_pose.sp*sapien.Pose(shift)*u.peg.pose.sp.inv()*u.agent.tcp.pose.sp
                 if action==6:
                     world=Rotation.from_quat(np.r_[u.goal_pose.sp.q[1:],u.goal_pose.sp.q[0]]).apply([-.006,0,0]);target=sapien.Pose(u.agent.tcp.pose.sp.p+world,u.agent.tcp.pose.sp.q)
-                if self.correction_frame=='remaining_target' and action in (2,3,4,5):
+                if self.correction_frame=='remaining_target' and action in (2,3,4,5) and not atomic_refresh:
                     # Translate the existing queue's requested terminal pose in
                     # the goal frame. Preserve its orientation. Still a full
                     # replan, NOT a bounded joint/control residual or FK claim.
@@ -97,7 +102,7 @@ class FeedbackRuntime(Runtime):
                     if holdq is None:holdq=np.array(val(u.agent.robot.get_qpos()[0,:7]))
                     q=holdq
                 e.phase=phase+'_FEEDBACK';out=e.step(np.r_[q,-1]);planner.elapsed_steps+=1
-            last=action
+            last=selected_action
             if phase!='INSERT' and cursor>=len(queue):break
         call['end']=len(e.records);call['failed']=False
         return out

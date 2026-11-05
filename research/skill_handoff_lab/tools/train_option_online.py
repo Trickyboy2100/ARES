@@ -31,12 +31,15 @@ def main():
  p.add_argument('--episodes',type=int,default=64);p.add_argument('--train-start',type=int,default=759000);p.add_argument('--dev-start',type=int,default=759200);p.add_argument('--dev-count',type=int,default=16)
  p.add_argument('--seed',type=int,default=31601);p.add_argument('--updates',type=int,default=80);p.add_argument('--resume',action='store_true');p.add_argument('--stop-after',type=int);p.add_argument('--pause-after-collection',type=int)
  p.add_argument('--frame',choices=['measured','remaining_target'],default='measured');p.add_argument('--initialize-run',type=Path)
+ p.add_argument('--schema',choices=['legacy','atomic83'],default='legacy');p.add_argument('--termination',choices=['insertion_queue','phase','chunk'],default='insertion_queue');p.add_argument('--initial-model',type=Path)
  a=p.parse_args();torch.set_num_threads(2);a.out.mkdir(parents=True,exist_ok=True)
  lock=open(a.out/'LOCK','w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
  sources={f.name:sha(f) for f in Path(__file__).parent.glob('program_*.py')}
  sources[Path(__file__).name]=sha(__file__)
  train=list(range(a.train_start,a.train_start+a.episodes));dev=list(range(a.dev_start,a.dev_start+a.dev_count));assert not set(train)&set(dev)
- manifest=dict(schema=1,arm=a.arm,train=train,development=dev,environment='PegInsertionSide-v1',horizon=100,success='official terminal evaluate',parent=str(PARENT),parent_sha=sha(PARENT),sources=sources,source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),initialization='same inherited neural weights31501; seed below controls replay/exploration, NOT independent neural initialization',optimizer_rng_seed=a.seed,updates_per_episode=a.updates,termination='insertion_queue',frame=a.frame,predecessor='learned real3 grasp offsets',data_scope='own policy online; no other arm replay',checkpoint_rule='0, half, final; final is main endpoint; no best-dev selection',epsilon='0.15 uniform legal actions at reopened Option boundaries',sealed_used=False)
+ manifest=dict(schema=1,arm=a.arm,train=train,development=dev,environment='PegInsertionSide-v1',horizon=100,success='official terminal evaluate',parent=str(PARENT),parent_sha=sha(PARENT),sources=sources,source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),initialization='same inherited neural weights31501; seed below controls replay/exploration, NOT independent neural initialization',optimizer_rng_seed=a.seed,updates_per_episode=a.updates,termination=a.termination,frame=a.frame,execution_schema=a.schema,predecessor='learned real3 grasp offsets',data_scope='own policy online; no other arm replay',checkpoint_rule='0, half, final; final is main endpoint; no best-dev selection',epsilon='0.15 uniform legal actions at reopened Option boundaries',sealed_used=False)
+ if a.initial_model:
+  manifest['initial_model']=dict(path=str(a.initial_model),sha=sha(a.initial_model));manifest['initialization']='explicit shared initial model; initialization seed/provenance in its manifest'
  if a.initialize_run:
   origin=json.loads((a.initialize_run/'MANIFEST.json').read_text());pointer=json.loads((a.initialize_run/'CURRENT.json').read_text());parent_state=a.initialize_run/pointer['checkpoint']
   assert origin['frame']==a.frame and origin['arm']==a.arm and origin['optimizer_rng_seed']==a.seed
@@ -56,7 +59,12 @@ def main():
   assert not mf.exists(),'Use --resume; never overwrite a run'
   atomic_json(mf,manifest);src=a.out/'source';src.mkdir()
   for f in sources:shutil.copy2(Path(__file__).parent/f,src/f)
- m=FeedbackSAC.load(PARENT);reference=FeedbackSAC.load(PARENT)
+ m=FeedbackSAC.load(a.initial_model or PARENT);reference=FeedbackSAC.load(PARENT)
+ if a.schema=='atomic83':
+  from program_atomic_feedback import AtomicRuntime,SemanticOption
+  runtime_class=AtomicRuntime;option_class=SemanticOption;reference_policy=lambda s:(lambda a:a+6 if a in (2,3,4,5) else a)(reference.choose(s[:64]))
+  assert m.nobs==83 and m.nactions==12
+ else:runtime_class=FeedbackRuntime;option_class=ContinuationOption;reference_policy=reference.choose
  random.seed(a.seed);np.random.seed(a.seed);torch.manual_seed(a.seed);m.rng=np.random.default_rng(a.seed)
  marks=sorted(set([0,a.episodes//2,a.episodes]));jobs=[]
  for i in range(a.episodes+1):
@@ -81,7 +89,7 @@ def main():
  if cursor==len(jobs):
   if not (a.out/'FINAL.pt').exists():m.save(a.out/'FINAL.pt')
   print('ALREADY_COMPLETE_NO_PHYSICS',cursor,flush=True);return
- rt=FeedbackRuntime(a.out/'physics',correction_frame=a.frame)
+ rt=runtime_class(a.out/'physics',correction_frame=a.frame)
  # Restore bookkeeping; append raw files, never overwrite after restart.
  rt.rows=[r['row'] for r in records];rt.counter=max([0]+[int(f.name.split('_')[0]) for f in (a.out/'physics').glob('*.json.gz')])
  try:
@@ -100,10 +108,10 @@ def main():
     atomic_json(started,dict(job=job,cursor=j,manifest_sha=sha(mf)))
     def actor(s):
      if job['kind']=='train':
-      if m.rng.random()<.15:return int(m.rng.integers(3 if s[44]<.5 else 8))
+      if m.rng.random()<.15:return int(m.rng.integers(3 if s[44]<.5 else m.nactions))
       return m.choose(s,stochastic=True)
      return m.choose(s)
-    policy=ContinuationOption(actor,reference.choose,'insertion_queue')
+    policy=option_class(actor,reference_policy,a.termination)
     row,ts,d=rt.run(job['seed'],policy,f"{a.arm}_{job['kind']}_{job['checkpoint']}")
     ts=policy.transitions(ts)
     for t in ts:t['continuation_sha']=sha(PARENT)
