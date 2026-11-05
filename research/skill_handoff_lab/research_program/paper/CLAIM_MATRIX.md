@@ -35,3 +35,17 @@ for Adaptive Contact-Rich Robotic Manipulation**。
 
 标准SAC、成功BC、Option续接和task-frame residual均不单独主张原创。
 潜在论文贡献是可检验的执行表示分解及其对真实多技能学习的影响，最终范围由结果确定。
+
+## 2026-11-05 atomic_handoff：新增与修订
+
+| 主张 | 实测证据 | 状态 |
+|---|---|---|
+| 单次原子刷新足以恢复旧规则能力 | 760213单次与顺序均失败；重复phase成功 | FALSIFIED_SINGLE_ACTION |
+| 时间权限影响实际可执行性 | 76步共同前缀，接触87 vs98；标准参数Option复现100步见证 | SUPPORTED_MECHANISM |
+| 学习器获得真实有效救回 | 761202及冻结762214取消干预失败、单次干预成功；762213存在后续替代介入窗口 | SUPPORTED_CASES |
+| 新表示带来稳定净性能优势 | 新24：候选10/12、名义12、强规则15；2独立NN | NOT_SUPPORTED |
+| 进度保持修正形成可用能力 | 10次全拒绝，8次有限差分加速度检查；并非实际电机加速度判据 | PARTIAL_NEGATIVE |
+| 新的多阶段协同 | 三抓持真实训练；确认唯一非grasp1案例两侧消融均成功 | UNVERIFIED |
+| 第二任务学习迁移 | 原生Charger16/16成熟控制，小样本饱和，未训练候选 | NOT_TESTED_TRANSFER |
+
+旧分数、旧结论及固定final64终点均保留。当前贡献材料是可复现执行语义、因果物理机制、真实学习救回与泛化限制，不宣称新SAC损失。

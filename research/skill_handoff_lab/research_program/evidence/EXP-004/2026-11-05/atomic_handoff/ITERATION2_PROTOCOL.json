@@ -1,0 +1,10 @@
+{
+  "reason": "H1/H2 witness needs repeated refreshed correction across refinement; phase-reopened RL final6/16 versus queue9/16, initial10/16. More decisions alone not sufficient.",
+  "candidate": "atomic parameter macro: same delta refreshed at refinement boundaries, insertion queue continued; no future success used",
+  "budget": "same64own-policy episodes, same1280SAC iterations, common warm31701, same train/dev and final64 endpoint",
+  "actions": 12,
+  "observations": 83,
+  "scope": "temporal representation variant; standard parameterized Option, not new SAC; physical permissions unchanged but temporal policy class differs",
+  "training_start": 761016,
+  "development_start": 761200
+}

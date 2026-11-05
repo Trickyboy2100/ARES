@@ -269,3 +269,14 @@ Mechanism: trained policies on759205/grasp1 share94 recorded physical steps. Con
 Costs:512 new training episodes,3467effective decisions,40960Actor and40960Critic iterations (+40960unusedaux);1067complete native episodes,106700physical steps,8764planning queries. RAW/annotated101frame full state-playback video adds0physical steps. Complete raw/model/source SHA retained.
 
 Retain representation-aware online training, model selection, all failures and real predecessor dependence. Next implement a standard progress-preserving local residual on unexecuted waypoints with shared IK/collision/dynamic checks; never compress15points into6 or extend native budget. This comparator is not yet implemented. Paper Problem/Related Work/Method/preliminary Results now updated; representation-retention is preliminary positive evidence, independent newRL and nominal superiority remain UNVERIFIED. NativeCharger200 second-task reuse prepared without incompatible replay mixing. No ARES-R/hardware/sealed/restricted-data changes.
+
+
+## 2026-11-05 — atomic_handoff：可学救回成立，稳定净优势尚未成立
+
+从9a66e94继承，完成真实own-policy训练320回合、5臂、两个独立NN初始化；共1002原生episode、101800物理步、8934规划查询。
+H1单次atomic不足，H2重复阶段刷新可复现760213完整100步成功；实际首次接触87 vs98步。
+761202共同63步前缀证明学到的局部动作必要且单独足够；冻结新762214同样成立，762213则有更宽的有效时间窗口。
+新24确认：名义12、冻结规则15、queue12/12、macro10/12；后者分别1救回3退化、1救回1退化。两者都高估了762206的破坏性干预。
+不将更多决策、标准参数化Option、83维状态增广或动作字典本身称为新算法。H3拼接10次全拒绝，尚无操作能力；第二任务Charger20016/16饱和，无迁移增益。
+保留全部模型、失败、完整事务resume和历史分数。重点转为真实可执行续接下的干预价值校准与保持；当前确认集已看，不能复用为新测试。
+证据：[atomic_handoff](evidence/EXP-004/2026-11-05/atomic_handoff/README.md)。完整成本、SHA、RAW/英文同步视频与论文表已归档。

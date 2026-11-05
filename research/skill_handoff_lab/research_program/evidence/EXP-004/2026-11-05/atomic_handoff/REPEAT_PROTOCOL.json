@@ -1,0 +1,51 @@
+{
+  "reason": "checkpoint32macro11/16 with1same-grasp rescue and0regression merits independent initialization check; retain final64 main endpoints",
+  "compare": [
+    "queue",
+    "macro"
+  ],
+  "seed": 31702,
+  "independent_neural_initialization": true,
+  "shared_nominal_warm_episodes": 16,
+  "own_online_episodes": 64,
+  "updates_per_episode": 20,
+  "train": [
+    761016,
+    761079
+  ],
+  "dev": [
+    761200,
+    761215
+  ],
+  "prospective_confirmation": {
+    "seeds": [
+      762200,
+      762201,
+      762202,
+      762203,
+      762204,
+      762205,
+      762206,
+      762207,
+      762208,
+      762209,
+      762210,
+      762211,
+      762212,
+      762213,
+      762214,
+      762215,
+      762216,
+      762217,
+      762218,
+      762219,
+      762220,
+      762221,
+      762222,
+      762223
+    ],
+    "selection": "max dev success among0/32/64, earliest tie, per method/seed; same64episode budget charged even if0selected",
+    "no_tuning_after_confirmation": true
+  },
+  "scope": "second iteration expanded after preliminary trend; not sealed test"
+}

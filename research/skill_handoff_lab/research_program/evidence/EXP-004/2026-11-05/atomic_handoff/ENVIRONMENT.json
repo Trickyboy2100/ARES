@@ -1,0 +1,13 @@
+{
+  "python": "3.11.15",
+  "packages": {
+    "torch": "2.7.0+cu128",
+    "sapien": "3.0.3",
+    "mplib": "0.1.1",
+    "numpy": "1.26.4",
+    "gymnasium": "1.4.0"
+  },
+  "ManiSkill_source": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+  "physics_execution": "handoff_offline.sh: bwrap unshare-net, GPU0 only; no hardware",
+  "initial_base": "9a66e940af443f56a4f158f1f37956f9658fd7fb"
+}

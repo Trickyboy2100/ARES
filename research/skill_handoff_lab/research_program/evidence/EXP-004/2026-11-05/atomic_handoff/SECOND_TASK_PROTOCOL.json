@@ -1,0 +1,20 @@
+{
+  "task": "PlugCharger-v1",
+  "native_horizon": 200,
+  "seeds": [
+    761600,
+    761601,
+    761602,
+    761603
+  ],
+  "grasps": [
+    15,
+    30
+  ],
+  "policies": [
+    "nominal",
+    "feedback"
+  ],
+  "scope": "second mechanism small native physical capability study, no newRL or cross-task trained transfer",
+  "common_abstraction": "actual grasp -> measured reference/contact pace and orientation, no fabricated planner queue"
+}

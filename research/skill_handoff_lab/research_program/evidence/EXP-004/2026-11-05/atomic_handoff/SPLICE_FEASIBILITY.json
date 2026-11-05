@@ -1,0 +1,172 @@
+[
+  {
+    "seed": 759205,
+    "trigger": "late",
+    "step": 94,
+    "rejection": "acceleration_limit",
+    "old_next_command_implied_acceleration": [
+      18.349314469502723,
+      6.865361948399573,
+      5.924997376722401,
+      11.682393224192946,
+      -4.024156344673036,
+      -3.5096808486106923,
+      26.504190397312588
+    ],
+    "old_next_exceeds_2": true,
+    "interpretation": "position-setpoint finite difference includes PD tracking lag; not measured motor acceleration"
+  },
+  {
+    "seed": 761100,
+    "trigger": "late",
+    "step": 96,
+    "rejection": "grasp_not_confirmed",
+    "old_next_command_implied_acceleration": [
+      22.16871207188833,
+      5.684658517151435,
+      16.162308261652843,
+      16.779862311250326,
+      7.7974739066626695,
+      6.504969553725779,
+      30.494740139315372
+    ],
+    "old_next_exceeds_2": true,
+    "interpretation": "position-setpoint finite difference includes PD tracking lag; not measured motor acceleration"
+  },
+  {
+    "seed": 761101,
+    "trigger": "late",
+    "step": 95,
+    "rejection": "acceleration_limit",
+    "old_next_command_implied_acceleration": [
+      -0.14338498935103416,
+      1.4732378721237183,
+      -0.3889503702521324,
+      2.3533831536769867,
+      -0.12318595312535763,
+      -1.014770045876503,
+      0.6214956939220428
+    ],
+    "old_next_exceeds_2": true,
+    "interpretation": "position-setpoint finite difference includes PD tracking lag; not measured motor acceleration"
+  },
+  {
+    "seed": 761102,
+    "trigger": "late",
+    "step": 95,
+    "rejection": "insufficient_remaining_knots",
+    "old_next_command_implied_acceleration": [
+      0.07066780235618353,
+      0.009943039622157812,
+      -0.06029667449183762,
+      0.04273126076441258,
+      -0.11879239231348038,
+      0.03580065444111824,
+      0.12441508937627077
+    ],
+    "old_next_exceeds_2": false,
+    "interpretation": "position-setpoint finite difference includes PD tracking lag; not measured motor acceleration"
+  },
+  {
+    "seed": 761103,
+    "trigger": "late",
+    "step": 97,
+    "rejection": "acceleration_limit",
+    "old_next_command_implied_acceleration": [
+      10.738948698648985,
+      7.888276251414039,
+      0.6170157589520788,
+      14.64493393078289,
+      -2.560056979818979,
+      -5.962039062944271,
+      15.959381756936333
+    ],
+    "old_next_exceeds_2": true,
+    "interpretation": "position-setpoint finite difference includes PD tracking lag; not measured motor acceleration"
+  },
+  {
+    "seed": 759205,
+    "trigger": "early",
+    "step": 74,
+    "rejection": "acceleration_limit",
+    "old_next_command_implied_acceleration": [
+      -0.06574979983270168,
+      -0.08264130912721157,
+      0.11879600584506989,
+      -0.23631902411580086,
+      0.004730201326310635,
+      0.3584218770265579,
+      -0.6122100725769997
+    ],
+    "old_next_exceeds_2": false,
+    "interpretation": "position-setpoint finite difference includes PD tracking lag; not measured motor acceleration"
+  },
+  {
+    "seed": 761100,
+    "trigger": "early",
+    "step": 61,
+    "rejection": "acceleration_limit",
+    "old_next_command_implied_acceleration": [
+      -2.3532645404338837,
+      0.46190034598112106,
+      0.008306504460051656,
+      0.18678929656744003,
+      0.20656201988458633,
+      0.25453973561525345,
+      -3.0579981207847595
+    ],
+    "old_next_exceeds_2": true,
+    "interpretation": "position-setpoint finite difference includes PD tracking lag; not measured motor acceleration"
+  },
+  {
+    "seed": 761101,
+    "trigger": "early",
+    "step": 81,
+    "rejection": "acceleration_limit",
+    "old_next_command_implied_acceleration": [
+      -1.4060190320014954,
+      0.1367394533008337,
+      0.10592537932097912,
+      -0.5096661299467087,
+      -0.006572853308171034,
+      0.5965572223067284,
+      -3.2557570934295654
+    ],
+    "old_next_exceeds_2": true,
+    "interpretation": "position-setpoint finite difference includes PD tracking lag; not measured motor acceleration"
+  },
+  {
+    "seed": 761102,
+    "trigger": "early",
+    "step": 54,
+    "rejection": "acceleration_limit",
+    "old_next_command_implied_acceleration": [
+      0.0280367536470294,
+      -0.6312355399131775,
+      -0.34236546605825424,
+      -1.4428219199180603,
+      0.3865122050046921,
+      0.9109979122877121,
+      1.4728009700775146
+    ],
+    "old_next_exceeds_2": false,
+    "interpretation": "position-setpoint finite difference includes PD tracking lag; not measured motor acceleration"
+  },
+  {
+    "seed": 761103,
+    "trigger": "early",
+    "step": 66,
+    "rejection": "acceleration_limit",
+    "old_next_command_implied_acceleration": [
+      0.5531080067157745,
+      -0.23962875828146935,
+      0.1815575547516346,
+      0.03702634712681174,
+      0.026299883611500263,
+      -0.05436098203063011,
+      0.5385289341211319
+    ],
+    "old_next_exceeds_2": false,
+    "interpretation": "position-setpoint finite difference includes PD tracking lag; not measured motor acceleration"
+  }
+]

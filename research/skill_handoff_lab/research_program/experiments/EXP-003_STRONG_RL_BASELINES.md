@@ -269,3 +269,14 @@ Retain both nominal-retention and learned-recovery endpoints, stronger feedback 
 
 
 2026-11-05: matched online SAC/BC execution-interface study completed; see [EXP-004 evidence](../evidence/EXP-004/2026-11-05/decoupled_interface/README.md).512new training episodes; standard SAC/BC retained as mature shared learners. Frozen32-condition retention improvement does not exceed nominal19/32 and adds no rescues. Historical final64 unchanged.
+
+
+## 2026-11-05 — atomic_handoff：可学救回成立，稳定净优势尚未成立
+
+从9a66e94继承，完成真实own-policy训练320回合、5臂、两个独立NN初始化；共1002原生episode、101800物理步、8934规划查询。
+H1单次atomic不足，H2重复阶段刷新可复现760213完整100步成功；实际首次接触87 vs98步。
+761202共同63步前缀证明学到的局部动作必要且单独足够；冻结新762214同样成立，762213则有更宽的有效时间窗口。
+新24确认：名义12、冻结规则15、queue12/12、macro10/12；后者分别1救回3退化、1救回1退化。两者都高估了762206的破坏性干预。
+不将更多决策、标准参数化Option、83维状态增广或动作字典本身称为新算法。H3拼接10次全拒绝，尚无操作能力；第二任务Charger20016/16饱和，无迁移增益。
+保留全部模型、失败、完整事务resume和历史分数。重点转为真实可执行续接下的干预价值校准与保持；当前确认集已看，不能复用为新测试。
+证据：[atomic_handoff](../evidence/EXP-004/2026-11-05/atomic_handoff/README.md)。完整成本、SHA、RAW/英文同步视频与论文表已归档。

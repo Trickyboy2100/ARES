@@ -31,11 +31,12 @@ def main():
  p.add_argument('--episodes',type=int,default=64);p.add_argument('--train-start',type=int,default=759000);p.add_argument('--dev-start',type=int,default=759200);p.add_argument('--dev-count',type=int,default=16)
  p.add_argument('--seed',type=int,default=31601);p.add_argument('--updates',type=int,default=80);p.add_argument('--resume',action='store_true');p.add_argument('--stop-after',type=int);p.add_argument('--pause-after-collection',type=int)
  p.add_argument('--frame',choices=['measured','remaining_target'],default='measured');p.add_argument('--initialize-run',type=Path)
- p.add_argument('--schema',choices=['legacy','atomic83'],default='legacy');p.add_argument('--termination',choices=['insertion_queue','phase','chunk'],default='insertion_queue');p.add_argument('--initial-model',type=Path)
+ p.add_argument('--schema',choices=['legacy','atomic83'],default='legacy');p.add_argument('--termination',choices=['insertion_queue','phase','chunk','macro'],default='insertion_queue');p.add_argument('--initial-model',type=Path)
  a=p.parse_args();torch.set_num_threads(2);a.out.mkdir(parents=True,exist_ok=True)
  lock=open(a.out/'LOCK','w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
  sources={f.name:sha(f) for f in Path(__file__).parent.glob('program_*.py')}
  sources[Path(__file__).name]=sha(__file__)
+ if a.termination=='macro':sources['peg_atomic_macro.py']=sha(Path(__file__).with_name('peg_atomic_macro.py'))
  train=list(range(a.train_start,a.train_start+a.episodes));dev=list(range(a.dev_start,a.dev_start+a.dev_count));assert not set(train)&set(dev)
  manifest=dict(schema=1,arm=a.arm,train=train,development=dev,environment='PegInsertionSide-v1',horizon=100,success='official terminal evaluate',parent=str(PARENT),parent_sha=sha(PARENT),sources=sources,source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),initialization='same inherited neural weights31501; seed below controls replay/exploration, NOT independent neural initialization',optimizer_rng_seed=a.seed,updates_per_episode=a.updates,termination=a.termination,frame=a.frame,execution_schema=a.schema,predecessor='learned real3 grasp offsets',data_scope='own policy online; no other arm replay',checkpoint_rule='0, half, final; final is main endpoint; no best-dev selection',epsilon='0.15 uniform legal actions at reopened Option boundaries',sealed_used=False)
  if a.initial_model:
@@ -43,6 +44,7 @@ def main():
  if a.initialize_run:
   origin=json.loads((a.initialize_run/'MANIFEST.json').read_text());pointer=json.loads((a.initialize_run/'CURRENT.json').read_text());parent_state=a.initialize_run/pointer['checkpoint']
   assert origin['frame']==a.frame and origin['arm']==a.arm and origin['optimizer_rng_seed']==a.seed
+  assert origin.get('execution_schema','legacy')==a.schema and origin['termination']==a.termination
   assert not set(origin['train'])&set(train) and origin['development']==dev
   assert sha(parent_state)==pointer['sha256']
   manifest['initialize_run']=dict(path=str(a.initialize_run),state_sha=sha(parent_state),manifest_sha=sha(a.initialize_run/'MANIFEST.json'),preserve='model, optimizers, own replay, labels, RNG; no cross-interface reuse')
@@ -63,6 +65,9 @@ def main():
  if a.schema=='atomic83':
   from program_atomic_feedback import AtomicRuntime,SemanticOption
   runtime_class=AtomicRuntime;option_class=SemanticOption;reference_policy=lambda s:(lambda a:a+6 if a in (2,3,4,5) else a)(reference.choose(s[:64]))
+  if a.termination=='macro':
+   from peg_atomic_macro import AtomicMacro
+   option_class=AtomicMacro
   assert m.nobs==83 and m.nactions==12
  else:runtime_class=FeedbackRuntime;option_class=ContinuationOption;reference_policy=reference.choose
  random.seed(a.seed);np.random.seed(a.seed);torch.manual_seed(a.seed);m.rng=np.random.default_rng(a.seed)
@@ -74,7 +79,7 @@ def main():
  data=[];labels=[];records=[];cursor=0
  if a.initialize_run:
   inherited=torch.load(parent_state,weights_only=False);load(m,inherited['model']);restore(inherited['global_rng']);data=inherited['data'];labels=inherited['labels']
-  assert all(t['controller'].endswith('__remaining_target_v1')==(a.frame=='remaining_target') for t in data)
+  assert all(t['controller'].endswith('__atomic83_v1') if a.schema=='atomic83' else t['controller'].endswith('__remaining_target_v1')==(a.frame=='remaining_target') for t in data)
  current=a.out/'CURRENT.json'
  if a.resume:
   pointer=json.loads(current.read_text());cp=a.out/pointer['checkpoint'];assert sha(cp)==pointer['sha256']

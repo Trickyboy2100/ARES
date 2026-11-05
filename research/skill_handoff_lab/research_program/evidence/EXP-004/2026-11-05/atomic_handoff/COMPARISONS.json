@@ -1,0 +1,158 @@
+{
+  "development": {
+    "control_rule_chunk": {
+      "n": 16,
+      "success": 8,
+      "rescue": [],
+      "regression": [
+        761208,
+        761210
+      ],
+      "front": {
+        "1": 16
+      }
+    },
+    "control_rule_phase": {
+      "n": 16,
+      "success": 8,
+      "rescue": [],
+      "regression": [
+        761208,
+        761210
+      ],
+      "front": {
+        "1": 16
+      }
+    },
+    "control_rule_insertion_queue": {
+      "n": 16,
+      "success": 8,
+      "rescue": [],
+      "regression": [
+        761208,
+        761210
+      ],
+      "front": {
+        "1": 16
+      }
+    },
+    "control_budget_guard_chunk": {
+      "n": 16,
+      "success": 8,
+      "rescue": [],
+      "regression": [
+        761208,
+        761210
+      ],
+      "front": {
+        "1": 16
+      }
+    },
+    "nominal": {
+      "n": 16,
+      "success": 10
+    }
+  },
+  "confirmation": {
+    "confirm_queue_bc64": {
+      "n": 24,
+      "success": 12,
+      "rescue": [],
+      "regression": [],
+      "front": {
+        "1": 24
+      }
+    },
+    "confirm_macro_bc64": {
+      "n": 24,
+      "success": 10,
+      "rescue": [
+        762214
+      ],
+      "regression": [
+        762201,
+        762204,
+        762206
+      ],
+      "front": {
+        "1": 24
+      }
+    },
+    "confirm_queue_seed31702": {
+      "n": 24,
+      "success": 12,
+      "rescue": [],
+      "regression": [],
+      "front": {
+        "1": 24
+      }
+    },
+    "confirm_macro_seed31702": {
+      "n": 24,
+      "success": 12,
+      "rescue": [
+        762213
+      ],
+      "regression": [
+        762206
+      ],
+      "front": {
+        "1": 23,
+        "0": 1
+      }
+    },
+    "confirm_rule": {
+      "n": 24,
+      "success": 15,
+      "rescue": [
+        762203,
+        762207,
+        762213,
+        762216
+      ],
+      "regression": [
+        762204
+      ],
+      "front": {
+        "1": 24
+      }
+    },
+    "nominal": {
+      "n": 24,
+      "success": 12
+    }
+  },
+  "splice": {
+    "episodes": 10,
+    "success": 8,
+    "attempts": 10,
+    "accepted": 0,
+    "rejections": {
+      "acceleration_limit": 8,
+      "grasp_not_confirmed": 1,
+      "insufficient_remaining_knots": 1
+    }
+  },
+  "learned_rescue": {
+    "learned": true,
+    "suppress63": false,
+    "nominal": false,
+    "only63": true
+  },
+  "contact_sequence": [
+    {
+      "termination": "phase",
+      "success": true,
+      "first_nonzero_contact_step": 87,
+      "max_force_N": 40.97275089721198,
+      "note": "net pairwise force; nonzero threshold is diagnostic, not controller input"
+    },
+    {
+      "termination": "insertion_queue",
+      "success": false,
+      "first_nonzero_contact_step": 98,
+      "max_force_N": 45.75471237666831,
+      "note": "net pairwise force; nonzero threshold is diagnostic, not controller input"
+    }
+  ]
+}

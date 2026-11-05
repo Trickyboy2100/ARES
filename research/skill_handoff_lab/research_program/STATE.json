@@ -2,14 +2,14 @@
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
   "last_review": "2026-11-05",
-  "baseline_commit": "cc0a0ff",
+  "baseline_commit": "9a66e94",
   "branch": "research-sci-program",
   "scientific_goal": "One SCI paper: task-conditioned executable parameter adaptation ACROSS REAL MULTI-STAGE ROBOT SKILLS using nominal skill primitives and measured SkillResult to improve successor feasibility, whole-task success and transfer; contact servo and SAC are component baselines",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
-  "latest_evidence": "evidence/EXP-004/2026-11-05/decoupled_interface/README.md",
-  "next_action": "Implement and physically validate a shared progress-preserving local residual on the unexecuted queue, with IK/collision/dynamic checks and unchanged native100 budget; compare against current active-target replanning before matched online learning. Retain all current models and frozen32-condition results. Do not expand probability heads or reinterpret standard residuals as new SAC. Prepare nativeCharger200 transfer using existing servo without mixing incompatible replay.",
+  "latest_evidence": "evidence/EXP-004/2026-11-05/atomic_handoff/README.md",
+  "next_action": "Retain atomic83 and parameterized Option checkpoints, own-policy resume and all counterexamples. Focus on deployment intervention-value calibration and success retention under genuine continuation semantics: frozen-confirmation762206 has harmful first interventions despite positive Q gaps;762214 has a verified useful local correction,762213 permits a later rescue window. Use new training-only intervention evidence and same-authority mature policy-improvement controls, not more phase reopening, budget heads or treating standard Options as novel. Current new24 are now seen; preserve old final64 scores. Fixed-clock splice remains rejected/partial, not a trained capability; Charger native small cohort saturated, no transfer gain claim.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -80,7 +80,7 @@
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update existing cards, DECISIONS, EVIDENCE_LEDGER and STATE after evidence; develop paper concurrently with claim-specific limitations. Independent algorithm superiority requires actual comparative evidence, not a prerequisite for writing or second-task preparation.",
-  "latest_run_summary": "512 new own-policy training episodes;1067 complete native episodes/106700steps;8764 planning queries. Initial factorial no seen-dev advantage. Equal128episode budgets with frozen64checkpoints: on32 new natural conditions measuredBC14/12 versus relativeBC17/18 across two stochastic repeats, nominal19. Regressions5->2 and7->1, zero rescues. Shared neural initialization and adaptive16+16confirmation extension disclosed. Zero-offset replan can destroy known success with only6native steps remaining. Preliminary representation-retention evidence, no independent newRL or nominal superiority.",
+  "latest_run_summary": "1002 complete native episodes /101800 physical steps, 8934 planner queries;320 own-policy training episodes across5 arms,2 independent neural initializations. Expanded shared execution observation/action interface and parameterized closed-loop Option learn verified rescues. Frozen new24: nominal12, rule15, queue12/12, macro10/12 with1rescue+3regressions and1rescue+1regression. No stable aggregate advantage. Charger200 native16/16 saturated; no learned transfer claim.",
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
   "research_review_20261102": {
     "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
@@ -817,5 +817,138 @@
       "critic_updates": 40960,
       "unused_aux_updates": 40960
     }
+  },
+  "atomic_handoff_20261105": {
+    "root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/atomic_handoff_20261105",
+    "evidence": "evidence/EXP-004/2026-11-05/atomic_handoff/README.md",
+    "base": "9a66e94",
+    "implementation": "181ee33 plus final committed tools",
+    "new_training_episodes": 320,
+    "neural_initializations": [
+      31701,
+      31702
+    ],
+    "warm_physics_episodes": 16,
+    "warm_actor_updates": 1024,
+    "actor_updates": 6400,
+    "critic_updates": 6400,
+    "unused_auxiliary_updates": 6400,
+    "cost": {
+      "episodes": 1002,
+      "steps": 101800,
+      "planning_queries": 8934,
+      "planning_wall_s": 40.21139734250028,
+      "wall_s": 5823.547383885481
+    },
+    "dev_curves": {
+      "macro_seed31702": [
+        10,
+        11,
+        12
+      ],
+      "macro_bc64": [
+        10,
+        11,
+        8
+      ],
+      "phase_bc64": [
+        10,
+        6,
+        6
+      ],
+      "queue_bc64": [
+        10,
+        10,
+        9
+      ],
+      "queue_seed31702": [
+        10,
+        9,
+        7
+      ]
+    },
+    "confirmation": {
+      "confirm_queue_bc64": {
+        "n": 24,
+        "success": 12,
+        "rescue": [],
+        "regression": [],
+        "front": {
+          "1": 24
+        }
+      },
+      "confirm_macro_bc64": {
+        "n": 24,
+        "success": 10,
+        "rescue": [
+          762214
+        ],
+        "regression": [
+          762201,
+          762204,
+          762206
+        ],
+        "front": {
+          "1": 24
+        }
+      },
+      "confirm_queue_seed31702": {
+        "n": 24,
+        "success": 12,
+        "rescue": [],
+        "regression": [],
+        "front": {
+          "1": 24
+        }
+      },
+      "confirm_macro_seed31702": {
+        "n": 24,
+        "success": 12,
+        "rescue": [
+          762213
+        ],
+        "regression": [
+          762206
+        ],
+        "front": {
+          "1": 23,
+          "0": 1
+        }
+      },
+      "confirm_rule": {
+        "n": 24,
+        "success": 15,
+        "rescue": [
+          762203,
+          762207,
+          762213,
+          762216
+        ],
+        "regression": [
+          762204
+        ],
+        "front": {
+          "1": 24
+        }
+      },
+      "nominal": {
+        "n": 24,
+        "success": 12
+      }
+    },
+    "scope": "real learned rescue and executor semantics supported; independent aggregate algorithm superiority UNVERIFIED",
+    "splice": {
+      "episodes": 10,
+      "success": 8,
+      "attempts": 10,
+      "accepted": 0,
+      "rejections": {
+        "acceleration_limit": 8,
+        "grasp_not_confirmed": 1,
+        "insufficient_remaining_knots": 1
+      }
+    },
+    "second_task": "native PlugCharger20016/16 across4scenes,2realgrasp pitches,2controllers; saturated capability only",
+    "archive": "evidence/EXP-004/2026-11-05/atomic_handoff/RAW_MANIFEST.json"
   }
 }

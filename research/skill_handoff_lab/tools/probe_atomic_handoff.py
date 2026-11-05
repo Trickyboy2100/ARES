@@ -14,7 +14,7 @@ for branch in branches:
    triggered=[False];seq=[False]
    def actor(s):
     if s[44]<.5:return 1
-    eligible=s[49]<=6/7+1e-5 and s[41]<=.280001
+    eligible=s[49]<=6/7+1e-5 and s[41]<=.28
     if branch=='continue':return 0
     if branch in ['atomic_rule','local_rule','atomic_option','atomic_phase']:return 4 if eligible else 0
     if seq[0]:seq[0]=False;return 4
