@@ -19,7 +19,7 @@ class Learner:
   self.mu=self.warm.model.mu;self.sd=self.warm.model.sd
   self.actor=nn.Sequential(nn.Linear(83,96),nn.Tanh(),nn.Linear(96,17));nn.init.zeros_(self.actor[-1].weight);nn.init.zeros_(self.actor[-1].bias)
   self.q=nn.ModuleList([nn.Sequential(nn.Linear(83,96),nn.Tanh(),nn.Linear(96,13))for _ in range(2)]);self.target=copy.deepcopy(self.q)
-  self.ao=torch.optim.Adam(self.actor.parameters(),lr=1e-4);self.qo=torch.optim.Adam(self.q.parameters(),lr=3e-4);self.updates=0
+  self.ao=torch.optim.Adam(self.actor.parameters(),lr=1e-4);self.qo=torch.optim.Adam(self.q.parameters(),lr=3e-4);self.updates=0;self.episode=0
   # Same parameter count and full logit expressivity. Row-normalized fixed
   # coordinates share offset gradients across references; interactions permit
   # rejecting that sharing. Compare flat coordinates, not changed authority.
@@ -30,7 +30,7 @@ class Learner:
  def context(self,ss):
   rows=[];masks=[]
   for s in ss:
-   b,m=self.warm.model.context([s]);b=b[0].numpy();m=m[0].numpy();out=np.full(13,-6.,np.float32);mask=legal(s)
+   b,m=self.warm.model.context([s]);b=b[0].numpy();m=m[0].numpy();out=np.full(13,-3.,np.float32);mask=legal(s)
    if s[44]<.5:out[:3]=b
    else:
     out[0]=b[0]
@@ -41,14 +41,17 @@ class Learner:
       if mask[a]:out[a]=max(out[a],b[i+1])
    rows.append(out);masks.append(mask)
   return torch.tensor(np.array(rows)),torch.tensor(np.array(masks))
- def probs(self,x,b,mask,ss):
+ def logits(self,x,b,mask,ss):
   z=self.actor(x);rear=z[:,3:16]if self.arm!='factor'else z[:,3:]@self.map.T
   front=torch.cat([z[:,:3],torch.zeros(len(z),10)],1);delta=torch.where(torch.tensor(np.asarray(ss)[:,44]<.5)[:,None],front,rear)
-  return(b+delta).masked_fill(~mask,-1e9).softmax(1)
+  return(b+delta).masked_fill(~mask,-1e9)
+ def probs(self,x,b,mask,ss):return self.logits(x,b,mask,ss).softmax(1)
  def choose(self,s,train=False):
   b,m=self.context([s])
   with torch.no_grad():p=self.probs(self.norm([s]),b,m,[s])[0].numpy()
-  if train:p=.9*p+.1*m[0].numpy()/m[0].sum();return int(self.rng.choice(13,p=p/p.sum()))
+  if train:
+   ratio=min((self.episode+1)/64.,1.);prior=np.eye(13)[self.warm.choose(s)]
+   p=(1-ratio)*prior+ratio*p;p=.9*p+.1*m[0].numpy()/m[0].sum();return int(self.rng.choice(13,p=p/p.sum()))
   return int(p.argmax())
  def decorate(self,ts,episode):
   for t in ts:
@@ -70,8 +73,9 @@ class Learner:
    p=self.probs(x,b,mask,ss)
    with torch.no_grad():q=torch.stack([v(x)for v in self.q]).mean(0)
    if self.arm=='supervised':
-    # Same data, information, network: MC outcome-weighted action imitation.
-    w=torch.tensor([t['outcome']for t in rows]);aloss=-(w*p[idx,a].clamp_min(1e-9).log()).sum()/w.sum().clamp_min(1)
+    # Same data/state/action authority: direct terminal-outcome scorer.
+    # Both successes and failures are used; no bootstrapped value enters actor.
+    outcome=torch.tensor([t['outcome']for t in rows]);aloss=nn.functional.binary_cross_entropy_with_logits(self.logits(x,b,mask,ss)[idx,a],outcome)
    else:
     aloss=(p*(.01*p.clamp_min(1e-9).log()-q)).sum(1).mean();w=torch.tensor([t['outcome']for t in rows]);aloss-=.1*(w*p[idx,a].clamp_min(1e-9).log()).sum()/w.sum().clamp_min(1)
    self.ao.zero_grad();aloss.backward();nn.utils.clip_grad_norm_(self.actor.parameters(),1);self.ao.step()
@@ -85,8 +89,8 @@ class Learner:
   for k in ['actor','q','target','ao','qo']:getattr(self,k).load_state_dict(d[k])
   self.rng.bit_generator.state=d['rng'];self.updates=d['updates']
 def main():
- p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--shared',type=Path,required=True);p.add_argument('--arm',choices=['sac','factor','supervised'],required=True);p.add_argument('--seed',type=int,required=True);p.add_argument('--episodes',type=int,default=128);p.add_argument('--train-start',type=int,default=765100);p.add_argument('--dev-start',type=int,default=765400);p.add_argument('--dev-count',type=int,default=24);p.add_argument('--updates',type=int,default=40);p.add_argument('--resume',action='store_true');a=p.parse_args();torch.set_num_threads(2);a.out.mkdir(parents=True,exist_ok=True)
- manifest={k:str(v)if isinstance(v,Path)else v for k,v in vars(a).items()if k!='resume'};manifest.update(source={f:sha(Path(__file__).with_name(f))for f in ['train_full_option.py','program_full_option.py','program_atomic_feedback.py','peg_atomic_macro.py']},shared_sha=sha(a.shared),native100=True,gamma=1,selection='fixed final; checkpoints0/32/64/128 when reached',train=list(range(a.train_start,a.train_start+a.episodes)),dev=list(range(a.dev_start,a.dev_start+a.dev_count)),seed_scope='torch reseeded AFTER loading shared Gate; distinct new actor hidden and critic weights',candidate='reference/offset gradient sharing with equal information/authority and full logit expressivity; standard parameterized-action foundations, no a priori originality')
+ p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--shared',type=Path,required=True);p.add_argument('--arm',choices=['sac','factor','supervised'],required=True);p.add_argument('--seed',type=int,required=True);p.add_argument('--episodes',type=int,default=128);p.add_argument('--train-start',type=int,default=765100);p.add_argument('--dev-start',type=int,default=765400);p.add_argument('--dev-count',type=int,default=24);p.add_argument('--updates',type=int,default=40);p.add_argument('--resume',action='store_true');p.add_argument('--stop-after',type=int);a=p.parse_args();torch.set_num_threads(2);a.out.mkdir(parents=True,exist_ok=True)
+ manifest={k:str(v)if isinstance(v,Path)else v for k,v in vars(a).items()if k not in ('resume','stop_after')};manifest.update(source={f:sha(Path(__file__).with_name(f))for f in ['train_full_option.py','program_full_option.py','program_atomic_feedback.py','peg_atomic_macro.py']},shared_sha=sha(a.shared),native100=True,gamma=1,exploration='shared 64-episode ramp from warm behavior to learned stochastic policy, plus10% legal uniform; new action prior logit -3',selection='fixed final; checkpoints0/32/64/128 when reached',train=list(range(a.train_start,a.train_start+a.episodes)),dev=list(range(a.dev_start,a.dev_start+a.dev_count)),seed_scope='torch reseeded AFTER loading shared Gate; distinct new actor hidden and critic weights',candidate='reference/offset gradient sharing with equal information/authority and full logit expressivity; standard parameterized-action foundations, no a priori originality')
  assert not set(manifest['train'])&set(manifest['dev']);assets=Assets();m=Learner(assets,a.seed,a.arm);data=[];history=[];cursor=0
  if a.resume:
   assert json.loads((a.out/'MANIFEST.json').read_text())==manifest;d=torch.load(a.out/'CURRENT.pt',weights_only=False);m.load(d['model']);data=d['data'];history=d['history'];cursor=d['cursor']
@@ -98,7 +102,7 @@ def main():
   if i<a.episodes:jobs.append(('train',i,a.train_start+i))
  try:
   for ji in range(cursor,len(jobs)):
-   kind,i,seed=jobs[ji];pending=a.out/f'PENDING_{ji:04d}.pt'
+   kind,i,seed=jobs[ji];m.episode=i;pending=a.out/f'PENDING_{ji:04d}.pt'
    if pending.exists():item=torch.load(pending,weights_only=False);assert item['job']==jobs[ji];m.rng.bit_generator.state=item['rng']
    else:
     start=a.out/f'START_{ji:04d}.json';assert not start.exists(),'Inspect incomplete physics before resume';atomic_json(start,dict(job=jobs[ji]));pol=FullJoint(assets,lambda s:m.choose(s,kind=='train'),lambda:len(rt.env.records));row,ts,d=rt.run(seed,pol,f'{kind}_{i}');ts=m.decorate(pol.transitions(ts),i);item=dict(row=row,ts=ts,events=pol.events,rng=m.rng.bit_generator.state,job=jobs[ji]);atomic_torch(pending,item)
@@ -107,5 +111,6 @@ def main():
    history.append(dict(kind=kind,checkpoint=i,row=item['row'],events=item['events'],effective_decisions=len(item['ts']),log=log));atomic_json(a.out/'HISTORY.json',history);atomic_torch(a.out/'CURRENT.pt',dict(model=m.state(),data=data,history=history,cursor=ji+1))
    if kind=='eval'and seed==manifest['dev'][-1]:atomic_torch(a.out/f'CHECKPOINT_{i}.pt',m.state())
    print(a.arm,a.seed,kind,i,seed,item['row']['success'],len(item['ts']),flush=True)
+   if kind=='eval'and seed==manifest['dev'][-1]and a.stop_after==i:break
  finally:rt.close()
 if __name__=='__main__':main()

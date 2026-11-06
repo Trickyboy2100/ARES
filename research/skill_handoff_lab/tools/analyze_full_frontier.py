@@ -1,0 +1,13 @@
+"""Measured finite frontier, not a deployment score or exhaustive task oracle."""
+import argparse,json,collections
+from pathlib import Path
+p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);a=p.parse_args();rows=[]
+for f in sorted(a.root.glob('design_*/RESULTS.json')):rows+=json.loads(f.read_text())
+result={}
+for seed in sorted(set(r['seed']for r in rows)):
+ rr=[r for r in rows if r['seed']==seed];by={r['label']:r for r in rr};base=by['warm'];requested=[r for r in rr if r['label'].startswith('a')];acts=[r for r in requested if r['entry']and r['entry']['legal']];known=set([0]);entry=next((r['entry']for r in acts if r['entry']),None)
+ if entry:
+  known.update(entry['proposals']);obs=entry['obs'];known.add(10 if obs[49]<=6/7+1e-5 and obs[41]<=.28 else 0)
+ result[str(seed)]=dict(complete=len(rr)==16,unexecuted_requests=[r['label']for r in requested if r not in acts],warm_success=base['success'],warm_grasp=base['grasp'],physical_successes=[int(r['label'][1:])for r in acts if r['success']],physical_failures=[int(r['label'][1:])for r in acts if not r['success']],grasp_results={k:by[k]['success']for k in ['g0','g1','g2']if k in by},finite_union=any(r['success']for r in rr),added_over_warm=not base['success']and any(r['success']for r in acts),measured_actions_omitted_by_two_proposals=[int(r['label'][1:])for r in acts if r['success']and entry and int(r['label'][1:])not in entry['proposals']],only_new_physical_success=not base['success']and any(r['success']for r in acts)and not any(r['success']for r in acts if int(r['label'][1:])in known),first_rear_step=entry and entry['step'],remaining=entry and 100-entry['step'],proposals=entry and entry['proposals'],error=base['error'])
+complete=[v for v in result.values()if v['complete']];totals=dict(complete_scenes=len(complete),native_episodes=len(rows),native_steps=sum(r['steps']for r in rows),planner_queries=sum(len(r['queries'])for r in rows),warm=sum(v['warm_success']for v in complete),finite_union=sum(v['finite_union']for v in complete),added_physical_scenes=sum(v['added_over_warm']for v in complete),fixed_grasps={f'g{k}':sum(v['grasp_results'][f'g{k}']for v in complete)for k in range(3)},physical_only_new_success=sum(v['only_new_physical_success']for v in complete))
+(a.root/'FRONTIER.json').write_text(json.dumps(dict(totals=totals,scenes=result,scope='first reachable rear boundary, shared warm suffix. Old-proposal support uses measured physical0 and proposals; strong rule CHUNK is not generally the same as a full physical10 Option. Union is finite observed opportunity, not a deployed policy.'),indent=2));print(json.dumps(totals));print([(s,v['physical_successes'],v['grasp_results'])for s,v in result.items()if not v['warm_success']])
