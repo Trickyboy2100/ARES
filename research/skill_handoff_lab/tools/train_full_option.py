@@ -51,7 +51,7 @@ class Learner:
   with torch.no_grad():p=self.probs(self.norm([s]),b,m,[s])[0].numpy()
   if train:
    ratio=min((self.episode+1)/64.,1.);prior=np.eye(13)[self.warm.choose(s)]
-   p=(1-ratio)*prior+ratio*p;p=.9*p+.1*m[0].numpy()/m[0].sum();return int(self.rng.choice(13,p=p/p.sum()))
+   p=(1-ratio)*prior+ratio*p;p=.9*p+.1*m[0].numpy()/float(m[0].sum());return int(self.rng.choice(13,p=p/p.sum()))
   return int(p.argmax())
  def decorate(self,ts,episode):
   for t in ts:
