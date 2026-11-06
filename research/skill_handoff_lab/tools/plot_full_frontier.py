@@ -34,3 +34,20 @@ for f in sorted(a.root.glob('*_322*/HISTORY.json')):
 ax.set(xlabel='Own-policy training episodes',ylabel='Complete native successes /24',ylim=(0,24),title='Fixed development765400–423; matched catalogue')
 if found:ax.legend(fontsize=9);save(fig,'learning_curves')
 else:plt.close(fig)
+if (a.root/'LEARNING_SUMMARY.json').exists():
+ summary=json.loads((a.root/'LEARNING_SUMMARY.json').read_text());groups=summary['groups'];baseline=groups.get('sac_32201@0')
+ selected=[k for k in groups if k.startswith('dev_')]
+ for run in summary['learning']:
+  keys=[k for k in groups if k.startswith(run+'@') and groups[k]['n']==24]
+  if keys:selected.append(max(keys,key=lambda k:int(k.rsplit('@',1)[1])))
+ selected=sorted(selected)
+ if baseline and selected:
+  fig,ax=plt.subplots(figsize=(10,max(4,.47*len(selected)+1.6)));rr=[];gg=[]
+  for k in selected:
+   b=baseline['outcomes'];v=groups[k]['outcomes'];rr.append(sum(v[s] and not b[s] for s in v));gg.append(sum(b[s] and not v[s] for s in v))
+  y=np.arange(len(selected));ax.barh(y,rr,color='#287a98',label='Rescued initial failure');ax.barh(y,-np.array(gg),color='#c8654c',label='Lost initial success');ax.set_yticks(y,[f'{k} ({groups[k]["success"]}/{groups[k]["n"]})' for k in selected]);ax.axvline(0,color='#555',lw=.8);ax.set(xlabel='Paired scene count against shared warm initialization (19/24)',title='Actual complete-task rescue and regression — seen development');ax.legend(loc='lower right',fontsize=9);save(fig,'frozen_pairings')
+ fig,ax=plt.subplots(figsize=(10,5))
+ for run,data in summary['learning'].items():
+  ys=np.array([v['success'] for v in data['curve']],float)
+  if len(ys)>=16:ax.plot(np.arange(16,len(ys)+1),np.convolve(ys,np.ones(16)/16,mode='valid'),label=run)
+ ax.set(xlabel='Own physical training episodes',ylabel='Rolling16 native success fraction',ylim=(0,1),title='Actual exploratory behavior; not greedy deployment performance');ax.legend(fontsize=9);save(fig,'online_behavior')
