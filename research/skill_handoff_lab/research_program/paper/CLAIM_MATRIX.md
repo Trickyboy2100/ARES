@@ -78,3 +78,8 @@ No population-level safety or SCI-level superiority follows from these small exp
 | Second-task transfer | NOT RUN |historical Tool/Charger review only|
 
 [Complete evidence](../evidence/EXP-004/2026-11-06/joint_continuation/README.md).
+
+
+### 2026-11-07 initialization erratum (historical scores unchanged)
+
+Direct checkpoint comparison shows joint_continuation sac_31901 and sac_31902 INITIAL Actor, Critic and target tensors are identical: the shared Gate constructor resets Torch RNG to31801 after the requested seed. The two runs have distinct exploration RNG, **not independent neural initialization**. Earlier independent-new-network wording is superseded. Their actual outcomes and negative evidence remain unchanged. The next full-catalogue learner reseeds after loading shared assets and verifies different hidden/Critic weights while keeping cross-arm initialization matched.

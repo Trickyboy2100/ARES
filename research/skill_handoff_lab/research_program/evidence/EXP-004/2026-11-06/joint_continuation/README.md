@@ -61,3 +61,8 @@ No second-task RL transfer was run. Existing Tool/Charger review is retained; sa
 ## One next scientific decision
 
 Preserve the warm learned baseline, genuine joint runtime and all failed models. Test whether legal physical Options omitted by the two frozen proposal policies create repeatable residual recovery opportunities at real handoffs, under the same strong controller and shared authority. This decides whether to train a fuller executable-action interface; do not expand MC mixing, alias loss or paired PG merely because their algebra is plausible. Independent algorithm gain remains UNVERIFIED; methods and negative experiments are usable paper material now.
+
+
+### 2026-11-07 initialization erratum (historical scores unchanged)
+
+Direct checkpoint comparison shows joint_continuation sac_31901 and sac_31902 INITIAL Actor, Critic and target tensors are identical: the shared Gate constructor resets Torch RNG to31801 after the requested seed. The two runs have distinct exploration RNG, **not independent neural initialization**. Earlier independent-new-network wording is superseded. Their actual outcomes and negative evidence remain unchanged. The next full-catalogue learner reseeds after loading shared assets and verifies different hidden/Critic weights while keeping cross-arm initialization matched.
