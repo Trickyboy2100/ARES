@@ -40,8 +40,7 @@ class Learner(Base):
   kernel=torch.where(repeat[:,:,None]|repeat[:,None,:],eye,kernel)
   block=.75*eye+.25*kernel # pointwise invertible; fixed state processing is an inductive bias
   mat=torch.eye(13).repeat(n,1,1)
-  for i,ii in enumerate(ids):
-   for j,jj in enumerate(ids):mat[:,ii,jj]=block[:,i,j]
+  ix=torch.tensor(ids);mat[:,ix[:,None],ix[None,:]]=block
   return mat/mat.norm(dim=2,keepdim=True)
  def logits(self,x,b,mask,ss):
   z=self.actor(x);rear=torch.bmm(self.matrix(ss),z[:,3:16,None]).squeeze(-1)

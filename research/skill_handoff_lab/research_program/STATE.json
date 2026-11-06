@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
   "program": "ARES-SCI-EXECUTABLE-SKILL-ADAPTATION",
-  "last_review": "2026-11-06",
-  "baseline_commit": "adc86dc",
+  "last_review": "2026-11-07",
+  "baseline_commit": "c50123e",
   "branch": "research-sci-program",
   "scientific_goal": "One SCI paper: task-conditioned executable parameter adaptation ACROSS REAL MULTI-STAGE ROBOT SKILLS using nominal skill primitives and measured SkillResult to improve successor feasibility, whole-task success and transfer; contact servo and SAC are component baselines",
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
   "latest_evidence": "evidence/EXP-004/2026-11-06/joint_continuation/README.md",
-  "next_action": "Test omitted legal physical Options at real handoffs to determine whether the frozen two-proposal interface leaves repeatable recovery opportunity. Share any expanded authority across warm baseline and ordinary joint RL; do not expand unsupported MC-mix, alias-critic or paired-PG mechanisms. Preserve native Peg100 and sealed isolation.",
+  "next_action": "Continue action_frontier_20261107 in-progress native learning: finish supervised32201 and frozen controls, train target-chart revision and independent fresh-network SAC32202. Read CURRENT/START manifests before any resume. Keep at most two physical processes; do not repeat completed256 design episodes or SAC/factor32201@128. Compare fixed final and distinguish catalogue opportunity from deployed gain.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
     "S3": "initial_action_authority_confirmed_identification_incomplete",
     "S4": "active_STAP_replication_and_multi_skill_credible_method",
-    "S5": "active_joint_predecessor_recurrent_successor_learning; three actual revisions completed; independent gain unverified",
+    "S5": "active_full_catalogue_joint_learning; flat SAC21/24 versus warm19/24 on seen new dev; candidate fixedfactor20/24; revision and controls running; independent advantage unverified",
     "S6": "not_started",
     "S7": "not_started"
   },
@@ -1522,5 +1522,30 @@
     "method_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
     "retained": "True learned three-grasp predecessor and recurrent successor, exact executed identity controls, transaction checkpoints, current-policy joint trajectories",
     "next_decision": "Test omitted legal physical Options at real handoffs to determine whether the frozen two-proposal interface leaves repeatable recovery opportunity. Share any expanded authority across warm baseline and ordinary joint RL; do not expand unsupported MC-mix, alias-critic or paired-PG mechanisms. Preserve native Peg100 and sealed isolation."
+  },
+  "action_frontier_20261107": {
+    "status": "IN_PROGRESS",
+    "root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107",
+    "completed_design": {
+      "episodes": 256,
+      "scenes": 16,
+      "warm": 8,
+      "best_design_fixed": 12,
+      "finite_union": 14,
+      "scope": "training design, not deployed oracle"
+    },
+    "completed_first_seed": {
+      "seed": 32201,
+      "episodes_per_arm": 128,
+      "shared_design_episodes": 256,
+      "dev_n": 24,
+      "warm": 19,
+      "sac": 21,
+      "factor": 20
+    },
+    "historical_initialization_erratum": "Prior31901/31902 differ in exploration RNG, not initial network weights; scores preserved. New reseed-after-Warm fix and exact CPU regression passed.",
+    "running": "supervised32201 and frozen development controls; inspect logs/checkpoints before starting more processes",
+    "revision": "train_target_chart_option.py; actual target geometry conditioning, all physical/control/learning permissions shared; unit checks only until native training completes",
+    "reserved_confirmation": "765600-765631 remains unopened at this state update"
   }
 }
