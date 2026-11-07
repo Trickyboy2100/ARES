@@ -23,4 +23,9 @@ for ax in axes[-1]:ax.set_xlabel('Actual native physical step')
 out['credit_caution']='765402 first becomes natively successful at93, before its physical5 intervention at94. Do not attribute rescue to that late action. Frozen proposal-support deployment ablation tests whether added catalogue choices are necessary for current observed scores.'
 (a.root/'RESCUE_MECHANISMS.json').write_text(json.dumps(out,indent=2));fig.tight_layout()
 for suffix in ['png','pdf']:fig.savefig(a.figures/('learned_rescue_physics.'+suffix),dpi=220)
+fig.canvas.draw()
+for i,seed in enumerate([765402,765423]):
+ for j,name in enumerate(['axial','lateral']):
+  box=axes[i,j].get_tightbbox(fig.canvas.get_renderer()).transformed(fig.dpi_scale_trans.inverted()).expanded(1.03,1.05)
+  for suffix in ['png','pdf']:fig.savefig(a.figures/(f'rescue_{seed}_{name}.'+suffix),dpi=220,bbox_inches=box)
 print(json.dumps({k:v.get('identical_prefix_through_step') for k,v in out.items() if isinstance(v,dict)}))

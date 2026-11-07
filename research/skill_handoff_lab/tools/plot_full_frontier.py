@@ -6,7 +6,18 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=True);plt.rcParams.update({'font.size':11,'axes.spines.top':False,'axes.spines.right':False})
-def save(fig,name):fig.tight_layout();fig.savefig(a.out/(name+'.png'),dpi=220);fig.savefig(a.out/(name+'.pdf'));plt.close(fig)
+def save(fig,name):
+ fig.tight_layout()
+ for ext in ['png','pdf']:fig.savefig(a.out/(name+'.'+ext),dpi=220)
+ if len(fig.axes)>1:
+  fig.canvas.draw()
+  for i,ax in enumerate(fig.axes):
+   box=ax.get_tightbbox(fig.canvas.get_renderer()).transformed(fig.dpi_scale_trans.inverted()).expanded(1.03,1.05)
+   for ext in ['png','pdf']:fig.savefig(a.out/(name+f'_panel{i+1}.'+ext),dpi=220,bbox_inches=box)
+ plt.close(fig)
+def run_style(run):
+ method=run.split('_')[0];seed=run.rsplit('_',1)[1];names={'sac':'Flat SAC','factor':'Fixed reference/offset','supervised':'Outcome supervision','chart':'Target-chart SAC'};colors={'sac':'#287a98','factor':'#bd783b','supervised':'#8172a6','chart':'#47946c'}
+ return dict(label=names.get(method,method)+' /'+seed,color=colors.get(method,'#555555'),linestyle='--'if seed=='32202'else'-')
 rows=sum([json.loads(f.read_text())for f in a.root.glob('design_*/RESULTS.json')],[]);seeds=sorted(set(r['seed']for r in rows));labels=['warm']+[f'a{k}'for k in range(12)];mat=np.array([[next(r['success']for r in rows if r['seed']==s and r['label']==label)for s in seeds]for label in labels],int)
 fig,ax=plt.subplots(figsize=(11,7));ax.imshow(mat,cmap='Blues',vmin=0,vmax=1,aspect='auto');ax.set_xticks(range(len(seeds)),[str(s)[-3:]for s in seeds],rotation=45);names=['Warm','Continue','Refresh','Local Y+','Local Y−','Local Z+','Local Z−','Withdraw','Hold','Refresh Y+','Refresh Y−','Refresh Z+','Refresh Z−'];ax.set_yticks(range(13),names)
 for y in range(13):
@@ -30,7 +41,7 @@ for f in sorted(a.root.glob('*_322*/HISTORY.json')):
  for v in h:
   if v['kind']=='eval':curve.setdefault(v['checkpoint'],[]).append(v['row']['success'])
  curve={k:v for k,v in curve.items()if len(v)==24}
- if curve:found=True;ax.plot(sorted(curve),[sum(curve[k])for k in sorted(curve)],'o-',label=f.parent.name)
+ if curve:found=True;ax.plot(sorted(curve),[sum(curve[k])for k in sorted(curve)],marker='o',**run_style(f.parent.name))
 ax.set(xlabel='Own-policy training episodes',ylabel='Complete native successes /24',ylim=(0,24),title='Fixed development765400–423; matched catalogue')
 if found:ax.legend(fontsize=9);save(fig,'learning_curves')
 else:plt.close(fig)
@@ -49,5 +60,15 @@ if (a.root/'LEARNING_SUMMARY.json').exists():
  fig,ax=plt.subplots(figsize=(10,5))
  for run,data in summary['learning'].items():
   ys=np.array([v['success'] for v in data['curve']],float)
-  if len(ys)>=16:ax.plot(np.arange(16,len(ys)+1),np.convolve(ys,np.ones(16)/16,mode='valid'),label=run)
+  if len(ys)>=16:ax.plot(np.arange(16,len(ys)+1),np.convolve(ys,np.ones(16)/16,mode='valid'),**run_style(run))
+ ax.axvline(64,color='#888888',ls=':',lw=1,label='Warm behavior mixing ends')
  ax.set(xlabel='Own physical training episodes',ylabel='Rolling16 native success fraction',ylim=(0,1),title='Actual exploratory behavior; not greedy deployment performance');ax.legend(fontsize=9);save(fig,'online_behavior')
+
+ if 'confirm_warm' in groups:
+  selected=[k for k in groups if k.startswith('confirm_')];b=groups['confirm_warm']['outcomes']
+  if all(set(groups[k]['outcomes'])==set(b) for k in selected):
+   fig,ax=plt.subplots(figsize=(10,5));y=np.arange(len(selected));rr=[];gg=[]
+   for k in selected:
+    v=groups[k]['outcomes'];rr.append(sum(v[s]and not b[s]for s in b));gg.append(sum(b[s]and not v[s]for s in b))
+   ax.barh(y,rr,color='#287a98',label='Rescue');ax.barh(y,-np.array(gg),color='#c8654c',label='Regression');ax.axvline(0,color='#555',lw=.8)
+   ax.set_yticks(y,[f'{k.removeprefix("confirm_")} ({groups[k]["success"]}/{groups[k]["n"]})' for k in selected]);ax.set(xlabel=f'Paired scene count versus warm ({sum(b.values())}/{len(b)})',title='Frozen policies on new natural conditions765600–631');ax.legend();save(fig,'confirmation_pairings')
