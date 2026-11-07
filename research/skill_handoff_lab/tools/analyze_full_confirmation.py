@@ -5,7 +5,7 @@ p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);a=p
 base={r['seed']:r for r in json.loads((a.root/'confirm_warm/RESULTS.json').read_text())};out={}
 def load(r):return json.load(gzip.open(r['path'],'rt'))
 def signature(s):return {k:s[k]for k in ['q','qvel','tcp','peg','action']}
-for f in sorted(a.root.glob('confirm_*/RESULTS.json')):
+for f in sorted(list(a.root.glob('confirm_*/RESULTS.json'))+list(a.root.glob('postconfirm_*/RESULTS.json'))):
  rows=json.loads(f.read_text());assert len(rows)==32
  cases=[]
  for r in rows:

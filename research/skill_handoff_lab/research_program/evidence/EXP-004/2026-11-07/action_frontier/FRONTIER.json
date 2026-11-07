@@ -1,0 +1,695 @@
+{
+  "totals": {
+    "complete_scenes": 16,
+    "native_episodes": 256,
+    "native_steps": 25600,
+    "planner_queries": 2216,
+    "warm": 8,
+    "finite_union": 14,
+    "added_physical_scenes": 6,
+    "fixed_grasps": {
+      "g0": 7,
+      "g1": 8,
+      "g2": 7
+    },
+    "physical_only_new_success": 4
+  },
+  "scenes": {
+    "765000": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": true,
+      "warm_grasp": 1,
+      "physical_successes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10
+      ],
+      "physical_failures": [
+        1,
+        6,
+        7,
+        11
+      ],
+      "grasp_results": {
+        "g0": true,
+        "g1": true,
+        "g2": true
+      },
+      "finite_union": true,
+      "added_over_warm": false,
+      "measured_actions_omitted_by_two_proposals": [
+        3,
+        4,
+        5,
+        8,
+        9,
+        10
+      ],
+      "only_new_physical_success": false,
+      "first_rear_step": 64,
+      "remaining": 36,
+      "proposals": [
+        0,
+        2
+      ],
+      "error": null
+    },
+    "765001": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": true,
+      "warm_grasp": 1,
+      "physical_successes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "physical_failures": [
+        8,
+        11
+      ],
+      "grasp_results": {
+        "g0": true,
+        "g1": true,
+        "g2": true
+      },
+      "finite_union": true,
+      "added_over_warm": false,
+      "measured_actions_omitted_by_two_proposals": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "only_new_physical_success": false,
+      "first_rear_step": 55,
+      "remaining": 45,
+      "proposals": [
+        0,
+        2
+      ],
+      "error": null
+    },
+    "765002": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": false,
+      "warm_grasp": 1,
+      "physical_successes": [],
+      "physical_failures": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "grasp_results": {
+        "g0": false,
+        "g1": false,
+        "g2": false
+      },
+      "finite_union": false,
+      "added_over_warm": false,
+      "measured_actions_omitted_by_two_proposals": [],
+      "only_new_physical_success": false,
+      "first_rear_step": 82,
+      "remaining": 18,
+      "proposals": [
+        9,
+        10
+      ],
+      "error": null
+    },
+    "765003": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": false,
+      "warm_grasp": 0,
+      "physical_successes": [
+        0,
+        2,
+        4,
+        9,
+        10
+      ],
+      "physical_failures": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        8,
+        11
+      ],
+      "grasp_results": {
+        "g0": false,
+        "g1": false,
+        "g2": false
+      },
+      "finite_union": true,
+      "added_over_warm": true,
+      "measured_actions_omitted_by_two_proposals": [
+        0,
+        4,
+        9,
+        10
+      ],
+      "only_new_physical_success": false,
+      "first_rear_step": 47,
+      "remaining": 53,
+      "proposals": [
+        5,
+        2
+      ],
+      "error": null
+    },
+    "765004": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": false,
+      "warm_grasp": 1,
+      "physical_successes": [
+        5
+      ],
+      "physical_failures": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "grasp_results": {
+        "g0": false,
+        "g1": false,
+        "g2": false
+      },
+      "finite_union": true,
+      "added_over_warm": true,
+      "measured_actions_omitted_by_two_proposals": [
+        5
+      ],
+      "only_new_physical_success": true,
+      "first_rear_step": 60,
+      "remaining": 40,
+      "proposals": [
+        0,
+        2
+      ],
+      "error": null
+    },
+    "765005": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": false,
+      "warm_grasp": 1,
+      "physical_successes": [],
+      "physical_failures": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "grasp_results": {
+        "g0": false,
+        "g1": false,
+        "g2": false
+      },
+      "finite_union": false,
+      "added_over_warm": false,
+      "measured_actions_omitted_by_two_proposals": [],
+      "only_new_physical_success": false,
+      "first_rear_step": 86,
+      "remaining": 14,
+      "proposals": [
+        9,
+        10
+      ],
+      "error": null
+    },
+    "765006": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": false,
+      "warm_grasp": 1,
+      "physical_successes": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "physical_failures": [
+        0,
+        1,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "grasp_results": {
+        "g0": false,
+        "g1": false,
+        "g2": false
+      },
+      "finite_union": true,
+      "added_over_warm": true,
+      "measured_actions_omitted_by_two_proposals": [
+        3,
+        4,
+        5
+      ],
+      "only_new_physical_success": false,
+      "first_rear_step": 67,
+      "remaining": 33,
+      "proposals": [
+        0,
+        2
+      ],
+      "error": null
+    },
+    "765007": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": true,
+      "warm_grasp": 0,
+      "physical_successes": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "physical_failures": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "grasp_results": {
+        "g0": true,
+        "g1": true,
+        "g2": true
+      },
+      "finite_union": true,
+      "added_over_warm": false,
+      "measured_actions_omitted_by_two_proposals": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "only_new_physical_success": false,
+      "first_rear_step": 49,
+      "remaining": 51,
+      "proposals": [
+        0,
+        0
+      ],
+      "error": null
+    },
+    "765008": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": true,
+      "warm_grasp": 1,
+      "physical_successes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        10
+      ],
+      "physical_failures": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        11
+      ],
+      "grasp_results": {
+        "g0": true,
+        "g1": true,
+        "g2": true
+      },
+      "finite_union": true,
+      "added_over_warm": false,
+      "measured_actions_omitted_by_two_proposals": [
+        0,
+        3,
+        4,
+        5,
+        10
+      ],
+      "only_new_physical_success": false,
+      "first_rear_step": 68,
+      "remaining": 32,
+      "proposals": [
+        9,
+        2
+      ],
+      "error": null
+    },
+    "765009": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": true,
+      "warm_grasp": 1,
+      "physical_successes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        10
+      ],
+      "physical_failures": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        11
+      ],
+      "grasp_results": {
+        "g0": true,
+        "g1": true,
+        "g2": false
+      },
+      "finite_union": true,
+      "added_over_warm": false,
+      "measured_actions_omitted_by_two_proposals": [
+        2,
+        3,
+        4,
+        10
+      ],
+      "only_new_physical_success": false,
+      "first_rear_step": 71,
+      "remaining": 29,
+      "proposals": [
+        5,
+        0
+      ],
+      "error": null
+    },
+    "765010": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": false,
+      "warm_grasp": 1,
+      "physical_successes": [
+        8
+      ],
+      "physical_failures": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "grasp_results": {
+        "g0": false,
+        "g1": false,
+        "g2": true
+      },
+      "finite_union": true,
+      "added_over_warm": true,
+      "measured_actions_omitted_by_two_proposals": [
+        8
+      ],
+      "only_new_physical_success": true,
+      "first_rear_step": 79,
+      "remaining": 21,
+      "proposals": [
+        0,
+        2
+      ],
+      "error": null
+    },
+    "765011": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": true,
+      "warm_grasp": 1,
+      "physical_successes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "physical_failures": [
+        11
+      ],
+      "grasp_results": {
+        "g0": true,
+        "g1": true,
+        "g2": false
+      },
+      "finite_union": true,
+      "added_over_warm": false,
+      "measured_actions_omitted_by_two_proposals": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "only_new_physical_success": false,
+      "first_rear_step": 55,
+      "remaining": 45,
+      "proposals": [
+        0,
+        2
+      ],
+      "error": null
+    },
+    "765012": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": false,
+      "warm_grasp": 1,
+      "physical_successes": [
+        2,
+        3,
+        5
+      ],
+      "physical_failures": [
+        0,
+        1,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "grasp_results": {
+        "g0": false,
+        "g1": false,
+        "g2": false
+      },
+      "finite_union": true,
+      "added_over_warm": true,
+      "measured_actions_omitted_by_two_proposals": [
+        2,
+        3,
+        5
+      ],
+      "only_new_physical_success": true,
+      "first_rear_step": 61,
+      "remaining": 39,
+      "proposals": [
+        0,
+        1
+      ],
+      "error": null
+    },
+    "765013": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": false,
+      "warm_grasp": 1,
+      "physical_successes": [
+        1,
+        5
+      ],
+      "physical_failures": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "grasp_results": {
+        "g0": false,
+        "g1": false,
+        "g2": false
+      },
+      "finite_union": true,
+      "added_over_warm": true,
+      "measured_actions_omitted_by_two_proposals": [
+        1,
+        5
+      ],
+      "only_new_physical_success": true,
+      "first_rear_step": 57,
+      "remaining": 43,
+      "proposals": [
+        0,
+        2
+      ],
+      "error": null
+    },
+    "765014": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": true,
+      "warm_grasp": 1,
+      "physical_successes": [
+        0,
+        2,
+        4,
+        5,
+        10
+      ],
+      "physical_failures": [
+        1,
+        3,
+        6,
+        7,
+        8,
+        9,
+        11
+      ],
+      "grasp_results": {
+        "g0": false,
+        "g1": true,
+        "g2": true
+      },
+      "finite_union": true,
+      "added_over_warm": false,
+      "measured_actions_omitted_by_two_proposals": [
+        4,
+        5,
+        10
+      ],
+      "only_new_physical_success": false,
+      "first_rear_step": 49,
+      "remaining": 51,
+      "proposals": [
+        0,
+        2
+      ],
+      "error": null
+    },
+    "765015": {
+      "complete": true,
+      "unexecuted_requests": [],
+      "warm_success": true,
+      "warm_grasp": 1,
+      "physical_successes": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "physical_failures": [
+        1,
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "grasp_results": {
+        "g0": true,
+        "g1": true,
+        "g2": true
+      },
+      "finite_union": true,
+      "added_over_warm": false,
+      "measured_actions_omitted_by_two_proposals": [
+        4,
+        5
+      ],
+      "only_new_physical_success": false,
+      "first_rear_step": 66,
+      "remaining": 34,
+      "proposals": [
+        0,
+        2
+      ],
+      "error": null
+    }
+  },
+  "scope": "first reachable rear boundary, shared warm suffix. Old-proposal support uses measured physical0 and proposals; strong rule CHUNK is not generally the same as a full physical10 Option. Union is finite observed opportunity, not a deployed policy."
+}

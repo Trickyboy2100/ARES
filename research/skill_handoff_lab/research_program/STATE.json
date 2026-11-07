@@ -8,14 +8,14 @@
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
-  "latest_evidence": "evidence/EXP-004/2026-11-06/joint_continuation/README.md",
-  "next_action": "Continue action_frontier_20261107 in-progress native learning: finish supervised32201 and frozen controls, train target-chart revision and independent fresh-network SAC32202. Read CURRENT/START manifests before any resume. Keep at most two physical processes; do not repeat completed256 design episodes or SAC/factor32201@128. Compare fixed final and distinguish catalogue opportunity from deployed gain.",
+  "latest_evidence": "evidence/EXP-004/2026-11-07/action_frontier/README.md",
+  "next_action": "Inherit completed action_frontier models/data; do not repeat completed1882 native episodes. Freeze warm/oldRL and SAC32201/32202 as strong controls. Extra localZ-minus Options enable new full-task successes765625/765627 in a same-model support ablation, but localZ-plus/refreshedY-minus cause regressions. Study reliable intervention selection under actual reference/continuation and current-policy experience on fresh training states, with matched authority and budget. Do not expand failed fixed/state coordinate kernels; keep new confirmation now-seen and sealed tests unopened.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
     "S3": "initial_action_authority_confirmed_identification_incomplete",
     "S4": "active_STAP_replication_and_multi_skill_credible_method",
-    "S5": "active_full_catalogue_joint_learning; flat SAC21/24 versus warm19/24 on seen new dev; candidate fixedfactor20/24; revision and controls running; independent advantage unverified",
+    "S5": "completed_action_frontier_cycle; ordinary baseline retained, coordinate candidates unsupported; independent method gain UNVERIFIED",
     "S6": "not_started",
     "S7": "not_started"
   },
@@ -80,7 +80,7 @@
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update existing cards, DECISIONS, EVIDENCE_LEDGER and STATE after evidence; develop paper concurrently with claim-specific limitations. Independent algorithm superiority requires actual comparative evidence, not a prerequisite for writing or second-task preparation.",
-  "latest_run_summary": "Three joint learning iterations;448 own episodes;1163 total native episodes/116300steps/9857queries. MC mixing did not preserve13/16; shared execution critic7/16 vs flat9/16; paired whole-return PG and SAC both9/16. Frozen prior RL21/32 vs initializer20/rule19 is preliminary, not independent robust gain.",
+  "latest_run_summary": "640 own-policy episodes, five128-episode learners; 1882 native episodes total. Frozen confirmation: chart_state_32201 19/32; old_rl 22/32; rule 20/32; sac_32201 19/32; sac_32202 22/32; supervised_32201 18/32; warm 21/32. Candidate coordinate sharing not independently better; retain ordinary SAC.",
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
   "research_review_20261102": {
     "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
@@ -1524,28 +1524,80 @@
     "next_decision": "Test omitted legal physical Options at real handoffs to determine whether the frozen two-proposal interface leaves repeatable recovery opportunity. Share any expanded authority across warm baseline and ordinary joint RL; do not expand unsupported MC-mix, alias-critic or paired-PG mechanisms. Preserve native Peg100 and sealed isolation."
   },
   "action_frontier_20261107": {
-    "status": "IN_PROGRESS",
-    "root": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107",
-    "completed_design": {
-      "episodes": 256,
-      "scenes": 16,
-      "warm": 8,
-      "best_design_fixed": 12,
-      "finite_union": 14,
-      "scope": "training design, not deployed oracle"
-    },
-    "completed_first_seed": {
-      "seed": 32201,
-      "episodes_per_arm": 128,
+    "status": "COMPLETED",
+    "evidence": "evidence/EXP-004/2026-11-07/action_frontier/README.md",
+    "cost": {
+      "unique_native_episodes": 1882,
+      "physical_steps": 188200,
+      "planning_queries": 16027,
+      "planner_wall_s": 77.25510042638052,
+      "summed_episode_wall_s": 11657.309060874511,
       "shared_design_episodes": 256,
-      "dev_n": 24,
-      "warm": 19,
-      "sac": 21,
-      "factor": 20
+      "startup_failed_episodes": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/sac_32201/physics/00025_765100_train_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/factor_32201/physics/00025_765100_train_0.json.gz"
+      ],
+      "accounting": "Unique run cost includes design, every evaluation, and two startup failures. Each learner also consumed the common 256-episode design replay. Inherited pretraining is separately pinned, not free online interaction."
     },
-    "historical_initialization_erratum": "Prior31901/31902 differ in exploration RNG, not initial network weights; scores preserved. New reseed-after-Warm fix and exact CPU regression passed.",
-    "running": "supervised32201 and frozen development controls; inspect logs/checkpoints before starting more processes",
-    "revision": "train_target_chart_option.py; actual target geometry conditioning, all physical/control/learning permissions shared; unit checks only until native training completes",
-    "reserved_confirmation": "765600-765631 remains unopened at this state update"
+    "own_training_episodes": 640,
+    "updates": 25600,
+    "confirmation": {
+      "confirm_chart_state_32201": {
+        "n": 32,
+        "success": 19
+      },
+      "confirm_old_rl": {
+        "n": 32,
+        "success": 22
+      },
+      "confirm_rule": {
+        "n": 32,
+        "success": 20
+      },
+      "confirm_sac_32201": {
+        "n": 32,
+        "success": 19
+      },
+      "confirm_sac_32202": {
+        "n": 32,
+        "success": 22
+      },
+      "confirm_supervised_32201": {
+        "n": 32,
+        "success": 18
+      },
+      "confirm_warm": {
+        "n": 32,
+        "success": 21
+      }
+    },
+    "seed_status": "32201/32202 actual initial hidden and Q tensors differ; old31901/31902 erratum preserved",
+    "candidate_status": "fixed20/24 and state19/24 versus ordinary21/24; no independent benefit demonstrated",
+    "next": "Inherit completed action_frontier models/data; do not repeat completed1882 native episodes. Freeze warm/oldRL and SAC32201/32202 as strong controls. Extra localZ-minus Options enable new full-task successes765625/765627 in a same-model support ablation, but localZ-plus/refreshedY-minus cause regressions. Study reliable intervention selection under actual reference/continuation and current-policy experience on fresh training states, with matched authority and budget. Do not expand failed fixed/state coordinate kernels; keep new confirmation now-seen and sealed tests unopened.",
+    "posthoc_support_effect": {
+      "32201": {
+        "full": 19,
+        "restricted": 20,
+        "full_only": [
+          "765625"
+        ],
+        "restricted_only": [
+          "765608",
+          "765626"
+        ]
+      },
+      "32202": {
+        "full": 22,
+        "restricted": 21,
+        "full_only": [
+          "765625",
+          "765627"
+        ],
+        "restricted_only": [
+          "765604"
+        ]
+      }
+    },
+    "retained_capability": "LOCAL_EXECUTION_DEPENDENCE: new deployed localZ-minus rescues, balanced by harmful choices; no robust independent candidate advantage"
   }
 }

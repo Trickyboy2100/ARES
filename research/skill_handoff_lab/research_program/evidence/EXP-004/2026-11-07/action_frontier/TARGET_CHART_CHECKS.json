@@ -1,0 +1,15 @@
+{
+  "states_rank_checked": 1463,
+  "minimum_rank": 13,
+  "common_initial_greedy": true,
+  "common_critic_initialization": true,
+  "target_geometry_replans_checked": 413,
+  "attempted_replans_without_returned_target": 1,
+  "max_target_coordinate_error_m": 4.3554149918578755e-08,
+  "optimizer_unit_updates": 2,
+  "units": {
+    "translation_m": 0.003,
+    "rotation_deg": 5
+  },
+  "scope": "same predecision observations; no new physics; not complete-Option outcome equivalence"
+}

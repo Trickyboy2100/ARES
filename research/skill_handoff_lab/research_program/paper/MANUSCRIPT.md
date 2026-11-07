@@ -322,7 +322,7 @@ algorithm or motor-level residual controller is asserted.
 
 The later execution-conditioned revision gives identical executed proposals equal scalar values while granting the flat comparator identical identity observations. Four native alias trajectories verify execution equivalence, but success falls from9/16 to7/16; numerical consistency does not imply improved policy. The third revision uses an action-independent root reference return to train full sampled joint trajectories with clipped episodic policy gradients. The matched SAC receives identical physical reference data. Both finish9/16, with no new deployment success. A training rescue is explained by either predecessor or successor change alone in a subsequent native factorial, so synergy is not established. These are executed negative controls, not new algorithm superiority.
 
-Frozen historical policies on32 new natural scenes score19(rule),20(supervised initialization),21(prior online RL),20(supervised replay). Small paired gains do not establish robust online advantage. The first revision uses two new-network/exploration seeds with shared pretraining; later revisions one. Fixed-final model selection and cohort separation are retained. The run costs1163 full native episodes/116300steps/9857planner calls, including448 own-policy training episodes. All models, actual support, failures and costs are retained in [the evidence](../evidence/EXP-004/2026-11-06/joint_continuation/README.md).
+Frozen historical policies on32 new natural scenes score19(rule),20(supervised initialization),21(prior online RL),20(supervised replay). Small paired gains do not establish robust online advantage. The first revision uses two exploration seeds with shared pretrained assets and, as corrected on2026-11-07, identical initial network weights; later revisions one. Fixed-final model selection and cohort separation are retained. The run costs1163 full native episodes/116300steps/9857planner calls, including448 own-policy training episodes. All models, actual support, failures and costs are retained in [the evidence](../evidence/EXP-004/2026-11-06/joint_continuation/README.md).
 
 The paper can now describe a genuinely sequential executable interface, current-policy physical collection, the limits of fixed-suffix credit, and controlled failed learning mechanisms. It cannot yet claim independent joint RL improvement, safe policy improvement, unrestricted action coverage, convergence, or second-task transfer. The next discriminating experiment concerns useful legal physical Options omitted by the frozen proposal catalogue.
 
@@ -340,7 +340,7 @@ A strong skill controller may expose more executable behavior than a learned sel
 
 ### Method: shared executable interface and a falsifiable representation
 
-All new learners share three predecessor grasp choices and a 13-label successor catalogue: a rule chunk and the twelve existing physical actions, including current-queue continuation, measured-reference refresh, signed local target offsets, withdrawal, hold, and atomic refreshed offsets. Exact rule/continue aliases are masked when the rule returns physical zero. New corrections are disallowed after observed grasp loss or when fewer than four control steps remain. A nonzero physical action retains its inherited atomic continuation and releases control at its actual termination; an action-zero chunk never undoes earlier replanning. The task remains native PegInsertionSide-v1 with 100 steps and unchanged final success.
+All new learners share three predecessor grasp choices and a 13-label successor catalogue: a rule chunk and the twelve existing physical actions, including current-queue continuation, measured-reference refresh, signed local target offsets, withdrawal, hold, and atomic refreshed offsets. Exact rule/continue aliases are masked when the rule returns physical zero. Explicit learned correction Options are masked after observed grasp loss or when fewer than four control steps remain. The inherited rule chunk remains available and can itself request a correction; this mask is not a universal safety shield. A nonzero physical action retains its inherited atomic continuation and releases control at its actual termination; an action-zero chunk never undoes earlier replanning. The task remains native PegInsertionSide-v1 with 100 steps and unchanged final success.
 
 The actual predecessor, queue, contact evolution and remaining budget are continuous across skill boundaries. Replay stores the executed Option, actual duration, successor observation, terminal outcome and termination. The shared ordinary discrete SMDP-SAC uses twin values with Mean-Q extraction in its soft Bellman target, measured Option rewards, and gamma=1 for this finite native-horizon objective. Successful-trajectory anchoring and gradual warm-to-learned exploration are common mature ingredients, not contributions. The target is `r_o + (1-d_o) E_pi[mean(Q_target(s',a')) - alpha log pi(a'|s')]`. Because entropy is per Option decision, this objective is not invariant to arbitrary temporal subdivision; the present comparisons hold the executor and catalogue fixed. Recorded physical duration is not presented as discounting at gamma=1.
 
@@ -355,3 +355,54 @@ Across 256 complete native design episodes, the recurrent warm policy succeeds o
 For the same signed Y-plus direction, local versus refreshed execution gives opposite final outcomes in10/16 design states. State765003 succeeds locally but fails with refresh;765010 exhibits the reverse. The actual reconstructed reference shifts are measured from saved observations, not described as amplification of a3mm motor command. This supports distinguishing execution references, while warning against unconditional direction sharing.
 
 The first new-network seed's fixed development scores at0/32/64 own episodes are19/17/19 out of24 for both flat SAC and the coordinate candidate. At32 each rescues one initial failure and breaks three initial successes; at64 both return to the initial outcome vector. These completed intermediate observations do not establish candidate benefit. The equally budgeted128-episode continuations and frozen comparator evaluations are reported below when complete; no checkpoint is retrospectively promoted as the final result.
+
+
+### Completed online comparison and evidence-driven revision
+
+The constant coordinate candidate did not outperform the flat policy. We then used only currently observed active-to-refreshed target translation/rotation and legal offsets to define a Gaussian action-relation kernel. For nine replanning actions, the row-normalized matrix `.75I+.25K(s)` transforms residual Actor logits; rule/continue/withdraw/hold and queue-continuation aliases remain isolated. No new learned head, planning query or future outcome is supplied. The413 returned physical target coordinates agree with this construction within4.36e-8m; one failed parameterization is retained. This verifies the interface, not benefit. AGILE and prior action-representation learning already motivate state-dependent action relations; our particular execution-reference construction is a tested hypothesis, not established general novelty.
+
+| Learner | 0 | 32 | 64 | 128 | Own train successes | Actual decisions | Updates | Own planning calls |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| chart_state_32201 | 19/24 | 16/24 | 18/24 | 19/24 | 68/128 | 779 | 5120 | 1116 |
+| factor_32201 | 19/24 | 17/24 | 19/24 | 20/24 | 62/128 | 768 | 5120 | 1120 |
+| sac_32201 | 19/24 | 17/24 | 19/24 | 21/24 | 65/128 | 779 | 5120 | 1129 |
+| sac_32202 | 19/24 | 19/24 | 20/24 | 21/24 | 66/128 | 755 | 5120 | 1135 |
+| supervised_32201 | 19/24 | 20/24 | 17/24 | 16/24 | 64/128 | 693 | 5120 | 1141 |
+
+
+### Frozen natural-condition confirmation
+
+| Fixed policy | Native success | Rescue | Regression | Planner calls |
+|---|---:|---:|---:|---:|
+| confirm_chart_state_32201 | 19/32 | 1 | 3 | 276 |
+| confirm_old_rl | 22/32 | 1 | 0 | 266 |
+| confirm_rule | 20/32 | 0 | 1 | 259 |
+| confirm_sac_32201 | 19/32 | 1 | 3 | 267 |
+| confirm_sac_32202 | 22/32 | 3 | 2 | 278 |
+| confirm_supervised_32201 | 18/32 | 3 | 6 | 272 |
+| confirm_warm | 21/32 | 0 | 0 | 266 |
+
+All final models were fixed before opening765600–631. This is a fresh development-confirmation cohort, not sealed testing. The two SAC models share evaluation scenes and cannot be treated as64 independent samples. Both receive256 common design episodes plus128 own-policy episodes, as do the three first-seed alternatives. Historical retained RL/rule comparisons have distinct inherited budgets; only new trained arms support a matched-budget interpretation.
+
+### Mechanistic controls and limitations
+
+Mean-Q on the frozen flat network scores13/24, as does changing only rear extraction while retaining Actor grasp; changing only grasp extraction scores19/24 against Actor21. This identifies a rear policy-extraction failure, but the Q target includes shaped reward/entropy and an Actor continuation, so it does not isolate value calibration alone. Restricting the learned Actor to old proposal support retains21/24; the expanded catalogue's causal necessity for this gain is not established. The chart candidate loses765416 by missing an early useful Y+ Option under an identical68-step prefix; its more accurate geometry does not ensure better policy improvement.
+
+The independent candidate contribution remains unsupported. Ordinary online skill learning is retained as a reproducible baseline; the next methodological problem is execution- and continuation-consistent policy improvement, with matched data and action authority. This cycle contributes actual implemented comparisons, counterexamples and models rather than a new success claim. Total measured cost is1882 native episodes and16027 planner calls, including startup failures, design and all evaluations. Full evidence, source pins, per-arm costs and two complete physical-state videos are in [the dated release](../evidence/EXP-004/2026-11-07/action_frontier/README.md).
+
+
+## Post-confirmation mechanism check: deployed action support
+
+Both frozen SAC seeds are reexecuted on all32 now-seen confirmation scenes with only current historical proposal physical IDs plus rule allowed. No model, horizon, reward, planner or initial state changes. These64 additional native episodes test execution dependence, not new independent generalization or a retrained restricted-learning comparison.
+
+| Network seed | Full catalogue | Old proposal support | Full-only successful scenes | Restricted-only successful scenes |
+|---|---:|---:|---|---|
+| 32201 | 19/32 | 20/32 | 765625 | 765608, 765626 |
+| 32202 | 22/32 | 21/32 | 765625, 765627 | 765604 |
+
+The full-policy benefits and regressions must both be retained. Any full-only success supports necessity of the extra executed choices for this frozen policy on that state, not impossibility of every other old-support policy. This does not turn the failed coordinate candidates into an independent algorithm contribution. Exact physical prefixes, raw paths and complete boundary events are in POSTCONFIRM_SUPPORT_EFFECT.json.
+
+
+### Evidence-based retained capability and unresolved reliability
+
+The frozen second SAC network uses an additional localZ− Option to rescue765625 and765627. Removing expanded action support loses both; one harmful refreshedY− intervention in765604 is also removed. Full22/32 versus restricted21/32 is therefore a capability/retention tradeoff, not robust dominance. The first seed similarly gains765625 but breaks765608/765626 through localZ+, yielding19 versus restricted20. These are post-hoc same-model physical controls on now-seen conditions, not a new independent test. Ordinary SAC owns these gains; neither coordinate candidate earns credit. The task interface has a measured new deployed capability, while reliable selection is still unresolved.

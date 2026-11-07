@@ -1,0 +1,11 @@
+{
+  "scope": "Post-hoc mechanism ablation on now-seen frozen-confirmation cohort; not independent validation",
+  "trigger": "SAC32202 newly rescues765625/765627 not solved by warm/rule/oldRL; test execution dependence on expanded support",
+  "models": [
+    "sac_32201/CHECKPOINT_128.pt",
+    "sac_32202/CHECKPOINT_128.pt"
+  ],
+  "changes": "Only mask deployment to current historical proposal physical IDs plus rule. No weights, controller, success, horizon, or training changed. Both seeds, all32 scenes, not only successes.",
+  "limitation": "Does not retrain restricted learner, nor prove all old-support policies impossible",
+  "budget": 64
+}

@@ -1,0 +1,10 @@
+{
+  "reason": "Full Mean-Q changes grasp on11/24 SAC scenes and20/24 factor scenes.13/24 cannot be attributed solely to rear value errors.",
+  "controls": [
+    "Actor front +MeanQ rear",
+    "MeanQ front +Actor rear"
+  ],
+  "model": "sac_32201/CHECKPOINT_128.pt",
+  "scope": "native original-reset development decomposition, no learning and no task/controller change",
+  "no_claim": "Soft shaped Q is not a success probability; changing extraction changes the whole continuation policy. The contrasts identify affected boundaries, not uniquely Critic calibration."
+}

@@ -1,0 +1,165 @@
+{
+  "n_pairs": 576,
+  "n_scene_clusters": 16,
+  "unweighted_opposite_fraction": 0.3854166666666667,
+  "coupling_weighted_opposite_fraction": 0.2579452702848745,
+  "strongest_conflicting_pairs": [
+    {
+      "seed": 765009,
+      "actions": [
+        2,
+        9
+      ],
+      "weight": 0.12533263862133026,
+      "outcomes": [
+        true,
+        false
+      ],
+      "opposite": true
+    },
+    {
+      "seed": 765009,
+      "actions": [
+        1,
+        2
+      ],
+      "weight": 0.0978887751698494,
+      "outcomes": [
+        false,
+        true
+      ],
+      "opposite": true
+    },
+    {
+      "seed": 765012,
+      "actions": [
+        3,
+        4
+      ],
+      "weight": 0.09115037322044373,
+      "outcomes": [
+        true,
+        false
+      ],
+      "opposite": true
+    },
+    {
+      "seed": 765015,
+      "actions": [
+        3,
+        4
+      ],
+      "weight": 0.09115032851696014,
+      "outcomes": [
+        false,
+        true
+      ],
+      "opposite": true
+    },
+    {
+      "seed": 765004,
+      "actions": [
+        2,
+        5
+      ],
+      "weight": 0.09115023910999298,
+      "outcomes": [
+        false,
+        true
+      ],
+      "opposite": true
+    },
+    {
+      "seed": 765012,
+      "actions": [
+        2,
+        4
+      ],
+      "weight": 0.09114997088909149,
+      "outcomes": [
+        true,
+        false
+      ],
+      "opposite": true
+    },
+    {
+      "seed": 765004,
+      "actions": [
+        3,
+        5
+      ],
+      "weight": 0.09114724397659302,
+      "outcomes": [
+        false,
+        true
+      ],
+      "opposite": true
+    },
+    {
+      "seed": 765014,
+      "actions": [
+        3,
+        4
+      ],
+      "weight": 0.0911460816860199,
+      "outcomes": [
+        false,
+        true
+      ],
+      "opposite": true
+    },
+    {
+      "seed": 765014,
+      "actions": [
+        3,
+        5
+      ],
+      "weight": 0.09114493429660797,
+      "outcomes": [
+        false,
+        true
+      ],
+      "opposite": true
+    },
+    {
+      "seed": 765003,
+      "actions": [
+        2,
+        5
+      ],
+      "weight": 0.091142438352108,
+      "outcomes": [
+        true,
+        false
+      ],
+      "opposite": true
+    },
+    {
+      "seed": 765015,
+      "actions": [
+        3,
+        5
+      ],
+      "weight": 0.09113814681768417,
+      "outcomes": [
+        false,
+        true
+      ],
+      "opposite": true
+    },
+    {
+      "seed": 765013,
+      "actions": [
+        2,
+        5
+      ],
+      "weight": 0.09112195670604706,
+      "outcomes": [
+        false,
+        true
+      ],
+      "opposite": true
+    }
+  ],
+  "scope": "design-only within-state pair audit, clustered by16scenes; not576 independent scenes, not current-policy value labels; target closeness is not contact/trajectory equality"
+}

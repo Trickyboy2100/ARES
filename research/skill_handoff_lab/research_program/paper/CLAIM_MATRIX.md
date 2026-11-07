@@ -83,3 +83,25 @@ No population-level safety or SCI-level superiority follows from these small exp
 ### 2026-11-07 initialization erratum (historical scores unchanged)
 
 Direct checkpoint comparison shows joint_continuation sac_31901 and sac_31902 INITIAL Actor, Critic and target tensors are identical: the shared Gate constructor resets Torch RNG to31801 after the requested seed. The two runs have distinct exploration RNG, **not independent neural initialization**. Earlier independent-new-network wording is superseded. Their actual outcomes and negative evidence remain unchanged. The next full-catalogue learner reseeds after loading shared assets and verifies different hidden/Critic weights while keeping cross-arm initialization matched.
+
+
+## 2026-11-07 completed-cycle claims
+
+| Claim | Evidence | Status |
+|---|---|---|
+| Omitted legal physical opportunity exists |16 design states,256 reset executions; finite14 vs best fixed12 |LOCAL_PHYSICAL_EVIDENCE|
+| Expanded catalogue caused learned development gain |restricted deployed proposal support also21/24 |NOT_ESTABLISHED|
+| Stable ordinary online learning asset |two independent neural seeds21/24; confirmation chart_state_32201 19/32; old_rl 22/32; rule 20/32; sac_32201 19/32; sac_32202 22/32; supervised_32201 18/32; warm 21/32 |PRELIMINARY_BASELINE|
+| Reference/offset factor improves policy |20/24 vs flat21 |NOT_SUPPORTED|
+| State-conditioned target chart improves policy |19/24 vs flat21; confirmation in evidence |NOT_SUPPORTED_IN_CURRENT_COMPARISON|
+| Mean-Q deployment is a stronger default |rear-only13/24 vs Actor21 |REJECTED_LOCAL|
+| Necessary front/rear synergy |765010 separately rescued by grasp; no factorial necessity |UNVERIFIED|
+| Independent novel RL contribution |mature precedents; no consistent candidate advantage |UNVERIFIED|
+
+No unchanged historical scores or sealed tests were relabelled.
+
+| Claim | Evidence | Status |
+|---|---|---|
+| Additional deployed capability under expanded authority |Frozen SAC32202 loses765625/765627 when masked to old proposals; also avoids regression765604 |LOCAL_EXECUTION_DEPENDENCE|
+
+The above post-hoc evidence updates catalogue-dependence for new conditions only; the earlier seen24 support ablation still ties21/24. It is neither novel coordinate-method gain nor a retrained restricted-policy comparison.

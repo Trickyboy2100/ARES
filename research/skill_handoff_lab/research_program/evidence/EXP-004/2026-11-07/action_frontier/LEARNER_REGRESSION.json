@@ -1,0 +1,10 @@
+{
+  "distinct_network_seeds": true,
+  "matched_cross_arm_q": true,
+  "factor_rank": 13,
+  "initial_policy_checks": 209,
+  "legal_stochastic_draws": 200,
+  "exact_optimizer_and_rng_resume": true,
+  "unit_updates_per_learner": 3,
+  "scope": "CPU regression only; not research training or physical success"
+}

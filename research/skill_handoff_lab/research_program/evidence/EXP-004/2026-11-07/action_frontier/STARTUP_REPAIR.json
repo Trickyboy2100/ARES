@@ -1,0 +1,22 @@
+[
+  {
+    "arm": "sac",
+    "raw": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/sac_32201/physics/00025_765100_train_0.json.gz",
+    "raw_sha": "ac144a8291b0f56f661a45ff17794c162d4d638ecb7ec2d0ad1d2c2a2e4970ae",
+    "physical_steps": 100,
+    "effective_decisions": 0,
+    "optimizer_updates": 0,
+    "resume_cursor": 24,
+    "repair": "float(mask.sum()) before NumPy probability arithmetic; no failed transition in replay; existing initial evaluation retained"
+  },
+  {
+    "arm": "factor",
+    "raw": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/factor_32201/physics/00025_765100_train_0.json.gz",
+    "raw_sha": "105f33c9594ed2638ceed7f2a329e5d47bd55590cb33f9768a56e4aeab791384",
+    "physical_steps": 100,
+    "effective_decisions": 0,
+    "optimizer_updates": 0,
+    "resume_cursor": 24,
+    "repair": "float(mask.sum()) before NumPy probability arithmetic; no failed transition in replay; existing initial evaluation retained"
+  }
+]

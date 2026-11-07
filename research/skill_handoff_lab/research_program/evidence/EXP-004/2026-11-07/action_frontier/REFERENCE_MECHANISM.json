@@ -1,0 +1,200 @@
+[
+  {
+    "seed": 765003,
+    "physical": 2,
+    "success": true,
+    "step": 47,
+    "remaining": 53,
+    "proposals": [
+      5,
+      2
+    ],
+    "measured_refresh_minus_active_mm": [
+      -3.269611299037934,
+      -7.872501760721207,
+      -1.2252777814865112
+    ],
+    "requested_target_delta_mm": 2.9999997932463884,
+    "replanned": true,
+    "plan_failed": false,
+    "native_final": {
+      "success": [
+        true
+      ],
+      "peg_head_pos_at_hole": [
+        [
+          0.010471060872077942,
+          -0.0029712095856666565,
+          -0.0024257637560367584
+        ]
+      ]
+    },
+    "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/design_a/physics/00052_765003_a2.json.gz",
+    "sha": "8a80c50f9d49299a8eb9e889230c088a3a07414b0ff772e5a30d3424b05c2c37"
+  },
+  {
+    "seed": 765003,
+    "physical": 5,
+    "success": false,
+    "step": 47,
+    "remaining": 53,
+    "proposals": [
+      5,
+      2
+    ],
+    "measured_refresh_minus_active_mm": [
+      -3.269611299037934,
+      -7.872501760721207,
+      -1.2252777814865112
+    ],
+    "requested_target_delta_mm": 2.99999862909317,
+    "replanned": true,
+    "plan_failed": false,
+    "native_final": {
+      "success": [
+        false
+      ],
+      "peg_head_pos_at_hole": [
+        [
+          -0.10247312486171722,
+          0.004253804683685303,
+          -0.00020381063222885132
+        ]
+      ]
+    },
+    "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/design_a/physics/00055_765003_a5.json.gz",
+    "sha": "cc847e4987e0bcd3dc640c8553aa64f80670025fe773b3b4ee76916d6d97dbd7"
+  },
+  {
+    "seed": 765003,
+    "physical": 8,
+    "success": false,
+    "step": 47,
+    "remaining": 53,
+    "proposals": [
+      5,
+      2
+    ],
+    "measured_refresh_minus_active_mm": [
+      -3.269611299037934,
+      -7.872501760721207,
+      -1.2252777814865112
+    ],
+    "requested_target_delta_mm": 5.994407460093498,
+    "replanned": true,
+    "plan_failed": false,
+    "native_final": {
+      "success": [
+        false
+      ],
+      "peg_head_pos_at_hole": [
+        [
+          -0.10229408740997314,
+          0.0052789486944675446,
+          -0.003494914621114731
+        ]
+      ]
+    },
+    "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/design_a/physics/00058_765003_a8.json.gz",
+    "sha": "aaab6814a2339b40374dab4637fef51e53310361fd6553149542bbc0e9aabed2"
+  },
+  {
+    "seed": 765010,
+    "physical": 2,
+    "success": false,
+    "step": 79,
+    "remaining": 21,
+    "proposals": [
+      0,
+      2
+    ],
+    "measured_refresh_minus_active_mm": [
+      -6.835224479436874,
+      7.317464053630829,
+      -6.085112690925598
+    ],
+    "requested_target_delta_mm": 2.999999560415745,
+    "replanned": true,
+    "plan_failed": false,
+    "native_final": {
+      "success": [
+        false
+      ],
+      "peg_head_pos_at_hole": [
+        [
+          -0.11430603265762329,
+          -0.004219368100166321,
+          0.0003978312015533447
+        ]
+      ]
+    },
+    "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/design_b/physics/00036_765010_a2.json.gz",
+    "sha": "d49b93866ec88ba273876391d90177bbffcfb6b30da99e1a6c5e08016de0362c"
+  },
+  {
+    "seed": 765010,
+    "physical": 5,
+    "success": false,
+    "step": 79,
+    "remaining": 21,
+    "proposals": [
+      0,
+      2
+    ],
+    "measured_refresh_minus_active_mm": [
+      -6.835224479436874,
+      7.317464053630829,
+      -6.085112690925598
+    ],
+    "requested_target_delta_mm": 3.000006079673767,
+    "replanned": true,
+    "plan_failed": false,
+    "native_final": {
+      "success": [
+        false
+      ],
+      "peg_head_pos_at_hole": [
+        [
+          -0.07764896750450134,
+          -0.002971954643726349,
+          0.0006763935089111328
+        ]
+      ]
+    },
+    "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/design_b/physics/00039_765010_a5.json.gz",
+    "sha": "be790e311e897a17fd9d9263d05d080dcf85ce9a64ac125ac9a779b8c035b4fb"
+  },
+  {
+    "seed": 765010,
+    "physical": 8,
+    "success": true,
+    "step": 79,
+    "remaining": 21,
+    "proposals": [
+      0,
+      2
+    ],
+    "measured_refresh_minus_active_mm": [
+      -6.835224479436874,
+      7.317464053630829,
+      -6.085112690925598
+    ],
+    "requested_target_delta_mm": 13.791264034807682,
+    "replanned": true,
+    "plan_failed": false,
+    "native_final": {
+      "success": [
+        true
+      ],
+      "peg_head_pos_at_hole": [
+        [
+          -0.007409214973449707,
+          0.0004217997193336487,
+          -0.0014728903770446777
+        ]
+      ]
+    },
+    "source": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/design_b/physics/00042_765010_a8.json.gz",
+    "sha": "7388f3839c6aadce38658b9095f765d6f06e667839343a2fada983bfcbfd096d"
+  }
+]

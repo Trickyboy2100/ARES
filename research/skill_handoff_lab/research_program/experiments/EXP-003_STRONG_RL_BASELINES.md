@@ -305,3 +305,24 @@ Three joint learning iterations;448 own episodes;1163 total native episodes/1163
 Shared physical authority and frozen-final selection within each comparison. First revision has two new-network/exploration seeds sharing pretrained weights; later revisions single seed. New data are development/confirmation, not sealed tests. No pooled cross-cohort gain. Actual two-component rescue764712 is reproduced by either component alone. Action alias equivalence is physically verified but enforcing it does not improve policy. Whole-return PG avoids injecting fixed-suffix credit into changed continuation, yet matches ordinary SAC and mostly preserves initial behavior. No convergence or independent novelty claim.
 
 Evidence: [evidence/EXP-004/2026-11-06/joint_continuation/README.md](../evidence/EXP-004/2026-11-06/joint_continuation/README.md). Next: Test omitted legal physical Options at real handoffs to determine whether the frozen two-proposal interface leaves repeatable recovery opportunity. Share any expanded authority across warm baseline and ordinary joint RL; do not expand unsupported MC-mix, alias-critic or paired-PG mechanisms. Preserve native Peg100 and sealed isolation.
+
+
+## 2026-11-07 completed action-frontier learning cycle
+
+Five128-episode own-policy learners (640 total) follow256 shared native design executions. Two genuinely independent ordinary SAC networks reach21/24 on development; fixed reference/offset coordinates20, state-conditioned target chart19, terminal supervised scoring16. The actual state-chart revision is trained, not merely proposed. Frozen new natural confirmation: chart_state_32201 19/32; old_rl 22/32; rule 20/32; sac_32201 19/32; sac_32202 22/32; supervised_32201 18/32; warm 21/32. Fixed final128 selection, no tuning after confirmation; native100 and official success unchanged.
+
+| Fixed policy | Native success | Rescue | Regression | Planner calls |
+|---|---:|---:|---:|---:|
+| confirm_chart_state_32201 | 19/32 | 1 | 3 | 276 |
+| confirm_old_rl | 22/32 | 1 | 0 | 266 |
+| confirm_rule | 20/32 | 0 | 1 | 259 |
+| confirm_sac_32201 | 19/32 | 1 | 3 | 267 |
+| confirm_sac_32202 | 22/32 | 3 | 2 | 278 |
+| confirm_supervised_32201 | 18/32 | 3 | 6 | 272 |
+| confirm_warm | 21/32 | 0 | 0 | 266 |
+
+Each comparison keeps real grasp, queue, Option termination and physical budget. Shared design cost is charged to each consuming learner; prior models have separately pinned historical budgets. Total cycle 1882 native episodes/188200steps/16027queries; all positive/negative models and raw physics retained.
+
+The fixed catalogue has measured design union14/16 versus best fixed12 and warm8, but the learned21/24 remains21 when restricted to old proposals. Catalogue opportunity does not establish deployment dependence. State-conditioned kernel sharing has mature AGILE/action-representation precedents and no independent gain here. Frozen SAC Actor21, rear-only Mean-Q13, front-only Mean-Q19 isolate a deployment extraction problem without proving a particular replacement algorithm. No claim of joint synergy or STAP superiority. An83-dimensional observation and Option durations do not establish a Markov state or a policy-improvement theorem.
+
+Evidence: [action_frontier/README](../evidence/EXP-004/2026-11-07/action_frontier/README.md). Next study should inherit ordinary SAC and investigate policy-consistent executed Option value on fresh training prefixes, not expand unsupported coordinate-sharing networks.

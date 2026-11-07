@@ -316,3 +316,41 @@ Evidence: [evidence/EXP-004/2026-11-06/joint_continuation/README.md](evidence/EX
 ### 2026-11-07 initialization erratum (historical scores unchanged)
 
 Direct checkpoint comparison shows joint_continuation sac_31901 and sac_31902 INITIAL Actor, Critic and target tensors are identical: the shared Gate constructor resets Torch RNG to31801 after the requested seed. The two runs have distinct exploration RNG, **not independent neural initialization**. Earlier independent-new-network wording is superseded. Their actual outcomes and negative evidence remain unchanged. The next full-catalogue learner reseeds after loading shared assets and verifies different hidden/Critic weights while keeping cross-arm initialization matched.
+
+
+## 2026-11-07 completed action-frontier learning cycle
+
+Five128-episode own-policy learners (640 total) follow256 shared native design executions. Two genuinely independent ordinary SAC networks reach21/24 on development; fixed reference/offset coordinates20, state-conditioned target chart19, terminal supervised scoring16. The actual state-chart revision is trained, not merely proposed. Frozen new natural confirmation: chart_state_32201 19/32; old_rl 22/32; rule 20/32; sac_32201 19/32; sac_32202 22/32; supervised_32201 18/32; warm 21/32. Fixed final128 selection, no tuning after confirmation; native100 and official success unchanged.
+
+| Fixed policy | Native success | Rescue | Regression | Planner calls |
+|---|---:|---:|---:|---:|
+| confirm_chart_state_32201 | 19/32 | 1 | 3 | 276 |
+| confirm_old_rl | 22/32 | 1 | 0 | 266 |
+| confirm_rule | 20/32 | 0 | 1 | 259 |
+| confirm_sac_32201 | 19/32 | 1 | 3 | 267 |
+| confirm_sac_32202 | 22/32 | 3 | 2 | 278 |
+| confirm_supervised_32201 | 18/32 | 3 | 6 | 272 |
+| confirm_warm | 21/32 | 0 | 0 | 266 |
+
+Each comparison keeps real grasp, queue, Option termination and physical budget. Shared design cost is charged to each consuming learner; prior models have separately pinned historical budgets. Total cycle 1882 native episodes/188200steps/16027queries; all positive/negative models and raw physics retained.
+
+The fixed catalogue has measured design union14/16 versus best fixed12 and warm8, but the learned21/24 remains21 when restricted to old proposals. Catalogue opportunity does not establish deployment dependence. State-conditioned kernel sharing has mature AGILE/action-representation precedents and no independent gain here. Frozen SAC Actor21, rear-only Mean-Q13, front-only Mean-Q19 isolate a deployment extraction problem without proving a particular replacement algorithm. No claim of joint synergy or STAP superiority. An83-dimensional observation and Option durations do not establish a Markov state or a policy-improvement theorem.
+
+Evidence: [action_frontier/README](evidence/EXP-004/2026-11-07/action_frontier/README.md). Next study should inherit ordinary SAC and investigate policy-consistent executed Option value on fresh training prefixes, not expand unsupported coordinate-sharing networks.
+
+
+## Post-confirmation mechanism check: deployed action support
+
+Both frozen SAC seeds are reexecuted on all32 now-seen confirmation scenes with only current historical proposal physical IDs plus rule allowed. No model, horizon, reward, planner or initial state changes. These64 additional native episodes test execution dependence, not new independent generalization or a retrained restricted-learning comparison.
+
+| Network seed | Full catalogue | Old proposal support | Full-only successful scenes | Restricted-only successful scenes |
+|---|---:|---:|---|---|
+| 32201 | 19/32 | 20/32 | 765625 | 765608, 765626 |
+| 32202 | 22/32 | 21/32 | 765625, 765627 | 765604 |
+
+The full-policy benefits and regressions must both be retained. Any full-only success supports necessity of the extra executed choices for this frozen policy on that state, not impossibility of every other old-support policy. This does not turn the failed coordinate candidates into an independent algorithm contribution. Exact physical prefixes, raw paths and complete boundary events are in POSTCONFIRM_SUPPORT_EFFECT.json.
+
+
+### Evidence-based retained capability and unresolved reliability
+
+The frozen second SAC network uses an additional localZ− Option to rescue765625 and765627. Removing expanded action support loses both; one harmful refreshedY− intervention in765604 is also removed. Full22/32 versus restricted21/32 is therefore a capability/retention tradeoff, not robust dominance. The first seed similarly gains765625 but breaks765608/765626 through localZ+, yielding19 versus restricted20. These are post-hoc same-model physical controls on now-seen conditions, not a new independent test. Ordinary SAC owns these gains; neither coordinate candidate earns credit. The task interface has a measured new deployed capability, while reliable selection is still unresolved.

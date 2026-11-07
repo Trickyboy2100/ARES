@@ -72,3 +72,11 @@ if (a.root/'LEARNING_SUMMARY.json').exists():
     v=groups[k]['outcomes'];rr.append(sum(v[s]and not b[s]for s in b));gg.append(sum(b[s]and not v[s]for s in b))
    ax.barh(y,rr,color='#287a98',label='Rescue');ax.barh(y,-np.array(gg),color='#c8654c',label='Regression');ax.axvline(0,color='#555',lw=.8)
    ax.set_yticks(y,[f'{k.removeprefix("confirm_")} ({groups[k]["success"]}/{groups[k]["n"]})' for k in selected]);ax.set(xlabel=f'Paired scene count versus warm ({sum(b.values())}/{len(b)})',title='Frozen policies on new natural conditions765600–631');ax.legend();save(fig,'confirmation_pairings')
+if (a.root/'POSTCONFIRM_SUPPORT_EFFECT.json').exists():
+ effects=json.loads((a.root/'POSTCONFIRM_SUPPORT_EFFECT.json').read_text())['effects']['32202'];fig,axes=plt.subplots(2,1,figsize=(10,7),sharex=True)
+ for ax,seed in zip(axes,['765627','765604']):
+  pair=effects['pairs'][seed]
+  for key,color,label in [('restricted','#888888','Old proposal support'),('full','#287a98','Full executable catalogue')]:
+   row=pair[key];d=json.load(gzip.open(row['path'],'rt'));states=[d['initial']]+d['steps'];ax.plot(range(101),[x['evaluation']['peg_head_pos_at_hole'][0][0]*1000 for x in states],color=color,label=f'{label}: success={row["success"]}')
+  ax.axvline(pair['exact_physical_prefix'],ls='--',color='#ba6f47');ax.set(title=f'Scene{seed}: same frozen SAC32202; common physical prefix{pair["exact_physical_prefix"]}',ylabel='Peg-head axial coordinate (mm)');ax.legend(fontsize=9)
+ axes[-1].set_xlabel('Actual native physical control step');save(fig,'postconfirm_support_physics')

@@ -1,0 +1,12 @@
+{
+  "historical_cycle": "joint_continuation_20261106",
+  "compared": [
+    "sac_31901/INITIAL.pt",
+    "sac_31902/INITIAL.pt"
+  ],
+  "actor_critic_target_equal": true,
+  "cause": "Gate constructor calls torch.manual_seed(31801) after Learner seeds fresh networks",
+  "correct_claim": "distinct exploration RNG, not independent neural initialization",
+  "new_fix": "reseed after loading warm Gate; explicit hidden and critic inequality unit check",
+  "historical_scores_unchanged": true
+}

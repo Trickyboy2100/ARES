@@ -1,0 +1,3507 @@
+{
+  "scope": "Frozen full-policy observational contrasts from exact native resets; not isolated one-action causality or training data",
+  "methods": {
+    "confirm_chart_state_32201": [
+      {
+        "seed": 765614,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 90,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00015_765614_frozen.json.gz",
+          "sha256": "e39a4923b431181f6ae50888ddd417cf9381d8f40a3ab39750dc89bca4da2036",
+          "success": true,
+          "error": null,
+          "first_success": 100,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 78,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 82,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 84,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 87,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_chart_state_32201/physics/00015_765614_frozen.json.gz",
+          "sha256": "e212964a17b6f7db38c09aabf0b872122759a50309ce4e0c9be75d2aa19adf9e",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 78,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 82,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 84,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 87,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 4,
+              "physical": 3,
+              "step": 89,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765621,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 62,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00022_765621_frozen.json.gz",
+          "sha256": "6224f774d7ba74d12fbd79ad3d5a7a223f83d1c2102d8570bb97affa574e5bf5",
+          "success": true,
+          "error": null,
+          "first_success": 84,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 11,
+              "physical": 10,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_chart_state_32201/physics/00022_765621_frozen.json.gz",
+          "sha256": "8d8ff3f22c13cf6693e4ed3db3131c0a901aae8425d617955feefc54406a567b",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 65,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 69,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 70,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 73,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 77,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 81,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 85,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765625,
+        "change": "rescue",
+        "initial_equal": true,
+        "exact_prefix_steps": 60,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00026_765625_frozen.json.gz",
+          "sha256": "0069fd0dfa845640edbcc28600521683ad660d04481d497c63a44ac747f3dd6a",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 59,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 3,
+              "physical": 2,
+              "step": 63,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_chart_state_32201/physics/00026_765625_frozen.json.gz",
+          "sha256": "adc1eac70ac3d04cc6c3b1b9e984b7f2101d5c4a0a4bda4a8e531e4efd493a29",
+          "success": true,
+          "error": null,
+          "first_success": 88,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 59,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765626,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 49,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00027_765626_frozen.json.gz",
+          "sha256": "43b22148a08412e902264e053373a09c4e5ad475cfcccd78949cb91739636d22",
+          "success": true,
+          "error": null,
+          "first_success": 77,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 48,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 52,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 56,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 57,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 65,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 69,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 73,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 77,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 81,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 85,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_chart_state_32201/physics/00027_765626_frozen.json.gz",
+          "sha256": "1da9ab8f5d85b819d5d8b2ad83ed635e509204a232efb9743629210b616a5075",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 5,
+              "physical": 4,
+              "step": 48,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 4,
+              "physical": 3,
+              "step": 93,
+              "stage": 1
+            }
+          ]
+        }
+      }
+    ],
+    "confirm_old_rl": [
+      {
+        "seed": 765630,
+        "change": "rescue",
+        "initial_equal": true,
+        "exact_prefix_steps": 56,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00031_765630_frozen.json.gz",
+          "sha256": "455de71e16f232b98841a56f346476f77f4d17588e1fd9e90d0dead1a08f7929",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 52,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 56,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 58,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 60,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 63,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 67,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 71,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 75,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 79,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 83,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 87,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 91,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 95,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 99,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_old_rl/physics/00031_765630_frozen.json.gz",
+          "sha256": "899a4ea26eb8f346647ad52bcf7f6f4264d73dab6724802ae83a73ec2faa2b54",
+          "success": true,
+          "error": null,
+          "first_success": 78,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": []
+        }
+      }
+    ],
+    "confirm_rule": [
+      {
+        "seed": 765621,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 62,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00022_765621_frozen.json.gz",
+          "sha256": "6224f774d7ba74d12fbd79ad3d5a7a223f83d1c2102d8570bb97affa574e5bf5",
+          "success": true,
+          "error": null,
+          "first_success": 84,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 11,
+              "physical": 10,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_rule/physics/00022_765621_frozen.json.gz",
+          "sha256": "92d932c6e5f1507e555c97572b3a1a1d157e6453b80f7e3628aad6c6c5e5b1b1",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 65,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 69,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 70,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 73,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 77,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 81,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 85,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        }
+      }
+    ],
+    "confirm_sac_32201": [
+      {
+        "seed": 765608,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 50,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00009_765608_frozen.json.gz",
+          "sha256": "9492102048c1f7e3876b2fc9e7061b8fe993fe9b166515899e401a0b9b4acb5c",
+          "success": true,
+          "error": null,
+          "first_success": 73,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 49,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 53,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 55,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 58,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 65,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 69,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 73,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 77,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 81,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 85,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_sac_32201/physics/00009_765608_frozen.json.gz",
+          "sha256": "a1909305f4fb1f21866274725440f8b2116fbf62bfded6e3027b82a2950e0a62",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 5,
+              "physical": 4,
+              "step": 49,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 88,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 92,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 96,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765621,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 62,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00022_765621_frozen.json.gz",
+          "sha256": "6224f774d7ba74d12fbd79ad3d5a7a223f83d1c2102d8570bb97affa574e5bf5",
+          "success": true,
+          "error": null,
+          "first_success": 84,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 11,
+              "physical": 10,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_sac_32201/physics/00022_765621_frozen.json.gz",
+          "sha256": "94220ce1b6276a0a27f265167d58cf36a03ce02d0eb24d79cf64dda6b9369e88",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 65,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 69,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 70,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 73,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 77,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 81,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 85,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 8,
+              "physical": 7,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765625,
+        "change": "rescue",
+        "initial_equal": true,
+        "exact_prefix_steps": 60,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00026_765625_frozen.json.gz",
+          "sha256": "0069fd0dfa845640edbcc28600521683ad660d04481d497c63a44ac747f3dd6a",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 59,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 3,
+              "physical": 2,
+              "step": 63,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_sac_32201/physics/00026_765625_frozen.json.gz",
+          "sha256": "d116083b52d6dec965f7b952db8ef722e8300cac3d81c14768aa1b544aebd8e0",
+          "success": true,
+          "error": null,
+          "first_success": 88,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 59,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765626,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 49,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00027_765626_frozen.json.gz",
+          "sha256": "43b22148a08412e902264e053373a09c4e5ad475cfcccd78949cb91739636d22",
+          "success": true,
+          "error": null,
+          "first_success": 77,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 48,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 52,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 56,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 57,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 65,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 69,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 73,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 77,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 81,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 85,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_sac_32201/physics/00027_765626_frozen.json.gz",
+          "sha256": "e04fd98a87c3a862285c3ac3d6d8c9fe2627777fa002f9de80d7f19f0bbc76b7",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 5,
+              "physical": 4,
+              "step": 48,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 8,
+              "physical": 7,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        }
+      }
+    ],
+    "confirm_sac_32202": [
+      {
+        "seed": 765604,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 48,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00005_765604_frozen.json.gz",
+          "sha256": "2767bd0fca9cdc1edd47d686aea25fae7902c57f8c1ba0e0986f50812a0b7c50",
+          "success": true,
+          "error": null,
+          "first_success": 77,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 3,
+              "physical": 2,
+              "step": 47,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 83,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 87,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 91,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 95,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 99,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_sac_32202/physics/00005_765604_frozen.json.gz",
+          "sha256": "e7cfb90eb6e78e6f96f8426d258137fa45b7ec82b9087ad8a35bad1e09c05bda",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 10,
+              "physical": 9,
+              "step": 47,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 10,
+              "physical": 9,
+              "step": 72,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 10,
+              "physical": 9,
+              "step": 88,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765621,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 62,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00022_765621_frozen.json.gz",
+          "sha256": "6224f774d7ba74d12fbd79ad3d5a7a223f83d1c2102d8570bb97affa574e5bf5",
+          "success": true,
+          "error": null,
+          "first_success": 84,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 11,
+              "physical": 10,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_sac_32202/physics/00022_765621_frozen.json.gz",
+          "sha256": "f9ed2efb801526aba579d8899303462fe769fcc62e28edc5503a3649770d884e",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 65,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 69,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 70,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 73,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 12,
+              "physical": 11,
+              "step": 77,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765625,
+        "change": "rescue",
+        "initial_equal": true,
+        "exact_prefix_steps": 64,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00026_765625_frozen.json.gz",
+          "sha256": "0069fd0dfa845640edbcc28600521683ad660d04481d497c63a44ac747f3dd6a",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 59,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 3,
+              "physical": 2,
+              "step": 63,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_sac_32202/physics/00026_765625_frozen.json.gz",
+          "sha256": "49a644085afa355535d143d93b61cce11c010bbe0eb328922955a9e069ac83ce",
+          "success": true,
+          "error": null,
+          "first_success": 89,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 59,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 63,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 94,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 98,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765627,
+        "change": "rescue",
+        "initial_equal": true,
+        "exact_prefix_steps": 67,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00028_765627_frozen.json.gz",
+          "sha256": "57e70d2ac20cc2a6489ad3eef4e8c2269c6af2692827961ebc33e38033ed0648",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 66,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 70,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 73,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 76,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 78,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 82,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 86,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 90,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 94,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 98,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_sac_32202/physics/00028_765627_frozen.json.gz",
+          "sha256": "a50643bf008be2fdbe996f555a6034254271d796bcf16c71b2e132cc5169c424",
+          "success": true,
+          "error": null,
+          "first_success": 92,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 66,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765630,
+        "change": "rescue",
+        "initial_equal": true,
+        "exact_prefix_steps": 56,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00031_765630_frozen.json.gz",
+          "sha256": "455de71e16f232b98841a56f346476f77f4d17588e1fd9e90d0dead1a08f7929",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 52,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 56,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 58,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 60,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 63,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 67,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 71,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 75,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 79,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 83,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 87,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 91,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 95,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 99,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_sac_32202/physics/00031_765630_frozen.json.gz",
+          "sha256": "53022a3668b6da9243df27f454156e2c6ee51f03f9379ec0bac978b517638a6c",
+          "success": true,
+          "error": null,
+          "first_success": 78,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 52,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 56,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 83,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 87,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 91,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 95,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 99,
+              "stage": 1
+            }
+          ]
+        }
+      }
+    ],
+    "confirm_supervised_32201": [
+      {
+        "seed": 765600,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 55,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00001_765600_frozen.json.gz",
+          "sha256": "66ebca1e5af23ac0f757627cf0e8bc3c5152b6ae9c91119a4afa1dad15429daf",
+          "success": true,
+          "error": null,
+          "first_success": 78,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": false,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 54,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 58,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 60,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 63,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 66,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 70,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 74,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 78,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 82,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 86,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 90,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 94,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 98,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_supervised_32201/physics/00001_765600_frozen.json.gz",
+          "sha256": "4fd193018f6afd9981a820e685c8b4a1d2a34a94ee7ffc5f1e660a4fdb7d048f",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 11,
+              "physical": 10,
+              "step": 54,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 87,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 95,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765604,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 48,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00005_765604_frozen.json.gz",
+          "sha256": "2767bd0fca9cdc1edd47d686aea25fae7902c57f8c1ba0e0986f50812a0b7c50",
+          "success": true,
+          "error": null,
+          "first_success": 77,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 3,
+              "physical": 2,
+              "step": 47,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 83,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 87,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 91,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 95,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 99,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_supervised_32201/physics/00005_765604_frozen.json.gz",
+          "sha256": "a2ff84b50c361859d20d40c7e631a122b601172ec6e0666b0151d513d47f43da",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 5,
+              "physical": 4,
+              "step": 47,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 77,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 85,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 93,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765606,
+        "change": "rescue",
+        "initial_equal": true,
+        "exact_prefix_steps": 49,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00007_765606_frozen.json.gz",
+          "sha256": "1773bd8ed30ccc21a9f4e4c3568b022dd8e9d7c4d4d9584194520b47f3a03529",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 48,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 52,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 56,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 57,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 60,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 64,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 68,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 72,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 76,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 80,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 84,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 88,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 92,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 96,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_supervised_32201/physics/00007_765606_frozen.json.gz",
+          "sha256": "4d0f76d28eead2814a4b9372239cd347de38a6a0681cca637927505695a4cbf8",
+          "success": true,
+          "error": null,
+          "first_success": 75,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 48,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 81,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 85,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765607,
+        "change": "rescue",
+        "initial_equal": true,
+        "exact_prefix_steps": 1,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00008_765607_frozen.json.gz",
+          "sha256": "7289f225f8e7ef542471bf4904dbb2a9fe7f754451a6ac21b06a80cf80265044",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 76,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 80,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 83,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 85,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_supervised_32201/physics/00008_765607_frozen.json.gz",
+          "sha256": "83154f5d815224461b4016a9217920c8885092862c5519209b74068cb3edb33d",
+          "success": true,
+          "error": null,
+          "first_success": 96,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 2,
+              "physical": 2,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 5,
+              "physical": 4,
+              "step": 73,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765612,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 1,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00013_765612_frozen.json.gz",
+          "sha256": "ba0ed0ce9cda75c98463dd5efd06ab466fa0d535e4625c9a4a6a584a68c08860",
+          "success": true,
+          "error": null,
+          "first_success": 96,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 72,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 76,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 80,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 82,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 84,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 88,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 92,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 96,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_supervised_32201/physics/00013_765612_frozen.json.gz",
+          "sha256": "346d6b4175d3df900ace74fb322e6f7e92e34713f4679164adc68fcd73c06326",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 3,
+              "physical": 2,
+              "step": 76,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765614,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 1,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00015_765614_frozen.json.gz",
+          "sha256": "e39a4923b431181f6ae50888ddd417cf9381d8f40a3ab39750dc89bca4da2036",
+          "success": true,
+          "error": null,
+          "first_success": 100,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 78,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 82,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 84,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 87,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_supervised_32201/physics/00015_765614_frozen.json.gz",
+          "sha256": "735a9fff94f840d6d8177a3165b823e068389771b1690009cd1b309a242d5cf7",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": false,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 2,
+              "physical": 2,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 11,
+              "physical": 10,
+              "step": 70,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 98,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765626,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 1,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00027_765626_frozen.json.gz",
+          "sha256": "43b22148a08412e902264e053373a09c4e5ad475cfcccd78949cb91739636d22",
+          "success": true,
+          "error": null,
+          "first_success": 77,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 48,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 52,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 56,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 57,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 65,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 69,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 73,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 77,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 81,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 85,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_supervised_32201/physics/00027_765626_frozen.json.gz",
+          "sha256": "6256b54e3587e7fdaf9b82b645ce4011dfe132bbe30366d77908d5f15fedc610",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 2,
+              "physical": 2,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 5,
+              "physical": 4,
+              "step": 48,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 3,
+              "physical": 2,
+              "step": 93,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765627,
+        "change": "rescue",
+        "initial_equal": true,
+        "exact_prefix_steps": 67,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00028_765627_frozen.json.gz",
+          "sha256": "57e70d2ac20cc2a6489ad3eef4e8c2269c6af2692827961ebc33e38033ed0648",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 66,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 70,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 73,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 76,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 78,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 82,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 86,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 90,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 94,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 98,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_supervised_32201/physics/00028_765627_frozen.json.gz",
+          "sha256": "6fad5e5861f206b87af4634fe2b5997a87bbcd953c3dc49a77dc623cdac639a3",
+          "success": true,
+          "error": null,
+          "first_success": 92,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 3,
+              "physical": 2,
+              "step": 66,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765631,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 1,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00032_765631_frozen.json.gz",
+          "sha256": "1ea730cd37b23b9fa04385418604b5ec69e7f7663ab74d6c53a12ccf45526a28",
+          "success": true,
+          "error": null,
+          "first_success": 97,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 3,
+              "physical": 2,
+              "step": 73,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_supervised_32201/physics/00032_765631_frozen.json.gz",
+          "sha256": "accef23f91e9e2cea092eb1045253566fde011adead7ee40269615db29170ff7",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 3,
+              "physical": 2,
+              "step": 80,
+              "stage": 1
+            }
+          ]
+        }
+      }
+    ],
+    "confirm_warm": [],
+    "postconfirm_sac_32201_support": [
+      {
+        "seed": 765621,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 62,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00022_765621_frozen.json.gz",
+          "sha256": "6224f774d7ba74d12fbd79ad3d5a7a223f83d1c2102d8570bb97affa574e5bf5",
+          "success": true,
+          "error": null,
+          "first_success": 84,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 11,
+              "physical": 10,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/postconfirm_sac_32201_support/physics/00022_765621_frozen.json.gz",
+          "sha256": "16ac4bab95f1e1c518b1b33abe96764351a2f89c821b59614dd9b3ce4e14d8fe",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 65,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 69,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 70,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 73,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 77,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 81,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 85,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        }
+      }
+    ],
+    "postconfirm_sac_32202_support": [
+      {
+        "seed": 765621,
+        "change": "regression",
+        "initial_equal": true,
+        "exact_prefix_steps": 62,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00022_765621_frozen.json.gz",
+          "sha256": "6224f774d7ba74d12fbd79ad3d5a7a223f83d1c2102d8570bb97affa574e5bf5",
+          "success": true,
+          "error": null,
+          "first_success": 84,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 11,
+              "physical": 10,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 89,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/postconfirm_sac_32202_support/physics/00022_765621_frozen.json.gz",
+          "sha256": "fe0780062c74678ec0618f16e19a28c46e26bce5c2e148a0e03cec0fe7b526fd",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 61,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 65,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 69,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 70,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 10,
+              "step": 73,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 12,
+              "physical": 11,
+              "step": 77,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 93,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 97,
+              "stage": 1
+            }
+          ]
+        }
+      },
+      {
+        "seed": 765630,
+        "change": "rescue",
+        "initial_equal": true,
+        "exact_prefix_steps": 56,
+        "reference": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/confirm_warm/physics/00031_765630_frozen.json.gz",
+          "sha256": "455de71e16f232b98841a56f346476f77f4d17588e1fd9e90d0dead1a08f7929",
+          "success": false,
+          "error": null,
+          "first_success": null,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 52,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 56,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 58,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 60,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 63,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 67,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 71,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 75,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 79,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 83,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 87,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 91,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 95,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 99,
+              "stage": 1
+            }
+          ]
+        },
+        "policy": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/postconfirm_sac_32202_support/physics/00031_765630_frozen.json.gz",
+          "sha256": "0e07db595916602c09137757d389d5c0b2762197ea80075238f20dff9eeca612",
+          "success": true,
+          "error": null,
+          "first_success": 78,
+          "last_phase": "INSERT_FEEDBACK",
+          "last_grasped": true,
+          "boundary_events": [
+            {
+              "boundary": true,
+              "a": 1,
+              "physical": 1,
+              "step": 0,
+              "stage": 0
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 52,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 6,
+              "physical": 5,
+              "step": 56,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 83,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 87,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 91,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 95,
+              "stage": 1
+            },
+            {
+              "boundary": true,
+              "a": 0,
+              "physical": 0,
+              "step": 99,
+              "stage": 1
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

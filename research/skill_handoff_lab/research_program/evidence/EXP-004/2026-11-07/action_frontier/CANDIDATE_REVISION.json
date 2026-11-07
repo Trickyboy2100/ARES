@@ -1,0 +1,13 @@
+{
+  "basis": "After completed matched128-episode flatSAC21/24 and fixedfactor20/24; physical reference effect reversals motivate state-dependent sharing instead of identical-label sharing.",
+  "scope": "one candidate revision; native task, executor, observation, catalogue, warm logits, common design data and SAC update inherited unchanged",
+  "method": "RBF kernel over existing requested target geometry plus atomic-continuation family; no oracle/predicted-success head; pointwise full-rank Actor coordinates",
+  "hyperparameters": {
+    "translation_m": 0.003,
+    "rotation_deg": 5,
+    "kernel_weight": 0.25
+  },
+  "fairness": "Same trainable parameter count and flat critics; fixed state processing changes inductive bias/function class and adds measured CPU decision work. Baseline flatSAC128 remains fixed; no extra physical data admitted.",
+  "plan": "state-chart32201:128 own episodes. Repeat matureSAC with independent neural32202. If candidate promising, repeat it and test static-chart ablation; do not promote initial unit tests to physical outcomes.",
+  "source_unit": "TARGET_CHART_CHECKS.json"
+}

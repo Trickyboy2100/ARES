@@ -1,0 +1,228 @@
+{
+  "765402": {
+    "records": [
+      {
+        "checkpoint": 0,
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/sac_32201/physics/00003_765402_eval_0.json.gz",
+        "sha256": "cf67322d99e5b17628603b7606d8e54fb59cc6f8c64a81cc1817b65b020eb6ab",
+        "success": false,
+        "first_native_success": null,
+        "boundary_actions": [
+          {
+            "boundary": true,
+            "a": 1,
+            "physical": 1,
+            "step": 0,
+            "stage": 0
+          },
+          {
+            "boundary": true,
+            "a": 11,
+            "physical": 10,
+            "step": 65,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 0,
+            "step": 97,
+            "stage": 1
+          }
+        ]
+      },
+      {
+        "checkpoint": 128,
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/sac_32201/physics/00204_765402_eval_128.json.gz",
+        "sha256": "5e4498928c2614d264631fe1475fcead95c1c7762b411dcb1578b10c173611fb",
+        "success": true,
+        "first_native_success": 93,
+        "boundary_actions": [
+          {
+            "boundary": true,
+            "a": 1,
+            "physical": 1,
+            "step": 0,
+            "stage": 0
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 0,
+            "step": 65,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 0,
+            "step": 69,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 10,
+            "step": 73,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 10,
+            "step": 77,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 10,
+            "step": 80,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 0,
+            "step": 82,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 0,
+            "step": 86,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 0,
+            "step": 90,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 6,
+            "physical": 5,
+            "step": 94,
+            "stage": 1
+          }
+        ]
+      }
+    ],
+    "identical_prefix_through_step": 65,
+    "prefix_sha": "6429630f23c1f88462de206a420172b40f9c2a959617b95185f1bf33440e83a0",
+    "scope": "original-reset full native reexecution; observed deployment contrast, not single-action counterfactual credit"
+  },
+  "765423": {
+    "records": [
+      {
+        "checkpoint": 0,
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/sac_32201/physics/00024_765423_eval_0.json.gz",
+        "sha256": "9838c23eedd6ff86d274c62a10d23e0856520873ec82f40ec1db516334b32064",
+        "success": false,
+        "first_native_success": null,
+        "boundary_actions": [
+          {
+            "boundary": true,
+            "a": 1,
+            "physical": 1,
+            "step": 0,
+            "stage": 0
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 0,
+            "step": 71,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 10,
+            "step": 75,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 10,
+            "step": 79,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 10,
+            "step": 81,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 0,
+            "step": 83,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 0,
+            "step": 87,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 0,
+            "step": 91,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 0,
+            "step": 95,
+            "stage": 1
+          },
+          {
+            "boundary": true,
+            "a": 0,
+            "physical": 0,
+            "step": 99,
+            "stage": 1
+          }
+        ]
+      },
+      {
+        "checkpoint": 128,
+        "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/sac_32201/physics/00225_765423_eval_128.json.gz",
+        "sha256": "38911c0c5894ebb42e3eecc2a4238ead62e941070ff8e46e959ea72ef189c15c",
+        "success": true,
+        "first_native_success": 95,
+        "boundary_actions": [
+          {
+            "boundary": true,
+            "a": 1,
+            "physical": 1,
+            "step": 0,
+            "stage": 0
+          },
+          {
+            "boundary": true,
+            "a": 3,
+            "physical": 2,
+            "step": 71,
+            "stage": 1
+          }
+        ]
+      }
+    ],
+    "identical_prefix_through_step": 71,
+    "prefix_sha": "43cfeb7a44bf97bf9f4324a361c3f39bb7e3c6436bd5989a0d05dca0bac1e7f9",
+    "scope": "original-reset full native reexecution; observed deployment contrast, not single-action counterfactual credit"
+  },
+  "credit_caution": "765402 first becomes natively successful at93, before its physical5 intervention at94. Do not attribute rescue to that late action. Frozen proposal-support deployment ablation tests whether added catalogue choices are necessary for current observed scores."
+}
