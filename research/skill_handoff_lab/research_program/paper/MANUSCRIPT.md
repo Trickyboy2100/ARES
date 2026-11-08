@@ -406,3 +406,41 @@ The full-policy benefits and regressions must both be retained. Any full-only su
 ### Evidence-based retained capability and unresolved reliability
 
 The frozen second SAC network uses an additional localZ− Option to rescue765625 and765627. Removing expanded action support loses both; one harmful refreshedY− intervention in765604 is also removed. Full22/32 versus restricted21/32 is therefore a capability/retention tradeoff, not robust dominance. The first seed similarly gains765625 but breaks765608/765626 through localZ+, yielding19 versus restricted20. These are post-hoc same-model physical controls on now-seen conditions, not a new independent test. Ordinary SAC owns these gains; neither coordinate candidate earns credit. The task interface has a measured new deployed capability, while reliable selection is still unresolved.
+
+
+## Version-bound physical continuation and retained skill improvement (2026-11-08, ongoing)
+
+The question is whether actual intervention evidence can improve a recurrent skill policy without erasing necessary nominal interventions. We sample64 new natural training initial states and reexecute each selected branch from the native reset, matching its measured physical prefix and active execution queue. The189 complete native episodes contain125 comparisons:4 positive branches in3 scenes,22 negative branches and99 ties. Warm succeeds on35/64; the measured finite union is38/64 and is not a deployment score. All three rescued states intervene near the end of the100-step horizon, limiting evidence about subsequent outer-policy decisions.
+
+A physical preference is tied to the exact frozen recurrent continuation that produced it. Compatible transitions may remain in replay after the continuation changes, but their old terminal preference is not silently relabelled as current softQ. The same-data SMDP-SAC, selected-action supervision and reference-retention candidate receive equal own-policy episode and refresh budgets. The predecessor remains the same task-conditioned warm grasp selector in this isolation study, with a separate fully jointSAC control. At64 own episodes each learner freezes its actual policy and collects a fresh16-scene branch cohort; complete native100 evaluation uses fixed checkpoints rather than a retrospectively selected best model.
+
+A full-reference empiricalKL candidate reaches8/16 at128 episodes for both network seeds, versus ordinarySAC7/16 and9/16 and initialization10/16. These are now-seen developmental scores, not generalization claims. The candidate has no demonstrated net benefit. Actual failures include omitting useful nominal interventions, so suppressing corrections indiscriminately is not the goal. We therefore test a second matched update comparison: soft likelihood on a finite set of executed witness choices versus parameter updates checked for exact greedy membership on those same observed states. Projection and imitation are established components; their execution-specific application remains a hypothesis. A finite empirical constraint does not establish performance guarantees on unseen states or stochastic physical trajectories.
+
+The executed-choice update first proposes a standardSAC/BC/ranking Adam step, linearizes violated logit margins, applies halfspace corrections, and accepts only a backtracked displacement whose stored-state choices remain admissible. A failed reference fallback is explicitly distinct from verified successful choices. Both new arms accumulate the same kind of complete prefix/suffix witness support under their own refreshed policies. No external gate overrides the deployed network. Final comparative tables and claim status will be updated from completed physical runs.
+
+### Executed-support policy improvement: implemented candidate and counterexample
+
+Let a recorded node (h_i) identify the actual prefix, active planning queue, target and physical budget, and let (s_i=\phi(h_i)\in\mathbb R^{83}) be the Actor's observation. The training witness set records successful executed choices (A_i^+\); an explicitly marked failed-reference fallback may be included to make the starting policy feasible. Thus (A_i=A_i^+\cup A_i^{fallback}) is an admissibility set, **not a certified successful-action set**. Queues identify evidence; they are not additional Actor inputs. A history-linked witness set is not a learned graph model.
+
+All learners use the same physical Option interface. Reference-version non-ties contribute a logistic preference between the actually executed better and worse choices; ties remain in transition replay. Standard SAC plus successful-trajectory BC supplies the shared online objective. The soft retention comparator adds (-\log\sum_{a\in A_i}\pi_\theta(a|s_i)). The constrained candidate instead modifies the proposed Adam displacement (u): for active violating actions it solves the ordinary local quadratic program (\min_d\frac12\|d-u\|^2), subject to linearized allowable-versus-forbidden logit margins. It then checks exact nonlinear greedy membership on every stored node and backtracks if necessary. Adam moments are retained. There is no inference-time override, extra planning query, enlarged action range or new value head.
+
+At the common64-episode collection boundary, reference policies are frozen and branches are reexecuted on new training scenes. Current preference labels replace the older reference's labels; compatible transitions remain in replay and successful witness support accumulates. All methods receive the same initial physical executions and the same scene/branch opportunity budget, but their own-policy trajectories and actual legal branch counts differ and are reported. The reference-local contrast is not an unbiased advantage for an arbitrary later Actor.
+
+```
+Collect original-reset branches under a pinned reference and record all physical costs.
+Initialize each matched learner from the same warm policy and compatible shared data.
+For each own-policy native episode:
+    Execute real predecessor and recurrent successor Options; retain actual durations.
+    Add executed transitions, including failures, to replay.
+    Update twin SMDP values and propose the common SAC + BC Actor displacement.
+    Soft comparator: include allowable-set log-likelihood in the Actor loss.
+    Constrained candidate: project the displacement, then verify finite-node membership.
+At the shared refresh boundary:
+    Freeze this learner; collect new reference-bound physical comparisons.
+    Retire stale preferences, retain compatible replay, append actual successful support.
+Evaluate fixed checkpoints from original native resets; never restore at handoff.
+```
+
+This construction inherits constrained-memory updates (GEM), baseline restrictions (SPIBB), advantage-based improvement (AWAC), and standard projected optimization. Its execution-specific composition is a testable candidate, not an established independent contribution or monotonic improvement theorem. The initial sequential solver's update rejection was separately repaired with an active-set dualQP; that numerical correction must not be credited as an RL innovation.
+
+An important counterexample is empirical: corrected constraints preserve recorded greedy support yet score8/16 on both final128 development runs, below warm10/16. Soft support also scores8/16, whereas ordinary SAC scores7/16 and9/16. On11 predeclared **training** roots, full native reexecution gives10/11 for the constrained learner and9/11 for each ofSAC/soft, including different rescued roots. Fitting allowable choices can therefore change actual behavior without establishing new-condition capability. Half-reference-margin preservation at64 episodes scores8/16 and does not support a robust-margin claim. The finalized fresh-cohort table below is the primary additional check; these preliminary results are retained rather than selected away.

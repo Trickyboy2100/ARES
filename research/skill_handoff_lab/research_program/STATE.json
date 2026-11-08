@@ -9,7 +9,7 @@
   "current_stage": "S5",
   "active_experiment": "EXP-004",
   "latest_evidence": "evidence/EXP-004/2026-11-07/action_frontier/README.md",
-  "next_action": "Finish equal-budget own-policy arms and current-reference refresh; evaluate frozen final models, inspect necessary intervention retention versus actual new rescue, then revise based on physical results. Do not treat candidate code or pair fit as method gain.",
+  "next_action": "Complete matched128-episode soft-witness/QP arms and their second seeds; test one predeclared64-episode half-reference-margin ablation. Keep new confirmation cohort unopened until models/protocol are fixed. Then evaluate native outcomes, preserve all negatives and publish actual costs.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -1643,5 +1643,39 @@
       }
     },
     "candidate_revision": "Before retention training, extend anchors to all successful reference rear decisions; same physical data. Necessary nonzero intervention omission observed in SAC64."
+  },
+  "active_cycle_20261108": {
+    "status": "actual_physical_training_in_progress",
+    "baseline": "d4a20b0",
+    "source_current": "62f718c",
+    "evidence": "evidence/EXP-004/2026-11-08/continuation_retention/METHOD.md",
+    "initial_physical_episodes": 189,
+    "initial_pairs": 125,
+    "design_warm": 35,
+    "design_scenes": 64,
+    "design_finite_union": 38,
+    "completed128_dev": {
+      "sac_32301": 7,
+      "sac_32302": 9,
+      "retention_32301": 8,
+      "retention_32302": 8,
+      "ranking_32301": 8,
+      "ranking_32302": 7,
+      "joint_sac_32301": 7,
+      "witness_qp_32301": 8
+    },
+    "dev_denominator": 16,
+    "stalled_projection64": {
+      "success": 10,
+      "rejected_updates": 1720,
+      "updates": 2560
+    },
+    "ongoing": [
+      "witness_soft_32301",
+      "witness_soft_32302",
+      "witness_qp_32302",
+      "witness_margin_32301_64pilot"
+    ],
+    "claim": "No independent benefit established; numerical solver improvement is not native-task improvement."
   }
 }
