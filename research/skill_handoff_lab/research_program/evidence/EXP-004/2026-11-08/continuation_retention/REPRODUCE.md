@@ -89,7 +89,7 @@ occurs. New confirmation is developmental data, not the sealed test.
 ## Visual evidence
 
 Open `REVIEW.html` locally. Each figure has a separate vectorPDF andPNG.
-The two `video_*/` folders contain completeRAW and EnglishANNOTATED MP4s,
+The three `video_*/` folders contain completeRAW and EnglishANNOTATED MP4s,
 exact-frame `SYNC_VIEWER.html`, sourceSHA and readback error. These are explicitly
 labeled `MEASURED_STATE_REPLAY`: measured physical joint/object trajectories are
 rendered without taking new simulator steps. Their native success evidence is
