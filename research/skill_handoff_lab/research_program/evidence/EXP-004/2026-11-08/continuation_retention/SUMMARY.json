@@ -1,0 +1,8250 @@
+{
+  "charger_partial_attempts": [],
+  "planning_cost_scope": "planner_calls is legacy name for all recorded API calls. Peg records plan_screw; Charger additionally records explicitIK and fallback plan_qpos_to_pose with per-call timing. api_calls_by_kind and api_seconds_by_kind separate them. known_servo_ik_calls is a verified subset, NEVER added again; internal collision/IK iterations inside one API call are not separately counted",
+  "task_costs": {
+    "PegInsertionSide_native100": {
+      "api_calls_by_kind": {
+        "plan_screw": 30698
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 149.76398452254944
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 3538,
+      "success": 1896,
+      "steps": 353800,
+      "planner_calls": 30698,
+      "planner_seconds": 149.76398452254944,
+      "execution_seconds": 20432.680691393325,
+      "errors": [
+        {
+          "seed": 768600,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768600,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768600,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768600,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768610,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768610,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768610,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768001,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768001,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768019,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768030,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768030,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768033,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768033,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768039,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768039,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768043,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768043,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768046,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768046,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768047,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768049,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768049,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768055,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768055,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768055,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768061,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768061,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768061,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768063,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768064,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768069,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768069,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768071,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768073,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768082,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768159,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768196,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768200,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768201,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768209,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768216,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768114,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768127,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768159,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768413,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768190,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768196,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768200,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768201,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768209,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768413,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768133,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768152,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768159,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768413,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768182,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768190,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768191,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768192,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768196,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768197,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768200,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768201,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768413,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768101,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768106,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768114,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768121,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768133,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768159,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768196,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768199,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768200,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768201,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768209,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768106,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768114,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768133,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768192,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768196,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768200,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768201,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768182,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768189,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768190,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768196,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768197,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768200,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768201,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768209,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768413,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768190,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768196,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768200,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768201,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768114,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768133,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768159,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768114,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768159,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768114,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768150,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768190,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768196,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768200,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768201,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768159,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768196,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768200,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768201,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768114,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768133,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768159,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768196,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768200,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768201,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768209,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768105,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768120,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768141,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768149,
+          "error": "PLAN_FAILED"
+        },
+        {
+          "seed": 768154,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768155,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768196,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768200,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768201,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768209,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768302,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768305,
+          "error": "HORIZON"
+        }
+      ]
+    },
+    "PlugCharger_native200": {
+      "api_calls_by_kind": {
+        "plan_screw": 324,
+        "IK": 3319,
+        "plan_qpos_to_pose": 26
+      },
+      "api_seconds_by_kind": {
+        "IK": 1.0322266896255314,
+        "plan_qpos_to_pose": 1.1168844648636878,
+        "plan_screw": 1.5458510187454522
+      },
+      "known_servo_ik_calls": 3267,
+      "episodes": 99,
+      "success": 68,
+      "steps": 19800,
+      "planner_calls": 3669,
+      "planner_seconds": 3.6949621732346714,
+      "execution_seconds": 701.1118240361102,
+      "errors": [
+        {
+          "seed": 768800,
+          "error": "SERVO_IK_FAILED"
+        },
+        {
+          "seed": 768800,
+          "error": "SERVO_IK_FAILED"
+        },
+        {
+          "seed": 768801,
+          "error": "CHARGER_NOT_GRASPED"
+        },
+        {
+          "seed": 768801,
+          "error": "CHARGER_NOT_GRASPED"
+        },
+        {
+          "seed": 768802,
+          "error": "CHARGER_NOT_GRASPED"
+        },
+        {
+          "seed": 768802,
+          "error": "CHARGER_NOT_GRASPED"
+        },
+        {
+          "seed": 768803,
+          "error": "CHARGER_NOT_GRASPED"
+        },
+        {
+          "seed": 768805,
+          "error": "CHARGER_NOT_GRASPED"
+        },
+        {
+          "seed": 768807,
+          "error": "CHARGER_NOT_GRASPED"
+        },
+        {
+          "seed": 768811,
+          "error": "CHARGER_NOT_GRASPED"
+        },
+        {
+          "seed": 768811,
+          "error": "CHARGER_NOT_GRASPED"
+        },
+        {
+          "seed": 768800,
+          "error": "SERVO_IK_FAILED"
+        },
+        {
+          "seed": 768801,
+          "error": "CHARGER_NOT_GRASPED"
+        },
+        {
+          "seed": 768811,
+          "error": "CHARGER_NOT_GRASPED"
+        },
+        {
+          "seed": 768811,
+          "error": "CHARGER_NOT_GRASPED"
+        },
+        {
+          "seed": 768800,
+          "error": "SERVO_IK_FAILED"
+        },
+        {
+          "seed": 768800,
+          "error": "SERVO_IK_FAILED"
+        }
+      ]
+    }
+  },
+  "disagreement": {
+    "cost": {
+      "api_calls_by_kind": {
+        "plan_screw": 525
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 2.5448967372067273
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 65,
+      "success": 46,
+      "steps": 6500,
+      "planner_calls": 525,
+      "planner_seconds": 2.5448967372067273,
+      "execution_seconds": 373.354397919029,
+      "errors": [
+        {
+          "seed": 768064,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768069,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768069,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768071,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768073,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768082,
+          "error": "HORIZON"
+        }
+      ]
+    },
+    "reference_scenes": 32,
+    "reference_success": 22,
+    "finite_union": 23,
+    "pairs": 33,
+    "positive": 2,
+    "negative": 4,
+    "ties": 27,
+    "positive_pairs": [
+      {
+        "seed": 768084,
+        "step": 52,
+        "s": [
+          -0.19663769006729126,
+          0.8050094246864319,
+          0.058823294937610626,
+          -1.5021494626998901,
+          -0.06053280457854271,
+          2.30645751953125,
+          -1.2656022310256958,
+          -0.0036105907056480646,
+          -0.03095824271440506,
+          0.04882489889860153,
+          0.007461254950612783,
+          -0.04348215460777283,
+          -0.03827333450317383,
+          -0.18516775965690613,
+          0.09014309197664261,
+          -0.10612745583057404,
+          0.08604418486356735,
+          0.001019687158986926,
+          0.5670465230941772,
+          0.8236846327781677,
+          -0.0008835700573399663,
+          0.06407363712787628,
+          -0.033260636031627655,
+          0.08312243223190308,
+          0.5765735507011414,
+          -0.00616415124386549,
+          -0.0012352046323940158,
+          0.8170209527015686,
+          0.012423601001501083,
+          0.08121834695339203,
+          0.08812563121318817,
+          0.5579988360404968,
+          1.569483210062117e-09,
+          -1.022367968062099e-09,
+          0.829841673374176,
+          0.11302044987678528,
+          0.020316213369369507,
+          0.020316213369369507,
+          0.07737971842288971,
+          0.0016556883929297328,
+          0.0027137461584061384,
+          0.47999998927116394,
+          1.0,
+          0.12569087743759155,
+          1.0,
+          -0.12550540268421173,
+          -0.004643168766051531,
+          -0.005003198515623808,
+          0.04685887694358826,
+          0.5714285969734192,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.05999999865889549,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0560244657099247,
+          0.025506053119897842,
+          0.06454735994338989,
+          0.0027496942784637213,
+          0.0036371087189763784,
+          -0.02133987285196781,
+          -0.06424250453710556,
+          -0.028468048200011253,
+          -0.04244789481163025,
+          0.00010455981100676581,
+          -0.0008525859448127449,
+          0.0069671194069087505
+        ],
+        "baseline": 6,
+        "action": 11,
+        "baseline_success": false,
+        "success": true,
+        "delta": 1,
+        "duration": 26,
+        "reference_sha": "22da73aff187d5784fdf951d94c11c78b89c69f33e4bf0cb383947804afe132d",
+        "prefix_sha": "5d4ca65db48f9b10a8931b182d787870465d4d97b89876a81188b82ed0aecf73",
+        "queue_sha": "b933af152abbe3ea456a3319ae6ad4af44d3205cacbd4f113f9b75424e568ab5",
+        "baseline_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/disagreement_design/physics/00040_768084_reference.json.gz",
+        "branch_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/disagreement_design/physics/00041_768084_branch_11.json.gz"
+      },
+      {
+        "seed": 768084,
+        "step": 52,
+        "s": [
+          -0.19663769006729126,
+          0.8050094246864319,
+          0.058823294937610626,
+          -1.5021494626998901,
+          -0.06053280457854271,
+          2.30645751953125,
+          -1.2656022310256958,
+          -0.0036105907056480646,
+          -0.03095824271440506,
+          0.04882489889860153,
+          0.007461254950612783,
+          -0.04348215460777283,
+          -0.03827333450317383,
+          -0.18516775965690613,
+          0.09014309197664261,
+          -0.10612745583057404,
+          0.08604418486356735,
+          0.001019687158986926,
+          0.5670465230941772,
+          0.8236846327781677,
+          -0.0008835700573399663,
+          0.06407363712787628,
+          -0.033260636031627655,
+          0.08312243223190308,
+          0.5765735507011414,
+          -0.00616415124386549,
+          -0.0012352046323940158,
+          0.8170209527015686,
+          0.012423601001501083,
+          0.08121834695339203,
+          0.08812563121318817,
+          0.5579988360404968,
+          1.569483210062117e-09,
+          -1.022367968062099e-09,
+          0.829841673374176,
+          0.11302044987678528,
+          0.020316213369369507,
+          0.020316213369369507,
+          0.07737971842288971,
+          0.0016556883929297328,
+          0.0027137461584061384,
+          0.47999998927116394,
+          1.0,
+          0.12569087743759155,
+          1.0,
+          -0.12550540268421173,
+          -0.004643168766051531,
+          -0.005003198515623808,
+          0.04685887694358826,
+          0.5714285969734192,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.05999999865889549,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0560244657099247,
+          0.025506053119897842,
+          0.06454735994338989,
+          0.0027496942784637213,
+          0.0036371087189763784,
+          -0.02133987285196781,
+          -0.06424250453710556,
+          -0.028468048200011253,
+          -0.04244789481163025,
+          0.00010455981100676581,
+          -0.0008525859448127449,
+          0.0069671194069087505
+        ],
+        "baseline": 6,
+        "action": 3,
+        "baseline_success": false,
+        "success": true,
+        "delta": 1,
+        "duration": 35,
+        "reference_sha": "22da73aff187d5784fdf951d94c11c78b89c69f33e4bf0cb383947804afe132d",
+        "prefix_sha": "5d4ca65db48f9b10a8931b182d787870465d4d97b89876a81188b82ed0aecf73",
+        "queue_sha": "b933af152abbe3ea456a3319ae6ad4af44d3205cacbd4f113f9b75424e568ab5",
+        "baseline_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/disagreement_design/physics/00040_768084_reference.json.gz",
+        "branch_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/disagreement_design/physics/00042_768084_branch_3.json.gz"
+      }
+    ],
+    "scope": "Additional design, not used by the primary128-episode trained arms; different scenes from cyclic acquisition, not a controlled acquisition-efficiency comparison"
+  },
+  "groups": {
+    "joint_sac_32301@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6356121059507132
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.6356121059507132,
+      "execution_seconds": 93.34951573028229,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "joint_sac_32301@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 144
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.683445340488106
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 7,
+      "steps": 1600,
+      "planner_calls": 144,
+      "planner_seconds": 0.683445340488106,
+      "execution_seconds": 86.9844148082193,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": false
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410,
+        768415
+      ]
+    },
+    "joint_sac_32301@128": {
+      "api_calls_by_kind": {
+        "plan_screw": 143
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6849339145701379
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 7,
+      "steps": 1600,
+      "planner_calls": 143,
+      "planner_seconds": 0.6849339145701379,
+      "execution_seconds": 90.64961696439423,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": false
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410,
+        768415
+      ]
+    },
+    "ranking_32301@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6042758598923683
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.6042758598923683,
+      "execution_seconds": 94.50522892246954,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "ranking_32301@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 136
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6680016305763274
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 7,
+      "steps": 1600,
+      "planner_calls": 136,
+      "planner_seconds": 0.6680016305763274,
+      "execution_seconds": 93.07407301058993,
+      "errors": [
+        {
+          "seed": 768413,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": false,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": false
+      },
+      "rescue": [],
+      "regression": [
+        768409,
+        768410,
+        768415
+      ]
+    },
+    "ranking_32301@128": {
+      "api_calls_by_kind": {
+        "plan_screw": 135
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.644355762982741
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 135,
+      "planner_seconds": 0.644355762982741,
+      "execution_seconds": 88.75456430320628,
+      "errors": [
+        {
+          "seed": 768413,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": false,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": false
+      },
+      "rescue": [],
+      "regression": [
+        768409,
+        768415
+      ]
+    },
+    "ranking_32302@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6208959098439664
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.6208959098439664,
+      "execution_seconds": 96.35847282712348,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "ranking_32302@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 133
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6305720997042954
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 7,
+      "steps": 1600,
+      "planner_calls": 133,
+      "planner_seconds": 0.6305720997042954,
+      "execution_seconds": 93.37024255958386,
+      "errors": [
+        {
+          "seed": 768413,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": false,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": false
+      },
+      "rescue": [],
+      "regression": [
+        768409,
+        768410,
+        768415
+      ]
+    },
+    "ranking_32302@128": {
+      "api_calls_by_kind": {
+        "plan_screw": 136
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6715025554876775
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 7,
+      "steps": 1600,
+      "planner_calls": 136,
+      "planner_seconds": 0.6715025554876775,
+      "execution_seconds": 86.41224033036269,
+      "errors": [
+        {
+          "seed": 768413,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": false,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768409,
+        768410
+      ]
+    },
+    "retention_32301@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6460223838221282
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.6460223838221282,
+      "execution_seconds": 94.05952682485804,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "retention_32301@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 140
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6790268188342452
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 140,
+      "planner_seconds": 0.6790268188342452,
+      "execution_seconds": 98.39035357977264,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410
+      ]
+    },
+    "retention_32301@128": {
+      "api_calls_by_kind": {
+        "plan_screw": 139
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6811106393579394
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 139,
+      "planner_seconds": 0.6811106393579394,
+      "execution_seconds": 90.72368462639861,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410
+      ]
+    },
+    "retention_32302@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6258047220762819
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.6258047220762819,
+      "execution_seconds": 96.46362977707759,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "retention_32302@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 139
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6791004901751876
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 139,
+      "planner_seconds": 0.6791004901751876,
+      "execution_seconds": 98.82557012257166,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410
+      ]
+    },
+    "retention_32302@128": {
+      "api_calls_by_kind": {
+        "plan_screw": 142
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.7149682366289198
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 142,
+      "planner_seconds": 0.7149682366289198,
+      "execution_seconds": 92.77563062333502,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410
+      ]
+    },
+    "sac_32301@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6118860736023635
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.6118860736023635,
+      "execution_seconds": 96.32182631129399,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "sac_32301@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 140
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6381545404437929
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 140,
+      "planner_seconds": 0.6381545404437929,
+      "execution_seconds": 93.64689946197905,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": true,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": false
+      },
+      "rescue": [
+        768405
+      ],
+      "regression": [
+        768400,
+        768410,
+        768415
+      ]
+    },
+    "sac_32301@128": {
+      "api_calls_by_kind": {
+        "plan_screw": 142
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6814081375487149
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 7,
+      "steps": 1600,
+      "planner_calls": 142,
+      "planner_seconds": 0.6814081375487149,
+      "execution_seconds": 89.17716604657471,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": false
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410,
+        768415
+      ]
+    },
+    "sac_32302@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.624598003923893
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.624598003923893,
+      "execution_seconds": 99.3798707453534,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "sac_32302@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 135
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6307209157384932
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 135,
+      "planner_seconds": 0.6307209157384932,
+      "execution_seconds": 93.9228407528717,
+      "errors": [
+        {
+          "seed": 768413,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": true,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": false
+      },
+      "rescue": [
+        768405
+      ],
+      "regression": [
+        768400,
+        768410,
+        768415
+      ]
+    },
+    "sac_32302@128": {
+      "api_calls_by_kind": {
+        "plan_screw": 138
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6679630456492305
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 9,
+      "steps": 1600,
+      "planner_calls": 138,
+      "planner_seconds": 0.6679630456492305,
+      "execution_seconds": 87.40583021030761,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": true,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [
+        768405
+      ],
+      "regression": [
+        768400,
+        768410
+      ]
+    },
+    "witness_margin_32301@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.5946441381238401
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.5946441381238401,
+      "execution_seconds": 87.85693252598867,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "witness_margin_32301@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 138
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6948254548478872
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 138,
+      "planner_seconds": 0.6948254548478872,
+      "execution_seconds": 98.68697383976541,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410
+      ]
+    },
+    "witness_project_32301@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6283050761558115
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.6283050761558115,
+      "execution_seconds": 97.55200265697204,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "witness_project_32301@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6483902169857174
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.6483902169857174,
+      "execution_seconds": 99.43598463037051,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "witness_qp_32301@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6375225221272558
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.6375225221272558,
+      "execution_seconds": 96.9943356574513,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "witness_qp_32301@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 135
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.633512276224792
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 7,
+      "steps": 1600,
+      "planner_calls": 135,
+      "planner_seconds": 0.633512276224792,
+      "execution_seconds": 91.03772001061589,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": false
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410,
+        768415
+      ]
+    },
+    "witness_qp_32301@128": {
+      "api_calls_by_kind": {
+        "plan_screw": 138
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.645412438781932
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 138,
+      "planner_seconds": 0.645412438781932,
+      "execution_seconds": 93.829924978083,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410
+      ]
+    },
+    "witness_qp_32302@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6291276083793491
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.6291276083793491,
+      "execution_seconds": 88.80035347654484,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "witness_qp_32302@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 138
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6542129553854465
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 7,
+      "steps": 1600,
+      "planner_calls": 138,
+      "planner_seconds": 0.6542129553854465,
+      "execution_seconds": 93.13224957208149,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": false
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410,
+        768415
+      ]
+    },
+    "witness_qp_32302@128": {
+      "api_calls_by_kind": {
+        "plan_screw": 138
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6739812812302262
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 138,
+      "planner_seconds": 0.6739812812302262,
+      "execution_seconds": 88.50990498648025,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410
+      ]
+    },
+    "witness_soft_32301@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6263665778096765
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.6263665778096765,
+      "execution_seconds": 97.81298051355407,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "witness_soft_32301@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 136
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6735683309379965
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 9,
+      "steps": 1600,
+      "planner_calls": 136,
+      "planner_seconds": 0.6735683309379965,
+      "execution_seconds": 84.93374780821614,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": [
+        768410
+      ]
+    },
+    "witness_soft_32301@128": {
+      "api_calls_by_kind": {
+        "plan_screw": 140
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.7203439094591886
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 140,
+      "planner_seconds": 0.7203439094591886,
+      "execution_seconds": 89.00626358902082,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410
+      ]
+    },
+    "witness_soft_32302@0": {
+      "api_calls_by_kind": {
+        "plan_screw": 132
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6391622391529381
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 10,
+      "steps": 1600,
+      "planner_calls": 132,
+      "planner_seconds": 0.6391622391529381,
+      "execution_seconds": 88.59316902072169,
+      "errors": [],
+      "outcomes": {
+        "768400": true,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": true,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "witness_soft_32302@64": {
+      "api_calls_by_kind": {
+        "plan_screw": 138
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6743520963937044
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 138,
+      "planner_seconds": 0.6743520963937044,
+      "execution_seconds": 87.0695954922121,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410
+      ]
+    },
+    "witness_soft_32302@128": {
+      "api_calls_by_kind": {
+        "plan_screw": 138
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.6984716956503689
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 16,
+      "success": 8,
+      "steps": 1600,
+      "planner_calls": 138,
+      "planner_seconds": 0.6984716956503689,
+      "execution_seconds": 89.0528432908468,
+      "errors": [],
+      "outcomes": {
+        "768400": false,
+        "768401": false,
+        "768402": true,
+        "768403": true,
+        "768404": false,
+        "768405": false,
+        "768406": true,
+        "768407": true,
+        "768408": false,
+        "768409": true,
+        "768410": false,
+        "768411": false,
+        "768412": true,
+        "768413": false,
+        "768414": true,
+        "768415": true
+      },
+      "rescue": [],
+      "regression": [
+        768400,
+        768410
+      ]
+    },
+    "confirm_fixed5": {
+      "api_calls_by_kind": {
+        "plan_screw": 256
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.25864672427997
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 24,
+      "steps": 3200,
+      "planner_calls": 256,
+      "planner_seconds": 1.25864672427997,
+      "execution_seconds": 194.57485818280838,
+      "errors": [
+        {
+          "seed": 768600,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": true,
+        "768604": true,
+        "768605": true,
+        "768606": true,
+        "768607": false,
+        "768608": false,
+        "768609": true,
+        "768610": true,
+        "768611": true,
+        "768612": true,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": false,
+        "768620": true,
+        "768621": true,
+        "768622": true,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": true,
+        "768627": true,
+        "768628": true,
+        "768629": false,
+        "768630": true,
+        "768631": false
+      },
+      "rescue": [
+        768603,
+        768605,
+        768611,
+        768612,
+        768617,
+        768622,
+        768626,
+        768627,
+        768630
+      ],
+      "regression": [
+        768607,
+        768619,
+        768631
+      ]
+    },
+    "confirm_joint_sac_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 282
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3510197126306593
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 16,
+      "steps": 3200,
+      "planner_calls": 282,
+      "planner_seconds": 1.3510197126306593,
+      "execution_seconds": 194.2797348049935,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": true,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": false,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": false,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768603,
+        768617
+      ],
+      "regression": [
+        768610,
+        768615,
+        768619,
+        768631
+      ]
+    },
+    "confirm_old_rl": {
+      "api_calls_by_kind": {
+        "plan_screw": 274
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.30682456609793
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 18,
+      "steps": 3200,
+      "planner_calls": 274,
+      "planner_seconds": 1.30682456609793,
+      "execution_seconds": 193.31686916807666,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": false,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": true,
+        "768611": true,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768611
+      ],
+      "regression": [
+        768601
+      ]
+    },
+    "confirm_prior_sac32202": {
+      "api_calls_by_kind": {
+        "plan_screw": 271
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3303142040967941
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 21,
+      "steps": 3200,
+      "planner_calls": 271,
+      "planner_seconds": 1.3303142040967941,
+      "execution_seconds": 194.49274799064733,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": true,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": true,
+        "768611": true,
+        "768612": false,
+        "768613": false,
+        "768614": false,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": true,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": true,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768605,
+        768611,
+        768623,
+        768627
+      ],
+      "regression": [
+        768614
+      ]
+    },
+    "confirm_ranking_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 283
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3768876399844885
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 11,
+      "steps": 3200,
+      "planner_calls": 283,
+      "planner_seconds": 1.3768876399844885,
+      "execution_seconds": 194.75243040267378,
+      "errors": [
+        {
+          "seed": 768600,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": false,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": true,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": false,
+        "768616": false,
+        "768617": false,
+        "768618": false,
+        "768619": false,
+        "768620": false,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": false,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": true,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768611,
+        768629
+      ],
+      "regression": [
+        768607,
+        768610,
+        768615,
+        768616,
+        768618,
+        768619,
+        768620,
+        768624,
+        768631
+      ]
+    },
+    "confirm_ranking_32302": {
+      "api_calls_by_kind": {
+        "plan_screw": 288
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.4251230827067047
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 15,
+      "steps": 3200,
+      "planner_calls": 288,
+      "planner_seconds": 1.4251230827067047,
+      "execution_seconds": 196.3715668010991,
+      "errors": [
+        {
+          "seed": 768600,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": true,
+        "768606": true,
+        "768607": false,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": false,
+        "768616": false,
+        "768617": true,
+        "768618": true,
+        "768619": false,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": true,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768605,
+        768617,
+        768629
+      ],
+      "regression": [
+        768607,
+        768610,
+        768615,
+        768616,
+        768619,
+        768631
+      ]
+    },
+    "confirm_retention_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 285
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.425920010311529
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 18,
+      "steps": 3200,
+      "planner_calls": 285,
+      "planner_seconds": 1.425920010311529,
+      "execution_seconds": 195.79702683887444,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768617
+      ],
+      "regression": [
+        768610
+      ]
+    },
+    "confirm_retention_32302": {
+      "api_calls_by_kind": {
+        "plan_screw": 284
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3655285032000393
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 18,
+      "steps": 3200,
+      "planner_calls": 284,
+      "planner_seconds": 1.3655285032000393,
+      "execution_seconds": 195.85417244466953,
+      "errors": [
+        {
+          "seed": 768600,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768617
+      ],
+      "regression": [
+        768610
+      ]
+    },
+    "confirm_rule": {
+      "api_calls_by_kind": {
+        "plan_screw": 258
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.2605238324031234
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 18,
+      "steps": 3200,
+      "planner_calls": 258,
+      "planner_seconds": 1.2605238324031234,
+      "execution_seconds": 194.75335270352662,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": true,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": true,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768603
+      ],
+      "regression": [
+        768631
+      ]
+    },
+    "confirm_sac_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 287
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.35809830063954
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 17,
+      "steps": 3200,
+      "planner_calls": 287,
+      "planner_seconds": 1.35809830063954,
+      "execution_seconds": 196.44733225926757,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768610,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": false,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": true,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768617,
+        768623
+      ],
+      "regression": [
+        768601,
+        768610,
+        768631
+      ]
+    },
+    "confirm_sac_32302": {
+      "api_calls_by_kind": {
+        "plan_screw": 285
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3446237889584154
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 17,
+      "steps": 3200,
+      "planner_calls": 285,
+      "planner_seconds": 1.3446237889584154,
+      "execution_seconds": 200.6527067096904,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": false,
+        "768608": false,
+        "768609": false,
+        "768610": true,
+        "768611": false,
+        "768612": true,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768612,
+        768617
+      ],
+      "regression": [
+        768607,
+        768609,
+        768631
+      ]
+    },
+    "confirm_sac_64_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 272
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.344714745413512
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 19,
+      "steps": 3200,
+      "planner_calls": 272,
+      "planner_seconds": 1.344714745413512,
+      "execution_seconds": 194.878625204321,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": true,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": true,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768603,
+        768629
+      ],
+      "regression": [
+        768610
+      ]
+    },
+    "confirm_warm": {
+      "api_calls_by_kind": {
+        "plan_screw": 271
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3153681033290923
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 18,
+      "steps": 3200,
+      "planner_calls": 271,
+      "planner_seconds": 1.3153681033290923,
+      "execution_seconds": 194.5739808746148,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": true,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "confirm_witness_margin_64_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 285
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3422290165908635
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 18,
+      "steps": 3200,
+      "planner_calls": 285,
+      "planner_seconds": 1.3422290165908635,
+      "execution_seconds": 225.5698398477398,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768617
+      ],
+      "regression": [
+        768610
+      ]
+    },
+    "confirm_witness_qp_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 277
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3275649887509644
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 17,
+      "steps": 3200,
+      "planner_calls": 277,
+      "planner_seconds": 1.3275649887509644,
+      "execution_seconds": 195.02605768619105,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768610,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [],
+      "regression": [
+        768610
+      ]
+    },
+    "confirm_witness_qp_32302": {
+      "api_calls_by_kind": {
+        "plan_screw": 282
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3430311798583716
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 16,
+      "steps": 3200,
+      "planner_calls": 282,
+      "planner_seconds": 1.3430311798583716,
+      "execution_seconds": 194.90867064753547,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [],
+      "regression": [
+        768610,
+        768631
+      ]
+    },
+    "confirm_witness_soft_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 285
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.348984511103481
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 17,
+      "steps": 3200,
+      "planner_calls": 285,
+      "planner_seconds": 1.348984511103481,
+      "execution_seconds": 194.38767414726317,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768610,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": false,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768617
+      ],
+      "regression": [
+        768610,
+        768619
+      ]
+    },
+    "confirm_witness_soft_32302": {
+      "api_calls_by_kind": {
+        "plan_screw": 283
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3644130071625113
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 17,
+      "steps": 3200,
+      "planner_calls": 283,
+      "planner_seconds": 1.3644130071625113,
+      "execution_seconds": 195.5952900738921,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [],
+      "regression": [
+        768610
+      ]
+    },
+    "confirm_witness_soft_64_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 279
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3867280154954642
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 17,
+      "steps": 3200,
+      "planner_calls": 279,
+      "planner_seconds": 1.3867280154954642,
+      "execution_seconds": 228.41503705107607,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768617
+      ],
+      "regression": [
+        768610,
+        768631
+      ]
+    },
+    "training_witness_sac_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 90
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.4608618044294417
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 11,
+      "success": 9,
+      "steps": 1100,
+      "planner_calls": 90,
+      "planner_seconds": 0.4608618044294417,
+      "execution_seconds": 60.58904590993188,
+      "errors": [],
+      "outcomes": {
+        "768000": true,
+        "768002": true,
+        "768003": true,
+        "768004": true,
+        "768005": true,
+        "768006": true,
+        "768008": true,
+        "768012": true,
+        "768024": true,
+        "768032": false,
+        "768056": false
+      },
+      "rescue": [
+        768024
+      ],
+      "regression": []
+    },
+    "training_witness_witness_qp_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 86
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.4554880829527974
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 11,
+      "success": 10,
+      "steps": 1100,
+      "planner_calls": 86,
+      "planner_seconds": 0.4554880829527974,
+      "execution_seconds": 61.35586929926649,
+      "errors": [],
+      "outcomes": {
+        "768000": true,
+        "768002": true,
+        "768003": true,
+        "768004": true,
+        "768005": true,
+        "768006": true,
+        "768008": true,
+        "768012": true,
+        "768024": true,
+        "768032": true,
+        "768056": false
+      },
+      "rescue": [
+        768024,
+        768032
+      ],
+      "regression": []
+    },
+    "training_witness_witness_soft_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 87
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 0.4397604635450989
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 11,
+      "success": 9,
+      "steps": 1100,
+      "planner_calls": 87,
+      "planner_seconds": 0.4397604635450989,
+      "execution_seconds": 58.57528815488331,
+      "errors": [],
+      "outcomes": {
+        "768000": true,
+        "768002": true,
+        "768003": true,
+        "768004": true,
+        "768005": true,
+        "768006": true,
+        "768008": true,
+        "768012": true,
+        "768024": false,
+        "768032": true,
+        "768056": false
+      },
+      "rescue": [
+        768032
+      ],
+      "regression": []
+    }
+  },
+  "training": {
+    "joint_sac_32301": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 1134
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 5.661684745224193
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 128,
+        "success": 61,
+        "steps": 12800,
+        "planner_calls": 1134,
+        "planner_seconds": 5.661684745224193,
+        "execution_seconds": 712.7560396725312,
+        "errors": [
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768159,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768196,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768200,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768201,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768209,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768216,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 753,
+      "updates": 5120,
+      "optimizer_seconds": 16.906517814612016,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {
+          "plan_screw": 383
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 1.823707141680643
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 45,
+        "success": 31,
+        "steps": 4500,
+        "planner_calls": 383,
+        "planner_seconds": 1.823707141680643,
+        "execution_seconds": 264.5251022183802,
+        "errors": [
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "PLAN_FAILED"
+          }
+        ]
+      },
+      "projection": {
+        "cuts": 0,
+        "zero_steps": 0,
+        "attempts": 0,
+        "seconds": 0
+      }
+    },
+    "ranking_32301": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 1133
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 5.491825156845152
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 128,
+        "success": 50,
+        "steps": 12800,
+        "planner_calls": 1133,
+        "planner_seconds": 5.491825156845152,
+        "execution_seconds": 680.1738757034764,
+        "errors": [
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768114,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768127,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768159,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768190,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768196,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768200,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768201,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768209,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 565,
+      "updates": 5120,
+      "optimizer_seconds": 99.505370213883,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {
+          "plan_screw": 400
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 1.9434095961041749
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 47,
+        "success": 27,
+        "steps": 4700,
+        "planner_calls": 400,
+        "planner_seconds": 1.9434095961041749,
+        "execution_seconds": 290.8061116056051,
+        "errors": [
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "projection": {
+        "cuts": 0,
+        "zero_steps": 0,
+        "attempts": 0,
+        "seconds": 0
+      }
+    },
+    "ranking_32302": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 1125
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 5.395519582554698
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 128,
+        "success": 51,
+        "steps": 12800,
+        "planner_calls": 1125,
+        "planner_seconds": 5.395519582554698,
+        "execution_seconds": 677.3647919839714,
+        "errors": [
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768133,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768152,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768159,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768182,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768190,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768191,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768192,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768196,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768197,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768200,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768201,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 605,
+      "updates": 5120,
+      "optimizer_seconds": 99.82942714565434,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {
+          "plan_screw": 405
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 1.9838577546179295
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 47,
+        "success": 33,
+        "steps": 4700,
+        "planner_calls": 405,
+        "planner_seconds": 1.9838577546179295,
+        "execution_seconds": 288.09326394670643,
+        "errors": [
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "projection": {
+        "cuts": 0,
+        "zero_steps": 0,
+        "attempts": 0,
+        "seconds": 0
+      }
+    },
+    "retention_32301": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 1127
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 5.657867521746084
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 128,
+        "success": 58,
+        "steps": 12800,
+        "planner_calls": 1127,
+        "planner_seconds": 5.657867521746084,
+        "execution_seconds": 618.5677474706899,
+        "errors": [
+          {
+            "seed": 768101,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768106,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768114,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768121,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768133,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768159,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768196,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768199,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768200,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768201,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768209,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 640,
+      "updates": 5120,
+      "optimizer_seconds": 180.05119303031825,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {
+          "plan_screw": 407
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 2.064282216131687
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 47,
+        "success": 36,
+        "steps": 4700,
+        "planner_calls": 407,
+        "planner_seconds": 2.064282216131687,
+        "execution_seconds": 291.3355031928513,
+        "errors": [
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "projection": {
+        "cuts": 0,
+        "zero_steps": 0,
+        "attempts": 0,
+        "seconds": 0
+      }
+    },
+    "retention_32302": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 1131
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 5.5622416799888015
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 128,
+        "success": 59,
+        "steps": 12800,
+        "planner_calls": 1131,
+        "planner_seconds": 5.5622416799888015,
+        "execution_seconds": 623.5744936019182,
+        "errors": [
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768106,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768114,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768133,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768192,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768196,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768200,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768201,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 707,
+      "updates": 5120,
+      "optimizer_seconds": 178.53710859036073,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {
+          "plan_screw": 396
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 1.9085610858164728
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 47,
+        "success": 38,
+        "steps": 4700,
+        "planner_calls": 396,
+        "planner_seconds": 1.9085610858164728,
+        "execution_seconds": 288.6805673777126,
+        "errors": [
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "projection": {
+        "cuts": 0,
+        "zero_steps": 0,
+        "attempts": 0,
+        "seconds": 0
+      }
+    },
+    "sac_32301": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 1138
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 5.443788463482633
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 128,
+        "success": 62,
+        "steps": 12800,
+        "planner_calls": 1138,
+        "planner_seconds": 5.443788463482633,
+        "execution_seconds": 745.6909956743475,
+        "errors": [
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768182,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768189,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768190,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768196,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768197,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768200,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768201,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768209,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 751,
+      "updates": 5120,
+      "optimizer_seconds": 16.13681028643623,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {
+          "plan_screw": 397
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 2.0038729403167963
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 47,
+        "success": 35,
+        "steps": 4700,
+        "planner_calls": 397,
+        "planner_seconds": 2.0038729403167963,
+        "execution_seconds": 290.75991030200385,
+        "errors": [
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "projection": {
+        "cuts": 0,
+        "zero_steps": 0,
+        "attempts": 0,
+        "seconds": 0
+      }
+    },
+    "sac_32302": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 1141
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 5.45667309849523
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 128,
+        "success": 62,
+        "steps": 12800,
+        "planner_calls": 1141,
+        "planner_seconds": 5.45667309849523,
+        "execution_seconds": 746.2581760960165,
+        "errors": [
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768190,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768196,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768200,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768201,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 760,
+      "updates": 5120,
+      "optimizer_seconds": 16.2861775693018,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {
+          "plan_screw": 400
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 1.9229714416433126
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 47,
+        "success": 32,
+        "steps": 4700,
+        "planner_calls": 400,
+        "planner_seconds": 1.9229714416433126,
+        "execution_seconds": 289.90787531086244,
+        "errors": [
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "projection": {
+        "cuts": 0,
+        "zero_steps": 0,
+        "attempts": 0,
+        "seconds": 0
+      }
+    },
+    "witness_margin_32301": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 554
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 2.6668711621314287
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 64,
+        "success": 29,
+        "steps": 6400,
+        "planner_calls": 554,
+        "planner_seconds": 2.6668711621314287,
+        "execution_seconds": 358.7309395512566,
+        "errors": [
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768114,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768133,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768159,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 327,
+      "updates": 2560,
+      "optimizer_seconds": 117.5974819494877,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {},
+        "api_seconds_by_kind": {},
+        "known_servo_ik_calls": 0,
+        "episodes": 0,
+        "success": 0,
+        "steps": 0,
+        "planner_calls": 0,
+        "planner_seconds": 0,
+        "execution_seconds": 0,
+        "errors": []
+      },
+      "projection": {
+        "cuts": 39972,
+        "zero_steps": 0,
+        "attempts": 2560,
+        "seconds": 54.93519383878447
+      }
+    },
+    "witness_project_32301": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 578
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 2.8893388041760772
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 64,
+        "success": 27,
+        "steps": 6400,
+        "planner_calls": 578,
+        "planner_seconds": 2.8893388041760772,
+        "execution_seconds": 381.84391946461983,
+        "errors": [
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768114,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768159,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 320,
+      "updates": 2560,
+      "optimizer_seconds": 105.5169241677504,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {},
+        "api_seconds_by_kind": {},
+        "known_servo_ik_calls": 0,
+        "episodes": 0,
+        "success": 0,
+        "steps": 0,
+        "planner_calls": 0,
+        "planner_seconds": 0,
+        "execution_seconds": 0,
+        "errors": []
+      },
+      "projection": {
+        "cuts": 16909,
+        "zero_steps": 1720,
+        "attempts": 2560,
+        "seconds": 54.660890974337235
+      }
+    },
+    "witness_qp_32301": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 1143
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 5.508057246683165
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 128,
+        "success": 65,
+        "steps": 12800,
+        "planner_calls": 1143,
+        "planner_seconds": 5.508057246683165,
+        "execution_seconds": 744.3638737557922,
+        "errors": [
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768114,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768150,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768190,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768196,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768200,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768201,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 697,
+      "updates": 5120,
+      "optimizer_seconds": 206.16785302199423,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {
+          "plan_screw": 395
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 1.8928296151570976
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 47,
+        "success": 37,
+        "steps": 4700,
+        "planner_calls": 395,
+        "planner_seconds": 1.8928296151570976,
+        "execution_seconds": 273.9771864854265,
+        "errors": [
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "projection": {
+        "cuts": 34387,
+        "zero_steps": 0,
+        "attempts": 5120,
+        "seconds": 82.67409878177568
+      }
+    },
+    "witness_qp_32302": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 1130
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 5.484308202052489
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 128,
+        "success": 59,
+        "steps": 12800,
+        "planner_calls": 1130,
+        "planner_seconds": 5.484308202052489,
+        "execution_seconds": 719.1191839808598,
+        "errors": [
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768159,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768196,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768200,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768201,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 734,
+      "updates": 5120,
+      "optimizer_seconds": 220.68692948506214,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {
+          "plan_screw": 399
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 1.974657637765631
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 47,
+        "success": 38,
+        "steps": 4700,
+        "planner_calls": 399,
+        "planner_seconds": 1.974657637765631,
+        "execution_seconds": 267.5894014800433,
+        "errors": [
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "projection": {
+        "cuts": 39922,
+        "zero_steps": 0,
+        "attempts": 5120,
+        "seconds": 89.06693441886455
+      }
+    },
+    "witness_soft_32301": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 1123
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 5.729391136905178
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 128,
+        "success": 63,
+        "steps": 12800,
+        "planner_calls": 1123,
+        "planner_seconds": 5.729391136905178,
+        "execution_seconds": 733.2788510234095,
+        "errors": [
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768114,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768133,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768159,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768196,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768200,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768201,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768209,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 769,
+      "updates": 5120,
+      "optimizer_seconds": 109.65769437304698,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {
+          "plan_screw": 397
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 1.9805859436746687
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 47,
+        "success": 36,
+        "steps": 4700,
+        "planner_calls": 397,
+        "planner_seconds": 1.9805859436746687,
+        "execution_seconds": 255.00672012893483,
+        "errors": [
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "projection": {
+        "cuts": 0,
+        "zero_steps": 0,
+        "attempts": 0,
+        "seconds": 0
+      }
+    },
+    "witness_soft_32302": {
+      "own": {
+        "api_calls_by_kind": {
+          "plan_screw": 1144
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 5.662874329602346
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 128,
+        "success": 60,
+        "steps": 12800,
+        "planner_calls": 1144,
+        "planner_seconds": 5.662874329602346,
+        "execution_seconds": 739.7344148592092,
+        "errors": [
+          {
+            "seed": 768105,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768120,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768141,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768149,
+            "error": "PLAN_FAILED"
+          },
+          {
+            "seed": 768154,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768155,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768196,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768200,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768201,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768209,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "own_decisions": 852,
+      "updates": 5120,
+      "optimizer_seconds": 110.146087678615,
+      "shared_charge": {
+        "api_calls_by_kind": {
+          "plan_screw": 1620
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 7.963272544089705
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 189,
+        "success": 87,
+        "steps": 18900,
+        "planner_calls": 1620,
+        "planner_seconds": 7.963272544089705,
+        "execution_seconds": 1138.7613923973404,
+        "errors": [
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768001,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768019,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768030,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768033,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768039,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768043,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768046,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768047,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768049,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768055,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768061,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768063,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "refresh": {
+        "api_calls_by_kind": {
+          "plan_screw": 394
+        },
+        "api_seconds_by_kind": {
+          "plan_screw": 2.0174264495726675
+        },
+        "known_servo_ik_calls": 0,
+        "episodes": 47,
+        "success": 36,
+        "steps": 4700,
+        "planner_calls": 394,
+        "planner_seconds": 2.0174264495726675,
+        "execution_seconds": 256.40159839973785,
+        "errors": [
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768302,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          },
+          {
+            "seed": 768305,
+            "error": "HORIZON"
+          }
+        ]
+      },
+      "projection": {
+        "cuts": 0,
+        "zero_steps": 0,
+        "attempts": 0,
+        "seconds": 0
+      }
+    }
+  },
+  "global_unique": {
+    "api_calls_by_kind": {
+      "plan_screw": 31022,
+      "IK": 3319,
+      "plan_qpos_to_pose": 26
+    },
+    "api_seconds_by_kind": {
+      "IK": 1.0322266896255314,
+      "plan_qpos_to_pose": 1.1168844648636878,
+      "plan_screw": 151.3098355412949
+    },
+    "known_servo_ik_calls": 3267,
+    "episodes": 3637,
+    "success": 1964,
+    "steps": 373600,
+    "planner_calls": 34367,
+    "planner_seconds": 153.4589466957841,
+    "execution_seconds": 21133.792515429435,
+    "errors": [
+      {
+        "seed": 768600,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768600,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768600,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768600,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768610,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768610,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768610,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768608,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768001,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768001,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768019,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768030,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768030,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768033,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768033,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768039,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768039,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768043,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768043,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768046,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768046,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768047,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768049,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768049,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768055,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768055,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768055,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768061,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768061,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768061,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768063,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768064,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768069,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768069,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768071,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768073,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768082,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768159,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768196,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768200,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768201,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768209,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768216,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768114,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768127,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768159,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768413,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768190,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768196,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768200,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768201,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768209,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768413,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768133,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768152,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768159,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768413,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768182,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768190,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768191,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768192,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768196,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768197,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768200,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768201,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768413,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768101,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768106,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768114,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768121,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768133,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768159,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768196,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768199,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768200,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768201,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768209,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768106,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768114,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768133,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768192,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768196,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768200,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768201,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768182,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768189,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768190,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768196,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768197,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768200,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768201,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768209,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768413,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768190,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768196,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768200,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768201,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768114,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768133,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768159,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768114,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768159,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768114,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768150,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768190,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768196,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768200,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768201,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768159,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768196,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768200,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768201,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768114,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768133,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768159,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768196,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768200,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768201,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768209,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768105,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768120,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768141,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768149,
+        "error": "PLAN_FAILED"
+      },
+      {
+        "seed": 768154,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768155,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768196,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768200,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768201,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768209,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768302,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768305,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768800,
+        "error": "SERVO_IK_FAILED"
+      },
+      {
+        "seed": 768800,
+        "error": "SERVO_IK_FAILED"
+      },
+      {
+        "seed": 768801,
+        "error": "CHARGER_NOT_GRASPED"
+      },
+      {
+        "seed": 768801,
+        "error": "CHARGER_NOT_GRASPED"
+      },
+      {
+        "seed": 768802,
+        "error": "CHARGER_NOT_GRASPED"
+      },
+      {
+        "seed": 768802,
+        "error": "CHARGER_NOT_GRASPED"
+      },
+      {
+        "seed": 768803,
+        "error": "CHARGER_NOT_GRASPED"
+      },
+      {
+        "seed": 768805,
+        "error": "CHARGER_NOT_GRASPED"
+      },
+      {
+        "seed": 768807,
+        "error": "CHARGER_NOT_GRASPED"
+      },
+      {
+        "seed": 768811,
+        "error": "CHARGER_NOT_GRASPED"
+      },
+      {
+        "seed": 768811,
+        "error": "CHARGER_NOT_GRASPED"
+      },
+      {
+        "seed": 768800,
+        "error": "SERVO_IK_FAILED"
+      },
+      {
+        "seed": 768801,
+        "error": "CHARGER_NOT_GRASPED"
+      },
+      {
+        "seed": 768811,
+        "error": "CHARGER_NOT_GRASPED"
+      },
+      {
+        "seed": 768811,
+        "error": "CHARGER_NOT_GRASPED"
+      },
+      {
+        "seed": 768800,
+        "error": "SERVO_IK_FAILED"
+      },
+      {
+        "seed": 768800,
+        "error": "SERVO_IK_FAILED"
+      }
+    ]
+  },
+  "pending_files": [],
+  "shared": {
+    "api_calls_by_kind": {
+      "plan_screw": 1620
+    },
+    "api_seconds_by_kind": {
+      "plan_screw": 7.963272544089705
+    },
+    "known_servo_ik_calls": 0,
+    "episodes": 189,
+    "success": 87,
+    "steps": 18900,
+    "planner_calls": 1620,
+    "planner_seconds": 7.963272544089705,
+    "execution_seconds": 1138.7613923973404,
+    "errors": [
+      {
+        "seed": 768001,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768001,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768019,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768030,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768030,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768033,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768033,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768039,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768039,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768043,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768043,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768046,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768046,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768047,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768049,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768049,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768055,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768055,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768055,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768061,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768061,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768061,
+        "error": "HORIZON"
+      },
+      {
+        "seed": 768063,
+        "error": "HORIZON"
+      }
+    ]
+  },
+  "scope": "Public native simulation; shared cost charged per arm but unique physical executions counted once globally. Confirmation is new development, not sealed test. Variable legal branch availability changes actual refresh cost, reported explicitly."
+}

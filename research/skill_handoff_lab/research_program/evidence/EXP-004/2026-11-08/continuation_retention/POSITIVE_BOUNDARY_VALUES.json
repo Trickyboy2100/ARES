@@ -1,0 +1,134 @@
+[
+  {
+    "arm": "sac",
+    "seed": 768024,
+    "step": 63,
+    "measured_better": 3,
+    "measured_worse": 6,
+    "current_actor": 3,
+    "q_better": 1.291363000869751,
+    "q_worse": 0.8176093101501465,
+    "scope": "Recorded reference-policy boundary, not necessarily visited by final policy; shaped softQ is not success probability"
+  },
+  {
+    "arm": "sac",
+    "seed": 768032,
+    "step": 71,
+    "measured_better": 2,
+    "measured_worse": 0,
+    "current_actor": 0,
+    "q_better": 1.2103400230407715,
+    "q_worse": 1.0651633739471436,
+    "scope": "Recorded reference-policy boundary, not necessarily visited by final policy; shaped softQ is not success probability"
+  },
+  {
+    "arm": "sac",
+    "seed": 768032,
+    "step": 71,
+    "measured_better": 3,
+    "measured_worse": 0,
+    "current_actor": 0,
+    "q_better": 1.3118972778320312,
+    "q_worse": 1.0651633739471436,
+    "scope": "Recorded reference-policy boundary, not necessarily visited by final policy; shaped softQ is not success probability"
+  },
+  {
+    "arm": "sac",
+    "seed": 768056,
+    "step": 71,
+    "measured_better": 5,
+    "measured_worse": 3,
+    "current_actor": 3,
+    "q_better": 0.8013455867767334,
+    "q_worse": 0.6139247417449951,
+    "scope": "Recorded reference-policy boundary, not necessarily visited by final policy; shaped softQ is not success probability"
+  },
+  {
+    "arm": "witness_soft",
+    "seed": 768024,
+    "step": 63,
+    "measured_better": 3,
+    "measured_worse": 6,
+    "current_actor": 6,
+    "q_better": 1.3451162576675415,
+    "q_worse": 0.6189788579940796,
+    "scope": "Recorded reference-policy boundary, not necessarily visited by final policy; shaped softQ is not success probability"
+  },
+  {
+    "arm": "witness_soft",
+    "seed": 768032,
+    "step": 71,
+    "measured_better": 2,
+    "measured_worse": 0,
+    "current_actor": 3,
+    "q_better": 1.1998405456542969,
+    "q_worse": 1.0448408126831055,
+    "scope": "Recorded reference-policy boundary, not necessarily visited by final policy; shaped softQ is not success probability"
+  },
+  {
+    "arm": "witness_soft",
+    "seed": 768032,
+    "step": 71,
+    "measured_better": 3,
+    "measured_worse": 0,
+    "current_actor": 3,
+    "q_better": 1.1840026378631592,
+    "q_worse": 1.0448408126831055,
+    "scope": "Recorded reference-policy boundary, not necessarily visited by final policy; shaped softQ is not success probability"
+  },
+  {
+    "arm": "witness_soft",
+    "seed": 768056,
+    "step": 71,
+    "measured_better": 5,
+    "measured_worse": 3,
+    "current_actor": 3,
+    "q_better": 0.9068013429641724,
+    "q_worse": 0.5828671455383301,
+    "scope": "Recorded reference-policy boundary, not necessarily visited by final policy; shaped softQ is not success probability"
+  },
+  {
+    "arm": "witness_qp",
+    "seed": 768024,
+    "step": 63,
+    "measured_better": 3,
+    "measured_worse": 6,
+    "current_actor": 3,
+    "q_better": 1.204371452331543,
+    "q_worse": 0.8438365459442139,
+    "scope": "Recorded reference-policy boundary, not necessarily visited by final policy; shaped softQ is not success probability"
+  },
+  {
+    "arm": "witness_qp",
+    "seed": 768032,
+    "step": 71,
+    "measured_better": 2,
+    "measured_worse": 0,
+    "current_actor": 3,
+    "q_better": 1.2155051231384277,
+    "q_worse": 1.1312199831008911,
+    "scope": "Recorded reference-policy boundary, not necessarily visited by final policy; shaped softQ is not success probability"
+  },
+  {
+    "arm": "witness_qp",
+    "seed": 768032,
+    "step": 71,
+    "measured_better": 3,
+    "measured_worse": 0,
+    "current_actor": 3,
+    "q_better": 1.2732174396514893,
+    "q_worse": 1.1312199831008911,
+    "scope": "Recorded reference-policy boundary, not necessarily visited by final policy; shaped softQ is not success probability"
+  },
+  {
+    "arm": "witness_qp",
+    "seed": 768056,
+    "step": 71,
+    "measured_better": 5,
+    "measured_worse": 3,
+    "current_actor": 3,
+    "q_better": 0.9986956119537354,
+    "q_worse": 0.551742434501648,
+    "scope": "Recorded reference-policy boundary, not necessarily visited by final policy; shaped softQ is not success probability"
+  }
+]

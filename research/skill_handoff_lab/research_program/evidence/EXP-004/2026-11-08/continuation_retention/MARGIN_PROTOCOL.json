@@ -1,0 +1,17 @@
+{
+  "hypothesis": "Near-zero retained logit gaps can preserve recorded argmax yet fail nearby real states; contrast a fixed half-reference-gap constraint.",
+  "fraction": 0.5,
+  "chosen_before_new_confirmation": true,
+  "network_seed": 32301,
+  "initial": "same warm residual initialization and SHARED189",
+  "budget": "64 own episodes initially; compare only equal64 checkpoints. No threshold grid.",
+  "information": "same83 policy features, physical witness set and replay; no runtime gate",
+  "basis": {
+    "qp64_nonzero_witness_margin_median": 0.47646862268447876,
+    "soft64_nonzero_witness_margin_median": 1.9990203380584717,
+    "qp64_native_success": 7,
+    "soft64_native_success": 9
+  },
+  "claim": "Standard margin preservation; no independent novelty or efficacy asserted. A finite margin is not physical robustness proof.",
+  "bounded_allocation_rule": "Pilot remains64 unless native seen-development result exceeds warm10/16 and same-budget SAC/soft controls with at least one rescue and at most one regression. Such a signal would justify matched128 continuation and a second seed before fresh confirmation; otherwise retain the64 negative/retention pilot without expanding."
+}

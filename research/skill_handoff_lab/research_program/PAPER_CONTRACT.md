@@ -138,3 +138,8 @@ Evidence: [evidence/EXP-004/2026-11-06/joint_continuation/README.md](evidence/EX
 ### 2026-11-07 claim refinement, stable paper problem
 
 Expanded executable authority is an opportunity diagnosis, not a contribution by itself. Preserve task-conditioned real predecessor and recurrent successor learning. Current independent action-coordinate candidate benefit is unsupported after two trained revisions; ordinarySAC is the retained shared baseline. Same model's Actor/greedy-Q extraction has different physical behavior, so a value's continuation policy and execution semantics must accompany any proposed improvement. Native final success, paired rescue/regression, all physical/data cost and frozen new conditions remain primary. Writing proceeds on implemented methods and scoped evidence, not contingent on a VERIFIED label.
+
+
+## 2026-11-08 — continuation retention: actual method iterations and stronger frozen control
+
+The single-paper question and native outcome standard remain unchanged. A complete implementation, finite empirical action-retention property, and actual physical performance are separate claims. Current projected-witness improvement is unsupported on new conditions; preserve the stronger fixed24/32 and inheritedSAC21/32 references rather than treating the new17/32SAC as the strongest available learner. Both fixed-control history and historical data budgets are disclosed. Charger has repeatable predecessor crossover but no demonstrated successor-parameter rescue in9 bounded probes. Do not claim learned transfer, safe policy improvement, joint synergy or publication readiness. Writing and method development continue on actual evidence.

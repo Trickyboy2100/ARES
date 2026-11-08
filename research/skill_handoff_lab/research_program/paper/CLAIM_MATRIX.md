@@ -105,3 +105,18 @@ No unchanged historical scores or sealed tests were relabelled.
 | Additional deployed capability under expanded authority |Frozen SAC32202 loses765625/765627 when masked to old proposals; also avoids regression765604 |LOCAL_EXECUTION_DEPENDENCE|
 
 The above post-hoc evidence updates catalogue-dependence for new conditions only; the earlier seen24 support ablation still ties21/24. It is neither novel coordinate-method gain nor a retrained restricted-policy comparison.
+
+
+## 2026-11-08 continuation-retention claims
+
+| Claim | Actual evidence | Status |
+|---|---|---|
+| Reference-bound physical comparisons and actual own-policy training |189 shared +515 refresh;1536 own episodes;64/128 checkpoints; independent initializations |IMPLEMENTED_AND_EXECUTED|
+| QP finite witness preservation |580/570 final stored nodes, zero choice violations,5120/5120 accepted updates each |SUPPORTED_FINITE_NODES_ONLY|
+| QP improves complete native tasks over same-budget matureRL |17/16 versus17/17SAC on32 new scenes; no rescues forQP |NOT_SUPPORTED|
+| Frozen first-localZ-minus capability |24/32,9 rescue/3 regression againstwarm18; selected before outcomes |SUPPORTED_SCOPED_CONTROL_RESULT_NOT_RL_GAIN|
+| Strongest existing learned reference retained |PriorSAC21/32 under commonfront; different historical data budget |REFERENCE_ONLY_NOT_MATCHED_BUDGET|
+| Multiple necessary rear interventions demonstrated |All6 positive branches reach native success before release |NOT_ESTABLISHED; success maintenance still matters|
+| Real second-task predecessor dependence |Opposite15/30 outcomes on2 natural roots,8 complete repeats |SCOPED_PHYSICAL_EVIDENCE|
+| Second-task rear adaptation or learned transfer |Matched feedback=nominal;9 legal probes0rescue; no new network |UNVERIFIED|
+| Independent SCI RL method advantage/safety theorem |No positive controlled performance or theorem |UNVERIFIED|

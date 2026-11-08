@@ -1,0 +1,3782 @@
+[
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 64,
+    "seed": 768400,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00081_768400_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 64,
+    "seed": 768402,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 64,
+    "first_boundary_difference": {
+      "index": 4,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00003_768402_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00083_768402_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 64,
+    "seed": 768403,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 67,
+    "first_boundary_difference": {
+      "index": 4,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 66,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 66,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00004_768403_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00084_768403_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 64,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 87,
+    "first_boundary_difference": {
+      "index": 8,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 87,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 8,
+        "physical": 7,
+        "step": 87,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00085_768404_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 64,
+    "seed": 768405,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 53,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 52,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 52,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00086_768405_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 64,
+    "seed": 768408,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 81,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 80,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 80,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00009_768408_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00089_768408_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 64,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00091_768410_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 64,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 3,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 62,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 62,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00092_768411_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 64,
+    "seed": 768415,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00096_768415_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 128,
+    "seed": 768400,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00161_768400_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 128,
+    "seed": 768402,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 64,
+    "first_boundary_difference": {
+      "index": 4,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00003_768402_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00163_768402_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 128,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 87,
+    "first_boundary_difference": {
+      "index": 8,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 87,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 87,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00165_768404_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 128,
+    "seed": 768405,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 53,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 52,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 52,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00166_768405_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 128,
+    "seed": 768407,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 47,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 46,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 46,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00008_768407_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00168_768407_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 128,
+    "seed": 768408,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 81,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 80,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 80,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00009_768408_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00169_768408_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 128,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00171_768410_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 128,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 1,
+    "first_boundary_difference": {
+      "index": 0,
+      "reference": {
+        "boundary": true,
+        "a": 1,
+        "physical": 1,
+        "step": 0,
+        "stage": 0
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 0,
+        "stage": 0
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00172_768411_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "joint_sac_32301",
+    "checkpoint": 128,
+    "seed": 768415,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/physics/00176_768415_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 64,
+    "seed": 768400,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00081_768400_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 64,
+    "seed": 768401,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 78,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 77,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 77,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00002_768401_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00082_768401_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 64,
+    "seed": 768403,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 55,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 54,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 54,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00004_768403_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00084_768403_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 64,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 62,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 61,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 61,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00085_768404_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 64,
+    "seed": 768405,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 53,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 52,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 52,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00086_768405_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 64,
+    "seed": 768406,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 68,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 67,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 67,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00007_768406_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00087_768406_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 64,
+    "seed": 768408,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 81,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 80,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 80,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00009_768408_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00089_768408_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 64,
+    "seed": 768409,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 71,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 70,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 2,
+        "physical": 1,
+        "step": 70,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00010_768409_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00090_768409_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 64,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00091_768410_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 64,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 55,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 54,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 54,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00092_768411_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 64,
+    "seed": 768413,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 83,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 82,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 82,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00014_768413_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00094_768413_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 64,
+    "seed": 768415,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00096_768415_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 128,
+    "seed": 768401,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 100,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 81,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 11,
+        "physical": 10,
+        "step": 81,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00002_768401_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00162_768401_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 128,
+    "seed": 768402,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 54,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 53,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 4,
+        "physical": 3,
+        "step": 53,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00003_768402_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00163_768402_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 128,
+    "seed": 768403,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 55,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 54,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 54,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00004_768403_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00164_768403_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 128,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 62,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 61,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 4,
+        "physical": 3,
+        "step": 61,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00165_768404_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 128,
+    "seed": 768405,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 53,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 52,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 52,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00166_768405_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 128,
+    "seed": 768406,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 68,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 67,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 67,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00007_768406_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00167_768406_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 128,
+    "seed": 768409,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 71,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 70,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 70,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00010_768409_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00170_768409_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 128,
+    "seed": 768410,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 64,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00171_768410_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 128,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 55,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 54,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 54,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00172_768411_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 128,
+    "seed": 768412,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 48,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 47,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 47,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00013_768412_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00173_768412_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 128,
+    "seed": 768413,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 83,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 82,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 4,
+        "physical": 3,
+        "step": 82,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00014_768413_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00174_768413_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32301",
+    "checkpoint": 128,
+    "seed": 768415,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/physics/00176_768415_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 64,
+    "seed": 768400,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00081_768400_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 64,
+    "seed": 768401,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 78,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 77,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 77,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00002_768401_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00082_768401_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 64,
+    "seed": 768403,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 55,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 54,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 2,
+        "physical": 1,
+        "step": 54,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00004_768403_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00084_768403_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 64,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 62,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 61,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 61,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00085_768404_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 64,
+    "seed": 768405,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 84,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 84,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 2,
+        "physical": 1,
+        "step": 84,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00086_768405_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 64,
+    "seed": 768408,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 81,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 80,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 80,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00009_768408_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00089_768408_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 64,
+    "seed": 768409,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 71,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 70,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 2,
+        "physical": 1,
+        "step": 70,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00010_768409_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00090_768409_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 64,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00091_768410_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 64,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 55,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 54,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 54,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00092_768411_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 64,
+    "seed": 768413,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 83,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 82,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 82,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00014_768413_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00094_768413_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 64,
+    "seed": 768415,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00096_768415_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 128,
+    "seed": 768400,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00161_768400_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 128,
+    "seed": 768401,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 100,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 77,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 11,
+        "physical": 10,
+        "step": 77,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00002_768401_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00162_768401_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 128,
+    "seed": 768403,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 55,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 54,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 54,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00004_768403_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00164_768403_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 128,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 72,
+    "first_boundary_difference": {
+      "index": 4,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 71,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 71,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00165_768404_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 128,
+    "seed": 768405,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 84,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 84,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 2,
+        "physical": 1,
+        "step": 84,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00166_768405_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 128,
+    "seed": 768409,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 71,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 70,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 70,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00010_768409_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00170_768409_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 128,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00171_768410_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 128,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 55,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 54,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 54,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00172_768411_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 128,
+    "seed": 768412,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 48,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 47,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 47,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00013_768412_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00173_768412_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 128,
+    "seed": 768413,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 83,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 82,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 82,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00014_768413_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00174_768413_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "ranking_32302",
+    "checkpoint": 128,
+    "seed": 768415,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/physics/00176_768415_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32301",
+    "checkpoint": 64,
+    "seed": 768400,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00081_768400_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32301",
+    "checkpoint": 64,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 91,
+    "first_boundary_difference": {
+      "index": 9,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 91,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 91,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00085_768404_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32301",
+    "checkpoint": 64,
+    "seed": 768405,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 84,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 84,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 84,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00086_768405_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32301",
+    "checkpoint": 64,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00091_768410_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32301",
+    "checkpoint": 64,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 86,
+    "first_boundary_difference": {
+      "index": 9,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 86,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 86,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00092_768411_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32301",
+    "checkpoint": 128,
+    "seed": 768400,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00161_768400_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32301",
+    "checkpoint": 128,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 87,
+    "first_boundary_difference": {
+      "index": 8,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 87,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 87,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00165_768404_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32301",
+    "checkpoint": 128,
+    "seed": 768405,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 84,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 84,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 84,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00166_768405_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32301",
+    "checkpoint": 128,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00171_768410_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32301",
+    "checkpoint": 128,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 3,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 62,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 62,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00172_768411_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32301",
+    "checkpoint": 128,
+    "seed": 768415,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/physics/00176_768415_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32302",
+    "checkpoint": 64,
+    "seed": 768400,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00081_768400_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32302",
+    "checkpoint": 64,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 91,
+    "first_boundary_difference": {
+      "index": 9,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 91,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 7,
+        "physical": 6,
+        "step": 91,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00085_768404_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32302",
+    "checkpoint": 64,
+    "seed": 768405,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 84,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 84,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 7,
+        "physical": 6,
+        "step": 84,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00086_768405_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32302",
+    "checkpoint": 64,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00091_768410_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32302",
+    "checkpoint": 64,
+    "seed": 768415,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00096_768415_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32302",
+    "checkpoint": 128,
+    "seed": 768400,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00161_768400_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32302",
+    "checkpoint": 128,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 91,
+    "first_boundary_difference": {
+      "index": 9,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 91,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 7,
+        "physical": 6,
+        "step": 91,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00165_768404_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32302",
+    "checkpoint": 128,
+    "seed": 768405,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 84,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 84,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 7,
+        "physical": 6,
+        "step": 84,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00166_768405_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32302",
+    "checkpoint": 128,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00171_768410_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32302",
+    "checkpoint": 128,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 3,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 62,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 62,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00172_768411_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "retention_32302",
+    "checkpoint": 128,
+    "seed": 768415,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/physics/00176_768415_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 64,
+    "seed": 768400,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00081_768400_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 64,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 72,
+    "first_boundary_difference": {
+      "index": 4,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 71,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 71,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00085_768404_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 64,
+    "seed": 768405,
+    "reference_success": false,
+    "success": true,
+    "rescue": true,
+    "regression": false,
+    "same_measured_prefix_steps": 53,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 52,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 52,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00086_768405_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 64,
+    "seed": 768408,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 81,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 80,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 80,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00009_768408_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00089_768408_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 64,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00091_768410_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 64,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 78,
+    "first_boundary_difference": {
+      "index": 7,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 78,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 8,
+        "physical": 7,
+        "step": 78,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00092_768411_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 64,
+    "seed": 768414,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 66,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 11,
+        "physical": 10,
+        "step": 65,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 65,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00015_768414_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00095_768414_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 64,
+    "seed": 768415,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00096_768415_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 128,
+    "seed": 768400,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00161_768400_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 128,
+    "seed": 768402,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 88,
+    "first_boundary_difference": {
+      "index": 10,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 87,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 4,
+        "physical": 3,
+        "step": 87,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00003_768402_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00163_768402_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 128,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 87,
+    "first_boundary_difference": {
+      "index": 8,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 87,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 87,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00165_768404_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 128,
+    "seed": 768405,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 53,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 52,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 52,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00166_768405_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 128,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00171_768410_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 128,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 55,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 54,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 4,
+        "physical": 3,
+        "step": 54,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00172_768411_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 128,
+    "seed": 768415,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/physics/00176_768415_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 64,
+    "seed": 768400,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00081_768400_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 64,
+    "seed": 768401,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 85,
+    "first_boundary_difference": {
+      "index": 3,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 84,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 84,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00002_768401_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00082_768401_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 64,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 72,
+    "first_boundary_difference": {
+      "index": 4,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 71,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 71,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00085_768404_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 64,
+    "seed": 768405,
+    "reference_success": false,
+    "success": true,
+    "rescue": true,
+    "regression": false,
+    "same_measured_prefix_steps": 53,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 52,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 52,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00086_768405_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 64,
+    "seed": 768406,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 68,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 67,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 67,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00007_768406_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00087_768406_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 64,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00091_768410_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 64,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 3,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 62,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 4,
+        "physical": 3,
+        "step": 62,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00092_768411_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 64,
+    "seed": 768413,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 90,
+    "first_boundary_difference": {
+      "index": 3,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 89,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 5,
+        "physical": 4,
+        "step": 89,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00014_768413_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00094_768413_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 64,
+    "seed": 768415,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00096_768415_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 128,
+    "seed": 768400,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00161_768400_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 128,
+    "seed": 768401,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 94,
+    "first_boundary_difference": {
+      "index": 6,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 94,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 94,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00002_768401_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00162_768401_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 128,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 80,
+    "first_boundary_difference": {
+      "index": 6,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 79,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 79,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00165_768404_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 128,
+    "seed": 768405,
+    "reference_success": false,
+    "success": true,
+    "rescue": true,
+    "regression": false,
+    "same_measured_prefix_steps": 53,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 52,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 52,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00166_768405_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 128,
+    "seed": 768407,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 47,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 46,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 46,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00008_768407_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00168_768407_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 128,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00171_768410_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 128,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 78,
+    "first_boundary_difference": {
+      "index": 7,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 78,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 10,
+        "physical": 9,
+        "step": 78,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00172_768411_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 128,
+    "seed": 768413,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 100,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 82,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 11,
+        "physical": 10,
+        "step": 82,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00014_768413_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/physics/00174_768413_eval_128.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "witness_qp_32301",
+    "checkpoint": 64,
+    "seed": 768400,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 70,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 69,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 69,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00001_768400_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00081_768400_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "witness_qp_32301",
+    "checkpoint": 64,
+    "seed": 768404,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 87,
+    "first_boundary_difference": {
+      "index": 8,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 87,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 8,
+        "physical": 7,
+        "step": 87,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00005_768404_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00085_768404_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "witness_qp_32301",
+    "checkpoint": 64,
+    "seed": 768405,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 84,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 84,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 8,
+        "physical": 7,
+        "step": 84,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00006_768405_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00086_768405_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "witness_qp_32301",
+    "checkpoint": 64,
+    "seed": 768407,
+    "reference_success": true,
+    "success": true,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 47,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 3,
+        "physical": 2,
+        "step": 46,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 46,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00008_768407_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00088_768407_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "witness_qp_32301",
+    "checkpoint": 64,
+    "seed": 768410,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 63,
+    "first_boundary_difference": {
+      "index": 2,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 63,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 63,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00011_768410_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00091_768410_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "witness_qp_32301",
+    "checkpoint": 64,
+    "seed": 768411,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 82,
+    "first_boundary_difference": {
+      "index": 8,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 82,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 8,
+        "physical": 7,
+        "step": 82,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00012_768411_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00092_768411_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "witness_qp_32301",
+    "checkpoint": 64,
+    "seed": 768413,
+    "reference_success": false,
+    "success": false,
+    "rescue": false,
+    "regression": false,
+    "same_measured_prefix_steps": 100,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 0,
+        "physical": 10,
+        "step": 82,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 11,
+        "physical": 10,
+        "step": 82,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00014_768413_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00094_768413_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  },
+  {
+    "policy": "witness_qp_32301",
+    "checkpoint": 64,
+    "seed": 768415,
+    "reference_success": true,
+    "success": false,
+    "rescue": false,
+    "regression": true,
+    "same_measured_prefix_steps": 56,
+    "first_boundary_difference": {
+      "index": 1,
+      "reference": {
+        "boundary": true,
+        "a": 6,
+        "physical": 5,
+        "step": 55,
+        "stage": 1
+      },
+      "learned": {
+        "boundary": true,
+        "a": 0,
+        "physical": 0,
+        "step": 55,
+        "stage": 1
+      }
+    },
+    "reference_path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00016_768415_eval_0.json.gz",
+    "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/physics/00096_768415_eval_64.json.gz",
+    "scope": "Whole-policy change; first differing boundary does not isolate later-policy causal effects"
+  }
+]

@@ -1,0 +1,231 @@
+{
+  "source_commit": "90864c3aab7a236a97a4bf86e675443dafd6a946",
+  "seeds": [
+    768600,
+    768601,
+    768602,
+    768603,
+    768604,
+    768605,
+    768606,
+    768607,
+    768608,
+    768609,
+    768610,
+    768611,
+    768612,
+    768613,
+    768614,
+    768615,
+    768616,
+    768617,
+    768618,
+    768619,
+    768620,
+    768621,
+    768622,
+    768623,
+    768624,
+    768625,
+    768626,
+    768627,
+    768628,
+    768629,
+    768630,
+    768631
+  ],
+  "selection": "Final128 for primary arms, final64 for explicitly separate margin ablation; no development-best checkpoint selection",
+  "scope": "Fresh natural development confirmation, not sealed test. Freeze all models before any outcomes.",
+  "items": [
+    {
+      "name": "sac_32301",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/CHECKPOINT_128.pt",
+      "model_sha": "2da2f8f8a21002d0fe85d7d03502fb458132d7026d17c64c67322e36f8a08356",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 128,
+      "scope": "matched own128 plus shared and current-policy refresh"
+    },
+    {
+      "name": "sac_32302",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32302/CHECKPOINT_128.pt",
+      "model_sha": "82bcddb6ce1793c4e912177f128c29bf2dc278d9f1e146823a8180ac564ae372",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 128,
+      "scope": "matched own128 plus shared and current-policy refresh"
+    },
+    {
+      "name": "retention_32301",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32301/CHECKPOINT_128.pt",
+      "model_sha": "32beb3ea38da2d93e44d8da251c8f6ab2808a54258df2a884d0db0543d945aef",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 128,
+      "scope": "matched own128 plus shared and current-policy refresh"
+    },
+    {
+      "name": "retention_32302",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/retention_32302/CHECKPOINT_128.pt",
+      "model_sha": "5389ceef7ba5fdba763584d966ea53f313b9eb757d7468b492c1f3bbbc965eb3",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 128,
+      "scope": "matched own128 plus shared and current-policy refresh"
+    },
+    {
+      "name": "ranking_32301",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32301/CHECKPOINT_128.pt",
+      "model_sha": "603769cf68d434bab6998bc1337edbea6ea7e653d9a1c0ecc5aa97f4b29ae2bf",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 128,
+      "scope": "matched own128 plus shared and current-policy refresh"
+    },
+    {
+      "name": "ranking_32302",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/ranking_32302/CHECKPOINT_128.pt",
+      "model_sha": "f6288fb4ae5a511e514dd50cd91f74e3242a0e241714d8ce48061b351fa980ea",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 128,
+      "scope": "matched own128 plus shared and current-policy refresh"
+    },
+    {
+      "name": "witness_soft_32301",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_soft_32301/CHECKPOINT_128.pt",
+      "model_sha": "7be240ed8a93c96946b321c9b02ee8a1952353a79f911c909d86dea79734f70d",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 128,
+      "scope": "matched own128 plus shared and current-policy refresh"
+    },
+    {
+      "name": "witness_soft_32302",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_soft_32302/CHECKPOINT_128.pt",
+      "model_sha": "487067e8074910a8bdfaa353578e6b4870eb5cb0dcf4ed6dc6aa4481cfee0603",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 128,
+      "scope": "matched own128 plus shared and current-policy refresh"
+    },
+    {
+      "name": "witness_qp_32301",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32301/CHECKPOINT_128.pt",
+      "model_sha": "1c3ede3b768c709cab4f64457402ea76a7a6377a84a3ce6b763cfcee688a87ec",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 128,
+      "scope": "matched own128 plus shared and current-policy refresh"
+    },
+    {
+      "name": "witness_qp_32302",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_qp_32302/CHECKPOINT_128.pt",
+      "model_sha": "a0a539b04f95079d08abadcb3beece1eff4c2a7ec6d9caebd639d873ffd87996",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 128,
+      "scope": "matched own128 plus shared and current-policy refresh"
+    },
+    {
+      "name": "joint_sac_32301",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/joint_sac_32301/CHECKPOINT_128.pt",
+      "model_sha": "be6193651410181f73b42813c4b2594439ebdf9ee7557da2d58149336d7af740",
+      "mode": "learned",
+      "freeze_front": false,
+      "old": false,
+      "own_budget": 128,
+      "scope": "Joint front/rear control; different front permission explicitly separated"
+    },
+    {
+      "name": "warm",
+      "model": null,
+      "model_sha": null,
+      "mode": "warm",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 0,
+      "scope": "Frozen shared controller; no new training"
+    },
+    {
+      "name": "rule",
+      "model": null,
+      "model_sha": null,
+      "mode": "rule",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 0,
+      "scope": "Frozen shared controller; no new training"
+    },
+    {
+      "name": "fixed5",
+      "model": null,
+      "model_sha": null,
+      "mode": "fixed5",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 0,
+      "scope": "Frozen shared controller; no new training"
+    },
+    {
+      "name": "prior_sac32202",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/sac_32202/CHECKPOINT_128.pt",
+      "model_sha": "dbfdb12b5ab19809d11f29ac118c8f2e9458c9f6925c07b1f91aecf46045ff32",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 128,
+      "scope": "Historical model/different data budget; front frozen here to shared warm, not historical score"
+    },
+    {
+      "name": "old_rl",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/rule_option_20261105/v2_stopping_rl_31801/CHECKPOINT_64.pt",
+      "model_sha": "6b11412c2c1b6e2217d5e63d82450ef0b9e7ac818149cf03f7310f94ff61a41d",
+      "mode": "learned",
+      "freeze_front": false,
+      "old": true,
+      "own_budget": 64,
+      "scope": "Historical different single-deviation interface and front; reference only"
+    },
+    {
+      "name": "witness_margin_64_32301",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_margin_32301/CHECKPOINT_64.pt",
+      "model_sha": "c766d845f982b44847d7b844cc24b7c4183fd6e985a5d4d660a3dfb8370d6a89",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 64,
+      "scope": "Matched64 exploratory margin ablation, single network seed"
+    },
+    {
+      "name": "sac_64_32301",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/sac_32301/CHECKPOINT_64.pt",
+      "model_sha": "2d8d1a9c8403af543950c2ec3b1ff045310bdfe2981e0253b14799ec2c9f9cf3",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 64,
+      "scope": "Matched64 exploratory margin ablation, single network seed"
+    },
+    {
+      "name": "witness_soft_64_32301",
+      "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/witness_soft_32301/CHECKPOINT_64.pt",
+      "model_sha": "ed7349d3dee6027af2a8952a3713f60a261ddae1cd517d17f26c65d2ae2ee06c",
+      "mode": "learned",
+      "freeze_front": true,
+      "old": false,
+      "own_budget": 64,
+      "scope": "Matched64 exploratory margin ablation, single network seed"
+    }
+  ]
+}

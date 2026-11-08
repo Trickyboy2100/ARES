@@ -1,0 +1,49 @@
+{
+  "scope": "CPU same checkpoint/data/RNG optimizer diagnosis; no new physical episodes",
+  "results": [
+    {
+      "arm": "witness_project",
+      "log": {
+        "updates": 40,
+        "wall_s": 1.8730213940143585,
+        "last": {
+          "q": 0.009342743083834648,
+          "actor": -0.5701175928115845,
+          "pair_rank": 0.29431015253067017,
+          "support_loss": -0.0
+        },
+        "projection": {
+          "attempts": 40,
+          "cuts": 287,
+          "zero_steps": 39,
+          "mean_scale": 6.103515625e-06,
+          "mean_accepted_norm": 4.115006504434859e-08,
+          "wall_s": 0.9996662442572415,
+          "all_stored_actions_admissible": true
+        }
+      }
+    },
+    {
+      "arm": "witness_qp",
+      "log": {
+        "updates": 40,
+        "wall_s": 2.850656443974003,
+        "last": {
+          "q": 0.009649032726883888,
+          "actor": -0.5895204544067383,
+          "pair_rank": 0.27564340829849243,
+          "support_loss": -0.0
+        },
+        "projection": {
+          "attempts": 40,
+          "cuts": 120,
+          "zero_steps": 0,
+          "mean_scale": 1.0,
+          "mean_accepted_norm": 0.007032491650898009,
+          "wall_s": 1.2500474699772894,
+          "all_stored_actions_admissible": true
+        }
+      }
+    }
+  ]
+}

@@ -444,3 +444,44 @@ Evaluate fixed checkpoints from original native resets; never restore at handoff
 This construction inherits constrained-memory updates (GEM), baseline restrictions (SPIBB), advantage-based improvement (AWAC), and standard projected optimization. Its execution-specific composition is a testable candidate, not an established independent contribution or monotonic improvement theorem. The initial sequential solver's update rejection was separately repaired with an active-set dualQP; that numerical correction must not be credited as an RL innovation.
 
 An important counterexample is empirical: corrected constraints preserve recorded greedy support yet score8/16 on both final128 development runs, below warm10/16. Soft support also scores8/16, whereas ordinary SAC scores7/16 and9/16. On11 predeclared **training** roots, full native reexecution gives10/11 for the constrained learner and9/11 for each ofSAC/soft, including different rescued roots. Fitting allowable choices can therefore change actual behavior without establishing new-condition capability. Half-reference-margin preservation at64 episodes scores8/16 and does not support a robust-margin claim. The finalized fresh-cohort table below is the primary additional check; these preliminary results are retained rather than selected away.
+
+
+### Completed frozen confirmation and study cost (2026-11-08)
+
+| Learner | NN seed | Success | Rescue | Regression | Own episodes | Own decisions | Updates | Refresh episodes | New train planning calls incl. shared |
+|---|---|---|---|---|---|---|---|---|---|
+| Frozen first localZ-minus | frozen | 24/32 | 9 | 3 | 0 | 0 | 0 | 0 | 0 |
+| Warm | frozen | 18/32 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Frozen feedback rule | frozen | 18/32 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| SAC + success BC | 32301 | 17/32 | 2 | 3 | 128 | 751 | 5120 | 47 | 3155 |
+| SAC + success BC | 32302 | 17/32 | 2 | 3 | 128 | 760 | 5120 | 47 | 3161 |
+| Reference KL + paired ranking | 32301 | 18/32 | 1 | 1 | 128 | 640 | 5120 | 47 | 3154 |
+| Reference KL + paired ranking | 32302 | 18/32 | 1 | 1 | 128 | 707 | 5120 | 47 | 3147 |
+| Supervised + paired ranking | 32301 | 11/32 | 2 | 9 | 128 | 565 | 5120 | 47 | 3153 |
+| Supervised + paired ranking | 32302 | 15/32 | 3 | 6 | 128 | 605 | 5120 | 47 | 3150 |
+| Soft witness support | 32301 | 17/32 | 1 | 2 | 128 | 769 | 5120 | 47 | 3140 |
+| Soft witness support | 32302 | 17/32 | 0 | 1 | 128 | 852 | 5120 | 47 | 3158 |
+| QP witness update | 32301 | 17/32 | 0 | 1 | 128 | 697 | 5120 | 47 | 3158 |
+| QP witness update | 32302 | 16/32 | 0 | 2 | 128 | 734 | 5120 | 47 | 3149 |
+
+Historical full-optionSAC scores21/32 with a different earlier data budget; oldRL18/32 uses its prior single-deviation interface. They remain strong references, not pooled matched-budget observations. The prior-selected first-localZ-minus controller scores24/32 (9 rescue,3 regression) and uses one bit of own-action history; it observes no future outcome. New candidate gains are unsupported. QP−SAC mean difference is−1.56 percentage points, scene-cluster bootstrap95%[−12.50,+7.81], conditional on these two networks. Do not interpret this as a population training-seed interval.
+
+The99 nativeCharger200 executions distinguish actual predecessor dependence from spurious controller comparison. Independent planning altered some prefixes;10 command-prefix retakes restore matched physical evidence and preserve absorbing predecessor failure. Both pace controls then score11/12,11/12,8/12 for15/30/45-degree grasps. Opposite15/30 outcomes on768804/768811 repeat in8 complete native executions;9 inherited legal successor interventions produce no rescue. This is real multi-skill physical evidence, not a learned second-task method result.
+
+Across the cycle,3637 complete native episodes consume373600 control steps. The main online budget is1536 episodes and61440 optimizer updates; all sharing, refresh, evaluation, numerical diagnostics and historical assets are separately accounted. Neither solver acceptance nor a recorded action margin substitutes for full-task improvement. See the dated evidence for all raw files, checkpoints, cost breakdown, independent subfigures and sourceSHA.
+
+![Executed-reference evidence and actual online updates](../evidence/EXP-004/2026-11-08/continuation_retention/figures/ALGORITHM.png)
+
+*Implemented algorithmic comparison, not a proven safe-improvement method. Full queue/history identifies training evidence; the learned Actor observes83 features.*
+
+![Complete own-policy learning curves](../evidence/EXP-004/2026-11-08/continuation_retention/figures/LEARNING_CURVES.png)
+
+*All fixed0/64/128 checkpoints are retained. Rolling exploratory collection success is separated from greedy native deployment. Two network seeds share physical scene IDs.*
+
+![Frozen new-condition comparison with stronger retained baselines](../evidence/EXP-004/2026-11-08/continuation_retention/figures/CONFIRMATION.png)
+
+*Native32-scene developmental confirmation. Fixed control and historicalSAC are explicitly shown; the latter has a different earlier data budget. None of the candidate updates beats the strongest fixed execution reference.*
+
+![Second-task strict physical controls and grasp crossover](../evidence/EXP-004/2026-11-08/continuation_retention/figures/CHARGER_MECHANISM.png)
+
+*Twelve naturalCharger200 scenes; actual command-prefix matching separates successor policy from predecessor replanning. The crossover repeats are seen-case mechanism checks, not independent test seeds. No learned transfer is claimed.*

@@ -1,0 +1,82 @@
+[
+  {
+    "left": "witness_qp",
+    "right": "witness_soft",
+    "mean_difference": -0.015625,
+    "conditional_scene_bootstrap95": [
+      -0.0625,
+      0.03125
+    ],
+    "per_network_differences": [
+      0.0,
+      -0.03125
+    ],
+    "scene_count": 32,
+    "network_count": 2,
+    "scope": "Exploratory interval conditional on these two trained models; shared scenes clustered across seeds; not uncertainty over all training seeds or a confirmatory multiple-comparison claim"
+  },
+  {
+    "left": "witness_qp",
+    "right": "sac",
+    "mean_difference": -0.015625,
+    "conditional_scene_bootstrap95": [
+      -0.125,
+      0.078125
+    ],
+    "per_network_differences": [
+      0.0,
+      -0.03125
+    ],
+    "scene_count": 32,
+    "network_count": 2,
+    "scope": "Exploratory interval conditional on these two trained models; shared scenes clustered across seeds; not uncertainty over all training seeds or a confirmatory multiple-comparison claim"
+  },
+  {
+    "left": "witness_soft",
+    "right": "sac",
+    "mean_difference": 0.0,
+    "conditional_scene_bootstrap95": [
+      -0.09375,
+      0.109375
+    ],
+    "per_network_differences": [
+      0.0,
+      0.0
+    ],
+    "scene_count": 32,
+    "network_count": 2,
+    "scope": "Exploratory interval conditional on these two trained models; shared scenes clustered across seeds; not uncertainty over all training seeds or a confirmatory multiple-comparison claim"
+  },
+  {
+    "left": "retention",
+    "right": "sac",
+    "mean_difference": 0.03125,
+    "conditional_scene_bootstrap95": [
+      -0.0625,
+      0.140625
+    ],
+    "per_network_differences": [
+      0.03125,
+      0.03125
+    ],
+    "scene_count": 32,
+    "network_count": 2,
+    "scope": "Exploratory interval conditional on these two trained models; shared scenes clustered across seeds; not uncertainty over all training seeds or a confirmatory multiple-comparison claim"
+  },
+  {
+    "left": "ranking",
+    "right": "sac",
+    "mean_difference": -0.125,
+    "conditional_scene_bootstrap95": [
+      -0.28125,
+      0.03125
+    ],
+    "per_network_differences": [
+      -0.1875,
+      -0.0625
+    ],
+    "scene_count": 32,
+    "network_count": 2,
+    "scope": "Exploratory interval conditional on these two trained models; shared scenes clustered across seeds; not uncertainty over all training seeds or a confirmatory multiple-comparison claim"
+  }
+]

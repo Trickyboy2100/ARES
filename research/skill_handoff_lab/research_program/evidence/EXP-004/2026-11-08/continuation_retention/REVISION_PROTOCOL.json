@@ -1,0 +1,56 @@
+{
+  "parent_manifest_sha": "2201024b93b2dc0061dd3c30c2815a391f5b44be039eb0fe5be583fc9d278505",
+  "status": "declared before new confirmation opened",
+  "first_iteration": {
+    "arms": [
+      "sac",
+      "ranking",
+      "retention"
+    ],
+    "seeds": [
+      32301,
+      32302
+    ],
+    "own_episodes": 128
+  },
+  "numerical_pilot": {
+    "arm": "witness_project",
+    "seed": 32301,
+    "own_episodes": 64,
+    "scope": "preserved stalled implementation; not equal128-budget endpoint"
+  },
+  "second_iteration": {
+    "arms": [
+      "witness_soft",
+      "witness_qp"
+    ],
+    "seeds": [
+      32301,
+      32302
+    ],
+    "own_episodes": 128,
+    "shared_initial_episodes": 189,
+    "refresh_scenes": [
+      768300,
+      768301,
+      768302,
+      768303,
+      768304,
+      768305,
+      768306,
+      768307,
+      768308,
+      768309,
+      768310,
+      768311,
+      768312,
+      768313,
+      768314,
+      768315
+    ],
+    "front": "same frozen task-conditioned warm; separate joint_sac_32301 control",
+    "checkpoint": "fixed128; all intermediate preserved",
+    "selection": "No new confirmation outcome used for mechanism selection"
+  },
+  "scope": "same data allocation, action/observation authority and own episode/update budget; actual legal refresh availability, decisions, planner and solver costs reported separately"
+}

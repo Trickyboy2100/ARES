@@ -1,0 +1,68 @@
+{
+  "seeds": [
+    768000,
+    768002,
+    768003,
+    768004,
+    768005,
+    768006,
+    768008,
+    768012,
+    768024,
+    768032,
+    768056
+  ],
+  "selection": "First eight reference-success scenes in ascending initial design seed, plus all three rescue-capable initial design scenes. Chosen without final learned-policy scores.",
+  "reference": {
+    "768000": {
+      "success": true,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00001_768000_reference.json.gz"
+    },
+    "768002": {
+      "success": true,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00007_768002_reference.json.gz"
+    },
+    "768003": {
+      "success": true,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00010_768003_reference.json.gz"
+    },
+    "768004": {
+      "success": true,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00013_768004_reference.json.gz"
+    },
+    "768005": {
+      "success": true,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00016_768005_reference.json.gz"
+    },
+    "768006": {
+      "success": true,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00019_768006_reference.json.gz"
+    },
+    "768008": {
+      "success": true,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00025_768008_reference.json.gz"
+    },
+    "768012": {
+      "success": true,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00037_768012_reference.json.gz"
+    },
+    "768024": {
+      "success": false,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00073_768024_reference.json.gz"
+    },
+    "768032": {
+      "success": false,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_b/physics/00001_768032_reference.json.gz"
+    },
+    "768056": {
+      "success": false,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_b/physics/00071_768056_reference.json.gz"
+    }
+  },
+  "scope": "Already used training witnesses, not generalization. Actual original-reset deployment reexecutions, no state setters.",
+  "models": [
+    "sac_32301@128",
+    "witness_soft_32301@128",
+    "witness_qp_32301@128"
+  ]
+}

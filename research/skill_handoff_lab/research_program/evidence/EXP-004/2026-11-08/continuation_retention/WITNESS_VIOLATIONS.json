@@ -1,0 +1,535 @@
+[
+  {
+    "policy": "sac_32301",
+    "checkpoint": 64,
+    "violations": 16,
+    "nodes": 415,
+    "mean_kl": 0.7016271352767944,
+    "violated_mean_kl": 1.1812855005264282,
+    "examples": [
+      {
+        "history": "adf70a71b37787e86ba35115c4c94fa359e765e99531feafe46313d4c1d919f8",
+        "chosen": 6,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00010_768003_reference.json.gz",
+          "step": 66,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "0ec1f5eab3e076f6fe582e37bbf70cae4825f2b7fabd61c73b1088e2e372fe56",
+        "chosen": 6,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00010_768003_reference.json.gz",
+          "step": 78,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "7d0d11f8b9a3bff302656db844667a09c3334b54e1d04ef57f55079aad7c59e8",
+        "chosen": 5,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00040_768013_reference.json.gz",
+          "step": 66,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "81214d2a431f135ef6ef13f9ce09e6c3d0a16ace829158ab3e88f440bc09867a",
+        "chosen": 6,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00040_768013_reference.json.gz",
+          "step": 81,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "fc43ad3fbf5509264070dd2f0ff0a718395415ee771ab7e257f053da4b46ad5a",
+        "chosen": 0,
+        "allowed": [
+          6
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00043_768014_reference.json.gz",
+          "step": 54,
+          "actual_action": 6
+        }
+      },
+      {
+        "history": "bf2339d414af82784ec068654e94ec88e62d300bf5aa26ee0e69b53902c6a243",
+        "chosen": 0,
+        "allowed": [
+          3
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00046_768015_reference.json.gz",
+          "step": 64,
+          "actual_action": 3
+        }
+      },
+      {
+        "history": "f05e0950c6b847b73e10537b4f4d187c2de848861ccdc65539db27de7e0a2a27",
+        "chosen": 0,
+        "allowed": [
+          3
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00052_768017_reference.json.gz",
+          "step": 55,
+          "actual_action": 3
+        }
+      },
+      {
+        "history": "ad3ca8b7a0a0fdd2021c3fe90112657c462e8328a0de0ce41c349cb827eb84a9",
+        "chosen": 0,
+        "allowed": [
+          3
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00070_768023_reference.json.gz",
+          "step": 73,
+          "actual_action": 3
+        }
+      }
+    ]
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 64,
+    "violations": 18,
+    "nodes": 415,
+    "mean_kl": 0.6185027956962585,
+    "violated_mean_kl": 0.9436450600624084,
+    "examples": [
+      {
+        "history": "8789962df1f7f9be4f27aa6676eb8e08e570196035dda334c6d1ced6bf66d4ab",
+        "chosen": 11,
+        "allowed": [
+          0,
+          1
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00001_768000_reference.json.gz",
+          "step": 74,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "adf70a71b37787e86ba35115c4c94fa359e765e99531feafe46313d4c1d919f8",
+        "chosen": 6,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00010_768003_reference.json.gz",
+          "step": 66,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "0ec1f5eab3e076f6fe582e37bbf70cae4825f2b7fabd61c73b1088e2e372fe56",
+        "chosen": 6,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00010_768003_reference.json.gz",
+          "step": 78,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "7d0d11f8b9a3bff302656db844667a09c3334b54e1d04ef57f55079aad7c59e8",
+        "chosen": 4,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00040_768013_reference.json.gz",
+          "step": 66,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "fc43ad3fbf5509264070dd2f0ff0a718395415ee771ab7e257f053da4b46ad5a",
+        "chosen": 0,
+        "allowed": [
+          6
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00043_768014_reference.json.gz",
+          "step": 54,
+          "actual_action": 6
+        }
+      },
+      {
+        "history": "f05e0950c6b847b73e10537b4f4d187c2de848861ccdc65539db27de7e0a2a27",
+        "chosen": 0,
+        "allowed": [
+          3
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00052_768017_reference.json.gz",
+          "step": 55,
+          "actual_action": 3
+        }
+      },
+      {
+        "history": "ad3ca8b7a0a0fdd2021c3fe90112657c462e8328a0de0ce41c349cb827eb84a9",
+        "chosen": 0,
+        "allowed": [
+          3
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00070_768023_reference.json.gz",
+          "step": 73,
+          "actual_action": 3
+        }
+      },
+      {
+        "history": "581c53ea578c6dc0e9147e3e7ab70c664d8c2bded05847b56894f746000caaa4",
+        "chosen": 0,
+        "allowed": [
+          3,
+          6
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00074_768024_branch_3.json.gz",
+          "step": 63,
+          "actual_action": 3
+        }
+      }
+    ]
+  },
+  {
+    "policy": "retention_32301",
+    "checkpoint": 64,
+    "violations": 4,
+    "nodes": 415,
+    "mean_kl": 0.028305184096097946,
+    "violated_mean_kl": 0.26318037509918213,
+    "examples": [
+      {
+        "history": "adf70a71b37787e86ba35115c4c94fa359e765e99531feafe46313d4c1d919f8",
+        "chosen": 6,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00010_768003_reference.json.gz",
+          "step": 66,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "fc43ad3fbf5509264070dd2f0ff0a718395415ee771ab7e257f053da4b46ad5a",
+        "chosen": 3,
+        "allowed": [
+          6
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00043_768014_reference.json.gz",
+          "step": 54,
+          "actual_action": 6
+        }
+      },
+      {
+        "history": "169eaa05cb8d7ac20b71c4fd232f4d11ac3c1de14e0b0c1284428e12d175d370",
+        "chosen": 0,
+        "allowed": [
+          3,
+          5
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_b/physics/00073_768056_branch_5.json.gz",
+          "step": 71,
+          "actual_action": 5
+        }
+      },
+      {
+        "history": "8fd841cf22ac44cda6f8fa86e91df2126c1a355d5dbd1bf7c73be9b5990bef10",
+        "chosen": 3,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_b/physics/00077_768058_reference.json.gz",
+          "step": 47,
+          "actual_action": 0
+        }
+      }
+    ]
+  },
+  {
+    "policy": "retention_32302",
+    "checkpoint": 64,
+    "violations": 3,
+    "nodes": 415,
+    "mean_kl": 0.024961549788713455,
+    "violated_mean_kl": 0.25006499886512756,
+    "examples": [
+      {
+        "history": "adf70a71b37787e86ba35115c4c94fa359e765e99531feafe46313d4c1d919f8",
+        "chosen": 6,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00010_768003_reference.json.gz",
+          "step": 66,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "169eaa05cb8d7ac20b71c4fd232f4d11ac3c1de14e0b0c1284428e12d175d370",
+        "chosen": 0,
+        "allowed": [
+          3,
+          5
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_b/physics/00073_768056_branch_5.json.gz",
+          "step": 71,
+          "actual_action": 5
+        }
+      },
+      {
+        "history": "8fd841cf22ac44cda6f8fa86e91df2126c1a355d5dbd1bf7c73be9b5990bef10",
+        "chosen": 3,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_b/physics/00077_768058_reference.json.gz",
+          "step": 47,
+          "actual_action": 0
+        }
+      }
+    ]
+  },
+  {
+    "policy": "sac_32301",
+    "checkpoint": 128,
+    "violations": 21,
+    "nodes": 415,
+    "mean_kl": 0.7122649550437927,
+    "violated_mean_kl": 1.2479867935180664,
+    "examples": [
+      {
+        "history": "0ec1f5eab3e076f6fe582e37bbf70cae4825f2b7fabd61c73b1088e2e372fe56",
+        "chosen": 6,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00010_768003_reference.json.gz",
+          "step": 78,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "5c47daa700a489c7c04f562bd645086ed264558fa3e24c1269ebe41166995f2b",
+        "chosen": 4,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00013_768004_reference.json.gz",
+          "step": 53,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "88fc57b119a98b3e7a4e920471e5e476ed3312304b385a167b6ce3a52bd524d7",
+        "chosen": 4,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00013_768004_reference.json.gz",
+          "step": 55,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "c053b0c3eddc397a3f428817024e5fec1311c58a51617bb0c3941e59a6292b2c",
+        "chosen": 4,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00013_768004_reference.json.gz",
+          "step": 76,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "dedb420c70341b8b2012eeb564374e78531c84472b93cba504c184b791f9c459",
+        "chosen": 4,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00013_768004_reference.json.gz",
+          "step": 80,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "4ad21936dc70a139667ec52a4541150b27d2d73eef7b2545db3869f0932b7578",
+        "chosen": 4,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00013_768004_reference.json.gz",
+          "step": 84,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "557bccca075b5c206b3e596188478d66fcdb96ea9a56d8b52b639c32827c54d8",
+        "chosen": 4,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00013_768004_reference.json.gz",
+          "step": 88,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "5c8a1831076b953f05dc6d33c5cbf671d25aa9f58e32815c5435fd0f50f58711",
+        "chosen": 4,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00013_768004_reference.json.gz",
+          "step": 92,
+          "actual_action": 0
+        }
+      }
+    ]
+  },
+  {
+    "policy": "sac_32302",
+    "checkpoint": 128,
+    "violations": 14,
+    "nodes": 415,
+    "mean_kl": 0.6717934608459473,
+    "violated_mean_kl": 1.0875197649002075,
+    "examples": [
+      {
+        "history": "adf70a71b37787e86ba35115c4c94fa359e765e99531feafe46313d4c1d919f8",
+        "chosen": 6,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00010_768003_reference.json.gz",
+          "step": 66,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "0ec1f5eab3e076f6fe582e37bbf70cae4825f2b7fabd61c73b1088e2e372fe56",
+        "chosen": 2,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00010_768003_reference.json.gz",
+          "step": 78,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "a16127d7ab0560c0cba526c0f685983ea0830fc14b80a5d23f730bd56fc8eb21",
+        "chosen": 3,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00016_768005_reference.json.gz",
+          "step": 82,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "c7430c70f05ea91947fbeea7ce47e48f8243526c2f18f1a41b3429cb1960b4fb",
+        "chosen": 3,
+        "allowed": [
+          0
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00016_768005_reference.json.gz",
+          "step": 95,
+          "actual_action": 0
+        }
+      },
+      {
+        "history": "fc43ad3fbf5509264070dd2f0ff0a718395415ee771ab7e257f053da4b46ad5a",
+        "chosen": 0,
+        "allowed": [
+          6
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00043_768014_reference.json.gz",
+          "step": 54,
+          "actual_action": 6
+        }
+      },
+      {
+        "history": "f05e0950c6b847b73e10537b4f4d187c2de848861ccdc65539db27de7e0a2a27",
+        "chosen": 0,
+        "allowed": [
+          3
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00052_768017_reference.json.gz",
+          "step": 55,
+          "actual_action": 3
+        }
+      },
+      {
+        "history": "9d16f052ff6cc4a4a1df563c85ac599313fba70da813e53cc47dc187d32b613a",
+        "chosen": 6,
+        "allowed": [
+          3
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00068_768022_branch_0.json.gz",
+          "step": 60,
+          "actual_action": 3
+        }
+      },
+      {
+        "history": "581c53ea578c6dc0e9147e3e7ab70c664d8c2bded05847b56894f746000caaa4",
+        "chosen": 0,
+        "allowed": [
+          3,
+          6
+        ],
+        "source": {
+          "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108/design_a/physics/00074_768024_branch_3.json.gz",
+          "step": 63,
+          "actual_action": 3
+        }
+      }
+    ]
+  }
+]

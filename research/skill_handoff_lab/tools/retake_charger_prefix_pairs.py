@@ -21,7 +21,7 @@ try:
    path=out/f'UNMATCHED_{r["seed"]}_{r["angle"]}.json.gz'
    with gzip.open(path,'wt')as f:json.dump(dict(seed=r['seed'],angle=r['angle'],error=str(ex),steps=ep.env.records,initial=ep.env.initial,source=r['path']),f)
    partial.append(dict(seed=r['seed'],angle=r['angle'],physical_steps=len(ep.env.records),error=str(ex),path=str(path)));ep.planner.close();continue
-  if ep.error is not None:
+  if ep.error is not None or len(ep.env.records)>=200:
    # Failed predecessor is absorbing: no fictitious successor decision.
    e=ep.env;q=np.asarray(serial(e.unwrapped.agent.robot.get_qpos()[0,:7]));e.phase='TERMINAL_HOLD'
    while len(e.records)<200:e.step(np.r_[q,-1.])

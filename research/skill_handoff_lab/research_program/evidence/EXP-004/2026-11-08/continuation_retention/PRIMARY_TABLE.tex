@@ -1,0 +1,20 @@
+\begin{tabular}{lrrrrr}
+\toprule
+Learner & Seed & Success & Rescue & Regression & Own episodes \\
+\midrule
+Frozen first localZ-minus & frozen & 24/32 & 9 & 3 & 0 \\
+Warm & frozen & 18/32 & 0 & 0 & 0 \\
+Frozen feedback rule & frozen & 18/32 & 1 & 1 & 0 \\
+SAC + success BC & 32301 & 17/32 & 2 & 3 & 128 \\
+SAC + success BC & 32302 & 17/32 & 2 & 3 & 128 \\
+Reference KL + paired ranking & 32301 & 18/32 & 1 & 1 & 128 \\
+Reference KL + paired ranking & 32302 & 18/32 & 1 & 1 & 128 \\
+Supervised + paired ranking & 32301 & 11/32 & 2 & 9 & 128 \\
+Supervised + paired ranking & 32302 & 15/32 & 3 & 6 & 128 \\
+Soft witness support & 32301 & 17/32 & 1 & 2 & 128 \\
+Soft witness support & 32302 & 17/32 & 0 & 1 & 128 \\
+QP witness update & 32301 & 17/32 & 0 & 1 & 128 \\
+QP witness update & 32302 & 16/32 & 0 & 2 & 128 \\
+\bottomrule
+\end{tabular}
+% Same32 natural scenes; two network seeds. Each learner also pays189 shared episodes and its reported refresh episodes.

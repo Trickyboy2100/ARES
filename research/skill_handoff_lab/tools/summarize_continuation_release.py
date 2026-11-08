@@ -4,7 +4,7 @@ from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=True)
 def read(p):return json.loads(p.read_text())
 def stats(rows):
- return dict(episodes=len(rows),success=sum(bool(r['success'])for r in rows),steps=sum(r['steps']for r in rows),planner_calls=sum(len(r['queries'])for r in rows),planner_seconds=sum(q['wall_s']for r in rows for q in r['queries']),execution_seconds=sum(r['wall_s']for r in rows),errors=[dict(seed=r['seed'],error=r['error'])for r in rows if r['error']])
+ return dict(api_calls_by_kind=dict(collections.Counter(q.get('kind','unknown')for r in rows for q in r['queries'])),api_seconds_by_kind={kind:sum(q['wall_s']for r in rows for q in r['queries']if q.get('kind','unknown')==kind)for kind in sorted({q.get('kind','unknown')for r in rows for q in r['queries']})},known_servo_ik_calls=sum(r.get('known_servo_ik_calls',0)for r in rows),episodes=len(rows),success=sum(bool(r['success'])for r in rows),steps=sum(r['steps']for r in rows),planner_calls=sum(len(r['queries'])for r in rows),planner_seconds=sum(q['wall_s']for r in rows for q in r['queries']),execution_seconds=sum(r['wall_s']for r in rows),errors=[dict(seed=r['seed'],error=r['error'])for r in rows if r['error']])
 def paired(rows,base):
  ys={r['seed']:bool(r['success'])for r in rows};assert len(ys)==len(rows)
  return dict(**stats(rows),outcomes=ys,rescue=[s for s,y in ys.items()if y and not base[s]],regression=[s for s,y in ys.items()if not y and base[s]])
@@ -15,6 +15,16 @@ for f in sorted(a.root.rglob('physics/*.json.gz')):
  try:d=json.load(gzip.open(f,'rt'))['summary']
  except (EOFError,OSError,json.JSONDecodeError):pending.append(str(f));continue
  physical[str(f.relative_to(a.root))]=d
+peg_cost=stats(list(physical.values()))
+charger_cost=None
+for folder in ['charger_design','charger_prefix_retakes','charger_crossover_repeats','charger_successor_probe']:
+ if not (a.root/folder/'RESULTS.json').exists():continue
+ for row in read(a.root/folder/'RESULTS.json'):
+  raw=json.load(gzip.open(row['path'],'rt'));ik=sum('skill_action'in z for z in raw['steps'])+int(row['error']=='SERVO_IK_FAILED');assert ik==sum(q['kind']=='IK'and q['phase']=='CONTACT_SERVO'for q in raw['calls'])
+  physical[folder+'/'+Path(row['path']).name]=dict(row,queries=raw['calls'],known_servo_ik_calls=ik)
+charger_rows=[v for k,v in physical.items()if k.startswith('charger_')]
+if charger_rows:charger_cost=stats(charger_rows)
+charger_partials=read(a.root/'charger_prefix_retakes/PARTIALS.json')if(a.root/'charger_prefix_retakes/PARTIALS.json').exists()else[]
 for f in sorted(a.root.glob('*/HISTORY.json')):
  h=read(f);name=f.parent.name;ev=[x for x in h if x['kind']=='eval'];base={x['row']['seed']:bool(x['row']['success'])for x in ev if x['checkpoint']==0};tr=[x for x in h if x['kind']=='train'];refresh=[v for k,v in physical.items()if k.startswith(name+'/refresh64/')]
  for k in sorted(set(x['checkpoint']for x in ev)):
@@ -34,7 +44,7 @@ if (a.root/'disagreement_design/RESULTS.json').exists():
  rows=read(a.root/'disagreement_design/RESULTS.json');ps=read(a.root/'disagreement_design/PAIRS.json');ref={r['seed']:bool(r['success'])for r in rows if r['tag']=='reference'};union={k:v for k,v in ref.items()}
  for r in rows:union[r['seed']]=union[r['seed']]or bool(r['success'])
  disagreement=dict(cost=stats(rows),reference_scenes=len(ref),reference_success=sum(ref.values()),finite_union=sum(union.values()),pairs=len(ps),positive=sum(p['delta']>0 for p in ps),negative=sum(p['delta']<0 for p in ps),ties=sum(p['delta']==0 for p in ps),positive_pairs=[p for p in ps if p['delta']>0],scope='Additional design, not used by the primary128-episode trained arms; different scenes from cyclic acquisition, not a controlled acquisition-efficiency comparison')
-summary=dict(disagreement=disagreement,groups=groups,training=training,global_unique=stats(list(physical.values())),pending_files=pending,shared=stats(shared),scope='Public native simulation; shared cost charged per arm but unique physical executions counted once globally. Confirmation is new development, not sealed test. Variable legal branch availability changes actual refresh cost, reported explicitly.')
+summary=dict(charger_partial_attempts=charger_partials,planning_cost_scope='planner_calls is legacy name for all recorded API calls. Peg records plan_screw; Charger additionally records explicitIK and fallback plan_qpos_to_pose with per-call timing. api_calls_by_kind and api_seconds_by_kind separate them. known_servo_ik_calls is a verified subset, NEVER added again; internal collision/IK iterations inside one API call are not separately counted',task_costs=dict(PegInsertionSide_native100=peg_cost,PlugCharger_native200=charger_cost),disagreement=disagreement,groups=groups,training=training,global_unique=stats(list(physical.values())),pending_files=pending,shared=stats(shared),scope='Public native simulation; shared cost charged per arm but unique physical executions counted once globally. Confirmation is new development, not sealed test. Variable legal branch availability changes actual refresh cost, reported explicitly.')
 (a.out/'SUMMARY.json').write_text(json.dumps(summary,indent=2))
 with(a.out/'RESULTS.csv').open('w')as f:
  w=csv.writer(f);w.writerow(['policy','episodes','success','rescue','regression','planner_calls','planner_seconds'])

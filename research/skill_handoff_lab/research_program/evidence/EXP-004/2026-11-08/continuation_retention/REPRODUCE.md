@@ -46,8 +46,10 @@ TOOLS=research/skill_handoff_lab/tools
 The first two commands write separate output. The last recomputes the derived
 window diagnosis in the extracted run tree. Archived native traces are never
 modified. `HORIZON` is a recorded task-budget termination, not automatically an
-infrastructure error. Planner counts are recorded `plan_screw` outer calls, not
-all internal collision/IK operations.
+infrastructure error. Peg counts are recorded `plan_screw` API calls. Charger additionally records
+explicit contact `IK` calls with timing; `api_calls_by_kind` separates them. The
+servoIK subset is not added twice. Internal solver iterations inside one API
+call are not separately counted.
 
 ## Actual learning and resume
 

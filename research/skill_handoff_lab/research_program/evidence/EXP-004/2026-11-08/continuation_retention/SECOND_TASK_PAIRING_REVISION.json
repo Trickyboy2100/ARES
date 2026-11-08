@@ -1,0 +1,6 @@
+{
+  "recorded_utc": "2026-11-08T04:30:34.460260+00:00",
+  "reason": "Independent replanning visibly changed some grasp prefixes. Retake all and only numeric-prefix mismatches using actual saved joint commands in fresh physics; preserve absorbing grasp/planning failures, never propagate a later servo failure as a prefix error. Original72 runs remain unchanged and all retakes charged. Selection ignores outcomes.",
+  "scope": "Followup based on observed numeric prefix mismatch; initial protocol and all original scores preserved",
+  "predicate": "same prefix length and max absolute q/qvel/tcp/tool/cube error <=1e-5; retake only nonmatches"
+}

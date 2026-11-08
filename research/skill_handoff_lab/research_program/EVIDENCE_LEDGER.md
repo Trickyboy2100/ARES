@@ -286,3 +286,20 @@ Both frozen SAC seeds are reexecuted on all32 now-seen confirmation scenes with 
 | 32202 | 22/32 | 21/32 | 765625, 765627 | 765604 |
 
 The full-policy benefits and regressions must both be retained. Any full-only success supports necessity of the extra executed choices for this frozen policy on that state, not impossibility of every other old-support policy. This does not turn the failed coordinate candidates into an independent algorithm contribution. Exact physical prefixes, raw paths and complete boundary events are in POSTCONFIRM_SUPPORT_EFFECT.json.
+
+
+## 2026-11-08 — continuation retention: actual method iterations and stronger frozen control
+
+Three actual iterations test reference-bound KL/ranking, soft versus constrained executed-witness updates, and a fixed half-reference-margin ablation. Numerical QP repair removes update rejection but does not produce native gains. Ten primary128-episode learners (five arms × two independent networks), one joint128 control, and two64 pilots total1536 own-policy episodes/61440 optimizer updates;189 shared initial executions and515 own-reference refresh executions are separately charged. All old negatives and exact resume states remain.
+
+Frozen new32 conditions: first-localZ-minus24 (9 rescue/3 regression); warm18; rule18; oldRL18; prior full-optionSAC21 (different historical data budget and common warm front here). NewSAC17/17, KL18/18, supervised11/15, soft17/17, QP17/16. JointSAC16. Matched64: SAC19, margin18, soft17. No checkpoint/threshold selected using these outcomes. Fixed control tracks one bit of its own action history; it is a strong stateful execution reference, not an architecture-matched Actor ablation.
+
+QP memorizes recorded admissible choices and succeeds10/11 on selected training roots, versus9/11 forSAC/soft, but supplies no rescue on the new cohort. A failed-reference fallback is not a successful action. Known positive-boundary values can rank the measured rescue higher while the Actor still chooses the reference; this is not blanket evidence of Q calibration. Six positive physical branches all first achieve native success before Option release; later maintenance still matters, but these do not prove a need for multiple beneficial rear interventions.
+
+Second task is now actual physics, not only preparation:72 nativeCharger200 design executions plus10 strictly matched-prefix retakes,8 full crossover repeats and9 legal successor probes. Independent replanning sometimes changed the predecessor; after real command-prefix reexecution, nominal/feedback match11/12,11/12,8/12 at15/30/45degrees.15/30 fail on different natural scenes and both crossover directions repeat; the nine executable-successor probes rescue none. Preserve the absorbing-prefix contract fix; do not treat worse grasp choices or mismatched prefixes as an RL opportunity.
+
+Total3637 complete native episodes,373600 physical steps; no partial unmatched run. Planning API calls are split bykind inSUMMARY, with explicitIK timing and no double counting. No ARES-R changes, hardware execution, sealed tests or restricted data. Independent gain remainsUNVERIFIED; Method/Experiments, figures, models and raw evidence are updated rather than blocked by that label.
+
+Evidence: [continuation_retention](evidence/EXP-004/2026-11-08/continuation_retention/README.md)
+
+Next: Inherit frozen first-localZ-minus24/32 and historical full-optionSAC32202=21/32 as stronger references, not only warm18/32. Do not extend failed KL/QP/margin tuning or reset ordinaryRL to a weaker prior again. Develop a bounded, same-budget continued skillRL comparison from the retained strong checkpoint, separating calibrated executable-Option value, Actor adoption of verified positive branches, and failed-reference fallback; retain recurrent rear decisions and task-conditioned real grasp. Explicitly share any controller-history feature needed by the one-bit fixed reference. Charger grasp crossover is repeatable, but nine legal successor probes yielded no rescue; require actual rear authority before new transfer training, without weakening native control or opening sealed tests.

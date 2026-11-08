@@ -11,13 +11,13 @@ assert all(g.get(f'confirm_{x}_{k}',{}).get('episodes')==32 for x in arms for k 
 def success(ax):
  for i,(arm,c)in enumerate(zip(arms,colors)):
   y=[g[f'confirm_{arm}_{k}']['success']for k in [32301,32302]];ax.plot([i-.08,i+.08],y,'o-',color=c,lw=1.5);ax.text(i,max(y)+.55,' / '.join(map(str,y)),ha='center',fontsize=9)
- ax.axhline(base,ls=':',c='#555',label=f'Warm {base}/32');ax.axhline(g['confirm_rule']['success'],ls='--',c='#aaa',label=f"Frozen rule {g['confirm_rule']['success']}/32");ax.set(xticks=range(5),xticklabels=labels,ylim=(0,32),ylabel='Native full-task successes / 32',title='Frozen final128 | two network initializations');ax.tick_params(axis='x',rotation=15);ax.legend(loc='lower left');ax.grid(axis='y',alpha=.2)
+ ax.axhline(g['confirm_fixed5']['success'],ls='-.',c='#222',label=f"Frozen first local Z- {g['confirm_fixed5']['success']}/32");ax.axhline(g['confirm_prior_sac32202']['success'],ls='--',c='#888',label=f"Prior SAC {g['confirm_prior_sac32202']['success']}/32 (historical budget)");ax.axhline(base,ls=':',c='#555',label=f'Warm {base}/32');ax.axhline(g['confirm_rule']['success'],ls='--',c='#aaa',label=f"Frozen rule {g['confirm_rule']['success']}/32");ax.set(xticks=range(5),xticklabels=labels,ylim=(0,32),ylabel='Native full-task successes / 32',title='Frozen final 128 episodes | two network initializations');ax.tick_params(axis='x',rotation=15);ax.legend(loc='lower left');ax.grid(axis='y',alpha=.2)
 def paired(ax):
  for j,k in enumerate([32301,32302]):
   x=np.arange(5)+(j-.5)*.36;r=[len(g[f'confirm_{arm}_{k}']['rescue'])for arm in arms];d=[len(g[f'confirm_{arm}_{k}']['regression'])for arm in arms]
   ax.bar(x,r,.32,color='#008c8c',alpha=1 if j==0 else .55,label='Rescue'if j==0 else None);ax.bar(x,-np.array(d),.32,color='#bd5b56',alpha=1 if j==0 else .55,label='Regression'if j==0 else None)
- ax.axhline(0,c='#555',lw=1);ax.set(xticks=range(5),xticklabels=labels,ylabel='Paired tasks versus warm',title='Each pair: seed32301 / seed32302');ax.tick_params(axis='x',rotation=15);ax.legend();ax.grid(axis='y',alpha=.2)
-fig,axs=plt.subplots(1,2,figsize=(12,4.7),layout='constrained');success(axs[0]);paired(axs[1]);fig.suptitle('New natural development768600–631 | shared native100 and executable Options')
+ ax.axhline(0,c='#555',lw=1);ax.set(xticks=range(5),xticklabels=labels,ylabel='Paired tasks versus warm',title='Each pair: seed 32301 / seed 32302');ax.tick_params(axis='x',rotation=15);ax.legend();ax.grid(axis='y',alpha=.2)
+fig,axs=plt.subplots(1,2,figsize=(12,4.7),layout='constrained');success(axs[0]);paired(axs[1]);fig.suptitle('New natural development 768600–631 | native 100-step task and shared Options')
 for ext in ['png','pdf']:fig.savefig(a.out/f'CONFIRMATION.{ext}',dpi=200)
 plt.close(fig)
 for name,fn in [('CONFIRMATION_SUCCESS',success),('CONFIRMATION_PAIRED',paired)]:

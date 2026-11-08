@@ -1,0 +1,1225 @@
+{
+  "groups": {
+    "confirm_fixed5": {
+      "api_calls_by_kind": {
+        "plan_screw": 256
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.25864672427997
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 24,
+      "steps": 3200,
+      "planner_calls": 256,
+      "planner_seconds": 1.25864672427997,
+      "execution_seconds": 194.57485818280838,
+      "errors": [
+        {
+          "seed": 768600,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": true,
+        "768604": true,
+        "768605": true,
+        "768606": true,
+        "768607": false,
+        "768608": false,
+        "768609": true,
+        "768610": true,
+        "768611": true,
+        "768612": true,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": false,
+        "768620": true,
+        "768621": true,
+        "768622": true,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": true,
+        "768627": true,
+        "768628": true,
+        "768629": false,
+        "768630": true,
+        "768631": false
+      },
+      "rescue": [
+        768603,
+        768605,
+        768611,
+        768612,
+        768617,
+        768622,
+        768626,
+        768627,
+        768630
+      ],
+      "regression": [
+        768607,
+        768619,
+        768631
+      ]
+    },
+    "confirm_joint_sac_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 282
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3510197126306593
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 16,
+      "steps": 3200,
+      "planner_calls": 282,
+      "planner_seconds": 1.3510197126306593,
+      "execution_seconds": 194.2797348049935,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": true,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": false,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": false,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768603,
+        768617
+      ],
+      "regression": [
+        768610,
+        768615,
+        768619,
+        768631
+      ]
+    },
+    "confirm_old_rl": {
+      "api_calls_by_kind": {
+        "plan_screw": 274
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.30682456609793
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 18,
+      "steps": 3200,
+      "planner_calls": 274,
+      "planner_seconds": 1.30682456609793,
+      "execution_seconds": 193.31686916807666,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": false,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": true,
+        "768611": true,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768611
+      ],
+      "regression": [
+        768601
+      ]
+    },
+    "confirm_prior_sac32202": {
+      "api_calls_by_kind": {
+        "plan_screw": 271
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3303142040967941
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 21,
+      "steps": 3200,
+      "planner_calls": 271,
+      "planner_seconds": 1.3303142040967941,
+      "execution_seconds": 194.49274799064733,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": true,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": true,
+        "768611": true,
+        "768612": false,
+        "768613": false,
+        "768614": false,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": true,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": true,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768605,
+        768611,
+        768623,
+        768627
+      ],
+      "regression": [
+        768614
+      ]
+    },
+    "confirm_ranking_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 283
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3768876399844885
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 11,
+      "steps": 3200,
+      "planner_calls": 283,
+      "planner_seconds": 1.3768876399844885,
+      "execution_seconds": 194.75243040267378,
+      "errors": [
+        {
+          "seed": 768600,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": false,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": true,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": false,
+        "768616": false,
+        "768617": false,
+        "768618": false,
+        "768619": false,
+        "768620": false,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": false,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": true,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768611,
+        768629
+      ],
+      "regression": [
+        768607,
+        768610,
+        768615,
+        768616,
+        768618,
+        768619,
+        768620,
+        768624,
+        768631
+      ]
+    },
+    "confirm_ranking_32302": {
+      "api_calls_by_kind": {
+        "plan_screw": 288
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.4251230827067047
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 15,
+      "steps": 3200,
+      "planner_calls": 288,
+      "planner_seconds": 1.4251230827067047,
+      "execution_seconds": 196.3715668010991,
+      "errors": [
+        {
+          "seed": 768600,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": true,
+        "768606": true,
+        "768607": false,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": false,
+        "768616": false,
+        "768617": true,
+        "768618": true,
+        "768619": false,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": true,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768605,
+        768617,
+        768629
+      ],
+      "regression": [
+        768607,
+        768610,
+        768615,
+        768616,
+        768619,
+        768631
+      ]
+    },
+    "confirm_retention_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 285
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.425920010311529
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 18,
+      "steps": 3200,
+      "planner_calls": 285,
+      "planner_seconds": 1.425920010311529,
+      "execution_seconds": 195.79702683887444,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768617
+      ],
+      "regression": [
+        768610
+      ]
+    },
+    "confirm_retention_32302": {
+      "api_calls_by_kind": {
+        "plan_screw": 284
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3655285032000393
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 18,
+      "steps": 3200,
+      "planner_calls": 284,
+      "planner_seconds": 1.3655285032000393,
+      "execution_seconds": 195.85417244466953,
+      "errors": [
+        {
+          "seed": 768600,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768617
+      ],
+      "regression": [
+        768610
+      ]
+    },
+    "confirm_rule": {
+      "api_calls_by_kind": {
+        "plan_screw": 258
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.2605238324031234
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 18,
+      "steps": 3200,
+      "planner_calls": 258,
+      "planner_seconds": 1.2605238324031234,
+      "execution_seconds": 194.75335270352662,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": true,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": true,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768603
+      ],
+      "regression": [
+        768631
+      ]
+    },
+    "confirm_sac_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 287
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.35809830063954
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 17,
+      "steps": 3200,
+      "planner_calls": 287,
+      "planner_seconds": 1.35809830063954,
+      "execution_seconds": 196.44733225926757,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768610,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": false,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": true,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768617,
+        768623
+      ],
+      "regression": [
+        768601,
+        768610,
+        768631
+      ]
+    },
+    "confirm_sac_32302": {
+      "api_calls_by_kind": {
+        "plan_screw": 285
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3446237889584154
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 17,
+      "steps": 3200,
+      "planner_calls": 285,
+      "planner_seconds": 1.3446237889584154,
+      "execution_seconds": 200.6527067096904,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": false,
+        "768608": false,
+        "768609": false,
+        "768610": true,
+        "768611": false,
+        "768612": true,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768612,
+        768617
+      ],
+      "regression": [
+        768607,
+        768609,
+        768631
+      ]
+    },
+    "confirm_sac_64_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 272
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.344714745413512
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 19,
+      "steps": 3200,
+      "planner_calls": 272,
+      "planner_seconds": 1.344714745413512,
+      "execution_seconds": 194.878625204321,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": true,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": true,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768603,
+        768629
+      ],
+      "regression": [
+        768610
+      ]
+    },
+    "confirm_warm": {
+      "api_calls_by_kind": {
+        "plan_screw": 271
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3153681033290923
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 18,
+      "steps": 3200,
+      "planner_calls": 271,
+      "planner_seconds": 1.3153681033290923,
+      "execution_seconds": 194.5739808746148,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": true,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [],
+      "regression": []
+    },
+    "confirm_witness_margin_64_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 285
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3422290165908635
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 18,
+      "steps": 3200,
+      "planner_calls": 285,
+      "planner_seconds": 1.3422290165908635,
+      "execution_seconds": 225.5698398477398,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768617
+      ],
+      "regression": [
+        768610
+      ]
+    },
+    "confirm_witness_qp_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 277
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3275649887509644
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 17,
+      "steps": 3200,
+      "planner_calls": 277,
+      "planner_seconds": 1.3275649887509644,
+      "execution_seconds": 195.02605768619105,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768610,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [],
+      "regression": [
+        768610
+      ]
+    },
+    "confirm_witness_qp_32302": {
+      "api_calls_by_kind": {
+        "plan_screw": 282
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3430311798583716
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 16,
+      "steps": 3200,
+      "planner_calls": 282,
+      "planner_seconds": 1.3430311798583716,
+      "execution_seconds": 194.90867064753547,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [],
+      "regression": [
+        768610,
+        768631
+      ]
+    },
+    "confirm_witness_soft_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 285
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.348984511103481
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 17,
+      "steps": 3200,
+      "planner_calls": 285,
+      "planner_seconds": 1.348984511103481,
+      "execution_seconds": 194.38767414726317,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        },
+        {
+          "seed": 768610,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": false,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [
+        768617
+      ],
+      "regression": [
+        768610,
+        768619
+      ]
+    },
+    "confirm_witness_soft_32302": {
+      "api_calls_by_kind": {
+        "plan_screw": 283
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3644130071625113
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 17,
+      "steps": 3200,
+      "planner_calls": 283,
+      "planner_seconds": 1.3644130071625113,
+      "execution_seconds": 195.5952900738921,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": false,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": true
+      },
+      "rescue": [],
+      "regression": [
+        768610
+      ]
+    },
+    "confirm_witness_soft_64_32301": {
+      "api_calls_by_kind": {
+        "plan_screw": 279
+      },
+      "api_seconds_by_kind": {
+        "plan_screw": 1.3867280154954642
+      },
+      "known_servo_ik_calls": 0,
+      "episodes": 32,
+      "success": 17,
+      "steps": 3200,
+      "planner_calls": 279,
+      "planner_seconds": 1.3867280154954642,
+      "execution_seconds": 228.41503705107607,
+      "errors": [
+        {
+          "seed": 768608,
+          "error": "HORIZON"
+        }
+      ],
+      "outcomes": {
+        "768600": false,
+        "768601": true,
+        "768602": true,
+        "768603": false,
+        "768604": true,
+        "768605": false,
+        "768606": true,
+        "768607": true,
+        "768608": false,
+        "768609": true,
+        "768610": false,
+        "768611": false,
+        "768612": false,
+        "768613": false,
+        "768614": true,
+        "768615": true,
+        "768616": true,
+        "768617": true,
+        "768618": true,
+        "768619": true,
+        "768620": true,
+        "768621": true,
+        "768622": false,
+        "768623": false,
+        "768624": true,
+        "768625": true,
+        "768626": false,
+        "768627": false,
+        "768628": true,
+        "768629": false,
+        "768630": false,
+        "768631": false
+      },
+      "rescue": [
+        768617
+      ],
+      "regression": [
+        768610,
+        768631
+      ]
+    }
+  },
+  "scope": "Actual native outcomes, shared32 scenes; two networks are not64 independent tasks. No best-checkpoint selection."
+}

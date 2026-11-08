@@ -8,14 +8,14 @@
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
-  "latest_evidence": "evidence/EXP-004/2026-11-07/action_frontier/README.md",
-  "next_action": "Complete matched128-episode soft-witness/QP arms and their second seeds; test one predeclared64-episode half-reference-margin ablation. Keep new confirmation cohort unopened until models/protocol are fixed. Then evaluate native outcomes, preserve all negatives and publish actual costs.",
+  "latest_evidence": "evidence/EXP-004/2026-11-08/continuation_retention/README.md",
+  "next_action": "Inherit frozen first-localZ-minus24/32 and historical full-optionSAC32202=21/32 as stronger references, not only warm18/32. Do not extend failed KL/QP/margin tuning or reset ordinaryRL to a weaker prior again. Develop a bounded, same-budget continued skillRL comparison from the retained strong checkpoint, separating calibrated executable-Option value, Actor adoption of verified positive branches, and failed-reference fallback; retain recurrent rear decisions and task-conditioned real grasp. Explicitly share any controller-history feature needed by the one-bit fixed reference. Charger grasp crossover is repeatable, but nine legal successor probes yielded no rescue; require actual rear authority before new transfer training, without weakening native control or opening sealed tests.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
     "S3": "initial_action_authority_confirmed_identification_incomplete",
     "S4": "active_STAP_replication_and_multi_skill_credible_method",
-    "S5": "completed_action_frontier_cycle; ordinary baseline retained, coordinate candidates unsupported; independent method gain UNVERIFIED",
+    "S5": "continuation-retention cycle completed with real128-episode/two-seed comparisons; stronger fixed24/32 and historicalSAC21/32 retained; candidate independent gain unsupported",
     "S6": "not_started",
     "S7": "not_started"
   },
@@ -1645,37 +1645,72 @@
     "candidate_revision": "Before retention training, extend anchors to all successful reference rear decisions; same physical data. Necessary nonzero intervention omission observed in SAC64."
   },
   "active_cycle_20261108": {
-    "status": "actual_physical_training_in_progress",
+    "status": "completed_actual_research_and_frozen_confirmation",
     "baseline": "d4a20b0",
-    "source_current": "62f718c",
-    "evidence": "evidence/EXP-004/2026-11-08/continuation_retention/METHOD.md",
-    "initial_physical_episodes": 189,
-    "initial_pairs": 125,
-    "design_warm": 35,
-    "design_scenes": 64,
-    "design_finite_union": 38,
-    "completed128_dev": {
-      "sac_32301": 7,
-      "sac_32302": 9,
-      "retention_32301": 8,
-      "retention_32302": 8,
-      "ranking_32301": 8,
-      "ranking_32302": 7,
-      "joint_sac_32301": 7,
-      "witness_qp_32301": 8
-    },
-    "dev_denominator": 16,
-    "stalled_projection64": {
-      "success": 10,
-      "rejected_updates": 1720,
-      "updates": 2560
-    },
-    "ongoing": [
-      "witness_soft_32301",
-      "witness_soft_32302",
-      "witness_qp_32302",
-      "witness_margin_32301_64pilot"
+    "evidence": "evidence/EXP-004/2026-11-08/continuation_retention/README.md",
+    "own_policy_episodes": 1536,
+    "optimizer_updates": 61440,
+    "initial_shared_episodes": 189,
+    "own_reference_refresh_episodes": 515,
+    "new_confirmation_scenes": 32,
+    "network_seeds": [
+      32301,
+      32302
     ],
-    "claim": "No independent benefit established; numerical solver improvement is not native-task improvement."
+    "native_scores": {
+      "fixed_first_local_z_minus": 24,
+      "prior_sac32202": 21,
+      "warm": 18,
+      "rule": 18,
+      "old_rl": 18,
+      "sac": [
+        17,
+        17
+      ],
+      "reference_kl": [
+        18,
+        18
+      ],
+      "supervised": [
+        11,
+        15
+      ],
+      "soft_witness": [
+        17,
+        17
+      ],
+      "qp_witness": [
+        17,
+        16
+      ],
+      "joint_sac": 16
+    },
+    "margin_ablation64": {
+      "sac": 19,
+      "margin": 18,
+      "soft": 17
+    },
+    "physical_episodes": 3637,
+    "physical_steps": 373600,
+    "api_calls": {
+      "plan_screw": 31022,
+      "IK": 3319,
+      "plan_qpos_to_pose": 26
+    },
+    "charger": {
+      "episodes": 99,
+      "scenes": 12,
+      "matched_nominal_and_feedback_success_by_pitch": {
+        "15": 11,
+        "30": 11,
+        "45": 8
+      },
+      "prefix_retakes": 10,
+      "all_retake_recorded_errors": 0,
+      "grasp_crossover_repeats": 8,
+      "successor_probe_rescues": "0/9",
+      "learned_transfer": false
+    },
+    "claim": "Actual implementation and scoped physical evidence; no independent algorithm gain or safe-improvement theorem"
   }
 }
