@@ -9,7 +9,7 @@
   "current_stage": "S5",
   "active_experiment": "EXP-004",
   "latest_evidence": "evidence/EXP-004/2026-11-07/action_frontier/README.md",
-  "next_action": "Finish new64 natural training-state branches, then128 own-policy episodes per arm/seed with fixed predecessor and current-reference refresh64; separate joint SAC control. Continue analysis and actual training before delivery.",
+  "next_action": "Finish equal-budget own-policy arms and current-reference refresh; evaluate frozen final models, inspect necessary intervention retention versus actual new rescue, then revise based on physical results. Do not treat candidate code or pair fit as method gain.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -1601,7 +1601,7 @@
     "retained_capability": "LOCAL_EXECUTION_DEPENDENCE: new deployed localZ-minus rescues, balanced by harmful choices; no robust independent candidate advantage"
   },
   "current_cycle_20261108": {
-    "status": "physical_collection_running",
+    "status": "own_policy_training_running",
     "run": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/continuation_retention_20261108",
     "design_scenes": "768000–768063",
     "own_scenes": "768100–768227",
@@ -1616,7 +1616,32 @@
       "ranking",
       "retention"
     ],
-    "claim": "PROPOSED, not yet trained or evaluated",
-    "note": "Original-reset branches, exact recorded-prefix and queue checks. Native100 shared executor retained. Prior results unchanged."
+    "claim": "Actual baseline training running; candidate independent benefit unverified",
+    "note": "Original-reset branches, exact recorded-prefix and queue checks. Native100 shared executor retained. Prior results unchanged.",
+    "design_result": {
+      "episodes": 189,
+      "warm": 35,
+      "n": 64,
+      "sampled_union": 38,
+      "pairs": 125,
+      "rescue_pairs": 4,
+      "regression_pairs": 22,
+      "ties": 99
+    },
+    "ordinary64": {
+      "32301": {
+        "success": 8,
+        "n": 16,
+        "rescue": 1,
+        "regression": 3
+      },
+      "32302": {
+        "success": 8,
+        "n": 16,
+        "rescue": 1,
+        "regression": 3
+      }
+    },
+    "candidate_revision": "Before retention training, extend anchors to all successful reference rear decisions; same physical data. Necessary nonzero intervention omission observed in SAC64."
   }
 }

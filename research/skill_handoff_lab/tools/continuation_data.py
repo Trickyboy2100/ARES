@@ -3,7 +3,8 @@ import copy,hashlib,json
 from pathlib import Path
 import torch
 
-def build(dirs,model):
+def build(dirs,model,scope="suffix"):
+ assert scope in ("suffix","full_reference")
  episodes=[];pairs=[];sources={}
  for folder in dirs:
   folder=Path(folder);episodes+=torch.load(folder/'REPLAY.pt',weights_only=False);pairs+=json.loads((folder/'PAIRS.json').read_text());sources[str(folder)]=hashlib.sha256((folder/'REPLAY.pt').read_bytes()).hexdigest()
@@ -18,8 +19,10 @@ def build(dirs,model):
   data.extend(copy.deepcopy(e['ts']))
   if e['row']['success'] and e['row']['path']in paths:
    for t in e['ts']:
-    if t['stage']!=1 or t['step']<=paths[e['row']['path']]:continue
+    if t['stage']!=1:continue
+    preserve_prefix=scope=='full_reference' and e['row']['tag']=='reference'
+    if not preserve_prefix and t['step']<=paths[e['row']['path']]:continue
     s=t['s'];b,m=model.context([s])
     with torch.no_grad():pr=model.probs(model.norm([s]),b,m,[s])[0].tolist()
     anchors.append(dict(s=s,reference_p=pr,path=e['row']['path'],step=t['step']))
- return dict(data=data,pairs=pairs,anchors=anchors,reference_sha=next(iter(versions)),episodes=len(episodes),sources=sources,anchor_semantics='soft reference distribution is a surrogate drift measure; physical continuation used argmax, no safety bound')
+ return dict(data=data,pairs=pairs,anchors=anchors,reference_sha=next(iter(versions)),episodes=len(episodes),sources=sources,anchor_scope=scope,anchor_semantics='soft reference distribution is a surrogate drift measure; physical continuation used argmax, no safety bound')
