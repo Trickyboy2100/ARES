@@ -52,13 +52,21 @@ def make_native(density=1.,friction=None):
  ep.step=types.MethodType(PaceMethods.step,ep);ep.completion_mode='dwell';ep.authority='pace_rotation';ep.task_family='native_grasp_result'
  return ep
 
+def prefix_failure(summary):
+ """Retain predecessor failure without leaking a later servo failure."""
+ error=summary.get('error')
+ if summary['prefix_steps']>=200:return error
+ if error in ('CHARGER_NOT_GRASPED','CHARGER_LOST_ON_LIFT'):return error
+ if isinstance(error,str) and error.startswith('PLAN_'):return error
+ return None
+
 def replay_prefix(ep,path):
  """Replay actual prior joint commands in fresh native physics, never set state.
  Prefix observations must match; otherwise the episode is not a paired experiment.
  """
  from program_charger import Planner
  from program_completion_contract import CompletionGate
- d=json.load(gzip.open(path,'rt'));seed=d['summary']['seed'];e=ep.env;ep.seed=seed;ep.bias_mm=[0.,0.];ep.error=d['summary']['error'] if d['summary']['prefix_steps']==200 else None;ep.done=False;ep.transitions=[];ep.last_action=np.zeros(3);ep.last_authority=np.zeros(2);ep.bias_p=np.zeros(3);ep.started=time.monotonic();ep.gate=CompletionGate();ep.hold_entry=None;ep.last_probe=-100;ep.probe_steps=0
+ d=json.load(gzip.open(path,'rt'));seed=d['summary']['seed'];e=ep.env;ep.seed=seed;ep.bias_mm=[0.,0.];ep.error=prefix_failure(d['summary']);ep.done=False;ep.transitions=[];ep.last_action=np.zeros(3);ep.last_authority=np.zeros(2);ep.bias_p=np.zeros(3);ep.started=time.monotonic();ep.gate=CompletionGate();ep.hold_entry=None;ep.last_probe=-100;ep.probe_steps=0
  e.reset(seed=seed);u=e.unwrapped;ep.goal=u.goal_pose.sp
  ep.planner=Planner(e,vis=False,base_pose=u.agent.robot.pose,visualize_target_grasp_pose=False,print_env_info=False,joint_vel_limits=1.,joint_acc_limits=1.);ep.planner.manual=True;ep.planner.stride=1
  n=d['summary']['prefix_steps'];error=0.
