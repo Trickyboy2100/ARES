@@ -30,6 +30,10 @@ Option/SAC及自身策略数据。当前研究补齐参考刷新/相对目标接
 [工作论文](paper/MANUSCRIPT.md)与[主张矩阵](paper/CLAIM_MATRIX.md)按具体证据持续更新；
 撰稿和第二任务准备不等待“独立算法增益”这一单项状态。性能与泛化主张仍需公平实测。
 
+## 当前自主研究指令（2026-11-08）
+
+面向长程、多阶段技能强化学习的持续研究执行、任务筛选、方法探索、真实物理迭代与论文收敛，见 [LONG_HORIZON_SKILL_RL_AUTONOMOUS_RESEARCH_DIRECTIVE.md](../work_orders/2026-11-08_LONG_HORIZON_SKILL_RL_AUTONOMOUS_RESEARCH_DIRECTIVE.md)。该指令是研究方向与自主决策补充，不替代 PAPER_CONTRACT、STATE 和 AGENTS；启动时须先核对当前 HEAD 与 STATE 是否同步。
+
 ## 先看哪里（唯一动态状态以 STATE.json 为准）
 
 
