@@ -61,3 +61,23 @@ argmax deployment. Report physical deployment outcomes, not value fit as gain.
 Frozen-reference lag is measured in training episodes, NOT physical commitment
 steps. Continuation seeds share pretrained weights; they are not independent
 network initializations.
+
+## Evidence-driven second iteration: entropy ablation
+
+After checkpoint32, trace lost two formerly successful development cases and
+SAC lost one. A recorded-state check separates erroneous ordering from adoption:
+on769401 the trace critic ranks the reference's successful selector6 above0,
+while the Actor selects0. This alone does not establish which change would rescue
+the entire current policy. The soft expected future-entropy contributions along
+own trajectories average .022/.027 (SAC/trace), with maxima .066/.070; these are
+model-side calculations, not physical rewards or causal evidence.
+
+A single-factor ablation forks EACH arm's exact checkpoint32 weights, optimizers,
+RNG and replay; it runs the same remaining32 natural roots769132–163. Both value
+and Actor entropy coefficients change .01→0; exploration remains10% legal uniform,
+success BC remains.1, and all execution permissions stay fixed. This tests a
+changed regularized objective, not a novel method. Original64 scores remain
+untouched. New ablation episodes are additional real cost; the fork's inherited32
+training episodes are charged when comparing total training budget, not executed
+or counted twice in unique physical cost. Development checkpoint selection remains
+fixed; ablation is not allowed to select a favorable new-confirmation checkpoint.
