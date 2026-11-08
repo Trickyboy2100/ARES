@@ -1,0 +1,14 @@
+{
+  "models": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/ablation/sac_32401/CHECKPOINT_32.pt",
+      "sha256": "e6370e4f7f5d318874d3d3950d73047b4ea0b1e2aab936b61eb3275ccfefc0db"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/ablation/trace_32401/CHECKPOINT_32.pt",
+      "sha256": "dc499a0aad7b4da925273ee464b160917762651ffa5325a75274bfbd0a33155f"
+    }
+  ],
+  "selection": "both predefined entropy ablation endpoints; no best checkpoint",
+  "note": "Frozen after primary confirmation began; no confirmation results consulted for these already-finished training updates. Exploratory developmental evaluation, not sealed."
+}

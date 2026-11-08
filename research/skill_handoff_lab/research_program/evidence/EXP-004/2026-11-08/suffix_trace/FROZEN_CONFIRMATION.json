@@ -1,0 +1,53 @@
+{
+  "source": "39e6b1e512d9b4d212c2f1f40bc3534c8d9029d6",
+  "selection": "fixed final64",
+  "seeds": [
+    769600,
+    769601,
+    769602,
+    769603,
+    769604,
+    769605,
+    769606,
+    769607,
+    769608,
+    769609,
+    769610,
+    769611,
+    769612,
+    769613,
+    769614,
+    769615,
+    769616,
+    769617,
+    769618,
+    769619,
+    769620,
+    769621,
+    769622,
+    769623
+  ],
+  "models": [
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/sac_32401/CHECKPOINT_64.pt",
+      "sha256": "77d0bcb3ce72165ecf363a00dfdb39021c4ec76f9295f52babb4a3889ec7dd7f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/CHECKPOINT_64.pt",
+      "sha256": "1aa13f1c82d3fc383f8fed355516a9f952596adc90886ae702e5357f48ad139f"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/lagged_32401/CHECKPOINT_64.pt",
+      "sha256": "7e2d628f6b8c3a0185f4c9ade5e674ec43070fbf4695827e431bfb1623bc47f4"
+    },
+    {
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/sac_32202/CHECKPOINT_128.pt",
+      "sha256": "dbfdb12b5ab19809d11f29ac118c8f2e9458c9f6925c07b1f91aecf46045ff32"
+    }
+  ],
+  "controls": [
+    "fixed_first_zminus",
+    "rule"
+  ],
+  "all_models_frozen_before_opening_new_roots": true
+}

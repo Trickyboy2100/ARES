@@ -120,3 +120,12 @@ The above post-hoc evidence updates catalogue-dependence for new conditions only
 | Real second-task predecessor dependence |Opposite15/30 outcomes on2 natural roots,8 complete repeats |SCOPED_PHYSICAL_EVIDENCE|
 | Second-task rear adaptation or learned transfer |Matched feedback=nominal;9 legal probes0rescue; no new network |UNVERIFIED|
 | Independent SCI RL method advantage/safety theorem |No positive controlled performance or theorem |UNVERIFIED|
+
+
+### 2026-11-08 suffix_trace evidence
+- Executed behavior-probability/Option successor accounting and exact resume: implemented and checked.
+- Lagged continuation evaluation improves full tasks: not supported (14/24 vs prior16, SAC15, fixed19).
+- All policy regression is caused by destructive suffix changes: contradicted on769401 by forced-first6+trainedsuffix success.
+- Entropy removal resolves the mechanism: not supported on new24.
+- Independent method gain, joint multi-skill gain and transfer: UNVERIFIED; no new claim.
+See ../evidence/EXP-004/2026-11-08/suffix_trace/README.md.

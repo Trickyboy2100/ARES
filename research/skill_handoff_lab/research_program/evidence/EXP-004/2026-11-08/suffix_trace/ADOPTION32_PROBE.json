@@ -1,0 +1,74 @@
+[
+  {
+    "seed": 769400,
+    "arm": "sac",
+    "source_action": 0,
+    "actor": 6,
+    "source_p": 0.25912272930145264,
+    "actor_p": 0.4363289475440979,
+    "source_q": 1.1116770505905151,
+    "actor_q": 0.795437216758728,
+    "q_argmax": 0,
+    "scope": "recorded initial-policy state; not assumed visited by every final policy"
+  },
+  {
+    "seed": 769400,
+    "arm": "trace",
+    "source_action": 0,
+    "actor": 11,
+    "source_p": 0.4186105728149414,
+    "actor_p": 0.4271203577518463,
+    "source_q": 1.3129255771636963,
+    "actor_q": 1.382161259651184,
+    "q_argmax": 11,
+    "scope": "recorded initial-policy state; not assumed visited by every final policy"
+  },
+  {
+    "seed": 769400,
+    "arm": "lagged",
+    "source_action": 0,
+    "actor": 6,
+    "source_p": 0.36796388030052185,
+    "actor_p": 0.5382501482963562,
+    "source_q": 1.070552945137024,
+    "actor_q": 0.9937028288841248,
+    "q_argmax": 11,
+    "scope": "recorded initial-policy state; not assumed visited by every final policy"
+  },
+  {
+    "seed": 769401,
+    "arm": "sac",
+    "source_action": 6,
+    "actor": 0,
+    "source_p": 0.08320576697587967,
+    "actor_p": 0.7936644554138184,
+    "source_q": 0.7993364334106445,
+    "actor_q": 0.9266839027404785,
+    "q_argmax": 0,
+    "scope": "recorded initial-policy state; not assumed visited by every final policy"
+  },
+  {
+    "seed": 769401,
+    "arm": "trace",
+    "source_action": 6,
+    "actor": 0,
+    "source_p": 0.1326737254858017,
+    "actor_p": 0.8342782855033875,
+    "source_q": 0.9352945685386658,
+    "actor_q": 0.9164146184921265,
+    "q_argmax": 6,
+    "scope": "recorded initial-policy state; not assumed visited by every final policy"
+  },
+  {
+    "seed": 769401,
+    "arm": "lagged",
+    "source_action": 6,
+    "actor": 0,
+    "source_p": 0.22182932496070862,
+    "actor_p": 0.7269605994224548,
+    "source_q": 0.6871182918548584,
+    "actor_q": 0.785560131072998,
+    "q_argmax": 0,
+    "scope": "recorded initial-policy state; not assumed visited by every final policy"
+  }
+]

@@ -8,8 +8,8 @@
   "method_claim_status": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
   "current_stage": "S5",
   "active_experiment": "EXP-004",
-  "latest_evidence": "evidence/EXP-004/2026-11-08/continuation_retention/README.md",
-  "next_action": "Inherit frozen first-localZ-minus24/32 and historical full-optionSAC32202=21/32 as stronger references, not only warm18/32. Do not extend failed KL/QP/margin tuning or reset ordinaryRL to a weaker prior again. Develop a bounded, same-budget continued skillRL comparison from the retained strong checkpoint, separating calibrated executable-Option value, Actor adoption of verified positive branches, and failed-reference fallback; retain recurrent rear decisions and task-conditioned real grasp. Explicitly share any controller-history feature needed by the one-bit fixed reference. Charger grasp crossover is repeatable, but nine legal successor probes yielded no rescue; require actual rear authority before new transfer training, without weakening native control or opening sealed tests.",
+  "latest_evidence": "evidence/EXP-004/2026-11-08/suffix_trace/README.md",
+  "next_action": "Retain strong inherited SAC and frozen first-localZ-minus control; stop short-Peg trace/lagged/entropy expansion after actual negative training. Follow integrated long-horizon directive: use retained strong Pyramid assets to establish genuine unfinished successor work after real release/stability boundaries and predecessor-dependent choices on new natural conditions. Share authority, preserve native outcomes and sealed tests; do not retrain saturated yaw grids or call artificial stages multi-skill synergy.",
   "stage_status": {
     "S1": "maintain_alongside_experiments",
     "S2": "complete_for_current_strong_controller",
@@ -80,7 +80,7 @@
   ],
   "safety": "ARES-R read-only; no live robot commands; no restricted field data in public artifacts; sealed evaluations not used in method search.",
   "completion_protocol": "Update existing cards, DECISIONS, EVIDENCE_LEDGER and STATE after evidence; develop paper concurrently with claim-specific limitations. Independent algorithm superiority requires actual comparative evidence, not a prerequisite for writing or second-task preparation.",
-  "latest_run_summary": "640 own-policy episodes, five128-episode learners; 1882 native episodes total. Frozen confirmation: chart_state_32201 19/32; old_rl 22/32; rule 20/32; sac_32201 19/32; sac_32202 22/32; supervised_32201 18/32; warm 21/32. Candidate coordinate sharing not independently better; retain ordinary SAC.",
+  "latest_run_summary": "suffix_trace: 256 own-policy episodes, 10240 joint updates, 1369 effective RL decisions; 607 native100 episodes including evaluation/probes, 60700 physical steps. New24 frozen: prior16, SAC15, Retrace15, lagged14, fixed-first19, rule14, zeroSAC15, zeroTrace14. No independent gain. 769401 forced-first+trained-suffix succeeds: distinguishes intervention misvaluation from historical suffix destruction.",
   "visual_evidence_protocol": "VISUAL_EVIDENCE_PROTOCOL.md",
   "research_review_20261102": {
     "type": "LITERATURE_PLUS_PREVIOUS_PHYSICS_AUDIT_NOT_NEW_SIMULATION",
@@ -1714,7 +1714,7 @@
     "claim": "Actual implementation and scoped physical evidence; no independent algorithm gain or safe-improvement theorem"
   },
   "suffix_trace_20261108": {
-    "status": "actual_online_training",
+    "status": "completed_actual_training_and_confirmation",
     "run": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108",
     "protocol": {
       "baseline": "5fc1e79a12d5269237c84116e93f8ada5d09868c",
@@ -1850,6 +1850,101 @@
         "fixed-reference lag is standard approximate policy iteration, not claimed original"
       ]
     },
-    "claim": "unverified"
+    "claim": "UNVERIFIED_INDEPENDENT_ALGORITHM_GAIN",
+    "evidence": "evidence/EXP-004/2026-11-08/suffix_trace/README.md",
+    "results": [
+      {
+        "method": "fixed5",
+        "success": 19,
+        "n": 24,
+        "rescue": [
+          "769610",
+          "769617",
+          "769618"
+        ],
+        "regression": []
+      },
+      {
+        "method": "lagged",
+        "success": 14,
+        "n": 24,
+        "rescue": [],
+        "regression": [
+          "769611",
+          "769622"
+        ]
+      },
+      {
+        "method": "prior",
+        "success": 16,
+        "n": 24,
+        "rescue": [],
+        "regression": []
+      },
+      {
+        "method": "rule",
+        "success": 14,
+        "n": 24,
+        "rescue": [],
+        "regression": [
+          "769611",
+          "769622"
+        ]
+      },
+      {
+        "method": "sac",
+        "success": 15,
+        "n": 24,
+        "rescue": [
+          "769617"
+        ],
+        "regression": [
+          "769600",
+          "769622"
+        ]
+      },
+      {
+        "method": "trace",
+        "success": 15,
+        "n": 24,
+        "rescue": [],
+        "regression": [
+          "769622"
+        ]
+      },
+      {
+        "method": "zero_sac",
+        "success": 15,
+        "n": 24,
+        "rescue": [
+          "769617"
+        ],
+        "regression": [
+          "769603",
+          "769611"
+        ]
+      },
+      {
+        "method": "zero_trace",
+        "success": 14,
+        "n": 24,
+        "rescue": [],
+        "regression": [
+          "769614",
+          "769622"
+        ]
+      }
+    ],
+    "cost": {
+      "episodes": 607,
+      "steps": 60700,
+      "queries": 5421,
+      "query_wall_s": 25.513694228371605,
+      "episode_wall_s": 3222.7820054681506,
+      "own_episodes": 256,
+      "updates": 10240,
+      "effective_decisions": 1369
+    },
+    "mechanism": "769401 final64 fails; forcing first selector6 then either trained or prior suffix succeeds. Critic/Actor select opposite physical ordering; not generic suffix destruction."
   }
 }

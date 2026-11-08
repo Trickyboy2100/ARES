@@ -1,0 +1,18 @@
+[
+  {
+    "mode": "force6_trained_suffix",
+    "equal_queue_before": true,
+    "equal_active_target": true,
+    "equal_budget_obs": true,
+    "step": 64,
+    "obs_dim": 83
+  },
+  {
+    "mode": "force6_prior_suffix",
+    "equal_queue_before": true,
+    "equal_active_target": true,
+    "equal_budget_obs": true,
+    "step": 64,
+    "obs_dim": 83
+  }
+]

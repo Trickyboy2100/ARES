@@ -1,0 +1,1616 @@
+{
+  "scope": "same final model/replay target ablation; actual dev before-after traces; no new physical execution",
+  "checkpoint": 32,
+  "actual_model_updates": 6400,
+  "n_own_decisions": 171,
+  "target_difference_mean": 0.009964821860194206,
+  "target_difference_abs_mean": 0.04023553803563118,
+  "trace_activity": {
+    "mean_trace_length": 3.5789473684210527,
+    "mean_coefficient": 0.8039685007475772
+  },
+  "paired_trajectories": [
+    {
+      "seed": 769400,
+      "before": true,
+      "after": false,
+      "recorded_prefix_steps": 56,
+      "before_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 52,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 56,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 58,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 61,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 12,
+          "physical": 11,
+          "step": 64,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 80,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 84,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 88,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 92,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 96,
+          "stage": 1
+        }
+      ],
+      "after_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 52,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 11,
+          "physical": 10,
+          "step": 56,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 7,
+          "physical": 6,
+          "step": 83,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 87,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 7,
+          "physical": 6,
+          "step": 91,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 95,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 99,
+          "stage": 1
+        }
+      ],
+      "paths": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00001_769400_eval_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00045_769400_eval_32.json.gz"
+      ],
+      "sha": [
+        "69bb222afc4ab5a52890ed48f9b885391ccb4d80c0de4cfbfdb146b699c86157",
+        "dcdb30f3619e62ef9ae15c785d0eed80c8faeca7363c65cd2abad811fd1bd298"
+      ]
+    },
+    {
+      "seed": 769401,
+      "before": true,
+      "after": false,
+      "recorded_prefix_steps": 65,
+      "before_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 6,
+          "physical": 5,
+          "step": 64,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 94,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 98,
+          "stage": 1
+        }
+      ],
+      "after_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 64,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 68,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 71,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 73,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 76,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 80,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 84,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 88,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 92,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 96,
+          "stage": 1
+        }
+      ],
+      "paths": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00002_769401_eval_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00046_769401_eval_32.json.gz"
+      ],
+      "sha": [
+        "de547e24c3cc212d0db3f141f7cc2215bc005130a58f30a6ffb7fd9c1536a382",
+        "4e871b1a0d6682975400a90ccb9d7b9f6ab3b4e07c9cd0a95a8a5e910368cf70"
+      ]
+    },
+    {
+      "seed": 769402,
+      "before": false,
+      "after": false,
+      "recorded_prefix_steps": 100,
+      "before_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 81,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 85,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 88,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 92,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 94,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 98,
+          "stage": 1
+        }
+      ],
+      "after_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 81,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 85,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 88,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 92,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 94,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 98,
+          "stage": 1
+        }
+      ],
+      "paths": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00003_769402_eval_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00047_769402_eval_32.json.gz"
+      ],
+      "sha": [
+        "c3b5ba9461255b358cd848fd88140ffb37d7be1195665d1b48704febaf22273c",
+        "12377af9286f3f940aeea8a90b1b5d599e9efa02b4013f571ef5c666da7fb325"
+      ]
+    },
+    {
+      "seed": 769403,
+      "before": false,
+      "after": false,
+      "recorded_prefix_steps": 100,
+      "before_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 85,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 89,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 91,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 95,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 96,
+          "stage": 1
+        }
+      ],
+      "after_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 85,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 89,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 91,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 95,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 96,
+          "stage": 1
+        }
+      ],
+      "paths": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00004_769403_eval_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00048_769403_eval_32.json.gz"
+      ],
+      "sha": [
+        "a1acc150a84d232ef3c554ae0762efeecd25aa9ae56b66b6938d1ee1739c1eae",
+        "b4b0e4cedd49c8495876f3a5f832391f1dd0fdcb0550eda75c755ce7f00169e0"
+      ]
+    },
+    {
+      "seed": 769404,
+      "before": false,
+      "after": false,
+      "recorded_prefix_steps": 100,
+      "before_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 87,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 91,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 95,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 97,
+          "stage": 1
+        }
+      ],
+      "after_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 87,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 91,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 95,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 97,
+          "stage": 1
+        }
+      ],
+      "paths": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00005_769404_eval_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00049_769404_eval_32.json.gz"
+      ],
+      "sha": [
+        "24f8afe71eb1daaf6b2c3ba48835b20c8d78600b88b8f9f2d3a2e26772c6051c",
+        "fc40d9c3d5019c81303fb3cdc5357d854921fd33daa19993bf3ab3ece80ba377"
+      ]
+    },
+    {
+      "seed": 769405,
+      "before": false,
+      "after": false,
+      "recorded_prefix_steps": 100,
+      "before_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 87,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 91,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 94,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 97,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 99,
+          "stage": 1
+        }
+      ],
+      "after_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 87,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 91,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 94,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 97,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 99,
+          "stage": 1
+        }
+      ],
+      "paths": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00006_769405_eval_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00050_769405_eval_32.json.gz"
+      ],
+      "sha": [
+        "f9341d08d676221b1d886cc4eba8eb5803345147e3e42c015a6115b52992fae9",
+        "85cb2bf328a710610160b5c89c8eede6a809583453b08aff8ed3a9718ef5ddf7"
+      ]
+    },
+    {
+      "seed": 769406,
+      "before": true,
+      "after": true,
+      "recorded_prefix_steps": 46,
+      "before_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 3,
+          "physical": 2,
+          "step": 45,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 72,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 76,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 80,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 84,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 88,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 92,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 96,
+          "stage": 1
+        }
+      ],
+      "after_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 45,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 49,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 51,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 53,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 56,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 60,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 3,
+          "physical": 2,
+          "step": 64,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 76,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 80,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 84,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 88,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 92,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 96,
+          "stage": 1
+        }
+      ],
+      "paths": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00007_769406_eval_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00051_769406_eval_32.json.gz"
+      ],
+      "sha": [
+        "89de83086ac1b0915f7ab5953089ddead45addd1d961444fe0fa5121044c2ae0",
+        "527f9475be670fe575c8870357b576a45279dea30fd7ba4e8d2514773cf1dccf"
+      ]
+    },
+    {
+      "seed": 769407,
+      "before": true,
+      "after": true,
+      "recorded_prefix_steps": 56,
+      "before_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 48,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 52,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 56,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 57,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 60,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 64,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 68,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 72,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 76,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 80,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 84,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 88,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 92,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 96,
+          "stage": 1
+        }
+      ],
+      "after_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 48,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 52,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 11,
+          "physical": 10,
+          "step": 56,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 79,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 83,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 87,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 91,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 95,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 99,
+          "stage": 1
+        }
+      ],
+      "paths": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00008_769407_eval_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00052_769407_eval_32.json.gz"
+      ],
+      "sha": [
+        "1d45965492c8cebeda556f78fa899cb982f54780ac5d6308d72fc98d71782847",
+        "a71028a6bd5b452d5291ec74c4d9f372a97b549377b36d5611458a65f269c63c"
+      ]
+    },
+    {
+      "seed": 769408,
+      "before": true,
+      "after": true,
+      "recorded_prefix_steps": 69,
+      "before_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 6,
+          "physical": 5,
+          "step": 68,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 98,
+          "stage": 1
+        }
+      ],
+      "after_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 68,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 72,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 75,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 10,
+          "step": 78,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 81,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 85,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 89,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 93,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 97,
+          "stage": 1
+        }
+      ],
+      "paths": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00009_769408_eval_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00053_769408_eval_32.json.gz"
+      ],
+      "sha": [
+        "5afefad761296c67912dbfddafe09f94d0f2df48a58b88541a58b958fd3d85da",
+        "d1c5b786ef1a7c45931f965ccbdcd108da358292096e343baf698d72d5d45948"
+      ]
+    },
+    {
+      "seed": 769409,
+      "before": true,
+      "after": true,
+      "recorded_prefix_steps": 56,
+      "before_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 55,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 59,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 61,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 64,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 67,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 71,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 3,
+          "physical": 2,
+          "step": 75,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 91,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 95,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 99,
+          "stage": 1
+        }
+      ],
+      "after_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 11,
+          "physical": 10,
+          "step": 55,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 85,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 89,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 93,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 97,
+          "stage": 1
+        }
+      ],
+      "paths": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00010_769409_eval_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00054_769409_eval_32.json.gz"
+      ],
+      "sha": [
+        "e60b2023748892548c2ca7b35ca29c674fca4f0131f8f50da63e8a13c8523930",
+        "a3985c354312389f95e8cff439ad1863f7fb235951deaf65a2bac67cfa3cfd53"
+      ]
+    },
+    {
+      "seed": 769410,
+      "before": true,
+      "after": true,
+      "recorded_prefix_steps": 75,
+      "before_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 56,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 60,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 64,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 66,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 70,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 12,
+          "physical": 11,
+          "step": 74,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 90,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 94,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 98,
+          "stage": 1
+        }
+      ],
+      "after_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 56,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 60,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 64,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 66,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 70,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 74,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 78,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 82,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 86,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 90,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 94,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 98,
+          "stage": 1
+        }
+      ],
+      "paths": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00011_769410_eval_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00055_769410_eval_32.json.gz"
+      ],
+      "sha": [
+        "3173c51f0e4273bcaf07fed790523dfe836d14c47b2a3adf5ea58bcf73a26db8",
+        "34448839b95493158ab9c66f981f421ee49bc07337b4c2926df83319a62d1446"
+      ]
+    },
+    {
+      "seed": 769411,
+      "before": true,
+      "after": true,
+      "recorded_prefix_steps": 49,
+      "before_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 3,
+          "physical": 2,
+          "step": 48,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 81,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 85,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 89,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 93,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 97,
+          "stage": 1
+        }
+      ],
+      "after_boundaries": [
+        {
+          "boundary": true,
+          "a": 1,
+          "physical": 1,
+          "step": 0,
+          "stage": 0
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 48,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 6,
+          "physical": 5,
+          "step": 52,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 83,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 87,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 91,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 95,
+          "stage": 1
+        },
+        {
+          "boundary": true,
+          "a": 0,
+          "physical": 0,
+          "step": 99,
+          "stage": 1
+        }
+      ],
+      "paths": [
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00012_769411_eval_0.json.gz",
+        "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/physics/00056_769411_eval_32.json.gz"
+      ],
+      "sha": [
+        "6f0ddd34e4fbc22f5938fd1a7d1641699840416366803c751e118ac67f1ae1c9",
+        "a1a92fc1c707bff018ebc445fafa85870447a685e98e0a41f5919831bcb57d8f"
+      ]
+    }
+  ]
+}

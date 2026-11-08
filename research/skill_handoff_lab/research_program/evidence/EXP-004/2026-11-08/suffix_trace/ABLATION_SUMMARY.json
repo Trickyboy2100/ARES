@@ -1,0 +1,763 @@
+{
+  "arms": {
+    "sac_32401": {
+      "curve": {
+        "0": {
+          "n": 12,
+          "success": 7,
+          "rescue": [],
+          "regression": []
+        },
+        "32": {
+          "n": 12,
+          "success": 7,
+          "rescue": [],
+          "regression": []
+        }
+      },
+      "own_episodes": 32,
+      "own_success": 17,
+      "updates": 1280,
+      "effective_decisions": 168,
+      "update_wall_s": 108.58391084615141,
+      "last_update": {
+        "updates": 40,
+        "wall_s": 3.3914839290082455,
+        "last": {
+          "q": 0.009713733568787575,
+          "actor": -0.8354979753494263,
+          "target_mean": 0.7846794128417969,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        "reference_version": 0
+      },
+      "own_rear_boundary_histogram": {
+        "2": 1,
+        "4": 9,
+        "1": 4,
+        "8": 2,
+        "6": 4,
+        "5": 4,
+        "3": 6,
+        "7": 1,
+        "9": 1
+      },
+      "own_first_rear_actions": {
+        "4": 3,
+        "3": 3,
+        "10": 4,
+        "0": 11,
+        "6": 6,
+        "1": 1,
+        "11": 2,
+        "9": 1,
+        "5": 1
+      },
+      "eval_outcomes": {
+        "0": {
+          "769400": true,
+          "769401": false,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": true,
+          "769410": true,
+          "769411": true
+        },
+        "32": {
+          "769400": true,
+          "769401": false,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": true,
+          "769410": true,
+          "769411": true
+        }
+      },
+      "training_curve": [
+        {
+          "episode": 0,
+          "success": true,
+          "q": 0.01108170859515667,
+          "actor": -0.8249192833900452,
+          "target_mean": 0.8540252447128296,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "q": 0.01094709150493145,
+          "actor": -0.8931760191917419,
+          "target_mean": 0.8837663531303406,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 2,
+          "success": false,
+          "q": 0.010850328952074051,
+          "actor": -0.8012149333953857,
+          "target_mean": 0.787031352519989,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "q": 0.006710834335535765,
+          "actor": -0.741404116153717,
+          "target_mean": 0.8305635452270508,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "q": 0.012290114536881447,
+          "actor": -0.7652925848960876,
+          "target_mean": 0.7778952121734619,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 5,
+          "success": false,
+          "q": 0.01446588709950447,
+          "actor": -0.9008031487464905,
+          "target_mean": 0.8492798805236816,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 6,
+          "success": false,
+          "q": 0.01613454520702362,
+          "actor": -0.8392804861068726,
+          "target_mean": 0.8311251997947693,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "q": 0.011983448639512062,
+          "actor": -0.8300315737724304,
+          "target_mean": 0.8358256220817566,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 8,
+          "success": false,
+          "q": 0.013275467790663242,
+          "actor": -0.8082597255706787,
+          "target_mean": 0.8816531896591187,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 9,
+          "success": false,
+          "q": 0.018333114683628082,
+          "actor": -0.8586166501045227,
+          "target_mean": 0.8136788010597229,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "q": 0.011075019836425781,
+          "actor": -0.8357326984405518,
+          "target_mean": 0.859000563621521,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 11,
+          "success": false,
+          "q": 0.012182995676994324,
+          "actor": -0.7595032453536987,
+          "target_mean": 0.7203223705291748,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "q": 0.009735440835356712,
+          "actor": -0.8634060025215149,
+          "target_mean": 0.8347983360290527,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "q": 0.008610455319285393,
+          "actor": -0.9411093592643738,
+          "target_mean": 0.916576623916626,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "q": 0.009214627556502819,
+          "actor": -0.8243217468261719,
+          "target_mean": 0.8085073232650757,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 15,
+          "success": false,
+          "q": 0.010915827006101608,
+          "actor": -0.8613142371177673,
+          "target_mean": 0.844721794128418,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "q": 0.01552243810147047,
+          "actor": -0.8278387188911438,
+          "target_mean": 0.8283200263977051,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 17,
+          "success": false,
+          "q": 0.008971663191914558,
+          "actor": -0.8483508825302124,
+          "target_mean": 0.8303443193435669,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "q": 0.01703624427318573,
+          "actor": -0.7983558177947998,
+          "target_mean": 0.8200711011886597,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 19,
+          "success": false,
+          "q": 0.009359452873468399,
+          "actor": -0.9324852228164673,
+          "target_mean": 0.9175880551338196,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "q": 0.010756054893136024,
+          "actor": -0.9723961353302002,
+          "target_mean": 0.9377365708351135,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 21,
+          "success": false,
+          "q": 0.01810520514845848,
+          "actor": -0.8325750231742859,
+          "target_mean": 0.8558949828147888,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "q": 0.011273959651589394,
+          "actor": -0.9241012930870056,
+          "target_mean": 0.9103031754493713,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 23,
+          "success": false,
+          "q": 0.012524744495749474,
+          "actor": -0.9341174364089966,
+          "target_mean": 0.9149913787841797,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 24,
+          "success": false,
+          "q": 0.014810573309659958,
+          "actor": -0.9409987330436707,
+          "target_mean": 0.9146432876586914,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 25,
+          "success": false,
+          "q": 0.009718058630824089,
+          "actor": -0.8856980800628662,
+          "target_mean": 0.8872196674346924,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 26,
+          "success": false,
+          "q": 0.010972817428410053,
+          "actor": -0.8290057182312012,
+          "target_mean": 0.8964658975601196,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "q": 0.010056965053081512,
+          "actor": -0.876203715801239,
+          "target_mean": 0.8738933205604553,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "q": 0.019633561372756958,
+          "actor": -0.8404799103736877,
+          "target_mean": 0.7887247800827026,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "q": 0.010798932984471321,
+          "actor": -0.8341647386550903,
+          "target_mean": 0.8007078170776367,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "q": 0.009249212220311165,
+          "actor": -0.8721489906311035,
+          "target_mean": 0.9075632095336914,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 31,
+          "success": false,
+          "q": 0.009713733568787575,
+          "actor": -0.8354979753494263,
+          "target_mean": 0.7846794128417969,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        }
+      ]
+    },
+    "trace_32401": {
+      "curve": {
+        "0": {
+          "n": 12,
+          "success": 6,
+          "rescue": [],
+          "regression": []
+        },
+        "32": {
+          "n": 12,
+          "success": 6,
+          "rescue": [],
+          "regression": []
+        }
+      },
+      "own_episodes": 32,
+      "own_success": 18,
+      "updates": 1280,
+      "effective_decisions": 161,
+      "update_wall_s": 174.9974908020813,
+      "last_update": {
+        "updates": 40,
+        "wall_s": 5.696055305190384,
+        "last": {
+          "q": 0.010411020368337631,
+          "actor": -1.0073927640914917,
+          "target_mean": 0.996874213218689,
+          "mean_trace_length": 2.0,
+          "mean_coefficient": 0.7819903121109104
+        },
+        "reference_version": 0
+      },
+      "own_rear_boundary_histogram": {
+        "1": 5,
+        "3": 7,
+        "7": 4,
+        "8": 2,
+        "4": 5,
+        "2": 4,
+        "10": 1,
+        "5": 3,
+        "6": 1
+      },
+      "own_first_rear_actions": {
+        "2": 2,
+        "5": 4,
+        "3": 2,
+        "0": 16,
+        "9": 1,
+        "6": 5,
+        "4": 2
+      },
+      "eval_outcomes": {
+        "0": {
+          "769400": false,
+          "769401": false,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": true,
+          "769410": true,
+          "769411": true
+        },
+        "32": {
+          "769400": false,
+          "769401": false,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": true,
+          "769410": true,
+          "769411": true
+        }
+      },
+      "training_curve": [
+        {
+          "episode": 0,
+          "success": true,
+          "q": 0.012904655188322067,
+          "actor": -0.8462583422660828,
+          "target_mean": 0.8654077053070068,
+          "mean_trace_length": 1.84375,
+          "mean_coefficient": 0.8428065068555289
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "q": 0.011124126613140106,
+          "actor": -1.0084925889968872,
+          "target_mean": 0.9779542088508606,
+          "mean_trace_length": 2.484375,
+          "mean_coefficient": 0.842688226126886
+        },
+        {
+          "episode": 2,
+          "success": false,
+          "q": 0.01464192196726799,
+          "actor": -0.9085085988044739,
+          "target_mean": 0.8567686676979065,
+          "mean_trace_length": 2.21875,
+          "mean_coefficient": 0.8089207789236843
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "q": 0.01052454300224781,
+          "actor": -0.8398322463035583,
+          "target_mean": 0.8793277144432068,
+          "mean_trace_length": 2.28125,
+          "mean_coefficient": 0.8129841265223255
+        },
+        {
+          "episode": 4,
+          "success": false,
+          "q": 0.014260093681514263,
+          "actor": -0.8140908479690552,
+          "target_mean": 0.806689441204071,
+          "mean_trace_length": 2.09375,
+          "mean_coefficient": 0.8093619995549862
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "q": 0.019417595118284225,
+          "actor": -0.923208475112915,
+          "target_mean": 0.9188350439071655,
+          "mean_trace_length": 2.28125,
+          "mean_coefficient": 0.7518859411077516
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "q": 0.028398405760526657,
+          "actor": -0.962887167930603,
+          "target_mean": 0.9568099975585938,
+          "mean_trace_length": 2.09375,
+          "mean_coefficient": 0.7374898470259708
+        },
+        {
+          "episode": 7,
+          "success": false,
+          "q": 0.012502079829573631,
+          "actor": -0.8581429123878479,
+          "target_mean": 0.9050953984260559,
+          "mean_trace_length": 2.15625,
+          "mean_coefficient": 0.8177526905687198
+        },
+        {
+          "episode": 8,
+          "success": false,
+          "q": 0.019896604120731354,
+          "actor": -0.9392098188400269,
+          "target_mean": 0.9618833661079407,
+          "mean_trace_length": 2.1875,
+          "mean_coefficient": 0.7590587345987277
+        },
+        {
+          "episode": 9,
+          "success": false,
+          "q": 0.019450703635811806,
+          "actor": -0.8338249921798706,
+          "target_mean": 0.8548945784568787,
+          "mean_trace_length": 2.171875,
+          "mean_coefficient": 0.7346191548704543
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "q": 0.015690743923187256,
+          "actor": -0.8405234813690186,
+          "target_mean": 0.898422360420227,
+          "mean_trace_length": 2.171875,
+          "mean_coefficient": 0.7850318321995171
+        },
+        {
+          "episode": 11,
+          "success": false,
+          "q": 0.022946562618017197,
+          "actor": -0.7992709279060364,
+          "target_mean": 0.7749815583229065,
+          "mean_trace_length": 2.296875,
+          "mean_coefficient": 0.762256811887978
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "q": 0.015404336154460907,
+          "actor": -0.89711993932724,
+          "target_mean": 0.8873200416564941,
+          "mean_trace_length": 2.328125,
+          "mean_coefficient": 0.7954040718169083
+        },
+        {
+          "episode": 13,
+          "success": false,
+          "q": 0.01600542664527893,
+          "actor": -1.01423180103302,
+          "target_mean": 1.020116925239563,
+          "mean_trace_length": 2.5,
+          "mean_coefficient": 0.799420684882762
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "q": 0.01457294449210167,
+          "actor": -1.0020724534988403,
+          "target_mean": 0.9940763711929321,
+          "mean_trace_length": 2.296875,
+          "mean_coefficient": 0.7850643118653162
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "q": 0.029273955151438713,
+          "actor": -0.8920150995254517,
+          "target_mean": 0.8441276550292969,
+          "mean_trace_length": 2.125,
+          "mean_coefficient": 0.7634504476663222
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "q": 0.022346382960677147,
+          "actor": -0.9440517425537109,
+          "target_mean": 0.8890265226364136,
+          "mean_trace_length": 1.921875,
+          "mean_coefficient": 0.7226286696378675
+        },
+        {
+          "episode": 17,
+          "success": false,
+          "q": 0.009984767064452171,
+          "actor": -0.9642345309257507,
+          "target_mean": 0.984931468963623,
+          "mean_trace_length": 2.390625,
+          "mean_coefficient": 0.7951778318481907
+        },
+        {
+          "episode": 18,
+          "success": false,
+          "q": 0.015128538943827152,
+          "actor": -0.9547260999679565,
+          "target_mean": 0.9262267351150513,
+          "mean_trace_length": 2.296875,
+          "mean_coefficient": 0.7459986665931734
+        },
+        {
+          "episode": 19,
+          "success": false,
+          "q": 0.024129971861839294,
+          "actor": -0.9750447869300842,
+          "target_mean": 0.9566495418548584,
+          "mean_trace_length": 2.296875,
+          "mean_coefficient": 0.743530749161796
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "q": 0.015692230314016342,
+          "actor": -0.9540049433708191,
+          "target_mean": 0.9373400807380676,
+          "mean_trace_length": 2.140625,
+          "mean_coefficient": 0.758592103788812
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "q": 0.02514484152197838,
+          "actor": -0.8324295282363892,
+          "target_mean": 0.8396393060684204,
+          "mean_trace_length": 2.03125,
+          "mean_coefficient": 0.8178937228740593
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "q": 0.02083449438214302,
+          "actor": -0.9272176027297974,
+          "target_mean": 0.9205237627029419,
+          "mean_trace_length": 1.921875,
+          "mean_coefficient": 0.7590765299769708
+        },
+        {
+          "episode": 23,
+          "success": false,
+          "q": 0.01780085638165474,
+          "actor": -0.8737668991088867,
+          "target_mean": 0.9234890937805176,
+          "mean_trace_length": 2.171875,
+          "mean_coefficient": 0.7633724643600016
+        },
+        {
+          "episode": 24,
+          "success": false,
+          "q": 0.02243063412606716,
+          "actor": -0.9665746688842773,
+          "target_mean": 1.012244462966919,
+          "mean_trace_length": 2.484375,
+          "mean_coefficient": 0.7805124431785795
+        },
+        {
+          "episode": 25,
+          "success": false,
+          "q": 0.019135843962430954,
+          "actor": -0.9809269905090332,
+          "target_mean": 1.0857841968536377,
+          "mean_trace_length": 2.328125,
+          "mean_coefficient": 0.7489574472856222
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "q": 0.010084420442581177,
+          "actor": -1.0333088636398315,
+          "target_mean": 1.0320408344268799,
+          "mean_trace_length": 2.015625,
+          "mean_coefficient": 0.7848327849956456
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "q": 0.014053098857402802,
+          "actor": -0.97698974609375,
+          "target_mean": 0.9579468369483948,
+          "mean_trace_length": 2.03125,
+          "mean_coefficient": 0.7640569668063978
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "q": 0.017955131828784943,
+          "actor": -0.9778781533241272,
+          "target_mean": 0.9939453601837158,
+          "mean_trace_length": 2.171875,
+          "mean_coefficient": 0.7628288963535493
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "q": 0.020383471623063087,
+          "actor": -0.9944887757301331,
+          "target_mean": 1.0081758499145508,
+          "mean_trace_length": 2.296875,
+          "mean_coefficient": 0.7662792329207041
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "q": 0.02356342226266861,
+          "actor": -1.0218554735183716,
+          "target_mean": 1.0199275016784668,
+          "mean_trace_length": 2.359375,
+          "mean_coefficient": 0.8174678440733504
+        },
+        {
+          "episode": 31,
+          "success": false,
+          "q": 0.010411020368337631,
+          "actor": -1.0073927640914917,
+          "target_mean": 0.996874213218689,
+          "mean_trace_length": 2.0,
+          "mean_coefficient": 0.7819903121109104
+        }
+      ]
+    }
+  },
+  "controls": {},
+  "cost": {
+    "episodes": 112,
+    "steps": 11200,
+    "queries": 1010,
+    "query_wall_s": 4.714653868228197,
+    "episode_wall_s": 581.5485692662187,
+    "own_episodes": 64,
+    "updates": 2560,
+    "effective_decisions": 329
+  }
+}

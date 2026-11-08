@@ -1,0 +1,7 @@
+{
+  "question": "Does per-decision entropy explain degraded first-intervention adoption?",
+  "changed_factor": "entropy coefficient .01 -> 0 in Bellman V and Actor; uniform exploration10% and BC.1 unchanged",
+  "initial": "exact own CHECKPOINT32 actor/Q/optimizer/RNG and matching replay through episode31",
+  "continuation": "same natural roots769132-163,32 extra episodes; compare corresponding original final64",
+  "scope": "mechanism ablation on existing dev; no independent method claim"
+}

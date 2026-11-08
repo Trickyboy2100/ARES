@@ -1,0 +1,2646 @@
+{
+  "arms": {
+    "lagged_32401": {
+      "curve": {
+        "0": {
+          "n": 12,
+          "success": 8,
+          "rescue": [],
+          "regression": []
+        },
+        "32": {
+          "n": 12,
+          "success": 7,
+          "rescue": [],
+          "regression": [
+            "769411"
+          ]
+        },
+        "64": {
+          "n": 12,
+          "success": 7,
+          "rescue": [],
+          "regression": [
+            "769401"
+          ]
+        }
+      },
+      "own_episodes": 64,
+      "own_success": 37,
+      "updates": 2560,
+      "effective_decisions": 352,
+      "update_wall_s": 317.9557629611809,
+      "last_update": {
+        "updates": 40,
+        "wall_s": 5.923292273888364,
+        "last": {
+          "q": 0.02833748422563076,
+          "actor": -0.8514454960823059,
+          "target_mean": 0.8100076913833618,
+          "mean_trace_length": 2.21875,
+          "mean_coefficient": 0.7113783704060831
+        },
+        "reference_version": 56
+      },
+      "own_rear_boundary_histogram": {
+        "8": 2,
+        "2": 6,
+        "1": 8,
+        "6": 6,
+        "3": 9,
+        "4": 11,
+        "5": 9,
+        "9": 2,
+        "10": 2,
+        "7": 7,
+        "0": 1,
+        "13": 1
+      },
+      "own_first_rear_actions": {
+        "6": 9,
+        "0": 31,
+        "3": 12,
+        "11": 3,
+        "10": 3,
+        "5": 2,
+        "-1": 1,
+        "7": 2,
+        "9": 1
+      },
+      "eval_outcomes": {
+        "0": {
+          "769400": true,
+          "769401": true,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": true,
+          "769410": true,
+          "769411": true
+        },
+        "32": {
+          "769400": true,
+          "769401": true,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": true,
+          "769410": true,
+          "769411": false
+        },
+        "64": {
+          "769400": true,
+          "769401": false,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": true,
+          "769410": true,
+          "769411": true
+        }
+      },
+      "training_curve": [
+        {
+          "episode": 0,
+          "success": true,
+          "q": 0.007629017811268568,
+          "actor": -0.9139450788497925,
+          "target_mean": 0.944272518157959,
+          "mean_trace_length": 3.0,
+          "mean_coefficient": 0.7755744408376594
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "q": 0.006806850899010897,
+          "actor": -0.929939866065979,
+          "target_mean": 0.9555944204330444,
+          "mean_trace_length": 2.5,
+          "mean_coefficient": 0.7844328382494359
+        },
+        {
+          "episode": 2,
+          "success": false,
+          "q": 0.009318877011537552,
+          "actor": -0.931790828704834,
+          "target_mean": 0.9367060661315918,
+          "mean_trace_length": 2.46875,
+          "mean_coefficient": 0.7970120653014889
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "q": 0.005921375006437302,
+          "actor": -0.8981375694274902,
+          "target_mean": 0.9155416488647461,
+          "mean_trace_length": 2.421875,
+          "mean_coefficient": 0.8237799892376858
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "q": 0.004458972252905369,
+          "actor": -0.9671685695648193,
+          "target_mean": 0.9141733646392822,
+          "mean_trace_length": 2.5,
+          "mean_coefficient": 0.8277497814648896
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "q": 0.008120737969875336,
+          "actor": -0.9594752192497253,
+          "target_mean": 0.9808027744293213,
+          "mean_trace_length": 2.171875,
+          "mean_coefficient": 0.8200507475020428
+        },
+        {
+          "episode": 6,
+          "success": false,
+          "q": 0.00835280679166317,
+          "actor": -0.9219038486480713,
+          "target_mean": 0.93169766664505,
+          "mean_trace_length": 2.4375,
+          "mean_coefficient": 0.7491353227255378
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "q": 0.007328948471695185,
+          "actor": -0.8942710757255554,
+          "target_mean": 0.8947831392288208,
+          "mean_trace_length": 1.96875,
+          "mean_coefficient": 0.8088014282899997
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "q": 0.008975920267403126,
+          "actor": -0.8736480474472046,
+          "target_mean": 0.9256762266159058,
+          "mean_trace_length": 2.203125,
+          "mean_coefficient": 0.7414846002270473
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "q": 0.008375747129321098,
+          "actor": -0.9093730449676514,
+          "target_mean": 0.9037153720855713,
+          "mean_trace_length": 2.171875,
+          "mean_coefficient": 0.7018619136606035
+        },
+        {
+          "episode": 10,
+          "success": false,
+          "q": 0.009775951504707336,
+          "actor": -0.8346196413040161,
+          "target_mean": 0.8126776814460754,
+          "mean_trace_length": 2.15625,
+          "mean_coefficient": 0.788753025422481
+        },
+        {
+          "episode": 11,
+          "success": false,
+          "q": 0.01012960821390152,
+          "actor": -0.8040615320205688,
+          "target_mean": 0.8006075024604797,
+          "mean_trace_length": 2.328125,
+          "mean_coefficient": 0.7638399782613415
+        },
+        {
+          "episode": 12,
+          "success": false,
+          "q": 0.01846165955066681,
+          "actor": -0.7778090238571167,
+          "target_mean": 0.7826821804046631,
+          "mean_trace_length": 1.953125,
+          "mean_coefficient": 0.7880106453723401
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "q": 0.009651071391999722,
+          "actor": -0.7914651036262512,
+          "target_mean": 0.7692686319351196,
+          "mean_trace_length": 2.390625,
+          "mean_coefficient": 0.7845291984022953
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "q": 0.007262882776558399,
+          "actor": -0.8529259562492371,
+          "target_mean": 0.8578351140022278,
+          "mean_trace_length": 2.015625,
+          "mean_coefficient": 0.7783509082599902
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "q": 0.020274989306926727,
+          "actor": -0.8886920213699341,
+          "target_mean": 0.8626343011856079,
+          "mean_trace_length": 2.6875,
+          "mean_coefficient": 0.8098240734321395
+        },
+        {
+          "episode": 16,
+          "success": false,
+          "q": 0.01769660972058773,
+          "actor": -0.8781535029411316,
+          "target_mean": 0.8938813805580139,
+          "mean_trace_length": 2.234375,
+          "mean_coefficient": 0.7895528688856203
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "q": 0.010819865390658379,
+          "actor": -0.8396276235580444,
+          "target_mean": 0.8390421271324158,
+          "mean_trace_length": 2.078125,
+          "mean_coefficient": 0.7954848275391818
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "q": 0.0131493229418993,
+          "actor": -0.8805064558982849,
+          "target_mean": 0.8696726560592651,
+          "mean_trace_length": 2.3125,
+          "mean_coefficient": 0.7869524177747277
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "q": 0.01236992422491312,
+          "actor": -0.8607727289199829,
+          "target_mean": 0.8765056133270264,
+          "mean_trace_length": 2.25,
+          "mean_coefficient": 0.7584998014435812
+        },
+        {
+          "episode": 20,
+          "success": false,
+          "q": 0.012373173609375954,
+          "actor": -0.8378902673721313,
+          "target_mean": 0.8639974594116211,
+          "mean_trace_length": 2.125,
+          "mean_coefficient": 0.7802197205608269
+        },
+        {
+          "episode": 21,
+          "success": false,
+          "q": 0.011518789455294609,
+          "actor": -0.9209439754486084,
+          "target_mean": 0.8928855657577515,
+          "mean_trace_length": 2.484375,
+          "mean_coefficient": 0.7357590440252324
+        },
+        {
+          "episode": 22,
+          "success": false,
+          "q": 0.018469039350748062,
+          "actor": -0.9005479216575623,
+          "target_mean": 0.8669267892837524,
+          "mean_trace_length": 2.375,
+          "mean_coefficient": 0.7674198329788692
+        },
+        {
+          "episode": 23,
+          "success": false,
+          "q": 0.025152722373604774,
+          "actor": -0.6729990243911743,
+          "target_mean": 0.6634314060211182,
+          "mean_trace_length": 2.1875,
+          "mean_coefficient": 0.7571206397330615
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "q": 0.010540851391851902,
+          "actor": -0.8146183490753174,
+          "target_mean": 0.8473848104476929,
+          "mean_trace_length": 2.453125,
+          "mean_coefficient": 0.7840040751753078
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "q": 0.022929750382900238,
+          "actor": -0.82655268907547,
+          "target_mean": 0.8863579630851746,
+          "mean_trace_length": 2.390625,
+          "mean_coefficient": 0.7587246622747083
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "q": 0.01599772647023201,
+          "actor": -0.8586478233337402,
+          "target_mean": 0.8335186839103699,
+          "mean_trace_length": 2.53125,
+          "mean_coefficient": 0.8177624887415088
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "q": 0.012763945385813713,
+          "actor": -0.8757979273796082,
+          "target_mean": 0.9041886925697327,
+          "mean_trace_length": 2.5,
+          "mean_coefficient": 0.7712536615202664
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "q": 0.017171747982501984,
+          "actor": -0.91214919090271,
+          "target_mean": 0.9396665096282959,
+          "mean_trace_length": 2.28125,
+          "mean_coefficient": 0.8056235499119483
+        },
+        {
+          "episode": 29,
+          "success": false,
+          "q": 0.014748727902770042,
+          "actor": -0.9959886074066162,
+          "target_mean": 1.0431184768676758,
+          "mean_trace_length": 2.578125,
+          "mean_coefficient": 0.7933463590962858
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "q": 0.011240207590162754,
+          "actor": -0.8773906826972961,
+          "target_mean": 0.9016461968421936,
+          "mean_trace_length": 2.203125,
+          "mean_coefficient": 0.7536473027496465
+        },
+        {
+          "episode": 31,
+          "success": false,
+          "q": 0.013222547248005867,
+          "actor": -0.8491266965866089,
+          "target_mean": 0.848547637462616,
+          "mean_trace_length": 2.25,
+          "mean_coefficient": 0.8298279813098576
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "q": 0.03798992186784744,
+          "actor": -0.9611902236938477,
+          "target_mean": 0.9837316274642944,
+          "mean_trace_length": 2.578125,
+          "mean_coefficient": 0.7613236713547518
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "q": 0.019084438681602478,
+          "actor": -0.861175537109375,
+          "target_mean": 0.8591662049293518,
+          "mean_trace_length": 2.578125,
+          "mean_coefficient": 0.7134876315177632
+        },
+        {
+          "episode": 34,
+          "success": false,
+          "q": 0.019907858222723007,
+          "actor": -0.8394967913627625,
+          "target_mean": 0.8577662706375122,
+          "mean_trace_length": 2.578125,
+          "mean_coefficient": 0.7612498121665856
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "q": 0.011893946677446365,
+          "actor": -0.9980760216712952,
+          "target_mean": 1.0409656763076782,
+          "mean_trace_length": 2.5,
+          "mean_coefficient": 0.7878638715291322
+        },
+        {
+          "episode": 36,
+          "success": false,
+          "q": 0.03144032135605812,
+          "actor": -0.8709027767181396,
+          "target_mean": 0.8800967335700989,
+          "mean_trace_length": 2.28125,
+          "mean_coefficient": 0.7774962366950091
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "q": 0.012007138691842556,
+          "actor": -0.8704862594604492,
+          "target_mean": 0.8975720405578613,
+          "mean_trace_length": 2.515625,
+          "mean_coefficient": 0.787774819615092
+        },
+        {
+          "episode": 38,
+          "success": false,
+          "q": 0.016292203217744827,
+          "actor": -0.9833872318267822,
+          "target_mean": 0.9695565700531006,
+          "mean_trace_length": 2.546875,
+          "mean_coefficient": 0.7689489608018131
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "q": 0.018553830683231354,
+          "actor": -0.8436334729194641,
+          "target_mean": 0.8848140239715576,
+          "mean_trace_length": 2.859375,
+          "mean_coefficient": 0.7496332173893688
+        },
+        {
+          "episode": 40,
+          "success": false,
+          "q": 0.015589251182973385,
+          "actor": -0.9271840453147888,
+          "target_mean": 0.8840440511703491,
+          "mean_trace_length": 2.625,
+          "mean_coefficient": 0.7927616323827065
+        },
+        {
+          "episode": 41,
+          "success": false,
+          "q": 0.024721037596464157,
+          "actor": -0.9321231245994568,
+          "target_mean": 0.9129953980445862,
+          "mean_trace_length": 2.609375,
+          "mean_coefficient": 0.7742130025310773
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "q": 0.02859046496450901,
+          "actor": -0.8793842792510986,
+          "target_mean": 0.9079474210739136,
+          "mean_trace_length": 2.578125,
+          "mean_coefficient": 0.7813886066855683
+        },
+        {
+          "episode": 43,
+          "success": false,
+          "q": 0.015003524720668793,
+          "actor": -0.9081200361251831,
+          "target_mean": 0.9083446860313416,
+          "mean_trace_length": 2.28125,
+          "mean_coefficient": 0.7778620231461418
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "q": 0.012751175090670586,
+          "actor": -0.9255260229110718,
+          "target_mean": 0.8851482272148132,
+          "mean_trace_length": 2.421875,
+          "mean_coefficient": 0.8025782273915776
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "q": 0.015078860335052013,
+          "actor": -0.8595432639122009,
+          "target_mean": 0.8623837828636169,
+          "mean_trace_length": 2.359375,
+          "mean_coefficient": 0.7884181991746617
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "q": 0.01730329543352127,
+          "actor": -0.9617519378662109,
+          "target_mean": 1.0037561655044556,
+          "mean_trace_length": 2.75,
+          "mean_coefficient": 0.7660779391610022
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "q": 0.01264905370771885,
+          "actor": -0.8601450324058533,
+          "target_mean": 0.9144836068153381,
+          "mean_trace_length": 2.25,
+          "mean_coefficient": 0.7907240549011855
+        },
+        {
+          "episode": 48,
+          "success": false,
+          "q": 0.013043547049164772,
+          "actor": -0.9745286703109741,
+          "target_mean": 0.9155731797218323,
+          "mean_trace_length": 2.5625,
+          "mean_coefficient": 0.8017053339992591
+        },
+        {
+          "episode": 49,
+          "success": false,
+          "q": 0.011239675804972649,
+          "actor": -0.9609789252281189,
+          "target_mean": 0.9456189274787903,
+          "mean_trace_length": 2.671875,
+          "mean_coefficient": 0.7747901003072568
+        },
+        {
+          "episode": 50,
+          "success": false,
+          "q": 0.01837257668375969,
+          "actor": -0.9616932272911072,
+          "target_mean": 0.8851022720336914,
+          "mean_trace_length": 2.453125,
+          "mean_coefficient": 0.7691394011198123
+        },
+        {
+          "episode": 51,
+          "success": false,
+          "q": 0.008541988208889961,
+          "actor": -0.9799938201904297,
+          "target_mean": 0.9929953813552856,
+          "mean_trace_length": 2.46875,
+          "mean_coefficient": 0.7798653792041956
+        },
+        {
+          "episode": 52,
+          "success": false,
+          "q": 0.019658630713820457,
+          "actor": -0.969548225402832,
+          "target_mean": 0.9758146405220032,
+          "mean_trace_length": 2.5,
+          "mean_coefficient": 0.7895528730502904
+        },
+        {
+          "episode": 53,
+          "success": false,
+          "q": 0.017320504412055016,
+          "actor": -0.8663119077682495,
+          "target_mean": 0.8118811845779419,
+          "mean_trace_length": 1.921875,
+          "mean_coefficient": 0.7567969269681466
+        },
+        {
+          "episode": 54,
+          "success": false,
+          "q": 0.011622894555330276,
+          "actor": -0.9214425683021545,
+          "target_mean": 0.9278789758682251,
+          "mean_trace_length": 2.328125,
+          "mean_coefficient": 0.735169566621992
+        },
+        {
+          "episode": 55,
+          "success": true,
+          "q": 0.017369285225868225,
+          "actor": -0.89039546251297,
+          "target_mean": 0.8416733145713806,
+          "mean_trace_length": 2.578125,
+          "mean_coefficient": 0.8206142633935688
+        },
+        {
+          "episode": 56,
+          "success": true,
+          "q": 0.014198587276041508,
+          "actor": -0.9488135576248169,
+          "target_mean": 0.9677808284759521,
+          "mean_trace_length": 2.484375,
+          "mean_coefficient": 0.7553170758823455
+        },
+        {
+          "episode": 57,
+          "success": false,
+          "q": 0.010197035036981106,
+          "actor": -0.9555630683898926,
+          "target_mean": 0.9137227535247803,
+          "mean_trace_length": 2.453125,
+          "mean_coefficient": 0.701278802586685
+        },
+        {
+          "episode": 58,
+          "success": true,
+          "q": 0.013025408610701561,
+          "actor": -1.0236374139785767,
+          "target_mean": 1.0304243564605713,
+          "mean_trace_length": 2.578125,
+          "mean_coefficient": 0.7275967514899513
+        },
+        {
+          "episode": 59,
+          "success": true,
+          "q": 0.008329043164849281,
+          "actor": -0.9457342624664307,
+          "target_mean": 0.97136390209198,
+          "mean_trace_length": 2.515625,
+          "mean_coefficient": 0.8004799825003543
+        },
+        {
+          "episode": 60,
+          "success": true,
+          "q": 0.016275301575660706,
+          "actor": -0.9117004871368408,
+          "target_mean": 0.8841860890388489,
+          "mean_trace_length": 2.171875,
+          "mean_coefficient": 0.7486406832435155
+        },
+        {
+          "episode": 61,
+          "success": true,
+          "q": 0.02008431777358055,
+          "actor": -0.9694489240646362,
+          "target_mean": 0.8862823247909546,
+          "mean_trace_length": 2.265625,
+          "mean_coefficient": 0.7942504057598807
+        },
+        {
+          "episode": 62,
+          "success": true,
+          "q": 0.017131280153989792,
+          "actor": -0.8438001275062561,
+          "target_mean": 0.8280424475669861,
+          "mean_trace_length": 2.671875,
+          "mean_coefficient": 0.7491683031825335
+        },
+        {
+          "episode": 63,
+          "success": false,
+          "q": 0.02833748422563076,
+          "actor": -0.8514454960823059,
+          "target_mean": 0.8100076913833618,
+          "mean_trace_length": 2.21875,
+          "mean_coefficient": 0.7113783704060831
+        }
+      ]
+    },
+    "sac_32401": {
+      "curve": {
+        "0": {
+          "n": 12,
+          "success": 8,
+          "rescue": [],
+          "regression": []
+        },
+        "32": {
+          "n": 12,
+          "success": 7,
+          "rescue": [],
+          "regression": [
+            "769401"
+          ]
+        },
+        "64": {
+          "n": 12,
+          "success": 6,
+          "rescue": [],
+          "regression": [
+            "769401",
+            "769409"
+          ]
+        }
+      },
+      "own_episodes": 64,
+      "own_success": 38,
+      "updates": 2560,
+      "effective_decisions": 357,
+      "update_wall_s": 210.6086398535408,
+      "last_update": {
+        "updates": 40,
+        "wall_s": 3.3889814510475844,
+        "last": {
+          "q": 0.012187490239739418,
+          "actor": -0.8725966811180115,
+          "target_mean": 0.8782778978347778,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        "reference_version": 0
+      },
+      "own_rear_boundary_histogram": {
+        "8": 6,
+        "2": 4,
+        "1": 7,
+        "6": 7,
+        "3": 10,
+        "4": 10,
+        "5": 11,
+        "9": 2,
+        "7": 5,
+        "0": 1,
+        "10": 1
+      },
+      "own_first_rear_actions": {
+        "6": 11,
+        "0": 27,
+        "3": 9,
+        "11": 5,
+        "2": 1,
+        "9": 2,
+        "5": 1,
+        "8": 1,
+        "-1": 1,
+        "4": 5,
+        "10": 1
+      },
+      "eval_outcomes": {
+        "0": {
+          "769400": true,
+          "769401": true,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": true,
+          "769410": true,
+          "769411": true
+        },
+        "32": {
+          "769400": true,
+          "769401": false,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": true,
+          "769410": true,
+          "769411": true
+        },
+        "64": {
+          "769400": true,
+          "769401": false,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": false,
+          "769410": true,
+          "769411": true
+        }
+      },
+      "training_curve": [
+        {
+          "episode": 0,
+          "success": true,
+          "q": 0.008941741660237312,
+          "actor": -0.9182867407798767,
+          "target_mean": 0.9395866394042969,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "q": 0.006736744660884142,
+          "actor": -0.9370461106300354,
+          "target_mean": 0.9589711427688599,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 2,
+          "success": false,
+          "q": 0.006671168841421604,
+          "actor": -0.9417188167572021,
+          "target_mean": 0.9513890147209167,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "q": 0.004363850690424442,
+          "actor": -0.9202699661254883,
+          "target_mean": 0.9526320695877075,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "q": 0.004562755115330219,
+          "actor": -1.012474775314331,
+          "target_mean": 0.9968894720077515,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 5,
+          "success": false,
+          "q": 0.007097623310983181,
+          "actor": -1.0012022256851196,
+          "target_mean": 1.0028574466705322,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 6,
+          "success": false,
+          "q": 0.005181227810680866,
+          "actor": -0.9838342666625977,
+          "target_mean": 0.944886326789856,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "q": 0.007225506007671356,
+          "actor": -0.9356571435928345,
+          "target_mean": 0.8883457183837891,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "q": 0.009054625406861305,
+          "actor": -0.8636353015899658,
+          "target_mean": 0.8856974840164185,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "q": 0.006782690994441509,
+          "actor": -0.9004535675048828,
+          "target_mean": 0.8893636465072632,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 10,
+          "success": false,
+          "q": 0.004885220900177956,
+          "actor": -0.8214821219444275,
+          "target_mean": 0.802985429763794,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 11,
+          "success": false,
+          "q": 0.008765067905187607,
+          "actor": -0.8367673754692078,
+          "target_mean": 0.8023717403411865,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 12,
+          "success": false,
+          "q": 0.01519489660859108,
+          "actor": -0.7954991459846497,
+          "target_mean": 0.8063418865203857,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "q": 0.0071332333609461784,
+          "actor": -0.727914571762085,
+          "target_mean": 0.7262294292449951,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "q": 0.005973676219582558,
+          "actor": -0.913748562335968,
+          "target_mean": 0.9256646633148193,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "q": 0.008159944787621498,
+          "actor": -0.8680729269981384,
+          "target_mean": 0.8944675922393799,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 16,
+          "success": false,
+          "q": 0.009242979809641838,
+          "actor": -0.882034420967102,
+          "target_mean": 0.8998984694480896,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "q": 0.007167560514062643,
+          "actor": -0.8761880397796631,
+          "target_mean": 0.8150532245635986,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "q": 0.005252321716398001,
+          "actor": -0.8724743127822876,
+          "target_mean": 0.8411232233047485,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "q": 0.010640876367688179,
+          "actor": -0.8451026082038879,
+          "target_mean": 0.8541571497917175,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 20,
+          "success": false,
+          "q": 0.01160955149680376,
+          "actor": -0.8064324855804443,
+          "target_mean": 0.7769560217857361,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 21,
+          "success": false,
+          "q": 0.0053858826868236065,
+          "actor": -0.9475141167640686,
+          "target_mean": 0.9476571679115295,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 22,
+          "success": false,
+          "q": 0.00924551673233509,
+          "actor": -0.9171102643013,
+          "target_mean": 0.9404831528663635,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 23,
+          "success": false,
+          "q": 0.018707342445850372,
+          "actor": -0.6381334662437439,
+          "target_mean": 0.6121786236763,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "q": 0.006465917453169823,
+          "actor": -0.782826840877533,
+          "target_mean": 0.8447543382644653,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 25,
+          "success": false,
+          "q": 0.008488239720463753,
+          "actor": -0.8378909826278687,
+          "target_mean": 0.8406020402908325,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "q": 0.010150213725864887,
+          "actor": -0.86751788854599,
+          "target_mean": 0.8764249682426453,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "q": 0.011827691458165646,
+          "actor": -0.8262051343917847,
+          "target_mean": 0.8733705878257751,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "q": 0.013935817405581474,
+          "actor": -0.8977189660072327,
+          "target_mean": 0.897424042224884,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "q": 0.007528726011514664,
+          "actor": -0.8972616791725159,
+          "target_mean": 0.9301186203956604,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "q": 0.010407287627458572,
+          "actor": -0.8144125938415527,
+          "target_mean": 0.8067609667778015,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 31,
+          "success": false,
+          "q": 0.013809443451464176,
+          "actor": -0.7671672105789185,
+          "target_mean": 0.7707556486129761,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "q": 0.011102885007858276,
+          "actor": -0.8355749249458313,
+          "target_mean": 0.8594566583633423,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "q": 0.01084238663315773,
+          "actor": -0.9032037854194641,
+          "target_mean": 0.8892183303833008,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 34,
+          "success": false,
+          "q": 0.010652506723999977,
+          "actor": -0.8122369647026062,
+          "target_mean": 0.7925518751144409,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "q": 0.006668834947049618,
+          "actor": -0.7539545297622681,
+          "target_mean": 0.837952196598053,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "q": 0.0171674657613039,
+          "actor": -0.7950639724731445,
+          "target_mean": 0.7926928400993347,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "q": 0.012569349259138107,
+          "actor": -0.8450436592102051,
+          "target_mean": 0.8651361465454102,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 38,
+          "success": false,
+          "q": 0.015517647378146648,
+          "actor": -0.9351454973220825,
+          "target_mean": 0.9922202825546265,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "q": 0.014617783948779106,
+          "actor": -0.9045602083206177,
+          "target_mean": 0.9478557109832764,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 40,
+          "success": false,
+          "q": 0.014821715652942657,
+          "actor": -0.8301283717155457,
+          "target_mean": 0.7958669662475586,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 41,
+          "success": false,
+          "q": 0.015160859562456608,
+          "actor": -0.8664487600326538,
+          "target_mean": 0.8905773162841797,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 42,
+          "success": false,
+          "q": 0.02004493772983551,
+          "actor": -0.7919198870658875,
+          "target_mean": 0.7990961074829102,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 43,
+          "success": false,
+          "q": 0.008588164113461971,
+          "actor": -0.8978222608566284,
+          "target_mean": 0.881700873374939,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "q": 0.016380740329623222,
+          "actor": -0.8371827602386475,
+          "target_mean": 0.8041423559188843,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "q": 0.011295742355287075,
+          "actor": -0.9296877384185791,
+          "target_mean": 0.8979933261871338,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 46,
+          "success": false,
+          "q": 0.009233485907316208,
+          "actor": -0.9170141220092773,
+          "target_mean": 0.8613101243972778,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "q": 0.011481622233986855,
+          "actor": -0.8836507797241211,
+          "target_mean": 0.909284770488739,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "q": 0.01594117097556591,
+          "actor": -0.8662936687469482,
+          "target_mean": 0.8361329436302185,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "q": 0.010555427521467209,
+          "actor": -0.8539041876792908,
+          "target_mean": 0.8970893025398254,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 50,
+          "success": true,
+          "q": 0.018437623977661133,
+          "actor": -0.9265548586845398,
+          "target_mean": 0.8835433721542358,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 51,
+          "success": false,
+          "q": 0.006392528768628836,
+          "actor": -0.9487097859382629,
+          "target_mean": 0.9615747928619385,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 52,
+          "success": true,
+          "q": 0.0104655921459198,
+          "actor": -0.9779890775680542,
+          "target_mean": 0.9865512847900391,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 53,
+          "success": false,
+          "q": 0.017950940877199173,
+          "actor": -0.8404734134674072,
+          "target_mean": 0.8357428908348083,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 54,
+          "success": true,
+          "q": 0.010466943494975567,
+          "actor": -0.9419264793395996,
+          "target_mean": 0.9302361011505127,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 55,
+          "success": false,
+          "q": 0.0195325817912817,
+          "actor": -0.9487472772598267,
+          "target_mean": 0.9024636745452881,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 56,
+          "success": false,
+          "q": 0.010059250518679619,
+          "actor": -0.9177036285400391,
+          "target_mean": 0.9546176195144653,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 57,
+          "success": false,
+          "q": 0.007739575579762459,
+          "actor": -0.9952249526977539,
+          "target_mean": 0.9462277293205261,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 58,
+          "success": true,
+          "q": 0.009752396494150162,
+          "actor": -0.8503676056861877,
+          "target_mean": 0.8669318556785583,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 59,
+          "success": true,
+          "q": 0.00941900908946991,
+          "actor": -0.8724966049194336,
+          "target_mean": 0.9258801341056824,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 60,
+          "success": true,
+          "q": 0.013960829004645348,
+          "actor": -0.9666052460670471,
+          "target_mean": 0.9753387570381165,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 61,
+          "success": true,
+          "q": 0.011782251298427582,
+          "actor": -0.93477863073349,
+          "target_mean": 0.9818958640098572,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 62,
+          "success": true,
+          "q": 0.01790565252304077,
+          "actor": -0.9455534815788269,
+          "target_mean": 0.8835229873657227,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        },
+        {
+          "episode": 63,
+          "success": false,
+          "q": 0.012187490239739418,
+          "actor": -0.8725966811180115,
+          "target_mean": 0.8782778978347778,
+          "mean_trace_length": 1.0,
+          "mean_coefficient": 0.0
+        }
+      ]
+    },
+    "trace_32401": {
+      "curve": {
+        "0": {
+          "n": 12,
+          "success": 8,
+          "rescue": [],
+          "regression": []
+        },
+        "32": {
+          "n": 12,
+          "success": 6,
+          "rescue": [],
+          "regression": [
+            "769400",
+            "769401"
+          ]
+        },
+        "64": {
+          "n": 12,
+          "success": 6,
+          "rescue": [],
+          "regression": [
+            "769400",
+            "769401"
+          ]
+        }
+      },
+      "own_episodes": 64,
+      "own_success": 38,
+      "updates": 2560,
+      "effective_decisions": 331,
+      "update_wall_s": 307.1014374049846,
+      "last_update": {
+        "updates": 40,
+        "wall_s": 5.698407871183008,
+        "last": {
+          "q": 0.016362542286515236,
+          "actor": -1.0254441499710083,
+          "target_mean": 1.0407519340515137,
+          "mean_trace_length": 1.984375,
+          "mean_coefficient": 0.7701042288500995
+        },
+        "reference_version": 0
+      },
+      "own_rear_boundary_histogram": {
+        "8": 4,
+        "2": 4,
+        "1": 9,
+        "6": 4,
+        "3": 15,
+        "4": 8,
+        "5": 11,
+        "7": 6,
+        "0": 1,
+        "10": 2
+      },
+      "own_first_rear_actions": {
+        "6": 11,
+        "0": 28,
+        "3": 9,
+        "11": 2,
+        "10": 1,
+        "5": 5,
+        "7": 1,
+        "-1": 1,
+        "2": 3,
+        "9": 1,
+        "4": 2
+      },
+      "eval_outcomes": {
+        "0": {
+          "769400": true,
+          "769401": true,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": true,
+          "769410": true,
+          "769411": true
+        },
+        "32": {
+          "769400": false,
+          "769401": false,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": true,
+          "769410": true,
+          "769411": true
+        },
+        "64": {
+          "769400": false,
+          "769401": false,
+          "769402": false,
+          "769403": false,
+          "769404": false,
+          "769405": false,
+          "769406": true,
+          "769407": true,
+          "769408": true,
+          "769409": true,
+          "769410": true,
+          "769411": true
+        }
+      },
+      "training_curve": [
+        {
+          "episode": 0,
+          "success": true,
+          "q": 0.007572432979941368,
+          "actor": -0.930823564529419,
+          "target_mean": 0.9607114791870117,
+          "mean_trace_length": 3.0,
+          "mean_coefficient": 0.8112055932255053
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "q": 0.006165461149066687,
+          "actor": -0.9673988223075867,
+          "target_mean": 0.9874123334884644,
+          "mean_trace_length": 2.5,
+          "mean_coefficient": 0.9000000000000002
+        },
+        {
+          "episode": 2,
+          "success": false,
+          "q": 0.00785342138260603,
+          "actor": -0.9708662629127502,
+          "target_mean": 0.9733496308326721,
+          "mean_trace_length": 2.46875,
+          "mean_coefficient": 0.8967226368548294
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "q": 0.005237778648734093,
+          "actor": -0.9246102571487427,
+          "target_mean": 0.9494524002075195,
+          "mean_trace_length": 2.421875,
+          "mean_coefficient": 0.8940733096451656
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "q": 0.005212846212089062,
+          "actor": -1.0046972036361694,
+          "target_mean": 0.9724084734916687,
+          "mean_trace_length": 2.5,
+          "mean_coefficient": 0.8692620131425288
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "q": 0.009080065414309502,
+          "actor": -0.986193835735321,
+          "target_mean": 1.016477346420288,
+          "mean_trace_length": 2.171875,
+          "mean_coefficient": 0.8571952231675417
+        },
+        {
+          "episode": 6,
+          "success": false,
+          "q": 0.007548844441771507,
+          "actor": -0.9720983505249023,
+          "target_mean": 0.9879570007324219,
+          "mean_trace_length": 2.4375,
+          "mean_coefficient": 0.7847059791703849
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "q": 0.006791542284190655,
+          "actor": -0.9381891489028931,
+          "target_mean": 0.9479222893714905,
+          "mean_trace_length": 1.96875,
+          "mean_coefficient": 0.7626768954899771
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "q": 0.01237914152443409,
+          "actor": -0.9255238771438599,
+          "target_mean": 0.9688402414321899,
+          "mean_trace_length": 2.203125,
+          "mean_coefficient": 0.7810766241262685
+        },
+        {
+          "episode": 9,
+          "success": false,
+          "q": 0.008470458909869194,
+          "actor": -0.8956129550933838,
+          "target_mean": 0.8902745246887207,
+          "mean_trace_length": 2.0625,
+          "mean_coefficient": 0.7848227861926539
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "q": 0.009457956068217754,
+          "actor": -0.8650014996528625,
+          "target_mean": 0.8925043344497681,
+          "mean_trace_length": 2.203125,
+          "mean_coefficient": 0.7900629441120093
+        },
+        {
+          "episode": 11,
+          "success": false,
+          "q": 0.007202583365142345,
+          "actor": -0.8387740254402161,
+          "target_mean": 0.8748674988746643,
+          "mean_trace_length": 2.03125,
+          "mean_coefficient": 0.8464172972098043
+        },
+        {
+          "episode": 12,
+          "success": false,
+          "q": 0.015017208643257618,
+          "actor": -0.9091150164604187,
+          "target_mean": 0.9197362661361694,
+          "mean_trace_length": 2.046875,
+          "mean_coefficient": 0.8544063093680155
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "q": 0.011739060282707214,
+          "actor": -0.9508353471755981,
+          "target_mean": 0.8936916589736938,
+          "mean_trace_length": 2.296875,
+          "mean_coefficient": 0.859522286032116
+        },
+        {
+          "episode": 14,
+          "success": false,
+          "q": 0.008227725513279438,
+          "actor": -0.9400156140327454,
+          "target_mean": 0.956873893737793,
+          "mean_trace_length": 2.3125,
+          "mean_coefficient": 0.8422524309612311
+        },
+        {
+          "episode": 15,
+          "success": false,
+          "q": 0.012173876166343689,
+          "actor": -0.8692548274993896,
+          "target_mean": 0.8609414100646973,
+          "mean_trace_length": 2.1875,
+          "mean_coefficient": 0.8022871901982379
+        },
+        {
+          "episode": 16,
+          "success": false,
+          "q": 0.010365137830376625,
+          "actor": -0.8660720586776733,
+          "target_mean": 0.8827446699142456,
+          "mean_trace_length": 1.984375,
+          "mean_coefficient": 0.787840036222341
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "q": 0.009899168275296688,
+          "actor": -0.9899885654449463,
+          "target_mean": 0.9769682884216309,
+          "mean_trace_length": 2.5,
+          "mean_coefficient": 0.8105625573258225
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "q": 0.0059532709419727325,
+          "actor": -0.871771514415741,
+          "target_mean": 0.798602819442749,
+          "mean_trace_length": 2.03125,
+          "mean_coefficient": 0.8121094422007451
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "q": 0.007307956926524639,
+          "actor": -0.8173043727874756,
+          "target_mean": 0.7963931560516357,
+          "mean_trace_length": 2.1875,
+          "mean_coefficient": 0.819104350662763
+        },
+        {
+          "episode": 20,
+          "success": false,
+          "q": 0.00959874503314495,
+          "actor": -0.9119867086410522,
+          "target_mean": 0.8691146373748779,
+          "mean_trace_length": 2.140625,
+          "mean_coefficient": 0.7870807391949853
+        },
+        {
+          "episode": 21,
+          "success": false,
+          "q": 0.005695326253771782,
+          "actor": -0.9362947940826416,
+          "target_mean": 0.9177789688110352,
+          "mean_trace_length": 1.953125,
+          "mean_coefficient": 0.8271649950100514
+        },
+        {
+          "episode": 22,
+          "success": false,
+          "q": 0.011508047580718994,
+          "actor": -0.9405093789100647,
+          "target_mean": 0.931590735912323,
+          "mean_trace_length": 2.375,
+          "mean_coefficient": 0.8134451076144803
+        },
+        {
+          "episode": 23,
+          "success": false,
+          "q": 0.03459981083869934,
+          "actor": -0.8047501444816589,
+          "target_mean": 0.7752904295921326,
+          "mean_trace_length": 2.09375,
+          "mean_coefficient": 0.8070148868041114
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "q": 0.008631369099020958,
+          "actor": -0.8990341424942017,
+          "target_mean": 0.9364216327667236,
+          "mean_trace_length": 2.671875,
+          "mean_coefficient": 0.8006125780321787
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "q": 0.019282760098576546,
+          "actor": -0.7867411971092224,
+          "target_mean": 0.820541262626648,
+          "mean_trace_length": 1.9375,
+          "mean_coefficient": 0.8324270915996043
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "q": 0.013085238635540009,
+          "actor": -0.7692736983299255,
+          "target_mean": 0.794346272945404,
+          "mean_trace_length": 2.15625,
+          "mean_coefficient": 0.8241616200693381
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "q": 0.011207977309823036,
+          "actor": -0.9111613035202026,
+          "target_mean": 0.9316260814666748,
+          "mean_trace_length": 2.078125,
+          "mean_coefficient": 0.7984336779472715
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "q": 0.017071576789021492,
+          "actor": -0.8906434774398804,
+          "target_mean": 0.8802140355110168,
+          "mean_trace_length": 2.28125,
+          "mean_coefficient": 0.8410281015435229
+        },
+        {
+          "episode": 29,
+          "success": false,
+          "q": 0.010868508368730545,
+          "actor": -0.957947850227356,
+          "target_mean": 0.9666478633880615,
+          "mean_trace_length": 2.171875,
+          "mean_coefficient": 0.8092290936789268
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "q": 0.011530382558703423,
+          "actor": -0.8471640348434448,
+          "target_mean": 0.8790472745895386,
+          "mean_trace_length": 2.4375,
+          "mean_coefficient": 0.7626650852381777
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "q": 0.01354118064045906,
+          "actor": -0.8139603734016418,
+          "target_mean": 0.8374356627464294,
+          "mean_trace_length": 2.421875,
+          "mean_coefficient": 0.7853769802664872
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "q": 0.013072974048554897,
+          "actor": -0.8586657643318176,
+          "target_mean": 0.8722506165504456,
+          "mean_trace_length": 1.84375,
+          "mean_coefficient": 0.843564232273608
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "q": 0.011022929102182388,
+          "actor": -1.0251449346542358,
+          "target_mean": 0.9890581369400024,
+          "mean_trace_length": 2.484375,
+          "mean_coefficient": 0.8409008185071171
+        },
+        {
+          "episode": 34,
+          "success": false,
+          "q": 0.014961316250264645,
+          "actor": -0.9261444807052612,
+          "target_mean": 0.8684796690940857,
+          "mean_trace_length": 2.21875,
+          "mean_coefficient": 0.808325980399019
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "q": 0.010456789284944534,
+          "actor": -0.8567253947257996,
+          "target_mean": 0.8918183445930481,
+          "mean_trace_length": 2.28125,
+          "mean_coefficient": 0.8135671490160549
+        },
+        {
+          "episode": 36,
+          "success": false,
+          "q": 0.014332691207528114,
+          "actor": -0.8300453424453735,
+          "target_mean": 0.8160495758056641,
+          "mean_trace_length": 2.09375,
+          "mean_coefficient": 0.8104299187017994
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "q": 0.01943362131714821,
+          "actor": -0.9393525719642639,
+          "target_mean": 0.9291630387306213,
+          "mean_trace_length": 2.28125,
+          "mean_coefficient": 0.7551160739508614
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "q": 0.02797897905111313,
+          "actor": -0.9809417724609375,
+          "target_mean": 0.969407856464386,
+          "mean_trace_length": 2.09375,
+          "mean_coefficient": 0.7386539450232184
+        },
+        {
+          "episode": 39,
+          "success": false,
+          "q": 0.012515811249613762,
+          "actor": -0.8761715292930603,
+          "target_mean": 0.9158613681793213,
+          "mean_trace_length": 2.15625,
+          "mean_coefficient": 0.8207609978176381
+        },
+        {
+          "episode": 40,
+          "success": false,
+          "q": 0.01981184631586075,
+          "actor": -0.9592439532279968,
+          "target_mean": 0.9768427610397339,
+          "mean_trace_length": 2.1875,
+          "mean_coefficient": 0.7617192774093478
+        },
+        {
+          "episode": 41,
+          "success": false,
+          "q": 0.019396783784031868,
+          "actor": -0.855414867401123,
+          "target_mean": 0.8672236204147339,
+          "mean_trace_length": 2.171875,
+          "mean_coefficient": 0.7356893243295315
+        },
+        {
+          "episode": 42,
+          "success": false,
+          "q": 0.016197752207517624,
+          "actor": -0.8566433787345886,
+          "target_mean": 0.9129500985145569,
+          "mean_trace_length": 2.171875,
+          "mean_coefficient": 0.7841345708166307
+        },
+        {
+          "episode": 43,
+          "success": false,
+          "q": 0.022298429161310196,
+          "actor": -0.8151562213897705,
+          "target_mean": 0.7891309857368469,
+          "mean_trace_length": 2.296875,
+          "mean_coefficient": 0.7622106229389436
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "q": 0.01354946568608284,
+          "actor": -0.9503363966941833,
+          "target_mean": 0.9021252989768982,
+          "mean_trace_length": 2.515625,
+          "mean_coefficient": 0.802269596454283
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "q": 0.01579064317047596,
+          "actor": -1.0354286432266235,
+          "target_mean": 1.0383676290512085,
+          "mean_trace_length": 2.5,
+          "mean_coefficient": 0.7988029046384296
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "q": 0.013776149600744247,
+          "actor": -1.0285059213638306,
+          "target_mean": 1.0110104084014893,
+          "mean_trace_length": 2.3125,
+          "mean_coefficient": 0.7913252669798021
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "q": 0.014290088787674904,
+          "actor": -0.9154747128486633,
+          "target_mean": 0.9032337665557861,
+          "mean_trace_length": 2.125,
+          "mean_coefficient": 0.7695582700398407
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "q": 0.019581854343414307,
+          "actor": -0.9543760418891907,
+          "target_mean": 0.933903694152832,
+          "mean_trace_length": 1.921875,
+          "mean_coefficient": 0.7224014269089669
+        },
+        {
+          "episode": 49,
+          "success": false,
+          "q": 0.00926858838647604,
+          "actor": -0.9845054149627686,
+          "target_mean": 1.001560926437378,
+          "mean_trace_length": 2.390625,
+          "mean_coefficient": 0.7874476952059036
+        },
+        {
+          "episode": 50,
+          "success": false,
+          "q": 0.017376963049173355,
+          "actor": -0.9770039916038513,
+          "target_mean": 0.940532922744751,
+          "mean_trace_length": 2.296875,
+          "mean_coefficient": 0.7499603419635361
+        },
+        {
+          "episode": 51,
+          "success": false,
+          "q": 0.019956782460212708,
+          "actor": -0.9971361756324768,
+          "target_mean": 0.9888973236083984,
+          "mean_trace_length": 2.296875,
+          "mean_coefficient": 0.7426239785247163
+        },
+        {
+          "episode": 52,
+          "success": true,
+          "q": 0.01395382359623909,
+          "actor": -0.9760496616363525,
+          "target_mean": 0.9481160640716553,
+          "mean_trace_length": 2.140625,
+          "mean_coefficient": 0.7602729469386554
+        },
+        {
+          "episode": 53,
+          "success": true,
+          "q": 0.024899348616600037,
+          "actor": -0.8520358204841614,
+          "target_mean": 0.8524556159973145,
+          "mean_trace_length": 2.03125,
+          "mean_coefficient": 0.821149606876498
+        },
+        {
+          "episode": 54,
+          "success": true,
+          "q": 0.021114829927682877,
+          "actor": -0.9459193348884583,
+          "target_mean": 0.9309448599815369,
+          "mean_trace_length": 1.921875,
+          "mean_coefficient": 0.7609435707102772
+        },
+        {
+          "episode": 55,
+          "success": true,
+          "q": 0.017259005457162857,
+          "actor": -0.9482004046440125,
+          "target_mean": 0.9461990594863892,
+          "mean_trace_length": 1.9375,
+          "mean_coefficient": 0.7161155918639888
+        },
+        {
+          "episode": 56,
+          "success": false,
+          "q": 0.027364086359739304,
+          "actor": -1.0429542064666748,
+          "target_mean": 1.063218355178833,
+          "mean_trace_length": 2.46875,
+          "mean_coefficient": 0.7503614274081072
+        },
+        {
+          "episode": 57,
+          "success": false,
+          "q": 0.01699816808104515,
+          "actor": -1.0611903667449951,
+          "target_mean": 1.1318373680114746,
+          "mean_trace_length": 2.34375,
+          "mean_coefficient": 0.7378273479825166
+        },
+        {
+          "episode": 58,
+          "success": true,
+          "q": 0.010911560617387295,
+          "actor": -1.057806134223938,
+          "target_mean": 1.0391271114349365,
+          "mean_trace_length": 2.015625,
+          "mean_coefficient": 0.7934989582662739
+        },
+        {
+          "episode": 59,
+          "success": true,
+          "q": 0.015847697854042053,
+          "actor": -1.021735429763794,
+          "target_mean": 1.0109223127365112,
+          "mean_trace_length": 2.03125,
+          "mean_coefficient": 0.7640200621515801
+        },
+        {
+          "episode": 60,
+          "success": true,
+          "q": 0.023679915815591812,
+          "actor": -1.0189541578292847,
+          "target_mean": 1.0200351476669312,
+          "mean_trace_length": 2.171875,
+          "mean_coefficient": 0.748816479831882
+        },
+        {
+          "episode": 61,
+          "success": true,
+          "q": 0.02324822172522545,
+          "actor": -1.0393438339233398,
+          "target_mean": 1.0484768152236938,
+          "mean_trace_length": 2.3125,
+          "mean_coefficient": 0.7602728779647498
+        },
+        {
+          "episode": 62,
+          "success": true,
+          "q": 0.028281714767217636,
+          "actor": -1.0697518587112427,
+          "target_mean": 1.0388604402542114,
+          "mean_trace_length": 2.265625,
+          "mean_coefficient": 0.799923843801591
+        },
+        {
+          "episode": 63,
+          "success": false,
+          "q": 0.016362542286515236,
+          "actor": -1.0254441499710083,
+          "target_mean": 1.0407519340515137,
+          "mean_trace_length": 1.984375,
+          "mean_coefficient": 0.7701042288500995
+        }
+      ]
+    }
+  },
+  "controls": {
+    "confirm_fixed5": {
+      "n": 24,
+      "success": 19,
+      "outcomes": {
+        "769600": true,
+        "769601": true,
+        "769602": true,
+        "769603": true,
+        "769604": false,
+        "769605": false,
+        "769606": true,
+        "769607": false,
+        "769608": true,
+        "769609": true,
+        "769610": true,
+        "769611": true,
+        "769612": true,
+        "769613": true,
+        "769614": true,
+        "769615": false,
+        "769616": true,
+        "769617": true,
+        "769618": true,
+        "769619": false,
+        "769620": true,
+        "769621": true,
+        "769622": true,
+        "769623": true
+      },
+      "model_manifest": {
+        "mode": "fixed5",
+        "extraction": "actor",
+        "model": "None",
+        "model_sha": null,
+        "source": "ea61cbe9ec7e01846849993fd4a4480444d3cbd69c7b38ed3fcfb08238c46d21",
+        "seeds": [
+          769600,
+          769601,
+          769602,
+          769603,
+          769604,
+          769605,
+          769606,
+          769607,
+          769608,
+          769609,
+          769610,
+          769611,
+          769612,
+          769613,
+          769614,
+          769615,
+          769616,
+          769617,
+          769618,
+          769619,
+          769620,
+          769621,
+          769622,
+          769623
+        ],
+        "native100": true,
+        "updates": 0,
+        "freeze_front": true
+      },
+      "failure_without_rear_boundary": 0
+    },
+    "confirm_lagged": {
+      "n": 24,
+      "success": 14,
+      "outcomes": {
+        "769600": true,
+        "769601": true,
+        "769602": true,
+        "769603": true,
+        "769604": false,
+        "769605": false,
+        "769606": true,
+        "769607": false,
+        "769608": true,
+        "769609": true,
+        "769610": false,
+        "769611": false,
+        "769612": true,
+        "769613": true,
+        "769614": true,
+        "769615": false,
+        "769616": true,
+        "769617": false,
+        "769618": false,
+        "769619": false,
+        "769620": true,
+        "769621": true,
+        "769622": false,
+        "769623": true
+      },
+      "model_manifest": {
+        "mode": "learned",
+        "extraction": "actor",
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/lagged_32401/CHECKPOINT_64.pt",
+        "model_sha": "7e2d628f6b8c3a0185f4c9ade5e674ec43070fbf4695827e431bfb1623bc47f4",
+        "source": "ea61cbe9ec7e01846849993fd4a4480444d3cbd69c7b38ed3fcfb08238c46d21",
+        "seeds": [
+          769600,
+          769601,
+          769602,
+          769603,
+          769604,
+          769605,
+          769606,
+          769607,
+          769608,
+          769609,
+          769610,
+          769611,
+          769612,
+          769613,
+          769614,
+          769615,
+          769616,
+          769617,
+          769618,
+          769619,
+          769620,
+          769621,
+          769622,
+          769623
+        ],
+        "native100": true,
+        "updates": 0,
+        "freeze_front": true
+      },
+      "failure_without_rear_boundary": 0
+    },
+    "confirm_prior": {
+      "n": 24,
+      "success": 16,
+      "outcomes": {
+        "769600": true,
+        "769601": true,
+        "769602": true,
+        "769603": true,
+        "769604": false,
+        "769605": false,
+        "769606": true,
+        "769607": false,
+        "769608": true,
+        "769609": true,
+        "769610": false,
+        "769611": true,
+        "769612": true,
+        "769613": true,
+        "769614": true,
+        "769615": false,
+        "769616": true,
+        "769617": false,
+        "769618": false,
+        "769619": false,
+        "769620": true,
+        "769621": true,
+        "769622": true,
+        "769623": true
+      },
+      "model_manifest": {
+        "mode": "learned",
+        "extraction": "actor",
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/action_frontier_20261107/sac_32202/CHECKPOINT_128.pt",
+        "model_sha": "dbfdb12b5ab19809d11f29ac118c8f2e9458c9f6925c07b1f91aecf46045ff32",
+        "source": "ea61cbe9ec7e01846849993fd4a4480444d3cbd69c7b38ed3fcfb08238c46d21",
+        "seeds": [
+          769600,
+          769601,
+          769602,
+          769603,
+          769604,
+          769605,
+          769606,
+          769607,
+          769608,
+          769609,
+          769610,
+          769611,
+          769612,
+          769613,
+          769614,
+          769615,
+          769616,
+          769617,
+          769618,
+          769619,
+          769620,
+          769621,
+          769622,
+          769623
+        ],
+        "native100": true,
+        "updates": 0,
+        "freeze_front": true
+      },
+      "failure_without_rear_boundary": 0
+    },
+    "confirm_rule": {
+      "n": 24,
+      "success": 14,
+      "outcomes": {
+        "769600": true,
+        "769601": true,
+        "769602": true,
+        "769603": true,
+        "769604": false,
+        "769605": false,
+        "769606": true,
+        "769607": false,
+        "769608": true,
+        "769609": true,
+        "769610": false,
+        "769611": false,
+        "769612": true,
+        "769613": true,
+        "769614": true,
+        "769615": false,
+        "769616": true,
+        "769617": false,
+        "769618": false,
+        "769619": false,
+        "769620": true,
+        "769621": true,
+        "769622": false,
+        "769623": true
+      },
+      "model_manifest": {
+        "mode": "rule",
+        "extraction": "actor",
+        "model": "None",
+        "model_sha": null,
+        "source": "ea61cbe9ec7e01846849993fd4a4480444d3cbd69c7b38ed3fcfb08238c46d21",
+        "seeds": [
+          769600,
+          769601,
+          769602,
+          769603,
+          769604,
+          769605,
+          769606,
+          769607,
+          769608,
+          769609,
+          769610,
+          769611,
+          769612,
+          769613,
+          769614,
+          769615,
+          769616,
+          769617,
+          769618,
+          769619,
+          769620,
+          769621,
+          769622,
+          769623
+        ],
+        "native100": true,
+        "updates": 0,
+        "freeze_front": true
+      },
+      "failure_without_rear_boundary": 0
+    },
+    "confirm_sac": {
+      "n": 24,
+      "success": 15,
+      "outcomes": {
+        "769600": false,
+        "769601": true,
+        "769602": true,
+        "769603": true,
+        "769604": false,
+        "769605": false,
+        "769606": true,
+        "769607": false,
+        "769608": true,
+        "769609": true,
+        "769610": false,
+        "769611": true,
+        "769612": true,
+        "769613": true,
+        "769614": true,
+        "769615": false,
+        "769616": true,
+        "769617": true,
+        "769618": false,
+        "769619": false,
+        "769620": true,
+        "769621": true,
+        "769622": false,
+        "769623": true
+      },
+      "model_manifest": {
+        "mode": "learned",
+        "extraction": "actor",
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/sac_32401/CHECKPOINT_64.pt",
+        "model_sha": "77d0bcb3ce72165ecf363a00dfdb39021c4ec76f9295f52babb4a3889ec7dd7f",
+        "source": "ea61cbe9ec7e01846849993fd4a4480444d3cbd69c7b38ed3fcfb08238c46d21",
+        "seeds": [
+          769600,
+          769601,
+          769602,
+          769603,
+          769604,
+          769605,
+          769606,
+          769607,
+          769608,
+          769609,
+          769610,
+          769611,
+          769612,
+          769613,
+          769614,
+          769615,
+          769616,
+          769617,
+          769618,
+          769619,
+          769620,
+          769621,
+          769622,
+          769623
+        ],
+        "native100": true,
+        "updates": 0,
+        "freeze_front": true
+      },
+      "failure_without_rear_boundary": 0
+    },
+    "confirm_trace": {
+      "n": 24,
+      "success": 15,
+      "outcomes": {
+        "769600": true,
+        "769601": true,
+        "769602": true,
+        "769603": true,
+        "769604": false,
+        "769605": false,
+        "769606": true,
+        "769607": false,
+        "769608": true,
+        "769609": true,
+        "769610": false,
+        "769611": true,
+        "769612": true,
+        "769613": true,
+        "769614": true,
+        "769615": false,
+        "769616": true,
+        "769617": false,
+        "769618": false,
+        "769619": false,
+        "769620": true,
+        "769621": true,
+        "769622": false,
+        "769623": true
+      },
+      "model_manifest": {
+        "mode": "learned",
+        "extraction": "actor",
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/trace_32401/CHECKPOINT_64.pt",
+        "model_sha": "1aa13f1c82d3fc383f8fed355516a9f952596adc90886ae702e5357f48ad139f",
+        "source": "ea61cbe9ec7e01846849993fd4a4480444d3cbd69c7b38ed3fcfb08238c46d21",
+        "seeds": [
+          769600,
+          769601,
+          769602,
+          769603,
+          769604,
+          769605,
+          769606,
+          769607,
+          769608,
+          769609,
+          769610,
+          769611,
+          769612,
+          769613,
+          769614,
+          769615,
+          769616,
+          769617,
+          769618,
+          769619,
+          769620,
+          769621,
+          769622,
+          769623
+        ],
+        "native100": true,
+        "updates": 0,
+        "freeze_front": true
+      },
+      "failure_without_rear_boundary": 0
+    },
+    "confirm_zero_sac": {
+      "n": 24,
+      "success": 15,
+      "outcomes": {
+        "769600": true,
+        "769601": true,
+        "769602": true,
+        "769603": false,
+        "769604": false,
+        "769605": false,
+        "769606": true,
+        "769607": false,
+        "769608": true,
+        "769609": true,
+        "769610": false,
+        "769611": false,
+        "769612": true,
+        "769613": true,
+        "769614": true,
+        "769615": false,
+        "769616": true,
+        "769617": true,
+        "769618": false,
+        "769619": false,
+        "769620": true,
+        "769621": true,
+        "769622": true,
+        "769623": true
+      },
+      "model_manifest": {
+        "mode": "learned",
+        "extraction": "actor",
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/ablation/sac_32401/CHECKPOINT_32.pt",
+        "model_sha": "e6370e4f7f5d318874d3d3950d73047b4ea0b1e2aab936b61eb3275ccfefc0db",
+        "source": "ea61cbe9ec7e01846849993fd4a4480444d3cbd69c7b38ed3fcfb08238c46d21",
+        "seeds": [
+          769600,
+          769601,
+          769602,
+          769603,
+          769604,
+          769605,
+          769606,
+          769607,
+          769608,
+          769609,
+          769610,
+          769611,
+          769612,
+          769613,
+          769614,
+          769615,
+          769616,
+          769617,
+          769618,
+          769619,
+          769620,
+          769621,
+          769622,
+          769623
+        ],
+        "native100": true,
+        "updates": 0,
+        "freeze_front": true
+      },
+      "failure_without_rear_boundary": 0
+    },
+    "confirm_zero_trace": {
+      "n": 24,
+      "success": 14,
+      "outcomes": {
+        "769600": true,
+        "769601": true,
+        "769602": true,
+        "769603": true,
+        "769604": false,
+        "769605": false,
+        "769606": true,
+        "769607": false,
+        "769608": true,
+        "769609": true,
+        "769610": false,
+        "769611": true,
+        "769612": true,
+        "769613": true,
+        "769614": false,
+        "769615": false,
+        "769616": true,
+        "769617": false,
+        "769618": false,
+        "769619": false,
+        "769620": true,
+        "769621": true,
+        "769622": false,
+        "769623": true
+      },
+      "model_manifest": {
+        "mode": "learned",
+        "extraction": "actor",
+        "model": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/ablation/trace_32401/CHECKPOINT_32.pt",
+        "model_sha": "dc499a0aad7b4da925273ee464b160917762651ffa5325a75274bfbd0a33155f",
+        "source": "ea61cbe9ec7e01846849993fd4a4480444d3cbd69c7b38ed3fcfb08238c46d21",
+        "seeds": [
+          769600,
+          769601,
+          769602,
+          769603,
+          769604,
+          769605,
+          769606,
+          769607,
+          769608,
+          769609,
+          769610,
+          769611,
+          769612,
+          769613,
+          769614,
+          769615,
+          769616,
+          769617,
+          769618,
+          769619,
+          769620,
+          769621,
+          769622,
+          769623
+        ],
+        "native100": true,
+        "updates": 0,
+        "freeze_front": true
+      },
+      "failure_without_rear_boundary": 0
+    }
+  },
+  "cost": {
+    "episodes": 495,
+    "steps": 49500,
+    "queries": 4411,
+    "query_wall_s": 20.799040360143408,
+    "episode_wall_s": 2641.233436201932,
+    "own_episodes": 192,
+    "updates": 7680,
+    "effective_decisions": 1040
+  },
+  "mechanism": [
+    {
+      "mode": "trained",
+      "seed": 769401,
+      "success": false,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/mechanism/physics/00001_769401_trained.json.gz"
+    },
+    {
+      "mode": "force6_trained_suffix",
+      "seed": 769401,
+      "success": true,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/mechanism/physics/00002_769401_force6_trained_suffix.json.gz"
+    },
+    {
+      "mode": "force6_prior_suffix",
+      "seed": 769401,
+      "success": true,
+      "path": "/home/andyee/robot-research/ARES-Skilllab/runs/research_program/EXP-004/suffix_trace_20261108/mechanism/physics/00003_769401_force6_prior_suffix.json.gz"
+    }
+  ]
+}
